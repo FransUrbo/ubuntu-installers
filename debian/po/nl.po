@@ -14,6 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: grub-installer\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-20 23:27-0600\n"
 "PO-Revision-Date: 2005-02-14 23:03+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
@@ -21,7 +22,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: boolean
 #. Description
@@ -264,3 +264,63 @@ msgstr "/etc/kernel-img.conf wordt bijgewerkt..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "GRUB-opstartlader op een harde schijf installeren"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:4
+msgid ""
+"If all of your operating systems are listed above, then it should be safe to "
+"install the boot loader to the master boot record of your first hard drive. "
+"When your computer boots, you will be able to choose to load one of these "
+"operating systems or your new Ubuntu system."
+msgstr ""
+"Als al uw besturingssystemen hierboven weergeven zijn, is het veilig om uw "
+"opstartlader te installeren in het 'master boot record' van uw eerste harde "
+"schijf. Bij het opstarten van uw computer krijgt u dan de keuze om of "
+"Ubuntu, of een van deze besturingssystemen op te starten."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:16
+msgid ""
+"It seems that this installation of Ubuntu is the only operating system on "
+"this computer. If so, it should be safe to install the GRUB boot loader to "
+"the master boot record of your first hard drive."
+msgstr ""
+"Het lijkt erop dat er naast Ubuntu-installatie geen andere "
+"besturingssystemen op deze computer staan. Als dit klopt kunt u de GRUB-"
+"opstartlader zonder problemen in het 'master boot record' van uw eerste "
+"harde schijf installeren."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid "Install the GRUB bootloader to XFS filesystem?"
+msgstr "GRUB-opstartlader op XFS-bestandssysteem installeren?"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid ""
+"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
+"filesystem. Using LILO in this situation is recommended."
+msgstr ""
+"Wanneer '/boot' zich op een XFS-bestandssysteem bevindt blijft de "
+"installatie van de de GRUB-opstartlader vaak hangen, of mislukt helemaal. "
+"Het is daarom aan te raden om in deze situatie LILO te gebruiken."
+
+#. Type: string
+#. Description
+#: ../grub-installer.templates:35
+msgid ""
+"You need to make the newly installed Ubuntu system bootable, by installing "
+"the GRUB bootloader on a bootable device. The usual way to do this is to "
+"install GRUB on the master boot record of your first hard drive. If you "
+"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
+"even to a floppy."
+msgstr ""
+"Uw net geïnstalleerde Ubuntu-systeem dient nu opstartbaar gemaakt te worden, "
+"door de GRUB-opstartlader te installeren op een opstartbaar apparaat. "
+"Gewoonlijk wordt hiervoor het 'master boot record' van uw eerste harde "
+"schijf gebruikt. Desgewenst kunt u GRUB ergens anders op de schijf, op een "
+"andere schijf, of zelfs op een diskette plaatsen."

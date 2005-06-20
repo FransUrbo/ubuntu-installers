@@ -11,6 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-20 23:27-0600\n"
 "PO-Revision-Date: 2005-05-21 14:40+0200\n"
 "Last-Translator:  Elian Myftiu <elian@alblinux.net>\n"
@@ -18,7 +19,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 
 #. Type: boolean
@@ -271,3 +271,61 @@ msgstr "Duke freskuar /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Instalo ngarkuesin e nisjes GRUB në një hard disk"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:4
+msgid ""
+"If all of your operating systems are listed above, then it should be safe to "
+"install the boot loader to the master boot record of your first hard drive. "
+"When your computer boots, you will be able to choose to load one of these "
+"operating systems or your new Ubuntu system."
+msgstr ""
+"Nëse të gjithë sistemet operativë janë rreshtuar më sipër, atëhere do ishte "
+"i sigurtë instalimi i ngarkuesit të nisjes në MBR (master boot record) të "
+"diskut tënd të parë. Kur kompjuteri niset, do jesh në gjendje të zgjedhësh "
+"njërin nga këto sisteme operativë ose sistemin tënd të ri Ubuntu."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:16
+msgid ""
+"It seems that this installation of Ubuntu is the only operating system on "
+"this computer. If so, it should be safe to install the GRUB boot loader to "
+"the master boot record of your first hard drive."
+msgstr ""
+"Mesa duket Ubuntu është sistemi i vetëm operativ në këtë kompjuter. Nëse "
+"është kështu, do ishte mirë që ngarkuesi i nisjes GRUB të instalohej në MBR "
+"(master boot record) e diskut tënd të parë."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid "Install the GRUB bootloader to XFS filesystem?"
+msgstr "Ta instaloj ngarkuesin e nisjes GRUB në një filesistem XFS?"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid ""
+"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
+"filesystem. Using LILO in this situation is recommended."
+msgstr ""
+"Instalimi i ngarkuest të nisjes GRUB ndonjëherë dështon ose ngec kur /boot "
+"ndodhet në një filesistem XFS. Në këtë rast këshillohet përdorimi i LILO-s."
+
+#. Type: string
+#. Description
+#: ../grub-installer.templates:35
+msgid ""
+"You need to make the newly installed Ubuntu system bootable, by installing "
+"the GRUB bootloader on a bootable device. The usual way to do this is to "
+"install GRUB on the master boot record of your first hard drive. If you "
+"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
+"even to a floppy."
+msgstr ""
+"Për të nisur sistemin tënd të ri Ubuntu, duke instaluar ngarkuesin e nisjes "
+"GRUB në një dispozitiv nisjeje. Zakonisht për të kryer këtë veprim, duhet "
+"instaluar GRUB në MBR (master boot record) e hard diskut tënd të parë.Nëse "
+"preferon, mund ta instalosh GRUB gjëkund tjetër në disk, ose në një disk "
+"tjetër, ose edhe në një disketë."

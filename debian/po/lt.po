@@ -13,6 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-20 23:27-0600\n"
 "PO-Revision-Date: 2005-03-19 23:48+0200\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
@@ -20,7 +21,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.9.1\n"
 
 #. Type: boolean
@@ -262,3 +262,64 @@ msgstr "Atnaujinamas /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Pradinio įkėliklio GRUB diegimas į kietąjį diską"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:4
+msgid ""
+"If all of your operating systems are listed above, then it should be safe to "
+"install the boot loader to the master boot record of your first hard drive. "
+"When your computer boots, you will be able to choose to load one of these "
+"operating systems or your new Ubuntu system."
+msgstr ""
+"Jei visos Jūsų operacinės sistemos yra aukščiau išvardintos, tuomet yra "
+"saugu įdiegti pradinį įkėliklį į pirmojo kietojo disko pagrindinį įkelties "
+"įrašą (master boot record). Kuomet Jūsų kompiuteris ruošis įkelti operacinę "
+"sistemą, Jūs galėsite pasirinkti vieną iš šių operacinių sistemų arba naują "
+"Ubuntu sistemą."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:16
+msgid ""
+"It seems that this installation of Ubuntu is the only operating system on "
+"this computer. If so, it should be safe to install the GRUB boot loader to "
+"the master boot record of your first hard drive."
+msgstr ""
+"Atrodo, kad Ubuntu yra vienintelė operacinė sistema šiame kompiuteryje. Jei "
+"taip, tuomet bus saugu įdiegti pradinį įkėliklį GRUB į pirmojo kietojo disko "
+"pagrindinį įkelties įrašą (master boot record)."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid "Install the GRUB bootloader to XFS filesystem?"
+msgstr "Ar diegti pradinį įkėliklį GRUB į XFS failų sistemą?"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid ""
+"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
+"filesystem. Using LILO in this situation is recommended."
+msgstr ""
+"Katalogui /boot esant XFS failų sistemoje, pradinio įkėliklio GRUB diegimas "
+"tankiai baigiasi nesėkme arba sistemos pakibimu. Šiuo atveju rekomenduojama "
+"naudoti LILO."
+
+#. Type: string
+#. Description
+#: ../grub-installer.templates:35
+#, fuzzy
+msgid ""
+"You need to make the newly installed Ubuntu system bootable, by installing "
+"the GRUB bootloader on a bootable device. The usual way to do this is to "
+"install GRUB on the master boot record of your first hard drive. If you "
+"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
+"even to a floppy."
+msgstr ""
+"Jūs turite naujai įdiegtą sistemą padaryti įkeliama, įdiegiant GRUB pradinį "
+"įkėliklį į pradinei įkelčiai tinkantį įrenginį. Paprastai tai daroma "
+"įdiegiant GRUB į pirmojo kietojo disko pagrindinį įkelties įrašą (master "
+"boot record). Jūs galite įdiegti GRUB ir kitoje disko vietoje, ar kitame "
+"diske, ar net lanksčiame diskelyje, jei tai Jums labiau patinka."

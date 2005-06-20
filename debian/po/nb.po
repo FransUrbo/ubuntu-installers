@@ -16,6 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-20 23:27-0600\n"
 "PO-Revision-Date: 2005-05-13 18:06+0100\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
@@ -23,7 +24,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.10\n"
 
 #. Type: boolean
@@ -268,3 +268,62 @@ msgstr "Oppdaterer /etc/kernel-img.conf ..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Installer oppstartssystemet Grub på en harddisk"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:4
+msgid ""
+"If all of your operating systems are listed above, then it should be safe to "
+"install the boot loader to the master boot record of your first hard drive. "
+"When your computer boots, you will be able to choose to load one of these "
+"operating systems or your new Ubuntu system."
+msgstr ""
+"Hvis alle dine operativsystemer er listet opp ovenfor, så bør det være trygt "
+"å installere oppstartslasteren i hovedoppstartssporet på den første "
+"harddisken. Når maskinen starter vil du få valget mellom å starte ett av "
+"disse operativsystemene eller det nye Ubuntu-systemet."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:16
+msgid ""
+"It seems that this installation of Ubuntu is the only operating system on "
+"this computer. If so, it should be safe to install the GRUB boot loader to "
+"the master boot record of your first hard drive."
+msgstr ""
+"Det ser ut til at denne Ubuntu-installasjonen er det eneste operativsystemet "
+"på denne maskinen. Hvis det er riktig, skulle det være trygt å installere "
+"oppstartslasteren Grub på hovedoppstartssporet på den første harddisken."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid "Install the GRUB bootloader to XFS filesystem?"
+msgstr "Installer oppstartssystemet Grub på et XFS-filsystem?"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid ""
+"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
+"filesystem. Using LILO in this situation is recommended."
+msgstr ""
+"Oppstartslasteren GRUB mislykkes eller henger ofte hvis /boot ligger på et "
+"XFS-filsystem. Det anbefales å bruke LILO i denne situasjonen."
+
+#. Type: string
+#. Description
+#: ../grub-installer.templates:35
+msgid ""
+"You need to make the newly installed Ubuntu system bootable, by installing "
+"the GRUB bootloader on a bootable device. The usual way to do this is to "
+"install GRUB on the master boot record of your first hard drive. If you "
+"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
+"even to a floppy."
+msgstr ""
+"Nå er det på tide å gjøre det mulig å starte opp det nyinstallerte "
+"Ubuntusystemet, ved å installere oppstartslasteren Grub på en enhet som er "
+"oppstartbar. Den vanlige måten å gjøre dette på, er å installere Grub på "
+"hovedoppstartssporet (MBR) på den første harddisken. Hvis du foretrekker det "
+"kan du installere Grub andre steder på harddisken, eller på en annen "
+"harddisk, eller til og med på en diskett."

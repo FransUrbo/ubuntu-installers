@@ -11,6 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-20 23:27-0600\n"
 "PO-Revision-Date: 2005-03-05 21:51+0100\n"
 "Last-Translator: Krunoslav Gernhard <kruno@linux.hr>\n"
@@ -18,7 +19,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: boolean
 #. Description
@@ -257,3 +257,62 @@ msgstr "Osvje¾avam /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Instaliraj GRUB boot uèitavaè na èvrsti disk"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:4
+#, fuzzy
+msgid ""
+"If all of your operating systems are listed above, then it should be safe to "
+"install the boot loader to the master boot record of your first hard drive. "
+"When your computer boots, you will be able to choose to load one of these "
+"operating systems or your new Ubuntu system."
+msgstr ""
+"Ako su svi va¹i upravljaèki sustavi na gornjem popisu, sigurno vam je "
+"instalirati boot uèitavaè u osnovni boot zapis va¹eg prvog èvrstog diska. "
+"Kada va¹e raèunalo bude podizalo upravljaèki sustav, moæi æete izabrati "
+"uèitavanje jednog od tih drugih sustava, ili va¹eg novog Debiana."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:16
+#, fuzzy
+msgid ""
+"It seems that this installation of Ubuntu is the only operating system on "
+"this computer. If so, it should be safe to install the GRUB boot loader to "
+"the master boot record of your first hard drive."
+msgstr ""
+"Èini se da je ova instalacija Debiana jedini upravljaèki sustav na ovom "
+"raèunalu. Ako je tako, sigurno vam je instalirati GRUB boot uèitavaè u "
+"osnovni boot zapis va¹eg prvog èvrstog diska."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid "Install the GRUB bootloader to XFS filesystem?"
+msgstr "Instaliraj GRUB boot uèitavaè na XFS datoteèni sustav?"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid ""
+"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
+"filesystem. Using LILO in this situation is recommended."
+msgstr ""
+"Instalacija GRUB boot uèitavaèa obièno ne uspije kada je /boot na XFS "
+"datoteènom sustavu. U tome sluèaju preporuèamo rabiti LILO."
+
+#. Type: string
+#. Description
+#: ../grub-installer.templates:35
+msgid ""
+"You need to make the newly installed Ubuntu system bootable, by installing "
+"the GRUB bootloader on a bootable device. The usual way to do this is to "
+"install GRUB on the master boot record of your first hard drive. If you "
+"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
+"even to a floppy."
+msgstr ""
+"Trebate uèiniti va¹ novi Ubuntu sposobnim da se podi¾e instalirajuæi GRUB "
+"boot uèitavaè na odgovarajuæi ureðaj. Uobièajeno je staviti ga u osnovni "
+"boot zapis va¹eg prvog èvrstog diska, ali mo¾ete i kamo drugdje na tome "
+"disku, ili na drugi disk, ili èak i na disketu."

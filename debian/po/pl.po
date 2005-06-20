@@ -11,6 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-20 23:27-0600\n"
 "PO-Revision-Date: 2005-05-13 18:07+0100\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
@@ -18,7 +19,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: boolean
 #. Description
@@ -263,3 +263,65 @@ msgstr "Aktualizacja /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Zainstaluj program uruchomieniowy GRUB na dysku twardym"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:4
+msgid ""
+"If all of your operating systems are listed above, then it should be safe to "
+"install the boot loader to the master boot record of your first hard drive. "
+"When your computer boots, you will be able to choose to load one of these "
+"operating systems or your new Ubuntu system."
+msgstr ""
+"Je¶li powy¿sza lista zawiera wszystkie Twoje systemy operacyjne, to "
+"instalacja programu uruchomieniowego w g³ównym rekordzie uruchomieniowym "
+"pierwszego dysku twardego powinna byæ bezpieczna. Podczas uruchamiania "
+"komputera bêdzie mo¿liwo¶æ wyboru spo¶ród tych systemów operacyjnych i "
+"systemu Ubuntu."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:16
+#, fuzzy
+msgid ""
+"It seems that this installation of Ubuntu is the only operating system on "
+"this computer. If so, it should be safe to install the GRUB boot loader to "
+"the master boot record of your first hard drive."
+msgstr ""
+"Wygl±da na to, ¿e ta instalacja Debiana jest jedynym systemem operacyjnym w "
+"tym komputerze. Je¶li tak jest to instalacja programu uruchomieniowego w "
+"g³ównym rekordzie uruchomieniowym pierwszego dysku twardego powinna byæ "
+"bezpieczna."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid "Install the GRUB bootloader to XFS filesystem?"
+msgstr "Zainstalowaæ program uruchomieniowy GRUB na systemie plików XFS?"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid ""
+"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
+"filesystem. Using LILO in this situation is recommended."
+msgstr ""
+"Instalacja programu uruchomieniowego GRUB czêsto nie udaje siê gdy /boot "
+"znajduje siê na systemie plików XFS. W takich przypadkach, zalecane jest "
+"u¿ywanie LILO."
+
+#. Type: string
+#. Description
+#: ../grub-installer.templates:35
+msgid ""
+"You need to make the newly installed Ubuntu system bootable, by installing "
+"the GRUB bootloader on a bootable device. The usual way to do this is to "
+"install GRUB on the master boot record of your first hard drive. If you "
+"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
+"even to a floppy."
+msgstr ""
+"Poprzez instalacjê programu uruchomieniowego GRUB, na uruchamialnym "
+"urz±dzeniu, musisz umo¿liwiæ samoczynne uruchamianie zainstalowanego systemu "
+"Ubuntu. Najpopularniejszym sposobem by to osi±gn±æ, jest instalacja GRUBa w "
+"g³ównym rekordzie uruchomieniowym pierwszego dysku twardego. Mo¿esz jednak¿e "
+"u¿yæ innego miejsca na dysku, innego dysku czy nawet dyskietki je¶li chcesz."

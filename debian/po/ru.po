@@ -14,6 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-20 23:27-0600\n"
 "PO-Revision-Date: 2005-05-24 19:18+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@id.ru>\n"
@@ -21,7 +22,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: KBabel 1.9.1\n"
@@ -273,3 +273,62 @@ msgstr "Обновление /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Установить системный загрузчик GRUB на жёсткий диск"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:4
+msgid ""
+"If all of your operating systems are listed above, then it should be safe to "
+"install the boot loader to the master boot record of your first hard drive. "
+"When your computer boots, you will be able to choose to load one of these "
+"operating systems or your new Ubuntu system."
+msgstr ""
+"Если выше указаны все установленные операционные системы, то можно спокойно "
+"устанавливать загрузчик в основную загрузочную запись вашего жёсткого диска. "
+"При загрузке компьютера вы сможете выбрать, какую из этих систем вы хотите "
+"загрузить."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:16
+msgid ""
+"It seems that this installation of Ubuntu is the only operating system on "
+"this computer. If so, it should be safe to install the GRUB boot loader to "
+"the master boot record of your first hard drive."
+msgstr ""
+"Похоже, что Ubuntu будет единственной операционной системой на этом "
+"компьютере. Если это так, то вполне безопасно установить загрузчик GRUB в "
+"основную загрузочную запись первого жёсткого диска."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid "Install the GRUB bootloader to XFS filesystem?"
+msgstr "Установить системный загрузчик GRUB на файловую систему XFS?"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid ""
+"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
+"filesystem. Using LILO in this situation is recommended."
+msgstr ""
+"Установка системного загрузчика GRUB часто заканчивается неудачно или "
+"подвисанием системы, если /boot расположен в файловой системе XFS. При таком "
+"случае рекомендуется использовать LILO."
+
+#. Type: string
+#. Description
+#: ../grub-installer.templates:35
+msgid ""
+"You need to make the newly installed Ubuntu system bootable, by installing "
+"the GRUB bootloader on a bootable device. The usual way to do this is to "
+"install GRUB on the master boot record of your first hard drive. If you "
+"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
+"even to a floppy."
+msgstr ""
+"Пришло время научить вашу свежеустановленную систему Ubuntu загружаться. Для "
+"этого на загрузочное устройство будет установлен загрузчик GRUB. Обычно он "
+"устанавливается в главную загрузочную запись (MBR, Master Boot Record) "
+"первого жёсткого диска. При желании можно установить GRUB в какое-либо "
+"другое место на диске, либо на другой диск, либо вообще на дискету."

@@ -10,6 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-20 23:27-0600\n"
 "PO-Revision-Date: 2005-04-19 07:06+0800\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
@@ -18,7 +19,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: boolean
 #. Description
@@ -252,3 +252,58 @@ msgstr "正在更新 /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "將 GRUB 開機程式安裝至硬碟上"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:4
+msgid ""
+"If all of your operating systems are listed above, then it should be safe to "
+"install the boot loader to the master boot record of your first hard drive. "
+"When your computer boots, you will be able to choose to load one of these "
+"operating systems or your new Ubuntu system."
+msgstr ""
+"如果以上已列出了您電腦中所有的作業系統，那麼把開機程式安裝在第一個硬碟的主要"
+"開機記錄 (MBR) 上應該不會出什麼問題。當您的電腦開機時，您可以選擇載入其中一個"
+"作業系統，或是由新的 Ubuntu 系統開機。"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:16
+msgid ""
+"It seems that this installation of Ubuntu is the only operating system on "
+"this computer. If so, it should be safe to install the GRUB boot loader to "
+"the master boot record of your first hard drive."
+msgstr ""
+"看來目前正在安裝的 Ubuntu 是這台電腦中唯一的作業系統。如果沒錯，那麼把 GRUB "
+"開機程式安裝在第一個硬碟的主要開機記錄 (MBR) 上應該不會出什麼問題。"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid "Install the GRUB bootloader to XFS filesystem?"
+msgstr "是否將 GRUB 開機程式安裝至 XFS 檔案系統上？"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid ""
+"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
+"filesystem. Using LILO in this situation is recommended."
+msgstr ""
+"如果 /boot 所使用的是 XFS 檔案系統，常會導致 GRUB 開機程式在安裝時失敗或當"
+"掉。在此狀況下，建議替而使用 LILO。"
+
+#. Type: string
+#. Description
+#: ../grub-installer.templates:35
+msgid ""
+"You need to make the newly installed Ubuntu system bootable, by installing "
+"the GRUB bootloader on a bootable device. The usual way to do this is to "
+"install GRUB on the master boot record of your first hard drive. If you "
+"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
+"even to a floppy."
+msgstr ""
+"必須把 GRUB 開機程式安裝至可開機裝置上，才能讓這個新安裝的 Ubuntu 系統能夠開"
+"機。一般作法是將 GRUB 安裝至您第一顆硬碟的主要開機磁區 (MBR) 上。而或者，也可"
+"以依您喜好將 GRUB 安裝至磁碟的其它地方，或安裝至另一顆磁碟上，或甚至也可以將"
+"它安裝至磁碟片上。"

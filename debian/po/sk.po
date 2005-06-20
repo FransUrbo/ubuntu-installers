@@ -10,6 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-20 23:27-0600\n"
 "PO-Revision-Date: 2005-04-29 22:35+0200\n"
 "Last-Translator:  Peter KLFMANiK Mann <Peter.Mann@tuke.sk>\n"
@@ -17,7 +18,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: boolean
 #. Description
@@ -259,3 +259,63 @@ msgstr "Aktualizuje sa /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Inštalácia zavádzača GRUB na pevný disk"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:4
+msgid ""
+"If all of your operating systems are listed above, then it should be safe to "
+"install the boot loader to the master boot record of your first hard drive. "
+"When your computer boots, you will be able to choose to load one of these "
+"operating systems or your new Ubuntu system."
+msgstr ""
+"Ak sú tu zobrazené všetky vaše operačné systémy, tak by malo byť bezpečné "
+"nainštalovanie štartovacieho zavádzača na hlavný štartovací záznam (MBR) "
+"vášho prvého pevného disku. Po naštartovaní vášho počítača si budete môcť "
+"zvoliť jeden z týchto operačných systémov alebo váš nový systém Ubuntu."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:16
+#, fuzzy
+msgid ""
+"It seems that this installation of Ubuntu is the only operating system on "
+"this computer. If so, it should be safe to install the GRUB boot loader to "
+"the master boot record of your first hard drive."
+msgstr ""
+"Vyzerá to tak, že táto inštalácia Debianu je jediným operačným systémom na "
+"tomto počítači. V takomto prípade by mala bez problémov prebehnúť inštalácia "
+"štartovacieho zavádzača GRUB na hlavný štartovací záznam (MBR) vášho prvého "
+"pevného disku."
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid "Install the GRUB bootloader to XFS filesystem?"
+msgstr "Nainštalovať zavádzač GRUB na súborový systém XFS?"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid ""
+"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
+"filesystem. Using LILO in this situation is recommended."
+msgstr ""
+"Inštalácia zavádzača GRUB často zlyháva, ak sa /boot nachádza na súborovom "
+"systéme XFS. V takomto prípade sa odporúča použitie zavádzača LILO."
+
+#. Type: string
+#. Description
+#: ../grub-installer.templates:35
+msgid ""
+"You need to make the newly installed Ubuntu system bootable, by installing "
+"the GRUB bootloader on a bootable device. The usual way to do this is to "
+"install GRUB on the master boot record of your first hard drive. If you "
+"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
+"even to a floppy."
+msgstr ""
+"Teraz nastal čas umožniť čerstvo nainštalovanému Ubuntu systému štartovanie "
+"z disku, a to nainštalovaním GRUB zavádzača na štartovacie zariadenie. "
+"Väčšinou sa to dosiahne inštaláciou GRUB zavádzača na hlavný štartovací "
+"záznam (MBR) vášho prvého pevného disku. Samozrejme, GRUB môžete inštalovať "
+"hocikde na tento disk alebo na iný disk, prípadne aj na disketu. "

@@ -10,6 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-20 23:27-0600\n"
 "PO-Revision-Date: 2005-05-28 13:51+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
@@ -17,7 +18,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: boolean
 #. Description
@@ -266,3 +266,62 @@ msgstr "/etc/kernel-img.conf を更新しています..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "ハードディスクへの GRUB ブートローダのインストール"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:4
+msgid ""
+"If all of your operating systems are listed above, then it should be safe to "
+"install the boot loader to the master boot record of your first hard drive. "
+"When your computer boots, you will be able to choose to load one of these "
+"operating systems or your new Ubuntu system."
+msgstr ""
+"もしあなたのオペレーティングシステムのすべてが上のリストにあるようであれば、"
+"あなたの 1 番目のハードドライブのマスターブートレコードにブートローダをインス"
+"トールするのが無難でしょう。コンピュータを起動すると、これらのオペーレティン"
+"グシステムの 1 つまたはあなたの新しい Ubuntu システムの起動を選ぶことができま"
+"す。"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:16
+msgid ""
+"It seems that this installation of Ubuntu is the only operating system on "
+"this computer. If so, it should be safe to install the GRUB boot loader to "
+"the master boot record of your first hard drive."
+msgstr ""
+"ここでインストールされる Ubuntu は、このコンピュータの唯一のオペレーティング"
+"システムのように見えます。もしそうであれば、あなたの 1 番目のハードドライブの"
+"マスターブートレコードにブートローダをインストールするのが無難でしょう。"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid "Install the GRUB bootloader to XFS filesystem?"
+msgstr "XFS ファイルシステムに GRUB ブートローダをインストールしますか?"
+
+#. Type: boolean
+#. Description
+#: ../grub-installer.templates:29
+msgid ""
+"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
+"filesystem. Using LILO in this situation is recommended."
+msgstr ""
+"/boot が XFS ファイルシステムのとき、GRUB ブートローダのインストールにときど"
+"き失敗したりハングすることがあります。この状況では LILO が推奨されます。"
+
+#. Type: string
+#. Description
+#: ../grub-installer.templates:35
+msgid ""
+"You need to make the newly installed Ubuntu system bootable, by installing "
+"the GRUB bootloader on a bootable device. The usual way to do this is to "
+"install GRUB on the master boot record of your first hard drive. If you "
+"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
+"even to a floppy."
+msgstr ""
+"GRUB ブートローダを起動可能デバイスにインストールして、新しくインストールされ"
+"た Ubuntu システムを起動可能にするときがきました。通常のやり方は、GRUB をあな"
+"たの 1 番目のハードドライブのマスターブートレコードにインストールするというも"
+"のです。望むなら、GRUB をドライブの別の場所や別のドライブ、あるいはフロッピー"
+"にインストールすることもできます。"
