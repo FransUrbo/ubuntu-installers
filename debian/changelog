@@ -1,3 +1,9 @@
+grub-installer (1.09ubuntu1) breezy; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon,  6 Jun 2005 12:09:13 +0100
+
 grub-installer (1.09) unstable; urgency=low
 
   * Timo Aaltonen, Colin Watson
@@ -29,6 +35,12 @@ grub-installer (1.09) unstable; urgency=low
     - Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
 
  -- Colin Watson <cjwatson@debian.org>  Wed,  1 Jun 2005 01:16:10 +0000
+
+grub-installer (1.08ubuntu1) breezy; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 23 May 2005 14:15:19 +0100
 
 grub-installer (1.08) unstable; urgency=low
 
@@ -68,6 +80,12 @@ grub-installer (1.08) unstable; urgency=low
 
  -- Colin Watson <cjwatson@debian.org>  Fri, 20 May 2005 11:31:43 +0000
 
+grub-installer (1.07.1ubuntu1) breezy; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 20 Apr 2005 19:14:26 +1000
+
 grub-installer (1.07.1) unstable; urgency=low
 
   * Includes substitution variable fixes in translated templates.
@@ -80,6 +98,20 @@ grub-installer (1.07.1) unstable; urgency=low
     - Romanian (ro.po) by Eddy Petrisor
 
  -- Joey Hess <joeyh@debian.org>  Wed,  2 Feb 2005 18:06:47 -0500
+
+grub-installer (1.07ubuntu2) hoary; urgency=low
+
+  * Drop priorities of grub-installer/with_other_os and
+    grub-installer/only_debian questions to high (matching Debian) and
+    medium respectively.
+
+ -- Colin Watson <cjwatson@canonical.com>  Sat,  1 Jan 2005 23:52:05 +0000
+
+grub-installer (1.07ubuntu1) hoary; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue,  9 Nov 2004 23:10:20 +0000
 
 grub-installer (1.07) unstable; urgency=low
 
@@ -99,6 +131,19 @@ grub-installer (1.07) unstable; urgency=low
     - Traditional Chinese (zh_TW.po) by Tetralet
 
  -- Joey Hess <joeyh@debian.org>  Tue,  2 Nov 2004 10:00:50 -0500
+
+grub-installer (1.06ubuntu2) hoary; urgency=low
+
+  * Make sure grub-installer.isinstallable is executable.
+
+ -- Colin Watson <cjwatson@canonical.com>  Thu,  4 Nov 2004 11:42:28 +0000
+
+grub-installer (1.06ubuntu1) hoary; urgency=low
+
+  * Resynchronise with Debian (thanks, Scott James Remnant).
+  * Update Ubuntu branding.
+
+ -- Colin Watson <cjwatson@canonical.com>  Fri, 29 Oct 2004 12:02:35 +0100
 
 grub-installer (1.06) unstable; urgency=low
 
@@ -325,6 +370,55 @@ grub-installer (0.51) unstable; urgency=low
     - Simplified Chinese (zh_CN.po) by Ming Hua
 
  -- Joey Hess <joeyh@debian.org>  Sat, 17 Jul 2004 14:24:42 -0400
+
+grub-installer (0.50ubuntu6) warty; urgency=low
+
+  * Updated translations:
+    - Greek (el.po) by Logiotatidis George
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 12 Oct 2004 14:34:57 +0100
+
+grub-installer (0.50ubuntu5) warty; urgency=low
+
+  * Show the grub menu and raise the menu timeout if other operating systems
+    are installed (closes: Ubuntu #993).
+
+ -- Colin Watson <cjwatson@canonical.com>  Mon, 11 Oct 2004 17:55:28 +0100
+
+grub-installer (0.50ubuntu4) warty; urgency=low
+
+  * Backport from Debian (Joey Hess) for Warty #1337:
+    - Use the user-params command to get parameters the user manually
+      entered on the command line, and add these into the grub config file.
+
+ -- Colin Watson <cjwatson@canonical.com>  Mon, 20 Sep 2004 17:48:40 +0100
+
+grub-installer (0.50ubuntu3) warty; urgency=low
+
+  * Tollef Fog Heen
+    - Ubuntu branding.
+  * Colin Watson
+    - Update most translations.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Mon, 16 Aug 2004 17:34:35 +0100
+
+grub-installer (0.50ubuntu2) warty; urgency=low
+
+  * Colin Watson
+    - grub-installer/bootdev must be asked (i.e. critical priority) on the
+      code path where unsupported operating systems were found, otherwise
+      bootdev ends up empty and grub-installer fails.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Mon,  2 Aug 2004 20:33:55 +0100
+
+grub-installer (0.50ubuntu1) warty; urgency=low
+
+  * Colin Watson
+    - Ask grub-installer/with_other_os at critical priority, since it can
+      render a previously working system unbootable if Linux doesn't boot
+      and os-prober failed to detect your other operating systems.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Wed, 21 Jul 2004 15:56:16 +0100
 
 grub-installer (0.50) unstable; urgency=low
 
