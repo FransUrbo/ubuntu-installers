@@ -1,3 +1,10 @@
+grub-installer (1.09ubuntu2) UNRELEASED; urgency=low
+
+  * Remove splash boot parameter unless debian-installer/framebuffer=true
+    (Ubuntu #13977).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon,  5 Sep 2005 14:05:07 +0100
+
 grub-installer (1.09ubuntu1) breezy; urgency=low
 
   * Resynchronise with Debian.
