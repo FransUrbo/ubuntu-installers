@@ -12,16 +12,15 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer\n"
+"Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-20 23:27-0600\n"
-"PO-Revision-Date: 2005-03-19 23:48+0200\n"
+"POT-Creation-Date: 2005-07-06 09:28-0700\n"
+"PO-Revision-Date: 2005-07-30 00:31+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
 
 #. Type: boolean
 #. Description
@@ -39,12 +38,12 @@ msgid ""
 "If all of your operating systems are listed above, then it should be safe to "
 "install the boot loader to the master boot record of your first hard drive. "
 "When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Debian system."
+"operating systems or your new system."
 msgstr ""
-"Jei aukščiau yra išvardintos visos Jūsų operacinės sistemos, pradinį "
+"Jei aukščiau yra išvardintos visos Jūsų operacinės sistemos, pradinį  "
 "įkėliklį yra saugu įdiegti į pirmojo kietojo disko pagrindinį įkelties įrašą "
 "(master boot record). Kraunantis kompiuteriui galėsite rinktis vieną iš "
-"išvardintų operacinių sistemų, arba naująją Debian'o sistemą."
+"išvardintų operacinių sistemų, arba Jūsų naująją sistemą."
 
 #. Type: boolean
 #. Description
@@ -56,13 +55,13 @@ msgstr "Ar įdiegti pradinį įkėliklį GRUB į pagrindinį įkelties įrašą?
 #. Description
 #: ../grub-installer.templates:16
 msgid ""
-"It seems that this installation of Debian is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
+"It seems that this new installation is the only operating system on this "
+"computer. If so, it should be safe to install the GRUB boot loader to the "
+"master boot record of your first hard drive."
 msgstr ""
-"Atrodo, kad Debian'as yra vienintelė operacinė sistema šiame kompiuteryje. "
-"Jei taip, tuomet bus saugu įdiegti pradinį įkėliklį GRUB į pirmojo kietojo "
-"disko pagrindinį įkelties įrašą (master boot record)."
+"Atrodo, kad ši naujai diegiama ir yra vienintelė operacinė sistema šiame "
+"kompiuteryje. Jei taip, tuomet bus saugu įdiegti pradinį įkėliklį GRUB į "
+"pirmojo kietojo disko pagrindinį įkelties įrašą (master boot record)."
 
 #. Type: boolean
 #. Description
@@ -81,15 +80,15 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS file system?"
+msgid "Install the GRUB boot loader to XFS file system?"
 msgstr "Ar diegti pradinį įkėliklį GRUB į XFS failų sistemą?"
 
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
 msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"file system. Using LILO in this situation is recommended."
+"The GRUB boot loader installation often fails or hangs when /boot is on a "
+"XFS file system. Using LILO in this situation is recommended."
 msgstr ""
 "Katalogui /boot esant XFS failų sistemoje, pradinio įkėliklio GRUB diegimas "
 "tankiai baigiasi nesėkme arba sistemos pakibimu. Šiuo atveju rekomenduojama "
@@ -105,11 +104,11 @@ msgstr "Įrenginys pradinio įkėliklio diegimui:"
 #. Description
 #: ../grub-installer.templates:35
 msgid ""
-"You need to make the newly installed Debian system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
+"You need to make the newly installed system bootable, by installing the GRUB "
+"boot loader on a bootable device. The usual way to do this is to install "
+"GRUB on the master boot record of your first hard drive. If you prefer, you "
+"can install GRUB elsewhere on the drive, or to another drive, or even to a "
+"floppy."
 msgstr ""
 "Naujai įdiegtą sistemą turite padaryti įkeliama įdiegdami pradinį įkėliklį "
 "GRUB į pradinei įkelčiai tinkantį įrenginį. Paprastai tai daroma įdiegiant "
@@ -145,7 +144,7 @@ msgstr ""
 #. Description
 #: ../grub-installer.templates:54
 msgid "GRUB password:"
-msgstr ""
+msgstr "GRUB slaptažodis:"
 
 #. Type: password
 #. Description
@@ -158,13 +157,19 @@ msgid ""
 "GRUB command-line interface. By default, any user will still be able to "
 "start any menu entry without entering the password."
 msgstr ""
+"Pradinis įkėliklis GRUB siūlo daug galingų interaktyvių savybių, kurios gali "
+"sukelti pavojų Jūsų sistemai, jei nesankcionuotas naudotojas turės priėjimą "
+"prie kompiuterio prieš operacinės sistemos įkėlimą. Kad nuo to apsisaugoti, "
+"Jūs galite pasirinkti slaptažodį, kurį reikės įvesti, norint redaguoti meniu "
+"arba įeinant į GRUB'o komandinės eilutės režimą. Pagal nutylėjimą numatyta, "
+"kad pradėti vykdyti bet kurį meniu įrašą galės bet kuris naudotojas ir "
+"neįvedęs slaptažodžio."
 
 #. Type: password
 #. Description
 #: ../grub-installer.templates:54
-#, fuzzy
 msgid "If you do not wish to set a GRUB password, leave this field blank."
-msgstr "Jei nežinote ką įvesti, palikite tuščią."
+msgstr "Jei Jūs nenorite nurodyti GRUB slaptažodžio, palikite šį lauką tuščią."
 
 #. Type: boolean
 #. Description
@@ -262,64 +267,3 @@ msgstr "Atnaujinamas /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Pradinio įkėliklio GRUB diegimas į kietąjį diską"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:4
-msgid ""
-"If all of your operating systems are listed above, then it should be safe to "
-"install the boot loader to the master boot record of your first hard drive. "
-"When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Ubuntu system."
-msgstr ""
-"Jei visos Jūsų operacinės sistemos yra aukščiau išvardintos, tuomet yra "
-"saugu įdiegti pradinį įkėliklį į pirmojo kietojo disko pagrindinį įkelties "
-"įrašą (master boot record). Kuomet Jūsų kompiuteris ruošis įkelti operacinę "
-"sistemą, Jūs galėsite pasirinkti vieną iš šių operacinių sistemų arba naują "
-"Ubuntu sistemą."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:16
-msgid ""
-"It seems that this installation of Ubuntu is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
-msgstr ""
-"Atrodo, kad Ubuntu yra vienintelė operacinė sistema šiame kompiuteryje. Jei "
-"taip, tuomet bus saugu įdiegti pradinį įkėliklį GRUB į pirmojo kietojo disko "
-"pagrindinį įkelties įrašą (master boot record)."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS filesystem?"
-msgstr "Ar diegti pradinį įkėliklį GRUB į XFS failų sistemą?"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"filesystem. Using LILO in this situation is recommended."
-msgstr ""
-"Katalogui /boot esant XFS failų sistemoje, pradinio įkėliklio GRUB diegimas "
-"tankiai baigiasi nesėkme arba sistemos pakibimu. Šiuo atveju rekomenduojama "
-"naudoti LILO."
-
-#. Type: string
-#. Description
-#: ../grub-installer.templates:35
-#, fuzzy
-msgid ""
-"You need to make the newly installed Ubuntu system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
-msgstr ""
-"Jūs turite naujai įdiegtą sistemą padaryti įkeliama, įdiegiant GRUB pradinį "
-"įkėliklį į pradinei įkelčiai tinkantį įrenginį. Paprastai tai daroma "
-"įdiegiant GRUB į pirmojo kietojo disko pagrindinį įkelties įrašą (master "
-"boot record). Jūs galite įdiegti GRUB ir kitoje disko vietoje, ar kitame "
-"diske, ar net lanksčiame diskelyje, jei tai Jums labiau patinka."

@@ -7,11 +7,11 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Dennis Stampfer <seppy@debian.org>, 2003, 2004.
+# Dennis Stampfer <seppy@debian.org>, 2003, 2004, 2005.
 # Alwin Meschede <ameschede@gmx.de>, 2003, 2004.
 # Bastian Blank <waldi@debian.org>, 2003.
-# Jan Luebbe <jluebbe@lasnet.de>, 2003
-# Thorsten Sauter <tsauter@gmx.net>, 2003
+# Jan Luebbe <jluebbe@lasnet.de>, 2003.
+# Thorsten Sauter <tsauter@gmx.net>, 2003.
 #
 # This file is maintained by Dennis Stampfer <seppy@debian.org>
 #
@@ -19,14 +19,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-20 23:27-0600\n"
-"PO-Revision-Date: 2005-05-25 09:57GMT\n"
-"Last-Translator: Dennis Stampfer <seppy@debian.org>\n"
+"POT-Creation-Date: 2005-07-06 09:28-0700\n"
+"PO-Revision-Date: 2005-08-04 22:12+0200\n"
+"Last-Translator: Holger Wansing <h.wansing@onlinehome.de>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.5\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #. Type: boolean
 #. Description
@@ -45,7 +45,7 @@ msgid ""
 "If all of your operating systems are listed above, then it should be safe to "
 "install the boot loader to the master boot record of your first hard drive. "
 "When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Debian system."
+"operating systems or your new system."
 msgstr ""
 "Sind alle installierten Betriebssysteme oben aufgelistet, sollte es kein "
 "Problem sein, den Bootloader in den Master Boot Record Ihrer ersten "
@@ -56,15 +56,15 @@ msgstr ""
 #. Description
 #: ../grub-installer.templates:16
 msgid "Install the GRUB boot loader to the master boot record?"
-msgstr "Den GRUB Bootloader in den Master Boot Record installieren?"
+msgstr "Den GRUB-Bootloader in den Master Boot Record installieren?"
 
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:16
 msgid ""
-"It seems that this installation of Debian is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
+"It seems that this new installation is the only operating system on this "
+"computer. If so, it should be safe to install the GRUB boot loader to the "
+"master boot record of your first hard drive."
 msgstr ""
 "Es scheint, als ob diese Installation von Debian das einzige Betriebssystem "
 "auf diesem Computer ist. Wenn dies der Fall ist, sollte es kein Problem "
@@ -87,17 +87,17 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS file system?"
-msgstr "GRUB Bootloader auf einem XFS Dateisystem installieren?"
+msgid "Install the GRUB boot loader to XFS file system?"
+msgstr "GRUB-Bootloader in ein XFS-Dateisystem installieren?"
 
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
 msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"file system. Using LILO in this situation is recommended."
+"The GRUB boot loader installation often fails or hangs when /boot is on a "
+"XFS file system. Using LILO in this situation is recommended."
 msgstr ""
-"Die GRUB Installation schlägt oft fehl, wenn /boot ein XFS Dateisystem ist. "
+"Die GRUB-Installation schlägt oft fehl, wenn /boot ein XFS-Dateisystem ist. "
 "In diesem Fall wird LILO empfohlen."
 
 #. Type: string
@@ -110,13 +110,13 @@ msgstr "Gerät für die Bootloader-Installation:"
 #. Description
 #: ../grub-installer.templates:35
 msgid ""
-"You need to make the newly installed Debian system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
+"You need to make the newly installed system bootable, by installing the GRUB "
+"boot loader on a bootable device. The usual way to do this is to install "
+"GRUB on the master boot record of your first hard drive. If you prefer, you "
+"can install GRUB elsewhere on the drive, or to another drive, or even to a "
+"floppy."
 msgstr ""
-"Es ist Zeit, das neu installierte Debian bootbar zu machen, indem der GRUB "
+"Das neu installierte System muss bootfähig gemacht werden, indem der GRUB-"
 "Bootloader auf einem bootbaren Medium installiert wird. Gewöhnlich wird dazu "
 "GRUB im Master Boot Record Ihrer ersten Festplatte installiert. Wenn Sie "
 "möchten, können Sie GRUB auch auf einer anderen Partition, Laufwerk oder "
@@ -164,14 +164,19 @@ msgid ""
 "GRUB command-line interface. By default, any user will still be able to "
 "start any menu entry without entering the password."
 msgstr ""
+"Der GRUB-Bootloader bietet einige mächtige Funktionen an, die aber dazu "
+"genutzt werden könnten, in das System einzudringen, wenn nicht-autorisierte "
+"Personen während des Startvorgangs Zugang zum Computer haben. Um das zu "
+"verhindern, können Sie ein Passwort wählen, welches eingegeben werden muss, "
+"bevor das GRUB-Menü oder die GRUB-Kommandozeile bearbeitet werden kann. Als "
+"Standard ist kein Passwort eingestellt."
 
 #. Type: password
 #. Description
 #: ../grub-installer.templates:54
-#, fuzzy
 msgid "If you do not wish to set a GRUB password, leave this field blank."
 msgstr ""
-"Wenn Sie nicht wissen, was Sie eingeben sollten, lassen Sie dieses Feld frei."
+"Wenn Sie kein GRUB-Passwort einrichten möchten, lassen Sie dieses Feld leer."
 
 #. Type: boolean
 #. Description
@@ -196,7 +201,7 @@ msgstr ""
 #. Description
 #: ../grub-installer.templates:80
 msgid "Unable to install GRUB in ${BOOTDEV}"
-msgstr "GRUB konnte nicht nach ${BOOTDEV} installiert werden"
+msgstr "GRUB konnte nicht nach ${BOOTDEV} installiert werden."
 
 #. Type: error
 #. Description
@@ -208,7 +213,7 @@ msgstr "Die Ausführung von »grub install ${BOOTDEV}« ist fehlgeschlagen."
 #. Description
 #: ../grub-installer.templates:87
 msgid "Unable to configure GRUB"
-msgstr "GRUB konnte nicht konfiguriert werden"
+msgstr "GRUB konnte nicht konfiguriert werden."
 
 #. Type: error
 #. Description
@@ -226,7 +231,7 @@ msgstr "Dies ist ein schwerwiegender Fehler."
 #. Description
 #: ../grub-installer.templates:94
 msgid "Installing GRUB boot loader"
-msgstr "Installiere GRUB Bootloader"
+msgstr "Installiere GRUB-Bootloader"
 
 #. Type: text
 #. Description
@@ -269,63 +274,4 @@ msgstr "Aktualisiere /etc/kernel-img.conf..."
 #. Main menu item
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
-msgstr "GRUB Bootloader auf einer Festpl. installieren"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:4
-msgid ""
-"If all of your operating systems are listed above, then it should be safe to "
-"install the boot loader to the master boot record of your first hard drive. "
-"When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Ubuntu system."
-msgstr ""
-"Sind alle installierten Betriebssysteme oben aufgelistet, sollte es kein "
-"Problem sein, den Bootloader in den Master Boot Record Ihrer ersten "
-"Festplatte zu installieren. Wenn Ihr Computer startet, werden Sie die "
-"Möglichkeit haben, eines dieser Betriebssysteme zu wählen und zu starten."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:16
-msgid ""
-"It seems that this installation of Ubuntu is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
-msgstr ""
-"Es scheint, als ob diese Installation von Ubuntu das einzige Betriebssystem "
-"auf diesem Computer ist. Wenn dies der Fall ist, sollte es kein Problem "
-"sein, den Bootloader in den Master Boot Record Ihrer ersten Festplatte zu "
-"installieren."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS filesystem?"
-msgstr "GRUB-Bootloader auf einem XFS Dateisystem installieren?"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"filesystem. Using LILO in this situation is recommended."
-msgstr ""
-"Die GRUB Installation schlägt oft fehl, wenn /boot ein XFS Dateisystem ist. "
-"In diesem Fall wird LILO empfohlen."
-
-#. Type: string
-#. Description
-#: ../grub-installer.templates:35
-msgid ""
-"You need to make the newly installed Ubuntu system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
-msgstr ""
-"Es ist Zeit, das neu installierte Ubuntu bootbar zu machen, indem der GRUB "
-"Bootloader auf einem bootbaren Medium installiert wird. Gewöhnlich wird dazu "
-"GRUB im Master Boot Record Ihrer ersten Festplatte installiert. Wenn Sie "
-"möchten, können Sie GRUB auch auf einer anderen Partition, Laufwerk oder "
-"auch auf einer Diskette installieren."
+msgstr "GRUB-Bootloader auf einer Festpl. installieren"

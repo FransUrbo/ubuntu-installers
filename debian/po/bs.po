@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-20 23:27-0600\n"
+"POT-Creation-Date: 2005-07-06 09:28-0700\n"
 "PO-Revision-Date: 2005-03-28 21:47CET\n"
 "Last-Translator: Safir Šećerović <sapphire@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
@@ -32,11 +32,12 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:4
+#, fuzzy
 msgid ""
 "If all of your operating systems are listed above, then it should be safe to "
 "install the boot loader to the master boot record of your first hard drive. "
 "When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Debian system."
+"operating systems or your new system."
 msgstr ""
 "Ako su svi vaši operativni sistemi izlistani gore, onda bi trebalo biti "
 "sigurno instalirati boot loader na master boot record vašeg prvog hard "
@@ -52,10 +53,11 @@ msgstr "Instalirati GRUB boot loader na master boot record?"
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:16
+#, fuzzy
 msgid ""
-"It seems that this installation of Debian is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
+"It seems that this new installation is the only operating system on this "
+"computer. If so, it should be safe to install the GRUB boot loader to the "
+"master boot record of your first hard drive."
 msgstr ""
 "Izgleda da je ova instalacija Debiana jedini operativni sistem na ovom "
 "računaru. Ako je tako, trebalo bi biti sigurno instalirati GRUB boot loader "
@@ -78,17 +80,17 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS file system?"
-msgstr "Instalirati GRUB bootloader na XFS datotečni sistem?"
+msgid "Install the GRUB boot loader to XFS file system?"
+msgstr "Instalirati GRUB boot loader na XFS datotečni sistem?"
 
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
 msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"file system. Using LILO in this situation is recommended."
+"The GRUB boot loader installation often fails or hangs when /boot is on a "
+"XFS file system. Using LILO in this situation is recommended."
 msgstr ""
-"Instalacija GRUB bootloadera često ne uspijeva ili zastane kada je /boot na "
+"Instalacija GRUB boot loadera često ne uspijeva ili zastane kada je /boot na "
 "XFS datotečnom sistemu. Preporučuje se korištenje LILO-a u ovoj situaciji."
 
 #. Type: string
@@ -100,15 +102,16 @@ msgstr "Uređaj za instalaciju boot loadera:"
 #. Type: string
 #. Description
 #: ../grub-installer.templates:35
+#, fuzzy
 msgid ""
-"You need to make the newly installed Debian system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
+"You need to make the newly installed system bootable, by installing the GRUB "
+"boot loader on a bootable device. The usual way to do this is to install "
+"GRUB on the master boot record of your first hard drive. If you prefer, you "
+"can install GRUB elsewhere on the drive, or to another drive, or even to a "
+"floppy."
 msgstr ""
 "Trebate učiniti novo instalirani Debian sistem bootabilnim, tako što ćete "
-"instalirati GRUB bootloader na vašem bootabilnom uređaju. Uobičajeni način "
+"instalirati GRUB boot loader na vašem bootabilnom uređaju. Uobičajeni način "
 "za instalaciju GRUB-a jeste instalacija na master boot record vašeg prvom "
 "hard diska. Ako preferirate, možete instalirati GRUB drugdje na disku ili na "
 "drugi disk ili čak na floppy disketu."
@@ -260,62 +263,3 @@ msgstr "Ažuriram /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Instaliraj GRUB boot loader na hard disk"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:4
-msgid ""
-"If all of your operating systems are listed above, then it should be safe to "
-"install the boot loader to the master boot record of your first hard drive. "
-"When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Ubuntu system."
-msgstr ""
-"Ako su svi vaši operativni sistemi izlistani gore, onda bi trebalo biti "
-"sigurno instalirati boot loader na master boot record vašeg prvog hard "
-"diska. Prilikom podizanja sistema na vašem računaru, bićete u mogućnosti "
-"učitati jedan od ovih operativnih sistema ili vaš novi Ubuntu sistem."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:16
-#, fuzzy
-msgid ""
-"It seems that this installation of Ubuntu is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
-msgstr ""
-"Izgleda da je ova instalacija Debiana jedini operativni sistem na ovom "
-"računaru. Ako je tako, trebalo bi biti sigurno instalirati GRUB boot loader "
-"na master boot record vašeg prvog hard diska."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS filesystem?"
-msgstr "Instalirati GRUB bootloader na XFS datotečni sistem?"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"filesystem. Using LILO in this situation is recommended."
-msgstr ""
-"Instalacija GRUB bootloadera često ne uspijeva ili zastane kada je /boot na "
-"XFS datotečnom sistemu. Preporučuje se korištenje LILO-a u ovoj situaciji."
-
-#. Type: string
-#. Description
-#: ../grub-installer.templates:35
-msgid ""
-"You need to make the newly installed Ubuntu system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
-msgstr ""
-"Trebate učiniti novo instalirani Ubuntu sistem bootabilnim, tako što ćete "
-"instalirati GRUB bootloader na vašem bootabilnom uređaju. Uobičajeni način "
-"za instalaciju GRUB-a jeste instalacija na master boot record vašeg prvom "
-"hard diska. Ako preferirate, možete instalirati GRUB drugdje na disku ili na "
-"drugi disk ili čak na floppy disketu."

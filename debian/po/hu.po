@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-20 23:27-0600\n"
+"POT-Creation-Date: 2005-07-06 09:28-0700\n"
 "PO-Revision-Date: 2005-05-13 18:04+0100\n"
 "Last-Translator: VEROK Istvan <vi@fsf.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
@@ -34,11 +34,12 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:4
+#, fuzzy
 msgid ""
 "If all of your operating systems are listed above, then it should be safe to "
 "install the boot loader to the master boot record of your first hard drive. "
 "When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Debian system."
+"operating systems or your new system."
 msgstr ""
 "Ha a lista a számítógépén található összes operációs rendszert tartalmazza, "
 "akkor a rendszerbetöltőt nyugodtan telepítheti az első merevlemezének fő "
@@ -54,10 +55,11 @@ msgstr "A GRUB rendszerbetöltőt a fő rendszerbetöltő-rekordba telepíti?"
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:16
+#, fuzzy
 msgid ""
-"It seems that this installation of Debian is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
+"It seems that this new installation is the only operating system on this "
+"computer. If so, it should be safe to install the GRUB boot loader to the "
+"master boot record of your first hard drive."
 msgstr ""
 "Úgy tűnik, ezen a gépen a most telepített Debian lesz az egyetlen operációs "
 "rendszer. Ha ez tényleg így van, akkor a GRUB rendszerbetöltőt nyugodtan "
@@ -80,15 +82,15 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS file system?"
+msgid "Install the GRUB boot loader to XFS file system?"
 msgstr "A GRUB rendszerbetöltőt XFS fájlrendszerre telepíti?"
 
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
 msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"file system. Using LILO in this situation is recommended."
+"The GRUB boot loader installation often fails or hangs when /boot is on a "
+"XFS file system. Using LILO in this situation is recommended."
 msgstr ""
 "XFS fájlrendszerre helyezett /boot könyvtár esetén a GRUB rendszerbetöltő "
 "telepítése gyakran végződhet kudarccal vagy akár a rendszer lefagyásával. "
@@ -103,12 +105,13 @@ msgstr "A rendszerbetöltő erre az eszközre kerül:"
 #. Type: string
 #. Description
 #: ../grub-installer.templates:35
+#, fuzzy
 msgid ""
-"You need to make the newly installed Debian system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
+"You need to make the newly installed system bootable, by installing the GRUB "
+"boot loader on a bootable device. The usual way to do this is to install "
+"GRUB on the master boot record of your first hard drive. If you prefer, you "
+"can install GRUB elsewhere on the drive, or to another drive, or even to a "
+"floppy."
 msgstr ""
 "Az újonnan telepített Debian-rendszert indíthatóvá is kell tenni, ehhez a "
 "GRUB rendszerbetöltőt kell egy indításra képes eszközre telepíteni. Az "
@@ -266,63 +269,3 @@ msgstr "Az /etc/kernel-img.conf frissítése folyamatban..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "A GRUB rendszerbetöltő merevlemezre telepítése"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:4
-msgid ""
-"If all of your operating systems are listed above, then it should be safe to "
-"install the boot loader to the master boot record of your first hard drive. "
-"When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Ubuntu system."
-msgstr ""
-"Ha a lista a számítógépén található összes operációs rendszert tartalmazza, "
-"akkor a rendszerbetöltőt nyugodtan telepítheti az első merevlemezének fő "
-"rendszerbetöltő-rekordjába. A számítógép indulásakor választhat ezen "
-"operációs rendszerek egyike, vagy éppen az új Ubuntu-rendszer indítása közt."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:16
-msgid ""
-"It seems that this installation of Ubuntu is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
-msgstr ""
-"Úgy tűnik, ezen a gépen a most telepített Ubuntu lesz az egyetlen operációs "
-"rendszer. Ha ez tényleg így van, akkor a GRUB rendszerbetöltőt nyugodtan "
-"telepítheti az első merevlemezének fő rendszerbetöltő-rekordjába."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS filesystem?"
-msgstr "A GRUB rendszerbetöltőt XFS fájlrendszerre telepíti?"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"filesystem. Using LILO in this situation is recommended."
-msgstr ""
-"XFS fájlrendszerre helyezett /boot könyvtár esetén a GRUB rendszerbetöltő "
-"telepítése gyakran végződhet kudarccal vagy akár a rendszer lefagyásával. "
-"Ilyenkor tanácsos inkább a LILO rendszerbetöltőhöz folyamodni."
-
-#. Type: string
-#. Description
-#: ../grub-installer.templates:35
-msgid ""
-"You need to make the newly installed Ubuntu system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
-msgstr ""
-"Az újonnan telepített Ubuntu-rendszert indíthatóvá is kell tenni, ehhez a "
-"GRUB rendszerbetöltőt kell egy indításra képes eszközre telepíteni. Az "
-"esetek elsöprő többségében ilyenkor a GRUB-ot az első merevlemez fő "
-"rendszerbetöltő-rekordjába teszik. Igény esetén a GRUB-ot a lemezen máshová "
-"is telepítheti, esetleg egy másik lemezre is, sőt, akár egy hajlékonylemezre "
-"is."

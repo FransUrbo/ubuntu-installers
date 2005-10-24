@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-20 23:27-0600\n"
+"POT-Creation-Date: 2005-07-06 09:28-0700\n"
 "PO-Revision-Date: 2005-04-04 14:36+0200\n"
 "Last-Translator: Per Olofsson <pelle@debian.org>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
@@ -31,11 +31,12 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:4
+#, fuzzy
 msgid ""
 "If all of your operating systems are listed above, then it should be safe to "
 "install the boot loader to the master boot record of your first hard drive. "
 "When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Debian system."
+"operating systems or your new system."
 msgstr ""
 "Om alla dina operativsystem finns i ovanstående lista bör det vara säkert "
 "att installera startladdaren i huvudstartsektorn på din första hårddisk.När "
@@ -51,10 +52,11 @@ msgstr "Installera startladdaren GRUB i huvudstartsektorn?"
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:16
+#, fuzzy
 msgid ""
-"It seems that this installation of Debian is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
+"It seems that this new installation is the only operating system on this "
+"computer. If so, it should be safe to install the GRUB boot loader to the "
+"master boot record of your first hard drive."
 msgstr ""
 "Det verkar som om den här installationen av Debian är det enda "
 "operativsystemet på den här datorn. I så fall bör det vara ofarligt att "
@@ -79,15 +81,15 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS file system?"
+msgid "Install the GRUB boot loader to XFS file system?"
 msgstr "Installera startladdaren GRUB på ett XFS-filsystem?"
 
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
 msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"file system. Using LILO in this situation is recommended."
+"The GRUB boot loader installation often fails or hangs when /boot is on a "
+"XFS file system. Using LILO in this situation is recommended."
 msgstr ""
 "Installationen av GRUB-startladdaren misslyckas och låser sig ofta när /boot "
 "är ett XFS-filsystem. I den här situationen rekommenderas att LILO används i "
@@ -102,12 +104,13 @@ msgstr "Enhet för installation av startladdaren (boot loader):"
 #. Type: string
 #. Description
 #: ../grub-installer.templates:35
+#, fuzzy
 msgid ""
-"You need to make the newly installed Debian system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
+"You need to make the newly installed system bootable, by installing the GRUB "
+"boot loader on a bootable device. The usual way to do this is to install "
+"GRUB on the master boot record of your first hard drive. If you prefer, you "
+"can install GRUB elsewhere on the drive, or to another drive, or even to a "
+"floppy."
 msgstr ""
 "Du måste göra det nyligen installerade Debiansystemet startbart genom att "
 "installera startladdaren GRUB på en startbar enhet. Det vanliga sättet att "
@@ -262,63 +265,3 @@ msgstr "Uppdaterar /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Installera startladdaren GRUB på en hårddisk"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:4
-msgid ""
-"If all of your operating systems are listed above, then it should be safe to "
-"install the boot loader to the master boot record of your first hard drive. "
-"When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Ubuntu system."
-msgstr ""
-"Om alla dina operativsystem finns i ovanstående lista bör det vara säkert "
-"att installera startladdaren i huvudstartsektorn på din första hårddisk.När "
-"din dator startar kommer du att kunna välja att ladda en av dessa "
-"operativsystem eller ditt nya Ubuntusystem."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:16
-msgid ""
-"It seems that this installation of Ubuntu is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
-msgstr ""
-"Det verkar som om den här installationen av Ubuntu är det enda "
-"operativsystemet på den här datorn. I så fall bör det vara ofarligt att "
-"installera GRUB-startladdaren i huvudstartsektorn (Master Boot Record, MBR) "
-"på din första hårddisk."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS filesystem?"
-msgstr "Installera startladdaren GRUB på ett XFS-filsystem?"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"filesystem. Using LILO in this situation is recommended."
-msgstr ""
-"Installationen av GRUB-startladdaren misslyckas och låser sig ofta när /boot "
-"är ett XFS-filsystem. I den här situationen rekommenderas att LILO används i "
-"stället."
-
-#. Type: string
-#. Description
-#: ../grub-installer.templates:35
-msgid ""
-"You need to make the newly installed Ubuntu system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
-msgstr ""
-"Du måste göra det nyligen installerade Ubuntusystemet startbart genom att "
-"installera startladdaren GRUB på en startbar enhet. Det vanliga sättet att "
-"göra detta är att installera GRUB i huvudstartsektorn på din första hårddisk."
-"Om du föredrar det så kan du installera GRUB någon annanstans på hårddisken, "
-"på en annan hårddisk eller till och med på en diskett."

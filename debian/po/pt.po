@@ -16,14 +16,34 @@
 # 16-05-2005 - Miguel Figueiredo <elmig@debianpt.org> - 2f9u
 # 18-05-2005 - Miguel Figueiredo <elmig@debianpt.org> - 1 typo
 # 21-05-2005 - Miguel Figueiredo <elmig@debianpt.org> - 5f2u
-# 21-05-2005 - Miguel Figueiredo <elmig@debianpt.org> - 9f
+# 13-06-2005 - Eduardo Silva <jobezone@yahoo.com> - +20 mensagens revistas
+# 14-06-2005 - Miguel Figueiredo <elmig@debianpt.org> - 19f
+# 27-06-2005 - Miguel Figueiredo <elmig@debianpt.org> - 4f3u
+# 28-06-2005 - Miguel Figueiredo <elmig@debianpt.org> - 1u
+# 03-07-2005 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+# 07-07-2005 - Miguel Figueiredo <elmig@debianpt.org> - 4f
+# 10-07-2005 - Miguel Figueiredo <elmig@debianpt.org> - 2u
+# 11-07-2005 - Miguel Figueiredo <elmig@debianpt.org> - 2f
+# 19-07-2005 - Miguel Figueiredo <elmig@debianpt.org> - 2f
+# 25-07-2005 - Miguel Figueiredo <elmig@debianpt.org> - 27f133u - tzsetup
+# 26-07-2005 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+# 30-07-2005 - Miguel Figueiredo <elmig@debianpt.org> - 6f18u
+# 14-08-2005 - Miguel Figueiredo <elmig@debianpt.org> - 7f14u
+# 18-08-2005 - Miguel Figueiredo <elmig@debianpt.org> - 35f42u
+# 31-08-2005 - Miguel Figueiredo <elmig@debianpt.org> - 8f3u
+# 2005-09-05 - Miguel Figueiredo <elmig@debianpt.org> - 7f2u
+# 2005-09-09 - Miguel Figueiredo <elmig@debianpt.org> - 6f
+# 2005-09-17 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+# 2005-09-21 - Miguel Figueiredo <elmig@debianpt.org> - typo in varname fixed.
+# 2005-09-22 - Miguel Figueiredo <elmig@debianpt.org> - 1 ugly typo fixed.
+# 2005-09-23 - Miguel Figueiredo <elmig@debianpt.org> - 1f1u
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-20 23:27-0600\n"
-"PO-Revision-Date: 2005-05-21 10:00+0000\n"
+"POT-Creation-Date: 2005-07-06 09:28-0700\n"
+"PO-Revision-Date: 2005-07-03 09:00+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -47,7 +67,7 @@ msgid ""
 "If all of your operating systems are listed above, then it should be safe to "
 "install the boot loader to the master boot record of your first hard drive. "
 "When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Debian system."
+"operating systems or your new system."
 msgstr ""
 "Se todos os seus sistemas operativos se encontram listados acima, então deve "
 "ser seguro instalar o gestor de arranque no master boot record do seu "
@@ -64,11 +84,11 @@ msgstr "Instalar o gestor de arranque GRUB no master boot record?"
 #. Description
 #: ../grub-installer.templates:16
 msgid ""
-"It seems that this installation of Debian is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
+"It seems that this new installation is the only operating system on this "
+"computer. If so, it should be safe to install the GRUB boot loader to the "
+"master boot record of your first hard drive."
 msgstr ""
-"Parece que esta instalação de Debian é o único sistema operativo neste "
+"Parece que esta nova instalação é o único sistema operativo neste "
 "computador. Se assim for, então deve ser seguro instalar o gestor de "
 "arranque GRUB no master boot record do seu primeiro disco rígido."
 
@@ -84,23 +104,24 @@ msgstr ""
 "Aviso: Se o instalador falhou a detecção de outro sistema operativo que "
 "esteja presente no seu computador, modificar o master boot record vai deixar "
 "esse sistema operativo temporariamente não iniciável, embora o GRUB possa "
-"ser configurado manualmente para posteriormente o iniciar."
+"ser posteriormente configurado manualmente para o iniciar."
 
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS file system?"
+msgid "Install the GRUB boot loader to XFS file system?"
 msgstr "Instalar o gestor de arranque GRUB no sistema de ficheiros XFS?"
 
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:29
 msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"file system. Using LILO in this situation is recommended."
+"The GRUB boot loader installation often fails or hangs when /boot is on a "
+"XFS file system. Using LILO in this situation is recommended."
 msgstr ""
 "A instalação do gestor de arranque GRUB por vezes falha ou pára quando /boot "
-"é um sistema de ficheiros XFS. É recomendado utilizar o LILO nesta situação."
+"está num sistema de ficheiros XFS. É recomendado utilizar o LILO nesta "
+"situação."
 
 #. Type: string
 #. Description
@@ -112,17 +133,16 @@ msgstr "Dispositivo para a instalação do gestor de arranque:"
 #. Description
 #: ../grub-installer.templates:35
 msgid ""
-"You need to make the newly installed Debian system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
+"You need to make the newly installed system bootable, by installing the GRUB "
+"boot loader on a bootable device. The usual way to do this is to install "
+"GRUB on the master boot record of your first hard drive. If you prefer, you "
+"can install GRUB elsewhere on the drive, or to another drive, or even to a "
+"floppy."
 msgstr ""
-"Necessita fazer com que a nova instalação do sistema Debian arranque, "
-"instalando o gestor de arranque GRUB num dispositivo de arranque. "
-"Normalmente instala-se o GRUB no master boot record do disco primário. Se "
-"preferir, pode instalar o GRUB noutro local do disco, ou em outro disco, ou "
-"mesmo numa disquete."
+"Necessita fazer com que a nova instalação do sistema arranque, instalando o "
+"gestor de arranque GRUB num dispositivo de arranque. Normalmente instala-se "
+"o GRUB no master boot record do disco primário. Se preferir, pode instalar o "
+"GRUB noutro local do disco, ou noutro disco, ou mesmo numa disquete."
 
 #. Type: string
 #. Description
@@ -169,7 +189,7 @@ msgstr ""
 "O gestor de arranque GRUB disponibiliza muitas funcionalidades interactivas "
 "poderosas, que podem ser utilizadas para comprometer o seu sistema se "
 "utilizadores não autorizados tiverem acesso à máquina quando esta inicia. "
-"Para a proteger contra isso, você pode escolher uma password que será "
+"Para se proteger contra isso, você pode escolher uma password que será "
 "necessária antes de editar entradas do menu ou antes de entrar no interface "
 "de linha de comandos do GRUB. Por omissão, qualquer utilizador poderá "
 "iniciar qualquer entrada do menu sem introduzir a password."
@@ -179,7 +199,7 @@ msgstr ""
 #: ../grub-installer.templates:54
 msgid "If you do not wish to set a GRUB password, leave this field blank."
 msgstr ""
-"Se não desejar definir uma password para o GRUB, deixe este campo vazio."
+"Se não deseja definir uma password para o GRUB, deixe este campo vazio."
 
 #. Type: boolean
 #. Description
@@ -196,9 +216,9 @@ msgid ""
 "to GRUB, so continuing the installation may be possible."
 msgstr ""
 "A instalação do pacote grub em /target/ falhou. É necessário que o GRUB seja "
-"instalado como carregador do sistema. Porém o problema de instalação pode "
-"não ser relacionado com o GRUB, portanto continuar com a instalação pode ser "
-"possível."
+"instalado como carregador do sistema.  No entanto o problema de instalação "
+"pode não estar relacionado com o GRUB, e poderá assim ser possível continuar "
+"com a instalação."
 
 #. Type: error
 #. Description
@@ -278,61 +298,3 @@ msgstr "A actualizar /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Instalar o GRUB no disco rígido"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:4
-msgid ""
-"If all of your operating systems are listed above, then it should be safe to "
-"install the boot loader to the master boot record of your first hard drive. "
-"When your computer boots, you will be able to choose to load one of these "
-"operating systems or your new Ubuntu system."
-msgstr ""
-"Se todos os seus sistemas operativos se encontram listados acima, então deve "
-"ser seguro instalar o gestor de arranque no master boot record do seu "
-"primeiro disco rígido. Quando o seu computador arrancar, vai poder escolher "
-"um desses sistemas operativos ou o seu novo sistema Ubuntu."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:16
-msgid ""
-"It seems that this installation of Ubuntu is the only operating system on "
-"this computer. If so, it should be safe to install the GRUB boot loader to "
-"the master boot record of your first hard drive."
-msgstr ""
-"Parece que esta instalação de Ubuntu é o único sistema operativo neste "
-"computador. Se for assim, então deve ser seguro instalar o gestor de "
-"arranque GRUB no master boot record do seu primeiro disco rígido."
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid "Install the GRUB bootloader to XFS filesystem?"
-msgstr "Instalar o gestor de arranque GRUB no sistema de ficheiros XFS?"
-
-#. Type: boolean
-#. Description
-#: ../grub-installer.templates:29
-msgid ""
-"The GRUB bootloader installation often fails or hangs when /boot is on a XFS "
-"filesystem. Using LILO in this situation is recommended."
-msgstr ""
-"A instalação do gestor de arranque GRUB por vezes falha ou pára quando /boot "
-"é um sistema de ficheiros XFS. É recomendado utilizar o LILO nesta situação."
-
-#. Type: string
-#. Description
-#: ../grub-installer.templates:35
-msgid ""
-"You need to make the newly installed Ubuntu system bootable, by installing "
-"the GRUB bootloader on a bootable device. The usual way to do this is to "
-"install GRUB on the master boot record of your first hard drive. If you "
-"prefer, you can install GRUB elsewhere on the drive, or to another drive, or "
-"even to a floppy."
-msgstr ""
-"Necessita fazer com que a nova instalação do sistema Ubuntu arranque, "
-"instalando o gestor de arranque GRUB num dispositivo de arranque. "
-"Normalmente instala-se o GRUB master boot record do disco primário. Se "
-"preferir, pode instalar o GRUB noutro local do disco, ou em outro disco, ou "
-"mesmo numa disquete."
