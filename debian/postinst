@@ -195,6 +195,24 @@ findfstype () {
 	mount | grep "on /target${1%/} " | cut -d' ' -f5
 }
 
+is_removable () {
+	removabledevice="$(mount | grep "on /target${1%/} " | cut -d' ' -f1)"
+	# check if the device we got is a symlink. That might happen in future
+	# if we implement probe-for-root-fs
+	if [ -L "$removabledevice" ]; then
+		removabledevice="$(readlink $removabledevice)"
+	fi
+	# copy from convert(). We can't use the entire stuff yet. We can clean it later on.
+	removabledevice="$(echo "$removabledevice" | sed -e 's%\([sh]d[a-z]\)[0-9]*$%\1%' -e 's%\(fd[0-9]*\)$%\1%' -e 's%/part[0-9]*$%/disc%' -e 's%\(c[0-7]d[0-9]*\).*$%\1%' -e 's%^/dev/%%g')"
+	if [ -e "/sys/block/$removabledevice/removable" ]; then
+		if [ "$(cat /sys/block/$removabledevice/removable)" != "0" ]; then
+			echo "/dev/$removabledevice"
+			return
+		fi
+	fi
+	echo ""
+}
+
 bootfstype=$(findfstype /boot)
 [ -n "$bootfstype" ] || bootfstype="$(findfstype /)"
 if [ "$bootfstype" = "xfs" ]; then
@@ -206,6 +224,14 @@ if [ "$bootfstype" = "xfs" ]; then
 	if [ "$RET" != true ]; then
 		exit 10
 	fi
+fi
+
+# determine if /boot or / are on a removable disk. We will do it for Linux only
+# and see how bad it goes.
+
+if [ "$(uname -s | tr '[A-Z]' '[a-z]')" = "linux" ]; then
+  bootremovable="$(is_removable /boot)"
+  [ -n "$bootremovable" ] || bootremovable="$(is_removable /)"
 fi
 
 db_progress START 0 6 grub-installer/progress/title
@@ -311,7 +337,11 @@ while : ; do
 		fi
 		db_get $q
 		if [ "$RET" = true ]; then
-			bootdev="(hd0)"
+			if [ -n "$bootremovable" ]; then
+				bootdev="$bootremovable"
+			else
+				bootdev="(hd0)"
+			fi
 			break
 		else
 			state=2

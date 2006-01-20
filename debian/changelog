@@ -1,3 +1,13 @@
+grub-installer (1.11ubuntu2) dapper; urgency=low
+
+  * Detect if / or /boot are on a removable device and if so, install grub MBR
+    on such device instead of bios (hd0).
+    This change will allow users to install for example on a USB stick and
+    be able to boot the entire system from it assuming the device doesn't
+    change name. This latter issue will be addressed later.
+
+ -- Fabio M. Di Nitto <fabbione@ubuntu.com>  Mon, 09 Jan 2006 09:52:04 +0100
+
 grub-installer (1.11ubuntu1) dapper; urgency=low
 
   * Resynchronise with Debian.
