@@ -200,7 +200,7 @@ is_removable () {
 	# check if the device we got is a symlink. That might happen in future
 	# if we implement probe-for-root-fs
 	if [ -L "$removabledevice" ]; then
-		removabledevice="$(readlink $removabledevice)"
+		removabledevice="$(readlink -f $removabledevice)"
 	fi
 	# copy from convert(). We can't use the entire stuff yet. We can clean it later on.
 	removabledevice="$(echo "$removabledevice" | sed -e 's%\([sh]d[a-z]\)[0-9]*$%\1%' -e 's%\(fd[0-9]*\)$%\1%' -e 's%/part[0-9]*$%/disc%' -e 's%\(c[0-7]d[0-9]*\).*$%\1%' -e 's%^/dev/%%g')"

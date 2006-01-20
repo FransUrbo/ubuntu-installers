@@ -1,3 +1,9 @@
+grub-installer (1.11ubuntu3) dapper; urgency=low
+
+  * Use -f in readlink.
+
+ -- Fabio M. Di Nitto <fabbione@ubuntu.com>  Fri, 13 Jan 2006 09:39:38 +0100
+
 grub-installer (1.11ubuntu2) dapper; urgency=low
 
   * Detect if / or /boot are on a removable device and if so, install grub MBR
