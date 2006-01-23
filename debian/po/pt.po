@@ -37,13 +37,32 @@
 # 2005-09-21 - Miguel Figueiredo <elmig@debianpt.org> - typo in varname fixed.
 # 2005-09-22 - Miguel Figueiredo <elmig@debianpt.org> - 1 ugly typo fixed.
 # 2005-09-23 - Miguel Figueiredo <elmig@debianpt.org> - 1f1u
+# 2005-10-01 - Miguel Figueiredo <elmig@debianpt.org> - 3f
+# 2005-10-07 - Miguel Figueiredo <elmig@debianpt.org> - 3f2u
+# 2005-10-19 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+# 2005-10-26 - Miguel Figueiredo <elmig@debianpt.org> - 4f1u
+# 2005-11-04 - Miguel Figueiredo <elmig@debianpt.org> - 2f1u
+# 2005-11-13 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+# 2005-11-14 - Miguel Figueiredo <elmig@debianpt.org> - 3f9u - new package apt-setup
+# 2005-11-14 - Miguel Figueiredo <elmig@debianpt.org> - 4f3u 
+# 2005-11-20 - Miguel Figueiredo <elmig@debianpt.org> - 4f1u
+# 2005-11-20 - Miguel Figueiredo <elmig@debianpt.org> - 13f1u
+# 2005-11-28 - Miguel Figueiredo <elmig@debianpt.org> - 2f
+# 2005-11-30 - Miguel Figueiredo <elmig@debianpt.org> - 2f1u
+# 2005-12-02 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+# 2005-12-10 - Miguel Figueiredo <elmig@debianpt.org> - 5f1u
+# 2005-12-20 - Miguel Figueiredo <elmig@debianpt.org> - 2u
+# 2005-12-28 - Miguel Figueiredo <elmig@debianpt.org> - 2u
+# 2006-01-01 - Miguel Figueiredo <elmig@debianpt.org> - 2f4u
+# 2006-01-03 - Miguel Figueiredo <elmig@debianpt.org> - 2f
+# 2006-01-12 - Miguel Figueiredo <elmig@debianpt.org> - 1f
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-06 09:28-0700\n"
-"PO-Revision-Date: 2005-07-03 09:00+0000\n"
+"POT-Creation-Date: 2006-01-11 18:34-0700\n"
+"PO-Revision-Date: 2006-01-12 20:41+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -150,24 +169,23 @@ msgstr ""
 msgid ""
 "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
 "device in /dev. Below are some examples:\n"
-" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record of\n"
-"   your first hard drive (IDE);\n"
-" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your first\n"
-"   IDE drive;\n"
-" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of "
-"your\n"
-"   third drive (SCSI here);\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
 "O dispositivo pode ser especificado utilizando a notação GRUB \"(hdn,m)\", "
 "ou como um dispositivo em /dev. Abaixo estão alguns exemplos:\n"
-" - \"(hd0)\" ou \"/dev/hda\" vai instalar o GRUB no master boot record do    "
-"primeiro disco rígido (IDE);\n"
-" - \"(hd0,1)\" ou \"/dev/hda2\" vai utilizar a segunda partição da sua    "
-"primeira drive IDE;\n"
-" - \"(hd2,4)\" ou \"/dev/sdc5\" vai utilizar a primeira partição extendida  "
-"da sua terceira drive (aqui SCSI);\n"
-" - \"(fd0)\" ou \"/dev/fd0\" vai instalar o GRUB numa disquete.\""
+" - \"(hd0)\" ou \"/dev/hda\" irá instalar o GRUB no master boot record do\n"
+"   primeiro disco rígido (IDE);\n"
+" - \"(hd0,1)\" ou \"/dev/hda2\" irá utilizar a segunda partição da sua\n"
+"   primeira drive IDE;\n"
+" - \"(hd2,4)\" ou \"/dev/sdc5\" irá utilizar a primeira partição extendida\n"
+"   da sua terceira drive (aqui SCSI);\n"
+" - \"(fd0)\" ou \"/dev/fd0\" irá instalar o GRUB numa disquete.\""
 
 #. Type: password
 #. Description
@@ -298,3 +316,10 @@ msgstr "A actualizar /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Instalar o GRUB no disco rígido"
+
+#. Type: text
+#. Description
+#. Rescue menu item
+#: ../grub-installer.templates:128
+msgid "Reinstall GRUB boot loader"
+msgstr "Reinstalar o carregador do sistema GRUB"

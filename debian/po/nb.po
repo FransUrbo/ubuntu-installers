@@ -3,7 +3,8 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of debian-installer.po to Norwegian bokmål
+# translation of nb.po to Norwegian Bokmål
+# translation of debian-installer.po to Norwegian Bokmål
 # Norwegian Bokmal messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -12,14 +13,14 @@
 # Axel Bojer <axelb@skolelinux.no>, 2004.
 # Bjorn Steensrud <bjornst@powertech.no>, 2004.
 # Hans Fredrik Nordhaug <hans@nordhaug.priv.no>, 2005.
-# Bjørn Steensrud <bjornst@powertech.no>, 2005.
+# Bjørn Steensrud <bjornst@powertech.no>, 2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-06 09:28-0700\n"
-"PO-Revision-Date: 2005-08-08 15:27+0200\n"
+"POT-Creation-Date: 2006-01-11 18:34-0700\n"
+"PO-Revision-Date: 2006-01-14 23:26+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -128,18 +129,17 @@ msgstr ""
 msgid ""
 "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
 "device in /dev. Below are some examples:\n"
-" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record of\n"
-"   your first hard drive (IDE);\n"
-" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your first\n"
-"   IDE drive;\n"
-" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of "
-"your\n"
-"   third drive (SCSI here);\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
 "Enheten kan oppgis ved å bruke Grubs notasjon «(hdn, m)», eller som en enhet "
-"i /dev. Nedenfor er noen eksempler:  - «(hd0)» eller «/dev/hda» vil "
-"installere Grub på hovedoppstartsporet på \n"
+"i /dev. Nedenfor er noen eksempler: \n"
+" - «(hd0)» eller «/dev/hda» vil installere Grub på hovedoppstartsporet på \n"
 "   den første harddisken (IDE);\n"
 " - «(hd0, 1)» eller «/dev/hda2» vil bruke den andre partisjonen på\n"
 "    den første harddisken (IDE);\n"
@@ -274,3 +274,10 @@ msgstr "Oppdaterer /etc/kernel-img.conf ..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Installer oppstartssystemet GRUB på en harddisk"
+
+#. Type: text
+#. Description
+#. Rescue menu item
+#: ../grub-installer.templates:128
+msgid "Reinstall GRUB boot loader"
+msgstr "Installer oppstartssystemet GRUB på nytt"

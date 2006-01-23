@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-06 09:28-0700\n"
-"PO-Revision-Date: 2005-04-06 17:27+0300\n"
+"POT-Creation-Date: 2006-01-11 18:34-0700\n"
+"PO-Revision-Date: 2006-01-12 11:15+0200\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,6 @@ msgstr "Koneelta löytyivät seuraavat muut käyttöjärjestelmät: ${OS_LIST}"
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:4
-#, fuzzy
 msgid ""
 "If all of your operating systems are listed above, then it should be safe to "
 "install the boot loader to the master boot record of your first hard drive. "
@@ -44,8 +43,7 @@ msgstr ""
 "Jos koneen kaikki käyttöjärjestelmät löytyvät yllä olevasta listasta, "
 "pitäisi olla turvallista asentaa alkulatausohjelma ensimmäisen kiintolevyn "
 "pääkäynnistyslohkoon. Kun tietokone käynnistyy, voit valita "
-"käynnistettäväksi yhden näistä käyttöjärjestelmistä tai uuden Debian-"
-"järjestelmän."
+"käynnistettäväksi jonkin näistä käyttöjärjestelmistä tai uuden järjestelmän."
 
 #. Type: boolean
 #. Description
@@ -56,13 +54,12 @@ msgstr "Asennetaanko GRUB-alkulatausohjelma pääkäynnistyslohkoon?"
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:16
-#, fuzzy
 msgid ""
 "It seems that this new installation is the only operating system on this "
 "computer. If so, it should be safe to install the GRUB boot loader to the "
 "master boot record of your first hard drive."
 msgstr ""
-"Nähtävästi tämä Debian-asennus on tämän tietokoneen ainoa käyttöjärjestelmä. "
+"Nähtävästi tämä uusi asennus on tämän tietokoneen ainoa käyttöjärjestelmä. "
 "Mikäli näin on, pitäisi olla turvallista asentaa GRUB-alkulatausohjelma "
 "ensimmäisen kiintolevyn pääkäynnistyslohkoon."
 
@@ -106,7 +103,6 @@ msgstr "Laite johon alkulatausohjelma asennetaan:"
 #. Type: string
 #. Description
 #: ../grub-installer.templates:35
-#, fuzzy
 msgid ""
 "You need to make the newly installed system bootable, by installing the GRUB "
 "boot loader on a bootable device. The usual way to do this is to install "
@@ -114,11 +110,11 @@ msgid ""
 "can install GRUB elsewhere on the drive, or to another drive, or even to a "
 "floppy."
 msgstr ""
-"Nyt on aika tehdä vasta asennettu Debian-järjestelmä käynnistyväksi "
-"asentamalla GRUB-alkulatausohjelma käynnistyskelpoiselle laitteelle. Tämä "
-"tehdään tavallisesti asentamalla GRUB ensimmäisen kiintolevyn "
-"pääkäynnistyslohkoon. Halutessasi voit asentaa GRUB:n muualle levylle, "
-"toiselle kiintolevylle tai jopa levykkeelle."
+"Asennettu järjestelmä on tehtävä käynnistyväksi asentamalla GRUB-"
+"alkulatausohjelma käynnistyskelpoiselle laitteelle. Tämä tehdään "
+"tavallisesti asentamalla GRUB ensimmäisen kiintolevyn pääkäynnistyslohkoon. "
+"Halutessasi voit asentaa GRUB:n muualle levylle, toiselle kiintolevylle tai "
+"jopa levykkeelle."
 
 #. Type: string
 #. Description
@@ -126,30 +122,29 @@ msgstr ""
 msgid ""
 "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
 "device in /dev. Below are some examples:\n"
-" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record of\n"
-"   your first hard drive (IDE);\n"
-" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your first\n"
-"   IDE drive;\n"
-" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of "
-"your\n"
-"   third drive (SCSI here);\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
 "Laite voidaan määrittää käyttäen GRUB:n \"(hdn,m)\"-merkintää tai laitteena "
 "hakemistossa /dev. Muutamia esimerkkejä:\n"
-" - \"(hd0)\" tai \"/dev/hda\" asentaa GRUB:n ensimmäisen IDE-kiintolevyn\n"
-"   pääkäynnistyslohkoon;\n"
+" - \"(hd0)\" tai \"/dev/hda\" asentaa GRUB:n ensimmäisen kiintolevyn\n"
+"   pääkäynnistyslohkoon (IDE);\n"
 "  - \"(hd0,1)\" tai \"/dev/hda2\" käyttää ensimmäisen IDE-levyn toista\n"
 "   levyosiota;\n"
-" - \"(hd2,4)\" tai \"/dev/sdc5\" käyttää kolmannen SCSI-levyn ensimmäistä\n"
-"   jatkettua osiota;\n"
+" - \"(hd2,4)\" tai \"/dev/sdc5\" käyttää kolmannen levyn ensimmäistä\n"
+"   jatkettua osiota (tässä SCSI);\n"
 " - \"(fd0)\" tai \"/dev/fd0\" asentaa GRUB:n levykkeelle."
 
 #. Type: password
 #. Description
 #: ../grub-installer.templates:54
 msgid "GRUB password:"
-msgstr ""
+msgstr "GRUB-salasana:"
 
 #. Type: password
 #. Description
@@ -162,13 +157,18 @@ msgid ""
 "GRUB command-line interface. By default, any user will still be able to "
 "start any menu entry without entering the password."
 msgstr ""
+"GRUB-alkulatausohjelmassa on useita vuorovaikutteisia ominaisuuksia, joita "
+"voidaan käyttää järjestelmään murtautumiseen jos asiattomilla käyttäjillä on "
+"pääsy koneen ääreen sen käynnistyessä. Tämän estämiseksi voidaan valikon "
+"muokkaaminen tai GRUB:n komentorivin käyttäminen suojata salasanalla. "
+"Oletusarvona kaikki käyttäjät voivat silti käynnistää minkä tahansa valikon "
+"järjestelmän ilman salasanaa. "
 
 #. Type: password
 #. Description
 #: ../grub-installer.templates:54
-#, fuzzy
 msgid "If you do not wish to set a GRUB password, leave this field blank."
-msgstr "Jos et tiedä mitä syöttää, jätä tyhjäksi."
+msgstr "Jos et halua asettaa GRUB-salasanaa, jätä tyhjäksi."
 
 #. Type: boolean
 #. Description
@@ -266,3 +266,10 @@ msgstr "Päivitetään /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Asenna GRUB-alkulatausohjelma kiintolevylle"
+
+#. Type: text
+#. Description
+#. Rescue menu item
+#: ../grub-installer.templates:128
+msgid "Reinstall GRUB boot loader"
+msgstr "Asennetaan GRUB-alkulatausohjelma uudelleen"

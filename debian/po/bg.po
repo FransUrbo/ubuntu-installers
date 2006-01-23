@@ -6,15 +6,15 @@
 # Bulgarian messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005.
+# Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005, 2006.
 # Nikola Antonov <nikola@linux-bg.org>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-06 09:28-0700\n"
-"PO-Revision-Date: 2005-07-07 20:01+0300\n"
+"POT-Creation-Date: 2006-01-11 18:34-0700\n"
+"PO-Revision-Date: 2006-01-14 20:53+0200\n"
 "Last-Translator:  Ognyan Kulev <ogi@fmi.uni-sofia.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -121,23 +121,23 @@ msgstr ""
 msgid ""
 "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
 "device in /dev. Below are some examples:\n"
-" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record of\n"
-"   your first hard drive (IDE);\n"
-" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your first\n"
-"   IDE drive;\n"
-" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of "
-"your\n"
-"   third drive (SCSI here);\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
 "Устройството може да бъде зададено чрез означението \"(hdn,m)\" на GRUB или "
 "като устройство в /dev.  Следват няколко примера:\n"
-" - \"(hd0)\" или \"/dev/hda\" ще инсталира GRUB в главния блок за начално "
-"зареждане (MBR) на Вашия първи твърд диск (IDE);\n"
-" - \"(hd0,1)\" или \"/dev/hda2\" ще използват втория дял на Вашето първо IDE "
-"устройство;\n"
-" - \"(hd2,4)\" или \"/dev/sdc5\" ще използват първия разширен (extended) дял "
-"на Вашето първо устройство (SCSI);\n"
+" - \"(hd0)\" или \"/dev/hda\" ще инсталира GRUB в главния блок\n"
+"   за начално зареждане (MBR) на Вашия първи твърд диск (IDE);\n"
+" - \"(hd0,1)\" или \"/dev/hda2\" ще използват втория дял на\n"
+"   Вашето първо IDE устройство;\n"
+" - \"(hd2,4)\" или \"/dev/sdc5\" ще използват първия разширен (extended) "
+"дял\n"
+"    на Вашето първо устройство (SCSI);\n"
 " - \"(fd0)\" или \"/dev/fd0\" ще инсталира GRUB върху флопидиск."
 
 #. Type: password
@@ -268,3 +268,10 @@ msgstr "Обновяване на /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Инсталиране на GRUB върху твърд диск"
+
+#. Type: text
+#. Description
+#. Rescue menu item
+#: ../grub-installer.templates:128
+msgid "Reinstall GRUB boot loader"
+msgstr "Преинсталиране на програмата за начално зареждане GRUB"

@@ -7,8 +7,8 @@
 # Copyright (C) 2003, 2004 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
+# Recai Oktaş <roktas@omu.edu.tr>, 2004, 2005.
 # Osman Yüksel <yuxel@sonsuzdongu.com>, 2004.
-# Recai Oktaş <roktas@omu.edu.tr>, 2004.
 # Özgür Murat Homurlu <ozgurmurat@gmx.net>, 2004.
 # Halil Demirezen <halild@bilmuh.ege.edu.tr>, 2004.
 # Murat Demirten <murat@debian.org>, 2004.
@@ -17,15 +17,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-06 09:28-0700\n"
-"PO-Revision-Date: 2005-05-27 18:27+0300\n"
+"POT-Creation-Date: 2006-01-11 18:34-0700\n"
+"PO-Revision-Date: 2006-01-12 10:03+0200\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms:  nplurals=1; plural=0;\n"
-"X-Generator: KBabel 1.9.1\n"
 
 #. Type: boolean
 #. Description
@@ -39,17 +38,16 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:4
-#, fuzzy
 msgid ""
 "If all of your operating systems are listed above, then it should be safe to "
 "install the boot loader to the master boot record of your first hard drive. "
 "When your computer boots, you will be able to choose to load one of these "
 "operating systems or your new system."
 msgstr ""
-"Şayet kullandığınız bütün işletim sistemleri yukarıda listelenmişse, "
-"önyükleyiciyi birincil sabit diskin ana önyükleme kaydına (MBR) kurmanızda "
-"herhangi bir sakınca yok.  Bilgisayarınız yeniden açıldığında bu işletim "
-"sistemlerinden birini veya yeni Debian sisteminizi seçebileceksiniz."
+"Lullandığınız bütün işletim sistemleri yukarıda listelenmişse önyükleyiciyi "
+"birincil sabit diskin ana önyükleme kaydına (MBR) kurmanızda herhangi bir "
+"sakınca yok.  Bilgisayarınız yeniden açıldığında bu işletim sistemlerinden "
+"birini veya yeni sisteminizi seçebileceksiniz."
 
 #. Type: boolean
 #. Description
@@ -60,14 +58,13 @@ msgstr "GRUB önyükleyici ana önyükleme kaydına (MBR) kurulsun mu?"
 #. Type: boolean
 #. Description
 #: ../grub-installer.templates:16
-#, fuzzy
 msgid ""
 "It seems that this new installation is the only operating system on this "
 "computer. If so, it should be safe to install the GRUB boot loader to the "
 "master boot record of your first hard drive."
 msgstr ""
-"Görünen o ki Debian bu bilgisayardaki tek işletim sistemi olacak.  Eğer "
-"öyleyse, önyükleyiciyi birincil sabit diskin ana önyükleme kaydına (MBR) "
+"Görünen o ki bu yeni kurulum bu bilgisayardaki tek işletim sistemi olacak.  "
+"Eğer öyleyse önyükleyiciyi birincil sabit diskin ana önyükleme kaydına (MBR) "
 "kurmanız uygun olacaktır."
 
 #. Type: boolean
@@ -111,7 +108,6 @@ msgstr "Önyükleyici kurulacak aygıt:"
 #. Type: string
 #. Description
 #: ../grub-installer.templates:35
-#, fuzzy
 msgid ""
 "You need to make the newly installed system bootable, by installing the GRUB "
 "boot loader on a bootable device. The usual way to do this is to install "
@@ -120,7 +116,7 @@ msgid ""
 "floppy."
 msgstr ""
 "Şimdi, önyükleme yapılabilecek bir aygıta GRUB önyükleyici kurularak yeni "
-"Debian sistemi açılabilir hale getirilecek.  Bunu yapmanın alışılmış yolu, "
+"kurulan sistem açılabilir hale getirilecek.  Bunu yapmanın alışılmış yolu, "
 "GRUB'ı birincil sabit diskinizin ana önyükleme kaydına (MBR) kurmaktır.  "
 "İsterseniz, GRUB'ı diskte başka bir yere, başka bir diske, hatta bir diskete "
 "de kurabilirsiniz."
@@ -131,23 +127,22 @@ msgstr ""
 msgid ""
 "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
 "device in /dev. Below are some examples:\n"
-" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record of\n"
-"   your first hard drive (IDE);\n"
-" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your first\n"
-"   IDE drive;\n"
-" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of "
-"your\n"
-"   third drive (SCSI here);\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
-"Aygıtı, \"(hdn,m)\" GRUB biçemiyle veya /dev dizininde bir aygıt olarak "
-"belirtebilirsiniz.  Aşağıda bazı örnekler verilmiştir:\n"
+"Aygıtı, \"(hdn,m)\" şeklindeki GRUB biçemiyle veya /dev dizininde bir aygıt "
+"olarak belirtebilirsiniz.  Aşağıda bazı örnekler verilmiştir:\n"
 " - \"(hd0)\" veya \"/dev/hda\", GRUB'ı ilk sabit diskin (IDE) ana önyükleme\n"
 "   kaydına (MBR) kuracaktır;\n"
 " - \"(hd0,1)\" veya \"/dev/hda2\", birinci IDE sürücünün ikinci bölümünü\n"
 "   kullanacaktır;\n"
-" - \"(hd2,4)\" veya \"/dev/sdc5\", üçüncü (SCSI) sürücünün ilk uzatılmış\n"
-"   bölümünü kullanacaktır;\n"
+" - \"(hd2,4)\" veya \"/dev/sdc5\", üçüncü sürücünün ilk uzatılmış\n"
+"   bölümünü kullanacaktır (örnek SCSI için);\n"
 " - \"(fd0)\" veya \"/dev/fd0\", GRUB'ı bir diskete kuracaktır."
 
 #. Type: password
@@ -178,7 +173,7 @@ msgstr ""
 #. Description
 #: ../grub-installer.templates:54
 msgid "If you do not wish to set a GRUB password, leave this field blank."
-msgstr "Eğer bir GRUB parolası girmek istemiyorsanız bu alanı boş bırakın."
+msgstr "Bir GRUB parolası girmek istemiyorsanız bu alanı boş bırakın."
 
 #. Type: boolean
 #. Description
@@ -276,3 +271,10 @@ msgstr "/etc/kernel-img.conf güncelleniyor..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "GRUB önyükleyiciyi bir sabit diske kur"
+
+#. Type: text
+#. Description
+#. Rescue menu item
+#: ../grub-installer.templates:128
+msgid "Reinstall GRUB boot loader"
+msgstr "GRUB önyükleyiciyi tekrar kur"

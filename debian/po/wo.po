@@ -3,16 +3,17 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
+# translation of wo.po to Wolof
 # translation of Debian Installer to Wolof
-# Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>, 2005.
+# Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>, 2005, 2006.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: wo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-06 09:28-0700\n"
-"PO-Revision-Date: 2005-08-27 12:51+0000\n"
+"POT-Creation-Date: 2006-01-11 18:34-0700\n"
+"PO-Revision-Date: 2006-01-12 16:50+0000\n"
 "Last-Translator: Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>\n"
 "Language-Team: Wolof <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -70,8 +71,8 @@ msgid ""
 "operating system temporarily unbootable, though GRUB can be manually "
 "configured later to boot it."
 msgstr ""
-"Wattandikul: Bu intaller bii manula daj baneen sistem u doxaliin bu ne ci sa "
-"kompiyutar bi, kon boo soppee dara ci MBR bi man naa tax doo man a boot "
+"Wattandikul: Bu installer bii manula daj baneen sistem u doxaliin bu ne ci "
+"sa kompiyutar bi, kon boo soppee dara ci MBR bi man naa tax doo man a boot "
 "boobu sistem u doxaliin, doonte sax man ngaa komfigure waat GRUB ak sa loxo "
 "ngir man koo boot."
 
@@ -120,19 +121,18 @@ msgstr ""
 msgid ""
 "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
 "device in /dev. Below are some examples:\n"
-" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record of\n"
-"   your first hard drive (IDE);\n"
-" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your first\n"
-"   IDE drive;\n"
-" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of "
-"your\n"
-"   third drive (SCSI here);\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
 "Man ngaa joxee turu periferik bi niko GRUB di binde \"(hdn,m)\", walla niki "
-"periferik ci /dev. Ay misaal ñi ngi ci suuf:\n"
+"periferik yi ci /dev. Ay misaal ñi ngi ci suuf:\n"
 "- \"(hd0)\" walla \"/dev/hda\" dana istale GRUB ci MBR bi\n"
-"   your first hard drive (IDE);\n"
+"   ci sa disk budëgër bu jëkk (IDE);\n"
 " - \"(hd0,1)\" walla \"/dev/hda2\"dana jëfandikoo ñareel u partisoŋbu sa "
 "disk\n"
 "   IDE bu jëkk;\n"
@@ -268,3 +268,10 @@ msgstr "Mi ngi yeesal /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Istale sëfkatu boot bi GRUB ci ab disk budëgër"
+
+#. Type: text
+#. Description
+#. Rescue menu item
+#: ../grub-installer.templates:128
+msgid "Reinstall GRUB boot loader"
+msgstr "Istalewaat porogaraam u tambule bii di GRUB"

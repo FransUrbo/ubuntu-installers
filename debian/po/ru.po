@@ -10,14 +10,14 @@
 # Russian L10N Team <debian-l10n-russian@lists.debian.org>, 2004.
 # Yuri Kozlov <yuray@id.ru>, 2004, 2005.
 # Dmitry Beloglazov <dm-guest@alioth.debian.org>, 2005.
-# Yuri Kozlov <kozlov.y@gmail.com>, 2005.
+# Yuri Kozlov <kozlov.y@gmail.com>, 2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-06 09:28-0700\n"
-"PO-Revision-Date: 2005-07-25 21:11+0400\n"
+"POT-Creation-Date: 2006-01-11 18:34-0700\n"
+"PO-Revision-Date: 2006-01-12 19:25+0300\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -54,7 +54,7 @@ msgstr ""
 #. Description
 #: ../grub-installer.templates:16
 msgid "Install the GRUB boot loader to the master boot record?"
-msgstr "Установить загрузчик GRUB в главную загрузочную запись?"
+msgstr "Установить системный загрузчик GRUB в главную загрузочную запись?"
 
 #. Type: boolean
 #. Description
@@ -65,8 +65,8 @@ msgid ""
 "master boot record of your first hard drive."
 msgstr ""
 "Похоже, что данная система будет единственной на этом компьютере. Если это "
-"действительно так, то можно спокойно устанавливать загрузчик GRUB в основную "
-"загрузочную запись первого жёсткого диска."
+"действительно так, то можно спокойно устанавливать системный загрузчик GRUB "
+"в основную загрузочную запись первого жёсткого диска."
 
 #. Type: boolean
 #. Description
@@ -95,9 +95,9 @@ msgid ""
 "The GRUB boot loader installation often fails or hangs when /boot is on a "
 "XFS file system. Using LILO in this situation is recommended."
 msgstr ""
-"Если /boot расположен в файловой системе XFS, то установка загрузчика GRUB "
-"нередко заканчивается неудачно или зависанием компьютера. В этой ситуации "
-"рекомендуется использовать загрузчик LILO."
+"Если /boot расположен в файловой системе XFS, то установка системного "
+"загрузчика GRUB нередко заканчивается неудачно или зависанием компьютера. В "
+"этой ситуации рекомендуется использовать системный загрузчик LILO."
 
 #. Type: string
 #. Description
@@ -115,11 +115,11 @@ msgid ""
 "can install GRUB elsewhere on the drive, or to another drive, or even to a "
 "floppy."
 msgstr ""
-"Пришло время научить свежеустановленную систему загружаться. Для этого на "
-"загрузочное устройство будет установлен загрузчик GRUB. Обычно он "
-"устанавливается в главную загрузочную запись (MBR, Master Boot Record) "
-"первого жёсткого диска. При желании можно установить GRUB в какое-либо "
-"другое место на диске, либо на другой диск, либо вообще на дискету."
+"Пришло время научить только что установленную систему загружаться. Для этого "
+"на загрузочное устройство будет установлен системный загрузчик GRUB. Обычно "
+"он устанавливается в главную загрузочную запись (MBR, Master Boot Record) "
+"первого жёсткого диска. При желании можно установить GRUB в любое другое "
+"место на диске, либо на другой диск, либо вообще на дискету."
 
 #. Type: string
 #. Description
@@ -127,24 +127,23 @@ msgstr ""
 msgid ""
 "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
 "device in /dev. Below are some examples:\n"
-" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record of\n"
-"   your first hard drive (IDE);\n"
-" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your first\n"
-"   IDE drive;\n"
-" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of "
-"your\n"
-"   third drive (SCSI here);\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
-"Устройство можно задать как в нотации GRUB -- \"(hdn,m)\", так и именем "
+"Устройство можно задать как в нотации GRUB -- \"(hdn,m)\", так и по имени "
 "устройства в каталоге /dev. Вот несколько примеров: \n"
-" -- \"(hd0)\" или \"/dev/hda\" GRUB будет установлен в главную загрузочную\n"
-"    запись вашего первого жёсткого диска (IDE);\n"
-" -- \"(hd0,1)\" или \"/dev/hda2\" GRUB будет установлен во второй раздел\n"
-"    первого жёсткого диска IDE;\n"
-" -- \"(hd2,4)\" или \"/dev/sdc5\" GRUB будет установлен в первый\n"
-"    расширенный раздел третьего диска (SCSI);\n"
-" -- \"(fd0)\" или \"/dev/fd0\" GRUB будет установлен на дискету."
+" - \"(hd0)\" или \"/dev/hda\" GRUB будет установлен в главную загрузочную\n"
+"   запись вашего первого жёсткого диска (IDE);\n"
+" - \"(hd0,1)\" или \"/dev/hda2\" GRUB будет установлен во второй раздел\n"
+"   первого жёсткого диска IDE;\n"
+" - \"(hd2,4)\" или \"/dev/sdc5\" GRUB будет установлен в первый\n"
+"   расширенный раздел третьего диска (SCSI);\n"
+" - \"(fd0)\" или \"/dev/fd0\" GRUB будет установлен на дискету."
 
 #. Type: password
 #. Description
@@ -273,4 +272,11 @@ msgstr "Обновление /etc/kernel-img.conf..."
 #. Main menu item
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
-msgstr "Установка загрузчика GRUB на жёсткий диск"
+msgstr "Установка системного загрузчика GRUB на жёсткий диск"
+
+#. Type: text
+#. Description
+#. Rescue menu item
+#: ../grub-installer.templates:128
+msgid "Reinstall GRUB boot loader"
+msgstr "Переустановка системного загрузчика GRUB"

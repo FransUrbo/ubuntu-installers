@@ -9,22 +9,20 @@
 # This file is distributed under the same licence as debian-installer.
 # Jaonary Rabarisoa  <jaonary@ifrance.com>, 2004.
 # Jaonary Rabarisoa <mpandikateny@linuxmg.org>, 2005.
+# Jaonary Rabarisoa <jaonary@free.fr>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-06 09:28-0700\n"
-"PO-Revision-Date: 2005-03-30 17:30+0200\n"
-"Last-Translator: Jaonary Rabarisoa <mpandikateny@linuxmg.org>\n"
-"Language-Team: Malagasy <mpandikateny@linuxmg.org>\n"
+"POT-Creation-Date: 2006-01-11 18:34-0700\n"
+"PO-Revision-Date: 2005-11-24 22:28+0100\n"
+"Last-Translator: Jaonary Rabarisoa <jaonary@free.fr>\n"
+"Language-Team: Malagasy <jaonary@free.fr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10\n"
-"Plural-Forms: nplurals=2; plural=n>1;\n"
-"X-Poedit-Language: Malagasy\n"
-"X-Poedit-Country: Madagasca\n"
+"Plural-Forms: nplurals=2; plural=n>1;X-Generator: KBabel 1.10.2\n"
 
 #. Type: boolean
 #. Description
@@ -121,16 +119,16 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../grub-installer.templates:35
+#, fuzzy
 msgid ""
 "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
 "device in /dev. Below are some examples:\n"
-" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record of\n"
-"   your first hard drive (IDE);\n"
-" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your first\n"
-"   IDE drive;\n"
-" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of "
-"your\n"
-"   third drive (SCSI here);\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
 "Ny periferika dia afaka lazaina amin'ny alalan'ny fonoratr'i GRUB \"(dhn,n)"
@@ -151,7 +149,7 @@ msgstr ""
 #. Description
 #: ../grub-installer.templates:54
 msgid "GRUB password:"
-msgstr ""
+msgstr "Teny mpamoa GRUB:"
 
 #. Type: password
 #. Description
@@ -270,3 +268,11 @@ msgstr "Updating /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Apetrao ao amina kapila mafy ny boot loader GRUB"
+
+#. Type: text
+#. Description
+#. Rescue menu item
+#: ../grub-installer.templates:128
+#, fuzzy
+msgid "Reinstall GRUB boot loader"
+msgstr "Mametraka ny boot loader GRUB"

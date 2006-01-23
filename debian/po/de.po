@@ -7,6 +7,7 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
+# Jens Seidel <jensseidel@users.sf.net>, 2005
 # Dennis Stampfer <seppy@debian.org>, 2003, 2004, 2005.
 # Alwin Meschede <ameschede@gmx.de>, 2003, 2004.
 # Bastian Blank <waldi@debian.org>, 2003.
@@ -19,14 +20,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-06 09:28-0700\n"
-"PO-Revision-Date: 2005-08-04 22:12+0200\n"
-"Last-Translator: Holger Wansing <h.wansing@onlinehome.de>\n"
+"POT-Creation-Date: 2006-01-11 18:34-0700\n"
+"PO-Revision-Date: 2006-01-12 22:48+0100\n"
+"Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: vim\n"
 
 #. Type: boolean
 #. Description
@@ -128,22 +129,21 @@ msgstr ""
 msgid ""
 "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
 "device in /dev. Below are some examples:\n"
-" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record of\n"
-"   your first hard drive (IDE);\n"
-" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your first\n"
-"   IDE drive;\n"
-" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of "
-"your\n"
-"   third drive (SCSI here);\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
-"Das Gerät kann mit den »(hdn)« Bezeichnungen von GRUB oder als Gerätedatei "
-"in /dev angegeben werden. Im Folgenden sind einige Beispiele:  - »(hd0)« "
-"oder »/dev/hda« installiert GRUB in den Master-Boot-Record Ihrer ersten "
-"Festplatte (IDE);\n"
-" - »(hd0,1)« oder »/dev/hda2« installiert GRUB auf die zweite \n"
-"   Partition Ihrer ersten IDE Festplatte;\n"
-" - »(hd2,4)« oder »/dev/scd5« installiert GRUB auf die erste erweiterte \n"
+"Das Gerät kann mit den »(hdn,m)« Bezeichnungen von GRUB oder als Gerätedatei "
+"in /dev angegeben werden. Im Folgenden sind einige Beispiele:\n"
+" - »(hd0)« oder »/dev/hda« installiert GRUB in den Master-Boot-Record\n"
+"   Ihrer ersten Festplatte (IDE);\n"
+" - »(hd0,1)« oder »/dev/hda2« installiert GRUB auf die zweite Partition\n"
+"   Ihrer ersten IDE Festplatte;\n"
+" - »(hd2,4)« oder »/dev/sdc5« installiert GRUB auf die erste erweiterte\n"
 "   Partition Ihrer dritten Festplatte (in diesem Fall SCSI);\n"
 " - »(fd0)« oder »/dev/fd0« installiert GRUB auf einer Diskette."
 
@@ -237,37 +237,37 @@ msgstr "Installiere GRUB-Bootloader"
 #. Description
 #: ../grub-installer.templates:98
 msgid "Looking for other operating systems..."
-msgstr "Suche nach weiteren Betriebssystemen..."
+msgstr "Suche nach weiteren Betriebssystemen ..."
 
 #. Type: text
 #. Description
 #: ../grub-installer.templates:102
 msgid "Installing the 'grub' package..."
-msgstr "Installiere das Paket »grub«..."
+msgstr "Installiere das Paket »grub« ..."
 
 #. Type: text
 #. Description
 #: ../grub-installer.templates:106
 msgid "Determining GRUB boot device..."
-msgstr "Stelle das GRUB-Bootgerät fest..."
+msgstr "Stelle das GRUB-Bootgerät fest ..."
 
 #. Type: text
 #. Description
 #: ../grub-installer.templates:110
 msgid "Running \"grub-install ${BOOTDEV}\"..."
-msgstr "Führe »grub-install ${BOOTDEV}« aus..."
+msgstr "Führe »grub-install ${BOOTDEV}« aus ..."
 
 #. Type: text
 #. Description
 #: ../grub-installer.templates:114
 msgid "Running \"update-grub\"..."
-msgstr "Führe »update-grub« aus..."
+msgstr "Führe »update-grub« aus ..."
 
 #. Type: text
 #. Description
 #: ../grub-installer.templates:118
 msgid "Updating /etc/kernel-img.conf..."
-msgstr "Aktualisiere /etc/kernel-img.conf..."
+msgstr "Aktualisiere /etc/kernel-img.conf ..."
 
 #. Type: text
 #. Description
@@ -275,3 +275,10 @@ msgstr "Aktualisiere /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "GRUB-Bootloader auf einer Festpl. installieren"
+
+#. Type: text
+#. Description
+#. Rescue menu item
+#: ../grub-installer.templates:128
+msgid "Reinstall GRUB boot loader"
+msgstr "Installiere den GRUB-Bootloader neu"

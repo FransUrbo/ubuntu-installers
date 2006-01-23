@@ -6,21 +6,21 @@
 # Tagalog messages for debian-installer.
 # Copyright (C) 2004, 2005 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Itong talaksan ay ipinamamahagi alinsunod sa lisensiya ng debian-installer.
+# Ipinamamahagi ang talaksang ito alinsunod sa lisensiya ng debian-installer.
 # Eric Pareja <xenos@upm.edu.ph>, 2004, 2005
 # Rick Bahague, Jr. <rbahaguejr@gmail.com>, 2004
 # Reviewed by Roel Cantada on Feb-Mar 2005.
 # Sinuri ni Roel Cantada noong Peb-Mar 2005.
 # This file is maintained by Eric Pareja <xenos@upm.edu.ph>
 # Inaalagaan ang talaksang ito ni Eric Pareja <xenos@upm.edu.ph>
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-06 09:28-0700\n"
-"PO-Revision-Date: 2005-07-07 18:19+0800\n"
+"POT-Creation-Date: 2006-01-11 18:34-0700\n"
+"PO-Revision-Date: 2006-01-18 02:26+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
 "MIME-Version: 1.0\n"
@@ -129,26 +129,23 @@ msgstr ""
 msgid ""
 "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
 "device in /dev. Below are some examples:\n"
-" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record of\n"
-"   your first hard drive (IDE);\n"
-" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your first\n"
-"   IDE drive;\n"
-" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of "
-"your\n"
-"   third drive (SCSI here);\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
 "Ang device ay maaaring ibigay gamit ang notasyon ng GRUB na \"(hdn,m)\", o "
 "bilang device sa /dev. Halimbawa nito ang mga sumusunod:\n"
-" - \"(hd0)\" o \"/dev/hda\" ay mag-iinstall ng GRUB sa master boot record "
-"ng\n"
+" - \"(hd0)\" o \"/dev/hda\" magluluklok ng GRUB sa master boot record ng\n"
 "   una niyong hard drive (IDE);\n"
-" - \"(hd0,1)\" o \"/dev/hda2\" ay gagamitin ang pangalawang partisyon ng\n"
+" - \"(hd0,1)\" o \"/dev/hda2\" gagamitin ang pangalawang partisyon ng\n"
 "   una ninyong IDE drive;\n"
-" - \"(hd2,4)\" o \"/dev/sdc5\" ay gagamitin ang unang extended na partisyon "
-"ng\n"
+" - \"(hd2,4)\" o \"/dev/sdc5\" gagamitin ang unang extended na partisyon ng\n"
 "   pangatlo ninyong drive (SCSI dito);\n"
-" - \"(fd0)\" o \"/dev/fd0\" ay mag-iinstall ng GRUB sa floppy."
+" - \"(fd0)\" o \"/dev/fd0\" magluluklok ng GRUB sa floppy."
 
 #. Type: password
 #. Description
@@ -282,3 +279,10 @@ msgstr "Sinasariwa ang /etc/kernel-img.conf..."
 #: ../grub-installer.templates:123
 msgid "Install the GRUB boot loader on a hard disk"
 msgstr "Mag-install ng GRUB boot loader sa hard disk"
+
+#. Type: text
+#. Description
+#. Rescue menu item
+#: ../grub-installer.templates:128
+msgid "Reinstall GRUB boot loader"
+msgstr "Iluklok muli ang GRUB boot loader"
