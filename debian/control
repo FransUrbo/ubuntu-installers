@@ -13,3 +13,11 @@ Depends: cdebconf-udeb, kernel-installer, created-fstab, di-utils (>= 1.15), di-
 XB-Installer-Menu-Item: 73
 XC-Package-Type: udeb
 Description: Install GRUB on a hard disk
+
+Package: espresso-grub
+Architecture: i386 hurd-i386 amd64
+Depends: debconf, espresso-utils, os-prober
+Enhances: espresso
+Description: Espresso module to install GRUB on a hard disk
+ This is a module for the Espresso live installer to install GRUB on a hard
+ disk, mirroring the equivalent step in the Debian installer.

@@ -1,23 +1,28 @@
 #!/usr/bin/make -f
 
+export DH_OPTIONS
+
 build:
 	dh_testdir
 
 clean:
 	dh_testdir
 	dh_testroot
-	dh_clean
+	dh_clean debian/espresso-grub.templates
 
 install: build
 	dh_testdir
 	dh_testroot
 	dh_clean -k
 
+binary-arch: DH_OPTIONS=-a
 binary-arch: build install
 	dh_testdir
 	dh_testroot
+	cp -a debian/grub-installer.templates debian/espresso-grub.templates
 	dh_installdebconf
 	dh_install debian/isinstallable DEBIAN
+	dh_python -V2.4
 	dh_installdeb
 	dh_fixperms
 	dh_gencontrol
