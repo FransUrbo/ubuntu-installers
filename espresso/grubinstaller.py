@@ -22,7 +22,7 @@ from espresso.filteredcommand import FilteredCommand
 class GrubInstaller(FilteredCommand):
     def run_command(self):
         return super(GrubInstaller, self).run_command(
-            ['/usr/share/grub-installer/grub-installer', '/target'], {})
+            ['/usr/share/grub-installer/grub-installer', '/target'], ['ERROR'])
 
     def error(self, priority, question):
         self.frontend.error_dialog(self.description(question))

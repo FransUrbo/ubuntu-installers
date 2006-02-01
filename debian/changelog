@@ -1,3 +1,9 @@
+grub-installer (1.12ubuntu2) UNRELEASED; urgency=low
+
+  * Fix espresso-grub error handling.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed,  1 Feb 2006 10:47:37 +0000
+
 grub-installer (1.12ubuntu1) dapper; urgency=low
 
   * Resynchronise with Debian.
