@@ -1,9 +1,9 @@
-grub-installer (1.12ubuntu3) UNRELEASED; urgency=low
+grub-installer (1.12ubuntu3) dapper; urgency=low
 
   * espresso/grubinstaller.py: Define prepare() instead of overriding
     run_command(). Breaks espresso (<< 0.99.7).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu,  2 Feb 2006 20:41:43 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu,  2 Feb 2006 22:39:30 +0000
 
 grub-installer (1.12ubuntu2) dapper; urgency=low
 
