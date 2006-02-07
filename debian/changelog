@@ -1,4 +1,4 @@
-grub-installer (1.12ubuntu5) UNRELEASED; urgency=low
+grub-installer (1.12ubuntu5) dapper; urgency=low
 
   * Make espresso-grub depend on espresso (yes, this means a circular
     dependency, sorry; closes: Malone #30045).
@@ -6,7 +6,7 @@ grub-installer (1.12ubuntu5) UNRELEASED; urgency=low
     installed operating systems are recognised. By definition, you can
     always repair the situation with the live CD you're installing from.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue,  7 Feb 2006 17:19:53 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue,  7 Feb 2006 17:44:39 +0000
 
 grub-installer (1.12ubuntu4) dapper; urgency=low
 
