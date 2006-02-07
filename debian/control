@@ -17,7 +17,6 @@ Description: Install GRUB on a hard disk
 Package: espresso-grub
 Architecture: i386 hurd-i386 amd64
 Depends: debconf, espresso-utils, os-prober
-Conflicts: espresso (<< 0.99.7)
 Enhances: espresso
 Description: Espresso module to install GRUB on a hard disk
  This is a module for the Espresso live installer to install GRUB on a hard

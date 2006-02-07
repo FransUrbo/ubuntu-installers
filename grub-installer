@@ -173,13 +173,16 @@ hurd_convert () {
 
 # Run update-grub in $ROOT.
 update_grub () {
+	$chroot $ROOT mount /proc
 	if ! log-output -t grub-installer $chroot $ROOT /sbin/update-grub -y ; then
 		error "Running 'update-grub -y' failed." 1>&2
 		db_input critical grub-installer/update-grub-failed || [ $? -eq 30 ]
 		db_go || true
 		db_progress STOP
+                $chroot $ROOT umount /proc
 		exit 1
 	fi
+	$chroot $ROOT umount /proc
 }
 
 findfstype () {
@@ -201,6 +204,9 @@ is_removable () {
 			return
 		fi
 	fi
+        if [ "$(udevinfo -q env -n $removabledevice | grep ^ID_BUS=)" = "ID_BUS=usb" ] || [ "$(udevinfo -q env -n $removabledevice | grep ^ID_BUS=)" = "ID_BUS=ieee1394" ]; then
+			echo "/dev/$removabledevice"
+        fi
 	echo ""
 }
 
@@ -330,6 +336,10 @@ while : ; do
 		if [ "$RET" = true ]; then
 			if [ -n "$bootremovable" ]; then
 				bootdev="$bootremovable"
+                                if [ ! -e "$device_map" ]; then
+                                    mkdir -p $(dirname "${device_map}")
+                                    echo "(hd0) $bootremovable" > $device_map
+                                fi
 			else
 				bootdev="(hd0)"
 			fi
@@ -376,13 +386,21 @@ if ! is_floppy "$bootdev"; then
 	else
 		info "grub-install does not support --no-floppy"
 	fi
+        if [ -e $ROOT/boot/grub/device.map ] && grep '^(fd' $ROOT/boot/grub/device.map; then
+		recheck="--recheck"
+	fi
+else
+	if [ -e $ROOT/boot/grub/device.map ] && ! grep '^(fd'
+		$ROOT/boot/grub/device.map; then
+		recheck="--recheck"
+	fi
 fi
 
-info "Running $chroot $ROOT /sbin/grub-install --recheck $floppyparam \"$bootdev\""
-if log-output -t grub-installer $chroot $ROOT /sbin/grub-install --recheck $floppyparam "$bootdev"; then
+info "Running $chroot $ROOT /sbin/grub-install $recheck $floppyparam \"$bootdev\""
+if log-output -t grub-installer $chroot $ROOT /sbin/grub-install $recheck $floppyparam "$bootdev"; then
 	info "grub-install ran successfully"
 else
-	error "Running 'grub-install --recheck $floppyparam \"$bootdev\"' failed."
+	error "Running 'grub-install $recheck $floppyparam \"$bootdev\"' failed."
 	db_subst grub-installer/grub-install-failed BOOTDEV "$bootdev"
 	db_input critical grub-installer/grub-install-failed || [ $? -eq 30 ]
 	db_go || true

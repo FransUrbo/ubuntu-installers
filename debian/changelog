@@ -1,3 +1,16 @@
+grub-installer (1.12ubuntu4) dapper; urgency=low
+
+  * Fix support for putting / on a removable device
+    - Make sure to mount /proc before possibly running findfs, since it will
+      fail if not
+    - Use udevinfo as well as the removable flag file to detect if a device
+      is removable or not.  Anything on USB or IEEE1394 is defined as
+      removable.
+    - Override device.map if installing onto a removable device, since we
+      know/hope that it will be BIOS drive 0x80
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Fri,  3 Feb 2006 18:27:18 +0100
+
 grub-installer (1.12ubuntu3) dapper; urgency=low
 
   * espresso/grubinstaller.py: Define prepare() instead of overriding
