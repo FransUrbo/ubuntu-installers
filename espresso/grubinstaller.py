@@ -22,8 +22,16 @@ from espresso.filteredcommand import FilteredCommand
 class GrubInstaller(FilteredCommand):
     def prepare(self):
         return (['/usr/share/grub-installer/grub-installer', '/target'],
-                ['ERROR'])
+                ['^grub-installer/bootdev$', 'ERROR'])
 
     def error(self, priority, question):
         self.frontend.error_dialog(self.description(question))
         return super(GrubInstaller, self).error(priority, question)
+
+    def run(self, priority, question):
+        if question == 'grub-installer/bootdev':
+            # Force to (hd0) in the case of an unsupported OS.
+            if self.db.get(question) == '':
+                self.preseed(question, '(hd0)')
+
+        return super(GrubInstaller, self).run(priority, question)
