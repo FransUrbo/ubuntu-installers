@@ -1,3 +1,10 @@
+grub-installer (1.12ubuntu5) UNRELEASED; urgency=low
+
+  * Make espresso-grub depend on espresso (yes, this means a circular
+    dependency, sorry; closes: Malone #30045).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue,  7 Feb 2006 17:19:53 +0000
+
 grub-installer (1.12ubuntu4) dapper; urgency=low
 
   * Fix support for putting / on a removable device
