@@ -173,16 +173,24 @@ hurd_convert () {
 
 # Run update-grub in $ROOT.
 update_grub () {
-	$chroot $ROOT mount /proc
+	umountproc=false
+	if [ ! -e $ROOT/proc/cmdline ]; then
+		$chroot $ROOT mount /proc
+		umountproc=:
+	fi
 	if ! log-output -t grub-installer $chroot $ROOT /sbin/update-grub -y ; then
 		error "Running 'update-grub -y' failed." 1>&2
 		db_input critical grub-installer/update-grub-failed || [ $? -eq 30 ]
 		db_go || true
 		db_progress STOP
-                $chroot $ROOT umount /proc
+		if $umountproc; then
+			$chroot $ROOT umount /proc
+		fi
 		exit 1
 	fi
-	$chroot $ROOT umount /proc
+	if $umountproc; then
+		$chroot $ROOT umount /proc
+	fi
 }
 
 findfstype () {

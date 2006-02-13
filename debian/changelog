@@ -1,3 +1,9 @@
+grub-installer (1.12ubuntu6) UNRELEASED; urgency=low
+
+  * Only mount /proc if it isn't already mounted.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 13 Feb 2006 12:12:57 +0000
+
 grub-installer (1.12ubuntu5) dapper; urgency=low
 
   * Make espresso-grub depend on espresso (yes, this means a circular
