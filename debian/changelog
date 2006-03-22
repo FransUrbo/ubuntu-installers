@@ -1,3 +1,35 @@
+grub-installer (1.14ubuntu1) UNRELEASED; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 22 Mar 2006 10:45:53 +0000
+
+grub-installer (1.14) unstable; urgency=low
+
+  * Make sure no .svn directories get included in the package.
+
+  [ Updated translations ]
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+
+ -- Frans Pop <fjp@debian.org>  Sat, 28 Jan 2006 17:13:42 +0100
+
+grub-installer (1.13) unstable; urgency=low
+
+  [ Updated translations ]
+  * Greek, Modern (1453-) (el.po) by Konstantinos Margaritis
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Polish (pl.po) by Bartosz Fenski
+  * Romanian (ro.po) by Eddy Petrişor
+  * Slovenian (sl.po) by Jure Cuhalev
+  * Albanian (sq.po) by Elian Myftiu
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Frans Pop <fjp@debian.org>  Wed, 25 Jan 2006 12:38:06 +0100
+
 grub-installer (1.12ubuntu6) dapper; urgency=low
 
   * Only mount /proc if it isn't already mounted.
