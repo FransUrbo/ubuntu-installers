@@ -1,6 +1,8 @@
 grub-installer (1.14ubuntu1) UNRELEASED; urgency=low
 
   * Resynchronise with Debian.
+  * Backport from trunk:
+    - Disable grub-installer on Intel-based Macs.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 22 Mar 2006 10:45:53 +0000
 

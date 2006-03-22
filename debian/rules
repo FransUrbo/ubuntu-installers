@@ -2,6 +2,19 @@
 
 export DH_OPTIONS
 
+DEB_HOST_ARCH_OS ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS 2>/dev/null)
+# Take account of old dpkg-architecture output.
+ifeq ($(DEB_HOST_ARCH_OS),)
+  DEB_HOST_ARCH_OS := $(shell dpkg-architecture -qDEB_HOST_GNU_SYSTEM)
+  ifeq ($(DEB_HOST_ARCH_OS),gnu)
+    DEB_HOST_ARCH_OS := hurd
+  endif
+endif
+
+ifeq ($(DEB_HOST_ARCH_OS),linux)
+DMIDECODE := dmidecode-udeb (>= 2.7)
+endif
+
 build:
 	dh_testdir
 
@@ -25,7 +38,11 @@ binary-arch: build install
 	dh_python -V2.4
 	dh_installdeb
 	dh_fixperms
+ifdef DMIDECODE
+	dh_gencontrol -- -V'dmidecode=$(DMIDECODE)'
+else
 	dh_gencontrol
+endif
 	dh_builddeb
 
 binary-indep: build install
