@@ -1,3 +1,9 @@
+grub-installer (1.14ubuntu2) UNRELEASED; urgency=low
+
+  * Modify defoptions now in the no-framebuffer case, not nonaltoptions.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 27 Mar 2006 09:51:57 +0100
+
 grub-installer (1.14ubuntu1) dapper; urgency=low
 
   * Resynchronise with Debian.

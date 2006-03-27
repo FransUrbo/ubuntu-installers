@@ -464,7 +464,7 @@ fi
 
 if ! db_get debian-installer/framebuffer || [ "$RET" = false ]; then
 	# No framebuffer, so disable the splash screen.
-	sed '/^# nonaltoptions=/ { s/  *splash//g; s/=splash\(  *\|$\)/=/; }' \
+	sed '/^# defoptions=/ { s/  *splash//g; s/=splash\(  *\|$\)/=/; }' \
 		< $ROOT/boot/grub/menu.lst > $ROOT/boot/grub/menu.lst.new
 	mv $ROOT/boot/grub/menu.lst.new $ROOT/boot/grub/menu.lst
 	need_update_grub=1
