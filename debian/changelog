@@ -1,10 +1,10 @@
-grub-installer (1.14ubuntu2) UNRELEASED; urgency=low
+grub-installer (1.14ubuntu2) dapper; urgency=low
 
   * Modify defoptions now in the no-framebuffer case, not nonaltoptions.
   * Add user parameters to defoptions rather than kopt, so that they aren't
     used in the recovery mode option (closes: Malone #31905).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 27 Mar 2006 09:51:57 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 27 Mar 2006 10:02:29 +0100
 
 grub-installer (1.14ubuntu1) dapper; urgency=low
 
