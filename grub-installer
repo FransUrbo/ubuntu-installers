@@ -456,7 +456,7 @@ need_update_grub=
 user_params=$(echo $(user-params)) || true
 if [ -n "$user_params" ]; then
 	# Modify menu.lst to include user parameters.
-	sed "s!^\(# kopt=.*\)!\1 $user_params!" \
+	sed "s!^\(# defoptions=.*\)!\1 $user_params!" \
 		< $ROOT/boot/grub/menu.lst > $ROOT/boot/grub/menu.lst.new
 	mv $ROOT/boot/grub/menu.lst.new $ROOT/boot/grub/menu.lst
 	need_update_grub=1
