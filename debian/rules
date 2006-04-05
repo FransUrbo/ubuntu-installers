@@ -21,7 +21,7 @@ build:
 clean:
 	dh_testdir
 	dh_testroot
-	dh_clean debian/espresso-grub.templates
+	dh_clean
 
 install: build
 	dh_testdir
@@ -32,10 +32,8 @@ binary-arch: DH_OPTIONS=-a
 binary-arch: build install
 	dh_testdir
 	dh_testroot
-	cp -a debian/grub-installer.templates debian/espresso-grub.templates
 	dh_installdebconf
 	dh_install debian/isinstallable DEBIAN
-	dh_python -V2.4
 	dh_installdeb
 	dh_fixperms
 ifdef DMIDECODE
