@@ -1,8 +1,8 @@
-grub-installer (1.14ubuntu3) UNRELEASED; urgency=low
+grub-installer (1.14ubuntu3) dapper; urgency=low
 
   * Remove espresso-grub package, moved into espresso proper.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed,  5 Apr 2006 15:24:33 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed,  5 Apr 2006 17:46:49 +0100
 
 grub-installer (1.14ubuntu2) dapper; urgency=low
 
