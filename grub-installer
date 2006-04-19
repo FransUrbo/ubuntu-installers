@@ -317,7 +317,7 @@ if [ -s /tmp/os-probed ]; then
 	done
 	IFS="$OLDIFS"
 	
-	if [ -n "$unsupported_os_list" ]; then
+	if [ -z "$OVERRIDE_UNSUPPORTED_OS" ] && [ -n "$unsupported_os_list" ]; then
 		# Unsupported OS, jump straight to manual boot device question.
 		state=2
 	else
