@@ -199,6 +199,9 @@ findfstype () {
 
 is_removable () {
 	removabledevice="$(mount | grep "on $ROOT${1%/} " | cut -d' ' -f1)"
+	if [ -z "$removabledevice" ]; then
+		return
+	fi
 	# check if the device we got is a symlink. That might happen in future
 	# if we implement probe-for-root-fs
 	if [ -L "$removabledevice" ]; then

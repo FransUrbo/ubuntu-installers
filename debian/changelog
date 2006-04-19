@@ -1,3 +1,10 @@
+grub-installer (1.14ubuntu4) UNRELEASED; urgency=low
+
+  * Return early from is_removable if the argument isn't a mount point
+    (closes: Malone #40100).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 19 Apr 2006 09:22:41 +0100
+
 grub-installer (1.14ubuntu3) dapper; urgency=low
 
   * Remove espresso-grub package, moved into espresso proper.
