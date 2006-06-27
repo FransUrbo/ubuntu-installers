@@ -1,3 +1,10 @@
+base-installer (1.15ubuntu10) hoary; urgency=low
+
+  * Don't install mkvmlinuz on Pegasos, since that has yaboot support with
+    Open Firmware version 2005.03.10-beta or later.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 16 Mar 2005 11:16:22 +0000
+
 base-installer (1.15ubuntu9) hoary; urgency=low
 
   * Provide target-base-system (i.e. base system installed in /target, also

@@ -544,7 +544,7 @@ EOF
 	# Installing mkvmlinuz on the powerpc subarches that need it.
 	if [ "$ARCH" = "powerpc" ] && [ "$KERNEL_MAJOR" = "2.6" ]; then
 		case "$SUBARCH" in
-			prep | chrp | chrp_pegasos)
+			prep | chrp)
 				info "Installing mkvmlinuz."
 				db_subst base-installer/section/install_kernel_package SUBST0 "mkvmlinuz"
 				db_progress INFO base-installer/section/install_kernel_package
