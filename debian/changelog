@@ -1,3 +1,10 @@
+base-installer (1.15ubuntu15) hoary; urgency=low
+
+  * Update Greek translation (thanks, Giorgos Logiotatidis).
+  * Update Norwegian Bokmål translation (thanks, Terance Edward Sola).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue,  5 Apr 2005 17:22:53 +0100
+
 base-installer (1.15ubuntu14) hoary; urgency=low
 
   * Add a post-base-installation hook: scripts in
