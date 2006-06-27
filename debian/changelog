@@ -1,3 +1,10 @@
+base-installer (1.13ubuntu3) hoary; urgency=low
+
+  * Recognise linux-itanium*, linux-mckinley*, and linux-sparc* as
+    installable kernels.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 21 Dec 2004 10:40:46 +0000
+
 base-installer (1.13ubuntu2) hoary; urgency=low
 
   * Use linux-* kernels on ia64 and sparc.
