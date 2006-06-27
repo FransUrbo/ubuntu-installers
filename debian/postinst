@@ -95,7 +95,7 @@ get_mirror_info () {
 		db_get mirror/$PROTOCOL/directory
 		DIRECTORY="$RET"
 
-		COMPONENTS="main"
+		COMPONENTS="main restricted"
 	fi
 
 	if db_get mirror/suite && [ "$RET" ] ; then
@@ -655,6 +655,12 @@ install_pcmcia_modules () {
 	apt-install "$pcmcia_package" 2>> $LOGFILE || true
 }
 
+install_restricted_modules () {
+	restricted_package=$(echo "$KERNEL" | sed 's/^linux-image/linux-restricted-modules/')
+	info "Installing restricted modules package '$restricted_package'."
+	apt-install "$restricted_package" 2>> $LOGFILE || true
+}
+
 apt_update () {
 	chroot /target apt-get update >> $LOGFILE 2>&1 || apt_update_failed=$?
 	
@@ -705,6 +711,7 @@ case "$ARCH" in
 		fi
 	;;
 esac
+waypoint 1	install_restricted_modules
 waypoint 5	install_extra
 waypoint 0	cleanup
 

@@ -1,3 +1,10 @@
+base-installer (0.087ubuntu9) warty; urgency=low
+
+  * Try to install an appropriate linux-restricted-modules package (closes:
+    Warty #1210).
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 14 Sep 2004 15:19:01 +0100
+
 base-installer (0.087ubuntu8) warty; urgency=low
 
   * Add base-installer/debootstrap/info/unpackbase and
