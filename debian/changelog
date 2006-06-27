@@ -1,3 +1,10 @@
+base-installer (0.087ubuntu7) warty; urgency=low
+
+  * Fix kernel_update_list not to fail if there are no kernel-image
+    packages.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue,  7 Sep 2004 13:06:12 +0100
+
 base-installer (0.087ubuntu6) warty; urgency=low
 
   * Move powerpc to linux-image-*. Simplify, given that the only

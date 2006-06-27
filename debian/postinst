@@ -274,7 +274,8 @@ create_devices () {
 
 kernel_update_list () {
 	# Using 'uniq' to avoid listing the same kernel more then once.
-	(chroot /target apt-cache search kernel-image | grep ^kernel-image;
+	(set +e;
+	 chroot /target apt-cache search kernel-image | grep ^kernel-image;
 	 chroot /target apt-cache search linux-image | grep ^linux-image) | \
 	cut -d" " -f1 | uniq > $KERNEL_LIST
 }
