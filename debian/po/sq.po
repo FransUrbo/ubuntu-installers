@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-12 22:44+0100\n"
+"POT-Creation-Date: 2004-09-20 14:58+0100\n"
 "PO-Revision-Date: 2004-05-05 12:10+0200\n"
 "Last-Translator: Elian Myftiu <elian@lycos.com>\n"
 "Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
@@ -213,248 +213,261 @@ msgstr "File Release i pavlefshëm: ansnjë hyrje për ${SUBST0}."
 #. Type: error
 #. Description
 #: ../templates:127
-msgid "Couldn't download ${SUBST0}."
-msgstr "Nuk mundi të shkarkojë ${SUBST0}."
+msgid ""
+"Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
+"CD, depending on your installation method."
+msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:132
+#: ../templates:127
+msgid ""
+"If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
+"may help."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../templates:136
 msgid "Debootstrap Error"
 msgstr "Gabim i Debootstrap"
 
 #. Type: error
 #. Description
-#: ../templates:132
+#: ../templates:136
 msgid "Interrupt caught... Exiting."
 msgstr "U mor një interrupt ... duke dalë."
 
 #. Type: text
 #. Description
-#: ../templates:137
+#: ../templates:141
 msgid "Installing the Ubuntu base system"
 msgstr "Duke instaluar sistemin bazë Ubuntu"
 
 #. Type: text
 #. Description
-#: ../templates:141
+#: ../templates:145
 #, fuzzy
 msgid "Preparing to install the Ubuntu base system..."
 msgstr "Instalimi i sistemit bazë dështoi"
 
 #. Type: text
 #. Description
-#: ../templates:145
+#: ../templates:149
 #, fuzzy
 msgid "Running ${SCRIPT}..."
 msgstr "Duke marrë ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:149
+#: ../templates:153
 msgid "Checking the target file system"
 msgstr "Duke kontrolluar filesistemin ku do kryhet instalimi"
 
 #. Type: text
 #. Description
-#: ../templates:153
+#: ../templates:157
 msgid "Retrieving Release file"
 msgstr "Duke marrë file Release"
 
 #. Type: text
 #. Description
-#: ../templates:157
+#: ../templates:161
 msgid "Finding package sizes"
 msgstr "Duke gjetur madhësinë e paketit"
 
 #. Type: text
 #. Description
-#: ../templates:161
+#: ../templates:165
 msgid "Retrieving Packages files"
 msgstr "Duke marrë file Packages"
 
 #. Type: text
 #. Description
-#: ../templates:165
+#: ../templates:169
 msgid "Retrieving packages"
 msgstr "Duke marrë paketat"
 
 #. Type: text
 #. Description
-#: ../templates:169
+#: ../templates:173
 msgid "Extracting packages"
 msgstr "Duke nxjerrë paketat"
 
 #. Type: text
 #. Description
-#: ../templates:173
+#: ../templates:177
 #, fuzzy
 msgid "Installing core packages"
 msgstr "Duke instaluar paketat thelbësore..."
 
 #. Type: text
 #. Description
-#: ../templates:177
+#: ../templates:181
 #, fuzzy
 msgid "Unpacking required packages"
 msgstr "Duke çpaketuar paketat e duhur..."
 
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:185
 #, fuzzy
 msgid "Configuring required packages"
 msgstr "Duke konfiguruar paketat e duhur..."
 
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:189
 #, fuzzy
 msgid "Unpacking the base system"
 msgstr "Duke instaluar sistemin bazë"
 
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:193
 #, fuzzy
 msgid "Configuring the base system"
 msgstr "Duke instaluar sistemin bazë"
 
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:197
 msgid "Installing the base system"
 msgstr "Duke instaluar sistemin bazë"
 
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:205
 msgid "Validating ${SUBST0}..."
 msgstr "Duke vlerësuar ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:209
 msgid "Retrieving ${SUBST0}..."
 msgstr "Duke marrë ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:209
-msgid "Extracting ${SUBST0}..."
-msgstr "Duke nxjerrë ${SUBST0}..."
-
-#. Type: text
-#. Description
 #: ../templates:213
-#, fuzzy
-msgid "Unpacking ${SUBST0}..."
+msgid "Extracting ${SUBST0}..."
 msgstr "Duke nxjerrë ${SUBST0}..."
 
 #. Type: text
 #. Description
 #: ../templates:217
 #, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "Duke nxjerrë ${SUBST0}..."
+
+#. Type: text
+#. Description
+#: ../templates:221
+#, fuzzy
 msgid "Configuring ${SUBST0}..."
 msgstr "Duke vlerësuar ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:225
 msgid "Checking package size: ${SUBST0}..."
 msgstr "Duke kontrolluar madhësinë e paketetit: ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:229
 msgid "Installing core packages..."
 msgstr "Duke instaluar paketat thelbësore..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:233
 msgid "Unpacking required packages..."
 msgstr "Duke çpaketuar paketat e duhur..."
 
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:237
 msgid "Configuring required packages..."
 msgstr "Duke konfiguruar paketat e duhur..."
 
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:241
 #, fuzzy
 msgid "Unpacking the base system..."
 msgstr "Duke instaluar sistemin bazë"
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:245
 #, fuzzy
 msgid "Configuring the base system..."
 msgstr "Duke instaluar sistemin bazë"
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:249
 msgid "Installing base packages..."
 msgstr "Duke instaluar paketat bazë..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:253
 msgid "Base system installed successfully."
 msgstr "Sistemi bazë u instalua me sukses."
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:257
 msgid "Configuring APT sources..."
 msgstr "Duke konfiguruar burimet APT..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:261
 msgid "Updating the list of available packages..."
 msgstr "Duke freskuar listën e paketave në dispozicion..."
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:265
 msgid "Installing extra packages..."
 msgstr "Duke instaluar paketat ekstra..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:269
 msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:273
 msgid "Selecting the kernel to install..."
 msgstr "Duke zgjedhur kernelin për instalim..."
 
 #. Type: text
 #. Description
-#: ../templates:273
+#: ../templates:277
 msgid "Installing the kernel..."
 msgstr "Duke instaluar kernelin..."
 
 #. Type: text
 #. Description
-#: ../templates:277
+#: ../templates:281
 msgid "Installing the PCMCIA modules"
 msgstr "Duke instaluar moduet PCMCIA"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:282
+#: ../templates:286
 msgid "Install the base system"
 msgstr "Duke instaluar sistemin bazë"
+
+#~ msgid "Couldn't download ${SUBST0}."
+#~ msgstr "Nuk mundi të shkarkojë ${SUBST0}."
 
 #~ msgid "Unable to install PCMCIA modules"
 #~ msgstr "I pamundur instalimi i moduleve PCMCIA"

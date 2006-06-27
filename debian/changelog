@@ -1,3 +1,11 @@
+base-installer (0.087ubuntu11) warty; urgency=low
+
+  * Fix sed syntax error while fiddling with mkinitrd.conf.
+  * Clarify and expand base-installer/debootstrap/error/couldntdl text
+    (closes: Warty #1350).
+
+ -- Colin Watson <cjwatson@canonical.com>  Mon, 20 Sep 2004 15:21:07 +0100
+
 base-installer (0.087ubuntu10) warty; urgency=low
 
   * Properly comma-separate component list to fix non-CD installs (closes:

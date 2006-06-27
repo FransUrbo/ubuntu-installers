@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer_ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-12 22:44+0100\n"
+"POT-Creation-Date: 2004-09-20 14:58+0100\n"
 "PO-Revision-Date: 2004-05-17 15:06+0200\n"
 "Last-Translator: Nikolai Prokoschenko <nikolai@prokoschenko.de>\n"
 "Language-Team: Russian <debian-russian@lists.debian.org>\n"
@@ -224,246 +224,259 @@ msgstr "Неверный файл Release: отсутствует описани
 #. Type: error
 #. Description
 #: ../templates:127
-msgid "Couldn't download ${SUBST0}."
-msgstr "Не удалось загрузить ${SUBST0}."
+msgid ""
+"Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
+"CD, depending on your installation method."
+msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:132
+#: ../templates:127
+msgid ""
+"If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
+"may help."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../templates:136
 msgid "Debootstrap Error"
 msgstr "Ошибка Debootstrap"
 
 #. Type: error
 #. Description
-#: ../templates:132
+#: ../templates:136
 msgid "Interrupt caught... Exiting."
 msgstr "Получен сигнал прерывания... выход."
 
 #. Type: text
 #. Description
-#: ../templates:137
+#: ../templates:141
 msgid "Installing the Ubuntu base system"
 msgstr "Установка базовой системы Ubuntu"
 
 #. Type: text
 #. Description
-#: ../templates:141
+#: ../templates:145
 #, fuzzy
 msgid "Preparing to install the Ubuntu base system..."
 msgstr "Не удалось установить базовую систему"
 
 #. Type: text
 #. Description
-#: ../templates:145
+#: ../templates:149
 #, fuzzy
 msgid "Running ${SCRIPT}..."
 msgstr "Получение ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:149
+#: ../templates:153
 msgid "Checking the target file system"
 msgstr "Проверка целевой файловой системы"
 
 #. Type: text
 #. Description
-#: ../templates:153
+#: ../templates:157
 msgid "Retrieving Release file"
 msgstr "Получение файла Release"
 
 #. Type: text
 #. Description
-#: ../templates:157
+#: ../templates:161
 msgid "Finding package sizes"
 msgstr "Определение размеров пакетов"
 
 #. Type: text
 #. Description
-#: ../templates:161
+#: ../templates:165
 msgid "Retrieving Packages files"
 msgstr "Получение файлов Packages"
 
 #. Type: text
 #. Description
-#: ../templates:165
+#: ../templates:169
 msgid "Retrieving packages"
 msgstr "Получение пакетов"
 
 #. Type: text
 #. Description
-#: ../templates:169
+#: ../templates:173
 msgid "Extracting packages"
 msgstr "Распаковка пакетов"
 
 #. Type: text
 #. Description
-#: ../templates:173
+#: ../templates:177
 #, fuzzy
 msgid "Installing core packages"
 msgstr "Установка основных (core) пакетов..."
 
 #. Type: text
 #. Description
-#: ../templates:177
+#: ../templates:181
 #, fuzzy
 msgid "Unpacking required packages"
 msgstr "Распаковка необходимых (required) пакетов..."
 
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:185
 #, fuzzy
 msgid "Configuring required packages"
 msgstr "Настройка необходимых (required) пакетов..."
 
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:189
 #, fuzzy
 msgid "Unpacking the base system"
 msgstr "Установка базовой системы"
 
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:193
 #, fuzzy
 msgid "Configuring the base system"
 msgstr "Установка базовой системы"
 
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:197
 msgid "Installing the base system"
 msgstr "Установка базовой системы"
 
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:205
 msgid "Validating ${SUBST0}..."
 msgstr "Проверка ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:209
 msgid "Retrieving ${SUBST0}..."
 msgstr "Получение ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:209
-msgid "Extracting ${SUBST0}..."
-msgstr "Распаковка ${SUBST0}..."
-
-#. Type: text
-#. Description
 #: ../templates:213
-#, fuzzy
-msgid "Unpacking ${SUBST0}..."
+msgid "Extracting ${SUBST0}..."
 msgstr "Распаковка ${SUBST0}..."
 
 #. Type: text
 #. Description
 #: ../templates:217
 #, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "Распаковка ${SUBST0}..."
+
+#. Type: text
+#. Description
+#: ../templates:221
+#, fuzzy
 msgid "Configuring ${SUBST0}..."
 msgstr "Проверка ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:225
 msgid "Checking package size: ${SUBST0}..."
 msgstr "Проверка размера пакета: ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:229
 msgid "Installing core packages..."
 msgstr "Установка основных (core) пакетов..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:233
 msgid "Unpacking required packages..."
 msgstr "Распаковка необходимых (required) пакетов..."
 
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:237
 msgid "Configuring required packages..."
 msgstr "Настройка необходимых (required) пакетов..."
 
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:241
 #, fuzzy
 msgid "Unpacking the base system..."
 msgstr "Установка базовой системы"
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:245
 #, fuzzy
 msgid "Configuring the base system..."
 msgstr "Установка базовой системы"
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:249
 msgid "Installing base packages..."
 msgstr "Установка базовых (base) пакетов..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:253
 #, fuzzy
 msgid "Base system installed successfully."
 msgstr "Ошибка установки базовой системы"
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:257
 msgid "Configuring APT sources..."
 msgstr "Настройка источников APT..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:261
 msgid "Updating the list of available packages..."
 msgstr "Обновление списка доступных пакетов..."
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:265
 msgid "Installing extra packages..."
 msgstr "Установка дополнительных (extra) пакетов..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:269
 msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:273
 msgid "Selecting the kernel to install..."
 msgstr "Выбор ядра для установки..."
 
 #. Type: text
 #. Description
-#: ../templates:273
+#: ../templates:277
 msgid "Installing the kernel..."
 msgstr "Установка ядра..."
 
 #. Type: text
 #. Description
-#: ../templates:277
+#: ../templates:281
 msgid "Installing the PCMCIA modules"
 msgstr "Установка модулей PCMCIA"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:282
+#: ../templates:286
 msgid "Install the base system"
 msgstr "Установка базовой системы"
+
+#~ msgid "Couldn't download ${SUBST0}."
+#~ msgstr "Не удалось загрузить ${SUBST0}."

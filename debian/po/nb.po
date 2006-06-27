@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-12 22:44+0100\n"
+"POT-Creation-Date: 2004-09-20 14:58+0100\n"
 "PO-Revision-Date: 2004-04-23 08:09+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -214,246 +214,259 @@ msgstr "Ugyldig versjonsfil: ingen oppføring for ${SUBST0}."
 #. Type: error
 #. Description
 #: ../templates:127
-msgid "Couldn't download ${SUBST0}."
-msgstr "Kunne ikke laste ned ${SUBST0}."
+msgid ""
+"Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
+"CD, depending on your installation method."
+msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:132
+#: ../templates:127
+msgid ""
+"If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
+"may help."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../templates:136
 msgid "Debootstrap Error"
 msgstr "Feil ved debootstrap"
 
 #. Type: error
 #. Description
-#: ../templates:132
+#: ../templates:136
 msgid "Interrupt caught... Exiting."
 msgstr "Fikk signal om avbrudd ... avslutter."
 
 #. Type: text
 #. Description
-#: ../templates:137
+#: ../templates:141
 msgid "Installing the Ubuntu base system"
 msgstr "Installerer grunnsystemet til Ubuntu"
 
 #. Type: text
 #. Description
-#: ../templates:141
+#: ../templates:145
 #, fuzzy
 msgid "Preparing to install the Ubuntu base system..."
 msgstr "Klarte ikke å installere grunnsystemet"
 
 #. Type: text
 #. Description
-#: ../templates:145
+#: ../templates:149
 #, fuzzy
 msgid "Running ${SCRIPT}..."
 msgstr "Henter ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../templates:149
+#: ../templates:153
 msgid "Checking the target file system"
 msgstr "Sjekker filsystemet det skal installeres til"
 
 #. Type: text
 #. Description
-#: ../templates:153
+#: ../templates:157
 msgid "Retrieving Release file"
 msgstr "Henter en versjonsfil"
 
 #. Type: text
 #. Description
-#: ../templates:157
+#: ../templates:161
 msgid "Finding package sizes"
 msgstr "Finner pakkestørrelsene"
 
 #. Type: text
 #. Description
-#: ../templates:161
+#: ../templates:165
 msgid "Retrieving Packages files"
 msgstr "Henter pakkefilene"
 
 #. Type: text
 #. Description
-#: ../templates:165
+#: ../templates:169
 msgid "Retrieving packages"
 msgstr "Henter pakker"
 
 #. Type: text
 #. Description
-#: ../templates:169
+#: ../templates:173
 msgid "Extracting packages"
 msgstr "Pakker ut pakker"
 
 #. Type: text
 #. Description
-#: ../templates:173
+#: ../templates:177
 #, fuzzy
 msgid "Installing core packages"
 msgstr "Installerer grunnpakkene ..."
 
 #. Type: text
 #. Description
-#: ../templates:177
+#: ../templates:181
 #, fuzzy
 msgid "Unpacking required packages"
 msgstr "Pakker ut nødvendige pakker ..."
 
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:185
 #, fuzzy
 msgid "Configuring required packages"
 msgstr "Setter opp nødvendige pakker ..."
 
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:189
 #, fuzzy
 msgid "Unpacking the base system"
 msgstr "Installerer grunnsystemet"
 
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:193
 #, fuzzy
 msgid "Configuring the base system"
 msgstr "Installerer grunnsystemet"
 
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:197
 msgid "Installing the base system"
 msgstr "Installerer grunnsystemet"
 
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:205
 msgid "Validating ${SUBST0}..."
 msgstr "Sjekker ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:209
 msgid "Retrieving ${SUBST0}..."
 msgstr "Henter ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../templates:209
-msgid "Extracting ${SUBST0}..."
-msgstr "Pakker ut ${SUBST0} ..."
-
-#. Type: text
-#. Description
 #: ../templates:213
-#, fuzzy
-msgid "Unpacking ${SUBST0}..."
+msgid "Extracting ${SUBST0}..."
 msgstr "Pakker ut ${SUBST0} ..."
 
 #. Type: text
 #. Description
 #: ../templates:217
 #, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "Pakker ut ${SUBST0} ..."
+
+#. Type: text
+#. Description
+#: ../templates:221
+#, fuzzy
 msgid "Configuring ${SUBST0}..."
 msgstr "Sjekker ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:225
 msgid "Checking package size: ${SUBST0}..."
 msgstr "Sjekker pakkestørrelse: ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:229
 msgid "Installing core packages..."
 msgstr "Installerer grunnpakkene ..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:233
 msgid "Unpacking required packages..."
 msgstr "Pakker ut nødvendige pakker ..."
 
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:237
 msgid "Configuring required packages..."
 msgstr "Setter opp nødvendige pakker ..."
 
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:241
 #, fuzzy
 msgid "Unpacking the base system..."
 msgstr "Installerer grunnsystemet"
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:245
 #, fuzzy
 msgid "Configuring the base system..."
 msgstr "Installerer grunnsystemet"
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:249
 msgid "Installing base packages..."
 msgstr "Installerer grunnpakkene ..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:253
 #, fuzzy
 msgid "Base system installed successfully."
 msgstr "Feil ved installasjonen av grunnsystemet"
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:257
 msgid "Configuring APT sources..."
 msgstr "Setter opp apt-kilder ..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:261
 msgid "Updating the list of available packages..."
 msgstr "Oppdaterer lista over tilgjengelige pakker ..."
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:265
 msgid "Installing extra packages..."
 msgstr "Installerer ekstrapakkene ..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:269
 msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:273
 msgid "Selecting the kernel to install..."
 msgstr "Velger hvilken kjerne som skal installeres ..."
 
 #. Type: text
 #. Description
-#: ../templates:273
+#: ../templates:277
 msgid "Installing the kernel..."
 msgstr "Installerer kjernen ..."
 
 #. Type: text
 #. Description
-#: ../templates:277
+#: ../templates:281
 msgid "Installing the PCMCIA modules"
 msgstr "Installerer PCMCIA-modulene"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:282
+#: ../templates:286
 msgid "Install the base system"
 msgstr "Installer grunnsystemet"
+
+#~ msgid "Couldn't download ${SUBST0}."
+#~ msgstr "Kunne ikke laste ned ${SUBST0}."

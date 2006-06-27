@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-12 22:44+0100\n"
+"POT-Creation-Date: 2004-09-20 14:58+0100\n"
 "PO-Revision-Date: 2004-06-14 15:55+0300\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
@@ -220,249 +220,262 @@ msgstr "Kelvoton Release-tiedosto, ei tietuetta ${SUBST0} -paketille."
 #. Type: error
 #. Description
 #: ../templates:127
-msgid "Couldn't download ${SUBST0}."
-msgstr "Ei voitu noutaa pakettia ${SUBST0}."
+msgid ""
+"Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
+"CD, depending on your installation method."
+msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:132
+#: ../templates:127
+msgid ""
+"If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
+"may help."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../templates:136
 msgid "Debootstrap Error"
 msgstr "Debootstrap-virhe"
 
 #. Type: error
 #. Description
-#: ../templates:132
+#: ../templates:136
 msgid "Interrupt caught... Exiting."
 msgstr "Keskeytys saatu ... poistutaan."
 
 #. Type: text
 #. Description
-#: ../templates:137
+#: ../templates:141
 #, fuzzy
 msgid "Installing the Ubuntu base system"
 msgstr "Asennetaan Debianin peruskokoonpano"
 
 #. Type: text
 #. Description
-#: ../templates:141
+#: ../templates:145
 #, fuzzy
 msgid "Preparing to install the Ubuntu base system..."
 msgstr "Perusjärjestelmän asennus epäonnistui"
 
 #. Type: text
 #. Description
-#: ../templates:145
+#: ../templates:149
 #, fuzzy
 msgid "Running ${SCRIPT}..."
 msgstr "Noudetaan ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:149
+#: ../templates:153
 msgid "Checking the target file system"
 msgstr "Tarkistetaan kohdetiedostojärjestelmä"
 
 #. Type: text
 #. Description
-#: ../templates:153
+#: ../templates:157
 msgid "Retrieving Release file"
 msgstr "Noudetaan Release-tiedostoa"
 
 #. Type: text
 #. Description
-#: ../templates:157
+#: ../templates:161
 msgid "Finding package sizes"
 msgstr "Selvitetään asennuspakettien koot"
 
 #. Type: text
 #. Description
-#: ../templates:161
+#: ../templates:165
 msgid "Retrieving Packages files"
 msgstr "Noudetaan Packages-tiedostoa"
 
 #. Type: text
 #. Description
-#: ../templates:165
+#: ../templates:169
 msgid "Retrieving packages"
 msgstr "Noudetaan paketteja"
 
 #. Type: text
 #. Description
-#: ../templates:169
+#: ../templates:173
 msgid "Extracting packages"
 msgstr "Puretaan paketteja..."
 
 #. Type: text
 #. Description
-#: ../templates:173
+#: ../templates:177
 #, fuzzy
 msgid "Installing core packages"
 msgstr "Asennetaan tärkeimpiä paketteja..."
 
 #. Type: text
 #. Description
-#: ../templates:177
+#: ../templates:181
 #, fuzzy
 msgid "Unpacking required packages"
 msgstr "Puretaan vaadittuja paketteja..."
 
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:185
 #, fuzzy
 msgid "Configuring required packages"
 msgstr "Tehdään vaadittujen pakettien asetukset..."
 
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:189
 #, fuzzy
 msgid "Unpacking the base system"
 msgstr "Asennetaan peruskokoonpano"
 
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:193
 #, fuzzy
 msgid "Configuring the base system"
 msgstr "Asennetaan peruskokoonpano"
 
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:197
 msgid "Installing the base system"
 msgstr "Asennetaan peruskokoonpano"
 
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:205
 msgid "Validating ${SUBST0}..."
 msgstr "Tarkastetaan ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:209
 msgid "Retrieving ${SUBST0}..."
 msgstr "Noudetaan ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:209
-msgid "Extracting ${SUBST0}..."
-msgstr "Puretaan ${SUBST0}..."
-
-#. Type: text
-#. Description
 #: ../templates:213
-#, fuzzy
-msgid "Unpacking ${SUBST0}..."
+msgid "Extracting ${SUBST0}..."
 msgstr "Puretaan ${SUBST0}..."
 
 #. Type: text
 #. Description
 #: ../templates:217
 #, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "Puretaan ${SUBST0}..."
+
+#. Type: text
+#. Description
+#: ../templates:221
+#, fuzzy
 msgid "Configuring ${SUBST0}..."
 msgstr "Tarkastetaan ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:225
 msgid "Checking package size: ${SUBST0}..."
 msgstr "Tarkistetaan paketin koko: ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:229
 msgid "Installing core packages..."
 msgstr "Asennetaan tärkeimpiä paketteja..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:233
 msgid "Unpacking required packages..."
 msgstr "Puretaan vaadittuja paketteja..."
 
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:237
 msgid "Configuring required packages..."
 msgstr "Tehdään vaadittujen pakettien asetukset..."
 
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:241
 #, fuzzy
 msgid "Unpacking the base system..."
 msgstr "Asennetaan peruskokoonpano"
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:245
 #, fuzzy
 msgid "Configuring the base system..."
 msgstr "Asennetaan peruskokoonpano"
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:249
 msgid "Installing base packages..."
 msgstr "Asennetaan peruskokoonpanon paketteja..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:253
 msgid "Base system installed successfully."
 msgstr "Perusjärjestelmän asennus onnistui"
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:257
 msgid "Configuring APT sources..."
 msgstr "Muokataan APT-lähteitä..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:261
 msgid "Updating the list of available packages..."
 msgstr "Päivitetään luetteloa käytettävissä olevista paketeista..."
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:265
 msgid "Installing extra packages..."
 msgstr "Asennetaan ylimääräisiä paketteja..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:269
 msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:273
 msgid "Selecting the kernel to install..."
 msgstr "Valitaan asennettavaa ydintä..."
 
 #. Type: text
 #. Description
-#: ../templates:273
+#: ../templates:277
 msgid "Installing the kernel..."
 msgstr "Asennetaan ydintä..."
 
 #. Type: text
 #. Description
-#: ../templates:277
+#: ../templates:281
 msgid "Installing the PCMCIA modules"
 msgstr "Asennetaan PCMCIA-moduulit"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:282
+#: ../templates:286
 msgid "Install the base system"
 msgstr "Asenna perusjärjestelmä"
+
+#~ msgid "Couldn't download ${SUBST0}."
+#~ msgstr "Ei voitu noutaa pakettia ${SUBST0}."
 
 #~ msgid "Unable to install PCMCIA modules"
 #~ msgstr "PCMCIA-moduuleita ei voi asentaa"

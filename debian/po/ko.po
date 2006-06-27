@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-12 22:44+0100\n"
+"POT-Creation-Date: 2004-09-20 14:58+0100\n"
 "PO-Revision-Date: 2004-06-20 00:54+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <cwryu@debian.org>\n"
@@ -202,246 +202,259 @@ msgstr "릴리즈 파일이 잘못되었습니다: ${SUBST0}에 대한 항목이
 #. Type: error
 #. Description
 #: ../templates:127
-msgid "Couldn't download ${SUBST0}."
-msgstr "${SUBST0}을(를) 내려받을 수 없습니다."
+msgid ""
+"Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
+"CD, depending on your installation method."
+msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:132
+#: ../templates:127
+msgid ""
+"If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
+"may help."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../templates:136
 msgid "Debootstrap Error"
 msgstr "debootstrap 오류"
 
 #. Type: error
 #. Description
-#: ../templates:132
+#: ../templates:136
 msgid "Interrupt caught... Exiting."
 msgstr "인터럽트 발생 ... 끝납니다."
 
 #. Type: text
 #. Description
-#: ../templates:137
+#: ../templates:141
 #, fuzzy
 msgid "Installing the Ubuntu base system"
 msgstr "데비안 베이스 시스템을 설치하는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:141
+#: ../templates:145
 #, fuzzy
 msgid "Preparing to install the Ubuntu base system..."
 msgstr "베이스 시스템을 설치하는 데 실패했습니다"
 
 #. Type: text
 #. Description
-#: ../templates:145
+#: ../templates:149
 #, fuzzy
 msgid "Running ${SCRIPT}..."
 msgstr "${SUBST0} 파일을 가져오는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:149
+#: ../templates:153
 msgid "Checking the target file system"
 msgstr "대상 파일 시스템을 검사하는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:153
+#: ../templates:157
 msgid "Retrieving Release file"
 msgstr "릴리즈 파일을 가져오는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:157
+#: ../templates:161
 msgid "Finding package sizes"
 msgstr "꾸러미 크기를 찾는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:161
+#: ../templates:165
 msgid "Retrieving Packages files"
 msgstr "꾸러미 파일을 가져오는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:165
+#: ../templates:169
 msgid "Retrieving packages"
 msgstr "꾸러미를 가져오는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:169
+#: ../templates:173
 msgid "Extracting packages"
 msgstr "꾸러미를 푸는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:173
+#: ../templates:177
 #, fuzzy
 msgid "Installing core packages"
 msgstr "핵심 꾸러미들을 설치하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:177
+#: ../templates:181
 #, fuzzy
 msgid "Unpacking required packages"
 msgstr "필수 꾸러미를 푸는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:185
 #, fuzzy
 msgid "Configuring required packages"
 msgstr "필수 꾸러미를 설정하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:189
 #, fuzzy
 msgid "Unpacking the base system"
 msgstr "베이스 시스템을 설치하는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:193
 #, fuzzy
 msgid "Configuring the base system"
 msgstr "베이스 시스템을 설치하는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:197
 msgid "Installing the base system"
 msgstr "베이스 시스템을 설치하는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:205
 msgid "Validating ${SUBST0}..."
 msgstr "${SUBST0} 파일을 확인하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:209
 msgid "Retrieving ${SUBST0}..."
 msgstr "${SUBST0} 파일을 가져오는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:209
-msgid "Extracting ${SUBST0}..."
-msgstr "${SUBST0} 파일을 푸는 중입니다..."
-
-#. Type: text
-#. Description
 #: ../templates:213
-#, fuzzy
-msgid "Unpacking ${SUBST0}..."
+msgid "Extracting ${SUBST0}..."
 msgstr "${SUBST0} 파일을 푸는 중입니다..."
 
 #. Type: text
 #. Description
 #: ../templates:217
 #, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "${SUBST0} 파일을 푸는 중입니다..."
+
+#. Type: text
+#. Description
+#: ../templates:221
+#, fuzzy
 msgid "Configuring ${SUBST0}..."
 msgstr "${SUBST0} 파일을 확인하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:225
 msgid "Checking package size: ${SUBST0}..."
 msgstr "꾸러미 크기를 검사하는 중입니다: ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:229
 msgid "Installing core packages..."
 msgstr "핵심 꾸러미들을 설치하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:233
 msgid "Unpacking required packages..."
 msgstr "필수 꾸러미를 푸는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:237
 msgid "Configuring required packages..."
 msgstr "필수 꾸러미를 설정하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:241
 #, fuzzy
 msgid "Unpacking the base system..."
 msgstr "베이스 시스템을 설치하는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:245
 #, fuzzy
 msgid "Configuring the base system..."
 msgstr "베이스 시스템을 설치하는 중입니다"
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:249
 msgid "Installing base packages..."
 msgstr "베이스 꾸러미를 설치하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:253
 msgid "Base system installed successfully."
 msgstr "베이스 시스템 설치 성공"
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:257
 msgid "Configuring APT sources..."
 msgstr "APT 소스를 설정하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:261
 msgid "Updating the list of available packages..."
 msgstr "사용 가능한 패키지의 목록을 업데이트하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:265
 msgid "Installing extra packages..."
 msgstr "추가 꾸러미들을 설치하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:269
 msgid "Creating device files..."
 msgstr "장치 파일을 만드는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:273
 msgid "Selecting the kernel to install..."
 msgstr "설치할 커널을 선택하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:273
+#: ../templates:277
 msgid "Installing the kernel..."
 msgstr "커널을 설치하는 중입니다..."
 
 #. Type: text
 #. Description
-#: ../templates:277
+#: ../templates:281
 msgid "Installing the PCMCIA modules"
 msgstr "PCMCIA 모듈을 설치하는 중입니다"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:282
+#: ../templates:286
 msgid "Install the base system"
 msgstr "베이스 시스템 설치"
+
+#~ msgid "Couldn't download ${SUBST0}."
+#~ msgstr "${SUBST0}을(를) 내려받을 수 없습니다."
