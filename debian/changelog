@@ -1,3 +1,306 @@
+base-installer (1.12ubuntu1) hoary; urgency=low
+
+  * Resynchronise with Debian (thanks, Scott James Remnant).
+  * Update Ubuntu branding.
+
+ -- Colin Watson <cjwatson@canonical.com>  Thu, 28 Oct 2004 18:22:20 +0100
+
+base-installer (1.12) unstable; urgency=low
+
+  * Frans Pop
+    - Do not append '-speakup' to kernel version when setting
+      trykernel for speakup. Closes: #275075
+
+ -- Joey Hess <joeyh@debian.org>  Fri,  8 Oct 2004 19:52:41 -0400
+
+base-installer (1.11) unstable; urgency=low
+
+  * Updated translations: 
+    - Welsh (cy.po) by Dafydd Harries
+    - Hebrew (he.po) by Lior Kaplan
+    - Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Joey Hess <joeyh@debian.org>  Wed,  6 Oct 2004 15:49:43 -0400
+
+base-installer (1.10) unstable; urgency=low
+
+  * Thiemo Seufer
+    - Don't hardcode the kernel version for r5k-ip32 to 2.6.
+    - Use more generic 2.6 kernel package versioning for mips/mipsel.
+  * Joey Hess
+    - Look for /proc/speakup on i386 and if a speakup kernel is running,
+      try to install a speakup kernel image. Closes: #275075
+
+ -- Joey Hess <joeyh@debian.org>  Tue,  5 Oct 2004 17:00:46 -0400
+
+base-installer (1.09) unstable; urgency=low
+
+  * Joey Hess
+    - Turn off backup capability while asking about install to unclean target.
+  * Updated translations: 
+    - Czech (cs.po) by Miroslav Kure
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - French (fr.po) by French Team
+    - Hebrew (he.po) by Lior Kaplan
+    - Indonesian (id.po) by Debian Indonesia Team
+    - Italian (it.po) by Davide Meloni
+    - Lithuanian (lt.po) by Kęstutis Biliūnasn
+    - Latvian (lv.po) by Aigars Mahinovs
+    - Bøkmal, Norwegian (nb.po) by Bjorn Steensrud
+    - Dutch (nl.po) by Bart Cornelis
+    - Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+    - Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+    - Romanian (ro.po) by Eddy Petrisor
+    - Russian (ru.po) by Russian L10N Team
+    - Slovenian (sl.po) by Jure Čuhalev
+    - Albanian (sq.po) by Elian Myftiu
+    - Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Joey Hess <joeyh@debian.org>  Sat,  2 Oct 2004 11:13:18 -0400
+
+base-installer (1.08) unstable; urgency=low
+
+  * Frederik Schüler
+    - Updated base-installer postinst for amd64 to install new em64t flavours
+      on intel boxen.
+  * Updated translations: 
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - Spanish (Castilian) (es.po) by Javier Fernandez-Sanguino Peña
+    - Finnish (fi.po) by Tapio Lehtonen
+    - Gallegan (gl.po) by Héctor Fenández López
+    - Hebrew (he.po) by Lior Kaplan
+    - Korean (ko.po) by Changwoo Ryu
+    - Lithuanian (lt.po) by Kęstutis Biliūnasn
+    - Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+    - Swedish (sv.po) by Per Olofsson
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 25 Sep 2004 05:33:21 +0200
+
+base-installer (1.07) unstable; urgency=low
+
+  * Bdale Garbee
+    - change the postinst for hppa to try using the same version kernel that
+      d-i is running by default instead of hard-coding 2.4.26
+
+ -- Bdale Garbee <bdale@gag.com>  Tue, 14 Sep 2004 10:32:14 -0600
+
+base-installer (1.06) unstable; urgency=low
+
+  * Joey Hess
+    - Fix progress bar takedown if backing up from the kernel selection
+      question.
+    - Patch from Frans Pop to improve progress bar information when installing
+      kernel and extra packages. Closes: #270969
+  * Sven Luther
+    - Moved powerpc kernels to 2.6.8/2.4.27.
+  * Colin Watson
+    - Add guard against overflow of progress bar sections.
+  * Updated translations: 
+    - German (de.po) by Dennis Stampfer
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - Spanish (Castilian) (es.po) by Javier Fernandez-Sanguino Peña
+    - French (fr.po) by French Team
+    - Portuguese (pt.po) by Miguel Figueiredo
+  * Norbert Tretkowski
+    - Moved alpha kernel to 2.4.27
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 12 Sep 2004 17:27:32 -0400
+
+base-installer (1.05) unstable; urgency=low
+
+  * Martin Michlmayr
+    - Don't hardcode the kernel version for ARM but use the version of the
+      running kernel.
+  * Joey Hess
+    - Resetting questions breaks preseeding, as the preseeded value is lost
+      and the question is marked as not seen. So only reset questions after
+      displaying them so the preseeding can take effect the first time.
+    - Preseeding of base-installer/use_unclean_target will now work.
+    - Don't fset seen flags.
+    - Set DEBCONF_ADMIN_EMAIL to "" to prevent debconf from mailing notes to
+      user mail about hotplug and so on. Closes: #269804
+  * Bastian Blank
+    - Use version of running kernel on s390.
+  * Updated translations: 
+    - Arabic (ar.po) by Ossama M. Khayat
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Bosnian (bs.po) by Safir Šećerović
+    - Catalan (ca.po) by Jordi Mallach
+    - Czech (cs.po) by Miroslav Kure
+    - Danish (da.po) by Claus Hindsgaul
+    - Greek, Modern (1453-) (el.po) by Konstantinos Margaritis
+    - Spanish (Castilian) (es.po) by Javier Fernandez-Sanguino Peña
+    - Basque (eu.po) by Piarres Beobide Egaña
+    - Finnish (fi.po) by Tapio Lehtonen
+    - French (fr.po) by French Team
+    - Hebrew (he.po) by Lior Kaplan
+    - Croatian (hr.po) by Krunoslav Gernhard
+    - Hungarian (hu.po) by VERÓK István
+    - Korean (ko.po) by Changwoo Ryu
+    - Lithuanian (lt.po) by Kęstutis Biliūnas
+    - Latvian (lv.po) by Aigars Mahinovs
+    - Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+    - Polish (pl.po) by Bartosz Fenski
+    - Romanian (ro.po) by Eddy Petrisor
+    - Slovak (sk.po) by Peter KLFMANiK Mann
+    - Slovenian (sl.po) by Matjaz Horvat
+    - Turkish (tr.po) by Recai Oktaş
+    - Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+
+ -- Joey Hess <joeyh@debian.org>  Mon,  6 Sep 2004 20:37:58 -0400
+
+base-installer (1.04) unstable; urgency=low
+
+  * Joshua Kwan
+    - Pave the way for 2.6 installs on sparc.
+  * Updated translations:
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Greek (el.po) by Greek Translation Team
+    - Hebrew (he.po) by Lior Kaplan
+    - Norwegian (nn.po) by Håvard Korsvoll
+
+ -- Joshua Kwan <joshk@triplehelix.org>  Sat, 28 Aug 2004 01:21:17 -0700
+
+base-installer (1.03) unstable; urgency=low
+
+  * Colin Watson
+    - Add amd64 kernel selection support (2.6 only).
+  * Christian Perrier
+    - Rename templates file to base-installer.templates
+  * Kenshi Muto
+    - Mark some templates strings for translation.
+  * Christian Perrier
+    - s/CD/CD-ROM in templates
+    - reworded the new translatable templates
+  * dann frazier
+    - default to the latest version of whatever major kernel revision stream
+      was used by the installer on ia64 (use the latest 2.6 if the install
+      kernel was a 2.6).
+    - add myself to Uploaders
+
+ -- dann frazier <dannf@debian.org>  Sat, 28 Aug 2004 00:20:54 -0600
+
+base-installer (1.02) unstable; urgency=low
+
+  * Joey Hess
+    - Check to see if the hook directory exists before running scripts
+      from it, to avoid mess on stderr.
+  * Thomas Poindessous
+    - Fix the selection of x86 2.6 kernel. There are no more 2.6-586tsc
+      and 2.6-k6 kernels. Closes: #257411
+  * Updated translations: 
+    - German (de.po) by Dennis Stampfer
+
+ -- Joey Hess <joeyh@debian.org>  Wed,  4 Aug 2004 14:51:14 -0400
+
+base-installer (1.01) unstable; urgency=low
+
+  * Sven Luther
+    - added mkvmlinuz call to /etc/kernel-img.conf.
+    - removed the manual mkvmlinuz call since it is no more necessary.
+
+ -- Sven Luther <luther@debian.org>  Thu, 29 Jul 2004 15:30:22 +0200
+
+base-installer (1.00) unstable; urgency=low
+
+  * Martin Michlmayr
+    - Add a kernel for mips/r5k-ip32; even though it is not in Debian,
+      this makes it easier to support this sub-arch through an
+      unofficial apt archive.
+  * Updated translations: 
+    - Arabic (ar.po) by Abdulaziz Al-Arfaj
+    - Danish (da.po) by Frederik Dannemare
+    - German (de.po) by Dennis Stampfer
+    - Persian (fa.po) by Arash Bijanzadeh
+    - Croatian (hr.po) by Krunoslav Gernhard
+    - Italian (it.po) by Davide Meloni
+    - Swedish (sv.po) by Per Olofsson
+    - Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 25 Jul 2004 19:08:20 -0400
+
+base-installer (0.093) unstable; urgency=low
+
+  * Colin Watson
+    - Use kernel-image-2.4-* on ia64.
+  * dann frazier
+    - fix ia64 family selection to correctly identify mckinley family boxes
+    - add ia64 smp detection support
+  * Thiemo Seufer
+    - Don't hardcode the kernel version for mips, mipsel.
+  * Updated translations: 
+    - Arabic (ar.po) by Abdulaziz Al-Arfaj
+    - Bosnian (bs.po) by Safir Šećerović
+    - Croatian (hr.po) by Kruno
+    - Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 19 Jul 2004 15:22:24 -0400
+
+base-installer (0.092) unstable; urgency=low
+
+  * Sven Luther
+    - Cleaned cruft left over at build time.
+
+ -- Sven Luther <luther@debian.org>  Thu,  8 Jul 2004 08:03:06 +0200
+
+base-installer (0.091) unstable; urgency=low
+
+  * Sven Luther
+    - Fixed broken postinst script.
+
+ -- Sven Luther <luther@debian.org>  Tue,  6 Jul 2004 23:58:07 +0200
+
+base-installer (0.090) unstable; urgency=low
+
+  * Sven Luther
+    - Fixed mkvmlinuz invocation typo.
+
+ -- Sven Luther <luther@debian.org>  Tue,  6 Jul 2004 13:11:33 +0200
+
+base-installer (0.089) unstable; urgency=low
+
+  * Colin Watson
+    - Fix sed syntax error while fiddling with mkinitrd.conf.
+    - Squash a syslog warning if /proc/mdstat doesn't exist.
+  * Sven Luther
+    - mkvmlinuz don't like to be run at strange places,
+      call it from inside the chroot
+
+ -- Sven Luther <luther@debian.org>  Tue,  6 Jul 2004 10:48:19 +0200
+
+base-installer (0.088) unstable; urgency=low
+
+  * Martin Michlmayr
+    - Install s390 kernels on s390.  Closes: #257301
+  * Joey Hess
+    - Add a check for the case where the CD is not installable, and there is
+      no mirror configured, display a sensible error instead of crashing.
+  * Colin Watson
+    - Bump powerpc 2.6 to 2.6.7.
+    - Fix kernel selection on powerpc 2.6.
+    - Fix syntax error in pre-debootstrap hook.
+  * Sven Luther
+    - Add prep and chrp kernel with builtin initrd support for 2.6.
+  * Updated translations:
+    - Arabic (ar.po) by Ossama M. Khayat
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Catalan (ca.po) by Jordi Mallach
+    - German (de.po) by Dennis Stampfer
+    - Spanish (Castilian) (es.po) by Javier Fernández-Sanguino Peña
+    - Basque (eu.po) by Piarres Beobide Egaña
+    - Finnish (fi.po) by Tapio Lehtonen
+    - Hungarian (hu.po) by VERÓK István
+    - Korean (ko.po) by Changwoo Ryu
+    - Polish (pl.po) by Bartosz Fenski
+    - Portuguese (pt.po) by Miguel Figueiredo
+    - Russian (ru.po) by Yuri Kozlov
+    - Albanian (sq.po) by Elian Myftiu
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+
+ -- Colin Watson <cjwatson@debian.org>  Mon,  5 Jul 2004 18:05:46 +0100
+
 base-installer (0.087ubuntu13) warty; urgency=low
 
   * Updated translations:

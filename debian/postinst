@@ -17,6 +17,14 @@ EXCLUDES=
 KERNEL=
 KERNEL_LIST=/tmp/available_kernels.txt
 
+# Avoid debconf sending email during the base install process.
+DEBCONF_ADMIN_EMAIL=""
+export DEBCONF_ADMIN_EMAIL
+
+# Variables used to set the progress bar
+PB_POSITION=0
+PB_WAYPOINT_LENGTH=0
+
 db_get debian-installer/kernel/subarchitecture
 SUBARCH="$RET"
 
@@ -41,6 +49,13 @@ exit_error() {
 	exit 1
 }
 
+update_progress () {
+	# Updates the progress bar to a new position within the space allocated
+	# for the current waypoint. 
+	NW_POS=$(($PB_POSITION + $PB_WAYPOINT_LENGTH * $1 / $2))
+	db_progress SET $NW_POS
+}
+
 check_target () {
 	# Make sure something is mounted on the target.
 	# Partconf causes the latter format.
@@ -53,49 +68,53 @@ check_target () {
 	# idempotent in general. Detect and abort.
 	if [ -e /target/usr/bin/awk -o -L /target/usr/bin/awk ] || \
 	   [ -e /target/bin/sh -o -L /target/bin/sh ]; then
-		db_reset base-installer/use_unclean_target
+		db_capb ""
 		db_input medium base-installer/use_unclean_target || true
 		db_go || exit 10
+		db_capb backup
 		db_get base-installer/use_unclean_target
 		if [ "$RET" = false ]; then
+			db_reset base-installer/use_unclean_target
 			exit_error base-installer/unclean_target_cancel
 		fi
+		db_reset base-installer/use_unclean_target
 	fi
 }
 
 get_mirror_info () {
-	if db_get base-installer/cd-location && [ "$RET" ]; then
-		CDROM="$RET"
-	else
-		CDROM=/cdrom
-	fi
-	if [ -f "$CDROM/.disk/base_installable" ]; then
+	if [ -f /cdrom/.disk/base_installable ]; then
 		PROTOCOL=file
 		MIRROR=""
-		DIRECTORY="$CDROM/"
-		if [ -s "$CDROM/.disk/base_components" ]; then
-			COMPONENTS=`grep -v '^#' "$CDROM/.disk/base_components" | tr '\n' , | sed 's/,$//'`
+		DIRECTORY="/cdrom/"
+		if [ -s /cdrom/.disk/base_components ]; then
+			COMPONENTS=`grep -v '^#' /cdrom/.disk/base_components | tr '\n' , | sed 's/,$//'`
 		else
 			COMPONENTS="*"
 		fi
-		if [ -s "$CDROM/.disk/base_include" ]; then
-			INCLUDES=`grep -v '^#' "$CDROM/.disk/base_include" | tr '\n' , | sed 's/,$//'`
+		if [ -s /cdrom/.disk/base_include ]; then
+			INCLUDES=`grep -v '^#' /cdrom/.disk/base_include | tr '\n' , | sed 's/,$//'`
 		fi
 			
-		if [ -s "$CDROM/.disk/base_exclude" ]; then
-			EXCLUDES=`grep -v '^#' "$CDROM/.disk/base_exclude" | tr '\n' , | sed 's/,$//'`
+		if [ -s /cdrom/.disk/base_exclude ]; then
+			EXCLUDES=`grep -v '^#' /cdrom/.disk/base_exclude | tr '\n' , | sed 's/,$//'`
 		fi
 	else
-		db_get mirror/protocol
+		mirror_error=""
+		
+		db_get mirror/protocol || mirror_error=1
 		PROTOCOL="$RET"
 
-		db_get mirror/$PROTOCOL/hostname
+		db_get mirror/$PROTOCOL/hostname || mirror_error=1
 		MIRROR="$RET"
 
-		db_get mirror/$PROTOCOL/directory
+		db_get mirror/$PROTOCOL/directory || mirror_error=1
 		DIRECTORY="$RET"
 
 		COMPONENTS="main,restricted"
+
+		if [ "$mirror_error" = 1 ] || [ -z "$PROTOCOL" ] || [ -z "$MIRROR" ]; then
+			exit_error base-installer/cannot_install
+		fi
 	fi
 
 	if db_get mirror/suite && [ "$RET" ] ; then
@@ -106,7 +125,7 @@ get_mirror_info () {
 	APTLISTDIR=/target/var/lib/apt/lists
 	mkdir -p $APTLISTDIR
 	if [ file = "$PROTOCOL" ]; then
-		cp "$CDROM/dists/$SUITE/Release" $APTLISTDIR/tmp || nogetrel="$CDROM/dists/$SUITE/Release"
+		cp /cdrom/dists/$SUITE/Release $APTLISTDIR/tmp || nogetrel="/cdrom/dists/$SUITE/Release"
 	else
 		if [ "$PROTOCOL" = "http" ]; then
 			db_get mirror/http/proxy
@@ -130,6 +149,8 @@ get_mirror_info () {
 }
 	
 install_base_system () {
+	db_progress INFO base-installer/progress/preparing
+
 	if [ "${INCLUDES}" ]; then
 		include="--include=${INCLUDES}"
 	fi
@@ -154,33 +175,33 @@ install_base_system () {
 			export http_proxy
 		fi
 	fi
-
+	
 	# run the scripts found in hook directory before debootstrap
 	partsdir="/usr/lib/base-installer.d"
-	db_progress INFO base-installer/progress/preparing
-
-	tmpfile=/tmp/base-installer-hook.log
-	[ -d "$partsdir" ] && info "Execution hook before debootstrap"
-	for script in `ls "$partsdir"/*`; do
-	    base=$(basename $script | sed 's/[0-9]*//')
-	    if ! db_progress INFO base-installer/progress/$base; then
-		db_subst base-installer/progress/fallback SCRIPT "$base"
-		db_progress INFO base-installer/progress/fallback
-	    fi
-
-	    if [ -x "$script" ] ; then
-		info "Running $script"
-		if ! "$script" 2>&1 $tmpfile ; then
-		    log "warning: $script returned error code $?"
-		fi
-	    else
-		error "Unable to execute $script"
-	    fi
-	    if [ -s "$tmpfile" ] ; then
-		logger -t base-installer < "$tmpfile"
-		rm -f "$tmpfile"
-	    fi
-	done
+	if [ -d "$partsdir" ]; then
+		tmpfile=/tmp/base-installer-hook.log
+		info "Execution hook before debootstrap"
+		for script in `ls "$partsdir"/*`; do
+			base=$(basename $script | sed 's/[0-9]*//')
+			if ! db_progress INFO base-installer/progress/$base; then
+				db_subst base-installer/progress/fallback SCRIPT "$base"
+				db_progress INFO base-installer/progress/fallback
+		    	fi
+	
+		    	if [ -x "$script" ] ; then
+				info "Running $script"
+				if ! "$script" 2>&1 $tmpfile ; then
+			    		log "warning: $script returned error code $?"
+				fi
+		    	else
+				error "Unable to execute $script"
+		    	fi
+		    	if [ -s "$tmpfile" ] ; then
+				logger -t base-installer < "$tmpfile"
+				rm -f "$tmpfile"
+		    	fi
+		done
+	fi
 
 	if [ -e /usr/bin/cdebootstrap ]; then
 		/usr/bin/cdebootstrap || debootstrap_failed=$?
@@ -250,7 +271,7 @@ configure_apt () {
 
 create_devices () {
 	# RAID
-	if grep -q ^md /proc/mdstat ; then
+	if [ -e /proc/mdstat ] && grep -q ^md /proc/mdstat ; then
 		apt-install mdadm
 	fi
 	# LVM: create VG and LV devices
@@ -300,6 +321,7 @@ get_arch_kernel () {
 		else
 			SMP=no
 		fi
+
 		case "$VENDOR" in
 		" AuthenticAMD"*)
 			case "$FAMILY" in
@@ -337,7 +359,7 @@ get_arch_kernel () {
 	amd64)
 		version=2.6
 		VENDOR=`grep '^vendor_id' /proc/cpuinfo | cut -d: -f2`
-		if dmesg | grep -q ^Processors:; then
+		if dmesg | grep -q "WARNING: NR_CPUS limit of 1 reached." ; then
 			SMP=yes
 		else
 			SMP=no
@@ -359,7 +381,7 @@ get_arch_kernel () {
 		esac
 	;;
 	sparc)
-		version=2.4.26
+		version=$(uname -r | cut -d . -f 1,2)
 		MODEL=`uname -m`
 		CPUS=`grep 'ncpus probed' /proc/cpuinfo | cut -d: -f2`
 		case "$MODEL" in
@@ -367,7 +389,12 @@ get_arch_kernel () {
 			if [ "$CPUS" -eq 1 ]; then
 				trykernel=kernel-image-$version-sparc32
 			else
-				trykernel=kernel-image-$version-sparc32-smp
+				# No working SMP yet
+				if [ "$version" = "2.6" ]; then
+					trykernel=kernel-image-$version-sparc32
+				else
+					trykernel=kernel-image-$version-sparc32-smp
+				fi
 			fi
 		;;
 		sparc64)
@@ -396,18 +423,33 @@ get_arch_kernel () {
 	;;
 	mips)
 		# big endian MIPS
-		version=2.4.26
+		kernel_major=$(uname -r | cut -d . -f 1,2)
+		# use the more generic package versioning for 2.6 ff.
+		case "$kernel_major" in
+		2.4) version=$(uname -r | cut -d - -f 1) ;;
+		*) version=$kernel_major ;;
+		esac
 		case "$SUBARCH" in
 		r4k-ip22) trykernel=kernel-image-$version-r4k-ip22 ;;
 		r5k-ip22) trykernel=kernel-image-$version-r5k-ip22 ;;
 		sb1-swarm-bn) trykernel=kernel-image-$version-sb1-swarm-bn ;;
+
+		# NOTE: the following kernel is not in Debian (sarge), but
+		# make it easier to offer unofficial support from a private
+		# apt-archive.
+		r5k-ip32) trykernel=kernel-image-$version-r5k-ip32 ;;
 
 		*) warning "Unknown $ARCH subarchitecture '$SUBARCH'." ;;
 		esac
 	;;
 	mipsel)
 		# little endian MIPS
-		version=2.4.26
+		kernel_major=$(uname -r | cut -d . -f 1,2)
+		# use the more generic package versioning for 2.6 ff.
+		case "$kernel_major" in
+		2.4) version=$(uname -r | cut -d - -f 1) ;;
+		*) version=$kernel_major ;;
+		esac
 		case "$SUBARCH" in
 		r3k-kn02) trykernel=kernel-image-$version-r3k-kn02 ;;
 		r4k-kn04) trykernel=kernel-image-$version-r4k-kn04 ;;
@@ -418,18 +460,22 @@ get_arch_kernel () {
 		esac
 	;;
 	ia64)
-		version=2.4.25
-		# Running a UP kernel for install atm, so don't know how to detect
-		# whether SMP is needed.  Assume SMP for now.
-		if grep -q Itanium /proc/cpuinfo; then
-			family=itanium
-		else
+		version=$(uname -r | cut -d . -f 1,2) # 2.4 or 2.6
+		if grep -q 'Itanium 2' /proc/cpuinfo; then
 			family=mckinley
+		else
+			family=itanium
 		fi
-		trykernel=kernel-image-$version-$family-smp
+		CPUS=$(grep ^processor /proc/cpuinfo | tail -1 | cut -d':' -f2)
+		if [ -z $CPUS ] || [ $CPUS -ne 0 ]; then
+			flavor=$family-smp
+		else
+			flavor=$family
+		fi
+		trykernel=kernel-image-$version-$flavor
 	;;
 	alpha)
-		version=2.4.26-1
+		version=2.4.27-1
 		if dmesg | grep -q ^Processors:; then
 			CPUS=`dmesg | grep ^Processors: | cut -d: -f2`
 		else
@@ -450,15 +496,15 @@ get_arch_kernel () {
 	;;
 	arm)
 		# ARM
-		version=2.4.25
+		version=$(uname -r | cut -d - -f 1)
 		case "$SUBARCH" in
-		netwinder|bast|riscpc|riscstation|lart)    
+		netwinder|bast|riscpc|riscstation|lart)
 			trykernel=kernel-image-$version-$SUBARCH ;;
 		*) warning "Unknown $ARCH subarchitecture '$SUBARCH'." ;;
 		esac
 	;;
 	hppa)
-		version=2.4.26
+		version=$(uname -r | cut -d - -f 1)
 		MODEL=`uname -m`
 		# Don't know how to detect whether SMP is needed, but
 		# apparently it's OK to assume SMP.
@@ -470,6 +516,10 @@ get_arch_kernel () {
 			trykernel=kernel-image-$version-64-smp
 		;;
 		esac
+	;;
+	s390)
+		version=$(uname -r)
+		trykernel=kernel-image-$version
 	;;
 	*)
 	warning "Unknown architecture '$ARCH'."
@@ -546,7 +596,10 @@ pick_kernel () {
 	fi
 
 	db_input medium base-installer/kernel/which-kernel || [ $? -eq 30 ]
-	db_go || exit 10
+	if ! db_go; then
+		db_progress stop
+		exit 10
+	fi
 
 	db_get base-installer/kernel/which-kernel
 	KERNEL=$RET
@@ -596,7 +649,6 @@ install_kernel () {
 	fi
 
 	cat > /target/etc/kernel-img.conf <<EOF
-# Do not create symbolic links in /
 do_symlinks = yes
 relative_links = yes
 do_bootloader = no
@@ -607,8 +659,11 @@ EOF
 
 	if [ yes = "$do_initrd" ] ; then
 		info "Installing initrd-tools."
+
 		# Make sure initrd-tools is installed before we change its
 		# configuration
+		db_subst base-installer/section/install_kernel_package SUBST0 "initrd-tools"
+		db_progress INFO base-installer/section/install_kernel_package
 		if ! apt-install initrd-tools 2>> $LOGFILE ; then
 			exit_error base-installer/kernel/failed-initrd-tools-install
 		fi
@@ -633,8 +688,35 @@ EOF
 		info "Not installing initrd-tools."
 	fi
 
+	# Advance progress bar to 15% of allocated space for install_kernel
+	update_progress 15 100
+
+	# Installing mkvmlinuz on the powerpc subarches that need it.
+	if [ "$ARCH" = "powerpc" -a "$(uname -r | cut -d . -f 1,2)" = "2.6" ]; then
+		case "$SUBARCH" in
+			prep | chrp | chrp_pegasos)
+				info "Installing mkvmlinuz."
+				db_subst base-installer/section/install_kernel_package SUBST0 "mkvmlinuz"
+				db_progress INFO base-installer/section/install_kernel_package
+				apt-install mkvmlinuz 2>> $LOGFILE || true
+				cat >> /target/etc/kernel-img.conf <<EOF
+postinst_hook = /usr/sbin/mkvmlinuz
+EOF
+			;;
+		esac
+	fi
+
+	# Advance progress bar to 30% of allocated space for install_kernel
+	update_progress 30 100
+
+	# Install the kernel
 	info "Installing kernel '$KERNEL'."
+	db_subst base-installer/section/install_kernel_package SUBST0 "$KERNEL"
+	db_progress INFO base-installer/section/install_kernel_package
 	apt-install "$KERNEL" 2>> $LOGFILE || kernel_install_failed=$?
+
+	# Advance progress bar to 90% of allocated space for install_kernel
+	update_progress 90 100
 
 	# /proc/filesystems will accomodate this past the second bootup.
 	if [ "$do_initrd" = yes ]; then
@@ -671,12 +753,21 @@ install_extra () {
 	
 	if [ -f /var/lib/apt-install/queue ] ; then
 		# We need to install these one by one in case one fails.
+		PKG_COUNT=`cat /var/lib/apt-install/queue | wc -w`
+		CURR_PKG=0
 		for PKG in `cat /var/lib/apt-install/queue`; do
+			db_subst base-installer/section/install_extra_package SUBST0 "$PKG"
+			db_progress INFO base-installer/section/install_extra_package
+
 			if apt-install $PKG >> $LOGFILE 2>&1 ; then
 				info "Installed $PKG successfully into /target/"
 			else
 				warning "Failed to install $PKG into /target/: $?"
 			fi
+
+			# Advance progress bar within space allocated for install_extra
+			CURR_PKG=$(($CURR_PKG + 1))
+			update_progress $CURR_PKG $PKG_COUNT
 		done
 	fi
 }
@@ -690,7 +781,7 @@ WAYPOINTS=""
 NUM_STEPS=0
 waypoint () {
 	WAYPOINTS="$WAYPOINTS $1:$2"
-	NUM_STEPS=$(expr $NUM_STEPS + $1) || true
+	NUM_STEPS=$(($NUM_STEPS + $1)) || true
 }
 
 waypoint 1	check_target
@@ -700,7 +791,7 @@ waypoint 1	configure_apt
 waypoint 3	apt_update
 waypoint 2	create_devices
 waypoint 1	pick_kernel
-waypoint 10	install_kernel
+waypoint 20	install_kernel
 case "$ARCH" in
 	i386*)
 		if [ -e /proc/bus/pccard/drivers ]; then
@@ -708,19 +799,18 @@ case "$ARCH" in
 		fi
 	;;
 esac
-waypoint 5	install_extra
+waypoint 10	install_extra
 waypoint 0	cleanup
 
 db_progress START 0 $NUM_STEPS base-installer/progress/installing-debian
-POS=0
 for item in $WAYPOINTS; do
-	step=$(echo $item | cut -d: -f 1)
-	waypoint=$(echo $item | cut -d: -f 2)
+	PB_WAYPOINT_LENGTH=$(echo $item | cut -d: -f 1)
+	WAYPOINT=$(echo $item | cut -d: -f 2)
 	# Not all of the section headers need exist.
-	db_progress INFO "base-installer/section/$waypoint" || true
-	eval $waypoint
-	POS=$(expr $POS + $step) || true
-	db_progress SET $POS
+	db_progress INFO "base-installer/section/$WAYPOINT" || true
+	eval $WAYPOINT
+	PB_POSITION=$(($PB_POSITION + $PB_WAYPOINT_LENGTH)) || true
+	db_progress SET $PB_POSITION
 done
 db_progress STOP
 exit 0
