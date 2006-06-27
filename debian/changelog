@@ -1,3 +1,12 @@
+base-installer (1.15ubuntu5) hoary; urgency=low
+
+  * Tweak kernel_update_list to list more general metapackages first, and
+    stop listing kernel-image-*.
+  * If the ideal kernel isn't available, just pick the first on the list
+    rather than trying to match up kernel versions.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon,  7 Mar 2005 13:11:31 +0000
+
 base-installer (1.15ubuntu4) hoary; urgency=low
 
   * Update Polish branding (thanks, Piotr Szotkowski).

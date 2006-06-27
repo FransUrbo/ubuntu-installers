@@ -345,13 +345,13 @@ check_usable_kernel () {
 kernel_update_list () {
 	# Using 'uniq' to avoid listing the same kernel more then once.
 	(set +e;
-	 chroot /target apt-cache search kernel-image | grep ^kernel-image;
-	 chroot /target apt-cache search linux-image | grep ^linux-image;
-	 # Hack for warty to get the metapackages; should be replaced by
-	 # something better for hoary.
-	 chroot /target apt-cache search ^linux- | grep '^linux-\(amd64\|386\|686\|k7\|power\|itanium\|mckinley\|sparc\|hppa\)') | \
+	 # Hack to get the metapackages in the right order; should be
+	 # replaced by something better at some point.
+	 chroot /target apt-cache search ^linux- | grep '^linux-\(amd64\|386\|686\|k7\|power\|itanium\|mckinley\|sparc\|hppa\)';
+	 chroot /target apt-cache search ^linux-image- | grep -v '^linux-image-2\.';
+	 chroot /target apt-cache search ^linux-image-2. | sort -r) | \
 	cut -d" " -f1 | uniq > "$KERNEL_LIST.unfiltered"
-	kernels=`sort -r "$KERNEL_LIST.unfiltered" | tr '\n' ' ' | sed -e 's/ $//'`
+	kernels=`< "$KERNEL_LIST.unfiltered" tr '\n' ' ' | sed -e 's/ $//'`
 	for candidate in $kernels; do
 		if check_usable_kernel "$candidate"; then
 			echo "$candidate"
@@ -378,14 +378,11 @@ pick_kernel () {
 
 	kernel_update_list
 
-	# Using 'sort -r' to get the newest kernel version at the start of the
-	# list (ie 2.4.20 above 2.2.20).  This is in conflict with getting the
-	# most generic architecture first (386 above 686).
 	# For now, only present kernels we believe to be usable. We may have
 	# to rethink this later, but if there are no usable kernels it
 	# should be accompanied by an error message. The default must still
 	# be usable if possible.
-	kernels=`sort -r "$KERNEL_LIST" | tr '\n' ',' | sed -e 's/,$//'`
+	kernels=`< "$KERNEL_LIST" tr '\n' ',' | sed -e 's/,$//'`
 
 	info "Found kernels '$kernels'"
 
@@ -408,21 +405,12 @@ pick_kernel () {
 		# Current selection is available, nothing to do
 		:
 	else
-		# No recommendations available; try to guess.
+		# No recommendations available; guess by taking the first on
+		# the list. kernel_update_list orders the list in such a way
+		# that the metapackages always come first, in the right
+		# order.
 		info "arch_kernel: $arch_kernel (absent)"
-
-		# Try to default to running kernel version.
-		KVERS=`uname -r | cut -d'-' -f 1`
-		KERNEL="$(echo "$kernels" | sed 's/,/\n/g' | grep -- "-$KVERS" | head -n 1)"
-		if [ -z "$KERNEL" ]; then
-			# If possible, find one with at least the same major number
-			# as the currently running kernel.
-			KERNEL="$(echo "$kernels" | sed 's/,/\n/g' | grep -- "-$KERNEL_MAJOR" | head -n 1)"
-			if [ -z "$KERNEL" ]; then
-				# Take the first on the list.
-				KERNEL=$(echo "$kernels" | cut -d, -f1)
-			fi
-		fi
+		KERNEL=$(echo "$kernels" | cut -d, -f1)
 	fi
 
 	if [ "$KERNEL" ] ; then
