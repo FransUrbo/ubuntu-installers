@@ -330,6 +330,30 @@ get_arch_kernel () {
 		;;
 		esac
 	;;
+	amd64)
+		version=2.6
+		VENDOR=`grep '^vendor_id' /proc/cpuinfo | cut -d: -f2`
+		if dmesg | grep -q ^Processors:; then
+			SMP=yes
+		else
+			SMP=no
+		fi
+		case "$VENDOR" in
+		" AuthenticAMD"*)
+			if test "$SMP" = no; then
+				trykernel=linux-image-$version-amd64-k8
+			else
+				trykernel=linux-image-$version-amd64-k8-smp
+			fi
+		;;
+		" GenuineIntel"*)
+			trykernel=linux-image-$version-amd64-xeon
+		;;
+		*)
+			trykernel=linux-image-$version-amd64-generic
+		;;
+		esac
+	;;
 	sparc)
 		version=2.4.26
 		MODEL=`uname -m`
@@ -352,46 +376,18 @@ get_arch_kernel () {
 		esac
 	;;
 	powerpc)
-		kernel_major="$(uname -r | cut -d . -f 1,2)" # 2.4 or 2.6
-		version=
-		case "$kernel_major" in
-		2.6)
-			version=2.6.6
-		;;
-		*)
-			version=2.4.25
-		;;
-		esac
-		# The APUS kernels are in a separate source package, so may
-		# sometimes have a different version number.
-		apusversion=2.4.25
+		version="$(uname -r | cut -d . -f 1,2)" # 2.4 or 2.6
 		CPU=`grep '^cpu[[:space:]]*:' /proc/cpuinfo | cut -d: -f2 | sed 's/^ *//; s/[, ].*//' | tr A-Z a-z`
 		case "$CPU" in
 		power3|i-star|s-star)
-			family=power3
+			trykernel=linux-image-$version-power3
 			;;
-		power4)
-			family=power4
-			;;
-		ppc970)
-			case "$kernel_major" in
-			2.6) family=g5 ;;
-			2.4) family=power4 ;;
-			esac
+		power4|ppc970)
+			trykernel=linux-image-$version-power4
 			;;
 		*)
-			family=powerpc
+			trykernel=linux-image-$version-powerpc
 			;;
-		esac
-		case "$SUBARCH" in
-		powermac_newworld) trykernel=kernel-image-$version-$family-pmac ;;
-		powermac_oldworld) trykernel=kernel-image-$version-$family-pmac ;;
-		prep) trykernel=kernel-image-$version-$family-prep ;;
-		chrp | chrp_pegasos) trykernel=kernel-image-$version-$family-chrp ;;
-		chrp_rs6k) trykernel=kernel-image-$version-$family-chrp-rs6k ;;
-		amiga) trykernel=kernel-image-$apusversion-apus ;;
-
-		*) warning "Unknown $ARCH subarchitecture '$SUBARCH'." ;;
 		esac
 	;;
 	mips)

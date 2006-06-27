@@ -1,3 +1,12 @@
+base-installer (0.087ubuntu6) warty; urgency=low
+
+  * Move powerpc to linux-image-*. Simplify, given that the only
+    linux-image-* kernels for powerpc have no subarchitecture stuff in their
+    names, only CPU families.
+  * Add amd64 kernel selection support.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue,  7 Sep 2004 02:22:12 +0100
+
 base-installer (0.087ubuntu5) warty; urgency=low
 
   * Support linux-image-* kernel packages as well as kernel-image-*.
