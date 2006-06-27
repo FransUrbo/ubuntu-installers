@@ -155,6 +155,10 @@ Template: base-installer/debootstrap/section/downrel
 Type: text
 _Description: Retrieving Release file
 
+Template: base-installer/debootstrap/section/downrelsig
+Type: text
+_Description: Retrieving Release file signature
+
 Template: base-installer/debootstrap/section/sizedebs
 Type: text
 _Description: Finding package sizes

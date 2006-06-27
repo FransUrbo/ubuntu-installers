@@ -1,3 +1,10 @@
+base-installer (1.15ubuntu2) hoary; urgency=low
+
+  * Enable debootstrap Release.gpg checking. Add matching
+    base-installer/debootstrap/section/downrelsig template.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 17 Jan 2005 18:18:26 +0000
+
 base-installer (1.15ubuntu1) hoary; urgency=low
 
   * Resynchronise with Debian.

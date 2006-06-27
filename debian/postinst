@@ -14,6 +14,7 @@ COMPONENTS=
 DISTRIBUTION=
 INCLUDES=
 EXCLUDES=
+DEFAULT_KEYRING=/usr/share/keyrings/ubuntu-archive-keyring.gpg
 KERNEL=
 KERNEL_LIST=/tmp/available_kernels.txt
 KERNEL_MAJOR="$(uname -r | cut -d . -f 1,2)"
@@ -186,6 +187,9 @@ install_base_system () {
 	if [ "${EXCLUDES}" ]; then
 		exclude="--exclude=${EXCLUDES}"
 	fi
+	if type gpgv >/dev/null && [ -f "$DEFAULT_KEYRING" ]; then
+		keyring="--keyring=$DEFAULT_KEYRING"
+	fi
 
 	test -d $ETCDIR || mkdir -p $ETCDIR
 
@@ -239,6 +243,7 @@ install_base_system () {
 		        --components="${COMPONENTS}" \
 		        --debian-installer \
 		        ${include} ${exclude} \
+		        ${keyring} \
 		        ${DISTRIBUTION} /target \
 		        "$PROTOCOL://$MIRROR$DIRECTORY" \
 		        2>> $LOGFILE || debootstrap_failed=$?
