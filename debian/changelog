@@ -1,3 +1,9 @@
+base-installer (0.087ubuntu1) warty; urgency=low
+
+  * Create ubd devices in create_devices() if installing under UML
+
+ -- Matt Zimmerman <mdz@debian.org>  Thu,  8 Jul 2004 11:28:32 -0700
+
 base-installer (0.087) unstable; urgency=low
 
   * Otavio Salvador

@@ -391,4 +391,3 @@ msgstr "Inštalujú sa PCMCIA moduly"
 #: ../templates:239
 msgid "Install the base system"
 msgstr "Inštalovať základný systém"
-

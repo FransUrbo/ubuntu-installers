@@ -56,8 +56,10 @@ msgstr "Instalerea sistemului de bază pe /target/ a eşuat."
 #. Type: error
 #. Description
 #: ../templates:33
-msgid "The debootstrap program exited with an error (return value ${EXITCODE})."
-msgstr "Programul debootstrap s-a terminat cu eroare (cod de eroare ${EXITCODE})."
+msgid ""
+"The debootstrap program exited with an error (return value ${EXITCODE})."
+msgstr ""
+"Programul debootstrap s-a terminat cu eroare (cod de eroare ${EXITCODE})."
 
 #. Type: error
 #. Description
@@ -154,7 +156,8 @@ msgstr "Pachetul implict actual de nucleu (kernel) este '${KERNEL}'."
 #. Type: error
 #. Description
 #: ../templates:78
-msgid "You may try to continue though this rather strange error is probably fatal."
+msgid ""
+"You may try to continue though this rather strange error is probably fatal."
 msgstr ""
 "Aţi putea să incercaţi să continuaţi deşi această eroare ciudată este "
 "probabil fatală."
@@ -179,7 +182,8 @@ msgstr ""
 #. Description
 #: ../templates:87
 msgid "Check /var/log/messages or see virtual console 3 for the details."
-msgstr "Verificaţi fişierul /var/log/messages sau consola virtuală 3 pentru detalii."
+msgstr ""
+"Verificaţi fişierul /var/log/messages sau consola virtuală 3 pentru detalii."
 
 #. Type: error
 #. Description
@@ -401,4 +405,3 @@ msgstr "Se instalează sistemul de bază"
 #~ msgstr ""
 #~ "Încercarea de instalare a modulelor PCMCIA pe sistemul ţintă s-a soldat "
 #~ "cu eroare."
-

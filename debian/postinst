@@ -261,6 +261,10 @@ create_devices () {
 		chroot /target vgscan --mknodes || true
 		umount /target/proc
 	fi
+	# UML: create ubd devices
+	if grep -q "model.*UML" /proc/cpuinfo; then
+		chroot /target /bin/sh -c '(cd /dev; ./MAKEDEV ubd)'
+	fi
 }
 
 kernel_update_list () {

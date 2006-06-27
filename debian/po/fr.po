@@ -20,7 +20,8 @@ msgstr ""
 #. Description
 #: ../templates:4
 msgid "Proceed with installation to unclean target?"
-msgstr "Faut-il installer le système de base par-dessus l'ancienne installation ?"
+msgstr ""
+"Faut-il installer le système de base par-dessus l'ancienne installation ?"
 
 #. Type: boolean
 #. Description
@@ -49,7 +50,8 @@ msgstr "Le système de base n'a pas pu être installé dans /target/."
 #. Type: error
 #. Description
 #: ../templates:33
-msgid "The debootstrap program exited with an error (return value ${EXITCODE})."
+msgid ""
+"The debootstrap program exited with an error (return value ${EXITCODE})."
 msgstr ""
 "Le programme debootstrap s'est terminé avec une erreur (valeur de retour "
 "${EXITCODE})."
@@ -149,7 +151,8 @@ msgstr "Le noyau actuel par défaut est « ${KERNEL} »."
 #. Type: error
 #. Description
 #: ../templates:78
-msgid "You may try to continue though this rather strange error is probably fatal."
+msgid ""
+"You may try to continue though this rather strange error is probably fatal."
 msgstr ""
 "Vous pouvez essayer de poursuivre même si cette erreur est plutôt inattendue "
 "et probablement fatale."
@@ -388,4 +391,3 @@ msgstr "Installation des modules PCMCIA"
 #: ../templates:239
 msgid "Install the base system"
 msgstr "Installer le système de base"
-
