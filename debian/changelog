@@ -1,3 +1,9 @@
+base-installer (1.15ubuntu4) hoary; urgency=low
+
+  * Update Polish branding (thanks, Piotr Szotkowski).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 14 Feb 2005 11:56:32 +0000
+
 base-installer (1.15ubuntu3) hoary; urgency=low
 
   * Use linux-* kernels on hppa.

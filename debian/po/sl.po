@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-28 17:24+0100\n"
+"POT-Creation-Date: 2005-02-14 11:56+0000\n"
 "PO-Revision-Date: 2004-10-26 08:55+0200\n"
 "Last-Translator: Jure Čuhalev <gandalf@owca.info>\n"
 "Language-Team:  LANGUAGE <LL@li.org>\n"
@@ -331,24 +331,31 @@ msgstr "Prenašam Release datoteko"
 #. Type: text
 #. Description
 #: ../base-installer.templates:160
+#, fuzzy
+msgid "Retrieving Release file signature"
+msgstr "Prenašam Release datoteko"
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:164
 msgid "Finding package sizes"
 msgstr "Ugotavljam velikosti paketov"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:164
+#: ../base-installer.templates:168
 msgid "Retrieving Packages files"
 msgstr "Prenašam Packages datoteke"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:168
+#: ../base-installer.templates:172
 msgid "Retrieving packages"
 msgstr "Prenašam paketke"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:172
+#: ../base-installer.templates:176
 msgid "Extracting packages"
 msgstr "Razširjam pakete"
 
@@ -356,7 +363,7 @@ msgstr "Razširjam pakete"
 #  Description
 #. Type: text
 #. Description
-#: ../base-installer.templates:176
+#: ../base-installer.templates:180
 #, fuzzy
 msgid "Installing core packages"
 msgstr "Nameščam osnovne pakete..."
@@ -365,7 +372,7 @@ msgstr "Nameščam osnovne pakete..."
 #  Description
 #. Type: text
 #. Description
-#: ../base-installer.templates:180
+#: ../base-installer.templates:184
 #, fuzzy
 msgid "Unpacking required packages"
 msgstr "Odpiram zahtevane stisnjene pakete..."
@@ -374,7 +381,7 @@ msgstr "Odpiram zahtevane stisnjene pakete..."
 #  Description
 #. Type: text
 #. Description
-#: ../base-installer.templates:184
+#: ../base-installer.templates:188
 #, fuzzy
 msgid "Configuring required packages"
 msgstr "Nastavljam zahtevane pakete..."
@@ -383,7 +390,7 @@ msgstr "Nastavljam zahtevane pakete..."
 #  Description
 #. Type: text
 #. Description
-#: ../base-installer.templates:188
+#: ../base-installer.templates:192
 #, fuzzy
 msgid "Unpacking the base system"
 msgstr "Nameščam osnovni sistem"
@@ -392,48 +399,39 @@ msgstr "Nameščam osnovni sistem"
 #  Description
 #. Type: text
 #. Description
-#: ../base-installer.templates:192
+#: ../base-installer.templates:196
 #, fuzzy
 msgid "Configuring the base system"
 msgstr "Nameščam osnovni sistem"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:196
+#: ../base-installer.templates:200
 msgid "Installing the base system"
 msgstr "Nameščam osnovni sistem"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:200
+#: ../base-installer.templates:204
 msgid "${SECTION}: ${INFO}..."
 msgstr "${SECTION}: ${INFO}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:204
+#: ../base-installer.templates:208
 msgid "Validating ${SUBST0}..."
 msgstr "Preverjam ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:208
+#: ../base-installer.templates:212
 msgid "Retrieving ${SUBST0}..."
 msgstr "Prenašam ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:212
-msgid "Extracting ${SUBST0}..."
-msgstr "Razširjam ${SUBST0}..."
-
-#  Type: text
-#  Description
-#. Type: text
-#. Description
 #: ../base-installer.templates:216
-#, fuzzy
-msgid "Unpacking ${SUBST0}..."
+msgid "Extracting ${SUBST0}..."
 msgstr "Razširjam ${SUBST0}..."
 
 #  Type: text
@@ -442,30 +440,39 @@ msgstr "Razširjam ${SUBST0}..."
 #. Description
 #: ../base-installer.templates:220
 #, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "Razširjam ${SUBST0}..."
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../base-installer.templates:224
+#, fuzzy
 msgid "Configuring ${SUBST0}..."
 msgstr "Preverjam ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:224
+#: ../base-installer.templates:228
 msgid "Checking package size: ${SUBST0}..."
 msgstr "Preverjam velikosti paketa: ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:228
+#: ../base-installer.templates:232
 msgid "Installing core packages..."
 msgstr "Nameščam osnovne pakete..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:232
+#: ../base-installer.templates:236
 msgid "Unpacking required packages..."
 msgstr "Odpiram zahtevane stisnjene pakete..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:236
+#: ../base-installer.templates:240
 msgid "Configuring required packages..."
 msgstr "Nastavljam zahtevane pakete..."
 
@@ -473,7 +480,7 @@ msgstr "Nastavljam zahtevane pakete..."
 #  Description
 #. Type: text
 #. Description
-#: ../base-installer.templates:240
+#: ../base-installer.templates:244
 #, fuzzy
 msgid "Unpacking the base system..."
 msgstr "Nameščam osnovni sistem"
@@ -482,81 +489,81 @@ msgstr "Nameščam osnovni sistem"
 #  Description
 #. Type: text
 #. Description
-#: ../base-installer.templates:244
+#: ../base-installer.templates:248
 #, fuzzy
 msgid "Configuring the base system..."
 msgstr "Nameščam osnovni sistem"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:248
+#: ../base-installer.templates:252
 msgid "Installing base packages..."
 msgstr "Nameščam osnovne pakete..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:252
+#: ../base-installer.templates:256
 msgid "Base system installed successfully."
 msgstr "Osnovni sistem uspešno nameščen."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:256
+#: ../base-installer.templates:260
 msgid "Configuring APT sources..."
 msgstr "Nastavljam vire APT..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:260
+#: ../base-installer.templates:264
 msgid "Updating the list of available packages..."
 msgstr "Posodabljam seznam paketov, ki so na voljo..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:264
+#: ../base-installer.templates:268
 msgid "Installing extra packages..."
 msgstr "Nameščam dodatne pakete..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:268
+#: ../base-installer.templates:272
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr "Nameščanje dodatnih paketov - prenašam in nameščam ${SUBS0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:272
+#: ../base-installer.templates:276
 msgid "Creating device files..."
 msgstr "Ustvarjanje datotek napra ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:276
+#: ../base-installer.templates:280
 msgid "Selecting the kernel to install..."
 msgstr "Izbiram jedro za namestitev..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:280
+#: ../base-installer.templates:284
 msgid "Installing the kernel..."
 msgstr "Nameščam jedro..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:284
+#: ../base-installer.templates:288
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr "Nameščam jedro - prenašam in nameščam ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:288
+#: ../base-installer.templates:292
 msgid "Installing the PCMCIA modules"
 msgstr "Nameščam PCMCIA module"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../base-installer.templates:293
+#: ../base-installer.templates:297
 msgid "Install the base system"
 msgstr "Namesti osnovni sistem"
 
