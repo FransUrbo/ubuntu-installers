@@ -1,3 +1,9 @@
+base-installer (1.15ubuntu11) hoary; urgency=low
+
+  * Add draft Xhosa translation.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 22 Mar 2005 14:21:01 +0000
+
 base-installer (1.15ubuntu10) hoary; urgency=low
 
   * Don't install mkvmlinuz on Pegasos, since that has yaboot support with
