@@ -1,3 +1,10 @@
+base-installer (1.15ubuntu9) hoary; urgency=low
+
+  * Provide target-base-system (i.e. base system installed in /target, also
+    provided by casper).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 15 Mar 2005 13:00:18 +0000
+
 base-installer (1.15ubuntu8) hoary; urgency=low
 
   * Better version of get_resume_partition that protects against using swap
