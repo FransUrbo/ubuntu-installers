@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Ubuntu Installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2005-03-08 20:54+0200\n"
+"PO-Revision-Date: 2005-03-23 14:43+0200\n"
 "Last-Translator: Canonical Ltd <translations@canonical.com>\n"
 "Language-Team: Xhosa <xh-translate@ubuntu.com>\n"
 "MIME-Version: 1.0\n"
@@ -50,25 +50,21 @@ msgstr ""
 "Isiseki-nkqubo asikwazi ukuqikelela indlela yokuseka i-Ubuntu. Akukho CD-ROM "
 "esekekayo ethe yafunyanwa yaye akukho sipili sisemthethweni sithe samiselwa."
 
-# "/target" must appear verbatim in translation
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
-#, fuzzy
 msgid "No filesystem mounted on /target"
-msgstr "Akukho nkqubo yefayili enyusiweyo / ejoliswe kuyo"
+msgstr "Akukho nkqubo yefayili enyusiweyo kwi- /target"
 
-# "/target" must appear verbatim in translation
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
-#, fuzzy
 msgid ""
 "Before the installation can proceed, a root filesystem must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
 "Ngaphambi kokuba ukusekwa kwenkqubo kuqhubeke, inkqubo yefayili kufuneka "
-"inyuswe/kujoliswe kuyo. Umahluli nomseki bafanele ukuba bakwenzele oku."
+"inyuswe kwi- /target. Umahluli nomseki bafanele ukuba bakwenzele oku."
 
 #. Type: error
 #. Description
@@ -87,7 +83,7 @@ msgid ""
 "install."
 msgstr ""
 "Useko-nkqubo kwinkqubo yefayili ekujoliswe kuyo kurhoxisiwe, kuba inkqubo "
-"yefayili ekujoliswe kuyo iqulethe iifayili ezisuka kuseko-nkqubo lwakudala,"
+"yefayili ekujoliswe kuyo iqulethe iifayili ezisuka kuseko-nkqubo lwakudala, "
 "into leyo engayophula inkqubo eza kusekwa. Kufuneka uphindele umva ucime "
 "okanye umise inkqubo yefayile ekujoliswe kuyo ngaphambi kokuqhubeka nokuseka "
 "inkqubo."
@@ -98,26 +94,20 @@ msgstr ""
 msgid "Failed to install the base system"
 msgstr "Ayiphumelelangaukuseka inkqubo esisiseko"
 
-# "/target/" must appear verbatim in translation
 #. Type: error
 #. Description
 #: ../base-installer.templates:32
-#, fuzzy
 msgid "The base system installation into /target/ failed."
 msgstr ""
-"Inkqubo esisiseko yokusekela inkqubo / ekujoliswe kuyo ayiphumelelanga "
-"esisiseko"
+"Inkqubo esisiseko yokusekela inkqubo kwi- /target ayiphumelelanga esisiseko."
 
-#  debootstrap must appear verbatim in translation
 #. Type: error
 #. Description
 #: ../base-installer.templates:39
-#, fuzzy
 msgid ""
 "The debootstrap program exited with an error (return value ${EXITCODE})."
 msgstr ""
-"Inkqubo yomcu wokuvala iphume inempazamo (ixabiso lokuphindela umva yi "
-"${EXITCODE})"
+"I-debootstrap iphume inempazamo (ixabiso lokuphindela umva yi ${EXITCODE})."
 
 #. Type: error
 #. Description
@@ -125,13 +115,11 @@ msgstr ""
 msgid "Base system installation error"
 msgstr "Impazamo yesisiseki-nkqubo yenkqubo esisiseko"
 
-#  debootstrap must appear verbatim in translation
 #. Type: error
 #. Description
 #: ../base-installer.templates:46
-#, fuzzy
 msgid "The debootstrap program exited abnormally."
-msgstr "Inkqubo yokuvala iphume ngokungaqhelekanga."
+msgstr "I-debootstrap iphume ngokungaqhelekanga."
 
 #. Type: error
 #. Description
@@ -176,13 +164,13 @@ msgstr ""
 #. Description
 #: ../base-installer.templates:67
 msgid "Kernel package: '${KERNEL}'."
-msgstr "Umqulu we-kernel: '${KERNEL}'"
+msgstr "Umqulu we-kernel: '${KERNEL}'."
 
 #. Type: select
 #. Description
 #: ../base-installer.templates:78
 msgid "Kernel to install:"
-msgstr "I-Kernel iza kumilisela: "
+msgstr "I-Kernel iza kumilisela:"
 
 #. Type: select
 #. Description
@@ -225,26 +213,22 @@ msgstr "Ungazama ukuqhubeka noxa kungathi le mpazamo imangalisayo iyabulala."
 msgid "Unable to install initrd-tools"
 msgstr "Ayikwazi kuseka izixhobo ze-initrd"
 
-# initrd-tools must appear verbatim in translation
 #. Type: error
 #. Description
 #: ../base-installer.templates:93
-#, fuzzy
 msgid ""
 "An error was returned while trying to install the initrd-tools package  onto "
 "the target system."
 msgstr ""
-"Impazamo yabuyiswa xa yayizama ukuseka umqulu wenkqubo wezixhobo ze - initrd "
+"Impazamo yabuyiswa xa yayizama ukuseka umqulu wenkqubo yee-initrd-tools "
 "kwinkqubo ekujoliswe kuyo."
 
-# /var/log/messages must appear verbatim in translation
 #. Type: error
 #. Description
 #: ../base-installer.templates:93
-#, fuzzy
 msgid "Check /var/log/messages or see virtual console 3 for the details."
 msgstr ""
-"Khangela / imiyalezo ye/ var/log okanye ujonge isixhasi senyani sesi-3 xa "
+"Khangela ii- /var/log/messages okanye ujonge isixhasi senyani sesi-3 xa "
 "ufuna iinkcukacha."
 
 #. Type: error
@@ -263,7 +247,7 @@ msgstr "Ayaziwa indawo i-${SUBST0}."
 #. Description
 #: ../base-installer.templates:111
 msgid "Failed getting Release file ${SUBST0}."
-msgstr "Ayiphumelelanga ukufumana ifayili yokukhulula i ${SUBST0}"
+msgstr "Ayiphumelelanga ukufumana ifayili yokukhulula i ${SUBST0}."
 
 #. Type: error
 #. Description
@@ -344,7 +328,6 @@ msgstr "Ifumana kwakhona ifayili Yokukhutshwa"
 #. Type: text
 #. Description
 #: ../base-installer.templates:160
-#, fuzzy
 msgid "Retrieving Release file signature"
 msgstr "Ifumana kwakhona ifayili Yokukhutshwa"
 
@@ -378,13 +361,11 @@ msgstr "Ikhupha imiqulu yenkqubo"
 msgid "Installing core packages"
 msgstr "Iseka imiqulu yenkqubo engundoqo"
 
-# Incomplete translation?
 #. Type: text
 #. Description
 #: ../base-installer.templates:184
-#, fuzzy
 msgid "Unpacking required packages"
-msgstr "Ikhupha imiqulu"
+msgstr "Ikhupha imiqulu yenkqubo efunekayo"
 
 #. Type: text
 #. Description
@@ -428,19 +409,15 @@ msgstr "Ingqinelana ne-${SUBST0}..."
 msgid "Retrieving ${SUBST0}..."
 msgstr "Ifumana kwakhona i-${SUBST0}..."
 
-# Extracting and Unpacking must be different (see next string)
 #. Type: text
 #. Description
 #: ../base-installer.templates:216
-#, fuzzy
 msgid "Extracting ${SUBST0}..."
 msgstr "Ikhupha i-${SUBST0}..."
 
-# Extracting and Unpacking must be different (see previous string)
 #. Type: text
 #. Description
 #: ../base-installer.templates:220
-#, fuzzy
 msgid "Unpacking ${SUBST0}..."
 msgstr "Ikhupha i-${SUBST0}..."
 
@@ -498,19 +475,17 @@ msgstr "Iseka imiqulu yenkqubo yesiseko..."
 msgid "Base system installed successfully."
 msgstr "Inkqubo yesiseko isekwe ngempumelelo."
 
-# Untranslated
 #. Type: text
 #. Description
 #: ../base-installer.templates:260
-#, fuzzy
 msgid "Configuring APT sources..."
-msgstr "Configuring APT sources..."
+msgstr "Imisela iinkqubo zemithombo ye-APT..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:264
 msgid "Updating the list of available packages..."
-msgstr "Ihlaziya uluhlu lwemiqulu efumanekayo yeenkqubo... "
+msgstr "Ihlaziya uluhlu lwemiqulu efumanekayo yeenkqubo..."
 
 #. Type: text
 #. Description

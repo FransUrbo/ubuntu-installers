@@ -1,3 +1,14 @@
+base-installer (1.15ubuntu14) hoary; urgency=low
+
+  * Add a post-base-installation hook: scripts in
+    /usr/lib/post-base-installer.d/ will be run after the base system
+    installation is complete.
+  * Update Romanian translation (thanks, Ovidiu Damian).
+  * Update Spanish translation (thanks, Enrique Matías Sánchez).
+  * Update Xhosa translation (thanks, Adi Attar).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 31 Mar 2005 15:46:10 +0100
+
 base-installer (1.15ubuntu13) hoary; urgency=low
 
   * Update Brazilian Portuguese translation (thanks, Carlos Eduardo Pedroza
