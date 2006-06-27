@@ -16,6 +16,10 @@ INCLUDES=
 EXCLUDES=
 KERNEL=
 KERNEL_LIST=/tmp/available_kernels.txt
+KERNEL_MAJOR="$(uname -r | cut -d . -f 1,2)"
+KERNEL_VERSION="$(uname -r | cut -d - -f 1)"
+KERNEL_ABI="$(uname -r | cut -d - -f 1,2)"
+MACHINE="$(uname -m)"
 
 # Avoid debconf sending email during the base install process.
 DEBCONF_ADMIN_EMAIL=""
@@ -48,6 +52,25 @@ exit_error() {
 	db_go
 	exit 1
 }
+
+# See kernel/README for the architecture-specific functions expected here.
+if [ -f /usr/lib/base-installer/kernel.sh ]; then
+	. /usr/lib/base-installer/kernel.sh
+else
+	arch_get_kernel_flavour () {
+		warning "Unknown architecture '$ARCH'."
+		return 0
+	}
+	arch_check_usable_kernel () {
+		warning "Unknown architecture '$ARCH'."
+		return 0
+	}
+	arch_get_kernel () {
+		warning "Unknown architecture '$ARCH'."
+	}
+fi
+
+FLAVOUR="$(arch_get_kernel_flavour)"
 
 update_progress () {
 	# Updates the progress bar to a new position within the space allocated
@@ -97,6 +120,12 @@ get_mirror_info () {
 			
 		if [ -s /cdrom/.disk/base_exclude ]; then
 			EXCLUDES=`grep -v '^#' /cdrom/.disk/base_exclude | tr '\n' , | sed 's/,$//'`
+		fi
+
+		# Sanity check: an error reading /cdrom/.disk/base_components can cause
+		# ugly errors in debootstrap because $COMPONENTS will be empty.
+		if [ -z "$COMPONENTS" ]; then
+			exit_error base-installer/cannot_install
 		fi
 	else
 		mirror_error=""
@@ -235,7 +264,7 @@ configure_apt () {
 				mkdir -p /target/$DIRECTORY
 			fi
 		fi
-		if [ "`uname -r | grep '^2.2.'`" != "" ]; then
+		if [ "$(KERNEL_MAJOR)" = 2.2 ]; then
 			CDDEV=`grep -i /cdrom /proc/mounts | cut -d' ' -f 1 | grep loop || true`
 			if [ "" != "$CDDEV" ]  && \
 				db_get iso-scan/filename && [ "$RET" ] ; then
@@ -293,6 +322,21 @@ create_devices () {
 	fi
 }
 
+# Test whether a kernel is usable at all. For the purposes of this test, we
+# assume that SMP is usable on UP and vice versa (is this safe?).
+# Some architectures just have a hierarchy of optimized kernels, whereas
+# some have subarchitectures that are incompatible at the kernel level. This
+# function should cope with both cases.
+check_usable_kernel () {
+	if arch_check_usable_kernel "$1" "$FLAVOUR"; then
+		info "kernel $1 usable on $FLAVOUR"
+		return 0
+	else
+		info "kernel $1 not usable on $FLAVOUR"
+		return 1
+	fi
+}
+
 kernel_update_list () {
 	# Using 'uniq' to avoid listing the same kernel more then once.
 	(set +e;
@@ -301,7 +345,13 @@ kernel_update_list () {
 	 # Hack for warty to get the metapackages; should be replaced by
 	 # something better for hoary.
 	 chroot /target apt-cache search ^linux- | grep '^linux-\(amd64\|386\|686\|k7\|power\|itanium\|mckinley\|sparc\)') | \
-	cut -d" " -f1 | uniq > $KERNEL_LIST
+	cut -d" " -f1 | uniq > "$KERNEL_LIST.unfiltered"
+	kernels=`sort -r "$KERNEL_LIST.unfiltered" | tr '\n' ' ' | sed -e 's/ $//'`
+	for candidate in $kernels; do
+		if check_usable_kernel "$candidate"; then
+			echo "$candidate"
+		fi
+	done > "$KERNEL_LIST"
 }
 
 kernel_present () {
@@ -310,231 +360,27 @@ kernel_present () {
 
 # Returns a kernel that seems appropriate for the machine.
 get_arch_kernel () {
-	trykernel=
-	case "$ARCH" in
-	i386*)
-		version=$(uname -r | cut -d . -f 1,2) # 2.4 or 2.6
-		VENDOR=`grep '^vendor_id' /proc/cpuinfo | cut -d: -f2`
-		FAMILY=`grep '^cpu family' /proc/cpuinfo | cut -d: -f2`
-		if dmesg | grep -q ^Processors:; then
-			SMP=yes
-		else
-			SMP=no
-		fi
-
-		case "$VENDOR" in
-		" AuthenticAMD"*)
-			case "$FAMILY" in
-			" 6")
-				if test $SMP = no; then
-				        trykernel=linux-k7
-				else
-				        trykernel=linux-k7-smp
-				fi
-			;;
-			*)
-				trykernel=linux-386
-			;;
-			esac
-		;;
-		" GenuineIntel"*)
-			case "$FAMILY" in
-			" 6"|" 15")
-				if test $SMP = no; then
-				        trykernel=linux-686
-				else
-				        trykernel=linux-686-smp
-				fi
-			;;
-			*)
-				trykernel=linux-386
-			;;
-			esac
-		;;
-		*)
-			trykernel=linux-386
-		;;
-		esac
-	;;
-	amd64)
-		version=2.6
-		VENDOR=`grep '^vendor_id' /proc/cpuinfo | cut -d: -f2`
-		if dmesg | grep -q "WARNING: NR_CPUS limit of 1 reached." ; then
-			SMP=yes
-		else
-			SMP=no
-		fi
-		case "$VENDOR" in
-		" AuthenticAMD"*)
-			if test "$SMP" = no; then
-				trykernel=linux-amd64-k8
-			else
-				trykernel=linux-amd64-k8-smp
-			fi
-		;;
-		" GenuineIntel"*)
-			trykernel=linux-amd64-xeon
-		;;
-		*)
-			trykernel=linux-amd64-generic
-		;;
-		esac
-	;;
-	sparc)
-		version=$(uname -r | cut -d . -f 1,2)
-		MODEL=`uname -m`
-		CPUS=`grep 'ncpus probed' /proc/cpuinfo | cut -d: -f2`
-		case "$MODEL" in
-		sparc64)
-			if [ "$CPUS" -eq 1 ]; then
-				trykernel=linux-sparc64
-			else
-				trykernel=linux-sparc64-smp
-			fi
-		;;
-		esac
-	;;
-	powerpc)
-		version="$(uname -r | cut -d . -f 1,2)" # 2.4 or 2.6
-		CPU=`grep '^cpu[[:space:]]*:' /proc/cpuinfo | cut -d: -f2 | sed 's/^ *//; s/[, ].*//' | tr A-Z a-z`
-		case "$CPU" in
-		power3|i-star|s-star)
-			trykernel=linux-power3
-			;;
-		power4|ppc970)
-			trykernel=linux-power4
-			;;
-		*)
-			trykernel=linux-powerpc
-			;;
-		esac
-	;;
-	mips)
-		# big endian MIPS
-		kernel_major=$(uname -r | cut -d . -f 1,2)
-		# use the more generic package versioning for 2.6 ff.
-		case "$kernel_major" in
-		2.4) version=$(uname -r | cut -d - -f 1) ;;
-		*) version=$kernel_major ;;
-		esac
-		case "$SUBARCH" in
-		r4k-ip22) trykernel=kernel-image-$version-r4k-ip22 ;;
-		r5k-ip22) trykernel=kernel-image-$version-r5k-ip22 ;;
-		sb1-swarm-bn) trykernel=kernel-image-$version-sb1-swarm-bn ;;
-
-		# NOTE: the following kernel is not in Debian (sarge), but
-		# make it easier to offer unofficial support from a private
-		# apt-archive.
-		r5k-ip32) trykernel=kernel-image-$version-r5k-ip32 ;;
-
-		*) warning "Unknown $ARCH subarchitecture '$SUBARCH'." ;;
-		esac
-	;;
-	mipsel)
-		# little endian MIPS
-		kernel_major=$(uname -r | cut -d . -f 1,2)
-		# use the more generic package versioning for 2.6 ff.
-		case "$kernel_major" in
-		2.4) version=$(uname -r | cut -d - -f 1) ;;
-		*) version=$kernel_major ;;
-		esac
-		case "$SUBARCH" in
-		r3k-kn02) trykernel=kernel-image-$version-r3k-kn02 ;;
-		r4k-kn04) trykernel=kernel-image-$version-r4k-kn04 ;;
-		cobalt) trykernel=kernel-image-$version-r5k-cobalt ;;
-		sb1-swarm-bn) trykernel=kernel-image-$version-sb1-swarm-bn ;;
-
-		*) warning "Unknown $ARCH subarchitecture '$SUBARCH'." ;;
-		esac
-	;;
-	ia64)
-		version=$(uname -r | cut -d . -f 1,2) # 2.4 or 2.6
-		if grep -q 'Itanium 2' /proc/cpuinfo; then
-			family=mckinley
-		else
-			family=itanium
-		fi
-		CPUS=$(grep ^processor /proc/cpuinfo | tail -1 | cut -d':' -f2)
-		if [ -z $CPUS ] || [ $CPUS -ne 0 ]; then
-			flavor=$family-smp
-		else
-			flavor=$family
-		fi
-		trykernel=linux-$flavor
-	;;
-	alpha)
-		version=2.4.27-1
-		if dmesg | grep -q ^Processors:; then
-			CPUS=`dmesg | grep ^Processors: | cut -d: -f2`
-		else
-			CPUS=1
-		fi
-		if test $CPUS -eq 1; then
-			trykernel=kernel-image-$version-generic
-		else
-			trykernel=kernel-image-$version-smp
-		fi
-	;;
-	m68k)
-		case "$SUBARCH" in
-		amiga|atari|mac|bvme6000|mvme147|mvme16x|q40|sun3|sun3x)
-			trykernel=$SUBARCH ;;
-		*) warning "Unknown $ARCH subarchitecture '$SUBARCH'." ;;
-		esac
-	;;
-	arm)
-		# ARM
-		version=$(uname -r | cut -d - -f 1)
-		case "$SUBARCH" in
-		netwinder|bast|riscpc|riscstation|lart)
-			trykernel=kernel-image-$version-$SUBARCH ;;
-		*) warning "Unknown $ARCH subarchitecture '$SUBARCH'." ;;
-		esac
-	;;
-	hppa)
-		kernel_major=$(uname -r | cut -d . -f 1,2)
-		case "$kernel_major" in
-		2.4) version=$(uname -r | cut -d - -f 1) ;;
-		2.6) version=$(uname -r | cut -d - -f 1,2) ;;
-		esac
-		MODEL=`uname -m`
-		# Don't know how to detect whether SMP is needed, but
-		# apparently it's OK to assume SMP.
-		case "$MODEL" in
-		parisc)
-			trykernel=kernel-image-$version-32-smp
-		;;
-		parisc64)
-			trykernel=kernel-image-$version-64-smp
-		;;
-		esac
-	;;
-	s390)
-		version=$(uname -r)
-		trykernel=kernel-image-$version
-	;;
-	*)
-	warning "Unknown architecture '$ARCH'."
-	;;
-	esac
-
-	echo $trykernel
+	arch_get_kernel "$FLAVOUR"
 }
 
 pick_kernel () {
 	# Fetch the current default
-	kernel_major="$(uname -r | cut -d . -f 1,2)"
-	if db_get debian-installer/kernel/image-$kernel_major && [ "$RET" ]; then
+	if db_get base-installer/kernel/image-$KERNEL_MAJOR && [ "$RET" ]; then
 		KERNEL="$RET"
-	elif db_get debian-installer/kernel/image && [ "$RET" ]; then
+	elif db_get base-installer/kernel/image && [ "$RET" ]; then
 		KERNEL="$RET"
 	fi
+
+	kernel_update_list
 
 	# Using 'sort -r' to get the newest kernel version at the start of the
 	# list (ie 2.4.20 above 2.2.20).  This is in conflict with getting the
 	# most generic architecture first (386 above 686).
-	kernel_update_list
-	kernels=`sort -r $KERNEL_LIST| tr '\n' ',' | sed -e 's/,$//'`
+	# For now, only present kernels we believe to be usable. We may have
+	# to rethink this later, but if there are no usable kernels it
+	# should be accompanied by an error message. The default must still
+	# be usable if possible.
+	kernels=`sort -r "$KERNEL_LIST" | tr '\n' ',' | sed -e 's/,$//'`
 
 	info "Found kernels '$kernels'"
 
@@ -545,40 +391,31 @@ pick_kernel () {
 		exit_error base-installer/kernel/no-kernels-found
 	fi
 
+	arch_kernel=$(get_arch_kernel)
+
 	# Try to make current rootskel setting the default, make sure it is
 	# available first.
-	if kernel_present "$KERNEL" ; then
+	if [ "$arch_kernel" ] && kernel_present "$arch_kernel"; then
+		# Recommended kernel for this architecture exists; use that.
+		info "arch_kernel: $arch_kernel (present)"
+		KERNEL="$arch_kernel"
+	elif kernel_present "$KERNEL"; then
 		# Current selection is available, nothing to do
 		:
 	else
-		# If possible, find one with at least the same major number
-		# as the currently running kernel.
-		version=$(uname -r | cut -d . -f 1,2) # 2.4 or 2.6
-		KERNEL=$(echo "$kernels" | sed 's/,/\n/g' | grep -- "-$version" | head -n 1)
+		# No recommendations available; try to guess.
+		info "arch_kernel: $arch_kernel (absent)"
+
+		# Try to default to running kernel version.
+		KVERS=`uname -r | cut -d'-' -f 1`
+		KERNEL="$(echo "$kernels" | sed 's/,/\n/g' | grep -- "-$KVERS" | head -n 1)"
 		if [ -z "$KERNEL" ]; then
-			# Take the first on the list.
-			KERNEL=$(echo "$kernels" | cut -d, -f1)
-		fi
-	fi
-
-	arch_kernel=$(get_arch_kernel)
-	if kernel_present $arch_kernel ; then
-		KERNEL=$arch_kernel
-	elif [ "" != "$arch_kernel" ] ; then
-		kernels=`grep $arch_kernel $KERNEL_LIST | sort -r | tr '\n' ',' | sed -e 's/,$//'`
-		if [ "$kernels" ]; then
-			db_subst base-installer/kernel/which-kernel KERNELS "$kernels"
-
-			# Try to default to running kernel version.
-			KVERS=`uname -r | cut -d'-' -f 1`
-			if [ "$KVERS" != "" ]; then
-				kernellist=`grep $arch_kernel $KERNEL_LIST | sort -r | tr '\n' ' '` 
-				for akernel in $kernellist; do
-					if [ "" != "`echo $akernel | grep '^\(kernel\|linux\)-image-'$KVERS`" ]; then
-						KERNEL=$akernel
-						break
-					fi
-				done
+			# If possible, find one with at least the same major number
+			# as the currently running kernel.
+			KERNEL="$(echo "$kernels" | sed 's/,/\n/g' | grep -- "-$KERNEL_MAJOR" | head -n 1)"
+			if [ -z "$KERNEL" ]; then
+				# Take the first on the list.
+				KERNEL=$(echo "$kernels" | cut -d, -f1)
 			fi
 		fi
 	fi
@@ -599,25 +436,24 @@ pick_kernel () {
 	info "Using kernel '$KERNEL'"
 
 	# Pass the kernel name on
-	db_set debian-installer/kernel/image "$KERNEL"
+	db_set base-installer/kernel/image "$KERNEL"
 }
 
 install_kernel () {
-	kernel_major="$(uname -r | cut -d . -f 1,2)"
-	if db_get "debian-installer/kernel/linux/initrd-$kernel_major" ; then
+	if db_get "base-installer/kernel/linux/initrd-$KERNEL_MAJOR" ; then
 		if [ "$RET" = true ]; then
 			do_initrd=yes
 		else
 			do_initrd=no
 		fi
-	elif db_get debian-installer/kernel/linux/initrd ; then
+	elif db_get base-installer/kernel/linux/initrd ; then
 		if [ "$RET" = "true" ]; then
 			do_initrd=yes
 		else
 			do_initrd=no
 		fi
 	else
-		warning "Failed to get debconf answer 'debian-installer/kernel/linux/initrd'."
+		warning "Failed to get debconf answer 'base-installer/kernel/linux/initrd'."
 		do_initrd=yes
 	fi
 
@@ -684,7 +520,7 @@ EOF
 	update_progress 15 100
 
 	# Installing mkvmlinuz on the powerpc subarches that need it.
-	if [ "$ARCH" = "powerpc" -a "$(uname -r | cut -d . -f 1,2)" = "2.6" ]; then
+	if [ "$ARCH" = "powerpc" ] && [ "$KERNEL_MAJOR" = "2.6" ]; then
 		case "$SUBARCH" in
 			prep | chrp | chrp_pegasos)
 				info "Installing mkvmlinuz."
