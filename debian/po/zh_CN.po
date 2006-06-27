@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# Chinese messages for debian-installer.
+# Simplified Chinese messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
@@ -523,6 +523,16 @@ msgstr "正在安装 PCMCIA 模块"
 #: ../base-installer.templates:293
 msgid "Install the base system"
 msgstr "安装基本系统"
+
+#~ msgid "Cannot install Debian"
+#~ msgstr "无法安装 Debian"
+
+#~ msgid ""
+#~ "The installer cannot figure out how to install Debian. No installable CD-"
+#~ "ROM was found and no valid mirror was configured."
+#~ msgstr ""
+#~ "安装程序不知道如何安装 Debian。未找到任何可供安装的 CD-ROM，也没有设置任何"
+#~ "有效的镜像。"
 
 #~ msgid "Couldn't download ${SUBST0}."
 #~ msgstr "不能下载 ${SUBST0}。"

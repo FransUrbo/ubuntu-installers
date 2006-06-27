@@ -3,7 +3,6 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of debian-installer.po to Norwegian Bokmål
 # translation of debian-installer.po to Norwegian bokmål
 # Norwegian Bokmal messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
@@ -544,6 +543,16 @@ msgstr "Installerer PCMCIA-modulene"
 #: ../base-installer.templates:293
 msgid "Install the base system"
 msgstr "Installer grunnsystemet"
+
+#~ msgid "Cannot install Debian"
+#~ msgstr "Kan ikke installere Debian"
+
+#~ msgid ""
+#~ "The installer cannot figure out how to install Debian. No installable CD-"
+#~ "ROM was found and no valid mirror was configured."
+#~ msgstr ""
+#~ "Installeringsprogrammet finner ikke ut hvordan Debian skal installeres; "
+#~ "fant ingen CD-plate å installere fra og intet speil er satt opp."
 
 #~ msgid "Couldn't download ${SUBST0}."
 #~ msgstr "Kunne ikke laste ned ${SUBST0}."

@@ -4,7 +4,6 @@
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
 # translation of debian-installer.po to Norwegian nynorsk
-# translation of nn.po to Norwegian nynorsk
 # Norwegian Nynorsk messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -12,7 +11,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: nn\n"
+"Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-28 17:24+0100\n"
 "PO-Revision-Date: 2004-09-30 19:28+0200\n"
@@ -542,6 +541,17 @@ msgstr "Installerer PCMCIA-modulane"
 #: ../base-installer.templates:293
 msgid "Install the base system"
 msgstr "Installer grunnsystemet"
+
+#~ msgid "Cannot install Debian"
+#~ msgstr "Klarer ikkje installera Debian"
+
+#~ msgid ""
+#~ "The installer cannot figure out how to install Debian. No installable CD-"
+#~ "ROM was found and no valid mirror was configured."
+#~ msgstr ""
+#~ "Installasjonsprogrammet klarer ikkje å finna ut korleis Debian skal "
+#~ "installerast. Ingen installerbar CD-ROM blei funne og ingen gyldige "
+#~ "nettarkiv blei funne."
 
 #~ msgid "Couldn't download ${SUBST0}."
 #~ msgstr "Klarte ikkje lasta ned ${SUBSTO}."
