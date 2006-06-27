@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer/tools/base-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 17:00+0100\n"
+"POT-Creation-Date: 2004-09-12 22:44+0100\n"
 "PO-Revision-Date: 2004-06-25 22:02+1200\n"
 "Last-Translator: Carlos Z.F. Liu <carlos_liu@yahoo.com>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
@@ -378,60 +378,74 @@ msgstr "正在配置必需的软件包..."
 #. Type: text
 #. Description
 #: ../templates:237
+#, fuzzy
+msgid "Unpacking the base system..."
+msgstr "正在安装基本系统"
+
+#. Type: text
+#. Description
+#: ../templates:241
+#, fuzzy
+msgid "Configuring the base system..."
+msgstr "正在安装基本系统"
+
+#. Type: text
+#. Description
+#: ../templates:245
 msgid "Installing base packages..."
 msgstr "正在安装基本软件包..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:249
 msgid "Base system installed successfully."
 msgstr "基本系统安装成功。"
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:253
 msgid "Configuring APT sources..."
 msgstr "配置 APT 源..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:257
 msgid "Updating the list of available packages..."
 msgstr "更新可用软件包列表..."
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:261
 msgid "Installing extra packages..."
 msgstr "正在安装额外的软件包..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:265
 msgid "Creating device files..."
 msgstr "正在创建设备文件..."
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:269
 msgid "Selecting the kernel to install..."
 msgstr "选择要安装的内核..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:273
 msgid "Installing the kernel..."
 msgstr "正在安装内核..."
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:277
 msgid "Installing the PCMCIA modules"
 msgstr "正在安装 PCMCIA 模块"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:274
+#: ../templates:282
 msgid "Install the base system"
 msgstr "安装基本系统"

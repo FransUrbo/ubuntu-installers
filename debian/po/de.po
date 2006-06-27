@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer 0.050\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 17:00+0100\n"
+"POT-Creation-Date: 2004-09-12 22:44+0100\n"
 "PO-Revision-Date: 2004-06-02 00:12GMT\n"
 "Last-Translator: Dennis Stampfer <seppy@debian.org>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
@@ -396,61 +396,75 @@ msgstr "Konfiguriere benötigte Pakete..."
 #. Type: text
 #. Description
 #: ../templates:237
+#, fuzzy
+msgid "Unpacking the base system..."
+msgstr "Installation des Basis-Systems"
+
+#. Type: text
+#. Description
+#: ../templates:241
+#, fuzzy
+msgid "Configuring the base system..."
+msgstr "Installation des Basis-Systems"
+
+#. Type: text
+#. Description
+#: ../templates:245
 msgid "Installing base packages..."
 msgstr "Installiere Basis-Pakete..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:249
 #, fuzzy
 msgid "Base system installed successfully."
 msgstr "Bei der Installation des Basis-Systems ist ein Fehler aufgetreten."
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:253
 msgid "Configuring APT sources..."
 msgstr "Konfiguriere APT-Sourcen..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:257
 msgid "Updating the list of available packages..."
 msgstr "Aktualisiere die Liste der verfügbaren Pakete..."
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:261
 msgid "Installing extra packages..."
 msgstr "Installiere Extra-Pakete..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:265
 msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:269
 msgid "Selecting the kernel to install..."
 msgstr "Wählen Sie den zu installierenden Kernel..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:273
 msgid "Installing the kernel..."
 msgstr "Installiere den Kernel..."
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:277
 msgid "Installing the PCMCIA modules"
 msgstr "Installieren der PCMCIA-Module"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:274
+#: ../templates:282
 msgid "Install the base system"
 msgstr "Basis-System installieren"

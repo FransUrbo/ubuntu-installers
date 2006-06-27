@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer-templates_uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 17:00+0100\n"
+"POT-Creation-Date: 2004-09-12 22:44+0100\n"
 "PO-Revision-Date: 2004-06-21 18:56+0300\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
@@ -390,61 +390,75 @@ msgstr "Налаштування необхідних пакунків..."
 #. Type: text
 #. Description
 #: ../templates:237
+#, fuzzy
+msgid "Unpacking the base system..."
+msgstr "Встановлення базової системи"
+
+#. Type: text
+#. Description
+#: ../templates:241
+#, fuzzy
+msgid "Configuring the base system..."
+msgstr "Встановлення базової системи"
+
+#. Type: text
+#. Description
+#: ../templates:245
 msgid "Installing base packages..."
 msgstr "Встановлення базових пакунків..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:249
 msgid "Base system installed successfully."
 msgstr "Базова система встановлена успішно."
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:253
 msgid "Configuring APT sources..."
 msgstr "Налаштування джерел APT..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:257
 msgid "Updating the list of available packages..."
 msgstr "Оновлення списку наявних пакунків..."
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:261
 msgid "Installing extra packages..."
 msgstr "Встановлення додаткових пакунків..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:265
 msgid "Creating device files..."
 msgstr "Створення файлів пристроїв..."
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:269
 msgid "Selecting the kernel to install..."
 msgstr "Вибір ядра для встановлення..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:273
 msgid "Installing the kernel..."
 msgstr "Встановлення ядра..."
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:277
 msgid "Installing the PCMCIA modules"
 msgstr "Встановлення модулів PCMCIA"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:274
+#: ../templates:282
 msgid "Install the base system"
 msgstr "Встановити базову систему"
 

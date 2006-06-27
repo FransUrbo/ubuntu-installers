@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 17:00+0100\n"
+"POT-Creation-Date: 2004-09-12 22:44+0100\n"
 "PO-Revision-Date: 2004-06-24 18:23+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <provoz@debian.cz>\n"
@@ -383,60 +383,74 @@ msgstr "Nastavují se vy¾adované balíky..."
 #. Type: text
 #. Description
 #: ../templates:237
+#, fuzzy
+msgid "Unpacking the base system..."
+msgstr "Instaluje se základní systém"
+
+#. Type: text
+#. Description
+#: ../templates:241
+#, fuzzy
+msgid "Configuring the base system..."
+msgstr "Instaluje se základní systém"
+
+#. Type: text
+#. Description
+#: ../templates:245
 msgid "Installing base packages..."
 msgstr "Instalují se základní balíky..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:249
 msgid "Base system installed successfully."
 msgstr "Základní systém byl úspì¹nì nainstalován."
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:253
 msgid "Configuring APT sources..."
 msgstr "Nastavují se zdroje pro APT..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:257
 msgid "Updating the list of available packages..."
 msgstr "Aktualizuje se seznam dostupných balíkù..."
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:261
 msgid "Installing extra packages..."
 msgstr "Instalují se extra balíky..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:265
 msgid "Creating device files..."
 msgstr "Vytváøí se soubory zaøízení..."
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:269
 msgid "Selecting the kernel to install..."
 msgstr "Vybírá se jádro pro instalaci..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:273
 msgid "Installing the kernel..."
 msgstr "Instaluje se jádro..."
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:277
 msgid "Installing the PCMCIA modules"
 msgstr "Instalují se PCMCIA moduly"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:274
+#: ../templates:282
 msgid "Install the base system"
 msgstr "Instalovat základní systém"

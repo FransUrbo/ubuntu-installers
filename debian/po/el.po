@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 17:00+0100\n"
+"POT-Creation-Date: 2004-09-12 22:44+0100\n"
 "PO-Revision-Date: 2004-06-25 10:06+0300\n"
 "Last-Translator: George Papamichelakis <george@step.gr>\n"
 "Language-Team:  <debian-l10n-greek@lists.debian.org>\n"
@@ -396,60 +396,74 @@ msgstr "Ρύθμιση των απαιτούμενων πακέτων..."
 #. Type: text
 #. Description
 #: ../templates:237
+#, fuzzy
+msgid "Unpacking the base system..."
+msgstr "Εγκατάσταση του βασικού συστήματος"
+
+#. Type: text
+#. Description
+#: ../templates:241
+#, fuzzy
+msgid "Configuring the base system..."
+msgstr "Εγκατάσταση του βασικού συστήματος"
+
+#. Type: text
+#. Description
+#: ../templates:245
 msgid "Installing base packages..."
 msgstr "Εγκατάσταση των βασικών πακέτων..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:249
 msgid "Base system installed successfully."
 msgstr "Η εγκατάσταση του βασικού συστήματος ήταν επιτυχής."
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:253
 msgid "Configuring APT sources..."
 msgstr "Ρύθμιση των πηγών του APT..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:257
 msgid "Updating the list of available packages..."
 msgstr "Ανανέωση της λίστας των διαθέσιμων πακέτων..."
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:261
 msgid "Installing extra packages..."
 msgstr "Εγκατάσταση επιπλέον πακέτων..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:265
 msgid "Creating device files..."
 msgstr "Δημιουργία αρχείων συσκευών..."
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:269
 msgid "Selecting the kernel to install..."
 msgstr "Επιλογή του πυρήνα προς εγκατάσταση..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:273
 msgid "Installing the kernel..."
 msgstr "Εγκατάσταση του πυρήνα..."
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:277
 msgid "Installing the PCMCIA modules"
 msgstr "Εγκατάσταση των οδηγών PCMCIA"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:274
+#: ../templates:282
 msgid "Install the base system"
 msgstr "Εγκατάσταση του βασικού συστήματος"

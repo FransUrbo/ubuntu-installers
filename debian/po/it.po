@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer 0.060\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 17:00+0100\n"
+"POT-Creation-Date: 2004-09-12 22:44+0100\n"
 "PO-Revision-Date: 2004-03-14 17:15+0100\n"
 "Last-Translator: Davide Meloni <davide_meloni@fastwebnet.it>\n"
 "Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
@@ -393,62 +393,76 @@ msgstr "Configurazione dei pacchetti richiesti in corso..."
 #. Type: text
 #. Description
 #: ../templates:237
+#, fuzzy
+msgid "Unpacking the base system..."
+msgstr "Installazione del sistema base in corso"
+
+#. Type: text
+#. Description
+#: ../templates:241
+#, fuzzy
+msgid "Configuring the base system..."
+msgstr "Installazione del sistema base in corso"
+
+#. Type: text
+#. Description
+#: ../templates:245
 msgid "Installing base packages..."
 msgstr "Installazione dei pacchetti base in corso..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:249
 #, fuzzy
 msgid "Base system installed successfully."
 msgstr "Errore di installazione del sistema base"
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:253
 msgid "Configuring APT sources..."
 msgstr "Configurazione delle sorgenti APT in corso..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:257
 msgid "Updating the list of available packages..."
 msgstr "Aggiornamento della lista dei pacchetti disponibili in corso..."
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:261
 msgid "Installing extra packages..."
 msgstr "Installazione dei pacchetti extra in corso..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:265
 msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:269
 msgid "Selecting the kernel to install..."
 msgstr "Selezione del kernel da installare in corso..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:273
 msgid "Installing the kernel..."
 msgstr "Installazione del kernel in corso..."
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:277
 msgid "Installing the PCMCIA modules"
 msgstr "Installazione dei moduli PCMCIA in corso"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:274
+#: ../templates:282
 msgid "Install the base system"
 msgstr "Installa il sistema base"
 

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 17:00+0100\n"
+"POT-Creation-Date: 2004-09-12 22:44+0100\n"
 "PO-Revision-Date: 2004-06-20 14:00+0200\n"
 "Last-Translator: Piarres Beobide Egaña <pi@beobide.net>\n"
 "Language-Team: Euskara <librezale@librezale.org>\n"
@@ -386,61 +386,75 @@ msgstr "Beharrezkoak diren paketeak konfiguratzen..."
 #. Type: text
 #. Description
 #: ../templates:237
+#, fuzzy
+msgid "Unpacking the base system..."
+msgstr "Oinarrizko sistema instalatzen"
+
+#. Type: text
+#. Description
+#: ../templates:241
+#, fuzzy
+msgid "Configuring the base system..."
+msgstr "Oinarrizko sistema instalatzen"
+
+#. Type: text
+#. Description
+#: ../templates:245
 msgid "Installing base packages..."
 msgstr "Oinarrizko paketeak instalatzen..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:249
 msgid "Base system installed successfully."
 msgstr "Oinarrizko sistema egoki instalatu da."
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:253
 msgid "Configuring APT sources..."
 msgstr "APT iturburuak konfiguratzen..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:257
 msgid "Updating the list of available packages..."
 msgstr "Eskuragarri dauden paketeen zerrenda berritzen..."
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:261
 msgid "Installing extra packages..."
 msgstr "Pakete extrak instalatzen..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:265
 msgid "Creating device files..."
 msgstr "Gailu fitxategiak sortzen"
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:269
 msgid "Selecting the kernel to install..."
 msgstr "Instalatuko den kernela aukeratzen..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:273
 msgid "Installing the kernel..."
 msgstr "Kernela instalatzen..."
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:277
 msgid "Installing the PCMCIA modules"
 msgstr "PCMCIA moduloak instalatzen"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:274
+#: ../templates:282
 msgid "Install the base system"
 msgstr "Sistemaren oinarria instalatzen"
 

@@ -232,6 +232,14 @@ Template: base-installer/debootstrap/info/confreq
 Type: text
 _Description: Configuring required packages...
 
+Template: base-installer/debootstrap/info/unpackbase
+Type: text
+_Description: Unpacking the base system...
+
+Template: base-installer/debootstrap/info/confbase
+Type: text
+_Description: Configuring the base system...
+
 Template: base-installer/debootstrap/info/instbase
 Type: text
 _Description: Installing base packages...

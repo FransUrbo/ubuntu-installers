@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tools_base-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 17:00+0100\n"
+"POT-Creation-Date: 2004-09-12 22:44+0100\n"
 "PO-Revision-Date: 2004-01-09 13:00+0300\n"
 "Last-Translator: Ossama Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
@@ -378,63 +378,77 @@ msgstr "جاري إعداد الحزم المطلوبة..."
 #. Type: text
 #. Description
 #: ../templates:237
+#, fuzzy
+msgid "Unpacking the base system..."
+msgstr "جاري تثبيت النظام الأساسي"
+
+#. Type: text
+#. Description
+#: ../templates:241
+#, fuzzy
+msgid "Configuring the base system..."
+msgstr "جاري تثبيت النظام الأساسي"
+
+#. Type: text
+#. Description
+#: ../templates:245
 msgid "Installing base packages..."
 msgstr "جاري تثبيت الحزم الأساسية..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:249
 #, fuzzy
 msgid "Base system installed successfully."
 msgstr "تم تثبيت النظام الأساسي بنجاح."
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:253
 msgid "Configuring APT sources..."
 msgstr "جاري إعداد مصادر APT..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:257
 msgid "Updating the list of available packages..."
 msgstr "جاري تحديث قائمة الحزم المتوفرة..."
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:261
 msgid "Installing extra packages..."
 msgstr "جاري تثبيت الحزم الإضافية..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:265
 #, fuzzy
 msgid "Creating device files..."
 msgstr "جاري سحب ملف الحزم..."
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:269
 msgid "Selecting the kernel to install..."
 msgstr "جاري اختيار النواة المطلوب تثبيتها..."
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:273
 msgid "Installing the kernel..."
 msgstr "جاري تثبيت النواة..."
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:277
 msgid "Installing the PCMCIA modules"
 msgstr "جاري تثبيت وحدات PCMCIA"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:274
+#: ../templates:282
 msgid "Install the base system"
 msgstr "ثبّت النظام الأساسي"
 

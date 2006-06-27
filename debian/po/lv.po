@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 17:00+0100\n"
+"POT-Creation-Date: 2004-09-12 22:44+0100\n"
 "PO-Revision-Date: 2003-07-19 15:19+0300\n"
 "Last-Translator: Aigars Mahinovs <aigarius@debian.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -411,60 +411,74 @@ msgstr "Konfigurēju nepieciešamās pakas..."
 #. Description
 #: ../templates:237
 #, fuzzy
+msgid "Unpacking the base system..."
+msgstr "Instalēju bāzes sistēmu"
+
+#. Type: text
+#. Description
+#: ../templates:241
+#, fuzzy
+msgid "Configuring the base system..."
+msgstr "Instalēju bāzes sistēmu"
+
+#. Type: text
+#. Description
+#: ../templates:245
+#, fuzzy
 msgid "Installing base packages..."
 msgstr "Instalēju bāzes pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:249
 #, fuzzy
 msgid "Base system installed successfully."
 msgstr "Bāzes sistēma veiksmīgi uzinstalēta."
 
 #. Type: text
 #. Description
-#: ../templates:245
+#: ../templates:253
 #, fuzzy
 msgid "Configuring APT sources..."
 msgstr "Konfigurēju nepieciešamās pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:249
+#: ../templates:257
 #, fuzzy
 msgid "Updating the list of available packages..."
 msgstr "Atpakoju nepieciešamās pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:253
+#: ../templates:261
 #, fuzzy
 msgid "Installing extra packages..."
 msgstr "Instalēju kodola līmeņa pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:257
+#: ../templates:265
 msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:261
+#: ../templates:269
 #, fuzzy
 msgid "Selecting the kernel to install..."
 msgstr "Izvēlieties, kādu Linux kodolu instalēt iekš /target/"
 
 #. Type: text
 #. Description
-#: ../templates:265
+#: ../templates:273
 #, fuzzy
 msgid "Installing the kernel..."
 msgstr "Instalēju bāzes sistēmu"
 
 #. Type: text
 #. Description
-#: ../templates:269
+#: ../templates:277
 #, fuzzy
 msgid "Installing the PCMCIA modules"
 msgstr "Instalēju kodola līmeņa pakas..."
@@ -472,7 +486,7 @@ msgstr "Instalēju kodola līmeņa pakas..."
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:274
+#: ../templates:282
 #, fuzzy
 msgid "Install the base system"
 msgstr "Instalēju bāzes sistēmu"

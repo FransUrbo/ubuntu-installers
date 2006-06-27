@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 17:00+0100\n"
+"POT-Creation-Date: 2004-09-12 22:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -368,60 +368,72 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../templates:237
-msgid "Installing base packages..."
+msgid "Unpacking the base system..."
 msgstr ""
 
 #. Type: text
 #. Description
 #: ../templates:241
-msgid "Base system installed successfully."
+msgid "Configuring the base system..."
 msgstr ""
 
 #. Type: text
 #. Description
 #: ../templates:245
-msgid "Configuring APT sources..."
+msgid "Installing base packages..."
 msgstr ""
 
 #. Type: text
 #. Description
 #: ../templates:249
-msgid "Updating the list of available packages..."
+msgid "Base system installed successfully."
 msgstr ""
 
 #. Type: text
 #. Description
 #: ../templates:253
-msgid "Installing extra packages..."
+msgid "Configuring APT sources..."
 msgstr ""
 
 #. Type: text
 #. Description
 #: ../templates:257
-msgid "Creating device files..."
+msgid "Updating the list of available packages..."
 msgstr ""
 
 #. Type: text
 #. Description
 #: ../templates:261
-msgid "Selecting the kernel to install..."
+msgid "Installing extra packages..."
 msgstr ""
 
 #. Type: text
 #. Description
 #: ../templates:265
-msgid "Installing the kernel..."
+msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
 #: ../templates:269
+msgid "Selecting the kernel to install..."
+msgstr ""
+
+#. Type: text
+#. Description
+#: ../templates:273
+msgid "Installing the kernel..."
+msgstr ""
+
+#. Type: text
+#. Description
+#: ../templates:277
 msgid "Installing the PCMCIA modules"
 msgstr ""
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:274
+#: ../templates:282
 msgid "Install the base system"
 msgstr ""
