@@ -433,13 +433,18 @@ pick_kernel () {
 }
 
 get_resume_partition () {
-	maxsize=0
-	tail -n +2 /proc/swaps | while read file t size rest; do
-		if [ "$size" -ge "$maxsize" ]; then
-			echo "$file"
-			maxsize="$size"
+	biggest_size=0
+	biggest_partition=
+	while read filename type size other; do
+		if [ "$type" != partition ]; then
+			continue
 		fi
-	done | tail -n 1
+		if [ "$size" -gt "$biggest_size" ]; then
+			biggest_size="$size"
+			biggest_partition="$filename"
+		fi
+	done < /proc/swaps
+	echo "$biggest_partition"
 }
 
 install_kernel () {

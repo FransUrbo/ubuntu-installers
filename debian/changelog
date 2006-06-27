@@ -1,3 +1,10 @@
+base-installer (1.15ubuntu8) hoary; urgency=low
+
+  * Better version of get_resume_partition that protects against using swap
+    files for RESUME= (thanks, Jeff Bailey; closes: Ubuntu #7474).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 11 Mar 2005 17:27:59 +0000
+
 base-installer (1.15ubuntu7) hoary; urgency=low
 
   * Work out the largest swap partition, if any, and use its devfs-mapped
