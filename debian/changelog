@@ -1,3 +1,9 @@
+base-installer (1.15ubuntu17) hoary; urgency=low
+
+  * Update Danish translation (thanks, Frederik Dannemare).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed,  6 Apr 2005 00:43:49 +0100
+
 base-installer (1.15ubuntu16) hoary; urgency=low
 
   * Make apt-get use gpgv --ignore-time-conflict to avoid validation errors

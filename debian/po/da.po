@@ -13,20 +13,20 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2004-09-30 12:09+0200\n"
-"Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
+"PO-Revision-Date: 2005-04-05 21:04+0000\n"
+"Last-Translator: Frederik Dannemare <admin@sentinel.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: Rosetta (http://launchpad.ubuntu.com/rosetta/)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: boolean
 #. Description
 #: ../base-installer.templates:4
 msgid "Proceed with installation to unclean target?"
-msgstr "Fortsæt med installation til urent filsystem?"
+msgstr "Fortsæt med installation til urenset filsystem?"
 
 #. Type: boolean
 #. Description
@@ -53,7 +53,7 @@ msgid ""
 "The installer cannot figure out how to install Ubuntu. No installable CD-ROM "
 "was found and no valid mirror was configured."
 msgstr ""
-"Installationsprogrammet kan ikke finde ud af hvordan det skal installere "
+"Installationsprogrammet kan ikke finde ud af, hvordan det skal installere "
 "Ubuntu. Der blev ikke fundet nogen installérbar cdrom, og der blev ikke "
 "angivet noget gyldigt arkivspejl."
 
@@ -204,7 +204,7 @@ msgstr ""
 #. Description
 #: ../base-installer.templates:84
 msgid "The current default kernel package is '${KERNEL}'."
-msgstr "Den aktuelle standard-kernepakke er '${KERNEL]'."
+msgstr "Den aktuelle standardkernepakke er '${KERNEL}'."
 
 #. Type: error
 #. Description
@@ -242,7 +242,7 @@ msgstr ""
 #. Description
 #: ../base-installer.templates:101
 msgid "${SUBST0} was not pre-downloaded."
-msgstr "${SUBST0} blev ikke hentet i forvejen."
+msgstr "${SUBST0} er ikke blevet hentet i forvejen."
 
 #. Type: error
 #. Description
@@ -260,13 +260,13 @@ msgstr "Kunne ikke hente Release-filen ${SUBST0}."
 #. Description
 #: ../base-installer.templates:116
 msgid "Invalid Release file: no valid components."
-msgstr "Ugyldig Release-fil; ingen gyldige komponenter."
+msgstr "Ugyldig Release-fil: ingen gyldige komponenter."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:121
 msgid "Invalid Release file: no entry for ${SUBST0}."
-msgstr "Ugyldig Release-fil; ingen forekomst af ${SUBST0}."
+msgstr "Ugyldig Release-fil: ingen forekomst af ${SUBST0}."
 
 #. Type: error
 #. Description
@@ -275,6 +275,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
+"Kunne ikke hente ${SUBST0}. Dette kan skyldes et netværksproblem eller en "
+"dårlig cd, alt afhængig af din installationsmetode."
 
 #. Type: error
 #. Description
@@ -283,12 +285,14 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
+"Hvis du installerer fra cd-r eller cd-rw, kan det hjælpe at brænde cd'en ved "
+"en lavere hastighed."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:135
 msgid "Debootstrap Error"
-msgstr "Deboostrap-fejl."
+msgstr "Deboostrap-fejl"
 
 #. Type: error
 #. Description
@@ -300,7 +304,7 @@ msgstr "Processen blev afbrudt."
 #. Description
 #: ../base-installer.templates:140
 msgid "Installing the Ubuntu base system"
-msgstr "Installér Ubuntus basissystem"
+msgstr "Installerer Ubuntus basissystem"
 
 #. Type: text
 #. Description
@@ -324,14 +328,13 @@ msgstr "Tjekker mål-filsystemet"
 #. Description
 #: ../base-installer.templates:156
 msgid "Retrieving Release file"
-msgstr "Henter Release-fil..."
+msgstr "Henter Release-fil"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:160
-#, fuzzy
 msgid "Retrieving Release file signature"
-msgstr "Henter Release-fil..."
+msgstr "Henter Release-filens signatur"
 
 #. Type: text
 #. Description
@@ -360,37 +363,32 @@ msgstr "Pakker pakker ud"
 #. Type: text
 #. Description
 #: ../base-installer.templates:180
-#, fuzzy
 msgid "Installing core packages"
-msgstr "Installerer grundpakker..."
+msgstr "Installerer grundpakker"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:184
-#, fuzzy
 msgid "Unpacking required packages"
-msgstr "Pakker påkrævede pakker ud..."
+msgstr "Pakker påkrævede pakker ud"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:188
-#, fuzzy
 msgid "Configuring required packages"
-msgstr "Sætter påkrævede pakker op..."
+msgstr "Sætter påkrævede pakker op"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:192
-#, fuzzy
 msgid "Unpacking the base system"
-msgstr "Installerer basissystemet"
+msgstr "Pakker basissystemet ud"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:196
-#, fuzzy
 msgid "Configuring the base system"
-msgstr "Installerer basissystemet"
+msgstr "Sætter basissystemet op"
 
 #. Type: text
 #. Description
@@ -425,16 +423,14 @@ msgstr "Pakker ${SUBST0} ud..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:220
-#, fuzzy
 msgid "Unpacking ${SUBST0}..."
 msgstr "Pakker ${SUBST0} ud..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:224
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "Validerer ${SUBST0}..."
+msgstr "Sætter ${SUBST0} op..."
 
 #. Type: text
 #. Description
@@ -463,16 +459,14 @@ msgstr "Sætter påkrævede pakker op..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:244
-#, fuzzy
 msgid "Unpacking the base system..."
-msgstr "Installerer basissystemet"
+msgstr "Pakker basissystemet ud..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:248
-#, fuzzy
 msgid "Configuring the base system..."
-msgstr "Installerer basissystemet"
+msgstr "Sætter basissystemet op..."
 
 #. Type: text
 #. Description
@@ -508,7 +502,7 @@ msgstr "Installerer ekstrapakker..."
 #. Description
 #: ../base-installer.templates:272
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
-msgstr "Installerer ekstra-pakker - henter og installerer ${SUBST0}..."
+msgstr "Installerer ekstrapakker - henter og installerer ${SUBST0}..."
 
 #. Type: text
 #. Description
