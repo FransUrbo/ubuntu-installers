@@ -1,3 +1,12 @@
+base-installer (0.087ubuntu5) warty; urgency=low
+
+  * Support linux-image-* kernel packages as well as kernel-image-*.
+  * Fix i386 kernel selection; 586tsc and k6 kernels no longer exist (Debian
+    bug #257411).
+  * Move i386 to linux-image-* (Ubuntu-only, won't work with Debian).
+
+ -- Colin Watson <cjwatson@canonical.com>  Mon,  6 Sep 2004 12:38:08 +0100
+
 base-installer (0.087ubuntu4) warty; urgency=low
 
   * Colin Watson

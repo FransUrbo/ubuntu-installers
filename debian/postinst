@@ -274,7 +274,8 @@ create_devices () {
 
 kernel_update_list () {
 	# Using 'uniq' to avoid listing the same kernel more then once.
-	chroot /target apt-cache search kernel-image | grep ^kernel-image | \
+	(chroot /target apt-cache search kernel-image | grep ^kernel-image;
+	 chroot /target apt-cache search linux-image | grep ^linux-image) | \
 	cut -d" " -f1 | uniq > $KERNEL_LIST
 }
 
@@ -300,16 +301,13 @@ get_arch_kernel () {
 			case "$FAMILY" in
 			" 6")
 				if test $SMP = no; then
-				        trykernel=kernel-image-$version-k7
+				        trykernel=linux-image-$version-k7
 				else
-				        trykernel=kernel-image-$version-k7-smp
+				        trykernel=linux-image-$version-k7-smp
 				fi
 			;;
-		        " 5")
-				trykernel=kernel-image-$version-k6
-			;;
 			*)
-				trykernel=kernel-image-$version-386
+				trykernel=linux-image-$version-386
 			;;
 			esac
 		;;
@@ -317,21 +315,18 @@ get_arch_kernel () {
 			case "$FAMILY" in
 			" 6"|" 15")
 				if test $SMP = no; then
-				        trykernel=kernel-image-$version-686
+				        trykernel=linux-image-$version-686
 				else
-				        trykernel=kernel-image-$version-686-smp
+				        trykernel=linux-image-$version-686-smp
 				fi
 			;;
-			" 5")
-				trykernel=kernel-image-$version-586tsc
-			;;
 			*)
-				trykernel=kernel-image-$version-386
+				trykernel=linux-image-$version-386
 			;;
 			esac
 		;;
 		*)
-			trykernel=kernel-image-$version-386
+			trykernel=linux-image-$version-386
 		;;
 		esac
 	;;
@@ -537,7 +532,7 @@ pick_kernel () {
 			if [ "$KVERS" != "" ]; then
 				kernellist=`grep $arch_kernel $KERNEL_LIST | sort -r | tr '\n' ' '` 
 				for akernel in $kernellist; do
-					if [ "" != "`echo $akernel | grep '^kernel-image-'$KVERS`" ]; then
+					if [ "" != "`echo $akernel | grep '^\(kernel\|linux\)-image-'$KVERS`" ]; then
 						KERNEL=$akernel
 						break
 					fi
