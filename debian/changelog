@@ -1,3 +1,10 @@
+base-installer (0.087ubuntu3) warty; urgency=low
+
+  * Colin Watson
+    - Fixed Lithuanian translation of "Ubuntu", per Steve Alexander.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Mon, 16 Aug 2004 17:07:33 +0100
+
 base-installer (0.087ubuntu2) warty; urgency=low
 
   * Tollef Fog Heen

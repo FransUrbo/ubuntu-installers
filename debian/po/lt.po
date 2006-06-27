@@ -232,7 +232,7 @@ msgstr "Bazinės sistemos dalies diegimas"
 #. Description
 #: ../templates:141
 msgid "Preparing to install the Ubuntu base system..."
-msgstr "Pasiruošiama diegti Ubuntu'o bazinę sistemos dalį..."
+msgstr "Pasiruošiama diegti Ubuntu bazinę sistemos dalį..."
 
 #. Type: text
 #. Description
