@@ -1,3 +1,15 @@
+base-installer (0.087ubuntu2) warty; urgency=low
+
+  * Tollef Fog Heen
+    - Ubuntu branding.
+  * Colin Watson
+    - Unfuzzy and/or update most translations.
+    - Get the location of the CD-ROM archive from a debconf question rather
+      than just using /cdrom; this is a little hacky, but provides a hook
+      for archive-copier.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Thu, 12 Aug 2004 17:16:27 +0100
+
 base-installer (0.087ubuntu1) warty; urgency=low
 
   * Create ubd devices in create_devices() if installing under UML

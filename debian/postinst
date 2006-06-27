@@ -64,21 +64,26 @@ check_target () {
 }
 
 get_mirror_info () {
-	if [ -f /cdrom/.disk/base_installable ]; then
+	if db_get base-installer/cd-location && [ "$RET" ]; then
+		CDROM="$RET"
+	else
+		CDROM=/cdrom
+	fi
+	if [ -f "$CDROM/.disk/base_installable" ]; then
 		PROTOCOL=file
 		MIRROR=""
-		DIRECTORY="/cdrom/"
-		if [ -s /cdrom/.disk/base_components ]; then
-			COMPONENTS=`grep -v '^#' /cdrom/.disk/base_components | tr '\n' , | sed 's/,$//'`
+		DIRECTORY="$CDROM/"
+		if [ -s "$CDROM/.disk/base_components" ]; then
+			COMPONENTS=`grep -v '^#' "$CDROM/.disk/base_components" | tr '\n' , | sed 's/,$//'`
 		else
 			COMPONENTS="*"
 		fi
-		if [ -s /cdrom/.disk/base_include ]; then
-			INCLUDES=`grep -v '^#' /cdrom/.disk/base_include | tr '\n' , | sed 's/,$//'`
+		if [ -s "$CDROM/.disk/base_include" ]; then
+			INCLUDES=`grep -v '^#' "$CDROM/.disk/base_include" | tr '\n' , | sed 's/,$//'`
 		fi
 			
-		if [ -s /cdrom/.disk/base_exclude ]; then
-			EXCLUDES=`grep -v '^#' /cdrom/.disk/base_exclude | tr '\n' , | sed 's/,$//'`
+		if [ -s "$CDROM/.disk/base_exclude" ]; then
+			EXCLUDES=`grep -v '^#' "$CDROM/.disk/base_exclude" | tr '\n' , | sed 's/,$//'`
 		fi
 	else
 		db_get mirror/protocol
@@ -101,7 +106,7 @@ get_mirror_info () {
 	APTLISTDIR=/target/var/lib/apt/lists
 	mkdir -p $APTLISTDIR
 	if [ file = "$PROTOCOL" ]; then
-		cp /cdrom/dists/$SUITE/Release $APTLISTDIR/tmp || nogetrel="/cdrom/dists/$SUITE/Release"
+		cp "$CDROM/dists/$SUITE/Release" $APTLISTDIR/tmp || nogetrel="$CDROM/dists/$SUITE/Release"
 	else
 		if [ "$PROTOCOL" = "http" ]; then
 			db_get mirror/http/proxy

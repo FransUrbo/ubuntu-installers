@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-24 11:20-0300\n"
+"POT-Creation-Date: 2004-08-12 17:10+0100\n"
 "PO-Revision-Date: 2003-07-19 15:19+0300\n"
 "Last-Translator: Aigars Mahinovs <aigarius@debian.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,21 +40,21 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:26
+#: ../templates:33
 #, fuzzy
 msgid "Failed to install the base system"
 msgstr "Instalēju bāzes sistēmu"
 
 #. Type: error
 #. Description
-#: ../templates:26
+#: ../templates:33
 #, fuzzy
 msgid "The base system installation into /target/ failed."
 msgstr "Bāzes sitēmas instalācija direktoriā /target/ bija neveiksmīga"
 
 #. Type: error
 #. Description
-#: ../templates:33
+#: ../templates:40
 #, fuzzy
 msgid ""
 "The debootstrap program exited with an error (return value ${EXITCODE})."
@@ -62,53 +62,53 @@ msgstr "debootstrap beidz darbu ar kļūdu (atgrieztā vērība ${EXITCODE})."
 
 #. Type: error
 #. Description
-#: ../templates:40
+#: ../templates:47
 #, fuzzy
 msgid "Base system installation error"
 msgstr "Bāzes instalācijas kļūda"
 
 #. Type: error
 #. Description
-#: ../templates:40
+#: ../templates:47
 #, fuzzy
 msgid "The debootstrap program exited abnormally."
 msgstr "dbootstrap beidza darbu kļūdaini."
 
 #. Type: error
 #. Description
-#: ../templates:47
+#: ../templates:54
 msgid "The following error occurred:"
 msgstr "Radās sekojoša kļūda:"
 
 #. Type: error
 #. Description
-#: ../templates:47
+#: ../templates:54
 msgid "${ERROR}"
 msgstr "${ERROR}"
 
 #. Type: error
 #. Description
-#: ../templates:56
+#: ../templates:63
 #, fuzzy
 msgid "Unable to install a kernel"
 msgstr "Nevaru uzinstalēt Linux kodolu."
 
 #. Type: error
 #. Description
-#: ../templates:56
+#: ../templates:63
 #, fuzzy
 msgid "No kernel package is selected for installation."
 msgstr "Neviena Linux kodola paka nav izvēlēta instalēšanai"
 
 #. Type: error
 #. Description
-#: ../templates:61
+#: ../templates:68
 msgid "Unable to install the selected kernel"
 msgstr "Nevaru uzinstalēt izvēlēto Linux kodolu"
 
 #. Type: error
 #. Description
-#: ../templates:61
+#: ../templates:68
 msgid ""
 "An error was returned while trying to install the kernel into the target "
 "system."
@@ -117,20 +117,20 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:61
+#: ../templates:68
 msgid "Kernel package: '${KERNEL}'."
 msgstr "Linux kodola paka: '${KERNEL}'."
 
 #. Type: select
 #. Description
-#: ../templates:72
+#: ../templates:79
 #, fuzzy
 msgid "Kernel to install:"
 msgstr "Izvēlieties, kādu Linux kodolu instalēt iekš /target/"
 
 #. Type: select
 #. Description
-#: ../templates:72
+#: ../templates:79
 #, fuzzy
 msgid ""
 "The list shows the available kernels. Please choose one of them in order to "
@@ -141,27 +141,27 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:78
+#: ../templates:85
 #, fuzzy
 msgid "No installable kernel found"
 msgstr "Instalējami Linux kodoli nav atrasti definētajos APT avotos"
 
 #. Type: error
 #. Description
-#: ../templates:78
+#: ../templates:85
 #, fuzzy
 msgid "No installable kernel was found in the defined APT sources."
 msgstr "Instalējami Linux kodoli nav atrasti definētajos APT avotos"
 
 #. Type: error
 #. Description
-#: ../templates:78
+#: ../templates:85
 msgid "The current default kernel package is '${KERNEL}'."
 msgstr "Tekošai Linux kodols pēc noklusējuma ir '${KERNEL}'."
 
 #. Type: error
 #. Description
-#: ../templates:78
+#: ../templates:85
 #, fuzzy
 msgid ""
 "You may try to continue though this rather strange error is probably fatal."
@@ -169,14 +169,14 @@ msgstr "Tas ir diezgan dīvaini un arī diezgan fatāli."
 
 #. Type: error
 #. Description
-#: ../templates:87
+#: ../templates:94
 #, fuzzy
 msgid "Unable to install initrd-tools"
 msgstr "Nevaru uzinstalēt Linux kodolu."
 
 #. Type: error
 #. Description
-#: ../templates:87
+#: ../templates:94
 #, fuzzy
 msgid ""
 "An error was returned while trying to install the initrd-tools package  onto "
@@ -186,236 +186,236 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:87
+#: ../templates:94
 msgid "Check /var/log/messages or see virtual console 3 for the details."
 msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:95
+#: ../templates:102
 msgid "${SUBST0} was not pre-downloaded."
 msgstr "${SUBST0} nebija lejupielādēts agrāk (kā bija plānots)"
 
 #. Type: error
 #. Description
-#: ../templates:100
+#: ../templates:107
 msgid "Unknown location ${SUBST0}."
 msgstr "Nezināma atrašanās vieta ${SUBST0}."
 
 #. Type: error
 #. Description
-#: ../templates:105
+#: ../templates:112
 msgid "Failed getting Release file ${SUBST0}."
 msgstr "Kļūda iegūstot Release failu ${SUBST0}."
 
 #. Type: error
 #. Description
-#: ../templates:110
+#: ../templates:117
 #, fuzzy
 msgid "Invalid Release file: no valid components."
 msgstr "Nekorekts Release fails, nav korektu komponenšu."
 
 #. Type: error
 #. Description
-#: ../templates:115
+#: ../templates:122
 #, fuzzy
 msgid "Invalid Release file: no entry for ${SUBST0}."
 msgstr "Nekorekts Release fails, nav ${SUBST0} komponentes."
 
 #. Type: error
 #. Description
-#: ../templates:120
+#: ../templates:127
 msgid "Couldn't download ${SUBST0}."
 msgstr "Nevarēja lejuplādēt ${SUBST0}."
 
 #. Type: error
 #. Description
-#: ../templates:125
+#: ../templates:132
 msgid "Debootstrap Error"
 msgstr "Debootstrap Kļūda"
 
 #. Type: error
 #. Description
-#: ../templates:125
+#: ../templates:132
 msgid "Interrupt caught... Exiting."
 msgstr "Saņēmu pārtraukuma signālu ... beidzu darbu."
 
 #. Type: text
 #. Description
-#: ../templates:130
+#: ../templates:137
 #, fuzzy
-msgid "Installing the Debian base system"
+msgid "Installing the Ubuntu base system"
 msgstr "Instalēju bāzes sistēmu"
 
 #. Type: text
 #. Description
-#: ../templates:134
+#: ../templates:141
 #, fuzzy
-msgid "Preparing to install the Debian base system..."
+msgid "Preparing to install the Ubuntu base system..."
 msgstr "Instalēju bāzes sistēmu"
 
 #. Type: text
 #. Description
-#: ../templates:138
+#: ../templates:145
 #, fuzzy
 msgid "Running ${SCRIPT}..."
 msgstr "Saņemu ${SUBST0}|"
 
 #. Type: text
 #. Description
-#: ../templates:142
+#: ../templates:149
 msgid "Checking the target file system"
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:146
+#: ../templates:153
 #, fuzzy
 msgid "Retrieving Release file"
 msgstr "Lejuplādēju Packages failu"
 
 #. Type: text
 #. Description
-#: ../templates:150
+#: ../templates:157
 #, fuzzy
 msgid "Finding package sizes"
 msgstr "Lejuplādēju pakas"
 
 #. Type: text
 #. Description
-#: ../templates:154
+#: ../templates:161
 #, fuzzy
 msgid "Retrieving Packages files"
 msgstr "Lejuplādēju Packages failu"
 
 #. Type: text
 #. Description
-#: ../templates:158
+#: ../templates:165
 #, fuzzy
 msgid "Retrieving packages"
 msgstr "Atpakoju pakas"
 
 #. Type: text
 #. Description
-#: ../templates:162
+#: ../templates:169
 #, fuzzy
 msgid "Extracting packages"
 msgstr "Atpakoju pakas"
 
 #. Type: text
 #. Description
-#: ../templates:166
+#: ../templates:173
 #, fuzzy
 msgid "Installing the base system"
 msgstr "Instalēju bāzes sistēmu"
 
 #. Type: text
 #. Description
-#: ../templates:174
+#: ../templates:181
 #, fuzzy
 msgid "Validating ${SUBST0}..."
 msgstr "Pārbaudu ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../templates:178
+#: ../templates:185
 #, fuzzy
 msgid "Retrieving ${SUBST0}..."
 msgstr "Saņemu ${SUBST0}|"
 
 #. Type: text
 #. Description
-#: ../templates:182
+#: ../templates:189
 #, fuzzy
 msgid "Extracting ${SUBST0}..."
 msgstr "Atpakoju ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../templates:186
+#: ../templates:193
 #, fuzzy
 msgid "Checking package size: ${SUBST0}..."
 msgstr "Atpakoju ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../templates:190
+#: ../templates:197
 #, fuzzy
 msgid "Installing core packages..."
 msgstr "Instalēju kodola līmeņa pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:194
+#: ../templates:201
 #, fuzzy
 msgid "Unpacking required packages..."
 msgstr "Atpakoju nepieciešamās pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:198
+#: ../templates:205
 #, fuzzy
 msgid "Configuring required packages..."
 msgstr "Konfigurēju nepieciešamās pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:202
+#: ../templates:209
 #, fuzzy
 msgid "Installing base packages..."
 msgstr "Instalēju bāzes pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:206
+#: ../templates:213
 #, fuzzy
 msgid "Base system installed successfully."
 msgstr "Bāzes sistēma veiksmīgi uzinstalēta."
 
 #. Type: text
 #. Description
-#: ../templates:210
+#: ../templates:217
 #, fuzzy
 msgid "Configuring APT sources..."
 msgstr "Konfigurēju nepieciešamās pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:214
+#: ../templates:221
 #, fuzzy
 msgid "Updating the list of available packages..."
 msgstr "Atpakoju nepieciešamās pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:218
+#: ../templates:225
 #, fuzzy
 msgid "Installing extra packages..."
 msgstr "Instalēju kodola līmeņa pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:222
+#: ../templates:229
 msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:226
+#: ../templates:233
 #, fuzzy
 msgid "Selecting the kernel to install..."
 msgstr "Izvēlieties, kādu Linux kodolu instalēt iekš /target/"
 
 #. Type: text
 #. Description
-#: ../templates:230
+#: ../templates:237
 #, fuzzy
 msgid "Installing the kernel..."
 msgstr "Instalēju bāzes sistēmu"
 
 #. Type: text
 #. Description
-#: ../templates:234
+#: ../templates:241
 #, fuzzy
 msgid "Installing the PCMCIA modules"
 msgstr "Instalēju kodola līmeņa pakas..."
@@ -423,7 +423,7 @@ msgstr "Instalēju kodola līmeņa pakas..."
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:239
+#: ../templates:246
 #, fuzzy
 msgid "Install the base system"
 msgstr "Instalēju bāzes sistēmu"

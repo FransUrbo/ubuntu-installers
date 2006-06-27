@@ -21,6 +21,13 @@ Description: Not installing to unclean target
  that you go back and erase or format the target filesystem before
  proceeding with the install.
 
+Template: base-installer/cd-location
+Type: string
+Default: /cdrom
+Description: CD location (internal use, not translated)
+ Location of CD for installation of packages. May be changed if the
+ contents of the CD are copied to the target disk.
+
 Template: base-installer/debootstrap-failed
 Type: error
 _Description: Failed to install the base system
@@ -127,11 +134,11 @@ _Description: Debootstrap Error
 
 Template: base-installer/progress/installing-debian
 Type: text
-_Description: Installing the Debian base system
+_Description: Installing the Ubuntu base system
 
 Template: base-installer/progress/preparing
 Type: text
-_Description: Preparing to install the Debian base system...
+_Description: Preparing to install the Ubuntu base system...
 
 Template: base-installer/progress/fallback
 Type: text

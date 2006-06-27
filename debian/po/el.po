@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-24 11:20-0300\n"
+"POT-Creation-Date: 2004-08-12 17:10+0100\n"
 "PO-Revision-Date: 2004-06-25 10:06+0300\n"
 "Last-Translator: George Papamichelakis <george@step.gr>\n"
 "Language-Team:  <debian-l10n-greek@lists.debian.org>\n"
@@ -49,19 +49,19 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:26
+#: ../templates:33
 msgid "Failed to install the base system"
 msgstr "Απέτυχε η εγκατάσταση του βασικού συστήματος"
 
 #. Type: error
 #. Description
-#: ../templates:26
+#: ../templates:33
 msgid "The base system installation into /target/ failed."
 msgstr "Η εγκατάσταση του βασικού συστήματος στο κατάλογο /target απέτυχε"
 
 #. Type: error
 #. Description
-#: ../templates:33
+#: ../templates:40
 msgid ""
 "The debootstrap program exited with an error (return value ${EXITCODE})."
 msgstr ""
@@ -69,49 +69,49 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:40
+#: ../templates:47
 msgid "Base system installation error"
 msgstr "Σφάλμα κατά τη βασική εγκατάσταση"
 
 #. Type: error
 #. Description
-#: ../templates:40
+#: ../templates:47
 msgid "The debootstrap program exited abnormally."
 msgstr "Το πρόγραμμα debootstrap απέτυχε."
 
 #. Type: error
 #. Description
-#: ../templates:47
+#: ../templates:54
 msgid "The following error occurred:"
 msgstr "Συνέβη το ακόλουθο σφάλμα:"
 
 #. Type: error
 #. Description
-#: ../templates:47
+#: ../templates:54
 msgid "${ERROR}"
 msgstr "${ERROR}"
 
 #. Type: error
 #. Description
-#: ../templates:56
+#: ../templates:63
 msgid "Unable to install a kernel"
 msgstr "Αδύνατη η εγκατάσταση του πυρήνα."
 
 #. Type: error
 #. Description
-#: ../templates:56
+#: ../templates:63
 msgid "No kernel package is selected for installation."
 msgstr "Δεν έχει επιλεχθεί πακέτο πυρήνα του Linux για εγκατάσταση."
 
 #. Type: error
 #. Description
-#: ../templates:61
+#: ../templates:68
 msgid "Unable to install the selected kernel"
 msgstr "Αδύνατη η εγκατάσταση του επιλεγμένου πυρήνα"
 
 #. Type: error
 #. Description
-#: ../templates:61
+#: ../templates:68
 msgid ""
 "An error was returned while trying to install the kernel into the target "
 "system."
@@ -121,19 +121,19 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:61
+#: ../templates:68
 msgid "Kernel package: '${KERNEL}'."
 msgstr "Πακέτο πυρήνα: '${KERNEL}'."
 
 #. Type: select
 #. Description
-#: ../templates:72
+#: ../templates:79
 msgid "Kernel to install:"
 msgstr "Πυρήνας προς εγκατάσταση:"
 
 #. Type: select
 #. Description
-#: ../templates:72
+#: ../templates:79
 msgid ""
 "The list shows the available kernels. Please choose one of them in order to "
 "make the system bootable from the hard drive."
@@ -143,25 +143,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:78
+#: ../templates:85
 msgid "No installable kernel found"
 msgstr "Δε βρέθηκε διαθέσιμος πυρήνας"
 
 #. Type: error
 #. Description
-#: ../templates:78
+#: ../templates:85
 msgid "No installable kernel was found in the defined APT sources."
 msgstr "Δε βρέθηκε διαθέσιμος πυρήνας προς εγκατάσταση στις πηγές του APT."
 
 #. Type: error
 #. Description
-#: ../templates:78
+#: ../templates:85
 msgid "The current default kernel package is '${KERNEL}'."
 msgstr "Ο προκαθορισμένος πυρήνας αυτή τη στιγμή είναι ο '${KERNEL}'."
 
 #. Type: error
 #. Description
-#: ../templates:78
+#: ../templates:85
 msgid ""
 "You may try to continue though this rather strange error is probably fatal."
 msgstr ""
@@ -170,13 +170,13 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:87
+#: ../templates:94
 msgid "Unable to install initrd-tools"
 msgstr "Αδύνατη η εγκατάσταση των εργαλείων αρχικού δίσκου μνήμης (initrd)."
 
 #. Type: error
 #. Description
-#: ../templates:87
+#: ../templates:94
 msgid ""
 "An error was returned while trying to install the initrd-tools package  onto "
 "the target system."
@@ -186,7 +186,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:87
+#: ../templates:94
 msgid "Check /var/log/messages or see virtual console 3 for the details."
 msgstr ""
 "Για λεπτομέρειες ανατρέξτε στο αρχείο /var/log/messages ή στην εικονική "
@@ -194,211 +194,213 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../templates:95
+#: ../templates:102
 msgid "${SUBST0} was not pre-downloaded."
 msgstr "Η μονάδα ${SUBST0} δεν είχε προ-φορτωθεί."
 
 #. Type: error
 #. Description
-#: ../templates:100
+#: ../templates:107
 msgid "Unknown location ${SUBST0}."
 msgstr "Άγνωστος τόπος ${SUBST0}"
 
 #. Type: error
 #. Description
-#: ../templates:105
+#: ../templates:112
 msgid "Failed getting Release file ${SUBST0}."
 msgstr "Αποτυχία στη φόρτωση του αρχείου Release ${SUBST0}."
 
 #. Type: error
 #. Description
-#: ../templates:110
+#: ../templates:117
 msgid "Invalid Release file: no valid components."
 msgstr "Άκυρο αρχείο Release: δεν περιέχει έγκυρα στοιχεία."
 
 #. Type: error
 #. Description
-#: ../templates:115
+#: ../templates:122
 msgid "Invalid Release file: no entry for ${SUBST0}."
 msgstr "Άκυρο αρχείο Release: δεν υπάρχει καταχώρηση για το ${SUBST0}."
 
 #. Type: error
 #. Description
-#: ../templates:120
+#: ../templates:127
 msgid "Couldn't download ${SUBST0}."
 msgstr "Αδύνατη η μεταφόρτωση του ${SUBST0}."
 
 #. Type: error
 #. Description
-#: ../templates:125
+#: ../templates:132
 msgid "Debootstrap Error"
 msgstr "Σφάλμα στο debootstrap"
 
 #. Type: error
 #. Description
-#: ../templates:125
+#: ../templates:132
 msgid "Interrupt caught... Exiting."
 msgstr "Ανιχνεύθηκε διακοπή... η διαδικασία τερματίζεται."
 
 #. Type: text
 #. Description
-#: ../templates:130
-msgid "Installing the Debian base system"
+#: ../templates:137
+#, fuzzy
+msgid "Installing the Ubuntu base system"
 msgstr "Εγκατάσταση του βασικού συστήματος"
 
 #. Type: text
 #. Description
-#: ../templates:134
-msgid "Preparing to install the Debian base system..."
+#: ../templates:141
+#, fuzzy
+msgid "Preparing to install the Ubuntu base system..."
 msgstr "Προετοιμασία για εγκατάσταση του βασικού συστήματος..."
 
 #. Type: text
 #. Description
-#: ../templates:138
+#: ../templates:145
 msgid "Running ${SCRIPT}..."
 msgstr "Εκτέλειται το ${SCRIPT}..."
 
 #. Type: text
 #. Description
-#: ../templates:142
+#: ../templates:149
 msgid "Checking the target file system"
 msgstr "Έλεγχος του συστήματος αρχείων προορισμού"
 
 #. Type: text
 #. Description
-#: ../templates:146
+#: ../templates:153
 msgid "Retrieving Release file"
 msgstr "Ανάκτηση του αρχείου Release"
 
 #. Type: text
 #. Description
-#: ../templates:150
+#: ../templates:157
 msgid "Finding package sizes"
 msgstr "Εύρεση των μεγεθών των πακέτων"
 
 #. Type: text
 #. Description
-#: ../templates:154
+#: ../templates:161
 msgid "Retrieving Packages files"
 msgstr "Ανάκτηση των αρχείων Packages"
 
 #. Type: text
 #. Description
-#: ../templates:158
+#: ../templates:165
 msgid "Retrieving packages"
 msgstr "Ανάκτηση των πακέτων"
 
 #. Type: text
 #. Description
-#: ../templates:162
+#: ../templates:169
 msgid "Extracting packages"
 msgstr "Αποσυμπίεση πακέτων"
 
 #. Type: text
 #. Description
-#: ../templates:166
+#: ../templates:173
 msgid "Installing the base system"
 msgstr "Εγκατάσταση του βασικού συστήματος"
 
 #. Type: text
 #. Description
-#: ../templates:174
+#: ../templates:181
 msgid "Validating ${SUBST0}..."
 msgstr "Έλεγχος εγκυρότητας του ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../templates:178
+#: ../templates:185
 msgid "Retrieving ${SUBST0}..."
 msgstr "Ανάκτηση του ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../templates:182
+#: ../templates:189
 msgid "Extracting ${SUBST0}..."
 msgstr "Αποσυμπίεση του ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../templates:186
+#: ../templates:193
 msgid "Checking package size: ${SUBST0}..."
 msgstr "Έλεγχος μεγέθους πακέτου: ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:190
+#: ../templates:197
 msgid "Installing core packages..."
 msgstr "Εγκατάσταση ουσιαστικότερων πακέτων..."
 
 #. Type: text
 #. Description
-#: ../templates:194
+#: ../templates:201
 msgid "Unpacking required packages..."
 msgstr "Αποσυμπίεση των απαιτούμενων πακέτων..."
 
 #. Type: text
 #. Description
-#: ../templates:198
+#: ../templates:205
 msgid "Configuring required packages..."
 msgstr "Ρύθμιση των απαιτούμενων πακέτων..."
 
 #. Type: text
 #. Description
-#: ../templates:202
+#: ../templates:209
 msgid "Installing base packages..."
 msgstr "Εγκατάσταση των βασικών πακέτων..."
 
 #. Type: text
 #. Description
-#: ../templates:206
+#: ../templates:213
 msgid "Base system installed successfully."
 msgstr "Η εγκατάσταση του βασικού συστήματος ήταν επιτυχής."
 
 #. Type: text
 #. Description
-#: ../templates:210
+#: ../templates:217
 msgid "Configuring APT sources..."
 msgstr "Ρύθμιση των πηγών του APT..."
 
 #. Type: text
 #. Description
-#: ../templates:214
+#: ../templates:221
 msgid "Updating the list of available packages..."
 msgstr "Ανανέωση της λίστας των διαθέσιμων πακέτων..."
 
 #. Type: text
 #. Description
-#: ../templates:218
+#: ../templates:225
 msgid "Installing extra packages..."
 msgstr "Εγκατάσταση επιπλέον πακέτων..."
 
 #. Type: text
 #. Description
-#: ../templates:222
+#: ../templates:229
 msgid "Creating device files..."
 msgstr "Δημιουργία αρχείων συσκευών..."
 
 #. Type: text
 #. Description
-#: ../templates:226
+#: ../templates:233
 msgid "Selecting the kernel to install..."
 msgstr "Επιλογή του πυρήνα προς εγκατάσταση..."
 
 #. Type: text
 #. Description
-#: ../templates:230
+#: ../templates:237
 msgid "Installing the kernel..."
 msgstr "Εγκατάσταση του πυρήνα..."
 
 #. Type: text
 #. Description
-#: ../templates:234
+#: ../templates:241
 msgid "Installing the PCMCIA modules"
 msgstr "Εγκατάσταση των οδηγών PCMCIA"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:239
+#: ../templates:246
 msgid "Install the base system"
 msgstr "Εγκατάσταση του βασικού συστήματος"
