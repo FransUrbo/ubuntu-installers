@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: base-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-09-20 14:58+0100\n"
-"PO-Revision-Date: 2004-06-16 23:15+0200\n"
+"PO-Revision-Date: 2004-09-16 00:19+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -240,21 +240,19 @@ msgstr "S'ha rebut una interrupció... s'està sortint."
 #. Description
 #: ../templates:141
 msgid "Installing the Ubuntu base system"
-msgstr "S'està instal·lant el sistema base de Ubuntu"
+msgstr "S'està instal·lant el sistema base d'Ubuntu"
 
 #. Type: text
 #. Description
 #: ../templates:145
-#, fuzzy
 msgid "Preparing to install the Ubuntu base system..."
-msgstr "No s'ha pogut instal·lar el sistema base"
+msgstr "S'està preparant la instal·lació del sistema base d'Ubuntu..."
 
 #. Type: text
 #. Description
 #: ../templates:149
-#, fuzzy
 msgid "Running ${SCRIPT}..."
-msgstr "S'està obtenint ${SUBST0}..."
+msgstr "S'està executant ${SCRIPT}..."
 
 #. Type: text
 #. Description
@@ -295,37 +293,32 @@ msgstr "S'estan extraient els paquets"
 #. Type: text
 #. Description
 #: ../templates:177
-#, fuzzy
 msgid "Installing core packages"
-msgstr "S'estan instal·lant els paquets principals..."
+msgstr "S'estan instal·lant els paquets principals"
 
 #. Type: text
 #. Description
 #: ../templates:181
-#, fuzzy
 msgid "Unpacking required packages"
-msgstr "S'estan desempaquetant els paquets requerits..."
+msgstr "S'estan desempaquetant els paquets requerits"
 
 #. Type: text
 #. Description
 #: ../templates:185
-#, fuzzy
 msgid "Configuring required packages"
-msgstr "S'estan configurant els paquets requerits..."
+msgstr "S'estan configurant els paquets requerits"
 
 #. Type: text
 #. Description
 #: ../templates:189
-#, fuzzy
 msgid "Unpacking the base system"
-msgstr "S'està instal·lant el sistema base"
+msgstr "S'està desempaquetant el sistema base"
 
 #. Type: text
 #. Description
 #: ../templates:193
-#, fuzzy
 msgid "Configuring the base system"
-msgstr "S'està instal·lant el sistema base"
+msgstr "S'està configurant el sistema base"
 
 #. Type: text
 #. Description
@@ -354,16 +347,14 @@ msgstr "S'està extraient ${SUBST0}..."
 #. Type: text
 #. Description
 #: ../templates:217
-#, fuzzy
 msgid "Unpacking ${SUBST0}..."
-msgstr "S'està extraient ${SUBST0}..."
+msgstr "S'està desempaquetant ${SUBST0}..."
 
 #. Type: text
 #. Description
 #: ../templates:221
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "S'està validant ${SUBST0}..."
+msgstr "S'està configurant ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -392,16 +383,14 @@ msgstr "S'estan configurant els paquets requerits..."
 #. Type: text
 #. Description
 #: ../templates:241
-#, fuzzy
 msgid "Unpacking the base system..."
-msgstr "S'està instal·lant el sistema base"
+msgstr "S'està desempaquetant el sistema base..."
 
 #. Type: text
 #. Description
 #: ../templates:245
-#, fuzzy
 msgid "Configuring the base system..."
-msgstr "S'està instal·lant el sistema base"
+msgstr "S'està configurant el sistema base..."
 
 #. Type: text
 #. Description
@@ -437,7 +426,7 @@ msgstr "S'estan instal·lant els paquets extra..."
 #. Description
 #: ../templates:269
 msgid "Creating device files..."
-msgstr ""
+msgstr "S'estan creant els fitxers dels dispositius..."
 
 #. Type: text
 #. Description
@@ -464,15 +453,3 @@ msgstr "S'estan instal·lant els mòduls PCMCIA"
 msgid "Install the base system"
 msgstr "Instal·la el sistema base"
 
-#~ msgid "Couldn't download ${SUBST0}."
-#~ msgstr "No s'ha pogut descarregar ${SUBST0}."
-
-#~ msgid "Unable to install PCMCIA modules"
-#~ msgstr "No s'han pogut instal·lar els mòduls PCMCIA"
-
-#~ msgid ""
-#~ "An error was returned while trying to install the PCMCIA modules onto the "
-#~ "target system."
-#~ msgstr ""
-#~ "S'ha tornat un error quan es tractava d'instal·lar els mòduls PCMCIA al "
-#~ "sistema objectiu."
