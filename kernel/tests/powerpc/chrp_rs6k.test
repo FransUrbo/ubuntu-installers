@@ -1,7 +1,7 @@
-subarch powermac_newworld
-cpuinfo g5.cpuinfo
+subarch chrp_rs6k
+cpuinfo chrp_rs6k.cpuinfo
 majors 2.6
-flavour power4-pmac
+flavour power4-chrp
 kernel-2.6 linux-power4
 usable \
   linux-power4 \

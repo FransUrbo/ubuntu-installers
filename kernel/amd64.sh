@@ -20,7 +20,7 @@ arch_check_usable_kernel () {
 			fi
 			;;
 		em64t-p4)
-			if expr "$1" : '.*-em64t-p4.*' >/dev/null; then
+			if expr "$1" : '.*-amd64-xeon.*' >/dev/null; then
 				return 0
 			fi
 			;;

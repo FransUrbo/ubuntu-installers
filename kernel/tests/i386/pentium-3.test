@@ -1,7 +1,21 @@
 cpuinfo pentium-3.cpuinfo
-majors 2.4 2.6
+majors 2.6
 flavour 686
-kernel-2.4 2.4-686
-kernel-2.6 2.6-686
-usable 2.4-386 2.4-586tsc 2.4-686-smp 2.4-686 2.4.26-1-386 2.4.26-1-586tsc 2.4.26-1-686-smp 2.4.26-1-686 2.6-386 2.6-686-smp 2.6-686 2.6.5-1-386 2.6.5-1-686-smp 2.6.5-1-686
-unusable 2.4-k6 2.4-k7-smp 2.4-k7 2.4.26-1-k6 2.4.26-1-k7-smp 2.4.26-1-k7 2.6-k7-smp 2.6-k7 2.6.5-1-k7-smp 2.6.5-1-k7
+kernel-2.6 linux-686
+usable \
+  linux-386 \
+  linux-686-smp \
+  linux-686 \
+  linux-image-386 \
+  linux-image-686-smp \
+  linux-image-686 \
+  linux-image-2.6.10-2-386 \
+  linux-image-2.6.10-2-686-smp \
+  linux-image-2.6.10-2-686
+unusable \
+  linux-k7-smp \
+  linux-k7 \
+  linux-image-k7-smp \
+  linux-image-k7 \
+  linux-image-2.6.10-2-k7-smp \
+  linux-image-2.6.10-2-k7
