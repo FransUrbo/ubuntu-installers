@@ -1,3 +1,12 @@
+base-installer (1.15ubuntu12) hoary; urgency=low
+
+  * Update Brazilian Portuguese translation (thanks, Carlos Eduardo Pedroza
+    Santiviago).
+  * Update French translation (thanks, Sebastien Bacher).
+  * Update German translation (thanks, Herbert Straub).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 26 Mar 2005 01:04:14 +0000
+
 base-installer (1.15ubuntu11) hoary; urgency=low
 
   * Add draft Xhosa translation.

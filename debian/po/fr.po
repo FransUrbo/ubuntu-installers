@@ -18,14 +18,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2004-10-09 14:28+0200\n"
+"PO-Revision-Date: 2005-03-22 20:19+0100\n"
 "Last-Translator: French Team <debian-l10n-french@lists.debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=n>1;\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
 
 #. Type: boolean
 #. Description
@@ -286,6 +285,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
+"Impossible de récupérer ${SUBST0}. Ceci peut être dû à un problème de réseau "
+"ou un CD défectueux, selon votre méthode d'installation."
 
 #. Type: error
 #. Description
@@ -294,6 +295,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
+"Si vous installez à partir d'un CD-R ou CD-RW, enregistrer le CD à une "
+"vitesse plus faible peut aider."
 
 #. Type: error
 #. Description
@@ -340,9 +343,8 @@ msgstr "Réception du fichier « Release »"
 #. Type: text
 #. Description
 #: ../base-installer.templates:160
-#, fuzzy
 msgid "Retrieving Release file signature"
-msgstr "Réception du fichier « Release »"
+msgstr "Réception de la signature du fichier « Release »"
 
 #. Type: text
 #. Description
@@ -550,23 +552,3 @@ msgstr "Installation des modules PCMCIA"
 #: ../base-installer.templates:297
 msgid "Install the base system"
 msgstr "Installer le système de base"
-
-#~ msgid "Cannot install Debian"
-#~ msgstr "Impossible d'installer Debian"
-
-#~ msgid ""
-#~ "The installer cannot figure out how to install Debian. No installable CD-"
-#~ "ROM was found and no valid mirror was configured."
-#~ msgstr ""
-#~ "L'outil d'installation n'a pas trouvé de méthode pour installer la "
-#~ "distribution Debian. Aucun cédérom d'installation n'a été trouvé et aucun "
-#~ "miroir valable de l'archive n'a été configuré."
-
-#~ msgid "Couldn't download ${SUBST0}."
-#~ msgstr "Impossible de télécharger ${SUBST0}."
-
-#~ msgid "Installing the Debian base system"
-#~ msgstr "Installation du système de base Debian"
-
-#~ msgid "Preparing to install the Debian base system..."
-#~ msgstr "Préparation de l'installation du système de base..."
