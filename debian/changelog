@@ -1,3 +1,11 @@
+base-installer (0.087ubuntu4) warty; urgency=low
+
+  * Colin Watson
+    - Adapt waypoints and templates for new, more granular debootstrap.
+    - Guard against overlong progress bars.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Fri, 20 Aug 2004 15:41:13 +0100
+
 base-installer (0.087ubuntu3) warty; urgency=low
 
   * Colin Watson

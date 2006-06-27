@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer/tools/base-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-12 17:10+0100\n"
+"POT-Creation-Date: 2004-08-20 17:00+0100\n"
 "PO-Revision-Date: 2004-06-25 22:02+1200\n"
 "Last-Translator: Carlos Z.F. Liu <carlos_liu@yahoo.com>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
@@ -281,108 +281,157 @@ msgstr "正在解开软件包..."
 #. Type: text
 #. Description
 #: ../templates:173
+#, fuzzy
+msgid "Installing core packages"
+msgstr "正在安装核心软件包..."
+
+#. Type: text
+#. Description
+#: ../templates:177
+#, fuzzy
+msgid "Unpacking required packages"
+msgstr "正在解开必需的软件包..."
+
+#. Type: text
+#. Description
+#: ../templates:181
+#, fuzzy
+msgid "Configuring required packages"
+msgstr "正在配置必需的软件包..."
+
+#. Type: text
+#. Description
+#: ../templates:185
+#, fuzzy
+msgid "Unpacking the base system"
+msgstr "正在安装基本系统"
+
+#. Type: text
+#. Description
+#: ../templates:189
+#, fuzzy
+msgid "Configuring the base system"
+msgstr "正在安装基本系统"
+
+#. Type: text
+#. Description
+#: ../templates:193
 msgid "Installing the base system"
 msgstr "正在安装基本系统"
 
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:201
 msgid "Validating ${SUBST0}..."
 msgstr "正在校验 ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:205
 msgid "Retrieving ${SUBST0}..."
 msgstr "正在获取 ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:209
 msgid "Extracting ${SUBST0}..."
 msgstr "正在解开 ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:213
+#, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "正在解开 ${SUBST0}..."
+
+#. Type: text
+#. Description
+#: ../templates:217
+#, fuzzy
+msgid "Configuring ${SUBST0}..."
+msgstr "正在校验 ${SUBST0}..."
+
+#. Type: text
+#. Description
+#: ../templates:221
 msgid "Checking package size: ${SUBST0}..."
 msgstr "正在检查软件包的大小：${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:197
+#: ../templates:225
 msgid "Installing core packages..."
 msgstr "正在安装核心软件包..."
 
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:229
 msgid "Unpacking required packages..."
 msgstr "正在解开必需的软件包..."
 
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:233
 msgid "Configuring required packages..."
 msgstr "正在配置必需的软件包..."
 
 #. Type: text
 #. Description
-#: ../templates:209
+#: ../templates:237
 msgid "Installing base packages..."
 msgstr "正在安装基本软件包..."
 
 #. Type: text
 #. Description
-#: ../templates:213
+#: ../templates:241
 msgid "Base system installed successfully."
 msgstr "基本系统安装成功。"
 
 #. Type: text
 #. Description
-#: ../templates:217
+#: ../templates:245
 msgid "Configuring APT sources..."
 msgstr "配置 APT 源..."
 
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:249
 msgid "Updating the list of available packages..."
 msgstr "更新可用软件包列表..."
 
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:253
 msgid "Installing extra packages..."
 msgstr "正在安装额外的软件包..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:257
 msgid "Creating device files..."
 msgstr "正在创建设备文件..."
 
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:261
 msgid "Selecting the kernel to install..."
 msgstr "选择要安装的内核..."
 
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:265
 msgid "Installing the kernel..."
 msgstr "正在安装内核..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:269
 msgid "Installing the PCMCIA modules"
 msgstr "正在安装 PCMCIA 模块"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:246
+#: ../templates:274
 msgid "Install the base system"
 msgstr "安装基本系统"

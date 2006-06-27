@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-12 17:10+0100\n"
+"POT-Creation-Date: 2004-08-20 17:00+0100\n"
 "PO-Revision-Date: 2004-06-24 20:02+0300\n"
 "Last-Translator: Osman Yüksel <yuxel@sonsuzdongu.com>\n"
 "Language-Team: Turkish <debian-l10n-turkish@lists.debian.org>\n"
@@ -278,108 +278,157 @@ msgstr "Paketler açılıyor"
 #. Type: text
 #. Description
 #: ../templates:173
+#, fuzzy
+msgid "Installing core packages"
+msgstr "Ana paketler kuruluyor..."
+
+#. Type: text
+#. Description
+#: ../templates:177
+#, fuzzy
+msgid "Unpacking required packages"
+msgstr "Gerekli paketler açılıyor..."
+
+#. Type: text
+#. Description
+#: ../templates:181
+#, fuzzy
+msgid "Configuring required packages"
+msgstr "Gerekli paketler yapılandırılıyor..."
+
+#. Type: text
+#. Description
+#: ../templates:185
+#, fuzzy
+msgid "Unpacking the base system"
+msgstr "Temel sistem kuruluyor"
+
+#. Type: text
+#. Description
+#: ../templates:189
+#, fuzzy
+msgid "Configuring the base system"
+msgstr "Temel sistem kuruluyor"
+
+#. Type: text
+#. Description
+#: ../templates:193
 msgid "Installing the base system"
 msgstr "Temel sistem kuruluyor"
 
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:201
 msgid "Validating ${SUBST0}..."
 msgstr "${SUBST0} doğrulanıyor..."
 
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:205
 msgid "Retrieving ${SUBST0}..."
 msgstr "${SUBST0} alınıyor..."
 
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:209
 msgid "Extracting ${SUBST0}..."
 msgstr " ${SUBST0} açılıyor..."
 
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:213
+#, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr " ${SUBST0} açılıyor..."
+
+#. Type: text
+#. Description
+#: ../templates:217
+#, fuzzy
+msgid "Configuring ${SUBST0}..."
+msgstr "${SUBST0} doğrulanıyor..."
+
+#. Type: text
+#. Description
+#: ../templates:221
 msgid "Checking package size: ${SUBST0}..."
 msgstr "Paket boyutu kontrol ediliyor: ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:197
+#: ../templates:225
 msgid "Installing core packages..."
 msgstr "Ana paketler kuruluyor..."
 
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:229
 msgid "Unpacking required packages..."
 msgstr "Gerekli paketler açılıyor..."
 
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:233
 msgid "Configuring required packages..."
 msgstr "Gerekli paketler yapılandırılıyor..."
 
 #. Type: text
 #. Description
-#: ../templates:209
+#: ../templates:237
 msgid "Installing base packages..."
 msgstr "Temel paketler kuruluyor..."
 
 #. Type: text
 #. Description
-#: ../templates:213
+#: ../templates:241
 msgid "Base system installed successfully."
 msgstr "Temel sistem başarıyla kuruldu."
 
 #. Type: text
 #. Description
-#: ../templates:217
+#: ../templates:245
 msgid "Configuring APT sources..."
 msgstr "APT kaynakları yapılandırılıyor..."
 
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:249
 msgid "Updating the list of available packages..."
 msgstr "Mevcut paketlere ilişkin liste güncelleniyor..."
 
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:253
 msgid "Installing extra packages..."
 msgstr "Ekstra paketler kuruluyor..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:257
 msgid "Creating device files..."
 msgstr "Aygıt dosyaları oluşturuluyor..."
 
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:261
 msgid "Selecting the kernel to install..."
 msgstr "Kurulacak çekirdek seçiliyor..."
 
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:265
 msgid "Installing the kernel..."
 msgstr "Çekirdek kuruluyor..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:269
 msgid "Installing the PCMCIA modules"
 msgstr "PCMCIA modülleri kuruluyor"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:246
+#: ../templates:274
 msgid "Install the base system"
 msgstr "Temel sistemi kur"

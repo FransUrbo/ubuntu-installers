@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-12 17:10+0100\n"
+"POT-Creation-Date: 2004-08-20 17:00+0100\n"
 "PO-Revision-Date: 2004-06-25 14:08+0300\n"
 "Last-Translator: Lior Kaplan <webmaster@guides.co.il>\n"
 "Language-Team: Hebrew\n"
@@ -417,6 +417,57 @@ msgstr "מחלץ חבילות"
 #. Type: text
 #. Description
 #: ../templates:173
+#, fuzzy
+msgid "Installing core packages"
+msgstr "מתקין את חבילות הליבה..."
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:177
+#, fuzzy
+msgid "Unpacking required packages"
+msgstr "פורק חבילות נחוצות..."
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:181
+#, fuzzy
+msgid "Configuring required packages"
+msgstr "מגדיר חבילות נחוצות..."
+
+#  Type: text
+#  Description
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:185
+#, fuzzy
+msgid "Unpacking the base system"
+msgstr "מתקין את מערכת הבסיס"
+
+#  Type: text
+#  Description
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:189
+#, fuzzy
+msgid "Configuring the base system"
+msgstr "מתקין את מערכת הבסיס"
+
+#  Type: text
+#  Description
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:193
 msgid "Installing the base system"
 msgstr "מתקין את מערכת הבסיס"
 
@@ -424,7 +475,7 @@ msgstr "מתקין את מערכת הבסיס"
 #  Description
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:201
 msgid "Validating ${SUBST0}..."
 msgstr "מוודא את ${SUBST0}..."
 
@@ -432,7 +483,7 @@ msgstr "מוודא את ${SUBST0}..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:205
 msgid "Retrieving ${SUBST0}..."
 msgstr "מביא את  ${SUBST0}..."
 
@@ -440,7 +491,7 @@ msgstr "מביא את  ${SUBST0}..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:209
 msgid "Extracting ${SUBST0}..."
 msgstr "מחלץ את  ${SUBST0}..."
 
@@ -448,7 +499,25 @@ msgstr "מחלץ את  ${SUBST0}..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:213
+#, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "מחלץ את  ${SUBST0}..."
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:217
+#, fuzzy
+msgid "Configuring ${SUBST0}..."
+msgstr "מוודא את ${SUBST0}..."
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:221
 msgid "Checking package size: ${SUBST0}..."
 msgstr "בודק גודל חבילה: ${SUBST0}..."
 
@@ -458,7 +527,7 @@ msgstr "בודק גודל חבילה: ${SUBST0}..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:197
+#: ../templates:225
 msgid "Installing core packages..."
 msgstr "מתקין את חבילות הליבה..."
 
@@ -466,7 +535,7 @@ msgstr "מתקין את חבילות הליבה..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:229
 msgid "Unpacking required packages..."
 msgstr "פורק חבילות נחוצות..."
 
@@ -474,7 +543,7 @@ msgstr "פורק חבילות נחוצות..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:233
 msgid "Configuring required packages..."
 msgstr "מגדיר חבילות נחוצות..."
 
@@ -484,7 +553,7 @@ msgstr "מגדיר חבילות נחוצות..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:209
+#: ../templates:237
 msgid "Installing base packages..."
 msgstr "מתקין את חבילות הבסיס..."
 
@@ -494,7 +563,7 @@ msgstr "מתקין את חבילות הבסיס..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:213
+#: ../templates:241
 msgid "Base system installed successfully."
 msgstr "בסיס המערכת הותקן בהצלחה."
 
@@ -504,7 +573,7 @@ msgstr "בסיס המערכת הותקן בהצלחה."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:217
+#: ../templates:245
 msgid "Configuring APT sources..."
 msgstr "מגדיר מקורות APT..."
 
@@ -512,7 +581,7 @@ msgstr "מגדיר מקורות APT..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:249
 msgid "Updating the list of available packages..."
 msgstr "מעדכן רשימה של חבילות זמינות..."
 
@@ -520,13 +589,13 @@ msgstr "מעדכן רשימה של חבילות זמינות..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:253
 msgid "Installing extra packages..."
 msgstr "מתקין חבילות עודפות..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:257
 msgid "Creating device files..."
 msgstr "יוצר קבצי התקנים..."
 
@@ -536,7 +605,7 @@ msgstr "יוצר קבצי התקנים..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:261
 msgid "Selecting the kernel to install..."
 msgstr "בוחר קרנל להתקנה..."
 
@@ -546,7 +615,7 @@ msgstr "בוחר קרנל להתקנה..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:265
 msgid "Installing the kernel..."
 msgstr "מתקין את הקרנל..."
 
@@ -554,7 +623,7 @@ msgstr "מתקין את הקרנל..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:269
 msgid "Installing the PCMCIA modules"
 msgstr "מתקין מודולי PCMCIA"
 
@@ -567,6 +636,6 @@ msgstr "מתקין מודולי PCMCIA"
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:246
+#: ../templates:274
 msgid "Install the base system"
 msgstr "מתקין את בסיס המערכת"

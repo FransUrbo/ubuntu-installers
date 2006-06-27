@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer 0.068\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-12 17:10+0100\n"
+"POT-Creation-Date: 2004-08-20 17:00+0100\n"
 "PO-Revision-Date: 2004-04-24 18:53+0700\n"
 "Last-Translator: Vũ Quang Trung <vu.quang.trung@auf.org>\n"
 "Language-Team: Vietnamese <debian-l10n@vn.refer.org>\n"
@@ -373,6 +373,51 @@ msgstr "Đang tời các gói dữ liệu"
 #. Type: text
 #. Description
 #: ../templates:173
+#, fuzzy
+msgid "Installing core packages"
+msgstr "Đang cài đặt lõi gói dữ liệu..."
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:177
+#, fuzzy
+msgid "Unpacking required packages"
+msgstr "Đang lấy các gói dữ liệu theo yêu cầu..."
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:181
+#, fuzzy
+msgid "Configuring required packages"
+msgstr "Đang cấu hình cho các gói dữ liệu yêu cầu..."
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:185
+#, fuzzy
+msgid "Unpacking the base system"
+msgstr "Đang cài đặt hệ thống cơ sở"
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:189
+#, fuzzy
+msgid "Configuring the base system"
+msgstr "Đang cài đặt hệ thống cơ sở"
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:193
 msgid "Installing the base system"
 msgstr "Đang cài đặt hệ thống cơ sở"
 
@@ -380,7 +425,7 @@ msgstr "Đang cài đặt hệ thống cơ sở"
 #  Description
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:201
 msgid "Validating ${SUBST0}..."
 msgstr "Đang xác nhận ${SUBST0}..."
 
@@ -388,7 +433,7 @@ msgstr "Đang xác nhận ${SUBST0}..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:205
 msgid "Retrieving ${SUBST0}..."
 msgstr "Đang truy vấn ${SUBST0}..."
 
@@ -396,7 +441,7 @@ msgstr "Đang truy vấn ${SUBST0}..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:209
 msgid "Extracting ${SUBST0}..."
 msgstr "Đang tời ${SUBST0}..."
 
@@ -404,7 +449,25 @@ msgstr "Đang tời ${SUBST0}..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:213
+#, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "Đang tời ${SUBST0}..."
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:217
+#, fuzzy
+msgid "Configuring ${SUBST0}..."
+msgstr "Đang xác nhận ${SUBST0}..."
+
+#  Type: text
+#  Description
+#. Type: text
+#. Description
+#: ../templates:221
 msgid "Checking package size: ${SUBST0}..."
 msgstr "Đang kiểm tra kích cỡ gói dữ liệu : ${SUBSTO}..."
 
@@ -412,7 +475,7 @@ msgstr "Đang kiểm tra kích cỡ gói dữ liệu : ${SUBSTO}..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:197
+#: ../templates:225
 msgid "Installing core packages..."
 msgstr "Đang cài đặt lõi gói dữ liệu..."
 
@@ -420,7 +483,7 @@ msgstr "Đang cài đặt lõi gói dữ liệu..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:229
 msgid "Unpacking required packages..."
 msgstr "Đang lấy các gói dữ liệu theo yêu cầu..."
 
@@ -428,7 +491,7 @@ msgstr "Đang lấy các gói dữ liệu theo yêu cầu..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:233
 msgid "Configuring required packages..."
 msgstr "Đang cấu hình cho các gói dữ liệu yêu cầu..."
 
@@ -436,7 +499,7 @@ msgstr "Đang cấu hình cho các gói dữ liệu yêu cầu..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:209
+#: ../templates:237
 msgid "Installing base packages..."
 msgstr "Đang cài đặt các gói dữ liệu cơ sở..."
 
@@ -444,7 +507,7 @@ msgstr "Đang cài đặt các gói dữ liệu cơ sở..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:213
+#: ../templates:241
 #, fuzzy
 msgid "Base system installed successfully."
 msgstr "Cài đặt hệ thống cơ sở bị lỗi"
@@ -453,7 +516,7 @@ msgstr "Cài đặt hệ thống cơ sở bị lỗi"
 #  Description
 #. Type: text
 #. Description
-#: ../templates:217
+#: ../templates:245
 msgid "Configuring APT sources..."
 msgstr "Đang cấu hình nguồn APT..."
 
@@ -461,7 +524,7 @@ msgstr "Đang cấu hình nguồn APT..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:249
 msgid "Updating the list of available packages..."
 msgstr "Đang cập nhật danh sách các gói dữ liệu có hiệu lực..."
 
@@ -469,13 +532,13 @@ msgstr "Đang cập nhật danh sách các gói dữ liệu có hiệu lực..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:253
 msgid "Installing extra packages..."
 msgstr "Đang cài đặt các gói dữ liệu thêm..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:257
 msgid "Creating device files..."
 msgstr ""
 
@@ -483,7 +546,7 @@ msgstr ""
 #  Description
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:261
 msgid "Selecting the kernel to install..."
 msgstr "Đang lựa chọn nhân để cài đặt..."
 
@@ -491,7 +554,7 @@ msgstr "Đang lựa chọn nhân để cài đặt..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:265
 msgid "Installing the kernel..."
 msgstr "Đang cài đặt nhân..."
 
@@ -499,7 +562,7 @@ msgstr "Đang cài đặt nhân..."
 #  Description
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:269
 msgid "Installing the PCMCIA modules"
 msgstr "Đang cài đặt các môđun PCMCIA"
 
@@ -509,6 +572,6 @@ msgstr "Đang cài đặt các môđun PCMCIA"
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:246
+#: ../templates:274
 msgid "Install the base system"
 msgstr "Cài đặt hệ thống cơ sở"

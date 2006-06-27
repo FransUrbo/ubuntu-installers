@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: base-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-12 17:10+0100\n"
+"POT-Creation-Date: 2004-08-20 17:00+0100\n"
 "PO-Revision-Date: 2004-06-16 23:15+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
@@ -285,109 +285,158 @@ msgstr "S'estan extraient els paquets"
 #. Type: text
 #. Description
 #: ../templates:173
+#, fuzzy
+msgid "Installing core packages"
+msgstr "S'estan instal·lant els paquets principals..."
+
+#. Type: text
+#. Description
+#: ../templates:177
+#, fuzzy
+msgid "Unpacking required packages"
+msgstr "S'estan desempaquetant els paquets requerits..."
+
+#. Type: text
+#. Description
+#: ../templates:181
+#, fuzzy
+msgid "Configuring required packages"
+msgstr "S'estan configurant els paquets requerits..."
+
+#. Type: text
+#. Description
+#: ../templates:185
+#, fuzzy
+msgid "Unpacking the base system"
+msgstr "S'està instal·lant el sistema base"
+
+#. Type: text
+#. Description
+#: ../templates:189
+#, fuzzy
+msgid "Configuring the base system"
+msgstr "S'està instal·lant el sistema base"
+
+#. Type: text
+#. Description
+#: ../templates:193
 msgid "Installing the base system"
 msgstr "S'està instal·lant el sistema base"
 
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:201
 msgid "Validating ${SUBST0}..."
 msgstr "S'està validant ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:205
 msgid "Retrieving ${SUBST0}..."
 msgstr "S'està obtenint ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:209
 msgid "Extracting ${SUBST0}..."
 msgstr "S'està extraient ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:213
+#, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "S'està extraient ${SUBST0}..."
+
+#. Type: text
+#. Description
+#: ../templates:217
+#, fuzzy
+msgid "Configuring ${SUBST0}..."
+msgstr "S'està validant ${SUBST0}..."
+
+#. Type: text
+#. Description
+#: ../templates:221
 msgid "Checking package size: ${SUBST0}..."
 msgstr "S'està comprovant la mida del paquet: ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../templates:197
+#: ../templates:225
 msgid "Installing core packages..."
 msgstr "S'estan instal·lant els paquets principals..."
 
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:229
 msgid "Unpacking required packages..."
 msgstr "S'estan desempaquetant els paquets requerits..."
 
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:233
 msgid "Configuring required packages..."
 msgstr "S'estan configurant els paquets requerits..."
 
 #. Type: text
 #. Description
-#: ../templates:209
+#: ../templates:237
 msgid "Installing base packages..."
 msgstr "S'estan instal·lant els paquets base..."
 
 #. Type: text
 #. Description
-#: ../templates:213
+#: ../templates:241
 msgid "Base system installed successfully."
 msgstr "El sistema base s'ha instal·lat amb èxit."
 
 #. Type: text
 #. Description
-#: ../templates:217
+#: ../templates:245
 msgid "Configuring APT sources..."
 msgstr "S'estan configurant els fonts d'APT..."
 
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:249
 msgid "Updating the list of available packages..."
 msgstr "S'està actualitzant la llista de paquets disponibles..."
 
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:253
 msgid "Installing extra packages..."
 msgstr "S'estan instal·lant els paquets extra..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:257
 msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:261
 msgid "Selecting the kernel to install..."
 msgstr "S'està seleccionant el nucli a instal·lar..."
 
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:265
 msgid "Installing the kernel..."
 msgstr "S'està instal·lant el nucli..."
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:269
 msgid "Installing the PCMCIA modules"
 msgstr "S'estan instal·lant els mòduls PCMCIA"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:246
+#: ../templates:274
 msgid "Install the base system"
 msgstr "Instal·la el sistema base"
 

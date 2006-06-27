@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-12 17:10+0100\n"
+"POT-Creation-Date: 2004-08-20 17:00+0100\n"
 "PO-Revision-Date: 2003-07-19 15:19+0300\n"
 "Last-Translator: Aigars Mahinovs <aigarius@debian.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -306,116 +306,165 @@ msgstr "Atpakoju pakas"
 #. Description
 #: ../templates:173
 #, fuzzy
+msgid "Installing core packages"
+msgstr "Instalēju kodola līmeņa pakas..."
+
+#. Type: text
+#. Description
+#: ../templates:177
+#, fuzzy
+msgid "Unpacking required packages"
+msgstr "Atpakoju nepieciešamās pakas..."
+
+#. Type: text
+#. Description
+#: ../templates:181
+#, fuzzy
+msgid "Configuring required packages"
+msgstr "Konfigurēju nepieciešamās pakas..."
+
+#. Type: text
+#. Description
+#: ../templates:185
+#, fuzzy
+msgid "Unpacking the base system"
+msgstr "Instalēju bāzes sistēmu"
+
+#. Type: text
+#. Description
+#: ../templates:189
+#, fuzzy
+msgid "Configuring the base system"
+msgstr "Instalēju bāzes sistēmu"
+
+#. Type: text
+#. Description
+#: ../templates:193
+#, fuzzy
 msgid "Installing the base system"
 msgstr "Instalēju bāzes sistēmu"
 
 #. Type: text
 #. Description
-#: ../templates:181
+#: ../templates:201
 #, fuzzy
 msgid "Validating ${SUBST0}..."
 msgstr "Pārbaudu ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../templates:185
+#: ../templates:205
 #, fuzzy
 msgid "Retrieving ${SUBST0}..."
 msgstr "Saņemu ${SUBST0}|"
 
 #. Type: text
 #. Description
-#: ../templates:189
+#: ../templates:209
 #, fuzzy
 msgid "Extracting ${SUBST0}..."
 msgstr "Atpakoju ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../templates:193
+#: ../templates:213
+#, fuzzy
+msgid "Unpacking ${SUBST0}..."
+msgstr "Atpakoju ${SUBST0}"
+
+#. Type: text
+#. Description
+#: ../templates:217
+#, fuzzy
+msgid "Configuring ${SUBST0}..."
+msgstr "Pārbaudu ${SUBST0}"
+
+#. Type: text
+#. Description
+#: ../templates:221
 #, fuzzy
 msgid "Checking package size: ${SUBST0}..."
 msgstr "Atpakoju ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../templates:197
+#: ../templates:225
 #, fuzzy
 msgid "Installing core packages..."
 msgstr "Instalēju kodola līmeņa pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:201
+#: ../templates:229
 #, fuzzy
 msgid "Unpacking required packages..."
 msgstr "Atpakoju nepieciešamās pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:205
+#: ../templates:233
 #, fuzzy
 msgid "Configuring required packages..."
 msgstr "Konfigurēju nepieciešamās pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:209
+#: ../templates:237
 #, fuzzy
 msgid "Installing base packages..."
 msgstr "Instalēju bāzes pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:213
+#: ../templates:241
 #, fuzzy
 msgid "Base system installed successfully."
 msgstr "Bāzes sistēma veiksmīgi uzinstalēta."
 
 #. Type: text
 #. Description
-#: ../templates:217
+#: ../templates:245
 #, fuzzy
 msgid "Configuring APT sources..."
 msgstr "Konfigurēju nepieciešamās pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:221
+#: ../templates:249
 #, fuzzy
 msgid "Updating the list of available packages..."
 msgstr "Atpakoju nepieciešamās pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:225
+#: ../templates:253
 #, fuzzy
 msgid "Installing extra packages..."
 msgstr "Instalēju kodola līmeņa pakas..."
 
 #. Type: text
 #. Description
-#: ../templates:229
+#: ../templates:257
 msgid "Creating device files..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../templates:233
+#: ../templates:261
 #, fuzzy
 msgid "Selecting the kernel to install..."
 msgstr "Izvēlieties, kādu Linux kodolu instalēt iekš /target/"
 
 #. Type: text
 #. Description
-#: ../templates:237
+#: ../templates:265
 #, fuzzy
 msgid "Installing the kernel..."
 msgstr "Instalēju bāzes sistēmu"
 
 #. Type: text
 #. Description
-#: ../templates:241
+#: ../templates:269
 #, fuzzy
 msgid "Installing the PCMCIA modules"
 msgstr "Instalēju kodola līmeņa pakas..."
@@ -423,7 +472,7 @@ msgstr "Instalēju kodola līmeņa pakas..."
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../templates:246
+#: ../templates:274
 #, fuzzy
 msgid "Install the base system"
 msgstr "Instalēju bāzes sistēmu"
