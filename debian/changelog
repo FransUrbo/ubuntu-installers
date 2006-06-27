@@ -1,3 +1,10 @@
+base-installer (1.13ubuntu2) hoary; urgency=low
+
+  * Use linux-* kernels on ia64 and sparc.
+  * Remove sparc32 support, since we don't build kernels for it.
+
+ -- Colin Watson <cjwatson@canonical.com>  Wed,  8 Dec 2004 23:31:16 +0100
+
 base-installer (1.13ubuntu1) hoary; urgency=low
 
   * Resynchronise with Debian.

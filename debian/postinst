@@ -385,23 +385,11 @@ get_arch_kernel () {
 		MODEL=`uname -m`
 		CPUS=`grep 'ncpus probed' /proc/cpuinfo | cut -d: -f2`
 		case "$MODEL" in
-		sparc)
-			if [ "$CPUS" -eq 1 ]; then
-				trykernel=kernel-image-$version-sparc32
-			else
-				# No working SMP yet
-				if [ "$version" = "2.6" ]; then
-					trykernel=kernel-image-$version-sparc32
-				else
-					trykernel=kernel-image-$version-sparc32-smp
-				fi
-			fi
-		;;
 		sparc64)
 			if [ "$CPUS" -eq 1 ]; then
-				trykernel=kernel-image-$version-sparc64
+				trykernel=linux-sparc64
 			else
-				trykernel=kernel-image-$version-sparc64-smp
+				trykernel=linux-sparc64-smp
 			fi
 		;;
 		esac
@@ -472,7 +460,7 @@ get_arch_kernel () {
 		else
 			flavor=$family
 		fi
-		trykernel=kernel-image-$version-$flavor
+		trykernel=linux-$flavor
 	;;
 	alpha)
 		version=2.4.27-1
