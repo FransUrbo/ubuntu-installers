@@ -1,3 +1,10 @@
+base-installer (1.15ubuntu16) hoary; urgency=low
+
+  * Make apt-get use gpgv --ignore-time-conflict to avoid validation errors
+    due to clock problems (Ubuntu #8496).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue,  5 Apr 2005 18:49:42 +0100
+
 base-installer (1.15ubuntu15) hoary; urgency=low
 
   * Update Greek translation (thanks, Giorgos Logiotatidis).
