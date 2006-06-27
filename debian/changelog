@@ -1,3 +1,10 @@
+base-installer (0.087ubuntu10) warty; urgency=low
+
+  * Properly comma-separate component list to fix non-CD installs (closes:
+    Warty #1224).
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 14 Sep 2004 20:22:17 +0100
+
 base-installer (0.087ubuntu9) warty; urgency=low
 
   * Try to install an appropriate linux-restricted-modules package (closes:

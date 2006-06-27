@@ -95,7 +95,7 @@ get_mirror_info () {
 		db_get mirror/$PROTOCOL/directory
 		DIRECTORY="$RET"
 
-		COMPONENTS="main restricted"
+		COMPONENTS="main,restricted"
 	fi
 
 	if db_get mirror/suite && [ "$RET" ] ; then
