@@ -14,19 +14,20 @@
 # * I Gede Wijaya S (gwijayas@yahoo.com), 2004.
 # * Arief S F (arief@gurame.fisika.ui.ac.id), 2004.
 # * Setyo Nugroho (setyo@gmx.net), 2004.
+# * Yoppy Hidayanto <yoppy.hidayanto@gmail.com>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2004-10-02 16:27+0700\n"
-"Last-Translator: Debian Indonesia Team <debid@yahoogroups.com>\n"
-"Language-Team: Debian Indonesia Team <debian-l10n-id@gurame.fisika.ui.ac."
-"id>\n"
+"PO-Revision-Date: 2005-03-27 11:46+0700\n"
+"Last-Translator: Yoppy Hidayanto <yoppy.hidayanto@gmail.com>\n"
+"Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #. Type: boolean
 #. Description
@@ -280,6 +281,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
+"Tidak dapat membuka ${SUBST0}. Bisa jadi dikarenakan oleh CD yang jelek atau "
+"gangguan jaringan, tergantung dari metode instalasi anda."
 
 #. Type: error
 #. Description
@@ -288,6 +291,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
+"Jika anda menginstal dari CD-R or CD-RW, cobalah membakar CD dengan "
+"kecepatan tulis yang lebih rendah."
 
 #. Type: error
 #. Description
@@ -336,7 +341,7 @@ msgstr "Mengambil berkas Release"
 #: ../base-installer.templates:160
 #, fuzzy
 msgid "Retrieving Release file signature"
-msgstr "Mengambil berkas Release"
+msgstr "Mengambil berkas tandatangan Rilis"
 
 #. Type: text
 #. Description
@@ -388,7 +393,7 @@ msgstr "Sedang mengkonfigurasikan paket-paket yang diperlukan..."
 #: ../base-installer.templates:192
 #, fuzzy
 msgid "Unpacking the base system"
-msgstr "Memasang sistem basis"
+msgstr "Membuka sistem basis"
 
 #. Type: text
 #. Description
@@ -437,9 +442,8 @@ msgstr "Sedang membuka ${SUBST0}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:224
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "Sedang memeriksa keabsahan ${SUBST0}..."
+msgstr "Mengonfigurasi  ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -470,14 +474,14 @@ msgstr "Sedang mengonfigurasikan paket-paket yang diperlukan..."
 #: ../base-installer.templates:244
 #, fuzzy
 msgid "Unpacking the base system..."
-msgstr "Memasang sistem basis"
+msgstr "Sedang membuka sistem basis..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:248
 #, fuzzy
 msgid "Configuring the base system..."
-msgstr "Memasang sistem basis"
+msgstr "Sedang mengonfigurasi sistem basis..."
 
 #. Type: text
 #. Description
@@ -551,12 +555,3 @@ msgstr "Sedang memasang modul-modul PCMCIA"
 #: ../base-installer.templates:297
 msgid "Install the base system"
 msgstr "Memasang sistem dasar"
-
-#~ msgid "Couldn't download ${SUBST0}."
-#~ msgstr "Tidak dapat mengambil ${SUBST0}."
-
-#~ msgid "Installing the Debian base system"
-#~ msgstr "Memasang sistem dasar Debian"
-
-#~ msgid "Preparing to install the Debian base system..."
-#~ msgstr "Sedang bersiap-siap memasang sistem dasar Debian..."

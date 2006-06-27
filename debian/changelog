@@ -1,3 +1,13 @@
+base-installer (1.15ubuntu13) hoary; urgency=low
+
+  * Update Brazilian Portuguese translation (thanks, Carlos Eduardo Pedroza
+    Santiviago).
+  * Update Hungarian translation (thanks, Gabor Burjan).
+  * Update Indonesian translation (thanks, Yoppy Hidayanto).
+  * Update Polish translation (thanks, Dominik Zabłotny).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 28 Mar 2005 20:19:03 +0100
+
 base-installer (1.15ubuntu12) hoary; urgency=low
 
   * Update Brazilian Portuguese translation (thanks, Carlos Eduardo Pedroza
