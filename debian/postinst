@@ -349,7 +349,7 @@ kernel_update_list () {
 	 chroot /target apt-cache search linux-image | grep ^linux-image;
 	 # Hack for warty to get the metapackages; should be replaced by
 	 # something better for hoary.
-	 chroot /target apt-cache search ^linux- | grep '^linux-\(amd64\|386\|686\|k7\|power\|itanium\|mckinley\|sparc\)') | \
+	 chroot /target apt-cache search ^linux- | grep '^linux-\(amd64\|386\|686\|k7\|power\|itanium\|mckinley\|sparc\|hppa\)') | \
 	cut -d" " -f1 | uniq > "$KERNEL_LIST.unfiltered"
 	kernels=`sort -r "$KERNEL_LIST.unfiltered" | tr '\n' ' ' | sed -e 's/ $//'`
 	for candidate in $kernels; do

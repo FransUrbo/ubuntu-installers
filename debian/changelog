@@ -1,3 +1,9 @@
+base-installer (1.15ubuntu3) hoary; urgency=low
+
+  * Use linux-* kernels on hppa.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 24 Jan 2005 15:26:58 +0000
+
 base-installer (1.15ubuntu2) hoary; urgency=low
 
   * Enable debootstrap Release.gpg checking. Add matching

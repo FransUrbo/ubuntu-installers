@@ -7,9 +7,9 @@ arch_get_kernel_flavour () {
 }
 
 arch_check_usable_kernel () {
-	if expr "$1" : '.*-32.*' >/dev/null; then return 0; fi
+	if expr "$1" : '.*-hppa32.*' >/dev/null; then return 0; fi
 	if [ "$2" = parisc32 ]; then return 1; fi
-	if expr "$1" : '.*-64.*' >/dev/null; then return 0; fi
+	if expr "$1" : '.*-hppa64.*' >/dev/null; then return 0; fi
 
 	# default to usable in case of strangeness
 	warning "Unknown kernel usability: $1 / $2"
@@ -25,7 +25,7 @@ arch_get_kernel () {
 	# Don't know how to detect whether SMP is needed, but
 	# apparently it's OK to assume SMP.
 	case "$1" in
-		parisc32)	echo "kernel-image-$version-32-smp" ;;
-		parisc64)	echo "kernel-image-$version-64-smp" ;;
+		parisc32)	echo "linux-hppa32-smp" ;;
+		parisc64)	echo "linux-hppa64-smp" ;;
 	esac
 }
