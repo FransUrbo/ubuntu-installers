@@ -160,7 +160,7 @@ install_base_system () {
 	db_progress INFO base-installer/progress/preparing
 
 	tmpfile=/tmp/base-installer-hook.log
-	[ -d "$partsdir"] && info "Execution hook before debootstrap"
+	[ -d "$partsdir" ] && info "Execution hook before debootstrap"
 	for script in `ls "$partsdir"/*`; do
 	    base=$(basename $script | sed 's/[0-9]*//')
 	    if ! db_progress INFO base-installer/progress/$base; then
@@ -276,7 +276,10 @@ kernel_update_list () {
 	# Using 'uniq' to avoid listing the same kernel more then once.
 	(set +e;
 	 chroot /target apt-cache search kernel-image | grep ^kernel-image;
-	 chroot /target apt-cache search linux-image | grep ^linux-image) | \
+	 chroot /target apt-cache search linux-image | grep ^linux-image;
+	 # Hack for warty to get the metapackages; should be replaced by
+	 # something better for hoary.
+	 chroot /target apt-cache search ^linux- | grep '^linux-\(amd64\|386\|686\|k7\|power\)') | \
 	cut -d" " -f1 | uniq > $KERNEL_LIST
 }
 
@@ -302,13 +305,13 @@ get_arch_kernel () {
 			case "$FAMILY" in
 			" 6")
 				if test $SMP = no; then
-				        trykernel=linux-image-$version-k7
+				        trykernel=linux-k7
 				else
-				        trykernel=linux-image-$version-k7-smp
+				        trykernel=linux-k7-smp
 				fi
 			;;
 			*)
-				trykernel=linux-image-$version-386
+				trykernel=linux-386
 			;;
 			esac
 		;;
@@ -316,18 +319,18 @@ get_arch_kernel () {
 			case "$FAMILY" in
 			" 6"|" 15")
 				if test $SMP = no; then
-				        trykernel=linux-image-$version-686
+				        trykernel=linux-686
 				else
-				        trykernel=linux-image-$version-686-smp
+				        trykernel=linux-686-smp
 				fi
 			;;
 			*)
-				trykernel=linux-image-$version-386
+				trykernel=linux-386
 			;;
 			esac
 		;;
 		*)
-			trykernel=linux-image-$version-386
+			trykernel=linux-386
 		;;
 		esac
 	;;
@@ -342,16 +345,16 @@ get_arch_kernel () {
 		case "$VENDOR" in
 		" AuthenticAMD"*)
 			if test "$SMP" = no; then
-				trykernel=linux-image-$version-amd64-k8
+				trykernel=linux-amd64-k8
 			else
-				trykernel=linux-image-$version-amd64-k8-smp
+				trykernel=linux-amd64-k8-smp
 			fi
 		;;
 		" GenuineIntel"*)
-			trykernel=linux-image-$version-amd64-xeon
+			trykernel=linux-amd64-xeon
 		;;
 		*)
-			trykernel=linux-image-$version-amd64-generic
+			trykernel=linux-amd64-generic
 		;;
 		esac
 	;;
@@ -381,13 +384,13 @@ get_arch_kernel () {
 		CPU=`grep '^cpu[[:space:]]*:' /proc/cpuinfo | cut -d: -f2 | sed 's/^ *//; s/[, ].*//' | tr A-Z a-z`
 		case "$CPU" in
 		power3|i-star|s-star)
-			trykernel=linux-image-$version-power3
+			trykernel=linux-power3
 			;;
 		power4|ppc970)
-			trykernel=linux-image-$version-power4
+			trykernel=linux-power4
 			;;
 		*)
-			trykernel=linux-image-$version-powerpc
+			trykernel=linux-powerpc
 			;;
 		esac
 	;;
@@ -655,12 +658,6 @@ install_pcmcia_modules () {
 	apt-install "$pcmcia_package" 2>> $LOGFILE || true
 }
 
-install_restricted_modules () {
-	restricted_package=$(echo "$KERNEL" | sed 's/^linux-image/linux-restricted-modules/')
-	info "Installing restricted modules package '$restricted_package'."
-	apt-install "$restricted_package" 2>> $LOGFILE || true
-}
-
 apt_update () {
 	chroot /target apt-get update >> $LOGFILE 2>&1 || apt_update_failed=$?
 	
@@ -711,7 +708,6 @@ case "$ARCH" in
 		fi
 	;;
 esac
-waypoint 1	install_restricted_modules
 waypoint 5	install_extra
 waypoint 0	cleanup
 

@@ -1,3 +1,12 @@
+base-installer (0.087ubuntu12) warty; urgency=low
+
+  * Install kernel metapackages from the linux-meta source package (closes:
+    Ubuntu #2136).
+  * Remove install_restricted_modules, no longer necessary due to the above.
+  * Fix syntax error in install_base_system.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 12 Oct 2004 12:26:26 +0100
+
 base-installer (0.087ubuntu11) warty; urgency=low
 
   * Fix sed syntax error while fiddling with mkinitrd.conf.
