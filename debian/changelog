@@ -1,3 +1,10 @@
+base-installer (1.20ubuntu7) breezy; urgency=low
+
+  * Drop back to initrd-tools on hppa and ia64, where initramfs-tools
+    doesn't quite work yet.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue,  4 Oct 2005 00:13:36 +0100
+
 base-installer (1.20ubuntu6) breezy; urgency=low
 
   * Update fuzzy and missing translations from Rosetta (with some strings

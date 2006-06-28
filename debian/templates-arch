@@ -38,6 +38,8 @@ Description: kernel needs an initrd (linux 2.6 only)
 Template: base-installer/kernel/linux/initramfs-2.6
 Type: boolean
 Default: true
+Default[hppa]: false
+Default[ia64]: false
 Description: use an initramfs (linux 2.6 only)
 
 Template: base-installer/kernel/linux/extra-packages
