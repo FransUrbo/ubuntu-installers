@@ -16,14 +16,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-07 13:56+0100\n"
+"POT-Creation-Date: 2005-06-26 13:37-0600\n"
 "PO-Revision-Date: 2005-05-23 12:17+0100\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.10\n"
 
 #. Type: boolean
@@ -240,7 +240,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:93
-msgid "Check /var/log/messages or see virtual console 3 for the details."
+#, fuzzy
+msgid "Check /target/var/log/bootstrap.log for the details."
 msgstr ""
 "Sjekk /var/log/messages eller se konsoll 3 (Ctrl + Alt + F3) for nærmere "
 "informasjon."
@@ -248,20 +249,22 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:101
-msgid "${SUBST0} was not pre-downloaded."
-msgstr "${SUBST0} var ikke lastet ned på forhånd."
+msgid "Failed getting Release file ${SUBST0}."
+msgstr "Klarte ikke å hente versjonsfila ${SUBST0}."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:106
-msgid "Unknown location ${SUBST0}."
-msgstr "Ukjent sted ${SUBST0}."
+#, fuzzy
+msgid "Failed getting Release signature file ${SUBST0}."
+msgstr "Klarte ikke å hente versjonsfila ${SUBST0}."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:111
-msgid "Failed getting Release file ${SUBST0}."
-msgstr "Klarte ikke å hente versjonsfila ${SUBST0}."
+#, fuzzy
+msgid "Release file signed by unknown key (key id ${SUBST0})"
+msgstr "Ugyldig versjonsfil: ingen oppføring for ${SUBST0}."
 
 #. Type: error
 #. Description
@@ -274,6 +277,12 @@ msgstr "Ugyldig versjonsfil: ingen gyldige komponenter."
 #: ../base-installer.templates:121
 msgid "Invalid Release file: no entry for ${SUBST0}."
 msgstr "Ugyldig versjonsfil: ingen oppføring for ${SUBST0}."
+
+#. Type: error
+#. Description
+#: ../base-installer.templates:126
+msgid "Debootstrap Error"
+msgstr "Feil ved Debootstrap"
 
 #. Type: error
 #. Description
@@ -295,251 +304,277 @@ msgstr ""
 "Det kan hjelpe å brenne CD'en med en lavere fart hvis du installerer fra en "
 "CD-R eller CD-RW-plate."
 
-#. Type: error
-#. Description
-#: ../base-installer.templates:135
-msgid "Debootstrap Error"
-msgstr "Feil ved Debootstrap"
-
-#. Type: error
-#. Description
-#: ../base-installer.templates:135
-msgid "Interrupt caught... Exiting."
-msgstr "Fikk signal om avbrudd ... avslutter."
-
 #. Type: text
 #. Description
-#: ../base-installer.templates:144
+#: ../base-installer.templates:139
 #, fuzzy
 msgid "Preparing to install the base system..."
 msgstr "Forbereder installasjon av grunnsystemet ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:148
+#: ../base-installer.templates:143
 msgid "Running ${SCRIPT}..."
 msgstr "Kjører ${SCRIPT} ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:152
-msgid "Checking the target file system"
-msgstr "Sjekker filsystemet det skal installeres til"
-
-#. Type: text
-#. Description
-#: ../base-installer.templates:156
+#: ../base-installer.templates:147
 msgid "Retrieving Release file"
 msgstr "Henter en versjonsfil"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:160
+#: ../base-installer.templates:151
 #, fuzzy
 msgid "Retrieving Release file signature"
 msgstr "Henter en versjonsfil"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:164
+#: ../base-installer.templates:155
 msgid "Finding package sizes"
 msgstr "Finner pakkestørrelsene"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:168
+#: ../base-installer.templates:159
 msgid "Retrieving Packages files"
 msgstr "Henter pakkefilene"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:172
+#: ../base-installer.templates:163
+#, fuzzy
+msgid "Retrieving Packages file"
+msgstr "Henter pakkefilene"
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:167
 msgid "Retrieving packages"
 msgstr "Henter pakker"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:176
+#: ../base-installer.templates:171
 msgid "Extracting packages"
 msgstr "Pakker ut pakker"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:180
+#: ../base-installer.templates:175
 msgid "Installing the base system"
 msgstr "Installerer grunnsystemet"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:184
+#: ../base-installer.templates:179
 msgid "Installing core packages"
 msgstr "Installerer grunnpakkene"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:188
+#: ../base-installer.templates:183
 msgid "Unpacking required packages"
 msgstr "Pakker ut nødvendige pakker"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:192
+#: ../base-installer.templates:187
 msgid "Configuring required packages"
 msgstr "Setter opp nødvendige pakker"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:196
+#: ../base-installer.templates:191
 msgid "Unpacking the base system"
 msgstr "Pakker ut grunnsystemet"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:200
+#: ../base-installer.templates:195
 msgid "Configuring the base system"
 msgstr "Setter opp grunnsystemet"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:204
-msgid "${SECTION}: ${INFO}..."
-msgstr "${SECTION}: ${INFO}..."
-
-#. Type: text
-#. Description
-#: ../base-installer.templates:208
+#: ../base-installer.templates:203
 msgid "Validating ${SUBST0}..."
 msgstr "Sjekker ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:212
+#: ../base-installer.templates:207
 msgid "Retrieving ${SUBST0}..."
 msgstr "Henter ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:216
+#: ../base-installer.templates:211
 msgid "Extracting ${SUBST0}..."
 msgstr "Pakker ut ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:220
+#: ../base-installer.templates:215
 msgid "Unpacking ${SUBST0}..."
 msgstr "Pakker ut ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:224
+#: ../base-installer.templates:219
 msgid "Configuring ${SUBST0}..."
 msgstr "Setter opp ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:228
-msgid "Checking package size: ${SUBST0}..."
+#: ../base-installer.templates:223
+#, fuzzy
+msgid "Checking Release signature"
+msgstr "Henter en versjonsfil"
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:227
+#, fuzzy
+msgid "Valid Release signature (key id ${SUBST0})"
+msgstr "Ugyldig versjonsfil: ingen oppføring for ${SUBST0}."
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:231
+#, fuzzy
+msgid "Resolving dependencies of base packages..."
+msgstr "Installerer grunnpakkene ..."
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:235
+#, fuzzy
+msgid "Resolving dependencies of required packages..."
+msgstr "Pakker ut nødvendige pakker ..."
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:239
+#, fuzzy
+msgid "Checking component ${SUBST0} on ${SUBST1}..."
 msgstr "Sjekker pakkestørrelse: ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:232
+#: ../base-installer.templates:243
 msgid "Installing core packages..."
 msgstr "Installerer grunnpakkene ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:236
+#: ../base-installer.templates:247
 msgid "Unpacking required packages..."
 msgstr "Pakker ut nødvendige pakker ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:240
+#: ../base-installer.templates:251
 msgid "Configuring required packages..."
 msgstr "Setter opp nødvendige pakker ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:244
+#: ../base-installer.templates:255
 msgid "Installing base packages..."
 msgstr "Installerer grunnpakkene ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:248
+#: ../base-installer.templates:259
 msgid "Unpacking the base system..."
 msgstr "Pakker ut grunnsystemet..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:252
+#: ../base-installer.templates:263
 msgid "Configuring the base system..."
 msgstr "Setter opp grunnsystemet..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:256
+#: ../base-installer.templates:267
 msgid "Base system installed successfully."
 msgstr "Grunnsystemet er ferdig installert."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:260
+#: ../base-installer.templates:271
+msgid "${SECTION}: ${INFO}..."
+msgstr "${SECTION}: ${INFO}..."
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:275
+#, fuzzy
+msgid "Retrying failed download of ${SUBST0}"
+msgstr "Kunne ikke laste ned ${SUBST0}."
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:279
 msgid "Configuring APT sources..."
 msgstr "Setter opp apt-kilder ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:264
+#: ../base-installer.templates:283
 msgid "Updating the list of available packages..."
 msgstr "Oppdaterer lista over tilgjengelige pakker ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:268
+#: ../base-installer.templates:287
 msgid "Installing extra packages..."
 msgstr "Installerer ekstrapakkene ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:272
+#: ../base-installer.templates:291
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr "Installerer ekstra pakker - henter og installerer ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:276
+#: ../base-installer.templates:295
 msgid "Creating device files..."
 msgstr "Lager enhetsfiler ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:280
+#: ../base-installer.templates:299
 msgid "Selecting the kernel to install..."
 msgstr "Velger hvilken kjerne som skal installeres ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:284
+#: ../base-installer.templates:303
 msgid "Installing the kernel..."
 msgstr "Installerer kjernen ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:288
+#: ../base-installer.templates:307
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr "Installerer kjernen - henter og installerer  ${SUBST0} ..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:292
+#: ../base-installer.templates:311
 msgid "Installing the PCMCIA modules"
 msgstr "Installerer PCMCIA-modulene"
 
 #. Type: text
 #. Description
 #. Item in the main menu to select this package
-#: ../base-installer.templates:297
+#. TRANSLATORS: <65 columns
+#: ../base-installer.templates:317
 msgid "Install the base system"
 msgstr "Installer grunnsystemet"
