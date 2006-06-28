@@ -39,3 +39,13 @@ Template: base-installer/kernel/linux/initramfs-2.6
 Type: boolean
 Default: true
 Description: use an initramfs (linux 2.6 only)
+
+Template: base-installer/kernel/linux/extra-packages
+Type: string
+Default:
+Description: extra packages to install with init*-tools (linux only)
+
+Template: base-installer/kernel/linux/extra-packages-2.6
+Type: string
+Default: usplash
+Description: extra packages to install with init*-tools (linux 2.6 only)

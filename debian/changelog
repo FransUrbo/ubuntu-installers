@@ -1,3 +1,11 @@
+base-installer (1.20ubuntu5) breezy; urgency=low
+
+  * Control usplash installation by a template
+    (base-installer/kernel/linux/extra-packages-2.6) so that it can be
+    disabled for server installations.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 12 Sep 2005 15:49:00 +0100
+
 base-installer (1.20ubuntu4) breezy; urgency=low
 
   * Don't fall over if usplash doesn't exist (e.g. on powerpc).
