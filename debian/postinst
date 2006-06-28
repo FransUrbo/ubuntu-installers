@@ -502,23 +502,25 @@ link_in_boot = $link_in_boot
 EOF
 
 	if [ "$do_initramfs" = yes ]; then
-		package=initramfs-tools
+		packages='initramfs-tools usplash'
 	else
-		package=initrd-tools
+		packages=initrd-tools
 	fi
 
 	if [ yes = "$do_initrd" ] ; then
-		info "Installing $package."
+		for package in $packages; do
+			info "Installing $package."
 
-		# Make sure init*-tools is installed before we change its
-		# configuration
-		db_subst base-installer/section/install_kernel_package SUBST0 "$package"
-		db_progress INFO base-installer/section/install_kernel_package
-		if ! apt-install "$package" 2>> $LOGFILE ; then
-			# TODO: wrong template, but it needs translation;
-			# being handled upstream
-			exit_error base-installer/kernel/failed-initrd-tools-install
-		fi
+			# Make sure init*-tools is installed before we change
+			# its configuration
+			db_subst base-installer/section/install_kernel_package SUBST0 "$package"
+			db_progress INFO base-installer/section/install_kernel_package
+			if ! apt-install "$package" 2>> $LOGFILE ; then
+				# TODO: wrong template, but it needs
+				# translation; being handled upstream
+				exit_error base-installer/kernel/failed-initrd-tools-install
+			fi
+		done
 
 		rootpart_devfs=$(mount | grep "on /target " | cut -d' ' -f1)
 		rootpartfs=$(mount | grep "on /target " | cut -d' ' -f5)
@@ -559,7 +561,7 @@ EOF
 			fi
 		fi
 	else
-		info "Not installing $package."
+		info "Not installing $packages."
 	fi
 
 	# Advance progress bar to 30% of allocated space for install_kernel

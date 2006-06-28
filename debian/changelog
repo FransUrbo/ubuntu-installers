@@ -1,3 +1,9 @@
+base-installer (1.20ubuntu3) breezy; urgency=low
+
+  * Install usplash along with initramfs-tools.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon,  5 Sep 2005 14:45:35 +0100
+
 base-installer (1.20ubuntu2) breezy; urgency=low
 
   * Support configuring initramfs-tools rather than initrd-tools, and make
