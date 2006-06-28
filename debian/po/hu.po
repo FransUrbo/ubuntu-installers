@@ -49,13 +49,12 @@ msgstr "Az alaprendszer telepítése meghiúsult"
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-#, fuzzy
 msgid ""
 "The installer cannot figure out how to install the base system. No "
 "installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Forrás nélkül a telepítő képtelen a Debian telepítésére. Se CD-lemezek nem "
-"állnak rendelkezésre, se egy használható tükör nem ismert."
+"Forrás nélkül a telepítő képtelen az alaprendszer telepítésére. Se CD-lemez "
+"nem áll rendelkezésre, se egy használható tükör sem ismert."
 
 #. Type: error
 #. Description
@@ -236,9 +235,7 @@ msgstr ""
 #: ../base-installer.templates:93
 #, fuzzy
 msgid "Check /target/var/log/bootstrap.log for the details."
-msgstr ""
-"Részleteket a /var/log/messages fájlban vagy a 3. virtuális konzolon futó "
-"hibanaplóban olvashat."
+msgstr "Részleteket a /target/var/log/bootstrap.log olvashat."
 
 #. Type: error
 #. Description
@@ -256,9 +253,8 @@ msgstr "A következő 'Release' fájl letöltése meghiúsult: ${SUBST0}."
 #. Type: error
 #. Description
 #: ../base-installer.templates:111
-#, fuzzy
 msgid "Release file signed by unknown key (key id ${SUBST0})"
-msgstr "Érvénytelen 'Release' fájl, nincs ${SUBST0} bejegyzése."
+msgstr "Érvénytelen 'Release' fájl (kulcs id ${SUBST0})"
 
 #. Type: error
 #. Description
@@ -303,9 +299,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../base-installer.templates:139
-#, fuzzy
 msgid "Preparing to install the base system..."
-msgstr "Debian-alaprendszer telepítésének előkészítése folyamatban..."
+msgstr "Alaprendszer telepítésének előkészítése..."
 
 #. Type: text
 #. Description
@@ -322,9 +317,8 @@ msgstr "'Release' fájl beszerzése folyamatban"
 #. Type: text
 #. Description
 #: ../base-installer.templates:151
-#, fuzzy
 msgid "Retrieving Release file signature"
-msgstr "'Release' fájl beszerzése folyamatban"
+msgstr "'Release' fájl aláírás"
 
 #. Type: text
 #. Description
@@ -341,9 +335,8 @@ msgstr "'Packages' fájlok beszerzése folyamatban"
 #. Type: text
 #. Description
 #: ../base-installer.templates:163
-#, fuzzy
 msgid "Retrieving Packages file"
-msgstr "'Packages' fájlok beszerzése folyamatban"
+msgstr "'Packages' fájlok beszerzése"
 
 #. Type: text
 #. Description
@@ -366,37 +359,32 @@ msgstr "Alaprendszer telepítése folyamatban"
 #. Type: text
 #. Description
 #: ../base-installer.templates:179
-#, fuzzy
 msgid "Installing core packages"
-msgstr "Legfontosabb csomagok telepítése folyamatban..."
+msgstr "Legfontosabb csomagok telepítése"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:183
-#, fuzzy
 msgid "Unpacking required packages"
-msgstr "Szükséges csomagok kitömörítése folyamatban..."
+msgstr "Szükséges csomagok kicsomagolása"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:187
-#, fuzzy
 msgid "Configuring required packages"
-msgstr "Szükséges csomagok konfigurálása folyamatban..."
+msgstr "Szükséges csomagok beállítása"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:191
-#, fuzzy
 msgid "Unpacking the base system"
-msgstr "Alaprendszer telepítése folyamatban"
+msgstr "Alaprendszer kicsomagolása"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:195
-#, fuzzy
 msgid "Configuring the base system"
-msgstr "Alaprendszer telepítése folyamatban"
+msgstr "Alaprendszer beállítása"
 
 #. Type: text
 #. Description
@@ -419,51 +407,44 @@ msgstr "Kitömörítés folyamatban: ${SUBST0}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:215
-#, fuzzy
 msgid "Unpacking ${SUBST0}..."
-msgstr "Kitömörítés folyamatban: ${SUBST0}..."
+msgstr "Kicsomagolás: ${SUBST0}..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:219
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "Épség ellenőrzése folyamatban: ${SUBST0}..."
+msgstr "Beállítás: ${SUBST0}..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:223
-#, fuzzy
 msgid "Checking Release signature"
-msgstr "'Release' fájl beszerzése folyamatban"
+msgstr "'Release' fájl aláírás ellenőrzése"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:227
-#, fuzzy
 msgid "Valid Release signature (key id ${SUBST0})"
-msgstr "Érvénytelen 'Release' fájl, nincs ${SUBST0} bejegyzése."
+msgstr "Érvénytelen 'Release' fájl aláírás (kulcs, id ${SUBST0})"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:231
-#, fuzzy
 msgid "Resolving dependencies of base packages..."
-msgstr "Alapcsomagok telepítése folyamatban..."
+msgstr "Alapcsomagok függőségeinek feloldása..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:235
-#, fuzzy
 msgid "Resolving dependencies of required packages..."
-msgstr "Szükséges csomagok kitömörítése folyamatban..."
+msgstr "Szükséges csomagok függőségeinek feloldása..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:239
-#, fuzzy
 msgid "Checking component ${SUBST0} on ${SUBST1}..."
-msgstr "Csomagméret ellenőrzése: ${SUBST0}..."
+msgstr "${SUBST0} ellenőrzése ${SUBST1}-n..."
 
 #. Type: text
 #. Description
@@ -492,16 +473,14 @@ msgstr "Alapcsomagok telepítése folyamatban..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:259
-#, fuzzy
 msgid "Unpacking the base system..."
-msgstr "Alaprendszer telepítése folyamatban"
+msgstr "Alaprendszer kicsomagolása..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:263
-#, fuzzy
 msgid "Configuring the base system..."
-msgstr "Alaprendszer telepítése folyamatban"
+msgstr "Alaprendszer beállítása..."
 
 #. Type: text
 #. Description
@@ -518,9 +497,8 @@ msgstr "${SECTION}: ${INFO}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:275
-#, fuzzy
 msgid "Retrying failed download of ${SUBST0}"
-msgstr "Letöltés meghiúsult: ${SUBST0}."
+msgstr "Letöltés meghiúsult: ${SUBST0}"
 
 #. Type: text
 #. Description

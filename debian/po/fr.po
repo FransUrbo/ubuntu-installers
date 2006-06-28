@@ -266,7 +266,6 @@ msgstr "Échec de la récupération du fichier « Release » ${SUBST0}."
 #. Type: error
 #. Description
 #: ../base-installer.templates:111
-#, fuzzy
 msgid "Release file signed by unknown key (key id ${SUBST0})"
 msgstr "Fichier « Release » signé par une clé inconnue (${SUBST0})"
 

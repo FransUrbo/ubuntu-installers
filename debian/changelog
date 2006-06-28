@@ -1,3 +1,11 @@
+base-installer (1.20ubuntu6) breezy; urgency=low
+
+  * Update fuzzy and missing translations from Rosetta (with some strings
+    from Debian where available): Greek, Spanish, Finnish, French,
+    Hungarian, Dutch, Brazilian Portuguese, Swedish.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 30 Sep 2005 21:13:40 +0100
+
 base-installer (1.20ubuntu5) breezy; urgency=low
 
   * Control usplash installation by a template

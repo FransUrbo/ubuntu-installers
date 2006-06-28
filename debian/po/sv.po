@@ -40,20 +40,19 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-#, fuzzy
 msgid "Cannot install base system"
-msgstr "Misslyckades att installera grundsystemet"
+msgstr "Kan inte installera grundsystemet"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-#, fuzzy
 msgid ""
 "The installer cannot figure out how to install the base system. No "
 "installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Installationsprogrammet kan inte installera Debian eftersom ingen "
-"installationsbar cd-skiva eller giltig spegel har konfigurerats."
+"Installationsprogrammet kan inte lista ut hur det ska installera "
+"grundsystemet. Ingen installationsbar cd-skiva eller giltig spegel har "
+"konfigurerats."
 
 #. Type: error
 #. Description
@@ -232,11 +231,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:93
-#, fuzzy
 msgid "Check /target/var/log/bootstrap.log for the details."
-msgstr ""
-"Kontrollera /var/log/messages eller titta på virtuella konsol 3 för "
-"detaljerna."
+msgstr "Kontrollera /target/var/log/bootstrap.log för detaljerna."
 
 #. Type: error
 #. Description
@@ -247,16 +243,14 @@ msgstr "Misslyckades att hämta filen Release ${SUBST0}."
 #. Type: error
 #. Description
 #: ../base-installer.templates:106
-#, fuzzy
 msgid "Failed getting Release signature file ${SUBST0}."
-msgstr "Misslyckades att hämta filen Release ${SUBST0}."
+msgstr "Misslyckades att hämta Release signaturfil ${SUBST0}."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:111
-#, fuzzy
 msgid "Release file signed by unknown key (key id ${SUBST0})"
-msgstr "Release-filen är ogiltig: ingen post för ${SUBST0}."
+msgstr "Release-filen är signerad med en okänd nyckel (nyckel-id ${SUBST0})"
 
 #. Type: error
 #. Description
@@ -283,6 +277,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
+"Kunde inte hämta ${SUBST0}. Det här kan bero på ett nätverksfel eller en "
+"dålig cd, beroende på din installationsmetod."
 
 #. Type: error
 #. Description
@@ -291,13 +287,14 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
+"Om du installerar från CD-R eller CD-RW kan det hjälpa att bränna cd:n med "
+"en lägre hastighet."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:139
-#, fuzzy
 msgid "Preparing to install the base system..."
-msgstr "Förbereder installation av Debians bassystem..."
+msgstr "Förbereder att installera grundsystemet..."
 
 #. Type: text
 #. Description
@@ -314,9 +311,8 @@ msgstr "Hämtar Release-filen"
 #. Type: text
 #. Description
 #: ../base-installer.templates:151
-#, fuzzy
 msgid "Retrieving Release file signature"
-msgstr "Hämtar Release-filen"
+msgstr "Hämtar Release-filens signatur"
 
 #. Type: text
 #. Description
@@ -333,9 +329,8 @@ msgstr "Hämtar Packages-filer"
 #. Type: text
 #. Description
 #: ../base-installer.templates:163
-#, fuzzy
 msgid "Retrieving Packages file"
-msgstr "Hämtar Packages-filer"
+msgstr "Hämtar Packages-fil"
 
 #. Type: text
 #. Description
@@ -379,16 +374,14 @@ msgstr "Konfigurerar krävda paket..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:191
-#, fuzzy
 msgid "Unpacking the base system"
-msgstr "Installerar grundsystemet"
+msgstr "Packar upp grundsystemet"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:195
-#, fuzzy
 msgid "Configuring the base system"
-msgstr "Installerar grundsystemet"
+msgstr "Konfigurerar grundsystemet"
 
 #. Type: text
 #. Description
@@ -418,44 +411,38 @@ msgstr "Packar upp ${SUBST0}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:219
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "Bekräftar ${SUBST0}..."
+msgstr "Konfigurerar ${SUBST0}..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:223
-#, fuzzy
 msgid "Checking Release signature"
-msgstr "Hämtar Release-filen"
+msgstr "Kontrollerar Release-signaturen"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:227
-#, fuzzy
 msgid "Valid Release signature (key id ${SUBST0})"
-msgstr "Release-filen är ogiltig: ingen post för ${SUBST0}."
+msgstr "Giltig Release-signatur (nyckel-id ${SUBST0})"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:231
-#, fuzzy
 msgid "Resolving dependencies of base packages..."
-msgstr "Installerar grundpaketen..."
+msgstr "Löser baspaketens beroenden..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:235
-#, fuzzy
 msgid "Resolving dependencies of required packages..."
-msgstr "Packar upp krävda paket..."
+msgstr "Löser de krävda paketens beroenden..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:239
-#, fuzzy
 msgid "Checking component ${SUBST0} on ${SUBST1}..."
-msgstr "Kontrollerar paketstorlek: ${SUBST0}..."
+msgstr "Kontrollerar komponent ${SUBST0} på ${SUBST1}..."
 
 #. Type: text
 #. Description
@@ -484,16 +471,14 @@ msgstr "Installerar grundpaketen..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:259
-#, fuzzy
 msgid "Unpacking the base system..."
-msgstr "Installerar grundsystemet"
+msgstr "Packar upp grundsystemet"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:263
-#, fuzzy
 msgid "Configuring the base system..."
-msgstr "Installerar grundsystemet"
+msgstr "Konfigurerar grundsystemet..."
 
 #. Type: text
 #. Description
@@ -510,9 +495,8 @@ msgstr "${SECTION}: ${INFO}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:275
-#, fuzzy
 msgid "Retrying failed download of ${SUBST0}"
-msgstr "Kunde inte hämta ${SUBST0}."
+msgstr "Prövar igen med den misslyckade nerladdningen av ${SUBST0}"
 
 #. Type: text
 #. Description

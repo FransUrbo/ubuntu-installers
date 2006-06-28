@@ -48,21 +48,19 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-#, fuzzy
 msgid "Cannot install base system"
-msgstr "Installatie van het basissysteem is mislukt"
+msgstr "Kan het basissysteem niet installeren"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-#, fuzzy
 msgid ""
 "The installer cannot figure out how to install the base system. No "
 "installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Er is momenteel geen manier waarmee het installatieproces Debian kan "
-"installeren op dit systeem. Er is geen installeerbare CD-ROM gevonden en er "
-"is geen geldige spiegelserver ingesteld."
+"Het installatieprogramma vindt geen manier om het basissysteem te "
+"installeren. Er is noch een installeerbare CD-ROM gevonden, noch een geldige "
+"spiegelserver ingesteld."
 
 #. Type: error
 #. Description
@@ -267,16 +265,16 @@ msgstr "Ophalen van 'Release'-bestand ${SUBST0} is mislukt."
 #. Type: error
 #. Description
 #: ../base-installer.templates:106
-#, fuzzy
 msgid "Failed getting Release signature file ${SUBST0}."
-msgstr "Ophalen van 'Release'-bestand ${SUBST0} is mislukt."
+msgstr "Ophalen van de 'Release'-bestand-ondertekening ${SUBST0} is mislukt."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:111
-#, fuzzy
 msgid "Release file signed by unknown key (key id ${SUBST0})"
-msgstr "Ongeldig 'Release'-bestand, geen ingang voor ${SUBST0}."
+msgstr ""
+"'Release'-bestand is ondertekend met onbekende sleutel (sleutel-id "
+"${SUBST0})."
 
 #. Type: error
 #. Description
@@ -319,9 +317,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../base-installer.templates:139
-#, fuzzy
 msgid "Preparing to install the base system..."
-msgstr "Installatie van de Debian basissysteem wordt voorbereid..."
+msgstr "Installatie van het basissysteem wordt voorbereid..."
 
 #. Type: text
 #. Description
@@ -338,9 +335,8 @@ msgstr "'Release'-bestand wordt opgehaald"
 #. Type: text
 #. Description
 #: ../base-installer.templates:151
-#, fuzzy
 msgid "Retrieving Release file signature"
-msgstr "'Release'-bestand wordt opgehaald"
+msgstr "Ondertekening 'Release'-bestand wordt opgehaald"
 
 #. Type: text
 #. Description
@@ -357,7 +353,6 @@ msgstr "'Packages'-bestand wordt opgehaald"
 #. Type: text
 #. Description
 #: ../base-installer.templates:163
-#, fuzzy
 msgid "Retrieving Packages file"
 msgstr "'Packages'-bestand wordt opgehaald"
 
@@ -382,37 +377,32 @@ msgstr "Het basissysteem wordt geïnstalleerd"
 #. Type: text
 #. Description
 #: ../base-installer.templates:179
-#, fuzzy
 msgid "Installing core packages"
-msgstr "Kernpakketten worden geïnstalleerd..."
+msgstr "Kernpakketten worden geïnstalleerd"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:183
-#, fuzzy
 msgid "Unpacking required packages"
-msgstr "Vereiste pakketten worden uitgepakt..."
+msgstr "Vereiste pakketten worden uitgepakt"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:187
-#, fuzzy
 msgid "Configuring required packages"
-msgstr "Vereiste pakketten worden geconfigureerd..."
+msgstr "Vereiste pakketten worden geconfigureerd"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:191
-#, fuzzy
 msgid "Unpacking the base system"
-msgstr "Het basissysteem wordt geïnstalleerd"
+msgstr "Het basissysteem wordt uitgepakt"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:195
-#, fuzzy
 msgid "Configuring the base system"
-msgstr "Het basissysteem wordt geïnstalleerd"
+msgstr "Het basissysteem wordt geconfigureerd"
 
 #. Type: text
 #. Description
@@ -435,51 +425,44 @@ msgstr "${SUBST0} wordt uitgepakt..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:215
-#, fuzzy
 msgid "Unpacking ${SUBST0}..."
 msgstr "${SUBST0} wordt uitgepakt..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:219
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "${SUBST0} wordt gevalideerd..."
+msgstr "${SUBST0} wordt geconfigureerd..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:223
-#, fuzzy
 msgid "Checking Release signature"
-msgstr "'Release'-bestand wordt opgehaald"
+msgstr "'Release'-handtekening wordt gecontroleerd"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:227
-#, fuzzy
 msgid "Valid Release signature (key id ${SUBST0})"
-msgstr "Ongeldig 'Release'-bestand, geen ingang voor ${SUBST0}."
+msgstr "'Release'-handtekening is geldig (sleutel-id ${SUBST0})."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:231
-#, fuzzy
 msgid "Resolving dependencies of base packages..."
-msgstr "Basispakketten worden geïnstalleerd..."
+msgstr "Vereisten van basispakketten worden berekent..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:235
-#, fuzzy
 msgid "Resolving dependencies of required packages..."
-msgstr "Vereiste pakketten worden uitgepakt..."
+msgstr "Vereisten van verplichte pakketten worden berekent..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:239
-#, fuzzy
 msgid "Checking component ${SUBST0} on ${SUBST1}..."
-msgstr "${SUBST0} wordt gecontroleerd..."
+msgstr "Component ${SUBST0} op ${SUBST1} wordt gecontroleerd..."
 
 #. Type: text
 #. Description
@@ -508,16 +491,14 @@ msgstr "Basispakketten worden geïnstalleerd..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:259
-#, fuzzy
 msgid "Unpacking the base system..."
-msgstr "Het basissysteem wordt geïnstalleerd"
+msgstr "Het basissysteem wordt uitgepakt"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:263
-#, fuzzy
 msgid "Configuring the base system..."
-msgstr "Het basissysteem wordt geïnstalleerd"
+msgstr "Het basissysteem wordt geconfigureerd"
 
 #. Type: text
 #. Description
@@ -534,9 +515,8 @@ msgstr "${SECTION}: ${INFO}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:275
-#, fuzzy
 msgid "Retrying failed download of ${SUBST0}"
-msgstr "Ophalen van ${SUBST0} is mislukt."
+msgstr "Ophalen van ${SUBST0} (was mislukt) wordt opnieuw geprobeerd"
 
 #. Type: text
 #. Description

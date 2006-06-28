@@ -264,10 +264,10 @@ msgstr "Αποτυχία στη φόρτωση του της υπογραφής 
 #. Type: error
 #. Description
 #: ../base-installer.templates:111
-#, fuzzy
 msgid "Release file signed by unknown key (key id ${SUBST0})"
 msgstr ""
-"Το αρχείο Release έχει υπογραφή από άγνωστο κλειδί (id κλειδιού ${SUBST0})"
+"Το αρχείο Release είναι υπογεγραμμένο από άγνωστο κλειδί (id κλειδιού "
+"${SUBST0})"
 
 #. Type: error
 #. Description

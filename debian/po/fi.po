@@ -51,13 +51,12 @@ msgstr "Perusjärjestelmän asennus epäonnistui"
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-#, fuzzy
 msgid ""
 "The installer cannot figure out how to install the base system. No "
 "installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Debianin asentaminen ei onnistu, sillä asennusomppua ei löytynyt eikä "
-"asennuspalvelinta ole määritelty."
+"Perusjärjestelmän asentaminen ei onnistu, sillä asennusomppua ei löytynyt "
+"eikä asennuspalvelinta ole määritelty."
 
 #. Type: error
 #. Description
@@ -232,11 +231,8 @@ msgstr "Tapahtui virhe asenttaessa pakettia initrd-tools kohdejärjestelmään."
 #. Type: error
 #. Description
 #: ../base-installer.templates:93
-#, fuzzy
 msgid "Check /target/var/log/bootstrap.log for the details."
-msgstr ""
-"Tarkista tiedosto /var/log/messages tai katso tarkempaa tietoa "
-"virtuaalikonsolista 3."
+msgstr "Katso tarkemmat tiedot tiedostosta /target/var/log/bootstrap.log"
 
 #. Type: error
 #. Description
@@ -295,9 +291,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../base-installer.templates:139
-#, fuzzy
 msgid "Preparing to install the base system..."
-msgstr "Valmistaudutaan Debianin perusjärjestelmän asentamiseen ..."
+msgstr "Valmistellaan perusjärjestelmän asentamista..."
 
 #. Type: text
 #. Description
@@ -358,37 +353,32 @@ msgstr "Asennetaan peruskokoonpano"
 #. Type: text
 #. Description
 #: ../base-installer.templates:179
-#, fuzzy
 msgid "Installing core packages"
-msgstr "Asennetaan tärkeimpiä paketteja..."
+msgstr "Asennetaan tärkeimpiä paketteja"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:183
-#, fuzzy
 msgid "Unpacking required packages"
-msgstr "Puretaan vaadittuja paketteja..."
+msgstr "Puretaan vaadittuja paketteja"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:187
-#, fuzzy
 msgid "Configuring required packages"
-msgstr "Tehdään vaadittujen pakettien asetukset..."
+msgstr "Tehdään vaadittujen pakettien asetukset"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:191
-#, fuzzy
 msgid "Unpacking the base system"
-msgstr "Asennetaan peruskokoonpano"
+msgstr "Puretaan peruskokoonpano"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:195
-#, fuzzy
 msgid "Configuring the base system"
-msgstr "Asennetaan peruskokoonpano"
+msgstr "Tehdään perusjärjestelmän asetukset"
 
 #. Type: text
 #. Description
@@ -418,9 +408,8 @@ msgstr "Puretaan ${SUBST0}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:219
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "Tarkastetaan ${SUBST0}..."
+msgstr "Asetetaan pakettia ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -432,23 +421,20 @@ msgstr "Noudetaan Release-tiedostoa"
 #. Type: text
 #. Description
 #: ../base-installer.templates:227
-#, fuzzy
 msgid "Valid Release signature (key id ${SUBST0})"
-msgstr "Kelvoton Release-tiedosto, ei tietuetta ${SUBST0} -paketille."
+msgstr "Kelvollinen Release-tiedosto (tietue ${SUBST0})"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:231
-#, fuzzy
 msgid "Resolving dependencies of base packages..."
-msgstr "Asennetaan peruskokoonpanon paketteja..."
+msgstr "Tarkistetaan peruspakettien riippuvuudet..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:235
-#, fuzzy
 msgid "Resolving dependencies of required packages..."
-msgstr "Puretaan vaadittuja paketteja..."
+msgstr "Tarkistetaan vaadittujen pakettien riippuvuudet..."
 
 #. Type: text
 #. Description
@@ -484,16 +470,14 @@ msgstr "Asennetaan peruskokoonpanon paketteja..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:259
-#, fuzzy
 msgid "Unpacking the base system..."
-msgstr "Asennetaan peruskokoonpano"
+msgstr "Puretaan peruskokoonpanoa..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:263
-#, fuzzy
 msgid "Configuring the base system..."
-msgstr "Asennetaan peruskokoonpano"
+msgstr "Tehdään perusjärjestelmän asetukset..."
 
 #. Type: text
 #. Description
@@ -510,9 +494,8 @@ msgstr "${SECTION}: ${INFO}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:275
-#, fuzzy
 msgid "Retrying failed download of ${SUBST0}"
-msgstr "Ei voitu noutaa pakettia ${SUBST0}."
+msgstr "Yritetään uudestaan epäonnistunutta paketin ${SUBST0} noutoa"
 
 #. Type: text
 #. Description

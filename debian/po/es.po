@@ -260,11 +260,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:93
-#, fuzzy
 msgid "Check /target/var/log/bootstrap.log for the details."
-msgstr ""
-"Compruebe el fichero /var/log/messages o eche un vistazo a la tercera "
-"consola virtual para los detalles."
+msgstr "Compruebe el archivo /target/var/log/bootstrap.log para los detalles."
 
 #. Type: error
 #. Description
@@ -275,16 +272,16 @@ msgstr "Error al obtener el fichero de Versión ${SUBST0}."
 #. Type: error
 #. Description
 #: ../base-installer.templates:106
-#, fuzzy
 msgid "Failed getting Release signature file ${SUBST0}."
-msgstr "Error al obtener el fichero de Versión ${SUBST0}."
+msgstr "Error al obtener la firma del fichero de Versión ${SUBST0}."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:111
-#, fuzzy
 msgid "Release file signed by unknown key (key id ${SUBST0})"
-msgstr "Fichero de Versión incorrecto: no hay entrada para ${SUBST0}."
+msgstr ""
+"Fichero de Versión firmado con una clave desconocida (identificador "
+"${SUBST0})"
 
 #. Type: error
 #. Description
@@ -345,9 +342,8 @@ msgstr "Descargando el fichero Release"
 #. Type: text
 #. Description
 #: ../base-installer.templates:151
-#, fuzzy
 msgid "Retrieving Release file signature"
-msgstr "Descargando el fichero Release"
+msgstr "Descargando la firma del fichero de Versión"
 
 #. Type: text
 #. Description
@@ -364,7 +360,6 @@ msgstr "Descargando el fichero «Packages»"
 #. Type: text
 #. Description
 #: ../base-installer.templates:163
-#, fuzzy
 msgid "Retrieving Packages file"
 msgstr "Descargando el fichero «Packages»"
 
@@ -449,37 +444,32 @@ msgstr "Configurando ${SUBST0}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:223
-#, fuzzy
 msgid "Checking Release signature"
-msgstr "Descargando el fichero Release"
+msgstr "Descargando la firma de Versión"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:227
-#, fuzzy
 msgid "Valid Release signature (key id ${SUBST0})"
-msgstr "Fichero de Versión incorrecto: no hay entrada para ${SUBST0}."
+msgstr "Firma de Versión válida (identificador ${SUBST0})"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:231
-#, fuzzy
 msgid "Resolving dependencies of base packages..."
-msgstr "Instalando los paquetes básicos..."
+msgstr "Resolviendo las dependencias de los paquetes básicos..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:235
-#, fuzzy
 msgid "Resolving dependencies of required packages..."
-msgstr "Desempaquetando los paquetes necesarios..."
+msgstr "Resolviendo las dependencias de los paquetes necesarios..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:239
-#, fuzzy
 msgid "Checking component ${SUBST0} on ${SUBST1}..."
-msgstr "Comprobando tamaño del paquete: ${SUBST0}..."
+msgstr "Comprobando el componente ${SUBST0} en ${SUBST1}..."
 
 #. Type: text
 #. Description
@@ -532,9 +522,8 @@ msgstr "${SECTION}: ${INFO}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:275
-#, fuzzy
 msgid "Retrying failed download of ${SUBST0}"
-msgstr "No se pudo descargar ${SUBST0}."
+msgstr "Reintentando la descarga fallida de ${SUBST0}"
 
 #. Type: text
 #. Description
