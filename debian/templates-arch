@@ -34,3 +34,8 @@ Default[mipsel]: false
 Default[m68k]: false
 Default[sparc]: true
 Description: kernel needs an initrd (linux 2.6 only)
+
+Template: base-installer/kernel/linux/initramfs-2.6
+Type: boolean
+Default: true
+Description: use an initramfs (linux 2.6 only)

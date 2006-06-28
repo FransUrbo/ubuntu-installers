@@ -1,3 +1,10 @@
+base-installer (1.20ubuntu2) breezy; urgency=low
+
+  * Support configuring initramfs-tools rather than initrd-tools, and make
+    that the default.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 10 Aug 2005 20:56:19 +0100
+
 base-installer (1.20ubuntu1) breezy; urgency=low
 
   * Resynchronise with Debian.

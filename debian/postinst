@@ -460,6 +460,19 @@ install_kernel () {
 		do_initrd=yes
 	fi
 
+	do_initramfs=no
+	if [ "$do_initrd" = yes ]; then
+		if db_get "base-installer/kernel/linux/initramfs-$target_kernel_major"; then
+			if [ "$RET" = true ]; then
+				do_initramfs=yes
+			fi
+		elif db_get base-installer/kernel/linux/initramfs; then
+			if [ "$RET" = true ]; then
+				do_initramfs=yes
+			fi
+		fi
+	fi
+
 	if db_get debian-installer/kernel/linux/link_in_boot ; then
 		if [ "$RET" = "true" ]; then
 			link_in_boot=yes
@@ -488,14 +501,22 @@ do_initrd = $do_initrd
 link_in_boot = $link_in_boot
 EOF
 
-	if [ yes = "$do_initrd" ] ; then
-		info "Installing initrd-tools."
+	if [ "$do_initramfs" = yes ]; then
+		package=initramfs-tools
+	else
+		package=initrd-tools
+	fi
 
-		# Make sure initrd-tools is installed before we change its
+	if [ yes = "$do_initrd" ] ; then
+		info "Installing $package."
+
+		# Make sure init*-tools is installed before we change its
 		# configuration
-		db_subst base-installer/section/install_kernel_package SUBST0 "initrd-tools"
+		db_subst base-installer/section/install_kernel_package SUBST0 "$package"
 		db_progress INFO base-installer/section/install_kernel_package
-		if ! apt-install initrd-tools 2>> $LOGFILE ; then
+		if ! apt-install "$package" 2>> $LOGFILE ; then
+			# TODO: wrong template, but it needs translation;
+			# being handled upstream
 			exit_error base-installer/kernel/failed-initrd-tools-install
 		fi
 
@@ -514,23 +535,31 @@ EOF
 		# booting the 2.4 kernel
 		# This is here for back-compatability with woody's 
 		# initrd-tools; it's fixed in more recent versions
-		mkinitrdconf=/target/etc/mkinitrd/mkinitrd.conf
+		if [ "$do_initramfs" = yes ]; then
+			mkinitrdconf=/target/etc/mkinitramfs/initramfs.conf
+		else
+			mkinitrdconf=/target/etc/mkinitrd/mkinitrd.conf
+		fi
 		if [ -f $mkinitrdconf ] ; then
-			sed -e 's/^DELAY=.*/DELAY=0/' -e "s#^ROOT=.*#ROOT='$rootpart $rootpartfs'#" < $mkinitrdconf > $mkinitrdconf.new &&
-				mv $mkinitrdconf.new  $mkinitrdconf
+			if [ "$do_initramfs" = no ]; then
+				sed -e 's/^DELAY=.*/DELAY=0/' -e "s#^ROOT=.*#ROOT='$rootpart $rootpartfs'#" < $mkinitrdconf > $mkinitrdconf.new &&
+					mv $mkinitrdconf.new  $mkinitrdconf
+			fi
 			if [ "$resume" ]; then
 				sed -e "s@^#* *RESUME=.*@RESUME=$resume@" < $mkinitrdconf > $mkinitrdconf.new &&
 					mv $mkinitrdconf.new $mkinitrdconf
 			fi
 		else
-			echo 'DELAY=0' >> $mkinitrdconf
-			echo "ROOT='$rootpart $rootpartfs'" >> $mkinitrdconf
+			if [ "$do_initramfs" = no ]; then
+				echo 'DELAY=0' >> $mkinitrdconf
+				echo "ROOT='$rootpart $rootpartfs'" >> $mkinitrdconf
+			fi
 			if [ "$resume" ]; then
 				echo "RESUME=$resume" >> $mkinitrdconf
 			fi
 		fi
 	else
-		info "Not installing initrd-tools."
+		info "Not installing $package."
 	fi
 
 	# Advance progress bar to 30% of allocated space for install_kernel
@@ -546,7 +575,7 @@ EOF
 	update_progress 90 100
 
 	# /proc/filesystems will accomodate this past the second bootup.
-	if [ "$do_initrd" = yes ]; then
+	if [ "$do_initrd" = yes ] && [ "$do_initramfs" = no ]; then
 		sed -e 's/^ROOT=.*/ROOT=probe/' $mkinitrdconf > $mkinitrdconf.new && mv $mkinitrdconf.new $mkinitrdconf
 	fi
 
