@@ -1,11 +1,11 @@
 #! /bin/sh
 set -e
 
-if [ "$TEST_VERBOSE" -ge 2 ]; then
+if [ "$TEST_VERBOSE" -ge 3 ]; then
 	set -x
 fi
 
-. /usr/lib/base-installer/kernel.sh
+. "$(dirname "$0")/../$ARCH.sh"
 
 ok () {
 	echo "PASS $testname"
@@ -13,6 +13,10 @@ ok () {
 
 notok () {
 	echo "FAIL $testname"
+}
+
+log () {
+	echo "$*" >&2
 }
 
 warning () {

@@ -1,8 +1,8 @@
 subarch chrp_rs6k
 cpuinfo chrp_rs6k.cpuinfo
 majors 2.6
-flavour power4-chrp
-kernel-2.6 linux-power4
+flavour power4
+kernel-2.6 linux-power4-smp
 usable \
   linux-power4 \
   linux-power4-smp \

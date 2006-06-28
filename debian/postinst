@@ -21,17 +21,19 @@ KERNEL_MAJOR="$(uname -r | cut -d . -f 1,2)"
 KERNEL_VERSION="$(uname -r | cut -d - -f 1)"
 KERNEL_ABI="$(uname -r | cut -d - -f 1,2)"
 MACHINE="$(uname -m)"
+CPUINFO=/proc/cpuinfo
+SPEAKUP=/proc/speakup
 
 # Avoid debconf sending email during the base install process.
 DEBCONF_ADMIN_EMAIL=""
 export DEBCONF_ADMIN_EMAIL
 
 # Variables used to set the progress bar
-PB_POSITION=0
-PB_WAYPOINT_LENGTH=0
+export PB_POSITION=0
+export PB_WAYPOINT_LENGTH=0
 
-db_get debian-installer/kernel/subarchitecture
-SUBARCH="$RET"
+SUBARCH="$(archdetect)"
+SUBARCH="${SUBARCH#*/}"
 
 log() {
 	logger -t base-installer "$@"
@@ -223,7 +225,7 @@ install_base_system () {
 	
 		    	if [ -x "$script" ] ; then
 				info "Running $script"
-				if ! "$script" 2>&1 $tmpfile ; then
+				if ! "$script" >"$tmpfile" 2>&1; then
 			    		log "warning: $script returned error code $?"
 				fi
 		    	else
@@ -448,7 +450,16 @@ get_resume_partition () {
 }
 
 install_kernel () {
-	if db_get "base-installer/kernel/linux/initrd-$KERNEL_MAJOR" ; then
+	target_kernel_major="$(echo "$KERNEL" | sed 's/^kernel-image-//; s/-.*//' | cut -d . -f 1,2)"
+	case $target_kernel_major in
+		2.?)	;;
+		*)
+			# something went wrong; use major version of
+			# installation kernel
+			target_kernel_major="$(uname -r | cut -d . -f 1,2)"
+			;;
+	esac
+	if db_get "base-installer/kernel/linux/initrd-$target_kernel_major" ; then
 		if [ "$RET" = true ]; then
 			do_initrd=yes
 		else
@@ -536,24 +547,6 @@ EOF
 		fi
 	else
 		info "Not installing initrd-tools."
-	fi
-
-	# Advance progress bar to 15% of allocated space for install_kernel
-	update_progress 15 100
-
-	# Installing mkvmlinuz on the powerpc subarches that need it.
-	if [ "$ARCH" = "powerpc" ] && [ "$KERNEL_MAJOR" = "2.6" ]; then
-		case "$SUBARCH" in
-			prep | chrp)
-				info "Installing mkvmlinuz."
-				db_subst base-installer/section/install_kernel_package SUBST0 "mkvmlinuz"
-				db_progress INFO base-installer/section/install_kernel_package
-				apt-install mkvmlinuz 2>> $LOGFILE || true
-				cat >> /target/etc/kernel-img.conf <<EOF
-postinst_hook = /usr/sbin/mkvmlinuz
-EOF
-			;;
-		esac
 	fi
 
 	# Advance progress bar to 30% of allocated space for install_kernel

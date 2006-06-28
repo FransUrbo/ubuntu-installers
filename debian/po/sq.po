@@ -12,14 +12,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2004-09-30 23:36+0200\n"
-"Last-Translator:  Elian Myftiu <elian@lycos.com>\n"
+"POT-Creation-Date: 2005-06-07 13:56+0100\n"
+"PO-Revision-Date: 2005-05-28 21:09+0200\n"
+"Last-Translator:  Elian Myftiu <elian@alblinux.net>\n"
 "Language-Team: Debian L10n Albanian <debian-l10n-albanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=n>1;\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
 
 #. Type: boolean
 #. Description
@@ -31,7 +31,7 @@ msgstr "Të vazhdoj me instalimin në pozicionin e paqartë?"
 #. Description
 #: ../base-installer.templates:4
 msgid ""
-"The target filesystem contains files from a past installation. These files "
+"The target file system contains files from a past installation. These files "
 "could break the installation process or cause a broken system to be "
 "installed."
 msgstr ""
@@ -42,30 +42,32 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-msgid "Cannot install Ubuntu"
-msgstr "Nuk mund ta instaloj Ubuntu"
+#, fuzzy
+msgid "Cannot install base system"
+msgstr "Instalimi i sistemit bazë dështoi"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
+#, fuzzy
 msgid ""
-"The installer cannot figure out how to install Ubuntu. No installable CD-ROM "
-"was found and no valid mirror was configured."
+"The installer cannot figure out how to install the base system. No "
+"installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Instaluesi nuk di si të instalojë Ubuntu. Nuk u gjet snjë CD-ROM instalues "
+"Instaluesi nuk di si të instalojë Debian. Nuk u gjet snjë CD-ROM instalues "
 "dhe nuk u konfigurua asnjë mirror e vlefshme."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
-msgid "No filesystem mounted on /target"
+msgid "No file system mounted on /target"
 msgstr "Asnjë filesistem i montuar mbi /target"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
 msgid ""
-"Before the installation can proceed, a root filesystem must be mounted on /"
+"Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
 "Para se instalimi të vazhdojë, një filesistem root duhet montuar mbi /"
@@ -81,10 +83,10 @@ msgstr "Duke mos instaluar në pozicionin e paqartë"
 #. Description
 #: ../base-installer.templates:23
 msgid ""
-"The installation to the target filesystem has been canceled, as the target "
-"filesystem contains files from a past installation, which could break the "
+"The installation to the target file system has been canceled, as the target "
+"file system contains files from a past installation, which could break the "
 "installation process or cause a broken system to be installed. You should go "
-"back and erase or format the target filesystem before proceeding with the "
+"back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
 "Instalimi në filesistemin e zgjedhur u pezullua, meqë filesistemi ku synohet "
@@ -221,7 +223,7 @@ msgstr "I pamundur instalimi i initrd-tools"
 #. Description
 #: ../base-installer.templates:93
 msgid ""
-"An error was returned while trying to install the initrd-tools package  onto "
+"An error was returned while trying to install the initrd-tools package onto "
 "the target system."
 msgstr ""
 "Ndodhi një gabim gjatë instalimit të paketit initrd-tools në sistemin e "
@@ -270,6 +272,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
+"E pamundur tërheqja e ${SUBST0}. Shkak mund të jetë problem i rrjetit apo CD "
+"e prishur, në varësi të metodës së instalimit."
 
 #. Type: error
 #. Description
@@ -278,6 +282,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
+"Nëse po instalon nga CD-R apo CD-RW, këshillohet djegia e CD-së me shpejtësi "
+"të ulët."
 
 #. Type: error
 #. Description
@@ -293,15 +299,10 @@ msgstr "U mor një interrupt ... duke dalë."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:140
-msgid "Installing the Ubuntu base system"
-msgstr "Duke instaluar sistemin bazë Ubuntu"
-
-#. Type: text
-#. Description
 #: ../base-installer.templates:144
-msgid "Preparing to install the Ubuntu base system..."
-msgstr "Duke përgatitur instalimin e sistemit bazë Ubuntu..."
+#, fuzzy
+msgid "Preparing to install the base system..."
+msgstr "Duke përgatitur instalimin e sistemit bazë Debian..."
 
 #. Type: text
 #. Description
@@ -355,43 +356,38 @@ msgstr "Duke nxjerrë paketat"
 #. Type: text
 #. Description
 #: ../base-installer.templates:180
-#, fuzzy
-msgid "Installing core packages"
-msgstr "Duke instaluar paketat thelbësore..."
+msgid "Installing the base system"
+msgstr "Duke instaluar sistemin bazë"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:184
-#, fuzzy
-msgid "Unpacking required packages"
-msgstr "Duke çpaketuar paketat e duhur..."
+msgid "Installing core packages"
+msgstr "Duke instaluar paketat thelbësore"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:188
-#, fuzzy
-msgid "Configuring required packages"
-msgstr "Duke konfiguruar paketat e duhur..."
+msgid "Unpacking required packages"
+msgstr "Duke çpaketuar paketat e duhura"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:192
-#, fuzzy
-msgid "Unpacking the base system"
-msgstr "Duke instaluar sistemin bazë"
+msgid "Configuring required packages"
+msgstr "Duke konfiguruar paketat e duhura"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:196
-#, fuzzy
-msgid "Configuring the base system"
-msgstr "Duke instaluar sistemin bazë"
+msgid "Unpacking the base system"
+msgstr "Duke çpaketuar sistemin bazë"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:200
-msgid "Installing the base system"
-msgstr "Duke instaluar sistemin bazë"
+msgid "Configuring the base system"
+msgstr "Duke konfiguruar sistemin bazë"
 
 #. Type: text
 #. Description
@@ -420,16 +416,14 @@ msgstr "Duke nxjerrë ${SUBST0}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:220
-#, fuzzy
 msgid "Unpacking ${SUBST0}..."
-msgstr "Duke nxjerrë ${SUBST0}..."
+msgstr "Duke nxjerrë ${SUBST0}"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:224
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "Duke vlerësuar ${SUBST0}..."
+msgstr "Duke konfiguruar ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -458,22 +452,20 @@ msgstr "Duke konfiguruar paketat e duhur..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:244
-#, fuzzy
-msgid "Unpacking the base system..."
-msgstr "Duke instaluar sistemin bazë"
+msgid "Installing base packages..."
+msgstr "Duke instaluar paketat bazë..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:248
-#, fuzzy
-msgid "Configuring the base system..."
-msgstr "Duke instaluar sistemin bazë"
+msgid "Unpacking the base system..."
+msgstr "Duke çpaketuar sistemin bazë..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:252
-msgid "Installing base packages..."
-msgstr "Duke instaluar paketat bazë..."
+msgid "Configuring the base system..."
+msgstr "Duke konfiguruar sistemin bazë..."
 
 #. Type: text
 #. Description
@@ -504,7 +496,7 @@ msgstr "Duke instaluar paketat ekstra..."
 #: ../base-installer.templates:272
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr ""
-"Duke instaluar paketa shtesë - duke tërhequr dhe instaluar ${SUBSTO}..."
+"Duke instaluar paketa shtesë - duke tërhequr dhe instaluar ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -528,7 +520,7 @@ msgstr "Duke instaluar kernelin..."
 #. Description
 #: ../base-installer.templates:288
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
-msgstr "Duke instaluar kernelin - duke tërhequr dhe instaluar ${SUBSTO}..."
+msgstr "Duke instaluar kernelin - duke tërhequr dhe instaluar ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -542,22 +534,3 @@ msgstr "Duke instaluar moduet PCMCIA"
 #: ../base-installer.templates:297
 msgid "Install the base system"
 msgstr "Duke instaluar sistemin bazë"
-
-#~ msgid "Cannot install Debian"
-#~ msgstr "Nuk mund ta instaloj Debian"
-
-#~ msgid ""
-#~ "The installer cannot figure out how to install Debian. No installable CD-"
-#~ "ROM was found and no valid mirror was configured."
-#~ msgstr ""
-#~ "Instaluesi nuk di si të instalojë Debian. Nuk u gjet snjë CD-ROM "
-#~ "instalues dhe nuk u konfigurua asnjë mirror e vlefshme."
-
-#~ msgid "Couldn't download ${SUBST0}."
-#~ msgstr "Nuk mundi të shkarkojë ${SUBST0}."
-
-#~ msgid "Installing the Debian base system"
-#~ msgstr "Duke instaluar sistemin bazë Debian"
-
-#~ msgid "Preparing to install the Debian base system..."
-#~ msgstr "Duke përgatitur instalimin e sistemit bazë Debian..."

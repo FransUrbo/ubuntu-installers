@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# Portuguese messages for debian-installer.
+# Brazilian Portuguese messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
@@ -11,11 +11,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2005-03-26 21:00-0300\n"
-"Last-Translator: Carlos Eduardo Pedroza Santiviago <segfault@core-dumped."
-"org>\n"
-"Language-Team: Ubuntu-PT List <ubuntu-pt@lists.ubuntu.com>\n"
+"POT-Creation-Date: 2005-06-07 13:56+0100\n"
+"PO-Revision-Date: 2005-05-23 12:18+0100\n"
+"Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
+"Language-Team:  Debia-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,7 +29,7 @@ msgstr "Continuar com a instalação em alvo não limpo ?"
 #. Description
 #: ../base-installer.templates:4
 msgid ""
-"The target filesystem contains files from a past installation. These files "
+"The target file system contains files from a past installation. These files "
 "could break the installation process or cause a broken system to be "
 "installed."
 msgstr ""
@@ -41,30 +40,32 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-msgid "Cannot install Ubuntu"
-msgstr "Não é possível instalar o Ubuntu"
+#, fuzzy
+msgid "Cannot install base system"
+msgstr "Falha ao instalar o sistema básico"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
+#, fuzzy
 msgid ""
-"The installer cannot figure out how to install Ubuntu. No installable CD-ROM "
-"was found and no valid mirror was configured."
+"The installer cannot figure out how to install the base system. No "
+"installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"O instalador não sabe como instalar o Ubuntu. Nenhum CD-ROM instalável foi "
+"O instalador não sabe como instalar o Debian. Nenhum CD-ROM instalável foi "
 "encontrado e nenhum espelho válido foi configurado."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
-msgid "No filesystem mounted on /target"
+msgid "No file system mounted on /target"
 msgstr "Nenhum sistema de arquivos montado sob /target"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
 msgid ""
-"Before the installation can proceed, a root filesystem must be mounted on /"
+"Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
 "Antes que o processo de instalação possa continuar, um sistema de arquivos "
@@ -81,10 +82,10 @@ msgstr "Não instalando em um alvo não limpo"
 #. Description
 #: ../base-installer.templates:23
 msgid ""
-"The installation to the target filesystem has been canceled, as the target "
-"filesystem contains files from a past installation, which could break the "
+"The installation to the target file system has been canceled, as the target "
+"file system contains files from a past installation, which could break the "
 "installation process or cause a broken system to be installed. You should go "
-"back and erase or format the target filesystem before proceeding with the "
+"back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
 "A instalação no sistema de arquivos alvo foi cancelada, uma vez que o "
@@ -162,7 +163,7 @@ msgid ""
 "An error was returned while trying to install the kernel into the target "
 "system."
 msgstr ""
-"Um erro foi retornado na tentativa de instalar o kernel no sistema alvo."
+"Um erro foi retornado na tentative de instalar o kernel no sistema alvo."
 
 #. Type: error
 #. Description
@@ -223,7 +224,7 @@ msgstr "Não foi possível instalar o initrd-tools"
 #. Description
 #: ../base-installer.templates:93
 msgid ""
-"An error was returned while trying to install the initrd-tools package  onto "
+"An error was returned while trying to install the initrd-tools package onto "
 "the target system."
 msgstr ""
 "Um erro foi retornado na tentative de instalar o pacote initrd-tools no "
@@ -301,15 +302,10 @@ msgstr "Interrupção capturada ... finalizando."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:140
-msgid "Installing the Ubuntu base system"
-msgstr "Instalar o sistema básico Ubuntu"
-
-#. Type: text
-#. Description
 #: ../base-installer.templates:144
-msgid "Preparing to install the Ubuntu base system..."
-msgstr "Preparando para instalar o sistema básico do Ubuntu..."
+#, fuzzy
+msgid "Preparing to install the base system..."
+msgstr "Preparando para instalar o sistema básico"
 
 #. Type: text
 #. Description
@@ -362,38 +358,38 @@ msgstr "Extraindo pacotes"
 #. Type: text
 #. Description
 #: ../base-installer.templates:180
+msgid "Installing the base system"
+msgstr "Instalando o sistema básico"
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:184
 msgid "Installing core packages"
 msgstr "Instalando os principais pacotes"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:184
+#: ../base-installer.templates:188
 msgid "Unpacking required packages"
 msgstr "Desempacotando os pacotes requeridos"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:188
+#: ../base-installer.templates:192
 msgid "Configuring required packages"
 msgstr "Configurando os pacotes requeridos"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:192
+#: ../base-installer.templates:196
 msgid "Unpacking the base system"
 msgstr "Desempacotando o sistema básico"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:196
+#: ../base-installer.templates:200
 msgid "Configuring the base system"
 msgstr "Configurando o sistema básico"
-
-#. Type: text
-#. Description
-#: ../base-installer.templates:200
-msgid "Installing the base system"
-msgstr "Instalando o sistema básico"
 
 #. Type: text
 #. Description
@@ -458,20 +454,20 @@ msgstr "Configurando os pacotes requeridos ..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:244
+msgid "Installing base packages..."
+msgstr "Instalando os pacotes básicos ..."
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:248
 msgid "Unpacking the base system..."
 msgstr "Desempacotando o sistema básico..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:248
+#: ../base-installer.templates:252
 msgid "Configuring the base system..."
 msgstr "Configurando o sistema básico..."
-
-#. Type: text
-#. Description
-#: ../base-installer.templates:252
-msgid "Installing base packages..."
-msgstr "Instalando os pacotes básicos ..."
 
 #. Type: text
 #. Description

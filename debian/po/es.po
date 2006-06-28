@@ -3,9 +3,8 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of es.po to French
 # Spanish messages for debian-installer.
-# Copyright (C) 2003 Software in the Public Interest, Inc.
+# Copyright (C) 2003, 2004, 2005 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
 # Contributors to the translation of debian-installer:
@@ -15,15 +14,16 @@
 # Carlos Alberto Martín Edo <carlos@dat.etsit.upm.es>, 2003
 # Carlos Valdivia Yagüe <valyag@dat.etsit.upm.es>, 2003
 # Rudy Godoy <rudy@kernel-panik.org>, 2003
-# Javier Fernández-Sanguino <jfs@debian.org>, 2004.
 # Steve Langasek <vorlon@debian.org>, 2004
-# Enrique Matias Sanchez <cronopios@gmail.com>, 2005.
+# Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2005
+# Javier Fernández-Sanguino <jfs@debian.org>, 2004-2005
+# Rubén Porras Campo <nahoo@inicia.es>, 2005
 #
 # Equipo de traducción al español, por favor lean antes de traducir
 # los siguientes documentos:
 #
 # - El proyecto de traducción de Debian al españl
-#   http://www.debian.org/intl/spanish/coordinacion
+#   http://www.debian.org/intl/spanish/
 #   especialmente las notas de traducción en
 #   http://www.debian.org/intl/spanish/notas
 #
@@ -31,92 +31,90 @@
 #   /usr/share/doc/po-debconf/README-trans
 #   o http://www.debian.org/intl/l10n/po-debconf/README-trans
 #
-#
-#
-#
-#
+# Si tiene dudas o consultas sobre esta traducción consulte con el último
+# traductor (campo Last-Translator) y ponga en copia a la lista de
+# traducción de Debian al español (debian-l10n-spanish@lists.debian.org)
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2005-03-29 09:58+0200\n"
-"Last-Translator: Enrique Matias Sanchez <cronopios@gmail.com>\n"
-"Language-Team: Castilian aka Spanish <es@li.org>\n"
+"POT-Creation-Date: 2005-06-07 13:56+0100\n"
+"PO-Revision-Date: 2005-06-06 00:01+0200\n"
+"Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
+"Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
 
 #. Type: boolean
 #. Description
 #: ../base-installer.templates:4
 msgid "Proceed with installation to unclean target?"
-msgstr "¿Continuar con la instalación al destino inválido?"
+msgstr "¿Continuar con la instalación al destino no limpio?"
 
 #. Type: boolean
 #. Description
 #: ../base-installer.templates:4
 msgid ""
-"The target filesystem contains files from a past installation. These files "
+"The target file system contains files from a past installation. These files "
 "could break the installation process or cause a broken system to be "
 "installed."
 msgstr ""
-"El sistema de ficheros destino contine archivos de una instalación anterior. "
-"Estos archivos podrían romper el proceso de instalación o dar lugar a la "
-"instalación de un sistema no funcional."
+"El sistema de ficheros destino contiene archivos de una instalación "
+"anterior. Estos archivos podrían romper el proceso de instalación o dar "
+"lugar a la instalación de un sistema no funcional."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-msgid "Cannot install Ubuntu"
-msgstr "No se puede instalar Ubuntu"
+msgid "Cannot install base system"
+msgstr "No se pudo instalar el sistema base"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
 msgid ""
-"The installer cannot figure out how to install Ubuntu. No installable CD-ROM "
-"was found and no valid mirror was configured."
+"The installer cannot figure out how to install the base system. No "
+"installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"El instalador no puede determinar cómo instalar Ubuntu. No se ha encontrado "
-"ninguna unidad de CD-ROM válida y no se ha configurado un servidor espejo "
-"válido."
+"El instalador no puede determinar cómo instalar el sistema base. No se ha "
+"encontrado ninguna unidad de CD-ROM válida y no se ha configurado una "
+"réplica válida."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
-msgid "No filesystem mounted on /target"
+msgid "No file system mounted on /target"
 msgstr "No se ha montado un sistema de ficheros en «/target»"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
 msgid ""
-"Before the installation can proceed, a root filesystem must be mounted on /"
+"Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
 "Debe montar el sistema de ficheros raíz en «/target» antes de proceder con "
-"la instalación. El particionador y formateador debería haber hecho ésto por "
-"vd."
+"la instalación. El particionador y formateador deberían haber hecho ésto por "
+"usted."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:23
 msgid "Not installing to unclean target"
-msgstr "No se instalará en un destino inválido"
+msgstr "No se instalará en un destino no limpio"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:23
 msgid ""
-"The installation to the target filesystem has been canceled, as the target "
-"filesystem contains files from a past installation, which could break the "
+"The installation to the target file system has been canceled, as the target "
+"file system contains files from a past installation, which could break the "
 "installation process or cause a broken system to be installed. You should go "
-"back and erase or format the target filesystem before proceeding with the "
+"back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
-"Se ha abortado la instalación en el sistema de ficheros destino ya que "
+"Se ha interrumpido la instalación en el sistema de ficheros destino ya que "
 "contiene ficheros de una instalación anterior. Estos ficheros podrían romper "
 "el proceso de instalación o dar lugar a la instalación de un sistema no "
 "funcional. Debería volver atrás y borrar o formatear el sistema de ficheros "
@@ -140,7 +138,7 @@ msgstr "La instalación del sistema base en /target/ ha fallado."
 msgid ""
 "The debootstrap program exited with an error (return value ${EXITCODE})."
 msgstr ""
-"El programa debootstrap terminó con errores (valor de retorno ${EXITCODE})."
+"El programa debootstrap terminó con un error (valor de retorno ${EXITCODE})."
 
 #. Type: error
 #. Description
@@ -170,7 +168,7 @@ msgstr "${ERROR}"
 #. Description
 #: ../base-installer.templates:62
 msgid "Unable to install a kernel"
-msgstr "Incapaz de instalar un núcleo"
+msgstr "No se pudo instalar un núcleo"
 
 #. Type: error
 #. Description
@@ -220,7 +218,7 @@ msgstr ""
 #. Description
 #: ../base-installer.templates:84
 msgid "No installable kernel found"
-msgstr "No se encontró ningún núcleo instalable"
+msgstr "No se encontró un núcleo instalable"
 
 #. Type: error
 #. Description
@@ -253,7 +251,7 @@ msgstr "Incapaz de instalar initrd-tools"
 #. Description
 #: ../base-installer.templates:93
 msgid ""
-"An error was returned while trying to install the initrd-tools package  onto "
+"An error was returned while trying to install the initrd-tools package onto "
 "the target system."
 msgstr ""
 "Se obtuvo un error cuando se intentó instalar el paquete initrd-tools en el "
@@ -331,15 +329,9 @@ msgstr "Se recibió una interrupción... saliendo."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:140
-msgid "Installing the Ubuntu base system"
-msgstr "Instalando el sistema base Ubuntu"
-
-#. Type: text
-#. Description
 #: ../base-installer.templates:144
-msgid "Preparing to install the Ubuntu base system..."
-msgstr "Preparándose para la instalación del sistema base de Ubuntu..."
+msgid "Preparing to install the base system..."
+msgstr "Preparándose para la instalación del sistema base..."
 
 #. Type: text
 #. Description
@@ -369,61 +361,61 @@ msgstr "Obteniendo la firma del fichero Release"
 #. Description
 #: ../base-installer.templates:164
 msgid "Finding package sizes"
-msgstr "Buscando tamaño de paquetes"
+msgstr "Determinando los tamaños de los paquetes"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:168
 msgid "Retrieving Packages files"
-msgstr "Descargando el fichero Packages"
+msgstr "Descargando el fichero «Packages»"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:172
 msgid "Retrieving packages"
-msgstr "Descargando paquetes"
+msgstr "Descargando los paquetes"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:176
 msgid "Extracting packages"
-msgstr "Extrayendo paquetes"
+msgstr "Extrayendo los paquetes"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:180
+msgid "Installing the base system"
+msgstr "Instalando el sistema base"
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:184
 msgid "Installing core packages"
 msgstr "Instalando los paquetes principales"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:184
+#: ../base-installer.templates:188
 msgid "Unpacking required packages"
-msgstr "Desempaquetando paquetes necesarios"
+msgstr "Desempaquetando los paquetes necesarios"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:188
+#: ../base-installer.templates:192
 msgid "Configuring required packages"
 msgstr "Configurando los paquetes necesarios"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:192
+#: ../base-installer.templates:196
 msgid "Unpacking the base system"
 msgstr "Desempaquetando el sistema base"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:196
+#: ../base-installer.templates:200
 msgid "Configuring the base system"
 msgstr "Configurando el sistema base"
-
-#. Type: text
-#. Description
-#: ../base-installer.templates:200
-msgid "Installing the base system"
-msgstr "Instalando el sistema base"
 
 #. Type: text
 #. Description
@@ -483,25 +475,25 @@ msgstr "Desempaquetando los paquetes necesarios..."
 #. Description
 #: ../base-installer.templates:240
 msgid "Configuring required packages..."
-msgstr "Configurando paquetes necesarios..."
+msgstr "Configurando los paquetes necesarios..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:244
+msgid "Installing base packages..."
+msgstr "Instalando los paquetes básicos..."
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:248
 msgid "Unpacking the base system..."
 msgstr "Desempaquetando el sistema base..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:248
+#: ../base-installer.templates:252
 msgid "Configuring the base system..."
 msgstr "Configurando el sistema base..."
-
-#. Type: text
-#. Description
-#: ../base-installer.templates:252
-msgid "Installing base packages..."
-msgstr "Instalando paquetes básicos..."
 
 #. Type: text
 #. Description
@@ -513,7 +505,7 @@ msgstr "El sistema base se instaló con éxito."
 #. Description
 #: ../base-installer.templates:260
 msgid "Configuring APT sources..."
-msgstr "Configurando fuentes APT..."
+msgstr "Configurando las fuentes APT..."
 
 #. Type: text
 #. Description
@@ -537,7 +529,7 @@ msgstr "Instalando los paquetes extra - descargando e instalando ${SUBST0}..."
 #. Description
 #: ../base-installer.templates:276
 msgid "Creating device files..."
-msgstr "Creando ficheros de dispositivo..."
+msgstr "Creando los ficheros de dispositivo..."
 
 #. Type: text
 #. Description

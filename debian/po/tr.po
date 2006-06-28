@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2004-10-01 23:55+0300\n"
+"POT-Creation-Date: 2005-06-07 13:56+0100\n"
+"PO-Revision-Date: 2005-05-27 18:27+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +37,7 @@ msgstr "Kurulum boş olmayan hedef dizine yapılsın mı?"
 #. Description
 #: ../base-installer.templates:4
 msgid ""
-"The target filesystem contains files from a past installation. These files "
+"The target file system contains files from a past installation. These files "
 "could break the installation process or cause a broken system to be "
 "installed."
 msgstr ""
@@ -47,30 +47,32 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-msgid "Cannot install Ubuntu"
-msgstr "Ubuntu kurulamıyor"
+#, fuzzy
+msgid "Cannot install base system"
+msgstr "Temel sistem kurulamadı"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
+#, fuzzy
 msgid ""
-"The installer cannot figure out how to install Ubuntu. No installable CD-ROM "
-"was found and no valid mirror was configured."
+"The installer cannot figure out how to install the base system. No "
+"installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Kurulum programı Ubuntu'ın nasıl kurulacağını bilemiyor.  Kurulabilir "
+"Kurulum programı Debian'ın nasıl kurulacağını bilemiyor.  Kurulabilir "
 "durumda bir CD-ROM yok ve geçerli bir yansı da yapılandırılmadı."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
-msgid "No filesystem mounted on /target"
+msgid "No file system mounted on /target"
 msgstr "Herhangi bir dosya sistemi bulunamadı"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
 msgid ""
-"Before the installation can proceed, a root filesystem must be mounted on /"
+"Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
 "Kuruluma devam etmeden önce /target üzerine bir kök dosya sistemi "
@@ -87,10 +89,10 @@ msgstr "Temiz durumda olmayan hedef dizine kurulum yapılmayacak"
 #. Description
 #: ../base-installer.templates:23
 msgid ""
-"The installation to the target filesystem has been canceled, as the target "
-"filesystem contains files from a past installation, which could break the "
+"The installation to the target file system has been canceled, as the target "
+"file system contains files from a past installation, which could break the "
 "installation process or cause a broken system to be installed. You should go "
-"back and erase or format the target filesystem before proceeding with the "
+"back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
 "Hedef dosya sistemi önceki bir kurulumdan kalan dosyalar içerdiğinden ve bu "
@@ -228,7 +230,7 @@ msgstr "initrd-tools kurulamıyor"
 #. Description
 #: ../base-installer.templates:93
 msgid ""
-"An error was returned while trying to install the initrd-tools package  onto "
+"An error was returned while trying to install the initrd-tools package onto "
 "the target system."
 msgstr "Hedef sisteme initrd-tools kurulumu denenirken hata oluştu."
 
@@ -277,6 +279,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
+"${SUBST0} alınamadı.  Bu durum, seçtiğiniz kurulum yöntemine göre, bir ağ "
+"sorunundan veya bozuk bir CD'den kaynaklanıyor olabilir."
 
 #. Type: error
 #. Description
@@ -285,6 +289,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
+"CD-R veya CD-W'den kurulum yapıyorsanız, CD'yi daha düşük bir hızda "
+"kaydetmeniz işe yarayabilir."
 
 #. Type: error
 #. Description
@@ -300,15 +306,10 @@ msgstr "Kesme sinyali alındı...  Çıkılıyor."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:140
-msgid "Installing the Ubuntu base system"
-msgstr "Ubuntu temel sistemi kuruluyor"
-
-#. Type: text
-#. Description
 #: ../base-installer.templates:144
-msgid "Preparing to install the Ubuntu base system..."
-msgstr "Ubuntu temel sistemi kurulumuna hazırlanılıyor..."
+#, fuzzy
+msgid "Preparing to install the base system..."
+msgstr "Debian temel sistemi kurulumuna hazırlanılıyor..."
 
 #. Type: text
 #. Description
@@ -362,43 +363,38 @@ msgstr "Paketler açılıyor"
 #. Type: text
 #. Description
 #: ../base-installer.templates:180
-#, fuzzy
-msgid "Installing core packages"
-msgstr "Ana paketler kuruluyor..."
+msgid "Installing the base system"
+msgstr "Temel sistem kuruluyor"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:184
-#, fuzzy
-msgid "Unpacking required packages"
-msgstr "Gerekli paketler açılıyor..."
+msgid "Installing core packages"
+msgstr "Çekirdek paketler kuruluyor"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:188
-#, fuzzy
-msgid "Configuring required packages"
-msgstr "Gerekli paketler yapılandırılıyor..."
+msgid "Unpacking required packages"
+msgstr "Gerekli paketler açılıyor"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:192
-#, fuzzy
-msgid "Unpacking the base system"
-msgstr "Temel sistem kuruluyor"
+msgid "Configuring required packages"
+msgstr "Gerekli paketler yapılandırılıyor"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:196
-#, fuzzy
-msgid "Configuring the base system"
-msgstr "Temel sistem kuruluyor"
+msgid "Unpacking the base system"
+msgstr "Temel sistem paketleri açılıyor"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:200
-msgid "Installing the base system"
-msgstr "Temel sistem kuruluyor"
+msgid "Configuring the base system"
+msgstr "Temel sistem yapılandırılıyor"
 
 #. Type: text
 #. Description
@@ -427,16 +423,14 @@ msgstr " ${SUBST0} açılıyor..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:220
-#, fuzzy
 msgid "Unpacking ${SUBST0}..."
-msgstr " ${SUBST0} açılıyor..."
+msgstr " ${SUBST0} açılıyor"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:224
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "${SUBST0} doğrulanıyor..."
+msgstr "${SUBST0} yapılandırılıyor..."
 
 #. Type: text
 #. Description
@@ -465,22 +459,20 @@ msgstr "Gerekli paketler yapılandırılıyor..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:244
-#, fuzzy
-msgid "Unpacking the base system..."
-msgstr "Temel sistem kuruluyor"
+msgid "Installing base packages..."
+msgstr "Temel paketler kuruluyor..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:248
-#, fuzzy
-msgid "Configuring the base system..."
-msgstr "Temel sistem kuruluyor"
+msgid "Unpacking the base system..."
+msgstr "Temel sistem paketleri açılıyor..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:252
-msgid "Installing base packages..."
-msgstr "Temel paketler kuruluyor..."
+msgid "Configuring the base system..."
+msgstr "Temel sistem yapılandırılıyor..."
 
 #. Type: text
 #. Description
@@ -548,12 +540,3 @@ msgstr "PCMCIA modülleri kuruluyor"
 #: ../base-installer.templates:297
 msgid "Install the base system"
 msgstr "Temel sistemi kur"
-
-#~ msgid "Couldn't download ${SUBST0}."
-#~ msgstr "${SUBST0} indirilemedi."
-
-#~ msgid "Installing the Debian base system"
-#~ msgstr "Debian temel sistemi kuruluyor"
-
-#~ msgid "Preparing to install the Debian base system..."
-#~ msgstr "Debian temel sistemi kurulumuna hazırlanılıyor..."

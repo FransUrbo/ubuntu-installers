@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2004-10-16 01:29+0200\n"
+"POT-Creation-Date: 2005-06-07 13:56+0100\n"
+"PO-Revision-Date: 2005-05-19 22:51+0300\n"
 "Last-Translator: Lior Kaplan <webmaster@guides.co.il>\n"
-"Language-Team: Debian L10n Hebrew <webmaster@guides.co.il>\n"
+"Language-Team: Debian l10n Hebrew <webmaster@guides.co.il>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +31,7 @@ msgstr "להמשיך את ההתקנה למטרה לא נקייה?"
 #. Description
 #: ../base-installer.templates:4
 msgid ""
-"The target filesystem contains files from a past installation. These files "
+"The target file system contains files from a past installation. These files "
 "could break the installation process or cause a broken system to be "
 "installed."
 msgstr ""
@@ -41,30 +41,32 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-msgid "Cannot install Ubuntu"
-msgstr "לא יכול להתקין את Ubuntu"
+#, fuzzy
+msgid "Cannot install base system"
+msgstr "נכשלה התקנת מערכת הבסיס"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
+#, fuzzy
 msgid ""
-"The installer cannot figure out how to install Ubuntu. No installable CD-ROM "
-"was found and no valid mirror was configured."
+"The installer cannot figure out how to install the base system. No "
+"installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"המתקין לא יכול להבין כדיצד להתקין את Ubuntu. לא נמצא דיסק התקנה ולא הוגדר "
-"אתר מראה תקין."
+"המתקין לא יכול להבין כדיצד להתקין את דביאן. לא נמצא דיסק התקנה ולא הוגדר אתר "
+"מראה תקין."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
-msgid "No filesystem mounted on /target"
+msgid "No file system mounted on /target"
 msgstr "אף מערכת קצבים לא עוגנה על /target"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
 msgid ""
-"Before the installation can proceed, a root filesystem must be mounted on /"
+"Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
 "לפני שההתקנה תמשיך, שורש מערכת הקבצים חייב להיות מעוגן על /target. המחלקת "
@@ -80,10 +82,10 @@ msgstr "לא ממשיך את ההתקנה למטרה לא נקייה"
 #. Description
 #: ../base-installer.templates:23
 msgid ""
-"The installation to the target filesystem has been canceled, as the target "
-"filesystem contains files from a past installation, which could break the "
+"The installation to the target file system has been canceled, as the target "
+"file system contains files from a past installation, which could break the "
 "installation process or cause a broken system to be installed. You should go "
-"back and erase or format the target filesystem before proceeding with the "
+"back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
 "ההתקנה למערכת הקבצים המיועדת בוטלה, מאחר ומערכת הקבצים המיועדת מכילה קבצים "
@@ -218,7 +220,7 @@ msgstr "לא מצליח להתקין את כלי initrd"
 #. Description
 #: ../base-installer.templates:93
 msgid ""
-"An error was returned while trying to install the initrd-tools package  onto "
+"An error was returned while trying to install the initrd-tools package onto "
 "the target system."
 msgstr ""
 "שגיאה החוזרה בזמן הניסיון להתקין את החבילה initrd-tools לתוך מערכת היעד."
@@ -245,19 +247,19 @@ msgstr "מיקום לא ידוע ${SUBST0}."
 #. Description
 #: ../base-installer.templates:111
 msgid "Failed getting Release file ${SUBST0}."
-msgstr "כשלון בהשגת קובץ release ${SUBST0}."
+msgstr "כשלון בהשגת הקובץ release ${SUBST0}."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:116
 msgid "Invalid Release file: no valid components."
-msgstr "קובץ release לא חוקי: אין רכיבים חוקיים."
+msgstr "הקובץ release לא חוקי: אין רכיבים חוקיים."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:121
 msgid "Invalid Release file: no entry for ${SUBST0}."
-msgstr "קובץ release לא חוקי: אין רשומה בשביל ${SUBST0}."
+msgstr "הקובץ release לא חוקי: אין רשומה בשביל ${SUBST0}."
 
 #. Type: error
 #. Description
@@ -266,6 +268,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
+"לא נתן להביא את ${SUBST0}. יכול להיות בגלל בעיית רשת או CD גרוע, תלוי בשיטת "
+"ההתקנה."
 
 #. Type: error
 #. Description
@@ -274,6 +278,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
+"אם ההתקנה מבוצעת מ-CD-R או CD-RW, צריבה של ה-CD במהירות נמוכה יותר יכולה "
+"לעזור."
 
 #. Type: error
 #. Description
@@ -287,25 +293,12 @@ msgstr "שגיאה של Debootstrap"
 msgid "Interrupt caught... Exiting."
 msgstr "נתפס Interrupt  ... יוצא."
 
-#  Type: text
-#  Description
-#  Type: text
-#  Description
-#. Type: text
-#. Description
-#: ../base-installer.templates:140
-msgid "Installing the Ubuntu base system"
-msgstr "מתקין את מערכת הבסיס של Ubuntu"
-
-#  Type: error
-#  Description
-#  Type: error
-#  Description
 #. Type: text
 #. Description
 #: ../base-installer.templates:144
-msgid "Preparing to install the Ubuntu base system..."
-msgstr "מתכונן להתקנת בסיס מערכת Ubuntu..."
+#, fuzzy
+msgid "Preparing to install the base system..."
+msgstr "מתכונן להתקנת בסיס מערכת דביאן..."
 
 #. Type: text
 #. Description
@@ -323,14 +316,14 @@ msgstr "בודק את מערכת הקבצים המיועדת"
 #. Description
 #: ../base-installer.templates:156
 msgid "Retrieving Release file"
-msgstr "מביא קובץ Release"
+msgstr "מביא הקובץ Release"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:160
 #, fuzzy
 msgid "Retrieving Release file signature"
-msgstr "מביא קובץ Release"
+msgstr "מביא הקובץ Release"
 
 #. Type: text
 #. Description
@@ -356,61 +349,45 @@ msgstr "מביא חבילות"
 msgid "Extracting packages"
 msgstr "חולץ חבילות"
 
-#  Type: text
-#  Description
-#  Type: text
-#  Description
 #. Type: text
 #. Description
 #: ../base-installer.templates:180
-#, fuzzy
-msgid "Installing core packages"
-msgstr "מתקין את חבילות הליבה..."
+msgid "Installing the base system"
+msgstr "מתקין את מערכת הבסיס"
 
-#  Type: text
-#  Description
 #. Type: text
 #. Description
 #: ../base-installer.templates:184
 #, fuzzy
-msgid "Unpacking required packages"
-msgstr "פורק חבילות נחוצות..."
+msgid "Installing core packages"
+msgstr "מתקין את חבילות הליבה..."
 
-#  Type: text
-#  Description
 #. Type: text
 #. Description
 #: ../base-installer.templates:188
 #, fuzzy
-msgid "Configuring required packages"
-msgstr "מגדיר חבילות נחוצות..."
+msgid "Unpacking required packages"
+msgstr "פורס חבילות נדרשות..."
 
-#  Type: text
-#  Description
-#  Type: text
-#  Description
 #. Type: text
 #. Description
 #: ../base-installer.templates:192
 #, fuzzy
-msgid "Unpacking the base system"
-msgstr "מתקין את מערכת הבסיס"
+msgid "Configuring required packages"
+msgstr "מגדיר חבילות נדרשות..."
 
-#  Type: text
-#  Description
-#  Type: text
-#  Description
 #. Type: text
 #. Description
 #: ../base-installer.templates:196
 #, fuzzy
-msgid "Configuring the base system"
+msgid "Unpacking the base system"
 msgstr "מתקין את מערכת הבסיס"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:200
-msgid "Installing the base system"
+#, fuzzy
+msgid "Configuring the base system"
 msgstr "מתקין את מערכת הבסיס"
 
 #. Type: text
@@ -437,17 +414,13 @@ msgstr "מביא את ${SUBST0}..."
 msgid "Extracting ${SUBST0}..."
 msgstr "חולץ את  ${SUBST0}..."
 
-#  Type: text
-#  Description
 #. Type: text
 #. Description
 #: ../base-installer.templates:220
 #, fuzzy
 msgid "Unpacking ${SUBST0}..."
-msgstr "מחלץ את  ${SUBST0}..."
+msgstr "חולץ את  ${SUBST0}..."
 
-#  Type: text
-#  Description
 #. Type: text
 #. Description
 #: ../base-installer.templates:224
@@ -479,33 +452,25 @@ msgstr "פורס חבילות נדרשות..."
 msgid "Configuring required packages..."
 msgstr "מגדיר חבילות נדרשות..."
 
-#  Type: text
-#  Description
-#  Type: text
-#  Description
 #. Type: text
 #. Description
 #: ../base-installer.templates:244
-#, fuzzy
-msgid "Unpacking the base system..."
-msgstr "מתקין את מערכת הבסיס"
+msgid "Installing base packages..."
+msgstr "מתקין את חבילות הבסיס..."
 
-#  Type: text
-#  Description
-#  Type: text
-#  Description
 #. Type: text
 #. Description
 #: ../base-installer.templates:248
 #, fuzzy
-msgid "Configuring the base system..."
+msgid "Unpacking the base system..."
 msgstr "מתקין את מערכת הבסיס"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:252
-msgid "Installing base packages..."
-msgstr "מתקין את חבילות הבסיס..."
+#, fuzzy
+msgid "Configuring the base system..."
+msgstr "מתקין את מערכת הבסיס"
 
 #. Type: text
 #. Description
@@ -573,22 +538,3 @@ msgstr "מתקין מודולי PCMCIA"
 #: ../base-installer.templates:297
 msgid "Install the base system"
 msgstr "התקנת מערכת הבסיס"
-
-#~ msgid "Cannot install Debian"
-#~ msgstr "לא יכול להתקין את דביאן"
-
-#~ msgid ""
-#~ "The installer cannot figure out how to install Debian. No installable CD-"
-#~ "ROM was found and no valid mirror was configured."
-#~ msgstr ""
-#~ "המתקין לא יכול להבין כדיצד להתקין את דביאן. לא נמצא דיסק התקנה ולא הוגדר "
-#~ "אתר מראה תקין."
-
-#~ msgid "Couldn't download ${SUBST0}."
-#~ msgstr "לא מצליח להוריד את  ${SUBST0}."
-
-#~ msgid "Installing the Debian base system"
-#~ msgstr "מתקין את מערכת הבסיס של דביאן"
-
-#~ msgid "Preparing to install the Debian base system..."
-#~ msgstr "מתכונן להתקנת בסיס מערכת דביאן..."

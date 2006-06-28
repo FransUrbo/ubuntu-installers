@@ -20,11 +20,13 @@ debian/templates: debian/templates-arch
 clean:
 	dh_testdir
 	rm -f build-stamp
-	-rm -f kernel/tests/localudebs/*
 	$(MAKE) clean    
 	dh_clean debian/templates
 
-install: build
+test:
+	$(MAKE) -C kernel test
+
+install: build test
 	dh_testdir
 	dh_testroot
 	dh_clean -k

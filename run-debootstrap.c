@@ -16,6 +16,7 @@
 
 volatile int child_exit = 0;
 struct debconfclient *debconf = NULL;
+int progress_start_position = 0;
 
 static void
 sig_child(int sig)
@@ -23,7 +24,7 @@ sig_child(int sig)
     child_exit = 1;
 }
 
-// args = read_arg_lines("EA: ", ifp, &arg_count, &line);
+/* args = read_arg_lines("EA: ", ifp, &arg_count, &line); */
 char **
 read_arg_lines(const char *prefix, FILE *ifp, int *arg_count, char **final_line,
 	       int *llen)
@@ -53,7 +54,7 @@ read_arg_lines(const char *prefix, FILE *ifp, int *arg_count, char **final_line,
                 args = realloc(args, sizeof(char *) * arg_max);
             }
             args[(*arg_count)++] = strdup(*final_line+strlen(prefix));
-            // we got arguments.
+            /* we got arguments. */
         }
         else
             break;
@@ -88,7 +89,7 @@ n_subst(char *template, int arg_count, char **args)
     }
 }
 
-// changes in 'code'
+/* changes in 'code' */
 char *
 find_template(const char *prefix, char *code)
 {
@@ -106,6 +107,14 @@ find_template(const char *prefix, char *code)
     }
 }
 
+int get_progress_start_position (void) {
+    const char *progress_env = getenv("PB_PROGRESS");
+    if (progress_env)
+        return atoi(progress_env);
+    else
+        return 0;
+}
+
 /* Calculate progress bar location, starting at
  * previous waypoint, and advancing the percent of
  * the current section that corresponds to the percent
@@ -113,17 +122,13 @@ find_template(const char *prefix, char *code)
 void set_progress (int current_section, int phigh, int plow) {
     float section_fraction;
     int section_span, prev_waypoint, percent;
-	
+
+    prev_waypoint = waypoints[current_section].startpercent;
     if (current_section > 0)
-    {
-        prev_waypoint = waypoints[current_section - 1].endpercent;
         section_span = waypoints[current_section].endpercent - prev_waypoint;
-    }
-    else {
-        prev_waypoint = 0;
+    else
         section_span = 0;
-    }
-			
+
     if (phigh > 0)
         section_fraction = (float) plow / (float) phigh;
     else
@@ -132,13 +137,15 @@ void set_progress (int current_section, int phigh, int plow) {
         section_fraction = 1;
 			
     percent = prev_waypoint + (section_span * section_fraction);
-			
-    //fprintf(stderr, "waypoint: %s (%i); prev endpercent %i; span: %i; fraction: %.9f (%i / %i); percent: %i\n",
-    //        waypoints[current_section].progress_id,
-    //        current_section, prev_waypoint, section_span, 
-    //        section_fraction, plow, phigh, percent);
 
-    debconf_progress_set(debconf, percent);
+#if 0
+    fprintf(stderr, "waypoint: %s (%i); prev endpercent %i; span: %i; fraction: %.9f (%i / %i); percent: %i\n",
+            waypoints[current_section].progress_id,
+            current_section, prev_waypoint, section_span, 
+            section_fraction, plow, phigh, percent);
+#endif
+
+    debconf_progress_set(debconf, progress_start_position + percent);
 }
 
 /*
@@ -177,8 +184,8 @@ exec_debootstrap(char **argv){
         dup2(2, 1);
 
         setenv("PERL_BADLANG", "0", 1);
-        // These are needed to hack around a hack (!) in update-inetd
-        // and to not confuse debconf's postinst
+        /* These are needed to hack around a hack (!) in update-inetd
+         * and to not confuse debconf's postinst */
         unsetenv("DEBIAN_HAS_FRONTEND");
         unsetenv("DEBIAN_FRONTEND");
         unsetenv("DEBCONF_FRONTEND");
@@ -195,6 +202,8 @@ exec_debootstrap(char **argv){
 
     signal(SIGCHLD, &sig_child);
 
+    progress_start_position = get_progress_start_position();
+
     close(from_db[1]);
 
     if ((ifp = fdopen(from_db[0], "r")) == NULL) {
@@ -208,7 +217,7 @@ exec_debootstrap(char **argv){
     {
         line[llen-1] = 0;
 
-	//fprintf(stderr, "got line: %s\n", line);
+	/* fprintf(stderr, "got line: %s\n", line); */
 	
         ptr = line;
         switch (ptr[0])
@@ -216,7 +225,7 @@ exec_debootstrap(char **argv){
             case 'E':
                 {
                     ptr += 3;
-                    // ptr now contains the identifier of the error.
+                    /* ptr now contains the identifier of the error. */
                     template = find_template("error", ptr);
                     args = read_arg_lines("EA: ", ifp, &arg_count, &line,
 					  &llen);
@@ -236,7 +245,7 @@ exec_debootstrap(char **argv){
                         ptr = n_sprintf(line+4, arg_count, args);
                         if (ptr == NULL)
                             return -1;
-                        // fallback error message
+                        /* fallback error message */
                         debconf_subst(debconf, DEBCONF_BASE "fallback-error",
 				      "ERROR", ptr);
                         debconf_input(debconf, "critical",
@@ -246,12 +255,12 @@ exec_debootstrap(char **argv){
                     }
                     else
                     {
-                        // err, don't really know what to do here... there
-                        // should always be a fallback...
+                        /* err, don't really know what to do here... there
+                         * should always be a fallback... */
                     }
                     return -1;
                 }
-            case 'W':  // FIXME
+            case 'W':  /* FIXME */
                 {
                     args = read_arg_lines("WA: ", ifp, &arg_count, &line,
 					  &llen);
@@ -269,8 +278,8 @@ exec_debootstrap(char **argv){
 
                         di_log(DI_LOG_LEVEL_OUTPUT, ptr);
 		    } else {
-                        // err, don't really know what to do here... there
-                        // should always be a fallback...
+                        /* err, don't really know what to do here... there
+                         * should always be a fallback... */
                     }
                     break;
                 }
@@ -332,10 +341,10 @@ exec_debootstrap(char **argv){
             case 'I':
                 {
                     ptr += 3;
-                    // ptr now contains the identifier of the info
+                    /* ptr now contains the identifier of the info */
                     template = find_template("info", ptr);
 
-                    //fprintf(stderr, "info template: %s\n", template);
+                    /* fprintf(stderr, "info template: %s\n", template); */
 		    
                     if (strcmp(ptr, "basesuccess") == 0 && template != NULL)
                     {
@@ -362,7 +371,7 @@ exec_debootstrap(char **argv){
                         ptr = n_sprintf(line+4, arg_count, args);
                         if (ptr == NULL)
                             return -1;
-                        // fallback info message
+                        /* fallback info message */
                         debconf_subst(debconf, DEBCONF_BASE "fallback-info",
 				      "INFO", ptr);
 			debconf_subst(debconf, DEBCONF_BASE "fallback-info",
@@ -373,8 +382,8 @@ exec_debootstrap(char **argv){
                     }
                     else
                     {
-                        // err, don't really know what to do here... there
-                        // should always be a fallback...
+                        /* err, don't really know what to do here... there
+                         * should always be a fallback... */
                     }
                 }
         }

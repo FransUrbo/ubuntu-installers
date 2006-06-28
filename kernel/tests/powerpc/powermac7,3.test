@@ -1,15 +1,15 @@
 subarch powermac_newworld
-cpuinfo powermac_newworld.cpuinfo
+cpuinfo powermac7,3.cpuinfo
 majors 2.6
-flavour powerpc
-kernel-2.6 linux-powerpc
+flavour power4
+kernel-2.6 linux-power4
 usable \
-  linux-powerpc \
-  linux-powerpc-smp \
-  linux-image-powerpc \
-  linux-image-powerpc-smp \
-  linux-image-2.6.10-2-powerpc \
-  linux-image-2.6.10-2-powerpc-smp
+  linux-power4 \
+  linux-power4-smp \
+  linux-image-power4 \
+  linux-image-power4-smp \
+  linux-image-2.6.10-2-power4 \
+  linux-image-2.6.10-2-power4-smp
 unusable \
   linux-power3 \
   linux-power3-smp \
@@ -22,4 +22,4 @@ unusable \
   linux-image-2.6.10-2-power3 \
   linux-image-2.6.10-2-power3-smp \
   linux-image-2.6.10-2-powerpc \
-  linux-image-2.6.10-2-powerpc-smp \
+  linux-image-2.6.10-2-powerpc-smp

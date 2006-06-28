@@ -1,4 +1,5 @@
-cpuinfo pentium-3.cpuinfo
+cpuinfo pentium-4M.cpuinfo
+machine i686
 majors 2.6
 flavour 686
 env SPEAKUP /nonexistent

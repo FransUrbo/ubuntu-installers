@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2004-10-01 19:51+0200\n"
+"POT-Creation-Date: 2005-06-07 13:56+0100\n"
+"PO-Revision-Date: 2005-06-03 19:23+0200\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgstr "Pokračovat s instalací do neprázdného cíle?"
 #. Description
 #: ../base-installer.templates:4
 msgid ""
-"The target filesystem contains files from a past installation. These files "
+"The target file system contains files from a past installation. These files "
 "could break the installation process or cause a broken system to be "
 "installed."
 msgstr ""
@@ -40,30 +40,30 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-msgid "Cannot install Ubuntu"
-msgstr "Ubuntu nelze nainstalovat"
+msgid "Cannot install base system"
+msgstr "Nelze nainstalovat základní systém"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
 msgid ""
-"The installer cannot figure out how to install Ubuntu. No installable CD-ROM "
-"was found and no valid mirror was configured."
+"The installer cannot figure out how to install the base system. No "
+"installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Instalační program nedokázal zjistit, jak Ubuntu nainstalovat. Nebylo "
-"nalezeno CD a nebylo nastaveno funkční zrcadlo."
+"Instalační program nedokázal zjistit, jak nainstalovat základní systém. "
+"Nebylo nalezeno CD a nebylo nastaveno funkční zrcadlo."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
-msgid "No filesystem mounted on /target"
+msgid "No file system mounted on /target"
 msgstr "Pod /target není připojen žádný souborový systém"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
 msgid ""
-"Before the installation can proceed, a root filesystem must be mounted on /"
+"Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
 "Před pokračováním v instalaci musí být připojen kořenový souborový systém "
@@ -79,10 +79,10 @@ msgstr "Nelze instalovat do neprázdného cíle"
 #. Description
 #: ../base-installer.templates:23
 msgid ""
-"The installation to the target filesystem has been canceled, as the target "
-"filesystem contains files from a past installation, which could break the "
+"The installation to the target file system has been canceled, as the target "
+"file system contains files from a past installation, which could break the "
 "installation process or cause a broken system to be installed. You should go "
-"back and erase or format the target filesystem before proceeding with the "
+"back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
 "Instalace na cílový souborový systém byla zrušena, protože tento souborový "
@@ -219,7 +219,7 @@ msgstr "Nelze nainstalovat nástroje initrd"
 #. Description
 #: ../base-installer.templates:93
 msgid ""
-"An error was returned while trying to install the initrd-tools package  onto "
+"An error was returned while trying to install the initrd-tools package onto "
 "the target system."
 msgstr "Při instalaci nástrojů initrd do cílového systému byla vrácena chyba."
 
@@ -266,6 +266,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
+"Nemohu stáhnout ${SUBST0}. V závislosti na instalační metodě to může být "
+"způsobeno síťovým problémem nebo chybným CD."
 
 #. Type: error
 #. Description
@@ -274,6 +276,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
+"Instalujete-li z CD-R nebo CD-RW, možná pomůže vypálení disku nižší "
+"rychlostí."
 
 #. Type: error
 #. Description
@@ -289,17 +293,9 @@ msgstr "Odchyceno přerušení ... zavřete oči, odcházím."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:140
-#, fuzzy
-msgid "Installing the Ubuntu base system"
-msgstr "Instaluje se základní systém Debianu"
-
-#. Type: text
-#. Description
 #: ../base-installer.templates:144
-#, fuzzy
-msgid "Preparing to install the Ubuntu base system..."
-msgstr "Připravuje se instalace základního systému Debianu..."
+msgid "Preparing to install the base system..."
+msgstr "Připravuje se instalace základního systému..."
 
 #. Type: text
 #. Description
@@ -330,7 +326,7 @@ msgstr "Stahuje se soubor Release"
 #. Description
 #: ../base-installer.templates:164
 msgid "Finding package sizes"
-msgstr "ZjiŮťuje se velikost balíků"
+msgstr "Zjišťuje se velikost balíků"
 
 #. Type: text
 #. Description
@@ -353,43 +349,38 @@ msgstr "Rozbalují se balíky"
 #. Type: text
 #. Description
 #: ../base-installer.templates:180
-#, fuzzy
-msgid "Installing core packages"
-msgstr "Instalují se stěžejní balíky..."
+msgid "Installing the base system"
+msgstr "Instaluje se základní systém"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:184
-#, fuzzy
-msgid "Unpacking required packages"
-msgstr "Rozbalují se vyžadované balíky..."
+msgid "Installing core packages"
+msgstr "Instalují se stěžejní balíky"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:188
-#, fuzzy
-msgid "Configuring required packages"
-msgstr "Nastavují se vyžadované balíky..."
+msgid "Unpacking required packages"
+msgstr "Rozbalují se vyžadované balíky"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:192
-#, fuzzy
-msgid "Unpacking the base system"
-msgstr "Instaluje se základní systém"
+msgid "Configuring required packages"
+msgstr "Nastavují se vyžadované balíky"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:196
-#, fuzzy
-msgid "Configuring the base system"
-msgstr "Instaluje se základní systém"
+msgid "Unpacking the base system"
+msgstr "Rozbaluje se základní systém"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:200
-msgid "Installing the base system"
-msgstr "Instaluje se základní systém"
+msgid "Configuring the base system"
+msgstr "Nastavuje se základní systém"
 
 #. Type: text
 #. Description
@@ -418,16 +409,14 @@ msgstr "Rozbaluje se ${SUBST0}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:220
-#, fuzzy
 msgid "Unpacking ${SUBST0}..."
 msgstr "Rozbaluje se ${SUBST0}..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:224
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "Ověřuje se ${SUBST0}..."
+msgstr "Nastavuje se ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -456,22 +445,20 @@ msgstr "Nastavují se vyžadované balíky..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:244
-#, fuzzy
-msgid "Unpacking the base system..."
-msgstr "Instaluje se základní systém"
+msgid "Installing base packages..."
+msgstr "Instalují se základní balíky..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:248
-#, fuzzy
-msgid "Configuring the base system..."
-msgstr "Instaluje se základní systém"
+msgid "Unpacking the base system..."
+msgstr "Rozbaluje se základní systém..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:252
-msgid "Installing base packages..."
-msgstr "Instalují se základní balíky..."
+msgid "Configuring the base system..."
+msgstr "Nastavuje se základní systém..."
 
 #. Type: text
 #. Description
@@ -539,12 +526,3 @@ msgstr "Instalují se PCMCIA moduly"
 #: ../base-installer.templates:297
 msgid "Install the base system"
 msgstr "Instalovat základní systém"
-
-#~ msgid "Couldn't download ${SUBST0}."
-#~ msgstr "Nelze stáhnout ${SUBST0}."
-
-#~ msgid "Installing the Debian base system"
-#~ msgstr "Instaluje se základní systém Debianu"
-
-#~ msgid "Preparing to install the Debian base system..."
-#~ msgstr "Připravuje se instalace základního systému Debianu..."

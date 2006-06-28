@@ -1,3 +1,161 @@
+base-installer (1.19ubuntu1) breezy; urgency=low
+
+  * Resynchronise with Debian.
+  * Fix kernel selection on single-processor sparc systems.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue,  7 Jun 2005 14:26:42 +0100
+
+base-installer (1.19) unstable; urgency=low
+
+  * Colin Watson
+    - Start run-debootstrap progress bar at the appropriate waypoint rather
+      than going back to the start (closes: #277949).
+    - In templates, say "install the base system" rather than "install
+      Debian", and "the base system" rather than "the Debian base system",
+      to help with derivative distribution branding.
+    - Make apt-get use gpgv --ignore-time-conflict to avoid validation
+      errors with apt 0.6 due to clock problems (Ubuntu #8496).
+  * Matt Zimmerman
+    - Create ubd devices in create_devices() if installing under UML
+      (closes: #258307).
+  * Updated translations:
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Czech (cs.po) by Miroslav Kure
+    - Danish (da.po) by Claus Hindsgaul
+    - Spanish (es.po) by Javier Fernández-Sanguino Peña
+    - Basque (eu.po)
+    - French (fr.po) by Christian Perrier
+    - Italian (it.po) by Giuseppe Sacco
+    - Japanese (ja.po) by Kenshi Muto
+    - Portuguese (pt.po) by Miguel Figueiredo
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+
+ -- Colin Watson <cjwatson@debian.org>  Mon,  6 Jun 2005 12:57:37 +0100
+
+base-installer (1.18) unstable; urgency=low
+
+  * Colin Watson
+    - Redirect output from base-installer hooks properly.
+    - Clarify and expand base-installer/debootstrap/error/couldntdl text to
+      try to answer frequent problems such as badly burned CDs.
+    - Add a post-base-installation hook: scripts in
+      /usr/lib/post-base-installer.d/ will be run after the base system
+      installation is complete. This allows locales to be created earlier,
+      thereby silencing warnings from code that chroots into /target before
+      prebaseconfig runs.
+    - Use C-style comments in run-debootstrap.
+    - List both starting and ending percentages for waypoints, in order to
+      be able to support multiple paths in the event of changes to
+      debootstrap.
+    - Add necessary waypoints and strings to cope with the debootstrap
+      granularity patch (#244563).
+    - Work out the largest swap partition, if any, and use its devfs-mapped
+      name as the value of RESUME= in /etc/mkinitrd/mkinitrd.conf.
+  * Joey Hess
+    - Call archdetect command instead of using template to get subarch.
+  * Updated translations:
+    - Arabic (ar.po) by Ossama M. Khayat
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Catalan (ca.po) by Guillem Jover
+    - Czech (cs.po) by Miroslav Kure
+    - Danish (da.po) by Claus Hindsgaul
+    - German (de.po) by Dennis Stampfer
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - Spanish (es.po) by Javier Fernández-Sanguino Peña
+    - Basque (eu.po)
+    - French (fr.po) by Christian Perrier
+    - Hebrew (he.po) by Lior Kaplan
+    - Hungarian (hu.po) by VEROK Istvan
+    - Indonesian (id.po) by Arief S Fitrianto
+    - Italian (it.po) by Giuseppe Sacco
+    - Japanese (ja.po) by Kenshi Muto
+    - Korean (ko.po) by Changwoo Ryu
+    - Bokmål, Norwegian (nb.po) by Hans Fredrik Nordhaug
+    - Dutch (nl.po) by Bart Cornelis
+    - Polish (pl.po) by Bartosz Fenski
+    - Portuguese (pt.po) by Miguel Figueiredo
+    - Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+    - Romanian (ro.po) by Eddy Petrisor
+    - Russian (ru.po) by Yuri Kozlov
+    - Albanian (sq.po) by Elian Myftiu
+    - Turkish (tr.po) by Recai Oktaş
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+    - Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 30 May 2005 00:43:59 +0100
+
+base-installer (1.17) unstable; urgency=low
+
+  NOTE: not for sarge, needs rootskel 1.11
+  * Colin Watson
+    - Bump kernel defaults to 2.4.27-2 and 2.6.8-2 for i386, ia64, and s390.
+      hppa is still trailing behind at 2.6.8-1.
+    - Use major version of target kernel rather than installation kernel to
+      work out whether to use an initrd or (on powerpc) to run mkvmlinuz.
+    - Parameterise access to files in /proc by kernel/*.sh, allowing the
+      test suite to run without sudo access or a chroot. 'make test' in
+      kernel/ should be easily runnable by everyone now.
+    - If run with TEST_VERBOSE=0, the test suite produces no output except
+      on errors.
+    - kernel/tests/runtests and 'make test' in kernel/ exit non-zero on
+      errors.
+    - Run test suite automatically on package build.
+    - Install kernel-latest-powerpc metapackages.
+  * Matt Kraai
+    - Fix the spelling of "file system".
+  * Steve Langasek
+    - Bump kernel defaults to 2.4.27-2 for alpha, and to 2.6.8-2 for hppa.
+    - Update kernel test directory to match.
+  * Sven Luther
+    - 2.4.27-3 powerpc kernel now produces only one kernel-image-2.4.27-powerpc
+      package, so dropped the pmac/chrp/chrp-rs6k/prep handling from
+      kernel/powerpc.sh.
+    - Removed mkvmlinuz explicit install, as all kernel-images (2.4.27-3,
+      2.6.8-11 and 2.6.10-3) now depend on mkvmlinuz.
+  * Christian Perrier
+    - Remove extra space in templates. Closes: #305775
+  * Frans Pop
+    - sparc32 kernels are not usable on sparc64. Closes: #297740
+  * Updated translations:
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Catalan (ca.po) by Guillem Jover
+    - Czech (cs.po) by Miroslav Kure
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - Spanish (es.po) by Javier Fernandez-Sanguino Peña
+    - Gallegan (gl.po) by Jacobo Tarrio
+    - Hebrew (he.po) by Lior Kaplan
+    - Italian (it.po) by Stefano Canepa
+    - Lithuanian (lt.po) by Kęstutis Biliūnas
+    - Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+    - Portuguese (pt.po) by Miguel Figueiredo
+    - Romanian (ro.po) by Eddy Petrisor
+    - Russian (ru.po) by Yuri Kozlov
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+
+ -- Colin Watson <cjwatson@debian.org>  Tue,  3 May 2005 18:24:54 +0100
+
+base-installer (1.16) experimental; urgency=low
+
+  NOTE: not for sarge, needs rootskel 1.11
+  * Colin Watson
+    - Add G5 PowerMac7,3 tests based on /proc/cpuinfo provided by Shyamal
+      Prasad.
+    - Prefer SMP kernels on multi-processor powerpc systems.
+    - Improve kernel selection for Transmeta Crusoe i386 systems.
+  * Updated translations:
+    - Bosnian (bs.po) by Safir Šećerović
+    - Catalan (ca.po) by Jordi Mallach
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - Gallegan (gl.po) by Hctor Fenndez Lpez
+    - Italian (it.po) by Davide Meloni
+    - Lithuanian (lt.po) by Kęstutis Biliūnas
+    - Dutch (nl.po) by Bart Cornelis
+    - Portuguese (pt.po) by Miguel Figueiredo
+    - Romanian (ro.po) by Eddy Petrisor
+    - Russian (ru.po) by Dmitry Beloglazov
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 30 Jan 2005 13:44:27 +0000
+
 base-installer (1.15ubuntu17) hoary; urgency=low
 
   * Update Danish translation (thanks, Frederik Dannemare).

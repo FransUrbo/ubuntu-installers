@@ -8,22 +8,23 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 # Russian L10N Team <debian-l10n-russian@lists.debian.org>, 2004.
-# Yuri Kozlov <yuray@id.ru>, 2004.
+# Yuri Kozlov <yuray@id.ru>, 2004, 2005.
+# Dmitry Beloglazov <dm-guest@alioth.debian.org>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2004-10-20 20:31+0400\n"
+"POT-Creation-Date: 2005-06-07 13:56+0100\n"
+"PO-Revision-Date: 2005-05-24 19:18+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@id.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #. Type: boolean
 #. Description
@@ -35,68 +36,70 @@ msgstr "Продолжить установку на непустой разде
 #. Description
 #: ../base-installer.templates:4
 msgid ""
-"The target filesystem contains files from a past installation. These files "
+"The target file system contains files from a past installation. These files "
 "could break the installation process or cause a broken system to be "
 "installed."
 msgstr ""
 "Целевая файловая система содержит файлы от предыдущей установки. Эти файлы "
-"могут помешать процессу установки или привести к установке неработоспособной "
-"системы."
+"могут помешать процессу установки или привести к тому, что установленная "
+"система окажется неработоспособной."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-msgid "Cannot install Ubuntu"
-msgstr "Не удалось установить Ubuntu"
+#, fuzzy
+msgid "Cannot install base system"
+msgstr "Не удалось установить базовую систему"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
+#, fuzzy
 msgid ""
-"The installer cannot figure out how to install Ubuntu. No installable CD-ROM "
-"was found and no valid mirror was configured."
+"The installer cannot figure out how to install the base system. No "
+"installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Программа установки не смогла определить как установить Ubuntu. Не было "
+"Программа установки не смогла определить как установить Debian. Не было "
 "найдено установочных дисков CD-ROM и не было настроено рабочих серверов-"
 "зеркал."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
-msgid "No filesystem mounted on /target"
+msgid "No file system mounted on /target"
 msgstr "В /target не смонтирована файловая система"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
 msgid ""
-"Before the installation can proceed, a root filesystem must be mounted on /"
+"Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
-"Перед тем как установку можно продолжить, в /target должна быть смонтирована "
-"корневая файловая система. Это должны были сделать partitioner и formatter."
+"Перед продолжением установки, в /target должна быть смонтирована корневая "
+"файловая система. Это должны были сделать partitioner и formatter."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:23
 msgid "Not installing to unclean target"
-msgstr "Не устанавлено на непустой раздел"
+msgstr "Не установлено на непустой раздел"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:23
 msgid ""
-"The installation to the target filesystem has been canceled, as the target "
-"filesystem contains files from a past installation, which could break the "
+"The installation to the target file system has been canceled, as the target "
+"file system contains files from a past installation, which could break the "
 "installation process or cause a broken system to be installed. You should go "
-"back and erase or format the target filesystem before proceeding with the "
+"back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
 "Установка в целевую файловую систему была отменена, так как она содержит "
 "файлы от предыдущей установки, что может помешать процессу установки или "
-"привести к установке неработоспособной системы. Вы должны вернуться и "
-"стереть или отформатировать целевую файловую систему перед продолжением "
-"установки."
+"привести к тому, что установленная система окажется неработоспособной. Вы "
+"должны вернуться и стереть или отформатировать целевую файловую систему "
+"перед продолжением установки."
 
 #. Type: error
 #. Description
@@ -188,7 +191,7 @@ msgid ""
 "The list shows the available kernels. Please choose one of them in order to "
 "make the system bootable from the hard drive."
 msgstr ""
-"Список сожержит доступные ядра. Выберите одно из них, чтобы система могла "
+"Список содержит доступные ядра. Выберите одно из них, чтобы система могла "
 "загрузиться с жёсткого диска."
 
 #. Type: error
@@ -229,7 +232,7 @@ msgstr "Невозможно установить initrd-tools"
 #. Description
 #: ../base-installer.templates:93
 msgid ""
-"An error was returned while trying to install the initrd-tools package  onto "
+"An error was returned while trying to install the initrd-tools package onto "
 "the target system."
 msgstr ""
 "Произошла ошибка во время установки пакета initrd-tools на целевой раздел."
@@ -277,6 +280,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
+"Не удалось получить ${SUBST0}. Это может быть из-за проблем с сетью или "
+"плохого компакт-диска, в зависимости от метода установки."
 
 #. Type: error
 #. Description
@@ -285,6 +290,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
+"Если вы производите установку с дисков CD-R или CD-RW, то иногда помогает "
+"прожиг дисков на более медленной скорости."
 
 #. Type: error
 #. Description
@@ -300,15 +307,10 @@ msgstr "Получен сигнал прерывания... Выход."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:140
-msgid "Installing the Ubuntu base system"
-msgstr "Установка базовой системы Ubuntu"
-
-#. Type: text
-#. Description
 #: ../base-installer.templates:144
-msgid "Preparing to install the Ubuntu base system..."
-msgstr "Подготовка к установке базовой системе Ubuntu..."
+#, fuzzy
+msgid "Preparing to install the base system..."
+msgstr "Подготовка к установке базовой системы Debian..."
 
 #. Type: text
 #. Description
@@ -362,43 +364,38 @@ msgstr "Распаковка пакетов"
 #. Type: text
 #. Description
 #: ../base-installer.templates:180
-#, fuzzy
-msgid "Installing core packages"
-msgstr "Установка основных (core) пакетов..."
+msgid "Installing the base system"
+msgstr "Установка базовой системы"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:184
-#, fuzzy
-msgid "Unpacking required packages"
-msgstr "Распаковка необходимых (required) пакетов..."
+msgid "Installing core packages"
+msgstr "Установка основных (core) пакетов"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:188
-#, fuzzy
-msgid "Configuring required packages"
-msgstr "Настройка необходимых (required) пакетов..."
+msgid "Unpacking required packages"
+msgstr "Распаковка необходимых (required) пакетов"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:192
-#, fuzzy
-msgid "Unpacking the base system"
-msgstr "Установка базовой системы"
+msgid "Configuring required packages"
+msgstr "Настройка необходимых (required) пакетов"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:196
-#, fuzzy
-msgid "Configuring the base system"
-msgstr "Установка базовой системы"
+msgid "Unpacking the base system"
+msgstr "Распаковка базовой системы"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:200
-msgid "Installing the base system"
-msgstr "Установка базовой системы"
+msgid "Configuring the base system"
+msgstr "Настройка базовой системы"
 
 #. Type: text
 #. Description
@@ -427,16 +424,14 @@ msgstr "Распаковка ${SUBST0}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:220
-#, fuzzy
 msgid "Unpacking ${SUBST0}..."
 msgstr "Распаковка ${SUBST0}..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:224
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "Проверка ${SUBST0}..."
+msgstr "Настройка ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -465,22 +460,20 @@ msgstr "Настройка необходимых (required) пакетов..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:244
-#, fuzzy
-msgid "Unpacking the base system..."
-msgstr "Установка базовой системы"
+msgid "Installing base packages..."
+msgstr "Установка базовых (base) пакетов..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:248
-#, fuzzy
-msgid "Configuring the base system..."
-msgstr "Установка базовой системы"
+msgid "Unpacking the base system..."
+msgstr "Распаковка базовой системы..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:252
-msgid "Installing base packages..."
-msgstr "Установка базовых (base) пакетов..."
+msgid "Configuring the base system..."
+msgstr "Настройка базовой системы..."
 
 #. Type: text
 #. Description
@@ -511,7 +504,7 @@ msgstr "Установка дополнительных (extra) пакетов..
 #: ../base-installer.templates:272
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr ""
-"Установка дополнительных (extra) пакетов- получение и установка ${SUBST0}..."
+"Установка дополнительных (extra) пакетов - получение и установка ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -549,23 +542,3 @@ msgstr "Установка модулей PCMCIA"
 #: ../base-installer.templates:297
 msgid "Install the base system"
 msgstr "Установка базовой системы"
-
-#~ msgid "Cannot install Debian"
-#~ msgstr "Не удалось установить Debian"
-
-#~ msgid ""
-#~ "The installer cannot figure out how to install Debian. No installable CD-"
-#~ "ROM was found and no valid mirror was configured."
-#~ msgstr ""
-#~ "Программа установки не смогла определить как установить Debian. Не было "
-#~ "найдено установочных дисков CD-ROM и не было настроено рабочих серверов-"
-#~ "зеркал."
-
-#~ msgid "Couldn't download ${SUBST0}."
-#~ msgstr "Не удалось загрузить ${SUBST0}."
-
-#~ msgid "Installing the Debian base system"
-#~ msgstr "Установка базовой системы Debian"
-
-#~ msgid "Preparing to install the Debian base system..."
-#~ msgstr "Подготовка к установке базовой системе Debian..."

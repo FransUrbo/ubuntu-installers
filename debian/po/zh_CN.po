@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-14 11:56+0000\n"
-"PO-Revision-Date: 2004-10-02 02:23+1200\n"
+"POT-Creation-Date: 2005-06-07 13:56+0100\n"
+"PO-Revision-Date: 2005-05-29 03:05+1200\n"
 "Last-Translator:  Carlos Z.F. Liu <carlos_liu@yahoo.com>\n"
 "Language-Team:  Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgstr "您要在未清空的文件系统中执行安装程序吗？"
 #. Description
 #: ../base-installer.templates:4
 msgid ""
-"The target filesystem contains files from a past installation. These files "
+"The target file system contains files from a past installation. These files "
 "could break the installation process or cause a broken system to be "
 "installed."
 msgstr ""
@@ -39,30 +39,32 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
-msgid "Cannot install Ubuntu"
-msgstr "无法安装 Ubuntu"
+#, fuzzy
+msgid "Cannot install base system"
+msgstr "安装基本系统失败"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
+#, fuzzy
 msgid ""
-"The installer cannot figure out how to install Ubuntu. No installable CD-ROM "
-"was found and no valid mirror was configured."
+"The installer cannot figure out how to install the base system. No "
+"installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"安装程序不知道如何安装 Ubuntu。未找到任何可供安装的 CD-ROM，也没有设置任何有"
+"安装程序不知道如何安装 Debian。未找到任何可供安装的 CD-ROM，也没有设置任何有"
 "效的镜像。"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
-msgid "No filesystem mounted on /target"
+msgid "No file system mounted on /target"
 msgstr "在 /target 上没有挂载任何文件系统"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:17
 msgid ""
-"Before the installation can proceed, a root filesystem must be mounted on /"
+"Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
 "要开始进行安装，在 /target 上必须挂载一个根文件系统。磁盘分区程序和格式化程序"
@@ -78,10 +80,10 @@ msgstr "不能在未清空的目标文件系统上安装"
 #. Description
 #: ../base-installer.templates:23
 msgid ""
-"The installation to the target filesystem has been canceled, as the target "
-"filesystem contains files from a past installation, which could break the "
+"The installation to the target file system has been canceled, as the target "
+"file system contains files from a past installation, which could break the "
 "installation process or cause a broken system to be installed. You should go "
-"back and erase or format the target filesystem before proceeding with the "
+"back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
 "在目标文件系统上的安装已被取消，其原因是这个文件系统上有以前安装所残留的文"
@@ -212,7 +214,7 @@ msgstr "无法安装 initrd-tools"
 #. Description
 #: ../base-installer.templates:93
 msgid ""
-"An error was returned while trying to install the initrd-tools package  onto "
+"An error was returned while trying to install the initrd-tools package onto "
 "the target system."
 msgstr "向目标系统中安装 initrd-tools 时出现一个错误。"
 
@@ -259,6 +261,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
+"无法获取 ${SUBST0}。根据您所使用的安装方式，造成此问题的原因可能是网络故障或"
+"光盘受损。"
 
 #. Type: error
 #. Description
@@ -267,6 +271,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
+"如果您是通过 CD-R 或 CD-RW 进行安装，请尝试使用较低的速度来刻录光盘，这可能会"
+"对您有所帮助。"
 
 #. Type: error
 #. Description
@@ -282,15 +288,10 @@ msgstr "发生中断 ... 正在退出。"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:140
-msgid "Installing the Ubuntu base system"
-msgstr "正在安装 Ubuntu 基本系统"
-
-#. Type: text
-#. Description
 #: ../base-installer.templates:144
-msgid "Preparing to install the Ubuntu base system..."
-msgstr "准备安装 Ubuntu 基本系统..."
+#, fuzzy
+msgid "Preparing to install the base system..."
+msgstr "准备安装 Debian 基本系统..."
 
 #. Type: text
 #. Description
@@ -344,43 +345,38 @@ msgstr "正在解开软件包"
 #. Type: text
 #. Description
 #: ../base-installer.templates:180
-#, fuzzy
-msgid "Installing core packages"
-msgstr "正在安装核心软件包..."
+msgid "Installing the base system"
+msgstr "正在安装基本系统"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:184
-#, fuzzy
-msgid "Unpacking required packages"
-msgstr "正在解开必需的软件包..."
+msgid "Installing core packages"
+msgstr "正在安装核心软件包"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:188
-#, fuzzy
-msgid "Configuring required packages"
-msgstr "正在配置必需的软件包..."
+msgid "Unpacking required packages"
+msgstr "正在解包必需的软件包"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:192
-#, fuzzy
-msgid "Unpacking the base system"
-msgstr "正在安装基本系统"
+msgid "Configuring required packages"
+msgstr "正在配置必需的软件包"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:196
-#, fuzzy
-msgid "Configuring the base system"
-msgstr "正在安装基本系统"
+msgid "Unpacking the base system"
+msgstr "正在解包基本系统"
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:200
-msgid "Installing the base system"
-msgstr "正在安装基本系统"
+msgid "Configuring the base system"
+msgstr "正在配置基本系统"
 
 #. Type: text
 #. Description
@@ -409,16 +405,14 @@ msgstr "正在解开 ${SUBST0}..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:220
-#, fuzzy
 msgid "Unpacking ${SUBST0}..."
-msgstr "正在解开 ${SUBST0}..."
+msgstr "正在解包 ${SUBST0}..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:224
-#, fuzzy
 msgid "Configuring ${SUBST0}..."
-msgstr "正在校验 ${SUBST0}..."
+msgstr "正在配置 ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -436,7 +430,7 @@ msgstr "正在安装核心软件包..."
 #. Description
 #: ../base-installer.templates:236
 msgid "Unpacking required packages..."
-msgstr "正在解开必需的软件包..."
+msgstr "正在解包必需的软件包..."
 
 #. Type: text
 #. Description
@@ -447,22 +441,20 @@ msgstr "正在配置必需的软件包..."
 #. Type: text
 #. Description
 #: ../base-installer.templates:244
-#, fuzzy
-msgid "Unpacking the base system..."
-msgstr "正在安装基本系统"
+msgid "Installing base packages..."
+msgstr "正在安装基本软件包..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:248
-#, fuzzy
-msgid "Configuring the base system..."
-msgstr "正在安装基本系统"
+msgid "Unpacking the base system..."
+msgstr "正在解包基本系统..."
 
 #. Type: text
 #. Description
 #: ../base-installer.templates:252
-msgid "Installing base packages..."
-msgstr "正在安装基本软件包..."
+msgid "Configuring the base system..."
+msgstr "正在配置基本系统..."
 
 #. Type: text
 #. Description
@@ -530,22 +522,3 @@ msgstr "正在安装 PCMCIA 模块"
 #: ../base-installer.templates:297
 msgid "Install the base system"
 msgstr "安装基本系统"
-
-#~ msgid "Cannot install Debian"
-#~ msgstr "无法安装 Debian"
-
-#~ msgid ""
-#~ "The installer cannot figure out how to install Debian. No installable CD-"
-#~ "ROM was found and no valid mirror was configured."
-#~ msgstr ""
-#~ "安装程序不知道如何安装 Debian。未找到任何可供安装的 CD-ROM，也没有设置任何"
-#~ "有效的镜像。"
-
-#~ msgid "Couldn't download ${SUBST0}."
-#~ msgstr "不能下载 ${SUBST0}。"
-
-#~ msgid "Installing the Debian base system"
-#~ msgstr "正在安装 Debian 基本系统"
-
-#~ msgid "Preparing to install the Debian base system..."
-#~ msgstr "准备安装 Debian 基本系统..."
