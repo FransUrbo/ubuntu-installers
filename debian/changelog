@@ -1,3 +1,9 @@
+base-installer (1.19ubuntu2) breezy; urgency=low
+
+  * Install powerpc64-smp kernels instead of power3/power4.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 23 Jun 2005 13:04:43 +0100
+
 base-installer (1.19ubuntu1) breezy; urgency=low
 
   * Resynchronise with Debian.

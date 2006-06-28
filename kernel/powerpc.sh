@@ -2,10 +2,10 @@ arch_get_kernel_flavour () {
 	CPU=`grep '^cpu[[:space:]]*:' "$CPUINFO" | head -n1 | cut -d: -f2 | sed 's/^ *//; s/[, ].*//' | tr A-Z a-z`
 	case "$CPU" in
 		power3|i-star|s-star)
-			family=power3
+			family=powerpc64
 			;;
 		power4|power4+|ppc970|ppc970fx)
-			family=power4
+			family=powerpc64
 			;;
 		*)
 			family=powerpc
@@ -30,11 +30,17 @@ arch_check_usable_kernel () {
 
 arch_get_kernel () {
 	CPUS="$(grep -ci ^processor "$CPUINFO")" || CPUS=1
-	if [ "$CPUS" ] && [ "$CPUS" -gt 1 ]; then
-		SMP=-smp
-	else
-		SMP=
-	fi
+	case $1 in
+		powerpc64)
+			SMP=-smp
+			;;
+		*)
+			if [ "$CPUS" ] && [ "$CPUS" -gt 1 ]; then
+				SMP=-smp
+			else
+				SMP=
+			fi
+	esac
 
 	echo "linux-$1$SMP"
 }

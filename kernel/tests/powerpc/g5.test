@@ -1,25 +1,16 @@
 subarch powermac_newworld
 cpuinfo g5.cpuinfo
 majors 2.6
-flavour power4
-kernel-2.6 linux-power4
+flavour powerpc64
+kernel-2.6 linux-powerpc64-smp
 usable \
-  linux-power4 \
-  linux-power4-smp \
-  linux-image-power4 \
-  linux-image-power4-smp \
-  linux-image-2.6.10-2-power4 \
-  linux-image-2.6.10-2-power4-smp
+  linux-powerpc64-smp \
+  linux-image-powerpc64-smp \
+  linux-image-2.6.12-2-powerpc64-smp
 unusable \
-  linux-power3 \
-  linux-power3-smp \
   linux-powerpc \
   linux-powerpc-smp \
-  linux-image-power3 \
-  linux-image-power3-smp \
   linux-image-powerpc \
   linux-image-powerpc-smp \
-  linux-image-2.6.10-2-power3 \
-  linux-image-2.6.10-2-power3-smp \
-  linux-image-2.6.10-2-powerpc \
-  linux-image-2.6.10-2-powerpc-smp
+  linux-image-2.6.12-2-powerpc \
+  linux-image-2.6.12-2-powerpc-smp
