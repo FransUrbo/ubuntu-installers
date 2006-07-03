@@ -366,6 +366,18 @@ kernel_present () {
 }
 
 pick_kernel () {
+	# Check for overrides
+	if db_get base-installer/kernel/override-image && [ "$RET" ]; then
+		if kernel_present "$RET"; then
+			KERNEL="$RET"
+			info "Using kernel '$KERNEL'"
+			db_set base-installer/kernel/image "$KERNEL"
+			return
+		else
+			warning "Kernel override '$RET' not present"
+		fi
+	fi
+
 	# Fetch the current default
 	if db_get base-installer/kernel/image-$KERNEL_MAJOR && [ "$RET" ]; then
 		KERNEL="$RET"

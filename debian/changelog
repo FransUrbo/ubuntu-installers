@@ -1,3 +1,10 @@
+base-installer (1.42ubuntu7) dapper; urgency=low
+
+  * Allow preseeding base-installer/kernel/override-image to force a given
+    kernel to be used (closes: Malone #31474).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 12 Apr 2006 23:32:39 +0100
+
 base-installer (1.42ubuntu6) dapper; urgency=low
 
   * Backport from trunk:

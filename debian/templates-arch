@@ -12,6 +12,10 @@ Type: string
 Default: linux-image
 Description: default kernel image if nothing better is found (2.6)
 
+Template: base-installer/kernel/override-image
+Type: string
+Description: always use this kernel image (for preseeding)
+
 Template: base-installer/kernel/linux/initrd
 Type: boolean
 Default: true
