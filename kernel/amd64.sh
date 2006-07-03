@@ -9,7 +9,8 @@ arch_get_kernel_flavour () {
 }
 
 arch_check_usable_kernel () {
-	# Generic kernels can be run on any machine.
+	# Generic and server kernels can be run on any machine.
+	if expr "$1" : '.*-amd64-server.*' >/dev/null; then return 0; fi
 	if expr "$1" : '.*-amd64-generic.*' >/dev/null; then return 0; fi
 
 	# K8 and P4 kernels require that machine.
@@ -52,4 +53,7 @@ arch_get_kernel () {
 	fi
 	echo "linux-amd64-generic"
 	echo "linux-image-amd64-generic"
+
+	echo "linux-amd64-server"
+	echo "linux-image-amd64-server"
 }

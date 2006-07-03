@@ -22,6 +22,7 @@ arch_get_kernel_flavour () {
 }
 
 arch_check_usable_kernel () {
+	if expr "$1" : '.*-server.*' >/dev/null; then return 0; fi
 	if expr "$1" : '.*-386.*' >/dev/null; then return 0; fi
 	if [ "$2" = 386 ]; then return 1; fi
 	if expr "$1" : '.*-586.*' >/dev/null; then return 0; fi
@@ -80,4 +81,9 @@ arch_get_kernel () {
 	fi
 	echo "linux-386"
 	echo "linux-image-386"
+
+	echo "linux-server"
+	echo "linux-image-server"
+	echo "linux-server-bigiron"
+	echo "linux-image-server-bigiron"
 }

@@ -5,11 +5,21 @@ flavour 586tsc
 env SPEAKUP /nonexistent
 kernel-2.6 \
   linux-386 \
-  linux-image-386
+  linux-image-386 \
+  linux-server \
+  linux-image-server \
+  linux-server-bigiron \
+  linux-image-server-bigiron
 usable \
   linux-386 \
+  linux-server \
+  linux-server-bigiron \
   linux-image-386 \
-  linux-image-2.6.12-9-386
+  linux-image-server \
+  linux-image-server-bigiron \
+  linux-image-2.6.12-9-386 \
+  linux-image-2.6.15-12-server \
+  linux-image-2.6.15-12-server-bigiron
 unusable \
   linux-686-smp \
   linux-686 \

@@ -1,3 +1,10 @@
+base-installer (1.42ubuntu4) dapper; urgency=low
+
+  * Add support for -amd64-server kernels on amd64 and -server and
+    -server-bigiron kernels on i386.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 15 Feb 2006 09:37:11 +0000
+
 base-installer (1.42ubuntu3) dapper; urgency=low
 
   * Backport from trunk (closes: Malone #30048):
