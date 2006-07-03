@@ -1,3 +1,13 @@
+base-installer (1.42ubuntu6) dapper; urgency=low
+
+  * Backport from trunk:
+    - Add PPC970MP (actually PPC970*) and POWER5 to the list of powerpc64
+      systems (closes: #339283, http://launchpad.net/bugs/35116).
+    - Don't consider powerpc64 kernels usable on powerpc.
+  * Fix trailing backslashes in a couple of tests.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 16 Mar 2006 10:01:17 +0000
+
 base-installer (1.42ubuntu5) dapper; urgency=low
 
   * Write resume partition to /target/etc/mkinitramfs/conf.d/resume, rather
