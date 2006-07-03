@@ -1,3 +1,9 @@
+base-installer (1.42ubuntu8) dapper; urgency=low
+
+  * Strip comments from debian/templates-arch in output templates file.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 13 Apr 2006 23:12:14 +0100
+
 base-installer (1.42ubuntu7) dapper; urgency=low
 
   * Allow preseeding base-installer/kernel/override-image to force a given
