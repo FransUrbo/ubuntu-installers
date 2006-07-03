@@ -1,3 +1,11 @@
+base-installer (1.42ubuntu3) dapper; urgency=low
+
+  * Backport from trunk (closes: Malone #30048):
+    - Make apt-cdrom ignore time conflicts while verifying Release
+      signatures (for those creating signed CDs).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 14 Feb 2006 13:58:48 +0000
+
 base-installer (1.42ubuntu2) dapper; urgency=low
 
   * Set up the default sources.list to look in -updates and -security (the
