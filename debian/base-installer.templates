@@ -12,6 +12,11 @@ _Description: Cannot install base system
  The installer cannot figure out how to install the base system. No
  installable CD-ROM was found and no valid mirror was configured.
 
+Template: base-installer/no_codename
+Type: error
+_Description: Debootstrap Error
+ Failed to determine the codename for the release.
+
 Template: base-installer/no_target_mounted
 Type: error
 _Description: No file system mounted on /target
@@ -54,6 +59,27 @@ _Description: Debootstrap Error
  ${ERROR}
  .
  Check /var/log/syslog or see virtual console 4 for the details.
+
+Template: base-installer/initramfs/generator
+Type: select
+Choices: ${GENERATORS}
+_Description: Tool to use to generate boot initrd:
+ The list shows the available tools. If you are unsure which to select,
+ you should select the default. If your system fails to boot, you can
+ retry the installation using the other options.
+
+Template: base-installer/intramfs/no-generator
+Type: error
+_Description: No initrd generator
+ The kernel that has been selected for installation needs an initrd to boot.
+ However, no package to generate that initrd is available that supports
+ your configuration. This would leave your system unable to boot.
+
+Template: base-installer/intramfs/unsupported
+Type: error
+_Description: Unsupported initrd generator
+ The package ${GENERATOR} that was selected to generate the
+ initrd is not supported.
 
 Template: base-installer/kernel/failed-install
 Type: error

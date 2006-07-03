@@ -38,13 +38,19 @@ Description: kernel needs an initrd (linux 2.6 only)
 Template: base-installer/kernel/linux/initramfs-2.6
 Type: boolean
 Default: true
-Default[hppa]: false
-Default[ia64]: false
 # This only indicates whether to use an initramfs or not (and will be
-# ignored unless the appropriate base-installer/kernel/linux/initrd* is
-# true). Create a separate question with its own architecture-specific
-# defaults if you want to select among different initramfs creation tools.
+# ignored unless the appropriate base-installer/kernel/linux/initrd*
+# is true).
 Description: use an initramfs (linux 2.6 only)
+
+Template: base-installer/kernel/linux/initramfs-generators
+Type: string
+Default: initramfs-tools
+# Space separated list of initrd generator packages to use. If you list more
+# than one for an architecture, the user will be asked to select one
+# (depending on priority). The generator listed first will be the default.
+# Note: if you add a new one, don't forget to support it in the postinst.
+Description: package to use to generate initramfs
 
 Template: base-installer/kernel/linux/extra-packages
 Type: string

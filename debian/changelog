@@ -1,3 +1,101 @@
+base-installer (1.41ubuntu1) dapper; urgency=low
+
+  * Resynchronise with Debian.
+  * Set base-installer/kernel/linux/initramfs-generators default to
+    initramfs-tools for all architectures.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon,  2 Jan 2006 00:44:18 +0000
+
+base-installer (1.41) unstable; urgency=low
+
+  [ Frans Pop ]
+  * Add support for different initramfs generators, allowing different
+    defaults per architecture. If there are multiple values, allow the
+    user to select one (depending on priority).
+  * Enable initramfs generation for hppa.
+
+  [ Joey Hess ]
+  * Rework initramfs templates, remove the clumsy "initramfs initrd"
+    construct; the fact that it's an initramfs is essentially an
+    implementation detail that users do not need to worry about.
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Guillem Jover
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Greek, Modern (1453-) (el.po) by quad-nrg.net
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Finnish (fi.po) by Tapio Lehtonen
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Indonesian (id.po) by Parlin Imanuel Toh
+  * Italian (it.po) by Giuseppe Sacco
+  * Japanese (ja.po) by Kenshi Muto
+  * Kazakh (kk.po) by Talgat Daniyarov
+  * Korean (ko.po) by Sunjae park
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Bokmål, Norwegian (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Frans Pop
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Peter Mann
+  * Swedish (sv.po) by Daniel Nylander
+  * Tagalog (tl.po) by Eric Pareja
+
+ -- Frans Pop <fjp@debian.org>  Fri, 30 Dec 2005 13:30:01 +0100
+
+base-installer (1.40) unstable; urgency=low
+
+  [ Frans Pop ]
+  * Get codename from mirror/codename instead of determining it from SUITE.
+    Requires: cdrom-detect >=1.11; choose-mirror >=1.16; iso-scan >=1.10.
+  * Enable the use of initramfs-tools again now that it is in testing.
+
+  [ Joey Hess ]
+  * Move post install hooks to run after debootstrap but before the
+    installation of the kernel and other extra packages. This allows
+    this hook to be used for preseeding packages installed after debootstrap.
+  * Avoid crashing the postinst if arch_get_kernel_flavour fails, this better
+    supports the case of some unknown subarch since later tests will result
+    in a warning message being shown to the user about there being no usable
+    kernel.
+  * Add guards around uses of FLAVOUR in case above change makes it be empty
+    to prevent that breaking anything.
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Guillem Jover
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Italian (it.po) by Giuseppe Sacco
+  * Japanese (ja.po) by Kenshi Muto
+  * Korean (ko.po) by Sunjae park
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Malagasy (mg.po) by Jaonary Rabarisoa
+  * Macedonian (mk.po) by Georgi Stanojevski
+  * Bokmål, Norwegian (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Frans Pop
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Peter Mann
+  * Slovenian (sl.po) by Jure Čuhalev
+  * Swedish (sv.po) by Daniel Nylander
+  * Tagalog (tl.po) by Eric Pareja
+  * Turkish (tr.po) by Recai Oktaş
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+  * Simplified Chinese (zh_CN.po) by Ming Hua
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 19 Dec 2005 22:40:25 -0500
+
 base-installer (1.39ubuntu2) dapper; urgency=low
 
   * Restore usplash as base-installer/kernel/linux/extra-packages-2.6
