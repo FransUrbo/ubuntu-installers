@@ -1,3 +1,44 @@
+base-installer (1.42ubuntu1) dapper; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 17 Jan 2006 20:37:23 +0000
+
+base-installer (1.42) unstable; urgency=low
+
+  [ Frans Pop ]
+  * Fix typo in template names.
+
+  [ Colin Watson ]
+  * If an initramfs generator fails to install and we're installing sarge,
+    then attempt to fall back to initrd-tools (closes: #344371).
+
+  [ Frans Pop ]
+  * Alternative solution for falling back to initrd-tools for sarge installs.
+  * Also support -486 kernel image flavours for i386 as introduced with 2.6.15.
+    Reliable detection of 486 processors is not possible, so continue treating
+    386 and 486 as equivalent even if 386 is no longer supported.
+
+  [ Updated translations ]
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Greek, Modern (1453-) (el.po) by quad-nrg.net
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Finnish (fi.po) by Tapio Lehtonen
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hebrew (he.po) by Lior Kaplan
+  * Italian (it.po) by Giuseppe Sacco
+  * Japanese (ja.po) by Kenshi Muto
+  * Korean (ko.po) by Sunjae park
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Russian (ru.po) by Yuri Kozlov
+  * Swedish (sv.po) by Daniel Nylander
+
+ -- Frans Pop <fjp@debian.org>  Sat,  7 Jan 2006 23:13:53 +0100
+
 base-installer (1.41ubuntu1) dapper; urgency=low
 
   * Resynchronise with Debian.
