@@ -1,3 +1,10 @@
+base-installer (1.39ubuntu2) dapper; urgency=low
+
+  * Restore usplash as base-installer/kernel/linux/extra-packages-2.6
+    default.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 12 Dec 2005 19:59:57 +0000
+
 base-installer (1.39ubuntu1) dapper; urgency=low
 
   * Resynchronise with Debian.
