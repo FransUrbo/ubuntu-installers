@@ -366,6 +366,8 @@ kernel_present () {
 }
 
 pick_kernel () {
+	kernel_update_list
+
 	# Check for overrides
 	if db_get base-installer/kernel/override-image && [ "$RET" ]; then
 		if kernel_present "$RET"; then
@@ -384,8 +386,6 @@ pick_kernel () {
 	elif db_get base-installer/kernel/image && [ "$RET" ]; then
 		KERNEL="$RET"
 	fi
-
-	kernel_update_list
 
 	# For now, only present kernels we believe to be usable. We may have
 	# to rethink this later, but if there are no usable kernels it
