@@ -46,36 +46,38 @@ arch_get_kernel () {
 		SMP=
 	fi
 
-	if [ "$KERNEL_MAJOR" = 2.4 ]; then
-		imgbase="kernel-image-$KERNEL_MAJOR"
-	else
-		imgbase=linux
-	fi
 	if [ "$1" = k7 ]; then
 		if [ "$SMP" ]; then
-			echo "$imgbase-k7$SMP"
+			echo "linux-k7$SMP"
+			echo "linux-image-k7$SMP"
 		fi
-		echo "$imgbase-k7"
+		echo "linux-k7"
+		echo "linux-image-k7"
 		set k6
 	fi
 	if [ "$1" = k6 ]; then
 		if [ "$KERNEL_MAJOR" = 2.4 ]; then
-			echo "$imgbase-k6"
+			echo "linux-k6"
+			echo "linux-image-k6"
 		fi
 		set 586tsc
 	fi
 	if [ "$1" = 686 ]; then
 		if [ "$SMP" ]; then
-			echo "$imgbase-686$SMP"
+			echo "linux-686$SMP"
+			echo "linux-image-686$SMP"
 		fi
-		echo "$imgbase-686"
+		echo "linux-686"
+		echo "linux-image-686"
 		set 586tsc
 	fi
 	if [ "$1" = 586tsc ]; then
 		if [ "$KERNEL_MAJOR" = 2.4 ]; then
-			echo "$imgbase-586tsc"
+			echo "linux-586tsc"
+			echo "linux-image-586tsc"
 		fi
 		set 386
 	fi
-	echo "$imgbase-386"
+	echo "linux-386"
+	echo "linux-image-386"
 }

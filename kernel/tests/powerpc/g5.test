@@ -4,7 +4,9 @@ majors 2.6
 flavour powerpc64
 kernel-2.6 \
   linux-powerpc64-smp \
-  linux-powerpc64
+  linux-image-powerpc64-smp \
+  linux-powerpc64 \
+  linux-image-powerpc64
 usable \
   linux-powerpc64-smp \
   linux-image-powerpc64-smp \

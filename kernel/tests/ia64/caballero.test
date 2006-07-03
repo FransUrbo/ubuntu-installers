@@ -3,7 +3,9 @@ majors 2.6
 flavour mckinley
 kernel-2.6 \
   linux-mckinley-smp \
-  linux-mckinley
+  linux-image-mckinley-smp \
+  linux-mckinley \
+  linux-image-mckinley
 usable \
   linux-itanium \
   linux-itanium-smp \

@@ -294,6 +294,13 @@ EOT
 		fi
 	else
 		echo "deb $APTSOURCE $DISTRIBUTION $COMPONENTS" > /target/etc/apt/sources.list
+		echo "deb $APTSOURCE $DISTRIBUTION-updates $COMPONENTS" >> /target/etc/apt/sources.list
+		if db_get apt-setup/security_host; then
+			SECMIRROR="$RET"
+		else
+			SECMIRROR="$MIRROR"
+		fi
+		echo "deb $PROTOCOL://$MIRROR/ubuntu $DISTRIBUTION-security $COMPONENTS" >> /target/etc/apt/sources.list
 	fi
 
 	# Make apt trust Debian CDs. This is not on by default (we think).

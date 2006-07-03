@@ -4,8 +4,11 @@ flavour amd64-k8
 numcpus 2
 kernel-2.6 \
   linux-amd64-k8-smp \
+  linux-image-amd64-k8-smp \
   linux-amd64-k8 \
-  linux-amd64-generic
+  linux-image-amd64-k8 \
+  linux-amd64-generic \
+  linux-image-amd64-generic
 usable \
   linux-amd64-generic \
   linux-amd64-k8 \

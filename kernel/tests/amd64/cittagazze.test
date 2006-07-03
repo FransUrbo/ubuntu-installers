@@ -3,7 +3,9 @@ majors 2.6
 flavour amd64-k8
 kernel-2.6 \
   linux-amd64-k8 \
-  linux-amd64-generic
+  linux-image-amd64-k8 \
+  linux-amd64-generic \
+  linux-image-amd64-generic
 usable \
   linux-amd64-generic \
   linux-amd64-k8 \

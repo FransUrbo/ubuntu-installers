@@ -4,7 +4,8 @@ majors 2.6
 flavour 586tsc
 env SPEAKUP /nonexistent
 kernel-2.6 \
-  linux-386
+  linux-386 \
+  linux-image-386
 usable \
   linux-386 \
   linux-image-386 \

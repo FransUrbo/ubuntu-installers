@@ -48,8 +48,10 @@ arch_get_kernel () {
 				2.6)
 					if [ "$SMP" ]; then
 						echo "linux-$1$SMP"
+						echo "linux-image-$1$SMP"
 					fi
 					echo "linux-$1"
+					echo "linux-image-$1"
 					;;
 				*)
 					if [ "$1" = powerpc ] && [ "$SMP" ]; then

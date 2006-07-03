@@ -5,8 +5,11 @@ env SPEAKUP /nonexistent
 numcpus 2
 kernel-2.6 \
   linux-686-smp \
+  linux-image-686-smp \
   linux-686 \
-  linux-386
+  linux-image-686 \
+  linux-386 \
+  linux-image-386
 usable \
   linux-386 \
   linux-686-smp \

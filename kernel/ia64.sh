@@ -21,6 +21,8 @@ arch_get_kernel () {
 	CPUS="$(grep ^processor "$CPUINFO" | tail -n 1 | cut -d: -f2)"
 	if [ -z "$CPUS" ] || [ "$CPUS" -ne 0 ]; then
 		echo "linux-$1-smp"
+		echo "linux-image-$1-smp"
 	fi
 	echo "linux-$1"
+	echo "linux-image-$1"
 }

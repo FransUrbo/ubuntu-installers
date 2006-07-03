@@ -1,3 +1,12 @@
+base-installer (1.42ubuntu2) dapper; urgency=low
+
+  * Set up the default sources.list to look in -updates and -security (the
+    latter from apt-setup/security_host) as well as the unadorned suite.
+  * Look for linux-image-* as well as linux-* to make installs without
+    restricted work better.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu,  9 Feb 2006 10:54:34 +0000
+
 base-installer (1.42ubuntu1) dapper; urgency=low
 
   * Resynchronise with Debian.

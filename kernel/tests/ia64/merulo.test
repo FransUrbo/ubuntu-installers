@@ -3,7 +3,9 @@ majors 2.6
 flavour itanium
 kernel-2.6 \
   linux-itanium-smp \
-  linux-itanium
+  linux-image-itanium-smp \
+  linux-itanium \
+  linux-image-itanium
 usable \
   linux-itanium \
   linux-itanium-smp \

@@ -28,6 +28,8 @@ arch_get_kernel () {
 
 	if [ -z "$CPUS" ] || [ "$CPUS" -ne 0 ]; then
 		echo "linux-$family-smp"
+		echo "linux-image-$family-smp"
 	fi
 	echo "linux-$family"
+	echo "linux-image-$family"
 }

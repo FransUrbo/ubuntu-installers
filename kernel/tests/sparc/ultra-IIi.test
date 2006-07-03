@@ -2,7 +2,9 @@ cpuinfo ultra-IIi.cpuinfo
 machine sparc64
 majors 2.6
 flavour sparc64
-kernel-2.6 linux-sparc64
+kernel-2.6 \
+  linux-sparc64 \
+  linux-image-sparc64
 usable \
   linux-sparc64 \
   linux-sparc64-smp \
