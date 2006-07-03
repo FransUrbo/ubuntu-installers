@@ -1,8 +1,8 @@
-base-installer (1.61ubuntu1) UNRELEASED; urgency=low
+base-installer (1.61ubuntu1) edgy; urgency=low
 
   * Resynchronise with Debian.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon,  3 Jul 2006 10:56:00 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon,  3 Jul 2006 11:20:06 +0100
 
 base-installer (1.61) unstable; urgency=low
 
