@@ -1,3 +1,10 @@
+base-installer (1.35.2) unstable; urgency=low
+
+  * Remove code that munged/demunged Packages and Release filename in the
+    cache for debootstrap, since debootstrap no longer does that munging.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 26 Oct 2005 12:50:01 -0400
+
 base-installer (1.35.1) unstable; urgency=low
 
   * beta 1 branch
