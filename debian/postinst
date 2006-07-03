@@ -648,7 +648,10 @@ EOF
 			resume=
 		fi
 		if [ -n "$ramdiskconf" -a "$resume" ]; then
-			if [ -f $ramdiskconf ] ; then
+			if [ "$package" = initramfs-tools ]; then
+				mkdir -p /target/etc/mkinitramfs/conf.d
+				echo "RESUME=$resume" > /target/etc/mkinitramfs/conf.d/resume
+			elif [ -f $ramdiskconf ] ; then
 				sed -e "s@^#* *RESUME=.*@RESUME=$resume@" < $ramdiskconf > $ramdiskconf.new &&
 					mv $ramdiskconf.new $ramdiskconf
 			else
