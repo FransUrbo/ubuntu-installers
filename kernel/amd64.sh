@@ -35,15 +35,17 @@ arch_get_kernel () {
 	else
 		SMP=
 	fi
-	case "$1" in
-		amd64-k8)
+
+	if [ "$1" = amd64-k8 ]; then
+		if [ "$SMP" ]; then
 			echo "linux-amd64-k8$SMP"
-			;;
-		em64t-p4)
-			echo "linux-amd64-xeon"
-			;;
-		*)
-			echo "linux-amd64-generic"
-			;;
-	esac
+		fi
+		echo "linux-amd64-k8"
+		set amd64-generic
+	fi
+	if [ "$1" = em64t-p4 ]; then
+		echo "linux-amd64-xeon"
+		set amd64-generic
+	fi
+	echo "linux-amd64-generic"
 }

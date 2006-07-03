@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <signal.h>
 #include <string.h>
 #include <ctype.h>
 
@@ -14,15 +13,8 @@
 
 #define DEBCONF_BASE          "base-installer/debootstrap/"
 
-volatile int child_exit = 0;
 struct debconfclient *debconf = NULL;
 int progress_start_position = 0;
-
-static void
-sig_child(int sig)
-{
-    child_exit = 1;
-}
 
 /* args = read_arg_lines("EA: ", ifp, &arg_count, &line); */
 char **
@@ -164,6 +156,7 @@ exec_debootstrap(char **argv){
     int llen;
     size_t dummy = 0;
     int current_section = 0;
+    int child_exit = 0;
 
     pipe(from_db);
 
@@ -177,11 +170,6 @@ exec_debootstrap(char **argv){
 
         if (freopen("/dev/null", "r", stdin) == NULL)
             perror("freopen");
-
-        if (freopen("/var/log/messages", "a", stderr) == NULL)
-            perror("freopen");
-
-        dup2(2, 1);
 
         setenv("PERL_BADLANG", "0", 1);
         /* These are needed to hack around a hack (!) in update-inetd
@@ -199,8 +187,6 @@ exec_debootstrap(char **argv){
         perror("fork");
         return -1;
     }
-
-    signal(SIGCHLD, &sig_child);
 
     progress_start_position = get_progress_start_position();
 
@@ -290,13 +276,16 @@ exec_debootstrap(char **argv){
                         ptr = n_sprintf(line+4, arg_count, args);
                         if (ptr == NULL)
                             return -1;
-                        /* fallback warning message */
+                        /* Fallback warning message. Unlike the above,
+			 * display this as an error, since it could be
+			 * arbitrarily bad. */
                         debconf_subst(debconf, DEBCONF_BASE "fallback-warning",
 				      "INFO", ptr);
 			debconf_subst(debconf, DEBCONF_BASE "fallback-warning",
 			              "SECTION", section_text);
-                        debconf_progress_info(debconf,
-					      DEBCONF_BASE "fallback-warning");
+                        debconf_input(debconf, "critical",
+				      DEBCONF_BASE "fallback-warning");
+                        debconf_go(debconf);
                         free(ptr);
                     }
                     else

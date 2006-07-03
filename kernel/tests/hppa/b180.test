@@ -1,7 +1,7 @@
 cpuinfo b180.cpuinfo
 machine parisc
 majors 2.6
-flavour parisc32
+flavour parisc
 kernel-2.6 linux-hppa32
 usable \
   linux-hppa32 \

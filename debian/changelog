@@ -1,44 +1,132 @@
-base-installer (1.35.5ubuntu1) dapper; urgency=low
+base-installer (1.39ubuntu1) dapper; urgency=low
 
   * Resynchronise with Debian.
+  * Drop Provides: target-base-system, since nothing depends on that any
+    more.
+  * Update some kernel versions in test suite.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed,  9 Nov 2005 19:02:18 -0500
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 30 Nov 2005 18:58:51 +0000
 
-base-installer (1.35.5) unstable; urgency=low
+base-installer (1.39) unstable; urgency=low
 
-  * Make sure that neither apt-cdrom or apt unount/mount CD-ROMs;
-    needed to make cdrom: source lines also work with CD images.
+  * Use log-output for installing extra packages.
 
- -- Frans Pop <fjp@debian.org>  Sat, 29 Oct 2005 20:40:49 +0200
+ -- Frans Pop <fjp@debian.org>  Fri, 18 Nov 2005 20:30:48 +0100
 
-base-installer (1.35.4) unstable; urgency=low
+base-installer (1.38) unstable; urgency=low
 
-  * Make sure sources.list is empty before running apt-cdrom.
-  * No need to run apt-get update as we already have apt_update.
+  * Use log-output for apt-cdrom.
 
- -- Frans Pop <fjp@debian.org>  Sat, 29 Oct 2005 12:58:19 +0200
+ -- Frans Pop <fjp@debian.org>  Fri, 18 Nov 2005 20:18:35 +0100
 
-base-installer (1.35.3) unstable; urgency=low
+base-installer (1.37) unstable; urgency=low
 
-  * Use a cdrom: source line in apt instead of a file: source line to make
-    apt's TrustCDROM option actually work.
+  * Remove sigchld handler in run_debootstrap. It caused it to stop processing
+    before it got to debootstrap error messages, so useful error messages
+    were not displayed. Closes: #337191
+  * Temporarily switch back to using initrd-tools for 2.6, until
+    initramfs-tools is in testing.
 
- -- Frans Pop <fjp@debian.org>  Thu, 27 Oct 2005 19:13:13 +0200
+  [ Updated translations ]
+  * German (de.po) by Jens Seidel
+  * French (fr.po) by Christian Perrier
+  * Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
 
-base-installer (1.35.2) unstable; urgency=low
+ -- Joey Hess <joeyh@debian.org>  Fri, 18 Nov 2005 13:02:56 -0500
 
-  * Remove code that munged/demunged Packages and Release filename in the
-    cache for debootstrap, since debootstrap no longer does that munging.
+base-installer (1.36) unstable; urgency=low
 
- -- Joey Hess <joeyh@debian.org>  Wed, 26 Oct 2005 12:50:01 -0400
+  [ Joey Hess ]
+  * Remove mkinitrd.conf hacking code that worked around bugs in the woody
+    version, not supported by this version of d-i.
 
-base-installer (1.35.1) unstable; urgency=low
+  [ Frans Pop ]
+  * Support defining multiple prefered kernel versions. This allows
+    base-installer to install a kernel-image meta package even if the first
+    preference is not available.
 
-  * beta 1 branch
+  [ Joey Hess ]
   * Force APT::Authentication::TrustCDROM to true so that apt 0.6.42 will
     install from Debian CDs again.
 
- -- Joey Hess <joeyh@debian.org>  Thu, 20 Oct 2005 12:51:32 -0400
+  [ Frans Pop ]
+  * Re-implement the use of log-output using the new version written in C.
+  * Remove hard-coded redirection to /var/log/messages in run-debootstrap so
+    that log-output in the postinst can do its work.
+
+  [ Joey Hess ]
+  * Remove code that munged/demunged Packages and Release filename in the
+    cache for debootstrap, since debootstrap no longer does that munging.
+
+  [ Frans Pop ]
+  * Use a cdrom: source line in apt instead of a file: source line to make
+    apt's TrustCDROM option actually work. Make sure sources.list is empty
+    before running apt-cdrom.
+  * Make sure that neither apt-cdrom or apt unount/mount CD-ROMs; needed to
+    make cdrom: source lines also work with CD images.
+
+  [ Joey Hess ]
+  * Display fallback warning messages as using an error template instead
+    of in the progress bar, since they can be arbitrarily bad. Warnings that
+    have a template (ie, the download retry warning) still display as progress
+    bar updates.
+  * Delete any cruft left behind by a past debootstrap run in
+    /target/var/lib/apt. This avoids a problem where 1) debootstrap is run
+    before dinstall 2) Packages file download fails and aborts the run 3)
+    debootstrap is re-run after dinstall, does not refresh Release file, and
+    fails since the new Packages file it does download has a m5sum mismatch
+    with the old Release file. (Ah, the joys of running d-i on dialup..)
+
+  [ Sven Luther ]
+  * Adapted to chrp_rs6k -> chrp_ibm migration.
+
+  [ Colin Watson ]
+  * Fix code to avoid -smp variants on powerpc64.
+  * Support configuring initramfs-tools rather than initrd-tools, and make
+    that the default when installing 2.6. We still use initrd-tools on hppa
+    and ia64, as the most current information I have indicates that
+    initramfs-tools doesn't work there; porters should feel free to update
+    this. I've left notes for where I think yaird could best be slotted in.
+  * Allow extra packages to be installed along with init*-tools, controlled
+    by base-installer/kernel/linux/extra-packages* templates. This allows
+    derivatives to install initramfs hooks such as usplash.
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Bulgarian (bg.po) by Ognyan Kulev
+  * Bengali (bn.po) by Baishampayan Ghose
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Icelandic (is.po) by David Steinn Geirsson
+  * Italian (it.po) by Giuseppe Sacco
+  * Japanese (ja.po) by Kenshi Muto
+  * Korean (ko.po) by Sunjae park
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Macedonian (mk.po) by Georgi Stanojevski
+  * Bokmål, Norwegian (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Bart Cornelis
+  * Norwegian Nynorsk (nn.po)
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Peter Mann
+  * Swedish (sv.po) by Daniel Nylander
+  * Tagalog (tl.po) by Eric Pareja
+  * Turkish (tr.po) by Recai Oktaş
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+  * Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+  * Simplified Chinese (zh_CN.po) by Ming Hua
+
+  [ Frans Pop ]
+  * Add myself to uploaders.
+
+ -- Frans Pop <fjp@debian.org>  Tue, 15 Nov 2005 20:36:19 +0100
 
 base-installer (1.35) unstable; urgency=low
 

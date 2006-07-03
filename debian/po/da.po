@@ -11,14 +11,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"POT-Creation-Date: 2005-09-26 16:28+0200\n"
-"PO-Revision-Date: 2005-09-27 19:00+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-03 18:31-0700\n"
+"PO-Revision-Date: 2005-11-05 21:44+0100\n"
 "Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.10.2\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
@@ -233,8 +233,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-msgid "Check /var/log/syslog or see virtual console 3 for the details."
-msgstr "Tjek /var/log/syslog eller kig på den virtuelle konsol 3 for detaljer."
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr "Tjek /var/log/syslog eller kig på den virtuelle konsol 4 for detaljer."
 
 #. Type: error
 #. Description
@@ -384,6 +384,12 @@ msgstr "Sætter basissystemet op"
 
 #. Type: text
 #. Description
+#: ../base-installer.templates:198
+msgid "${SECTION}: ${INFO}..."
+msgstr "${SECTION}: ${INFO}..."
+
+#. Type: text
+#. Description
 #: ../base-installer.templates:202
 msgid "Validating ${SUBST0}..."
 msgstr "Validerer ${SUBST0}..."
@@ -484,69 +490,75 @@ msgstr "Sætter basissystemet op..."
 msgid "Base system installed successfully."
 msgstr "Basissystemet blev installeret."
 
-#. Type: text
+#. Type: error
 #. Description
 #: ../base-installer.templates:270
-msgid "${SECTION}: ${INFO}..."
-msgstr "${SECTION}: ${INFO}..."
+msgid "Debootstrap warning"
+msgstr "Debootstrap-advarsel"
+
+#. Type: error
+#. Description
+#: ../base-installer.templates:270
+msgid "Warning: ${INFO}"
+msgstr "Advarsel: ${INFO}"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:274
+#: ../base-installer.templates:275
 msgid "Retrying failed download of ${SUBST0}"
 msgstr "Forsøger igen at hente ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:278
+#: ../base-installer.templates:279
 msgid "Configuring APT sources..."
 msgstr "Sætter APT-kilder op..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:282
+#: ../base-installer.templates:283
 msgid "Updating the list of available packages..."
 msgstr "Opdaterer listen over tilgængelige pakker..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:286
+#: ../base-installer.templates:287
 msgid "Installing extra packages..."
 msgstr "Installerer ekstrapakker..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:290
+#: ../base-installer.templates:291
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr "Installerer ekstra-pakker - henter og installerer ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:294
+#: ../base-installer.templates:295
 msgid "Creating device files..."
 msgstr "Opretter enhedsfiler..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:298
+#: ../base-installer.templates:299
 msgid "Selecting the kernel to install..."
 msgstr "Vælger den kerne, der skal installeres..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:302
+#: ../base-installer.templates:303
 msgid "Installing the kernel..."
 msgstr "Installerer kernen..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:306
+#: ../base-installer.templates:307
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr "Installerer kernen - henter og installerer ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:310
+#: ../base-installer.templates:311
 msgid "Installing the PCMCIA modules"
 msgstr "Installerer PCMCIA-modulerne"
 
@@ -554,6 +566,6 @@ msgstr "Installerer PCMCIA-modulerne"
 #. Description
 #. Item in the main menu to select this package
 #. TRANSLATORS: <65 columns
-#: ../base-installer.templates:316
+#: ../base-installer.templates:317
 msgid "Install the base system"
 msgstr "Installér basissystemet"

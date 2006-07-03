@@ -10,14 +10,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"POT-Creation-Date: 2005-09-26 16:28+0200\n"
-"PO-Revision-Date: 2005-09-28 17:15+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-03 18:31-0700\n"
+"PO-Revision-Date: 2005-11-09 08:14+0100\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: boolean
 #. Description
@@ -225,8 +225,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-msgid "Check /var/log/syslog or see virtual console 3 for the details."
-msgstr "Podrobnosti naleznete ve /var/log/syslog nebo na 3. virtuální konzoli."
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr "Podrobnosti naleznete ve /var/log/syslog nebo na 4. virtuální konzoli."
 
 #. Type: error
 #. Description
@@ -376,6 +376,12 @@ msgstr "Nastavuje se základní systém"
 
 #. Type: text
 #. Description
+#: ../base-installer.templates:198
+msgid "${SECTION}: ${INFO}..."
+msgstr "${SECTION}: ${INFO}..."
+
+#. Type: text
+#. Description
 #: ../base-installer.templates:202
 msgid "Validating ${SUBST0}..."
 msgstr "Ověřuje se ${SUBST0}..."
@@ -476,69 +482,75 @@ msgstr "Nastavuje se základní systém..."
 msgid "Base system installed successfully."
 msgstr "Základní systém byl úspěšně nainstalován."
 
-#. Type: text
+#. Type: error
 #. Description
 #: ../base-installer.templates:270
-msgid "${SECTION}: ${INFO}..."
-msgstr "${SECTION}: ${INFO}..."
+msgid "Debootstrap warning"
+msgstr "Varování debootstrapu"
+
+#. Type: error
+#. Description
+#: ../base-installer.templates:270
+msgid "Warning: ${INFO}"
+msgstr "Varování: ${INFO}"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:274
+#: ../base-installer.templates:275
 msgid "Retrying failed download of ${SUBST0}"
 msgstr "Probíhá další pokus o stažení ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:278
+#: ../base-installer.templates:279
 msgid "Configuring APT sources..."
 msgstr "Nastavují se zdroje pro APT..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:282
+#: ../base-installer.templates:283
 msgid "Updating the list of available packages..."
 msgstr "Aktualizuje se seznam dostupných balíků..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:286
+#: ../base-installer.templates:287
 msgid "Installing extra packages..."
 msgstr "Instalují se extra balíky..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:290
+#: ../base-installer.templates:291
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr "Instaluji extra balíky - stahuji a instaluji ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:294
+#: ../base-installer.templates:295
 msgid "Creating device files..."
 msgstr "Vytváří se soubory zařízení..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:298
+#: ../base-installer.templates:299
 msgid "Selecting the kernel to install..."
 msgstr "Vybírá se jádro pro instalaci..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:302
+#: ../base-installer.templates:303
 msgid "Installing the kernel..."
 msgstr "Instaluje se jádro..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:306
+#: ../base-installer.templates:307
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr "Instaluji jádro - stahuji a instaluji ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:310
+#: ../base-installer.templates:311
 msgid "Installing the PCMCIA modules"
 msgstr "Instalují se PCMCIA moduly"
 
@@ -546,6 +558,6 @@ msgstr "Instalují se PCMCIA moduly"
 #. Description
 #. Item in the main menu to select this package
 #. TRANSLATORS: <65 columns
-#: ../base-installer.templates:316
+#: ../base-installer.templates:317
 msgid "Install the base system"
 msgstr "Instalovat základní systém"

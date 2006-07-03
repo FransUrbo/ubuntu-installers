@@ -6,20 +6,19 @@
 # translation of mk.po to Macedonian
 # Macedonian strings from the debian-installer.
 # Georgi Stanojevski, <glisha@gmail.com>, 2004, 2005.
-# Georgi Stanojevski <gogo@stavre>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
-"POT-Creation-Date: 2005-09-26 16:28+0200\n"
-"PO-Revision-Date: 2005-07-26 20:54+0200\n"
-"Last-Translator: Georgi Stanojevski <gogo@stavre>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-03 18:31-0700\n"
+"PO-Revision-Date: 2005-10-09 15:30+0200\n"
+"Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.10.2\n"
 
 #. Type: boolean
 #. Description
@@ -155,7 +154,7 @@ msgstr "Кернел пакет: „${KERNEL}“."
 #. Choices
 #: ../base-installer.templates:70
 msgid "${KERNELS}, none"
-msgstr ""
+msgstr "${KERNELS}, никој"
 
 #. Type: select
 #. Description
@@ -176,9 +175,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../base-installer.templates:78
-#, fuzzy
 msgid "Continue without installing a kernel?"
-msgstr "Продолжи со инсталацијата?"
+msgstr "Продолжи без да се инсталира кернел?"
 
 #. Type: boolean
 #. Description
@@ -195,43 +193,45 @@ msgid ""
 "kernel later. This is only recommended for experts, otherwise you will "
 "likely end up with a machine that doesn't boot."
 msgstr ""
+"Можеш да продолжиш без кернел и рачно да инсталираш сопствен кернел подоцна. "
+"Ова е препорачливо само за експерти, бидејќи во спротивно ќе останеш со "
+"компјутер кој нема да се бутира."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:87
-#, fuzzy
 msgid "Cannot install kernel"
-msgstr "Не успеав да го инсталирам основниот систем"
+msgstr "Не успеав да инсталирам кернел"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:87
 msgid "The installer cannot find a suitable kernel package to install."
 msgstr ""
+"Инсталерот неможе да најде соодветен пакет за кернелот кој би се инсталирал."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-#, fuzzy
 msgid "Unable to install ${PACKAGE}"
-msgstr "Неможам да го инсталирам GRUB во ${BOOTDEV}"
+msgstr "Неможам да инсталирам ${PACKAGE}"
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-#, fuzzy
 msgid ""
 "An error was returned while trying to install the ${PACKAGE} package onto "
 "the target system."
 msgstr ""
-"Се случи грешка при инсталацијата на initrd-tools пакетот на целниот систем."
+"Се сличи грешка додека пробував да го инсталирам пакетот ${PACKAGE} во "
+"целниот систем."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-#, fuzzy
-msgid "Check /var/log/syslog or see virtual console 3 for the details."
-msgstr "Провери во /target/var/log/bootstrap.log за детали."
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"Провери во /var/log/syslog или види ја виртуелната конзола 4 за детали."
 
 #. Type: error
 #. Description
@@ -381,6 +381,12 @@ msgstr "Конфигурирање на основниот систем"
 
 #. Type: text
 #. Description
+#: ../base-installer.templates:198
+msgid "${SECTION}: ${INFO}..."
+msgstr "${SECTION}: ${INFO}..."
+
+#. Type: text
+#. Description
 #: ../base-installer.templates:202
 msgid "Validating ${SUBST0}..."
 msgstr "Валидирање ${SUBST0}..."
@@ -419,7 +425,7 @@ msgstr "Проверка на Release потписот"
 #. Description
 #: ../base-installer.templates:226
 msgid "Valid Release signature (key id ${SUBST0})"
-msgstr "Валиден Release потпис (клуч ${SUBST0})."
+msgstr "Валиден Release потпис (клуч ${SUBST0})"
 
 #. Type: text
 #. Description
@@ -481,70 +487,77 @@ msgstr "Конфигурирање на основниот систем..."
 msgid "Base system installed successfully."
 msgstr "Базниот систем инсталиран успешно."
 
-#. Type: text
+#. Type: error
 #. Description
 #: ../base-installer.templates:270
-msgid "${SECTION}: ${INFO}..."
-msgstr "${SECTION}: ${INFO}..."
+#, fuzzy
+msgid "Debootstrap warning"
+msgstr "Debootstrap грешка"
+
+#. Type: error
+#. Description
+#: ../base-installer.templates:270
+msgid "Warning: ${INFO}"
+msgstr ""
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:274
+#: ../base-installer.templates:275
 msgid "Retrying failed download of ${SUBST0}"
 msgstr "Повторното преземање на ${SUBST0} не успеа"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:278
+#: ../base-installer.templates:279
 msgid "Configuring APT sources..."
 msgstr "Конфигурирање на APT изворите..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:282
+#: ../base-installer.templates:283
 msgid "Updating the list of available packages..."
 msgstr "Синхронизирање на листата на достапни пакети..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:286
+#: ../base-installer.templates:287
 msgid "Installing extra packages..."
 msgstr "Инстлирање на екстра пакетите..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:290
+#: ../base-installer.templates:291
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr ""
 "Инсталирање на дополнителните пакети - преземање и инсталирање ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:294
+#: ../base-installer.templates:295
 msgid "Creating device files..."
 msgstr "Креирање на датотеките за уреди..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:298
+#: ../base-installer.templates:299
 msgid "Selecting the kernel to install..."
 msgstr "Избирање на кернел кој ќе се инсталира..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:302
+#: ../base-installer.templates:303
 msgid "Installing the kernel..."
 msgstr "Инстлирање на кернел..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:306
+#: ../base-installer.templates:307
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr "Инсталирање на кернелот - преземање и инсталирање ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:310
+#: ../base-installer.templates:311
 msgid "Installing the PCMCIA modules"
 msgstr "Инстлирање PCMCIA модули"
 
@@ -552,6 +565,6 @@ msgstr "Инстлирање PCMCIA модули"
 #. Description
 #. Item in the main menu to select this package
 #. TRANSLATORS: <65 columns
-#: ../base-installer.templates:316
+#: ../base-installer.templates:317
 msgid "Install the base system"
 msgstr "Инсталирај го основниот систем"

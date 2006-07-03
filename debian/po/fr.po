@@ -3,7 +3,6 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of fr.po to French
 # French messages for debian-installer.
 # Copyright (C) 2004 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -17,14 +16,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
-"POT-Creation-Date: 2005-09-26 16:28+0200\n"
-"PO-Revision-Date: 2005-09-27 06:58+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-03 18:31-0700\n"
+"PO-Revision-Date: 2005-11-17 08:09+0100\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 "X-Generator: KBabel 1.10.2\n"
 
@@ -244,9 +243,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-msgid "Check /var/log/syslog or see virtual console 3 for the details."
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
 msgstr ""
-"Veuillez consulter le fichier /var/log/syslog ou la troisième console "
+"Veuillez consulter le fichier /var/log/syslog ou la quatrième console "
 "virtuelle pour obtenir des précisions."
 
 #. Type: error
@@ -293,7 +292,7 @@ msgid ""
 "CD, depending on your installation method."
 msgstr ""
 "Impossible de récupérer ${SUBST0}. Ceci peut être dû à un problème de réseau "
-"ou un CD défectueux, selon votre méthode d'installation."
+"ou un cédérom défectueux, selon votre méthode d'installation."
 
 #. Type: error
 #. Description
@@ -302,7 +301,7 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
-"Si vous installez à partir d'un CD-R ou CD-RW, enregistrer le CD à une "
+"Si vous installez à partir d'un CD-R ou CD-RW, enregistrer le cédérom à une "
 "vitesse plus faible peut aider."
 
 #. Type: text
@@ -394,6 +393,12 @@ msgstr "Décompression du système de base"
 #: ../base-installer.templates:194
 msgid "Configuring the base system"
 msgstr "Configuration du système de base"
+
+#. Type: text
+#. Description
+#: ../base-installer.templates:198
+msgid "${SECTION}: ${INFO}..."
+msgstr "${SECTION}: ${INFO}..."
 
 #. Type: text
 #. Description
@@ -497,39 +502,45 @@ msgstr "Configuration du système de base..."
 msgid "Base system installed successfully."
 msgstr "Le système de base a été correctement installé."
 
-#. Type: text
+#. Type: error
 #. Description
 #: ../base-installer.templates:270
-msgid "${SECTION}: ${INFO}..."
-msgstr "${SECTION}: ${INFO}..."
+msgid "Debootstrap warning"
+msgstr "Avertissement de debootstrap"
+
+#. Type: error
+#. Description
+#: ../base-installer.templates:270
+msgid "Warning: ${INFO}"
+msgstr "Avertissement : ${INFO}"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:274
+#: ../base-installer.templates:275
 msgid "Retrying failed download of ${SUBST0}"
 msgstr "Tentative de reprise du téléchargement de ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:278
+#: ../base-installer.templates:279
 msgid "Configuring APT sources..."
 msgstr "Configuration des sources d'APT..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:282
+#: ../base-installer.templates:283
 msgid "Updating the list of available packages..."
 msgstr "Mise à jour de la liste des paquets disponibles..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:286
+#: ../base-installer.templates:287
 msgid "Installing extra packages..."
 msgstr "Installation des paquets supplémentaires..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:290
+#: ../base-installer.templates:291
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr ""
 "Installation de paquets supplémentaires : récupération et installation de "
@@ -537,31 +548,31 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:294
+#: ../base-installer.templates:295
 msgid "Creating device files..."
 msgstr "Création des fichiers des périphériques..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:298
+#: ../base-installer.templates:299
 msgid "Selecting the kernel to install..."
 msgstr "Choix du noyau à installer dans /target/..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:302
+#: ../base-installer.templates:303
 msgid "Installing the kernel..."
 msgstr "Installation du noyau..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:306
+#: ../base-installer.templates:307
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr "Installation du noyau : récupération et installation de ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:310
+#: ../base-installer.templates:311
 msgid "Installing the PCMCIA modules"
 msgstr "Installation des modules PCMCIA"
 
@@ -569,6 +580,6 @@ msgstr "Installation des modules PCMCIA"
 #. Description
 #. Item in the main menu to select this package
 #. TRANSLATORS: <65 columns
-#: ../base-installer.templates:316
+#: ../base-installer.templates:317
 msgid "Install the base system"
 msgstr "Installer le système de base"

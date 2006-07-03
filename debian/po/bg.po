@@ -12,14 +12,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"POT-Creation-Date: 2005-09-26 16:28+0200\n"
-"PO-Revision-Date: 2005-07-11 08:31+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-03 18:31-0700\n"
+"PO-Revision-Date: 2005-11-02 15:01+0200\n"
 "Last-Translator:  Ognyan Kulev <ogi@fmi.uni-sofia.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: boolean
 #. Description
@@ -30,21 +30,20 @@ msgstr "Продължаване на инсталацията върху неи
 #. Type: boolean
 #. Description
 #: ../base-installer.templates:4
-#, fuzzy
 msgid ""
 "The target file system contains files from a past installation. These files "
 "could cause problems with the installation process, and if you proceed, some "
 "of the existing files may be overwritten."
 msgstr ""
 "Целевата файлова система съдържа файлове от друга инсталация. Тези файлове "
-"могат да провалят инсталационния процес или да предизвикат инсталиране на "
-"развалена система."
+"могат да предизвикат проблеми в инсталационния процес и ако продължите, "
+"някои от съществуващите файлове може да бъдат заменени."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:11
 msgid "Cannot install base system"
-msgstr "Не може да бъде инсталирана основната система"
+msgstr "Не може да бъде инсталирана основна система"
 
 #. Type: error
 #. Description
@@ -182,9 +181,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../base-installer.templates:78
-#, fuzzy
 msgid "Continue without installing a kernel?"
-msgstr "Да се продължи ли с инсталирането?"
+msgstr "Продължаване без инсталиране на ядро?"
 
 #. Type: boolean
 #. Description
@@ -204,9 +202,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:87
-#, fuzzy
 msgid "Cannot install kernel"
-msgstr "Debian не може да бъде инсталиран"
+msgstr "Не може да бъде инсталирано ядро"
 
 #. Type: error
 #. Description
@@ -217,9 +214,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-#, fuzzy
 msgid "Unable to install ${PACKAGE}"
-msgstr "Невъзможност за инсталиране на GRUB в ${BOOTDEV}"
+msgstr "Не може да бъде инсталиран ${PACKAGE}"
 
 #. Type: error
 #. Description
@@ -235,9 +231,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-#, fuzzy
-msgid "Check /var/log/syslog or see virtual console 3 for the details."
-msgstr "Проверете /target/var/log/bootstrap.log за подробности."
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"Проверете /var/log/bootstrap.log или вижте виртуална конзола 4 за "
+"подробности."
 
 #. Type: error
 #. Description
@@ -388,6 +385,12 @@ msgstr "Настройване на основната система"
 
 #. Type: text
 #. Description
+#: ../base-installer.templates:198
+msgid "${SECTION}: ${INFO}..."
+msgstr "${SECTION}: ${INFO}..."
+
+#. Type: text
+#. Description
 #: ../base-installer.templates:202
 msgid "Validating ${SUBST0}..."
 msgstr "Проверка на ${SUBST0}..."
@@ -488,70 +491,77 @@ msgstr "Настройване на основната система..."
 msgid "Base system installed successfully."
 msgstr "Основната система е инсталирана успешно."
 
-#. Type: text
+#. Type: error
 #. Description
 #: ../base-installer.templates:270
-msgid "${SECTION}: ${INFO}..."
-msgstr "${SECTION}: ${INFO}..."
+#, fuzzy
+msgid "Debootstrap warning"
+msgstr "Грешка по време на debootstrap"
+
+#. Type: error
+#. Description
+#: ../base-installer.templates:270
+msgid "Warning: ${INFO}"
+msgstr ""
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:274
+#: ../base-installer.templates:275
 msgid "Retrying failed download of ${SUBST0}"
 msgstr "Нов опит за изтегляне на ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:278
+#: ../base-installer.templates:279
 msgid "Configuring APT sources..."
 msgstr "Настройване на APT източници..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:282
+#: ../base-installer.templates:283
 msgid "Updating the list of available packages..."
 msgstr "Обновяване на списъка на достъпните пакети..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:286
+#: ../base-installer.templates:287
 msgid "Installing extra packages..."
 msgstr "Инсталиране на допълнителните пакети..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:290
+#: ../base-installer.templates:291
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr ""
 "Инсталиране на допълнителни пакети - доставяне и инсталиране на ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:294
+#: ../base-installer.templates:295
 msgid "Creating device files..."
 msgstr "Създаване на device файлове..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:298
+#: ../base-installer.templates:299
 msgid "Selecting the kernel to install..."
 msgstr "Избиране на ядро за инсталиране..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:302
+#: ../base-installer.templates:303
 msgid "Installing the kernel..."
 msgstr "Инсталиране на ядрото..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:306
+#: ../base-installer.templates:307
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr "Инсталиране на ядро - доставяне и инсталиране на ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:310
+#: ../base-installer.templates:311
 msgid "Installing the PCMCIA modules"
 msgstr "Инсталиране на PCMCIA модулите"
 
@@ -559,6 +569,6 @@ msgstr "Инсталиране на PCMCIA модулите"
 #. Description
 #. Item in the main menu to select this package
 #. TRANSLATORS: <65 columns
-#: ../base-installer.templates:316
+#: ../base-installer.templates:317
 msgid "Install the base system"
 msgstr "Инсталиране на основната система"

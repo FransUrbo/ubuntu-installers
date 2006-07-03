@@ -3,29 +3,40 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
+# translation of debian-installer_packages_po.po to 
+# translation of debian-installer_packages_po.po to
+# translation of debian-installer_packages_po.po to
+# translation of debian-installer_packages_po.po to
+# translation of debian-installer_packages_po.po to
+# translation of debian-installer_packages_po.po to
+# translation of debian-installer_packages_po.po to
+# translation of debian-installer_packages_po.po to
+# translation of debian-installer_packages_po.po to Hindi
 #
 #
 # Debian Installer master translation file template
-# Don't forget to properly fill-in the header of PO files 
+# Don't forget to properly fill-in the header of PO files
 #
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt
+# Nishant Sharma <me@nishants.net>, 2005.
 #
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer\n"
-"POT-Creation-Date: 2005-09-26 16:28+0200\n"
-"PO-Revision-Date: 2004-11-18 18:11+0530\n"
-"Last-Translator: Ravishankar Shrivastava <raviratlami@gmail.com>\n"
-"Language-Team: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: debian-installer_packages_po\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-03 18:31-0700\n"
+"PO-Revision-Date: 2004-11-18 18:11+0530\n"
+"Last-Translator: Nishant Sharma <me@nishants.net>\n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: 2\n"
 "X-Poedit-Language: Hindi\n"
 "X-Poedit-Country: INDIA\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #. Type: boolean
 #. Description
@@ -222,7 +233,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-msgid "Check /var/log/syslog or see virtual console 3 for the details."
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
 msgstr ""
 
 #. Type: error
@@ -377,6 +388,12 @@ msgstr "आधार तंत्र संस्थापित किया �
 
 #. Type: text
 #. Description
+#: ../base-installer.templates:198
+msgid "${SECTION}: ${INFO}..."
+msgstr "${SECTION}: ${INFO}..."
+
+#. Type: text
+#. Description
 #: ../base-installer.templates:202
 msgid "Validating ${SUBST0}..."
 msgstr "वेलिडेट किया जा रहा है ${SUBST0}..."
@@ -485,69 +502,76 @@ msgstr "आधार तंत्र संस्थापित किया �
 msgid "Base system installed successfully."
 msgstr "आधार तंत्र सफलता पूर्वक संस्थापित हो गया."
 
-#. Type: text
+#. Type: error
 #. Description
 #: ../base-installer.templates:270
-msgid "${SECTION}: ${INFO}..."
-msgstr "${SECTION}: ${INFO}..."
+#, fuzzy
+msgid "Debootstrap warning"
+msgstr "डेबूटस्ट्रेप त्रुटि"
+
+#. Type: error
+#. Description
+#: ../base-installer.templates:270
+msgid "Warning: ${INFO}"
+msgstr ""
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:274
+#: ../base-installer.templates:275
 msgid "Retrying failed download of ${SUBST0}"
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:278
+#: ../base-installer.templates:279
 msgid "Configuring APT sources..."
 msgstr "एप्ट स्रोत कॉन्फ़िगर किया जा रहा है..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:282
+#: ../base-installer.templates:283
 msgid "Updating the list of available packages..."
 msgstr "उपलब्ध पैकेजों की सूची अद्यतन की जा रही है..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:286
+#: ../base-installer.templates:287
 msgid "Installing extra packages..."
 msgstr "अतिरिक्त पैकेजों को संस्थापित किया जा रहा है..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:290
+#: ../base-installer.templates:291
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:294
+#: ../base-installer.templates:295
 msgid "Creating device files..."
 msgstr "उपकरण फ़ाइलें बनाई जा रही हैं..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:298
+#: ../base-installer.templates:299
 msgid "Selecting the kernel to install..."
 msgstr "संस्थापित करने के लिए कर्नेल चुना जा रहा है..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:302
+#: ../base-installer.templates:303
 msgid "Installing the kernel..."
 msgstr "कर्नेल संस्थापित किया जा रहा है..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:306
+#: ../base-installer.templates:307
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:310
+#: ../base-installer.templates:311
 msgid "Installing the PCMCIA modules"
 msgstr ""
 
@@ -555,6 +579,6 @@ msgstr ""
 #. Description
 #. Item in the main menu to select this package
 #. TRANSLATORS: <65 columns
-#: ../base-installer.templates:316
+#: ../base-installer.templates:317
 msgid "Install the base system"
 msgstr "आधार तंत्र संस्थापित करें"

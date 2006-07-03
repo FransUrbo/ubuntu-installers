@@ -38,18 +38,25 @@
 # 2005-09-22 - Miguel Figueiredo <elmig@debianpt.org> - 1 ugly typo fixed.
 # 2005-09-23 - Miguel Figueiredo <elmig@debianpt.org> - 1f1u
 # 2005-10-01 - Miguel Figueiredo <elmig@debianpt.org> - 3f
+# 2005-10-07 - Miguel Figueiredo <elmig@debianpt.org> - 3f2u
+# 2005-10-19 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+# 2005-10-26 - Miguel Figueiredo <elmig@debianpt.org> - 4f1u
+# 2005-11-04 - Miguel Figueiredo <elmig@debianpt.org> - 2f1u
+# 2005-11-13 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+# 2005-11-14 - Miguel Figueiredo <elmig@debianpt.org> - 3f9u - new package apt-setup
+# 2005-11-14 - Miguel Figueiredo <elmig@debianpt.org> - 4f3u 
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"POT-Creation-Date: 2005-09-26 16:28+0200\n"
-"PO-Revision-Date: 2005-10-01 16:38+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-03 18:31-0700\n"
+"PO-Revision-Date: 2005-11-04 19:45+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: boolean
 #. Description
@@ -262,8 +269,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-msgid "Check /var/log/syslog or see virtual console 3 for the details."
-msgstr "Para detalhes veja /var/log/syslog ou a consola virtual 3."
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr "Para detalhes veja /var/log/syslog ou a consola virtual 4."
 
 #. Type: error
 #. Description
@@ -414,6 +421,12 @@ msgstr "A configurar o sistema base"
 
 #. Type: text
 #. Description
+#: ../base-installer.templates:198
+msgid "${SECTION}: ${INFO}..."
+msgstr "${SECTION}: ${INFO}..."
+
+#. Type: text
+#. Description
 #: ../base-installer.templates:202
 msgid "Validating ${SUBST0}..."
 msgstr "A validar ${SUBST0}..."
@@ -514,69 +527,75 @@ msgstr "A configurar o sistema base..."
 msgid "Base system installed successfully."
 msgstr "O sistema base foi instalado com sucesso."
 
-#. Type: text
+#. Type: error
 #. Description
 #: ../base-installer.templates:270
-msgid "${SECTION}: ${INFO}..."
-msgstr "${SECTION}: ${INFO}..."
+msgid "Debootstrap warning"
+msgstr "Aviso do debootstrap"
+
+#. Type: error
+#. Description
+#: ../base-installer.templates:270
+msgid "Warning: ${INFO}"
+msgstr "Aviso: ${INFO}"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:274
+#: ../base-installer.templates:275
 msgid "Retrying failed download of ${SUBST0}"
 msgstr "A tentar novamente o download, que tinha falhado, de ${SUBST0}."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:278
+#: ../base-installer.templates:279
 msgid "Configuring APT sources..."
 msgstr "A configurar as fontes APT..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:282
+#: ../base-installer.templates:283
 msgid "Updating the list of available packages..."
 msgstr "A actualizar a lista de pacotes disponíveis..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:286
+#: ../base-installer.templates:287
 msgid "Installing extra packages..."
 msgstr "A instalar pacotes extra..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:290
+#: ../base-installer.templates:291
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr "A instalar os pacotes extra - a obter e a instalar ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:294
+#: ../base-installer.templates:295
 msgid "Creating device files..."
 msgstr "A criar ficheiros dos dispositivos..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:298
+#: ../base-installer.templates:299
 msgid "Selecting the kernel to install..."
 msgstr "A seleccionar o kernel a instalar..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:302
+#: ../base-installer.templates:303
 msgid "Installing the kernel..."
 msgstr "A instalar o kernel..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:306
+#: ../base-installer.templates:307
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr "A instalar o kernel - a obter e a instalar ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:310
+#: ../base-installer.templates:311
 msgid "Installing the PCMCIA modules"
 msgstr "A instalar os módulos PCMCIA"
 
@@ -584,6 +603,6 @@ msgstr "A instalar os módulos PCMCIA"
 #. Description
 #. Item in the main menu to select this package
 #. TRANSLATORS: <65 columns
-#: ../base-installer.templates:316
+#: ../base-installer.templates:317
 msgid "Install the base system"
 msgstr "Instalar o sistema base"

@@ -4,7 +4,6 @@ set -e
 . /usr/share/debconf/confmodule
 db_capb backup
 
-LOGFILE=/var/log/messages
 ETCDIR=/target/etc
 ARCH=`udpkg --print-architecture`
 PROTOCOL=
@@ -235,18 +234,21 @@ install_base_system () {
 		done
 	fi
 
+	# clean up after any past debootstrap run
+	rm -f /target/var/lib/apt/* 2>/dev/null || true
+	
 	if search-path cdebootstrap; then
 		cdebootstrap || debootstrap_failed=$?
 	else
-		run-debootstrap \
-		        --components="${COMPONENTS}" \
-		        --debian-installer \
+		log-output -t debootstrap run-debootstrap \
+			--components="${COMPONENTS}" \
+			--debian-installer \
 			--resolve-deps \
-		        ${include} ${exclude} \
-		        ${keyring} \
-		        ${DISTRIBUTION} /target \
-		        "$PROTOCOL://$MIRROR$DIRECTORY" \
-			2>> /var/log/messages || debootstrap_failed=$?
+			${include} ${exclude} \
+			${keyring} \
+			${DISTRIBUTION} /target \
+			"$PROTOCOL://$MIRROR$DIRECTORY" \
+			|| debootstrap_failed=$?
 	fi
 
 	if [ true = "$copied_fstab" ] ; then
@@ -296,19 +298,20 @@ configure_apt () {
 	if [ "$PROTOCOL" = file ] ; then
 		# Make apt-cdrom and apt not unmount/mount CD-ROMs;
 		# needed to support CD images (hd-media installs)
+		[ ! -d /target/etc/apt/apt.conf.d ] && mkdir -p /target/etc/apt/apt.conf.d
 		cat > /target/etc/apt/apt.conf.d/00NoMountCDROM << EOT
 APT::CDROM::NoMount "true";
 Acquire::cdrom {
   mount "/cdrom";
   "/cdrom/" {
-    Mount "true";
+    Mount  "true";
     UMount "true";
   };
 }
 EOT
 		# Scan CD-ROM or CD image; start with clean sources.list
 		: > /target/etc/apt/sources.list
-		if ! chroot /target apt-cdrom add >>$LOGFILE 2>&1 ; then
+		if ! log-output -t base-installer chroot /target apt-cdrom add ; then
 			error "error while running apt-cdrom"
 		fi
 	else
@@ -406,11 +409,23 @@ pick_kernel () {
 
 	arch_kernel=$(arch_get_kernel "$FLAVOUR")
 
-	if [ "$arch_kernel" ] && kernel_present "$arch_kernel"; then
-		# Recommended kernel for this architecture exists; use that.
-		info "arch_kernel: $arch_kernel (present)"
-		KERNEL="$arch_kernel"
-	elif kernel_present "$KERNEL"; then
+	got_arch_kernel=
+	if [ "$arch_kernel" ]; then
+		info "arch_kernel candidates: $arch_kernel"
+		# Walk through recommended list for this architecture in order.
+		for candidate in $arch_kernel; do
+			if kernel_present "$candidate"; then
+				# Recommended kernel for this architecture exists; use that.
+				info "arch_kernel: $candidate (present)"
+				KERNEL="$candidate"
+				break
+			else
+				info "arch_kernel: $candidate (absent)"
+			fi
+		done
+	fi
+
+	if kernel_present "$KERNEL"; then
 		# Current selection is available, nothing to do
 		:
 	else
@@ -418,7 +433,6 @@ pick_kernel () {
 		# the list. kernel_update_list orders the list in such a way
 		# that the metapackages always come first, in the right
 		# order.
-		info "arch_kernel: $arch_kernel (absent)"
 		KERNEL=$(echo "$kernels" | cut -d, -f1)
 	fi
 
@@ -530,19 +544,25 @@ link_in_boot = $link_in_boot
 EOF
 
 	if [ "$do_initramfs" = yes ]; then
+		# TODO: This would be a good place for a question about
+		# whether to use initramfs-tools or yaird, if desired. The
+		# next block would need to take into account any differences
+		# in configuration file syntax.
 		package=initramfs-tools
+		ramdiskconf=/target/etc/mkinitramfs/initramfs.conf
 	else
 		package=initrd-tools
+		ramdiskconf=/target/etc/mkinitrd/mkinitrd.conf
 	fi
 
 	if [ yes = "$do_initrd" ] ; then
 		info "Installing $package."
 
-		# Make sure init*-tools is installed before we change its
-		# configuration
+		# Make sure the ramdisk creation tool is installed before we
+		# change its configuration
 		db_subst base-installer/section/install_kernel_package SUBST0 "$package"
 		db_progress INFO base-installer/section/install_kernel_package
-		if ! apt-install "$package" 2>> $LOGFILE ; then
+		if ! log-output -t base-installer apt-install "$package"; then
 			db_subst base-installer/kernel/failed-package-install PACKAGE "$package"
 			exit_error base-installer/kernel/failed-package-install
 		fi
@@ -559,45 +579,36 @@ EOF
 			db_subst base-installer/section/install_kernel_package SUBST0 "$package"
 			db_progress INFO base-installer/section/install_kernel_package
 			# The package might not exist; don't worry about it.
-			apt-install "$package" 2>> $LOGFILE || true
+			log-output -t base-installer apt-install "$package" || true
 		done
 
-		rootpart_devfs=$(mount | grep "on /target " | cut -d' ' -f1)
-		rootpartfs=$(mount | grep "on /target " | cut -d' ' -f5)
-		rootpart=$(mapdevfs $rootpart_devfs)
+		if [ "$do_initramfs" = no ]; then
+			# Temporarily hardcode the root partition for
+			# initrd-tools.
+			rootpart_devfs=$(mount | grep "on /target " | cut -d' ' -f1)
+			rootpartfs=$(mount | grep "on /target " | cut -d' ' -f5)
+			rootpart=$(mapdevfs $rootpart_devfs)
+			if [ -f $ramdiskconf ]; then
+				sed -e "s#^ROOT=.*#ROOT='$rootpart $rootpartfs'#" < $ramdiskconf > $ramdiskconf.new &&
+					mv $ramdiskconf.new $ramdiskconf
+			else
+				echo "ROOT='$rootpart $rootpartfs'" >> $ramdiskconf
+			fi
+		fi
 
+		# Set up a default resume partition.
 		resume_devfs="$(get_resume_partition)" || resume_devfs=
 		if [ "$resume_devfs" ] && [ -e "$resume_devfs" ]; then
 			resume="$(mapdevfs "$resume_devfs")" || resume=
 		else
 			resume=
 		fi
-
-		# Avoid possible root shell without giving passord while
-		# booting the 2.4 kernel
-		# This is here for back-compatability with woody's 
-		# initrd-tools; it's fixed in more recent versions
-		if [ "$do_initramfs" = yes ]; then
-			mkinitrdconf=/target/etc/mkinitramfs/initramfs.conf
-		else
-			mkinitrdconf=/target/etc/mkinitrd/mkinitrd.conf
-		fi
-		if [ -f $mkinitrdconf ] ; then
-			if [ "$do_initramfs" = no ]; then
-				sed -e 's/^DELAY=.*/DELAY=0/' -e "s#^ROOT=.*#ROOT='$rootpart $rootpartfs'#" < $mkinitrdconf > $mkinitrdconf.new &&
-					mv $mkinitrdconf.new  $mkinitrdconf
-			fi
-			if [ "$resume" ]; then
-				sed -e "s@^#* *RESUME=.*@RESUME=$resume@" < $mkinitrdconf > $mkinitrdconf.new &&
-					mv $mkinitrdconf.new $mkinitrdconf
-			fi
-		else
-			if [ "$do_initramfs" = no ]; then
-				echo 'DELAY=0' >> $mkinitrdconf
-				echo "ROOT='$rootpart $rootpartfs'" >> $mkinitrdconf
-			fi
-			if [ "$resume" ]; then
-				echo "RESUME=$resume" >> $mkinitrdconf
+		if [ "$resume" ]; then
+			if [ -f $ramdiskconf ] ; then
+				sed -e "s@^#* *RESUME=.*@RESUME=$resume@" < $ramdiskconf > $ramdiskconf.new &&
+					mv $ramdiskconf.new $ramdiskconf
+			else
+				echo "RESUME=$resume" >> $ramdiskconf
 			fi
 		fi
 	else
@@ -611,14 +622,15 @@ EOF
 	info "Installing kernel '$KERNEL'."
 	db_subst base-installer/section/install_kernel_package SUBST0 "$KERNEL"
 	db_progress INFO base-installer/section/install_kernel_package
-	apt-install "$KERNEL" 2>> $LOGFILE || kernel_install_failed=$?
+	log-output -t base-installer apt-install "$KERNEL" || kernel_install_failed=$?
 
 	# Advance progress bar to 90% of allocated space for install_kernel
 	update_progress 90 100
 
 	# /proc/filesystems will accomodate this past the second bootup.
 	if [ "$do_initrd" = yes ] && [ "$do_initramfs" = no ]; then
-		sed -e 's/^ROOT=.*/ROOT=probe/' $mkinitrdconf > $mkinitrdconf.new && mv $mkinitrdconf.new $mkinitrdconf
+		sed -e 's/^ROOT=.*/ROOT=probe/' $ramdiskconf > $ramdiskconf.new &&
+			mv $ramdiskconf.new $ramdiskconf
 	fi
 
 	if [ -f /target/etc/kernel-img.conf.$$ ]; then
@@ -641,11 +653,13 @@ install_pcmcia_modules () {
 	# use the old kernel-image names.
 	pcmcia_package=$(echo "$KERNEL" | sed 's/^kernel-image/kernel-pcmcia-modules/')
 	info "Installing pcmcia modules package '$pcmcia_package'."
-	apt-install "$pcmcia_package" 2>> $LOGFILE || true
+	log-output -t base-installer apt-install "$pcmcia_package" || true
 }
 
 apt_update () {
-	chroot /target apt-get -o Acquire::gpgv::Options::=--ignore-time-conflict update >> $LOGFILE 2>&1 || apt_update_failed=$?
+	log-output -t base-installer chroot /target \
+		apt-get -o Acquire::gpgv::Options::=--ignore-time-conflict update \
+		|| apt_update_failed=$?
 	
 	if [ "$apt_update_failed" ]; then
 		warning "apt update failed: $apt_update_failed"
@@ -663,7 +677,7 @@ install_extra () {
 			db_subst base-installer/section/install_extra_package SUBST0 "$PKG"
 			db_progress INFO base-installer/section/install_extra_package
 
-			if apt-install $PKG >> $LOGFILE 2>&1 ; then
+			if log-output -t base-installer apt-install $PKG; then
 				info "Installed $PKG successfully into /target/"
 			else
 				warning "Failed to install $PKG into /target/: $?"

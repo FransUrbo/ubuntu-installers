@@ -24,14 +24,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
-"POT-Creation-Date: 2005-09-26 16:28+0200\n"
-"PO-Revision-Date: 2005-09-29 22:04+0300\n"
-"Last-Translator: Eddy Petrisor <eddy.petrisor@gmail.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-03 18:31-0700\n"
+"PO-Revision-Date: 2005-10-08 19:36+0300\n"
+"Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.10.2\n"
 "Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1))\n"
@@ -231,7 +231,7 @@ msgstr "Instalarea nucleului este imposibilă"
 #: ../base-installer.templates:87
 msgid "The installer cannot find a suitable kernel package to install."
 msgstr ""
-"Programul de instalare nu poate găsi un nucelu potrivit pentru a-l instala."
+"Programul de instalare nu poate găsi un nucleu potrivit pentru a-l instala."
 
 #. Type: error
 #. Description
@@ -252,9 +252,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-msgid "Check /var/log/syslog or see virtual console 3 for the details."
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
 msgstr ""
-"Verificaţi /var/log/syslog sau consola virtuală numărul 3 pentru detalii."
+"Verificaţi /var/log/syslog sau consola virtuală numărul 4 pentru detalii."
 
 #. Type: error
 #. Description
@@ -405,6 +405,12 @@ msgstr "Se configurează sistemul de bază"
 
 #. Type: text
 #. Description
+#: ../base-installer.templates:198
+msgid "${SECTION}: ${INFO}..."
+msgstr "${SECTION}: ${INFO}..."
+
+#. Type: text
+#. Description
 #: ../base-installer.templates:202
 msgid "Validating ${SUBST0}..."
 msgstr "Se validează ${SUBST0}..."
@@ -505,69 +511,76 @@ msgstr "Se configurează sistemul de bază..."
 msgid "Base system installed successfully."
 msgstr "Sistemului de bază s-a instalat cu succes."
 
-#. Type: text
+#. Type: error
 #. Description
 #: ../base-installer.templates:270
-msgid "${SECTION}: ${INFO}..."
-msgstr "${SECTION}: ${INFO}..."
+#, fuzzy
+msgid "Debootstrap warning"
+msgstr "Eroare la debootstrap"
+
+#. Type: error
+#. Description
+#: ../base-installer.templates:270
+msgid "Warning: ${INFO}"
+msgstr ""
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:274
+#: ../base-installer.templates:275
 msgid "Retrying failed download of ${SUBST0}"
 msgstr "Reîncercarea a eşuat la descărcarea fişierului ${SUBST0}"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:278
+#: ../base-installer.templates:279
 msgid "Configuring APT sources..."
 msgstr "Se configurează sursele APT..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:282
+#: ../base-installer.templates:283
 msgid "Updating the list of available packages..."
 msgstr "Se actualizează lista de pachete disponibile..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:286
+#: ../base-installer.templates:287
 msgid "Installing extra packages..."
 msgstr "Se instalează pachetele suplimentare..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:290
+#: ../base-installer.templates:291
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr "Instalez pachetele suplimentare - preiau şi instalez ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:294
+#: ../base-installer.templates:295
 msgid "Creating device files..."
 msgstr "Se creează fişierele dispozitiv..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:298
+#: ../base-installer.templates:299
 msgid "Selecting the kernel to install..."
 msgstr "Se selectează nucleul de instalat..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:302
+#: ../base-installer.templates:303
 msgid "Installing the kernel..."
 msgstr "Se instalează nucleul..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:306
+#: ../base-installer.templates:307
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr "Se instalează nucleul - preiau şi instalez ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:310
+#: ../base-installer.templates:311
 msgid "Installing the PCMCIA modules"
 msgstr "Se instalează modulele PCMCIA"
 
@@ -575,6 +588,6 @@ msgstr "Se instalează modulele PCMCIA"
 #. Description
 #. Item in the main menu to select this package
 #. TRANSLATORS: <65 columns
-#: ../base-installer.templates:316
+#: ../base-installer.templates:317
 msgid "Install the base system"
 msgstr "Se instalează sistemul de bază"

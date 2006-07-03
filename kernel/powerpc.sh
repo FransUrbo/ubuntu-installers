@@ -42,18 +42,21 @@ arch_get_kernel () {
 	fi
 
 	case "$1" in
-		apus)	trykernel=kernel-image-$apusversion-apus ;;
+		apus)	echo "kernel-image-$apusversion-apus" ;;
 		*)
 			case "$KERNEL_MAJOR" in
 				2.6)
-					echo "linux-$1$SMP"
+					if [ "$SMP" ]; then
+						echo "linux-$1$SMP"
+					fi
+					echo "linux-$1"
 					;;
 				*)
-					if [ "$1" != powerpc ]; then
+					if [ "$1" = powerpc ] && [ "$SMP" ]; then
 						# 2.4 only has powerpc-smp.
-						SMP=
+						echo "kernel-image-$KERNEL_MAJOR-$1$SMP"
 					fi
-					echo "kernel-image-$KERNEL_MAJOR-$1$SMP"
+					echo "kernel-image-$KERNEL_MAJOR-$1"
 					;;
 			esac
 	esac

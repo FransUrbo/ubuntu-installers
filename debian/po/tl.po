@@ -6,26 +6,26 @@
 # Tagalog messages for debian-installer.
 # Copyright (C) 2004, 2005 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Itong talaksan ay ipinamamahagi alinsunod sa lisensiya ng debian-installer.
+# Ipinamamahagi ang talaksang ito alinsunod sa lisensiya ng debian-installer.
 # Eric Pareja <xenos@upm.edu.ph>, 2004, 2005
 # Rick Bahague, Jr. <rbahaguejr@gmail.com>, 2004
 # Reviewed by Roel Cantada on Feb-Mar 2005.
 # Sinuri ni Roel Cantada noong Peb-Mar 2005.
 # This file is maintained by Eric Pareja <xenos@upm.edu.ph>
 # Inaalagaan ang talaksang ito ni Eric Pareja <xenos@upm.edu.ph>
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"POT-Creation-Date: 2005-09-26 16:28+0200\n"
-"PO-Revision-Date: 2005-09-20 15:44+0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-03 18:31-0700\n"
+"PO-Revision-Date: 2005-11-05 17:02+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: boolean
 #. Description
@@ -36,7 +36,6 @@ msgstr "Magpatuloy ng pagluklok sa hindi malinis na target?"
 #. Type: boolean
 #. Description
 #: ../base-installer.templates:4
-#, fuzzy
 msgid ""
 "The target file system contains files from a past installation. These files "
 "could cause problems with the installation process, and if you proceed, some "
@@ -89,17 +88,13 @@ msgstr "Hindi magluluklok sa hindi malinis na target"
 #. Type: error
 #. Description
 #: ../base-installer.templates:23
-#, fuzzy
 msgid ""
 "The installation to the target file system has been canceled. You should go "
 "back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
-"Ang pagluklok sa file system na target ay kinansela, dahil ang file system "
-"na target ay may mga nilalaman na mga talaksan mula sa nakaraang pagluklok, "
-"na maaaring maging balakid sa pagluklok o makasira sa sistema na ma-"
-"iinstall. Dapat kayong bumalik at burahin o i-format ang file system na "
-"target bago ipagpatuloy ang pagluklok."
+"Ang pagluklok sa file system na target ay kinansela. Dapat kayong bumalik at "
+"burahin o i-format ang file system na target bago ipagpatuloy ang pagluklok."
 
 #. Type: error
 #. Description
@@ -192,9 +187,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../base-installer.templates:78
-#, fuzzy
 msgid "Continue without installing a kernel?"
-msgstr "Ituloy ang pagluklok?"
+msgstr "Magpatuloy na hindi nagluluklok ng kernel?"
 
 #. Type: boolean
 #. Description
@@ -236,20 +230,20 @@ msgstr "Hindi mailuklok ang paketeng ${PACKAGE}"
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-#, fuzzy
 msgid ""
 "An error was returned while trying to install the ${PACKAGE} package onto "
 "the target system."
 msgstr ""
-"May hudyat na error habang sinubukang mag-install ng initrd-tools na pakete "
-"sa target na sistema."
+"May hudyat na error habang sinubukang iluklok ang paketeng ${PACKAGE} sa "
+"target na sistema."
 
 #. Type: error
 #. Description
 #: ../base-installer.templates:92
-#, fuzzy
-msgid "Check /var/log/syslog or see virtual console 3 for the details."
-msgstr "Basahin ang /target/var/log/bootstrap.log para sa mga detalye."
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"Basahin ang /var/log/syslog o tignan ang virtuwal na konsol 4 para sa mga "
+"detalye."
 
 #. Type: error
 #. Description
@@ -399,6 +393,12 @@ msgstr "Isinasaayos ang base system"
 
 #. Type: text
 #. Description
+#: ../base-installer.templates:198
+msgid "${SECTION}: ${INFO}..."
+msgstr "${SECTION}: ${INFO}..."
+
+#. Type: text
+#. Description
 #: ../base-installer.templates:202
 msgid "Validating ${SUBST0}..."
 msgstr "Sinusuri ${SUBST0}..."
@@ -499,39 +499,45 @@ msgstr "Isinasaayos ang base system"
 msgid "Base system installed successfully."
 msgstr "Tagumpay ang pagluklok ng base system."
 
-#. Type: text
+#. Type: error
 #. Description
 #: ../base-installer.templates:270
-msgid "${SECTION}: ${INFO}..."
-msgstr "${SECTION}: ${INFO}..."
+msgid "Debootstrap warning"
+msgstr "Babalang debootstrap"
+
+#. Type: error
+#. Description
+#: ../base-installer.templates:270
+msgid "Warning: ${INFO}"
+msgstr "Babala: ${INFO}"
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:274
+#: ../base-installer.templates:275
 msgid "Retrying failed download of ${SUBST0}"
 msgstr "Susubukan muling kunin ang ${SUBST0}."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:278
+#: ../base-installer.templates:279
 msgid "Configuring APT sources..."
 msgstr "Isinasaayos ang mga pagkukunan ng APT..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:282
+#: ../base-installer.templates:283
 msgid "Updating the list of available packages..."
 msgstr "Sinasariwa ang talaan ng mga pakete na makukuha..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:286
+#: ../base-installer.templates:287
 msgid "Installing extra packages..."
 msgstr "Nag-iinstall ng mga pakete na extra..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:290
+#: ../base-installer.templates:291
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
 msgstr ""
 "Nag-iinstall ng mga pakete na ekstra - kinukuha at nag-iinstall ng "
@@ -539,31 +545,31 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:294
+#: ../base-installer.templates:295
 msgid "Creating device files..."
 msgstr "Binubuo ang mga talaksan ng mga device..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:298
+#: ../base-installer.templates:299
 msgid "Selecting the kernel to install..."
 msgstr "Pinipili ang kernel na iinstall..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:302
+#: ../base-installer.templates:303
 msgid "Installing the kernel..."
 msgstr "Nag-iinstall ng kernel..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:306
+#: ../base-installer.templates:307
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
 msgstr "Nag-iinstall ng kernel - kinukuha at nag-iinstall ng ${SUBST0}..."
 
 #. Type: text
 #. Description
-#: ../base-installer.templates:310
+#: ../base-installer.templates:311
 msgid "Installing the PCMCIA modules"
 msgstr "Nag-iinstall ng mga module na pang-PCMCIA"
 
@@ -571,6 +577,6 @@ msgstr "Nag-iinstall ng mga module na pang-PCMCIA"
 #. Description
 #. Item in the main menu to select this package
 #. TRANSLATORS: <65 columns
-#: ../base-installer.templates:316
+#: ../base-installer.templates:317
 msgid "Install the base system"
-msgstr "Mag-install ng base system"
+msgstr "Iluklok ang base system"

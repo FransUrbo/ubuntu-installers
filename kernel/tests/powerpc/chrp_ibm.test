@@ -1,5 +1,5 @@
-subarch powermac_newworld
-cpuinfo powermac7,3.cpuinfo
+subarch chrp_ibm
+cpuinfo chrp_ibm.cpuinfo
 majors 2.6
 flavour powerpc64
 kernel-2.6 \

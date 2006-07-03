@@ -8,9 +8,9 @@ usable \
   linux-powerpc-smp \
   linux-image-powerpc \
   linux-image-powerpc-smp \
-  linux-image-2.6.12-2-powerpc \
-  linux-image-2.6.12-2-powerpc-smp
+  linux-image-2.6.12-9-powerpc \
+  linux-image-2.6.12-9-powerpc-smp
 unusable \
   linux-powerpc64-smp \
   linux-image-powerpc64-smp \
-  linux-image-2.6.12-2-powerpc64-smp \
+  linux-image-2.6.12-9-powerpc64-smp \

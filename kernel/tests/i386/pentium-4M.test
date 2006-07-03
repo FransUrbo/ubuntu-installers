@@ -3,7 +3,9 @@ machine i686
 majors 2.6
 flavour 686
 env SPEAKUP /nonexistent
-kernel-2.6 linux-686
+kernel-2.6 \
+  linux-686 \
+  linux-386
 usable \
   linux-386 \
   linux-686-smp \
@@ -11,13 +13,13 @@ usable \
   linux-image-386 \
   linux-image-686-smp \
   linux-image-686 \
-  linux-image-2.6.10-2-386 \
-  linux-image-2.6.10-2-686-smp \
-  linux-image-2.6.10-2-686
+  linux-image-2.6.12-9-386 \
+  linux-image-2.6.12-9-686-smp \
+  linux-image-2.6.12-9-686
 unusable \
   linux-k7-smp \
   linux-k7 \
   linux-image-k7-smp \
   linux-image-k7 \
-  linux-image-2.6.10-2-k7-smp \
-  linux-image-2.6.10-2-k7
+  linux-image-2.6.12-9-k7-smp \
+  linux-image-2.6.12-9-k7
