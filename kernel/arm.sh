@@ -4,6 +4,13 @@ arch_get_kernel_flavour () {
 			echo "$SUBARCH"
 			return 0
 		;;
+		# NOTE: the following kernel is not in Debian (sarge), but
+		# makes it easier to offer unofficial support from a private
+		# apt-archive.
+		ads)
+			echo "ads"
+			return 0
+		;;
 		*)
 			warning "Unknown $ARCH subarchitecture '$SUBARCH'."
 			return 1
@@ -18,5 +25,9 @@ arch_check_usable_kernel () {
 }
 
 arch_get_kernel () {
-	echo "kernel-image-$KERNEL_VERSION-$1"
+	if [ "$1" = none ]; then
+		echo none
+	else
+		echo "kernel-image-$KERNEL_VERSION-$1"
+	fi
 }

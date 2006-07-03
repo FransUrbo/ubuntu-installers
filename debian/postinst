@@ -14,15 +14,16 @@ COMPONENTS=
 DISTRIBUTION=
 INCLUDES=
 EXCLUDES=
-DEFAULT_KEYRING=/usr/share/keyrings/ubuntu-archive-keyring.gpg
 KERNEL=
 KERNEL_LIST=/tmp/available_kernels.txt
 KERNEL_MAJOR="$(uname -r | cut -d . -f 1,2)"
 KERNEL_VERSION="$(uname -r | cut -d - -f 1)"
 KERNEL_ABI="$(uname -r | cut -d - -f 1,2)"
 MACHINE="$(uname -m)"
+NUMCPUS=$(cat /var/numcpus 2>/dev/null) || true
 CPUINFO=/proc/cpuinfo
 SPEAKUP=/proc/speakup
+KEYRING=/usr/share/keyrings/ubuntu-archive-keyring.gpg
 
 # Avoid debconf sending email during the base install process.
 DEBCONF_ADMIN_EMAIL=""
@@ -90,12 +91,10 @@ check_target () {
 		exit_error base-installer/no_target_mounted
 	fi
 	
-	# debootstrap has issues with awk already existing, and is not
-	# idempotent in general. Detect and abort.
-	if [ -e /target/usr/bin/awk -o -L /target/usr/bin/awk ] || \
-	   [ -e /target/bin/sh -o -L /target/bin/sh ]; then
+	# Warn about installation over an existing unix.
+	if [ -e /target/bin/sh -o -L /target/bin/sh ]; then
 		db_capb ""
-		db_input medium base-installer/use_unclean_target || true
+		db_input high base-installer/use_unclean_target || true
 		db_go || exit 10
 		db_capb backup
 		db_get base-installer/use_unclean_target
@@ -176,10 +175,8 @@ get_mirror_info () {
 	fi
 
 	DISTRIBUTION=`grep ^Codename: $APTLISTDIR/tmp | cut -d' ' -f 2`
-	DEBOOTSTRAPLIST="$APTLISTDIR/debootstrap.invalid_dists_${DISTRIBUTION}"
-	mv $APTLISTDIR/tmp ${DEBOOTSTRAPLIST}_Release
 }
-	
+
 install_base_system () {
 	db_progress INFO base-installer/progress/preparing
 
@@ -189,8 +186,8 @@ install_base_system () {
 	if [ "${EXCLUDES}" ]; then
 		exclude="--exclude=${EXCLUDES}"
 	fi
-	if type gpgv >/dev/null && [ -f "$DEFAULT_KEYRING" ]; then
-		keyring="--keyring=$DEFAULT_KEYRING"
+	if type gpgv >/dev/null && [ -f "$KEYRING" ]; then
+		keyring="--keyring=${KEYRING}"
 	fi
 
 	test -d $ETCDIR || mkdir -p $ETCDIR
@@ -249,7 +246,7 @@ install_base_system () {
 		        ${keyring} \
 		        ${DISTRIBUTION} /target \
 		        "$PROTOCOL://$MIRROR$DIRECTORY" \
-		        2>> $LOGFILE || debootstrap_failed=$?
+			2>> /var/log/messages || debootstrap_failed=$?
 	fi
 
 	if [ true = "$copied_fstab" ] ; then
@@ -290,20 +287,39 @@ configure_apt () {
 		# for future apt-install calls to use.
 	fi
 
-	# Move files to where apt expects them to avoid another download or copy.
-	APTLISTDIR=/target/var/lib/apt/lists
-	APTDIR=`echo $DIRECTORY | tr "/" "_"`
-	DEBOOTSTRAPLIST="$APTLISTDIR/debootstrap.invalid_dists_${DISTRIBUTION}"
-	APTLIST="$APTLISTDIR/${MIRROR}${APTDIR}_dists_${DISTRIBUTION}"
-	mv ${DEBOOTSTRAPLIST}_Release ${APTLIST}_Release
-	mv ${DEBOOTSTRAPLIST}_main_binary-${ARCH}_Packages ${APTLIST}_main_binary-${ARCH}_Packages
-
 	# sources.list uses space to separate the components, not comma
 	COMPONENTS=`echo $COMPONENTS | tr , " "`
 	APTSOURCE="$PROTOCOL://$MIRROR$DIRECTORY"
 
 	[ ! -d /target/etc/apt ] && mkdir -p /target/etc/apt
-	echo "deb $APTSOURCE $DISTRIBUTION $COMPONENTS" > /target/etc/apt/sources.list
+	# This assumes the file protocol is only used for CD (image) installs
+	if [ "$PROTOCOL" = file ] ; then
+		# Make apt-cdrom and apt not unmount/mount CD-ROMs;
+		# needed to support CD images (hd-media installs)
+		cat > /target/etc/apt/apt.conf.d/00NoMountCDROM << EOT
+APT::CDROM::NoMount "true";
+Acquire::cdrom {
+  mount "/cdrom";
+  "/cdrom/" {
+    Mount "true";
+    UMount "true";
+  };
+}
+EOT
+		# Scan CD-ROM or CD image; start with clean sources.list
+		: > /target/etc/apt/sources.list
+		if ! chroot /target apt-cdrom add >>$LOGFILE 2>&1 ; then
+			error "error while running apt-cdrom"
+		fi
+	else
+		echo "deb $APTSOURCE $DISTRIBUTION $COMPONENTS" > /target/etc/apt/sources.list
+	fi
+
+	# Make apt trust Debian CDs. This is not on by default (we think).
+	if [ ! -e /target/etc/apt/apt.conf ] || \
+	   ! grep -iq 'APT::Authentication::TrustCDROM' /target/etc/apt/apt.conf; then
+		echo "APT::Authentication::TrustCDROM \"true\";" >> /target/etc/apt/apt.conf
+	fi
 }
 
 create_devices () {
@@ -343,9 +359,9 @@ kernel_update_list () {
 	for candidate in $kernels; do
 		if arch_check_usable_kernel "$candidate" "$FLAVOUR"; then
 			echo "$candidate"
-			info "kernel $1 usable on $FLAVOUR"
+			info "kernel $candidate usable on $FLAVOUR"
 		else
-			info "kernel $1 not usable on $FLAVOUR"
+			info "kernel $candidate not usable on $FLAVOUR"
 		fi
 	done > "$KERNEL_LIST"
 }
@@ -375,14 +391,21 @@ pick_kernel () {
 	if [ "$kernels" ] ; then
 		db_subst base-installer/kernel/which-kernel KERNELS "$kernels"
 	else
-		db_subst base-installer/kernel/no-kernels-found KERNEL "$KERNEL"
-		exit_error base-installer/kernel/no-kernels-found
+		db_set base-installer/kernel/image "none"
+		db_input high base-installer/kernel/skip-install || true
+		db_go || true
+		db_get base-installer/kernel/skip-install
+		if [ "$RET" != true ]; then
+			exit_error base-installer/kernel/no-kernels-found
+		else
+			db_set base-installer/kernel/image "none"
+			KERNEL=none
+			return
+		fi
 	fi
 
 	arch_kernel=$(arch_get_kernel "$FLAVOUR")
 
-	# Try to make current rootskel setting the default, make sure it is
-	# available first.
 	if [ "$arch_kernel" ] && kernel_present "$arch_kernel"; then
 		# Recommended kernel for this architecture exists; use that.
 		info "arch_kernel: $arch_kernel (present)"
@@ -434,7 +457,12 @@ get_resume_partition () {
 }
 
 install_kernel () {
-	target_kernel_major="$(echo "$KERNEL" | sed 's/^kernel-image-//; s/-.*//' | cut -d . -f 1,2)"
+	if [ "$KERNEL" = none ]; then
+		info "Not installing any kernel"
+		return
+	fi
+	
+	target_kernel_major="$(echo "$KERNEL" | sed 's/^kernel-image-//; s/^linux-image-//; s/-.*//' | cut -d . -f 1,2)"
 	case $target_kernel_major in
 		2.?)	;;
 		*)
@@ -473,14 +501,14 @@ install_kernel () {
 		fi
 	fi
 
-	if db_get debian-installer/kernel/linux/link_in_boot ; then
+	if db_get base-installer/kernel/linux/link_in_boot ; then
 		if [ "$RET" = "true" ]; then
 			link_in_boot=yes
 		else
 			link_in_boot=no
 		fi
 	else
-		warning "Failed to get debconf answer 'debian-installer/kernel/linux/link_in_boot'."
+		warning "Failed to get debconf answer 'base-installer/kernel/linux/link_in_boot'."
 		link_in_boot=no
 	fi
 
@@ -515,9 +543,8 @@ EOF
 		db_subst base-installer/section/install_kernel_package SUBST0 "$package"
 		db_progress INFO base-installer/section/install_kernel_package
 		if ! apt-install "$package" 2>> $LOGFILE ; then
-			# TODO: wrong template, but it needs translation;
-			# being handled upstream
-			exit_error base-installer/kernel/failed-initrd-tools-install
+			db_subst base-installer/kernel/failed-package-install PACKAGE "$package"
+			exit_error base-installer/kernel/failed-package-install
 		fi
 
 		if db_get "base-installer/kernel/linux/extra-packages-$target_kernel_major"; then
@@ -606,6 +633,12 @@ EOF
 }
 
 install_pcmcia_modules () {
+	if [ "$KERNEL" = none ]; then
+		info "Not installing any pcmcia modules"
+		return
+	fi
+	# Note pcmcia modules are only separate for 2.4 kernels, which
+	# use the old kernel-image names.
 	pcmcia_package=$(echo "$KERNEL" | sed 's/^kernel-image/kernel-pcmcia-modules/')
 	info "Installing pcmcia modules package '$pcmcia_package'."
 	apt-install "$pcmcia_package" 2>> $LOGFILE || true

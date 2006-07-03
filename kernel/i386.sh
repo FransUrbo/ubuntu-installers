@@ -38,7 +38,7 @@ arch_check_usable_kernel () {
 }
 
 arch_get_kernel () {
-	if dmesg | grep -q ^Processors:; then
+	if [ -n "$NUMCPUS" ] && [ "$NUMCPUS" -gt 1 ]; then
 		SMP=-smp
 	else
 		SMP=
@@ -48,11 +48,16 @@ arch_get_kernel () {
 			k6|586tsc)	set 386 ;;
 		esac
 	fi
+	if [ "$KERNEL_MAJOR" = 2.4 ]; then
+		imgbase="kernel-image-$KERNEL_MAJOR"
+	else
+		imgbase=linux
+	fi
 	case "$1" in
-		k7)	echo "linux-k7$SMP" ;;
-		k6)	echo "linux-k6" ;;
-		686)	echo "linux-686$SMP" ;;
-		586tsc)	echo "linux-586tsc" ;;
-		*)	echo "linux-386" ;;
+		k7)	echo "$imgbase-k7$SMP" ;;
+		k6)	echo "$imgbase-k6" ;;
+		686)	echo "$imgbase-686$SMP" ;;
+		586tsc)	echo "$imgbase-586tsc" ;;
+		*)	echo "$imgbase-386" ;;
 	esac
 }

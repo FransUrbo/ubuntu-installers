@@ -1,0 +1,23 @@
+cpuinfo pentium-3.cpuinfo
+majors 2.6
+flavour 686
+env SPEAKUP /nonexistent
+numcpus 2
+kernel-2.6 linux-686-smp
+usable \
+  linux-386 \
+  linux-686-smp \
+  linux-686 \
+  linux-image-386 \
+  linux-image-686-smp \
+  linux-image-686 \
+  linux-image-2.6.10-2-386 \
+  linux-image-2.6.10-2-686-smp \
+  linux-image-2.6.10-2-686
+unusable \
+  linux-k7-smp \
+  linux-k7 \
+  linux-image-k7-smp \
+  linux-image-k7 \
+  linux-image-2.6.10-2-k7-smp \
+  linux-image-2.6.10-2-k7
