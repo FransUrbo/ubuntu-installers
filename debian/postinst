@@ -24,9 +24,12 @@ CPUINFO=/proc/cpuinfo
 SPEAKUP=/proc/speakup
 KEYRING=/usr/share/keyrings/ubuntu-archive-keyring.gpg
 
-# Avoid debconf sending email during the base install process.
+# Avoid debconf sending email during the base install process
 DEBCONF_ADMIN_EMAIL=""
 export DEBCONF_ADMIN_EMAIL
+
+# Avoid warnings from lvm2 tools about open file descriptors
+export LVM_SUPPRESS_FD_WARNINGS=1
 
 # Variables used to set the progress bar
 export PB_POSITION=0
@@ -355,9 +358,7 @@ create_devices () {
 
 		if pvdisplay | grep -iq "physical volume ---"; then
 			apt-install lvm2
-			mount -t proc proc /target/proc
-			chroot /target vgscan --mknodes || true
-			umount /target/proc
+			in-target vgscan --mknodes || true
 		fi
 	fi
 	# UML: create ubd devices
@@ -467,11 +468,13 @@ pick_kernel () {
 		# Current selection is available
 		WHICH_KERNEL_PRIO=medium
 	else
-		# No recommendations available; guess by taking the first on
-		# the list. kernel_update_list orders the list in such a way
-		# that the metapackages always come first, in the right
-		# order.
-		KERNEL=$(echo "$kernels" | cut -d, -f1)
+		# No recommendations available; try to guess.
+		kernels="$(echo "$kernels" | sed 's/,/\n/g')"
+
+		# Take the first on the list. kernel_update_list orders the
+		# list in such a way that the metapackages always come
+		# first, in the right order.
+		KERNEL=$(echo "$kernels" | head -n 1)
 	fi
 
 	if [ "$KERNEL" ] ; then
