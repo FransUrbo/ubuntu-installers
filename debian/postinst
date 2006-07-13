@@ -695,8 +695,8 @@ EOF
 		# Figure out how to configure the ramdisk creation tool.
 		case "$package" in
 		    initramfs-tools)
-			if [ -d /target/etc/initramfs-tools ]; then
-				ramdiskconf=/target/etc/initramfs-tools/mkinitrd.conf
+			if [ -d /target/etc/initramfs-tools/conf.d ]; then
+				ramdiskconf=/target/etc/initramfs-tools/conf.d/resume
 			else
 				# old location
 				ramdiskconf=/target/etc/mkinitramfs/initramfs.conf
@@ -763,10 +763,7 @@ EOF
 			resume=
 		fi
 		if [ -n "$ramdiskconf" -a "$resume" ]; then
-			if [ "$package" = initramfs-tools ]; then
-				mkdir -p /target/etc/mkinitramfs/conf.d
-				echo "RESUME=$resume" > /target/etc/mkinitramfs/conf.d/resume
-			elif [ -f $ramdiskconf ] ; then
+			if [ -f $ramdiskconf ] ; then
 				sed -e "s@^#* *RESUME=.*@RESUME=$resume@" < $ramdiskconf > $ramdiskconf.new &&
 					mv $ramdiskconf.new $ramdiskconf
 			else

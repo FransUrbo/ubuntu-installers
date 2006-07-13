@@ -1,3 +1,9 @@
+base-installer (1.63ubuntu2) UNRELEASED; urgency=low
+
+  * Fix handling of new initramfs-tools configuration directory.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 13 Jul 2006 09:42:01 +0100
+
 base-installer (1.63ubuntu1) edgy; urgency=low
 
   * Resynchronise with Debian.
