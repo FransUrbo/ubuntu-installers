@@ -1,3 +1,11 @@
+base-installer (1.63ubuntu3) UNRELEASED; urgency=low
+
+  * Backport from trunk:
+    - Fix quoting so that LVM (but not crypto) installs don't break due to
+      the lack of dmsetup-udeb.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 19 Jul 2006 14:30:57 +0100
+
 base-installer (1.63ubuntu2) edgy; urgency=low
 
   * Fix handling of new initramfs-tools configuration directory.
