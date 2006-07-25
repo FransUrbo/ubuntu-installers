@@ -3,6 +3,7 @@ base-installer (1.63ubuntu3) UNRELEASED; urgency=low
   * Backport from trunk:
     - Fix quoting so that LVM (but not crypto) installs don't break due to
       the lack of dmsetup-udeb.
+  * Write out the resume partition as a UUID if possible.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 19 Jul 2006 14:30:57 +0100
 
