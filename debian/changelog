@@ -1,9 +1,9 @@
-base-installer (1.63ubuntu5) UNRELEASED; urgency=low
+base-installer (1.63ubuntu5) edgy; urgency=low
 
   * Stop installing usplash along with initramfs-tools. We now rely on the
     desktop installation step to do this.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri,  6 Oct 2006 13:06:27 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri,  6 Oct 2006 13:07:11 +0100
 
 base-installer (1.63ubuntu4) edgy; urgency=low
 
