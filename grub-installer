@@ -216,10 +216,12 @@ is_removable () {
 			return
 		fi
 	fi
-        if [ "$(udevinfo -q env -n $removabledevice | grep ^ID_BUS=)" = "ID_BUS=usb" ] || [ "$(udevinfo -q env -n $removabledevice | grep ^ID_BUS=)" = "ID_BUS=ieee1394" ]; then
+	bus="$(udevinfo -q env -n $removabledevice | grep ^ID_BUS= | sed 's/^ID_BUS=//')"
+	case $bus in
+		usb|ieee1394)
 			echo "/dev/$removabledevice"
-        fi
-	echo ""
+			;;
+	esac
 }
 
 bootfstype=$(findfstype /boot)
@@ -255,8 +257,8 @@ fi
 # and see how bad it goes.
 
 if [ "$(uname -s | tr '[A-Z]' '[a-z]')" = "linux" ]; then
-  bootremovable="$(is_removable /boot)"
-  [ -n "$bootremovable" ] || bootremovable="$(is_removable /)"
+	bootremovable="$(is_removable /boot)"
+	[ -n "$bootremovable" ] || bootremovable="$(is_removable /)"
 fi
 
 db_progress START 0 6 grub-installer/progress/title
@@ -369,10 +371,10 @@ while : ; do
 		if [ "$RET" = true ]; then
 			if [ -n "$bootremovable" ]; then
 				bootdev="$bootremovable"
-                                if [ ! -e "$device_map" ]; then
-                                    mkdir -p $(dirname "${device_map}")
-                                    echo "(hd0) $bootremovable" > $device_map
-                                fi
+				if [ ! -e "$device_map" ]; then
+					mkdir -p "$(dirname "$device_map")"
+					echo "(hd0) $bootremovable" > "$device_map"
+				fi
 			else
 				bootdev="(hd0)"
 			fi
