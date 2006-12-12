@@ -1,4 +1,4 @@
-base-installer (1.70ubuntu1) UNRELEASED; urgency=low
+base-installer (1.70ubuntu1) feisty; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Use the Ubuntu keyring.
@@ -11,7 +11,7 @@ base-installer (1.70ubuntu1) UNRELEASED; urgency=low
     - Write out the resume partition as a UUID if possible.
     - Strip comments from debian/templates-arch in output templates file.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 12 Dec 2006 11:18:09 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 12 Dec 2006 11:28:05 +0000
 
 base-installer (1.70) unstable; urgency=low
 
