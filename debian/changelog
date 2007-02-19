@@ -1,3 +1,9 @@
+base-installer (1.70ubuntu4) UNRELEASED; urgency=low
+
+  * Fix VIA CPU family detection (LP: #86270).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 19 Feb 2007 14:02:16 +0000
+
 base-installer (1.70ubuntu3) feisty; urgency=low
 
   * Set Maintainer to ubuntu-installer@lists.ubuntu.com.
