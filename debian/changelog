@@ -1,6 +1,7 @@
 base-installer (1.70ubuntu6) UNRELEASED; urgency=low
 
-  * Add linux-generic to crazy kernel_update_list metapackage ordering hack.
+  * Add linux-generic and linux-ps3 to crazy kernel_update_list metapackage
+    ordering hack.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 21 Mar 2007 16:42:46 +0000
 
