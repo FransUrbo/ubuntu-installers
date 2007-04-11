@@ -1,10 +1,10 @@
-base-installer (1.70ubuntu7) UNRELEASED; urgency=low
+base-installer (1.70ubuntu7) feisty; urgency=low
 
   * Use powerpc64 kernels on PS3 systems; the separate ps3 kernels have gone
     away.
   * Add PS3 tests.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 11 Apr 2007 14:58:16 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 11 Apr 2007 15:07:05 +0100
 
 base-installer (1.70ubuntu6) feisty; urgency=low
 
