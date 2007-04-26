@@ -1,4 +1,4 @@
-base-installer (1.79ubuntu1) UNRELEASED; urgency=low
+base-installer (1.79ubuntu1) gutsy; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Use the Ubuntu keyring.
@@ -12,7 +12,7 @@ base-installer (1.79ubuntu1) UNRELEASED; urgency=low
   * Remove some old cruft from Ubuntu kernel selection code.
   * i386 -server* kernels require 686 processors.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 26 Apr 2007 13:59:59 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 26 Apr 2007 14:31:55 +0100
 
 base-installer (1.79) unstable; urgency=low
 
