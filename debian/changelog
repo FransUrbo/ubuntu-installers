@@ -11,6 +11,7 @@ base-installer (1.79ubuntu1) UNRELEASED; urgency=low
     - Write out the resume partition as a UUID if possible.
     - Strip comments from debian/templates-arch in output templates file.
   * Remove some old cruft from Ubuntu kernel selection code.
+  * i386 -server* kernels require 686 processors.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 26 Apr 2007 13:59:59 +0100
 

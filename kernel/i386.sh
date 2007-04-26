@@ -34,10 +34,11 @@ arch_get_kernel_flavour () {
 }
 
 arch_check_usable_kernel () {
-	if expr "$1" : '.*-server.*' >/dev/null; then return 0; fi
 	if expr "$1" : '.*-386.*' >/dev/null; then return 0; fi
 	if [ "$2" = 486 ]; then return 1; fi
 	if expr "$1" : '.*-generic.*' >/dev/null; then return 0; fi
+	if [ "$2" = 586 ] || [ "$2" = k6 ]; then return 1; fi
+	if expr "$1" : '.*-server.*' >/dev/null; then return 0; fi
 
 	# default to usable in case of strangeness
 	warning "Unknown kernel usability: $1 / $2"
@@ -51,11 +52,12 @@ arch_get_kernel () {
 		echo "linux-generic"
 		echo "linux-image-generic"
 	fi
+	if [ "$1" = k7 ] || [ "$1" = 686 ]; then
+		echo "linux-server"
+		echo "linux-image-server"
+		echo "linux-server-bigiron"
+		echo "linux-image-server-bigiron"
+	fi
 	echo "linux-386"
 	echo "linux-image-386"
-
-	echo "linux-server"
-	echo "linux-image-server"
-	echo "linux-server-bigiron"
-	echo "linux-image-server-bigiron"
 }
