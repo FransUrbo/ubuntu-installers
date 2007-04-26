@@ -46,12 +46,7 @@ arch_get_kernel () {
 			echo "linux-$1"
 			echo "linux-image-$1"
 			;;
-		*)
-			if [ "$1" = powerpc ] && [ "$SMP" ]; then
-				# 2.4 only has powerpc-smp.
-				echo "kernel-image-$KERNEL_MAJOR-$1$SMP"
-			fi
-			echo "kernel-image-$KERNEL_MAJOR-$1"
+		*)      warning "Unsupported kernel major '$KERNEL_MAJOR'."
 			;;
 	esac
 }

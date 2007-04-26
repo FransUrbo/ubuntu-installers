@@ -1,6 +1,6 @@
 arch_get_kernel_flavour () {
 	case "$SUBARCH" in
-		netwinder|iop32x|iop33x|ixp4xx)
+		iop32x|iop33x|ixp4xx)
 			echo "$SUBARCH"
 			return 0
 		;;
@@ -19,10 +19,6 @@ arch_get_kernel_flavour () {
 }
 
 arch_check_usable_kernel () {
-	# Netwinder subarch uses footbridge kernel flavor.
-	if [ "$2" = "netwinder" ]; then
-		if expr "$1" : ".*-footbridge\$" >/dev/null; then return 0; fi
-	fi
 	# Subarchitecture must match exactly.
 	if expr "$1" : ".*-$2\$" >/dev/null; then return 0; fi
 	return 1
@@ -32,9 +28,6 @@ arch_get_kernel () {
 	case "$KERNEL_MAJOR" in
 		2.6)
 			case "$1" in
-				netwinder)
-					echo "linux-image-$KERNEL_MAJOR-footbridge"
-					;;
 				bast)
 					echo "linux-image-$KERNEL_MAJOR-s3c2410"
 					;;
