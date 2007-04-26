@@ -9,7 +9,6 @@ base-installer (1.79ubuntu1) UNRELEASED; urgency=low
     - Allow preseeding base-installer/kernel/override-image to force a given
       kernel to be used.
     - Write out the resume partition as a UUID if possible.
-    - Strip comments from debian/templates-arch in output templates file.
   * Remove some old cruft from Ubuntu kernel selection code.
   * i386 -server* kernels require 686 processors.
 
