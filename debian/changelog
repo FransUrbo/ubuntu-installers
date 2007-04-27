@@ -9,7 +9,7 @@ grub-installer (1.24ubuntu1) UNRELEASED; urgency=low
       default.
     - Only mount /target/proc if it isn't already mounted.
     - Add user parameters to defoptions rather than kopt, so that they
-      aren't used in the recovery mode option (closes: Malone #31905).
+      aren't used in the recovery mode option.
     - Support setting OVERRIDE_UNSUPPORTED_OS in the environment to force
       grub-installer to use its default MBR selection method despite there
       being unsupported operating systems on the disk.
