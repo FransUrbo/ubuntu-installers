@@ -13,6 +13,8 @@ grub-installer (1.24ubuntu1) UNRELEASED; urgency=low
     - Support setting OVERRIDE_UNSUPPORTED_OS in the environment to force
       grub-installer to use its default MBR selection method despite there
       being unsupported operating systems on the disk.
+  * Only purge the package from grub and grub2 that we aren't using, not
+    both.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 27 Apr 2007 10:23:00 +0100
 
