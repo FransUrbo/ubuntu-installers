@@ -1,4 +1,4 @@
-base-installer (1.80ubuntu2) UNRELEASED; urgency=low
+base-installer (1.80ubuntu2) gutsy; urgency=low
   
   * Install smp kernel by default on sun4v (Niagara based sparc).
     With the new LDOM support on the way, adding/removing CPU's
