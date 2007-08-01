@@ -1,4 +1,4 @@
-base-installer (1.81ubuntu1) UNRELEASED; urgency=low
+base-installer (1.81ubuntu1) gutsy; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Use and depend on the Ubuntu keyring.
@@ -11,7 +11,7 @@ base-installer (1.81ubuntu1) UNRELEASED; urgency=low
     - Write out the resume partition as a UUID if possible.
     - Install smp kernel by default on sun4v (Niagara based sparc).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 01 Aug 2007 18:58:36 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 01 Aug 2007 19:06:43 +0100
 
 base-installer (1.81) unstable; urgency=low
 
