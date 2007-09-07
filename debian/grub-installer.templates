@@ -146,7 +146,6 @@ Description: for internal use; can be preseeded
 
 Template: grub-installer/bootdev_directory
 Type: string
-Default:
 Description: for internal use; relative boot directory for grub4dos
  Note that setting this disables installing grub. You are expected to
  install grub4dos some other way.
