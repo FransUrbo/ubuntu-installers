@@ -1,3 +1,9 @@
+base-installer (1.81ubuntu3) UNRELEASED; urgency=low
+
+  * Support powerpc/cell subarchitecture.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 23 Sep 2007 21:35:06 +0100
+
 base-installer (1.81ubuntu2) gutsy; urgency=low
 
   * Treat pre-Nehemiah Via C3s as 586, so they use the -generic kernel

@@ -9,7 +9,7 @@ arch_get_kernel_flavour () {
 			;;
 	esac
 	case "$SUBARCH" in
-		powermac*|prep|chrp*|ps3)	echo "$family" ;;
+		powermac*|prep|chrp*|ps3|cell)	echo "$family" ;;
 		amiga)				echo apus ;;
 		*)
 			warning "Unknown $ARCH subarchitecture '$SUBARCH'."
