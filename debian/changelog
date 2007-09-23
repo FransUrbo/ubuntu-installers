@@ -1,6 +1,7 @@
 base-installer (1.81ubuntu3) UNRELEASED; urgency=low
 
   * Support powerpc/cell subarchitecture.
+  * Use cell kernel flavour on powerpc/ps3 and powerpc/cell.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 23 Sep 2007 21:35:06 +0100
 
