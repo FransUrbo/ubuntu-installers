@@ -22,6 +22,7 @@ grub-installer (1.27ubuntu1) UNRELEASED; urgency=low
       normal grub installation.
     - Only support grub-installer/grub2_instead_of_grub_legacy by preseeding
       for now.
+  * Adjust Vcs-* headers for Ubuntu.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 26 Nov 2007 14:35:27 +0000
 
