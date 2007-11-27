@@ -1,4 +1,4 @@
-base-installer (1.85ubuntu1) UNRELEASED; urgency=low
+base-installer (1.85ubuntu1) hardy; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Use and depend on the Ubuntu keyring.
@@ -11,7 +11,7 @@ base-installer (1.85ubuntu1) UNRELEASED; urgency=low
     - Write out the resume partition as a UUID if possible.
   * Set the Vcs-Bzr field to the Ubuntu branch.
 
- -- Evan Dandrea <evand@ubuntu.com>  Tue, 27 Nov 2007 12:20:12 -0500
+ -- Evan Dandrea <evand@ubuntu.com>  Tue, 27 Nov 2007 15:50:44 -0500
 
 base-installer (1.85) unstable; urgency=low
 
