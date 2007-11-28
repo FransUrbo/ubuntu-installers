@@ -1,3 +1,12 @@
+debian-installer (20060711ubuntu12) edgy; urgency=low
+
+  * build/boot/x86/help.xml: When building gfxboot help for live CDs,
+    replace F4 with a stub page discussing (from 40,000 feet) how to rescue
+    a broken system (closes: Malone #47570).
+  * Move to 2.6.17-9 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 25 Sep 2006 10:55:52 +0100
+
 debian-installer (20060711ubuntu11) edgy; urgency=low
 
   * Move to 2.6.17-8 kernels.

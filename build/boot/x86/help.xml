@@ -51,7 +51,7 @@
 
    <seglistitem>
     <seg><link linkend="F4"><keycap>F4</keycap></link></seg>
-    <seg>Additional boot methods; rescue mode.</seg>
+    <seg>Additional boot methods; rescuing a broken system.</seg>
    </seglistitem>
 
    <seglistitem>
@@ -237,10 +237,10 @@ For F10 type control and F then the digit 0
  </refsection>
 </refentry>
 
-<refentry>
+<refentry condition="install">
  <refnamediv>
   <refdescriptor><keycap>F4</keycap></refdescriptor>
-  <refname>RESCUE MODE</refname>
+  <refname>RESCUING A BROKEN SYSTEM</refname>
  </refnamediv>
 
  <refsection>
@@ -261,6 +261,35 @@ For F10 type control and F then the digit 0
   </para>
 
   <informalexample><screen>boot: rescue acpi=off</screen></informalexample>
+
+  <para condition="syslinux">
+   Press <phrase class="not-serial">F1</phrase><phrase class="serial">control and F then 1</phrase>
+   for the help index, or ENTER to ${BOOTPROMPT}
+  </para>
+
+  <para condition="gfxboot">
+   Press F1 for the help index, or Escape to exit help.
+  </para>
+ </refsection>
+</refentry>
+
+<refentry condition="live">
+ <refnamediv>
+  <refdescriptor><keycap>F4</keycap></refdescriptor>
+  <refname>RESCUING A BROKEN SYSTEM</refname>
+ </refnamediv>
+
+ <refsection>
+  <title />
+
+  <para>
+   There is no dedicated rescue mode on this CD. However, since the entire
+   system runs from the CD, it is possible to use the command-line and/or
+   graphical tools provided to rescue a broken system, and to use a web
+   browser to search for help. Extensive advice is available online for most
+   kinds of problems that might cause your normal system to fail to boot
+   correctly.
+  </para>
 
   <para condition="syslinux">
    Press <phrase class="not-serial">F1</phrase><phrase class="serial">control and F then 1</phrase>
