@@ -1,3 +1,11 @@
+debian-installer (20070308ubuntu9) gutsy; urgency=low
+
+  * Remove dangling reference to expert mode from live boot screens
+    (LP: #48349).
+  * Move to 2.6.22-9 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 31 Jul 2007 09:47:11 +0100
+
 debian-installer (20070308ubuntu8) gutsy; urgency=low
 
   * Publish separate kernel and initrd for sparc64 netboot.

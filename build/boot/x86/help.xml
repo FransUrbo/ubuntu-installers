@@ -346,7 +346,7 @@ For F10 type control and F then the digit 0
    </seglistitem>
   </segmentedlist>
 
-  <para>
+  <para condition="install">
    Many kernel modules are loaded dynamically by the installer, and
    parameters for those modules cannot be given on the command line. To be
    prompted for parameters when modules are loaded, boot in expert mode (see
