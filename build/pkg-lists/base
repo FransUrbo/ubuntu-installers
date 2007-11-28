@@ -21,3 +21,4 @@ udpkg
 rescue-check
 env-preseed
 #include "udev"
+bootchart-udeb

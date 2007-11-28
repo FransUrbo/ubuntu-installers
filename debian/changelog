@@ -1,3 +1,11 @@
+debian-installer (20051026ubuntu5) dapper; urgency=low
+
+  * build/pkg-lists/base: Add bootchart-udeb.
+  * build/config/sparc/combined.cfg: Disable miniiso target, which is for
+    Linux 2.4 (closes: Ubuntu #20619).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri,  9 Dec 2005 12:05:56 +0000
+
 debian-installer (20051026ubuntu4) dapper; urgency=low
 
   * Move to 2.6.15-7 kernels.
