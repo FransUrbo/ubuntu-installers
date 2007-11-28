@@ -16,10 +16,15 @@ if [ -z "$destination" ]; then
 	destination="/tmp/manual"
 fi
 
+if [ -z "$formats" ]; then
+        #formats="html pdf ps txt"
+        formats="html"
+fi
+
 [ -e "$destination" ] || mkdir -p "$destination"
 
 if [ "$official_build" ]; then
-	# Propigate this to children.
+	# Propagate this to children.
 	export official_build
 fi
 
@@ -32,9 +37,16 @@ for lang in $languages; do
 	else
 		destsuffix="${lang}.${arch}"
 	fi
-	./buildone.sh "$arch" "$lang"
-	mkdir "$destination/$destsuffix"
-	mv *.html "$destination/$destsuffix"
+	./buildone.sh "$arch" "$lang" "$formats"
+	mkdir -p "$destination/$destsuffix"
+	for format in $formats; do
+	    if [ "$format" = html ]; then
+		mv ./build.out/html/*.html "$destination/$destsuffix"
+	    else
+		mv ./build.out/install.$lang.$format "$destination/$destsuffix"
+	    fi
+	done
 	./clear.sh
     done
 done
+

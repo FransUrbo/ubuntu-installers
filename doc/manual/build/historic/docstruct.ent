@@ -4,10 +4,10 @@
 <!ENTITY preface.xml          SYSTEM "en/preface.xml">
 
  <!ENTITY welcome.xml      SYSTEM "en/welcome/welcome.xml">
-  <!ENTITY what-is-ubuntu.xml        SYSTEM "en/welcome/what-is-ubuntu.xml">
   <!ENTITY what-is-debian.xml        SYSTEM "en/welcome/what-is-debian.xml"> 
   <!ENTITY what-is-linux.xml         SYSTEM "en/welcome/what-is-linux.xml"> 
   <!ENTITY what-is-debian-linux.xml  SYSTEM "en/welcome/what-is-debian-linux.xml">
+  <!ENTITY what-is-debian-hurd.xml   SYSTEM "en/welcome/what-is-debian-hurd.xml"> 
   <!ENTITY getting-newest-inst.xml   SYSTEM "en/welcome/getting-newest-inst.xml"> 
   <!ENTITY getting-newest-doc.xml    SYSTEM "en/welcome/getting-newest-doc.xml"> 
   <!ENTITY doc-organization.xml      SYSTEM "en/welcome/doc-organization.xml"> 
@@ -115,7 +115,6 @@
   <!ENTITY module-mdcfg.xml              SYSTEM "en/using-d-i/modules/mdcfg.xml">
   <!ENTITY module-prebaseconfig.xml      SYSTEM "en/using-d-i/modules/prebaseconfig.xml">
   <!ENTITY module-base-installer.xml     SYSTEM "en/using-d-i/modules/base-installer.xml">
-  <!ENTITY module-archive-copier.xml     SYSTEM "en/using-d-i/modules/archive-copier.xml">
   <!ENTITY module-kernel-chooser.xml     SYSTEM "en/using-d-i/modules/kernel-chooser.xml">
   <!ENTITY module-os-prober.xml          SYSTEM "en/using-d-i/modules/os-prober.xml">
 

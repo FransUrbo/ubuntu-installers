@@ -19,7 +19,7 @@ fi
 [ -e "$destination" ] || mkdir -p "$destination"
 
 if [ "$official_build" ]; then
-	# Propagate this to children.
+	# Propigate this to children.
 	export official_build
 fi
 
@@ -32,10 +32,9 @@ for lang in $languages; do
 	else
 		destsuffix="${lang}.${arch}"
 	fi
-	./buildone.sh "$arch" "$lang" "html"
+	./buildone.sh "$arch" "$lang"
 	mkdir "$destination/$destsuffix"
-	mv build.out/html/*.html "$destination/$destsuffix"
+	mv *.html "$destination/$destsuffix"
 	./clear.sh
     done
 done
-

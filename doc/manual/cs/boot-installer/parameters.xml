@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: parameters.xml 23461 2004-10-25 16:21:16Z mck-guest $ -->
+<!-- $Id: parameters.xml 23953 2004-11-22 19:03:34Z mck-guest $ -->
 <!-- original version: 23207 -->
 
  <sect1 id="boot-parms"><title>Zaváděcí parametry</title>
@@ -257,7 +257,7 @@ dostanete pouze v případě, že dotaz na DHCP server selže.
 Máte-li tedy na místní síti DHCP server, ale z nějakého důvodu jej
 nechcete použít (protože např. pro účely instalace vrací špatné
 hodnoty), můžete použít parametr
-<userinput>netcfg/use_dhcp=true</userinput>, kterým zabráníte
+<userinput>netcfg/disable_dhcp=false</userinput>, kterým zabráníte
 automatickému nastavení sítě přes DHCP a rovnou budete požádáni
 o ruční nastavení síťových údajů.
 

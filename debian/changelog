@@ -1,3 +1,34 @@
+debian-installer (20041227ubuntu1) hoary; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue,  4 Jan 2005 21:02:54 +0000
+
+debian-installer (20041227) unstable; urgency=low
+
+  * Joey Hess
+    - Add module-init-tools to build deps for ia64 to fix truncated
+      modules.dep files and USB keyboard.
+    - Add it for sparc too.
+    - Add discover1 to even the 2.4 hppa images. Yes, there are no modules
+      there, but this allows the de4x5 blacklist code in hw-detect to notice
+      that discover1 wants to load de4x5, and blacklist it, avoiding a
+      crash when the installed system boots.
+    - Add 2.6 netboot image for hppa. Includes a move of the 2.4 netboot
+      image into the netboot/ directory for consistency.
+    - Fix SUITE setting so debian/rules can override it. I guess this never
+      worked as intended before!
+  * Christian Perrier
+    - Add 7 missing characters to installer/build/needed-characters/ar
+      Thanks to Naidim Shaikli and Arabeyes contributors
+  * Martin Michlmayr
+    - Add a ramdisk_size parameter to sb1-swarm-bn's boot configuration
+      file since the initrd is now bigger than what the kernel expects.
+  * fjpop
+    - Implement new-generation build scripts for sarge branch.
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 27 Dec 2004 21:26:29 -0500
+
 debian-installer (20041118ubuntu13) hoary; urgency=low
 
   * Set debconf priority for non-expert installations back to high. Using

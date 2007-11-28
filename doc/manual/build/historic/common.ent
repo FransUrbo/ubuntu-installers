@@ -10,7 +10,7 @@
 
 <!ENTITY release     "3.1">
 <!ENTITY releasename "sarge">
-<!ENTITY path-to-top-level "../../">
+<!ENTITY path-to-top-level "../">
 <!ENTITY FIXME
   "<emphasis>Documentation not complete, text missing.</emphasis>">
 
@@ -38,7 +38,7 @@
 <!ENTITY setlang-language-code-list "ca cs da de eo es fi fr gl hr hu it ko ja pl pt ru sk sv tr zh_CN">
 
 <!-- notation used for 'megabytes' -->
-<!ENTITY notation-megabytes "MiB">
+<!ENTITY notation-megabytes "MB">
 
 <!-- minimum memory -->
 <!ENTITY minimum-memory "32&notation-megabytes;">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: contributors.xml 20052 2004-08-26 18:06:22Z mck-guest $ -->
-<!-- original version: 18999 -->
+<!-- $Id: contributors.xml 23953 2004-11-22 19:03:34Z mck-guest $ -->
+<!-- original version: 23687 -->
 
  <sect1 id="appendix-staff"><title>Poděkování</title>
 <para>
@@ -26,6 +26,7 @@ Pokud jsme Vás vynechali, nebojte se ozvat.
 <row><entry>Miroslav Kuře</entry></row>
 <row><entry>Joey Hess</entry></row>
 <row><entry>Sebastian Ley</entry></row>
+<row><entry>Steve Langasek</entry></row>
 
 </tbody></tgroup></table>
 

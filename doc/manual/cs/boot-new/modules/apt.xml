@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: apt.xml 18810 2004-08-02 17:09:13Z mck-guest $ -->
-<!-- original version: 18642 -->
+<!-- original version: 23845 -->
 
  <sect2 id="configure-apt">
  <title>Nastavení APT</title>
 
 <para>
 
-Uživatelé nejčastěji instalují balíčky programem
-<command>apt-get</command> z balíčku
+Uživatelé nejčastěji instalují balíky programem
+<command>apt-get</command> z balíku
 <classname>apt</classname>.<footnote>
 
 <para>
@@ -17,17 +16,20 @@ Ve skutečnosti balíčky instaluje program na nižší úrovni:
 <command>dpkg</command>.  <command>dpkg</command> je podle potřeby
 volán z nástroje <command>apt-get</command>, který se stará o získání
 potřebných balíčků ze sítě, CD nebo jiného zdroje a také o vyřešení
-závislostí mezi balíčky.
+závislostí mezi nimi.
 
 </para>
 </footnote>
 
 Aby APT věděl, odkud má získávat balíčky, musí se nastavit. S tím
-pomůže aplikace <command>apt-setup</command>.
+pomůže aplikace <command>apt-setup</command>. Správné nastavení APT je
+důležité, protože APT využívají i jeho nadstavby
+<command>dselect</command>, <command>aptitude</command> nebo
+<command>synaptic</command>.
 
 </para><para>
 
-Po skončení instalace můžete kdykoliv změnit nastavení APT spuštěním
+Po skončení instalace můžete nastavení APT kdykoliv změnit spuštěním
 programu <command>apt-setup</command>, nebo ručně upravit soubor
 <filename>/etc/apt/sources.list</filename>.
 
@@ -70,20 +72,39 @@ může trvat déle.
 </para><para>
 
 V dalším kroku sdělíte <command>apt-setup</command>u zemi, ve které
-žijete, a podle toho se vybere některé z oficiálních internetových
-zrcadel Debianu. Z nabídnutého seznamu vhodných serverů si některý
-vyberte.
+žijete, a podle toho se zobrazí podmnožina oficiálních internetových
+zrcadel Debianu ležících v dané zemi. Z nabídnutého seznamu vhodných
+serverů si některý vyberte.
 
 </para><para>
 
-Jestliže instalujete přes HTTP, budete dotázáni na nastavení proxy
-serveru.  To je někdy potřeba pro uživatele za firewallem, na
-podnikových sítích a podobně.
+Po výběru zrcadla budete dotázáni na nastavení proxy serveru. Proxy
+server slouží jako prostředník mezi vámi a Internetem &mdash; místo
+abyste se obrátili přímo na server v Internetu, požádáte svůj proxy
+server a ten váš dotaz předá cílovému serveru v Internetu. Internetový
+server odpoví vašemu proxy serveru a ten předá odpověď vašemu
+počítači. Většina domácích uživatelů zde nemusí nastavovat nic, proxy
+server se většinou vyskytuje jako součást firewallu pro větší nebo
+podnikové sítě, kde slouží jako jediný vstupní bod do Internetu. Někdy
+je proxy server nastaven, tak, že vyžaduje autentizaci
+uživatele. V takovém případě budete muset zadat i příslušné
+uživatelské jméno a heslo.
 
 </para><para>
 
 Nakonec bude nově zvolený síťový zdroj balíčků otestován, a jestli vše
-dopadne dobře, budete vám nabídnuta možnost přidat další zdroj.
+dopadne dobře, budete vám nabídnuta možnost přidat další zdroj.  Pokud
+se vyskytne problém (server není dostupný, neobsahuje zvolenou verzi
+Debianu, apod.), můžete si ze seznamu vybrat jiný
+server<footnote><para>
+
+Je-li zvolený server dlouhodobě nedostupný, je možné, že již
+neexistuje, protože seznam zrcadel se vytváří před vyjitím stabilní
+verze Debianu, což mohlo být před několika měsíci (a v některých
+případech i před několika lety).
+
+</para></footnote>, případně zkusit jiné nastavení proxy serveru.
+
 
 </para>
   </sect3>

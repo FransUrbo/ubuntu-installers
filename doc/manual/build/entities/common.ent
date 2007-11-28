@@ -14,25 +14,15 @@
 <!ENTITY release     "5.04">
 <!ENTITY releasename "hoary">
 <!ENTITY longreleasename "<quote>Hoary Hedgehog</quote>">
-<!ENTITY path-to-top-level "../">
+<!ENTITY releasename-cap "Hoary">
+<!ENTITY releasename-uc "HOARY">
+
 <!ENTITY FIXME
   "<emphasis>Documentation not complete, text missing.</emphasis>">
 
 <!-- proper nouns for architectures -->
-
 <!ENTITY arch-title
-  "<phrase arch='alpha'>Alpha</phrase>
-   <phrase arch='amd64'>AMD64</phrase>
-   <phrase arch='arm'>ARM</phrase>
-   <phrase arch='hppa'>PA-RISC</phrase>
-   <phrase arch='i386'>Intel x86</phrase>
-   <phrase arch='ia64'>IA-64</phrase>
-   <phrase arch='m68k'>Motorola 680x0</phrase>
-   <phrase arch='mips'>Mips</phrase>
-   <phrase arch='mipsel'>Mipsel</phrase>
-   <phrase arch='powerpc'>PowerPC</phrase>
-   <phrase arch='sparc'>SPARC</phrase>
-   <phrase arch='s390'>S/390</phrase>">
+  "<phrase arch='alpha'>Alpha</phrase><phrase arch='amd64'>AMD64</phrase><phrase arch='arm'>ARM</phrase><phrase arch='hppa'>PA-RISC</phrase><phrase arch='i386'>Intel x86</phrase><phrase arch='ia64'>IA-64</phrase><phrase arch='m68k'>Motorola 680x0</phrase><phrase arch='mips'>Mips</phrase><phrase arch='mipsel'>Mipsel</phrase><phrase arch='powerpc'>PowerPC</phrase><phrase arch='sparc'>SPARC</phrase><phrase arch='s390'>S/390</phrase>">
 
 <!-- general things from installer -->
 <!ENTITY enterkey "<keycap>Enter</keycap>">
@@ -97,20 +87,7 @@
   append="mcd=0x320,11"
   read-only'>
 
-<!ENTITY boot-loader-installer
-  "<phrase arch='alpha'>boot loader installer</phrase>
-   <phrase arch='arm'>boot loader installer</phrase>
-   <phrase arch='hppa'>boot loader installer</phrase>
-   <phrase arch='i386'>lilo</phrase>
-   <phrase arch='ia64'>boot loader installer</phrase>
-   <phrase arch='m68k'>boot loader installer</phrase>
-   <phrase arch='mips'>boot loader installer</phrase>
-   <phrase arch='mipsel'>boot loader installer</phrase>
-   <phrase arch='powerpc'>yaboot or quik</phrase>
-   <phrase arch='sparc'>boot loader installer</phrase>
-   <phrase arch='s390'>boot loader installer</phrase>">
-
 <!-- prefix for files that can be downloaded -->
 <!-- <![ %official-web-build; [ <!ENTITY downloadable-file "&url-boot-floppies;"> ]]> -->
                           <!ENTITY downloadable-file "&url-debian-installer;">
-                          <!ENTITY downloadable-file "&path-to-top-level;">
+

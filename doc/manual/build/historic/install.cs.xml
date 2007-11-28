@@ -1,4 +1,4 @@
-<?xml version='1.0'?>
+<?xml version="1.0" encoding="ISO-8859-2"?>
 <!-- -*- DocBook -*- -->
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
     "/usr/share/sgml/docbook/dtd/xml/4.2/docbookx.dtd" [
@@ -7,6 +7,10 @@
  <!ENTITY % dbcent PUBLIC
       "-//OASIS//ENTITIES DocBook Character Entities V4.2//EN"
       "/usr/share/sgml/docbook/dtd/xml/4.2/dbcentx.mod"> %dbcent;
+
+<!ENTITY MSG-YES "<userinput>Ano</userinput>">
+<!ENTITY MSG-NO "<userinput>Ne</userinput>">
+
  <!ENTITY % dynamicdata    SYSTEM "dynamic.ent"       > %dynamicdata;
  <!ENTITY % commondata     SYSTEM "common.ent"        > %commondata;
  <!ENTITY % urlsdata       SYSTEM "urls.ent"          > %urlsdata;
@@ -20,10 +24,10 @@
  <!ENTITY % install-docs   SYSTEM "install-docs.ent"  > %install-docs;
 ]>
 
-<!-- retain these comments for translator revision tracking -->
-<!-- $Id: install.en.xml 22663 2004-10-06 15:47:38Z fjpop-guest $ -->
+<!-- $Id: install.cs.xml 24587 2004-12-27 16:13:25Z fjpop-guest $ -->
+<!-- original version: 11648 -->
 
-<book>
+<book lang="cs">
 
 &bookinfo.xml;
 &preface.xml;

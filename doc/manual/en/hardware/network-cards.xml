@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: network-cards.xml 23669 2004-11-08 02:03:35Z vorlon $ -->
+<!-- $Id: network-cards.xml 24331 2004-12-09 13:19:33Z fjpop-guest $ -->
 
  <sect1 id="network-cards">
  <title>Network Connectivity Hardware</title>
@@ -100,6 +100,12 @@ also be supported by the boot disks.  You may need to load your
 network driver as a module.
 
 </para><para arch="hppa">
+
+Any network interface card (NIC) supported by the Linux kernel should
+also be supported by the boot disks.  You may need to load your
+network driver as a module.
+
+</para><para arch="ia64">
 
 Any network interface card (NIC) supported by the Linux kernel should
 also be supported by the boot disks.  You may need to load your

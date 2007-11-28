@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: non-debian-partitioning.xml 20052 2004-08-26 18:06:22Z mck-guest $ -->
-<!-- original version: 19054 -->
+<!-- $Id: non-debian-partitioning.xml 23953 2004-11-22 19:03:34Z mck-guest $ -->
+<!-- original version: 23397 -->
 
  <sect1 id="non-debian-partitioning">
  <title>Předrozdělení disku pro více operačních systémů</title>
