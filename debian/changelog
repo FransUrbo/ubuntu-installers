@@ -1,3 +1,9 @@
+debian-installer (20060711ubuntu18) edgy; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 21 Oct 2006 00:06:19 +0100
+
 debian-installer (20060711ubuntu17) edgy; urgency=low
 
   * No-change rebuild to pick up new cdebconf-keystep and localechooser.
