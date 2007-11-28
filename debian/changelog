@@ -1,3 +1,10 @@
+debian-installer (20060711ubuntu4) edgy; urgency=low
+
+  * Drop nic-firmware-* temporarily, since it seems to have disappeared (see
+    Malone #53141).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 16 Jul 2006 14:46:24 +0100
+
 debian-installer (20060711ubuntu3) edgy; urgency=low
 
   * Move to 2.6.17-5 kernels.
