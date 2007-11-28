@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu12) gutsy; urgency=low
+
+  * Move to 2.6.22-10 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 22 Aug 2007 15:25:07 +0100
+
 debian-installer (20070308ubuntu11) gutsy; urgency=low
 
   * No-change rebuild to pick up new components.
