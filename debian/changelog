@@ -1,3 +1,9 @@
+debian-installer (20061102ubuntu8) feisty; urgency=low
+  
+  * Move to 2.6.20-5 kernels.
+
+ -- Fabio M. Di Nitto <fabbione@ubuntu.com>  Mon, 08 Jan 2007 06:11:43 +0100
+
 debian-installer (20061102ubuntu7) feisty; urgency=low
 
   * Move to 2.6.20-2 kernels.
