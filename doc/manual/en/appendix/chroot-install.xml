@@ -433,7 +433,7 @@ created in <xref linkend="chroot-install-base-config"/>, and run:
 
 <informalexample><screen>
 
- $ sudo aptitude -y install '~tubuntu-desktop'
+ $ sudo aptitude -y install ubuntu-standard ubuntu-desktop
 
 </screen></informalexample>
 

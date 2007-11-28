@@ -1,3 +1,11 @@
+debian-installer (20050317ubuntu19) breezy; urgency=low
+
+  * doc/manual/en/appendix/chroot-install.xml: Recommend installing
+    ubuntu-standard as well as ubuntu-desktop. Use metapackages rather than
+    tasks.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 11 Oct 2005 21:56:11 +0100
+
 debian-installer (20050317ubuntu18) breezy; urgency=low
 
   * build/boot/x86/f1.txt, doc/manual/en/appendix/chroot-install.xml,
