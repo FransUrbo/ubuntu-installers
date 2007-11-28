@@ -1,3 +1,14 @@
+debian-installer (20051026ubuntu27) dapper; urgency=low
+
+  * debian/rules: Calculate SUITE correctly for uploads to pockets (e.g.
+    dapper-security).
+  * Add nfs-modules to all netboot initrds, except powerpc where yaboot
+    won't be able to load the initrd if it gets much bigger (closes: Malone
+    #34161).
+  * Move to 2.6.15-20 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed,  5 Apr 2006 10:14:33 +0100
+
 debian-installer (20051026ubuntu26) dapper; urgency=low
 
   * No-change rebuild to pick up new components.
