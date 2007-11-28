@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu11) gutsy; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 20 Aug 2007 11:48:39 +0100
+
 debian-installer (20070308ubuntu10) gutsy; urgency=low
 
   * Build-depend on dctrl-tools rather than the transitional package
