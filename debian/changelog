@@ -1,3 +1,18 @@
+debian-installer (20041118ubuntu1) hoary; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 23 Nov 2004 19:27:13 +0000
+
+debian-installer (20041118) unstable; urgency=HIGH
+
+  * Joey Hess
+    - Add debian-installer/locale=C to s390 parmfile to work around
+      bug #281538 in languagechooser.
+    - Add module-init-tools to build deps for hppa, to fix FTBFS.
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 18 Nov 2004 14:12:41 -0500
+
 debian-installer (20041115ubuntu1) hoary; urgency=low
 
   * Resynchronise with Debian.
