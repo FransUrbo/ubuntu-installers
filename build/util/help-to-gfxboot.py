@@ -58,7 +58,7 @@ def handleRefEntry(refentry):
     sys.stdout.write("\x04")
     handleRefNameDiv(refentry.getElementsByTagName("refnamediv")[0])
     handleRefSection(refentry.getElementsByTagName("refsection")[0])
-    sys.stdout.write(text.rstrip('\n'))
+    sys.stdout.write(text.rstrip('\n').encode('UTF-8'))
     text = ''
 
 def handleRefNameDiv(refnamediv):
