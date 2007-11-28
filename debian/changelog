@@ -1,3 +1,13 @@
+debian-installer (20040801ubuntu5) warty; urgency=low
+
+  * Revert the attempt at handling building only 2.6 targets in
+    build/config/x86.cfg; it makes life too difficult on amd64. Instead,
+    change the rest of build/config/ around to build with 2.6 in the default
+    targets.
+  * Disable driver disks for amd64.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Wed,  1 Sep 2004 17:18:07 +0100
+
 debian-installer (20040801ubuntu4) warty; urgency=low
 
   * Colin Watson
