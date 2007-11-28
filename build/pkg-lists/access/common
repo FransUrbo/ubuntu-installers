@@ -16,6 +16,7 @@ download-installer
 netcfg
 choose-mirror
 kbd-chooser
+console-keymaps-tree
 hw-detect
 localechooser
 iso-3166-udeb
