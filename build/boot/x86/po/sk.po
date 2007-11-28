@@ -719,10 +719,10 @@ msgstr "AUTORSKÉ PRÁVA A ZÁRUKY"
 
 #: help.xml:689
 msgid ""
-"Ubuntu is Copyright (C) 2004-2006 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu je Copyright (C) 2004-2006 Canonical Ltd., a obsahuje prácu mnohých "
+"Ubuntu je Copyright (C) 2004-2007 Canonical Ltd., a obsahuje prácu mnohých "
 "ostatných pôvodných autorov a prispievateľov"
 
 #: help.xml:694

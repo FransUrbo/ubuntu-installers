@@ -751,10 +751,10 @@ msgstr "TEKIJÄNOIKEUDET JA TAKUUT"
 
 #: help.xml:689
 msgid ""
-"Ubuntu is Copyright (C) 2004-2006 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntun tekijänoikeudet omistaa (C) 2004-2006 Canonical Ltd., ja siihen "
+"Ubuntun tekijänoikeudet omistaa (C) 2004-2007 Canonical Ltd., ja siihen "
 "sisältyy monien alkuperäisten tekijöiden ja osallistujien työtä."
 
 #: help.xml:694

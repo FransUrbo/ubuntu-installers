@@ -1,3 +1,11 @@
+debian-installer (20061102ubuntu19) feisty; urgency=low
+
+  * Add scsi-firmware to cdrom and hd-media images.
+  * Update Canonical copyright dates.
+  * Move to 2.6.20-13 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 26 Mar 2007 22:19:20 +0100
+
 debian-installer (20061102ubuntu18) feisty; urgency=low
 
   * No-change rebuild to pick up new kernel.

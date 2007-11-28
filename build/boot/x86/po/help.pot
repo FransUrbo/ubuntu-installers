@@ -780,7 +780,7 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:689
 msgid ""
-"Ubuntu is Copyright (C) 2004-2006 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
 

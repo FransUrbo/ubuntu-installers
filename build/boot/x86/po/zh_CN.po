@@ -720,10 +720,10 @@ msgstr "版权和担保"
 
 #: help.xml:689
 msgid ""
-"Ubuntu is Copyright (C) 2004-2006 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu的版权(C) 2004-2006属于Canonical有限公司，包括许多作者和贡献者所做的一"
+"Ubuntu的版权(C) 2004-2007属于Canonical有限公司，包括许多作者和贡献者所做的一"
 "切工作。"
 
 #: help.xml:694
