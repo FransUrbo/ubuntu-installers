@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2007-05-25 17:05+0100\n"
+"POT-Creation-Date: 2007-09-18 12:57+0100\n"
 "PO-Revision-Date: 2007-04-02 02:24+0000\n"
 "Last-Translator: Gabor Kelemen <kelemengabor@linuxforum.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -139,7 +139,7 @@ msgstr ""
 "További csomagok telepítése esetén még több helyre lesz szüksége attól "
 "függően, hogy mire kívánja használni az új Ubuntu rendszerét."
 
-#: help.xml:131 help.xml:665
+#: help.xml:131 help.xml:664
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -165,7 +165,7 @@ msgstr ""
 "merevlemezén. A létező lapozópartíciók azonban felhasználásra kerülnek, ha "
 "vannak."
 
-#: help.xml:147 help.xml:671
+#: help.xml:147 help.xml:670
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -177,8 +177,8 @@ msgstr ""
 msgid "Thank you for choosing Ubuntu!"
 msgstr "Köszönjük, hogy az Ubuntut választotta!"
 
-#: help.xml:156 help.xml:230 help.xml:266 help.xml:295 help.xml:362
-#: help.xml:450 help.xml:519 help.xml:620 help.xml:676 help.xml:732
+#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
+#: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
@@ -188,8 +188,8 @@ msgstr ""
 "\"serial\">a Ctrl majd F majd 1 gombokat</phrase> a súgó tartalmához, vagy "
 "ENTERT a következőhöz: ${BOOTPROMPT}"
 
-#: help.xml:161 help.xml:235 help.xml:271 help.xml:300 help.xml:367
-#: help.xml:455 help.xml:524 help.xml:625 help.xml:681 help.xml:737
+#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
+#: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr "Nyomja meg az F1-et a súgó tartalmához, vagy Escape-et a kilépéshez."
 
@@ -217,39 +217,38 @@ msgstr "expert"
 msgid "Start the installation in expert mode, for maximum control."
 msgstr "Telepítés haladó módban a maximális felügyelet érdekében."
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:191
-msgid "server"
-msgstr "server"
+msgid "cli"
+msgstr ""
 
 #: help.xml:192
-msgid "server-expert"
-msgstr "server-expert"
+#, fuzzy
+msgid "cli-expert"
+msgstr "expert"
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
-msgid ""
-"Minimal system install. Recommended for servers, where a complete graphical "
-"desktop environment is not desired."
+msgid "Minimal command-line system install."
 msgstr ""
-"Minimális rendszer telepítése. Kiszolgálókhoz ajánlott, ahol a grafikus "
-"felület nem kívánatos."
 
-#: help.xml:200
+#: help.xml:199
 msgid "live"
 msgstr "live"
 
-#: help.xml:202
+#: help.xml:201
 msgid "Start the live system."
 msgstr "Live rendszer indítása."
 
-#: help.xml:207
+#: help.xml:206
 msgid "memtest"
 msgstr "memtest"
 
-#: help.xml:209
+#: help.xml:208
 msgid "Perform a memory test."
 msgstr "Memóriateszt futtatása."
 
-#: help.xml:215 help.xml:259
+#: help.xml:214 help.xml:258
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
@@ -257,17 +256,17 @@ msgstr ""
 "A rendszerindítási módok használatához csak írja be valamelyiküket "
 "opcionális rendszerindító paraméterekkel bővítve. Például:"
 
-#: help.xml:220
+#: help.xml:219
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr "boot: install acpi=off"
 
-#: help.xml:221
+#: help.xml:220
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
-#: help.xml:225
+#: help.xml:224
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
@@ -275,30 +274,30 @@ msgstr ""
 "Ha bizonytalan, használja az alapértelmezett rendszerindítási módot az ENTER "
 "leütésével."
 
-#: help.xml:243 help.xml:279
+#: help.xml:242 help.xml:278
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "SÉRÜLT RENDSZER MENTÉSE"
 
-#: help.xml:247
+#: help.xml:246
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
 "Használja az alábbi rendszerindítási módok valamelyikét egy létező telepítés "
 "helyreállításához"
 
-#: help.xml:251
+#: help.xml:250
 msgid "rescue"
 msgstr "rescue"
 
-#: help.xml:253
+#: help.xml:252
 msgid "Boot into rescue mode."
 msgstr "Indítás helyreállítási módban."
 
-#: help.xml:263
+#: help.xml:262
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
-#: help.xml:286
+#: help.xml:285
 msgid ""
 "There is no dedicated rescue mode on this CD. However, since the entire "
 "system runs from the CD, it is possible to use the command-line and/or "
@@ -313,20 +312,20 @@ msgstr ""
 "el egy átlagos rendszer normális indulását megakadályozó hibák elhárításával "
 "kapcsolatban."
 
-#: help.xml:308
+#: help.xml:307
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "SPECIÁLIS RENDSZERINDÍTÁSI PARAMÉTEREK - ÁTTEKINTÉS"
 
-#: help.xml:315
+#: help.xml:314
 msgid "On a few systems, you may need to specify a parameter at the"
 msgstr "Néhány rendszeren speciális paramétereket kell megadnia a"
 
-#: help.xml:316 help.xml:382 help.xml:470 help.xml:537
+#: help.xml:315 help.xml:381 help.xml:469 help.xml:536
 #, no-wrap
 msgid "boot:"
 msgstr "boot:"
 
-#: help.xml:316
+#: help.xml:315
 msgid ""
 "prompt in order to boot the system. For example, Linux may not be able to "
 "autodetect your hardware, and you may need to explicitly specify its "
@@ -336,27 +335,27 @@ msgstr ""
 "nem ismeri fel automatikusan a hardverét, ezért a felismeréshez saját "
 "kezűleg kell megadnia a helyét."
 
-#: help.xml:322
+#: help.xml:321
 msgid "For more information about what boot parameters you can use, press:"
 msgstr "A használható rendszerindítási paraméterekért nyomja meg ezt a gombot:"
 
-#: help.xml:330
+#: help.xml:329
 msgid "boot parameters for special machines"
 msgstr "rendszerindítási paraméterek speciális gépekhez"
 
-#: help.xml:335
+#: help.xml:334
 msgid "boot parameters for various disk controllers"
 msgstr "rendszerindítási paraméterek különböző lemezvezérlőkhöz"
 
-#: help.xml:340
+#: help.xml:339
 msgid "boot parameters understood by the install system"
 msgstr "a telepítő által megértett rendszerindító paraméterek"
 
-#: help.xml:345
+#: help.xml:344
 msgid "boot parameters understood by the bootstrap system"
 msgstr "a rendszerindító által megértett rendszerindító paraméterek"
 
-#: help.xml:350
+#: help.xml:349
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
@@ -368,7 +367,7 @@ msgstr ""
 "betöltésénél meg szeretné adni azok paramétereit, indítsa el a haladó módot "
 "(lásd <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
-#: help.xml:357
+#: help.xml:356
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
@@ -376,15 +375,15 @@ msgstr ""
 "A rendszerindító sok rendszermag-modult dinamikusan tölt be és ezekhez a "
 "modulokhoz nem lehet paramétereket megadni a parancssorból."
 
-#: help.xml:375
+#: help.xml:374
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "SPECIÁLIS RENDSZERINDÍTÓ PARAMÉTEREK - KÜLÖNBÖZŐ HARDVEREK"
 
-#: help.xml:382 help.xml:470 help.xml:537
+#: help.xml:381 help.xml:469 help.xml:536
 msgid "You can use the following boot parameters at the"
 msgstr "Az alábbi rendszerindító paramétereket használhatja a"
 
-#: help.xml:383
+#: help.xml:382
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
@@ -394,19 +393,19 @@ msgstr ""
 "\"><keycap>F3</keycap></link>). Ha hexadecimális számokat használ, ne "
 "felejtse el a 0x előtagot (pl.: 0x300)."
 
-#: help.xml:390 help.xml:477
+#: help.xml:389 help.xml:476
 msgid "HARDWARE"
 msgstr "HARDVER"
 
-#: help.xml:391 help.xml:478
+#: help.xml:390 help.xml:477
 msgid "PARAMETER TO SPECIFY"
 msgstr "MEGADANDÓ PARAMÉTER"
 
-#: help.xml:394
+#: help.xml:393
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1 vagy ValuePoint (IDE lemez)"
 
-#: help.xml:395
+#: help.xml:394
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
@@ -414,27 +413,27 @@ msgstr ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 
-#: help.xml:399
+#: help.xml:398
 msgid "Some IBM ThinkPads"
 msgstr "Néhány IBM ThinkPad"
 
-#: help.xml:400
+#: help.xml:399
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
 msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
-#: help.xml:404
+#: help.xml:403
 msgid "IBM Pentium Microchannel"
 msgstr "IBM Pentium Microchannel"
 
-#: help.xml:405
+#: help.xml:404
 msgid "<userinput>mca-pentium no-hlt</userinput>"
 msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
-#: help.xml:409
+#: help.xml:408
 msgid "Protect I/O port regions"
 msgstr "I/O port régiók védelme"
 
-#: help.xml:410
+#: help.xml:409
 msgid ""
 "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
@@ -444,41 +443,41 @@ msgstr ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 
-#: help.xml:414
+#: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
 msgstr "Hibás FPU megkerülése (régi gépeknél)"
 
-#: help.xml:415
+#: help.xml:414
 msgid "<userinput>no387</userinput>"
 msgstr "<userinput>no387</userinput>"
 
-#: help.xml:419
+#: help.xml:418
 msgid "Laptops with screen display problems"
 msgstr "Képernyőmegjelenítési problémákkal küzdő laptopok"
 
-#: help.xml:420
+#: help.xml:419
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-#: help.xml:424
+#: help.xml:423
 msgid "Use first serial port at 9600 baud"
 msgstr "Az első soros port használata 9600 baud sebességgel"
 
-#: help.xml:425
+#: help.xml:424
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#: help.xml:429
+#: help.xml:428
 msgid "Force use of generic IDE driver"
 msgstr ""
 
-#: help.xml:430
+#: help.xml:429
 #, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-#: help.xml:435
+#: help.xml:434
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
@@ -486,29 +485,29 @@ msgstr ""
 "Ha elakadásokat vagy egyéb hardverhibát észlel, tiltsa le a hibás APIC "
 "megszakítás átirányítást"
 
-#: help.xml:438
+#: help.xml:437
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-#: help.xml:442 help.xml:511 help.xml:612
+#: help.xml:441 help.xml:510 help.xml:611
 msgid "For example:"
 msgstr "Például:"
 
-#: help.xml:445
+#: help.xml:444
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
-#: help.xml:446
+#: help.xml:445
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
-#: help.xml:463
+#: help.xml:462
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "SPECIÁLIS RENDSZERINDÍTÓ PARAMÉTEREK - KÜLÖNBÖZŐ LEMEZMEGHAJTÓK"
 
-#: help.xml:471 help.xml:538
+#: help.xml:470 help.xml:537
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
@@ -516,11 +515,11 @@ msgstr ""
 "promptot a rendszerindító móddal kombinálva (lásd <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 
-#: help.xml:481
+#: help.xml:480
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
-#: help.xml:482
+#: help.xml:481
 msgid ""
 "<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>irq</replaceable></"
@@ -534,11 +533,11 @@ msgstr ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 
-#: help.xml:486
+#: help.xml:485
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
-#: help.xml:487
+#: help.xml:486
 msgid ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>buson</replaceable>,"
@@ -550,34 +549,34 @@ msgstr ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
-#: help.xml:491
+#: help.xml:490
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
-#: help.xml:492
+#: help.xml:491
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
 "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (engedélyezve, ha nem nulla)"
 
-#: help.xml:496
+#: help.xml:495
 msgid "BusLogic SCSI Hosts"
 msgstr "BusLogic SCSI Hosts"
 
-#: help.xml:497
+#: help.xml:496
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
-#: help.xml:501
+#: help.xml:500
 msgid "Certain DELL machines"
 msgstr "Bizonyos DELL gépek"
 
-#: help.xml:502
+#: help.xml:501
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
-#: help.xml:507
+#: help.xml:506
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
@@ -585,97 +584,97 @@ msgstr ""
 "Ez a lista nem teljes, további részletekért lásd a kernel-parameters.txt "
 "fájlt a kernel forrásában."
 
-#: help.xml:514
+#: help.xml:513
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:515
+#: help.xml:514
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:532
+#: help.xml:531
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "SPECIÁLIS RENDSZERINDÍTÓ PARAMÉTEREK - TELEPÍTŐ"
 
-#: help.xml:542
+#: help.xml:541
 msgid "These parameters control how the installer works."
 msgstr "Ezek a paraméterek a telepítő működését szabályozzák."
 
-#: help.xml:545
+#: help.xml:544
 msgid "These parameters control how the bootstrap system works."
 msgstr "Ezek a paraméterek a rendszerindító működését szabályozzák."
 
-#: help.xml:550
+#: help.xml:549
 msgid "RESULT"
 msgstr "EREDMÉNY"
 
-#: help.xml:551
+#: help.xml:550
 msgid "PARAMETER"
 msgstr "PARAMÉTER"
 
-#: help.xml:554
+#: help.xml:553
 msgid "Verbose debugging"
 msgstr "Bőbeszédű hibakeresés"
 
-#: help.xml:555
+#: help.xml:554
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
 msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
-#: help.xml:559
+#: help.xml:558
 msgid "Debug boot sequence"
 msgstr "Rendszerindítási foylamat hibakeresése"
 
-#: help.xml:560
+#: help.xml:559
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
 msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
-#: help.xml:564
+#: help.xml:563
 msgid "Disable framebuffer"
 msgstr "A framebuffer letiltása"
 
-#: help.xml:565
+#: help.xml:564
 msgid "<userinput>fb=false</userinput>"
 msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:569
+#: help.xml:568
 msgid "Don't probe for USB"
 msgstr "Ne keressen USB eszközöket"
 
-#: help.xml:570
+#: help.xml:569
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
 msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
-#: help.xml:574
+#: help.xml:573
 msgid "Don't start PCMCIA"
 msgstr "Ne indítsa el a PCMCIA-t"
 
-#: help.xml:575
+#: help.xml:574
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:579
+#: help.xml:578
 msgid "Force static network config"
 msgstr "Statikus hálózati beállítás kényszerítése"
 
-#: help.xml:580
+#: help.xml:579
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:584
+#: help.xml:583
 msgid "Set keyboard map"
 msgstr "Billentyűzetkiosztás megadása"
 
-#: help.xml:585
+#: help.xml:584
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=hu</userinput>"
 
-#: help.xml:589
+#: help.xml:588
 msgid "Use Braille tty"
 msgstr "Braille terminál"
 
-#: help.xml:590
+#: help.xml:589
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
@@ -684,63 +683,63 @@ msgstr ""
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#: help.xml:594
+#: help.xml:593
 msgid "Use high contrast accessibility theme"
 msgstr ""
 
-#: help.xml:595
+#: help.xml:594
 #, fuzzy
 msgid "<userinput>theme=dark</userinput>"
 msgstr "<userinput>gdth=disable:y</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#: help.xml:599
+#: help.xml:598
 msgid "Use special tasks"
 msgstr ""
 
-#: help.xml:600
+#: help.xml:599
 #, fuzzy
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 msgstr "<userinput>bootkbd=hu</userinput>"
 
-#: help.xml:605
+#: help.xml:604
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 "ACPI letiltása a PCI térképekhez (hasznos néhány HP kiszolgálónál és Via-"
 "alapú gépnél)"
 
-#: help.xml:608
+#: help.xml:607
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:615
+#: help.xml:614
 #, no-wrap
 msgid "boot: install pci=noacpi"
 msgstr "boot: install pci=noacpi"
 
-#: help.xml:616
+#: help.xml:615
 #, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr "boot: live pci=noacpi"
 
-#: help.xml:633
+#: help.xml:632
 msgid "GETTING HELP"
 msgstr "SEGÍTSÉG KÉRÉSE"
 
-#: help.xml:640
+#: help.xml:639
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "Ha nem tudja telepíteni az Ubuntut, ne essen kétségbe!"
 
-#: help.xml:643
+#: help.xml:642
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "Ha nem tudja elindítani az Ubuntut, ne essen kétségbe!"
 
-#: help.xml:646
+#: help.xml:645
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Az Ubuntu csapata kész segíteni Önnek!"
 
-#: help.xml:649
+#: help.xml:648
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -748,7 +747,7 @@ msgstr ""
 "Különösen érdekelnek bennünket a telepítéssel kapcsolatos problémák, mivel "
 "ezek általában nem csak <emphasis>egy</emphasis> embernél okoznak gondot."
 
-#: help.xml:654
+#: help.xml:653
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -757,7 +756,7 @@ msgstr ""
 "mivel ezek általában nem csak <emphasis>egy</emphasis> embernél okoznak "
 "gondot."
 
-#: help.xml:658
+#: help.xml:657
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -768,11 +767,11 @@ msgstr ""
 "szolgálni, vagy pedig Önnel együtt megkeresnénk a forrását, így a következő "
 "felhasználó, akinél ilyen gond merül fel, profitálhat az Ön tapasztalataiból."
 
-#: help.xml:689
+#: help.xml:688
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "SZERZŐI JOGOK ÉS GARANCIA"
 
-#: help.xml:696
+#: help.xml:695
 msgid ""
 "Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
@@ -780,11 +779,11 @@ msgstr ""
 "Az Ubuntu Copyright (C) 2004-2007 Canonical Ltd., és magába foglalja sok más "
 "eredeti szerző és közreműködő munkáját."
 
-#: help.xml:701
+#: help.xml:700
 msgid "The Ubuntu system is freely redistributable."
 msgstr "Az Ubuntu rendszer szabadon terjeszthető."
 
-#: help.xml:704
+#: help.xml:703
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -794,7 +793,7 @@ msgstr ""
 "elolvashatja a megfelelő fájlban: /usr/share/doc/<replaceable>csomagneve</"
 "replaceable>/copyright."
 
-#: help.xml:709
+#: help.xml:708
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -804,7 +803,7 @@ msgstr ""
 "elolvashatja a megfelelő fájlban: /usr/share/doc/<replaceable>csomagneve</"
 "replaceable>/copyright."
 
-#: help.xml:715
+#: help.xml:714
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
@@ -812,7 +811,7 @@ msgstr ""
 "Az Ubuntura nincs <emphasis>SEMMIFÉLE GARANCIA</emphasis> az alkalmazható "
 "törvények által engedélyezett mértékig."
 
-#: help.xml:720
+#: help.xml:719
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
@@ -822,13 +821,26 @@ msgstr ""
 "projekttel kapcsolatban keresse fel a <ulink url=\"http://www.debian.org/\" /"
 "> címet"
 
-#: help.xml:726
+#: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
 "A rendszer alapja a Debian. További információért a Debian projekttel "
 "kapcsolatban keresse fel a <ulink url=\"http://www.debian.org/\" /> címet"
+
+#~ msgid "server"
+#~ msgstr "server"
+
+#~ msgid "server-expert"
+#~ msgstr "server-expert"
+
+#~ msgid ""
+#~ "Minimal system install. Recommended for servers, where a complete "
+#~ "graphical desktop environment is not desired."
+#~ msgstr ""
+#~ "Minimális rendszer telepítése. Kiszolgálókhoz ajánlott, ahol a grafikus "
+#~ "felület nem kívánatos."
 
 #~ msgid ""
 #~ "If your system hangs when booting, and the last message you see is "

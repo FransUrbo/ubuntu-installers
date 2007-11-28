@@ -188,11 +188,10 @@ For F10 type control and F then the digit 0
    </varlistentry>
 
    <varlistentry condition="install">
-    <term>server</term>
-    <term>server-expert</term>
+    <term>cli</term>
+    <term>cli-expert</term>
     <listitem><para>
-     Minimal system install. Recommended for servers, where a complete
-     graphical desktop environment is not desired.
+     Minimal command-line system install.
     </para></listitem>
    </varlistentry>
 
