@@ -1,3 +1,9 @@
+debian-installer (20051026ubuntu23) dapper; urgency=low
+
+  * Move to 2.6.15-19 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 20 Mar 2006 23:09:37 +0000
+
 debian-installer (20051026ubuntu22) dapper; urgency=low
 
   * No-change rebuild to pick up cdebconf security fixes.
