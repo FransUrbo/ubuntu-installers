@@ -32,9 +32,3 @@ save-logs
 mountfloppy
 
 libfribidi0-udeb
-
-# This is wrong and a workaround for isofs not being in the correct udeb in the
-# kernel.  To be removed post-herd-2
-fs-core-modules-${kernel:Version}
-
-

@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu4) gutsy; urgency=low
+
+  * Remove fs-core-modules workaround, as the kernel has now been fixed.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 05 Jun 2007 12:16:31 +0100
+
 debian-installer (20070308ubuntu3) gutsy; urgency=low
 
   * Clarify help text about existing swap partitions (LP: #50856).
