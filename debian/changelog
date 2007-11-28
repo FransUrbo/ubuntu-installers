@@ -1,3 +1,25 @@
+debian-installer (20041227ubuntu9) hoary; urgency=low
+
+  * Add zoneinfo-udeb to monolithic builds, for tzsetup-udeb.
+
+  * Move to 2.6.10-3 kernels.
+
+  * Backport from trunk:
+    - Add hd-media image for powerpc, including a boot.img.gz designed for
+      use on USB sticks.
+    - Document USB booting on powerpc. This involved splitting out the
+      documentation for USB booting on i386 a bit.
+  * Build boot.img.gz version of powerpc netboot, for use as a bootable USB
+    image. Unlike amd64 and i386, this currently requires a 16 MB stick.
+  * Manual changes:
+    - install-methods/usb-setup/i386.xml,
+      install-methods/usb-setup/powerpc.xml: Ubuntu branding.
+
+  * Stop using ubuntu/install-type for server installs; preseed base-config
+    instead.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon,  7 Feb 2005 18:51:14 +0000
+
 debian-installer (20041227ubuntu8) hoary; urgency=low
 
   * Use ${RAMDISK_SIZE} in sparc's silo.conf rather than a hardcoded size.

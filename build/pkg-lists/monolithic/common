@@ -37,6 +37,8 @@ mdcfg-utils
 mdadm-udeb
 # used by base-installer
 debootstrap-udeb
+# used by tzsetup-udeb
+zoneinfo-udeb
 
 preseed-common
 initrd-preseed
