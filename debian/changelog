@@ -1,8 +1,8 @@
-debian-installer (20070308ubuntu21) UNRELEASED; urgency=low
+debian-installer (20070308ubuntu21) hardy; urgency=low
 
   * Set default suite to hardy.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 28 Nov 2007 21:55:54 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 28 Nov 2007 22:12:41 +0000
 
 debian-installer (20070308ubuntu20) gutsy; urgency=low
 
