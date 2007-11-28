@@ -1,3 +1,9 @@
+debian-installer (20051026ubuntu9) dapper; urgency=low
+
+  * Move to 2.6.15-10 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 31 Dec 2005 18:15:58 +0000
+
 debian-installer (20051026ubuntu8) dapper; urgency=low
 
   * Move to 2.6.15-9 kernels.
