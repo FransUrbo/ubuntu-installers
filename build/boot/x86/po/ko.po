@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2006-03-27 10:07+0100\n"
-"PO-Revision-Date: 2006-03-31 12:03+0000\n"
+"PO-Revision-Date: 2006-04-28 04:30+0000\n"
 "Last-Translator: darehanl <darehanl@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,6 @@ msgstr ""
 "${BUILD_DATE}입니다."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
@@ -47,7 +46,7 @@ msgstr "도움말 목록"
 
 #: help.xml:29
 msgid "KEY"
-msgstr ""
+msgstr "KEY"
 
 #: help.xml:30
 msgid "TOPIC"
@@ -82,9 +81,8 @@ msgid "Special boot parameters for special machines."
 msgstr "특수한 시스템을 위한 부팅 인자"
 
 #: help.xml:69
-#, fuzzy
 msgid "Special boot parameters for selected disk controllers."
-msgstr "특수한 디스크 컨트롤러를 위한 부팅 인자"
+msgstr "일부 디스크 컨트롤러를 위한 부팅 인자"
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
@@ -104,7 +102,6 @@ msgid "Copyrights and warranties."
 msgstr "저작권과 보증 관련"
 
 #: help.xml:100
-#, fuzzy
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr "자세한 내용을 보기 위해서는 F2에서 F10을 누르거나, ${BOOTPROMPT}를 위해서 ENTER를 누르십시요."
 
@@ -113,7 +110,6 @@ msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr "자세한 내용을 보기 위해서는 F2에서 F10을 누르거나, 도움말을 빠져나오기 위해 Esc를 누르십시오."
 
 #: help.xml:112
-#, fuzzy
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
 msgstr "Ubuntu를 설치하기 위한 요건."
 
@@ -191,9 +187,8 @@ msgid "Available boot methods:"
 msgstr "선택할 수 있는 부팅 방식의 목록"
 
 #: help.xml:177
-#, fuzzy
 msgid "install"
-msgstr ""
+msgstr "install"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -201,7 +196,7 @@ msgstr "설치를 시작합니다 -- 기본으로 선택되는 ${MEDIA_TYPE} 설
 
 #: help.xml:184
 msgid "expert"
-msgstr ""
+msgstr "expert"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
@@ -209,11 +204,11 @@ msgstr "전문가 모드로 설치를 시작합니다."
 
 #: help.xml:191
 msgid "server"
-msgstr ""
+msgstr "server"
 
 #: help.xml:192
 msgid "server-expert"
-msgstr ""
+msgstr "server-expert"
 
 #: help.xml:194
 msgid ""
@@ -223,7 +218,7 @@ msgstr "최소 설치를 합니다. 완전한 그래픽 환경이 필요하지 �
 
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "live"
 
 #: help.xml:202
 msgid "Start the live system."
@@ -231,7 +226,7 @@ msgstr "라이브 시스템을 시작합니다."
 
 #: help.xml:207
 msgid "memtest"
-msgstr ""
+msgstr "memtest"
 
 #: help.xml:209
 msgid "Perform a memory test."
@@ -247,12 +242,12 @@ msgstr ""
 #: help.xml:220
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "boot: install acpi=off"
 
 #: help.xml:221
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #: help.xml:225
 msgid ""
@@ -261,9 +256,8 @@ msgid ""
 msgstr "확실하지 않다면 ENTER만을 입력하여 기본 설치 방식을 부팅 인자 없이 사용해보십시요."
 
 #: help.xml:243
-#, fuzzy
 msgid "RESCUE MODE"
-msgstr ""
+msgstr "복구 모드"
 
 #: help.xml:247
 msgid "Use one of these boot methods to rescue an existing install"
@@ -271,7 +265,7 @@ msgstr "전에 설치했던 시스템을 복구하기 위해서는 이를 선택
 
 #: help.xml:251
 msgid "rescue"
-msgstr ""
+msgstr "rescue"
 
 #: help.xml:253
 msgid "Boot into rescue mode."
@@ -280,21 +274,20 @@ msgstr "복구 모드로 부팅합니다."
 #: help.xml:263
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "boot: rescue acpi=off"
 
 #: help.xml:279
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "특수한 부팅 인자 - 개관"
 
 #: help.xml:286
-#, fuzzy
 msgid "On a few systems, you may need to specify a parameter at the"
-msgstr "일부 시스템에서는 특수한 부팅 인자를 입력해야 하는 경우도 있습니다."
+msgstr "일부 시스템에서는 특별한 부팅 인자를 입력해야 하는 경우도 있습니다."
 
 #: help.xml:287 help.xml:353 help.xml:439 help.xml:531
-#, fuzzy
+#, no-wrap
 msgid "boot:"
-msgstr ""
+msgstr "boot:"
 
 #: help.xml:287
 #, fuzzy
@@ -349,15 +342,19 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "특수한 부팅 인자 - 다양한 하드웨어의 지원"
 
 #: help.xml:353 help.xml:439 help.xml:531
+#, fuzzy
 msgid "You can use the following boot parameters at the"
-msgstr ""
+msgstr "다음 프롬프트에서 부팅 방식과 함께 아래 부팅 인자를 사용할 수 있습니다."
 
 #: help.xml:354
+#, fuzzy
 msgid ""
 "prompt, in combination with the boot method (see <link "
 "linkend=\"F3\"><keycap>F3</keycap></link>>). If you use hex numbers you have "
 "to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"프롬프트에 부팅 방식과 함께 입력하시면 됩니다(<link linkend=\"F3\"><keycap>F3</keycap></link>> "
+"참조). 십육진수를 사용하고자 한다면 앞에 0x를 붙여야 합니다(예: 0x300)."
 
 #: help.xml:361 help.xml:446
 msgid "HARDWARE"
@@ -372,11 +369,15 @@ msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1이나 ValuePoint (IDE 디스크)"
 
 #: help.xml:366
+#, fuzzy
 msgid ""
 ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replace"
 "able>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+""
+"<userinput>hd=<replaceable>실린더</replaceable>,<replaceable>헤드</replaceable>,<re"
+"placeable>섹터</replaceable></userinput>"
 
 #: help.xml:370
 msgid "Some IBM ThinkPads"
@@ -384,21 +385,22 @@ msgstr "일부 IBM 싱크 패드"
 
 #: help.xml:371
 msgid "<userinput>floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy=thinkpad</userinput>"
 
 #: help.xml:375
 msgid "IBM Pentium Microchannel"
-msgstr ""
+msgstr "IBM Pentium Microchannel"
 
 #: help.xml:376
 msgid "<userinput>mca-pentium no-hlt</userinput>"
-msgstr ""
+msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
 #: help.xml:380
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "I/O 포트 보호"
 
 #: help.xml:381
+#, fuzzy
 msgid ""
 ""
 "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</repl"
@@ -406,6 +408,11 @@ msgid ""
 "ceable></userinput><optional><userinput>,<replaceable>...</replaceable></user"
 "input></optional>"
 msgstr ""
+""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</repl"
+"a"
+"ceable></userinput><optional><userinput>,<replaceable>...</replaceable></user"
+"input></optional>"
 
 #: help.xml:385
 msgid "Workaround faulty FPU (old machines)"
@@ -413,7 +420,7 @@ msgstr "FPU에 문제가 있는 오래된 머신"
 
 #: help.xml:386
 msgid "<userinput>no387</userinput>"
-msgstr ""
+msgstr "<userinput>no387</userinput>"
 
 #: help.xml:390
 msgid "Laptops with screen display problems"
@@ -421,7 +428,7 @@ msgstr "화면 출력에 문제가 있는 일부 노트북"
 
 #: help.xml:391
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:396
 msgid ""
@@ -432,7 +439,7 @@ msgstr ""
 
 #: help.xml:399
 msgid "<userinput>gdth=disable:y</userinput>"
-msgstr ""
+msgstr "<userinput>gdth=disable:y</userinput>"
 
 #: help.xml:404
 msgid ""
@@ -442,7 +449,7 @@ msgstr "시스템이 멈추거나 다른 여러 가지 하드웨어 문제가 �
 
 #: help.xml:407
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:411 help.xml:505 help.xml:591
 msgid "For example:"
@@ -451,12 +458,12 @@ msgstr "예를 들어:"
 #: help.xml:414
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: install vga=771 noapic nolapic"
 
 #: help.xml:415
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:432
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
@@ -467,10 +474,12 @@ msgid ""
 "prompt, in combination with the boot method (see <link "
 "linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"프롬프트에 부팅 방식과 함께 입력하시면 됩니다(<link linkend=\"F3\"><keycap>F3</keycap></link>> "
+"참조)."
 
 #: help.xml:450
 msgid "Adaptec 151x, 152x"
-msgstr ""
+msgstr "Adaptec 151x, 152x"
 
 #: help.xml:451
 msgid ""
@@ -482,10 +491,17 @@ msgid ""
 "id</replaceable></userinput><optional><userinput>,<replaceable>rec"
 "onnect</replaceable></userinput></optional></optional></optional>"
 msgstr ""
+""
+"<userinput>aha152x=<replaceable>iobase</replaceable></userinput><optional><use"
+"r"
+"input>,<replaceable>irq</replaceable></userinput><optional><userinput>,<repla"
+"ceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>rec"
+"onnect</replaceable></userinput></optional></optional></optional>"
 
 #: help.xml:455
 msgid "Adaptec 1542"
-msgstr ""
+msgstr "Adaptec 1542"
 
 #: help.xml:456
 msgid ""
@@ -497,10 +513,17 @@ msgid ""
 "rinput><optional><userinput>,<replaceable>dmaspeed</replaceable></userinput><"
 "/optional></optional>"
 msgstr ""
+""
+"<userinput>aha1542=<replaceable>iobase</replaceable></userinput><optional><use"
+"r"
+"input>,<replaceable>buson</replaceable>,<replaceable>busoff</replaceable></us"
+"e"
+"rinput><optional><userinput>,<replaceable>dmaspeed</replaceable></userinput><"
+"/optional></optional>"
 
 #: help.xml:460
 msgid "Adaptec 274x, 284x"
-msgstr ""
+msgstr "Adaptec 274x, 284x"
 
 #: help.xml:461
 msgid "<userinput>aic7xxx=no_reset</userinput> (enabled if non-zero)"
@@ -508,11 +531,11 @@ msgstr "<userinput>aic7xxx=no_reset</userinput> (0일 때 사용안함)"
 
 #: help.xml:465
 msgid "BusLogic SCSI Hosts"
-msgstr ""
+msgstr "BusLogic SCSI 호스트"
 
 #: help.xml:466
 msgid "<userinput>buslogic=<replaceable>iobase</replaceable></userinput>"
-msgstr ""
+msgstr "<userinput>buslogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:470
 msgid "Certain DELL machines"
@@ -520,11 +543,11 @@ msgstr "일부 DELL 컴퓨터"
 
 #: help.xml:471
 msgid "<userinput>aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx=no_probe</userinput>"
 
 #: help.xml:475
 msgid "Future Domain TMC-8xx/950"
-msgstr ""
+msgstr "Future Domain TMC-8xx/950"
 
 #: help.xml:476
 msgid ""
@@ -532,18 +555,21 @@ msgid ""
 "<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</replac"
 "eable></userinput>"
 msgstr ""
+""
+"<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</replac"
+"eable></userinput>"
 
 #: help.xml:480
 msgid "NCR-based SCSI controller"
-msgstr ""
+msgstr "NCR-기반의 SCSI 컨트롤러"
 
 #: help.xml:481
 msgid "<userinput>sym53c8xx=safe:y</userinput>"
-msgstr ""
+msgstr "<userinput>sym53c8xx=safe:y</userinput>"
 
 #: help.xml:485
 msgid "Pro Audio Spectrum"
-msgstr ""
+msgstr "Pro Audio Spectrum"
 
 #: help.xml:486
 msgid ""
@@ -551,10 +577,13 @@ msgid ""
 "<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</replaceab"
 "le></userinput>"
 msgstr ""
+""
+"<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</replaceab"
+"le></userinput>"
 
 #: help.xml:490
 msgid "PS/2 ESDI (MCA)"
-msgstr ""
+msgstr "PS/2 ESDI (MCA)"
 
 #: help.xml:491
 msgid ""
@@ -562,10 +591,13 @@ msgid ""
 "<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,<"
 "replaceable>sec</replaceable></userinput>"
 msgstr ""
+""
+"<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,<"
+"replaceable>sec</replaceable></userinput>"
 
 #: help.xml:495
 msgid "Seagate ST-0x"
-msgstr ""
+msgstr "Seagate ST-0x"
 
 #: help.xml:496
 msgid ""
@@ -573,10 +605,13 @@ msgid ""
 "<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</replacea"
 "ble></userinput>"
 msgstr ""
+""
+"<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</replacea"
+"ble></userinput>"
 
 #: help.xml:500
 msgid "Trantor T128"
-msgstr ""
+msgstr "Trantor T128"
 
 #: help.xml:501
 msgid ""
@@ -584,123 +619,127 @@ msgid ""
 "<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</replacea"
 "ble></userinput>"
 msgstr ""
+""
+"<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</replacea"
+"ble></userinput>"
 
 #: help.xml:508
 #, no-wrap
 msgid "boot: install sym53c8xx=safe"
-msgstr ""
+msgstr "boot: install sym53c8xx=safe"
 
 #: help.xml:509
 #, no-wrap
 msgid "boot: live sym53c8xx=safe"
-msgstr ""
+msgstr "boot: live sym53c8xx=safe"
 
 #: help.xml:526
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr ""
+msgstr "특수 부팅 인자 - 설치 시스템"
 
 #: help.xml:536
 msgid "These parameters control how the installer works."
-msgstr ""
+msgstr "이 인자들은 설치 프로그램의 동작을 제어합니다."
 
 #: help.xml:539
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
+msgstr "이 인자들은 부트스트랩 시스템의 동작을 제어합니다."
 
 #: help.xml:544
 msgid "RESULT"
-msgstr ""
+msgstr "결과"
 
 #: help.xml:545
 msgid "PARAMETER"
-msgstr ""
+msgstr "인자"
 
 #: help.xml:548
+#, fuzzy
 msgid "Verbose debugging"
-msgstr ""
+msgstr "많은 디버깅 메시지"
 
 #: help.xml:549
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr ""
+msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:553
 msgid "Debug boot sequence"
-msgstr ""
+msgstr "부트 과정 디버깅하기"
 
 #: help.xml:554
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr ""
+msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:558
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "프레임버퍼 사용안함"
 
 #: help.xml:559
 msgid "<userinput>debian-installer/framebuffer=false</userinput>"
-msgstr ""
+msgstr "<userinput>debian-installer/framebuffer=false</userinput>"
 
 #: help.xml:563
 msgid "Don't probe for USB"
-msgstr ""
+msgstr "USB 자동 인식을 사용하지 않음"
 
 #: help.xml:564
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-msgstr ""
+msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
 #: help.xml:568
 msgid "Don't start PCMCIA"
-msgstr ""
+msgstr "PCMCIA를 사용하지 않음"
 
 #: help.xml:569
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
-msgstr ""
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:573
 msgid "Force static network config"
-msgstr ""
+msgstr "강제로 네트워크 설정을 정적으로 함."
 
 #: help.xml:574
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr ""
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:578
 msgid "Set keyboard map"
-msgstr "키보드맵 보기"
+msgstr "키보드맵 설정"
 
 #: help.xml:579
 msgid "<userinput>bootkbd=es</userinput>"
-msgstr ""
+msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:584
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
-msgstr ""
+msgstr "PCI 맵의 ACPI를 사용하지 않습니다(일부 HP 서버나 Via 기반 머신에 유용합니다)"
 
 #: help.xml:587
 msgid "<userinput>pci=noacpi</userinput>"
-msgstr ""
+msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:594
 #, no-wrap
 msgid "boot: install debian-installer/framebuffer=false"
-msgstr ""
+msgstr "boot: install debian-installer/framebuffer=false"
 
 #: help.xml:595
 #, no-wrap
 msgid "boot: live debian-installer/framebuffer=false"
-msgstr ""
+msgstr "boot: live debian-installer/framebuffer=false"
 
 #: help.xml:612
 msgid "GETTING HELP"
-msgstr ""
+msgstr "도움을 받는 방법"
 
 #: help.xml:619
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr "우분투를 설치하는데 실패하더라도 좌절하지 마십시요!"
+msgstr "우분투를 설치하는데 실패하더라도 좌절하지 마십시오!"
 
 #: help.xml:622
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr "우분투를 시작하는데 실패하더라도 좌절하지 마십시요!"
+msgstr "우분투를 시작하는데 실패하더라도 좌절하지 마십시오!"
 
 #: help.xml:625
 msgid "The Ubuntu team is ready to help you!"
@@ -729,6 +768,8 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"겪고 계신 문제가 이미 보고되어 간단한 해결책이 이미 나온 경우도 있습니다. 그렇지 않더라도 어떤 문제인지를 알려주고 문제를 같이 해결할 "
+"수 있었으면 합니다. 그러면 다음에 다른 사용자가 같은 문제를 겪더라도 여러분의 노력으로 많은 도움을 얻을 수도 있을 겁니다."
 
 #: help.xml:668
 msgid "COPYRIGHTS AND WARRANTIES"
@@ -762,8 +803,8 @@ msgid ""
 "in the corresponding file "
 "/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
-"시스템 시작 후 각 꾸러미의 배포 조건은 "
-"/usr/share/doc/<replaceable>꾸러미명</replaceable>/copyright.에서 확인해보실 수 있습니다."
+"시스템 시작 후 각 꾸러미의 배포 조건은 /usr/share/doc/<replaceable>꾸러미 "
+"이름</replaceable>/copyright에서 확인해보실 수 있습니다."
 
 #: help.xml:694
 msgid ""
