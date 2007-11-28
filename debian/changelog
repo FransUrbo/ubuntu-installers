@@ -1,3 +1,9 @@
+debian-installer (20041227ubuntu23) hoary; urgency=low
+
+  * Fix powerpc build (copy yaboot to the right place).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 26 Mar 2005 17:15:06 +0000
+
 debian-installer (20041227ubuntu22) hoary; urgency=low
 
   * Manual changes:
