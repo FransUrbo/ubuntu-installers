@@ -12,7 +12,8 @@
 #include "kernel"
 
 busybox-cvs-udeb
-languagechooser
+localechooser
+iso-3166-udeb
 nano-udeb
 bogl-bterm-udeb
 di-utils-terminfo

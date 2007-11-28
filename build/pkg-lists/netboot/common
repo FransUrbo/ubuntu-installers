@@ -3,8 +3,7 @@
 #include "busybox"
 
 # Other udebs that are needed for netboot install
-languagechooser
-countrychooser
+localechooser
 iso-3166-udeb
 choose-mirror
 net-retriever

@@ -97,20 +97,19 @@ to be displayed.
 
 </para><para>
 
-The default installation uses <userinput>debconf/priority=critical</userinput>.
-This means that critical priority messages are shown, but high, medium,
+The default installation uses <userinput>debconf/priority=high</userinput>.
+This means that both high and critical priority messages are shown, but medium,
 and low priority messages are skipped. 
 If problems are encountered, the installer adjusts the priority as needed.
 
 </para><para>
 
-If you add <userinput>debconf/priority=high</userinput> as a boot parameter, the
-installation system will give you a little more control over the installation,
-but will still not show you the installation menu.
-With <userinput>debconf/priority=medium</userinput>, you
+If you add <userinput>debconf/priority=medium</userinput> as boot parameter, you
 will be shown the installation menu and gain more control over the installation.
 When <userinput>debconf/priority=low</userinput> is used, all messages are shown
 (this is equivalent to the <emphasis>expert</emphasis> boot method).
+With <userinput>debconf/priority=critical</userinput>, the installation system
+will display only critical messages and try to do the right thing without fuss.
 
 </para></listitem>
 </varlistentry>

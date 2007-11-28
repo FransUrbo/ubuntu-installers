@@ -3,8 +3,7 @@
 #include "busybox"
 
 rootskel-locale
-languagechooser
-countrychooser
+localechooser
 iso-3166-udeb
 hw-detect
 bogl-bterm-udeb

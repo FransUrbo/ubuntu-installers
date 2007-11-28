@@ -1,3 +1,17 @@
+debian-installer (20041118ubuntu13) hoary; urgency=low
+
+  * Set debconf priority for non-expert installations back to high. Using
+    critical was a nice idea, but caused a number of problems, most notably
+    that some changes could never be synced back to Debian because they
+    broke preseeded installs under certain circumstances due to kernel
+    environment length limitations, and probably broke some preseeded
+    installs in Ubuntu as well; it also made it difficult to share code
+    between the first and second stages. It turns out to be easier simply to
+    drop the priority of any questions we don't want to see.
+  * Switch from languagechooser and countrychooser to localechooser.
+
+ -- Colin Watson <cjwatson@canonical.com>  Sun,  2 Jan 2005 00:11:25 +0000
+
 debian-installer (20041118ubuntu12) hoary; urgency=low
 
   * Backport from Debian trunk (Joey Hess):

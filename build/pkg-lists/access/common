@@ -17,8 +17,7 @@ netcfg
 choose-mirror
 kbd-chooser
 hw-detect
-languagechooser
-countrychooser
+localechooser
 iso-3166-udeb
 ethdetect
 

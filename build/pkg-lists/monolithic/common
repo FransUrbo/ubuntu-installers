@@ -13,7 +13,7 @@
 # Other udebs that are not standard priority, but are still needed.
 # (Some of these are dependencies of standard priority udebs..)
 cdebconf-newt-udeb
-# Used by countrychooser
+# Used by localechooser
 iso-3166-udeb
 # Need to choose a mirror for debootstrap to download Debian from.
 choose-mirror
