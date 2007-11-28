@@ -54,7 +54,7 @@ case $arch in
         
         fdisk="fdisk.txt;cfdisk.txt"
         network="supports-tftp;supports-dhcp;supports-bootp;supports-nfsroot"
-        boot="bootable-disk"
+        boot="bootable-disk;bootable-usb"
         other="supports-pcmcia;supports-serial-console;rescue-needs-root-disk;workaround-bug-99926"
         smp="supports-smp"
         goodies="supports-lang-chooser"
@@ -89,7 +89,7 @@ case $arch in
 
         fdisk="fdisk.txt;cfdisk.txt"
         network="supports-tftp;supports-dhcp;supports-bootp;supports-nfsroot"
-        boot="bootable-disk"
+        boot="bootable-disk;bootable-usb"
         other="supports-pcmcia;supports-serial-console;rescue-needs-root-disk;workaround-bug-99926"
         smp="supports-smp-sometimes"
         goodies="supports-lang-chooser"

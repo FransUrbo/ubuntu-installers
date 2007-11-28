@@ -207,7 +207,7 @@ computer.  The system should boot up, and you should be presented with
 the <prompt>boot:</prompt> prompt.  Here you can enter optional boot
 arguments, or just hit &enterkey;.
 
-</para><para>
+</para><para condition="supports-floppy-boot">
 
 In case your computer doesn't support booting from USB memory devices,
 you can still use a single floppy to do the initial boot and then
