@@ -1,3 +1,13 @@
+debian-installer (20051026ubuntu6) dapper; urgency=low
+
+  * build/config/sparc/combined/miniiso-2.6.cfg: Fix kernel path (thanks,
+    Fabio M. Di Nitto).
+
+  * Move to 2.6.15-8 kernels.
+  * build/pkg-lists/*: Remove ide-core-modules, now built-in.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 13 Dec 2005 08:45:07 +0000
+
 debian-installer (20051026ubuntu5) dapper; urgency=low
 
   * build/pkg-lists/base: Add bootchart-udeb.
