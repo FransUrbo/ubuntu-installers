@@ -167,7 +167,7 @@
 
 <!-- Linux Kernel entities -->
 <!ENTITY url-linux-kernel-list-faq "http://www.tux.org/lkml/">
-<!ENTITY url-kernel-traffic "http://www.kerneltraffic.org//">
+<!ENTITY url-kernel-traffic "http://www.kerneltraffic.org/kernel-traffic/index.html">
 
 <!-- Introductions to the FSF and GNU Project -->
 
@@ -347,7 +347,7 @@ removed and text documention at link directs one to a URL that is broken." -->
 
 <!ENTITY url-alpha-howto "&url-ldp;HOWTO/Alpha-HOWTO.html">
 
-<!ENTITY url-srm-howto "&url-ldp;HOWTO/SRM-HOWTO.html">
+<!ENTITY url-srm-howto "&url-ldp;HOWTO/SRM-HOWTO/">
 
 <!ENTITY url-alpha-firmware "http://ftp.digital.com/pub/DEC/Alpha/firmware/">
 

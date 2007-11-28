@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: hardware-supported.xml 23150 2004-10-16 15:27:14Z cjwatson $ -->
+<!-- $Id: hardware-supported.xml 23670 2004-11-08 02:06:44Z vorlon $ -->
 
  <sect1 id="hardware-supported">
  <title>Supported Hardware</title>
@@ -75,14 +75,10 @@ variations of each architecture known as 'flavors'.
 </row>
 
 <row>
-  <entry morerows="2">DEC Alpha</entry>
-  <entry morerows="2">alpha</entry>
-  <entry morerows="2"></entry>
-  <entry>generic</entry>
-</row><row>
-  <entry>jensen</entry>
-</row><row>
-  <entry>nautilus</entry>
+  <entry>DEC Alpha</entry>
+  <entry>alpha</entry>
+  <entry></entry>
+  <entry></entry>
 </row>
 
 <row>

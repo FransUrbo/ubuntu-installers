@@ -1,25 +1,25 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: automatic-install.xml 22935 2004-10-09 18:36:20Z fjpop-guest $ -->
+<!-- $Id: automatic-install.xml 23847 2004-11-13 23:35:27Z joeyh $ -->
 
  <sect1 id="automatic-install">
  <title>Automatic Installation</title>
 <para>
 
 For installing on multiple computers it's possible to do fully
-automatic installations. Debian packages intended for this include
+automatic installations. Ubuntu packages intended for this include
 <classname>fai</classname> (which uses an install server),
 <classname>replicator</classname>,
 <classname>systemimager</classname>,
 <classname>autoinstall</classname>, and 
-the Debian Installer itself.
+the Ubuntu Installer itself.
 
 </para>
 
 <sect2>
-<title>Automatic installation using the Debian Installer</title>
+<title>Automatic installation using the Ubuntu Installer</title>
 
 <para>
-The Debian Installer supports automating installs via preconfiguration
+The Ubuntu Installer supports automating installs via preconfiguration
 files. A preconfiguration file can be loaded from the network or from
 removable media, and used to fill in answers to question asked during the
 installation process.
@@ -32,8 +32,7 @@ you can edit is in <xref linkend="example-preseed"/>.
 
 </para><para>
 
-The preconfiguration file is in the format used by the
-debconf-set-selections command, and one way to get a complete file listing
+Alternatively, one way to get a complete file listing
 all the values that can be preseeded is to do a manual install,
 and then use <filename>debconf-get-selections</filename>,
 from the <classname>debconf-utils</classname> package,

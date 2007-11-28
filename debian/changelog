@@ -1,3 +1,34 @@
+debian-installer (20041115ubuntu1) hoary; urgency=low
+
+  * Resynchronise with Debian.
+  * Switch all 2.6 images to udev/hotplug. discover is still included for
+    the moment, although it'll be removed eventually.
+  * doc/manual/en/install-methods/install-methods.xml: Include
+    automatic-install section again, as it should be supportable in Hoary.
+  * doc/manual/en/install-methods/automatic-install.xml: Ubuntu branding.
+
+ -- Colin Watson <cjwatson@canonical.com>  Wed, 17 Nov 2004 16:52:32 +0000
+
+debian-installer (20041115) unstable; urgency=HIGH
+
+  * Bdale Garbee
+    - Enable hppa 2.6 cd initrd building now that we have suitable udebs
+    - freshen hppa configs, adding modules udebs for hppa 2.6 kernels, etc
+    - update hppa kernel versions
+    - add discover udebs to hppa 2.6 package list
+  * Steve Langasek
+    - Extensive alpha-related edits to the install manual; it should now
+      exhibit more than a remote correspondence to the installer itself.
+  * Stephen R. Marenka
+    - Explicitly note in manual that m68k 2.2 kernels should use initrd22
+      ramdisks.
+    - Fix m68k/bvme6000 links in manual.
+    - Add mac53c9x kernel parameter notes to manual.
+  * Joey Hess
+    - Add network-preseed to s390 initrd.
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 15 Nov 2004 16:00:10 -0500
+
 debian-installer (20041027ubuntu3) hoary; urgency=low
 
   * build/boot/powerpc/yaboot.conf, build/boot/x86/syslinux.cfg: Add

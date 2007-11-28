@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: contributors.xml 18999 2004-08-12 18:41:14Z nahoo-guest $ -->
+<!-- $Id: contributors.xml 23687 2004-11-08 08:47:43Z vorlon $ -->
 
  <sect1 id="appendix-staff"><title>Acknowledgements and Thanks</title>
 <para>
@@ -24,6 +24,7 @@ manual. If you've been left out somehow, please let us know.
 <row><entry>Miroslav Kuře</entry></row>
 <row><entry>Joey Hess</entry></row>
 <row><entry>Sebastian Ley</entry></row>
+<row><entry>Steve Langasek</entry></row>
 
 </tbody></tgroup></table>
 

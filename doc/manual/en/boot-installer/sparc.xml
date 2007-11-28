@@ -1,17 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: sparc.xml 21994 2004-09-24 08:40:10Z fjpop-guest $ -->
-
-  <sect2 arch="sparc"><title>Booting from NFS</title>
-<para>
-
-To install the system via NFS, simply select
-<userinput>NFS</userinput> for the location of the images and files
-and follow the instructions provided.  You will be prompted for the
-<filename>server:/directory</filename> where the images are located.
-
-</para>
-  </sect2>
-
+<!-- $Id: sparc.xml 23797 2004-11-11 04:46:04Z joshk $ -->
 
   <sect2 arch="sparc" id="boot-tftp"><title>Booting with TFTP</title>
 

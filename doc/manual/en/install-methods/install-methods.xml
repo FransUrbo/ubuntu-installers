@@ -11,8 +11,6 @@
 <!-- &boot-usb-files.xml; -->
 &boot-drive-files.xml;
 &install-tftp.xml;
-<!-- automatic installs not yet properly supported; this will happen for
-     Hoary -->
-<!-- &automatic-install.xml; -->
+&automatic-install.xml;
 
 </chapter>
