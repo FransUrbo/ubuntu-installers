@@ -1,3 +1,11 @@
+debian-installer (20040801ubuntu3) warty; urgency=low
+
+  * Colin Watson
+    - Remove build-dependency on powerpc 2.4.25 kernels. We aren't
+      supporting 2.4 installs.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Fri,  6 Aug 2004 17:54:18 +0100
+
 debian-installer (20040801ubuntu2) warty; urgency=low
 
   * Colin Watson
