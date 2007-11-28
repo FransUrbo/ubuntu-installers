@@ -1,3 +1,10 @@
+debian-installer (20041227ubuntu4) hoary; urgency=low
+
+  * No source changes; pick up new hw-detect to test for real hotplug
+    properly.
+
+ -- Colin Watson <cjwatson@canonical.com>  Wed, 12 Jan 2005 12:43:00 +0000
+
 debian-installer (20041227ubuntu3) hoary; urgency=low
 
   * Check for /etc/hotplug rather than /sbin/hotplug.real when deciding
