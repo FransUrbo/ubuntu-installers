@@ -1,6 +1,6 @@
-Welcome to Ubuntu ${DEBIAN_VERSION}!
+Welcome to ${DISTRIBUTION_NAME} ${DEBIAN_VERSION}!
 
-This is an Ubuntu installation ${MEDIA_TYPE},
+This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME},
 built on ${BUILD_DATE}.
 
 The default option is 'install'. For maximum

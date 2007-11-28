@@ -3,7 +3,7 @@
 MacRISC MacRISC3 MacRISC4
 </COMPATIBLE>
 <DESCRIPTION>
-Ubuntu PowerPC first stage CDROM bootloader
+${DISTRIBUTION_NAME} PowerPC first stage CDROM bootloader
 </DESCRIPTION>
 <BOOT-SCRIPT>
 " screen" output

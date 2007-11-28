@@ -1,3 +1,18 @@
+debian-installer (20050317ubuntu4) breezy; urgency=low
+
+  * build/config/common: Fetch distribution name and version number from
+    lsb_release.
+  * debian/control: Build-depend on lsb-release.
+  * build/config/, build/boot/: Replace Ubuntu branding with substituted
+    ${DISTRIBUTION_NAME} in a number of places. This is still incomplete.
+
+  * build/pkg-lists/monolithic/common: libdevmapper1.00-udeb ->
+    libdevmapper1.01-udeb.
+  * Backport from trunk (Joey Hess):
+    - Move /unifont.bgf into lib. Needs rootskel 1.12.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 10 May 2005 12:42:07 +0100
+
 debian-installer (20050317ubuntu3) breezy; urgency=low
 
   * Restore build/boot/x86/pics/ubuntu.*, lost in merge.
