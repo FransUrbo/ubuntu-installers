@@ -1,3 +1,10 @@
+debian-installer (20041227ubuntu12) hoary; urgency=low
+
+  * Add customised boot screens for the live CD.
+  * build/boot/powerpc/boot.msg: Ubuntu branding.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 15 Feb 2005 13:35:11 +0000
+
 debian-installer (20041227ubuntu11) hoary; urgency=low
 
   * Add file-kickseed to all images containing file-preseed.
