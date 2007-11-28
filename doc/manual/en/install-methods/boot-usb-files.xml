@@ -16,7 +16,7 @@ will probably have to turn off its write protection switch.
 
 </para><para>
 
-Note that the USB stick should be at least 32 MB in size. If you follow
+Note that the USB stick should be at least 8 MB in size. If you follow
 <xref linkend="usb-copy-flexible"/> and want to include an Ubuntu ISO
 image on the stick, you will need enough space for the ISO as well.
 

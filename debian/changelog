@@ -1,3 +1,11 @@
+debian-installer (20041118ubuntu10) hoary; urgency=low
+
+  * Reduce netboot/boot.img.gz size requirement to 8 MB (hi, Jeff).
+  * doc/manual/en/install-methods/install-methods.xml: Uncomment
+    boot-usb-files.xml inclusion.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 21 Dec 2004 13:58:25 +0000
+
 debian-installer (20041118ubuntu9) hoary; urgency=low
 
   * Rename the 'custom' option to 'server' (per Mark, since people
