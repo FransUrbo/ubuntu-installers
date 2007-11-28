@@ -1,3 +1,10 @@
+debian-installer (20061102ubuntu6) feisty; urgency=low
+
+  * Switch i386 builds to the -generic kernel flavour.
+  * Add a new netboot/386 build for i386 that uses the -386 kernel flavour.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 11 Dec 2006 12:32:26 +0000
+
 debian-installer (20061102ubuntu5) feisty; urgency=low
 
   * No-change rebuild to pick up new components.
