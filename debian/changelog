@@ -1,3 +1,10 @@
+debian-installer (20041227ubuntu13) hoary; urgency=low
+
+  * Output debian-cd_info.tar.gz on ia64 with all the boot screens.
+  * Add customised boot screens for the ia64 live CD.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 17 Feb 2005 21:19:35 +0000
+
 debian-installer (20041227ubuntu12) hoary; urgency=low
 
   * Add customised boot screens for the live CD.
