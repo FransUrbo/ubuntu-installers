@@ -50,7 +50,7 @@ case $arch in
         ;;
     amd64)
         archspec="amd64;not-i386;not-s390;not-m68k;not-powerpc;not-alpha"
-        kernelversion="2.6.8.1"
+        kernelversion="2.6.9"
         
         fdisk="fdisk.txt;cfdisk.txt"
         network="supports-tftp;supports-dhcp;supports-bootp;supports-nfsroot"
@@ -85,7 +85,7 @@ case $arch in
         ;;
     i386)
         archspec="i386;not-s390;not-m68k;not-powerpc;not-alpha"
-        kernelversion="2.6.8.1"
+        kernelversion="2.6.9"
 
         fdisk="fdisk.txt;cfdisk.txt"
         network="supports-tftp;supports-dhcp;supports-bootp;supports-nfsroot"
@@ -144,7 +144,7 @@ case $arch in
         ;;
     powerpc)
         archspec="powerpc;not-s390;not-m68k;not-i386;not-alpha"
-        kernelversion="2.6.8.1"
+        kernelversion="2.6.9"
 
         fdisk="mac-fdisk.txt;cfdisk.txt"
         network="supports-tftp;supports-dhcp;supports-bootp;supports-nfsroot"
