@@ -1,3 +1,16 @@
+debian-installer (20041227ubuntu19) hoary; urgency=low
+
+  * Rename debian-installer to ubuntu-installer in netboot image tree. (This
+    directory name is there so that the installer's files can coexist with
+    others on a shared TFTP server, so it should probably be named
+    differently by Ubuntu derivatives too.)
+  * Clarify syslinux boot message text (thanks, Mark Shuttleworth; closes:
+    Ubuntu #7002).
+  * Manual changes to note that post-installation logs go in
+    /var/log/installer/ now.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue,  1 Mar 2005 21:50:31 +0000
+
 debian-installer (20041227ubuntu18) hoary; urgency=low
 
   * Remove obsolete file-kickseed and network-kickseed packages from all

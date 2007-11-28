@@ -56,7 +56,7 @@ LOCALE_PATH = $(TREE)/usr/lib/locale
 # isolated into their own directory so the tftp server can be used for
 # other purposes too. Anything outside this directory should be a symlink
 # to a file in it.
-NETBOOT_PATH = debian-installer/$(ARCH)
+NETBOOT_PATH = ubuntu-installer/$(ARCH)
 
 # The files we may want to have in dest/
 INITRD = $(SOME_DEST)/$(EXTRANAME)initrd.gz
@@ -67,7 +67,7 @@ ROOT = $(SOME_DEST)/$(EXTRANAME)root.img$(GZIPPED)
 EXTRA = $(SOME_DEST)/$(EXTRANAME).img$(GZIPPED)
 MINIISO = $(SOME_DEST)/$(EXTRANAME)mini.iso
 DEBIAN_CD_INFO = $(SOME_DEST)/$(EXTRANAME)debian-cd_info.tar.gz
-NETBOOT_DIR = $(SOME_DEST)/$(EXTRANAME)debian-installer
+NETBOOT_DIR = $(SOME_DEST)/$(EXTRANAME)ubuntu-installer
 NETBOOT_TAR = $(SOME_DEST)/$(EXTRANAME)netboot.tar.gz
 MISC = $(foreach name,$(MISCNAME),$(SOME_DEST)/$(EXTRANAME)$(name))
 

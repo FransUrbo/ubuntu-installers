@@ -353,7 +353,7 @@ like this:
 host mcmuffin {
         hardware ethernet 00:30:6e:1e:0e:83;
         fixed-address 10.0.0.21;
-        filename "debian-installer/ia64/elilo.efi";
+        filename "ubuntu-installer/ia64/elilo.efi";
 }
 
 </screen></informalexample>
@@ -366,7 +366,7 @@ the client.
 Extract the <filename>netboot.tar.gz</filename> file into the directory used
 as the root for your tftp server.  Typical tftp root directories include
 <filename>/var/lib/tftp</filename> and <filename>/tftpboot</filename>.
-This will create a <filename>debian-installer</filename> directory
+This will create an <filename>ubuntu-installer</filename> directory
 tree containing the boot files for an IA-64 system.
 
 </para><para>
@@ -375,15 +375,15 @@ tree containing the boot files for an IA-64 system.
 # cd /var/lib/tftp
 # tar xvfz /home/user/netboot.tar.gz
 ./
-./debian-installer/
-./debian-installer/ia64/
+./ubuntu-installer/
+./ubuntu-installer/ia64/
 [...]
 </screen></informalexample>
 
 The <filename>netboot.tar.gz</filename> contains an
 <filename>elilo.conf</filename> file that should work for most configurations.
 However, should you need to make changes to this file, you can find it in the
-<filename>debian-installer/ia64/</filename> directory.
+<filename>ubuntu-installer/ia64/</filename> directory.
 
 It is possible to have different config files for different clients by naming
 them using the client's IP address in hex with the suffix

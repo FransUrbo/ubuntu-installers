@@ -94,10 +94,10 @@ the main installer process with
 
 These messages can also be found in
 <filename>/var/log/messages</filename>.  After installation, this log
-is copied to <filename>/var/log/debian-installer/messages</filename> on your
+is copied to <filename>/var/log/installer/messages</filename> on your
 new system. Other installation messages may be found in
 <filename>/var/log/</filename> during the
-installation, and <filename>/var/log/debian-installer/</filename>
+installation, and <filename>/var/log/installer/</filename>
 after the computer has been booted into the installed system.
 
 </para>

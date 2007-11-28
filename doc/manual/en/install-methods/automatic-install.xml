@@ -37,7 +37,7 @@ all the values that can be preseeded is to do a manual install,
 and then use <filename>debconf-get-selections</filename>,
 from the <classname>debconf-utils</classname> package,
 to dump both the debconf database and the cdebconf
-database in /var/log/debian-installer/cdebconf to a single file:
+database in /var/log/installer/cdebconf to a single file:
 
 <informalexample><screen>
 debconf-get-selections --installer > file
