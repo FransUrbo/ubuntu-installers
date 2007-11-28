@@ -1,3 +1,17 @@
+debian-installer (20041118ubuntu8) hoary; urgency=low
+
+  * doc/manual/build/buildone.sh: Restore executable bit.
+  * Our sparc kernels don't have a suffix (i.e. they're just vmlinuz and
+    System.map), so:
+    - build/config/sparc/miniiso.cfg: Remove hardcoded *64.
+    - build/config/sparc/sparc64/netboot.cfg: Remove hardcoded
+      -$(KERNELIMAGEVERSION).
+    - build/config/sparc.cfg: Unset VERSIONED_SYSTEM_MAP; fix KERNELNAME.
+  * build/pkg-lists/cdrom/sparc.cfg: Remove scsi-modules, which is 2.4-only.
+    Unhardcode kernel version from ide-modules.
+
+ -- Colin Watson <cjwatson@canonical.com>  Fri, 10 Dec 2004 13:30:30 +0100
+
 debian-installer (20041118ubuntu7) hoary; urgency=low
 
   * Build boot.img.gz versions of amd64 and i386 netboot, for use as
