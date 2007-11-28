@@ -1,3 +1,10 @@
+debian-installer (20040528ubuntu8) warty; urgency=low
+
+  * Remove .with26 boot screens. We default to 2.6 and don't have linux26
+    and expert26 targets.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Thu, 22 Jul 2004 13:05:22 +0100
+
 debian-installer (20040528ubuntu7) warty; urgency=low
 
   * Build-depend on module-init-tools.
