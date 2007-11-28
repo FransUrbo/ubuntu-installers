@@ -1,3 +1,11 @@
+debian-installer (20040528ubuntu5) warty; urgency=low
+
+  * Bump i386 kernels to 2.6.7-1.
+  * Add firmware-modules to i386 images that have either nic-modules or
+    scsi-modules on them, to satisfy dependencies.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Thu,  8 Jul 2004 18:00:52 +0100
+
 debian-installer (20040528ubuntu4) warty; urgency=low
 
   * Some boot screen branding.
