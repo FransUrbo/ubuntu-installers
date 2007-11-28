@@ -1,3 +1,11 @@
+debian-installer (20061102ubuntu23) feisty; urgency=low
+
+  * Remove grepmap-udeb from all images, as it's no longer in the archive.
+  * Include block-modules on powerpc cdrom images, as ps3_storage is there
+    and needed to find the CD drive on PS3 systems.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 11 Apr 2007 03:52:10 +0100
+
 debian-installer (20061102ubuntu22) feisty; urgency=low
 
   * No-change rebuild to pick up new components.
