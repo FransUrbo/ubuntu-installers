@@ -1,3 +1,13 @@
+debian-installer (20051026ubuntu12) dapper; urgency=low
+
+  * Backport from trunk:
+    - Include rescue-mode in monolithic images.
+  * Move to 2.6.15-12 kernels.
+  * Drop libselinux1 and libsepol1 build-dependencies again, now that
+    udev-udeb has been fixed.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 13 Jan 2006 10:34:05 +0000
+
 debian-installer (20051026ubuntu11) dapper; urgency=low
 
   * Build-depend on libselinux1 and libsepol1 for now, since udev-udeb
