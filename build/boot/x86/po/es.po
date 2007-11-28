@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2006-09-23  1:26+0100\n"
-"PO-Revision-Date: 2006-05-17 12:16+0000\n"
+"PO-Revision-Date: 2006-09-26 18:12+0000\n"
 "Last-Translator: Ricardo Pérez López <ricardo@iesdonana.org>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgid ""
 "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
 msgstr ""
 "Esta es una instalación ${MEDIA_TYPE} para ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, creado en ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}, creado el ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
@@ -38,11 +38,11 @@ msgid ""
 "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
 msgstr ""
 "Este es un Live ${MEDIA_TYPE} para ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, creado en ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}, creado el ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "INDICE DE LA AYUDA"
+msgstr "ÍNDICE DE LA AYUDA"
 
 #: help.xml:29
 msgid "KEY"
@@ -58,20 +58,19 @@ msgstr "Ésta página, el índice de la ayuda."
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "Prerrequisitos para instalar ${DISTRIBUTION_NAME}."
+msgstr "Requisitos previos para instalar ${DISTRIBUTION_NAME}."
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "Prerrequisitos para ejecutar ${DISTRIBUTION_NAME}."
+msgstr "Requisitos previos para ejecutar ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
 msgstr "Métodos de arranque para formas especiales de usar este ${MEDIA_TYPE}."
 
 #: help.xml:54
-#, fuzzy
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Métodos de arranque adicionales; modo rescate."
+msgstr "Métodos de arranque adicionales; rescatar un sistema dañado."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
@@ -196,7 +195,7 @@ msgstr "Métodos de arranque disponibles:"
 
 #: help.xml:177
 msgid "install"
-msgstr "instalar"
+msgstr "install"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -206,7 +205,7 @@ msgstr ""
 
 #: help.xml:184
 msgid "expert"
-msgstr "experto"
+msgstr "expert"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
@@ -214,11 +213,11 @@ msgstr "Comenzar la instalación en modo experto, para tener el máximo control.
 
 #: help.xml:191
 msgid "server"
-msgstr "servidor"
+msgstr "server"
 
 #: help.xml:192
 msgid "server-expert"
-msgstr "servidor-experto"
+msgstr "server-expert"
 
 #: help.xml:194
 msgid ""
@@ -270,10 +269,9 @@ msgstr ""
 "Si no está seguro, debería usar el método de arranque predeterminado, sin "
 "parámetros especiales, simplemente pulsando Intro en boot:"
 
-# type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:243 help.xml:279
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "RESCATAR UN SISTEMA DAÑADO"
 
 #: help.xml:247
 msgid "Use one of these boot methods to rescue an existing install"
@@ -293,7 +291,6 @@ msgstr "Arrancar en modo de rescate."
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:286
 msgid ""
 "There is no dedicated rescue mode on this CD. However, since the entire "
@@ -302,6 +299,12 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
+"No hay un modo de rescate dedicado en este CD. Sin embargo, como el sistema "
+"completo se ejecuta desde el CD, es posible usar la línea de comandos y/o "
+"las herramientas gráficas proporcionadas para recuperar un sistema dañado, y "
+"usar un navegador web para buscar ayuda. Hay disponibles en línea muchos "
+"consejos para muchos tipos de problemas que pueden provocar que su sistema "
+"normal no se arranque correctamente."
 
 #: help.xml:308
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
@@ -563,12 +566,13 @@ msgstr "Algunas máquinas DELL"
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:505
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"Esta lista está incompleta; consulte el archivo kernel-parameters.txt del "
+"núcleo para más información."
 
 #: help.xml:512
 #, no-wrap
@@ -656,19 +660,18 @@ msgstr "Establecer el mapa de teclado"
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:587
 msgid "Use Braille tty"
-msgstr ""
+msgstr "Usar una terminal Braille"
 
 #: help.xml:588
-#, fuzzy
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>ed=<replaceable>cilindros</replaceable>,<replaceable>cabezas</"
-"replaceable>,<replaceable>sectores</replaceable></userinput>"
+"<userinput>brltty=<replaceable>controlador</replaceable>,"
+"<replaceable>dispositivo</replaceable>,<replaceable>tabla_de_texto</"
+"replaceable></userinput>"
 
 #: help.xml:593
 msgid ""
@@ -798,55 +801,3 @@ msgid ""
 msgstr ""
 "Este sistema está basado en Debian. Visite <ulink url=\"http://www.debian."
 "org/\" /> para más detalles e información sobre el proyecto Debian."
-
-#~ msgid "RESCUE MODE"
-#~ msgstr "MODO DE RESCATE"
-
-#~ msgid "Future Domain TMC-8xx/950"
-#~ msgstr "Future Domain TMC-8xx/950"
-
-#~ msgid ""
-#~ "<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</"
-#~ "replaceable></userinput>"
-#~ msgstr ""
-#~ "<userinput>tmc8xx=<replaceable>base_mem</replaceable>,<replaceable>irq</"
-#~ "replaceable></userinput>"
-
-#~ msgid "NCR-based SCSI controller"
-#~ msgstr "Controladora SCSI basada en NCR"
-
-#~ msgid "<userinput>sym53c8xx=safe:y</userinput>"
-#~ msgstr "<userinput>sym53c8xx=safe:y</userinput>"
-
-#~ msgid "Pro Audio Spectrum"
-#~ msgstr "Pro Audio Spectrum"
-
-#~ msgid ""
-#~ "<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</"
-#~ "replaceable></userinput>"
-#~ msgstr ""
-#~ "<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</"
-#~ "replaceable></userinput>"
-
-#~ msgid "PS/2 ESDI (MCA)"
-#~ msgstr "PS/2 ESDI (MCA)"
-
-#~ msgid "Seagate ST-0x"
-#~ msgstr "Seagate ST-0x"
-
-#~ msgid ""
-#~ "<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</"
-#~ "replaceable></userinput>"
-#~ msgstr ""
-#~ "<userinput>st0x=<replaceable>base_mem</replaceable>,<replaceable>irq</"
-#~ "replaceable></userinput>"
-
-#~ msgid "Trantor T128"
-#~ msgstr "Trantor T128"
-
-#~ msgid ""
-#~ "<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</"
-#~ "replaceable></userinput>"
-#~ msgstr ""
-#~ "<userinput>t128=<replaceable>base_mem</replaceable>,<replaceable>irq</"
-#~ "replaceable></userinput>"

@@ -1,3 +1,14 @@
+debian-installer (20060711ubuntu14) edgy; urgency=low
+
+  * Add/update help text translations from Rosetta, modified to account for
+    some strings that are currently translatable but shouldn't be: Bengali,
+    German, Spanish, Basque, Finnish, French, Galician, Hungarian,
+    Indonesian, Italian, Georgian, Korean, Kurdish, Kirghiz, Marathi, Malay,
+    Dutch, Occitan, Polish, Portuguese, Portuguese (Brazil), Russian,
+    Slovak, Swedish, Turkish, Vietnamese, Chinese (China).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 12 Oct 2006 10:28:51 +0100
+
 debian-installer (20060711ubuntu13) edgy; urgency=low
 
   * Move to 2.6.17-10 kernels.
