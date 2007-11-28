@@ -1,3 +1,9 @@
+debian-installer (20050317ubuntu12) breezy; urgency=low
+
+  * Move to 2.6.12-5 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 28 Jul 2005 10:28:04 +0100
+
 debian-installer (20050317ubuntu11) breezy; urgency=low
 
   * build/Makefile: Fetch sparc packages from main only, at Fabio's request.
