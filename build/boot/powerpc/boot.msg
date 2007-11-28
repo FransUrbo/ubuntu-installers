@@ -1,6 +1,6 @@
-Welcome to Debian GNU/Linux ${DEBIAN_VERSION}!
+Welcome to Ubuntu ${DEBIAN_VERSION}!
 
-This is a Debian installation ${MEDIA_TYPE},
+This is an Ubuntu installation ${MEDIA_TYPE},
 built on ${BUILD_DATE}.
 
 In addition to the default 'install' option, 

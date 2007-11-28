@@ -1,6 +1,6 @@
 0fGETTING HELP07
 
-If you can't install Debian, don't despair! The Debian team is ready to
+If you can't install Ubuntu, don't despair! The Ubuntu team is ready to
 help you! We are especially interested in hearing about installation
 problems, because in general they don't happen to only 0fone07 person.
 We've either already heard about your particular problem and can dispense a

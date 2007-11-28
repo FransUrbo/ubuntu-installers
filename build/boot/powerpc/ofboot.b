@@ -3,7 +3,7 @@
 MacRISC MacRISC3 MacRISC4
 </COMPATIBLE>
 <DESCRIPTION>
-Debian GNU/Linux PowerPC first stage CDROM bootloader
+Ubuntu PowerPC first stage CDROM bootloader
 </DESCRIPTION>
 <BOOT-SCRIPT>
 " screen" output

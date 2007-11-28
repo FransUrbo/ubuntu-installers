@@ -36,8 +36,7 @@ SUITE = unstable
 DPKG_UNPACK_OPTIONS = --force-overwrite
 
 # The version of Debian targeted by the installation images.
-#DEBIAN_VERSION = 3.1
-DEBIAN_VERSION = sarge
+DEBIAN_VERSION = 4.10 (Warty Warthog)
 
 # The date the installer is built.
 BUILD_DATE = $(shell date +%Y%m%d)
@@ -59,3 +58,5 @@ WRITE_MEDIA = floppy
 # pkg-lists is still sorted by type, so we have to provide
 # some mapping MEDIUM -> TYPE
 TYPE = $(MEDIUM)
+
+MANIFEST-INITRD_LIST = "contents of initrd"

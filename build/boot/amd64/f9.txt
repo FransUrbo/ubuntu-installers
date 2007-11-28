@@ -1,6 +1,6 @@
-0fABOUT THE DEBIAN PROJECT07
+0fABOUT THE DEBIAN AND UBUNTU PROJECTS07
 
-For information about the Debian project, see our web site:
+For information about the Debian project, see their web site:
 0fhttp://www.debian.org/07
 
 For copyright information, press <09F1007>.
