@@ -1,3 +1,20 @@
+debian-installer (20050317ubuntu11) breezy; urgency=low
+
+  * build/Makefile: Fetch sparc packages from main only, at Fabio's request.
+
+  * Move to 2.6.12-4 kernels.
+  * Remove nic-extra-modules, scsi-common-modules, and scsi-extra-modules
+    from all cdrom, hd-media, and netboot images on our architectures.
+  * build/pkg-lists/cdrom/sparc.cfg: Use dependency resolution for
+    nic-modules.
+
+  * build/pkg-lists/exclude: Update to current trunk, for slang2 transition
+    etc.
+  * debian/control: Build-depend on libslang2-pic rather than
+    slang1-utf8-pic.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 22 Jul 2005 17:32:49 +0100
+
 debian-installer (20050317ubuntu10) breezy; urgency=low
 
   * build/boot/x86/f3.txt, build/boot/x86/f3.txt.live: Document the memtest

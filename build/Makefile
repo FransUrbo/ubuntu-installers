@@ -527,7 +527,7 @@ $(STAMPS)get_udebs-$(targetstring)-stamp: sources.list.udeb
 	get-packages udeb $(UDEBS)
 	@touch $@
 
-ifneq (,$(findstring :$(ARCH):,:amd64:i386:powerpc:))
+ifneq (,$(findstring :$(ARCH):,:amd64:i386:powerpc:sparc:))
 DEB_COMPONENTS := main
 UDEB_COMPONENTS := main/debian-installer
 else
