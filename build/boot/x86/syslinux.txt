@@ -1,3 +1,6 @@
 ${SYSDIR}splash.rle
 
+The default installation is suitable for most desktop or laptop systems.
+To install only the base system, type 'server'.
+
 Press F1control and F then 1 for help, or ENTER to ${BOOTPROMPT}

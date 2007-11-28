@@ -6,7 +6,7 @@
 
 <para>
 
-Unless you booted the installer using the <userinput>custom</userinput>
+Unless you booted the installer using the <userinput>server</userinput>
 option, <command>base-config</command> will now automatically install the
 set of packages that make up the Ubuntu desktop. A few questions may be
 asked during this process in case the X Window System configuration tools

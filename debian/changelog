@@ -1,3 +1,15 @@
+debian-installer (20041118ubuntu9) hoary; urgency=low
+
+  * Rename the 'custom' option to 'server' (per Mark, since people
+    installing servers will generally want to choose their own package set
+    anyway, and to help dispel the "Ubuntu is not for servers" myth).
+  * build/boot/x86/syslinux.txt: Add text about the 'server' option.
+
+  * debian/control: Build-depend on gnupg for authenticated udeb retrieval,
+    since apt-get now requires it when invoked with the options we use.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 14 Dec 2004 11:15:34 +0100
+
 debian-installer (20041118ubuntu8) hoary; urgency=low
 
   * doc/manual/build/buildone.sh: Restore executable bit.

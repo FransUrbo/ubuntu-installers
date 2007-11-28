@@ -169,7 +169,7 @@ first system load, you have only a very basic command line driven
 system. The graphical interface which displays windows on your monitor
 will be installed later using <classname>aptitude</classname>. If you're
 installing a server or want to take care of all the package selection
-yourself for some other reason, type <userinput>custom</userinput> at the
+yourself for some other reason, type <userinput>server</userinput> at the
 <prompt>boot:</prompt>.
 
 </para><para arch="not-s390">
