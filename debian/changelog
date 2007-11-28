@@ -1,3 +1,10 @@
+debian-installer (20061102ubuntu4) feisty; urgency=low
+
+  * Make build/util/help-to-gfxboot.py executable again.
+  * Include pata-modules in all images including ide-modules.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat,  2 Dec 2006 06:46:48 +0000
+
 debian-installer (20061102ubuntu3) feisty; urgency=low
 
   * build/config/sparc.cfg: Fix KERNELVERSION/KERNELNAME merge breakage.
