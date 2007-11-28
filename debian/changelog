@@ -1,3 +1,11 @@
+debian-installer (20070308ubuntu6) gutsy; urgency=low
+
+  * Update live CD memory requirements to 256 MB (LP: #120107).
+  * Fix double ">" on F6 help page (LP: #122272).
+  * Move to 2.6.22-8 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 10 Jul 2007 14:00:40 +0100
+
 debian-installer (20070308ubuntu5) gutsy; urgency=low
 
   * Move to 2.6.22-7 kernels.

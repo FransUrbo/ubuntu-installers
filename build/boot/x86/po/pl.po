@@ -153,9 +153,9 @@ msgstr ""
 
 #: help.xml:137
 msgid ""
-"You must have at least 128 megabytes of RAM to use this Ubuntu live system."
+"You must have at least 256 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Żeby używać tego systemu z płyty, musisz mieć przynajmniej 128 megabajtów "
+"Żeby używać tego systemu z płyty, musisz mieć przynajmniej 256 megabajtów "
 "pamięci RAM."
 
 #: help.xml:142
@@ -397,11 +397,11 @@ msgstr "Możesz użyć następujących parametrów uruchomienia w linii"
 #: help.xml:383
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use the "
+"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
 "0x prefix (e.g., 0x300)."
 msgstr ""
 ", w połączeniu z metodą uruchomienia (patrz <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>>). Jeśli używasz liczb szesnastkowych, musisz użyć "
+"keycap></link>). Jeśli używasz liczb szesnastkowych, musisz użyć "
 "przedrostka 0x (np., 0x300)."
 
 #: help.xml:390 help.xml:477

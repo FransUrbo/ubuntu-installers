@@ -144,8 +144,8 @@ msgstr ""
 
 #: help.xml:137
 msgid ""
-"You must have at least 128 megabytes of RAM to use this Ubuntu live system."
-msgstr "您至少需要128M的内存才能使用Ubuntu live系统。"
+"You must have at least 256 megabytes of RAM to use this Ubuntu live system."
+msgstr "您至少需要256M的内存才能使用Ubuntu live系统。"
 
 #: help.xml:142
 #, fuzzy
@@ -362,11 +362,11 @@ msgstr "您可以在如下的情况中使用下列这些启动参数"
 #: help.xml:383
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use the "
+"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
 "0x prefix (e.g., 0x300)."
 msgstr ""
 "提示列，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></"
-"link>>）。如果您使用16进制的数字，那您必须要用0x前缀的格式（例如，0x300）。"
+"link>）。如果您使用16进制的数字，那您必须要用0x前缀的格式（例如，0x300）。"
 
 #: help.xml:390 help.xml:477
 msgid "HARDWARE"

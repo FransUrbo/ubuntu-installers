@@ -149,9 +149,9 @@ msgstr ""
 
 #: help.xml:137
 msgid ""
-"You must have at least 128 megabytes of RAM to use this Ubuntu live system."
+"You must have at least 256 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Ubunturen live sistema erabiltzeko gutxienes 128 megabyte RAM behar dituzu."
+"Ubunturen live sistema erabiltzeko gutxienes 256 megabyte RAM behar dituzu."
 
 #: help.xml:142
 #, fuzzy
@@ -384,11 +384,11 @@ msgstr "Ondoko abio parametroak erabili ditzakezu"
 #: help.xml:383
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use the "
+"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
 "0x prefix (e.g., 0x300)."
 msgstr ""
 "gonbitam, abio moduekin nahasita (ikusi link linkend=\"F3\"><keycap>F3</"
-"keycap></link>>). Zenbakiak erabili behar badituzu erabili 0x aurrizkia "
+"keycap></link>). Zenbakiak erabili behar badituzu erabili 0x aurrizkia "
 "(adib., 0x300)."
 
 #: help.xml:390 help.xml:477

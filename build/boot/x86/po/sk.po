@@ -148,8 +148,8 @@ msgstr ""
 
 #: help.xml:137
 msgid ""
-"You must have at least 128 megabytes of RAM to use this Ubuntu live system."
-msgstr "Pre použitie Ubuntu live systému musíte mať aspoň 128 megabajtov RAM."
+"You must have at least 256 megabytes of RAM to use this Ubuntu live system."
+msgstr "Pre použitie Ubuntu live systému musíte mať aspoň 256 megabajtov RAM."
 
 #: help.xml:142
 #, fuzzy
@@ -374,11 +374,11 @@ msgstr "Pri výzve môžete použiť nasledujúce parametre zavádzania,"
 #: help.xml:383
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use the "
+"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
 "0x prefix (e.g., 0x300)."
 msgstr ""
 "v kombinácií s metódou zavádzania (pozrite <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>>). Ak použijete čísla v šestnástkovej sústave, budete musieť "
+"keycap></link>). Ak použijete čísla v šestnástkovej sústave, budete musieť "
 "použiť predponu 0x (napr. 0x300)."
 
 #: help.xml:390 help.xml:477

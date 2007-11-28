@@ -150,9 +150,9 @@ msgstr ""
 
 #: help.xml:137
 msgid ""
-"You must have at least 128 megabytes of RAM to use this Ubuntu live system."
+"You must have at least 256 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Anda mesti memiliki paling sedikit 128 megabyte RAM untuk menggunakan sistem "
+"Anda mesti memiliki paling sedikit 256 megabyte RAM untuk menggunakan sistem "
 "live Ubuntu ini."
 
 #: help.xml:142
@@ -389,11 +389,11 @@ msgstr "Anda dapat menggunakan parameter boot berikut pada"
 #: help.xml:383
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use the "
+"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
 "0x prefix (e.g., 0x300)."
 msgstr ""
 "prompt, dikombinasikan dengan metode boot (lihat <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>>). Jika anda menggunakan angka heksa anda "
+"\"><keycap>F3</keycap></link>). Jika anda menggunakan angka heksa anda "
 "mesti menggunakan awalan 0x (misal 0x300)."
 
 #: help.xml:390 help.xml:477
