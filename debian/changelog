@@ -1,3 +1,10 @@
+debian-installer (20051026ubuntu13) dapper; urgency=low
+
+  * Drop minimum memory requirement to 32MB.
+  * Move to 2.6.15-13 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 20 Jan 2006 10:09:10 +0000
+
 debian-installer (20051026ubuntu12) dapper; urgency=low
 
   * Backport from trunk:
