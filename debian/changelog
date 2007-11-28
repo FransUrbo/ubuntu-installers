@@ -1,3 +1,11 @@
+debian-installer (20040801ubuntu2) warty; urgency=low
+
+  * Colin Watson
+    - Generate pxeboot.tar.gz and mini.iso for i386/amd64 2.6 netboot. Fix
+      up scripts to deal with the fact that we're not building 2.4.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Thu,  5 Aug 2004 16:29:55 +0100
+
 debian-installer (20040801ubuntu1) warty; urgency=low
 
   * Colin Watson
