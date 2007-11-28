@@ -1,3 +1,13 @@
+debian-installer (20050317ubuntu18) breezy; urgency=low
+
+  * build/boot/x86/f1.txt, doc/manual/en/appendix/chroot-install.xml,
+    doc/manual/en/appendix/files.xml,
+    doc/manual/en/preparing/minimum-hardware-reqts.xml: Bump minimum memory
+    requirement to 64MB, server install disk requirement to 400MB, and
+    desktop install disk requirement to 2GB.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed,  5 Oct 2005 11:51:58 +0100
+
 debian-installer (20050317ubuntu17) breezy; urgency=low
 
   * Move to 2.6.12-9 kernels.

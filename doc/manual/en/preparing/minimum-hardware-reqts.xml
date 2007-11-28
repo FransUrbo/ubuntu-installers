@@ -46,12 +46,12 @@ recommended.
 <tbody>
 <row>
   <entry>No desktop</entry>
-  <entry>24 megabytes</entry>
-  <entry>450 megabytes</entry>
+  <entry>64 megabytes</entry>
+  <entry>400 megabytes</entry>
 </row><row>
   <entry>With Desktop</entry>
-  <entry>64 megabytes</entry>
-  <entry>1 gigabyte</entry>
+  <entry>128 megabytes</entry>
+  <entry>2 gigabytes</entry>
 </row><row>
   <entry>Server</entry>
   <entry>128 megabytes</entry>

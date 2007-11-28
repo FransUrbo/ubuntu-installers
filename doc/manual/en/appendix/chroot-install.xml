@@ -34,8 +34,8 @@ media.
 
 With your current *nix partitioning tools, repartition the hard
 drive as needed, creating at least one filesystem plus swap. You
-need at least 350MB of space available for a minimal server install,
-or at least 1.8GB if you plan to install the Ubuntu desktop.
+need at least 400MB of space available for a minimal server install,
+or at least 2GB if you plan to install the Ubuntu desktop.
 
 </para><para>
 

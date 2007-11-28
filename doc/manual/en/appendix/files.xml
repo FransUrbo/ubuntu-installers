@@ -187,8 +187,8 @@ when your mouse only has one button. Just add the following lines to
  <title>Disk Space Needed</title>
 <para>
 
-A minimal server installation of &releasename; requires 350MB of disk space.
-The standard Ubuntu desktop installation requires 1.8GB.
+A minimal server installation of &releasename; requires 400MB of disk space.
+The standard Ubuntu desktop installation requires 2GB.
 
 </para>
  </sect1>
