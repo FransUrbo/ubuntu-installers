@@ -1,3 +1,9 @@
+debian-installer (20050317ubuntu14) breezy; urgency=low
+
+  * Move to 2.6.12-7 kernels.
+
+ -- Fabio M. Di Nitto <fabbione@ubuntu.com>  Fri, 19 Aug 2005 07:59:03 +0200
+
 debian-installer (20050317ubuntu13) breezy; urgency=low
 
   * Move to 2.6.12-6 kernels.
