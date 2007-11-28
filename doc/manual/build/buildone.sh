@@ -95,7 +95,6 @@ case $arch in
         other="supports-pcmcia;supports-serial-console;rescue-needs-root-disk;workaround-bug-99926"
         smp="supports-smp-sometimes"
         goodies="supports-lang-chooser"
-	status="checked"
         ;;
     ia64)
         archspec="ia64;not-i386;not-s390;not-m68k;not-powerpc;not-alpha"
@@ -155,7 +154,6 @@ case $arch in
         other="supports-pcmcia;supports-serial-console;rescue-needs-root-disk"
         smp="supports-smp"
         goodies="supports-lang-chooser"
-	status="not-checked"
         ;;
     s390)
         archspec="s390;not-powerpc;not-m68k;not-i386;not-alpha"

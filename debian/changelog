@@ -1,3 +1,14 @@
+debian-installer (20041027ubuntu3) hoary; urgency=low
+
+  * build/boot/powerpc/yaboot.conf, build/boot/x86/syslinux.cfg: Add
+    DEBCONF_PRIORITY=critical for non-expert modes (#3246). Remove obsolete
+    devfs=mount,dall (rootskel has handled this forever).
+  * doc/manual/build/buildone.sh: Remove status=checked/not-checked from
+    i386 and powerpc; the text this generates doesn't make so much sense for
+    Ubuntu.
+
+ -- Colin Watson <cjwatson@canonical.com>  Thu, 11 Nov 2004 19:50:07 +0000
+
 debian-installer (20041027ubuntu2) hoary; urgency=low
 
   * Lay most of the groundwork for floppy support; still waiting for some
