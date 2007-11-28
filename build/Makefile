@@ -404,6 +404,7 @@ endif
 		echo 'DISTRIB_ID=$(LSB_DISTRIB_ID)' > $(TREE)/etc/lsb-release; \
 		echo 'DISTRIB_DESCRIPTION=$(LSB_DISTRIB_DESCRIPTION)' >> $(TREE)/etc/lsb-release; \
 		echo 'DISTRIB_RELEASE=$(LSB_DISTRIB_RELEASE)' >> $(TREE)/etc/lsb-release; \
+		echo 'X_INSTALLATION_MEDIUM=$(MEDIUM)' >> $(TREE)/etc/lsb-release; \
 	fi
 
 	@touch $@
@@ -431,18 +432,11 @@ ifdef EXTRAUDEBS
 		$(foreach udeb,$(EXTRAUDEBS),$(UDEBDIR)/$(udeb).udeb)
 endif
 
-ifdef GTK-TARBALL-SOURCE
-	@echo "# Unpacking temporary GTK tarballs into tree..."
-	for gtk_tb in $$(ls $(TEMP_GTK-TARBALLS)/*.tgz 2>/dev/null) ; do \
-		echo "# Unpacking: $$gtk_tb" ; \
-		tar xz --directory $(TREE) -f $$gtk_tb ; \
-	done
-endif
-
 	# Library reduction. Existing libs from udebs are put in the udeblibs
 	# directory and mklibs is made to use those in preference to the
 	# system libs.
 	rm -rf $(TEMP)/udeblibs
+ifndef ONLY_KLIBC
 	mkdir -p $(TEMP)/udeblibs
 	-cp -a `find $(EXTRAUDEBSDIR)/lib -name '*.so.*'` $(TEMP)/udeblibs
 	-cp -a `find $(TREE)/lib -name '*.so.*'` $(TEMP)/udeblibs
@@ -450,6 +444,7 @@ endif
 	$(MKLIBS) -L $(TREE)/usr/lib -L $(TEMP)/udeblibs -v -d $(TREE)/lib --root=$(TREE) \
 		`find $(TEMP) -type f -a \( -perm +0111 -o -name '*.so' -o -name '*.so.*' \) | grep -v udeblibs`
 	rm -rf $(TEMP)/udeblibs
+endif
 
 	# Add missing symlinks for libraries
 	/sbin/ldconfig -n $(TREE)/lib $(TREE)/usr/lib
@@ -706,12 +701,12 @@ $(STAMPS)extra-$(targetstring)-stamp: $(STAMPS)get_udebs-$(targetstring)-stamp
 	done
 	for udeb in $(TREE)/*.udeb ; do \
 		if [ -f "$$udeb" ]; then \
-			pkg=`basename $$udeb` ; \
+			pkg=`basename $$udeb .udeb` ; \
 			usedsize=`du -bs $$udeb | awk '{print $$1}'` ; \
 			usedblocks=`du -s $$udeb | awk '{print $$1}'` ; \
 			usedcount=1 ; \
-			version=`dpkg-deb --info $$udeb | grep '^Version:' | awk '{print $$2}'` ; \
-			arch=`dpkg-deb --info $$udeb | grep Architecture: | awk '{print $$2}'` ; \
+			version=`dpkg-deb --info $$udeb | grep '^ *Version:' | awk '{print $$2}'` ; \
+			arch=`dpkg-deb --info $$udeb | grep '^ *Architecture:' | awk '{print $$2}'` ; \
 			echo " $$usedsize B - $$usedblocks blocks - $$usedcount files used by pkg $$pkg (version $$version)" >>$(TEMP)/diskusage.txt; \
 			echo "$$pkg $$version $$arch" >> $(TEMP_UDEB_LIST); \
 		fi; \

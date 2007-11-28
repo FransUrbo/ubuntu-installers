@@ -420,6 +420,11 @@ For F10 type control and F then the digit 0
     <seg><userinput>vga=771</userinput></seg>
    </seglistitem>
 
+   <seglistitem condition="install">
+    <seg>Use first serial port at 9600 baud</seg>
+    <seg><userinput>console=ttyS0,9600n8</userinput></seg>
+   </seglistitem>
+
    <seglistitem>
     <seg>
      If your system hangs when booting, and the last message you see is

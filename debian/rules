@@ -8,7 +8,7 @@ ifeq (${SUITE},unstable)
 SUITE=etch
 endif
 ifeq (${SUITE},UNRELEASED)
-SUITE=edgy
+SUITE=feisty
 endif
 
 ARCHIVEDIR=debian/tmp/installer-$(ARCH)

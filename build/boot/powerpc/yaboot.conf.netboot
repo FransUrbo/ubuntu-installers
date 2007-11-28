@@ -26,4 +26,3 @@ image=/vmlinux
 	initrd-size=${RAMDISK_SIZE}
 	append="rescue/enable=true --"
 	read-only
-
