@@ -1,3 +1,9 @@
+debian-installer (20040801ubuntu12) warty; urgency=low
+
+  * Move to 2.6.8.1-2 kernels.
+
+ -- Colin Watson <cjwatson@canonical.com>  Sun, 12 Sep 2004 11:40:42 +0100
+
 debian-installer (20040801ubuntu11) warty; urgency=low
 
   * Merge from Debian (Debian bug #264584):
