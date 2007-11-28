@@ -1,3 +1,13 @@
+debian-installer (20051026ubuntu21) dapper; urgency=low
+
+  * Move to 2.6.15-18 kernels.
+
+  * Readd input-modules to sparc/netboot.
+
+  * Readd usb-modules to sparc.
+
+ -- Fabio M. Di Nitto <fabbione@ubuntu.com>  Thu, 09 Mar 2006 12:08:22 +0100
+
 debian-installer (20051026ubuntu20) dapper; urgency=low
 
   * Move to 2.6.15-17 kernels.
