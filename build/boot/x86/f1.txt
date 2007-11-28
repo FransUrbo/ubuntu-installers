@@ -1,6 +1,6 @@
-                  0fWelcome to Ubuntu ${DEBIAN_VERSION}!07
+                  0fWelcome to Ubuntu!07                                          09F107
 
-This is an Ubuntu installation ${MEDIA_TYPE}, built on ${BUILD_DATE}.
+This is an Ubuntu ${DEBIAN_VERSION} installation ${MEDIA_TYPE}, built on ${BUILD_DATE}.
 
 0fHELP INDEX07
 

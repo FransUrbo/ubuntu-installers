@@ -16,7 +16,7 @@ job.
 But if you have a large IDE disk, and are using neither LBA addressing,
 overlay drivers (sometimes provided by hard disk manufacturers), nor a
 new (post 1998) BIOS that supports large disk access extensions, then
-you must locate your Debian boot partition carefully. In this case,
+you must locate your Ubuntu boot partition carefully. In this case,
 you will have to put the boot partition into the first 1024 cylinders
 of your hard drive (usually around 524 megabytes, without BIOS
 translation). This may require that you move an existing FAT or NTFS
@@ -32,7 +32,7 @@ partition.
 
 One of the most common installations is onto a system that already
 contains DOS (including Windows 3.1), Win32 (such as Windows 95, 98, Me,
-NT, 2000, XP), or OS/2, and it is desired to put Debian onto the same disk
+NT, 2000, XP), or OS/2, and it is desired to put Ubuntu onto the same disk
 without destroying the previous system. Note that the installer supports
 resizing of FAT filesystems as used by DOS and older versions of Windows,
 and in most cases you should not need to use the method described below,
@@ -46,8 +46,8 @@ program.
 Before going any further, you should have decided how you will be
 dividing up the disk. The method in this section will only split a
 partition into two pieces. One will contain the original OS and the
-other will be used for Debian.  During the installation of Debian, you
-will be given the opportunity to use the Debian portion of the disk as you
+other will be used for Ubuntu.  During the installation of Ubuntu, you
+will be given the opportunity to use the Ubuntu portion of the disk as you
 see fit, i.e., as swap or as a file system.
 
 </para><para>
@@ -62,7 +62,7 @@ amount of space you can take from the partition.
 </para><para>
 
 The first thing needed is a copy of <command>fips</command> which is
-available in the <filename>tools/</filename> directory on your nearest Debian
+available in the <filename>tools/</filename> directory on your nearest Ubuntu
 mirror. Unzip the archive and copy the files
 <filename>RESTORRB.EXE</filename>, <filename>FIPS.EXE</filename> and
 <filename>ERRORS.TXT</filename> to a bootable floppy.  A bootable floppy can

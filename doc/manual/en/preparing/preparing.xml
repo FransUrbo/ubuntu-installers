@@ -2,10 +2,10 @@
 <!-- $Id: preparing.xml 16467 2004-05-30 08:11:23Z mck-guest $ -->
 
 <chapter id="preparing">
- <title>Before Installing &debian;</title>
+ <title>Before Installing Ubuntu</title>
 <para>
 
-This chapter deals with the preparation for installing Debian before you even
+This chapter deals with the preparation for installing Ubuntu before you even
 boot the installer. This includes backing up your data, gathering information
 about your hardware, and locating any necessary information.
 

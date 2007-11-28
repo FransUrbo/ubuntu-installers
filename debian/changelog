@@ -1,3 +1,13 @@
+debian-installer (20040801ubuntu16) warty; urgency=low
+
+  * Ubuntu-brand chapter 3 of the manual.
+  * Move to 2.6.8.1-3 kernels.
+  * Backport from Debian at Mark's request:
+    - Add page markers to the syslinux help screens.
+  * Expand the documentation of 'custom' a bit.
+
+ -- Colin Watson <cjwatson@canonical.com>  Mon, 27 Sep 2004 23:14:58 +0100
+
 debian-installer (20040801ubuntu15) warty; urgency=low
 
   * Update substantial parts of the installation manual (English only for

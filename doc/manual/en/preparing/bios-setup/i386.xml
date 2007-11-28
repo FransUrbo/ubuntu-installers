@@ -11,7 +11,7 @@ your operating system to access your hardware.  Your system probably
 provides a BIOS set-up menu, which is used to configure the BIOS.
 Before installing, you <emphasis>must</emphasis> ensure that your BIOS
 is setup correctly; not doing so can lead to intermittent crashes or
-an inability to install Debian.
+an inability to install Ubuntu.
 
 </para><para>
 
@@ -112,7 +112,7 @@ then optionally the first CD-ROM device (possibly appearing as
 <filename>D:</filename> or <filename>E:</filename>), and then from
 <filename>C:</filename> (the first hard disk).  This setting enables
 you to boot from either a floppy disk or a CD-ROM, which are the two
-most common boot devices used to install Debian.
+most common boot devices used to install Ubuntu.
 
 </para><para>
 

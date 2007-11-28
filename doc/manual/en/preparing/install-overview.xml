@@ -5,7 +5,7 @@
  <title>Overview of the Installation Process</title> 
 <para>
 
-First, just a note about re-installations. With Debian, a
+First, just a note about re-installations. With Ubuntu, a
 circumstance that will require a complete re-installation of your
 system is very rare; perhaps mechanical failure of the hard disk would
 be the most common case. 
@@ -20,11 +20,11 @@ the new OS.
 
 </para><para>
 
-Under &debian;, it is much more likely that your OS can be repaired
+Under Ubuntu, it is much more likely that your OS can be repaired
 rather than replaced if things go wrong. Upgrades never require a
 wholesale installation; you can always upgrade in-place. And the
 programs are almost always compatible with successive OS releases.  If
-a new program version requires newer supporting software, the Debian
+a new program version requires newer supporting software, the Ubuntu
 packaging system ensures that all the necessary software is
 automatically identified and installed. The point is, much effort has
 been put into avoiding the need for re-installation, so think of it as
@@ -53,18 +53,18 @@ plan to install.
 </para></listitem>
 <listitem><para>
 
-Create partition-able space for Debian on your hard disk.
+Create partition-able space for Ubuntu on your hard disk.
 
 </para></listitem>
 <listitem><para>
 
 Locate and/or download the installer software and any specialized
-driver files your machine requires (except Debian CD users).
+driver files your machine requires (except Ubuntu CD users).
 
 </para></listitem>
 <listitem><para>
 
-Set up boot tapes/floppies/USB sticks, or place boot files (most Debian
+Set up boot tapes/floppies/USB sticks, or place boot files (most Ubuntu
 CD users can boot from one of the CDs).
 
 </para></listitem>
@@ -102,7 +102,7 @@ Attach one or more DASDs (Direct Access Storage Device).
 
 <listitem><para>
 
-Create and mount the partitions on which Debian will be installed.
+Create and mount the partitions on which Ubuntu will be installed.
 
 </para></listitem>
 <listitem><para>
@@ -114,7 +114,7 @@ Watch the automatic download/install/setup of the
 <listitem><para>
 
 Install a <firstterm>boot loader</firstterm>
-which can start up &debian; and/or your existing system.
+which can start up Ubuntu and/or your existing system.
 
 </para></listitem>
 <listitem><para>
@@ -167,11 +167,10 @@ which allows you to choose individual software packages.
 When <classname>debian-installer</classname> finishes, before the
 first system load, you have only a very basic command line driven
 system. The graphical interface which displays windows on your monitor
-will not be installed unless you select it during the final steps,
-with either <classname>tasksel</classname> or
-<classname>aptitude</classname>.  It's optional because many &debian;
-systems are servers which don't really have any need for a graphical
-user interface to do their job.
+will be installed later using <classname>aptitude</classname>. If you're
+installing a server or want to take care of all the package selection
+yourself for some other reason, type <userinput>custom</userinput> at the
+<prompt>boot:</prompt>.
 
 </para><para arch="not-s390">
 

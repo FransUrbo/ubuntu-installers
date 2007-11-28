@@ -28,7 +28,8 @@ installs. You may get by with a little less drive space than shown.
 </para><para arch="powerpc">
 
 Any OldWorld or NewWorld PowerPC can serve well 
-as a Desktop System. For servers, a minimum 132-Mhz machine is 
+as a Desktop System, although the installer currently only supports
+NewWorld. For servers, a minimum 132-Mhz machine is 
 recommended.
 
 </para>
@@ -61,7 +62,7 @@ recommended.
 
 <para>
 
-Here is a sampling of some common Debian system configurations.
+Here is a sampling of some common Ubuntu system configurations.
 You can also get an idea of the disk space used by related groups
 of programs by referring to <xref linkend="tasksel-size-list"/>.
 
@@ -121,7 +122,7 @@ Remember that these sizes don't include all the other materials which
 are usually to be found, such as user files, mail, and data.  It is
 always best to be generous when considering the space for your own
 files and data.  Notably, the <filename>/var</filename> partition contains
-a lot of state information specific to Debian in addition to its regular
+a lot of state information specific to Ubuntu in addition to its regular
 contents like logfiles.  The
 <command>dpkg</command> files (with information on all installed
 packages) can easily consume 20MB. Also,

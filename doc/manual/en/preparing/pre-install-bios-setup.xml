@@ -6,12 +6,12 @@
 <para>
 
 This section will walk you through pre-installation hardware setup, if
-any, that you will need to do prior to installing Debian.  Generally,
+any, that you will need to do prior to installing Ubuntu.  Generally,
 this involves checking and possibly changing firmware settings for
 your system.  The ``firmware'' is the core software used by the
 hardware; it is most critically invoked during the bootstrap process
 (after power-up). Known hardware issues affecting the reliability of
-&debian; on your system are also highlighted.
+Ubuntu on your system are also highlighted.
 
 </para>
 
