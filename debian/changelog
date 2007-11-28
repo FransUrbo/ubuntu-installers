@@ -1,3 +1,10 @@
+debian-installer (20040528ubuntu6) warty; urgency=low
+
+  * Use the full version number in image directories, so that the daily
+    builds work properly.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Mon, 12 Jul 2004 03:00:30 +0100
+
 debian-installer (20040528ubuntu5) warty; urgency=low
 
   * Bump i386 kernels to 2.6.7-1.

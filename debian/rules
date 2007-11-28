@@ -2,7 +2,6 @@
 
 ARCH=$(shell dpkg-architecture -qDEB_BUILD_ARCH)
 VERSION=$(shell LC_ALL=C dpkg-parsechangelog | grep ^Version: | cut -d ' ' -f 2)
-DATE=$(shell echo $(VERSION) | cut -d '.' -f 1)
 DISTRIBUTION=$(shell LC_ALL=C dpkg-parsechangelog | grep ^Distribution: | cut -d ' ' -f 2)
 ifeq (${DISTRIBUTION},UNRELEASED)
 DISTRIBUTION=testing
@@ -12,7 +11,7 @@ DISTRIBUTION=testing
 endif
 
 ARCHIVEDIR=installer-$(ARCH)
-DESTDIR=$(ARCHIVEDIR)/$(DATE)
+DESTDIR=$(ARCHIVEDIR)/$(VERSION)
 IMAGEDIR=$(DESTDIR)/images
 TARNAME=debian-installer-images_$(VERSION)_$(ARCH).tar.gz
 
@@ -46,7 +45,7 @@ install: build
 	install -d debian/tmp/$(IMAGEDIR)
 	cp -a build/dest/* debian/tmp/$(IMAGEDIR)
 	cd debian/tmp/$(IMAGEDIR) && md5sum `find . -type f` > MD5SUMS
-	ln -s $(DATE) debian/tmp/$(ARCHIVEDIR)/current
+	ln -s $(VERSION) debian/tmp/$(ARCHIVEDIR)/current
 
 binary-arch: install  
 	dh_testdir
