@@ -1,3 +1,9 @@
+debian-installer (20041227ubuntu20) hoary; urgency=low
+
+  * Fix netboot image build problem.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed,  2 Mar 2005 12:41:38 +0000
+
 debian-installer (20041227ubuntu19) hoary; urgency=low
 
   * Rename debian-installer to ubuntu-installer in netboot image tree. (This

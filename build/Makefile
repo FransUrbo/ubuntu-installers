@@ -651,9 +651,9 @@ $(DEBIAN_CD_INFO): $(TEMP_BOOT_SCREENS)
 
 # a directory full of files for netbooting
 $(NETBOOT_DIR): $(NETBOOT_DIR_TARGETS) $(TEMP_BOOT_SCREENS) $(TEMP_NETBOOT_DIR)
-	rm -rf $(SOME_DEST)/$(EXTRANAME)/debian-installer
-	mkdir -p $(SOME_DEST)/$(EXTRANAME)/debian-installer
-	cp -a $(TEMP_NETBOOT_DIR)/debian-installer/* $@
+	rm -rf $(SOME_DEST)/$(EXTRANAME)/ubuntu-installer
+	mkdir -p $(SOME_DEST)/$(EXTRANAME)/ubuntu-installer
+	cp -a $(TEMP_NETBOOT_DIR)/ubuntu-installer/* $@
 	$(foreach link,$(NETBOOT_DIR_LINKS), \
 		rm -f $@/../$(link); \
 		cp -a $(TEMP_NETBOOT_DIR)/$(link) $@/..; \
