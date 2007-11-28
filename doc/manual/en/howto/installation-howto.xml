@@ -126,24 +126,22 @@ Since you'll have more than one floppy, it's a good idea to label them.
 <para>
 
 It's also possible to install from removable USB storage devices. For
-example a USB keychain can make a handy Debian install media that you
+example a USB keychain can make a handy Ubuntu install medium that you
 can take with you anywhere.
 
 </para><para>
 
 The easiest way to prepare your USB memory stick is to download
-<filename>hd-media/boot.img.gz</filename>, and use gunzip to extract the 128 MB
+<filename>netboot/boot.img.gz</filename>, and use gunzip to extract the 32 MB
 image from that file. Write this image directly to your memory stick, which
-must be at least 128 mb in size. Of course this will destroy anything already
-on the memory stick. Then mount the memory stick, which will now have a FAT
-filesystem on it. Next, download a Debian netinst CD image, and copy that file
-to the memory stick; any filename is ok as long as it ends in ".iso".
+must be at least 32 MB in size. Of course this will destroy anything already
+on the memory stick.
 
 </para><para>
 
 There are other, more flexible ways to set up a memory stick to use the
-debian-installer, and it's possible to get it to work with smaller memory
-sticks. For details, see <xref linkend="boot-usb-files" />.
+Ubuntu installer.
+For details, see <xref linkend="boot-usb-files" />.
 
 </para><para arch="i386">
 

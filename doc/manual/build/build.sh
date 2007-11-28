@@ -9,7 +9,7 @@ if [ -z "$languages" ]; then
 fi
 
 if [ -z "$architectures" ]; then
-	architectures="amd64 i386 powerpc"
+	architectures="amd64 i386 ia64 powerpc sparc"
 fi
 
 if [ -z "$destination" ]; then

@@ -214,7 +214,7 @@ you can still use a single floppy to do the initial boot and then
 switch to USB. Boot your system as described in <xref linkend="floppy-boot"/>;
 the kernel on the boot floppy should detect your USB stick automatically.
 When it asks for the root floppy, simply press &enterkey;. You should see
-&d-i; starting.
+the Ubuntu installer starting.
 
 </para>
   </sect2>

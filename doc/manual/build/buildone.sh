@@ -96,7 +96,7 @@ case $arch in
         ;;
     ia64)
         archspec="ia64;not-i386;not-s390;not-m68k;not-powerpc;not-alpha"
-        kernelversion="2.4.27"
+        kernelversion="2.6.9"
 
         fdisk="parted.txt;cfdisk.txt"
         network="supports-tftp;supports-rarp;supports-dhcp;supports-bootp;supports-nfsroot"
@@ -104,7 +104,6 @@ case $arch in
         other="supports-serial-console;rescue-needs-root-disk"
         smp="supports-smp"
         goodies="supports-lang-chooser"
-	status="checked"
         ;;
     m68k)
         archspec="m68k;not-i386;not-s390;not-powerpc;not-alpha"
@@ -167,15 +166,14 @@ case $arch in
         ;;
     sparc)
         archspec="sparc;not-i386;not-s390;not-m68k;not-powerpc;not-alpha"
-        kernelversion="2.4.27"
+        kernelversion="2.6.9"
 
         fdisk="fdisk.txt"
         network="supports-tftp;supports-rarp;supports-dhcp;supports-bootp;supports-nfsroot"
-        boot="supports-floppy-boot"
+        boot=""
         other="supports-serial-console;rescue-needs-root-disk"
         smp="supports-smp"
         goodies=""
-	status="not-checked"
         ;;
     *)
         echo "Unknown architecture ${arch}! Please elaborate."

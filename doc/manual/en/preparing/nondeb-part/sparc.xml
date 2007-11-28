@@ -7,10 +7,10 @@
 <para>
 
 It's perfectly fine to partition from SunOS; in fact, if you intend to
-run both SunOS and Debian on the same machine, it is recommended that
-you partition using SunOS prior to installing Debian.  The Linux
+run both SunOS and Ubuntu on the same machine, it is recommended that
+you partition using SunOS prior to installing Ubuntu.  The Linux
 kernel understands Sun disk labels, so there are no problems there.
-Just make sure you leave room for the Debian root partition within the
+Just make sure you leave room for the Ubuntu root partition within the
 first 1GB area of the boot disk. You can also place the kernel image on a
 UFS partition if that is easier than putting the root partition there.
 SILO supports booting Linux and SunOS from either EXT2 (Linux), UFS

@@ -1,3 +1,53 @@
+debian-installer (20041118ubuntu7) hoary; urgency=low
+
+  * Build boot.img.gz versions of amd64 and i386 netboot, for use as
+    bootable USB images.
+  * Manual changes:
+    - install-methods/boot-usb-files.xml: Document netboot-style USB images.
+      Still mention the hd-media images, but they're downplayed since not
+      many USB sticks can fit a full Ubuntu ISO image yet.
+    - boot-installer/i386.xml (usb-boot), howto/installation-howto.xml
+      (howto-getting-images-usb): Ubuntu branding.
+
+  * Add ia64 support:
+    - build/boot/ia64/: 2.6 only; DEBCONF_PRIORITY=critical for normal mode;
+      Ubuntu branding on boot screens.
+    - build/config/ia64.cfg: 2.6 only; use 2.6.9-1 kernel; default to cramfs
+      initrds.
+    - build/config/ia64/: 2.6 only.
+    - build/pkg-lists/cdrom/ia64.cfg, build/pkg-lists/floppy/ia64.cfg,
+      build/pkg-lists/netboot/ia64.cfg: Remove discover.
+    - build/pkg-lists/netboot/ia64.cfg: Add pciutils-udeb.
+    - doc/manual/build/build.sh: Build ia64 manual.
+    - doc/manual/build/buildone.sh: ia64 on 2.6.9; remove status="checked".
+    - doc/manual/en/appendix/chroot-install.xml: Mention ia64.
+    - doc/manual/en/boot-installer/ia64.xml,
+      doc/manual/en/using-d-i/modules/ia64/elilo-installer.xml: Ubuntu
+      branding.
+
+  * Add sparc support:
+    - build/boot/sparc/: sparc64 only (and therefore no floppy support);
+      DEBCONF_PRIORITY=critical for normal mode; remove obsolete
+      devfs=mount; Ubuntu branding on boot screen.
+    - build/config/sparc.cfg: sparc64 and 2.6 only; use 2.6.9-1 kernel.
+    - build/config/sparc/: sparc64 and 2.6 only.
+    - build/pkg-lists/cdrom/sparc.cfg, build/pkg-lists/floppy/sparc.cfg,
+      build/pkg-lists/netboot/sparc.cfg: Remove discover.
+    - build/pkg-lists/netboot/sparc.cfg: Add pciutils-udeb.
+    - doc/manual/build/build.sh: Build sparc manual.
+    - doc/manual/build/buildone.sh: sparc on 2.6.9; remove
+      supports-floppy-boot; remove status="not-checked".
+    - doc/manual/en/preparing/nondeb-part/sparc.xml: Ubuntu branding.
+    - doc/manual/en/boot-installer/sparc.xml: Conditionalise floppy section
+      on supports-floppy-boot.
+
+  * Backport from Debian (Joey Hess):
+    - Add module-init-tools to build deps for ia64 to fix truncated
+      modules.dep files and USB keyboard.
+    - Add it for sparc too.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue,  7 Dec 2004 19:57:11 +0100
+
 debian-installer (20041118ubuntu6) hoary; urgency=low
 
   * Bump libparted build-dep to libparted1.6-12.

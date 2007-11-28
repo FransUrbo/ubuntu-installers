@@ -151,7 +151,8 @@ Substitute one of the following for <replaceable>ARCH</replaceable>
 in the <command>debootstrap</command> command: 
 
 <userinput>amd64</userinput>, 
-<userinput>i386</userinput>, or
+<userinput>i386</userinput>,
+<userinput>ia64</userinput>, or
 <userinput>powerpc</userinput>.
 
 <informalexample><screen>
