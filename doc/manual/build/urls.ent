@@ -78,7 +78,7 @@
 <!ENTITY url-release-notes "&url-release-area;&architecture;/release-notes/">
 
 <!-- official www.debian.org location of the install manual -->
-<!ENTITY url-install-manual "&url-release-area;&architecture;/install">
+<!-- <!ENTITY url-install-manual "&url-release-area;&architecture;/install"> -->
 <!ENTITY url-dselect-beginner "&url-release-area;&architecture;/dselect-beginner">
 
 <!-- relative locations of the manuals; this is tricky because in the -->
@@ -135,12 +135,20 @@
 <!-- Ubuntu mirrors -->
 <!ENTITY url-ubuntu-mirrors "http://&wiki-ubuntulinux-org;/Archive">
 
+<!-- archive layout -->
+<!ENTITY url-ubuntu-components "http://&www-ubuntulinux-org;/ubuntu/components">
+
+<!-- license policy -->
+<!ENTITY url-ubuntu-licensing "http://&www-ubuntulinux-org;/ubuntu/licensing">
+
 <!-- base for the current distribution -->
 <!ENTITY disturlftp "ftp://&archive-ubuntulinux-org;/ubuntu/dists/&releasename;/">
 <!ENTITY disturl    "http://&archive-ubuntulinux-org;/ubuntu/dists/&releasename;/">
 
 <!-- where to get the current Ubuntu installer -->
 <!ENTITY url-ubuntu-installer "&disturl;main/installer-&architecture;/current/">
+
+<!ENTITY url-install-manual "&disturl;main/installer-&architecture;/current/doc/">
 
 <!--
   misc

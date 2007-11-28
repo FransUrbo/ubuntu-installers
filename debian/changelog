@@ -1,3 +1,18 @@
+debian-installer (20040801ubuntu19) warty; urgency=low
+
+  * Manual changes:
+    - Build English only.
+    - Point "latest version of this manual" links at
+      archive.ubuntulinux.org.
+    - welcome/doc-organization.xml: Brand. Fix link to latest version.
+    - welcome/getting-newest-doc.xml: Remove links to Debian release pages.
+    - welcome/about-copyright.xml: Brand. Refer to multiverse rather than
+      contrib and non-free. Link to the Ubuntu License Policy.
+    - appendix/chroot-install.xml: Fix release name in debootstrap
+      invocation. Add an "Install the Ubuntu Desktop" section.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 12 Oct 2004 17:42:55 +0100
+
 debian-installer (20040801ubuntu18) warty; urgency=low
 
   * Manual changes:

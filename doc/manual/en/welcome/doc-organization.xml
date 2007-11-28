@@ -22,7 +22,7 @@ encourage expert users to jump around in the document.
 
 In general, this manual is arranged in a linear fashion, walking you
 through the installation process from start to finish.  Here are the
-steps in installing &debian;, and the sections of this document which
+steps in installing Ubuntu, and the sections of this document which
 correlate with each step:
 
 <orderedlist>
@@ -104,8 +104,8 @@ may be found in <xref linkend="administrivia"/>.
 <para>
 
 Any help, suggestions, and especially, patches, are greatly
-appreciated.  Working versions of this document can be found at 
-<ulink url="&url-install-manual;">
+appreciated.  Working versions of this document can be found at the
+<ulink url="&url-install-manual;">official Install Manual pages
 </ulink>.  There you will find a list of all the different
 architectures and languages for which this document is available.
 

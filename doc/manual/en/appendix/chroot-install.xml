@@ -156,7 +156,7 @@ in the <command>debootstrap</command> command:
 
 <informalexample><screen>
 
- $ /usr/sbin/debootstrap --arch ARCH sarge \
+ $ /usr/sbin/debootstrap --arch ARCH &releasename; \
      /mnt/ubuntu http://&archive-ubuntulinux-org;/ubuntu
 
 </screen></informalexample>
@@ -355,7 +355,7 @@ interface name (eth0, eth1, etc.) that you expect.
 </para>
    </sect3>
 
-   <sect3>
+   <sect3 id="chroot-install-base-config">
    <title>Configure Timezone, Users, and APT</title>
 
 <para>
@@ -487,5 +487,33 @@ On some machines, you may need to use <userinput>ide0:</userinput>
 instead of <userinput>hd:</userinput>. 
 
 </para>
+  </sect2>
+
+  <sect2>
+  <title>Install the Ubuntu Desktop</title>
+<para>
+
+At this point, you probably want to reboot into your new Ubuntu system to
+make sure it all works. Once you've done that, log in as the user you
+created in <xref linkend="chroot-install-base-config"/>, and run:
+
+<informalexample><screen>
+
+ $ sudo aptitude -y install '~tubuntu-desktop'
+
+</screen></informalexample>
+
+You will need to enter your password to authorise <command>sudo</command> to
+run as root.
+
+</para><para>
+
+<command>aptitude</command> will now get on with installing the packages
+that make up the Ubuntu desktop, which will take a while. When it's
+finished, you should be presented with a graphical login prompt. The
+installation is now complete, so go ahead and log in.
+
+</para>
+
   </sect2>
  </sect1>
