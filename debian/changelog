@@ -1,3 +1,12 @@
+debian-installer (20051026ubuntu2) dapper; urgency=low
+
+  * build/boot/ia64.cfg: Add a suitable arch_cd_info_dir target.
+  * build/pkg-lists/base: Switch back to module-init-tools-udeb for now;
+    busybox modprobe doesn't support all the options we need and doesn't
+    seem to have good enough alias and blacklist support.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 15 Nov 2005 13:01:24 +0000
+
 debian-installer (20051026ubuntu1) dapper; urgency=low
 
   * Resynchronise with Debian.
