@@ -1,3 +1,11 @@
+debian-installer (20040801ubuntu13) warty; urgency=low
+
+  * Update disk space estimates in boot screens (350 MB for custom, 1.8 GB
+    for desktop).
+  * Finish boot screen branding.
+
+ -- Colin Watson <cjwatson@canonical.com>  Wed, 15 Sep 2004 02:51:33 +0100
+
 debian-installer (20040801ubuntu12) warty; urgency=low
 
   * Move to 2.6.8.1-2 kernels.
