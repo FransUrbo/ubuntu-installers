@@ -1,3 +1,9 @@
+debian-installer (20051026ubuntu4) dapper; urgency=low
+
+  * Move to 2.6.15-7 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue,  6 Dec 2005 20:07:06 +0000
+
 debian-installer (20051026ubuntu3) dapper; urgency=low
 
   * Fix live CD boot text.
