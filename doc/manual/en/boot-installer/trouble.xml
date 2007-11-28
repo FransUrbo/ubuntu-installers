@@ -6,12 +6,12 @@
 <para>
 </para>
 
-  <sect2 id="unreliable-floppies">
+  <sect2 id="unreliable-floppies" condition="supports-floppy-boot">
   <title>Floppy Disk Reliability</title>
 
 <para>
 
-The biggest problem for people installing Debian for the first time
+The biggest problem for people installing Ubuntu for the first time
 seems to be floppy disk reliability.
 
 </para><para>
@@ -136,9 +136,8 @@ If you still have problems, please submit an installation report. We also
 encourage installation reports to be sent even if the installation is
 successful, so that we can get as much information as possible on the largest
 number of hardware configurations. Please use this template when filling out
-installation reports, and file the report as a bug report against the
-"installation-reports" pseudo package, by sending it to
-<email>submit@bugs.debian.org</email>.
+installation reports, and send the report to
+<email>ubuntu-users@lists.ubuntu.com</email>.
 
 <informalexample><screen>
 

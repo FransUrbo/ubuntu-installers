@@ -2,7 +2,7 @@
 <!-- $Id: boot-new.xml 16340 2004-05-26 21:27:59Z fjpop-guest $ -->
 
 <chapter id="boot-new">
- <title>Booting Into Your New Debian System</title>
+ <title>Booting Into Your New Ubuntu System</title>
 
  <sect1 id="base-boot"><title>The Moment of Truth</title>
 <para>
@@ -20,7 +20,7 @@ root filesystem during the first steps of the installation.
 
 </para><para>
 
-If you are booting directly into Debian, and the system doesn't start
+If you are booting directly into Ubuntu, and the system doesn't start
 up, either use your original installation boot media, or insert the
 custom boot floppy if you have one, and reset your system.  This way,
 you will probably need to add some boot arguments like
@@ -101,7 +101,7 @@ freshly installed GNU/Linux instead of the RAMdisk installer system.
 
 </para><para>
 
-Debian should boot, and you should see the same messages as
+Ubuntu should boot, and you should see the same messages as
 when you first booted the installation system, followed by some new
 messages. 
 
@@ -109,7 +109,8 @@ messages.
    </sect2>
 
 
-  <sect2 arch="powerpc"><title>OldWorld PowerMacs</title>
+  <sect2 arch="powerpc" condition="not-ubuntu"><title>OldWorld PowerMacs</title>
+  <!-- FIXME: Ubuntu doesn't support OldWorld yet -->
 <para>
 
 If the machine fails to boot after completing the installation, and
@@ -155,7 +156,7 @@ e.g. <userinput>/dev/hda8</userinput>.
 
 On G4 machines and iBooks, you can hold down the
 <keycap>option</keycap> key and get a graphical screen with a button
-for each bootable OS, &debian; will be a button with a small penguin
+for each bootable OS, Ubuntu will be a button with a small penguin
 icon.
 
 </para><para>
@@ -175,15 +176,15 @@ displayed if you press the <keycap>Tab</keycap> key at the
 </para><para>
 
 Resetting OpenFirmware on G3 or G4 hardware will cause it to boot
-&debian; by default (if you correctly partitioned and placed the
-Apple_Bootstrap partition first).  If you have &debian; on a SCSI disk
+Ubuntu by default (if you correctly partitioned and placed the
+Apple_Bootstrap partition first).  If you have Ubuntu on a SCSI disk
 and MacOS on an IDE disk this may not work and you will have to enter
 OpenFirmware and set the <envar>boot-device</envar> variable,
 <command>ybin</command> normally does this automatically.
 
 </para><para>
 
-After you boot &debian; for the first time you can add any additional
+After you boot Ubuntu for the first time you can add any additional
 options you desire (such as dual boot options) to
 <filename>/etc/yaboot.conf</filename> and run <command>ybin</command>
 to update your boot partition with the changed configuration.  Please
@@ -195,7 +196,7 @@ for more information.
  </sect1>
 
  <sect1 id="base-config">
- <title>Debian Post-Boot (Base) Configuration</title>
+ <title>Ubuntu Post-Boot (Base) Configuration</title>
 
 <para>
 
@@ -287,7 +288,7 @@ before scrolling past the top of the screen. To see a list of all
 commands available which begin with a certain letter, type the letter
 and then two tabs.
 
-</para><para>
+</para><para condition="not-ubuntu">
 
 For a more complete introduction to Debian and GNU/Linux, see
 <filename>/usr/share/doc/debian-guide/html/noframes/index.html</filename>.

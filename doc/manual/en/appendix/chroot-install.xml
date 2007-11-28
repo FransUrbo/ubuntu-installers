@@ -2,25 +2,25 @@
 <!-- $Id: chroot-install.xml 18773 2004-07-31 16:41:16Z joeyh $ -->
 
  <sect1 id="linux-upgrade">
- <title>Installing &debian; from a Unix/Linux System</title>
+ <title>Installing Ubuntu from a Unix/Linux System</title>
 
 <para>
 
-This section explains how to install &debian; from an existing
+This section explains how to install Ubuntu from an existing
 Unix or Linux system, without using the ncurses-based, menu-driven
 installer as explained in the rest of the manual. This "cross-install"
-HOWTO has been requested by users switching to &debian; from
-Redhat, Mandrake, and SUSE. In this section some familiarity with
+HOWTO has been requested by users switching to Ubuntu from
+&debian;, Redhat, Mandrake, and SUSE. In this section some familiarity with
 entering *nix commands and navigating the file system is assumed. In
 this section, <prompt>$</prompt> symbolizes a command to be entered in
 the user's current system, while <prompt>#</prompt> refers to a
-command entered in the Debian chroot.
+command entered in the Ubuntu chroot.
 
 </para><para>
 
-Once you've got the new Debian system configured to your preference,
+Once you've got the new Ubuntu system configured to your preference,
 you can migrate your existing user data (if any) to it, and keep on
-rolling. This is therefore a "zero downtime" &debian;
+rolling. This is therefore a "zero downtime" Ubuntu
 install. It's also a clever way for dealing with hardware that
 otherwise doesn't play friendly with various boot or installation
 media.
@@ -33,8 +33,8 @@ media.
 
 With your current *nix partitioning tools, repartition the hard
 drive as needed, creating at least one filesystem plus swap. You
-need at least 150MB of space available for a console only install,
-or at least 300MB if you plan to install X.
+need at least 350MB of space available for a minimal custom install,
+or at least 1.8GB if you plan to install the Ubuntu desktop.
 
 </para><para>
 
@@ -53,7 +53,7 @@ To create an ext2 file system instead, omit <userinput>-j</userinput>.
 </para><para>
 
 Initialize and activate swap (substitute the partition number for 
-your intended Debian swap partition):
+your intended Ubuntu swap partition):
 
 <informalexample><screen>
 
@@ -65,15 +65,15 @@ your intended Debian swap partition):
 
 </para><para>
 
-Mount one partition as <filename>/mnt/debinst</filename> (the
+Mount one partition as <filename>/mnt/ubuntu</filename> (the
 installation point, to be the root (<filename>/</filename>) filesystem
 on your new system). The mount point name is strictly arbitrary, it is
 referenced later below.
 
 <informalexample><screen>
 
- $ mkdir /mnt/debinst
- $ mount /dev/hda6 /mnt/debinst
+ $ mkdir /mnt/ubuntu
+ $ mount /dev/hda6 /mnt/ubuntu
 
 </screen></informalexample>
 
@@ -84,8 +84,8 @@ referenced later below.
   <title>Install <command>debootstrap</command></title>
 <para>
 
-The tool that the Debian installer uses, which is recognized as the
-official way to install a Debian base system, is
+The tool that the Ubuntu installer uses, which is recognized as the
+official way to install an Ubuntu base system, is
 <command>debootstrap</command>. It uses <command>wget</command>, but
 otherwise depends only on <classname>/bin/sh</classname>. Install
 <command>wget</command> if it isn't already on your current system,
@@ -94,8 +94,7 @@ then download and install <command>debootstrap</command>.
 </para><para>
 
 If you have an rpm-based system, you can use alien to convert the 
-.deb into .rpm, or download an rpm-ized version at 
-<ulink url="http://people.debian.org/~blade/install/debootstrap"></ulink>
+.deb into .rpm.
 
 </para><para>
 
@@ -110,10 +109,10 @@ manually. Make a work folder for extracting the .deb into:
 </screen></informalexample>
 </para><para>
 
-The <command>debootstrap</command> binary is located in the Debian
+The <command>debootstrap</command> binary is located in the Ubuntu
 archive (be sure to select the proper file for your
 architecture). Download the <command>debootstrap</command> .deb from
-the <ulink url="http://ftp.debian.org/debian/pool/main/d/debootstrap/">
+the <ulink url="http://&archive-ubuntulinux-org;/ubuntu/pool/main/d/debootstrap/">
 pool</ulink>, copy the package to the work folder, and extract the
 binary files from it. You will need to have root privileges to install
 the binaries.
@@ -134,39 +133,31 @@ the binaries.
 <para>
 
 <command>debootstrap</command> can download the needed files directly
-from the archive when you run it. You can substitute any Debian
-archive mirror for <userinput>http.us.debian.org/debian</userinput> in
+from the archive when you run it. You can substitute any Ubuntu
+archive mirror for <userinput>&archive-ubuntulinux-org;/ubuntu</userinput> in
 the command example below, preferably a mirror close to you
 network-wise. Mirrors are listed at 
-<ulink url="http://www.debian.org/misc/README.mirrors"></ulink>.
+<ulink url="&url-ubuntu-mirrors;"></ulink>.
 
 </para><para>
 
-If you have a &releasename; &debian; CD mounted at
+If you have an Ubuntu &releasename; CD mounted at
 <filename>/cdrom</filename>, you could substitute a file URL instead
-of the http URL: <userinput>file:/cdrom/debian/</userinput>
+of the http URL: <userinput>file:/cdrom/ubuntu/</userinput>
 
 </para><para>
 
 Substitute one of the following for <replaceable>ARCH</replaceable> 
 in the <command>debootstrap</command> command: 
 
-<userinput>alpha</userinput>, 
-<userinput>arm</userinput>,
-<userinput>hppa</userinput>, 
-<userinput>i386</userinput>, 
-<userinput>ia64</userinput>, 
-<userinput>m68k</userinput>,
-<userinput>mips</userinput>, 
-<userinput>mipsel</userinput>, 
-<userinput>powerpc</userinput>, 
-<userinput>s390</userinput>, or
-<userinput>sparc</userinput>.
+<userinput>amd64</userinput>, 
+<userinput>i386</userinput>, or
+<userinput>powerpc</userinput>.
 
 <informalexample><screen>
 
  $ /usr/sbin/debootstrap --arch ARCH sarge \
-     /mnt/debinst http://http.us.debian.org/debian
+     /mnt/ubuntu http://&archive-ubuntulinux-org;/ubuntu
 
 </screen></informalexample>
 
@@ -179,12 +170,12 @@ in the <command>debootstrap</command> command:
 
 <para>
 
-Now you've got a real Debian system, though rather lean, on disk.
+Now you've got a real Ubuntu system, though rather lean, on disk.
 <command>Chroot</command> into it:
 
 <informalexample><screen>
 
- $ chroot /mnt/debinst /bin/bash
+ $ chroot /mnt/ubuntu /bin/bash
 
 </screen></informalexample>
 </para>
@@ -215,6 +206,7 @@ Here is a sample you can modify to suit:
 
 /dev/XXX         none          swap    sw                       0    0
 proc             /proc         proc    defaults                 0    0
+sys              /sys          sysfs   defaults                 0    0
 
 /dev/fd0         /mnt/floppy   auto    noauto,rw,sync,user,exec 0    0
 /dev/cdrom       /mnt/cdrom    iso9660 noauto,ro,user,exec      0    0
@@ -240,14 +232,15 @@ file systems individually use:
 
 </para><para>
 
-You can mount the proc file system multiple times and to arbitrary
-locations, though /proc is customary. If you didn't use
-<userinput>mount -a</userinput>, be sure to mount proc before
+You can mount the proc and sysfs file systems multiple times and to arbitrary
+locations, though /proc and /sys respectively are customary. If you didn't use
+<userinput>mount -a</userinput>, be sure to mount proc and sysfs before
 continuing:
 
 <informalexample><screen>
 
  # mount -t proc proc /proc
+ # mount -t sysfs sysfs /sys
 
 </screen></informalexample>
 
@@ -348,7 +341,7 @@ Enter your system's host name (2 to 63 characters):
 
 <informalexample><screen>
 
- # echo DebianHostName &#62; /etc/hostname
+ # echo UbuntuHostName &#62; /etc/hostname
 
 </screen></informalexample>
 
@@ -410,7 +403,7 @@ and a boot loader. Identify available pre-packaged kernels with
 
 <informalexample><screen>
 
- # apt-cache search kernel-image
+ # apt-cache search linux-image
 
 </screen></informalexample>
 
@@ -420,7 +413,7 @@ Then install your choice using its package name.
 
 <informalexample><screen>
 
- # apt-get install kernel-image-2.X.X-arch-etc
+ # apt-get install linux-image-2.X.X-arch-etc
 
 </screen></informalexample>
 
@@ -431,17 +424,17 @@ Then install your choice using its package name.
 <title>Set up the Boot Loader</title>
 <para>
 
-To make your &debian; system bootable, set up your boot loader to load
+To make your Ubuntu system bootable, set up your boot loader to load
 the installed kernel with your new root partition. Note that debootstrap
 does not install a boot loader, though you can use apt-get inside your
-Debian chroot to do so.
+Ubuntu chroot to do so.
 
 </para><para arch="i386">
 
 Check <userinput>info grub</userinput> or <userinput>man
 lilo.conf</userinput> for instructions on setting up the
-bootloader.  If you are keeping the system you used to install Debian, just
-add an entry for the Debian install to your existing grub
+bootloader.  If you are keeping the system you used to install Ubuntu, just
+add an entry for the Ubuntu install to your existing grub
 <filename>menu.lst</filename> or <filename>lilo.conf</filename>.  For
 <filename>lilo.conf</filename>, you could also copy it to the new system and
 edit it there. After you are done editing, call lilo (remember it will use
@@ -459,7 +452,7 @@ install=/boot/boot-menu.b
 delay=20
 lba32
 image=/vmlinuz
-label=Debian
+label=Ubuntu
 
 </screen></informalexample>
 
@@ -467,7 +460,7 @@ label=Debian
 
 Check <userinput>man yaboot.conf</userinput> for instructions on
 setting up the bootloader.  If you are keeping the system you used to
-install Debian, just add an entry for the Debian install to your
+install Ubuntu, just add an entry for the Ubuntu install to your
 existing <filename>yaboot.conf</filename>.  You could also copy it to
 the new system and
 edit it there. After you are done editing, call ybin (remember it will
@@ -486,7 +479,7 @@ root=/dev/hda6
 magicboot=/usr/lib/yaboot/ofboot
 timeout=50
 image=/vmlinux
-label=Debian
+label=Ubuntu
 
 </screen></informalexample>
 

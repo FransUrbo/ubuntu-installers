@@ -6,10 +6,10 @@
 
 <para>
 
-This is the last step in the initial Debian installation process. You will
+This is the last step in the initial Ubuntu installation process. You will
 be prompted to remove the boot media (CD, floppy, etc) that you used to
 boot the installer. The installer will do any last minute tasks, and then
-reboot into your new Debian system.
+reboot into your new Ubuntu system.
 
 </para><para arch="s390">
 

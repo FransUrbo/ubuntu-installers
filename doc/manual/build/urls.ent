@@ -35,8 +35,8 @@
 <!ENTITY email-debian-boot-list "debian-boot@lists.debian.org">
 
 <!-- base for the current distribution -->
-<!ENTITY disturlftp "ftp://&ftp-debian-org;/debian/dists/&releasename;/">
-<!ENTITY disturl    "http://http.us.debian.org/debian/dists/&releasename;/">
+<!-- <!ENTITY disturlftp "ftp://&ftp-debian-org;/debian/dists/&releasename;/"> -->
+<!-- <!ENTITY disturl    "http://http.us.debian.org/debian/dists/&releasename;/"> -->
 
 <!-- base for unstable -->
 <!ENTITY url-dist-unstable "ftp://ftp.debian.org/debian/dists/unstable/">
@@ -123,10 +123,24 @@
   -->
 <!ENTITY www-ubuntulinux-org "www.ubuntulinux.org">
 <!ENTITY url-ubuntu-home "http://&www-ubuntulinux-org;/">
+<!ENTITY wiki-ubuntulinux-org "wiki.ubuntulinux.org">
+<!ENTITY archive-ubuntulinux-org "archive.ubuntulinux.org">
 
 <!ENTITY www-canonical-com "www.canonical.com">
 <!ENTITY url-canonical-home "http://&www-canonical-com;/">
 
+<!-- instructions on downloading Ubuntu -->
+<!ENTITY url-ubuntu-download "http://&www-ubuntulinux-org;/download/">
+
+<!-- Ubuntu mirrors -->
+<!ENTITY url-ubuntu-mirrors "http://&wiki-ubuntulinux-org;/Archive">
+
+<!-- base for the current distribution -->
+<!ENTITY disturlftp "ftp://&archive-ubuntulinux-org;/ubuntu/dists/&releasename;/">
+<!ENTITY disturl    "http://&archive-ubuntulinux-org;/ubuntu/dists/&releasename;/">
+
+<!-- where to get the current Ubuntu installer -->
+<!ENTITY url-ubuntu-installer "&disturl;main/installer-&architecture;/current/">
 
 <!--
   misc

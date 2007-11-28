@@ -15,10 +15,10 @@ the installation method you use and on your hardware.
 </para>
 
   <sect2>
-  <title>Setting up Debian Installer and Hardware Configuration</title>
+  <title>Setting up Ubuntu Installer and Hardware Configuration</title>
 <para>
 
-Let's assume the Debian Installer has booted and you are facing its
+Let's assume the Ubuntu Installer has booted and you are facing its
 first screen.  At this time, the capabilities of &d-i; are still quite
 limited. It doesn't know much about your hardware, preferred language,
 or even the task it should perform. Don't worry. Because &d-i; is quite
@@ -91,6 +91,8 @@ take some time.
 &module-base-installer.xml;
   </sect2>
 
+  <!-- FIXME: document archive-copier here -->
+
   <sect2>
   <title>Making Your System Bootable</title>
 
@@ -132,7 +134,7 @@ documentation for more information.
   <title>Finishing the First Stage</title>
 <para>
 
-These are the last bits to do before rebooting to your new Debian. It
+These are the last bits to do before rebooting to your new Ubuntu. It
 mostly consists of tidying up after the &d-i;.
 
 </para>

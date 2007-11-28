@@ -32,6 +32,11 @@ isolate certain bits of text as architecture-specific.
 
 <para>
 
+If you have problems or suggestions regarding this document, please
+mail them to <email>ubuntu-users@lists.ubuntu.com</email>.
+
+</para><para condition="not-ubuntu"> <!-- FIXME better bug reporting -->
+
 If you have problems or suggestions regarding this document, you
 should probably submit them as a bug report against the package
 <classname>debian-installer-manual</classname>.  See the
@@ -46,7 +51,7 @@ or helpful information to
 where <replaceable>XXXX</replaceable> is the number for the
 already-reported bug.
 
-</para><para>
+</para><para condition="not-ubuntu">
 
 Better yet, get a copy of the DocBook source for this document, and
 produce patches against it.  The DocBook source can be found at the
@@ -70,7 +75,8 @@ subscribing to this list can be found at the <ulink
 url="&url-debian-lists-subscribe;">Debian Mailing
 List Subscription</ulink> page; or you can browse the <ulink
 url="&url-debian-list-archives;">Debian Mailing List Archives</ulink>
-online.
+online. Please do not contact debian-boot about issues specific to
+Ubuntu.
 
 </para>
 

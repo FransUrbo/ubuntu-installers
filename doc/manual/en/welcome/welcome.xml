@@ -14,7 +14,7 @@ distribution, feel free to skip to the next chapter.
 &what-is-ubuntu.xml;
 &what-is-debian.xml;
 &what-is-linux.xml;
-&what-is-debian-linux.xml;
+<!-- &what-is-debian-linux.xml; -->
 &getting-newest-inst.xml;
 &getting-newest-doc.xml;
 &doc-organization.xml;

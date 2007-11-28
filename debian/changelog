@@ -1,3 +1,41 @@
+debian-installer (20040801ubuntu17) warty; urgency=low
+
+  * Manual changes:
+    - Ubuntu-brand the remainder of the manual.
+    - Comment out references to hd-media and floppy booting and references
+      to unsupported powerpc hardware for now.
+    - welcome/welcome.xml: Drop the "What is Debian GNU/Linux?" section.
+    - install-methods/install-methods.xml: Comment out automatic
+      installation section; support for this is scheduled for Hoary.
+    - install-methods/official-cdrom.xml: Ubuntu comes on only one CD.
+    - boot-installer/parameters.xml: Default priority is critical, not high.
+    - boot-installer/trouble.xml: Direct bug reports to ubuntu-users for
+      now.
+    - using-d-i/using-d-i.xml: Default priority is critical, not high. Don't
+      mention partitioner or partconf. Briefly document archive-copier.
+    - using-d-i/modules/partman.xml: We don't have the "partition free space
+      on a drive" option at the top level of partman-auto.
+    - boot-new/boot-new.xml: Comment out debian-guide reference.
+    - boot-new/modules/timezone.xml: UTC question won't be asked if Ubuntu
+      is the only installed OS.
+    - boot-new/modules/shadow.xml: Document our root password arrangements.
+    - boot-new/modules/ppp.xml: Comment out; we don't configure PPP.
+    - boot-new/modules/packages.xml: Replace tasksel text with a note that
+      the Ubuntu desktop will be automatically installed.
+    - boot-new/modules/mta.xml: Comment out; we configure the MTA for local
+      delivery only.
+    - post-install/orientation.xml: Mention synaptic.
+    - post-install/kernel-baking.xml: Remove some obsolete claims.
+    - appendix/files.xml: Update disk space estimates. Drop tasksel sizes.
+    - appendix/chroot-install.xml: Update disk space estimates. Drop
+      reference to RPM port of Debian's debootstrap package.
+      s/kernel-image/linux-image/g. Mention /sys.
+    - administrivia/administrivia.xml: Direct bug reports to ubuntu-users
+      for now.
+    - administrivia/contributors.xml: Note my changes.
+
+ -- Colin Watson <cjwatson@canonical.com>  Sun, 10 Oct 2004 18:46:59 +0100
+
 debian-installer (20040801ubuntu16) warty; urgency=low
 
   * Ubuntu-brand chapter 3 of the manual.

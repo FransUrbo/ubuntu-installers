@@ -1,12 +1,13 @@
 <!-- retain these comments for translator revision tracking -->
 <!-- $Id: iso-scan.xml 18640 2004-07-27 21:53:59Z joeyh $ -->
 
-   <sect3 id="iso-scan">
-   <title>Looking for the Debian Installer ISO Image</title>
+   <sect3 id="iso-scan" condition="not-ubuntu">
+   <!-- FIXME: Ubuntu doesn't support hd-media yet -->
+   <title>Looking for the Ubuntu Installer ISO Image</title>
 <para>
 
 When installing via the <emphasis>hd-media</emphasis> method, there
-will be a moment where you need to find and mount the Debian Installer
+will be a moment where you need to find and mount the Ubuntu Installer
 iso image in order to get the rest of the installation files. The
 component <command>iso-scan</command> does exactly this.
 
@@ -23,7 +24,7 @@ directory and in the first level of subdirectories (i.e. it finds
 but not
 <filename>/data/tmp/<replaceable>whatever</replaceable>.iso</filename>).
 After an iso image has been found, <command>iso-scan</command> checks
-its content to determine if the image is valid Debian iso image or
+its content to determine if the image is a valid Ubuntu iso image or
 not. In the former case we are done, in the latter
 <command>iso-scan</command> seeks for another image.
 
@@ -31,14 +32,14 @@ not. In the former case we are done, in the latter
 
 In case the previous attempt to find an installer iso image fails,
 <command>iso-scan</command> will ask you whether you would like to
-perform more throughly search. This pass doesn't look only into the
-topmost directories, but really traverses whole filesystem.
+perform a more thorough search. This pass doesn't just look into the
+topmost directories, but really traverses the whole filesystem.
 
 </para><para>
 
 If <command>iso-scan</command> does not discover your installer iso
 image, reboot back to your original operating system and check if the
-image has correct name (ending in <filename>.iso</filename>), if it is
+image is named correctly (ending in <filename>.iso</filename>), if it is
 placed on a filesystem recognizable by &d-i;, and if it is not
 corrupted (verify the checksum). Experienced unix users could do this
 without rebooting on the second console.

@@ -7,7 +7,8 @@
 This manual was created for sarge's debian-installer, based on
 the woody installation manual for boot-floppies, which was based
 on earlier Debian installation manuals, and on the Progeny 
-distribution manual which was released under GPL in 2003.
+distribution manual which was released under GPL in 2003. It was
+subsequently modified for use in the Ubuntu "Warty Warthog" release.
 
 </para><para>
 
@@ -66,6 +67,13 @@ manual. If you've been left out somehow, please let us know.
 <row><entry>Michael Schultheiss</entry></row>
 <row><entry>Adam Lazur</entry></row>
 <row><entry>Kevin Mathews</entry></row>
+
+</tbody></tgroup></table>
+
+<table><title>Modifications for Ubuntu</title>
+ <tgroup cols="1"><tbody>
+
+<row><entry>Colin Watson</entry></row>
 
 </tbody></tgroup></table>
 

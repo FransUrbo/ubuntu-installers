@@ -14,7 +14,8 @@ booting are PReP and New World PowerMacs. On PowerMacs, hold the
 <keycap>Shift</keycap>, and <keycap>Delete</keycap>
 keys together while booting to boot from the CD-ROM.
 
-</para><para>
+</para><para condition="not-ubuntu">
+<!-- FIXME: no OldWorld support in Ubuntu yet -->
 
 OldWorld Powermacs will not boot a Debian CD, because OldWorld
 computers relied on a MacOSROM CD boot driver to be present on the CD,
@@ -45,7 +46,7 @@ CD at the OF prompt, such as
 
 &boot-installer-intro-hd.xml;
 
-  <sect3><title>Booting CHRP from OpenFirmware</title>
+  <sect3 condition="not-ubuntu"><title>Booting CHRP from OpenFirmware</title>
 
 <para>
 
@@ -54,7 +55,7 @@ CD at the OF prompt, such as
 </para>
    </sect3>
 
-   <sect3><title>Booting OldWorld PowerMacs from MacOS</title>
+   <sect3 condition="not-ubuntu"><title>Booting OldWorld PowerMacs from MacOS</title>
 <para>
 
 If you set up BootX in <xref linkend="files-oldworld"/>, you can
@@ -109,7 +110,7 @@ At yaboot's <prompt>boot:</prompt> prompt, type either
 followed by a &enterkey;.  The
 <userinput>video=ofonly</userinput> argument is for maximum
 compatibility; you can try it if <userinput>install</userinput>
-doesn't work. The Debian installation program should start.
+doesn't work. The Ubuntu installation program should start.
 
 </para>
    </sect3>

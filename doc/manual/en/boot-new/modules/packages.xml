@@ -6,6 +6,18 @@
 
 <para>
 
+Unless you booted the installer using the <userinput>custom</userinput>
+option, <command>base-config</command> will now automatically install the
+set of packages that make up the Ubuntu desktop. A few questions may be
+asked during this process in case the X Window System configuration tools
+are unable to automatically detect your keyboard layout, graphics card, or
+optimum screen resolution.
+
+</para>
+
+<!--
+<para>
+
 Next you will be offered a number of pre-rolled software
 configurations offered by Debian. You could always choose, package by
 package, what you want to install on your new machine.  This is the
@@ -70,6 +82,7 @@ given search string (see the <citerefentry>
 <command>aptitude</command> as described below.
 
 </para>
+-->
 
  <sect3 id="aptitude">
  <title>Advanced Package Selection with <command>aptitude</command></title>

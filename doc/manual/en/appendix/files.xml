@@ -6,7 +6,7 @@
 <para>
 
 In Linux you have various special files in
-<filename>/dev</filename>. These files are called devices files. In
+<filename>/dev</filename>. These files are called device files. In
 the Unix world accessing hardware is different.  There you have a
 special file which actually runs a driver which in turn accesses the
 hardware. The device file is an interface to the actual system
@@ -140,7 +140,7 @@ or <filename>/etc/X11/XF86Config-4</filename>.
 This approach to use gpm even in X has advantages when the mouse is
 unplugged inadvertently.  Simply restarting gpm with
 <informalexample><screen>
-user@debian:# /etc/init.d/gpm restart
+user@ubuntu:# /etc/init.d/gpm restart
 </screen></informalexample>
 will re-connect the mouse in software without restarting X.
 
@@ -183,32 +183,11 @@ when your mouse only has one button. Just add the following lines to
  </sect1>
 
  <sect1 id="tasksel-size-list">
- <title>Disk Space Needed for Tasks</title>
+ <title>Disk Space Needed</title>
 <para>
 
-The base sarge installation for i386, including all standard packages,
-requires 178MB of disk space.
+A minimal custom installation of &releasename; requires 350MB of disk space.
+The standard Ubuntu desktop installation requires 1.8GB.
 
-</para><para>
-
-The following table lists sizes reported by aptitude for the tasks listed in
-tasksel. Note that some tasks have overlapping constituents, so the total
-installed size for two tasks together may be less than the total obtained by
-adding the numbers up. 
-
-</para><para>
-
-<informalexample><screen>
-Task                              Installed  Download   Space Needed 
-                                  Size (MB)  Size (MB)  To Install (MB)
-
-Desktop                            1537        521        2058
-Web server                           71         21          92
-Print server                        240         83         323
-Mail server                          41         12          53
-File server                          85         34         119
-SQL database                        108         33         141
-
-</screen></informalexample>
 </para>
  </sect1>

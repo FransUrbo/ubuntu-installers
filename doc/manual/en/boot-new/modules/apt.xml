@@ -30,7 +30,7 @@ called <command>apt-setup</command>.
 </para><para>
 
 The next step in your configuration process is to tell APT where other
-Debian packages can be found.  Note that you can re-run this tool at
+Ubuntu packages can be found.  Note that you can re-run this tool at
 any point after installation by running <command>apt-setup</command>,
 or by manually editing <filename>/etc/apt/sources.list</filename>.
 
@@ -43,13 +43,13 @@ You will notice this because you will see the CD-ROM being scanned.
 </para><para>
 
 For users without an official CD-ROM, you will be offered an array of
-choices for how Debian packages are accessed: FTP, HTTP, CD-ROM, or
+choices for how Ubuntu packages are accessed: FTP, HTTP, CD-ROM, or
 a local file system.
 
 </para><para>
 
 You should know that it's perfectly acceptable to have a number of
-different APT sources, even for the same Debian archive.
+different APT sources, even for the same Ubuntu archive.
 <command>apt-get</command> will automatically pick the package with
 the highest version number given all the available versions.  Or, for
 instance, if you have both an HTTP and a CD-ROM APT source,
@@ -75,9 +75,9 @@ tends to be a little slower making connections.
 
 The next step during the configuration of network packages sources is
 to tell <command>apt-setup</command> which country you live in.  This
-configures which of the official Debian Internet mirror network you
+configures which of the official Ubuntu Internet mirror network you
 connect to.  Depending on which country you select, you will be given
-a list of possible machines.  Its generally fine to pick the one on
+a list of possible machines.  It's generally fine to pick the one on
 the top of the list, but any of them should work.
 
 </para><para>

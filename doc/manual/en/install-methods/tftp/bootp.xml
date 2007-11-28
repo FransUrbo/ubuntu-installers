@@ -10,13 +10,13 @@ There are two BOOTP servers available for GNU/Linux, the CMU
 <command>bootpd</command> and the other is actually a DHCP server, ISC
 <command>dhcpd</command>, which are contained in the
 <classname>bootp</classname> and <classname>dhcp</classname> packages
-in &debian;.
+in Ubuntu.
 
 </para><para>
 
 To use CMU <command>bootpd</command>, you must first uncomment (or
 add) the relevant line in <filename>/etc/inetd.conf</filename>.  On
-&debian;, you can run <userinput>update-inetd --enable
+Ubuntu or &debian;, you can run <userinput>update-inetd --enable
 bootps</userinput>, then <userinput>/etc/init.d/inetd
 reload</userinput> to do so. Elsewhere, the line in question should
 look like: 

@@ -4,7 +4,7 @@
  <sect2 id="base-config-users">
  <title>Setting Up Users And Passwords</title>
 
-  <sect3 id="base-config-root">
+  <sect3 id="base-config-root" condition="not-ubuntu">
   <title>Set the Root Password</title>
 
 <para>
@@ -39,8 +39,21 @@ are administering a machine with more than one system administrator.
 
 The system will ask you whether you wish to create an ordinary user
 account at this point.  This account should be your main personal
-log-in.  You should <emphasis>not</emphasis> use the root account for
-daily use or as your personal login.
+log-in.
+
+</para><para>
+
+The account you create at this point will be given <emphasis>root</emphasis>
+privileges by means of the <command>sudo</command> command, and the root
+account itself will have login disabled. If you wish, you can enable the
+root account later by setting a password for it with the command
+<userinput>sudo passwd root</userinput>.
+
+</para><para>
+
+You should <emphasis>not</emphasis> use the root account for
+daily use or as your personal login, nor should you use
+<command>sudo</command> except when root privileges are really required.
 
 </para><para>
 

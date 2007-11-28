@@ -125,7 +125,8 @@ to repartition the hard disk from which you boot the installer, although
 you should do so with care.
 </para>
 
-<para>
+<!-- FIXME: hd-media not yet supported in Ubuntu -->
+<para condition="not-ubuntu">
 Alternatively, if you intend to keep an existing partition on the hard
 drive unchanged during the install, you can download the
 <filename>hd-media/initrd.gz</filename>

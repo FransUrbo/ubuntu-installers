@@ -1,7 +1,8 @@
 <!-- retain these comments for translator revision tracking -->
 <!-- $Id: ppp.xml 18642 2004-07-27 22:06:42Z joeyh $ -->
 
- <sect2 arch="not-s390" id="PPP">
+ <sect2 arch="not-s390" id="PPP" condition="not-ubuntu">
+ <!-- FIXME: no PPP configuration in Ubuntu base-config -->
  <title>Setting Up PPP</title>
 
 <para>

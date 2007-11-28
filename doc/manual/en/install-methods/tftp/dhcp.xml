@@ -7,7 +7,7 @@
 <para>
 
 One free software DHCP server is ISC <command>dhcpd</command>.  
-In &debian;, this is available in the <classname>dhcp</classname> package.
+In Ubuntu, this is available in the <classname>dhcp</classname> package.
 Here is a sample configuration file for it (usually
 <filename>/etc/dhcpd.conf</filename>):
 
