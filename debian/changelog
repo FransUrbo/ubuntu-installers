@@ -1,3 +1,9 @@
+debian-installer (20060711ubuntu2) edgy; urgency=low
+
+  * Bump size of amd64 netboot boot.img to 16000.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 13 Jul 2006 10:32:23 +0100
+
 debian-installer (20060711ubuntu1) edgy; urgency=low
 
   * Resynchronise with Debian, based on Subversion trunk as of 20060711
