@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: automatic-install.xml 23847 2004-11-13 23:35:27Z joeyh $ -->
+<!-- $Id: automatic-install.xml 25302 2005-01-30 18:34:34Z fjpop-guest $ -->
+<!-- copied version: 24663 -->
 
  <sect1 id="automatic-install">
  <title>Automatic Installation</title>
@@ -40,11 +41,9 @@ to dump both the debconf database and the cdebconf
 database in /var/log/installer/cdebconf to a single file:
 
 <informalexample><screen>
-debconf-get-selections --installer > file
-debconf-get-selections >> file
+$ debconf-get-selections --installer &gt; <replaceable>file</replaceable>
+$ debconf-get-selections &gt;&gt; <replaceable>file</replaceable>
 </screen></informalexample>
-
-</para><para>
 
 However, a file generated in this manner will have some items that should
 not be preseeded, and the file in <xref linkend="example-preseed"/> is a
@@ -142,6 +141,47 @@ Alternatively, put the Kickstart file on a floppy, and add
 ks=floppy:/path/to/ks.cfg to the kernel boot parameters.
 
 </para>
+
+<sect3>
+<title>Additions</title>
+
+<para>
+
+The Ubuntu installer supports a few extensions to Kickstart that were needed
+to support automatic installations of Ubuntu:
+
+<itemizedlist>
+<listitem><para>
+
+The <userinput>rootpw</userinput> command now takes the
+<userinput>--disabled</userinput> option to disable the root password. If
+this is used, the initial user will be given root privileges via
+<filename>sudo</filename>.
+
+</para></listitem>
+<listitem><para>
+
+A new <userinput>user</userinput> command has been added to control the
+creation of the initial user:
+
+<informalexample><screen>
+user <replaceable>joe</replaceable> --fullname "Joe User" --password iamjoe
+</screen></informalexample>
+
+The <userinput>--disabled</userinput> option prevents any non-root users
+from being created. The <userinput>--fullname</userinput> option specifies
+the user's full name, as opposed to the Unix username. The
+<userinput>--password</userinput> option supplies the user's password, by
+default in the clear (in which case make sure your Kickstart file is kept
+confidential!); the <userinput>--iscrypted</userinput> option may be used to
+state that the password is already MD5-hashed.
+
+</para></listitem>
+</itemizedlist>
+
+</para>
+
+</sect3>
 
 <sect3>
 <title>Missing features</title>

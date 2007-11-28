@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- original version: 18621 -->
+<!-- original version: 25496 -->
 
  <sect1 id="needed-info">
  <title>Informações que Precisa Saber</title>
@@ -18,21 +18,9 @@ formato PDF.
 </para>
 
 <itemizedlist>
-<listitem><para>
 
-<ulink url="install.en.txt"></ulink>
+&list-install-manual-files;
 
-</para></listitem>
-<listitem><para>
-
-<ulink url="install.en.html"></ulink>
-
-</para></listitem>
-<listitem><para>
-
-<ulink url="install.en.pdf"></ulink>
-
-</para></listitem>
 </itemizedlist>
 </sect3>
 
@@ -45,7 +33,9 @@ seu hardware.
 
 </para>
 
- <itemizedlist>
+ <!-- We need the arch dependence for the whole list to ensure proper xml
+      as long as not architectures have a paragraph -->
+ <itemizedlist arch="i386;m68k;alpha;sparc;mips;mipsel">
 <listitem arch="i386"><para> 
 
 <ulink url="&url-hardware-howto;">HOWTO de Compatibilidade de Hardware do Linux</ulink>
@@ -233,7 +223,7 @@ configurar em sua rede e e-mail.
 
 <row arch="not-s390">
   <entry morerows="3">Mouse</entry>
-  <entry>Tipo: serial, PS, ou USB.</entry>
+  <entry>Tipo: serial, PS/2, ou USB.</entry>
 </row>
 <row arch="not-s390"><entry>Porta.</entry></row>
 <row arch="not-s390"><entry>Fabricante.</entry></row>

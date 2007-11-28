@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: s390.xml 12756 2004-04-06 22:23:56Z fjpop-guest $ -->
+<!-- $Id: s390.xml 25970 2005-02-25 21:27:43Z waldi $ -->
+<!-- copied version: 25496 -->
 
 
   <sect2 arch="s390"><title>BIOS Setup</title>
@@ -71,7 +72,7 @@ Redbook on how to set up a VM guest for running Linux.
 
 </para><para>
 
-You need to copy all the files from the <filename>vmrdr</filename>
+You need to copy all the files from the <filename>generic</filename>
 sub-directory to your CMS disk. Be sure to transfer
 <filename>kernel.debian</filename> and
 <filename>initrd.debian</filename> in binary mode with a fixed record
@@ -100,7 +101,7 @@ contents of all installation CDs into such a directory tree.
 
 </para><para condition="FIXME">
 
-<emphasis>FIXME: more information needed - from a Redbook?</emphasis>
+<emphasis>FIXME: more information needed &mdash; from a Redbook?</emphasis>
 
 </para>
   </sect2>

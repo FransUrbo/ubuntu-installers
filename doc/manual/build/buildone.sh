@@ -20,7 +20,11 @@ cd $build_path
 
 stylesheet_dir="$build_path/stylesheets"
 stylesheet_profile="$stylesheet_dir/style-profile.xsl"
-stylesheet_html="$stylesheet_dir/style-html.xsl"
+if [ ! "$web_build" ]; then
+    stylesheet_html="$stylesheet_dir/style-html.xsl"
+else
+    stylesheet_html="$stylesheet_dir/style-html-web.xsl"
+fi
 stylesheet_html_single="$stylesheet_dir/style-html-single.xsl"
 stylesheet_fo="$stylesheet_dir/style-fo.xsl"
 stylesheet_dsssl="$stylesheet_dir/style-print.dsl"
@@ -165,12 +169,7 @@ create_dvi () {
         -d $stylesheet_dsssl \
         -V tex-backend \
         $tempdir/install.${language}.profiled.xml
-    RET=$?
-    if [ $RET -eq 1 ] && [ -s $tempdir/install.${language}.tex ] ; then
-        echo "Warning: recieved error $RET from 'openjade'; probably non-fatal so ignoring."
-    else
-        [ $RET -ne 0 ] && return $RET
-    fi
+    RET=$?; [ $RET -ne 0 ] && return $RET
 
     echo "Info: creating temporary .dvi file..."
 

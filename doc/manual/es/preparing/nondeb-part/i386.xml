@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- original version: 22664 -->
+<!-- original version: 24663 -->
 <!-- revisado por nahoo, 23 octubre 2004 -->
-
+<!-- revisado Rudy Godoy, 22 feb. 2005 -->
 
   <sect2 arch="i386"><title>Particionado desde DOS o Windows</title>
 <para>
 
 Es recomendable que use o bien el esquema mostrado a continuación o
 bien las herramientas nativas de Windows o DOS si está manipulando
-particiones FAT o NTFS pre-existentes. No es necesario particionar
-desde DOS o Windows si no tiene estas particionaes, generalmente las
-herramientas de particionado de Linux generalmente harán esta tarea
-mejor.
+particiones FAT o NTFS ya existentes. No es necesario particionar
+desde DOS o Windows si no tiene estas particiones, generalmente las
+herramientas de particionado de Linux harán mejor esta tarea.
 
 </para><para>
 
 Debe ubicar su partición de arranque del sistema Debian cuidadosamente
 si tiene un disco IDE grande y no está usando ya sea direccionamiento
-LBA, controladores sobrepuestos (n.t «overlay») (a veces proporcionados por
+LBA, controladores sobrepuestos (N. de t. «overlay») (a veces proporcionados por
 fabricantes de discos duros) o una BIOS nueva (fabricada después de 1998) que
 soporta acceso a extensiones de discos grandes. En
 este caso tendrá que ubicar la partición de arranque dentro de los
@@ -37,9 +36,12 @@ Una de las instalaciones más comunes es la que se produce en sistemas que ya
 tienen DOS (incluyendo Windows 3.1), Win32 (como Windows 95, 98, Me,
 NT, 2000, XP) o OS/2 y en los que desea instalar Debian en el mismo disco sin
 destruir el sistema anterior. Tenga en cuenta que el instalador es capaz de
-redimensionar sistemas de ficheros FAT y NTFS usados por DOS y Windows, y en la
-mayoría de los casos no necesita usar el método descrito a continuación, a menos
-que necesite mover el inicio de la partición.
+redimensionar sistemas de ficheros FAT y NTFS usados por DOS y Windows.
+Sólo debe iniciar el instalador, seleccionar la opción <menuchoice>
+<guimenuitem>Editar manualmente la tabla de particiones</guimenuitem></menuchoice>,
+seleccionar la partición a redimensionar e indicar su nuevo tamaño.
+Así, en la mayoría de los casos no necesita usar el método descrito a 
+continuación.
 
 </para><para>
 
@@ -65,7 +67,7 @@ de la partición que podría utilizar.
 
 Lo primero que se necesita es una copia de <command>fips</command>,
 disponible en el directorio <filename>tools/</filename>
-dentro del espejo de Debian más cercano. Desempaquete el archivo y
+dentro de la réplica de Debian más cercana. Desempaquete el archivo y
 copie los ficheros <filename>RESTORRB.EXE</filename>, 
 <filename>FIPS.EXE</filename> y <filename>ERRORS.TXT</filename> a un
 disquete arrancable. Puede crear un disquete arrancable usando la
@@ -78,7 +80,7 @@ gestor de disco. Cree el disco y lea la documentación
 </para><para>
 
 A continuación necesitará mover todos los datos al inicio de la
-partición. Puede realizar el comando fácilmente con el programa <command>defrag</command>, que viene incluido con DOS 6.0 y
+partición. Puede realizar ésta tarea fácilmente con el programa <command>defrag</command>, que viene incluido con DOS 6.0 y
 versiones posteriores. Vea la documentación de 
 <command>fips</command> para una lista de otros programas que puedan ayudarlo.
 Note que si tiene Windows 9x, debe ejecutar <command>defrag</command> 
@@ -106,7 +108,7 @@ Tenga en cuenta que existen muchos otros gestores de particiones, en caso de que
 <para>
 
 Si está particionando para discos DOS, o modificando el tamaño de
-las particiones DOS, con herramientas de Linux, sepa que muchas personas
+las particiones DOS, con herramientas de Linux, debe saber que muchas personas
 experimentan problemas al trabajar con las particiones FAT resultantes.
 De hecho, algunos han informado de bajo rendimiento, problemas de consistencia
 con <command>scandisk</command> u otros fallos extraños en DOS o Windows.
@@ -117,10 +119,9 @@ Aparentemente, cada vez que cree o modifique una partición para
 uso de DOS es una buena idea llenar los primeros sectores con ceros.
 Haga esto antes de ejecutar la orden <command>format</command> de
 DOS, puede ejecutar lo siguiente desde Linux:
+
 <informalexample><screen>
-
-dd if=/dev/zero of=/dev/hdXX bs=512 count=4
-
+# dd if=/dev/zero of=/dev/hdXX bs=512 count=4
 </screen></informalexample>
 
 </para>

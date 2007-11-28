@@ -1,5 +1,5 @@
 ## This yaboot.conf is for hd-media booting only, do not use as reference.
-## Ubuntu PowerPC (Hoary Hedgehog)
+## Ubuntu PowerPC (Breezy Badger)
 
 default=install
 root=/dev/ram

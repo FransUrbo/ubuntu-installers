@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: trouble.xml 20466 2004-08-31 22:39:09Z joeyh $ -->
+<!-- $Id: trouble.xml 25302 2005-01-30 18:34:34Z fjpop-guest $ -->
+<!-- copied version: 24663 -->
 
  <sect1 id="boot-troubleshooting">
  <title>Troubleshooting the Install Process</title>
@@ -131,7 +132,7 @@ after the computer has been booted into the installed system.
   <sect2 id="submit-bug">
   <title>Submitting Installation Reports</title>
 <para>
-	
+
 If you still have problems, please submit an installation report. We also
 encourage installation reports to be sent even if the installation is
 successful, so that we can get as much information as possible on the largest
@@ -140,7 +141,6 @@ installation reports, and send the report to
 <email>ubuntu-users@lists.ubuntu.com</email>.
 
 <informalexample><screen>
-
 Package: installation-reports
 
 Debian-installer-version: &lt;Fill in date and from where you got the image&gt;
@@ -177,17 +177,12 @@ Comments/Problems:
 
 &lt;Description of the install, in prose, and any thoughts, comments
       and ideas you had during the initial install.&gt;
-
 </screen></informalexample>
-
-</para><para>
 
 In the bug report, describe what the problem is, including the last
 visible kernel messages in the event of a kernel hang.  Describe the
 steps that you did which brought the system into the problem state.
 
 </para>
-
   </sect2>
-
  </sect1>

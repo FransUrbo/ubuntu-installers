@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: installation-howto.xml 23754 2004-11-09 23:35:30Z fjpop-guest $ -->
+<!-- $Id: installation-howto.xml 25302 2005-01-30 18:34:34Z fjpop-guest $ -->
+<!-- copied version: 24602 -->
 
 <appendix id="installation-howto">
 <title>Installation Howto</title>
@@ -244,15 +245,21 @@ will be given the opportunity to configure the network manually.
 </para><para>
 
 Now it is time to partition your disks. First you will be given the
-opportunity to erase and automatically partition either an entire drive.
-This is recommended for new users, but if you have any valuable data on
-the disk, be sure to back it up first, as it will be erased!
+opportunity to automatically partition either an entire drive, or free
+space on a drive. This is recommended for new users or anyone in a hurry,
+but if you do not want to autopartition, choose manual from the menu.
+
+</para><para arch="i386">
+
+If you have an existing DOS or Windows partition that you want to preserve,
+be very careful with automatic partitioning. If you choose manual partitioning,
+you can use the installer to resize existing FAT or NTFS partitions to create
+room for the Debian install: simply select the partition and specify its new size.
 
 </para><para>
 
-If you do not want to erase an entire disk, or if you want to customize the
-partition layout, choose <quote>Manually edit partition table</quote> from
-the menu, and
+If you want to customize the partition layout, choose <quote>Manually edit
+partition table</quote> from the menu, and
 the next screen will show you your partition table, how the partitions
 will be formatted, and where they will be mounted. Select a partition to
 modify or delete it.

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="EUC-JP"?>
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 23213 -->
+<!-- original version: 25834 -->
 
  <sect1 condition="supports-tftp" id="install-tftp">
  <title>TFTP ネットブート用ファイルの準備</title>
@@ -137,6 +137,25 @@ Trivial File Transfer Protocol (TFTP) は、
 この節では、SunOS 4.x, SunOS 5.x (Solaris),
 GNU/Linux での例を示します。
 
+<note arch="i386"><para>
+
+<!--
+To use the Pre-boot Execution Environment (PXE) method of TFTP
+booting, you will need a TFTP server with <userinput>tsize</userinput>
+support.  On a &debian; server, the <classname>atftpd</classname> and
+<classname>tftpd-hpa</classname> packages qualify; we recommend
+<classname>tftpd-hpa</classname>.
+</para><note arch="i386"><para>
+-->
+TFTP ブートで Pre-boot Execution Environment (PXE) 法を使用するには、
+<userinput>tsize</userinput>をサポートする TFTP サーバが必要になります。
+&debian; サーバでは、<classname>atftpd</classname> と 
+<classname>tftpd-hpa</classname> がその資格があります。
+<classname>tftpd-hpa</classname> をお奨めします。
+
+
+</para></note>
+
 </para>
 
 &tftp-rarp.xml;
@@ -157,9 +176,7 @@ TFTP サーバを立ち上げるには、
 <filename>/etc/inetd.conf</filename> に次のような行があればおそらく大丈夫です。
 
 <informalexample><screen>
-
 tftp dgram udp wait nobody /usr/sbin/tcpd in.tftpd /tftpboot
-
 </screen></informalexample>
 
 <!--
@@ -198,22 +215,7 @@ Debian マシンでは <userinput>/etc/init.d/inetd reload</userinput>
 他のマシンでは、<command>inetd</command> のプロセス ID を見つけて、
 <userinput>kill -HUP <replaceable>inetd-pid</replaceable></userinput> を実行します。
 
-</para><note arch="i386"><para>
-
-<!--
-To use the Pre-boot Execution Environment (PXE) method of TFTP
-booting, you will need a TFTP server with <userinput>tsize</userinput>
-support.  On a &debian; server, the <classname>atftpd</classname> and
-<classname>tftpd-hpa</classname> packages qualify; we recommend
-<classname>tftpd-hpa</classname>.
--->
-TFTP ブートで Pre-boot Execution Environment (PXE) 法を使用するには、
-<userinput>tsize</userinput>をサポートする TFTP サーバが必要になります。
-&debian; サーバでは、<classname>atftpd</classname> と 
-<classname>tftpd-hpa</classname> がその資格があります。
-<classname>tftpd-hpa</classname> をお奨めします。
-
-</para></note><para arch="mips">
+</para><para arch="mips">
 
 <!--
 If you intend to install Debian on an SGI machine and your TFTP server is a
@@ -225,9 +227,7 @@ TFTP サーバが Linux 2.4 で動作している GNU/Linux の場合は、
 次の設定を行う必要があります。
 
 <informalexample><screen>
-
-echo 1 > /proc/sys/net/ipv4/ip_no_pmtu_disc
-
+# echo 1 &gt; /proc/sys/net/ipv4/ip_no_pmtu_disc
 </screen></informalexample>
 
 <!--
@@ -244,9 +244,7 @@ PROM, and you can avoid it by setting
 これを避けるには
 
 <informalexample><screen>
-
-echo "2048 32767" > /proc/sys/net/ipv4/ip_local_port_range
-
+# echo "2048 32767" &gt; /proc/sys/net/ipv4/ip_local_port_range
 </screen></informalexample>
 
 <!--
@@ -499,14 +497,10 @@ IP が 192.168.1.3 の場合は、ファイル名は
 これを決定する簡単な方法は、以下のコマンドをシェルに入力します。
 (予定している IP アドレスは 10.0.0.4 とする)
 
-</para>
-
 <informalexample><screen>
-printf '%.2x%.2x%.2x%.2x\n' 10 0 0 4
+$ printf '%.2x%.2x%.2x%.2x\n' 10 0 0 4
 </screen></informalexample>
  
-<para>
-
 <!--
 This will spit out the IP in hexadecimal; to get to the correct
 filename, you will need to change all letters to uppercase and
@@ -651,10 +645,8 @@ root アーカイブを NFS サーバで untar します
 (NFS サーバは TFTP サーバと同じマシンでも構いません)。
 
 <informalexample><screen>
-
 # cd /tftpboot
 # tar xvzf root.tar.gz
-
 </screen></informalexample>
 
 Be sure to use the GNU <command>tar</command> (other tar programs, like the
@@ -676,14 +668,12 @@ for SunOS):
 (GNU/Linux の書式ですが、SunOS でも同じようなもののはず):
 
 <informalexample><screen>
-
-/tftpboot/debian-sparc-root client(rw,no_root_squash)
-
+/tftpboot/debian-sparc-root <replaceable>client</replaceable>(rw,no_root_squash
 </screen></informalexample>
 
-NOTE: "client" is the host name or IP address recognized by the server for
-the system you are booting.
-注意: "client" は、起動しようとしているシステムの
+NOTE: <replaceable>client</replaceable> is the host name or IP address recognized
+by the server for the system you are booting.
+注意: <replaceable>client</replaceable> は、起動しようとしているシステムの
 (このサーバから見た) ホスト名または IP アドレスにします。
 
 </para></listitem>
@@ -699,9 +689,7 @@ IP アドレスの名前 (ドット区切り表記) で作ります。
 例えばクライアントの IP アドレスが 192.168.1.3 なら次のようにします。
 
 <informalexample><screen>
-
 # ln -s debian-sparc-root 192.168.1.3
-
 </screen></informalexample>
 
 </para></listitem>

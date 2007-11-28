@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- original version: 18660 -->
+<!-- original version: 24663 -->
 
-  <sect2 arch="ia64"><title>Partitioner sous &arch-title;</title>
+  <sect2 arch="ia64"><title>Partitionnement sous &arch-title;</title>
 <para>
 <command>Partman</command> est l'outil de partitionement par défaut de 
 l'installateur. Il permet de créer les partitions et de positionner les 
@@ -26,7 +26,7 @@ seul capable de gérer correctement à la fois les tables GPT et MS-DOS.
 
 <para>
 
-Les règles de partitionement automatique de <command>partman</command> 
+Les règles de partitionnement automatique de <command>partman</command> 
 attribuent la première partition du disque à EFI.
 Vous pouvez également installer la partition depuis le menu principal 
 sous <guimenuitem>Partitionnement assisté</guimenuitem> de la même manière 
@@ -41,9 +41,7 @@ utilisant son interface en ligne de commande. En supposant que vous désiriez
 effacer tout votre disque, et créer une table GPT et des partitions, 
 les commandes suivantes peuvent être utilisées&nbsp;:
 
-</para><para>
 <informalexample><screen>
-
       mklabel gpt
       mkpartfs primary fat 0 50
       mkpartfs primary linux-swap 51 1000
@@ -51,9 +49,7 @@ les commandes suivantes peuvent être utilisées&nbsp;:
       set 1 boot on
       print
       quit
-
 </screen></informalexample>
-</para><para>
 
 Ces commandes créent une nouvelle table de partitions, et trois partitions,
 utilisées en tant que partition d'amorçage EFI, partition d'échange, et

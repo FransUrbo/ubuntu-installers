@@ -1,8 +1,8 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 22939 -->
+<!-- original version: 24840 -->
 
 
-  <sect2 arch="mipsel"><title>CPUs, Mainboards und Videounterstützung</title>
+  <sect2 arch="mipsel"><title>CPUs, Mainboards und Grafikunterstützung</title>
 <para>
 
 Debian unterstützt auf &arch-title; derzeit drei Unterarchitekturen:
@@ -21,15 +21,15 @@ inklusive Cobalt Qube, RaQ, Qube2 und RaQ2 sowie dem Gateway Microserver.
 </para></listitem>
 <listitem><para>
 
-Broadcom BCM91250A (SWARM): dies ist Evaluation-Board im ATX-Format von
+Broadcom BCM91250A (SWARM): dies ist ein Evaluation-Board im ATX-Format von
 Broadcom, basierend auf deren SiByte-Prozessorfamilie.
 
 </para></listitem>
 </itemizedlist>
 
 Vollständige Informationen betreffend die Unterstützung von Mips-/Mipsel-Maschinen
-finden Sie auf der <ulink url="&url-linux-mips;">Linux-MIPS-Internetseite</ulink>.
-In diesem Kapitel werden nur die Systeme behandelt, die vom Debian Installer unterstützt
+finden Sie auf der <ulink url="&url-linux-mips;">Linux-MIPS-Website</ulink>.
+In diesem Kapitel werden nur die Systeme behandelt, die vom Debian-Installer unterstützt
 werden. Wenn Sie Support für andere Unterarchitekturen benötigen, wenden Sie sich
 bitte an die <ulink url="&url-list-subscribe;"> Debian-&architecture;-Mailingliste</ulink>.
 
@@ -40,8 +40,8 @@ bitte an die <ulink url="&url-list-subscribe;"> Debian-&architecture;-Mailinglis
 <para>
 
 Derzeit werden nur DECstations mit R3000- und R4000/R4400-CPUs vom
-Debian-Installationssystem auf little-Endian-MIPS unterstützt.
-Der Debian Installer läuft auf den folgenden Maschinen:
+Debian-Installationssystem auf Little-Endian-MIPS unterstützt.
+Der Debian-Installer läuft auf den folgenden Maschinen:
 
 </para><para>
 
@@ -113,23 +113,25 @@ Serielle Konsolen sind auf allen unterstützten DECstations verfügbar
 (9600 bps, 8N1). Um eine serielle Konsole zu nutzen, müssen Sie das
 Installer-Image mit dem Parameter "console=ttySx" booten ("x" ist dabei die
 Nummer des seriellen Ports, an den Sie Ihr Terminal angeschlossen
-haben - normalerweise "2", aber bei der Personal DECstation "0").
+haben &ndash; normalerweise "2", aber bei der Personal DECstation "0").
 Auf 3MIN und 3MAX+ (DECstation 5000/1xx, 5000/240 und 5000/260) sind
 lokale Konsolen über die Grafikoptionen PMAG-BA und PMAGB-B verfügbar.
 
 </para><para>
 
 Wenn Sie ein Linux-System als serielles Terminal nutzen wollen, ist der
-einfachste Weg, "cu" (aus dem Paket <classname>uucp</classname>)
-darauf laufen zu lassen. Ein Beispiel:
+einfachste Weg, <command>cu</command><footnote>
+
+<para>
+In Woody war dieser Befehl Teil des <classname>uucp</classname>-Pakets,
+später jedoch wurde es als eigenständiges Paket herausgegeben.
+</para>
+ 
+</footnote> auf dem System laufen zu lassen. Ein Beispiel:
 
 <informalexample><screen>
-
-cu -l /dev/ttyS1 -s 9600
-
+$ cu -l /dev/ttyS1 -s 9600
 </screen></informalexample>
-
-</para><para>
 
 wobei die Option "-l" (line) den seriellen Port festlegt, der benutzt wird
 und "-s" (speed) die Geschwindigkeit der Verbindung (9600 bps/Bits pro Sekunde).
@@ -141,4 +143,3 @@ Sowohl Cobalt als auch das Broadcom BCM91250A nutzen eine Geschwindigkeit von 11
 </para>
    </sect3>
   </sect2>
-

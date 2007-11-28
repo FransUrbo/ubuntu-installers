@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 23669 untranslated -->
+<!-- original version: 25496 untranslated -->
 
  <sect1 id="network-cards">
  <title>Network Connectivity Hardware</title>
@@ -105,6 +105,12 @@ Any network interface card (NIC) supported by the Linux kernel should
 also be supported by the boot disks.  You may need to load your
 network driver as a module.
 
+</para><para arch="ia64">
+
+Any network interface card (NIC) supported by the Linux kernel should
+also be supported by the boot disks.  You may need to load your
+network driver as a module.
+
 </para><para arch="mips">
 
 Any network interface card (NIC) supported by the Linux kernel should
@@ -139,7 +145,7 @@ lcs: OSA-2 Token Ring/Ethernet or OSA-Express Fast Ethernet
 </para></listitem>
 <listitem><para>
 
-Inter-User Communication Vehicle (IUCV) - available for VM
+Inter-User Communication Vehicle (IUCV) &mdash; available for VM
           guests only
 
 </para></listitem>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="EUC-JP"?>
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 23207 -->
+<!-- original version: 25171 -->
 
  <sect1 id="boot-parms"><title>ブートパラメータ</title>
 <para>
@@ -53,9 +53,7 @@ BootPrompt HOWTO</ulink> で見つけられます。
 When the kernel boots, a message 
 
 <informalexample><screen>
-
 Memory:<replaceable>avail</replaceable>k/<replaceable>total</replaceable>k available 
-
 </screen></informalexample>
 
 should be emitted early in the process.
@@ -71,9 +69,7 @@ example, both <userinput>mem=65536k</userinput> and
 カーネルが起動するときには、プロセスの最初のほうで
 
 <informalexample><screen>
-
 Memory:<replaceable>avail</replaceable>k/<replaceable>total</replaceable>k available 
-
 </screen></informalexample>
 
 というメッセージが表示されます。
@@ -89,8 +85,8 @@ Memory:<replaceable>avail</replaceable>k/<replaceable>total</replaceable>k avail
 
 <!--
 If you are booting with a serial console, generally the kernel will
-autodetect this 
-<phrase arch="mipsel">(although not on DECstations)</phrase>
+autodetect
+this<phrase arch="mipsel"> (although not on DECstations)</phrase>.
 If you have a videocard (framebuffer) and a keyboard also attached to
 the computer which you wish to boot via serial console, you may have
 to pass the
@@ -163,10 +159,9 @@ excess options and 2.6 kernels will panic.
 <listitem><para>
 
 <!--
-This parameter settings will set the highest priority of messages
-to be displayed. 
+This parameter sets the lowest priority of messages to be displayed. 
 -->
-このパラメータ設定では、表示するメッセージの最優先項目を設定します。
+このパラメータには、表示するメッセージのもっとも低い優先度を設定します。
 
 </para><para>
 

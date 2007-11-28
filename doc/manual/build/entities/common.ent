@@ -11,11 +11,11 @@
 <!ENTITY d-i "<classname>debian-installer</classname>">
 <!ENTITY d-i-manual "<classname>debian-installer-manual</classname>">
 
-<!ENTITY release     "5.04">
-<!ENTITY releasename "hoary">
-<!ENTITY longreleasename "<quote>Hoary Hedgehog</quote>">
-<!ENTITY releasename-cap "Hoary">
-<!ENTITY releasename-uc "HOARY">
+<!ENTITY release     "5.10">
+<!ENTITY releasename "breezy">
+<!ENTITY longreleasename "<quote>Breezy Badger</quote>">
+<!ENTITY releasename-cap "Breezy">
+<!ENTITY releasename-uc "BREEZY">
 
 <!ENTITY FIXME
   "<emphasis>Documentation not complete, text missing.</emphasis>">
@@ -77,7 +77,7 @@
 <!ENTITY low-mem-threshold "5&notation-megabytes;">
 
 <!-- version of X11 shipping with the current release -->
-<!ENTITY x11ver "6.8.1">
+<!ENTITY x11ver "6.8.2">
 
 <!-- an example of adding another image to lilo.conf, cf
      en/post-install.sgml etc. -->
@@ -90,4 +90,3 @@
 <!-- prefix for files that can be downloaded -->
 <!-- <![ %official-web-build; [ <!ENTITY downloadable-file "&url-boot-floppies;"> ]]> -->
                           <!ENTITY downloadable-file "&url-debian-installer;">
-

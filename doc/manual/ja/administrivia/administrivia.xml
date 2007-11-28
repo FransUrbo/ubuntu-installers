@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 18675 -->
+<!-- original version: 26027 -->
 
 <appendix id="administrivia">
  <title>付記</title>
@@ -9,6 +9,21 @@
  <title>この文書について</title>
 
 <para>
+
+<!--
+This manual was created for Sarge's debian-installer, based on
+the Woody installation manual for boot-floppies, which was based
+on earlier Debian installation manuals, and on the Progeny 
+distribution manual which was released under GPL in 2003.
+-->
+本マニュアルは、
+初期の Debian インストールマニュアルを元にした、
+boot-floppies 用の woody インストールマニュアルを元に、
+sarge 用 debian-installer のために書かれました。
+また、2003 年 GPL でリリースした、Progeny ディストリビューションマニュアルも
+元にしています。
+
+</para><para>
 
 <!--
 This document is written in DocBook XML.  Output formats are generated
@@ -37,6 +52,28 @@ isolate certain bits of text as architecture-specific.
 この XML ソースには、異なる各アーキテクチャの情報が含まれていますが、
 各アーキテクチャ固有の文章のまとまりを分離するのに、
 プロファイル属性が使われています。
+
+<!--
+</para><para>
+
+Translators can uncomment this paragraph and add an acknowledgement
+to the people responsible for the translation of the manual.
+Translation teams are advised to just mention the coordinator and maybe
+major contributors and thank everybody else in a phrase like "all
+translators and reviewers from the translation team for <your language>
+at <your l10n mailinglist>".
+翻訳時にこの段落をアンコメントして、
+マニュアルの翻訳に責任ある人への謝辞を追加できます。
+翻訳チームにアドバイスすると、コーディネータと大きな貢献があった人に言及し、
+あと一言、「<your l10n mailinglist> で <your language> のために作業した、
+翻訳チームの全ての翻訳者・査読者に」といった、
+その他全員への謝辞を述べるのがいいでしょう
+
+(Note: support for this for translations using PO files will be added
+ soon.)
+(注: もうじき追加するPO ファイルを使用する翻訳用にこれをサポートします)
+訳注: ここどうしましょうかね。(鍋太郎)
+-->
 
 </para>
  </sect1>
@@ -81,19 +118,19 @@ debian-installer-manual パッケージに関するバグ報告</ulink>
 <!--
 Better yet, get a copy of the DocBook source for this document, and
 produce patches against it.  The DocBook source can be found at the
-<ulink url="&url-d-i-cvsweb;">debian-installer CVSWeb</ulink>. If
+<ulink url="&url-d-i-websvn;">debian-installer WebSVN</ulink>. If
 you're not familiar with DocBook, don't worry:
 there is a simple cheatsheet in the manuals directory that will get
 you started. It's like html, but oriented towards the meaning of 
 the text rather than the presentation. Patches submitted to the 
 debian-boot mailing list (see below) are welcomed.
-For instructions on how to check out the sources via CVS, see
+For instructions on how to check out the sources via SVN, see
 <ulink url="&url-d-i-readme;">README</ulink>
 from the source root directory.
 -->
 もちろんこの文書の DocBook ソースを入手し、
 それに対するパッチを作成していただけるともっと助かります。
-DocBook ソースは <ulink url="&url-d-i-cvsweb;">debian-installer CVSWeb</ulink>
+DocBook ソースは <ulink url="&url-d-i-websvn;">debian-installer WebSVN</ulink>
 にあります。
 DocBook に慣れていなくても心配しないでください。
 あなたが始められるよう、
@@ -102,7 +139,7 @@ html に似ていますが、プレゼンテーションではなく、
 テキストの意味の方を重視しています。
 パッチは debian-boot メーリングリスト (以下を参照) に提出してください。
 歓迎いたします。
-CVSでソースをチェックする方法については、
+SVNでソースをチェックする方法については、
 ソースのルートディレクトリの <ulink url="&url-d-i-readme;">README</ulink> 
 をご覧ください。
 
@@ -145,11 +182,6 @@ Mailing List Archive</ulink> では過去のメールを読むことができま
 
  </sect1> 
 
-<!-- This is subject to constant flux, so we ripped that out -->
-
-&contributors.xml;
-
-
  <sect1 id="contributors">
  <title>多大な貢献</title> 
 
@@ -160,13 +192,14 @@ This document was originally written by Bruce Perens, Sven Rudolph, Igor
 Grobman, James Treacy, and Adam Di Carlo. Sebastian Ley wrote the
 Installation Howto.
 Many, many Debian users and developers contributed to this document.
-Particular note must be made for Michael Schmitz (m68k support), Frank
+Particular note must be made of Michael Schmitz (m68k support), Frank
 Neumann (original author of the <ulink
 url="&url-m68k-old-amiga-install;">Amiga install manual</ulink>),
 Arto Astala, Eric Delaunay/Ben Collins (SPARC information), Tapio
 Lehtonen, and Stéphane Bortzmeyer for numerous edits and text.
 We have to thank Pascal Le Bail for useful information about booting
-from USB memory sticks.
+from USB memory sticks. Miroslav Kuře has documented a lot of the new
+functionality in Sarge's debian-installer.
 -->
 もともとこの文書は Bruce Perens, Sven Rudolph, Igor Grobman, James Treacy, 
 Adam Di Carlo によって書かれました。
@@ -179,6 +212,8 @@ Sebastian Ley はインストール Howto を書きました。
 には多大なご協力をいただきました。
 また、Pascal Le Bail には USB メモリースティックから起動する方法について、
 有益な情報をいただいたことに感謝いたします。
+Miroslav Kuře には Sarge の debian-installer の新機能について、
+たくさん記述していただきました。
 
 </para><para>
 

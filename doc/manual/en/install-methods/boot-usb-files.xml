@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: boot-usb-files.xml 22935 2004-10-09 18:36:20Z fjpop-guest $ -->
+<!-- $Id: boot-usb-files.xml 25762 2005-02-17 16:20:24Z fjpop-guest $ -->
+<!-- copied version: 25496 -->
 
  <sect1 condition="bootable-usb" id="boot-usb-files">
  <title>Preparing Files for USB Memory Stick Booting</title>
@@ -23,18 +24,16 @@ image on the stick, you will need enough space for the ISO as well.
 </para>
 
   <sect2 id="usb-copy-easy">
-  <title>Copying the files - the easy way</title>
+  <title>Copying the files &mdash; the easy way</title>
 <para arch="i386">
 
 There is an all-in-one file <filename>netboot/boot.img.gz</filename>
 which contains all the installer files (including the kernel) as well
 as <command>SYSLINUX</command> and its configuration file. You only
-have to extract it directly to your USB stick:
+have to extract it directly to a partition on your USB stick:
 
 <informalexample><screen>
-
-gzip -dc boot.img.gz >/dev/<replaceable>sda</replaceable>
-
+# zcat boot.img.gz &gt; /dev/<replaceable>sda1</replaceable>
 </screen></informalexample>
 
 Of course this will destroy anything already on the device, so take
@@ -50,9 +49,7 @@ partition of type "Apple_Bootstrap" on your USB stick using
 extract the image directly to that:
 
 <informalexample><screen>
-
-gzip -dc boot.img.gz >/dev/<replaceable>sda2</replaceable>
-
+# zcat boot.img.gz &gt; /dev/<replaceable>sda2</replaceable>
 </screen></informalexample>
 
 Of course this will destroy anything already on the device, so take
@@ -62,7 +59,7 @@ care that you use the correct device name for your USB stick.
   </sect2>
 
   <sect2 id="usb-copy-flexible">
-  <title>Copying the files - the flexible way</title>
+  <title>Copying the files &mdash; the flexible way</title>
 <para>
 
 If you like more flexibility or just want to know what's going on, you
@@ -110,9 +107,7 @@ contain an invalid master boot record (MBR). To fix this, use the
 <classname>mbr</classname>:
 
 <informalexample><screen>
-
-install-mbr /dev/<replaceable>sda</replaceable>
-
+# install-mbr /dev/<replaceable>sda</replaceable>
 </screen></informalexample>
 
 </para></warning>

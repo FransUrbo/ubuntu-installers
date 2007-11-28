@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: doc-organization.xml 18602 2004-07-27 16:44:52Z joeyh $ -->
+<!-- $Id: doc-organization.xml 25302 2005-01-30 18:34:34Z fjpop-guest $ -->
+<!-- copied version: 24790 -->
 
  <sect1 id="doc-organization">
  <title>Organization of This Document</title>
@@ -104,9 +105,8 @@ may be found in <xref linkend="administrivia"/>.
 <para>
 
 Any help, suggestions, and especially, patches, are greatly
-appreciated.  Working versions of this document can be found at the
-<ulink url="&url-install-manual;">official Install Manual pages
-</ulink>.  There you will find a list of all the different
+appreciated.  Working versions of this document can be found at 
+<ulink url="&url-install-manual;" />.  There you will find a list of all the different
 architectures and languages for which this document is available.
 
 </para><para>

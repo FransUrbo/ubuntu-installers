@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- original version: 18675 -->
+<!-- original version: 26027 -->
 
 <appendix id="administrivia">
  <title>Considerações Finais</title>
-
 
  <sect1 id="about">
  <title>Sobre este documento</title>
 
 <para>
+
+Este manual foi criado para o programa de instalação da Sarge, 
+baseado no manual de instalação da Woody para os boot-floppies,
+que foi baseado em manuais de instalações antigos da Debian e 
+no manual de distribuição da Progeny que foi lançado sob GPL 
+em 2003.
+
+</para><para>
 
 Este documento foi escrito em DocBook XML.
 Os formatos de saída são gerados a partir de programas do 
@@ -22,6 +29,19 @@ utilização de variáveis e condições na linguagem de programação. O fonte SGML
 deste documento contém informações para cada diferente arquitetura &mdash;
 seções marcadas são usadas para isolar certas partes do texto como específicas
 de arquitetura.
+
+<!--
+</para><para>
+A tradução para o idioma Português do Brasil foi feita por 
+Gleydson Mazioli da Silva <email>gleydson@debian.org</email> (1999-2005) fazendo
+este trabalho parte dos materiais traduzidos e mantidos pela dedicada equipe da
+lista de discussão debian-l10n-portuguese. Se você tem tempo disponível, conhecimento
+do idioma inglês ou simplesmente atenção e paciência para achar erros em documentos, 
+junte-se a nós, sua ajuda será fundamental para a melhoria deste e de outros trabalhos
+coordenados pela lista.
+
+Preciso de revisores para liberar esta parte do documento e divulgar seu trabalho!
+-->
 
 </para>
  </sect1>
@@ -46,13 +66,14 @@ informações adicionais ou colaborações para <email><replaceable>XXXX</replaceabl
 
 Ou ainda melhor; obtenha uma cópia do fonte do DocBook deste documento 
 e produza patches sobre este. O fonte do DocBook pode ser encontrado em
-<ulink url="http://cvs.debian.org/debian-installer/doc/manual/">debian-installer CVSWeb</ulink>. Se não estiver familiarizado com o DocBook, não se preocupe:
+<ulink url="&url-d-i-websvn;">debian-installer WebSVN</ulink>. Se não 
+estiver familiarizado com o DocBook, não se preocupe:
 existe um arquivo simples chamado cheatsheet no diretório dos manuais que 
 poderá lhe ajudar como ponto de partida. É como o html, mas é orientado mais 
 ao significado do texto do que ao invés da apresentação. Os patches enviados para 
 a lista de discussão debian-boot (veja abaixo) serão bem vindos.
-Para instruções de como obter o código fonte via CVS, veja
-<ulink url="http://cvs.debian.org/cgi-bin/viewcvs.cgi/~checkout~/debian-installer/README?tag=HEAD%26content-type=text/plain">README</ulink>
+Para instruções de como obter o código fonte via SVN, veja
+<ulink url="&url-d-i-readme;">README</ulink>
 a partir do diretório raíz dos fontes.
 
 </para><para>
@@ -73,11 +94,6 @@ de forma online.
 
  </sect1> 
 
-<!-- This is subject to constant flux, so we ripped that out -->
-
-&contributors.xml;
-
-
  <sect1 id="contributors">
  <title>Maiores Contribuições</title> 
 
@@ -93,7 +109,8 @@ Michael Schmitz (m68k support), Frank Neumann (autor original do
 Delaunay/Ben Collins (informações sobre SPARC), Tapio Lehtonen, e StÃ©phane
 Bortzmeyer por inúmeras edições e textos.
 Nós queremos agradecer a Pascal Le Bail por informações úteis sobre a inicialização
-através da memória stick USB.
+através da memória stick USB. Miroslav KuÅe documentou várias funcionalidades 
+do programa de instalação da Sarge.
 
 </para><para>
 

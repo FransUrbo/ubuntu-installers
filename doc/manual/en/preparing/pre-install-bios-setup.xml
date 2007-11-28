@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: pre-install-bios-setup.xml 23401 2004-10-23 11:04:57Z fjpop-guest $ -->
+<!-- $Id: pre-install-bios-setup.xml 25762 2005-02-17 16:20:24Z fjpop-guest $ -->
+<!-- copied version: 25496 -->
 
  <sect1 id="pre-install-bios-setup">
  <title>Pre-Installation Hardware and Operating System Setup</title>
@@ -142,7 +143,7 @@ emulation" or "USB keyboard support" options.
    <sect3><title>More than 64 MB RAM</title>
 <para>
 
-The Linux Kernel can not always detect what amount of RAM you have.  If
+The Linux Kernel cannot always detect what amount of RAM you have.  If
 this is the case please look at <xref linkend="boot-parms"/>.
 
 </para>

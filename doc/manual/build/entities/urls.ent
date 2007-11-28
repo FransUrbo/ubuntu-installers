@@ -12,10 +12,14 @@
 <!ENTITY www-debian-org "www.debian.org">
 <!ENTITY url-debian-home "http://&www-debian-org;/">
 
-<!ENTITY url-d-i "http://&www-debian-org;/devel/debian-installer/">
-
 <!ENTITY ftp-debian-org "ftp.debian.org">
 <!ENTITY url-debian-ftp "ftp://&ftp-debian-org;/">
+
+<!ENTITY url-d-i "http://&www-debian-org;/devel/debian-installer/">
+
+<!ENTITY d-i-alioth-debian-org "d-i.alioth.debian.org">
+<!ENTITY url-d-i-alioth "http://&d-i-alioth-debian-org;/">
+<!ENTITY url-d-i-alioth-manual "http://&url-d-i-alioth;/manual/">
 
 <!ENTITY url-social-contract "http://&www-debian-org;/social_contract">
 <!ENTITY url-dfsg "&url-social-contract;#guidelines">
@@ -44,11 +48,15 @@
 <!-- where to get the current debian-installer -->
 <!ENTITY url-debian-installer "&disturl;main/installer-&architecture;/current/">
 
-<!-- debian-installer CVSweb -->
-<!ENTITY url-d-i-cvsweb "http://svn.debian.org/viewcvs/d-i/">
+<!-- debian-installer CVSweb - OBSOLETED: should be removed when no longer used -->
+<!-- <!ENTITY url-d-i-cvsweb "http://svn.debian.org/viewcvs/d-i/"> -->
+<!ENTITY url-d-i-cvsweb "http://svn.debian.org/wsvn/d-i/">
+
+<!-- debian-installer WebSVN  -->
+<!ENTITY url-d-i-websvn "http://svn.debian.org/wsvn/d-i/">
 
 <!-- debian-installer README -->
-<!ENTITY url-d-i-readme "http://svn.debian.org/viewcvs/*checkout*/d-i/trunk/README">
+<!ENTITY url-d-i-readme "http://svn.debian.org/wsvn/d-i/README?op=file">
 
 <!-- instructions on where to get Debian -->
 <!ENTITY url-debian-distrib "http://&www-debian-org;/distrib/">
@@ -90,6 +98,14 @@
 <!-- ]]> -->
   <!ENTITY url-local-install-manual   "install&langext;.html">
   <!ENTITY url-local-dselect-beginner "dselect-beginner&langext;.html">
+
+<!-- Example preseed file -->
+<!-- For unofficial builds we should use this, but no idea how to get it working...
+<![ %unofficial_build; [
+  <!ENTITY url-example-preseed   "&url-d-i-alioth-manual;example-preseed.txt">
+]]>
+-->
+  <!ENTITY url-example-preseed   "&url-release-area;example-preseed.txt">
 
 <!-- preinstalled debian -->
 <!ENTITY url-pre-installed "http://&www-debian-org;/distrib/pre-installed">
@@ -169,8 +185,6 @@
 <!-- Linux Kernel entities -->
 <!ENTITY url-linux-kernel-list-faq "http://www.tux.org/lkml/">
 <!ENTITY url-kernel-traffic "http://www.kerneltraffic.org/kernel-traffic/index.html">
-
-<!-- Introductions to the FSF and GNU Project -->
 
 <!-- Linux History page -->
 <!ENTITY url-linux-history "http://www.li.org/linuxhistory.php">

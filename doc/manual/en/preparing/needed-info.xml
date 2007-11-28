@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: needed-info.xml 24331 2004-12-09 13:19:33Z fjpop-guest $ -->
+<!-- $Id: needed-info.xml 25762 2005-02-17 16:20:24Z fjpop-guest $ -->
+<!-- copied version: 25496 -->
 
  <sect1 id="needed-info">
  <title>Information You Will Need</title>
@@ -17,21 +18,9 @@ This file you are now reading, in plain ASCII, HTML or PDF format.
 </para>
 
 <itemizedlist>
-<listitem><para>
 
-<ulink url="install.en.txt"></ulink>
+&list-install-manual-files;
 
-</para></listitem>
-<listitem><para>
-
-<ulink url="install.en.html"></ulink>
-
-</para></listitem>
-<listitem><para>
-
-<ulink url="install.en.pdf"></ulink>
-
-</para></listitem>
 </itemizedlist>
 </sect3>
 
@@ -230,7 +219,7 @@ networking and e-mail.
 
 <row arch="not-s390">
   <entry morerows="3">Mouse</entry>
-  <entry>Type: serial, PS, or USB.</entry>
+  <entry>Type: serial, PS/2, or USB.</entry>
 </row>
 <row arch="not-s390"><entry>Port.</entry></row>
 <row arch="not-s390"><entry>Manufacturer.</entry></row>

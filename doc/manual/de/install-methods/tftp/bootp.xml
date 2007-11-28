@@ -1,14 +1,14 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 16879 -->
+<!-- original version: 24663 -->
 
 
   <sect2 condition="supports-bootp" id="tftp-bootp">
   <title>BOOTP-Server einrichten</title>
 <para>
 
-Es gibt für GNU/Linux zwei BOOTP-Server, den <command>bootpd</command> (CMU)
+Es gibt für GNU/Linux zwei BOOTP-Server: den <command>bootpd</command> (CMU)
 und der andere ist vielmehr ein DHCP-Server, der <command>dhcpd</command> (ISC).
-Sie sind in den &debian;-Paketen <classname>bootp</classname> und 
+Sie sind in den &debian;-Paketen <classname>bootp</classname> und
 <classname>dhcp</classname> enthalten.
 
 </para><para>
@@ -22,23 +22,18 @@ nicht vorhanden). Unter &debian; erledigen Sie das mit
 fragliche Zeile so aussehen:
 
 <informalexample><screen>
-
 bootps  dgram  udp  wait  root  /usr/sbin/bootpd  bootpd -i -t 120
-
 </screen></informalexample>
-
-</para><para>
 
 Jetzt müssen Sie die Datei <filename>/etc/bootptab</filename> erstellen.
 Sie hat das gewohnte kryptische Format wie die guten alten BSD-Dateien
 <filename>printcap</filename>, <filename>termcap</filename> und
 <filename>disktab</filename>. Mehr Informationen bekommen Sie auf der
 Handbuchseite von <filename>bootptab</filename>. Beim CMU-<command>bootpd</command>
-müssen Sie die Hardware-(MAC-)Adresse des Clients kennen. Hier ein Beispiel
+müssen Sie die Hardware-(MAC)Adresse des Clients kennen. Hier ein Beispiel
 für <filename>/etc/bootptab</filename>:
 
 <informalexample><screen>
-
 client:\
   hd=/tftpboot:\
   bf=tftpboot.img:\
@@ -46,7 +41,6 @@ client:\
   sm=255.255.255.0:\
   sa=192.168.1.1:\
   ha=0123456789AB:
-
 </screen></informalexample>
 
 Sie müssen zumindest den Eintrag "ha" anpassen, der die Hardwareadresse

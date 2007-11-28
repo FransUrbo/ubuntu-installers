@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: ia64.xml 24331 2004-12-09 13:19:33Z fjpop-guest $ -->
+<!-- $Id: ia64.xml 25302 2005-01-30 18:34:34Z fjpop-guest $ -->
+<!-- copied version: 24663 -->
 
   <sect2 arch="ia64"><title>Booting from a CD-ROM</title>
 
@@ -349,13 +350,11 @@ A suitable TFTP entry for network booting an ia64 system looks something
 like this:
 
 <informalexample><screen>
-
 host mcmuffin {
         hardware ethernet 00:30:6e:1e:0e:83;
         fixed-address 10.0.0.21;
         filename "ubuntu-installer/ia64/elilo.efi";
 }
-
 </screen></informalexample>
 
 Note that the goal is to get <command>elilo.efi</command> running on

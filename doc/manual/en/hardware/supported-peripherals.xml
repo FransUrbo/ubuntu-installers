@@ -1,9 +1,9 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: supported-peripherals.xml 23399 2004-10-23 10:51:26Z fjpop-guest $ -->
+<!-- $Id: supported-peripherals.xml 25970 2005-02-25 21:27:43Z waldi $ -->
 
  <sect1 id="supported-peripherals">
  <title>Peripherals and Other Hardware</title>
-<para>
+<para arch="not-s390">
 
 Linux supports a large variety of hardware devices such as mice,
 printers, scanners, PCMCIA and USB devices.  However, most of these

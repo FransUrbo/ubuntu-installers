@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="EUC-JP"?>
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 23669 -->
+<!-- original version: 25971 -->
 
  <sect1 id="network-cards">
  <title>ネットワーク接続機器</title>
@@ -165,6 +165,18 @@ Linux カーネルがサポートしているすべてのネットワークインターフェースカード
 ただ、お使いになるネットワークドライバを
 モジュールとしてロードする必要があるでしょう。
 
+</para><para arch="ia64">
+
+<!--
+Any network interface card (NIC) supported by the Linux kernel should
+also be supported by the boot disks.  You may need to load your
+network driver as a module.
+-->
+Linux カーネルがサポートしているすべてのネットワークインターフェースカード
+(NIC) が、起動ディスクにおいてもサポートされています。
+ただ、お使いになるネットワークドライバを
+モジュールとしてロードする必要があるでしょう。
+
 </para><para arch="mips">
 
 <!--
@@ -206,37 +218,33 @@ Linux カーネルがサポートしているすべてのネットワークインターフェースカード
  <listitem><para>
 
 <!--
-Channel to Channel (CTC) or ESCON connection (real or emulated)
+Channel to Channel (CTC) and ESCON connection (real or emulated)
 -->
-Channel to Channel (CTC) または ESCON 接続 (リアルもしくはエミュレーション)
-
+Channel to Channel (CTC) や ESCON 接続 (リアルもしくはエミュレーション)
 
 </para></listitem>
  <listitem><para>
 
 <!--
-lcs: OSA-2 Token Ring/Ethernet or OSA-Express Fast Ethernet
-          (non-QDIO)
+OSA-2 Token Ring/Ethernet and OSA-Express Fast Ethernet (non-QDIO)
 -->
-lcs: OSA-2 Token Ring/Ethernet または OSA-Express Fast Ethernet
-          (非 QDIO)
+OSA-2 Token Ring/Ethernet や OSA-Express Fast Ethernet (non-QDIO)
 
 </para></listitem>
 <listitem><para>
 
 <!--
-Inter-User Communication Vehicle (IUCV) - available for VM
-          guests only
+Inter-User Communication Vehicle (IUCV) &mdash; available for VM guests only
 -->
-Inter-User Communication Vehicle (IUCV) - VM ゲストのみ有効
+Inter-User Communication Vehicle (IUCV) &mdash; VM ゲストのみ有効
 
 </para></listitem>
 <listitem><para>
 
 <!--
-qeth: OSA-Express in QDIO mode / HiperSockets
+OSA-Express in QDIO mode, HiperSockets and Guest-LANs
 -->
-qeth: QDIO モードの OSA-Express / HiperSockets
+QDIO モードの OSA-Express, HiperSockets, Guest-LAN
 
 </para></listitem>
 </itemizedlist>

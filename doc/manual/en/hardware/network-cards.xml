@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: network-cards.xml 24331 2004-12-09 13:19:33Z fjpop-guest $ -->
+<!-- $Id: network-cards.xml 25970 2005-02-25 21:27:43Z waldi $ -->
+<!-- copied version: 25496 -->
 
  <sect1 id="network-cards">
  <title>Network Connectivity Hardware</title>
@@ -133,25 +134,22 @@ setup. The list of supported network devices is:
 <itemizedlist>
  <listitem><para>
 
-Channel to Channel (CTC) or ESCON connection (real or emulated)
- 
+Channel to Channel (CTC) and ESCON connection (real or emulated)
 
 </para></listitem>
  <listitem><para>
 
-lcs: OSA-2 Token Ring/Ethernet or OSA-Express Fast Ethernet
-          (non-QDIO)
+OSA-2 Token Ring/Ethernet and OSA-Express Fast Ethernet (non-QDIO)
 
 </para></listitem>
 <listitem><para>
 
-Inter-User Communication Vehicle (IUCV) - available for VM
-          guests only
+Inter-User Communication Vehicle (IUCV) &mdash; available for VM guests only
 
 </para></listitem>
 <listitem><para>
 
-qeth: OSA-Express in QDIO mode / HiperSockets
+OSA-Express in QDIO mode, HiperSockets and Guest-LANs
 
 </para></listitem>
 </itemizedlist>

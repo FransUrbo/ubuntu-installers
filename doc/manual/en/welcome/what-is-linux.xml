@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: what-is-linux.xml 22935 2004-10-09 18:36:20Z fjpop-guest $ -->
+<!-- $Id: what-is-linux.xml 25762 2005-02-17 16:20:24Z fjpop-guest $ -->
+<!-- copied version: 25524 -->
 
  <sect1 id="what-is-linux">
  <title>What is GNU/Linux?</title>
@@ -33,7 +34,7 @@ Linux. Much of its development is done by unpaid volunteers.
 
 </para><para>
 
-Development of what later became Linux began in 1984, when the 
+Development of what later became GNU/Linux began in 1984, when the 
 <ulink url="http://www.gnu.org/">Free Software Foundation</ulink>
 began development of a free Unix-like operating system called GNU.
 

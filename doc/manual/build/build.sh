@@ -4,7 +4,7 @@ if [ -z "$languages" ]; then
 	# Please add languages only if they build properly.
 	# languages="en cs es fr ja nl pt_BR" # ca da de el eu it ru
 
- 	# Buildlist of languages to be included on Hoary CDs
+ 	# Buildlist of languages to be included on Breezy CDs
 	languages="en" # cs es fr ja pt_BR
 fi
 
@@ -18,7 +18,7 @@ fi
 
 if [ -z "$formats" ]; then
         #formats="html pdf ps txt"
-        formats="html"
+        formats="html pdf txt"
 fi
 
 [ -e "$destination" ] || mkdir -p "$destination"
@@ -50,3 +50,7 @@ for lang in $languages; do
     done
 done
 
+PRESEED="../en/appendix/example-preseed.xml"
+if [ -f $PRESEED ] && [ -f preseed.awk ] ; then
+    gawk -f preseed.awk $PRESEED >$destination/example-preseed.txt
+fi

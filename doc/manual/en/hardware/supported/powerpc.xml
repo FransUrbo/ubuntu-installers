@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: powerpc.xml 23149 2004-10-16 15:25:17Z cjwatson $ -->
+<!-- $Id: powerpc.xml 25762 2005-02-17 16:20:24Z fjpop-guest $ -->
+<!-- copied version: 25496 -->
 
 
   <sect2 arch="powerpc"><title>CPU, Main Boards, and Video Support</title>
@@ -82,7 +83,7 @@ This kernel flavour supports the Amiga Power-UP System.
 
 <para>
 
-Apple (and briefly a few other manufacturers - Power Computing, for
+Apple (and briefly a few other manufacturers &mdash; Power Computing, for
 example) makes a series of Macintosh computers based on the PowerPC
 processor. For purposes of architecture support, they are categorized
 as NuBus, OldWorld PCI, and NewWorld.

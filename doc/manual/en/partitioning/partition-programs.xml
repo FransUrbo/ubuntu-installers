@@ -1,5 +1,6 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: partition-programs.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
+<!-- $Id: partition-programs.xml 25302 2005-01-30 18:34:34Z fjpop-guest $ -->
+<!-- copied version: 24663 -->
 
  <sect1 id="partition-programs">
  <title>Ubuntu Partitioning Programs</title>
@@ -19,8 +20,9 @@ your architecture.
 <listitem><para>
 
 Recommended partitioning tool in Ubuntu. This swiss army knife can
-also create filesystems <phrase arch="i386"> (<quote>format</quote> in
-Windows speak) </phrase> and assign them to the mountpoints.
+also resize partitions, create filesystems
+<phrase arch="i386"> (<quote>format</quote> in Windows speak)</phrase>
+and assign them to the mountpoints.
 
 </para></listitem>
 </varlistentry>
@@ -133,25 +135,24 @@ present. As an example, here are commands you can use in
 so the 21st partition can be initialized:
 
 <informalexample><screen>
-cd /dev
-mknod hda21 b 3 21 
-chgrp disk hda21
-chmod 660 hda21
+# cd /dev
+# mknod hda21 b 3 21 
+# chgrp disk hda21
+# chmod 660 hda21
 </screen></informalexample>
 
 Booting into the new system will fail unless proper devices are present
 on the target system. After installing the kernel and modules, execute:
 
 <informalexample><screen>
-cd /target/dev
-mknod hda21 b 3 21 
-chgrp disk hda21
-chmod 660 hda21
+# cd /target/dev
+# mknod hda21 b 3 21 
+# chgrp disk hda21
+# chmod 660 hda21
 </screen></informalexample>
 
-</para><para arch="i386">
-
-Remember to mark your boot partition as ``Bootable''. 
+<phrase arch="i386">Remember to mark your boot partition as
+<quote>Bootable</quote>.</phrase>
 
 </para><para condition="mac-fdisk.txt">
 
@@ -176,7 +177,3 @@ MacOS.
 &partition-sparc.xml;
 
  </sect1>
-
-
-
-
