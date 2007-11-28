@@ -1,3 +1,9 @@
+debian-installer (20060711ubuntu3) edgy; urgency=low
+
+  * Move to 2.6.17-5 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 14 Jul 2006 16:12:55 +0100
+
 debian-installer (20060711ubuntu2) edgy; urgency=low
 
   * Bump size of amd64 netboot boot.img to 16000.
