@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu2) gutsy; urgency=low
+
+  * Restore missing build/boot/x86/pics/ubuntu* files, lost in merge.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 23 May 2007 16:10:34 +0100
+
 debian-installer (20070308ubuntu1) gutsy; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
