@@ -1,3 +1,9 @@
+debian-installer (20051026ubuntu18) dapper; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 16 Feb 2006 17:24:25 +0000
+
 debian-installer (20051026ubuntu17) dapper; urgency=low
 
   * Add Portuguese help text translation (thanks, Rui Azevedo).
