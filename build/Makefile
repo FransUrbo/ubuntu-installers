@@ -498,6 +498,9 @@ endif
 	if [ -n "`find $(DPKGDIR)/info/ -name \\*.templates`" ]; then \
 		cat $(DPKGDIR)/info/*.templates >> $(TEMP)/all.utf; \
 	fi
+	if test -f $(TREE)/usr/share/keymaps/decision-tree ; then \
+		cat $(TREE)/usr/share/keymaps/decision-tree >> $(TEMP)/all.utf; \
+	fi
 
 ifdef EXTRADRIVERS
 	# Remove additional driver disk contents now that we're done with
