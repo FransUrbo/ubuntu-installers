@@ -1,44 +1,45 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!-- original version: 11648 -->
+<!-- Revisado por Rudy Godoy -->
 
 
   <sect2 arch="powerpc"><title>Particionado en los nuevos PowerMacs</title>
 <para>
 
 Si está instalando &debian; en un PowerMac NewWorld, debe crear una partición
-especial de inicio para alojar el asistente de inicio del sistema.
+especial de arranque para alojar el gestor de arranque del sistema.
 El temaño de esta partición tiene que ser de 800KB y debe ser
 del tipo <emphasis>Apple_Bootstrap</emphasis>. Si esta partición
 no es del tipo <emphasis>Apple_Bootstrap</emphasis>, su máquina
-no será iniciable desde el disco duro. Esta partición puede ser
+no será arrancable desde el disco duro. Esta partición puede ser
 creada fácilmente en <command>mac-fdisk</command> usando el comando
 <userinput>b</userinput>.
 
 </para><para>
 
-Esta partición especial del tipo Apple_Bootstrap, es requerida
-para prevenir que MacOS monte y dañe severamente la partición
-de inicio, ya que existen modificaciones especiales por parte
-de este sistema operativo para que OpenFirmware se inicie
+Esta partición especial del tipo «Apple_Bootstrap», es requerida
+para evitar que MacOS monte y dañe severamente la partición
+de arranque, ya que existen modificaciones especiales por parte
+de este sistema operativo para que «OpenFirmware» se inicie
 automáticamente.
 
 </para><para>
 
-Note que esta partición de inicio está pensada para alojar sólo
-tres pequeños archivos: El binario de <command>yaboot</command>, 
-el archivo de configuración, llamado <filename>yaboot.conf</filename>, 
-y la parte inicial del asistente de inicio OpenFirmware 
+Note que esta partición de arranque está pensada para alojar sólo
+tres pequeños ficheros: El binario de <command>yaboot</command>, 
+el fichero de configuración, llamado <filename>yaboot.conf</filename>, 
+y la parte inicial del gestor de arranque «OpenFirmware» 
 <command>ofboot.b</command>.
 
-No necesita ni debe ser montado en su sistema de archivos, ni tampoco
-tener núcleos o cualquier fichero distinto a los ya mencionados en esta
+No necesita, ni debe ser montado en su sistema de ficheros, ni tampoco
+tener núcleos o cualquier fichero distinto a los ya mencionados, en esta
 partición. Las órdenes <command>ybin</command> y 
 <command>mkofboot</command> son utilidades generalmente usadas para 
 manipular esta partición.
 
 </para><para>
 
-Para que OpenFirmware logre iniciar automáticamente &debian; 
+Para que «OpenFirmware» logre iniciar automáticamente &debian; 
 la partición de inicio debe estar antes que cualquier partición
 en el disco, especialmente antes que las particiones de MacOS.
 Por lo mismo, esta partición debe ser la primera que debe crear.

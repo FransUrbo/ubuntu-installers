@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: memory-disk-requirements.xml 11865 2004-03-24 09:50:09Z mck-guest $ -->
-<!-- original version: 11648 -->
+<!-- $Id: memory-disk-requirements.xml 20052 2004-08-26 18:06:22Z mck-guest $ -->
+<!-- original version: 19285 -->
 
  <sect1 id="memory-disk-requirements">
  <title>Požadavky na operační paměť a diskový prostor</title>
@@ -13,11 +13,8 @@ systém (všechny balíky ze sekce standardní) je zapotřebí 250 MB
 diskového prostoru.
 Pokud chcete nainstalovat rozumnou část distribuce včetně systému
 X Window a vývojového prostředí, budete potřebovat alespoň 400 MB.
-Víceméně úplnou instalaci lze směstnat na 800 MB.
-Abyste nainstalovali <emphasis>naprosto všechny</emphasis> balíky,
-musíte mít odhadem 6 GB volného místa. Ve skutečnosti nemá smysl 
-instalovat všecho, neboť některé balíky jsou vzájemně konfliktní a
-nelze je mít v systému současně.
+Víceméně úplnou instalaci lze směstnat na 800 MB, ale počítejte
+s tím, že moderní desktopové prostředí zabere několik gigabajtů.
 
 </para><para arch="m68k">
 
@@ -33,6 +30,7 @@ Novější jádra by měla vypnout 16bitovou paměť automaticky.
 Na Atari Linux využije jak paměť ST-RAM, tak i Fast RAM (TT-RAM).
 Protože hodně uživatelů hlásilo problém s během jádra ve Fast RAM,
 zavaděč umístí jádro do ST-RAM. Minimální velikost ST-RAM je 2 MB.
+K tomu budete ještě potřebovat alespoň 12 MB TT-RAM.
 
 </para><para arch="m68k">
 

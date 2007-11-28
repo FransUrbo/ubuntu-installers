@@ -2,57 +2,69 @@
 
 ARCH=$(shell dpkg-architecture -qDEB_BUILD_ARCH)
 VERSION=$(shell LC_ALL=C dpkg-parsechangelog | grep ^Version: | cut -d ' ' -f 2)
+DATE=$(shell echo $(VERSION) | cut -d '.' -f 1)
 DISTRIBUTION=$(shell LC_ALL=C dpkg-parsechangelog | grep ^Distribution: | cut -d ' ' -f 2)
 ifeq (${DISTRIBUTION},unstable)
-DISTRIBUTION=testing
+DISTRIBUTION=sarge
 endif
 ifeq (${DISTRIBUTION},UNRELEASED)
 DISTRIBUTION=unstable
 endif
 
-ARCHIVEDIR=installer-$(ARCH)
+ARCHIVEDIR=debian/tmp/installer-$(ARCH)
 DESTDIR=$(ARCHIVEDIR)/$(VERSION)
 IMAGEDIR=$(DESTDIR)/images
+MANDIR=$(DESTDIR)/doc/manual
+MANTMP=$(shell pwd)/doc/manual/build/manual
 TARNAME=debian-installer-images_$(VERSION)_$(ARCH).tar.gz
 
 clean:
 	dh_testdir
 	dh_testroot
 	dh_clean build-stamp
+	rm -rf $(MANTMP)
 	$(MAKE) -C build reallyclean
+	$(MAKE) -C doc/devel/partman clean
 
+# Must run as root, so is not run as part of regular build.
+build-images:
+	$(MAKE) -C build all_build stats \
+		SUITE=$(DISTRIBUTION) BUILD_DATE=$(DATE)
+	
 build: build-stamp
 build-stamp:
 	rm -f $@
-	fakeroot $(MAKE) -C build all_build stats SUITE=$(DISTRIBUTION)
-	touch $@
-	
-build-manual:
-	-rm -rf debian/tmp/$(DESTDIR)/doc/manual
-	cd doc/manual/build && \
-	        official_build=1 \
-		destination=$(shell pwd)/debian/tmp/$(DESTDIR)/doc/manual \
+	-rm -rf $(MANTMP)
+	set -e && cd doc/manual/build && \
+	        official_build=1 destination=$(MANTMP) \
 		architectures=$(ARCH) noarchdir=1 ./build.sh
+
+	$(MAKE) -C doc/devel/partman
+	
+	touch $@
 
 install: build
 	dh_testdir
 	dh_testroot
 	dh_clean -k
-	dh_install
-	install -d debian/tmp/$(DESTDIR)/doc
-	cp debian/*.html doc/INSTALLATION-HOWTO debian/tmp/$(DESTDIR)/doc
-	debian/rules build-manual
-	install -d debian/tmp/$(IMAGEDIR)
-	cp -a build/dest/* debian/tmp/$(IMAGEDIR)
-	cd debian/tmp/$(IMAGEDIR) && md5sum `find . -type f` > MD5SUMS
-	ln -s $(VERSION) debian/tmp/$(ARCHIVEDIR)/current
+	dh_installdirs
+	
+	install -d $(MANDIR)
+	cp -a $(MANTMP)/* $(MANDIR)
+	
+	debian/rules build-images
+
+	install -d $(IMAGEDIR)
+	cp -a build/dest/* $(IMAGEDIR)
+	cd $(IMAGEDIR) && md5sum `find . -type f` > MD5SUMS
+	ln -s $(VERSION) $(ARCHIVEDIR)/current
 
 binary-arch: install  
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs
-	dh_installdocs debian/tmp/$(DESTDIR)/doc/manual
-	dh_installdocs -X historic -X manual doc/*
+	dh_installdocs $(MANTMP)
+	dh_installdocs -X manual doc/* -X Makefile -X partman-doc.sgml
 	dh_compress
 	dh_fixperms
 	dh_gencontrol -- -Vkernel:Package='$(KERNELPACKAGE)'
@@ -63,4 +75,4 @@ binary-arch: install
 binary-indep:
 
 binary: binary-indep binary-arch 
-.PHONY: build clean binary-indep binary-arch binary install 
+.PHONY: build build-images clean binary-indep binary-arch binary install 

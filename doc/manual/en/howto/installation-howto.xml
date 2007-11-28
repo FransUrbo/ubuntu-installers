@@ -1,7 +1,9 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: installation-howto.xml 21931 2004-09-21 21:52:55Z cjwatson $ -->
+<!-- $Id: installation-howto.xml 22935 2004-10-09 18:36:20Z fjpop-guest $ -->
 
-<appendix id="installation-howto"><title>Installation Howto</title>
+<appendix id="installation-howto">
+<title>Installation Howto</title>
+
 <para>
 
 This document describes how to install Ubuntu &release; &longreleasename; for
@@ -13,8 +15,9 @@ explanations in the <link linkend="debian_installation_guide">Ubuntu
 Installation Guide</link>.
 
 </para>
-<sect2 id="howto-preliminaries" condition="not-ubuntu">
-<title>Preliminaries</title>
+
+ <sect1 id="howto-preliminaries" condition="not-ubuntu">
+ <title>Preliminaries</title>
 <para>
 
 <phrase condition="unofficial-build">
@@ -24,14 +27,14 @@ If you encounter bugs during your install, please refer to
 <xref linkend="submit-bug" /> for instructions
 on how to report them. If you have questions which cannot be
 answered by this document, please direct them to the debian-boot
-mailing list (&email-debian-boot-list;) or ask on irc (#debian-boot
+mailing list (&email-debian-boot-list;) or ask on IRC (#debian-boot
 on the freenode network).
 
 </para>
- </sect2>
+ </sect1>
 
- <sect2 id="howto-getting-images">
-<title>Booting the installer</title>
+ <sect1 id="howto-getting-images">
+ <title>Booting the installer</title>
 <para>
 
 For more information on where to get CDs, see <xref linkend="official-cdrom" />.
@@ -46,15 +49,16 @@ other images.
 <xref linkend="where-files" /> explains how to find images on Ubuntu
 mirrors.
 
-</para>
-<para>
+</para><para>
 
 The subsections below will give the details about which images you should
 get for each possible means of installation.
 
 </para>
-  <sect3 id="howto-getting-images-cdrom">
-<title>CDROM</title>
+  
+  <sect2 id="howto-getting-images-cdrom">
+  <title>CDROM</title>
+  
 <para condition="not-ubuntu">
 
 There are two different netinst CD images which can be used to install
@@ -77,10 +81,10 @@ To boot a PowerMac from CD, press the <keycap>c</keycap> key while booting. See
 </phrase>
 
 </para>
-  </sect3>
+  </sect2>
   
-  <sect3 condition="supports-floppy-boot" id="howto-getting-images-floppy">
-<title>floppy</title>
+  <sect2 condition="supports-floppy-boot" id="howto-getting-images-floppy">
+  <title>Floppy</title>
 <para>
 
 If you can't boot from CD, you can download floppy images to install
@@ -115,10 +119,10 @@ you can use the dd command to write it to /dev/fd0 or some other means
 Since you'll have more than one floppy, it's a good idea to label them.
 
 </para>
-  </sect3>
+  </sect2>
   
-  <sect3 condition="bootable-usb" id="howto-getting-images-usb">
-<title>USB memory stick</title>
+  <sect2 condition="bootable-usb" id="howto-getting-images-usb">
+  <title>USB memory stick</title>
 <para>
 
 It's also possible to install from removable USB storage devices. For
@@ -150,10 +154,10 @@ floppy and use the USB stick for the rest of the install. For helpful hints
 and details, see <xref linkend="usb-boot" />.
 
 </para>
-  </sect3>
+  </sect2>
   
-  <sect3 id="howto-getting-images-netboot">
-<title>Booting from network</title>
+  <sect2 id="howto-getting-images-netboot">
+  <title>Booting from network</title>
 <para>
 	
 It's also possible to boot the Ubuntu installer completely from the net. The
@@ -172,10 +176,10 @@ everything will just work.
 For detailed instructions, see <xref linkend="install-tftp" />
 
 </para>
-  </sect3>
+  </sect2>
   
-  <sect3 id="howto-getting-images-hard-disk" condition="not-ubuntu">
-<title>Booting from hard disk</title>
+  <sect2 id="howto-getting-images-hard-disk" condition="not-ubuntu">
+  <title>Booting from hard disk</title>
 <para>
 
 It's possible to boot the installer using no removable media, but just an
@@ -189,9 +193,10 @@ booting linux with the initrd.
 </phrase>
 
 </para>
-  </sect3>
- </sect2>
- <sect2 id="howto-installation">
+  </sect2>
+ </sect1>
+
+ <sect1 id="howto-installation">
 <title>Installation</title>
 <para>
 
@@ -201,15 +206,15 @@ methods and parameters (see <xref linkend="boot-parms" />).
 <phrase arch="i386" condition="not-ubuntu">
 If you want a 2.6 kernel, type <userinput>linux26</userinput> at the
 <prompt>boot:</prompt> prompt.
-<footnote>
-	<para>
-		The 2.6 kernel is available for most boot methods, but not
-		when booting from a floppy.
-	</para>
-</footnote>
+<footnote><para>
+
+The 2.6 kernel is available for most boot methods, but not when booting from
+a floppy.
+ 
+</para></footnote>
 </phrase>
 
-<para></para>
+</para><para>
 
 After a while you will be asked to select your language. Use the arrow keys
 to pick a language and press &enterkey; to continue. Next you'll be asked to
@@ -217,30 +222,30 @@ select your country, with the choices including countries where your
 language is spoken. If it's not on the short list, a list of all the
 countries in the world is available.
 
-<para></para>
+</para><para>
 
 You may be asked to confirm your keyboard layout. Choose the default unless
 you know better.
 
-<para></para>
+</para><para>
 
 Now sit back while the installer detects some of your hardware, and
 loads the rest of itself from CD, floppy, USB, etc.
 
-<para></para>
+</para><para>
 
 Next the installer will try to detect your network hardware and set up
 networking by DHCP. If you are not on a network or do not have DHCP, you
 will be given the opportunity to configure the network manually.
 
-<para></para>
+</para><para>
 
 Now it is time to partition your disks. First you will be given the
 opportunity to erase and automatically partition either an entire drive.
 This is recommended for new users, but if you have any valuable data on
 the disk, be sure to back it up first, as it will be erased!
 
-<para></para>
+</para><para>
 
 If you do not want to erase an entire disk, or if you want to customize the
 partition layout, choose <quote>Manually edit partition table</quote> from
@@ -252,19 +257,19 @@ Remember to assign at least one partition for swap space and to mount a
 partition on <filename>/</filename>. <xref linkend="partitioning" /> has more information
 about partitioning.
 
-<para></para>
+</para><para>
 
 Now the installer formats your partitions and starts to install the base system, 
 which can take a while. That is followed by installing a kernel, then by
 copying the remainder of the packages on the CD to your hard disk so that
 you no longer need the CD.
 
-<para></para>
+</para><para>
 
 The last step is to install a boot loader. If the installer detects
 other operating systems on your computer, it will add them to the boot menu
 and let you know.
-<phrase arch="i386">By default GRUB will be installed to the boot
+<phrase arch="i386">By default GRUB will be installed to the master boot
 record of the first harddrive, which is generally a good choice.
 <phrase condition="not-ubuntu">
 You'll be
@@ -272,7 +277,7 @@ given the opportunity to override that choice and install it elsewhere.
 </phrase>
 </phrase>
 
-<para></para>
+</para><para>
 
 The installer will now tell you that the first stage of installation has
 finished. Remove the CD and hit &enterkey;
@@ -285,9 +290,10 @@ If you need more information on the install process, see
 <xref linkend="d-i-intro" />.
 
 </para>
- </sect2>
- <sect2 id="howto-installation-report" condition="not-ubuntu">
-<title>Send us an installation report</title>
+ </sect1>
+
+ <sect1 id="howto-installation-report" condition="not-ubuntu">
+ <title>Send us an installation report</title>
 <para>
 
 If you successfully managed an installation with &d-i;,
@@ -307,14 +313,15 @@ report them. You can use an installation report to report problems;
 if the install completely fails, see <xref linkend="problem-report" />.
 
 </para>
- </sect2>
- <sect2 id="howto-installation-finally">
-<title>And finally..</title>
+ </sect1>
+
+ <sect1 id="howto-installation-finally">
+ <title>And finally..</title>
 <para>
 
 We hope that your Ubuntu installation is pleasant and that you find Ubuntu
 useful. You might want to read <xref linkend="post-install" />.
 
 </para>
- </sect2>
+ </sect1>
 </appendix>

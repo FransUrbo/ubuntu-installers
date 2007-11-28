@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- retain these comments for translator revision tracking -->
 <!-- original version: 11648 -->
 
 
-  <sect2 arch="powerpc"><title>Particionar en MacOS/OSX</title>
+  <sect2 arch="powerpc"><title>Particionado en MacOS/OSX</title>
 
 <para>
 
 La aplicación <application>Apple Drive Setup</application> se puede
 encontrar en el directorio <filename>Utilities</filename> del CD de MacOS.
-éste programa no ajustará las particiones existentes, esta limitado a
-particionar el disco entero por vez. Las particiones del controlador del
+Éste programa no ajustará las particiones existentes, esta limitado a
+particionar el disco entero a la vez. Las particiones del controlador del
 disco no son mostradas en <application>Drive Setup</application>.
 
 </para><para>
@@ -29,7 +28,7 @@ hacerse al momento de arranque. Con particiones separadas, aparecerán
 opciones separadas para OS 9 y OS X al mantener presionada la tecla 
 <keycap>option</keycap> al momento del arranque, del mismo modo también
 se puede instalar opciones separadas en el menú de arranque de 
-<application>yaboot</application>. Además, Statup Disk desconocerá todas
+<application>yaboot</application>. Además, «Statup Disk» desconocerá todas
 las otras particiones, lo que puede afectar el arranque de GNU/Linux.  
 Las particiones de OS 9 y OS X serán accesibles tanto desde OS 9 o OS X.
 

@@ -1,67 +1,96 @@
-<!-- retain these comments for translator revision tracking -->
-<!-- original version: 11648 untranslated -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- original version: 22935 -->
 
  <sect1 id="automatic-install">
- <title>Automatic Installation</title>
+ <title>Instalación automática</title>
 <para>
 
-For installing on multiple computers it's possible to do fully
-automatic installations. Debian packages intended for this include
-<classname>fai</classname> (which uses an install server),
+Para la instalación de múltiples ordenadores, es posible efectuar
+instalaciones totalmente automáticas. Los paquetes Debian que tienen
+este propósito incluyen
+<classname>fai</classname> (que usa un servidor de instalación),
 <classname>replicator</classname>,
 <classname>systemimager</classname>,
-<classname>autoinstall</classname>, and
-<classname>debian-installer</classname>.
+<classname>autoinstall</classname> y el
+mismo instalador de Debian.
 
 </para>
 
 <sect2>
-<title>debian-installer</title>
-<!-- the information from Sesse
-> IIRC you are the person that did various automated installs with d-i.
->
-> Where do I read more about it?
-
-Well, there isn't really much to read; I think I've summarized my experiences
-a few times, but of course I can do it again (a bit short, though):
-
-- cdebconf preseeding works very well; the latest cdebconf should also work
-  correctly wrt. automated installs (debconf/showold = false by default), it
-  was broken for a while. I just add the cdebconf database to the
-  installation media, and use a custom udeb or two (which can be found at
-  http://people.debian.org/~sesse/, but should probably be cleaned up some).
-  The simplest way to get this database is to install manually once, then
-  prune the cdebconf database manually and just insert it in the right place.
-- Partitioning is done with autopartkit, also works well at least for my
-  purposes. I think partman can do something like this as well.
-- Likewise, debconf preseeding works well; one of my udebs drop some
-  base-config fragments in the right place which skip the root password
-  generation etc. and pop the right info into the debconf database, as well
-  as install a metapackage depending on whatever I want. (In the future, I'll
-  probably use pkgsync for this; see my ITP on `pkgsync'. :-) )
-
-Let me know if you're wondering about something more specific. Note that I
-haven't been able to touch d-i in a month or two, so I don't know how
-broken/working automated installs are ATM. :-)
-
-/* Steinar */
--->
-
-<para>this section needs love &amp; care</para>
+<title>Instalación automática usando el instalador de Debian</title>
 
 <para>
-Do a Manual install
-</para>
+El instalador de Debian soporta instalaciones automátizadas a través
+de ficheros de preconfiguración. Un fichero de preconfiguración puede
+ser cargado desde la red o desde medios removibles y ser usado para
+responder las preguntas formuladas durante el proceso de instalación.
 
-<para>
-Save the answers from the debconf database,
- <filename>/var/log/debian-installer/cdebconf</filename>,
- into a file.
-</para>
+</para><para>
 
-<para>
-Put the file in <filename>preseeding udeb</filename>
+El fichero de preconfiguración tiene el mismo formato usado por
+la orden «debconf-set-selections». Puede encontar un ejemplo muy bien
+documentado, que funciona y puede editar en
+<xref linkend="example-preseed"/>.
+
+</para><para>
+
+El fichero de preconfiguración tiene el formato usado por la
+orden «debconf-set-selections», una forma de obtener un fichero
+completo que lista todos los valores que pueden ser preconfigurados,
+es efectuar una instalación manual y luego usar
+la orden <filename>debconf-get-selections</filename>, que trae el
+paquete <classname>debconf-utils</classname>. Para
+volcar tanto la base de datos de debconf como la de cdebconf en
+/var/log/debian-installer/cdebconf hacia un solo fichero use:
+
+<informalexample><screen>
+debconf-get-selections --installer > fichero
+debconf-get-selections >> fichero
+</screen></informalexample>
+
+</para><para>
+
+Sin embargo, un fichero generado de esta manera tendrá algunos
+elementos que no deben ser preconfigurados, por lo que el fichero
+de <xref linkend="example-preseed"/> es un mejor punto de partida
+para la mayoría de usuarios.
+
+</para><para>
+
+Una vez que tiene un fichero de preconfiguración, puede editarlo en
+caso sea necesario, y colocarlo en un servidor web, o copiarlo en el
+medio de instalación del instalador. En donde quiera que coloque
+el fichero, necesitará pasar un parámetro al instalador al momento
+de arranque para indicarle que lo use.
+
+</para><para>
+
+Para hacer que el instalador use un fichero de preconfiguración 
+descargado desde la red, añada 
+«preseed/url=http://url/a/preseed.cfg» a los parámetros de arranque
+del núcleo. Obviamente la preconfiguración no tendrá efecto hasta
+que el instalador consiga configurar la red para descargar el fichero,
+de modo que es mas útil si el instalador puede configura la red a través
+de DHCP sin formular alguna pregunta. Podría querer definir la prioridad
+de la instalación a «critical» para evitar cualquier pregunta mientras
+se configura la red. Vea <xref linkend="installer-args"/>.
+
+</para><para>
+
+Para colocar un fichero de preconfiguración en un CD, necesitará
+remasterizar la imagen ISO para incluir su fichero de preconfiguración.
+Vea la página de manual de «mkisofs» para más detalles. Alternativamente,
+puede poner el fichero de preconfiguración en un disquetem y usar
+el parámetro «preseed/file=/floppy/preseed.cfg»
+
+</para><para arch="i386">
+
+Si arrancará desde un dispositivo de memoria USB, entonces simplemente
+puede copiar su fichero de preconfiguración en el sistema de ficheros
+de este medio, y editar el fichero «syslinux.cfg» para añadir
+«preseed/file=/hd-media/preseed.cfg» a los parámetros de arranque
+del núcleo.
+
 </para>
 </sect2>
-
  </sect1>

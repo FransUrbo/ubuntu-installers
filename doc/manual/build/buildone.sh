@@ -1,12 +1,12 @@
 #!/bin/sh
 
-if [ "$#" -ne 2 ]; then
+if [ "$1" = "--help" ]; then
     echo "Usage: $0 arch lang"
-    exit 1
+    exit 0
 fi
 
-arch=${1-i386}
-language=${2-en}
+arch=${1:-i386}
+language=${2:-en}
 
 ## Function to check result of executed programs and exit on error
 checkresult () {
@@ -16,9 +16,11 @@ checkresult () {
 }
 
 ## First we define some paths to various xsl stylesheets
-stylesheet_profile="/usr/share/sgml/docbook/stylesheet/xsl/nwalsh/profiling/profile.xsl"
+#stylesheet_profile="/usr/share/sgml/docbook/stylesheet/xsl/nwalsh/profiling/profile.xsl"
+stylesheet_profile="style-profile.xsl"
 stylesheet_html="style-html.xsl"
 stylesheet_fo="style-fo.xsl"
+stylesheet_latex="style-latex.xsl"
 
 ## Location to our tools
 xsltprocessor=xsltproc
@@ -46,6 +48,7 @@ case $arch in
         other="supports-serial-console;rescue-needs-root-disk"
         smp="supports-smp"
         goodies=""
+	status="not-checked"
         ;;
     amd64)
         archspec="amd64;not-i386;not-s390;not-m68k;not-powerpc;not-alpha"
@@ -68,6 +71,7 @@ case $arch in
         other="supports-serial-console;rescue-needs-root-disk"
         smp=""
         goodies="supports-lang-chooser"
+	status="not-checked"
         ;;
     hppa)
         archspec="hppa;not-i386;not-s390;not-m68k;not-powerpc;not-alpha"
@@ -79,6 +83,7 @@ case $arch in
         other="supports-serial-console;rescue-needs-root-disk"
         smp=""
         goodies="supports-lang-chooser"
+	status="not-checked"
         ;;
     i386)
         archspec="i386;not-s390;not-m68k;not-powerpc;not-alpha"
@@ -90,6 +95,7 @@ case $arch in
         other="supports-pcmcia;supports-serial-console;rescue-needs-root-disk;workaround-bug-99926"
         smp="supports-smp-sometimes"
         goodies="supports-lang-chooser"
+	status="checked"
         ;;
     ia64)
         archspec="ia64;not-i386;not-s390;not-m68k;not-powerpc;not-alpha"
@@ -101,10 +107,11 @@ case $arch in
         other="supports-serial-console;rescue-needs-root-disk"
         smp="supports-smp"
         goodies="supports-lang-chooser"
+	status="checked"
         ;;
     m68k)
         archspec="m68k;not-i386;not-s390;not-powerpc;not-alpha"
-        kernelversion="2.4.27"
+        kernelversion="2.2.25"
 
         fdisk="atari-fdisk.txt;mac-fdisk.txt;amiga-fdisk.txt;pmac-fdisk.txt"
         network="supports-tftp;supports-rarp;supports-dhcp;supports-bootp;supports-nfsroot"
@@ -112,6 +119,7 @@ case $arch in
         other="supports-serial-console;rescue-needs-root-disk"
         smp=""
         goodies="supports-lang-chooser"
+	status="checked"
         ;;
     mips)
         archspec="mips;not-i386;not-s390;not-m68k;not-powerpc;not-alpha"
@@ -123,6 +131,7 @@ case $arch in
         other="supports-serial-console;rescue-needs-root-disk"
         smp=""
         goodies=""
+	status="not-checked"
         ;;
     mipsel)
         archspec="mipsel;not-i386;not-s390;not-m68k;not-powerpc;not-alpha"
@@ -134,6 +143,7 @@ case $arch in
         other="supports-serial-console;rescue-needs-root-disk"
         smp=""
         goodies=""
+	status="not-checked"
         ;;
     powerpc)
         archspec="powerpc;not-s390;not-m68k;not-i386;not-alpha"
@@ -145,6 +155,7 @@ case $arch in
         other="supports-pcmcia;supports-serial-console;rescue-needs-root-disk"
         smp="supports-smp"
         goodies="supports-lang-chooser"
+	status="not-checked"
         ;;
     s390)
         archspec="s390;not-powerpc;not-m68k;not-i386;not-alpha"
@@ -156,6 +167,7 @@ case $arch in
         other="rescue-needs-root-disk"
         smp="defaults-smp"
         goodies=""
+	status="not-checked"
         ;;
     sparc)
         archspec="sparc;not-i386;not-s390;not-m68k;not-powerpc;not-alpha"
@@ -167,6 +179,7 @@ case $arch in
         other="supports-serial-console;rescue-needs-root-disk"
         smp="supports-smp"
         goodies=""
+	status="not-checked"
         ;;
     *)
         echo "Unknown architecture ${arch}! Please elaborate."
@@ -174,7 +187,7 @@ case $arch in
 esac
 
 ## Join all gathered info into one big variable
-cond="$fdisk;$network;$boot;$smp;$other;$goodies;$unofficial_build"
+cond="$fdisk;$network;$boot;$smp;$other;$goodies;$unofficial_build;$status"
 
 ## Write dynamic non-profilable entities into the file
 echo "<!-- arch- and lang-specific non-profilable entities -->" > $dynamic
@@ -189,14 +202,20 @@ sed s/\"en/\"..\\/${language}/ docstruct.ent >>$dynamic
 ## And finally we use two pass encoding (needed for correct <xref>s)
 
 ## First we profile the document for our architecture...
-$xsltprocessor --stringparam profile.arch "$archspec" \
-               --stringparam profile.condition "$cond" \
-               --output install.${language}.profiled.xml \
-               $stylesheet_profile install.${language}.xml
+$xsltprocessor \
+    --xinclude \
+    --stringparam profile.arch "$archspec" \
+    --stringparam profile.condition "$cond" \
+    --output install.${language}.profiled.xml \
+    $stylesheet_profile \
+    install.${language}.xml
 checkresult $?
 
 ## ...then we convert it to the .html...
-$xsltprocessor $stylesheet_html install.${language}.profiled.xml
+$xsltprocessor \
+    --xinclude \
+    $stylesheet_html \
+    install.${language}.profiled.xml
 checkresult $?
 
 ## ...and also to the .fo...

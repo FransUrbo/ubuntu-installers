@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: boot-new.xml 16468 2004-05-30 08:19:12Z mck-guest $ -->
-<!-- original version: 16340 -->
+<!-- $Id: boot-new.xml 22073 2004-09-26 06:53:09Z mck-guest $ -->
+<!-- original version: 21672 -->
 
 <chapter id="boot-new">
  <title>Zavedení vašeho nového systému</title>
@@ -10,13 +10,6 @@
 <para>
 
 Teď přichází chvíle <emphasis>zahoření</emphasis> systému.
-
-</para><para arch="s390">
-
-Z menu zvolte položku <guimenuitem>Dokončit instalaci</guimenuitem>,
-což v tomto případě zastaví systém, protože restartování není na
-&arch-title; podporováno.  Poté musíte zavést (IPL) GNU/Linux z DASD,
-které jste na začátku instalace vybrali pro kořenový systém.
 
 </para><para>
 

@@ -21,10 +21,11 @@
 ]>
 
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: install.de.xml 14559 2004-05-01 12:49:03Z waldi $ -->
+<!-- original version: 22663 untranslated -->
 
 <book lang="de">
 
+&bookinfo.xml;
 &preface.xml;
 <toc/>
 &welcome.xml;
@@ -35,10 +36,15 @@
 &using-d-i.xml;
 &boot-new.xml;
 &post-install.xml;
+
+<!--appendices-->
+
 <!-- coming soon to a cvs site near you -->
 <!-- &tech-info.xml; -->
+&installation-howto.xml;
 &partitioning.xml;
-&appendix.xml;
+&random-bits.xml;
 &administrivia.xml;
+&gpl.xml;
 
 </book>

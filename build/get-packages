@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# get-packages <type> <package> ...
+# get-packages <type> <package> | <update> ...
 #
 # Download deb or udeb package with the help of apt-get
 # type : deb | udeb
@@ -67,8 +67,8 @@ APT_GET="apt-get --assume-yes \
 # Prepare APTDIR
 mkdir -p $APTDIR/state/lists/partial
 mkdir -p $APTDIR/cache/archives/partial
+echo -n > $APTDIR/state/status
 if [ "$TYPE" = "deb" ]; then
-	echo -n > $APTDIR/state/status
 	APT_GET="$APT_GET -o Dir::State::Status=`pwd`/$APTDIR/state/status"
 else
 	# Prime status file with system libraries
@@ -100,6 +100,10 @@ if [ "$ONLINE" = "y" ]; then
 		exit 1
 	}
 	$APT_GET autoclean
+fi
+
+if [ "$PACKAGES" = update ]; then
+	exit 0
 fi
 
 # If there are local (u)debs, remove them from the list of things to

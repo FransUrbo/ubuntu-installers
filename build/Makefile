@@ -119,7 +119,7 @@ define recurse
 endef
 
 define genext2fs-userdevfs
-  genext2fs -d $(TREE) -b $(USERDEVFS_SIZE) -r 0 -f userdevfs-dev.txt
+  genext2fs -d $(TREE) -b $(USERDEVFS_SIZE) -r 0 -f userdevfs-devs
 endef
 
 define genext2fs
@@ -201,6 +201,7 @@ list:
 	@echo
 	@echo "list"
 	@echo "all_build"
+	@echo "all_rebuild"
 	@echo "stats"
 	@echo "all_clean"
 	@echo "reallyclean"
@@ -246,7 +247,7 @@ _clean: tree_umount
 	rm -f $(TEMP)/all.utf
 	rm -f $(TEMP)/unifont.bdf $(TREE)/unifont.bgf
 	rm -f pkg-lists/standard-udebs pkg-lists/kernel-module-udebs
-	rm -f $(TARGET)
+	rm -rf $(TARGET)
 	rm -rf $(TEMP)
 
 #
@@ -264,10 +265,14 @@ _build:
 	@[ -n "$(SUBARCH) $(MEDIUM) $(FLAVOUR)" ] || { echo "invalid target"; false; }
 	@$(submake) tree_umount $(EXTRATARGETS) $(TARGET)
 
-# Convenience rule to clean and build.
+# Convenience rules to clean and build.
 .PHONY: rebuild_%
 rebuild_%:
 	@$(submake) clean_$(subst rebuild_,,$@) build_$(subst rebuild_,,$@)
+
+.PHONY: _rebuild
+_rebuild:
+	@$(submake) _clean _build
 
 #
 # The general tree target.
@@ -384,7 +389,7 @@ $(STAMPS)tree-$(targetstring)-stamp: $(STAMPS)tree-unpack-$(targetstring)-stamp
 	# Create a dev tree.
 	mkdir -p $(TREE)/dev
 	# Always needed, in case devfs is not mounted on boot.
-	# userdevfs uses userdevfs-dev.txt w/genext2fs
+	# userdevfs uses userdevfs-devs w/genext2fs
 ifndef USERDEVFS
 	mknod $(TREE)/dev/console c 5 1
 	mknod $(TREE)/dev/null c 1 3
@@ -426,11 +431,19 @@ endif
 		$(DPKGDIR)/status > $(DPKGDIR)/status.new
 	mv $(DPKGDIR)/status.new $(DPKGDIR)/status
 
+	# Add a dummy entry for the debian installer itself to the status
+	# file, giving the overall version of this build.
+	echo "Package: debian-installer" >> $(DPKGDIR)/status
+	echo "Status: install ok installed" >> $(DPKGDIR)/status
+	echo "Version: $(subst _,-,$(targetstring))-$(BUILD_DATE)" >> $(DPKGDIR)/status
+	echo "Description: debian installation image" >> $(DPKGDIR)/status
+	echo >> $(DPKGDIR)/status
+
 ifdef DROP_LANG
 	# Remove languages from the templates.
 	# Not ideal, but useful if you're very tight on space.
 	set -e; \
-	for FILE in $$(find $(TREE) -name "*.templates"); do \
+	for FILE in $$(find $(TREE)/var/lib/dpkg -name "*.templates"); do \
 		perl -e 'my $$status=0; my $$drop=shift; while (<>) { if (/^[A-Z]/ || /^$$/) { if (/^(Choices|Description)-($$drop)/) { $$status = 0 } else { $$status = 1 } } print if ($$status); }' ${DROP_LANG} < $$FILE > temp; \
 		mv temp $$FILE; \
 	done
@@ -493,7 +506,7 @@ endif
 
 # Get the list of udebs to install.
 # HACK Alert: pkg-lists/ is still sorted by TYPE instead of a dir hierarchy.
-UDEBS = $(shell set -e; ./pkg-list $(TYPE) $(KERNEL_FLAVOUR) $(KERNELMAJOR) "$(SUBARCH)" $(KERNELIMAGEVERSION)) $(EXTRAS)
+UDEBS = $(shell set -e; ./get-packages udeb update >&2; ./pkg-list $(TYPE) "$(DRIVER_FOR)" $(KERNEL_FLAVOUR) $(KERNELMAJOR) "$(SUBARCH)" $(KERNELIMAGEVERSION)) $(EXTRAS)
 
 # Get all required udebs and put them in UDEBDIR.
 $(STAMPS)get_udebs-$(targetstring)-stamp: sources.list.udeb
@@ -515,7 +528,7 @@ sources.list.udeb:
 		|awk '{print $$1 " " $$2}' \
 		|sed "s,/* *$$, $(SUITE) main/debian-installer," \
 		|sed "s,^deb file,deb copy," \
-		|sort |uniq; \
+		|perl -ne 'print unless $$seen{$$_}; $$seen{$$_}=1' ; \
 	fi) > $@
 
 sources.list.deb:
@@ -619,18 +632,29 @@ $(MINIISO): $(TEMP_MINIISO)
 
 $(TEMP_MINIISO): $(TEMP_BOOT_SCREENS) arch_miniiso
 
-# various kinds of information, for use on debian-cd isos.
+# various kinds of information, for use on debian-cd isos
 $(DEBIAN_CD_INFO): $(TEMP_BOOT_SCREENS)
 	(cd $(TEMP_BOOT_SCREENS); tar czf - .) > $@
 	./update-manifest $@ $(MANIFEST-DEBIAN_CD_INFO)
 
-# a tarball for pxe netbooting.
-$(PXE_BOOT): $(TEMP_BOOT_SCREENS) $(TEMP_PXE_BOOT)
-	(cd $(TEMP_PXE_BOOT); tar czf - .) > $@
-	./update-manifest $@ $(MANIFEST-PXE_BOOT)
+# a directory full of files for netbooting
+$(NETBOOT_DIR): $(NETBOOT_DIR_TARGETS) $(TEMP_BOOT_SCREENS) $(TEMP_NETBOOT_DIR)
+	rm -rf $(SOME_DEST)/$(EXTRANAME)/debian-installer
+	mkdir -p $(SOME_DEST)/$(EXTRANAME)/debian-installer
+	cp -a $(TEMP_NETBOOT_DIR)/debian-installer/* $@
+	$(foreach link,$(NETBOOT_DIR_LINKS), \
+		rm -f $@/../$(link); \
+		cp -a $(TEMP_NETBOOT_DIR)/$(link) $@/..; \
+	)
+	./update-manifest $@ $(MANIFEST-NETBOOT_DIR)
+
+# a tarball for netbooting
+$(NETBOOT_TAR): $(TEMP_NETBOOT_DIR)
+	(cd $(TEMP_NETBOOT_DIR); tar czf - .) > $@
+	./update-manifest $@ $(MANIFEST-NETBOOT_TAR)
 
 $(TEMP_BOOT_SCREENS): arch_boot_screens
-$(TEMP_PXE_BOOT): arch_pxe_boot
+$(TEMP_NETBOOT_DIR): arch_netboot_dir
 
 $(MISC): TEMP_REAL_MISC = $(shell echo ./$@ |sed 's,$(SOME_DEST)/$(EXTRANAME),,')
 $(MISC): 
@@ -649,12 +673,7 @@ $(TEMP_EXTRA): $(STAMPS)extra-$(targetstring)-stamp
 	install -d $(TREE)
 	set -e; case $(INITRD_FS) in \
 	ext2) \
-		if [ "$(IMAGE_SIZE)" = 1440 ]; then \
-			genext2fs -d $(TREE) -b 1433 -r 0 $@; \
-		else \
-			genext2fs -d $(TREE) -b $(IMAGE_SIZE) -r 0 $@;\
-		fi \
-	;; \
+		genext2fs -d $(TREE) -b $(IMAGE_SIZE) -r 0 $@ ;; \
 	cramfs) \
 		$(mkcramfs) $@ ;; \
 	*) \
@@ -667,12 +686,10 @@ $(STAMPS)extra-$(targetstring)-stamp: $(STAMPS)get_udebs-$(targetstring)-stamp
 	@rm -f $@
 	mkdir -p $(TREE)
 	echo -n > $(TEMP)/diskusage.txt
+	
 	set -e; \
-	for file in $(shell grep --no-filename -v ^\#  pkg-lists/$(TYPE)/common \
-		`if [ -f pkg-lists/$(TYPE)/$(ARCH).cfg ]; then echo pkg-lists/$(TYPE)/$(ARCH).cfg; fi` \
-		`if [ -f pkg-lists/$(TYPE)/$(ARCH)/$(SUBARCH).cfg ]; then echo pkg-lists/$(TYPE)/$(ARCH)/$(SUBARCH).cfg; fi` \
-		| sed -e 's/^\(.*\)$${kernel:Version}\(.*\)$$/$(foreach VERSION,$(KERNELIMAGEVERSION),\1$(VERSION)\2\n)/g' ) ; do \
-			cp $(UDEBDIR)/$$file* $(TREE) ; \
+	for file in $(UDEBS); do \
+		cp $(UDEBDIR)/$$file* $(TREE) ; \
 	done
 	for udeb in $(TREE)/*.udeb ; do \
 		if [ -f "$$udeb" ]; then \
@@ -692,7 +709,7 @@ $(STAMPS)extra-$(targetstring)-stamp: $(STAMPS)get_udebs-$(targetstring)-stamp
 
 # Get a list of all the standard priority udebs, excluding kernel stuff.
 pkg-lists/standard-udebs:
-	./get-packages udeb
+	./get-packages udeb update
 	grep-dctrl -FPriority -e 'required|standard|important' \
 		-sPackage apt.udeb/state/lists/*_Packages* | \
 		grep -v kernel-image | grep -v -- -modules | \
@@ -702,7 +719,7 @@ pkg-lists/standard-udebs:
 
 # Get a list of all kernel modules matching the kernel version.
 pkg-lists/kernel-module-udebs:
-	./get-packages udeb
+	./get-packages udeb update
 	grep-dctrl -P -e '.*-modules-$(KERNELVERSION)-$(KERNEL_FLAVOUR)' \
 		-sPackage apt.udeb/state/lists/*_Packages* | \
 		cut -d " " -f 2 > $@

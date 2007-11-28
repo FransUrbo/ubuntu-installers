@@ -36,10 +36,10 @@ SUITE = unstable
 DPKG_UNPACK_OPTIONS = --force-overwrite
 
 # The version of Debian targeted by the installation images.
-DEBIAN_VERSION = 4.10 (Warty Warthog)
+DEBIAN_VERSION = 5.04 (Hoary Hedgehog)
 
 # The date the installer is built.
-BUILD_DATE = $(shell date +%Y%m%d)
+BUILD_DATE ?= $(shell date +%Y%m%d)
 
 # Filesystem type for the initrd, currently valid values are ext2 and
 # cramfs.

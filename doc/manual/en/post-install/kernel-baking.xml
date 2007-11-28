@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: kernel-baking.xml 16990 2004-06-19 22:09:49Z fjpop-guest $ -->
+<!-- $Id: kernel-baking.xml 23058 2004-10-12 23:51:17Z cjwatson $ -->
 
  <sect1 id="kernel-baking"><title>Compiling a New Kernel</title>
 <para>

@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: dhcp.xml 18626 2004-07-27 19:19:02Z joeyh $ -->
+<!-- $Id: dhcp.xml 22664 2004-10-06 15:49:49Z fjpop-guest $ -->
 
 
   <sect2 condition="supports-dhcp" id="dhcpd">
@@ -56,7 +56,7 @@ restart it with <userinput>/etc/init.d/dhcpd restart</userinput>.
 </para>
 
    <sect3 arch="i386">
-   <title>PXE Booting</title>
+   <title>Enabling PXE Booting in the DHCP configuration</title>
 <para>
 Here is another example for a <filename>dhcp.conf</filename> using the
 Pre-boot Execution Environment (PXE) method of TFTP.

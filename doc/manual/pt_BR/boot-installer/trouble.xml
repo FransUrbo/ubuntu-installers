@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: trouble.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
-<!-- original version: 1.6 -->
+<!-- original version: 20466 -->
 
  <sect1 id="boot-troubleshooting">
  <title>Problemas e Processo de Instalação</title>
@@ -66,8 +65,8 @@ discutidos em <xref linkend="boot-parms"/>.
 
 Se estiver inicializando com seu próprio kernel ao invés de um 
 fornecido com o programa de instalação, tenha certeza que 
-<userinput>CONFIG_DEVFS</userinput> não está ativado em seu
-kernel. O programa de instalação não é compatível com 
+<userinput>CONFIG_DEVFS</userinput> está ativado em seu
+kernel. O programa de instalação requer
 <userinput>CONFIG_DEVFS</userinput>.
 
 </para><para>
@@ -76,16 +75,6 @@ Alguns problemas podem ser resolvidos com freqüência removendo
 coisas adicionais e periféricos e então tentando novamente 
 iniciar. <phrase arch="i386">Modens internos, placas de som 
 e dispositivos Plug-n-Play podem ser especialmente problemáticos.</phrase>
-
-</para><para>
-
-Existe, no entanto, algumas limitações em seu conjunto de disquetes
-de inicialização com respeito a hardwares suportados. Algumas
-plataformas suportadas pelo Linux podem não ser suportadas diretamente
-pelos nossos disquetes de inicialização. Se este é o caso, você 
-terá que criar um disquete de partida personalizado (veja
-<xref linkend="rescue-replace-kernel"/>) ou investigar as 
-instalações da rede.
 
 </para><para>
 
@@ -141,7 +130,7 @@ Este relatório deverá ser enviado em idioma Inglês.
 </para><para>
 
 Outras mensagens e instalação importantes podem ser encontradas
-em <filename>/target/var/log/debian-installer/</filename> durante
+em <filename>/var/log/</filename> durante
 a instalação e <filename>/var/log/debian-installer/</filename>
 após o computador inicializar no sistema de instalação.
 
@@ -149,63 +138,70 @@ após o computador inicializar no sistema de instalação.
   </sect2>
 
   <sect2 id="submit-bug">
-  <title>Enviando Relatórios de Falhas</title>
+  <title>Enviando Relatórios de Instalação</title>
 <para>
 
-Caso ainda tiver problemas, por favor envia um relatório de falha. 
-Envie um e-mail para  <email>submit@bugs.debian.org</email>. Você
-<emphasis>deve</emphasis> incluir o seguinte como primeiras 
-linhas do e-mail:
+Caso ainda tenha problemas, envie por favor um relatório de instalação. 
+Nós também encorajamos o envio de relatórios de instalação até mesmo 
+se tudo correr bem durante a instalação, assim teremos uma grande quantiade
+de informações disponíveis e uma larga quantidade de configurações de hardware.
+Utilize este modelo quando preencher o relatório de instalação e envie um 
+relatório de erro como falha no pseudo pacote
+"installation-reports" para o destinatário
+<email>submit@bugs.debian.org</email>.
 
 <informalexample><screen>
 
-Package: install
-Version: <replaceable>versão</replaceable>
+Package: installation-reports
+
+Debian-installer-version: &lt;Preencha com a data e de onde pegou a imagem de 
+instalação&gt;
+uname -a: &lt;O resultado da execução do comando uname -a no aviso de comando&gt;
+Date: &lt;Data e Hora da instalação&gt;
+Method: &lt;Como foi feita a instalação? Seu método de inicialização? Caso foi feita
+	uma instalação via rede, a partir de onde? feita através de Proxy?&gt;
+
+Machine: &lt;Descrição da máquina (eg, IBM Thinkpad R32)&gt;
+Processor:
+Memory:
+Root Device: &lt;IDE?  SCSI?  Nome do dispositivo?&gt;
+Root Size/partition table: &lt;Sinta-se livre para colar toda a tabela de 
+      partições com notas de que partições estão montadas aonde.&gt;
+Saída do comando lspci e lspci -n:
+
+Lista de checagens da instalação do sistema básico:
+[O] = OK, [E] = Error (por favor, descreva abaixo), [ ] = não utilizei/tentei
+
+Initial boot worked:    [ ] (inicialização do sistema funcionou)
+Configure network HW:   [ ] (Configuração do Hardware de rede)
+Config network:         [ ] (Configuração de rede)
+Detect CD:              [ ] (Detecção do CD)
+Load installer modules: [ ] (Carregar módulos do programa de instalação)
+Detect hard drives:     [ ] (Detecção de discos rígidos)
+Partition hard drives:  [ ] (Particionamento de discos rígidos)
+Create file systems:    [ ] (Criação de sistemas de arquivos)
+Mount partitions:       [ ] (Montagem de partições)
+Install base system:    [ ] (Instalação do sistema básico)
+Install boot loader:    [ ] (Instalação do gerenciador de partida)
+Reboot:                 [ ] (Reinicialização)
+
+Comentários/Problemas:
+
+&lt;Descrição da instalação, como uma conversa e qualquer idéia, idéias, 
+comentários que teve durante a instalação (você precisará envia-la em 
+inglês).&gt;
 
 </screen></informalexample>
 
-Tenha certeza de preencher <replaceable>versão</replaceable> com a 
-versão do debian-installer que você usou. Caso não saiba o 
-número de versão, preencha com a data que baixou a imagem de CD e 
-inclua a localização de onde o encontrou ou diga a origem do CD 
-que adquiriu.
-
 </para><para>
 
-Você deverá incluir as seguintes informações em seu relatório 
-de falha. Caso use o programa <command>reportbug</command> para
-enviar seu relatório, esta informação será incluída automaticamente.
-
-<informalexample><screen>
-
-<phrase arch="i386">
-flavor:        <replaceable>tipo da imagem que está usando</replaceable>
-</phrase>
-architecture:  &architecture; 
-model:         <replaceable>o nome do fabricante do seu hardware e modelo</replaceable>
-memory:        <replaceable>quantidade de memória RAM</replaceable>
-scsi:          <replaceable>placa adaptadora SCSI, se tiver</replaceable>
-cd-rom:        <replaceable>modelo da unidade de CD-ROM e tipo da interface, e.g., ATAPI</replaceable>
-network card:  <replaceable>placa de rede, se tiver</replaceable>
-pcmcia:        <replaceable>detalhes de qualquer dispositivo PCMCIA</replaceable>
-
-</screen></informalexample>
-
-</para><para>
-
-Dependendo da natureza da falha, pode também ser útil relatar 
-se está instalando para discos IDE ou SCSI, outros periféricos como
-audio, capacidade de disco e modelo da placa de vídeo.
-
-</para><para>
-
-Neste relatório de falha, descreva qual é o seu problema incluindo
-pelo menos as mensagens visíveis do kernel no evento do travamento
-do kernel. Descreva os passos que realizou até o estado defeituoso
-do sistema.
+No relatório de falha, descreva qual foi seu problema, incluindo as 
+últimas mensagens visíveis do kernel caso o kernel tenha travado. 
+Descreva os passos realizados até chegar no momento do problema.
 
 </para>
 
   </sect2>
 
  </sect1>
+

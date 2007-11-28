@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- retain these comments for translator revision tracking -->
-<!-- original version: 11648 -->
+<!-- original version: 18647 -->
 
 
  <sect1 id="linuxdevices"><title>Dispositivos en Linux</title>
 <para>
 
-En Linux tiene varios ficheros especiales en <filename>/dev</filename>.
+Linux tiene varios ficheros especiales en <filename>/dev</filename>.
 Estos ficheros se llaman ficheros de dispositivo. En el mundo Unix el
 acceso al hardware es diferente. Allí tiene un fichero especial que
 en realidad ejecuta un controlador de dispositivo que le permite el
 acceso al hardware. El fichero de dispositivo es un interfaz a un 
-componente del sistema actual. Los ficheros en <filename>/dev</filename> se 
-comportan también de manera diferente a los ficheros ordinarios. 
-Más abajo están listados los ficheros de dispositivo más importantes.
+componente real del sistema. Los ficheros en <filename>/dev</filename>
+se comportan también de manera diferente a los ficheros ordinarios. 
+A continuación se lista los ficheros de dispositivo más importantes.
 
 </para><para>
 
@@ -133,16 +132,17 @@ mouse =&#62; /dev/psaux  =&#62; gpm =&#62; /dev/gpmdata -&#62; /dev/mouse =&#62;
 
 </para><para>
 
-Configure el protocolo del repetidor como raw (en <filename>/etc/gpm.conf</filename>) mientras
-configura X al protocolo de ratón original en <filename>/etc/X11/XF86Config</filename>
-o <filename>/etc/X11/XF86Config-4</filename>.
+Configure el protocolo del repetidor como raw (en 
+<filename>/etc/gpm.conf</filename>) mientras configura X al protocolo de 
+ratón original en <filename>/etc/X11/XF86Config</filename> o 
+<filename>/etc/X11/XF86Config-4</filename>.
 
 </para><para>
 
 Este enfoque de usar gpm incluso en X tiene ventajas cuando el ratón
 se desconecta inadvertidamente. Simplemente reiniciando gpm con
 <informalexample><screen>
-user@debian:# /etc/init.d/gpm restart
+usuario@debian:# /etc/init.d/gpm restart
 </screen></informalexample>
 volverá a conectar el ratón a través de software sin reiniciar X.
 
@@ -150,8 +150,8 @@ volverá a conectar el ratón a través de software sin reiniciar X.
 
 Si gpm se desactiva o no se instala por alguna razón, asegúrese de
 configurar X para leer directamente desde un dispositivo de ratón tal como
-/dev/psaux. Para más detalles, refierase a el mini-Como 3 botones en el Ratón
-en
+/dev/psaux. Para más detalles, consulte el mini-Como 3 botones en el
+ratón en
 <filename>/usr/share/doc/HOWTO/en-txt/mini/3-Button-Mouse.gz</filename>, 
 <userinput>man gpm</userinput>, 
 <filename>/usr/share/doc/gpm/FAQ.gz</filename> y
@@ -178,7 +178,7 @@ siguientes líneas al fichero <filename>/etc/sysctl.conf</filename>.
 /dev/mac_hid/mouse_button2_keycode = 87
 # Hacer que el botón derecho funcione al pulsar la tecla F12
 /dev/mac_hid/mouse_button3_keycode = 88
-# Para usar teclas diferentes, utilize showkey para saber el código de éstas.
+# Para usar teclas diferentes, utilice showkey para saber el código de éstas.
 
 </screen></informalexample>  
 </para>
@@ -189,21 +189,16 @@ siguientes líneas al fichero <filename>/etc/sysctl.conf</filename>.
  <title>Espacio en disco requerido para las tareas</title>
 <para>
 
-La instalación base de Woody en el computador del autor requirió
-117MB. El tamaño de instalación para todos los paquetes estándar fue
-123MB, con un tamaño de descarga de 38MB; de modo que se requirió
-278MB de espacio para instalar el sistema base y todos los paquetes
-estándar.
+La instalación base de sarge para i386, incluyendo todos
+los paquetes estándar, requiere 178MB de espacio en disco.
 
 </para><para>
 
-La siguiente tabla lista los tamaños informados por aptitude (un
-programa muy amigable por cierto) para las tareas listadas en 
-tasksel. El sistema para el cual se hizo el informe ya tenia todos
-los paquetes estándar instalados. Note que algunas tareas tienen
+La siguiente tabla lista los tamaños informados por aptitude
+para las tareas listadas en tasksel. Note que algunas tareas tienen
 componentes comunes, de modo que el tamaño total instalado para 
 dos tareas juntas podría ser inferior al total obtenido al sumar
-sus tamaños indivudualmente.
+sus tamaños individualmente.
 
 </para><para>
 
@@ -211,38 +206,12 @@ sus tamaños indivudualmente.
 Tarea                            Tamaño        Tamaño       Espacio requerido
                               instalado (MB) descarga (MB)  para instalar (MB)
 
-Entorno de escritorio              345          118           463
-Sistema X window                    78           36           114
-Juegos                              49           14            63
-Debian Jr.                         340          124           464
-Sistema acceso telefónico           28            8            36
-Sistema portátil                     3            1             4
-Aplicaciones científicas           110           30           140
-
-C y C++                             32           15            47
-Python                             103           30           133
-Tcl/Tk                              37           11            48
-Fortran                             10            4            14
-
-Servidor de ficheros                 1            -             1
-Servidor de correo                   4            3             7
-Servidor de usenet                   6            2             8
-Servidor de impresión               48           18            66
-Servidor Unix convencional          55           19            74
-Servidor web                         4            1             5
-
-Entorno TeX/LaTeX                  171           64           235
-
-Entorno Alemán                      31            9            40
-Entorno Chino simplificado          80           29           109
-Entorno Chino tradicional          166           68           234
-Entorno Cirílico                    29           13            42
-Entorno Coreano                    178           72           250
-Entorno Español                     15            4            19
-Entorno Francés                     60           18            78
-Entorno Japonés                    110           53           163
-Entorno Polaco                      58           27            85
-Entorno Ruso                        12            6            18
+Base de datos SQL	           108           33           141
+Entorno de escritorio             1537          521          2058
+Servidor de ficheros                85           34           119
+Servidor de correo                  41           12            53
+Servidor de impresión	           240           88           323 
+Servidor web                        71           21            92
 
 </screen></informalexample>
 </para>

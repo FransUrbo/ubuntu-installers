@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: iso-scan.xml 18640 2004-07-27 21:53:59Z joeyh $ -->
+<!-- $Id: iso-scan.xml 23058 2004-10-12 23:51:17Z cjwatson $ -->
 
    <sect3 id="iso-scan" condition="not-ubuntu">
    <!-- FIXME: Ubuntu doesn't support hd-media yet -->
@@ -33,7 +33,7 @@ not. In the former case we are done, in the latter
 In case the previous attempt to find an installer iso image fails,
 <command>iso-scan</command> will ask you whether you would like to
 perform a more thorough search. This pass doesn't just look into the
-topmost directories, but really traverses the whole filesystem.
+topmost directories, but really traverses whole filesystem.
 
 </para><para>
 
@@ -41,7 +41,7 @@ If <command>iso-scan</command> does not discover your installer iso
 image, reboot back to your original operating system and check if the
 image is named correctly (ending in <filename>.iso</filename>), if it is
 placed on a filesystem recognizable by &d-i;, and if it is not
-corrupted (verify the checksum). Experienced unix users could do this
+corrupted (verify the checksum). Experienced Unix users could do this
 without rebooting on the second console.
 
 </para>

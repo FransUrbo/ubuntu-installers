@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: hardware-supported.xml 14389 2004-04-25 15:03:05Z mck-guest $ -->
-<!-- original version: 14033 -->
+<!-- $Id: hardware-supported.xml 23461 2004-10-25 16:21:16Z mck-guest $ -->
+<!-- original version: 23150 -->
 
  <sect1 id="hardware-supported">
  <title>Podporovaná zařízení</title>
@@ -26,8 +26,8 @@ informace a uvedeme odkazy na doplňující dokumentaci.
 
 <para>
 
-Debian 3.0 podporuje jedenáct hlavních počítačových architektur a
-několik jejich variant.
+Debian &release; podporuje jedenáct hlavních počítačových architektur
+a několik jejich variant.
 
 </para><para>
 
@@ -114,7 +114,7 @@ několik jejich variant.
   <entry>chrp</entry>
 </row><row>
   <entry>PowerMac</entry>
-  <entry>powermac, new-powermac</entry>
+  <entry>pmac</entry>
 </row><row>
   <entry>PReP</entry>
   <entry>prep</entry>
@@ -141,19 +141,30 @@ několik jejich variant.
 </row>
 
 <row>
-  <entry>MIPS (big endian)</entry>
-  <entry>mips</entry>
-  <entry>SGI Indy/I2</entry>
+  <entry morerows="2">MIPS (big endian)</entry>
+  <entry morerows="2">mips</entry>
+  <entry morerows="1">SGI Indy/Indigo 2</entry>
   <entry>r4k-ip22</entry>
+</row><row>
+  <entry>r5k-ip22</entry>
+</row><row>
+  <entry>Broadcom BCM91250A (SWARM)</entry>
+  <entry>sb1-swarm-bn</entry>
 </row>
 
 <row>
-  <entry morerows="1">MIPS (little endian)</entry>
-  <entry morerows="1">mipsel</entry>
-  <entry morerows="1">DEC Decstation</entry>
+  <entry morerows="3">MIPS (little endian)</entry>
+  <entry morerows="3">mipsel</entry>
+  <entry>Cobalt</entry>
+  <entry>cobalt</entry>
+</row><row>
+  <entry morerows="1">DECstation</entry>
   <entry>r4k-kn04</entry>
 </row><row>
   <entry>r3k-kn02</entry>
+</row><row>
+  <entry>Broadcom BCM91250A (SWARM)</entry>
+  <entry>sb1-swarm-bn</entry>
 </row>
 
 <row>
@@ -229,7 +240,19 @@ Debian &release; je dodáván se systémem XFree86 verze &x11ver;.
 
 </para><para arch="mips">
 
-Systém X11 od XFree86 je podporován pouze na SGI Indy.
+Systém X11 od XFree86 je podporován pouze na SGI Indy. Deska Broadcom
+BCM91250A má standardní 3.3v PCI sloty a podporuje VGA emulaci nebo
+linuxový framebuffer na škále vybraných grafických karet. Pro BCM91250A
+existuje <ulink url="&url-bcm91250a-hardware;">seznam kompatibilního
+hardwaru</ulink>.
+
+</para><para arch="mipsel">
+
+Systém X11 od XFree86 je podporován na některých modelech
+DECstation. Deska Broadcom BCM91250A má standardní 3.3v PCI sloty
+a podporuje VGA emulaci nebo linuxový framebuffer na škále vybraných
+grafických karet. Pro BCM91250A existuje <ulink
+url="&url-bcm91250a-hardware;">seznam kompatibilního hardwaru</ulink>.
 
 </para>
   </sect2>
@@ -287,6 +310,32 @@ operačního systému, viz <xref linkend="kernel-baking"/>.
 Pro jádro verze &kernelversion; zapnete podporu SMP tak, že v
 konfiguračním systému jádra vyberete v sekci
 <guimenu>General</guimenu> položku <guimenuitem>symmetric
+multi-processing</guimenuitem>.
+
+</para>
+  </sect2>
+
+
+  <sect2 condition="supports-smp-sometimes">
+ <title>Víceprocesorové systémy</title>
+<para>
+
+Tato architektura umožňuje využití více procesorů &mdash;
+tzv. symetrický multiprocesing (SMP). Standardní jádro v distribuci
+Debian &release; bylo sestaveno s touto podporou, ale v závislosti na
+použitém instalačním médiu se toto jádro nemusí nainstalovat
+implicitně. Instalaci by to vadit nemělo, protože jádro bez podpory
+multiprocesingu funguje i na systému s více procesory, systém však
+bude využívat pouze první procesor.
+
+</para><para>
+
+Pro využití více procesorů se budete muset podívat, zda se
+nainstalovalo SMP jádro. Pokud ne, doinstalujte si příslušný balík.
+Další možnost je sestavit si vlastní jádro operačního systému, viz
+<xref linkend="kernel-baking"/>.  Pro jádro verze &kernelversion;
+zapnete podporu SMP tak, že v konfiguračním systému jádra vyberete
+v sekci <guimenu>General</guimenu> položku <guimenuitem>symmetric
 multi-processing</guimenuitem>.
 
 </para>

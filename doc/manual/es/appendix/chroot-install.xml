@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- retain these comments for translator revision tracking -->
-<!-- original version: 15442 -->
+<!-- original version: 22935 -->
 
  <sect1 id="linux-upgrade">
  <title>Instalar &debian; desde un sistema Unix/Linux</title>
@@ -8,20 +7,21 @@
 <para>
 
 Esta sección explica como instalar &debian; desde un sistema Unix o
-Linux existente sin usar el instalador basado en ncurses y menús,
+Linux existente, sin usar el instalador basado en ncurses y menús,
 como se explica en el resto de este manual. Este COMO de 
 «instalación-transversal» se ha sido solicitado por usuarios que están
 cambiándose a &debian; desde RedHat, Mandrake y SuSE. En esta sección 
-se asume alguna familiaridad con la introducción de órdenes *nix y navegación 
-en el sistema de ficheros. En esta sección <prompt>$</prompt> simboliza
-una orden a introducirse en el sistema actual del usuario, mientras que
-<prompt>#</prompt> se refiere a una orden introducida en el chroot de Debian.
+se asume alguna familiaridad con la introducción de órdenes *nix 
+y navegación en el sistema de ficheros. En esta sección <prompt>$</prompt>
+simboliza una orden a introducirse en el sistema actual del usuario, 
+mientras que <prompt>#</prompt> se refiere a una orden introducida en 
+el chroot de Debian.
 
 </para><para>
 
 Una vez que tenga el nuevo sistema Debian configurado a su preferencia,
 puede migrar los datos existentes de sus usuarios (si fuese el caso) a
-este y continuar funcionando. Por lo tanto esto algo mas que una
+éste y continuar funcionando. Por lo tanto esto algo mas que una
 instalación de &debian; "sin paralización". Es también una forma
 sabia de tratar con hardware que de otra manera no se comporta
 amigablemente con los diversos medios de instalación.
@@ -32,11 +32,11 @@ amigablemente con los diversos medios de instalación.
   <title>Empezando</title>
 <para>
 
-Con las herramientas actuales de particionado *nix, reparticione
-el disco duro como necesite, creando por lo menos un sistema de
+Con las herramientas actuales de particionado de *nix, reparticione
+el disco duro como necesite, debe crear por lo menos un sistema de
 ficheros más una partición de intercambio (swap). Necesita
 por lo menos 150MB de espacio disponible para una instalación de
-sólo consola o por lo menos 300MB si planea instalar X.
+solo consola o por lo menos 300MB si planea instalar X.
 
 </para><para>
 
@@ -55,7 +55,7 @@ En cambio para crear un sistema de ficheros ext2, omita <userinput>-j</userinput
 </para><para>
 
 Inicialice y active la partición de intercambio (sustituya el número de 
-partición por la partición de intercambio de Debian que usara):
+partición por la partición de intercambio de Debian que usará):
 
 <informalexample><screen>
 
@@ -68,9 +68,9 @@ partición por la partición de intercambio de Debian que usara):
 </para><para>
 
 Monte una partición como <filename>/mnt/debinst</filename> (el punto
-de instalación, para ser el sistema de ficheros raíz (<filename>/</filename>) 
-en su nuevo sistema). El nombre del punto de montaje es estrictamente 
-arbitrario, se hace referencia a éste mas adelante.
+de instalación, para ser el sistema de ficheros raíz 
+(<filename>/</filename>) en su nuevo sistema). El nombre del punto de 
+montaje es estrictamente arbitrario, mas adelante se hace referencia a éste.
 
 <informalexample><screen>
 
@@ -112,12 +112,12 @@ Cree un directorio temporal «trabajo» para extraer el .deb en él:
 </screen></informalexample>
 </para><para>
 
-El binario <command>debootstrap</command> esta ubicado en el archivo de
+El binario de <command>debootstrap</command> esta ubicado en el archivo de
 Debian (asegúrese de elegir el fichero adecuado para su arquitectura).
 Descargue el .deb de <command>debootstrap</command> desde el almacén
 de paquetes en <ulink url="http://ftp.debian.org/debian/pool/main/d/debootstrap/">
 </ulink>, copie el paquete al directorio «trabajo» y extraiga los
-ficheros binarios de éste. Necesitara privilegios de superusuario para 
+ficheros binarios de éste. Necesitará privilegios de superusuario para 
 instalar los binarios.
 
 <informalexample><screen>
@@ -132,26 +132,26 @@ instalar los binarios.
   </sect2>
 
   <sect2>
-  <title>Ejecute <command>debootstrap</command> (Conectado a red)</title>
+  <title>Ejecute <command>debootstrap</command></title>
 <para>
 
 <command>debootstrap</command> puede descargar los ficheros necesarios
 directamente desde el archivo cuando lo ejecute. Puede sustituir 
 <userinput>http.us.debian.org/debian</userinput> por cualquier réplica
-del archivo Debian en la orden de ejemplo a continuación, preferentemente 
+del archivo Debian, en la orden de ejemplo a continuación, preferentemente 
 una réplica cercana que tenga funciones de red inteligentes. Los servidores 
 de réplica están listados en: 
 <ulink url="http://www.debian.org/misc/README.mirrors"></ulink>.
 
 </para><para>
 
-Si tiene un CD de la versión Woody de &debian; montado en
-<filename>/cdrom</filename>, puede sustituir con una dirección de fichero
+Si tiene un CD de la versión &releasename; de &debian; montado en
+<filename>/cdrom</filename>, puede sustituirlo con una dirección de fichero
 en lugar de la dirección http: <userinput>file:/cdrom/debian/</userinput>
 
 </para><para>
 
-Sustituya <replaceable>ARCH</replaceable> con alguno de los siguientes en
+Sustituya <replaceable>ARQ</replaceable> con alguno de los siguientes en
 la orden <command>debootstrap</command>: 
 
 <userinput>alpha</userinput>, 
@@ -168,7 +168,7 @@ la orden <command>debootstrap</command>:
 
 <informalexample><screen>
 
- $ /usr/sbin/debootstrap --arch ARCH woody \
+ $ /usr/sbin/debootstrap --arch ARQ sarge \
      /mnt/debinst http://http.us.debian.org/debian
 
 </screen></informalexample>
@@ -178,57 +178,12 @@ la orden <command>debootstrap</command>:
   </sect2>
 
   <sect2>
-  <title>Ejecute <command>debootstrap</command> 
-  (Usando <filename>basedebs.tar</filename>)</title>
-<para>
-
-<command>debootstrap</command> puede usar el fichero
-<filename>basedebs.tar</filename>, si usted ya lo descargó
-previamente. El fichero <filename>basedebs.tar</filename> es
-generado solamente cada cierto tiempo, de modo que obtendrá
-la ultima versión del sistema base al direccionar 
-<command>debootstrap</command> directamente al archivo de Debian como
-se muestra en la sección anterior.
-
-</para><para>
-
-El fichero <filename>basedebs.tar</filename> se encuentra en el
-directorio <filename>base-images-current</filename> del archivo de
-Debian para su arquitectura, por ejemplo:
-<ulink url="http://http.us.debian.org/debian/dists/woody/main/disks-&architecture;/base-images-current/basedebs.tar"></ulink>
-
-</para><para>
-
-Sustituya <replaceable>ARCH</replaceable> con alguno de los siguientes en
-la orden <command>debootstrap</command>: 
-
-<userinput>alpha</userinput>, 
-<userinput>arm</userinput>,
-<userinput>hppa</userinput>, 
-<userinput>i386</userinput>, 
-<userinput>ia64</userinput>, 
-<userinput>m68k</userinput>,
-<userinput>mips</userinput>, 
-<userinput>mipsel</userinput>, 
-<userinput>powerpc</userinput>, 
-<userinput>s390</userinput> o
-<userinput>sparc</userinput>.
-<informalexample><screen>
- 
-$ /usr/sbin/debootstrap --arch ARCH --unpack-tarball \
-    /ruta-hacia-descarga/basedebs.tar woody /mnt/debinst
-
-</screen></informalexample>
-</para>
-  </sect2>
-
-  <sect2>
   <title>Configurar el sistema base</title>
 
 <para>
 
-Ahora usted tiene un sistema Debian real, aunque algo limitado, en
-su disco. Haga <command>Chroot</command> en este:
+Ahora tiene un sistema Debian real, aunque algo limitado, en
+su disco. Haga <command>chroot</command> en él:
 
 <informalexample><screen>
 
@@ -278,7 +233,7 @@ proc             /proc         proc    defaults                 0    0
 
 Utilice <userinput>mount -a</userinput> para montar todos los sistemas de 
 ficheros que ha especificado en <filename>/etc/fstab</filename> o
-móntelos individualmente usando:
+montelos individualmente usando:
 
 <informalexample><screen>
 
@@ -301,15 +256,6 @@ continuar:
 
 </para>
 
-<para>
-Un usuario de RedHat informa que en su sistema, debe ser
-
-<informalexample><screen>
-
- # mount -t none proc /proc
-
-</screen></informalexample>
-</para>
    </sect3>
 
    <sect3>
@@ -394,7 +340,7 @@ Un <filename>/etc/resolv.conf</filename> simple:
 
 <informalexample><screen>
 
-# search hqdom.local
+# search hqdom.local\000
 # nameserver 10.1.1.36
 # nameserver 192.168.9.100
 
@@ -406,7 +352,7 @@ Ingrese el nombre de máquina de su sistema (de 2 a 63 caracteres):
 
 <informalexample><screen>
 
- # echo DebianHostName &#62; /etc/hostname
+ # echo MaquinaDebian &#62; /etc/hostname
 
 </screen></informalexample>
 
@@ -414,7 +360,7 @@ Ingrese el nombre de máquina de su sistema (de 2 a 63 caracteres):
 
 Si tiene múltiples tarjetas de red, debe añadir los nombres de los
 módulos de controlador en el fichero <filename>/etc/modules</filename>
-en el orden que desee. Luego durante el arranque, cada tarjeta sera
+en el orden que desee. Luego durante el arranque, cada tarjeta será
 asociada con el nombre de interfaz (eth0, eth1, etc.) que espera.
 
 </para>
@@ -479,7 +425,7 @@ Luego instale su elección usando el nombre del paquete.
 
 <informalexample><screen>
 
- # apt-get install kernel-image-2.X.X-aquitectura-etc
+ # apt-get install kernel-image-2.X.X-arquitectura-etc
 
 </screen></informalexample>
 
@@ -491,17 +437,21 @@ Luego instale su elección usando el nombre del paquete.
 <para>
 
 Para hacer su sistema &debian; arrancable, configure su gestor de arranque
-para cargar el núcleo instalado en su nueva partición raíz.
+para cargar el núcleo instalado en su nueva partición raíz. Note que
+debootstrap no instala un gestor de arranque, pero puede usar apt-get
+dentro de su chroot Debian para hacer esto.
 
 </para><para arch="i386">
 
-Verifique <userinput>man lilo.conf</userinput> para instrucciones sobre
+Verifique <userinput>info grub</userinput> o 
+<userinput>man lilo.conf</userinput> para instrucciones sobre
 configurar el gestor de arranque. Si desea mantener el sistema
 que utilizó para instalar Debian, simplemente añada una entrada para
-la instalación de Debian en su lilo.conf actual. También podría copiarlo
+la instalación de Debian en su<filename>menu.lst</filename> o
+<filename>lilo.conf</filename> actual. También podría copiarlo
 al nuevo sistema y editarlo allí. Luego que finalice la edición, ejecute
-lilo (recuerde que usará el lilo.conf relativo al sistema desde el cual
-lo ejecute).
+lilo (recuerde que éste usará el<filename>lilo.conf</filename> relativo al 
+sistema desde el cual lo ejecute).
 
 </para><para arch="i386">
 
@@ -522,16 +472,16 @@ label=Debian
 </para><para arch="powerpc">
 
 Verifique <userinput>man yaboot.conf</userinput> para instrucciones
-sobre configurar el gestor de arranque. Si desea mantener el 
+sobre configuración del gestor de arranque. Si desea mantener el 
 sistema que utilizó para instalar Debian, simplemente añada una entrada
-para la instalación de Debian al yaboot.conf existente. También podría
-copiarlo al nuevo sistema y editarlo allí. Luego de que finalice la 
-edición, ejecute ybin (recuerde que usará el yaboot.conf relativo al
-sistema desde el cual lo ejecute).
+para la instalación de Debian al <filename>yaboot.conf</filename> existente.
+También podrá copiarlo al nuevo sistema y editarlo allí. Luego de que
+finalice la edición, ejecute ybin (recuerde que éste usará el
+<filename>yaboot.conf</filename> relativo al sistema desde el cual lo ejecute).
 
 </para><para arch="powerpc">
 
-Aquí tiene un ejemplo básico de /etc/yaboot.conf:
+Aquí tiene un ejempo básico de <filename>/etc/yaboot.conf</filename>:
 
 <informalexample><screen>
 
@@ -548,13 +498,6 @@ label=Debian
 
 En algunas máquinas, puede que necesite usar <userinput>ide0:</userinput> 
 en lugar de <userinput>hd:</userinput>. 
-
-</para><para arch="not-i386;not-powerpc">
-
-<phrase condition="FIXME">
-FIXME: Alguién podría, en un futuro, proporcionar un ejemplo para esta
-arquitectura.
-</phrase>
 
 </para>
   </sect2>

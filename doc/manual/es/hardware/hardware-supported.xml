@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- original version: 14033 -->
+<!-- original version: 22939 -->
+<!-- revisado por jfs, 8 octubre 2004 -->
+<!-- revisado por nahoo, 11 octubre 2004 -->
 
  <sect1 id="hardware-supported">
  <title>Hardware soportado</title>
 
 <para>
 
-Debian no impone requerimientos de hardware más allá de los que establecen
+Debian no impone requisitos de hardware más allá de los que establecen
 el núcleo Linux y el conjunto de herramientas GNU. En cualquier caso,
-cualquier arquitectura o plataforma a la que hayan sido portados el núcleo
-Linux, las libc, <command>gcc</command>, etc., y para la que exista una
-distribución de Debian, puede ejecutar Debian. Por favor, dirijase a las
-páginas de adaptaciones en <ulink url="&url-ports;"></ulink> para mayores
-detalles sobre las arquitecturas &arch-title; que han sido probadas con Debian.
+cualquier arquitectura o plataforma a la que se haya adaptado el
+núcleo Linux, libc, <command>gcc</command>, etc., y para los que exista una
+adaptación de Debian, puede ejecutar Debian. Por favor, diríjase a las
+páginas de adaptaciones en <ulink url="&url-ports;"></ulink> para más
+información sobre sistemas de arquitectura &arch-title; probados con Debian.
 
 </para><para>
 
-Más que intentar describir las diferentes configuraciones de hardware
+En lugar de intentar describir las diferentes configuraciones de hardware
 soportadas por &arch-title;, esta sección contiene información general y
-referencias para información adicional.
+referencias adicionales donde puede encontrar más información.
 
 </para>
 
@@ -26,8 +28,8 @@ referencias para información adicional.
 
 <para>
 
-Debian &release; soporta once arquitecturas mayores y algunas variaciones
-de cada arquitectura conocidas como 'sabores'.
+Debian &release; soporta once arquitecturas principales y algunas variaciones
+de cada arquitectura conocidas como «sabores».
 
 </para><para>
 
@@ -132,26 +134,37 @@ de cada arquitectura conocidas como 'sabores'.
 </row>
 
 <row>
-  <entry>Basada en Intel ia64</entry>
+  <entry>Intel basada en ia64</entry>
   <entry>ia64</entry>
   <entry></entry>
   <entry></entry>
 </row>
 
 <row>
-  <entry>MIPS (big endian)</entry>
-  <entry>mips</entry>
-  <entry>SGI Indy/I2</entry>
+  <entry morerows="2">MIPS (big endian)</entry>
+  <entry morerows="2">mips</entry>
+  <entry morerows="1">SGI Indy/Indigo 2</entry>
   <entry>r4k-ip22</entry>
+</row><row>
+  <entry>r5k-ip22</entry>
+</row><row>
+  <entry>Broadcom BCM91250A (SWARM)</entry>
+  <entry>sb1-swarm-bn</entry>
 </row>
 
 <row>
-  <entry morerows="1">MIPS (little endian)</entry>
-  <entry morerows="1">mipsel</entry>
-  <entry morerows="1">DEC Decstation</entry>
+  <entry morerows="3">MIPS (little endian)</entry>
+  <entry morerows="3">mipsel</entry>
+ <entry>Cobalt</entry>
+  <entry>cobalt</entry>
+</row><row>
+  <entry morerows="1">DECstation</entry>
   <entry>r4k-kn04</entry>
 </row><row>
   <entry>r3k-kn02</entry>
+</row><row>
+  <entry>Broadcom BCM91250A (SWARM)</entry>
+  <entry>sb1-swarm-bn</entry>
 </row>
 
 <row>
@@ -167,22 +180,22 @@ de cada arquitectura conocidas como 'sabores'.
 
 </para><para>
 
-Este documento cubre la instalación de la arquitectura
-<emphasis>&arch-title;</emphasis>. Si busca información de otras arquitecturas
-consulte las páginas de las <ulink 
-url="http://www.debian.org/ports/">adaptaciones de Debian</ulink>.
+Este documento cubre la instalación para la arquitectura
+<emphasis>&arch-title;</emphasis>. Si busca información sobre cualquiera
+de las otras arquitecturas soportadas por Debian consulte las páginas de 
+las <ulink url="http://www.debian.org/ports/">adaptaciones de Debian</ulink>.
 
 </para><para condition="new-arch">
-Esta es la primera publicación oficial de &debian; para la arquitectura
-&arch-title;. Consideramos que ésta se ha probado suficientemente
-como para ser publicada. No obstante, dado que ésta no ha tenido la
-exposición (y por tanto las comprobaciones de los usuarios) que han
-tenido otras arquitecturas, puede encontrar algunos fallos.
-Utilice nuestro <ulink url="&url-bts;">Sistema de Rastreo de Fallos</ulink>
-para reportar cualquier problema; asegúrese de reportar que el problema
-se encuentra en la plataforma &arch-title;. Podría ser necesario utilizar
-la <ulink url="&url-list-subscribe;">lista de correo de
-debian-&architecture;</ulink>.
+
+Esta es la primera versión oficial de &debian; para la arquitectura
+&arch-title;. Consideramos que se ha probado ésta lo suficientemente como
+para ser publicada. No obstante, podría encontrar algunos fallos dado que
+ésta no ha tenido la exposición (y por tanto pruebas por usuarios) que han
+tenido otras arquitecturas. Utilice nuestro <ulink url="&url-bts;">sistema
+de seguimiento de fallos</ulink> para informar cualquier problema; asegúrese
+de indicar que el problema se encuentra en la plataforma &arch-title;.
+También, podría ser necesario utilizar la <ulink
+url="&url-list-subscribe;">lista de correo de debian-&architecture;</ulink>.
   
 </para>
 
@@ -205,60 +218,74 @@ debian-&architecture;</ulink>.
 
 <para arch="i386">
 
-Usted debe utilizar una interfaz de despliegue compatible con VGA para la
-terminal de consola. Casi todas las tarjetas de vídeo modernas son compatibles
-con VGA. Estándares viejos como CGA, MDA o HGA también deberían trabajar,
-asumiendo que no necesite soporte de X11. X11 no es utilizado durante
-el proceso de instalación descrito en este documento.
+Debe utilizar una interfaz de visualización compatible con VGA para la
+terminal de consola. Prácticamente cualquier tarjeta de vídeo moderna es
+compatible con VGA. Los estándares viejos como CGA, MDA o HGA también 
+deberían funcionar, asumiendo que no necesite soporte de X11. Tenga en cuenta
+que no se usa X11 durante el proceso de instalación descrito en este documento.
 
 </para><para>
 
 El soporte de Debian para interfaces gráficas está determinado por el 
 soporte subyacente encontrado en el sistema X11 de XFree86. Los puertos de
-vídeo AGP más nuevos son una modificación de las especificaciones de PCI,
-y la mayoría de las tarjetas de vídeo AGP funcionan bajo XFree86. Detalles
-sobre tarjetas, monitores, dispositivos de señalamiento y buses, pueden ser
-encontrados en <ulink url="&url-xfree86;"></ulink>.  Debian &release; incluye
-XFree86 versión &x11ver;.
+vídeo AGP más recientes son en realidad una modificación de las especificaciones
+de PCI, y la mayoría de las tarjetas de vídeo AGP funcionan bajo XFree86. 
+Puede encontrar más detalles sobre tarjetas, monitores, dispositivos de
+señalamiento y buses en <ulink url="&url-xfree86;"></ulink>. Debian &release; 
+incluye XFree86 versión &x11ver;.
 
 </para><para arch="mips">
 
 El sistema X11 de XFree86 se encuentra únicamente soportado en la SGI Indy.
+La placa de evaluación Broadcom BCM91250A tiene bahías PCI estándar de 3.3v y
+soporta emulación VGA o framebuffer de Linux en un rango específico de 
+tarjetas gráficas. Existe una 
+<ulink url="&url-bcm91250a-hardware;">lista de compatibilidad</ulink> para
+la BCM91250A.
+
+</para><para arch="mipsel">
+
+El sistema Xfree86 X11 está soportado en algunos modelos DECstation. 
+La placa de evaluación Broadcom BCM91250A tiene bahías PCI estándar de 3.3v y
+soporta emulación VGA o framebuffer de Linux en un rango específico de 
+tarjetas gráficas. Existe una 
+<ulink url="&url-bcm91250a-hardware;">lista de compatibilidad</ulink> para
+la BCM91250A.
 
 </para>
   </sect2>
 
-  <sect2 arch="i386" id="laptops"><title>Laptops</title>
+  <sect2 arch="i386" id="laptops"><title>Ordenadores portátiles</title>
 <para>
 
-Las computadoras portátiles también están soportadas. Generalmente son muy
-especializadas o contienen hardware propietario. Para ver si su computadora
-portátil trabaja bien con GNU/Linux, vea la
-<ulink url="&url-x86-laptop;">página de Linux Laptops</ulink>
+También se soportan los ordenadores portátiles. Éstos generalmente son
+muy especializados o contienen hardware propietario. Para ver si su ordenador
+portátil trabaja bien con GNU/Linux, consulte las 
+<ulink url="&url-x86-laptop;">páginas de portátiles en Linux</ulink>
 
 </para>
    </sect2>
 
 
   <sect2 condition="defaults-smp">
-<title>Múltiples Procesadores</title>
+<title>Múltiples procesadores</title>
 
 <para>
 
-Soporte para múltiples procesadores &mdash; también llamado 
-"multi-procesamiento simétrico" o SMP &mdash; se encuentra soportado por
-esta arquitectura. La &release; de la imagen del kernel estándar de Debian fue
-compilado con soporte para SMP. Ello no debería entorpecer la instalación, 
-debido a que el kernel SMP debe arrancar en sistemas no-SMP; el núcleo 
-simplemente causará un poco más de sobrecarga.
+El soporte para múltiples procesadores &mdash; también llamado
+«multi-procesamiento simétrico» o SMP &mdash; se encuentra incluido en esta
+arquitectura. La imagen estándar del núcleo de Debian &release; ha sido
+compilada con soporte para SMP. Esto no debería entorpecer la instalación,
+ya que el núcleo SMP debe ser capaz de arrancar en sistemas no SMP; el
+núcleo simplemente causará un poco más de sobrecarga.
 
 </para><para>
 
 Para optimizar el núcleo para sistemas de un sólo procesador, tendrá que
 reemplazar el núcleo estándar de Debian. Puede encontrar una discusión
-de cómo hacer ésto en <xref linkend="kernel-baking"/>.  En este momento
+a cerca de cómo hacer esto en <xref linkend="kernel-baking"/>. En este momento
 (versión del núcleo &kernelversion;) la forma de deshabilitar SMP es
-de-seleccionando "symmetric multi-processing" en la sección "General"
+deseleccionando «symmetric multi-processing» en la sección «General»
 de la configuración del núcleo.
 
 </para>
@@ -267,24 +294,53 @@ de la configuración del núcleo.
 
 
   <sect2 condition="supports-smp">
- <title>Multiple Processors</title>
+ <title>Múltiples procesadores</title>
 <para>
 
-Soporte para multiprocesadores &mdash; también llamado ``multiprocesamiento
-simétrico'' o SMP &mdash; está soportado por ésta arquitectura. Sin
-embargo, la &release; de la imagen del kernel estándar de Debian no soporta
-SMP. Ello no debería entorpecer la instalación, debido a que al estándar,
-núcleos no-SMP deberían arrancar en sistemas SMP; el kernel simplemente
-utilizará el primer procesador.
+Existe soporte para multiprocesadores &mdash; también llamado
+«multiprocesamiento simétrico» o SMP &mdash; para esta arquitectura. Sin
+embargo, la imagen estándar del núcleo de Debian &release; no incluye SMP.
+Esto no debería entorpecer la instalación, ya que el núcleo estándar, sin
+SMP, debería arrancar en sistemas SMP. El núcleo simplemente utilizará sólo
+el primer procesador.
 
 </para><para>
 
-Para tomar ventaja de múltiples procesadores, usted tendrá que reemplazar
-el núcleo estándar de Debian. Puede encontrar una discusión de cómo hacer
+Tendrá que sustituir el núcleo estándar de Debian si quiere aprovechar múltiples
+procesadores. Puede encontrar una discusión a cerca de cómo hacer 
 ésto en <xref linkend="kernel-baking"/>. En este momento (versión del núcleo
-&kernelversion;) la forma para habilitar SMP es seleccionando
-``symmetric multi-processing'' en la sección ``General'' de la configuración
-del núcleo (kernel).
+&kernelversion;) puede habilitar SMP seleccionando
+«symmetric multi-processing» en la sección «General» de la configuración
+del núcleo.
+
+</para>
+  </sect2>
+  <sect2 condition="supports-smp-sometimes">
+ <title>Múltiples procesadores</title>
+<para>
+
+
+El soporte para multiprocesadores &mdash; también llamado «multiprocesamiento
+simétrico» o SMP &mdash; está soportado para ésta arquitectura y está
+incluido en una imagen pre-compilada del núcleo de Debian. Dependiendo
+de su medio de instalación, este núcleo con soporte de SMP podría o no
+instalarse como el núcleo predeterminado. Esto no debería entorpecer la
+instalación, debido a que el núcleo estándar, sin SMP, debería arrancar en
+sistemas SMP. En este caso, el núcleo simplemente utilizará el primer
+procesador.
+
+</para><para>
+
+Si desea hacer uso de múltiples procesadores deberá verificar que el
+paquete del núcleo que soporta SMP esté instalado, si no lo está, seleccione
+un núcleo apropiado.
+
+
+También puede construir su propio núcleo personalizado incluyendo soporte
+SMP. Puede encontrar una discusión sobre cómo hacerlo en <xref
+linkend="kernel-baking"/>. En este momento (versión del núcleo &kernelversion;)
+la forma de habilitar SMP es elegir «symmetric multi-processing» en la sección
+«General» de la configuración del núcleo.
 
 </para>
   </sect2>

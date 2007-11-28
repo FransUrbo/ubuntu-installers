@@ -21,7 +21,7 @@
 ]>
 
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 11648 untranslated -->
+<!-- original version: 22663 -->
 
 <book lang="pt">
 
@@ -34,12 +34,17 @@
 &install-methods.xml;
 &boot-installer.xml;
 &using-d-i.xml;
-<!-- &boot-new.xml; -->
+&boot-new.xml;
 &post-install.xml;
+
+<!--appendices-->
+
 <!-- coming soon to a cvs site near you -->
 <!-- &tech-info.xml; -->
+&installation-howto.xml;
 &partitioning.xml;
-&appendix.xml;
+&random-bits.xml;
 &administrivia.xml;
+&gpl.xml;
 
 </book>

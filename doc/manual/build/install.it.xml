@@ -21,10 +21,11 @@
 ]>
 
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 11648 -->
+<!-- $Id: install.en.xml 21636 2004-09-14 22:43:53Z fjpop-guest $ -->
 
 <book lang="it">
 
+&bookinfo.xml;
 &preface.xml;
 <toc/>
 &welcome.xml;
@@ -35,10 +36,15 @@
 &using-d-i.xml;
 &boot-new.xml;
 &post-install.xml;
+
+<!--appendices-->
+
 <!-- coming soon to a cvs site near you -->
 <!-- &tech-info.xml; -->
+&installation-howto.xml;
 &partitioning.xml;
-&appendix.xml;
+&random-bits.xml;
 &administrivia.xml;
+&gpl.xml;
 
 </book>

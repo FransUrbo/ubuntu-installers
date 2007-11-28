@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: install-tftp.xml 18038 2004-07-20 20:27:48Z mck-guest $ -->
-<!-- original version: 17795 -->
+<!-- $Id: install-tftp.xml 23461 2004-10-25 16:21:16Z mck-guest $ -->
+<!-- original version: 23213 -->
 
  <sect1 condition="supports-tftp" id="install-tftp">
  <title>Příprava souborů pro zavedení ze sítě pomocí TFTP</title>
@@ -13,7 +13,7 @@ specifických adresářů a povolit zavádění vaší stanice.
 
 </para><para>
 
-Musíte nastavit TFTP server a pro CATS stroje BOOTP server
+Musíte nastavit TFTP server a často i BOOTP server
 <phrase condition="supports-rarp"> nebo RARP </phrase>
 <phrase condition="supports-dhcp"> nebo DHCP </phrase> server.
 
@@ -97,7 +97,7 @@ tftp dgram udp wait nobody /usr/sbin/tcpd in.tftpd /tftpboot
 Při instalaci z debianích balíků se o nic nemusíte starat, protože
 se tento řádek založí automaticky při instalaci balíku.
 
-<para></para>
+</para><para>
 
 Podívejte se do souboru <filename>/etc/inetd.conf</filename> a
 zapamatujte si název adresáře, jehož jméno je za
@@ -119,12 +119,13 @@ Na jiných systémech musíte zjistit ID běžícího procesu
 Abyste mohli využít PXE (Pre-boot Execution Environment) metodu TFTP
 zavádění, musíte mít TFTP server s podporou
 <userinput>tsize</userinput>, například <command>tftp-hpa</command>
-nebo <classname>atftpd</classname>.
+nebo <classname>atftpd</classname> (doporučujeme první zmíněný).
 
 </para></note><para arch="mips">
 
-Pokud je vaším TFTP serverem GNU/Linux s jádrem 2.4.X, musíte na něm
-následujícím příkazem vypnout <quote>Path MTU discovery</quote>:
+Pokud je vaším TFTP serverem GNU/Linux s jádrem 2.4.X a instalujete na
+počítač SGI, musíte na něm následujícím příkazem vypnout <quote>Path
+MTU discovery</quote>:
 
 <informalexample><screen>
 
@@ -152,7 +153,7 @@ echo "2048 32767" > /proc/sys/net/ipv4/ip_local_port_range
 <para>
 
 Dále je potřeba umístit příslušný TFTP obraz (viz
-<xref linkend="where-descs"/>) do adresáře, kde má
+<xref linkend="where-files"/>) do adresáře, kde má
 <command>tftpd</command> uloženy obrazy, obvykle
 <filename>/tftpboot</filename>. Bohužel TFTP klient očekává jméno
 souboru v určitém tvaru, pro který neexistují žádné závazné
@@ -168,53 +169,24 @@ RAMdisku. Pro zavádění ze sítě použijte soubor
 <filename>yaboot-netboot.conf</filename>, který v TFTP adresáři
 přejmenujete na <filename>yaboot.conf</filename>.
 
-</para><para arch="not-powerpc">
-
-TFTP klient často hledá soubor
-<replaceable>hex-ip-adresa-klienta-architektura</replaceable>.
-Tento název se spočítá relativně jednoduše: K části
-<replaceable>hex-ip-adresa-klienta</replaceable> dojdete tak, že
-vyjádříte každý bajt IP adresy klienta v šestnáctkové soustavě. 
-Pokud máte po ruce program <command>bc</command> klidně jej použijte.
-Příkazem <userinput>obase=16</userinput> nastavíte výstup na
-hexadecimální a potom už jen zadáte jednotlivé části IP adresy.
-Pro proměnnou <replaceable>architektura</replaceable> vyzkoušejte
-různé hodnoty.
-
 </para><para arch="i386">
 
-Pro PXE zavádění můžete použít zavaděč
-<filename>pxelinux.0</filename>, jež je součástí balíku
-<classname>syslinux</classname>. Zavaděč nakopírujte do adresáře
-<filename>/tftpboot</filename>. Tamtéž vytvořte podadresář
-<filename>/tftpboot/pxelinux.cfg</filename>, který bude obsahovat
-textový soubor <filename>default</filename>. Možný obsah souboru:
+Pro PXE zavádění by mělo být vše potřebné v souboru
+<filename>netboot/netboot.tar.gz</filename>. Tento archiv stačí
+rozbalit do adresáře, kde <command>tftpd</command> uchovává zaváděcí
+obrazy. Ujistěte se, že je váš dhcp server nastaven tak, aby jako
+jméno souboru pro zavedení zasílal <filename>/pxelinux.0</filename>.
 
-<informalexample><screen>
+</para><para arch="ia64">
 
-default lanlinux
-prompt 1
-
-label lanlinux
-  kernel vmlinuz
-  append initrd=initrd.gz devfs=mount root=/dev/ram
-
-</screen></informalexample>
-
-Parametr <userinput>devfs=mount</userinput> je nezbytný, protože bez
-něj by nešlo připojit kořenový souborový systém ze souboru
-<filename>initrd.gz</filename>. Možná také budete potřebovat dodatečný
-parametr <userinput>ramdisk_size=<replaceable>velikost
-v KB</replaceable></userinput>.
-
-</para><para arch="i386">
-
-Závěrem nakopírujte do adresáře <filename>/tftpboot</filename> soubory
-<filename>vmlinuz</filename> a <filename>initrd.gz</filename> určené
-pro zavádění ze sítě (naleznete je na ftp archivech Debianu).
+Pro PXE zavádění by mělo být vše potřebné v souboru
+<filename>netboot/netboot.tar.gz</filename>. Tento archiv stačí
+rozbalit do adresáře, kde <command>tftpd</command> uchovává zaváděcí
+obrazy. Ujistěte se, že je váš dhcp server nastaven tak, aby jako
+jméno souboru pro zavedení zasílal
+<filename>/debian-installer/ia64//elilo.efi</filename>.
 
 </para>
-
 
    <sect3 arch="mipsel">
    <title>TFTP obrazy pro DECstation</title>
@@ -223,28 +195,22 @@ pro zavádění ze sítě (naleznete je na ftp archivech Debianu).
 Na počítačích DECstation existují pro každou podarchitekturu speciální
 tftp obrazy, které v jednom souboru obsahují jak jádro, tak instalační
 program. Jména těchto souborů jsou
-tftpimage-<replaceable>podarchitektura</replaceable> nebo
-tftpimage-<replaceable>podarchitektura</replaceable>.gz. Pokud je
-obraz zabalený (má příponu .gz), musíte jej před použitím rozbalit
-(např. <userinput>gunzip
-tftpimage-<replaceable>podarchitektura</replaceable>.gz</userinput>),
-protože DECstation neumí zavádět komprimované obrazy skrze TFTP.
-Jestliže jste si nastavili BOOTP/DHCP podle našich příkladů,
-nakopírujte tftp obraz do souboru
-<filename>/tftpboot/tftpboot.img</filename>.
+<replaceable>podarchitektura</replaceable>/netboot-boot.img.  Jestliže
+jste si nastavili BOOTP/DHCP podle našich příkladů, nakopírujte tftp
+obraz do souboru <filename>/tftpboot/tftpboot.img</filename>.
 
 </para><para>
 
 Z DECstation firmwaru zavedete systém přes TFTP příkazem
 <userinput>boot <replaceable>#</replaceable>/tftp</userinput>, kde
 <replaceable>#</replaceable> je číslo zařízení TurboChannel, ze
-kterého se má zavádět. Většinou to bývá ,,3''. Pokud vám BOOTP/DHCP
-server nenabídne správný obraz, nebo pokud chcete zadat speciální
-parametry, můžete použít následující syntaxi:
+kterého se má zavádět. Většinou to bývá <quote>3</quote>. Pokud vám
+BOOTP/DHCP server nenabídne správný obraz, nebo pokud chcete zadat
+speciální parametry, můžete použít následující syntaxi:
 
 </para><para>
 
-<userinput>boot #/tftp/filename param1=value1 param2=value2 ...</userinput>
+<userinput>boot #/tftp/obraz param1=hodnota1 param2=hodnota2 ...</userinput>
 
 </para><para>
 
@@ -303,13 +269,21 @@ popsaných metod.
    <title>TFTP zavádění na počítačích SPARC</title>
 <para>
 
-Počítače SPARC používají jména podarchitektur jako třeba ,,SUN4M''
-nebo ,,SUN4C''; v některých případech se jméno architektury nechává
-prázdné, takže jméno hledaného souboru je pouze
-<filename>hex-ip-adresa-klienta</filename>.
-Pokud třeba máte počítač s podarchitekturou SUN4C a IP adresa je
-192.168.1.3, pak jméno souboru bude
-<filename>C0A80103.SUN4C</filename>.
+Počítače SPARC používají jména podarchitektur jako třeba
+<quote>SUN4M</quote> nebo <quote>SUN4C</quote>; v některých případech
+se jméno architektury nechává prázdné, takže jméno hledaného souboru
+je pouze <filename>hex-ip-adresa-klienta</filename>.  Pokud třeba máte
+počítač s podarchitekturou SUN4C a IP adresa je 192.168.1.3, pak jméno
+souboru bude <filename>C0A80103.SUN4C</filename>. Převod na
+hexadecimální čísla můžete provést jednoduše v shellu příkazem
+
+<informalexample><screen>
+<userinput>printf '%.2x%.2x%.2x%.2x\n' <replaceable>10 0 0 4</replaceable></userinput>
+</screen></informalexample>
+
+kde čísla <replaceable>10 0 0 4</replaceable> představují IP adresu (v
+tomto případě 10.0.0.4). Výsledek ještě musíte převést na velká
+písmena.
 
 </para><para>
 
@@ -352,7 +326,20 @@ U počítačů SGI Indy se můžete spolehnout na <command>bootpd</command>,
 
 </para>
    </sect3>
+
+   <sect3 arch="mips">
+   <title>TFTP zavádění na Broadcom BCM91250A</title>
+<para>
+
+DHCP nemusíte nijak zvlášť nastavovat, protože ceclou cestu k souboru,
+který se má nahrát, zadáte do CFE.
+
+</para>
+   </sect3>
   </sect2>
+
+<!-- FIXME: commented out since it seems too old to be usable and a current
+            way is not known
 
   <sect2 id="tftp-low-memory">
   <title>TFTP instalace na systémech s nedostatkem paměti</title>
@@ -405,8 +392,8 @@ být podobné):
 
 </screen></informalexample>
 
-Poznámka: ,,klient'' je jméno nebo IP adresa instalovaného počítače
-tak, jak ji vidí server, když se klient zavádí.
+Poznámka: <quote>klient</quote> je jméno nebo IP adresa instalovaného
+počítače tak, jak ji vidí server, když se klient zavádí.
 
 </para></listitem>
 <listitem><para>
@@ -454,4 +441,7 @@ stanice &mdash; <xref linkend="boot-tftp"/>.
 </para>
 
   </sect2>
+
+END FIXME -->
+
  </sect1>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- retain these comments for translator revision tracking -->
 <!-- original version: 11648 -->
 
 
@@ -7,25 +6,26 @@
 <para>
 
 Puede encontrar información detallada respecto a las máquinas DEC Alpha
-soportadas en <ulink url="&url-alpha-howto;">COMO de Linux en Alpha</ulink>. 
+soportadas en <ulink url="&url-alpha-howto;">CÓMO de Linux en Alpha</ulink>. 
 El propósito de esta sección es describir los sistemas soportados por
-los discos de inicio.
+los discos de arranque.
 
 </para><para>
 
-Las máquinas Alpha están sub-divididas en diferentes tipos de sistemas
+Las máquinas Alpha están subdivididas en diferentes tipos de sistemas
 debido a que existe un número de generaciones de placa principal y
-juegos de chip de soporte. Diferentes sistemas (``sub-arquitecturas'')
+juegos de chip de soporte. Los distintos sistemas (subarquitecturas)
 a menudo tienen diferencias radicales en ingeniería y capacidades. Por
-lo tanto, el proceso de instalación y, en particular, el de inicio,
+lo tanto, el proceso de instalación y, en particular, el de arranque,
 puede variar de sistema a sistema.
 
 </para><para>
 
 La siguiente tabla lista los tipos de sistemas soportados por el 
-instalador de Debian. La tabla indica además el <emphasis>nombre
-de código</emphasis> para estos tipos de sistemas. Necesitará saber
-este nombre de código cuando inicie realmente el proceso de instalación:
+instalador de Debian. La tabla indica además la 
+<emphasis>denominación</emphasis> ó «nombre de código» de estos tipos 
+de sistemas. Necesitará saber este nombre de código cuando realmente 
+inicie el proceso de instalación:
 
 </para>
 

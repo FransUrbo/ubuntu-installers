@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: chroot-install.xml 18773 2004-07-31 16:41:16Z joeyh $ -->
+<!-- $Id: chroot-install.xml 23059 2004-10-12 23:52:13Z cjwatson $ -->
 
  <sect1 id="linux-upgrade">
  <title>Installing Ubuntu from a Unix/Linux System</title>
@@ -157,7 +157,7 @@ in the <command>debootstrap</command> command:
 <informalexample><screen>
 
  $ /usr/sbin/debootstrap --arch ARCH &releasename; \
-     /mnt/ubuntu http://&archive-ubuntulinux-org;/ubuntu
+     /mnt/debinst http://http.us.debian.org/debian
 
 </screen></informalexample>
 
@@ -387,7 +387,7 @@ English, install the locales support package and configure it:
 
 NOTE: Apt must be configured before, ie. during the base-config phase.
 Before using locales with character sets other than ASCII or latin1,
-please consult the appropriate localisation HOWTO.
+please consult the appropriate localization HOWTO.
 
 </para>
    </sect3>

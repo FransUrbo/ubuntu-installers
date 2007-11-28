@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: i386.xml 18767 2004-07-31 14:14:52Z mck-guest $ -->
+<!-- $Id: i386.xml 23061 2004-10-13 00:14:32Z cjwatson $ -->
 
   <sect2 arch="i386"><title>Booting from a CD-ROM</title>
 
@@ -119,7 +119,7 @@ and place the needed files as described in <xref linkend="boot-drive-files"/>.
 <para>
 If you intend to use the hard drive only for booting and then
 download everything over the network, you should download the
-<filename>netboot/initrd.gz</filename> file and its corresponding kernel.
+<filename>netboot/debian-installer/i386/initrd.gz</filename> file and its corresponding kernel.
 This will allow you
 to repartition the hard disk from which you boot the installer, although
 you should do so with care.
@@ -161,8 +161,8 @@ Here is a <filename>/etc/lilo.conf</filename> example:
 image=/boot/newinstall/vmlinuz
        label=newinstall
        initrd=/boot/newinstall/initrd.gz
-       root=/dev/ram
-       append="devfs=mount,dall ramdisk_size=17000
+       root=/dev/ram0
+       append="devfs=mount,dall ramdisk_size=17000"
 
 </screen></informalexample>
 
@@ -183,7 +183,7 @@ add the following lines:
 <informalexample><screen>
 
 title  New Install
-kernel (hd0,0)/boot/newinstall/vmlinuz root=/dev/ram devfs=mount,dall ramdisk_size=17000
+kernel (hd0,0)/boot/newinstall/vmlinuz root=/dev/ram0 devfs=mount,dall ramdisk_size=17000
 initrd (hd0,0)/boot/newinstall/initrd.gz
 
 </screen></informalexample>
@@ -211,9 +211,9 @@ arguments, or just hit &enterkey;.
 
 In case your computer doesn't support booting from USB memory devices,
 you can still use a single floppy to do the initial boot and then
-switch to USB. Advance according to <xref linkend="floppy-boot"/>; the
-kernel on boot floppy should detect your USB stick automatically. When
-it asks for the root floppy, simply press &enterkey;. You should see
+switch to USB. Boot your system as described in <xref linkend="floppy-boot"/>;
+the kernel on the boot floppy should detect your USB stick automatically.
+When it asks for the root floppy, simply press &enterkey;. You should see
 &d-i; starting.
 
 </para>
@@ -265,7 +265,7 @@ prompt.
 Once you press &enterkey;, you should see the message
 <computeroutput>Loading...</computeroutput>, followed by
 <computeroutput>Uncompressing Linux...</computeroutput>, and
-then a screenful or so of information about the hardware in your
+then a screenfull or so of information about the hardware in your
 system.  More information on this phase of the boot process can be
 found below in <xref linkend="kernel-msgs"/>.
 
@@ -289,15 +289,18 @@ There are various ways to do a TFTP boot on i386.
 
 </para>
 
-   <sect3><title>Etherboot</title>
+   <sect3><title>NIC or Motherboard that support PXE</title>
 <para>
 
-The <ulink url="http://www.etherboot.org">etherboot project</ulink>
-provides bootdiskettes and even bootroms that do a TFTPboot.
+It could be that your Network Interface Card or Motherboard provides
+PXE boot functionality.
+This is a <trademark class="trade">Intel</trademark> re-implemention
+of TFTP boot. If so you may be able to configure your BIOS to boot from the
+network.
 
 </para>
    </sect3>
-
+   
    <sect3><title>NIC with network bootROM</title>
 <para>
 
@@ -312,14 +315,11 @@ Please refer to this document.
 </para>
    </sect3>
 
-   <sect3><title>NIC or Motherboard that support PXE</title>
+   <sect3><title>Etherboot</title>
 <para>
 
-It could be that your Network Interface Card or Motherboard provides
-PXE boot functionality.
-Which is a <trademark class="trade">Intel</trademark> re-implemention
-of TFTP boot. If so you may be able to configure your BIOS to boot from the
-network.
+The <ulink url="http://www.etherboot.org">etherboot project</ulink>
+provides bootdiskettes and even bootroms that do a TFTPboot.
 
 </para>
    </sect3>
@@ -375,7 +375,7 @@ contain a problematic video card which does not switch to the
 framebuffer mode properly.  Then you can use the boot parameter
 <userinput>debian-installer/framebuffer=false</userinput> or
 <userinput>video=vga16:off</userinput> to disable the framebuffer
-console. Only the english
+console. Only the English
 language will be available during the installation due to limited
 console features. See <xref linkend="boot-parms"/> for details.
 

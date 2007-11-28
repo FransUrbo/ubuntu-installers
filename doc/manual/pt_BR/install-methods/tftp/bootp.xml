@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: bootp.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
-<!-- original version: 1.5 -->
-
+<!-- original version: 16879 -->
 
   <sect2 condition="supports-bootp" id="tftp-bootp">
   <title>Configurando um servidor BOOTP</title>
@@ -24,7 +22,7 @@ deverá se parecer com:
 
 <informalexample><screen>
 
-bootps   dgram   udp     wait    root    /usr/sbin/bootpd  bootpd -i -t 120
+bootps  dgram  udp  wait  root  /usr/sbin/bootpd  bootpd -i -t 120
 
 </screen></informalexample>
 

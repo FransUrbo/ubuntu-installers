@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- original version: 14388 -->
+<!-- original version: 23058 -->
 
 <sect1 id="getting-newest-inst">
 <title>Comment obtenir Debian ?</title>
@@ -8,7 +8,7 @@
 Pour plus d'informations sur la façon de télécharger Debian GNU/Linux depuis 
 Internet, ou sur la façon de se procurer les cédéroms officiels de Debian, 
 voyez la 
-<ulink url="&url-debian-distrib;">page web de distribution</ulink>. 
+<ulink url="&url-debian-distrib;">page web sur les façons d'obtenir Debian</ulink>. 
 La 
 <ulink url="&url-debian-mirrors;">liste des miroirs Debian</ulink> 
 répertorie tous les miroirs officiels Debian.

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: powerpc.xml 11865 2004-03-24 09:50:09Z mck-guest $ -->
-<!-- original version: 11648 -->
+<!-- $Id: powerpc.xml 20768 2004-09-04 09:40:27Z mck-guest $ -->
+<!-- original version: 20632 -->
+
+<!-- commented out as it seems out of date and the links are broken
 
    <sect3 arch="powerpc" id="newworld-install-files">
    <title>Instalační soubory pro NewWorld MacOS</title>
@@ -23,3 +25,4 @@ archívu. Nejnovější verzi si můžete stáhnout z
 </para>
    </sect3>
 
+-->

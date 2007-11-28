@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 16879 untranslated -->
+<!-- original version: 23213 untranslated -->
 
  <sect1 condition="supports-tftp" id="install-tftp">
  <title>Preparing Files for TFTP Net Booting</title>
@@ -13,7 +13,7 @@ and the machine configured to support booting of your specific machine.
 
 </para><para>
 
-You need to setup a TFTP server, and for CATS machines, a BOOTP server
+You need to setup a TFTP server, and for many machines, a BOOTP server
 <phrase condition="supports-rarp">, or RARP server</phrase>
 <phrase condition="supports-dhcp">, or DHCP server</phrase>.
 
@@ -112,12 +112,14 @@ find out the process ID for <command>inetd</command>, and run
 To use the Pre-boot Execution Environment (PXE) method of TFTP
 booting, you will need a TFTP server with <userinput>tsize</userinput>
 support.  On a &debian; server, the <classname>atftpd</classname> and
-<classname>tftpd-hpa</classname> packages qualify.
+<classname>tftpd-hpa</classname> packages qualify; we recommend
+<classname>tftpd-hpa</classname>.
 
 </para></note><para arch="mips">
 
-If your TFTP server is a GNU/Linux box running Linux 2.4.X you'll need
-to set the following on your server:
+If you intend to install Debian on an SGI machine and your TFTP server is a
+GNU/Linux box running Linux 2.4, you'll need to set the following on your
+server:
 
 <informalexample><screen>
 
@@ -163,53 +165,24 @@ images via TFTP itself.  For net booting, use the
 <filename>yaboot-netboot.conf</filename>.  Just rename this to
 <filename>yaboot.conf</filename> in the TFTP directory.
 
-</para><para arch="not-powerpc">
-
-Often, the file that the TFTP client will look for is
-<replaceable>client-ip-in-hexclient-architecture</replaceable>.  To
-compute <replaceable>client-ip-in-hex</replaceable>, take each byte of
-the client IP address and translate it into hexadecimal notation.  If
-you have a machine handy with the <command>bc</command> program, you
-can use the program.  First issue the <userinput>obase=16</userinput>
-command to set the output to hex, then enter the individual components
-of the client IP one at a time.  As for
-<replaceable>client-architecture</replaceable>, try out some values.
-
 </para><para arch="i386">
 
-For PXE booting, you can use the boot loader included with
-<classname>syslinux</classname>: <filename>pxelinux.0</filename>. The boot
-loader should be copied into the <filename>/tftpboot</filename>
-folder. Then create a subdirectory within
-<filename>/tftpboot</filename> named
-<filename>/tftpboot/pxelinux.cfg</filename>, and within that directory
-create a text file <filename>default</filename>. Here is an example of
-a <filename>default</filename> file's contents:
+For PXE booting, everything you should need is set up in the
+<filename>netboot/netboot.tar.gz</filename> tarball. Simply extract this
+tarball into the <command>tftpd</command> boot image directory. Make sure
+your dhcp server is configured to pass <filename>/pxelinux.0</filename>
+to <command>tftpd</command> as the filename to boot.
 
-<informalexample><screen>
+</para><para arch="ia64">
 
-default lanlinux
-prompt 1
-
-label lanlinux
-  kernel vmlinuz
-  append initrd=initrd.gz devfs=mount root=/dev/ram
-
-</screen></informalexample>
-
-<userinput>devfs=mount</userinput> is important, because without it
-there may be problems mounting the initrd.gz file system once the
-kernel is booted.
-
-</para><para arch="i386">
-
-Finally, copy the <filename>vmlinuz</filename> and
-<filename>initrd.gz</filename> files (for the netboot installation method)
-from the Debian ftp archive into the <filename>/tftpboot</filename> folder,
-where the bootloader will be looking for them.
+For PXE booting, everything you should need is set up in the
+<filename>netboot/netboot.tar.gz</filename> tarball. Simply extract this
+tarball into the <command>tftpd</command> boot image directory. Make sure
+your dhcp server is configured to pass
+<filename>/debian-installer/ia64/elilo.efi</filename>
+to <command>tftpd</command> as the filename to boot.
 
 </para>
-
 
    <sect3 arch="mipsel">
    <title>DECstation TFTP Images</title>
@@ -217,13 +190,8 @@ where the bootloader will be looking for them.
 
 For DECstations, there are tftpimage files for each subarchitecture,
 which contain both kernel and installer in one file. The naming
-convention is tftpimage-<replaceable>subarchitecture</replaceable> or
-tftpimage-<replaceable>subarchitecture</replaceable>.gz.  If the
-tftpimage is gzipped (the name ends with .gz), you need to unpack it
-first with <userinput>gunzip
-tftpimage-<replaceable>subarchitecture</replaceable>.gz</userinput>,
-as DECstations cannot boot compressed files by TFTP. Copy the
-tftpimage file you would like to use to
+convention is <replaceable>subarchitecture</replaceable>/netboot-boot.img.
+Copy the tftpimage file you would like to use to
 <userinput>/tftpboot/tftpboot.img</userinput> if you work with the
 example BOOTP/DHCP setups described above.
 
@@ -303,7 +271,21 @@ as ``SUN4M'' or ``SUN4C''; in some cases, the architecture is left
 blank, so the file the client looks for is just
 <filename>client-ip-in-hex</filename>.  Thus, if your system
 subarchitecture is a SUN4C, and its IP is 192.168.1.3, the filename
-would be <filename>C0A80103.SUN4C</filename>.
+would be <filename>C0A80103.SUN4C</filename>. An easy way to determine
+this is to enter the following command in a shell (assuming the
+machine's intended IP is 10.0.0.4).
+
+</para>
+
+<informalexample><screen>
+printf '%.2x%.2x%.2x%.2x\n' 10 0 0 4
+</screen></informalexample>
+
+<para>
+
+This will spit out the IP in hexadecimal; to get to the correct
+filename, you will need to change all letters to uppercase and
+if necessary append the subarchitecture name.
 
 </para><para>
 
@@ -345,8 +327,22 @@ the <userinput>filename=</userinput> option in
 
 </para>
    </sect3>
+
+   <sect3 arch="mips">
+   <title>Broadcom BCM91250A TFTP Booting</title>
+<para>
+
+You don't have to configure DHCP in a special way because you'll pass the
+full path of the file to the loaded to CFE.
+
+</para>
+   </sect3>
+
   </sect2>
 
+<!-- FIXME: commented out since it seems too old to be usable and a current
+            way is not known
+  
   <sect2 id="tftp-low-memory">
   <title>TFTP Installation for Low-Memory Systems</title>
 <para>
@@ -442,5 +438,7 @@ to its previous RARP request).
 
 </para>
 
+
   </sect2>
+END FIXME -->
  </sect1>

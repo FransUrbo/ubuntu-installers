@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: parameters.xml 18672 2004-07-28 19:38:06Z smarenka $ -->
+<!-- $Id: parameters.xml 23207 2004-10-18 20:10:57Z fjpop-guest $ -->
 
  <sect1 id="boot-parms"><title>Boot Parameters</title>
 <para>
@@ -72,8 +72,18 @@ Alternatively, set the <envar>input-device</envar> and
   <sect2 id="installer-args"><title>Ubuntu Installer Parameters</title>
 <para>
 
-The installation system recognizes a few additional boot parameters which may
-be useful. 
+The installation system recognizes a few additional boot parameters<footnote>
+
+<para>
+
+Note that the kernel accepts a maximum of 8 command line options and
+8 environment options (including any options added by default for the
+installer). If these numbers are exceeded, 2.4 kernels will drop any
+excess options and 2.6 kernels will panic.
+
+</para>
+
+</footnote> which may be useful. 
 
 </para>
 
@@ -107,7 +117,7 @@ When <userinput>debconf/priority=low</userinput> is used, all messages are shown
 
 
 <varlistentry>
-<term>debconf/frontend</term>
+<term>DEBIAN_FRONTEND</term>
 <listitem><para>
 
 This boot parameter controls the type of user interface used for the
@@ -115,26 +125,26 @@ installer. The current possible parameter settings are:
 
 <itemizedlist>
 <listitem>
-<para><userinput>debconf/frontend=noninteractive</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=noninteractive</userinput></para>
 </listitem><listitem>
-<para><userinput>debconf/frontend=text</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=text</userinput></para>
 </listitem><listitem>
-<para><userinput>debconf/frontend=newt</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=newt</userinput></para>
 </listitem><listitem>
-<para><userinput>debconf/frontend=slang</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=slang</userinput></para>
 </listitem><listitem>
-<para><userinput>debconf/frontend=ncurses</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=ncurses</userinput></para>
 </listitem><listitem>
-<para><userinput>debconf/frontend=bogl</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=bogl</userinput></para>
 </listitem><listitem>
-<para><userinput>debconf/frontend=gtk</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=gtk</userinput></para>
 </listitem><listitem>
-<para><userinput>debconf/frontend=corba</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=corba</userinput></para>
 </listitem>
 </itemizedlist>
 
-The default front end is <userinput>debconf/frontend=newt</userinput>.
-<userinput>debconf/frontend=text</userinput> may be preferable for
+The default front end is <userinput>DEBIAN_FRONTEND=newt</userinput>.
+<userinput>DEBIAN_FRONTEND=text</userinput> may be preferable for
 serial console installs. Generally only the
 <userinput>newt</userinput> frontend is available on default install
 media, so this is not very useful right now.
@@ -191,7 +201,7 @@ Debian installer from. For example,
 
 </para><para>
 
-The boot floppy, which normally scans all floppys and USB storage
+The boot floppy, which normally scans all floppies and USB storage
 devices it can to find the root floppy, can be overridden by this
 parameter to only look at the one device.
 
@@ -242,7 +252,7 @@ boot, if that causes problems.
 
 By default, the &d-i; automatically probes for network configuration
 via DHCP. If the probe succeeds, you won't have a chance to review and
-chage the obtained settings. You can get to the manual network setup
+change the obtained settings. You can get to the manual network setup
 only in case the DHCP probe fails.
 
 </para><para>
@@ -261,7 +271,27 @@ the network with DHCP and to enter the information manually.
 
 Set to <userinput>false</userinput> to prevent starting PCMCIA
 services, if that causes problems. Some laptops are well known for
-this misbehaviour.
+this misbehavior.
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>preseed/url</term>
+<listitem><para>
+
+Specify the url to a preconfiguration file to download and use in
+automating the install. See <xref linkend="automatic-install"/>.
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>preseed/file</term>
+<listitem><para>
+
+Specify the url to a preconfiguration file to load to
+automating the install. See <xref linkend="automatic-install"/>.
 
 </para></listitem>
 </varlistentry>

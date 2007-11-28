@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: alpha.xml 11865 2004-03-24 09:50:09Z mck-guest $ -->
-<!-- original version: 11648 -->
+<!-- $Id: alpha.xml 22073 2004-09-26 06:53:09Z mck-guest $ -->
+<!-- original version: 19466 -->
 
  <sect2 arch="alpha" id="alpha-firmware">
  <title>Firmware Alpha konzoly</title>
@@ -69,7 +69,7 @@ mohou být zavedeny jenom z ARC konzole.
 
 Následující tabulka shrnuje dostupné a podporované kombinace
 systémů a konzol (jména systémů najdete v
-<xref linkend="supported-cpus"/>). Slovo <quote>ARC</quote> v tabulce
+<xref linkend="alpha-cpus"/>). Slovo <quote>ARC</quote> v tabulce
 označuje jakoukoliv ARC-kompatibilní konzoli.
 
 </para><para>
@@ -287,9 +287,12 @@ Pro zavedení z prvního ethernetového rozhraní byste napsali:
 
 <informalexample><screen>
 
->>> boot ewa0
+>>> boot ewa0 -flags ""
 
 </screen></informalexample>
+
+což zavede systém s implicitními parametry tak, jak jsou uloženy
+přímo v obrazu.
 
 </para><para>
 
@@ -331,7 +334,7 @@ kde <replaceable>xxxx</replaceable> je vaše CD mechanika (v notaci SRM).
   <title>Zavedení z CD-ROM s konzolou ARC nebo AlphaBIOS</title>
 <para>
 
-Nejprve si v <xref linkend="supported-cpus"/> najděte kódové jméno
+Nejprve si v <xref linkend="alpha-cpus"/> najděte kódové jméno
 své podarchitektury. Potom v ARC konzoli nastavte v menu
 <quote>OS Selection Setup</quote> zavaděč na hodnotu
 <filename>\milo\linload.exe</filename> a <quote>OS Path</quote> na

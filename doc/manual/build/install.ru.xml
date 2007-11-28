@@ -25,6 +25,7 @@
 
 <book lang="ru">
 
+&bookinfo.xml;
 &preface.xml;
 <toc/>
 &welcome.xml;
@@ -35,10 +36,15 @@
 &using-d-i.xml;
 &boot-new.xml;
 &post-install.xml;
+
+<!--appendices-->
+
 <!-- coming soon to a cvs site near you -->
 <!-- &tech-info.xml; -->
+&installation-howto.xml;
 &partitioning.xml;
-&appendix.xml;
+&random-bits.xml;
 &administrivia.xml;
+&gpl.xml;
 
 </book>

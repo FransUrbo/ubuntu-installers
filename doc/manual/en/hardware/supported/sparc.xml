@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: sparc.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
+<!-- $Id: sparc.xml 22935 2004-10-09 18:36:20Z fjpop-guest $ -->
 
 
   <sect2 arch="sparc" id="sparc-cpus"><title>CPU, Main Boards, and Video Support</title>
@@ -60,7 +60,7 @@ for there to be an onboard framebuffer which has been superseded (for
 example the bwtwo on a sun IPC), and an SBUS card containing a later
 probably accelerated buffer is then plugged in to an SBUS slot.
 Under Solaris/SunOS this causes no problems because both cards are
-initialised.  
+initialized.  
 
 </para><para>
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: powerpc.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
-<!-- original version: 1.6 -->
+<!-- original version: 11648 -->
 
   <sect2 arch="powerpc"><title>CPU, Placas Mãe, e Suporte a placas de video</title>
 <para>
@@ -162,10 +161,10 @@ e para hardwares antigos,
   <entry>Power Macintosh 9500, 9600</entry>
   <entry>powermac-OldWorld</entry>
 </row><row>
-  <entry>Power Macintosh (Beige) G3 Minitower</entry>
+  <entry>Power Macintosh (Bege) G3 Minitower</entry>
   <entry>powermac-OldWorld</entry>
 </row><row>
-  <entry>Power Macintosh (Beige) Desktop, All-in-One</entry>
+  <entry>Power Macintosh (Bege) Desktop, All-in-One</entry>
   <entry>powermac-OldWorld</entry>
 </row><row>
   <entry>PowerBook 2400, 3400, 3500</entry>

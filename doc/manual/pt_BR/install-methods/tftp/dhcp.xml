@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: dhcp.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
-<!-- original version: 1.5 -->
-
+<!-- original version: 22664 -->
 
   <sect2 condition="supports-dhcp" id="dhcpd">
    <title>Configurando um servidor DHCP</title>
 <para>
 
-Quando este documento foi escrito, existia somente um servidor 
-DHCP que é software livre, seu nome é ISC <command>dhcpd</command>. Na
+Um servidor DHCP livre é o ISC <command>dhcpd</command>. Na
 &debian;, ele está disponível no pacote <classname>dhcp</classname>. 
 Aqui está um modelo de configuração deste pacote (normalmente
 <filename>/etc/dhcpd.conf</filename>):
@@ -37,6 +34,9 @@ host clientname {
 
 </screen></informalexample>
 
+Nota: O novo (e preferido) pacote <classname>dhcp3</classname> utiliza o 
+arquivo de configuração <filename>/etc/dhcp3/dhcpd.conf</filename>.
+
 </para><para>
 Neste exemplo, existe somente um servidor 
 <replaceable>"servername"</replaceable> que faz todo o trabalho 
@@ -53,7 +53,7 @@ reinice-o com <userinput>/etc/init.d/dhcpd restart</userinput>.
 </para>
 
    <sect3 arch="i386">
-   <title>Inicialização via PXE</title>
+   <title>Habilitando a inicialização através de PXE no servidor DHCP</title>
 <para>
 Aqui está outro exemplo para o <filename>dhcp.conf</filename> usando o 
 método Pre-boot Execution Environment (PXE) do TFTP.

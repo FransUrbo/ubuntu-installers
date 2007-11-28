@@ -11,9 +11,9 @@
 <!ENTITY d-i "<classname>debian-installer</classname>">
 <!ENTITY d-i-manual "<classname>debian-installer-manual</classname>">
 
-<!ENTITY release     "4.10">
-<!ENTITY releasename "warty">
-<!ENTITY longreleasename "<quote>Warty Warthog</quote>">
+<!ENTITY release     "5.04">
+<!ENTITY releasename "hoary">
+<!ENTITY longreleasename "<quote>Hoary Hedgehog</quote>">
 <!ENTITY path-to-top-level "../">
 <!ENTITY FIXME
   "<emphasis>Documentation not complete, text missing.</emphasis>">

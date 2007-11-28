@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: countrychooser.xml 21579 2004-09-13 22:57:14Z fjpop-guest $ -->
+<!-- $Id: countrychooser.xml 23058 2004-10-12 23:51:17Z cjwatson $ -->
 
 
    <sect3 id="country-chooser">
@@ -16,7 +16,7 @@ you will be presented with a list of all countries, grouped by continent.
 </para><para>
 
 This selection will be used later in the installation process to pick the
-default timezone and an Ubuntu mirror appropriate for your geographic
+default timezone and a Ubuntu mirror appropriate for your geographic
 location. If the defaults proposed by the installer are not suitable, you
 can make a different choice. The selected country, together with the selected
 language, may also affect locale settings for your new Ubuntu system.

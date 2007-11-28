@@ -55,7 +55,7 @@ you will also have to get a local working copy of the manual as described there.
   This enables you to track changes is the original English documents.
   see 'Keeping your translation up to date' below for an explanation.
   - change directory to: installer/doc/manual/
-  - ./rev-update <lang>
+  - ./scripts/rev-update <lang>
 
   4. Commit the changes to SVN
   ----------------------------
@@ -94,12 +94,12 @@ Translation order
 =================
 
 Suggested translation order:
-- ./preface.xml
+- ./preface.xml, ./bookinfo.xml
 - ./welcome/*.xml
 - ./using-d-i/*.xml
+- ./using-d-i/modules/*.xml
 - ./boot-new/*.xml
 - ./boot-new/modules/*.xml
-- ./module/*.xml
 
 Note that currently (may 10, 2004) it look like there will be a fairly major
 reorganization of parts of the manual in the next month(s).
@@ -152,20 +152,20 @@ your working copy.
   --------------------------
   If there are any new files (marked 'A' in the output from 'svn up'),
   copy them to the directory for your translation and then:
-  - ./rev-update <lang>
+  - ./scripts/rev-update <lang>
   This will change the revision comment in the copied file to:
   <!-- original version: ##### untranslated -->
   You will also have to run 'svn add' for the new documents.
 
   3. Check for other changes
   --------------------------
-  - ./doc-check <lang>
+  - ./scripts/doc-check <lang>
   If changes are listed for documents that are marked 'untranslated', you
   can just copy the new English version to the directory for your translation
   and again use rev-update to change the revision comments.
   If changes are listed for documents that are not marked 'untranslated',
   you can create a diff to find out what the changes are by running:
-  - ./doc-check -d <lang>
+  - ./scripts/doc-check -d <lang>
   
   4. Update your translations
   ---------------------------
@@ -173,8 +173,8 @@ your working copy.
   !! Don't forget to also update the revision number in the revision comment
      after you updated a translation. The revision number should be the same
      as the revision number in the new version of the English document.
-  You should run './doc-check <lang>' again after you finish all updates and
-  before you commit your changes to SVN; there should be no output.
+  You should run './scripts/doc-check <lang>' again after you finish all updates
+  and before you commit your changes to SVN; there should be no output.
   
   Other uses of the scripts
   -------------------------
@@ -230,8 +230,8 @@ How to get write access to the SVN repository
   Others may use backports from www.backports.org. Please add this entry to
   your /etc/apt/sources.list file:
     deb http://www.backports.org/debian stable subversion
-  Or use Colin Watson's Woody backports: 
-    http://people.debian.org/~cjwatson/subversion-woody/ 
+  Or use Adam Conrad's backports:
+    deb http://people.debian.org/~adconrad woody subversion
 
   2) Getting write access to the subversion repository
   ----------------------------------------------------
@@ -250,7 +250,20 @@ How to get write access to the SVN repository
   of the repository using:
     svn co svn+ssh://<username>@svn.debian.org/svn/d-i/trunk debian-installer/installer/doc
 
-You can find a good manual for SVN at http://svnbook.red-bean.com/svnbook.
+  4) Commit your changed translation files to SVN
+  -----------------------------------------------
+
+  After you have finished editing your translation, use
+    svn commit -m "Your comment about this commit"
+  to commit your changes to the SVN repository.
+
+  Note: it's possible, to do an anonymous checkout from the svn
+        (use svn co svn://svn.debian.org/d-i/trunk/installer/doc/manual).
+        However, from this local copy you aren't able to commit, it's readonly.
+        Use the commands listed under 3), if you plan to do commits in the future.
+
+
+You can find a good manual for SVN at http://svnbook.red-bean.com/.
 
 How to get help
 ===============
@@ -266,6 +279,15 @@ are probably errors.  Please fix it if you find errors.
 
 --------------------------------------------------------------------------
 Changelog:
+
+2004/10/26 Holger Wansing
+ - Added a chapter about how to commit + fixed the Link to the svnbook.
+
+2004/09/27 Frans Pop
+ - Update in line with changes in SVN (moved files/directories)
+
+2004/09/04 Guillem Jover
+ - Refer to Adam Conrad's subversion backport instead.
 
 2004/06/04 Frans Pop
  - Added paragraph on updating translations

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="EUC-JP"?>
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 17333 -->
+<!-- original version: 23207 -->
 
  <sect1 id="boot-parms"><title>ブートパラメータ</title>
 <para>
@@ -20,7 +20,7 @@ However, in some cases you'll have to help the kernel a bit.
 
 <!--
 If this is the first time you're booting the system, try the default
-boot parameters (i.e., don't try setting arguments) and see if it works
+boot parameters (i.e., don't try setting parameters) and see if it works
 correctly. It probably will.  If not, you can reboot later and look for
 any special parameters that inform the system about your hardware.
 -->
@@ -85,17 +85,6 @@ Memory:<replaceable>avail</replaceable>k/<replaceable>total</replaceable>k avail
 メガバイト単位なら ``m'' を後ろにつけて記入します。例えば、
 <userinput>mem=65536k</userinput> も <userinput>mem=64m</userinput> も 64MB の RAM を意味します。
 
-</para><para>
-
-<!--
-If your monitor is only capable of black-and-white, use the
-<userinput>mono</userinput> boot argument.  Otherwise, your
-installation will use color, which is the default.
--->
-お使いのモニタが白黒表示しかできないものでしたら、
-ブートパラメータ <userinput>mono</userinput> を使ってください。
-こうしないと、インストールでは標準でカラー表示になります。
-
 </para><para condition="supports-serial-console">
 
 <!--
@@ -136,20 +125,41 @@ Alternatively, set the <envar>input-device</envar> and
 </para>
 
 
-  <sect2 id="installer-args"><title>Debian Installer 引数</title>
+  <sect2 id="installer-args"><title>Debian Installer パラメータ</title>
 <para>
 
 <!--
-The installation system recognizes a few boot arguments which may be
-useful. 
+The installation system recognizes a few additional boot parameters<footnote>
 -->
-インストールシステムは、おそらく便利だと思われる引数をいくつか認識します。
+インストールシステムは、
+おそらく便利だと思われる、追加起動パラメータ<footnote>
 
+<para>
+
+<!--
+Note that the kernel accepts a maximum of 8 command line options and
+8 environment options (including any options added by default for the
+installer). If these numbers are exceeded, 2.4 kernels will drop any
+excess options and 2.6 kernels will panic.
+-->
+カーネルは最大でコマンドラインオプションを 8 つと、
+環境オプションを 8 つ受け付けます。
+(インストーラがデフォルトで付加するオプション含む)
+もしこの数を超過すると、
+2.4 カーネルは超過したオプションを無視してしまいますし、
+2.6 カーネルはカーネルパニックを起こしてしまいます。
+
+</para>
+
+<!--
+</footnote> which may be useful. 
+-->
+</footnote>をいくつか認識します。
 </para>
 
 <variablelist>
 <varlistentry>
-<term>DEBCONF_PRIORITY</term>
+<term>debconf/priority</term>
 <listitem><para>
 
 <!--
@@ -161,13 +171,13 @@ to be displayed.
 </para><para>
 
 <!--
-The default installation uses <userinput>DEBCONF_PRIORITY=high</userinput>.
+The default installation uses <userinput>debconf/priority=high</userinput>.
 This means that both high and critical priority messages are shown, but medium
 and low priority messages are skipped. 
 If problems are encountered, the installer adjusts the priority as needed.
 -->
 デフォルトのインストールでは、
-<userinput>DEBCONF_PRIORITY=high</userinput>  を使用します。
+<userinput>debconf/priority=high</userinput> を使用します。
 優先度が「高」のものと、「重要」のもののメッセージを表示し、
 「標準」や、「低」のメッセージはスキップします。
 問題にぶつかった場合、インストーラは必要な優先度に調整します。
@@ -175,19 +185,19 @@ If problems are encountered, the installer adjusts the priority as needed.
 </para><para>
 
 <!--
-If you add <userinput>DEBCONF_PRIORITY=medium</userinput> as boot parameter, you
+If you add <userinput>debconf/priority=medium</userinput> as boot parameter, you
 will be shown the installation menu and gain more control over the installation.
-When <userinput>DEBCONF_PRIORITY=low</userinput> is used, all messages are shown
+When <userinput>debconf/priority=low</userinput> is used, all messages are shown
 (this is equivalent to the <emphasis>expert</emphasis> boot method).
-With <userinput>DEBCONF_PRIORITY=critical</userinput>, the installation system
+With <userinput>debconf/priority=critical</userinput>, the installation system
 will display only critical messages and try to do the right thing without fuss.
 -->
-ブートパラメータに <userinput>DEBCONF_PRIORITY=medium</userinput> 
+ブートパラメータに <userinput>debconf/priority=medium</userinput>
 を追加すると、インストールメニューが表示され、
 インストールについて、さらに多くの制御を行うことができます。
-<userinput>DEBCONF_PRIORITY=low</userinput> を使った場合は、
+<userinput>debconf/priority=low</userinput> を使った場合は、
 すべてのメッセージを表示します (<emphasis>expert</emphasis> 起動法と等価)。
-<userinput>DEBCONF_PRIORITY=critical</userinput> の場合は、
+<userinput>debconf/priority=critical</userinput> の場合は、
 インストールシステムは重要なメッセージだけを表示し、
 大騒ぎせずに正しい設定をしようとします。
 
@@ -196,7 +206,7 @@ will display only critical messages and try to do the right thing without fuss.
 
 
 <varlistentry>
-<term>DEBCONF_FRONTEND</term>
+<term>DEBIAN_FRONTEND</term>
 <listitem><para>
 
 <!--
@@ -208,36 +218,36 @@ installer. The current possible parameter settings are:
 
 <itemizedlist>
 <listitem>
-<para><userinput>DEBCONF_FRONTEND=noninteractive</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=noninteractive</userinput></para>
 </listitem><listitem>
-<para><userinput>DEBCONF_FRONTEND=text</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=text</userinput></para>
 </listitem><listitem>
-<para><userinput>DEBCONF_FRONTEND=newt</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=newt</userinput></para>
 </listitem><listitem>
-<para><userinput>DEBCONF_FRONTEND=slang</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=slang</userinput></para>
 </listitem><listitem>
-<para><userinput>DEBCONF_FRONTEND=ncurses</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=ncurses</userinput></para>
 </listitem><listitem>
-<para><userinput>DEBCONF_FRONTEND=bogl</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=bogl</userinput></para>
 </listitem><listitem>
-<para><userinput>DEBCONF_FRONTEND=gtk</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=gtk</userinput></para>
 </listitem><listitem>
-<para><userinput>DEBCONF_FRONTEND=corba</userinput></para>
+<para><userinput>DEBIAN_FRONTEND=corba</userinput></para>
 </listitem>
 </itemizedlist>
 
 <!--
-The default front end is <userinput>DEBCONF_FRONTEND=newt</userinput>.
-<userinput>DEBCONF_FRONTEND=text</userinput> may be preferable for
-serial console installs. Other frontends but
-<userinput>newt</userinput> are not available on default install
+The default front end is <userinput>DEBIAN_FRONTEND=newt</userinput>.
+<userinput>DEBIAN_FRONTEND=text</userinput> may be preferable for
+serial console installs. Generally only the
+<userinput>newt</userinput> frontend is available on default install
 media, so this is not very useful right now.
 -->
 デフォルトのフロントエンドは <userinput>DEBCONF_FRONTEND=newt</userinput> です。
 シリアルコンソールでインストールするには、
-<userinput>DEBCONF_FRONTEND=text</userinput> とするべきかもしれません。
-<userinput>DEBCONF_FRONTEND=text</userinput> 以外のフロントエンドは、
-デフォルトのインストールメディアでは利用できません。
+<userinput>DEBIAN_FRONTEND=text</userinput> とすべきでしょう。
+一般的に、デフォルトのインストールメディアでは <userinput>newt</userinput>
+ フロントエンドのみが利用可能です。
 そのため、今現在あまり有用ではありません。
 
 
@@ -314,12 +324,12 @@ Debian installer from. For example,
 </para><para>
 
 <!--
-The boot floppy, which normally scans all floppys and USB storage
+The boot floppy, which normally scans all floppies and USB storage
 devices it can to find the root floppy, can be overridden by this
 parameter to only look at the one device.
 -->
 ブートフロッピー は root フロッピーを探すのに、
-通常全フロッピーとUSB ストレージを検索しますが、
+通常全フロッピーと USB ストレージを検索しますが、
 このパラメータで 1 つのデバイスを探すように上書きできます。
 
 </para></listitem>
@@ -342,7 +352,7 @@ a freeze within a few minutes after starting the install.
 <userinput>debian-installer/framebuffer=false</userinput> 
 パラメータによってこの機能を無効にできます。
 bterm や bogl に関するエラーメッセージや、真っ暗な画面、
-インストールが始まった後での数分のフリーズがおきたら問題の兆候です。
+インストールが始まって数分後にフリーズがおきたら問題の兆候です。
 
 </para><para arch="i386">
 
@@ -392,7 +402,7 @@ boot, if that causes problems.
 <!--
 By default, the &d-i; automatically probes for network configuration
 via DHCP. If the probe succeeds, you won't have a chance to review and
-chage the obtained settings. You can get to the manual network setup
+change the obtained settings. You can get to the manual network setup
 only in case the DHCP probe fails.
 -->
 デフォルトでは、&d-i; は DHCP によりネットワークの設定を自動検出します。
@@ -422,7 +432,7 @@ DHCP でのネットワーク設定をせず手動で情報を入力するのに、
 <!--
 Set to <userinput>false</userinput> to prevent starting PCMCIA
 services, if that causes problems. Some laptops are well known for
-this misbehaviour.
+this misbehavior.
 -->
 PCMCIA サービスが原因で問題が発生する場合、
 <userinput>false</userinput> を設定することで、
@@ -432,6 +442,49 @@ PCMCIA サービスが原因で問題が発生する場合、
 
 </para></listitem>
 </varlistentry>
+
+<varlistentry>
+<term>preseed/url</term>
+<listitem><para>
+
+<!--
+Specify the url to a preconfiguration file to download and use in
+automating the install. See <xref linkend="automatic-install"/>.
+-->
+preconfiguration ファイルをダウンロードする URL を指定します。
+これは自動インストールで使用します。
+<xref linkend="automatic-install"/> を参照してください。
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>preseed/file</term>
+<listitem><para>
+
+<!--
+Specify the url to a preconfiguration file to load to
+automating the install. See <xref linkend="automatic-install"/>.
+-->
+自動インストールで読み込む preconfiguration ファイルの URL を指定します。
+<xref linkend="automatic-install"/> を参照してください。
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>ramdisk_size</term>
+<listitem><para>
+
+<!--
+If you are using a 2.2.x kernel, you may need to set &ramdisksize;.
+-->
+2.2.x カーネルを使用するのなら、
+&ramdisksize; を設定する必要があるかもしれません。
+
+</para></listitem>
+</varlistentry>
+
 </variablelist>
   </sect2>
  </sect1>

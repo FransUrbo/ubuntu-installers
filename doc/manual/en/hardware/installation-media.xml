@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: installation-media.xml 18767 2004-07-31 14:14:52Z mck-guest $ -->
+<!-- $Id: installation-media.xml 22939 2004-10-09 23:27:48Z ths-guest $ -->
 
  <sect1 id="installation-media">
  <title>Installation Media</title>
@@ -7,8 +7,8 @@
 <para>
 
 This section will help you determine which different media types you can use to
-install Debian. For example, if you have a floppy disk drive on your machine, 
-it can be used to install Debian. There is a whole chapter devoted media,
+install Ubuntu. For example, if you have a floppy disk drive on your machine, 
+it can be used to install Ubuntu. There is a whole chapter devoted media,
 <xref linkend="install-methods"/>, which lists the advantages and
 disadvantages of each media type. You may want to refer back to this page once
 you reach that section.
@@ -50,10 +50,6 @@ support booting from a CD-ROM, you can use the CD-ROM in conjunction
 with the other techniques to install your system, once you've booted
 up by other means; see <xref linkend="boot-installer"/>.
 
-</para><para arch="mips">
-
-Mips does currently not support booting off a cdrom. 
-
 </para><para arch="i386"> 
 
 Both SCSI and IDE/ATAPI CD-ROMs are supported.  In addition, all
@@ -73,6 +69,18 @@ are supported by the ohci1394 and sbp2 drivers.
 
 IDE/ATAPI CD-ROMs are supported on all ARM machines.
 On RiscPCs, SCSI CD-ROMs are also supported. 
+
+</para><para arch="mips">
+
+On SGI machines, booting from CD-ROM requires a SCSI CD-ROM drive
+capable of working with a logical blocksize of 512 bytes. Many of the
+SCSI CD-DROM drives sold for the PC market do not have this
+capability. If your CD-ROM drive has a jumper labeled "Unix/PC" or
+"512/2048", place it in the "Unix" or "512" position.
+To start the install, simply choose the <quote>System installation</quote>
+entry in the firmware.  The Broadcom BCM91250A supports standard IDE devices,
+including CD-ROM drives, but CD images for this platform are currently not
+provided because the firmware doesn't recognize CD drives.
 
 </para><para arch="mipsel"> 
 
@@ -126,7 +134,7 @@ installation technique for most &architecture; machines.
 </para><para arch="sparc">
 
 Although the &arch-title; does not allow booting from SunOS 
-(Solaris), you can install from a SunOS partiton (UFS slices).
+(Solaris), you can install from a SunOS partition (UFS slices).
 
 </para>
   </sect2>
@@ -135,7 +143,7 @@ Although the &arch-title; does not allow booting from SunOS
 
 <para>
 
-Many Debian boxes need their floppy and/or CD-ROM drives only for
+Many Ubuntu boxes need their floppy and/or CD-ROM drives only for
 setting up the system and for rescue purposes. If you operate some
 servers, you will probably already have thought about omitting those
 drives and using an USB memory stick for installing and (when
@@ -185,17 +193,17 @@ linkend="linux-upgrade"/>.
 
 <para>
 
-The Debian boot disks contain a kernel which is built to maximize the
+The Ubuntu boot disks contain a kernel which is built to maximize the
 number of systems it runs on.  Unfortunately, this makes for a larger
 kernel, which includes many drivers that won't be used for your
 machine (see <xref linkend="kernel-baking"/> to learn how to
 build your own kernel).  Support for the widest possible range of
-devices is desirable in general, to ensure that Debian can be
+devices is desirable in general, to ensure that Ubuntu can be
 installed on the widest array of hardware.
 
 </para><para arch="i386">
 
-Generally, the Debian installation system includes support for floppies,
+Generally, the Ubuntu installation system includes support for floppies,
 IDE drives, IDE floppies, parallel port IDE devices, SCSI controllers and
 drives, USB, and FireWire.  The file systems supported include FAT,
 Win-32 FAT extensions (VFAT), and NTFS, among others.

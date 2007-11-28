@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: what-is-debian-hurd.xml 11865 2004-03-24 09:50:09Z mck-guest $ -->
-<!-- original version: 11648 -->
+<!-- $Id: what-is-debian-hurd.xml 18810 2004-08-02 17:09:13Z mck-guest $ -->
+<!-- original version: 18683 -->
 
- <sect1 id="what-is-debian-hurd">
+ <sect1 id="what-is-debian-hurd" condition="unofficial-build">
  <title>Co je Debian GNU/Hurd?</title>
 
 <para>

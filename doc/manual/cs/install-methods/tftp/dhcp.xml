@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: dhcp.xml 18038 2004-07-20 20:27:48Z mck-guest $ -->
-<!-- original version: 16879 -->
+<!-- $Id: dhcp.xml 22904 2004-10-08 20:10:05Z mck-guest $ -->
+<!-- original version: 22664 -->
 
   <sect2 condition="supports-dhcp" id="dhcpd">
    <title>Nastavení DHCP serveru</title>
 <para>
 
-V době psaní tohoto manuálu existuje pouze jeden svobodný  DHCP server
-&mdash; ISC <command>dhcpd</command>. &debian; jej obsahuje jako balík
+Jednním ze svobodných DHCP serverů je ISC
+<command>dhcpd</command>. &debian; jej obsahuje jako balík
 <classname>dhcp</classname>. Následuje ukázka jednoduchého
 konfiguračního souboru (obvykle <filename>/etc/dhcpd.conf</filename>):
 
@@ -57,7 +57,7 @@ restart</userinput>.
 </para>
 
    <sect3 arch="i386">
-   <title>PXE zavádění</title>
+   <title>Povolení PXE zavádění</title>
 <para>
 Další příklad souboru <filename>dhcp.conf</filename> tentokrát využívá
 metodu PXE (Pre-boot Execution Environment) protokolu TFTP.

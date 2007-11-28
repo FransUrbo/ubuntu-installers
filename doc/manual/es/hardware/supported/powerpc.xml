@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- retain these comments for translator revision tracking -->
 <!-- original version: 11648 -->
 
 
@@ -16,7 +15,7 @@ adaptación para 64bits (Power3).
 </para><para>
 
 Apple (y algunos otros fabricantes, Power Computing por
-ejemplo) producen diversas series de computadores Macintosh basados
+ejemplo) producen diversas series de ordenadores Macintosh basados
 en el procesador PowerPC. A efectos del soporte por arquitectura,
 éstos están categorizados como NuBus, OldWorld PCI y NewWorld.
 
@@ -24,7 +23,7 @@ en el procesador PowerPC. A efectos del soporte por arquitectura,
 
 Los computadores Macintosh que usan la serie de procesadores 680x0
 no están dentro de la familia PowerPC, sino que son máquinas m68k.
-Estos modelos empiezan con `Mac II' o tienen un número de modelo de 3
+Estos modelos empiezan con «Mac II» o tienen un número de modelo de 3
 dígitos, como Centris 650 o Quadra 950. Los números de modelo de los
 procesadores PowerPC de Apple anteriores a iMac tienen cuatro dígitos.
 
@@ -58,13 +57,13 @@ Workgroup Server 6150, 8150, 9150
 </para></listitem>
 </itemizedlist>
 
-Esta disponible un núcleo Linux para estas máquinas con soporte limitado
+Existe un núcleo Linux para estas máquinas con soporte limitado
 en <ulink url="http://nubus-pmac.sourceforge.net/"></ulink> .
 
 </para><para>
 
 Los sistemas OldWorld son en su mayoría máquinas Power Macintosh con
-una unidad de disquete y un bus PCI. Muchas de las Power Macintosh
+una unidad de disquete y bus PCI. Muchas de las Power Macintosh
 basadas en 603, 603e, 604 y 604e son máquinas OldWorld. Los sistemas
 G3 de color beige también son OldWorld.
 
@@ -74,7 +73,7 @@ Los también llamados PowerMac NewWorld son cualquier PowerMac en
 cajas plásticas de colores. Esto incluye todas los iMacs, iBooks,
 sistemas G4, sistemas G3 de color azul y la mayoría de los
 PowerBooks producidos en desde 1999. Las PowerMac NewWorld
-también son conocidas por usar el sistema `ROM en RAM' para MacOS,
+también son conocidas por usar el sistema «ROM en RAM» para MacOS,
 y fueron producidas desde mediados de 1998 en adelante.
 
 </para><para>
@@ -82,10 +81,11 @@ y fueron producidas desde mediados de 1998 en adelante.
 Los sistemas Macintosh recientemente introducidos tienen hardware con
 mejor soporte por parte de la versión 2.4 del núcleo Linux. Para algunos, 
 la versión 2.2 del núcleo simplemente no funciona. La nueva variante 
-new-powermac, que usa el núcleo 2.4, ha sido añadido para ser compatible
-con mas hardware. Esta nueva variante también se puede instalar en otras 
-máquinas OldWorld y NewWorld. Las máquinas para las que se recomienda la
-variante new-powermac están marcadas con un asterisco a continuación.
+«new-powermac», que usa el núcleo 2.4, ha sido añadida para tener 
+compatibilidad con más hardware. Esta nueva variante también se puede 
+instalar en otras máquinas OldWorld y NewWorld. Las máquinas para las que 
+se recomienda la variante «new-powermac» están marcadas con un asterisco 
+a continuación.
 
 </para><para>
 
