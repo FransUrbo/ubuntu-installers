@@ -1,3 +1,9 @@
+debian-installer (20040528ubuntu2) warty; urgency=low
+
+  * Remove build-dependencies only required for powerpc 2.4.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Wed, 30 Jun 2004 17:23:53 +0100
+
 debian-installer (20040528ubuntu1) warty; urgency=low
 
   * Build images from warty.
