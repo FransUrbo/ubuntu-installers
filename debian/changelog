@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu5) gutsy; urgency=low
+
+  * Move to 2.6.22-7 kernels.
+
+ -- Fabio M. Di Nitto <fabbione@ubuntu.com>  Mon, 25 Jun 2007 20:15:51 +0200
+
 debian-installer (20070308ubuntu4) gutsy; urgency=low
 
   * Remove fs-core-modules workaround, as the kernel has now been fixed.
