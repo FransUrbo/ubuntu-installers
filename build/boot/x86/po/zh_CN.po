@@ -9,12 +9,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2006-09-26 17:40+0000\n"
+"PO-Revision-Date: 2007-04-02 02:26+0000\n"
 "Last-Translator: ZhengPeng Hou <zhengpeng.hou@gmail.com>\n"
 "Language-Team: Chinese (China) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:09+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -50,7 +51,7 @@ msgstr "KEY"
 
 #: help.xml:30
 msgid "TOPIC"
-msgstr "题目"
+msgstr "主题"
 
 #: help.xml:34
 msgid "This page, the help index."
@@ -187,7 +188,7 @@ msgstr "可行的启动方式："
 
 #: help.xml:177
 msgid "install"
-msgstr "install"
+msgstr "安装"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -195,7 +196,7 @@ msgstr "开始安装──这是默认的${MEDIA_TYPE}安装。"
 
 #: help.xml:184
 msgid "expert"
-msgstr "expert"
+msgstr "专家级安装"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
@@ -203,11 +204,11 @@ msgstr "以专家级模式开始安装，可以手动控制最多安装选项。
 
 #: help.xml:191
 msgid "server"
-msgstr "server"
+msgstr "服务器安装"
 
 #: help.xml:192
 msgid "server-expert"
-msgstr "server-expert"
+msgstr "服务器专家级安装"
 
 #: help.xml:194
 msgid ""
@@ -226,7 +227,7 @@ msgstr "开始live系统"
 
 #: help.xml:207
 msgid "memtest"
-msgstr "memtest"
+msgstr "内存测试"
 
 #: help.xml:209
 msgid "Perform a memory test."
@@ -268,7 +269,7 @@ msgstr "用其中一个启动方式来救援一个已经存在的安装"
 
 #: help.xml:251
 msgid "rescue"
-msgstr "rescue"
+msgstr "救援"
 
 #: help.xml:253
 msgid "Boot into rescue mode."
@@ -430,15 +431,13 @@ msgstr "屏幕显示有问题的笔记本电脑"
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
 msgstr ""
 
 #: help.xml:425
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:430
 msgid ""
@@ -644,13 +643,12 @@ msgid "Use Braille tty"
 msgstr ""
 
 #: help.xml:593
-#, fuzzy
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,"
-"<replaceable>sec</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #: help.xml:598
 msgid ""
@@ -662,14 +660,14 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:608
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:609
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:626
 msgid "GETTING HELP"
@@ -771,9 +769,3 @@ msgid ""
 msgstr ""
 "本系统是在Debian的基础上构建的。参阅<ulink url=\"http://www.debian.org/\" />"
 "来获知更多关于Debian项目的细节和信息。"
-
-#~ msgid "boot: install fb=false"
-#~ msgstr "boot: install fb=false"
-
-#~ msgid "boot: live fb=false"
-#~ msgstr "boot: live fb=false"

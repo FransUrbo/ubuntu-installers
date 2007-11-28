@@ -1,21 +1,22 @@
 # Occitan (post 1500) translation for debian-installer
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
 # This file is distributed under the same license as the debian-installer package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# Yannig MARCHEGAY (Kokoyaya)  <yannig@marchegay.org>, 2006.
+# , fuzzy
 #
-#, fuzzy
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2006-10-10 17:34+0000\n"
-"Last-Translator: Yannig MARCHEGAY (Kokoyaya) <yannick.marchegay@lokanova."
-"com>\n"
+"PO-Revision-Date: 2007-03-19 14:51+0000\n"
+"Last-Translator: Yannig MARCHEGAY <yannig@marchegay.org>\n"
 "Language-Team: Occitan (post 1500) <oc@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:01+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -23,7 +24,7 @@ msgstr ""
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "Benvenguda sus ${DISTRIBUTION_NAME} !"
+msgstr "Planvengut sus ${DISTRIBUTION_NAME} !"
 
 #: help.xml:18
 msgid ""
@@ -110,7 +111,7 @@ msgstr ""
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr ""
+msgstr "PRE-REQUESITS PER L'INSTALLACION D'UBUNTU"
 
 #: help.xml:119
 msgid ""
@@ -152,7 +153,7 @@ msgstr ""
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Mercés de causir Ubuntu !"
+msgstr "Mercès de causir Ubuntu !"
 
 #: help.xml:156 help.xml:230 help.xml:266 help.xml:295 help.xml:362
 #: help.xml:453 help.xml:522 help.xml:613 help.xml:669 help.xml:725
@@ -177,7 +178,7 @@ msgstr ""
 
 #: help.xml:177
 msgid "install"
-msgstr "install"
+msgstr "installar"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -185,7 +186,7 @@ msgstr ""
 
 #: help.xml:184
 msgid "expert"
-msgstr "expert"
+msgstr "expèrt"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
@@ -284,7 +285,7 @@ msgstr ""
 #: help.xml:316 help.xml:382 help.xml:473 help.xml:540
 #, no-wrap
 msgid "boot:"
-msgstr "boot:"
+msgstr "aviada :"
 
 #: help.xml:316
 msgid ""
@@ -366,7 +367,7 @@ msgstr ""
 
 #: help.xml:400
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:404
 msgid "IBM Pentium Microchannel"
@@ -403,15 +404,13 @@ msgstr ""
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
 msgstr ""
 
 #: help.xml:425
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:430
 msgid ""
@@ -469,6 +468,11 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>tornar connectar</replaceable></"
+"userinput></optional></optional></optional>"
 
 #: help.xml:489
 msgid "Adaptec 1542"
@@ -481,6 +485,10 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:494
 msgid "Adaptec 274x, 284x"
@@ -498,6 +506,7 @@ msgstr ""
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:504
 msgid "Certain DELL machines"
@@ -619,18 +628,18 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:608
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:609
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:626
 msgid "GETTING HELP"
-msgstr ""
+msgstr "OBTÉNER D'AJUDA"
 
 #: help.xml:633
 msgid "If you can't install Ubuntu, don't despair!"
@@ -710,9 +719,3 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-
-#~ msgid "boot: install fb=false"
-#~ msgstr "boot: install fb=false"
-
-#~ msgid "boot: live fb=false"
-#~ msgstr "boot: live fb=false"

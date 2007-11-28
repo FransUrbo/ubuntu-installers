@@ -9,12 +9,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2006-10-10 18:09+0000\n"
+"PO-Revision-Date: 2007-04-02 02:24+0000\n"
 "Last-Translator: Tommi Tauriainen <t.tauriainen@mbnet.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:20+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -184,7 +185,7 @@ msgstr ""
 #: help.xml:161 help.xml:235 help.xml:271 help.xml:300 help.xml:367
 #: help.xml:458 help.xml:527 help.xml:618 help.xml:674 help.xml:730
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "F1 näyttää ohjehakemiston, Esc-näppäin poistuu ohjeista."
+msgstr "F1 näyttää ohjeluettelon, Esc-näppäin poistuu ohjeista."
 
 #: help.xml:169
 msgid "BOOT METHODS"
@@ -200,7 +201,7 @@ msgstr "install"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr "Käynnistää asennuksen -- tämä on oletusasennus {MEDIA_TYPE}:lle."
+msgstr "Käynnistää asennuksen -- tämä on oletusasennus {MEDIA_TYPE}."
 
 #: help.xml:184
 msgid "expert"
@@ -232,7 +233,7 @@ msgstr "live"
 
 #: help.xml:202
 msgid "Start the live system."
-msgstr "Käynnistää esittelyjärjestelmän."
+msgstr "Käynnistää esittelytilan."
 
 #: help.xml:207
 msgid "memtest"
@@ -452,7 +453,6 @@ msgstr "Kannettavat joilla näyttöongelmia"
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
 msgstr ""
@@ -805,9 +805,3 @@ msgid ""
 msgstr ""
 "Tämä järjestelmä perustuu Debianiin. Katso <ulink url=\"http://www.debian."
 "org/\" /> saadaksesi lisätietoja Debian-projektista."
-
-#~ msgid "boot: install fb=false"
-#~ msgstr "boot: install fb=false"
-
-#~ msgid "boot: live fb=false"
-#~ msgstr "boot: live fb=false"

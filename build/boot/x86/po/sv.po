@@ -9,12 +9,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2006-09-27 11:43+0000\n"
+"PO-Revision-Date: 2007-04-02 02:26+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:04+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -46,7 +47,7 @@ msgstr "HJÄLPINDEX"
 
 #: help.xml:29
 msgid "KEY"
-msgstr "NYCKEL"
+msgstr "TANGENT"
 
 #: help.xml:30
 msgid "TOPIC"
@@ -66,7 +67,7 @@ msgstr "Förutsättningar för att köra ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr "Uppstartsmetoder för speciella sätt att använda denna ${MEDIA_TYPE}."
+msgstr "Uppstartsmetoder för speciella sätt att använda den här ${MEDIA_TYPE}."
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
@@ -82,7 +83,7 @@ msgstr "Speciella uppstartsparametrar för speciella maskiner."
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr "Speciella uppstartsparametrar för valda diskkontrollrar."
+msgstr "Speciella uppstartsparametrar för valda diskkontroller."
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
@@ -127,11 +128,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Du bör ha ledigt utrymme på din hårddisk att skapa en ny diskpartition på "
+"Du bör ha utrymme på din hårddisk att skapa en ny diskpartition på "
 "åtminstone 2 gigabyte för att installera ett normalt Ubuntu-skrivbordssystem "
 "på eller åtminstone 400 megabyte för en minimal serverinstallation. Du "
 "behöver mer diskutrymme för att installera ytterligare paket, beroende på "
-"vad du önskar att göra med ditt nya Ubuntu-system."
+"vad du vill göra med ditt nya Ubuntu-system."
 
 #: help.xml:131 help.xml:658
 msgid ""
@@ -147,15 +148,15 @@ msgstr ""
 msgid ""
 "You must have at least 128 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Du måste ha åtminstone 128 megabyte RAM-minne för att använda det här live-"
-"systemet."
+"Du måste ha åtminstone 128 megabyte RAM-minne för att använda det här "
+"livesystemet."
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing swap partitions on the disk will be used if available."
 msgstr ""
-"Det här live-systemet kräver inte något utrymme på din hårddisk. Dock kommer "
+"Det här livesystemet kräver inte något utrymme på din hårddisk. Dock kommer "
 "existerande växlingspartitioner på disken att användas om de finns "
 "tillgängliga."
 
@@ -226,7 +227,7 @@ msgid ""
 "desktop environment is not desired."
 msgstr ""
 "Minimal systeminstallation. Rekommenderas för servrar där en komplett, "
-"grafisk skrivbordsmiljö inte önskas."
+"grafisk skrivbordsmiljö inte är önskvärd."
 
 #: help.xml:200
 msgid "live"
@@ -249,8 +250,8 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"För att använda en av de här uppstartsmetoderna, ange det på prompten, "
-"alternativ följt av uppstartsparametrar. Exempelvis:"
+"För att använda en av de här uppstartsmetoderna, ange det på prompten, följt "
+"av valfria uppstartsparametrar. Exempelvis:"
 
 #: help.xml:220
 #, no-wrap
@@ -302,8 +303,8 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
-"Det finns inget dedicerat räddningsläge på den här cd-skivan. Eftersom helt "
-"systemet kör från cd-skivan, är det dock möjligt att använda kommandoraden "
+"Det finns inget dedicerat räddningsläge på den här cd-skivan. Eftersom hela "
+"systemet kör från cd-skivan, är det även möjligt att använda kommandoraden "
 "och/eller de grafiska verktygen för att rädda ett trasigt system, och "
 "använda en webbläsare för att söka efter hjälp. Omfattande råd finns "
 "tillgängliga online för de flesta sorters problem som kan orsaka att ditt "
@@ -343,7 +344,7 @@ msgstr "uppstartsparametrar för speciella maskiner"
 
 #: help.xml:335
 msgid "boot parameters for various disk controllers"
-msgstr "uppstartsparametrar för olika diskkontrollrar"
+msgstr "uppstartsparametrar för olika diskkontroller"
 
 #: help.xml:340
 msgid "boot parameters understood by the install system"
@@ -351,7 +352,7 @@ msgstr "uppstartsparametrar som accepteras av installationssystemet"
 
 #: help.xml:345
 msgid "boot parameters understood by the bootstrap system"
-msgstr "uppstartsparametrar som accepteras av bootstrap-systemet"
+msgstr "uppstartsparametrar som accepteras av bootstrapsystemet"
 
 #: help.xml:350
 msgid ""
@@ -370,7 +371,7 @@ msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"Många kärnmoduler läses in dynamiskt av bootstrap-systemet, och parametrar "
+"Många kärnmoduler läses in dynamiskt av bootstrapsystemet, och parametrar "
 "för de här modulerna kan inte anges på kommandoraden."
 
 #: help.xml:375
@@ -443,7 +444,7 @@ msgstr ""
 
 #: help.xml:414
 msgid "Workaround faulty FPU (old machines)"
-msgstr "Problemlösning för felaktig flyttalsprocessor (äldre maskiner)"
+msgstr "Problemlösning för felaktig FPU (äldre maskiner)"
 
 #: help.xml:415
 msgid "<userinput>no387</userinput>"
@@ -457,22 +458,20 @@ msgstr "Bärbara datorer med skärmproblem"
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Använd första serieporten med 9600 baud"
 
 #: help.xml:425
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:430
 msgid ""
 "If your system hangs when booting, and the last message you see is \"aec671x-"
 "detect..\", try"
 msgstr ""
-"Om ditt system låser sig vid uppstart, och sista meddelandet du ser är "
+"Om ditt system hänger sig vid uppstart, och sista meddelandet du ser är "
 "\"aec671x-detect..\", prova"
 
 #: help.xml:433
@@ -493,7 +492,7 @@ msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:445 help.xml:514 help.xml:605
 msgid "For example:"
-msgstr "Exempelvis:"
+msgstr "Till exempel:"
 
 #: help.xml:448
 #, no-wrap
@@ -696,14 +695,14 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:608
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:609
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:626
 msgid "GETTING HELP"
@@ -810,9 +809,3 @@ msgid ""
 msgstr ""
 "Det här systemet är baserat på Debian. Se ulink url=\"http://www.debian.org/"
 "\" /> för fler detaljer och information om Debian-projektet."
-
-#~ msgid "boot: install fb=false"
-#~ msgstr "boot: install fb=false"
-
-#~ msgid "boot: live fb=false"
-#~ msgstr "boot: live fb=false"

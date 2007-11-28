@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2006-10-10 17:18+0000\n"
-"Last-Translator: Felipe Gil Castiñeira <xil@det.uvigo.es>\n"
+"PO-Revision-Date: 2006-10-14 18:33+0000\n"
+"Last-Translator: Felipe Gil Castiñeira <felipexil@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:16+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -58,11 +58,11 @@ msgstr "Esta páxina, o índice da axuda"
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "Pre-requisitos para instalar ${DISTRIBUTION_NAME}."
+msgstr "Prerrequisitos para instalar ${DISTRIBUTION_NAME}."
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "Pre-requisitos para executar ${DISTRIBUTION_NAME}."
+msgstr "Prerrequisitos para executar ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
@@ -112,7 +112,7 @@ msgstr "Prema entre F2 e F10 para detalles ou Escape para sair da axuda."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "PRE-REQUISITOS PARA INSTALAR UBUNTU"
+msgstr "PRERREQUISITOS PARA INSTALAR UBUNTU"
 
 #: help.xml:119
 msgid ""
@@ -198,7 +198,7 @@ msgstr "Métodos de inicio dispoñibles:"
 
 #: help.xml:177
 msgid "install"
-msgstr "install"
+msgstr "instalación"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -207,7 +207,7 @@ msgstr ""
 
 #: help.xml:184
 msgid "expert"
-msgstr "expert"
+msgstr "experto"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
@@ -215,11 +215,11 @@ msgstr "Iniciar a instalación en modo experto; isto permite o máximo control."
 
 #: help.xml:191
 msgid "server"
-msgstr "server"
+msgstr "servidor"
 
 #: help.xml:192
 msgid "server-expert"
-msgstr "server-expert"
+msgstr "servidor-experto"
 
 #: help.xml:194
 msgid ""
@@ -231,7 +231,7 @@ msgstr ""
 
 #: help.xml:200
 msgid "live"
-msgstr "live"
+msgstr "ao vivo"
 
 #: help.xml:202
 msgid "Start the live system."
@@ -239,7 +239,7 @@ msgstr "Iniciar o sistema \"ao vivo\""
 
 #: help.xml:207
 msgid "memtest"
-msgstr "memtest"
+msgstr "proba da memoria"
 
 #: help.xml:209
 msgid "Perform a memory test."
@@ -282,7 +282,7 @@ msgstr ""
 
 #: help.xml:251
 msgid "rescue"
-msgstr "rescue"
+msgstr "rescate"
 
 #: help.xml:253
 msgid "Boot into rescue mode."
@@ -456,15 +456,13 @@ msgstr "Portátiles con problemas coa pantalla"
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
 msgstr ""
 
 #: help.xml:425
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
 #: help.xml:430
 msgid ""
@@ -697,14 +695,14 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:608
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr ""
 
 #: help.xml:609
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr ""
 
 #: help.xml:626
 msgid "GETTING HELP"
@@ -720,7 +718,7 @@ msgstr "Se non pode iniciar Ubuntu, non desespere!"
 
 #: help.xml:639
 msgid "The Ubuntu team is ready to help you!"
-msgstr "O equipo de Ubuntu está disposto a axudarlle."
+msgstr "O equipo de Ubuntu está disposto a axudarlle!"
 
 #: help.xml:642
 msgid ""
@@ -759,8 +757,6 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu é Copyright (C) 2004-2007 Canonical Ltd.,  e incorpora o traballo de "
-"moitos outros autores e contribuintes anónimos."
 
 #: help.xml:694
 msgid "The Ubuntu system is freely redistributable."
@@ -811,9 +807,3 @@ msgid ""
 msgstr ""
 "Este sistema baséase en Debian. Consulte <ulink url=\"http://www.debian.org/"
 "\" /> para máis detalles e información sobre o proxecto Debian."
-
-#~ msgid "boot: install fb=false"
-#~ msgstr "boot: install fb=false"
-
-#~ msgid "boot: live fb=false"
-#~ msgstr "boot: live fb=false"

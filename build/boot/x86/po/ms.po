@@ -9,12 +9,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2006-07-21 13:58+0000\n"
+"PO-Revision-Date: 2007-04-02 02:25+0000\n"
 "Last-Translator: manteros <msr_1st@yahoo.com>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:06+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -46,7 +47,7 @@ msgstr ""
 
 #: help.xml:30
 msgid "TOPIC"
-msgstr "Topik"
+msgstr "TOPIK"
 
 #: help.xml:34
 msgid "This page, the help index."
@@ -399,12 +400,10 @@ msgstr ""
 msgid "<userinput>vga=771</userinput>"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:425
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr ""
@@ -614,13 +613,11 @@ msgstr ""
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:608
 #, no-wrap
 msgid "boot: install pci=noacpi"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:609
 #, no-wrap
 msgid "boot: live pci=noacpi"

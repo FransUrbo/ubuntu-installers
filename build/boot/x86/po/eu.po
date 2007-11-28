@@ -9,12 +9,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2006-05-22 13:49+0000\n"
+"PO-Revision-Date: 2007-04-02 02:24+0000\n"
 "Last-Translator: jon latorre <moebius@etxea.net>\n"
 "Language-Team: Basque <eu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:00+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -70,7 +71,7 @@ msgstr "${MEDIA_TYPE}-rentzako abio modu bereziak."
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr ""
+msgstr "Abio modu gehigarriak; sistema apurtu bat berreskuratzen."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
@@ -196,7 +197,7 @@ msgstr "Abio mode erabilgarriak:"
 
 #: help.xml:177
 msgid "install"
-msgstr "install"
+msgstr "instalatu"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -204,7 +205,7 @@ msgstr "Instalazioa hasi -- Hau da lehetsitako ${MEDIA_TYPE}."
 
 #: help.xml:184
 msgid "expert"
-msgstr "expert"
+msgstr "aditua"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
@@ -212,11 +213,11 @@ msgstr "Instalazioa abiatu aditu moduan, kontrol osoa izateko."
 
 #: help.xml:191
 msgid "server"
-msgstr "server"
+msgstr "zerbitzaria"
 
 #: help.xml:192
 msgid "server-expert"
-msgstr "server-expert"
+msgstr "zerbitzaria-aditua"
 
 #: help.xml:194
 msgid ""
@@ -228,7 +229,7 @@ msgstr ""
 
 #: help.xml:200
 msgid "live"
-msgstr "live"
+msgstr "zuzenean"
 
 #: help.xml:202
 msgid "Start the live system."
@@ -236,7 +237,7 @@ msgstr "Zuzeneko sistema abiatu."
 
 #: help.xml:207
 msgid "memtest"
-msgstr "memtest"
+msgstr "memoria proba"
 
 #: help.xml:209
 msgid "Perform a memory test."
@@ -270,7 +271,7 @@ msgstr ""
 
 #: help.xml:243 help.xml:279
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "SISTEMA APURTU BAT BERRESKURATZEN"
 
 #: help.xml:247
 msgid "Use one of these boot methods to rescue an existing install"
@@ -298,6 +299,11 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
+"Ez dago berreskuratze modu berezirik CD honetan. Halaere, sistema osoa CDtik "
+"exekutatzen denez, agindu-lerroa eta/edo herraminta grafikoak erabil "
+"ditzakezu sistema apurtu bat berreskuratzeko, eta web arakatzaile bat "
+"erabili laguntza bilatzeko. Aholku ugari duzu eskuragarri online zure "
+"sistemaren abioa oker funtzionarazi dezaketen arazo mota gehienei buruz."
 
 #: help.xml:308
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
@@ -408,7 +414,7 @@ msgstr "IBM ThinkPad batzuek"
 
 #: help.xml:400
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:404
 msgid "IBM Pentium Microchannel"
@@ -448,7 +454,6 @@ msgstr "Pantaila arazoak dituzten eskuko ordenagailu"
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
 msgstr ""
@@ -520,6 +525,11 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>birkonektatu</replaceable></"
+"userinput></optional></optional></optional>"
 
 #: help.xml:489
 msgid "Adaptec 1542"
@@ -532,6 +542,10 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:494
 msgid "Adaptec 274x, 284x"
@@ -539,7 +553,7 @@ msgstr "Adaptec 274x, 284x"
 
 #: help.xml:495
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 
 #: help.xml:499
 msgid "BusLogic SCSI Hosts"
@@ -549,6 +563,7 @@ msgstr "BusLogic SCSI Hosts"
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:504
 msgid "Certain DELL machines"
@@ -556,23 +571,25 @@ msgstr "DELL makina batzuk"
 
 #: help.xml:505
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #: help.xml:510
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"Zerrenda hau ez dago guztiz osatua, ikusi nukleoaren kernel-parameters.txt "
+"fitxategia gehiagorako."
 
 #: help.xml:517
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:518
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:535
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
@@ -617,7 +634,7 @@ msgstr "Framebuffer-a ezgaitu"
 
 #: help.xml:568
 msgid "<userinput>fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:572
 msgid "Don't probe for USB"
@@ -653,13 +670,15 @@ msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:592
 msgid "Use Braille tty"
-msgstr ""
+msgstr "Braille terminala erabili"
 
 #: help.xml:593
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>gailua</"
+"replaceable>,<replaceable>testu_taula</replaceable></userinput>"
 
 #: help.xml:598
 msgid ""

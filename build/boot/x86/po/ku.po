@@ -9,12 +9,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2006-08-17 10:59+0000\n"
+"PO-Revision-Date: 2007-04-02 02:24+0000\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:08+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -179,7 +180,7 @@ msgstr ""
 
 #: help.xml:177
 msgid "install"
-msgstr "install"
+msgstr "sazkirin"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -187,7 +188,7 @@ msgstr ""
 
 #: help.xml:184
 msgid "expert"
-msgstr "expert"
+msgstr "pîspor"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
@@ -195,7 +196,7 @@ msgstr ""
 
 #: help.xml:191
 msgid "server"
-msgstr "server"
+msgstr "pêşkêşkar"
 
 #: help.xml:192
 msgid "server-expert"
@@ -255,7 +256,7 @@ msgstr ""
 
 #: help.xml:251
 msgid "rescue"
-msgstr "rescue"
+msgstr "xelaskirin"
 
 #: help.xml:253
 msgid "Boot into rescue mode."
@@ -405,12 +406,10 @@ msgstr ""
 msgid "<userinput>vga=771</userinput>"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:425
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr ""
@@ -620,13 +619,11 @@ msgstr ""
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:608
 #, no-wrap
 msgid "boot: install pci=noacpi"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:609
 #, no-wrap
 msgid "boot: live pci=noacpi"

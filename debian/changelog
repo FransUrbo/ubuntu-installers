@@ -1,3 +1,10 @@
+debian-installer (20061102ubuntu21) feisty; urgency=low
+
+  * Update help text translations from Rosetta.
+  * Move to 2.6.20-14 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu,  5 Apr 2007 13:18:35 +0100
+
 debian-installer (20061102ubuntu20) feisty; urgency=low
 
   * No-change rebuild to pick up new components.

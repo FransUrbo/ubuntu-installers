@@ -6,13 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2006-10-09 22:54+0000\n"
+"PO-Revision-Date: 2007-04-02 02:25+0000\n"
 "Last-Translator: Susana <susana.pereira@gmail.com>\n"
 "Language-Team: UBUNTU-PT <ubuntu-pt.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Portuguese\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:11+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -210,7 +211,7 @@ msgstr "Iniciar a instalação no modo avançado para controlo máximo."
 
 #: help.xml:191
 msgid "server"
-msgstr "server"
+msgstr "servidor"
 
 #: help.xml:192
 msgid "server-expert"
@@ -266,10 +267,9 @@ msgstr ""
 "Se não tem a certeza, deverá usar o método de arranque padrão, sem "
 "parâmetros especiais, pressionando simplesmente ENTER na prompt de arranque."
 
-# type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:243 help.xml:279
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "RECUPERAR UM SISTEMA DANIFICADO"
 
 #: help.xml:247
 msgid "Use one of these boot methods to rescue an existing install"
@@ -453,15 +453,13 @@ msgstr "Portáteis com problemas na apresentação de ecrã"
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Usar a primeira porta série a 9600 baud"
 
 #: help.xml:425
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:430
 msgid ""
@@ -525,6 +523,11 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconectar</replaceable></"
+"userinput></optional></optional></optional>"
 
 #: help.xml:489
 msgid "Adaptec 1542"
@@ -537,6 +540,10 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:494
 msgid "Adaptec 274x, 284x"
@@ -660,10 +667,9 @@ msgstr "Definir mapa de teclado"
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:592
 msgid "Use Braille tty"
-msgstr ""
+msgstr "Usar uma consola virtual (tty) Braile"
 
 #: help.xml:593
 msgid ""
@@ -686,14 +692,14 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:608
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install cpi=noacpi"
 
 #: help.xml:609
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:626
 msgid "GETTING HELP"
@@ -801,9 +807,3 @@ msgid ""
 msgstr ""
 "Este sistema é baseado em Debian. Veja <ulink url=\"http://www.debian.org/"
 "\" /> para mais detalhes e informações no projecto Debian."
-
-#~ msgid "boot: install fb=false"
-#~ msgstr "boot: install fb=false"
-
-#~ msgid "boot: live fb=false"
-#~ msgstr "boot: live fb=false"

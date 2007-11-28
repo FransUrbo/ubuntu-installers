@@ -9,12 +9,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2006-09-26 18:12+0000\n"
+"PO-Revision-Date: 2007-04-02 02:23+0000\n"
 "Last-Translator: Ricardo Pérez López <ricardo@iesdonana.org>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:17+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -195,7 +196,7 @@ msgstr "Métodos de arranque disponibles:"
 
 #: help.xml:177
 msgid "install"
-msgstr "install"
+msgstr "instalar"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -205,7 +206,7 @@ msgstr ""
 
 #: help.xml:184
 msgid "expert"
-msgstr "expert"
+msgstr "experto"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
@@ -213,11 +214,11 @@ msgstr "Comenzar la instalación en modo experto, para tener el máximo control.
 
 #: help.xml:191
 msgid "server"
-msgstr "server"
+msgstr "servidor"
 
 #: help.xml:192
 msgid "server-expert"
-msgstr "server-expert"
+msgstr "servidor-experto"
 
 #: help.xml:194
 msgid ""
@@ -455,15 +456,13 @@ msgstr "Portátiles con problemas de pantalla"
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Usar el primer puerto serie a 9600 baudios"
 
 #: help.xml:425
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:430
 msgid ""
@@ -695,14 +694,14 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:608
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:609
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:626
 msgid "GETTING HELP"
@@ -811,9 +810,3 @@ msgid ""
 msgstr ""
 "Este sistema está basado en Debian. Visite <ulink url=\"http://www.debian."
 "org/\" /> para más detalles e información sobre el proyecto Debian."
-
-#~ msgid "boot: install fb=false"
-#~ msgstr "boot: install fb=false"
-
-#~ msgid "boot: live fb=false"
-#~ msgstr "boot: live fb=false"

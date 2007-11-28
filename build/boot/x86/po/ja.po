@@ -1,131 +1,121 @@
-# French translation for debian-installer
+# Japanese translation for debian-installer
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
 # This file is distributed under the same license as the debian-installer package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# Jun Kobayashi <fm4j-kbys@asahi-net.or.jp>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: 2007-04-02 02:24+0000\n"
-"Last-Translator: Adrien Cunin <adri2000@gmail.com>\n"
-"Language-Team: French <fr@li.org>\n"
+"PO-Revision-Date: 2007-03-18 09:20+0000\n"
+"Last-Translator: Shushi Kurose <md81@bird.email.ne.jp>\n"
+"Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Rosetta-Export-Date: 2007-04-05 11:12:15+0000\n"
+"X-Rosetta-Export-Date: 2007-04-05 11:12:04+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Ecrans d'aide au démarrage de l'installation"
+msgstr "インストーラ起動ヘルプ画面"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "Bienvenue sur ${DISTRIBUTION_NAME} !"
+msgstr "${DISTRIBUTION_NAME}へようこそ！"
 
 #: help.xml:18
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
 msgstr ""
-"Ceci est une installation ${MEDIA_TYPE} pour ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, construit le ${BUILD_DATE}."
+"これは${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}のインストール${MEDIA_TYPE}"
+"です(ビルド ${BUILD_DATE})。"
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
 msgstr ""
-"Ceci est un live ${MEDIA_TYPE} pour ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, construit le ${BUILD_DATE}."
+"これは${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}のライブ${MEDIA_TYPE}です"
+"(ビルド ${BUILD_DATE})。"
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "INDEX DE L'AIDE"
+msgstr "ヘルプインデックス"
 
 #: help.xml:29
 msgid "KEY"
-msgstr "CLÉ"
+msgstr "キー"
 
 #: help.xml:30
 msgid "TOPIC"
-msgstr "SUJET"
+msgstr "トピック"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Cette page, l'index du fichier d'aide."
+msgstr "ヘルプインデックス (このページ)"
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "Pré-requis pour l'installation de ${DISTRIBUTION_NAME}."
+msgstr "${DISTRIBUTION_NAME}をインストールするための必要条件"
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "Pré-requis pour l'éxécution de ${DISTRIBUTION_NAME}."
+msgstr "${DISTRIBUTION_NAME}を実行するための必要条件"
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr ""
-"Méthodes de démarrage pour les utilisations spécifiques de ce ${MEDIA_TYPE}."
+msgstr "この${MEDIA_TYPE}で利用できるブートメソッド"
 
 #: help.xml:54
-#, fuzzy
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Méthodes de démarrage additionnelles; mode sauvetage."
+msgstr "付加的なブート方法(壊れたシステムのレスキュー)"
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr "Paramètres spécifiques de démarrage, survol."
+msgstr "特別なブートパラメータの概要"
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "Paramètres spécifiques de démarrage pour machines spécifiques."
+msgstr "特殊なマシン向けの特別なブートパラメータ"
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
-"Paramètres spécifiques de démarrage pour les contrôleurs de disques "
-"sélectionnés."
+msgstr "特殊なディスクコントローラ向けの特別なブートパラメータ"
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr "Paramètres spécifiques de démarrage pour le système d'installation."
+msgstr "インストールシステムのための特別なブートパラメータ"
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "Paramètres spécifiques de démarrage pour le système d'amorçage."
+msgstr "ブートストラップシステムのための特別なブートパラメータ"
 
 #: help.xml:84
 msgid "How to get help."
-msgstr "Comment obtenir de l'aide."
+msgstr "助けてもらうには"
 
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "Copyrights et garanties."
+msgstr "著作権と保証"
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr ""
-"Utilisez les touches F2 à F10 pour les détails, ou ENTRÉE pour ${BOOTPROMPT}"
+msgstr "詳細はF2からF10を押すか、${BOOTPROMPT}でENTERを押してください。"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr ""
-"Utilisez les touches F2 à F10 pour les détails, ou Echap pour sortir de "
-"l'aide."
+msgstr "詳細はF2からF10を押してください。Escapeを押すとヘルプを閉じます。"
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "PRÉ-REQUIS POUR L'INSTALLATION D'UBUNTU"
+msgstr "Ubuntuをインストールするための必要条件"
 
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr ""
-"Vous devez disposer d'au moins 32 mégaoctets de RAM pour utiliser cet "
-"installateur Ubuntu."
+msgstr "Ubuntuインストーラを使うには、少なくとも32メガバイトのRAMが必要です。"
 
 #: help.xml:123
 msgid ""
@@ -135,12 +125,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Vous devez disposer de suffisamment d'espace sur votre disque dur pour créer "
-"une nouvelle partition d'au moins 2 gigaoctets pour installer un système "
-"d'exploitation standard Ubuntu ou d'au moins 400 mégaoctets pour une "
-"installation serveur minimale. Vous aurez besoin de plus d'espace disque "
-"pour installer des paquets additionels, cela dépend de ce que vous désirez "
-"faire avec votre nouveau système Ubuntu."
+"Ubuntuの標準的なデスクトップシステムをインストールするには少なくとも2ギガバイ"
+"ト、最小限のサーバインストールには少なくとも400メガバイトの、新しいディスク"
+"パーティションを作成するための領域がハードディスクに必要です。新しくインス"
+"トールしたUbuntuシステムで行いたいことによっては、追加パッケージのインストー"
+"ルにさらなるディスク領域が必要になるでしょう。"
 
 #: help.xml:131 help.xml:658
 msgid ""
@@ -148,36 +137,34 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"Voir le Manuel d'Installation ou la FAQ pour plus d'informations; les deux "
-"documents sont disponibles sur le site internet d'Ubuntu, <ulink url="
-"\"http://www.ubuntu.com/\" />"
+"詳細な情報は、インストールマニュアルもしくはFAQを参照してください。両ドキュメ"
+"ントは、Ubuntuウェブサイト <ulink url=\"http://www.ubuntu.com/\" /> にて利用"
+"できます。"
 
 #: help.xml:137
 msgid ""
 "You must have at least 128 megabytes of RAM to use this Ubuntu live system."
-msgstr ""
-"Vous devez disposer d'au moins 128 mégaoctets de RAM pour utiliser ce "
-"système live d'Ubuntu."
+msgstr "Ubuntuライブシステムを使うには、128メガバイト以上のRAMが必要です。"
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing swap partitions on the disk will be used if available."
 msgstr ""
-"Le système live ne requiert aucun espace sur votre disque dur. Cependant, "
-"les partitions swap existant sur le disque seront utilisées si disponibles."
+"ライブシステムは、ハードディスクの領域を必要としません。しかし、もし利用可能"
+"なスワップパーティションがディスク上に見つかれば利用します。"
 
 #: help.xml:147 help.xml:664
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Voir la FAQ pour plus d'informations; ce document est disponible sur le site "
-"internet d'Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
+"より詳しい情報はFAQを参照してください。このドキュメントは、Ubuntuのウェブサイ"
+"ト(<ulink url=\"http://www.ubuntu.com/\" />)で参照できます。"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Merci d'avoir choisi Ubuntu!"
+msgstr "Ubuntuを選んでいただき、ありがとうございます！"
 
 #: help.xml:156 help.xml:230 help.xml:266 help.xml:295 help.xml:362
 #: help.xml:453 help.xml:522 help.xml:613 help.xml:669 help.xml:725
@@ -186,31 +173,33 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
-"Appuyer sur la touche <phrase class=\"not-serial\">F1</phrase><phrase class="
-"\"serial\">Ctrl et F puis 1</phrase> pour l'index de l'aide, ou ENTRÉE pour "
-"${BOOTPROMPT}"
+"ヘルプインデックスを参照するには<phrase class=\"not-serial\">F1</"
+"phrase><phrase class=\"serial\">CtrlとFを押して1</phrase>を押すか、"
+"${BOOTPROMPT} でENTERを押してください。"
 
 #: help.xml:161 help.xml:235 help.xml:271 help.xml:300 help.xml:367
 #: help.xml:458 help.xml:527 help.xml:618 help.xml:674 help.xml:730
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Appuyer sur F1 pour l'index de l'aide, ou Echap pour quitter l'aide."
+msgstr ""
+"ヘルプインデックスを表示するにはF1を押してください。Escapeを押すとヘルプを閉"
+"じます。"
 
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr "MÉTHODES DE DÉMARRAGE"
+msgstr "ブートメソッド"
 
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr "Méthodes de démarrage disponibles :"
+msgstr "利用可能なブートメソッド:"
 
 #: help.xml:177
 msgid "install"
-msgstr "nstaller"
+msgstr "install"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgstr ""
-"Démarrer l'installation -- ceci est l'installation ${MEDIA_TYPE} par défaut."
+"インストールを開始 -- これは ${MEDIA_TYPE} のデフォルトのインストールです。"
 
 #: help.xml:184
 msgid "expert"
@@ -218,23 +207,23 @@ msgstr "expert"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "Commencer l'installation en mode expert, pour un maximum de contrôle."
+msgstr "最大限の設定の行える、エキスパートモードでインストールを開始します。"
 
 #: help.xml:191
 msgid "server"
-msgstr "serveur"
+msgstr "server"
 
 #: help.xml:192
 msgid "server-expert"
-msgstr "serveur-expert"
+msgstr "server-expert"
 
 #: help.xml:194
 msgid ""
 "Minimal system install. Recommended for servers, where a complete graphical "
 "desktop environment is not desired."
 msgstr ""
-"Installation système minimale. Recommandée pour les serveurs, pour lesquels "
-"un environnement graphique de bureau complet n'est pas requis."
+"最小システムインストール。グラフィカルなデスクトップ環境が全く必要のない、"
+"サーバにはお勧めです。"
 
 #: help.xml:200
 msgid "live"
@@ -242,23 +231,23 @@ msgstr "live"
 
 #: help.xml:202
 msgid "Start the live system."
-msgstr "Démarrer le système live."
+msgstr "ライブシステムを開始します。"
 
 #: help.xml:207
 msgid "memtest"
-msgstr "testmémoire"
+msgstr "memtest"
 
 #: help.xml:209
 msgid "Perform a memory test."
-msgstr "Effectuer un test de la mémoire."
+msgstr "メモリテストを実行します。"
 
 #: help.xml:215 help.xml:259
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"Pour utiliser l'une de ces méthodes de démarrage, saisissez-la dans le "
-"prompt, éventuellement suivie de paramètres de démarrage. Par exemple :"
+"これらのブートメソッドを使うには、以下のようにプロンプトで入力してください。"
+"他のブートパラメータを続けて入力することもできます。"
 
 #: help.xml:220
 #, no-wrap
@@ -275,27 +264,24 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Si vous n'êtes pas sûr, vous devriez utiliser la méthode de démarrage par "
-"défaut, sans paramètre spécifique, en appuyant simplement sur entrée dans le "
-"dialogue de démarrage."
+"よく分からなければ、ブートパラメータを入力せず、ブートプロンプトでEnterだけを"
+"押してデフォルトのブートメソッドを用いてください。"
 
 #: help.xml:243 help.xml:279
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr "RÉCUPÉRATION D'UN SYSTÈME ENDOMMAGÉ"
+msgstr "レスキューモード"
 
 #: help.xml:247
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr ""
-"Utilisez l'une de ces méthodes de démarrage pour réparer une installation "
-"existante"
+msgstr "インストールされたシステムを復旧するブートメソッドの利用"
 
 #: help.xml:251
 msgid "rescue"
-msgstr "sauvetage"
+msgstr "rescue"
 
 #: help.xml:253
 msgid "Boot into rescue mode."
-msgstr "Démarrer en mode sauvetage."
+msgstr "レスキューモードで起動します。"
 
 #: help.xml:263
 #, no-wrap
@@ -310,28 +296,24 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
-"Il n'y a pas de mode dédié à la récupération sur ce CD. Cependant, puisque "
-"le système fonctionne entièrement depuis le CD, il est possible d'utiliser "
-"la ligne de commande et/ou les outils graphiques fournis pour récupérer un "
-"système endommagé, et d'utiliser un navigateur internet pour chercher de "
-"l'aide. Des conseils détaillés sont disponibles en ligne pour la plupart des "
-"problèmes qui pourraient être la cause du démarrage incorrect de votre "
-"système."
+"このCDにはレスキュー専用モードは搭載されていません。しかし、CDから完全なシス"
+"テムが起動するので、コマンドラインやグラフィカルツールを使って壊れたシステム"
+"を復旧することができます。また、ウェブブラウザを使って検索することもできま"
+"す。あなたのシステムが起動に失敗する原因となっているかもしれない、さまざまな"
+"種類の問題についての広範囲に渡るアドバイスが、オンラインで利用可能です。"
 
 #: help.xml:308
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "PARAMÈTRES SPÉCIFIQUES DE DÉMARRAGE - SURVOL"
+msgstr "特別なブートパラメータ - 概要"
 
 #: help.xml:315
 msgid "On a few systems, you may need to specify a parameter at the"
-msgstr ""
-"Sur quelques systèmes, il se peut que vous deviez spécifier un paramètre  "
-"dans le"
+msgstr "いくつかのシステムでは、システムを起動するために"
 
 #: help.xml:316 help.xml:382 help.xml:473 help.xml:540
 #, no-wrap
 msgid "boot:"
-msgstr "démarrage :"
+msgstr "boot:"
 
 #: help.xml:316
 msgid ""
@@ -339,31 +321,31 @@ msgid ""
 "autodetect your hardware, and you may need to explicitly specify its "
 "location or type for it to be recognized."
 msgstr ""
-"prompt afin de démarrer le système. Par exemple, Linux peut être incapable "
-"de détecter votre matériel, et vous pouvez avoir besoin de spécifier "
-"explicitement où il se trouve ou de faire en sorte qu'il soit reconnu."
+"プロンプトで特別なパラメータを入力する必要があるかもしれません。たとえば、"
+"Linuxがハードウェアを自動認識できなかった場合、それが搭載されている場所や種類"
+"が認識されるよう指定する必要があるでしょう。"
 
 #: help.xml:322
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
-"Pour plus d'information sur les paramètres de démarrage que vous pouvez "
-"utiliser, appuyez sur :"
+"利用可能なブートパラメータについての詳しい情報を参照するには、以下のキーを押"
+"して下さい。"
 
 #: help.xml:330
 msgid "boot parameters for special machines"
-msgstr "paramètres démarrage pour machines spécifiques"
+msgstr "特殊なマシン向けのブートパラメータ"
 
 #: help.xml:335
 msgid "boot parameters for various disk controllers"
-msgstr "paramètres de démarrages pour les divers contrôleurs de disque"
+msgstr "さまざまなディスクコントローラのためのブートパラメータ"
 
 #: help.xml:340
 msgid "boot parameters understood by the install system"
-msgstr "paramètres de démarrage compris par le système d'installation"
+msgstr "インストールシステムによって使われるブートパラメータ"
 
 #: help.xml:345
 msgid "boot parameters understood by the bootstrap system"
-msgstr "paramètres de démarrage compris par le système d'amorçage"
+msgstr "ブートストラップシステムによって使われるブートパラメータ"
 
 #: help.xml:350
 msgid ""
@@ -372,28 +354,26 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"De nombreux modules du noyau sont chargés dynamiquement par l'installateur, "
-"et les paramètres pour ces modules ne peuvent pas être passés en ligne de "
-"commande. Pour que les paramètres soient demandés lorsque les modules sont "
-"chargés, démarrez en mode expert (voir <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
+"多くのカーネルモジュールはブートストラップシステムによって動的にロードされま"
+"す。コマンドラインでそれらのモジュールにパラメータを与えることはできません。"
+"モジュールがロードされるときにパラメータを入力するためには、エキスパートモー"
+"ドで起動してください(<link linkend=\"F3\"><keycap>F3</keycap></link>参照)。"
 
 #: help.xml:357
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"De nombreux module du noyau sont chargés dynamiquement par le système "
-"d'amorçage, et les paramètres pour ces modules ne peuvent pas être passés en "
-"ligne de commande."
+"多くのカーネルモジュールはブートストラップシステムによって動的にロードされま"
+"す。コマンドラインでそれらのモジュールにパラメータを与えることはできません。"
 
 #: help.xml:375
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr "PARAMÈTRES SPÉCIFIQUES DE DÉMARRAGE - DIVERS MATÉRIELS"
+msgstr "特別なブートパラメータ - さまざまなハードウェア"
 
 #: help.xml:382 help.xml:473 help.xml:540
 msgid "You can use the following boot parameters at the"
-msgstr "Vous pouvez utiliser les paramètres de démarrage suivants dans le"
+msgstr "以下のブートパラメータを、"
 
 #: help.xml:383
 msgid ""
@@ -401,33 +381,33 @@ msgid ""
 "\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use the "
 "0x prefix (e.g., 0x300)."
 msgstr ""
-"prompt, en combinaison avec la méthode démarrage (voir <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>>). Si vous utilisez les nombres hexa vous "
-"devez utiliser le préfixe 0x (ex. 0x300)"
+"プロンプトで使うことができます。ブートメソッド(<link linkend=\"F3"
+"\"><keycap>F3</keycap></link>>参照)と組み合わせて使います。16進数を使う場合"
+"は、0xを頭に付けます (例: 0x300) 。"
 
 #: help.xml:390 help.xml:480
 msgid "HARDWARE"
-msgstr "MATÉRIEL"
+msgstr "ハードウェア"
 
 #: help.xml:391 help.xml:481
 msgid "PARAMETER TO SPECIFY"
-msgstr "PARAMÈTRE À SPÉCIFIER"
+msgstr "入力するパラメータ"
 
 #: help.xml:394
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr "IBM PS/1 ou ValuePoint (disque IDE)"
+msgstr "IBM PS/1 or ValuePoint (IDE disk)"
 
 #: help.xml:395
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cylindres</replaceable>,<replaceable>têtes</"
-"replaceable>,<replaceable>secteurs</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 
 #: help.xml:399
 msgid "Some IBM ThinkPads"
-msgstr "Certains ThinkPads d'IBM"
+msgstr "一部のIBM ThinkPad"
 
 #: help.xml:400
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
@@ -435,7 +415,7 @@ msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:404
 msgid "IBM Pentium Microchannel"
-msgstr "Pentium Microchannel d'IBM"
+msgstr "IBM Pentium Microchannel"
 
 #: help.xml:405
 msgid "<userinput>mca-pentium no-hlt</userinput>"
@@ -443,7 +423,7 @@ msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
 #: help.xml:409
 msgid "Protect I/O port regions"
-msgstr "Protéger les régions de port I/O"
+msgstr "I/Oポート範囲の保護"
 
 #: help.xml:410
 msgid ""
@@ -457,8 +437,7 @@ msgstr ""
 
 #: help.xml:414
 msgid "Workaround faulty FPU (old machines)"
-msgstr ""
-"Travailler autour du coprocesseur arithmétique fautif (vieille machines)"
+msgstr "古いマシンの欠陥FPU"
 
 #: help.xml:415
 msgid "<userinput>no387</userinput>"
@@ -466,7 +445,7 @@ msgstr "<userinput>no387</userinput>"
 
 #: help.xml:419
 msgid "Laptops with screen display problems"
-msgstr "Portables avec des problèmes d'affichage"
+msgstr "表示に問題があるラップトップ："
 
 #: help.xml:420
 msgid "<userinput>vga=771</userinput>"
@@ -474,20 +453,17 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:424
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "9600ボーでシリアルポート1を使用"
 
 #: help.xml:425
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:430
 msgid ""
 "If your system hangs when booting, and the last message you see is \"aec671x-"
 "detect..\", try"
-msgstr ""
-"Si votre système se bloque durant l'installation, et que le dernier message "
-"que vous voyez est \"aec671x-detect..\", essayez"
+msgstr "ブート中に\"aec671x-detect..\"と表示されて停止する場合"
 
 #: help.xml:433
 msgid "<userinput>gdth=disable:y</userinput>"
@@ -498,8 +474,8 @@ msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
 msgstr ""
-"Si vous rencontrez des blocages ou d'autres problèmes matériels, rendre "
-"indisponible le routage déféctueux du contrôleur programmable d'interruptions"
+"システムが停止したりハードウェアエラーが起こる場合、バグのあるAPICによる割り"
+"込みルーチンを無効にする"
 
 #: help.xml:441
 msgid "<userinput>noapic nolapic</userinput>"
@@ -507,7 +483,7 @@ msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:445 help.xml:514 help.xml:605
 msgid "For example:"
-msgstr "Par exemple :"
+msgstr "例："
 
 #: help.xml:448
 #, no-wrap
@@ -521,15 +497,15 @@ msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:466
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "PARAMÈTRES SPÉCIFIQUES DE DÉMARRAGE - DIVERS LECTEURS DE DISQUE"
+msgstr "特別なブートパラメータ - さまざまなディスクドライブ"
 
 #: help.xml:474 help.xml:541
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"prompt, en combinaison avec la méthode de démarrage (voir <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"プロンプトで使うことができます。ブートメソッド (<link linkend=\"F3"
+"\"><keycap>F3</keycap></link>参照) と組み合わせて使います。"
 
 #: help.xml:484
 msgid "Adaptec 151x, 152x"
@@ -571,7 +547,7 @@ msgstr "Adaptec 274x, 284x"
 
 #: help.xml:495
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (activé si non nul)"
+msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 
 #: help.xml:499
 msgid "BusLogic SCSI Hosts"
@@ -585,7 +561,7 @@ msgstr ""
 
 #: help.xml:504
 msgid "Certain DELL machines"
-msgstr "Certaines machines DELL"
+msgstr "一部のDELL製マシン"
 
 #: help.xml:505
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
@@ -596,8 +572,8 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"Cette liste est incomplète, consultez le fichier du noyau 'kernel-parameters."
-"txt' pour plus d'informations"
+"このリストは完全ではありません。詳しくはカーネルに付属のkernel-parameters.txt"
+"を参照してください。"
 
 #: help.xml:517
 #, no-wrap
@@ -611,27 +587,31 @@ msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:535
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr "PARAMÈTRES SPÉCIFIQUES DE DÉMARRAGE - SYSTÈME D'INSTALLATION"
+msgstr "特別なブートパラメータ - インストールシステム"
 
 #: help.xml:545
 msgid "These parameters control how the installer works."
-msgstr "Ces paramètres contrôlent le fonctionnement de l'installateur."
+msgstr ""
+"れらのパラメータは、インストールシステムがどのように動作するかをコントロール"
+"します。"
 
 #: help.xml:548
 msgid "These parameters control how the bootstrap system works."
-msgstr "Ces paramètres contrôlent le fonctionnement du systéme d'amorçage."
+msgstr ""
+"れらのパラメータは、ブートストラップシステムがどのように動作するかをコント"
+"ロールします。"
 
 #: help.xml:553
 msgid "RESULT"
-msgstr "RÉSULTAT"
+msgstr "効果"
 
 #: help.xml:554
 msgid "PARAMETER"
-msgstr "PARAMÈTRE"
+msgstr "パラメータ"
 
 #: help.xml:557
 msgid "Verbose debugging"
-msgstr "Débogage verbeux"
+msgstr "詳細なデバッグ出力"
 
 #: help.xml:558
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
@@ -639,7 +619,7 @@ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:562
 msgid "Debug boot sequence"
-msgstr "Débogage de la séquence de démarrage"
+msgstr "ブートシーケンスのデバッグ"
 
 #: help.xml:563
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
@@ -647,7 +627,7 @@ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:567
 msgid "Disable framebuffer"
-msgstr "Désactiver le buffer d'image"
+msgstr "フレームバッファの無効化"
 
 #: help.xml:568
 msgid "<userinput>fb=false</userinput>"
@@ -655,7 +635,7 @@ msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:572
 msgid "Don't probe for USB"
-msgstr "Ne pas détecter l'USB"
+msgstr "USBを調べない"
 
 #: help.xml:573
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
@@ -663,7 +643,7 @@ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
 #: help.xml:577
 msgid "Don't start PCMCIA"
-msgstr "Ne pas démarrer le PCMCIA"
+msgstr "PCMCIAを開始しない"
 
 #: help.xml:578
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
@@ -671,7 +651,7 @@ msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:582
 msgid "Force static network config"
-msgstr "Forcer la configuration du réseau statique"
+msgstr "DHCPクライアント機能を無効化"
 
 #: help.xml:583
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
@@ -679,7 +659,7 @@ msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:587
 msgid "Set keyboard map"
-msgstr "Réglages du clavier"
+msgstr "キーボードマップを設定"
 
 #: help.xml:588
 msgid "<userinput>bootkbd=es</userinput>"
@@ -687,69 +667,67 @@ msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:592
 msgid "Use Braille tty"
-msgstr "Utiliser le mode braille"
+msgstr "点字端末を使う"
 
 #: help.xml:593
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>brltty=<replaceable>pilote</replaceable>,"
-"<replaceable>périphérique</replaceable>,<replaceable>texttable</"
-"replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #: help.xml:598
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
-msgstr ""
-"Désactiver l'ACPI pour les nappes PCI (utile pour certains serveurs HP et "
-"les machines à base de Via)"
+msgstr "PCIマップにACPIを使用しない (一部のHPサーバやVIAベースのマシンに有用)"
 
 #: help.xml:601
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:608
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:609
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:626
 msgid "GETTING HELP"
-msgstr "OBTENIR DE L'AIDE"
+msgstr "助けてもらうには"
 
 #: help.xml:633
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr "Si vous ne pouvez pas installer Ubuntu, ne désespérez pas !"
+msgstr "もしUbuntuがインストールできなくても、がっかりしないでください！"
 
 #: help.xml:636
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr "Si vous ne pouvez pas démarrer Ubuntu, ne désespérez pas !"
+msgstr "もしUbuntuが起動しなくても、がっかりしないでください！"
 
 #: help.xml:639
 msgid "The Ubuntu team is ready to help you!"
-msgstr "L'équipe Ubuntu est prête à vous aider !"
+msgstr "Ubuntuチームがあなたを手助けします！"
 
 #: help.xml:642
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Nous sommes particulièrement intéressés par les problèmes d'installation, "
-"car en général ils ne concernent pas <emphasis>une seule</emphasis> personne."
+"私たちは、インストール時に起きた問題についてお聞きしたいと思っています。なぜ"
+"なら、通常それらの問題は<emphasis>一人だけ</emphasis>に起こるものではないから"
+"です。"
 
 #: help.xml:647
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Nous sommes particulièrement intéressés par les problèmes de démarrage, car "
-"en général ils ne concernent pas <emphasis>une seule</emphasis> personne."
+"私たちは、起動時に起きた問題についてお聞きしたいと思っています。なぜなら、通"
+"常それらの問題は<emphasis>一人だけ</emphasis>に起こるものではないからです。"
 
 #: help.xml:651
 msgid ""
@@ -758,26 +736,24 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Soit nous avons déja entendu parler de votre problème particulier et pouvons "
-"fournir une solution rapide, soit nous aimerions en entendre parler et "
-"travailler dessus avec vous afin que le prochain utilisateur qui rencontrera "
-"le même problème bénéficie de votre expérience !"
+"私たちは、あなたが出くわした問題について既に聞いたことがあれば、すぐに解決方"
+"法を提供することができます。そうでなければ一緒に解決方法を探したいと考えてい"
+"ます。そうすれば、次に同じ問題に出くわしたユーザは、あなたのおかげですぐに解"
+"決方法を知ることができます。"
 
 #: help.xml:682
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr "COPYRIGHTS ET GARANTIES"
+msgstr "著作権と保証"
 
 #: help.xml:689
 msgid ""
 "Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu est un Copyright (C) 2004-2007 Canonical Ltd., et incorpore les "
-"travaux de nombreux autres auteurs originaux et contributeurs."
 
 #: help.xml:694
 msgid "The Ubuntu system is freely redistributable."
-msgstr "Le système Ubuntu est redistribuable librement."
+msgstr "Ubuntuシステムは自由に再配布することができます。"
 
 #: help.xml:697
 msgid ""
@@ -785,9 +761,9 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Après installation, les termes exacts de distribution de chaque paquet sont "
-"décrits dans le fichier correspondant /usr/share/doc/<replaceable>nom du "
-"paquet</replaceable>/copyright."
+"インストール後、それぞれのパッケージの正確な配布条件を usr/share/doc/"
+"<replaceable>packagename</replaceable>/copyright ファイルで読むことができま"
+"す。"
 
 #: help.xml:702
 msgid ""
@@ -795,17 +771,17 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Après installation, les termes exacts de distribution de chaque paquet sont "
-"décrits dans le fichier correspondant /usr/share/doc/<replaceable>nom du "
-"paquet</replaceable>/copyright."
+"起動後、それぞれのパッケージの正確な配布条件を usr/share/doc/"
+"<replaceable>packagename</replaceable>/copyright ファイルで読むことができま"
+"す。"
 
 #: help.xml:708
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Ubuntu est fourni <emphasis>ABSOLUMENT SANS GARANTIE</emphasis>, dans les "
-"limites permises par la loi applicable."
+"Ubuntuは、適用法の範囲内において<emphasis>全くの無保証で</emphasis>提供されま"
+"す。"
 
 #: help.xml:713
 msgid ""
@@ -813,14 +789,13 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
-"Ce système d'installation est basé sur l'installateur Debian. Voir <ulink "
-"url=\"http://www.debian.org/\" /> pour plus de détails et d'information sur "
-"le projet Debian."
+"このインストールシステムはDebianがベースになっています。詳細とDebianプロジェ"
+"クトについては、<ulink url=\"http://www.debian.org/\" /> を参照してください。"
 
 #: help.xml:719
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"Ce système est basé sur Debian. Voir <ulink url=\"http://www.debian.org/\" /"
-"> pour plus de détails et d'information sur le projet Debian."
+"このシステムはDebianがベースになっています。詳細とDebianプロジェクトについて"
+"は、<ulink url=\"http://www.debian.org/\" /> を参照してください。"
