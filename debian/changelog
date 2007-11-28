@@ -1,3 +1,10 @@
+debian-installer (20061102ubuntu7) feisty; urgency=low
+
+  * Move to 2.6.20-2 kernels.
+  * Add block-modules and message-modules to hd-media images.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 18 Dec 2006 17:02:03 +0000
+
 debian-installer (20061102ubuntu6) feisty; urgency=low
 
   * Switch i386 builds to the -generic kernel flavour.
