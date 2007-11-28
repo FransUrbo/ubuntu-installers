@@ -2,6 +2,7 @@
 # get them.
 anna
 archdetect
+casper-check
 cdebconf-udeb
 di-utils
 di-utils-reboot
@@ -11,6 +12,7 @@ libdebian-installer4-udeb
 libnss-dns-udeb
 lowmemcheck
 main-menu
+rescue-check
 rootskel
 udpkg
 #include "udev"

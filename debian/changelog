@@ -1,3 +1,12 @@
+debian-installer (20041227ubuntu2) hoary; urgency=low
+
+  * Move to 2.6.10-1 kernels.
+  * build/pkg-lists/base: Add rescue-check (installer rescue mode) and
+    casper-check (live CD mode, but useful on non-cdrom images too since you
+    could netboot etc. into the live system).
+
+ -- Colin Watson <cjwatson@canonical.com>  Fri,  7 Jan 2005 14:09:34 +0000
+
 debian-installer (20041227ubuntu1) hoary; urgency=low
 
   * Resynchronise with Debian.
