@@ -103,7 +103,7 @@ manually. Make a work folder for extracting the .deb into:
 The <command>debootstrap</command> binary is located in the Ubuntu
 archive (be sure to select the proper file for your
 architecture). Download the <command>debootstrap</command> .deb from
-the <ulink url="http://&archive-ubuntulinux-org;/ubuntu/pool/main/d/debootstrap/">
+the <ulink url="http://&archive-ubuntu-com;/ubuntu/pool/main/d/debootstrap/">
 pool</ulink>, copy the package to the work folder, and extract the
 binary files from it. You will need to have root privileges to install
 the binaries.
@@ -123,7 +123,7 @@ the binaries.
 
 <command>debootstrap</command> can download the needed files directly
 from the archive when you run it. You can substitute any Ubuntu
-archive mirror for <userinput>&archive-ubuntulinux-org;/ubuntu</userinput> in
+archive mirror for <userinput>&archive-ubuntu-com;/ubuntu</userinput> in
 the command example below, preferably a mirror close to you
 network-wise. Mirrors are listed at 
 <ulink url="&url-ubuntu-mirrors;"></ulink>.

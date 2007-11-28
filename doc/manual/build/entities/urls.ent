@@ -137,31 +137,31 @@
 <!--
   Ubuntu/Canonical
   -->
-<!ENTITY www-ubuntulinux-org "www.ubuntulinux.org">
-<!ENTITY url-ubuntu-home "http://&www-ubuntulinux-org;/">
-<!ENTITY wiki-ubuntulinux-org "wiki.ubuntulinux.org">
-<!ENTITY archive-ubuntulinux-org "archive.ubuntulinux.org">
-<!ENTITY releases-ubuntulinux-org "releases.ubuntulinux.org">
+<!ENTITY www-ubuntu-com "www.ubuntu.com">
+<!ENTITY url-ubuntu-home "http://&www-ubuntu-com;/">
+<!ENTITY wiki-ubuntu-com "wiki.ubuntu.com">
+<!ENTITY archive-ubuntu-com "archive.ubuntu.com">
+<!ENTITY releases-ubuntu-com "releases.ubuntu.com">
 
 <!ENTITY www-canonical-com "www.canonical.com">
 <!ENTITY url-canonical-home "http://&www-canonical-com;/">
 
 <!-- instructions on downloading Ubuntu -->
-<!ENTITY url-ubuntu-download "http://&www-ubuntulinux-org;/download/">
-<!ENTITY url-ubuntu-releases "http://&releases-ubuntulinux-org;/&releasename;/">
+<!ENTITY url-ubuntu-download "http://&www-ubuntu-com;/download/">
+<!ENTITY url-ubuntu-releases "http://&releases-ubuntu-com;/&releasename;/">
 
 <!-- Ubuntu mirrors -->
-<!ENTITY url-ubuntu-mirrors "http://&wiki-ubuntulinux-org;/Archive">
+<!ENTITY url-ubuntu-mirrors "http://&wiki-ubuntu-com;/Archive">
 
 <!-- archive layout -->
-<!ENTITY url-ubuntu-components "http://&www-ubuntulinux-org;/ubuntu/components">
+<!ENTITY url-ubuntu-components "http://&www-ubuntu-com;/ubuntu/components">
 
 <!-- license policy -->
-<!ENTITY url-ubuntu-licensing "http://&www-ubuntulinux-org;/ubuntu/licensing">
+<!ENTITY url-ubuntu-licensing "http://&www-ubuntu-com;/ubuntu/licensing">
 
 <!-- base for the current distribution -->
-<!ENTITY disturlftp "ftp://&archive-ubuntulinux-org;/ubuntu/dists/&releasename;/">
-<!ENTITY disturl    "http://&archive-ubuntulinux-org;/ubuntu/dists/&releasename;/">
+<!ENTITY disturlftp "ftp://&archive-ubuntu-com;/ubuntu/dists/&releasename;/">
+<!ENTITY disturl    "http://&archive-ubuntu-com;/ubuntu/dists/&releasename;/">
 
 <!-- where to get the current Ubuntu installer -->
 <!ENTITY url-ubuntu-installer "&disturl;main/installer-&architecture;/current/">

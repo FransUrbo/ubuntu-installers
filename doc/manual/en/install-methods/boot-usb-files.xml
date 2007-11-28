@@ -27,7 +27,7 @@ image on the stick, you will need enough space for the ISO as well.
   <title>Copying the files &mdash; the easy way</title>
 <para arch="i386">
 
-There is an all-in-one file <filename>netboot/boot.img.gz</filename>
+There is an all-in-one file <ulink url="&url-ubuntu-installer;/images/netboot/boot.img.gz">netboot/boot.img.gz</ulink>
 which contains all the installer files (including the kernel) as well
 as <command>SYSLINUX</command> and its configuration file. You only
 have to extract it directly to a partition on your USB stick:
@@ -41,7 +41,7 @@ care that you use the correct device name for your USB stick.
 
 </para><para arch="powerpc">
 
-There is an all-in-one file <filename>netboot/boot.img.gz</filename>
+There is an all-in-one file <ulink url="&url-ubuntu-installer;/images/powerpc/netboot/boot.img.gz">netboot/boot.img.gz</ulink>
 which contains all the installer files (including the kernel) as well
 as <command>yaboot</command> and its configuration file. Create a
 partition of type "Apple_Bootstrap" on your USB stick using

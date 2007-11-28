@@ -1,3 +1,32 @@
+debian-installer (20050317ubuntu16) breezy; urgency=low
+
+  * build/boot/x86/pics/ubuntu-usplash.png,
+    build/boot/x86/pics/ubuntu-usplash.rle: Add new Ubuntu splash image
+    based on usplash artwork.
+  * build/config/x86.cfg: Use ubuntu-usplash.rle by default.
+
+  * Manual changes:
+    - appendix/example-preseed.xml: Update to take account of changes to
+      various installer components (part of Ubuntu #11944):
+      + preseed/locale is now debian-installer/locale (Debian change to
+        localechooser).
+      + Use kbd-chooser/method instead of console-keymaps-*/keymap (Ubuntu
+        change to kbd-chooser).
+      + Replace tasksel preseeding with base-config/package-selection
+        (various Ubuntu changes).
+      + Remove mailer configuration, as Ubuntu doesn't install an MTA by
+        default.
+    - build/entities/urls.ent, appendix/chroot-install.xml: Change all
+      references to ubuntulinux.org to be references to ubuntu.com instead.
+    - install-methods/downloading-files.xml: Ubuntu branding.
+    - install-methods/boot-usb-files.xml: Turn "netboot/boot.img.gz" into a
+      link (thanks, Karl Hegbloom).
+    - hardware/hardware-supported.xml: Update architecture count for Ubuntu
+      and disable table entries for non-Ubuntu-supported architectures
+      (thanks, Michael Moore). Add amd64. Remove Debian-only i386 flavours.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 21 Sep 2005 17:33:31 +0100
+
 debian-installer (20050317ubuntu15) breezy; urgency=low
 
   * Backport from trunk (Christian Perrier, closes: Ubuntu #14024):

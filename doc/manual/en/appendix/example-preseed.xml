@@ -53,8 +53,8 @@ the Internet at <ulink url="&url-example-preseed;"></ulink>.
 # because the questions are asked before the preseed file can be loaded.
 # Instead, to avoid these questions, pass some more parameters to the kernel:
 #
-#    preseed/locale=en_US
-#    console-keymaps-at/keymap=us
+#    debian-installer/locale=en_US
+#    kbd-chooser/method=us
 #
 # If you need to pick a particular interface when netbooting before reading
 # a preseed URL, pass a parameter like this as well:
@@ -290,35 +290,26 @@ base-config  apt-setup/directory        string /ubuntu
 # Stop after choosing one mirror.
 base-config  apt-setup/another          boolean false
 
-# You can choose to install non-free and contrib software.
+# You can choose to install non-free (= restricted) and universe software,
+# or to install software from the backports repository.
 #base-config apt-setup/non-free         boolean true
-#base-config apt-setup/contrib          boolean true
+#base-config apt-setup/universe         boolean true
+#base-config apt-setup/backports        boolean true
 
 # Do enable security updates.
 base-config  apt-setup/security-updates boolean true
 
 ###### Package selection.
 
-# You can choose to install any combination of tasks that are available.
-# Available tasks as of this writing include: Desktop environment,
-# Web server, Print server, DNS server, File server, Mail server, 
-# SQL database, manual package selection. The last of those will run
-# aptitude. You can also choose to install no tasks, and force the
+# You can choose to install any set of packages that are available using
+# aptitude patterns (see the aptitude documentation). The default is:
+base-config  base-config/package-selection      string ~tubuntu-standard|~tubuntu-desktop
+
+# ... but you could choose something different, such as:
+#base-config base-config/package-selection      string ~tubuntu-standard|openssh-server
+
+# You can also choose to set this to the empty string, and force the
 # installation of a set of packages in some other way.
-tasksel      tasksel/first   multiselect Desktop environment
-#tasksel     tasksel/first   multiselect Web server, Mail server, DNS server
-
-###### Mailer configuration.
-
-# During a normal install, exim asks only two questions. Here's how to
-# avoid even those. More complicated preseeding is possible.
-exim4-config exim4/dc_eximconfig_configtype \
-    select no configuration at this time
-
-# It's a good idea to set this to whatever user account you choose to
-# create. Leaving the value blank results in postmaster mail going to
-# /var/mail/mail.
-exim4-config exim4/dc_postmaster        string 
 
 ###### X Configuration.
 
