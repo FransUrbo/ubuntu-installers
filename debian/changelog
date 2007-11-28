@@ -1,3 +1,19 @@
+debian-installer (20041227ubuntu22) hoary; urgency=low
+
+  * Manual changes:
+    - appendix/example-preseed.xml: Document how to pick a particular
+      interface with netcfg/choose_interface. Update locale preseeding
+      advice to localechooser. Add advice on preseeding a netboot interface
+      on the kernel command line. Note that kernel 2.6.9 has raised kernel
+      command line limits.
+    - install-methods/automatic-install.xml: Document Kickstart
+      installations (currently only the basics, a reference to Red Hat's
+      documentation, and the differences from Anaconda).
+  * Ship yaboot in powerpc netboot/hd-media directories.
+  * Drop ia64 boot.img size to 16MB, to save CD space.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 26 Mar 2005 14:18:04 +0000
+
 debian-installer (20041227ubuntu21) hoary; urgency=low
 
   * Move to 2.6.10-5 kernels.

@@ -38,14 +38,19 @@ may want to uncomment some of the lines before using the file.
 # because the questions are asked before the preseed file can be loaded.
 # Instead, to avoid these questions, pass some more parameters to the kernel:
 #
-#    languagechooser/language-name=English
-#    countrychooser/shortlist=US
+#    preseed/locale=en_US
 #    console-keymaps-at/keymap=us
+#
+# If you need to pick a particular interface when netbooting before reading
+# a preseed URL, pass a parameter like this as well:
+#
+#    netcfg/choose_interface=eth1
 #
 # Note that the kernel accepts a maximum of 8 command line options and
 # 8 environment options (including any options added by default for the
 # installer). If these numbers are exceeded, 2.4 kernels will drop any
-# excess options and 2.6 kernels will panic.
+# excess options and 2.6 kernels will panic. With kernel 2.6.9 or newer,
+# you can use 32 command line options and 32 environment options.
 # Some of the default options, like 'vga=normal' and 'devfs=mount' may be
 # safely removed for most installations, which may allow you to add more
 # options for preseeding.
@@ -83,6 +88,9 @@ may want to uncomment some of the lines before using the file.
 # skip displaying a list if there is more than one interface.
 d-i	netcfg/choose_interface select auto
 
+# To pick a particular interface instead:
+#d-i	netcfg/choose_interface	select eth1
+
 # If you prefer to configure the network manually, here's how:
 #d-i	netcfg/disable_dhcp	boolean true
 #d-i	netcfg/get_nameservers	string 192.168.1.1
@@ -92,7 +100,7 @@ d-i	netcfg/choose_interface select auto
 #d-i	netcfg/confirm_static	boolean true
 
 # Note that any hostname and domain names assigned from dhcp take
-# precidence over values set here. However, setting the values still
+# precedence over values set here. However, setting the values still
 # prevents the questions from being shown even if values come from dhcp.
 d-i	netcfg/get_hostname	string unassigned-hostname
 d-i	netcfg/get_domain	string unassigned-domain

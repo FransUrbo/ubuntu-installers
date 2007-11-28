@@ -84,4 +84,183 @@ parameters.
 
 </para>
 </sect2>
+
+<sect2>
+<title>Automatic installation using Kickstart</title>
+
+<para>
+
+The Ubuntu installer has preliminary support for automating installs using
+Kickstart files, as designed by Red Hat for use in their Anaconda installer.
+This method is not as flexible as the preconfiguration file method above,
+but it requires less knowledge of how the installer works.
+
+</para><para>
+
+This section documents only the basics, and differences between Anaconda and
+the Ubuntu installer. Refer to the
+<ulink url="http://www.redhat.com/docs/manuals/linux/RHL-9-Manual/custom-guide/part-install-info.html">
+Red Hat documentation</ulink> for detailed instructions.
+
+</para><para>
+
+To generate a Kickstart file, install the
+<classname>system-config-kickstart</classname> package and run
+<filename>system-config-kickstart</filename>. This offers you a graphical
+user interface to the various options available.
+
+</para><para>
+
+Once you have a Kickstart file, you can edit it if necessary, and place it
+on a web, FTP, or NFS server, or copy it onto the installer's boot media.
+Wherever you place the file, you need to pass a parameter to the installer
+at boot time to tell it to use the file.
+
+</para><para>
+
+To make the installer use a Kickstart file downloaded from a web or FTP
+server, add ks=http://url/to/ks.cfg or ks=ftp://url/to/ks.cfg respectively
+to the kernel boot parameters. This requires the installer to be able to set
+up the network via DHCP on the first connected interface without asking any
+questions; you may also need to add ksdevice=eth1 or similar if the
+installer fails to determine the correct interface automatically.
+
+</para><para>
+
+Similarly, to make the installer use a Kickstart file on an NFS server, add
+ks=nfs:server:/path/to/ks.cfg to the kernel boot parameters. The method
+supported by Anaconda of adding a plain "ks" boot parameter to work out the
+location of the Kickstart file from a DHCP response is not yet supported by
+the Ubuntu installer.
+
+</para><para>
+
+To place a Kickstart file on a CD, you would need to remaster the ISO image
+to include your Kickstart file, and add ks=cdrom:/path/to/ks.cfg to the
+kernel boot parameters. See the manual page for mkisofs for details.
+Alternatively, put the Kickstart file on a floppy, and add
+ks=floppy:/path/to/ks.cfg to the kernel boot parameters.
+
+</para>
+
+<sect3>
+<title>Missing features</title>
+
+<para>
+
+As yet, the Ubuntu installer only supports a subset of Kickstart's features.
+The following is a brief summary of features that are known to be missing:
+
+<itemizedlist>
+<listitem><para>
+
+LDAP, Kerberos 5, Hesiod, and Samba authentication.
+
+</para></listitem>
+<listitem><para>
+
+The <userinput>auth --enablecache</userinput> command to enable
+<filename>nscd</filename>.
+
+</para></listitem>
+<listitem><para>
+
+Bootloader passwords.
+
+</para></listitem>
+<listitem><para>
+
+The <userinput>bootloader --linear</userinput>,
+<userinput>--nolinear</userinput>, and <userinput>--lba32</userinput>
+options for detailed LILO configuration.
+
+</para></listitem>
+<listitem><para>
+
+Upgrades. To upgrade from one Ubuntu release to another, use the facilities
+provided by <filename>apt</filename> and its frontends.
+
+</para></listitem>
+<listitem><para>
+
+Partitioning of multiple drives. Due to current limitations in the partition
+manager, it is only possible to partition a single drive.
+
+</para></listitem>
+<listitem><para>
+
+Using the <userinput>device</userinput> command to install extra kernel
+modules or to pass options to a particular module.
+
+</para></listitem>
+<listitem><para>
+
+Driver disks.
+
+</para></listitem>
+<listitem><para>
+
+Firewall configuration.
+
+</para></listitem>
+<listitem><para>
+
+Installation from an archive on a local hard disk or from an NFS archive.
+
+</para></listitem>
+<listitem><para>
+
+The <userinput>lilocheck</userinput> command to check for an existing LILO
+installation.
+
+</para></listitem>
+<listitem><para>
+
+Logical Volume Management (LVM) configuration.
+
+</para></listitem>
+<listitem><para>
+
+Restrictions of a partition to a particular disk or device, and
+specifications of the starting or ending cylinder for a partition.
+
+</para></listitem>
+<listitem><para>
+
+Checking a partition for bad sectors.
+
+</para></listitem>
+<listitem><para>
+
+RAID configuration.
+
+</para></listitem>
+<listitem><para>
+
+The <userinput>xconfig --monitor</userinput> option to use a specified
+monitor name.
+
+</para></listitem>
+<listitem><para>
+
+Most package groups. As special cases, the "Ubuntu Desktop" and "Kubuntu
+Desktop" groups install the standard Ubuntu or Kubuntu desktop systems
+respectively, and any group name not containing a space (for example,
+"ubuntu-desktop") causes packages with the corresponding Task: header in the
+Packages file to be installed.
+
+</para></listitem>
+<listitem><para>
+
+Pre-installation scripts and non-chrooted post-installation scripts may only
+be shell scripts; other interpreters are not available at this point in the
+installation.
+
+</para></listitem>
+</itemizedlist>
+
+</para>
+
+</sect3>
+</sect2>
  </sect1>
