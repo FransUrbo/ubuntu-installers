@@ -387,7 +387,7 @@ msgid ""
 "\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
 "0x prefix (e.g., 0x300)."
 msgstr ""
-"gonbitam, abio moduekin nahasita (ikusi link linkend=\"F3\"><keycap>F3</"
+"gonbitam, abio moduekin nahasita (ikusi <link linkend=\"F3\"><keycap>F3</"
 "keycap></link>). Zenbakiak erabili behar badituzu erabili 0x aurrizkia "
 "(adib., 0x300)."
 

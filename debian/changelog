@@ -1,3 +1,10 @@
+debian-installer (20070308ubuntu7) gutsy; urgency=low
+
+  * Fix mismatched XML tags in Basque translation.
+  * Switch to dhcp3-client-udeb.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 16 Jul 2007 23:29:00 +0100
+
 debian-installer (20070308ubuntu6) gutsy; urgency=low
 
   * Update live CD memory requirements to 256 MB (LP: #120107).
