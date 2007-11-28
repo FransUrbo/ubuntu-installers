@@ -1,3 +1,11 @@
+debian-installer (20041118ubuntu4) hoary; urgency=low
+
+  * Don't remove modules.*map from the initrd if we're using real hotplug.
+  * Add pciutils-udeb to the netboot initrds, so that netcfg can show
+    network interface names.
+
+ -- Colin Watson <cjwatson@canonical.com>  Fri, 26 Nov 2004 17:52:47 +0000
+
 debian-installer (20041118ubuntu3) hoary; urgency=low
 
   * No source changes; pick up new hw-detect with fixed hotplug integration.
