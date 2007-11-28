@@ -1,3 +1,10 @@
+debian-installer (20041227ubuntu24) hoary; urgency=low
+
+  * Add nic-firmware to netboot initrds (closes: #8390).
+  * Update copyright notices to 2005.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue,  5 Apr 2005 18:32:08 +0100
+
 debian-installer (20041227ubuntu23) hoary; urgency=low
 
   * Fix powerpc build (copy yaboot to the right place).
