@@ -1,3 +1,9 @@
+debian-installer (20061102ubuntu24) feisty; urgency=low
+
+  * Add input-modules to sparc cdrom images (LP: #99790).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 12 Apr 2007 20:15:54 +0100
+
 debian-installer (20061102ubuntu23) feisty; urgency=low
 
   * Remove grepmap-udeb from all images, as it's no longer in the archive.
