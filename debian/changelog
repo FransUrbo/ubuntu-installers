@@ -1,3 +1,11 @@
+debian-installer (20040801ubuntu9) warty; urgency=low
+
+  * Document custom and custom-expert boot methods (closes: Warty #1001).
+  * Move amd64 and powerpc kernels to 2.6.8.1-1.
+  * Cope with mkvmlinuz support code being missing on powerpc.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue,  7 Sep 2004 17:33:11 +0100
+
 debian-installer (20040801ubuntu8) warty; urgency=low
 
   * Minor formatting fix to f7.txt.

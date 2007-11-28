@@ -7,7 +7,8 @@
   Start the installation -- this is the default ${MEDIA_TYPE} install.
 0fexpert07
   Start the installation in expert mode, for maximum control.
-
+0fcustom07, 0fcustom-expert07
+  Install only the base system.
 
 
 To use one of these boot methods, type it at the prompt, optionally
@@ -17,7 +18,6 @@ followed by any boot parameters. For example:
 
 If unsure, you should use the default boot method, with no special
 parameters, by simply pressing enter at the boot prompt.
-
 
 
 Press F1 for the help index, or ENTER to ${BOOTPROMPT}
