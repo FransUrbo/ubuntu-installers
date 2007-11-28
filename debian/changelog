@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu15) gutsy; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 22 Sep 2007 17:18:11 +0100
+
 debian-installer (20070308ubuntu14) gutsy; urgency=low
 
   * Rename server to cli, to match cdimage since edgy (LP: #125903). Remove
