@@ -1,3 +1,10 @@
+debian-installer (20040801ubuntu11) warty; urgency=low
+
+  * Merge from Debian (Debian bug #264584):
+    - Add acpi-modules to i386 2.6 initrds so the fan can be turned on.
+
+ -- Colin Watson <cjwatson@canonical.com>  Thu,  9 Sep 2004 15:20:41 +0100
+
 debian-installer (20040801ubuntu10) warty; urgency=low
 
   * Add hdparm-udeb to cdrom initrds.
