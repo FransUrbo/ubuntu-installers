@@ -1,3 +1,9 @@
+debian-installer (20041227ubuntu7) hoary; urgency=low
+
+  * Make sure syslinux.txt.live ends up in debian-cd_info.tar.gz.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 24 Jan 2005 23:48:21 +0000
+
 debian-installer (20041227ubuntu6) hoary; urgency=low
 
   * build/config/ia64.cfg, build/config/x86.cfg: Replace "Debian Inst" with
