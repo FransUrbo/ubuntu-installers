@@ -62,7 +62,7 @@ effectively acting like two controllers.
 <phrase arch="m68k">
 The letters may differ from what shows in the mac program pdisk
 (i.e. what shows up as <filename>/dev/hdc</filename> on pdisk may show
-up as <filename>/dev/hda</filename> in Debian). 
+up as <filename>/dev/hda</filename> in Ubuntu). 
 </phrase>
 
 </para></listitem>

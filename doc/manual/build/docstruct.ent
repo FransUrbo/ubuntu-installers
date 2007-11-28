@@ -115,6 +115,7 @@
   <!ENTITY module-mdcfg.xml              SYSTEM "en/using-d-i/modules/mdcfg.xml">
   <!ENTITY module-prebaseconfig.xml      SYSTEM "en/using-d-i/modules/prebaseconfig.xml">
   <!ENTITY module-base-installer.xml     SYSTEM "en/using-d-i/modules/base-installer.xml">
+  <!ENTITY module-archive-copier.xml     SYSTEM "en/using-d-i/modules/archive-copier.xml">
   <!ENTITY module-kernel-chooser.xml     SYSTEM "en/using-d-i/modules/kernel-chooser.xml">
   <!ENTITY module-os-prober.xml          SYSTEM "en/using-d-i/modules/os-prober.xml">
 

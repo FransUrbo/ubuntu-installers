@@ -2,11 +2,11 @@
 <!-- $Id: partition-programs.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
 
  <sect1 id="partition-programs">
- <title>Debian Partitioning Programs</title>
+ <title>Ubuntu Partitioning Programs</title>
 <para>
 
 Several varieties of partitioning programs have been adapted by Debian
-developers to work on various types of hard disks and computer
+and Ubuntu developers to work on various types of hard disks and computer
 architectures. Following is a list of the program(s) applicable for
 your architecture.
 
@@ -18,7 +18,7 @@ your architecture.
 <term><command>partman</command></term>
 <listitem><para>
 
-Recommended partitioning tool in Debian. This swiss army knife can
+Recommended partitioning tool in Ubuntu. This swiss army knife can
 also create filesystems <phrase arch="i386"> (<quote>format</quote> in
 Windows speak) </phrase> and assign them to the mountpoints.
 

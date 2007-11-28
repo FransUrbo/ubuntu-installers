@@ -89,9 +89,8 @@ take some time.
 </para>
 
 &module-base-installer.xml;
+&module-archive-copier.xml;
   </sect2>
-
-  <!-- FIXME: document archive-copier here -->
 
   <sect2>
   <title>Making Your System Bootable</title>

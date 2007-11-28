@@ -1,3 +1,16 @@
+debian-installer (20040801ubuntu18) warty; urgency=low
+
+  * Manual changes:
+    - welcome/what-is-debian.xml: Add an "Ubuntu and Debian" section, with
+      text from the Ubuntu web site.
+    - using-d-i/components.xml, using-d-i/modules/archive-copier.xml:
+      Document archive-copier.
+    - Brand the appendix on partitioning, accidentally missed out earlier.
+    - partitioning/tree.xml: Document /media, /srv, and /sys. Mention rough
+      /usr requirements for an Ubuntu desktop installation.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 12 Oct 2004 00:13:23 +0100
+
 debian-installer (20040801ubuntu17) warty; urgency=low
 
   * Manual changes:

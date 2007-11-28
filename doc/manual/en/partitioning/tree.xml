@@ -6,12 +6,12 @@
  <title>The Directory Tree</title>
 <para>
 
-&debian; adheres to the 
+Ubuntu adheres to the 
 <ulink url="&url-fhs-home;">Filesystem Hierarchy Standard</ulink>
 for directory and file naming. This standard allows users and software
 programs to predict the location of files and directories. The root
 level directory is represented simply by the slash
-<filename>/</filename>. At the root level, all Debian systems include
+<filename>/</filename>. At the root level, all Ubuntu systems include
 these directories:
 
 <informaltable>
@@ -42,6 +42,9 @@ these directories:
   <entry><filename>lib</filename></entry>
   <entry>Essential shared libraries and kernel modules</entry>
 </row><row>
+  <entry><filename>media</filename></entry>
+  <entry>Mount point for removable media</entry>
+</row><row>
   <entry><filename>mnt</filename></entry>
   <entry>Mount point for mounting a file system temporarily</entry>
 </row><row>
@@ -53,6 +56,12 @@ these directories:
 </row><row>
   <entry><filename>sbin</filename></entry>
   <entry>Essential system binaries</entry>
+</row><row>
+  <entry><filename>srv</filename></entry>
+  <entry>Data for services provided by this system</entry>
+</row><row>
+  <entry><filename>sys</filename></entry>
+  <entry>Virtual directory for kernel data structures</entry>
 </row><row>
   <entry><filename>tmp</filename></entry>
   <entry>Temporary files</entry>
@@ -92,7 +101,9 @@ Typically 100 MB is needed for the root partition, but this may vary.
 (<filename>/usr/lib</filename>), documentation
 (<filename>/usr/share/doc</filename>), etc., are in this
 directory. This part of the file system needs most of the space. You
-should provide at least 500 MB of disk space. If you want to install
+should provide at least 500 MB of disk space for a minimal installation,
+and at least 1.5 GB if you want to install a standard Ubuntu desktop.
+If you want to install
 more packages you should increase the amount of space you give this
 directory.
 
@@ -113,7 +124,7 @@ e-mails, web sites, the packaging system cache, etc. will be placed
 under this directory. The size of this directory depends greatly on
 the usage of your computer, but for most people will be dictated by
 the package management tool's overhead.  If you are going to do a full
-installation of just about everything Debian has to offer, all in one
+installation of just about everything Ubuntu has to offer, all in one
 session, setting aside 2 or 3 gigabytes of space for
 <filename>/var</filename> should be sufficient. If you are going to
 install in pieces (that is to say, install services and utilities,
