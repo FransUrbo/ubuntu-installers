@@ -1,3 +1,10 @@
+debian-installer (20040801ubuntu7) warty; urgency=low
+
+  * Document the pci=noacpi option (purposed for HP servers and Via-based
+    machines) in f7.txt.
+
+ -- Daniel Stone <daniels@debian.org>  Mon,  6 Sep 2004 10:02:02 +1000
+
 debian-installer (20040801ubuntu6) warty; urgency=low
 
   * Disable hd-media and monolithic targets for amd64.
