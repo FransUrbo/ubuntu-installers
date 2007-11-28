@@ -1,3 +1,9 @@
+debian-installer (20040528ubuntu3) warty; urgency=low
+
+  * Bump i386 kernels to 2.6.6-2.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Fri,  2 Jul 2004 17:05:45 +0100
+
 debian-installer (20040528ubuntu2) warty; urgency=low
 
   * Remove build-dependencies only required for powerpc 2.4.
