@@ -1,3 +1,9 @@
+debian-installer (20061102ubuntu3) feisty; urgency=low
+
+  * build/config/sparc.cfg: Fix KERNELVERSION/KERNELNAME merge breakage.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 30 Nov 2006 21:09:07 +0000
+
 debian-installer (20061102ubuntu2) feisty; urgency=low
 
   * Make nfs-modules optional, as fs-secondary-modules is a bit much for the
