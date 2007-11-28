@@ -1,3 +1,11 @@
+debian-installer (20061102ubuntu2) feisty; urgency=low
+
+  * Make nfs-modules optional, as fs-secondary-modules is a bit much for the
+    netboot images (filed #73910).
+  * Make cdrom-modules optional, as it has gone AWOL (filed #73911).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 30 Nov 2006 13:52:46 +0000
+
 debian-installer (20061102ubuntu1) feisty; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
