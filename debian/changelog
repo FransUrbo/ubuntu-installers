@@ -1,3 +1,9 @@
+debian-installer (20060711ubuntu8) edgy; urgency=low
+
+  * No-change rebuild to pick up new components (no-more-devfs).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri,  1 Sep 2006 16:31:41 +0100
+
 debian-installer (20060711ubuntu7) edgy; urgency=low
 
   * Remove -d from mkvmlinuz arguments so that we can build a vmlinuz again
