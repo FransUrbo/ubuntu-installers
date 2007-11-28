@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2006-10-14 18:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Felipe Gil Castiñeira <felipexil@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Rosetta-Export-Date: 2007-04-05 11:12:16+0000\n"
+"X-Launchpad-Export-Date: 2007-09-24 10:49+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -221,10 +222,10 @@ msgstr "Iniciar a instalación en modo experto; isto permite o máximo control."
 msgid "cli"
 msgstr ""
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
-#, fuzzy
 msgid "cli-expert"
-msgstr "experto"
+msgstr ""
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
@@ -827,23 +828,3 @@ msgid ""
 msgstr ""
 "Este sistema baséase en Debian. Consulte <ulink url=\"http://www.debian.org/"
 "\" /> para máis detalles e información sobre o proxecto Debian."
-
-#~ msgid "server"
-#~ msgstr "servidor"
-
-#~ msgid "server-expert"
-#~ msgstr "servidor-experto"
-
-#~ msgid ""
-#~ "Minimal system install. Recommended for servers, where a complete "
-#~ "graphical desktop environment is not desired."
-#~ msgstr ""
-#~ "Instalación do sistema mínimo. Recoméndase para servidores, nos que non "
-#~ "se desexa un ambiente gráfico completo."
-
-#~ msgid ""
-#~ "If your system hangs when booting, and the last message you see is "
-#~ "\"aec671x-detect..\", try"
-#~ msgstr ""
-#~ "Se o seu sistema se colga durante o inicio e a derradeira mensaxe que ve "
-#~ "é \"aec671x-detect..\", tente"

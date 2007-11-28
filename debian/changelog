@@ -1,3 +1,12 @@
+debian-installer (20070308ubuntu16) gutsy; urgency=low
+
+  * Enable powerpc/cell subarchitecture.
+  * Make ubuntu-modules optional on powerpc, since cell doesn't have it
+    (yet?).
+  * Update help text translations from Launchpad.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 24 Sep 2007 12:49:15 +0100
+
 debian-installer (20070308ubuntu15) gutsy; urgency=low
 
   * No-change rebuild to pick up new components.

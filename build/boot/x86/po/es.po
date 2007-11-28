@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-04-02 02:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Ricardo Pérez López <ricardo@iesdonana.org>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Rosetta-Export-Date: 2007-04-05 11:12:17+0000\n"
+"X-Launchpad-Export-Date: 2007-09-24 10:49+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -26,21 +26,19 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "¡Bienvenido a ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Esta es una instalación ${MEDIA_TYPE} para ${DISTRIBUTION_NAME} "
+"Este es un ${MEDIA_TYPE} de instalación para ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}, creado el ${BUILD_DATE}."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Este es un Live ${MEDIA_TYPE} para ${DISTRIBUTION_NAME} "
+"Este es un ${MEDIA_TYPE} ejecutable para ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}, creado el ${BUILD_DATE}."
 
 #: help.xml:28
@@ -153,13 +151,13 @@ msgstr ""
 "Debe tener al menos 256 Megabytes de RAM para usar este sistema Ubuntu Live."
 
 #: help.xml:142
-#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"El sistema Live no requiere espacio en su disco duro. No obstante, se usarán "
-"las particiones de intercambio que haya en el disco si están disponibles."
+"El sistema ejecutable no requiere espacio en su disco duro. No obstante, se "
+"usarán las particiones de intercambio que haya en el disco si están "
+"disponibles."
 
 #: help.xml:147 help.xml:670
 msgid ""
@@ -220,10 +218,10 @@ msgstr "Comenzar la instalación en modo experto, para tener el máximo control.
 msgid "cli"
 msgstr ""
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
-#, fuzzy
 msgid "cli-expert"
-msgstr "experto"
+msgstr ""
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
@@ -469,12 +467,11 @@ msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:428
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Forzar el uso del controlador IDE genérico"
 
 #: help.xml:429
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:434
 msgid ""
@@ -685,22 +682,20 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Utilizar tema de accesibilidad de alto contraste"
 
 #: help.xml:594
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:598
 msgid "Use special tasks"
-msgstr ""
+msgstr "Utilizar tareas especiales"
 
 #: help.xml:599
-#, fuzzy
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=es</userinput>"
+msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
 #: help.xml:604
 msgid ""
@@ -830,23 +825,3 @@ msgid ""
 msgstr ""
 "Este sistema está basado en Debian. Visite <ulink url=\"http://www.debian."
 "org/\" /> para más detalles e información sobre el proyecto Debian."
-
-#~ msgid "server"
-#~ msgstr "servidor"
-
-#~ msgid "server-expert"
-#~ msgstr "servidor-experto"
-
-#~ msgid ""
-#~ "Minimal system install. Recommended for servers, where a complete "
-#~ "graphical desktop environment is not desired."
-#~ msgstr ""
-#~ "Instalación mínima del sistema. Recomendada para servidores, en los que "
-#~ "no se desea un entorno de escritorio gráfico completo."
-
-#~ msgid ""
-#~ "If your system hangs when booting, and the last message you see is "
-#~ "\"aec671x-detect..\", try"
-#~ msgstr ""
-#~ "Si su sistema se cuelga durante el arranque, y el último mensaje que ve "
-#~ "es \"aec671x-detect..\", pruebe"

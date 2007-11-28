@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-04-02 02:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Martin <loptosko@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Rosetta-Export-Date: 2007-04-05 11:12:05+0000\n"
+"X-Launchpad-Export-Date: 2007-09-24 10:49+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -217,10 +217,10 @@ msgstr "Spustiť inštaláciu v režime experta, pre maximálnu kontrolu."
 msgid "cli"
 msgstr ""
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
-#, fuzzy
 msgid "cli-expert"
-msgstr "expert"
+msgstr ""
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
@@ -467,10 +467,13 @@ msgstr "<userinput>vga=771</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:434
+#, fuzzy
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
 msgstr ""
+"Ak sa vyskytnú lockups alebo iné zlyhania hardvéru, vypnite APIC interrupt "
+"routing"
 
 #: help.xml:437
 msgid "<userinput>noapic nolapic</userinput>"
@@ -786,23 +789,3 @@ msgid ""
 msgstr ""
 "Tento systém je založený na systéme Debian. Pozrite <ulink url=\"http://www."
 "debian.sk/\" /> pre viac podrobností a informácií o projekte Debian."
-
-#~ msgid "server"
-#~ msgstr "server"
-
-#~ msgid "server-expert"
-#~ msgstr "server-expert"
-
-#~ msgid ""
-#~ "Minimal system install. Recommended for servers, where a complete "
-#~ "graphical desktop environment is not desired."
-#~ msgstr ""
-#~ "Inštalácia minimálneho systému. Vhodné pre servery, kde nie je potrebné "
-#~ "kompletné grafické prostredie."
-
-#~ msgid ""
-#~ "If your system hangs when booting, and the last message you see is "
-#~ "\"aec671x-detect..\", try"
-#~ msgstr ""
-#~ "Ak váš systém zamrzne počas zavádzaniea a posledné zobrazené hlásenie je  "
-#~ "\"aec671x-detect..\", skúste"

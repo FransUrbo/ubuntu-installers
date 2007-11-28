@@ -3,24 +3,25 @@
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-04-02 02:25+0000\n"
+"PO-Revision-Date: 2007-06-09 09:51+0000\n"
 "Last-Translator: GrajdaninK <zaiitov@gmail.com>\n"
 "Language-Team: Kirghiz <ky@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Rosetta-Export-Date: 2007-04-05 11:12:07+0000\n"
+"X-Launchpad-Export-Date: 2007-09-24 10:49+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 # type: Content of: <reference><title>
 #: help.xml:6
+#, fuzzy
 msgid "Installer Boot Help Screens"
-msgstr ""
+msgstr "Жүктөөдө жардам экраны"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
@@ -50,8 +51,9 @@ msgstr "ЖАРДАМ ИНДЕКСИ"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
+#, fuzzy
 msgid "KEY"
-msgstr ""
+msgstr "Ачкыч"
 
 #: help.xml:30
 msgid "TOPIC"
@@ -202,10 +204,10 @@ msgstr ""
 msgid "cli"
 msgstr ""
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
-#, fuzzy
 msgid "cli-expert"
-msgstr "expert"
+msgstr ""
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
@@ -757,6 +759,3 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-
-#~ msgid "server-expert"
-#~ msgstr "server-expert"

@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-04-02 02:25+0000\n"
+"PO-Revision-Date: 2007-09-09 07:18+0000\n"
 "Last-Translator: Igor Zubarev <igor4u@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Rosetta-Export-Date: 2007-04-05 11:12:10+0000\n"
+"X-Launchpad-Export-Date: 2007-09-24 10:49+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -26,30 +26,28 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "Добро пожаловать в ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Это установочный ${MEDIA_TYPE} для ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, выпущенный ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}. Дата сборки: ${BUILD_DATE}."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Это live ${MEDIA_TYPE} для ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}, "
-"выпущенный ${BUILD_DATE}."
+"Это live ${MEDIA_TYPE} для ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
+"Дата сборки: ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "ИНДЕКС ПОМОЩИ"
+msgstr "СОДЕРЖАНИЕ"
 
 #: help.xml:29
 msgid "KEY"
-msgstr "КЛЮЧ"
+msgstr "КЛАВИША"
 
 #: help.xml:30
 msgid "TOPIC"
@@ -57,7 +55,7 @@ msgstr "ТЕМА"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Эта страница индекс помощи."
+msgstr "Данная страница - содержание справки."
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
@@ -69,12 +67,11 @@ msgstr "Требования для запуска ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr ""
-"Способы загрузки для специальных вариантов использования этого ${MEDIA_TYPE}."
+msgstr "Способы загрузки для специального использования этого ${MEDIA_TYPE}."
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Дополнительные способы загрузки; режим восстановления."
+msgstr "Дополнительные способы загрузки; восстановление системы."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
@@ -82,11 +79,11 @@ msgstr "Специальные параметры загрузки, обзор."
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "Специальные параметры загрузки для специальных платформ."
+msgstr "Специальные параметры загрузки для отдельных платформ."
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr "Специальные параметры загрузки для выбранных дисковых контроллеров."
+msgstr "Специальные параметры загрузки для некоторых дисковых контроллеров."
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
@@ -94,7 +91,7 @@ msgstr "Специальные параметры загрузки для сис
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "Специальные параметры загрузки для системы bootstrap."
+msgstr "Специальные параметры для начального загрузчика системы."
 
 #: help.xml:84
 msgid "How to get help."
@@ -102,16 +99,15 @@ msgstr "Как получить помощь."
 
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "Авторские права и гарантии"
+msgstr "Авторские права и гарантии."
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "Нажмите клавиши от F2 до F10 для деталей или ENTER для ${BOOTPROMPT}"
+msgstr "Нажмите клавиши F2-F10 для просмотра или ENTER для ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr ""
-"Нажмите клавиши от F2 до F10 для деталей, или Escape для выхода из помощи."
+msgstr "Нажмите клавиши F2-F10 для просмотра, или Escape для выхода из помощи."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
@@ -121,8 +117,8 @@ msgstr "ТРЕБОВАНИЯ ДЛЯ УСТАНОВКИ UBUNTU"
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
-"У вас должно быть хотя бы 32 мегабайта оперативной памяти для использования "
-"этого установщика Ubuntu."
+"У вас должно быть как минимум 32 мегабайта оперативной памяти для "
+"использования этого установщика Ubuntu."
 
 #: help.xml:123
 msgid ""
@@ -132,12 +128,12 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"У вас должно быть свободное пространство на жестком диске, для создания "
-"нового раздела размером хотя бы 2 гигабайта для установки настольной системы "
-"Ubuntu или не менее 400 мегабайт для минимальной установки сервера. В "
-"зависимости от того как вы собираетесь использовать вашу новую систему "
-"Ubuntu , вам может потребоваться большее пространство для установки "
-"дополнительных пакетов."
+"На жёстком диске должно быть достаточно пространства для создания нового "
+"раздела - размером не менее 2 гигабайт для установки стандартной настольной "
+"системы Ubuntu, либо не менее 400 мегабайт для минимальной серверной "
+"установки. В зависимости от того как вы собираетесь использовать вашу новую "
+"систему Ubuntu, вам может потребоваться больше дискового пространства для "
+"установки дополнительных пакетов."
 
 #: help.xml:131 help.xml:664
 msgid ""
@@ -153,17 +149,16 @@ msgstr ""
 msgid ""
 "You must have at least 256 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"У вас должно быть хотя бы 256 мегабайт оперативной памяти для использования "
-"live системы Ubuntu."
+"Для использования live-системы Ubuntu, вам потребуется как минимум 256 "
+"мегабайт оперативной памяти."
 
 #: help.xml:142
-#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Live система не требует пространства на вашем жестком диске. Однако будут "
-"использованы существующие доступные разделы подкачки."
+"Live-система не требует пространства на вашем жестком диске. Однако, если "
+"это возможно, будут использованы существующие разделы подкачки."
 
 #: help.xml:147 help.xml:670
 msgid ""
@@ -185,13 +180,14 @@ msgid ""
 "${BOOTPROMPT}"
 msgstr ""
 "Нажмите <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control и F затем 1</phrase> для перехода к индексу помощи, или ENTER для "
-"${BOOTPROMPT}"
+"\">control и F затем 1</phrase> для перехода к оглавлению справки, или ENTER "
+"для ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
 #: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Нажмите F1 для контекстной справки, или Escape для выхода из нее."
+msgstr ""
+"Нажмите F1 для перехода к оглавлению справки, или Escape для выхода из неё."
 
 #: help.xml:169
 msgid "BOOT METHODS"
@@ -203,51 +199,13 @@ msgstr "Доступные способы загрузки:"
 
 #: help.xml:177
 msgid "install"
-msgstr ""
-"install\r\n"
-"*--- computer-dictionary ---*\r\n"
-"устанавливать, настраивать.\r\n"
-"1) Задавать параметры и состав программной системы  для  работы\r\n"
-"на конкретной вычислительной машине.\r\n"
-"2)  Устанавливать,  включать.  Делать  задачу   доступной   для\r\n"
-"использования в данной операционной среде.\r\n"
-"3)  устанавливать,монтировать  (сменный  носитель  на   внешнее\r\n"
-"запоминающее устройство).\r\n"
-"4) устанавливать; налаживать (вычислительную систему).\r\n"
-"*--- pc-user-dictionary ---*\r\n"
-"1) устанавливать, монтировать, собирать\r\n"
-"2) располагать, размещать\r\n"
-"3) вводить в действие\r\n"
-"*--- dictd_www.mova.org_korolew_enru ---*\r\n"
-"install\r\n"
-"  v\r\n"
-"    1) водворять, помещать, устраивать;\r\n"
-"    2) устанавливать, монтировать, проводить(электричество и т. п.)\r\n"
-"\r\n"
-"\r\n"
-"*--- dictd_www.mova.org_sokrat_enru ---*\r\n"
-"install\r\n"
-"  устанавливать установка\r\n"
-"\r\n"
-"\r\n"
-"*--- WordNet ---*\r\n"
-"install\r\n"
-"     v 1: set up for use; \"install the washer and dryer\"; \"We put in a\r\n"
-"          new sink\" [syn: {instal}, {put in}, {set up}]\r\n"
-"     2: put into an office or a position; \"the new president was\r\n"
-"        installed immediately after the election\"\r\n"
-"     3: place; \"Her manager had set her up at the Ritz\" [syn: {instal},\r\n"
-"         {set up}, {establish}]\r\n"
-"*--- Oxford Advanced Learner's Dictionary ---*\r\n"
-"verb [VN] \r\n"
-"  1  to fix equipment or furniture into position so that it can be used:\r\n"
-"He's getting a phone installed tomorrow. * The hotel chain has recently "
-"installed a new booking system. * I'll need some help installing the "
-"software."
+msgstr "установить"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr "Начать установку -- это тип установки с ${MEDIA_TYPE} по-умолчанию."
+msgstr ""
+"Начать установку -- это тип установки с ${MEDIA_TYPE} используется по "
+"умолчанию."
 
 #: help.xml:184
 msgid "expert"
@@ -262,10 +220,10 @@ msgstr "Начать установку в режиме эксперта для 
 msgid "cli"
 msgstr ""
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
-#, fuzzy
 msgid "cli-expert"
-msgstr "expert"
+msgstr ""
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
@@ -278,7 +236,7 @@ msgstr "live"
 
 #: help.xml:201
 msgid "Start the live system."
-msgstr "Запустить live систему."
+msgstr "Запустить live-систему."
 
 #: help.xml:206
 msgid "memtest"
@@ -293,8 +251,8 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"Для использования одного из методов загрузки, введите его в консоли, если "
-"необходимо с параметрами загрузки. Например:"
+"Для использования одного из методов загрузки, введите его в ответ на "
+"приглашение вместе с параметрами загрузки, если это необходимо. Например:"
 
 #: help.xml:219
 #, no-wrap
@@ -311,8 +269,8 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Если вы неуверены, используйте стандартный метод загрузки без специальных "
-"параметров, просто нажав Enter."
+"Если вы не уверены, используйте стандартный метод загрузки без специальных "
+"параметров, просто нажав Enter в ответ на приглашение."
 
 #: help.xml:242 help.xml:278
 msgid "RESCUING A BROKEN SYSTEM"
@@ -345,11 +303,11 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
-"На этом CD отсутствует отдельный режим восстановления системы. Однако, так "
-"как система запускается с CD, возможно использование командной строки и/или "
-"графических программ для восстановления испорченной системы, а также веб-"
-"браузера для поиска информации. Исчерпывающие советы решения большинства "
-"проблем, связанных с загрузкой системы, доступны онлайн."
+"На этом CD отсутствует отдельный режим восстановления системы. Но поскольку "
+"вся система работает с CD, вы можете воспользоваться командной строкой и/или "
+"графическими программами для восстановления испорченной системы, а также "
+"запустить веб-браузер для поиска информации. Исчерпывающие советы по решению "
+"большинства проблем, связанных с загрузкой системы, доступны онлайн."
 
 #: help.xml:307
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
@@ -357,7 +315,7 @@ msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - ОБЗОР"
 
 #: help.xml:314
 msgid "On a few systems, you may need to specify a parameter at the"
-msgstr "На некоторых системах Вам может понадобиться указать параметр в"
+msgstr "На некоторых системах вам может понадобиться указать параметр в"
 
 #: help.xml:315 help.xml:381 help.xml:469 help.xml:536
 #, no-wrap
@@ -370,7 +328,7 @@ msgid ""
 "autodetect your hardware, and you may need to explicitly specify its "
 "location or type for it to be recognized."
 msgstr ""
-"консоли для загрузки системы. К примеру, Linux может автоматически не "
+"приглашении для загрузки системы. К примеру, Linux может автоматически не "
 "определить ваши устройства, и вам придется явно указать их местонахождение "
 "или тип для правильного определения."
 
@@ -378,7 +336,7 @@ msgstr ""
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
 "Для дополнительной информации о параметрах загрузки, которые вы можете "
-"использовать нажмите:"
+"использовать, нажмите:"
 
 #: help.xml:329
 msgid "boot parameters for special machines"
@@ -390,11 +348,11 @@ msgstr "загрузочные параметры для различных ди
 
 #: help.xml:339
 msgid "boot parameters understood by the install system"
-msgstr "загрузочные параметры определяемые системой установки"
+msgstr "загрузочные параметры системы установки"
 
 #: help.xml:344
 msgid "boot parameters understood by the bootstrap system"
-msgstr "загрузочные параметры определяемые системой bootstrap"
+msgstr "параметры начального загрузчика системы"
 
 #: help.xml:349
 msgid ""
@@ -413,8 +371,8 @@ msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"Многие модули ядра динамически загружаются системой bootstrap и параметры "
-"для этих модулей не могут быть введены через командную строку."
+"Многие модули ядра динамически загружаются системой начальной загрузки и "
+"параметры для этих модулей не могут быть заданы в командной строке."
 
 #: help.xml:374
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
@@ -430,8 +388,8 @@ msgid ""
 "\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
 "0x prefix (e.g., 0x300)."
 msgstr ""
-"консоли в сочетании с методами загрузки (см. <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). Если вы используете шеснадцатиричные числа "
+"приглашении в сочетании с методами загрузки (см. <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>). Если вы используете шестнадцатеричные числа "
 "вы должны использовать префикс 0x (например, 0x300)."
 
 #: help.xml:389 help.xml:476
@@ -444,7 +402,7 @@ msgstr "ВВОДИМЫЙ ПАРАМЕТР"
 
 #: help.xml:393
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr "IBM PS/1 или ValuePoint (IDE диск)"
+msgstr "IBM PS/1 или ValuePoint (IDE-диск)"
 
 #: help.xml:394
 msgid ""
@@ -456,7 +414,7 @@ msgstr ""
 
 #: help.xml:398
 msgid "Some IBM ThinkPads"
-msgstr "Некоторые IBM ThinkPads"
+msgstr "Некоторые модели IBM ThinkPad"
 
 #: help.xml:399
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
@@ -472,7 +430,7 @@ msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
 #: help.xml:408
 msgid "Protect I/O port regions"
-msgstr "Protect I/O port regions"
+msgstr "Защита портов I/O"
 
 #: help.xml:409
 msgid ""
@@ -486,7 +444,7 @@ msgstr ""
 
 #: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
-msgstr "Workaround faulty FPU (старые машины)"
+msgstr "Обход сбоев в FPU (старые машины)"
 
 #: help.xml:414
 msgid "<userinput>no387</userinput>"
@@ -494,7 +452,7 @@ msgstr "<userinput>no387</userinput>"
 
 #: help.xml:418
 msgid "Laptops with screen display problems"
-msgstr "Ноутбуки с проблемами отображения экрана"
+msgstr "Ноутбуки с проблемами вывода на экран"
 
 #: help.xml:419
 msgid "<userinput>vga=771</userinput>"
@@ -502,30 +460,28 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:423
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Использовать первый серийный порт на 9600 бод"
 
 #: help.xml:424
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:428
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Использовать базовый IDE драйвер"
 
 #: help.xml:429
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:434
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
 msgstr ""
-"Если у вас происходят зависания или другие аппаратные ошибки, отключите "
-"ошибочный роутинг прерывания APIC"
+"При зависаниях и других аппаратных ошибках отключите проблемный обработчик "
+"прерывания APIC"
 
 #: help.xml:437
 msgid "<userinput>noapic nolapic</userinput>"
@@ -554,7 +510,7 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"строка приглашения, в сочетании с методом загрузки (см. <link linkend=\"F3"
+"приглашении, в сочетании с методом загрузки (см. <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 
 #: help.xml:480
@@ -602,7 +558,7 @@ msgstr ""
 
 #: help.xml:495
 msgid "BusLogic SCSI Hosts"
-msgstr "BusLogic SCSI хосты"
+msgstr "SCSI-хосты BusLogic"
 
 #: help.xml:496
 msgid ""
@@ -612,7 +568,7 @@ msgstr ""
 
 #: help.xml:500
 msgid "Certain DELL machines"
-msgstr "Некоторые DELL машины"
+msgstr "Некоторые машины DELL"
 
 #: help.xml:501
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
@@ -623,7 +579,8 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"Этот не полный список, смотрите параметры ядра в файле kernel-parameters.txt."
+"Этот список не полон, для дополнительной информации смотрите файл ядра "
+"kernel-parameters.txt."
 
 #: help.xml:513
 #, no-wrap
@@ -645,7 +602,7 @@ msgstr "Эти параметры управляют работой устано
 
 #: help.xml:544
 msgid "These parameters control how the bootstrap system works."
-msgstr "Эти параметры управляют работой системы bootstrap."
+msgstr "Эти параметры управляют работой начального загрузчика."
 
 #: help.xml:549
 msgid "RESULT"
@@ -681,7 +638,7 @@ msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:568
 msgid "Don't probe for USB"
-msgstr "Не проверять USB"
+msgstr "Не искать USB"
 
 #: help.xml:569
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
@@ -726,43 +683,41 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Использовать высококонтрастную тему"
 
 #: help.xml:594
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:598
 msgid "Use special tasks"
-msgstr ""
+msgstr "Использовать специальные задачи"
 
 #: help.xml:599
-#, fuzzy
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=es</userinput>"
+msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
 #: help.xml:604
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
-"Выключить ACPI для PCI карт (полезно для некоторых серверов HP и машин от "
-"VIA)"
+"Выключить ACPI для карт PCI (полезно для некоторых серверов HP и машин на "
+"основе VIA)"
 
 #: help.xml:607
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:614
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:615
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:632
 msgid "GETTING HELP"
@@ -785,18 +740,18 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Мы особо заинтересованы в выявлении проблем связанных с установкой, потому, "
-"что в основном, они не случаются только с <emphasis>одним</emphasis> "
-"человеком."
+"Мы особо заинтересованы в выявлении проблем связанных с установкой, потому "
+"что они, как правило, обнаруживаются не только у <emphasis>одного</emphasis> "
+"человека."
 
 #: help.xml:653
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Мы особо заинтересованы в выслушивании проблем связанных с запуском, потому "
-"что в основном они не случаются только с <emphasis>одним</emphasis> "
-"человеком."
+"Мы особо заинтересованы в выявлении проблем, связанных с запуском, потому "
+"что они, как правило, обнаруживаются не только у <emphasis>одного</emphasis> "
+"человека."
 
 #: help.xml:657
 msgid ""
@@ -805,9 +760,9 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Если мы уже знаем о вашей проблеме, то сможем сделать быстрое исправление, "
-"или мы выслушаем ее и преодолеем ее вместе с вами, и ваш опыт будет полезен "
-"пользователю столкнувшемуся со схожей проблемой!"
+"Если мы уже знаем о вашей проблеме, то мы сможем обеспечить быстрое её "
+"решение, или же мы выслушаем о ней и преодолеем её вместе с вами, а ваш опыт "
+"будет полезен другому пользователю столкнувшемуся с такой же проблемой!"
 
 #: help.xml:688
 msgid "COPYRIGHTS AND WARRANTIES"
@@ -832,8 +787,8 @@ msgid ""
 "replaceable>/copyright."
 msgstr ""
 "После установки, точные соглашения распространения для каждого пакета "
-"описаны в соответствующем файле\r\n"
-"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"описаны в соответствующем файле /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
 
 #: help.xml:708
 msgid ""
@@ -842,16 +797,16 @@ msgid ""
 "replaceable>/copyright."
 msgstr ""
 "После запуска, точные соглашения распространения для каждого пакета описаны "
-"в соответствующем файле\r\n"
-"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"в соответствующем файле /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
 
 #: help.xml:714
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Ubuntu распространяется <emphasis>АБСОЛЮТНО БЕЗ ГАРАНТИИ</emphasis>,\r\n"
-"на протяжении срока предусмотренного соответствующим законом."
+"Ubuntu распространяется <emphasis>АБСОЛЮТНО БЕЗ ГАРАНТИИ</emphasis>, в "
+"рамках, определённых соответствующим законом."
 
 #: help.xml:719
 msgid ""
@@ -859,34 +814,14 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
-"Эта система установки основана на установщике Debian. Смотрите на <ulink url="
-"\"http://www.debian.org/\" /> для получения деталей и информации о проекте "
-"Debian."
+"Эта система установки основана на установщике Debian. Для дополнительной "
+"информации о проекте Debian, смотрите <ulink url=\"http://www.debian.org/\" /"
+">"
 
 #: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"Эта система основана на Debian. Смотрите на <ulink url=\"http://www.debian."
-"org/\" /> для получения деталей и информации о проекте Debian."
-
-#~ msgid "server"
-#~ msgstr "server"
-
-#~ msgid "server-expert"
-#~ msgstr "server-expert"
-
-#~ msgid ""
-#~ "Minimal system install. Recommended for servers, where a complete "
-#~ "graphical desktop environment is not desired."
-#~ msgstr ""
-#~ "Минимальная установка системы. Рекомендуется для серверов где не "
-#~ "предполагается использование графической оболочки."
-
-#~ msgid ""
-#~ "If your system hangs when booting, and the last message you see is "
-#~ "\"aec671x-detect..\", try"
-#~ msgstr ""
-#~ "Если ваша система зависает при загрузка и последнее сообщение которое вы "
-#~ "видите \"aec671x-detect..\", попробуйте"
+"Эта система основана на Debian. Для дополнительной информации о проекте "
+"Debian, смотрите <ulink url=\"http://www.debian.org/\" />"

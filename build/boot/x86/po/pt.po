@@ -5,15 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To:  \n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-04-02 02:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Susana <susana.pereira@gmail.com>\n"
 "Language-Team: UBUNTU-PT <ubuntu-pt.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2007-09-24 10:49+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 "X-Poedit-Language: Portuguese\n"
-"X-Rosetta-Export-Date: 2007-04-05 11:12:11+0000\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -217,10 +219,10 @@ msgstr "Iniciar a instalação no modo avançado para controlo máximo."
 msgid "cli"
 msgstr ""
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
-#, fuzzy
 msgid "cli-expert"
-msgstr "expert"
+msgstr ""
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
@@ -827,23 +829,3 @@ msgid ""
 msgstr ""
 "Este sistema é baseado em Debian. Veja <ulink url=\"http://www.debian.org/"
 "\" /> para mais detalhes e informações no projecto Debian."
-
-#~ msgid "server"
-#~ msgstr "servidor"
-
-#~ msgid "server-expert"
-#~ msgstr "server-expert"
-
-#~ msgid ""
-#~ "Minimal system install. Recommended for servers, where a complete "
-#~ "graphical desktop environment is not desired."
-#~ msgstr ""
-#~ "Instalação mínima. Recomendada para servidores, onde um ambiente gráfico "
-#~ "desktop não é desejado."
-
-#~ msgid ""
-#~ "If your system hangs when booting, and the last message you see is "
-#~ "\"aec671x-detect..\", try"
-#~ msgstr ""
-#~ "Se o seu sistema bloquear aquando o arranque e a última mensagem que "
-#~ "aparece é \"aec671x-detect..\", tente"

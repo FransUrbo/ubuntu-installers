@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-04-02 02:24+0000\n"
+"PO-Revision-Date: 2007-09-20 22:23+0000\n"
 "Last-Translator: Adrien Cunin <adri2000@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Rosetta-Export-Date: 2007-04-05 11:12:15+0000\n"
+"X-Launchpad-Export-Date: 2007-09-24 10:49+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -73,9 +73,8 @@ msgstr ""
 "Méthodes de démarrage pour les utilisations spécifiques de ce ${MEDIA_TYPE}."
 
 #: help.xml:54
-#, fuzzy
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Méthodes de démarrage additionnelles; mode sauvetage."
+msgstr "Méthodes de démarrage additionnelles ; récupérer un système endommagé."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
@@ -228,10 +227,10 @@ msgstr "Commencer l'installation en mode expert, pour un maximum de contrôle."
 msgid "cli"
 msgstr ""
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
-#, fuzzy
 msgid "cli-expert"
-msgstr "expert"
+msgstr ""
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
@@ -476,22 +475,21 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:423
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Utiliser le premier port série à 9600 bauds"
 
 #: help.xml:424
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:428
+#, fuzzy
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Forcer l'utilisation du pilote IDE générique"
 
 #: help.xml:429
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:434
 msgid ""
@@ -700,23 +698,22 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
+#, fuzzy
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Utiliser le thème fortement contrasté"
 
 #: help.xml:594
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:598
 msgid "Use special tasks"
-msgstr ""
+msgstr "Utiliser des tâches spéciales"
 
 #: help.xml:599
-#, fuzzy
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=es</userinput>"
+msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
 #: help.xml:604
 msgid ""
@@ -730,14 +727,14 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:614
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:615
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:632
 msgid "GETTING HELP"
@@ -844,23 +841,3 @@ msgid ""
 msgstr ""
 "Ce système est basé sur Debian. Voir <ulink url=\"http://www.debian.org/\" /"
 "> pour plus de détails et d'information sur le projet Debian."
-
-#~ msgid "server"
-#~ msgstr "serveur"
-
-#~ msgid "server-expert"
-#~ msgstr "serveur-expert"
-
-#~ msgid ""
-#~ "Minimal system install. Recommended for servers, where a complete "
-#~ "graphical desktop environment is not desired."
-#~ msgstr ""
-#~ "Installation système minimale. Recommandée pour les serveurs, pour "
-#~ "lesquels un environnement graphique de bureau complet n'est pas requis."
-
-#~ msgid ""
-#~ "If your system hangs when booting, and the last message you see is "
-#~ "\"aec671x-detect..\", try"
-#~ msgstr ""
-#~ "Si votre système se bloque durant l'installation, et que le dernier "
-#~ "message que vous voyez est \"aec671x-detect..\", essayez"
