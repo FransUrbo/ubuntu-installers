@@ -13,7 +13,7 @@ brltty-udeb
 # net installation support
 net-retriever
 download-installer
-netcfg
+netcfg *
 choose-mirror
 kbd-chooser
 console-keymaps-tree
@@ -21,9 +21,6 @@ hw-detect
 localechooser
 iso-3166-udeb
 ethdetect
-
-# used by netcfg
-libiw27-udeb
 
 preseed-common
 initrd-preseed

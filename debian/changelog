@@ -1,3 +1,18 @@
+debian-installer (20050317ubuntu9) breezy; urgency=low
+
+  * build/config/sparc/cdrom.cfg: Only build 2.6.
+  * build/config/sparc/cdrom/2.6.cfg: Don't use cramfs.
+  * build/config/sparc/sparc64/netboot-2.6.cfg: Fix KERNELNAME.
+
+  * Backport from trunk (Joey Hess):
+    - Updates for libiw28. Remove libiw27 from build deps and from exclude
+      list, since the udeb is in fact used now to provide the library and
+      netcfg's dependencies have been fixes. Enable dependency resolution
+      for netcfg. Now no more updates should be needed here when libiw
+      changes.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 13 Jul 2005 13:03:31 +0100
+
 debian-installer (20050317ubuntu8) breezy; urgency=low
 
   * Move to 2.6.12-3 kernels.
