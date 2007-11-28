@@ -1,3 +1,9 @@
+debian-installer (20060711ubuntu16) edgy; urgency=low
+
+  * No-change rebuild to pick up the new kernel.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 17 Oct 2006 09:22:35 +0100
+
 debian-installer (20060711ubuntu15) edgy; urgency=low
 
   * Replace cdebconf-newt-entropy with cdebconf-newt-detect-keys in
