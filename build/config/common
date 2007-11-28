@@ -88,4 +88,4 @@ LSB_DISTRIB_RELEASE="3.1 (installer build $(BUILD_DATE))"
 
 # All images that include cdebconf should include symbols needed by these
 # plugins.
-EXTRAUDEBS=cdebconf-newt-entropy
+EXTRAUDEBS=cdebconf-newt-detect-keys

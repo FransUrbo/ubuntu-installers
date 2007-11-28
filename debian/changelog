@@ -1,3 +1,10 @@
+debian-installer (20060711ubuntu15) edgy; urgency=low
+
+  * Replace cdebconf-newt-entropy with cdebconf-newt-detect-keys in
+    EXTRAUDEBS; cdebconf-newt-entropy is in universe for edgy.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 12 Oct 2006 13:54:36 +0100
+
 debian-installer (20060711ubuntu14) edgy; urgency=low
 
   * Add/update help text translations from Rosetta, modified to account for
