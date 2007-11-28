@@ -1,3 +1,20 @@
+debian-installer (20051026ubuntu3) dapper; urgency=low
+
+  * Fix live CD boot text.
+  * build/pkg-lists/kernel_specific/2.6/sparc/combined/sparc-scsi: Include
+    scsi-modules instead of scsi-common-modules.
+  * debian/rules: Adjust SUITE override for UNRELEASED changelog entries for
+    dapper.
+
+  * Move to 2.6.15-6 kernels.
+  * config/*: ext2 has been modularised, so switch INITRD_FS to initramfs
+    everywhere.
+  * build/pkg-lists/kernel_specific/2.6/udev: Remove hotplug-udeb, no longer
+    needed with new udev.
+  * build/pkg-lists/*: Switch from pcmcia-cs-udeb to pcmciautils-udeb.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri,  2 Dec 2005 09:45:49 +0000
+
 debian-installer (20051026ubuntu2) dapper; urgency=low
 
   * build/boot/ia64.cfg: Add a suitable arch_cd_info_dir target.
