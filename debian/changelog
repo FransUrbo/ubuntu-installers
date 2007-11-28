@@ -1,3 +1,9 @@
+debian-installer (20051026ubuntu29) dapper; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 17 Apr 2006 11:23:16 +0100
+
 debian-installer (20051026ubuntu28) dapper; urgency=low
 
   * NFS is compiled in statically on hppa, so don't try to include
