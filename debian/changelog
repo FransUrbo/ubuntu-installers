@@ -1,3 +1,9 @@
+debian-installer (20060711ubuntu10) edgy; urgency=low
+
+  * build/config/i386/netboot.cfg: Bump FLOPPY_SIZE to 16384.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 12 Sep 2006 12:49:26 +0100
+
 debian-installer (20060711ubuntu9) edgy; urgency=low
 
   * Switch from kbd-chooser to console-setup. Adjust build/Makefile to
