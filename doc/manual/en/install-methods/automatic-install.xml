@@ -177,6 +177,24 @@ confidential!); the <userinput>--iscrypted</userinput> option may be used to
 state that the password is already MD5-hashed.
 
 </para></listitem>
+<listitem><para>
+
+A new <userinput>preseed</userinput> command has been added to provide a
+convenient way to preseed additional items in the debconf database that are
+not directly accessible using the ordinary Kickstart syntax:
+
+<informalexample><screen>
+preseed --owner gdm shared/default-x-display-manager select gdm
+</screen></informalexample>
+
+The <userinput>--owner</userinput> option sets the name of the package that
+owns the question; if omitted, it defaults to d-i, which is generally
+appropriate for items affecting the first stage of the installer. The three
+mandatory arguments are the question name, question type, and answer, in
+that order, just as would be supplied as input to the
+<filename>debconf-set-selections</filename> command.
+
+</para></listitem>
 </itemizedlist>
 
 </para>
