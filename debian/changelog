@@ -1,3 +1,9 @@
+debian-installer (20061102ubuntu5) feisty; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon,  4 Dec 2006 13:46:19 +0000
+
 debian-installer (20061102ubuntu4) feisty; urgency=low
 
   * Make build/util/help-to-gfxboot.py executable again.
