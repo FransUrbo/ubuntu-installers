@@ -1,3 +1,11 @@
+debian-installer (20051026ubuntu11) dapper; urgency=low
+
+  * Build-depend on libselinux1 and libsepol1 for now, since udev-udeb
+    depends on them and it's apparently too hard to disable that at short
+    notice.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu,  5 Jan 2006 17:17:35 +0000
+
 debian-installer (20051026ubuntu10) dapper; urgency=low
 
   * Move to 2.6.15-11 kernels.
