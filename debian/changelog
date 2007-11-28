@@ -1,3 +1,10 @@
+debian-installer (20061102ubuntu15) feisty; urgency=low
+
+  * Move to 2.6.20-9 kernels.
+  * Set Maintainer to ubuntu-installer@lists.ubuntu.com.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 27 Feb 2007 19:33:12 +0000
+
 debian-installer (20061102ubuntu14) feisty; urgency=low
 
   * Move to 2.6.20-8 kernels.
