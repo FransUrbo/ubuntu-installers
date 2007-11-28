@@ -5,12 +5,14 @@
 <!-- proper (long) name to use for Debian -->
 <!ENTITY debian "Debian GNU/Linux">
 
+<!-- proper name to use for Ubuntu -->
+<!ENTITY ubuntu "Ubuntu">
+
 <!ENTITY d-i "<classname>debian-installer</classname>">
 <!ENTITY d-i-manual "<classname>debian-installer-manual</classname>">
 
-<!-- XXX change to release number at release time -->
-<!ENTITY release     "&quot;&releasename;&quot;">
-<!ENTITY releasename "sarge">
+<!ENTITY release     "4.10">
+<!ENTITY releasename "warty">
 <!ENTITY path-to-top-level "../">
 <!ENTITY FIXME
   "<emphasis>Documentation not complete, text missing.</emphasis>">
@@ -19,6 +21,7 @@
 
 <!ENTITY arch-title
   "<phrase arch='alpha'>Alpha</phrase>
+   <phrase arch='amd64'>AMD64</phrase>
    <phrase arch='arm'>ARM</phrase>
    <phrase arch='hppa'>PA-RISC</phrase>
    <phrase arch='i386'>Intel x86</phrase>
@@ -61,6 +64,7 @@
 <!-- might be fun to generate this dynamically -->
 <!ENTITY num-of-distrib-pkgs
   "<phrase arch='alpha'>12250</phrase>
+   <phrase arch='amd64'>12800</phrase>
    <phrase arch='arm'>12250</phrase>
    <phrase arch='hppa'>12200</phrase>
    <phrase arch='i386'>12800</phrase>

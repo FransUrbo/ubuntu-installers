@@ -24,11 +24,12 @@
  <!ENTITY % install-docs   SYSTEM "install-docs.ent"  > %install-docs;
 ]>
 
-<!-- $Id: install.cs.xml 16598 2004-06-02 17:00:16Z mck-guest $ -->
+<!-- $Id: install.cs.xml 21636 2004-09-14 22:43:53Z fjpop-guest $ -->
 <!-- original version: 11648 -->
 
 <book lang="cs">
 
+&bookinfo.xml;
 &preface.xml;
 <toc/>
 &welcome.xml;
@@ -42,6 +43,7 @@
 <!-- coming soon to a cvs site near you -->
 <!-- &tech-info.xml; -->
 &partitioning.xml;
+&installation-howto.xml;
 &appendix.xml;
 &administrivia.xml;
 

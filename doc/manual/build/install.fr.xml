@@ -21,10 +21,11 @@
 ]>
 
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: install.fr.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
+<!-- original version: 21636 -->
 
 <book lang="fr">
 
+&bookinfo.xml;
 &preface.xml;
 <toc/>
 &welcome.xml;
@@ -38,6 +39,7 @@
 <!-- coming soon to a cvs site near you -->
 <!-- &tech-info.xml; -->
 &partitioning.xml;
+&installation-howto.xml;
 &appendix.xml;
 &administrivia.xml;
 

@@ -21,12 +21,13 @@
 ]>
 
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 18674 -->
+<!-- original version: 21636 -->
 
 <book lang="ja">
 
+&bookinfo.xml;
 &preface.xml;
-<toc/>
+<toc />
 &welcome.xml;
 &hardware.xml;
 &preparing.xml;

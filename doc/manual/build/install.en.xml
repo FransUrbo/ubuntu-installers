@@ -21,10 +21,11 @@
 ]>
 
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: install.en.xml 18741 2004-07-30 18:37:20Z joeyh $ -->
+<!-- $Id: install.en.xml 21636 2004-09-14 22:43:53Z fjpop-guest $ -->
 
 <book>
 
+&bookinfo.xml;
 &preface.xml;
 <toc />
 &welcome.xml;

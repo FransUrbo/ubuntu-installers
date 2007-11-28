@@ -1,7 +1,9 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: netcfg.xml 14602 2004-05-02 16:31:59Z mck-guest $ -->
+<!-- $Id: netcfg.xml 21579 2004-09-13 22:57:14Z fjpop-guest $ -->
 
-   <sect3 id="netcfg"><title>Configuring Network</title>
+   <sect3 id="netcfg">
+   <title>Configuring Network</title>
+
 <para>
 
 As you enter this step, if the system detects that you have more than
@@ -53,5 +55,4 @@ you can install <classname>etherconf</classname>, which will step you
 through your network setup.
 
 </para></note>
-
    </sect3>

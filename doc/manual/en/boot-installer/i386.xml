@@ -195,7 +195,7 @@ or <command>LILO</command>.
 </para>
   </sect2>
 
-  <sect2 arch="i386" id="usb-boot">
+  <sect2 condition="bootable-usb" arch="i386" id="usb-boot">
   <title>Booting from USB memory stick</title>
 <para>
 
@@ -218,7 +218,7 @@ it asks for the root floppy, simply press &enterkey;. You should see
 </para>
   </sect2>
 
-  <sect2 arch="i386" id="floppy-boot">
+  <sect2 condition="supports-floppy-boot" arch="i386" id="floppy-boot">
   <title>Booting from Floppies</title>
 <para>
 

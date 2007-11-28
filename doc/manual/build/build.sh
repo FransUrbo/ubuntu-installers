@@ -2,11 +2,11 @@
 
 if [ -z "$languages" ]; then
 	# Please add languages only if they build properly.
-	languages="en cs de es fr ja nl pt_BR" # el it
+	languages="en cs es fr ja nl pt_BR" # ca da de el eu it ru
 fi
 
 if [ -z "$architectures" ]; then
-	architectures="alpha arm hppa i386 ia64 m68k mips mipsel powerpc s390 sparc"
+	architectures="amd64 i386 powerpc"
 fi
 
 if [ -z "$destination" ]; then

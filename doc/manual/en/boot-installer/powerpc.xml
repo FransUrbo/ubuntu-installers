@@ -136,7 +136,7 @@ you should try
   </sect2>
 
 
-  <sect2 arch="powerpc">
+  <sect2 condition="supports-floppy-boot" arch="powerpc">
   <title>Booting from Floppies</title>
 <para>
 

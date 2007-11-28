@@ -7,8 +7,8 @@
 &official-cdrom.xml;
 &downloading-files.xml;
 &ipl-tape.xml;
-&create-floppy.xml;
-&boot-usb-files.xml;
+<!-- &create-floppy.xml; -->
+<!-- &boot-usb-files.xml; -->
 &boot-drive-files.xml;
 &install-tftp.xml;
 &automatic-install.xml;

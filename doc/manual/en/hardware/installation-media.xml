@@ -172,7 +172,7 @@ PPP after installation of the base system), via FTP or HTTP.
 <para>
 
 If you are running other Unix-like system, you could use it to install
-&debian; without using the &d-i; described in the rest of the
+Ubuntu without using the &d-i; described in the rest of the
 manual. This kind of install may be useful for users with otherwise
 unsupported hardware or on hosts which can't afford downtimes.  If you
 are interested in this technique, skip to the <xref

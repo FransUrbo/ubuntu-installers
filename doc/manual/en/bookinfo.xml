@@ -1,0 +1,41 @@
+<!-- retain these comments for translator revision tracking -->
+<!-- $Id: bookinfo.xml 21637 2004-09-14 22:52:55Z fjpop-guest $ -->
+
+<bookinfo id="debian_installation_guide">
+<title>Ubuntu Installation Guide</title>
+
+<abstract>
+<para>
+This document contains installation instructions for the Ubuntu
+&release; system, for the &arch-title; (<quote>&architecture;</quote>)
+architecture.  It also contains pointers to more information and
+information on how to make the most of your new Ubuntu system.
+</para>
+</abstract>
+
+<copyright>
+ <year>2004
+ <trademark class="copyright">
+ </trademark>
+ </year>
+ <holder>the Debian Installer team</holder>
+</copyright>
+<copyright>
+ <year>2004
+ <trademark class="copyright">
+ </trademark>
+ </year>
+ <holder>Canonical Ltd.</holder>
+</copyright>
+
+<legalnotice>
+<para>
+
+This manual is free software; you may redistribute it and/or modify it
+under the terms of the GNU General Public License. Please refer to the
+license in <xref linkend="appendix-gpl"/>.
+
+</para>
+</legalnotice>
+</bookinfo>
+

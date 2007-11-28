@@ -1,3 +1,22 @@
+debian-installer (20040801ubuntu15) warty; urgency=low
+
+  * Update substantial parts of the installation manual (English only for
+    now) from Debian.
+  * Build the manual for just amd64, i386, and powerpc.
+  * Add amd64 to buildone.sh so that it can build. (Might not build very
+    *well*, though.)
+  * First steps at Ubuntu branding. Lots left to do. Some phrasing may be
+    bizarre, so bear with me.
+  * Add a "What is Ubuntu?" section; http://www.ubuntulinux.org/ supplied
+    the text.
+  * Unset supports-floppy-boot and bootable-usb for all our architectures,
+    since we don't support those methods anywhere yet.
+  * Tag a few more sections of the manual with
+    condition="supports-floppy-boot" or condition="bootable-usb" to make
+    this work better.
+
+ -- Colin Watson <cjwatson@canonical.com>  Thu, 23 Sep 2004 02:24:59 +0100
+
 debian-installer (20040801ubuntu14) warty; urgency=low
 
   * Add acpi-modules to amd64 initrds.
