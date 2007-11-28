@@ -10,8 +10,7 @@ download-installer
 cdebconf-newt-udeb
 cdebconf-text-udeb
 brltty-udeb
-kbd-chooser
-console-keymaps-tree
+console-setup-udeb
 installation-locale
 bogl-bterm-udeb
 di-utils-terminfo

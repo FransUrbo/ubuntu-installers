@@ -1,3 +1,12 @@
+debian-installer (20060711ubuntu9) edgy; urgency=low
+
+  * Switch from kbd-chooser to console-setup. Adjust build/Makefile to
+    include /usr/share/console-setup-mini/*.tree in all.utf.
+  * Move to 2.6.17-7 kernels. Adapt to new image names (amd64-generic ->
+    generic, itanium-smp -> itanium).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu,  7 Sep 2006 19:05:04 +0100
+
 debian-installer (20060711ubuntu8) edgy; urgency=low
 
   * No-change rebuild to pick up new components (no-more-devfs).

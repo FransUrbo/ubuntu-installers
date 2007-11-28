@@ -13,8 +13,7 @@ net-retriever
 download-installer
 netcfg
 choose-mirror
-kbd-chooser
-console-keymaps-tree
+console-setup-udeb
 hw-detect
 ethdetect
 

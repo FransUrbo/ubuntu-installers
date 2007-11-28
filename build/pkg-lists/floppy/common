@@ -14,8 +14,7 @@
 localechooser
 bogl-bterm-udeb
 di-utils-terminfo
-kbd-chooser
-console-keymaps-tree
+console-setup-udeb
 cdebconf-newt-udeb
 installation-locale
 
