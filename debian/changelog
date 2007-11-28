@@ -1,3 +1,10 @@
+debian-installer (20050317ubuntu3) breezy; urgency=low
+
+  * Restore build/boot/x86/pics/ubuntu.*, lost in merge.
+  * Don't build powerpc hd-media for 2.4.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri,  6 May 2005 23:14:08 +0100
+
 debian-installer (20050317ubuntu2) breezy; urgency=low
 
   * build/config/sparc/sparc64.cfg: Build the netboot-2.6 medium instead of
