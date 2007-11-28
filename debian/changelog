@@ -1,3 +1,21 @@
+debian-installer (20041118ubuntu12) hoary; urgency=low
+
+  * Backport from Debian trunk (Joey Hess):
+    - Add preseed-common to all initrds, split out from
+      file/network-preseed.
+    - Add initrd-preseed too.
+    - Fix SUITE setting so debian/rules can override it. I guess this never
+      worked as intended before!
+  * build/config/common: Default SUITE to hoary.
+
+  * doc/manual/en/appendix/files.xml: Update URL to X mouse support page
+    (thanks, Daniel Stone).
+  * doc/manual/build/urls.ent: Point url-xorg to
+    http://xorg.freedesktop.org/ rather than http://www.x.org/, at Daniel
+    Stone's advice.
+
+ -- Colin Watson <cjwatson@canonical.com>  Thu, 30 Dec 2004 02:26:05 +0000
+
 debian-installer (20041118ubuntu11) hoary; urgency=low
 
   * Manual changes:

@@ -287,7 +287,7 @@ removed and text documention at link directs one to a URL that is broken." -->
 <!ENTITY url-windows-refund "http://www.windowsrefund.net/">
 
 <!ENTITY url-xfree86 "http://www.xfree86.org/">
-<!ENTITY url-xorg "http://www.x.org/">
+<!ENTITY url-xorg "http://xorg.freedesktop.org/">
 
 <!ENTITY url-simtel "ftp://ftp.simtel.net/pub/simtelnet/msdos/">
 
