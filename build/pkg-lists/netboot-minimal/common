@@ -16,7 +16,6 @@ initrd-preseed
 network-preseed
 kickseed-common
 initrd-kickseed
-network-kickseed
 
 # there's space for an editor
 nano-udeb

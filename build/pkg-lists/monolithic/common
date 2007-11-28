@@ -45,5 +45,4 @@ initrd-preseed
 file-preseed
 kickseed-common
 initrd-kickseed
-file-kickseed
 libfribidi0-udeb

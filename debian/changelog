@@ -1,3 +1,10 @@
+debian-installer (20041227ubuntu18) hoary; urgency=low
+
+  * Remove obsolete file-kickseed and network-kickseed packages from all
+    images. initrd-kickseed does everything now.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 25 Feb 2005 20:32:24 +0000
+
 debian-installer (20041227ubuntu17) hoary; urgency=low
 
   * Add the characters from the decision tree to all.utf
