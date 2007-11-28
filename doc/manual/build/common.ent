@@ -13,6 +13,7 @@
 
 <!ENTITY release     "4.10">
 <!ENTITY releasename "warty">
+<!ENTITY longreleasename "<quote>Warty Warthog</quote>">
 <!ENTITY path-to-top-level "../">
 <!ENTITY FIXME
   "<emphasis>Documentation not complete, text missing.</emphasis>">

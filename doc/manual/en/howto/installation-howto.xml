@@ -4,16 +4,16 @@
 <appendix id="installation-howto"><title>Installation Howto</title>
 <para>
 
-This document describes how to install &debian; &releasename; for
-the &arch-title; (<quote>&architecture;</quote>) with the
-new &d-i;. It is a quick walkthrough of the installation process
+This document describes how to install Ubuntu &release; &longreleasename; for
+the &arch-title; (<quote>&architecture;</quote>).
+It is a quick walkthrough of the installation process
 which should contain all the information you will need for most installs.
 When more information can be useful, we will link to more detailed
-explanations in the <link linkend="debian_installation_guide">&debian;
+explanations in the <link linkend="debian_installation_guide">Ubuntu
 Installation Guide</link>.
 
 </para>
-<sect2 id="howto-preliminaries">
+<sect2 id="howto-preliminaries" condition="not-ubuntu">
 <title>Preliminaries</title>
 <para>
 
@@ -34,12 +34,6 @@ on the freenode network).
 <title>Booting the installer</title>
 <para>
 
-<phrase condition="unofficial-build">
-For some quick links to CD images, check out the <ulink url="&url-d-i;">
-&d-i; home page</ulink>.
-</phrase>
-The debian-cd team provides builds of CD images using &d-i; on the
-<ulink url="&url-debian-cd;">Debian CD page</ulink>.
 For more information on where to get CDs, see <xref linkend="official-cdrom" />.
 
 </para><para>
@@ -49,7 +43,7 @@ Some installation methods require other images than CD images.
 The <ulink url="&url-d-i;">&d-i; home page</ulink> has links to
 other images.
 </phrase>
-<xref linkend="where-files" /> explains how to find images on Debian
+<xref linkend="where-files" /> explains how to find images on Ubuntu
 mirrors.
 
 </para>
@@ -61,7 +55,7 @@ get for each possible means of installation.
 </para>
   <sect3 id="howto-getting-images-cdrom">
 <title>CDROM</title>
-<para>
+<para condition="not-ubuntu">
 
 There are two different netinst CD images which can be used to install
 &releasename; with the &d-i;. These images are intended to boot from CD 
@@ -74,7 +68,7 @@ only need the first CD of the set.
 
 </para><para>
 
-Download whichever type you prefer and burn it to a CD.
+Download the image for your architecture and burn it to a CD.
 <phrase arch="i386">To boot the CD, you may need to change your BIOS
 configuration, as explained in <xref linkend="bios-setup" />.</phrase>
 <phrase arch="powerpc">
@@ -162,9 +156,10 @@ and details, see <xref linkend="usb-boot" />.
 <title>Booting from network</title>
 <para>
 	
-It's also possible to boot &d-i; completely from the net. The
+It's also possible to boot the Ubuntu installer completely from the net. The
 various methods to netboot depend on your architecture and netboot setup.
-The files in <filename>netboot/</filename> can be used to netboot &d-i;.
+The files in <filename>netboot/</filename> can be used to netboot the Ubuntu
+installer.
 
 </para><para arch="i386">
 
@@ -179,7 +174,7 @@ For detailed instructions, see <xref linkend="install-tftp" />
 </para>
   </sect3>
   
-  <sect3 id="howto-getting-images-hard-disk">
+  <sect3 id="howto-getting-images-hard-disk" condition="not-ubuntu">
 <title>Booting from hard disk</title>
 <para>
 
@@ -203,7 +198,7 @@ booting linux with the initrd.
 Once the installer starts, you will be greeted with an initial screen. Press
 &enterkey; to boot, or read the instructions for other boot
 methods and parameters (see <xref linkend="boot-parms" />).
-<phrase arch="i386">
+<phrase arch="i386" condition="not-ubuntu">
 If you want a 2.6 kernel, type <userinput>linux26</userinput> at the
 <prompt>boot:</prompt> prompt.
 <footnote>
@@ -229,7 +224,7 @@ you know better.
 
 <para></para>
 
-Now sit back while debian-installer detects some of your hardware, and
+Now sit back while the installer detects some of your hardware, and
 loads the rest of itself from CD, floppy, USB, etc.
 
 <para></para>
@@ -241,24 +236,28 @@ will be given the opportunity to configure the network manually.
 <para></para>
 
 Now it is time to partition your disks. First you will be given the
-opportunity to automatically partition either an entire drive, or free
-space on a drive. This is recommended for new users or anyone in a hurry,
-but if you do not want to autopartition, choose manual from the menu.
+opportunity to erase and automatically partition either an entire drive.
+This is recommended for new users, but if you have any valuable data on
+the disk, be sure to back it up first, as it will be erased!
 
 <para></para>
 
-On the next screen you will see your partition table, how the partitions
+If you do not want to erase an entire disk, or if you want to customize the
+partition layout, choose <quote>Manually edit partition table</quote> from
+the menu, and
+the next screen will show you your partition table, how the partitions
 will be formatted, and where they will be mounted. Select a partition to
-modify or delete it. If you did automatic partitioning, you should just be
-able to choose "Finished partitioning" from the menu to use what it set up.
+modify or delete it.
 Remember to assign at least one partition for swap space and to mount a
 partition on <filename>/</filename>. <xref linkend="partitioning" /> has more information
 about partitioning.
 
 <para></para>
 
-Now &d-i; formats your partitions and starts to install the base system, 
-which can take a while. That is followed by installing a kernel.
+Now the installer formats your partitions and starts to install the base system, 
+which can take a while. That is followed by installing a kernel, then by
+copying the remainder of the packages on the CD to your hard disk so that
+you no longer need the CD.
 
 <para></para>
 
@@ -266,14 +265,17 @@ The last step is to install a boot loader. If the installer detects
 other operating systems on your computer, it will add them to the boot menu
 and let you know.
 <phrase arch="i386">By default GRUB will be installed to the boot
-record of the first harddrive, which is generally a good choice. You'll be
+record of the first harddrive, which is generally a good choice.
+<phrase condition="not-ubuntu">
+You'll be
 given the opportunity to override that choice and install it elsewhere.
+</phrase>
 </phrase>
 
 <para></para>
 
-&d-i; will now tell you that the installation has
-finished. Remove the cdrom or other boot media and hit &enterkey;
+The installer will now tell you that the first stage of installation has
+finished. Remove the CD and hit &enterkey;
 to reboot your machine. It should boot up into the next stage of the install
 process, which is explained in <xref linkend="boot-new" />.
 
@@ -284,7 +286,7 @@ If you need more information on the install process, see
 
 </para>
  </sect2>
- <sect2 id="howto-installation-report">
+ <sect2 id="howto-installation-report" condition="not-ubuntu">
 <title>Send us an installation report</title>
 <para>
 
@@ -310,7 +312,7 @@ if the install completely fails, see <xref linkend="problem-report" />.
 <title>And finally..</title>
 <para>
 
-We hope that your Debian installation is pleasant and that you find Debian
+We hope that your Ubuntu installation is pleasant and that you find Ubuntu
 useful. You might want to read <xref linkend="post-install" />.
 
 </para>

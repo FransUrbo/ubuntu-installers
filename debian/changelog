@@ -1,3 +1,15 @@
+debian-installer (20040801ubuntu20) warty; urgency=low
+
+  * Manual changes:
+    - Refer to 'Ubuntu 4.10 "Warty Warthog"' rather than just 'Ubuntu 4.10'.
+    - howto/installation-howto.xml: Ubuntu branding. Fix up for Ubuntu
+      installer modifications.
+    - install-methods/official-cdrom.xml: Link to releases.ubuntulinux.org.
+  * Install Ubuntu splash image, so that pxeboot.tar.gz now has the correct
+    image too (closes: Ubuntu #2343).
+
+ -- Colin Watson <cjwatson@canonical.com>  Mon, 18 Oct 2004 17:31:23 +0100
+
 debian-installer (20040801ubuntu19) warty; urgency=low
 
   * Manual changes:

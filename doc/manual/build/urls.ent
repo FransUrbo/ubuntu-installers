@@ -125,12 +125,14 @@
 <!ENTITY url-ubuntu-home "http://&www-ubuntulinux-org;/">
 <!ENTITY wiki-ubuntulinux-org "wiki.ubuntulinux.org">
 <!ENTITY archive-ubuntulinux-org "archive.ubuntulinux.org">
+<!ENTITY releases-ubuntulinux-org "releases.ubuntulinux.org">
 
 <!ENTITY www-canonical-com "www.canonical.com">
 <!ENTITY url-canonical-home "http://&www-canonical-com;/">
 
 <!-- instructions on downloading Ubuntu -->
 <!ENTITY url-ubuntu-download "http://&www-ubuntulinux-org;/download/">
+<!ENTITY url-ubuntu-releases "http://&releases-ubuntulinux-org;/&releasename;/">
 
 <!-- Ubuntu mirrors -->
 <!ENTITY url-ubuntu-mirrors "http://&wiki-ubuntulinux-org;/Archive">

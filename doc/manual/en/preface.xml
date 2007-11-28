@@ -2,7 +2,7 @@
 <!-- $Id: preface.xml 21636 2004-09-14 22:43:53Z fjpop-guest $ -->
 
 <preface>
- <title>Installing Ubuntu &release; For &architecture;</title>
+ <title>Installing Ubuntu &release; &longreleasename; For &architecture;</title>
 <para>
 
 We are delighted that you have decided to try Ubuntu, and are
