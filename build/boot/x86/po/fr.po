@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-09-20 22:23+0000\n"
+"PO-Revision-Date: 2007-09-30 11:07+0000\n"
 "Last-Translator: Adrien Cunin <adri2000@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-09-24 10:49+0000\n"
+"X-Launchpad-Export-Date: 2007-10-05 11:27+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -26,16 +26,14 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "Bienvenue sur ${DISTRIBUTION_NAME} !"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Ceci est une installation ${MEDIA_TYPE} pour ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, construit le ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}, construite le ${BUILD_DATE}."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
@@ -155,13 +153,12 @@ msgstr ""
 
 #: help.xml:137
 msgid ""
-"You must have at least 256 megabytes of RAM to use this Ubuntu live system."
+"You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Vous devez disposer d'au moins 256 mégaoctets de RAM pour utiliser ce "
+"Vous devez disposer d'au moins 384 mégaoctets de RAM pour utiliser ce "
 "système live d'Ubuntu."
 
 #: help.xml:142
-#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
@@ -225,17 +222,17 @@ msgstr "Commencer l'installation en mode expert, pour un maximum de contrôle."
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:191
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Installation minimale du système en ligne de commande"
 
 #: help.xml:199
 msgid "live"
@@ -483,7 +480,6 @@ msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:428
-#, fuzzy
 msgid "Force use of generic IDE driver"
 msgstr "Forcer l'utilisation du pilote IDE générique"
 
@@ -698,7 +694,6 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
-#, fuzzy
 msgid "Use high contrast accessibility theme"
 msgstr "Utiliser le thème fortement contrasté"
 

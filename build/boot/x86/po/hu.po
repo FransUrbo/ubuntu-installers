@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2007-10-05 06:56+0000\n"
 "Last-Translator: Gabor Kelemen <kelemengabor@linuxforum.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-09-24 10:49+0000\n"
+"X-Launchpad-Export-Date: 2007-10-05 11:27+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -26,22 +26,20 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "Üdvözöljük a(z) ${DISTRIBUTION_NAME} telepítőben!"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Ez egy ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} telepítő ${MEDIA_TYPE}, "
-"készült ekkor: ${BUILD_DATE}."
+"elkészítési dátum: ${BUILD_DATE}."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Ez egy ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} live ${MEDIA_TYPE}, "
-"készült ekkor: ${BUILD_DATE}."
+"elkészítési dátum: ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -152,19 +150,17 @@ msgstr ""
 
 #: help.xml:137
 msgid ""
-"You must have at least 256 megabytes of RAM to use this Ubuntu live system."
+"You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Legalább 256 megabájt RAM-mal kell rendelkeznie az Ubuntu live használatához."
+"Legalább 384 megabájt RAM-mal kell rendelkeznie az Ubuntu live használatához."
 
 #: help.xml:142
-#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"A live rendszer használatához nincs szükség szabad helyre az Ön "
-"merevlemezén. A létező lapozópartíciók azonban felhasználásra kerülnek, ha "
-"vannak."
+"A live rendszer használatához nincs szükség szabad helyre a merevlemezen. A "
+"létező lapozópartíciók azonban felhasználásra kerülnek, ha vannak."
 
 #: help.xml:147 help.xml:670
 msgid ""
@@ -221,17 +217,17 @@ msgstr "Telepítés haladó módban a maximális felügyelet érdekében."
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:191
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Minimális parancssori telepítés."
 
 #: help.xml:199
 msgid "live"
@@ -471,12 +467,11 @@ msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:428
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Az általános IDE meghajtó használatának kényszerítése"
 
 #: help.xml:429
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:434
 msgid ""
@@ -686,22 +681,20 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Nagy kontrasztú akadálymentes téma használata"
 
 #: help.xml:594
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:598
 msgid "Use special tasks"
-msgstr ""
+msgstr "Speciális feladatok használata"
 
 #: help.xml:599
-#, fuzzy
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=hu</userinput>"
+msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
 #: help.xml:604
 msgid ""

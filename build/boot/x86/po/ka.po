@@ -10,13 +10,13 @@ msgstr ""
 "Project-Id-Version: ka\n"
 "Report-Msgid-Bugs-To:\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2007-09-27 13:36+0000\n"
 "Last-Translator: Vladimer Sichinava <vsichi@gnome.org>\n"
 "Language-Team: Georgian <www.gia.ge>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-09-24 10:49+0000\n"
+"X-Launchpad-Export-Date: 2007-10-05 11:27+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -28,22 +28,22 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "მოგესალმებათ ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"მიმდინარეობს ${MEDIA_TYPE}-დან  ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}-"
-"ის ინსტალაცია (გამოშვების თარიღი ${BUILD_DATE})."
+"${MEDIA_TYPE}, ჩადგმის მედიაა, ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}-"
+"თვის. \r\n"
+"აგების თარიღი: ${BUILD_DATE})."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"ეს არის ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}, ლაივ-${MEDIA_TYPE} "
-"ვარიანტი (გამოშვების თარიღი ${BUILD_DATE})."
+"${MEDIA_TYPE}, Live მედიაა, ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}-"
+"თვის. \r\n"
+"აგების თარიღი: ${BUILD_DATE})."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -151,17 +151,16 @@ msgstr ""
 
 #: help.xml:137
 msgid ""
-"You must have at least 256 megabytes of RAM to use this Ubuntu live system."
-msgstr "უბუნტუს ლაივ-სისტემისათვის საჭიროა არანაკლებ 256 მბ მეხსიერება."
+"You must have at least 384 megabytes of RAM to use this Ubuntu live system."
+msgstr "უბუნტუს ლაივ-სისტემისათვის საჭიროა არანაკლებ 384 მბ მეხსიერება."
 
 #: help.xml:142
-#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"ლაივ-სისტემას არ სჭირდება დისკზე ადგილი, მაგრამ გამოიყენებს სვოპ-არეს, თუ "
-"არის სექმნილი."
+"ლაივ სისტემა არ საჭიროებს მყარ დისკზე ადგილს, მაგრამ თუ შესაძლებელია\r\n"
+"გამოიყენებს სვოპ არეს."
 
 #: help.xml:147 help.xml:670
 msgid ""
@@ -218,17 +217,17 @@ msgstr "ინსტალაცია ექსპერტის რეჟი�
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:191
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "მინიმალური ბრძანების ველის მქონე სისტემის დაყენება."
 
 #: help.xml:199
 msgid "live"
@@ -454,22 +453,20 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:423
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "პირველი სერიული პორტის გამოყენება 9600 baud-ზე."
 
 #: help.xml:424
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:428
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "ზოგადი IDE დრაივერის გამოყენების დაძალება"
 
 #: help.xml:429
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:434
 msgid ""
@@ -679,22 +676,20 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "მაღალი კონტრასტის მქონე თემის გამოყენება"
 
 #: help.xml:594
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:598
 msgid "Use special tasks"
-msgstr ""
+msgstr "სპეც დავალებების გამოყენება"
 
 #: help.xml:599
-#, fuzzy
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=ka</userinput>"
+msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
 #: help.xml:604
 msgid ""
@@ -708,14 +703,14 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:614
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:615
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:632
 msgid "GETTING HELP"
