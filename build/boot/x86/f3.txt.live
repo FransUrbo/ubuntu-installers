@@ -6,6 +6,8 @@
   Start the live system.
 0flive-expert07
   Start the live system in expert mode, for maximum control.
+0fmemtest07
+  Perform a memory test.
 
 To use one of these boot methods, type it at the prompt, optionally
 followed by any boot parameters. For example:
@@ -14,8 +16,6 @@ followed by any boot parameters. For example:
 
 If unsure, you should use the default boot method, with no special
 parameters, by simply pressing enter at the boot prompt.
-
-
 
 
 

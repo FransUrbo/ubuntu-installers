@@ -1,3 +1,12 @@
+debian-installer (20050317ubuntu10) breezy; urgency=low
+
+  * build/boot/x86/f3.txt, build/boot/x86/f3.txt.live: Document the memtest
+    boot option.
+  * build/Makefile: Fetch packages from both main and universe when building
+    unofficial architectures (anything other than amd64, i386, or powerpc).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 20 Jul 2005 09:55:55 +0100
+
 debian-installer (20050317ubuntu9) breezy; urgency=low
 
   * build/config/sparc/cdrom.cfg: Only build 2.6.
