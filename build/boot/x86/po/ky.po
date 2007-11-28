@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2007-01-30 14:42+0000\n"
+"POT-Creation-Date: 2007-05-22 18:09+0100\n"
 "PO-Revision-Date: 2007-04-02 02:25+0000\n"
 "Last-Translator: GrajdaninK <zaiitov@gmail.com>\n"
 "Language-Team: Kirghiz <ky@li.org>\n"
@@ -27,17 +27,19 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "${DISTRIBUTION_NAME}! Кош келипсиз"
 
 #: help.xml:18
+#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Бул ${BUILD_DATE} чыгарылган ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} "
 "үчүн жүктөөчү ${MEDIA_TYPE}."
 
 #: help.xml:23
+#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Бул ${BUILD_DATE} чыгарылган ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} "
 "үчүн live ${MEDIA_TYPE}."
@@ -129,7 +131,7 @@ msgid ""
 "new Ubuntu system."
 msgstr ""
 
-#: help.xml:131 help.xml:658
+#: help.xml:131 help.xml:665
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -147,7 +149,7 @@ msgid ""
 "existing swap partitions on the disk will be used if available."
 msgstr ""
 
-#: help.xml:147 help.xml:664
+#: help.xml:147 help.xml:671
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -158,7 +160,7 @@ msgid "Thank you for choosing Ubuntu!"
 msgstr ""
 
 #: help.xml:156 help.xml:230 help.xml:266 help.xml:295 help.xml:362
-#: help.xml:453 help.xml:522 help.xml:613 help.xml:669 help.xml:725
+#: help.xml:450 help.xml:519 help.xml:620 help.xml:676 help.xml:732
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
@@ -166,7 +168,7 @@ msgid ""
 msgstr ""
 
 #: help.xml:161 help.xml:235 help.xml:271 help.xml:300 help.xml:367
-#: help.xml:458 help.xml:527 help.xml:618 help.xml:674 help.xml:730
+#: help.xml:455 help.xml:524 help.xml:625 help.xml:681 help.xml:737
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
 
@@ -284,7 +286,7 @@ msgstr ""
 msgid "On a few systems, you may need to specify a parameter at the"
 msgstr ""
 
-#: help.xml:316 help.xml:382 help.xml:473 help.xml:540
+#: help.xml:316 help.xml:382 help.xml:470 help.xml:537
 #, no-wrap
 msgid "boot:"
 msgstr "boot:"
@@ -334,7 +336,7 @@ msgstr ""
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr ""
 
-#: help.xml:382 help.xml:473 help.xml:540
+#: help.xml:382 help.xml:470 help.xml:537
 msgid "You can use the following boot parameters at the"
 msgstr ""
 
@@ -345,11 +347,11 @@ msgid ""
 "0x prefix (e.g., 0x300)."
 msgstr ""
 
-#: help.xml:390 help.xml:480
+#: help.xml:390 help.xml:477
 msgid "HARDWARE"
 msgstr ""
 
-#: help.xml:391 help.xml:481
+#: help.xml:391 help.xml:478
 msgid "PARAMETER TO SPECIFY"
 msgstr ""
 
@@ -420,55 +422,55 @@ msgstr ""
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>no387</userinput>"
 
-#: help.xml:430
-msgid ""
-"If your system hangs when booting, and the last message you see is \"aec671x-"
-"detect..\", try"
+# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:429
+msgid "Force use of generic IDE driver"
 msgstr ""
 
-#: help.xml:433
-msgid "<userinput>gdth=disable:y</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+#: help.xml:430
+#, fuzzy
+msgid "<userinput>generic.all_generic_ide=1</userinput>"
+msgstr "<userinput>vga=771</userinput>"
 
-#: help.xml:438
+#: help.xml:435
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
 msgstr ""
 
-#: help.xml:441
+#: help.xml:438
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-#: help.xml:445 help.xml:514 help.xml:605
+#: help.xml:442 help.xml:511 help.xml:612
 msgid "For example:"
 msgstr "Маселен:"
 
-#: help.xml:448
+#: help.xml:445
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
-#: help.xml:449
+#: help.xml:446
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
-#: help.xml:466
+#: help.xml:463
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr ""
 
-#: help.xml:474 help.xml:541
+#: help.xml:471 help.xml:538
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
 
-#: help.xml:484
+#: help.xml:481
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
-#: help.xml:485
+#: help.xml:482
 msgid ""
 "<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>irq</replaceable></"
@@ -482,11 +484,11 @@ msgstr ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 
-#: help.xml:489
+#: help.xml:486
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
-#: help.xml:490
+#: help.xml:487
 msgid ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>buson</replaceable>,"
@@ -498,129 +500,129 @@ msgstr ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
-#: help.xml:494
+#: help.xml:491
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
-#: help.xml:495
+#: help.xml:492
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
 
-#: help.xml:499
+#: help.xml:496
 msgid "BusLogic SCSI Hosts"
 msgstr ""
 
-#: help.xml:500
+#: help.xml:497
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
-#: help.xml:504
+#: help.xml:501
 msgid "Certain DELL machines"
 msgstr ""
 
-#: help.xml:505
+#: help.xml:502
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
-#: help.xml:510
+#: help.xml:507
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
 
-#: help.xml:517
+#: help.xml:514
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:518
+#: help.xml:515
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:535
+#: help.xml:532
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr ""
 
-#: help.xml:545
+#: help.xml:542
 msgid "These parameters control how the installer works."
 msgstr ""
 
-#: help.xml:548
+#: help.xml:545
 msgid "These parameters control how the bootstrap system works."
 msgstr ""
 
-#: help.xml:553
+#: help.xml:550
 msgid "RESULT"
 msgstr ""
 
-#: help.xml:554
+#: help.xml:551
 msgid "PARAMETER"
 msgstr ""
 
-#: help.xml:557
+#: help.xml:554
 msgid "Verbose debugging"
 msgstr ""
 
-#: help.xml:558
+#: help.xml:555
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
 msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
-#: help.xml:562
+#: help.xml:559
 msgid "Debug boot sequence"
 msgstr ""
 
-#: help.xml:563
+#: help.xml:560
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
 msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
-#: help.xml:567
+#: help.xml:564
 msgid "Disable framebuffer"
 msgstr ""
 
-#: help.xml:568
+#: help.xml:565
 msgid "<userinput>fb=false</userinput>"
 msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:572
+#: help.xml:569
 msgid "Don't probe for USB"
 msgstr "USB ни текшербе"
 
-#: help.xml:573
+#: help.xml:570
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
 msgstr "userinput>debian-installer/probe/usb=false</userinput>"
 
-#: help.xml:577
+#: help.xml:574
 msgid "Don't start PCMCIA"
 msgstr "PCMCIA ны баштаба"
 
-#: help.xml:578
+#: help.xml:575
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:582
+#: help.xml:579
 msgid "Force static network config"
 msgstr ""
 
-#: help.xml:583
+#: help.xml:580
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:587
+#: help.xml:584
 msgid "Set keyboard map"
 msgstr ""
 
-#: help.xml:588
+#: help.xml:585
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:592
+#: help.xml:589
 msgid "Use Braille tty"
 msgstr "Braille tty-ды колдонуу"
 
-#: help.xml:593
+#: help.xml:590
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
@@ -628,42 +630,62 @@ msgstr ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 
-#: help.xml:598
+# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:594
+msgid "Use high contrast accessibility theme"
+msgstr ""
+
+#: help.xml:595
+#, fuzzy
+msgid "<userinput>theme=dark</userinput>"
+msgstr "<userinput>gdth=disable:y</userinput>"
+
+# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:599
+msgid "Use special tasks"
+msgstr ""
+
+#: help.xml:600
+#, fuzzy
+msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
+msgstr "<userinput>bootkbd=es</userinput>"
+
+#: help.xml:605
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 
-#: help.xml:601
+#: help.xml:608
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:608
+#: help.xml:615
 #, fuzzy, no-wrap
 msgid "boot: install pci=noacpi"
 msgstr "boot: install acpi=off"
 
-#: help.xml:609
+#: help.xml:616
 #, fuzzy, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr "boot: live acpi=off"
 
-#: help.xml:626
+#: help.xml:633
 msgid "GETTING HELP"
 msgstr "ЖАРДАМ АЛУУ"
 
-#: help.xml:633
+#: help.xml:640
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "Ubuntu жүктөй албасаңыз, кайгырбаңыз!"
 
-#: help.xml:636
+#: help.xml:643
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "Ubuntu баштай албасаңыз, кайгырбаңыз!"
 
-#: help.xml:639
+#: help.xml:646
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Ubuntu такымы сизге жардамга даяр!"
 
-#: help.xml:642
+#: help.xml:649
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -671,7 +693,7 @@ msgstr ""
 "Биз өзгөчө сизден жүктөө учурундагы проблемаларды угууну каалайт элек, "
 "себеби бул <emphasis>жалгыз</emphasis> адамда боло турган проблема эмес."
 
-#: help.xml:647
+#: help.xml:654
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -679,7 +701,7 @@ msgstr ""
 "Биз өзгөчө сизден баштоо учурундагы проблемаларды угууну каалайт элек, "
 "себеби бул <emphasis>жалгыз</emphasis> адамда боло турган проблема эмес."
 
-#: help.xml:651
+#: help.xml:658
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -687,48 +709,48 @@ msgid ""
 "experience!"
 msgstr ""
 
-#: help.xml:682
+#: help.xml:689
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr ""
 
-#: help.xml:689
+#: help.xml:696
 msgid ""
 "Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
 
-#: help.xml:694
+#: help.xml:701
 msgid "The Ubuntu system is freely redistributable."
 msgstr "Ubuntu Системасы бекер таратылат."
 
-#: help.xml:697
+#: help.xml:704
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
 
-#: help.xml:702
+#: help.xml:709
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
 
-#: help.xml:708
+#: help.xml:715
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
 
-#: help.xml:713
+#: help.xml:720
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
 
-#: help.xml:719
+#: help.xml:726
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."

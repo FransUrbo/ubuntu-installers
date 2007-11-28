@@ -16,12 +16,12 @@
 
   <para condition="install">
    This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME}
-   ${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}.
+   ${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}.
   </para>
 
   <para condition="live">
    This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME}
-   ${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}.
+   ${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}.
   </para>
 
   <segmentedlist class="helpindex">
@@ -426,11 +426,8 @@ For F10 type control and F then the digit 0
    </seglistitem>
 
    <seglistitem>
-    <seg>
-     If your system hangs when booting, and the last message you see is
-     "aec671x-detect..", try
-    </seg>
-    <seg><userinput>gdth=disable:y</userinput></seg>
+    <seg>Force use of generic IDE driver</seg>
+    <seg><userinput>generic.all_generic_ide=1</userinput></seg>
    </seglistitem>
 
    <seglistitem>
@@ -593,7 +590,17 @@ For F10 type control and F then the digit 0
     <seg><userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</replaceable>,<replaceable>texttable</replaceable></userinput></seg>
    </seglistitem>
 
-   <seglistitem>
+   <seglistitem condition="install">
+    <seg>Use high contrast accessibility theme</seg>
+    <seg><userinput>theme=dark</userinput></seg>
+   </seglistitem>
+
+   <seglistitem condition="install">
+    <seg>Use special tasks</seg>
+    <seg><userinput>tasks="kde-desktop, standard"</userinput></seg>
+   </seglistitem>
+
+   <seglistitem condition="live">
     <seg>
      Disable ACPI for PCI maps (handy for some HP servers and Via-based
      machines)

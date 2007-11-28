@@ -1,6 +1,7 @@
                   0fWelcome to ${DISTRIBUTION_NAME}!07                                          09F107
 
-This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} ${DEBIAN_VERSION}, built on ${BUILD_DATE}.
+This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} ${DEBIAN_VERSION}.
+It was built on ${BUILD_DATE}.
 
 0fHELP INDEX07
 
@@ -19,7 +20,6 @@ This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} ${DEBIAN_VERSION}
 
 For F1-F9 type control and F then the digit 1-9
 For F10 type control and F then the digit 0
-
 
 
 Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}

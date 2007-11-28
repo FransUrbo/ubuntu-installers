@@ -70,13 +70,9 @@ often desktop-related packages. It also configures the X-Window
 keyboard settings.
 </para>
 
-<para>It is called from <classname>base-config</classname> except in
-the case the installed system has no localization at all.
-</para>
-
 <para>
 The only translatable string is the package description, used as a menu
-entry in <classname>base-config</classname>.
+entry in d-i; main menu.
 </para>
 
 </sect3>
@@ -137,7 +133,7 @@ Specific recommendations
 
 <para>
 The translatable part only includes the
-<classname>base-config</classname> menu entry. It must be kept short:
+ menu entry. It must be kept short:
 below 70 columns.
 </para>
 
@@ -219,12 +215,8 @@ Access to these files:
 
 <itemizedlist>
   <listitem>
-    <para>
-      <acronym>CVS</acronym> access: &cvs-menu;, <filename>po-sections</filename>
-      directory (menu sections translations) and
-      <filename>po-sections</filename> directory (program
-      translations)
-    </para>
+Anonymous <acronym>CVS</acronym> access: <command>&cvs-menu;</command>
+   <para>The <filename>po-sections</filename> contains the menu sections translations. Translators may also work on the program translation (directory <filename>po/</filename>, though these translations are not counted in &d-i; statistics).</para>
   </listitem>
   <listitem>
     <para>
@@ -304,28 +296,18 @@ Files location and access methods
 
 <para>
 This package is a <quote>regular</quote> Debian package. The
-package maintenance team uses a <acronym>SVN</acronym> repository.
+package maintenance team uses a <acronym>GIT</acronym> repository.
 </para>
 
 <itemizedlist>
   <listitem>
     <para>
-      <acronym>SVN</acronym> access: <filename>&svn-xorg;/xorg/debian/po/templates.pot</filename>
-    </para>
-  </listitem>
-  <listitem>
-    <para>
-      <acronym>HTTP</acronym> access: 
+      <acronym>GIT</acronym> access: 
     </para>
     <itemizedlist>
       <listitem>
         <para>
-          <ulink url="&url-level3-pot;/xserver-xorg_po.pot">&url-level3-pot;/xserver-xorg_po.pot</ulink>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          &url-level3-po;/xserver-xorg_po_&language;.po
+          git clone http://git.debian.org/git/pkg-xorg/debian/xorg.git/
         </para>
       </listitem>
     </itemizedlist>
@@ -378,8 +360,8 @@ Debian MTA (even if other MTA may be used and installed later by the
 system administrator).
 </para>
 
-<para>It is installed and configured from
-<classname>base-config</classname> which triggers some of its
+<para>It is installed and configured for standard installs, which
+triggers some of its
 configuration steps and thus involves user input.
 </para>
 
@@ -392,10 +374,13 @@ Files location and access methods
 
 <para>
 This package is a <quote>regular</quote> Debian package. The
-package maintainer currently does no use any public <acronym>CVS</acronym> or <acronym>SVN</acronym> repository.
+package maintainenane team uses a public <acronym>SVN</acronym> repository.
 </para>
 
 <itemizedlist>
+  <listitem>
+      Anonymous <acronym>SVN</acronym> access: <command>&svn-exim4;</command>
+  </listitem>
   <listitem>
     <para>
       <acronym>HTTP</acronym> access: 
