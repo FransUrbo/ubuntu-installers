@@ -1,3 +1,13 @@
+debian-installer (20051026ubuntu15) dapper; urgency=low
+
+  * Add gfxboot help text, localisable via DocBook XML and po4a. Eventually
+    the same framework should be applicable to the ordinary syslinux help
+    text too; there's rather a lot of copied text at the moment.
+  * Ship compiled gfxboot help text in the debian-cd tarball.
+  * Move to 2.6.15-15 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue,  7 Feb 2006 16:39:51 +0000
+
 debian-installer (20051026ubuntu14) dapper; urgency=low
 
   * Move to 2.6.15-14 kernels.
