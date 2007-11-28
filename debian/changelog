@@ -1,3 +1,9 @@
+debian-installer (20051026ubuntu16) dapper; urgency=low
+
+  * Build-depend on belocs-locales-bin.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed,  8 Feb 2006 11:51:23 +0000
+
 debian-installer (20051026ubuntu15) dapper; urgency=low
 
   * Add gfxboot help text, localisable via DocBook XML and po4a. Eventually
