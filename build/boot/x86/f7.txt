@@ -12,7 +12,7 @@ Don't probe for USB                     0fdebian-installer/probe/usb=false07
 Don't start PCMCIA                      0fhw-detect/start_pcmcia=false07
 Force static network config             0fnetcfg/disable_dhcp=true07
 Set keyboard map                        0fbootkbd=es07
-Disable ACPI for PCI maps (handy for    0pci=noacpi07
+Disable ACPI for PCI maps (handy for    0fpci=noacpi07
 some HP servers and Via-based machines)
 
 For example:
