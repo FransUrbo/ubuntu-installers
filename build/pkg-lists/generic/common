@@ -16,6 +16,8 @@ nano-udeb
 preseed-common
 initrd-preseed
 network-preseed
+kickseed-common
+initrd-kickseed
 
 # verify what we download
 gpgv-udeb

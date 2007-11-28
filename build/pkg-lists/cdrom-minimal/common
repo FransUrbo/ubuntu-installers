@@ -19,6 +19,8 @@ usb-discover
 preseed-common
 initrd-preseed
 file-preseed
+kickseed-common
+initrd-kickseed
 
 # It is nice to have an editor, in case something goes wrong
 nano-udeb

@@ -1,3 +1,14 @@
+debian-installer (20041227ubuntu10) hoary; urgency=low
+
+  * Backport from trunk:
+    - Add support for kernel-specific pkg-lists entries: use lines like
+      "package [2.2 2.4]" or "package * [2.6]". Should eventually form a
+      simpler replacement for the kernel_specific directory.
+  * Add kickseed-common and initrd-kickseed to all images containing
+    preseed-common and initrd-preseed.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon,  7 Feb 2005 19:04:25 +0000
+
 debian-installer (20041227ubuntu9) hoary; urgency=low
 
   * Add zoneinfo-udeb to monolithic builds, for tzsetup-udeb.

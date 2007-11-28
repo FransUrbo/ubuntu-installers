@@ -13,6 +13,8 @@ nano-udeb
 preseed-common
 initrd-preseed
 file-preseed
+kickseed-common
+initrd-kickseed
 
 # include support for usb, including usb storage
 usb-discover

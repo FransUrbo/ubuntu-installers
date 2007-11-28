@@ -27,3 +27,5 @@ floppy-retriever
 
 preseed-common
 initrd-preseed
+kickseed-common
+initrd-kickseed

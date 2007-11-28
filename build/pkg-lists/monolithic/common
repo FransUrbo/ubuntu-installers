@@ -43,4 +43,6 @@ zoneinfo-udeb
 preseed-common
 initrd-preseed
 file-preseed
+kickseed-common
+initrd-kickseed
 libfribidi0-udeb
