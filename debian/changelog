@@ -1,3 +1,9 @@
+debian-installer (20040528ubuntu7) warty; urgency=low
+
+  * Build-depend on module-init-tools.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Mon, 12 Jul 2004 18:05:57 +0100
+
 debian-installer (20040528ubuntu6) warty; urgency=low
 
   * Use the full version number in image directories, so that the daily
