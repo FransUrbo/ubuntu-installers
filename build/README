@@ -2,6 +2,13 @@ The files in this directory are used to build the Debian installer.
 Basically it consists of downloading udebs, unpacking them, applying some
 magic (library reduction etc.) and building an image.
 
+Warning: The build system for the installer is often tightly bound to the
+version of Debian for which it is targeted. If you are using stable, use
+"apt-get source debian-installer" to get a version of the installer that
+will build on your system. If you are using testing or unstable, check out
+a copy of the installer using the command 
+"svn co svn://svn.d-i.alioth.debian.org/svn/d-i/trunk/installer"
+
 Recipe:
  - Install the build-dependencies on the host system
    (run dpkg-checkbuilddeps in the parent installer/ directory).
@@ -44,20 +51,21 @@ A more detailed overview of how the installer is built:
 * Anything listed in pkg-lists/local and pkg-lists/*/local is included in
   the image that is built. This is to provide an easy way to add extra
   udebs to a test image.
-* By default, dependencies of packages in pkg-lists are not automatically
-  included, and must be manually listed. This is because many udebs do not
-  yet have sane dependencies. However, it is possible to get all of a udeb's
-  dependencies included, by putting a space and an asterisk after the package
-  name in the pkg-lists file. For now. use this with caution. If you know that
-  some of the dependencies are wrong, or do not apply to an image, but that
-  others do, you can remove dependencies from the pkg-lists by listing them
-  and putting a space and minus sign after them.
+* All dependencies of packages in pkg-lists are automatically included
+  in an image by default. If you know that some of the dependencies are
+  wrong, or do not apply to an image, you can remove dependencies from the
+  pkg-lists by listing them and putting a space and minus sign after them.
 * If you need to include a package for one major version of a kernel, but
   not for another, put the kernel major version(s) that should have the
   package in brackets at the end of the line.
   For example: discover1 [2.2 2.4]
   An older way to accomplish the same thing is the pkg-lists/kernel_specific
   directories.
+* If you'd like to include a given package only if it's available, and not
+  fail otherwise, put a question mark at the end of the line.
+  For example: pcmcia-modules-${kernel:Version} ?
+  It's recommended to use this option seldom and with care as it can make the
+  build less robust if packages can be dropped from it without warning.
 * Apt is used to download the required udebs. This does *not* include
   libraries; libraries used by udebs must be installed on the build system,
   and so are build-depended on.
@@ -246,7 +254,6 @@ MISC
   This copies files to the destination directory of your configuration.
 
 MANIFEST-INITRD
-MANIFEST-INITRD_LIST
 MANIFEST-KERNEL
 MANIFEST-BOOT
 MANIFEST-ROOT
@@ -259,7 +266,7 @@ MANIFEST-MISC
   directory. 
 
 TEMP_INITRD
-TEMP_INITRD_LIST
+TEMP_UDEB_LIST
 TEMP_KERNEL
 TEMP_BOOT
 TEMP_ROOT
@@ -309,25 +316,26 @@ VERSIONED_SYSTEM_MAP
   If set, the kernel's System.map is expected to have an unique
   filename for each kernel of this architecture.
 
-USERDEVFS
-  If set, it's assumed the kernel has no devfs and needs appropriate
-  device entries in the initrd's /dev/ directory.
-
 FLOPPY_SIZE
+  The size of a floppy image, in kilobytes.
 IMAGE_SIZE
-USERDEVFS_SIZE
-  ??? The size of the image to create. ???
+  The size of a an image, in kilobytes. Only needed and supported for
+  some types of images.
 
 DISK_LABEL
+  Disk label to use when formating disk images. Allowed content varies
+  by disk type.
+
 MEDIA_TYPE
-  ??? The image's descriptive name. ???
+  The type of media produced, currently used to make qemu boot the image
+  properly. Suggested values: "CD-ROM", "netboot image", "floppy", etc.
 
 DEBIAN_VERSION
   The debian version descriptive name.
 
 DOS_VOLUME_ID
 DOS_VOLUME_LABEL
-  ??? Volume ID and label. ???
+  Volume ID and label for DOS filesystems.
 
 GZIPPED
   Create gzipped images. This works only for the BOOT, ROOT and EXTRA
@@ -360,11 +368,15 @@ SPLASH_RLE
 
 INITRD_FS
   The filesystem to use for initrds, needs to be built into the kernel.
-  ext2 or cramfs.
+  ext2, cramfs, or initramfs.
 
 WRITE_MEDIA
   Add you configuration's name if it can be written to a raw device.
   Mostly useful for floppies.
+
+UDEB_LISTS
+
+  List of files listing udebs that were used to build the image.
 
 
 Variables useful for testing:

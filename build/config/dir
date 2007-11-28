@@ -60,7 +60,6 @@ NETBOOT_PATH = ubuntu-installer/$(ARCH)
 
 # The files we may want to have in dest/
 INITRD = $(SOME_DEST)/$(EXTRANAME)initrd.gz
-INITRD_LIST = $(SOME_DEST)/$(EXTRANAME)initrd.list
 KERNEL = $(foreach name,$(KERNELNAME),$(SOME_DEST)/$(EXTRANAME)$(name))
 BOOT = $(SOME_DEST)/$(EXTRANAME)boot.img$(GZIPPED)
 ROOT = $(SOME_DEST)/$(EXTRANAME)root.img$(GZIPPED)
@@ -69,11 +68,12 @@ MINIISO = $(SOME_DEST)/$(EXTRANAME)mini.iso
 DEBIAN_CD_INFO = $(SOME_DEST)/$(EXTRANAME)debian-cd_info.tar.gz
 NETBOOT_DIR = $(SOME_DEST)/$(EXTRANAME)ubuntu-installer
 NETBOOT_TAR = $(SOME_DEST)/$(EXTRANAME)netboot.tar.gz
+RAMDISK = $(SOME_DEST)/$(EXTRANAME)ramdisk.gz
 MISC = $(foreach name,$(MISCNAME),$(SOME_DEST)/$(EXTRANAME)$(name))
 
 # some intersting files in tmp/ we may need
 TEMP_INITRD = $(TEMP)/initrd.gz
-TEMP_INITRD_LIST = $(TEMP)/initrd.list
+TEMP_UDEB_LIST = $(TEMP)/udeb.list
 TEMP_KERNEL = $(foreach name,$(KERNELNAME),$(TEMP)/$(name))
 TEMP_BOOT = $(TEMP)/boot.img
 TEMP_ROOT = $(TEMP)/root.img
@@ -81,6 +81,7 @@ TEMP_MINIISO = $(TEMP)/mini.iso
 TEMP_EXTRA = $(TEMP)/$(EXTRANAME).img
 TEMP_BOOT_SCREENS = $(TEMP)/boot_screens
 TEMP_NETBOOT_DIR = $(TEMP)/dir_tree
+TEMP_CD_INFO_DIR = $(TEMP)/cd_info
 TEMP_CD_TREE = $(TEMP)/cd_tree
 TEMP_POWERPC_INITRD = $(TEMP)/powerpc_initrd_tree
 
@@ -88,3 +89,5 @@ DPKGDIR = $(TREE)/var/lib/dpkg
 
 EXTRADRIVERSDIR = $(TREE)/driver-tmp
 EXTRADRIVERSDPKGDIR = $(EXTRADRIVERSDIR)/var/lib/dpkg
+
+UDEB_LISTS = $(TEMP_UDEB_LIST)

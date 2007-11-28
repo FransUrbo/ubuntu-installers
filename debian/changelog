@@ -1,3 +1,390 @@
+debian-installer (20051026ubuntu1) dapper; urgency=low
+
+  * Resynchronise with Debian.
+  * build/config/common: Update for Dapper. Don't use unstable initrd
+    preseed file.
+  * build/pkg-lists/kernel_specific/2.6/udev: Restore hotplug-udeb and
+    grepmap-udeb for now; they'll go away when we switch to 2.6.14 and the
+    new udev.
+  * debian/control: Drop modutils build-dependency; Ubuntu does not build
+    2.4 installer images.
+  * build/Makefile: Only create /etc/lsb-release if it isn't in the tree
+    already.
+  * Update references to ubuntulinux.org in boot screens to be references to
+    ubuntu.com instead.
+  * Sync up new powerpc64 pkg-lists with powerpc.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 10 Nov 2005 15:34:21 -0500
+
+debian-installer (20051026) unstable; urgency=low
+
+  [ Joey Hess ]
+  * Add cramfsprogs dependency for mipsel. Closes: #334780
+  * Syslinux ignores failures due to being out of disk space (#335152).
+    Avoid this bug by running syslinux on the original, empty disk
+    image.
+  * If the boot logo can't be copied onto a floppy, don't fail, just proceed
+    on without a boot logo. Yes, we're that short on space on the i386 boot
+    floppies, no more logos for them until space is freed up.
+  * Deal with changed case of Kernel-Version fields in stat generation code.
+
+  [ Colin Watson ]
+  * Improve wording of debian-installer binary package description.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 26 Oct 2005 18:55:45 -0400
+
+debian-installer (20051018) unstable; urgency=low
+
+  [ dann frazier ]
+  * Workaround #326103 by using mklibs-copy instead of mklibs on ia64.
+
+  [ Colin Watson ]
+  * Drop hotplug-udeb from udev package list; udev-udeb is sufficient now
+    that coldplugging support has been added to it.
+  * Build mini.iso images for powerpc and powerpc64 netboot.
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 18 Oct 2005 15:57:35 -0400
+
+debian-installer (20051017) unstable; urgency=low
+
+  * No source changes, will catch new i386 kernel udebs that fix usb install
+    issue.
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 17 Oct 2005 19:45:50 -0400
+
+debian-installer (20051014) unstable; urgency=low
+
+  * Use cramfs images on mipsel. Current mipsel binaries compress very well.
+    Needs newest mipsel kernel udebs.
+  * Drop EXTRALIBS. Use EXTRAFILES, code was the same, and it's not used
+    otherwise.
+  * Copy in EXTRAFILES before depmod so modules can be included if necessary.
+  * Remove libiw udeb from netboot-minimal/powerpc.cfg, will be pulled in by
+    mklibs/deps as needed.
+  * During library reduction, copy in libraries from driver disks same as
+    other libraries so mklibs knows where to find them. This is a hack to
+    let mklibs work if building a root floppy with driver disks that include
+    libraries that are not on the root floppy. It's not ideal, since the
+    library gets added to the root floppy by mklibs now. (This issue currently
+    only occurs because netcfg, on the root floppies, is linked statically
+    and wireless-tools, on some the driver disks, is not.)
+  * Back to building from udebs in etch (yeah, it really works now).
+  * Further workaround for #329733.
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 14 Oct 2005 16:44:29 -0400
+
+debian-installer (20051009) unstable; urgency=low
+
+  [ Christian Perrier ]
+  * Add the list of needed characters for Sanskrit
+
+  [ Joey Hess ]
+  * Split manual out into its own top-level directy, and removed it from build
+    deps and build system. The debian-installer-manual tracking package is
+    replaced by a (currently mostly empty) debian-installer tracking package.
+
+  [ Frans Pop ]
+  * Remove fdisk-udeb from hppa cdrom images as partman is used now.
+
+ -- Frans Pop <fjp@debian.org>  Sun,  9 Oct 2005 00:14:46 +0200
+
+debian-installer (20051006) unstable; urgency=low
+
+  [ Bdale Garbee ]
+  * patch from Richard Hirst to fix ramdisk size on hppa
+
+  [ Colin Watson ]
+  * Revert addition of real alternatives for virtual glibc-pic
+    build-dependency, since it apparently confuses sbuild on architectures
+    without libc6-pic.
+
+ -- Joey Hess <joeyh@debian.org>  Thu,  6 Oct 2005 15:37:13 -0400
+
+debian-installer (20051005) unstable; urgency=low
+
+  [ Bdale Garbee ]
+  * updates for hppa support of 2.6.12 kernels
+
+  [ Sylvain Ferriol ]
+  * When ONLINE=n, APT must not cleanup lists directory.
+
+  [ Joey Hess ]
+  * Add preseed-common to all initrds, split out from file/network-preseed.
+  * Add initrd-preseed too.
+  * Add a PRESEED variable, which can be used to specify a preseed file to
+    add to the initrd in the location initrd-preseed expects to find one
+    (/preseed.cfg).
+  * Default PRESEED to unstable.cfg, which sets mirror/udeb/suite, which
+    means that all d-i developmental and daily builds that download udebs
+    will download them from unstable, not testing.
+  * However, in release builds of the package, this is unset, so those will
+    pull udebs from testing as previously.
+  * Try adding root=/dev/fd0 to the silo.floppy.conf since at least the 2.4
+    kernel floppies are reported to not boot without it. This change may
+    also affect the 2.6 kernel floppies, which need to be tested.
+    Closes: #301374
+  * Make syslinux configs use "install" as the label to install, in
+    preparation for rescue mode. "linux" continues to work for
+    compatability.
+  * Add "install24" and "expert24" labels to syslinux configs, in
+    preparation for making i386 use 2.6 by default.
+  * Turn on dependency resolution for nic-extra-modules, especially useful
+    since it has a new dependency in 2.6.11.
+  * Turn on dependency resolution for standard-udebs and
+    kernel-module-udebs. This allos most of the mess in monolithic/common
+    to be removed as the dependencies pull most of it in, except where
+    they're still broken.
+  * When preseeding mirror/suite, don't make it be seen, so user can
+    override from the default.
+  * Recent additions (initrd-preseed) made the el-torito image too big on
+    i386, drop usb CD support from it to make it build again.
+    Stop abusing the build system in sparc.cfg by pretending that cdrom
+    and miniiso are subarches. Add a "combined" subarch for these images
+    that really contain both sparc64 and sparc32 support.
+  * Included 2.6.8 kernel for amd64. Closes: #307306
+  * Add support for creating initramfs initrd images (needs rootskel 1.12).
+  * Move /unifont.bgf into lib. Needs rootskel 1.12.
+  * Resisted the urge to drop i386 el-torito images, which filled up again
+    once 2.6 fb-modules was fixed, and instead just dropped all translations
+    from these (unused) images.
+  * Add rescue-check to all images.
+  * Add rescue, rescue24, and rescue26 boot options in syslinux.
+  * To document these in syslinux, removed the old, useless f9.txt, and
+    shifted f4 through f8 up one; the new f4 documents rescue mode.
+  * Updated one place in the manual that referred to fn documents to reflect
+    above change.
+  * Document rescue mode in ia64 boot screens, but don't add stanzas for it
+    since that would go over the limit of 16. Users will have to type
+    rescue/enable=true
+  * Add stanzas for rescue mode and document in sparc boot screen.
+  * Remove devfs=mount from syslinux.cfg. Needs rootskel-bootfloppy 1.13.
+  * Use dependency resolution for floppy-retriever, since mountfloppy has
+    been split off of it and into a dependency.
+  * Add bugreporter-udeb to the i386 root floppy, to cdrom images, and even
+    to netboot images, so users can use it to report bugs earlier. Add
+    commented out versions to other images on which it won't be very useful,
+    since it currently required floppy support.
+  * Update the manual for the /var/log/debian-installer ->
+    /var/log/installer move.
+  * Update the manual for the bugreporter-udeb rename, and for its
+    new capailities.
+  * Add an /etc/lsb-release file to the initrd, which includes the image
+    build date. Useful for determining the provenance of an image.
+    Closes: #250321
+  * bugreporter-udeb got renamed and is now on more images.
+  * Remove redundant rootskel entry from access floppy's package list.
+  * Add mountfloppy to each initrd that contains save-logs, except for the
+    s390 generic one. save-logs can now drop its dependency on mountfloppy.
+  * Make the image tarball be listed as raw-installer in the changes file.
+  * Switch to localechooser.
+  * Drop all translations from the m68k floppy, which filled up when
+    localechooser was added to it, since it didn't have countrychooser on it
+    before.
+  * Add new env-preseed to base pkg-list.
+  * Turn of dpkg logging during image building. Need to depend on new dpkg
+    for this.
+  * Add support for virtual packages to pkg-lists.
+  * Set DEBIAN_VERSION to etch.
+  * Switch from hw-detect-full to disk-detect.
+  * Updates for libiw28. Remove libiw27 from build deps and from exclude
+    list, since the udeb is in fact used now to provide the library and
+    netcfg's dependencies have been fixes. Enable dependency resolution
+    for netcfg. Now no more updates should be needed here when libiw
+    changes.
+  * Temporarily disable nano from all images, as it's linked to slang2 and
+    the rest of d-i is not, and library reduction cannot cope with two
+    slangs.
+  * Change udeb list format to match file format expected by katie (add
+    arch field).
+  * Make update-manifest also manage a MANIFEST.udeb file listing the udebs
+    inside each file in the manifest, and pass prameters to update-manifest
+    calls to provide this information.
+  * Include a udeb.list, based on the MANIFEST.udeb, but munged so katie can
+    read it natively, inside the images tarball. This will be used to
+    ensure that sources for d-i images do not fall out of the archive.
+  * Copyright file updates for 2005.
+  * Fix manual to note that linux supports HFS+. Closes: #313488
+  * Unset LANG in chroot call in chroot-install section of manual.
+    Closes: #311704
+  * ia64 does not support rarp, remove from manual. Closes: #250028
+  * Document deconf-set-selections -c to check preseed files. Closes: #284289
+  * Try to pass appropriate manual_release when building the manual in rules
+    file.
+  * Switch to slang2.
+  * Switch from busybox-cvs to busybox.
+  * New busybox supports 2.6 modules, so the hack with modutils-udeb is not
+    needed anymore.
+  * Add isolinux.cfg files to the debian-cd-into tarball, so that we
+    don't have to maintain the same stuff in debian-cd.
+  * Switch i386 images that contain a 2.6 kernel to boot 2.6 by default,
+    install24 etc boot 2.4.
+  * Allow apt to run unauthenticated in offline mode since it may not have
+    cached a Release.gpg.
+  * di-utils-bootfloppy removed, pipe_progress moved to busybox.
+
+  [ Kurt Roeckx ]
+  * Changed libdevmapper1.00-udeb to libdevmapper1.01-udeb in the monolithic
+    package list. Closes: #306976
+  * Change amd64 kernel from 2.6.8-10 to 2.6.8-11.
+  * Do not install nano in the monolithic target.
+  * Change amd64 kernel from 2.6.8-11 to 2.6.12-1.
+
+  [ Christian Perrier ]
+  * Add the list of needed characters for Kazakh
+  * Add the list of needed characters for Vietnamese
+  * Add the list of needed characters for Wolof
+  * Add the list of needed characters for Bengali
+  * Add the list of needed characters for Kurdish
+  * Add the list of needed characters for Georgian
+  * Add the list of needed characters for Icelandic
+  * Add the list of needed characters for Hebrew
+  * Add the list of needed characters for Kannada
+  * Add the list of needed characters for Tamil
+  * Complete the list of needed characters for Persian with the help of
+    Arash Bizanjadeh and Eugenyi Meshcheryakov
+  * build/Makefile: include xx_YY files from needed-characters to all.utf
+    and not only xx files
+
+  [ Colin Watson ]
+  * Force HOME=$(TEMP) for hfsutils calls throughout powerpc
+    hd_media_common target.
+  * Ship yaboot with powerpc hd-media images.
+  * Add rescue stanzas to yaboot configuration files.
+  * Document raised kernel command-line limits in 2.6.9.
+  * Remove devfs=mount from yaboot configuration files. It shouldn't be
+    needed any more.
+  * Don't remove modules.*map from the initrd if we're using real hotplug.
+  * Use the kernel-specific discover and isa-pnp-modules include files
+    rather than explicitly listing those udebs throughout pkg-lists.
+  * Make a note about another possible cause for 'locale charmap' being
+    wrong during font generation, since it confused me for days ...
+  * Document new-style timezone preseeding, available from base-config
+    2.65.
+  * Document rescue mode in the manual.
+  * Remove historic manual files from (variously) woody and the old build
+    system.
+  * Copy KEYRING into the initrd, as /usr/share/keyrings/archive.gpg. I'm
+    relying on the keyring being small here, although we should really have
+    a keyring udeb instead.
+  * Build-depend on gnupg; apt requires it to verify signatures.
+  * Add udev pkg-lists files (including both udev and hotplug); not used by
+    default yet.
+  * Add real alternatives for virtual glibc-pic build-dependency.
+  * Remove powerpc-builtin-initrd.sh and corresponding bzip2
+    build-dependency on powerpc; we use mkvmlinuz everywhere now.
+  * Keep modules.alias in udev/hotplug builds; new coldplug udev needs it.
+
+  [ Frans Pop ]
+  * Fix logic error in build/util/pkg-list to get rid of incorrect warnings
+    about missing lists.
+  * Add build dependencies needed to build PDF/TXT versions of the manual.
+  * Make main build script for the manual fail on errors.
+  * Introduce cascading stylesheet for the HTML version of the manual.
+  * Modify build depends to allow openjade1.3 as well as openjade.
+  * Add appendix on installing over plip, contributed by Sylvain Ferriol;
+    edited by Frans Pop.
+  * Document network-console in manual.
+  * Switch sparc to 2.6.12 kernel, dropping 2.6 support for sparc32 as there
+    is no 2.6.12. kernel available.
+  * Update silo configurations to properly support install, expert and rescue.
+  * Enable building both 2.4 and 2.6 images for sparc CDs.
+  * Split preseeding example in manual into seperate files for Sarge and Etch;
+    the differences were getting too great for a single file.
+
+  [ Martin Michlmayr ]
+  * Add support for rescue mode to mipsel/cobalt.
+  * Rename the default target of {mips,mipsel}/sb1-swarm-bn from
+    'installer' to 'install' in compliance with other arches.
+  * Add support for rescue mode to {mips,mipsel}/sb1-swarm-bn.
+
+  [ Stephen R. Marenka ]
+  * m68k tools rework.
+  * incorporate boot/m68k/amiga scripts in tools.
+  * initial support for future penguin and amiboot packages.
+  * drop 2.2 kernel support for everything but macs.
+
+  [ Eddy Petrisor ]
+  * Removed ASCII characters from needed-characters/vi
+
+  [ David Nusinow ]
+  * Add attribution to Karsten M. Self for chroot-install section of the
+    manual. Closes: #316487
+
+  [ Joey Hess ]
+  * Switch i386 to 2.6.11 kernel.
+  * Add file-preseed to netboot image so file-based preseeding can be used on
+    netboot mini iso.
+  * Remove file-preseed from netboot; that won't work since netboot never
+    mounts a CD, duh.
+  * Enable text frontend for netboot on all arches.
+  * Aribitrarily increased sparc ramdisk_size to 9000 from 8192, since
+    it's at least 8230 big now due to added languages.
+  * Build-depend on newest libdebian-installer as some udebs have a versioned
+    dependency on it.
+  * Switch i386 to 2.6.12 kernel.
+  * Add support for running upx on binaries inside the initrd, and turn it
+    on for a marginal space gain in the (full) i386 boot floppy.
+  * Remove usb floppy support from speakup boot floppy since it's terminally
+    low on space.
+  * Add comments to control file about build deps and add genbuilddeps which
+    generates the build dep line based on the comments.
+  * As part of the review, removed ncurses-base (not used since we got the
+    terminfo udeb), and libnewt0.51 (pulled in by a dep from libnewt-dev)
+    and cpio (WTF?)
+
+  [ dann frazier ]
+  * Switch ia64 to 2.6.12 kernel.
+
+  [ Joey Hess ]
+  * Turned on dependency resolution by default for udebs in pkg-lists.
+  * Add libnss-files-udeb to exclude list to work around bug #322506
+    (removed again as #322506 was fixed and the exclusion broke
+     network-console for S/390 - FJP).
+  * Optimise pkg-lists a bit.
+  * rootskel-locale renamed to installation-locale.
+  * Move md5sums and udeb.list generation into "release" target of
+    build/Makefile and run these as part of the daily build too.
+  * Cleaned up various userdevfs cruft, goes along with a reworked
+    userdevfs udeb.
+  * As part of userdevfs cleanup, removed m68k initrd22 images,
+    the regular initrds should work wih 2.2 kernels.
+  * Add ads subarch for arm, with a "cf" image flavour used to boot
+    various ADS arm boards from compact flash. There is not yet a kernel for
+    these boards in Debian, so the images do not include a kernel and must be
+    used with a monolithic kernel (from ADS).
+  * The stats targets no longer build any images. If the image is not built,
+    it just won't display stats for it. This is mainly to work around a bug
+    that affected the daily builds, where running stats in a separate fakeroot
+    after the build would run build again, and rebuild initrds based on the
+    trees in tmp, messing up permissions and devices. It also removes a lot of
+    unnucessary work in stats, and allows simpler invocation of stats by
+    the daily-build script.
+  * Don't regenerate the list of udebs in an image in stats, this was
+    redundant info and was slow and ugly to generate there.
+  * Remove config/local from svn and add a comment to config/common about
+    making the file.
+  * Add an evil workaround for bug #329733.
+
+  [ Sven Luther ]
+  * Enabled powerpc64 support.
+  * Killed all 2.4 powerpc kernels except apus.
+  * Upgraded to 2.6.12 powerpc kernels.
+
+  [ Otavio Salvador ]
+  * Change dependency to libparted1.6-13 due a new soname change on parted
+    1.6.24.
+
+  [ Dann Frazier ]
+  * Drop the Linux 2.4 support for ia64.
+
+  [ Joey Hess ]
+  * Temporarily disabled powerpc floppy builds since they depend on miboot
+    kernel udebs that are not in the archive.
+  * Temporarily made it build against udebs in sid when releasing this
+    package, since it's taking too long to get udebs into etch for a release.
+
+ -- Joey Hess <joeyh@debian.org>  Wed,  5 Oct 2005 21:15:12 -0400
+
 debian-installer (20050317ubuntu19) breezy; urgency=low
 
   * doc/manual/en/appendix/chroot-install.xml: Recommend installing
@@ -208,6 +595,12 @@ debian-installer (20050317) unstable; urgency=low
   * Frans Pop
     - Add German and Russian for official builds of the manual
     - Add PDF and TXT formats for official builds of the manual
+  * Martin Michlmayr
+    - Mention rootdev in the ARM manual, thanks Kyle McMartin.
+    - Use the correct TFTP filename for ARM Netwinder.
+    - Remove bogus information about noinitrd option from ARM manual.
+    - Mention option needed for serial console installations on
+      ARM Netwinder, thanks thanks Kyle McMartin.
 
  -- Joey Hess <joeyh@debian.org>  Thu, 17 Mar 2005 10:54:07 -0500
 
@@ -278,7 +671,7 @@ debian-installer (20050305) unstable; urgency=high
     - hppa 2.6 cdrom initrd needs more modules
   * Kurt Roeckx
     - Remove unused config files for amd64.
-    - Update kernel version for amd64 to 2.6.8-10
+    - Update kernel version for amd64 to 2.6.8-11
     - Update netboot and monolithic config files for amd64 to match i386.
   * Sven Luther
     - Adapted to new 2.4.27-3 and 0.64 powerpc kernel .deb and .udebs and

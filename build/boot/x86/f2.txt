@@ -9,9 +9,9 @@ more disk space to install additional packages, depending on what you
 wish to do with your new Ubuntu system.
 
 See the Installation Manual or the FAQ for more information; both
-documents are available at the Ubuntu web site,
-0fhttp://www.ubuntulinux.org/07
+documents are available at the Ubuntu web site, 0fhttp://www.ubuntu.com/07
 
+Thank you for choosing Ubuntu!
 
 
 

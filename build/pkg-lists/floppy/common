@@ -11,16 +11,15 @@
 # and so depmod will have a kernel to run against.
 #include "kernel"
 
-busybox-cvs-udeb
 localechooser
-iso-3166-udeb
-nano-udeb
 bogl-bterm-udeb
 di-utils-terminfo
 kbd-chooser
 console-keymaps-tree
 cdebconf-newt-udeb
-rootskel-locale
+installation-locale
+
+nano-udeb
 
 # floppy loading support
 load-floppy

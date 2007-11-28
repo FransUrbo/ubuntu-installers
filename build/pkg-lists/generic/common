@@ -2,15 +2,13 @@
 #include "kernel"
 
 # Other udebs that are needed for netboot install
-busybox-cvs-udeb
 choose-mirror
 net-retriever
 download-installer
 cdebconf-newt-udeb
-rootskel-locale
+installation-locale
 di-utils-terminfo
 
-# there's space for an editor
 nano-udeb
 
 preseed-common
@@ -18,6 +16,8 @@ initrd-preseed
 network-preseed
 kickseed-common
 initrd-kickseed
+
+save-logs
 
 # verify what we download
 gpgv-udeb

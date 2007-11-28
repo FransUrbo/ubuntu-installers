@@ -84,7 +84,7 @@ else
 	:
 fi
 
-# Update package lists and autoclean cache
+# Update package lists and autoclean cache.
 if [ "$ONLINE" = "y" ]; then
 	$APT_GET update || {
 		echo "Failed to update the Packages file. This usually means either of:"
@@ -100,6 +100,12 @@ if [ "$ONLINE" = "y" ]; then
 		exit 1
 	}
 	$APT_GET autoclean
+else
+	# A Release.gpg may not be cached, allow continuing w/o it in
+	# offline mode.
+	APT_GET="$APT_GET --allow-unauthenticated"
+	
+	$APT_GET --no-list-cleanup update || echo "Ignoring update failure in offline mode"
 fi
 
 if [ "$PACKAGES" = update ]; then

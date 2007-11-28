@@ -1,20 +1,19 @@
 #include "base"
 #include "kernel"
-#include "busybox"
 
-rootskel-locale
+installation-locale
 localechooser
-iso-3166-udeb
 hw-detect
 bogl-bterm-udeb
 di-utils-terminfo
 cdebconf-newt-udeb
-nano-udeb
 preseed-common
 initrd-preseed
 file-preseed
 kickseed-common
 initrd-kickseed
+
+nano-udeb
 
 # include support for usb, including usb storage
 usb-discover
@@ -28,5 +27,8 @@ cdrom-retriever
 # our dependency analiser is not currently capable or working this out and
 # complains; shut it up:
 cdrom-detect -
+
+save-logs
+mountfloppy
 
 libfribidi0-udeb

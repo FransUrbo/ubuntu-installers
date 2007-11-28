@@ -11,11 +11,11 @@
  7f³70                                                                            ³10
  7f³70    See the Installation Manual or the FAQ for more information; both       ³10
  7f³70    documents are available at the Ubuntu web site:                         ³10
- 7f³70      http://www.ubuntulinux.org/                                           ³10
+ 7f³70      http://www.ubuntu.com/                                                ³10
  7f³70                                                                            ³10
  7f³70                                                                            ³10
- 7f³70    Ubuntu is Copyright (C) 2004 Canonical Ltd., and incorporates the work  ³10
- 7f³70    of many other original authors and contributors.                        ³10
+ 7f³70    Ubuntu is Copyright (C) 2004, 2005 Canonical Ltd., and incorporates     ³10
+ 7f³70    the work of many other original authors and contributors.               ³10
  7f³70                                                                            ³10
  7f³70                                                                            ³10
  7f³70                                                                            ³10

@@ -8,7 +8,6 @@
 # a collection of udebs which it downloads from a Debian archive. See
 # README for details.
 #
-
 #
 # General layout of our build directory hierarchy
 #
@@ -70,27 +69,21 @@ endif
 # crosscompiling.
 ARCH = $(DEB_HOST_ARCH)
 
-#
 # By default, we just advertise what we can do.
-#
 .PHONY: all
 all: list
 
-#
 # Globally useful variables.
-#
 targetstring = $(patsubst _%,%,$(if $(SUBARCH),_$(SUBARCH),)$(if $(MEDIUM),_$(MEDIUM),)$(if $(FLAVOUR),_$(FLAVOUR),))
 targetdirs = $(subst _,/,$(targetstring))
 
 
-#
 # Configurations for the varying ARCH, SUBARCH, MEDIUM, FLAVOUR.
 # For simplicity, we use a similiar tree layout for config/, tmp/
 # and dest/.
 #
 # Cheap trick: if one of the variables isn't defined, we run in
 # a non-existing file and ignore it.
-#
 include config/common
 include config/dir
 -include config/local
@@ -99,9 +92,9 @@ include config/dir
 -include config/$(ARCH)/$(SUBARCH)/$(MEDIUM).cfg
 -include config/$(ARCH)/$(SUBARCH)/$(MEDIUM)/$(FLAVOUR).cfg
 
-#
+export KEYRING
+
 # Useful command sequences
-#
 define submake
   $(MAKE) --no-print-directory
 endef
@@ -118,12 +111,12 @@ define recurse
   $(if $($(1)_SUPPORTED),$(call recurse_many,$(1),$(2),$(3)),$(call recurse_once,$(2),$(3)))
 endef
 
-define genext2fs-userdevfs
-  genext2fs -d $(TREE) -b $(USERDEVFS_SIZE) -r 0 -f userdevfs-devs
-endef
-
 define genext2fs
   genext2fs -d $(TREE) -b `expr $$(du -s $(TREE) | cut -f 1) + $$(expr $$(find $(TREE) | wc -l) \* 2)` -r 0
+endef
+
+define mkinitramfs
+  (cd $(TREE) && find . | cpio --quiet -o -H newc) > 
 endef
 
 define e2fsck
@@ -134,9 +127,7 @@ define mkcramfs
   mkcramfs -z $(TREE)
 endef
 
-#
 # A generic recursion rule
-#
 .PHONY: all_%
 all_%:
 	@install -d $(STAMPS)
@@ -154,9 +145,7 @@ medium_%:
 flavour_%:
 	$(if $(targetstring),@$(submake) _$*)
 
-#
 # Validate a targetstring, echo env variables for valid ones
-#
 .PHONY: validate_%
 validate_%:
 	@set -e; \
@@ -192,9 +181,7 @@ finish_validate:
 	fi;
 
 
-#
 # List all targets useful for direct invocation.
-#
 .PHONY: list
 list:
 	@echo "Useful targets:"
@@ -223,13 +210,11 @@ _list:
 	echo
 
 
-#
 # Clean all targets.
-#
 .PHONY: reallyclean
 reallyclean: all_clean
 	rm -rf $(APTDIR) $(APTDIR).udeb $(APTDIR).deb $(BASE_DEST) $(BASE_TMP) $(SOURCEDIR) $(DEBUGUDEBDIR)
-	rm -f sources.list sources.list.udeb sources.list.deb
+	rm -f sources.list sources.list.udeb
 	rm -rf $(UDEBDIR) $(STAMPS)
 
 # For manual invocation, we provide a generic clean rule.
@@ -250,10 +235,8 @@ _clean: tree_umount
 	rm -rf $(TARGET)
 	rm -rf $(TEMP)
 
-#
 # all_build is provided automagically, but for manual invocation
 # we provide a generic build rule.
-#
 .PHONY: build_%
 build_%:
 	@install -d $(STAMPS)
@@ -274,10 +257,14 @@ rebuild_%:
 _rebuild:
 	@$(submake) _clean _build
 
-#
+# Run before releasing built files.
+release:
+	egrep '^[[:space:]]' $(BASE_DEST)/MANIFEST.udebs | \
+		sed 's/^[[:space:]]*//' | sort | uniq > $(BASE_DEST)/udeb.list
+	rm -f $(BASE_DEST)/MD5SUMS
+	cd $(BASE_DEST) && md5sum `find . -type f` > MD5SUMS
+
 # The general tree target.
-# FIXME: This is way too convoluted.
-#
 $(STAMPS)tree-unpack-$(targetstring)-stamp: $(STAMPS)get_udebs-$(targetstring)-stamp
 	dh_testroot
 	cd .. && dpkg-checkbuilddeps
@@ -301,14 +288,14 @@ $(STAMPS)tree-unpack-$(targetstring)-stamp: $(STAMPS)get_udebs-$(targetstring)-s
 	oldsize=0; oldblocks=0; oldcount=0; for udeb in $(UDEBDIR)/*.udeb ; do \
 		if [ -f "$$udeb" ]; then \
 			pkg=`basename $$udeb` ; \
-			dpkg $(DPKG_UNPACK_OPTIONS) --root=$(TREE) --unpack $$udeb ; \
+			dpkg $(DPKG_UNPACK_OPTIONS) --log=/dev/null --root=$(TREE) --unpack $$udeb ; \
 			newsize=`du -bs $(TREE) | awk '{print $$1}'` ; \
 			newblocks=`du -s $(TREE) | awk '{print $$1}'` ; \
 			newcount=`find $(TREE) -type f | wc -l | awk '{print $$1}'` ; \
 			usedsize=`echo $$newsize - $$oldsize | bc`; \
 			usedblocks=`echo $$newblocks - $$oldblocks | bc`; \
 			usedcount=`echo $$newcount - $$oldcount | bc`; \
-			version=`dpkg-deb --info $$udeb | grep Version: | awk '{print $$2}'` ; \
+			version=`dpkg-deb --info $$udeb | grep '^Version:' | awk '{print $$2}'` ; \
 			echo " $$usedsize B - $$usedblocks blocks - $$usedcount files from $$pkg (version $$version)" >>$(TEMP)/diskusage.txt;\
 			oldsize=$$newsize ; \
 			oldblocks=$$newblocks ; \
@@ -317,19 +304,27 @@ $(STAMPS)tree-unpack-$(targetstring)-stamp: $(STAMPS)get_udebs-$(targetstring)-s
 	done
 	sort -n < $(TEMP)/diskusage.txt > $(TEMP)/diskusage.txt.new && \
 		mv $(TEMP)/diskusage.txt.new $(TEMP)/diskusage.txt
-	grep-dctrl -nsPackage,Version '' $(TREE)/var/lib/dpkg/status | \
-		perl -nle '$$p = $$_; $$v = <>; chomp $$v; <>; print "$$p $$v"' | \
-		sort > $(TEMP_INITRD_LIST)
+	grep-dctrl -nsPackage,Version,Architecture '' $(TREE)/var/lib/dpkg/status | \
+		perl -nle '$$p = $$_; $$v = <>; chomp $$v; $$a = <>; chomp $$a; <>; print "$$p $$v $$a"' | \
+		sort > $(TEMP_UDEB_LIST)
 
 	# Clean up after dpkg.
 	rm -rf $(DPKGDIR)/updates
 	rm -f $(DPKGDIR)/available $(DPKGDIR)/*-old $(DPKGDIR)/lock
 
+ifdef EXTRAFILES
+	# Copy in any extra files.
+	set -e; \
+	for file in $(EXTRAFILES); do \
+		mkdir -p $(TREE)/`dirname $$file`; \
+		cp -a $$file $(TREE)/$$file; \
+	done
+endif
+
 ifdef KERNELVERSION
 	# Set up modules.dep, ensure there is at least one standard dir (kernel
 	# in this case), so depmod will use its prune list for archs with no
 	# modules.
-	#
 	set -e; \
 	$(foreach VERSION,$(KERNELVERSION), \
 		sysmap_name=; sysmap_opt=; \
@@ -348,9 +343,10 @@ ifdef KERNELVERSION
 	# These files depmod makes are used by hotplug, if it's being used;
 	# otherwise, we shouldn't need them. Some files aren't even used by
 	# hotplug, so never include them.
-	if [ -d $(TREE)/etc/hotplug ]; then \
+	if [ -d $(TREE)/etc/udev ] || [ -d $(TREE)/etc/hotplug ]; then \
 		find $(TREE)/lib/modules/ -name 'modules*' \
-			-not -name modules.dep -not -name 'modules.*map' \
+			-not -name modules.dep -not -name modules.alias \
+			-not -name 'modules.*map' \
 			-not -type d | xargs rm -f; \
 	else \
 		find $(TREE)/lib/modules/ -name 'modules*' \
@@ -373,23 +369,24 @@ ifdef KERNELNAME
 	rmdir $(TREE)/boot/
 endif
 
-ifdef EXTRAFILES
-	# Copy in any extra files.
-	set -e; \
-	for file in $(EXTRAFILES); do \
-		mkdir -p $(TREE)/`dirname $$file`; \
-		cp -a $$file $(TREE)/$$file; \
-	done
+ifdef PRESEED
+	# Copy in preseed file.
+	cp -a $(PRESEED) $(TREE)/preseed.cfg
 endif
 
-ifdef EXTRALIBS
-	# Copy in any extra libs.
-	set -e; \
-	for file in $(EXTRALIBS); do \
-		mkdir -p $(TREE)/`dirname $$file`; \
-		cp -a $$file $(TREE)/$$file; \
-	done
+ifneq (,$(wildcard $(KEYRING)))
+	mkdir -p $(TREE)/usr/share/keyrings
+	cp -a $(KEYRING) $(TREE)/usr/share/keyrings/archive.gpg
 endif
+
+	# Create an lsb release file.
+	if [ ! -e $(TREE)/etc/lsb-release ]; then \
+		set -e; \
+		mkdir -p $(TREE)/etc; \
+		echo 'DISTRIB_ID=$(LSB_DISTRIB_ID)' > $(TREE)/etc/lsb-release; \
+		echo 'DISTRIB_DESCRIPTION=$(LSB_DISTRIB_DESCRIPTION)' >> $(TREE)/etc/lsb-release; \
+		echo 'DISTRIB_RELEASE=$(LSB_DISTRIB_RELEASE)' >> $(TREE)/etc/lsb-release; \
+	fi
 
 	@touch $@
 
@@ -398,18 +395,15 @@ $(STAMPS)tree-$(targetstring)-stamp: $(STAMPS)tree-unpack-$(targetstring)-stamp
 	# Create a dev tree.
 	mkdir -p $(TREE)/dev
 	# Always needed, in case devfs is not mounted on boot.
-	# userdevfs uses userdevfs-devs w/genext2fs
-ifndef USERDEVFS
 	mknod $(TREE)/dev/console c 5 1
 	mknod $(TREE)/dev/null c 1 3
-endif
 
 ifdef EXTRADRIVERS
 	# Unpack the udebs of additional driver disks, so mklibs runs on them too.
 	mkdir -p $(EXTRADRIVERSDIR)
 	mkdir -p $(EXTRADRIVERSDPKGDIR)/info $(EXTRADRIVERSDPKGDIR)/updates
 	touch $(EXTRADRIVERSDPKGDIR)/status $(EXTRADRIVERSDPKGDIR)/available
-	dpkg $(DPKG_UNPACK_OPTIONS) --root=$(EXTRADRIVERSDIR) --unpack \
+	dpkg $(DPKG_UNPACK_OPTIONS) --log=/dev/null --root=$(EXTRADRIVERSDIR) --unpack \
 		$(wildcard $(foreach dir,$(EXTRADRIVERS),$(dir)/*.udeb))
 endif
 
@@ -418,6 +412,7 @@ endif
 	# system libs.
 	rm -rf $(TEMP)/udeblibs
 	mkdir -p $(TEMP)/udeblibs
+	-cp -a `find $(EXTRADRIVERSDIR)/lib -type f -name '*.so.*'` $(TEMP)/udeblibs
 	-cp -a `find $(TREE)/lib -type f -name '*.so.*'` $(TEMP)/udeblibs
 	mkdir -p $(TREE)/lib
 	$(MKLIBS) -L $(TREE)/usr/lib -L $(TEMP)/udeblibs -v -d $(TREE)/lib --root=$(TREE) `find $(TEMP) -type f -perm +0111 -o -name '*.so' | grep -v udeblibs`
@@ -458,18 +453,6 @@ ifdef DROP_LANG
 	done
 endif
 
-	# If the image has pcmcia, reduce the config file to list only
-	# entries that there are modules on the image. This saves ~30k.
-	# Disabled for now, as it doesn't pass enough modules to the script.
-	#set -e; \
-	#if [ -e $(TREE)/etc/pcmcia/config ]; then \
-	#	pcmcia-config-reduce.pl $(TREE)/etc/pcmcia/config \
-	#		`if [ -d "$(EXTRADRIVERSDIR)" ]; then find $(EXTRADRIVERSDIR)/lib/modules -name \*.o -name \*.ko; fi` \
-	#		`find $(TREE)/lib/modules/ -name \*.o -or -name \*.ko` > \
-	#		$(TREE)/etc/pcmcia/config.reduced; \
-	#	mv -f $(TREE)/etc/pcmcia/config.reduced $(TREE)/etc/pcmcia/config; \
-	#fi
-
 	# Strip all kernel modules, just in case they haven't already been
 	set -e; \
 	for module in `find $(TREE)/lib/modules/ -name '*.o' -name '*.ko'`; do \
@@ -489,7 +472,7 @@ endif
 
 	# Collect the used UTF-8 strings, to know which glyphs to include in
 	# the font.
-	cat graphic.utf needed-characters/?? > $(TEMP)/all.utf
+	cat graphic.utf needed-characters/?? needed-characters/??_?? > $(TEMP)/all.utf
 ifdef EXTRADRIVERS
 	if [ -n "`find $(EXTRADRIVERSDPKGDIR)/info/ -name \\*.templates`" ]; then \
 		cat $(EXTRADRIVERSDPKGDIR)/info/*.templates >> $(TEMP)/all.utf; \
@@ -511,11 +494,6 @@ endif
 	# Tree target ends here. Whew!
 	@touch $@
 
-
-#
-# Acquire the necessary .udeb packages.
-#
-
 # Get the list of udebs to install.
 # HACK Alert: pkg-lists/ is still sorted by TYPE instead of a dir hierarchy.
 UDEBS = $(shell set -e; get-packages udeb update >&2; pkg-list $(TYPE) "$(DRIVER_FOR)" $(KERNEL_FLAVOUR) $(KERNELMAJOR) "$(SUBARCH)" $(KERNELIMAGEVERSION)) $(EXTRAS)
@@ -528,10 +506,8 @@ $(STAMPS)get_udebs-$(targetstring)-stamp: sources.list.udeb
 	@touch $@
 
 ifneq (,$(findstring :$(ARCH):,:amd64:i386:powerpc:sparc:))
-DEB_COMPONENTS := main
 UDEB_COMPONENTS := main/debian-installer
 else
-DEB_COMPONENTS := main universe
 UDEB_COMPONENTS := main/debian-installer universe/debian-installer
 endif
 
@@ -552,52 +528,27 @@ sources.list.udeb:
 		|perl -ne 'print unless $$seen{$$_}; $$seen{$$_}=1' ; \
 	fi) > $@
 
-sources.list.deb:
-	(set -e; \
-	echo "# This file is automatically generated, edit $@.local instead."; \
-	if [ "$(MIRROR)x" != "x" ]; then \
-		echo "deb $(MIRROR) $(SUITE) $(DEB_COMPONENTS)"; \
-	else \
-		grep '^deb[ \t]' $(SYSTEM_SOURCES_LIST) \
-		|grep -v '\(debian-non-US\|non-us.debian.org\|security.debian.org\)' \
-		|grep '[ \t]main' \
-		|awk '{print $$1 " " $$2}' \
-		|sed "s,/* *$$, $(SUITE) $(DEB_COMPONENTS)," \
-		|sed "s,^deb file,deb copy," \
-		|sort |uniq; \
-	fi) > $@
 
-
-#
 # Font generation.
 #
+# Use the UTF-8 locale in rootskel-locale. This target shouldn't
+# be called when it is not present anyway.
+# The locale must be generated after installing the package locales
 $(TREE)/lib/unifont.bgf: $(TEMP)/all.utf
-	# Use the UTF-8 locale in rootskel-locale. This target shouldn't
-	# be called when it is not present anyway.
-	# The locale must be generated after installing the package locales
 	set -e; \
 	CHARMAP=`LOCPATH=$(LOCALE_PATH) LC_ALL=C.UTF-8 locale charmap`; \
             if [ UTF-8 != "$$CHARMAP" ]; then \
 	        echo "error: Trying to build unifont.bgf without rootskel-locale!"; \
+		echo "(Alternatively, rootskel-locale may have been built against"; \
+		echo "a version of glibc with a different locale data format.)"; \
 	        exit 1; \
 	    fi
 	LOCPATH=$(LOCALE_PATH) LC_ALL=C.UTF-8 reduce-font /usr/src/unifont.bdf < $(TEMP)/all.utf > $(TEMP)/unifont.bdf
-	# bdftobogl is part of package libbogl-dev
 	bdftobogl -b $(TEMP)/unifont.bdf > $@.tmp
 	mv $@.tmp $@
 
-
-#
-# Create the images for dest/. Those are the targets called from config.
-#
-# Create a compressed image of the root filesystem by way of genext2fs.
-$(INITRD): $(TEMP_INITRD) $(TEMP_INITRD_LIST)
-	install -m 644 -D $< $@
-	install -m 644 -D $(TEMP_INITRD_LIST) $(INITRD_LIST)
-	update-manifest $@ $(MANIFEST-INITRD)
-	update-manifest $(INITRD_LIST) $(MANIFEST-INITRD_LIST)
-
-$(TEMP_INITRD): $(STAMPS)tree-$(targetstring)-stamp
+# Create a compressed image of the root filesystem.
+$(TEMP_INITRD): $(STAMPS)tree-$(targetstring)-stamp arch_tree
 	# Only build the font if we have rootskel-locale
 	if [ -d "$(LOCALE_PATH)/C.UTF-8" ] && [ -e /usr/src/unifont.bdf ]; then \
 		$(submake) $(TREE)/lib/unifont.bgf; \
@@ -606,22 +557,27 @@ $(TEMP_INITRD): $(STAMPS)tree-$(targetstring)-stamp
 
 	case $(INITRD_FS) in \
 	ext2) \
-		if [ "" != "$(USERDEVFS)" ]; then \
-			echo $(USERDEVFS_SIZE) > $(TREE)/ramdisk_settings; \
-			$(genext2fs-userdevfs) $(TEMP)/initrd; \
-		else \
-			$(genext2fs) $(TEMP)/initrd; \
-		fi; \
+		$(genext2fs) $(TEMP)/initrd; \
 		$(e2fsck) $(TEMP)/initrd || true ;; \
 	cramfs) \
 		$(mkcramfs) $(TEMP)/initrd ;; \
+	initramfs) \
+		$(mkinitramfs) $(TEMP)/initrd ;; \
 	*) \
 		echo "Unsupported filesystem type"; \
 		exit 1 ;; \
 	esac
 	gzip -v9f $(TEMP)/initrd
 
-$(TEMP_INITRD_LIST): $(TEMP_INITRD)
+# Create the images for dest/. Those are the targets called from config.
+
+$(INITRD): $(TEMP_INITRD)
+	install -m 644 -D $< $@
+	update-manifest $@ $(MANIFEST-INITRD) $(UDEB_LISTS)
+
+$(RAMDISK): $(TEMP_INITRD)
+	install -m 644 -D $< $@
+	update-manifest $@ $(MANIFEST-RAMDISK) $(UDEB_LISTS)
 
 # raw kernel images
 $(KERNEL): TEMP_REAL_KERNEL = $(TEMP)/$(shell echo ./$@ |sed 's,$(SOME_DEST)/$(EXTRANAME),,')
@@ -633,7 +589,7 @@ $(KERNEL):
 # bootable images
 $(BOOT): $(TEMP_BOOT)
 	install -m 644 -D $(TEMP_BOOT)$(GZIPPED) $@
-	update-manifest $@ $(MANIFEST-BOOT)
+	update-manifest $@ $(MANIFEST-BOOT) $(UDEB_LISTS)
 
 $(TEMP_KERNEL): $(STAMPS)tree-unpack-$(targetstring)-stamp
 
@@ -642,20 +598,20 @@ $(TEMP_BOOT): $(TEMP_INITRD) $(TEMP_KERNEL) $(TEMP_BOOT_SCREENS) arch_boot
 # non-bootable root images
 $(ROOT): $(TEMP_ROOT)
 	install -m 644 -D $(TEMP_ROOT)$(GZIPPED) $@
-	update-manifest $@ $(MANIFEST-ROOT)
+	update-manifest $@ $(MANIFEST-ROOT) $(UDEB_LISTS)
 
 $(TEMP_ROOT): $(TEMP_INITRD) arch_root
 
 # miniature ISOs with only a boot image
 $(MINIISO): $(TEMP_MINIISO)
 	install -m 644 -D $(TEMP_MINIISO) $@
-	update-manifest $@ $(MANIFEST-MINIISO)
+	update-manifest $@ $(MANIFEST-MINIISO) $(UDEB_LISTS)
 
 $(TEMP_MINIISO): $(TEMP_BOOT_SCREENS) arch_miniiso
 
 # various kinds of information, for use on debian-cd isos
-$(DEBIAN_CD_INFO): $(TEMP_BOOT_SCREENS)
-	(cd $(TEMP_BOOT_SCREENS); tar czf - .) > $@
+$(DEBIAN_CD_INFO): $(TEMP_BOOT_SCREENS) $(TEMP_CD_INFO_DIR)
+	(cd $(TEMP_CD_INFO_DIR); tar czf - .) > $@
 	update-manifest $@ $(MANIFEST-DEBIAN_CD_INFO)
 
 # a directory full of files for netbooting
@@ -667,14 +623,15 @@ $(NETBOOT_DIR): $(NETBOOT_DIR_TARGETS) $(TEMP_BOOT_SCREENS) $(TEMP_NETBOOT_DIR)
 		rm -f $@/../$(link); \
 		cp -a $(TEMP_NETBOOT_DIR)/$(link) $@/..; \
 	)
-	update-manifest $@ $(MANIFEST-NETBOOT_DIR)
+	update-manifest $@ $(MANIFEST-NETBOOT_DIR) $(UDEB_LISTS)
 
 # a tarball for netbooting
 $(NETBOOT_TAR): $(TEMP_NETBOOT_DIR)
 	(cd $(TEMP_NETBOOT_DIR); tar czf - .) > $@
-	update-manifest $@ $(MANIFEST-NETBOOT_TAR)
+	update-manifest $@ $(MANIFEST-NETBOOT_TAR) $(UDEB_LISTS)
 
 $(TEMP_BOOT_SCREENS): arch_boot_screens
+$(TEMP_CD_INFO_DIR): arch_cd_info_dir
 $(TEMP_NETBOOT_DIR): arch_netboot_dir
 
 $(MISC): TEMP_REAL_MISC = $(shell echo ./$@ |sed 's,$(SOME_DEST)/$(EXTRANAME),,')
@@ -687,7 +644,7 @@ $(MISC):
 # Other images, e.g. driver floppies. Those are simply handled as flavours
 $(EXTRA): $(TEMP_EXTRA)
 	install -m 644 -D $(TEMP_EXTRA)$(GZIPPED) $@
-	update-manifest $@ $(MANIFEST-EXTRA)
+	update-manifest $@ $(MANIFEST-EXTRA) $(UDEB_LISTS)
 
 $(TEMP_EXTRA): $(STAMPS)extra-$(targetstring)-stamp
 	install -d $(shell dirname $@)
@@ -708,6 +665,7 @@ $(STAMPS)extra-$(targetstring)-stamp: $(STAMPS)get_udebs-$(targetstring)-stamp
 	@rm -f $@
 	mkdir -p $(TREE)
 	echo -n > $(TEMP)/diskusage.txt
+	echo -n > $(TEMP_UDEB_LIST)
 	
 	set -e; \
 	for file in $(UDEBS); do \
@@ -719,8 +677,10 @@ $(STAMPS)extra-$(targetstring)-stamp: $(STAMPS)get_udebs-$(targetstring)-stamp
 			usedsize=`du -bs $$udeb | awk '{print $$1}'` ; \
 			usedblocks=`du -s $$udeb | awk '{print $$1}'` ; \
 			usedcount=1 ; \
-			version=`dpkg-deb --info $$udeb | grep Version: | awk '{print $$2}'` ; \
-			echo " $$usedsize B - $$usedblocks blocks - $$usedcount files used by pkg $$pkg (version $$version)" >>$(TEMP)/diskusage.txt;\
+			version=`dpkg-deb --info $$udeb | grep '^Version:' | awk '{print $$2}'` ; \
+			arch=`dpkg-deb --info $$udeb | grep Architecture: | awk '{print $$2}'` ; \
+			echo " $$usedsize B - $$usedblocks blocks - $$usedcount files used by pkg $$pkg (version $$version)" >>$(TEMP)/diskusage.txt; \
+			echo "$$pkg $$version $$arch" >> $(TEMP_UDEB_LIST); \
 		fi; \
 	done
 	sort -n < $(TEMP)/diskusage.txt > $(TEMP)/diskusage.txt.new && \
@@ -753,9 +713,7 @@ pkg-lists/kernel-module-udebs:
 # The kernel version changes from build to build, so always regen the file.
 .PHONY: pkg-lists/kernel-module-udebs
 
-#
 # Write (floppy) images
-#
 .PHONY: write_%
 write_%:
 	@install -d $(STAMPS)
@@ -777,10 +735,7 @@ _checkedwrite: _write
 	sudo cmp $(FLOPPYDEV) $(TARGET)
 
 
-#
-# generate statistics
-# Suitable for a cron job, you'll only see the stats unless a build fails.
-#
+# Generate statistics for all previously built images.
 .PHONY: stats
 stats:
 	@echo "Image size stats"
@@ -794,11 +749,6 @@ stats_%:
 
 .PHONY: _stats
 _stats: 
-	@install -d $(BASE_TMP)
-	@install -d $(STAMPS)
-	@(set -e; $(submake) _build >$(BASE_TMP)log 2>&1 || \
-	  (echo "build failure!"; cat $(BASE_TMP)log; false))
-	@rm -f $(BASE_TMP)log
 	@[ ! -f $(TEMP)/diskusage.txt ] || $(submake) general-stats
 
 TOTAL_SZ = $(shell expr $(shell du -bs $(TREE) | cut -f 1) / 1024)
@@ -820,10 +770,8 @@ KERNEL_SZ = 0
 endif
 .PHONY: general-stats
 general-stats:
-	@echo k $(KERNEL_SZ) f $(FLOPPY_SIZE) i $(INITRD_SZ)
 	@echo "System stats for $(targetstring)"
 	@echo "-------------------------"
-	@echo "Installed udebs: $(UDEBS)"
 	@printf "Total system size: $(TOTAL_SZ)k"
 ifneq ($(LIBS_SZ)$(MODULES_SZ),)
 	@echo " ($(LIBS_SZ) libs, $(MODULES_SZ) kernel modules)"
@@ -842,24 +790,18 @@ endif
 	@echo "Disk usage per package:"
 	@sed 's/^/  /' < $(TEMP)/diskusage.txt
 
-#
-# demo target handling.
-#
 .PHONY: tree_mount
 tree_mount: $(STAMPS)tree-$(targetstring)-stamp
 	-@sudo /bin/mount -t proc proc $(TREE)/proc
-ifdef USERDEVFS
-	-@sudo chroot $(TREE) /usr/bin/update-dev
-else
-	-@sudo /bin/mount -t devfs dev $(TREE)/dev
-endif
+	-@if [ -e $(TREE)/usr/bin/update-dev ]; then \
+		sudo chroot $(TREE) /usr/bin/update-dev; \
+	else \
+		sudo /bin/mount -t devfs dev $(TREE)/dev; \
+	fi
 
 .PHONY: tree_umount
 tree_umount:
-ifndef USERDEVFS
-	-@[ ! -c $(TREE)/dev/tty ] || sudo /bin/umount $(TREE)/dev
-endif
-	-@[ ! -L $(TREE)/proc/self ] || sudo /bin/umount $(TREE)/proc
+	-@[ ! -L $(TREE)/proc/self ] || [ ! -c $(TREE)/dev/tty ] || sudo /bin/umount $(TREE)/proc
 
 # For manual invocation, we provide a demo rule. This starts the
 # d-i demo from the tree in tmp.
@@ -878,6 +820,7 @@ _demo: $(TARGET)
 	sudo chroot $(TREE) bin/sh -c "export DEBCONF_DEBUG=5 ; /usr/bin/debconf-loadtemplate debian /var/lib/dpkg/info/*.templates; exec /usr/share/debconf/frontend /usr/bin/main-menu" ; \
 	$(submake) tree_umount
 
+# For a shell into a d-i chroot.
 .PHONY: shell_%
 shell_%:
 	@export SUBARCH=; \
@@ -891,6 +834,7 @@ _shell: $(TREE)
 	sudo chroot $(TREE) bin/sh; \
 	$(submake) tree_umount
 
+# For running a d-i image in UML.
 .PHONY: uml_%
 uml_%:
 	@set -e; \
@@ -903,6 +847,7 @@ uml_%:
 _uml: $(TARGET)
 	-linux initrd=$(INITRD) root=/dev/rd/0 ramdisk_size=8192 con=fd:0,fd:1 devfs=mount
 
+# For running a d-i image in qemu.
 .PHONY: qemu_%
 qemu_%:
 	@set -e; \

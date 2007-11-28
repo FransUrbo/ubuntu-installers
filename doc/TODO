@@ -1,14 +1,3 @@
-Things we really should fix before rc3:
-
-	- figure out WTF to do about new 2.4 powerpc kernels
-	- debootstrap NMU for parted (steve)
-	- fix last few source/udeb inconsistencies
-
-Things that would be nice for rc3, but can't block it:
-
-	- vmelilo-installer needs to remove no_bootloader
-	  from /target/etc/kernel-img.conf (still relevant?)
-
 This TODO list can only touch on some larger issues, but there are a great
 many open bugs on various components of the installer. See all bugs tagged
 d-i in the BTS. Also, there are many unprocessed installation-reports.
@@ -23,6 +12,9 @@ time.
 	- some architectures
 		hurd-i386 (we will ship w/o this)
 		sh (we will ship w/o this)
+	- support for non-free udebs
+		Driver disks are already supported, but that is not really
+		good enough for etch.
 
 [30%] Might need large rewrites. Current implementation might
       work by accident
@@ -31,10 +23,24 @@ time.
 		There are some basic implementations. The trick is to make
 		it a GUI that does not suck, while still using debconf
 		underneath.
+
+		Currently the main blocking point is getting the various
+		libraries etc needed to get a GUI up available as udebs.
 	- ppp support
 		  Not as important for analog dialup, as for ISDN, pppoe.
+	- udev
+		Some pieces checked in, but still needs a change to (at
+		least) lilo-installer ported over from Ubuntu. This requires
+		'readlink -f' in busybox first.
+		Need udev to start building udev-udeb; it includes a script
+		in /lib/debian-installer-startup.d/, so we need to agree
+		which of it and rootskel should contain that.
+	- integrate/document rescue mode support
+		Needs a new section in the manual.
+		Needs bootloader configuration (done on x86, sparc, ia64).
+		Needs a better user interface, possibly with easy ways to do
+		common tasks like reinstalling a bootloader.
 
-	
 [60%] Needs some work, but does its grunt work
 ---------------------------------------------------------------------
 	- I18N
@@ -47,16 +53,10 @@ time.
 	- anna
 		Works, mostly.  Needs support for Release files.
 		Support for signed Release files would be cool, but
-		needs gpgv-udeb.
-		Needs to have load-installer properly split out of the anna
-		binary to save space on root floppy. Or removed, not used
-		anymore.
+		needs gpgv-udeb (in unstable now).
         - disk selector, partitioner
 		We have switched to partman everything except a couple of
 		subarches and s390.
-	- bugreporter-udeb
-		only supports saving to floppy, which many lack
-		should offer a way to save via network or to usb stick
 	- post-reboot configuration
 		base-config is stable, though it could use more polish
 		Some questions repeat questions from d-i.
@@ -67,6 +67,7 @@ time.
 	- archive integration
 		No automatic propagation to testing.
 		No source propagation for udeb sources!
+		http://people.debian.org/~joeyh/d-i/testing-summary.html
 	- pcmcia support
 		Much improved, generally works now.
 		Automatic PCI resource range exclusion based on probing
@@ -81,7 +82,7 @@ time.
 	- developer documentation
 		We understand it, but it could be improved.
 	- 2.6 support
-		Works on i386, with minor bugs.
+		Works on i386, hppa, ia64, sparc, amd64.
 		Works on powerpc, at least newworld. Testing on
 		other subarches needed, especially G5 and oldworld (with
 		mkvmlinuz).
@@ -89,7 +90,8 @@ time.
 		Works pretty well.
 		Some things still cannot be preseeded. This is generally a
 		bug in the udeb's use of debconf.
-		Some problems with kernel command line limits.
+		Some problems with kernel command line limits (ameliorated
+		by 2.6.9+).
 		Too many things need to be set at the kernel command line
 		for netboot preseeding.
 	- most architectures
@@ -106,12 +108,13 @@ time.
 		arm (some subarches)
 		hppa
 		amd64 (unofficial)
-		s/390
+		s390
 
 [90%] Single missing important feature or bug.
 ---------------------------------------------------------------------
 	- hw-detect
 		Working but needs to be switched over to discover2 or hotplug
+		(hotplug support checked in, needs hotplug-udeb)
 	- iso-scan
 		Works, but does not flag the disk the iso is mounted from
 		as unusable by the rest of the installer.
@@ -119,15 +122,13 @@ time.
 		Working, pending rewrite for IPv6.
 	- bts
 		Still need a non-manual way to tag our bugs.
-	- language-chooser
+	- localechooser
 		The perennial problem is how to order/present the list of
 		languages. Many complaints, but it works.
         - base system installer
-		It can break due to testing package churn. cdebootstrap
-		would fix this; also debootstrap/apt/archive changes in
-		progress to add Base: overrides to Packages files.
-		Needs more granular progress during debootstrp run (ubuntu
-		patches)
+		Improve kernel selection. Much of this is done in unstable,
+		but knowing about some kind of preference order for kernels
+		would be good. (Kamion)
 
 [100%] Those shouldn't need to be touched any more 
        (famous last words)
@@ -146,24 +147,19 @@ time.
 	- kernel-package integration
         - library reduction
 	- wireless support
+	- save-logs
 
 
 Post-sarge goals
 ================
 
-	- remove skolelinux/woody compatability code (after careful
-	  consideration and making sure it's ok) (joeyh)
-	- switch to discover 2 (joeyh)
-	- switch to cdebootstrap (joeyh)
-	- 2.6 as default kernel on i386 (joeyh)
 	- 2.6 floppies on i386 (joeyh)
 	- fix pkg-lists names to match images (joeyh)
-	- improve udeb dependancies and use fully in pkg-lists (joeyh)
+	- fix udeb dependencies to not refer to library debs (waiting on
+	  acceptance of dpkg patch) (joeyh)
 	- consistent indentation of all shell scripts
 	  (with a style that minimises size on initrd! :-) (joeyh)
 	- drop devfs! (joeyh)
-	- improve base-installer kernel robustness (Kamion)
-	- improve base-installer progress bar granularity (Kamion)
 	- merged/rewritten localechooser (Bubulle)
 	- 16 mb installs
 	- graphical installer (markos, kamion)
@@ -171,10 +167,8 @@ Post-sarge goals
 	- handle debian upgrades in partman (anton)
 	- fai integration (markos)
 	- cloning from installer system (luther)
-	- base-installer test suite (kamion)
 	- discover2 (gaudenz)
 	- hotplug (gaudenz, kamion)
-	- udev (kamion)
 	- use same device names in installer and installed
 	  system (kamion)
 	- non-linux d-i (jbailey)
@@ -186,10 +180,11 @@ Post-sarge goals
 	- low(er) mem (zboob)
 	- etch in 2005 (or bust) (jvw)
 	- uml for testing d-i (anton)
-	- udebs and debs of same name (joeyh, gaudenz)
+	- udebs and debs of same name (gaudenz)
 	- post reboot network configuration (kamion)
 	- real deb from archdetect udeb (luther)
-	- getting rid of hardcoded paths in d-i (kamion)
+	- getting rid of hardcoded paths in d-i (kamion, joeyh)
+	- install tasks and do rest of base-config before reboot (joeyh)
 
 Common problems and transitions
 ===============================

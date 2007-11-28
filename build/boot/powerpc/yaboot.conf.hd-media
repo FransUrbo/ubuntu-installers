@@ -33,3 +33,10 @@ image=/vmlinux
 	initrd-size=${RAMDISK_SIZE}
 	append="base-config/package-selection= base-config/install-language-support=false DEBCONF_PRIORITY=low --"
 	read-only
+
+image=/vmlinux
+	label=rescue
+	initrd=/initrd.gz
+	initrd-size=${RAMDISK_SIZE}
+	append="rescue/enable=true --"
+	read-only
