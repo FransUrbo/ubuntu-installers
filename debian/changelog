@@ -1,3 +1,9 @@
+debian-installer (20041227ubuntu14) hoary; urgency=low
+
+  * Add keyboard decision tree udeb.
+
+ -- Matthias Urlichs <smurf@debian.org>  Fri, 18 Feb 2005 12:46:50 +0100
+
 debian-installer (20041227ubuntu13) hoary; urgency=low
 
   * Output debian-cd_info.tar.gz on ia64 with all the boot screens.
