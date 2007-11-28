@@ -15,7 +15,7 @@ supporting different CPU variants.
 
 Ports to other <emphasis>&architecture;</emphasis> architectures, such
 as the Be-Box and MBX architecture, are underway but not yet supported
-by Debian. We may have a 64-bit port in the future.
+by Ubuntu. We may have a 64-bit port in the future.
 
 </para>
 
@@ -23,7 +23,7 @@ by Debian. We may have a 64-bit port in the future.
 
 <para>
 
-There are four flavours of the powerpc kernel in Debian, based on the
+There are three flavours of the powerpc kernel in Ubuntu, based on the
 CPU type:
 
 <variablelist>
@@ -64,7 +64,7 @@ kernel flavour.
 </para></listitem>
 </varlistentry>
 
-<varlistentry>
+<varlistentry condition="not-ubuntu">
 <term>apus</term>
 <listitem><para>
 
@@ -99,7 +99,7 @@ or Quadra 950. Apple's pre-iMac PowerPC model numbers have four digits.
 NuBus systems are not currently supported by debian/powerpc. The
 monolithic Linux/PPC kernel architecture does not have support for
 these machines; instead, one must use the MkLinux Mach microkernel,
-which Debian does not yet support. These include the following:
+which Ubuntu does not yet support. These include the following:
 
 <itemizedlist>
 <listitem><para>

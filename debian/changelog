@@ -1,3 +1,20 @@
+debian-installer (20041118ubuntu11) hoary; urgency=low
+
+  * Manual changes:
+    - hardware/hardware-supported.xml, hardware/hardware.xml,
+      hardware/network-cards.xml, hardware/supported/powerpc.xml,
+      hardware/supported-peripherals.xml: Ubuntu branding (closes: Ubuntu
+      #4284).
+    - appendix/example-preseed.xml: Ubuntu branding. Not tested, though, and
+      known to be incomplete.
+    - appendix/example-preseed.xml, hardware/hardware-supported.xml: Hoary
+      uses X.Org rather than XFree86.
+  * doc/manual/build/common.ent: Hoary has X.Org 6.8.1.
+  * doc/manual/build/urls.ent: Remove url-xfree and url-xfree86-cardlist;
+    add url-xorg.
+
+ -- Colin Watson <cjwatson@canonical.com>  Wed, 29 Dec 2004 16:58:48 +0000
+
 debian-installer (20041118ubuntu10) hoary; urgency=low
 
   * Reduce netboot/boot.img.gz size requirement to 8 MB (hi, Jeff).

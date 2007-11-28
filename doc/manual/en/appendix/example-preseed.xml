@@ -105,9 +105,9 @@ d-i	netcfg/wireless_wep	string
 #### Mirror settings.
 
 d-i	mirror/country		string enter information manually
-d-i	mirror/http/hostname	string http.us.debian.org
-d-i	mirror/http/directory	string /debian
-d-i	mirror/suite		string testing
+d-i	mirror/http/hostname	string archive.ubuntu.com
+d-i	mirror/http/directory	string /ubuntu
+d-i	mirror/suite		string &releasename;
 d-i	mirror/http/proxy	string 
 
 ### Partitioning.
@@ -228,8 +228,8 @@ base-config	tzconfig/choose_country_zone_single boolean true
 # If you want to skip creation of a normal user account.
 #passwd		passwd/make-user		boolean false
 # Alternatively, you can preseed the user's name and login.
-#passwd		passwd/user-fullname		string Debian User
-#passwd		passwd/username			string debian
+#passwd		passwd/user-fullname		string Ubuntu User
+#passwd		passwd/username			string ubuntu
 # And their password, but use caution!
 #passwd		passwd/user-password		password insecure
 #passwd		passwd/user-password-again	password insecure
@@ -243,8 +243,8 @@ base-config	apt-setup/uri_type	select http
 
 # If you choose ftp or http, you'll be asked for a country and a mirror.
 base-config	apt-setup/country	select enter information manually
-base-config	apt-setup/hostname	string http.us.debian.org
-base-config	apt-setup/directory	string /debian
+base-config	apt-setup/hostname	string archive.ubuntu.com
+base-config	apt-setup/directory	string /ubuntu
 # Stop after choosing one mirror.
 base-config	apt-setup/another	boolean false
 
@@ -279,28 +279,28 @@ exim4-config	exim4/dc_postmaster		string
 
 ###### X Configuration.
 
-# Preseeding Debian's X config is possible, but you probably need to know
-# some details about the video hardware of the machine, since Debian's X
+# Preseeding Ubuntu's X config is possible, but you probably need to know
+# some details about the video hardware of the machine, since Ubuntu's X
 # configurator does not do fully automatic configuration of everything.
 
 # X can detect the right driver for some cards, but if you're preseeding,
 # you override whatever it chooses. Still, vesa will work most places.
-#xserver-xfree86	xserver-xfree86/config/device/driver	select vesa
+#xserver-xorg	xserver-xorg/config/device/driver	select vesa
 
 # A caveat with mouse autodetection is that if it fails, X will retry it
 # over and over. So if it's preseeded to be done, there is a possibility of
 # an infinite loop if the mouse is not autodetected.
-#xserver-xfree86	xserver-xfree86/autodetect_mouse	boolean true
+#xserver-xorg	xserver-xorg/autodetect_mouse	boolean true
 
 # Monitor autodetection is recommended.
-xserver-xfree86		xserver-xfree86/autodetect_monitor	boolean true
+xserver-xorg		xserver-xorg/autodetect_monitor	boolean true
 # Uncomment if you have a LCD display.
-#xserver-xfree86	xserver-xfree86/config/monitor/lcd	boolean true
+#xserver-xorg	xserver-xorg/config/monitor/lcd	boolean true
 # X has three configuration paths for the monitor. Here's how to preseed
 # the "medium" path, which is always available. The "simple" path may not
 # be available, and the "advanced" path asks too many questions.
-xserver-xfree86	xserver-xfree86/config/monitor/selection-method	select medium
-xserver-xfree86	xserver-xfree86/config/monitor/mode-list	select 1024x768 @ 60 Hz
+xserver-xorg	xserver-xorg/config/monitor/selection-method	select medium
+xserver-xorg	xserver-xorg/config/monitor/mode-list	select 1024x768 @ 60 Hz
 
 ###### Everything else.
 

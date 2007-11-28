@@ -9,7 +9,7 @@
 <!-- last updated for kernel-image_2.0.36-2 -->
 
 Most PCI and many older ISA network cards are supported.
-Some network interface cards are not supported by most Debian
+Some network interface cards are not supported by most Ubuntu
 installation disks, such as AX.25 cards and protocols; 
 NI16510 EtherBlaster cards; Schneider &amp; Koch G16 cards;
 and the Zenith Z-Note built-in network card. Microchannel (MCA) network

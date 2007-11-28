@@ -6,14 +6,17 @@
 
 <para>
 
-Debian does not impose hardware requirements beyond the requirements
+Ubuntu does not impose hardware requirements beyond the requirements
 of the Linux kernel and the GNU tool-sets.  Therefore, any
 architecture or platform to which the Linux kernel, libc,
-<command>gcc</command>, etc. have been ported, and for which a Debian
-port exists, can run Debian. Please refer to the Ports pages at
+<command>gcc</command>, etc. have been ported, and for which an Ubuntu
+port exists, can run Ubuntu.
+<phrase condition="not-ubuntu"> <!-- TODO: Debian-only at the moment -->
+Please refer to the Ports pages at
 <ulink url="&url-ports;"></ulink> for
 more details on &arch-title; architecture systems which have been
 tested with Debian.
+</phrase>
 
 </para><para>
 
@@ -28,7 +31,7 @@ information can be found.
 
 <para>
 
-Debian &release; supports eleven major architectures and several
+Ubuntu &release; supports eleven major architectures and several
 variations of each architecture known as 'flavors'. 
 
 </para><para>
@@ -37,7 +40,7 @@ variations of each architecture known as 'flavors'.
 <tgroup cols="4">
 <thead>
 <row>
-  <entry>Architecture</entry><entry>Debian Designation</entry>
+  <entry>Architecture</entry><entry>Ubuntu Designation</entry>
   <entry>Subarchitecture</entry><entry>Flavor</entry>
 </row>
 </thead>
@@ -174,7 +177,7 @@ variations of each architecture known as 'flavors'.
 
 </tbody></tgroup></informaltable>
 
-</para><para>
+</para><para condition="not-ubuntu"> <!-- TODO: Debian-only at the moment -->
 
 This document covers installation for the
 <emphasis>&arch-title;</emphasis> architecture.  If you are looking
@@ -224,13 +227,13 @@ during the installation process described in this document.
 
 </para><para>
 
-Debian's support for graphical interfaces is determined by the
-underlying support found in XFree86's X11 system.  The newer AGP video
+Ubuntu's support for graphical interfaces is determined by the
+underlying support found in X.Org's X11 system.  The newer AGP video
 slots are actually a modification on the PCI specification, and most
-AGP video cards work under XFree86.  Details on supported graphics
+AGP video cards work under X.Org.  Details on supported graphics
 buses, cards, monitors, and pointing devices can be found at 
-<ulink url="&url-xfree86;"></ulink>.  Debian &release; ships 
-with XFree86 version &x11ver;.
+<ulink url="&url-xorg;"></ulink>.  Ubuntu &release; ships 
+with X.Org version &x11ver;.
 
 </para><para arch="mips">
 
@@ -270,7 +273,7 @@ with GNU/Linux, see the
 <para>
 
 Multi-processor support &mdash; also called ``symmetric multi-processing''
-or SMP &mdash; is supported for this architecture.  The standard Debian
+or SMP &mdash; is supported for this architecture.  The standard Ubuntu
 &release; kernel image was compiled with SMP support.  This should not
 prevent installation, since the SMP kernel should boot on non-SMP systems;
 the kernel will simply cause a bit more overhead.
@@ -278,7 +281,7 @@ the kernel will simply cause a bit more overhead.
 </para><para>
 
 In order to optimize the kernel for single CPU systems, you'll have to
-replace the standard Debian kernel.  You can find a discussion of how
+replace the standard Ubuntu kernel.  You can find a discussion of how
 to do this in <xref linkend="kernel-baking"/>.  At this time
 (kernel version &kernelversion;) the way you disable SMP is to deselect
 ``symmetric multi-processing'' in the ``General'' section of the
@@ -295,7 +298,7 @@ kernel config.
 
 Multi-processor support &mdash; also called ``symmetric
 multi-processing'' or SMP &mdash; is supported for this architecture.
-However, the standard Debian &release; kernel image does not support
+However, the standard Ubuntu &release; kernel image does not support
 SMP.  This should not prevent installation, since the standard,
 non-SMP kernel should boot on SMP systems; the kernel will simply use
 the first CPU.
@@ -303,7 +306,7 @@ the first CPU.
 </para><para>
 
 In order to take advantage of multiple processors, you'll have to
-replace the standard Debian kernel.  You can find a discussion of how
+replace the standard Ubuntu kernel.  You can find a discussion of how
 to do this in <xref linkend="kernel-baking"/>.  At this time
 (kernel version &kernelversion;) the way you enable SMP is to select
 ``symmetric multi-processing'' in the ``General'' section of the
@@ -318,7 +321,7 @@ kernel config.
 
 Multi-processor support &mdash; also called ``symmetric
 multi-processing'' or SMP &mdash; is supported for this architecture,
-and is supported by a precompiled Debian kernel image. Depending on your
+and is supported by a precompiled Ubuntu kernel image. Depending on your
 install media, this SMP-capable kernel may or may not be installed by
 default. This should not prevent installation, since the standard,
 non-SMP kernel should boot on SMP systems; the kernel will simply use
