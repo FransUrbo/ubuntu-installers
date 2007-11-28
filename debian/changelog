@@ -1,3 +1,9 @@
+debian-installer (20061102ubuntu11) feisty; urgency=low
+
+  * No-change rebuild to pick up new archdetect for Intel Mac support.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 16 Jan 2007 08:27:23 +0000
+
 debian-installer (20061102ubuntu10) feisty; urgency=low
 
   * Move fs-core-modules hack so everybody gets them in the cdrom initrd.
