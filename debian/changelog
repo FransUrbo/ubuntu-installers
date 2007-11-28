@@ -1,3 +1,12 @@
+debian-installer (20041027ubuntu2) hoary; urgency=low
+
+  * Lay most of the groundwork for floppy support; still waiting for some
+    packages in main, so it's not enabled yet.
+  * Fix some isa-pnp-modules references in pkg-lists to use the
+    kernel_specific include.
+
+ -- Colin Watson <cjwatson@canonical.com>  Mon,  8 Nov 2004 18:36:49 +0000
+
 debian-installer (20041027ubuntu1) hoary; urgency=low
 
   * Resynchronise with Debian.
