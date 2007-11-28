@@ -1,3 +1,9 @@
+debian-installer (20061102ubuntu17) feisty; urgency=low
+
+  * Move to 2.6.20-12 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 18 Mar 2007 11:30:03 +0000
+
 debian-installer (20061102ubuntu16) feisty; urgency=low
 
   * Move to 2.6.20-11 kernels.
