@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: chroot-install.xml,v 1.5 2003/11/20 06:39:20 mck Exp $ -->
+<!-- $Id: chroot-install.xml 14559 2004-05-01 12:49:03Z waldi $ -->
 
  <sect1 id="linux-upgrade">
  <title>Εγκαθιστώντας το  Debian GNU/Linux από ένα Σύστημα Unix/Linux</title>

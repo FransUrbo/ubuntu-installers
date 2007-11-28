@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id$ -->
+<!-- $Id: i386.xml 16313 2004-05-25 22:30:23Z pelle-guest $ -->
 
   <sect2 arch="i386"><title>Booting from a CD-ROM</title>
 

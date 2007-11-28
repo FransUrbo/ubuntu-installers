@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id$ -->
+<!-- $Id: powerpc.xml 15220 2004-05-12 14:14:13Z cjwatson $ -->
 
   <sect2 arch="powerpc"><title>Booting from a CD-ROM</title>
 

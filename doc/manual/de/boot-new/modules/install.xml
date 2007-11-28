@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: install.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
+<!-- $Id: install.xml 14559 2004-05-01 12:49:03Z waldi $ -->
 
  <sect2 id="debconf">
  <title>Prompts During Software Installation</title>

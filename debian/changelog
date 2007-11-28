@@ -1,3 +1,10 @@
+debian-installer (20040528ubuntu1) warty; urgency=low
+
+  * Build images from warty.
+  * Don't build 2.4 images for i386 or powerpc.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Tue, 29 Jun 2004 17:07:17 +0100
+
 debian-installer (20040528) unstable; urgency=low
 
   * Martin Michlmayr

@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: i386.xml,v 1.7 2004/01/05 17:08:24 mck-guest Exp $ -->
+<!-- $Id: i386.xml 14559 2004-05-01 12:49:03Z waldi $ -->
 
   <sect2 arch="i386"><title>Εκκίνηση από ένα CD-ROM</title>
 

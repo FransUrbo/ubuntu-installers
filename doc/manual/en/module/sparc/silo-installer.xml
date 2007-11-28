@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id$ -->
+<!-- $Id: silo-installer.xml 14602 2004-05-02 16:31:59Z mck-guest $ -->
 
   <sect2 arch="sparc">
   <title>Install the <command>SILO</command> Boot Loader

@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id$ -->
+<!-- $Id: chroot-install.xml 15442 2004-05-15 10:54:45Z cjwatson $ -->
 
  <sect1 id="linux-upgrade">
  <title>Installing &debian; from a Unix/Linux System</title>
