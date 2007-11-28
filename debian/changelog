@@ -1,3 +1,10 @@
+debian-installer (20051026ubuntu7) dapper; urgency=low
+
+  * build/pkg-lists/base: Remove casper-check; the reimplemented casper no
+    longer delivers this.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 18 Dec 2005 08:20:33 +0000
+
 debian-installer (20051026ubuntu6) dapper; urgency=low
 
   * build/config/sparc/combined/miniiso-2.6.cfg: Fix kernel path (thanks,

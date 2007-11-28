@@ -5,7 +5,6 @@ busybox-udeb
 module-init-tools-udeb [2.6]
 anna
 archdetect
-casper-check
 cdebconf-udeb
 di-utils
 di-utils-reboot
