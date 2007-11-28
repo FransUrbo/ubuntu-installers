@@ -1,3 +1,27 @@
+debian-installer (20041227ubuntu16) hoary; urgency=low
+
+  * Backport from trunk:
+    - Fix support for multiple words in KERNELVERSION.
+  * Add hppa support, based on a patch by LaMont Jones:
+    - build/boot/hppa/mkiso.conf: Remove obsolete devfs=mount,dall
+      init=/linuxrc.
+    - build/config/hppa.cfg: 2.6 only; use 2.6.10-4 kernel; kernel images
+      named *-hppa{32,64} rather than *-{32,64}.
+    - build/config/hppa/: 2.6 only.
+    - build/config/hppa/miniiso.cfg: Bump ramdisk size to 131072.
+    - build/pkg-lists/cdrom/hppa.cfg, build/pkg-lists/floppy/hppa.cfg,
+      build/pkg-lists/netboot/hppa.cfg: Remove discover.
+    - doc/manual/build/build.sh: Build hppa manual.
+    - doc/manual/build/arch-options/hppa: 2.6.10 kernel; remove
+      status="not-checked".
+  * build/pkg-lists/netboot/: Add pciutils-udeb where not already done.
+
+  * doc/manual/en/preparing/non-debian-partitioning.xml: Ubuntu branding.
+
+  * Add network-kickseed to all images containing network-preseed.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 24 Feb 2005 15:33:33 +0000
+
 debian-installer (20041227ubuntu15) hoary; urgency=low
 
   * Move to 2.6.10-4 kernels.

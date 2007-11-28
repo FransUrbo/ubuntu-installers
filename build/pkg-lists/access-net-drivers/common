@@ -1,4 +1,5 @@
 network-preseed
+network-kickseed
 
 # verify what we download
 gpgv-udeb

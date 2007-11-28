@@ -18,6 +18,7 @@ initrd-preseed
 network-preseed
 kickseed-common
 initrd-kickseed
+network-kickseed
 
 # verify what we download
 gpgv-udeb
