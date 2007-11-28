@@ -1,3 +1,9 @@
+debian-installer (20040801ubuntu10) warty; urgency=low
+
+  * Add hdparm-udeb to cdrom initrds.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue,  7 Sep 2004 20:00:07 +0100
+
 debian-installer (20040801ubuntu9) warty; urgency=low
 
   * Document custom and custom-expert boot methods (closes: Warty #1001).

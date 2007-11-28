@@ -9,6 +9,7 @@ countrychooser
 iso-3166-udeb
 hw-detect
 cdrom-detect
+hdparm-udeb
 cdrom-retriever
 load-cdrom
 cdrom-checker
