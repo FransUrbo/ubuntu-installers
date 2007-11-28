@@ -24,7 +24,7 @@ by Ubuntu. We may have a 64-bit port in the future.
 
 <para>
 
-There are three flavours of the powerpc kernel in Ubuntu, based on the
+There are two flavours of the powerpc kernel in Ubuntu, based on the
 CPU type:
 
 <variablelist>
@@ -40,19 +40,14 @@ systems up to and including the G4 use one of these processors.
 </varlistentry>
 
 <varlistentry>
-<term>power3</term>
+<term>powerpc64</term>
 <listitem><para>
 
 The POWER3 processor is used in older IBM 64-bit server systems: known
 models include the IntelliStation POWER Model 265, the pSeries 610 and
 640, and the RS/6000 7044-170, 7044-260, and 7044-270.
 
-</para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term>power4</term>
-<listitem><para>
+</para><para>
 
 The POWER4 processor is used in more recent IBM 64-bit server systems:
 known models include the pSeries 615, 630, 650, 655, 670, and 690.
