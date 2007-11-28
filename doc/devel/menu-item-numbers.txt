@@ -18,7 +18,7 @@ by 10 to give us more space.)
 10 -> 30 Preparation and installer setup
 10 localechooser
 11 load-floppy
-12 kbd-chooser
+12 console-setup
 13 iso-scan
    cdrom-detect
 14 file-preseed

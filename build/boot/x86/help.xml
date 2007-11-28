@@ -553,37 +553,37 @@ For F10 type control and F then the digit 0
    <segtitle>RESULT</segtitle>
    <segtitle>PARAMETER</segtitle>
 
-   <seglistitem>
+   <seglistitem condition="install">
     <seg>Verbose debugging</seg>
     <seg><userinput>DEBCONF_DEBUG=5</userinput></seg>
    </seglistitem>
 
-   <seglistitem>
+   <seglistitem condition="install">
     <seg>Debug boot sequence</seg>
     <seg><userinput>BOOT_DEBUG=2|3</userinput></seg>
    </seglistitem>
 
-   <seglistitem>
+   <seglistitem condition="install">
     <seg>Disable framebuffer</seg>
     <seg><userinput>fb=false</userinput></seg>
    </seglistitem>
 
-   <seglistitem>
+   <seglistitem condition="install">
     <seg>Don't probe for USB</seg>
     <seg><userinput>debian-installer/probe/usb=false</userinput></seg>
    </seglistitem>
 
-   <seglistitem>
+   <seglistitem condition="install">
     <seg>Don't start PCMCIA</seg>
     <seg><userinput>hw-detect/start_pcmcia=false</userinput></seg>
    </seglistitem>
 
-   <seglistitem>
+   <seglistitem condition="install">
     <seg>Force static network config</seg>
     <seg><userinput>netcfg/disable_dhcp=true</userinput></seg>
    </seglistitem>
 
-   <seglistitem>
+   <seglistitem condition="install">
     <seg>Set keyboard map</seg>
     <seg><userinput>bootkbd=es</userinput></seg>
    </seglistitem>
@@ -605,8 +605,8 @@ For F10 type control and F then the digit 0
   <para>For example:</para>
 
   <informalexample>
-   <screen condition="install">boot: install fb=false</screen>
-   <screen condition="live">boot: live fb=false</screen>
+   <screen condition="install">boot: install pci=noacpi</screen>
+   <screen condition="live">boot: live pci=noacpi</screen>
   </informalexample>
 
   <para condition="syslinux">
