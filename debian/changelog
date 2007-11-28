@@ -1,3 +1,14 @@
+debian-installer (20041227ubuntu5) hoary; urgency=low
+
+  * Add syslinux.txt.live with slightly different text for the live CD.
+  * Move to 2.6.10-2 kernels.
+  * Upload to raw-installer section rather than byhand, as agreed with
+    James.
+  * Add gpgv-udeb and ubuntu-keyring-udeb to all images that download
+    further udebs from the network.
+
+ -- Colin Watson <cjwatson@canonical.com>  Thu, 13 Jan 2005 17:05:19 +0000
+
 debian-installer (20041227ubuntu4) hoary; urgency=low
 
   * No source changes; pick up new hw-detect to test for real hotplug

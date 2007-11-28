@@ -19,3 +19,7 @@ network-preseed
 nano-udeb
 
 libfribidi0-udeb
+
+# verify what we download
+gpgv-udeb
+ubuntu-keyring-udeb
