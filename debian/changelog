@@ -1,3 +1,9 @@
+debian-installer (20041227ubuntu8) hoary; urgency=low
+
+  * Use ${RAMDISK_SIZE} in sparc's silo.conf rather than a hardcoded size.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu,  3 Feb 2005 14:24:20 +0000
+
 debian-installer (20041227ubuntu7) hoary; urgency=low
 
   * Make sure syslinux.txt.live ends up in debian-cd_info.tar.gz.
