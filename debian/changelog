@@ -1,3 +1,13 @@
+debian-installer (20050317ubuntu6) breezy; urgency=low
+
+  * Disable USB on sparc for now.
+  * doc/manual/en/install-methods/automatic-install.xml: Bootloader
+    passwords and device --opts have been implemented for Kickstart.
+  * Backport from trunk (Joey Hess):
+    - build/pkg-lists/base: Add new env-preseed.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 16 Jun 2005 00:26:35 +0100
+
 debian-installer (20050317ubuntu5) breezy; urgency=low
 
   * Quote DOS_VOLUME_LABEL setting properly.

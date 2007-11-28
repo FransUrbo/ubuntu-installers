@@ -223,11 +223,6 @@ The <userinput>auth --enablecache</userinput> command to enable
 </para></listitem>
 <listitem><para>
 
-Bootloader passwords.
-
-</para></listitem>
-<listitem><para>
-
 The <userinput>bootloader --linear</userinput>,
 <userinput>--nolinear</userinput>, and <userinput>--lba32</userinput>
 options for detailed LILO configuration.
@@ -248,7 +243,7 @@ manager, it is only possible to partition a single drive.
 <listitem><para>
 
 Using the <userinput>device</userinput> command to install extra kernel
-modules or to pass options to a particular module.
+modules.
 
 </para></listitem>
 <listitem><para>
