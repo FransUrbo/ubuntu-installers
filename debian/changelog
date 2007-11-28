@@ -1,3 +1,12 @@
+debian-installer (20050317ubuntu15) breezy; urgency=low
+
+  * Backport from trunk (Christian Perrier, closes: Ubuntu #14024):
+    - Complete the list of needed characters for Persian with the help of
+      Arash Bizanjadeh and Eugenyi Meshcheryakov
+  * Move to 2.6.12-8 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 31 Aug 2005 00:59:39 +0100
+
 debian-installer (20050317ubuntu14) breezy; urgency=low
 
   * Move to 2.6.12-7 kernels.
