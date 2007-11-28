@@ -1,3 +1,11 @@
+debian-installer (20041118ubuntu2) hoary; urgency=low
+
+  * Remove discover from the initrds and rely entirely on hotplug. Let's see
+    how much this breaks ...
+  * Remove libdiscover1 and libdiscover1-pic build-dependencies.
+
+ -- Colin Watson <cjwatson@canonical.com>  Tue, 23 Nov 2004 20:04:01 +0000
+
 debian-installer (20041118ubuntu1) hoary; urgency=low
 
   * Resynchronise with Debian.
