@@ -1,3 +1,11 @@
+debian-installer (20051026ubuntu28) dapper; urgency=low
+
+  * NFS is compiled in statically on hppa, so don't try to include
+    nfs-modules there.
+  * Add French, Korean, and Swedish help text translations from Rosetta.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu,  6 Apr 2006 09:03:14 +0100
+
 debian-installer (20051026ubuntu27) dapper; urgency=low
 
   * debian/rules: Calculate SUITE correctly for uploads to pockets (e.g.
