@@ -1,3 +1,9 @@
+debian-installer (20061102ubuntu20) feisty; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 29 Mar 2007 11:47:07 +0100
+
 debian-installer (20061102ubuntu19) feisty; urgency=low
 
   * Add scsi-firmware to cdrom and hd-media images.
