@@ -1,3 +1,11 @@
+debian-installer (20051026ubuntu35) dapper; urgency=low
+
+  * Fix mismatched XML tags in Russian help text translation.
+  * Cope with po4a-translate discarding help text translations due to them
+    being too incomplete.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 23 May 2006 20:59:05 +0100
+
 debian-installer (20051026ubuntu34) dapper; urgency=low
 
   * No-change rebuild to pick up new components.

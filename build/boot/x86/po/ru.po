@@ -463,7 +463,7 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
-"userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 
@@ -735,7 +735,7 @@ msgstr "Принудительно использовать статическу
 
 #: help.xml:574
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr "userinput>netcfg/disable_dhcp=true</userinput>"
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:578
 msgid "Set keyboard map"
