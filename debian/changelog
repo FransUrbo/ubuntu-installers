@@ -1,3 +1,10 @@
+debian-installer (20060711ubuntu6) edgy; urgency=low
+
+  * Move to 2.6.17-6 kernels.
+  * Restore use of nic-firmware-* again.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Wed, 16 Aug 2006 19:34:29 +1000
+
 debian-installer (20060711ubuntu5) edgy; urgency=low
 
   * No-change rebuild to pick up new components.
