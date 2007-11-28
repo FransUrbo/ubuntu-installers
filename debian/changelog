@@ -1,3 +1,12 @@
+debian-installer (20051026ubuntu33) dapper; urgency=low
+
+  * Move to 2.6.15-23 kernels.
+  * Add Spanish, Basque, Finnish, Hungarian, Indonesian, Dutch, Occitan,
+    Portuguese (Brazil), Russian, Vietnamese, and Chinese (China) help text
+    translations from Rosetta.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 18 May 2006 20:48:25 +0100
+
 debian-installer (20051026ubuntu32) dapper; urgency=low
 
   * Move to 2.6.15-22 kernels.

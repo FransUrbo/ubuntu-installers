@@ -1,0 +1,730 @@
+# Occitan (post 1500) translation for debian-installer
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the debian-installer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2006-03-27 10:07+0100\n"
+"PO-Revision-Date: 2006-05-18 11:07+0000\n"
+"Last-Translator: Kokoyaya <yannick.marchegay@lokanova.com>\n"
+"Language-Team: Occitan (post 1500) <oc@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: help.xml:6
+msgid "Installer Boot Help Screens"
+msgstr ""
+
+#: help.xml:11
+msgid "Welcome to ${DISTRIBUTION_NAME}!"
+msgstr ""
+
+#: help.xml:18
+msgid ""
+"This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+msgstr ""
+
+#: help.xml:23
+msgid ""
+"This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+msgstr ""
+
+#: help.xml:28
+msgid "HELP INDEX"
+msgstr ""
+
+#: help.xml:29
+msgid "KEY"
+msgstr "CLAU"
+
+#: help.xml:30
+msgid "TOPIC"
+msgstr ""
+
+#: help.xml:34
+msgid "This page, the help index."
+msgstr ""
+
+#: help.xml:39
+msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
+msgstr ""
+
+#: help.xml:44
+msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
+msgstr ""
+
+#: help.xml:49
+msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
+msgstr ""
+
+#: help.xml:54
+msgid "Additional boot methods; rescue mode."
+msgstr ""
+
+#: help.xml:59
+msgid "Special boot parameters, overview."
+msgstr ""
+
+#: help.xml:64
+msgid "Special boot parameters for special machines."
+msgstr ""
+
+#: help.xml:69
+msgid "Special boot parameters for selected disk controllers."
+msgstr ""
+
+#: help.xml:74
+msgid "Special boot parameters for the install system."
+msgstr ""
+
+#: help.xml:79
+msgid "Special boot parameters for the bootstrap system."
+msgstr ""
+
+#: help.xml:84
+msgid "How to get help."
+msgstr ""
+
+#: help.xml:89
+msgid "Copyrights and warranties."
+msgstr ""
+
+#: help.xml:100
+msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
+msgstr ""
+
+#: help.xml:104
+msgid "Press F2 through F10 for details, or Escape to exit help."
+msgstr ""
+
+#: help.xml:112
+msgid "PREREQUISITES FOR INSTALLING UBUNTU"
+msgstr ""
+
+#: help.xml:119
+msgid ""
+"You must have at least 32 megabytes of RAM to use this Ubuntu installer."
+msgstr ""
+
+#: help.xml:123
+msgid ""
+"You should have space on your hard disk to create a new disk partition of at "
+"least 2 gigabytes to install a standard Ubuntu desktop system or at least "
+"400 megabytes for a minimal server installation. You'll need more disk space "
+"to install additional packages, depending on what you wish to do with your "
+"new Ubuntu system."
+msgstr ""
+
+#: help.xml:131 help.xml:644
+msgid ""
+"See the Installation Manual or the FAQ for more information; both documents "
+"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
+">"
+msgstr ""
+
+#: help.xml:137
+msgid ""
+"You must have at least 128 megabytes of RAM to use this Ubuntu live system."
+msgstr ""
+
+#: help.xml:142
+msgid ""
+"The live system does not require any space on your hard disk. However, "
+"existing swap partitions on the disk will be used if available."
+msgstr ""
+
+#: help.xml:147 help.xml:650
+msgid ""
+"See the FAQ for more information; this document is available at the Ubuntu "
+"web site, <ulink url=\"http://www.ubuntu.com/\" />"
+msgstr ""
+
+#: help.xml:152
+msgid "Thank you for choosing Ubuntu!"
+msgstr ""
+
+#: help.xml:156 help.xml:230 help.xml:266 help.xml:333 help.xml:419
+#: help.xml:513 help.xml:599 help.xml:655 help.xml:711
+msgid ""
+"Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">control and F then 1</phrase> for the help index, or ENTER to "
+"${BOOTPROMPT}"
+msgstr ""
+
+#: help.xml:161 help.xml:235 help.xml:271 help.xml:338 help.xml:424
+#: help.xml:518 help.xml:604 help.xml:660 help.xml:716
+msgid "Press F1 for the help index, or Escape to exit help."
+msgstr ""
+
+#: help.xml:169
+msgid "BOOT METHODS"
+msgstr ""
+
+#: help.xml:173
+msgid "Available boot methods:"
+msgstr ""
+
+#: help.xml:177
+msgid "install"
+msgstr "installar"
+
+#: help.xml:179
+msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
+msgstr ""
+
+#: help.xml:184
+msgid "expert"
+msgstr ""
+
+#: help.xml:186
+msgid "Start the installation in expert mode, for maximum control."
+msgstr ""
+
+#: help.xml:191
+msgid "server"
+msgstr ""
+
+#: help.xml:192
+msgid "server-expert"
+msgstr ""
+
+#: help.xml:194
+msgid ""
+"Minimal system install. Recommended for servers, where a complete graphical "
+"desktop environment is not desired."
+msgstr ""
+
+#: help.xml:200
+msgid "live"
+msgstr "live"
+
+#: help.xml:202
+msgid "Start the live system."
+msgstr ""
+
+#: help.xml:207
+msgid "memtest"
+msgstr ""
+
+#: help.xml:209
+msgid "Perform a memory test."
+msgstr ""
+
+#: help.xml:215 help.xml:259
+msgid ""
+"To use one of these boot methods, type it at the prompt, optionally followed "
+"by any boot parameters. For example:"
+msgstr ""
+
+#: help.xml:220
+#, no-wrap
+msgid "boot: install acpi=off"
+msgstr ""
+
+#: help.xml:221
+#, no-wrap
+msgid "boot: live acpi=off"
+msgstr ""
+
+#: help.xml:225
+msgid ""
+"If unsure, you should use the default boot method, with no special "
+"parameters, by simply pressing enter at the boot prompt."
+msgstr ""
+
+#: help.xml:243
+msgid "RESCUE MODE"
+msgstr ""
+
+#: help.xml:247
+msgid "Use one of these boot methods to rescue an existing install"
+msgstr ""
+
+#: help.xml:251
+msgid "rescue"
+msgstr ""
+
+#: help.xml:253
+msgid "Boot into rescue mode."
+msgstr ""
+
+#: help.xml:263
+#, no-wrap
+msgid "boot: rescue acpi=off"
+msgstr ""
+
+#: help.xml:279
+msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
+msgstr ""
+
+#: help.xml:286
+msgid "On a few systems, you may need to specify a parameter at the"
+msgstr ""
+
+#: help.xml:287 help.xml:353 help.xml:439 help.xml:531
+#, no-wrap
+msgid "boot:"
+msgstr "aviada :"
+
+#: help.xml:287
+msgid ""
+"prompt in order to boot the system. For example, Linux may not be able to "
+"autodetect your hardware, and you may need to explicitly specify its "
+"location or type for it to be recognized."
+msgstr ""
+
+#: help.xml:293
+msgid "For more information about what boot parameters you can use, press:"
+msgstr ""
+
+#: help.xml:301
+msgid "boot parameters for special machines"
+msgstr ""
+
+#: help.xml:306
+msgid "boot parameters for various disk controllers"
+msgstr ""
+
+#: help.xml:311
+msgid "boot parameters understood by the install system"
+msgstr ""
+
+#: help.xml:316
+msgid "boot parameters understood by the bootstrap system"
+msgstr ""
+
+#: help.xml:321
+msgid ""
+"Many kernel modules are loaded dynamically by the installer, and parameters "
+"for those modules cannot be given on the command line. To be prompted for "
+"parameters when modules are loaded, boot in expert mode (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
+msgstr ""
+
+#: help.xml:328
+msgid ""
+"Many kernel modules are loaded dynamically by the bootstrap system, and "
+"parameters for those modules cannot be given on the command line."
+msgstr ""
+
+#: help.xml:346
+msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
+msgstr ""
+
+#: help.xml:353 help.xml:439 help.xml:531
+msgid "You can use the following boot parameters at the"
+msgstr ""
+
+#: help.xml:354
+msgid ""
+"prompt, in combination with the boot method (see <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use the "
+"0x prefix (e.g., 0x300)."
+msgstr ""
+
+#: help.xml:361 help.xml:446
+msgid "HARDWARE"
+msgstr "MATERIAL"
+
+#: help.xml:362 help.xml:447
+msgid "PARAMETER TO SPECIFY"
+msgstr ""
+
+#: help.xml:365
+msgid "IBM PS/1 or ValuePoint (IDE disk)"
+msgstr "IBM PS/1 o ValuePoint (disc IDE)"
+
+#: help.xml:366
+msgid ""
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
+msgstr ""
+
+#: help.xml:370
+msgid "Some IBM ThinkPads"
+msgstr ""
+
+#: help.xml:371
+msgid "<userinput>floppy=thinkpad</userinput>"
+msgstr ""
+
+#: help.xml:375
+msgid "IBM Pentium Microchannel"
+msgstr ""
+
+#: help.xml:376
+msgid "<userinput>mca-pentium no-hlt</userinput>"
+msgstr ""
+
+#: help.xml:380
+msgid "Protect I/O port regions"
+msgstr ""
+
+#: help.xml:381
+msgid ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
+msgstr ""
+
+#: help.xml:385
+msgid "Workaround faulty FPU (old machines)"
+msgstr ""
+
+#: help.xml:386
+msgid "<userinput>no387</userinput>"
+msgstr "<userinput>no387</userinput>"
+
+#: help.xml:390
+msgid "Laptops with screen display problems"
+msgstr ""
+
+#: help.xml:391
+msgid "<userinput>vga=771</userinput>"
+msgstr "<userinput>vga=771</userinput>"
+
+#: help.xml:396
+msgid ""
+"If your system hangs when booting, and the last message you see is \"aec671x-"
+"detect..\", try"
+msgstr ""
+
+#: help.xml:399
+msgid "<userinput>gdth=disable:y</userinput>"
+msgstr "<userinput>gdth=disable:y</userinput>"
+
+#: help.xml:404
+msgid ""
+"If you experience lockups or other hardware failures, disable buggy APIC "
+"interrupt routing"
+msgstr ""
+
+#: help.xml:407
+msgid "<userinput>noapic nolapic</userinput>"
+msgstr "<userinput>noapic nolapic</userinput>"
+
+#: help.xml:411 help.xml:505 help.xml:591
+msgid "For example:"
+msgstr "Per exemple :"
+
+#: help.xml:414
+#, no-wrap
+msgid "boot: install vga=771 noapic nolapic"
+msgstr ""
+
+#: help.xml:415
+#, no-wrap
+msgid "boot: live vga=771 noapic nolapic"
+msgstr ""
+
+#: help.xml:432
+msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
+msgstr ""
+
+#: help.xml:440 help.xml:532
+msgid ""
+"prompt, in combination with the boot method (see <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
+msgstr ""
+
+#: help.xml:450
+msgid "Adaptec 151x, 152x"
+msgstr ""
+
+#: help.xml:451
+msgid ""
+"<userinput>aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
+msgstr ""
+
+#: help.xml:455
+msgid "Adaptec 1542"
+msgstr "Adaptec 1542"
+
+#: help.xml:456
+msgid ""
+"<userinput>aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+msgstr ""
+
+#: help.xml:460
+msgid "Adaptec 274x, 284x"
+msgstr "Adaptec 274x, 284x"
+
+#: help.xml:461
+msgid "<userinput>aic7xxx=no_reset</userinput> (enabled if non-zero)"
+msgstr ""
+
+#: help.xml:465
+msgid "BusLogic SCSI Hosts"
+msgstr ""
+
+#: help.xml:466
+msgid "<userinput>buslogic=<replaceable>iobase</replaceable></userinput>"
+msgstr ""
+
+#: help.xml:470
+msgid "Certain DELL machines"
+msgstr ""
+
+#: help.xml:471
+msgid "<userinput>aic7xxx=no_probe</userinput>"
+msgstr ""
+
+#: help.xml:475
+msgid "Future Domain TMC-8xx/950"
+msgstr ""
+
+#: help.xml:476
+msgid ""
+"<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+"replaceable></userinput>"
+msgstr ""
+
+#: help.xml:480
+msgid "NCR-based SCSI controller"
+msgstr ""
+
+#: help.xml:481
+msgid "<userinput>sym53c8xx=safe:y</userinput>"
+msgstr "<userinput>sym53c8xx=safe:y</userinput>"
+
+#: help.xml:485
+msgid "Pro Audio Spectrum"
+msgstr "Pro Audio Spectrum"
+
+#: help.xml:486
+msgid ""
+"<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</"
+"replaceable></userinput>"
+msgstr ""
+
+#: help.xml:490
+msgid "PS/2 ESDI (MCA)"
+msgstr "PS/2 ESDI (MCA)"
+
+#: help.xml:491
+msgid ""
+"<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,"
+"<replaceable>sec</replaceable></userinput>"
+msgstr ""
+
+#: help.xml:495
+msgid "Seagate ST-0x"
+msgstr "Seagate ST-0x"
+
+#: help.xml:496
+msgid ""
+"<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+"replaceable></userinput>"
+msgstr ""
+
+#: help.xml:500
+msgid "Trantor T128"
+msgstr "Trantor T128"
+
+#: help.xml:501
+msgid ""
+"<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+"replaceable></userinput>"
+msgstr ""
+
+#: help.xml:508
+#, no-wrap
+msgid "boot: install sym53c8xx=safe"
+msgstr "boot: install sym53c8xx=safe"
+
+#: help.xml:509
+#, no-wrap
+msgid "boot: live sym53c8xx=safe"
+msgstr ""
+
+#: help.xml:526
+msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
+msgstr ""
+
+#: help.xml:536
+msgid "These parameters control how the installer works."
+msgstr ""
+
+#: help.xml:539
+msgid "These parameters control how the bootstrap system works."
+msgstr ""
+
+#: help.xml:544
+msgid "RESULT"
+msgstr ""
+
+#: help.xml:545
+msgid "PARAMETER"
+msgstr ""
+
+#: help.xml:548
+msgid "Verbose debugging"
+msgstr ""
+
+#: help.xml:549
+msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
+msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
+
+#: help.xml:553
+msgid "Debug boot sequence"
+msgstr ""
+
+#: help.xml:554
+msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
+msgstr ""
+
+#: help.xml:558
+msgid "Disable framebuffer"
+msgstr ""
+
+#: help.xml:559
+msgid "<userinput>debian-installer/framebuffer=false</userinput>"
+msgstr ""
+
+#: help.xml:563
+msgid "Don't probe for USB"
+msgstr ""
+
+#: help.xml:564
+msgid "<userinput>debian-installer/probe/usb=false</userinput>"
+msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
+
+#: help.xml:568
+msgid "Don't start PCMCIA"
+msgstr ""
+
+#: help.xml:569
+msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
+
+#: help.xml:573
+msgid "Force static network config"
+msgstr ""
+
+#: help.xml:574
+msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
+msgstr ""
+
+#: help.xml:578
+msgid "Set keyboard map"
+msgstr ""
+
+#: help.xml:579
+msgid "<userinput>bootkbd=es</userinput>"
+msgstr "<userinput>bootkbd=es</userinput>"
+
+#: help.xml:584
+msgid ""
+"Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
+msgstr ""
+
+#: help.xml:587
+msgid "<userinput>pci=noacpi</userinput>"
+msgstr "<userinput>pci=noacpi</userinput>"
+
+#: help.xml:594
+#, no-wrap
+msgid "boot: install debian-installer/framebuffer=false"
+msgstr "boot: install debian-installer/framebuffer=false"
+
+#: help.xml:595
+#, no-wrap
+msgid "boot: live debian-installer/framebuffer=false"
+msgstr "boot: live debian-installer/framebuffer=false"
+
+#: help.xml:612
+msgid "GETTING HELP"
+msgstr ""
+
+#: help.xml:619
+msgid "If you can't install Ubuntu, don't despair!"
+msgstr ""
+
+#: help.xml:622
+msgid "If you can't start Ubuntu, don't despair!"
+msgstr ""
+
+#: help.xml:625
+msgid "The Ubuntu team is ready to help you!"
+msgstr ""
+
+#: help.xml:628
+msgid ""
+"We are especially interested in hearing about installation problems, because "
+"in general they don't happen to only <emphasis>one</emphasis> person."
+msgstr ""
+
+#: help.xml:633
+msgid ""
+"We are especially interested in hearing about startup problems, because in "
+"general they don't happen to only <emphasis>one</emphasis> person."
+msgstr ""
+
+#: help.xml:637
+msgid ""
+"We've either already heard about your particular problem and can dispense a "
+"quick fix, or we would like to hear about it and work through it with you, "
+"and the next user who comes up with the same problem will profit from your "
+"experience!"
+msgstr ""
+
+#: help.xml:668
+msgid "COPYRIGHTS AND WARRANTIES"
+msgstr ""
+
+#: help.xml:675
+msgid ""
+"Ubuntu is Copyright (C) 2004-2006 Canonical Ltd., and incorporates the work "
+"of many other original authors and contributors."
+msgstr ""
+
+#: help.xml:680
+msgid "The Ubuntu system is freely redistributable."
+msgstr ""
+
+#: help.xml:683
+msgid ""
+"After installation, the exact distribution terms for each package are "
+"described in the corresponding file /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
+msgstr ""
+
+#: help.xml:688
+msgid ""
+"After startup, the exact distribution terms for each package are described "
+"in the corresponding file /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
+msgstr ""
+
+#: help.xml:694
+msgid ""
+"Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
+"permitted by applicable law."
+msgstr ""
+
+#: help.xml:699
+msgid ""
+"This installation system is based on the Debian installer. See <ulink url="
+"\"http://www.debian.org/\" /> for more details and information on the Debian "
+"project."
+msgstr ""
+
+#: help.xml:705
+msgid ""
+"This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
+"for more details and information on the Debian project."
+msgstr ""
