@@ -15,6 +15,7 @@ initrd-preseed
 file-preseed
 kickseed-common
 initrd-kickseed
+file-kickseed
 
 # include support for usb, including usb storage
 usb-discover

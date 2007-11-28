@@ -1,3 +1,9 @@
+debian-installer (20041227ubuntu11) hoary; urgency=low
+
+  * Add file-kickseed to all images containing file-preseed.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed,  9 Feb 2005 18:21:02 +0000
+
 debian-installer (20041227ubuntu10) hoary; urgency=low
 
   * Backport from trunk:
