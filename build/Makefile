@@ -348,7 +348,7 @@ ifdef KERNELVERSION
 	# These files depmod makes are used by hotplug, if it's being used;
 	# otherwise, we shouldn't need them. Some files aren't even used by
 	# hotplug, so never include them.
-	if [ -x $(TREE)/sbin/hotplug.real ]; then \
+	if [ -d $(TREE)/etc/hotplug ]; then \
 		find $(TREE)/lib/modules/ -name 'modules*' \
 			-not -name modules.dep -not -name 'modules.*map' \
 			-not -type d | xargs rm -f; \

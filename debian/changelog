@@ -1,3 +1,11 @@
+debian-installer (20041227ubuntu3) hoary; urgency=low
+
+  * Check for /etc/hotplug rather than /sbin/hotplug.real when deciding
+    which parts of depmod's output to remove, to cope with the new udevsend
+    world order.
+
+ -- Colin Watson <cjwatson@canonical.com>  Sun,  9 Jan 2005 23:42:28 +0000
+
 debian-installer (20041227ubuntu2) hoary; urgency=low
 
   * Move to 2.6.10-1 kernels.
