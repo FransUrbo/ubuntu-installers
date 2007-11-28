@@ -1,3 +1,9 @@
+debian-installer (20041118ubuntu3) hoary; urgency=low
+
+  * No source changes; pick up new hw-detect with fixed hotplug integration.
+
+ -- Colin Watson <cjwatson@canonical.com>  Wed, 24 Nov 2004 19:04:40 +0000
+
 debian-installer (20041118ubuntu2) hoary; urgency=low
 
   * Remove discover from the initrds and rely entirely on hotplug. Let's see
