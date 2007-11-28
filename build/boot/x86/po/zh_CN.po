@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2007-05-22 18:09+0100\n"
+"POT-Creation-Date: 2007-05-25 17:05+0100\n"
 "PO-Revision-Date: 2007-04-02 02:26+0000\n"
 "Last-Translator: ZhengPeng Hou <zhengpeng.hou@gmail.com>\n"
 "Language-Team: Chinese (China) <zh_CN@li.org>\n"
@@ -148,9 +148,10 @@ msgid ""
 msgstr "您至少需要128M的内存才能使用Ubuntu live系统。"
 
 #: help.xml:142
+#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
-"existing swap partitions on the disk will be used if available."
+"existing Linux swap partitions on the disk will be used if available."
 msgstr "live系统不会占用您硬盘上的一点空间。但会使用您硬盘上既有的swap分区。"
 
 #: help.xml:147 help.xml:671

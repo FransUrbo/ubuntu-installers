@@ -3,7 +3,7 @@
 You must have at least 128 megabytes of RAM to use this Ubuntu live system.
 
 The live system does not require any space on your hard disk. However,
-existing swap partitions on the disk will be used if available.
+existing Linux swap partitions on the disk will be used if available.
 
 See the FAQ for more information; this document is available at the Ubuntu
 web site, 0fhttp://www.ubuntu.com/07

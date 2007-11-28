@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2007-05-22 18:09+0100\n"
+"POT-Creation-Date: 2007-05-25 17:05+0100\n"
 "PO-Revision-Date: 2007-04-02 02:25+0000\n"
 "Last-Translator: Susana <susana.pereira@gmail.com>\n"
 "Language-Team: UBUNTU-PT <ubuntu-pt.org>\n"
@@ -152,9 +152,10 @@ msgstr ""
 "Tem de ter pelo menos 128 megabytes de RAM para usar o sistema live Ubuntu."
 
 #: help.xml:142
+#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
-"existing swap partitions on the disk will be used if available."
+"existing Linux swap partitions on the disk will be used if available."
 msgstr ""
 "O sistema live não requer qualquer espaço no disco rígido. Contudo, serão "
 "usadas as partições swap existentes no disco se estiverem disponíveis."

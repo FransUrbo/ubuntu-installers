@@ -1,3 +1,11 @@
+debian-installer (20070308ubuntu3) gutsy; urgency=low
+
+  * Clarify help text about existing swap partitions (LP: #50856).
+  * Add oem-config-check to all images.
+  * Move to 2.6.22-6 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 04 Jun 2007 08:33:46 +0100
+
 debian-installer (20070308ubuntu2) gutsy; urgency=low
 
   * Restore missing build/boot/x86/pics/ubuntu* files, lost in merge.

@@ -140,7 +140,7 @@ For F10 type control and F then the digit 0
 
   <para condition="live">
    The live system does not require any space on your hard disk. However,
-   existing swap partitions on the disk will be used if available.
+   existing Linux swap partitions on the disk will be used if available.
   </para>
 
   <para condition="live">
