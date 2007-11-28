@@ -1,3 +1,12 @@
+debian-installer (20041227ubuntu6) hoary; urgency=low
+
+  * build/config/ia64.cfg, build/config/x86.cfg: Replace "Debian Inst" with
+    "Ubuntu Inst".
+  * build/config/powerpc.cfg: Fix mkvmlinuz subarch iteration, lost in
+    merge.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 18 Jan 2005 23:06:38 +0000
+
 debian-installer (20041227ubuntu5) hoary; urgency=low
 
   * Add syslinux.txt.live with slightly different text for the live CD.
