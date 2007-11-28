@@ -1,3 +1,9 @@
+debian-installer (20040801ubuntu6) warty; urgency=low
+
+  * Disable hd-media and monolithic targets for amd64.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Wed,  1 Sep 2004 21:26:49 +0100
+
 debian-installer (20040801ubuntu5) warty; urgency=low
 
   * Revert the attempt at handling building only 2.6 targets in
