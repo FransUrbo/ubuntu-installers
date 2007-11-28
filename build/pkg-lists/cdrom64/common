@@ -11,8 +11,9 @@ load-cdrom
 cdrom-checker
 bogl-bterm-udeb
 di-utils-terminfo
-cdebconf-priority
 cdebconf-newt-udeb
+cdebconf-text-udeb
+brltty-udeb
 usb-discover
 preseed-common
 initrd-preseed

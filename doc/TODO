@@ -19,7 +19,7 @@ time.
 [30%] Might need large rewrites. Current implementation might
       work by accident
 ---------------------------------------------------------------------
-        - GUI frontend to cdebconf.
+	- GUI frontend to cdebconf.
 		There are some basic implementations. The trick is to make
 		it a GUI that does not suck, while still using debconf
 		underneath.
@@ -27,19 +27,13 @@ time.
 		Currently the main blocking point is getting the various
 		libraries etc needed to get a GUI up available as udebs.
 	- ppp support
-		  Not as important for analog dialup, as for ISDN, pppoe.
-	- udev
-		Some pieces checked in, but still needs a change to (at
-		least) lilo-installer ported over from Ubuntu. This requires
-		'readlink -f' in busybox first.
-		Need udev to start building udev-udeb; it includes a script
-		in /lib/debian-installer-startup.d/, so we need to agree
-		which of it and rootskel should contain that.
-	- integrate/document rescue mode support
-		Needs a new section in the manual.
-		Needs bootloader configuration (done on x86, sparc, ia64).
-		Needs a better user interface, possibly with easy ways to do
-		common tasks like reinstalling a bootloader.
+		Not as important for analog dialup, as for ISDN, pppoe.
+		Broken following base-config removal.
+	- persistent disk device names
+		With udev, the best approach, according to Md, is to use
+		the /dev/disk/ persistent devices which should always be
+		the same. Would need partman, bootloader installer,
+		probably other changes.
 
 [60%] Needs some work, but does its grunt work
 ---------------------------------------------------------------------
@@ -48,18 +42,13 @@ time.
 	- translations
 		Varying languages translated to varying degrees.
 		http://people.debian.org/~seppy/d-i/translation-status.html
-        - boot loader installers (lilo, grub, etc)
+	- boot loader installers (lilo, grub, etc)
 		Work, except for when they don't. See BTS.
 	- anna
 		Works, mostly.  Needs support for Release files.
-		Support for signed Release files would be cool, but
-		needs gpgv-udeb (in unstable now).
-        - disk selector, partitioner
+	- disk selector, partitioner
 		We have switched to partman everything except a couple of
 		subarches and s390.
-	- post-reboot configuration
-		base-config is stable, though it could use more polish
-		Some questions repeat questions from d-i.
 	- web site
 		http://www.debian.org/devel/debian-installer/
 		Could be better laid out, lacking some sections, other
@@ -68,6 +57,8 @@ time.
 		No automatic propagation to testing.
 		No source propagation for udeb sources!
 		http://people.debian.org/~joeyh/d-i/testing-summary.html
+	- hw-detect
+		Working, but various issues with specific hardware.
 	- pcmcia support
 		Much improved, generally works now.
 		Automatic PCI resource range exclusion based on probing
@@ -76,7 +67,8 @@ time.
 		Where "low" is 24-46 mb!
 		Works, but user must be careful to set up swap ASAP.
 		There is no sanity checking, and some bad failure modes.
-        - user documentation
+		More work needed for 16 mb installs.
+	- user documentation
 		Installation manual is up-to-date for i386.
 		Needs sanity checking for other architectures.
 	- developer documentation
@@ -94,6 +86,14 @@ time.
 		by 2.6.9+).
 		Too many things need to be set at the kernel command line
 		for netboot preseeding.
+	- udev
+		Needs lots of testing, particularly of unusual partitioning
+		methods.
+	- integrate/document rescue mode support
+		Needs a new section in the manual.
+		Needs bootloader configuration (done on x86, sparc, ia64).
+		Needs easy ways to do common tasks like reinstalling a
+		bootloader (done for grub and yaboot).
 	- most architectures
 		i386
 		ia64
@@ -112,20 +112,17 @@ time.
 
 [90%] Single missing important feature or bug.
 ---------------------------------------------------------------------
-	- hw-detect
-		Working but needs to be switched over to discover2 or hotplug
-		(hotplug support checked in, needs hotplug-udeb)
 	- iso-scan
 		Works, but does not flag the disk the iso is mounted from
 		as unusable by the rest of the installer.
-        - netcfg
+	- netcfg
 		Working, pending rewrite for IPv6.
 	- bts
 		Still need a non-manual way to tag our bugs.
 	- localechooser
 		The perennial problem is how to order/present the list of
 		languages. Many complaints, but it works.
-        - base system installer
+	- base system installer
 		Improve kernel selection. Much of this is done in unstable,
 		but knowing about some kind of preference order for kernels
 		would be good. (Kamion)
@@ -133,19 +130,19 @@ time.
 [100%] Those shouldn't need to be touched any more 
        (famous last words)
 ---------------------------------------------------------------------
-        - udpkg
+	- udpkg
 	- cd installs
- 	- net retriever
+	- net retriever
 	- cdrom retriever
-        - ethdetect
-        - cdebconf
+	- ethdetect
+	- cdebconf
 	- floppy retriever
-        - main-menu
-        - choose-mirror
-        - busybox integration
-        - install media build system
+	- main-menu
+	- choose-mirror
+	- busybox integration
+	- install media build system
 	- kernel-package integration
-        - library reduction
+	- library reduction
 	- wireless support
 	- save-logs
 
@@ -153,24 +150,21 @@ time.
 Post-sarge goals
 ================
 
-	- 2.6 floppies on i386 (joeyh)
+	- 2.6 floppies on i386 (zboob)
 	- fix pkg-lists names to match images (joeyh)
-	- fix udeb dependencies to not refer to library debs (waiting on
-	  acceptance of dpkg patch) (joeyh)
+	- fix udeb dependencies to not refer to library debs (joeyh)
+		(largely done)
 	- consistent indentation of all shell scripts
 	  (with a style that minimises size on initrd! :-) (joeyh)
-	- drop devfs! (joeyh)
-	- merged/rewritten localechooser (Bubulle)
 	- 16 mb installs
-	- graphical installer (markos, kamion)
+	- graphical installer
 	- finish partman (anton)
 	- handle debian upgrades in partman (anton)
 	- fai integration (markos)
 	- cloning from installer system (luther)
-	- discover2 (gaudenz)
-	- hotplug (gaudenz, kamion)
 	- use same device names in installer and installed
 	  system (kamion)
+	  	(should be done for nics with udev, disks still need work)
 	- non-linux d-i (jbailey)
 	- libc udeb renamed to include version number (jbailey)
 	- "vague thoughts of making debian-cd my bitch" (jbailey)
@@ -178,13 +172,12 @@ Post-sarge goals
 	- britney and udebs
 	- fai disk config files in d-i (holger)
 	- low(er) mem (zboob)
-	- etch in 2005 (or bust) (jvw)
+	- etch in 2005^H6 (or bust) (jvw)
 	- uml for testing d-i (anton)
 	- udebs and debs of same name (gaudenz)
 	- post reboot network configuration (kamion)
 	- real deb from archdetect udeb (luther)
 	- getting rid of hardcoded paths in d-i (kamion, joeyh)
-	- install tasks and do rest of base-config before reboot (joeyh)
 
 Common problems and transitions
 ===============================
@@ -203,15 +196,6 @@ code base:
     (debconf_get() and so on)
     These should perhaps be used consistently throughout the code for
     clarity.
-
-  * There needs to be a centralised logging method. Syslog will do, but
-    we currently have a lot of nasty code that appends messages to
-    /var/log/messages directly. All of that would be converted to pipe it
-    to logger. However, this is a problem, because piping a command to
-    logger loses the exit status of the command. Need some way to run a
-    command, logging the ouput to syslog, w/o losing exit status.
-
-    (Several exist in the bts/archives, none have been used yet.)
 
   * udebs should not include md5sums files, or postrm, prerm, preinst
     scripts. This includes ones generated by debhelper. Linda will find

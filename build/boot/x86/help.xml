@@ -368,7 +368,7 @@ For F10 type control and F then the digit 0
 
    <seglistitem>
     <seg>Some IBM ThinkPads</seg>
-    <seg><userinput>floppy=thinkpad</userinput></seg>
+    <seg><userinput>floppy.floppy=thinkpad</userinput></seg>
    </seglistitem>
 
    <seglistitem>
@@ -448,65 +448,40 @@ For F10 type control and F then the digit 0
 
    <seglistitem>
     <seg>Adaptec 151x, 152x</seg>
-    <seg><userinput>aha152x=<replaceable>iobase</replaceable></userinput><optional><userinput>,<replaceable>irq</replaceable></userinput><optional><userinput>,<replaceable>scsi-id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</replaceable></userinput></optional></optional></optional></seg>
+    <seg><userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><optional><userinput>,<replaceable>irq</replaceable></userinput><optional><userinput>,<replaceable>scsi-id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</replaceable></userinput></optional></optional></optional></seg>
    </seglistitem>
 
    <seglistitem>
     <seg>Adaptec 1542</seg>
-    <seg><userinput>aha1542=<replaceable>iobase</replaceable></userinput><optional><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replaceable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></userinput></optional></optional></seg>
+    <seg><userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><optional><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replaceable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></userinput></optional></optional></seg>
    </seglistitem>
 
    <seglistitem>
     <seg>Adaptec 274x, 284x</seg>
-    <seg><userinput>aic7xxx=no_reset</userinput> (enabled if non-zero)</seg>
+    <seg><userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)</seg>
    </seglistitem>
 
    <seglistitem>
     <seg>BusLogic SCSI Hosts</seg>
-    <seg><userinput>buslogic=<replaceable>iobase</replaceable></userinput></seg>
+    <seg><userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput></seg>
    </seglistitem>
 
    <seglistitem>
     <seg>Certain DELL machines</seg>
-    <seg><userinput>aic7xxx=no_probe</userinput></seg>
-   </seglistitem>
-
-   <seglistitem>
-    <seg>Future Domain TMC-8xx/950</seg>
-    <seg><userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</replaceable></userinput></seg>
-   </seglistitem>
-
-   <seglistitem>
-    <seg>NCR-based SCSI controller</seg>
-    <seg><userinput>sym53c8xx=safe:y</userinput></seg>
-   </seglistitem>
-
-   <seglistitem>
-    <seg>Pro Audio Spectrum</seg>
-    <seg><userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</replaceable></userinput></seg>
-   </seglistitem>
-
-   <seglistitem>
-    <seg>PS/2 ESDI (MCA)</seg>
-    <seg><userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,<replaceable>sec</replaceable></userinput></seg>
-   </seglistitem>
-
-   <seglistitem>
-    <seg>Seagate ST-0x</seg>
-    <seg><userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</replaceable></userinput></seg>
-   </seglistitem>
-
-   <seglistitem>
-    <seg>Trantor T128</seg>
-    <seg><userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</replaceable></userinput></seg>
+    <seg><userinput>aic7xxx.aic7xxx=no_probe</userinput></seg>
    </seglistitem>
   </segmentedlist>
+
+  <para>
+   This list is incomplete, see the kernel's kernel-parameters.txt file
+   for more.
+  </para>
 
   <para>For example:</para>
 
   <informalexample>
-   <screen condition="install">boot: install sym53c8xx=safe</screen>
-   <screen condition="live">boot: live sym53c8xx=safe</screen>
+   <screen condition="install">boot: install aic7xxx.aic7xxx=no_probe</screen>
+   <screen condition="live">boot: live aic7xxx.aic7xxx=no_probe</screen>
   </informalexample>
 
   <para condition="syslinux">
@@ -556,7 +531,7 @@ For F10 type control and F then the digit 0
 
    <seglistitem>
     <seg>Disable framebuffer</seg>
-    <seg><userinput>debian-installer/framebuffer=false</userinput></seg>
+    <seg><userinput>fb=false</userinput></seg>
    </seglistitem>
 
    <seglistitem>
@@ -580,6 +555,11 @@ For F10 type control and F then the digit 0
    </seglistitem>
 
    <seglistitem>
+    <seg>Use Braille tty</seg>
+    <seg><userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</replaceable>,<replaceable>texttable</replaceable></userinput></seg>
+   </seglistitem>
+
+   <seglistitem>
     <seg>
      Disable ACPI for PCI maps (handy for some HP servers and Via-based
      machines)
@@ -591,8 +571,8 @@ For F10 type control and F then the digit 0
   <para>For example:</para>
 
   <informalexample>
-   <screen condition="install">boot: install debian-installer/framebuffer=false</screen>
-   <screen condition="live">boot: live debian-installer/framebuffer=false</screen>
+   <screen condition="install">boot: install fb=false</screen>
+   <screen condition="live">boot: live fb=false</screen>
   </informalexample>
 
   <para condition="syslinux">

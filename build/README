@@ -59,8 +59,10 @@ A more detailed overview of how the installer is built:
   not for another, put the kernel major version(s) that should have the
   package in brackets at the end of the line.
   For example: discover1 [2.2 2.4]
-  An older way to accomplish the same thing is the pkg-lists/kernel_specific
-  directories.
+* Similarly, if you need to include a package for only one type of kernel,
+  put the name of the kernel(s) that should have the package in brackets at
+  the end of the line.
+  For example: gnumach-udeb [hurd]
 * If you'd like to include a given package only if it's available, and not
   fail otherwise, put a question mark at the end of the line.
   For example: pcmcia-modules-${kernel:Version} ?
@@ -71,12 +73,6 @@ A more detailed overview of how the installer is built:
   and so are build-depended on.
 * If you have some udebs that are not available on your mirror yet,
   you can drop them in 'localudebs/' and they will be used. 
-  HOWEVER, the current way they are used does not make apt aware of the
-  files in localudebs when it is installing other udebs. So if you have
-  added a package to localudebs to satisfy a dependency of some other udeb
-  that is not in localudebs, apt will still fail during the build. The way
-  around this for now is to copy any such udebs into localudebs, then apt
-  does not have to worry about installing them and everything will work.
 * dpkg is used to unpack the udebs into the build directory.
 * A customized set of reduced libraries is generated to correspond to the
   udebs that were installed.
@@ -147,7 +143,7 @@ below, and can also define commonly used variables for all
 configurations of this architecture. An example $ARCH.cfg would look
 like this:
 
-SUBARCH_SUPPORTED = r4k-ip22 r5k-ip22 sb1-swarm-bn miniiso
+SUBARCH_SUPPORTED = r4k-ip22 r5k-ip22 sb1-bcm91250a miniiso
 
 KERNELMAJOR = 2.4
 KERNELMINOR = 25
@@ -161,11 +157,11 @@ arch_boot_screens:
 
 The SUBARCH_SUPPORTED line defines what to look up in the next
 directory level. In this case, these are the configuration snippets
-r4k-ip22.cfg, r5k-ip22.cfg, sb1-swarm-bn.cfg and miniiso.cfg. Each of
+r4k-ip22.cfg, r5k-ip22.cfg, sb1-bcm91250a.cfg and miniiso.cfg. Each of
 those snippets can define a MEDIUM_SUPPORTED variable, which
 opens the next subdirectory level. Those subdirectories have to have
 the name of their subarchitecture, for the example above e.g. r4k-ip22
-or sb1-swarm-bn.
+or sb1-bcm91250a.
 
 The various KERNEL* variables are common for all configurations of this
 architecture, so they were moved upwards from the leaf configuration
@@ -344,12 +340,19 @@ GZIPPED
 EXTRADRIVERS
   This variable points to the directories where additional driver
   .udebs reside. This causes these .udebs to be considered in the font
-  reduction step, so the characters needed for them are kept.
+  and library reduction steps, so the characters and library symbols needed
+  for them are kept.
 
 EXTRATARGETS
   Additional targets which are run before the ones in TARGET. This is
   e.g. useful to build the additional driver images first, and then
   use their intermediate tree for EXTRADRIVERS.
+
+EXTRAUDEBS
+  This variable points to additional udebs that should be considered by the
+  library reduction step. cdebconf plugins should be listed here so the
+  symbols they will need are available on the initrd (since cdebconf runs
+  using the initrd libc, its plugins do too)
 
 DRIVER_FOR
   The variable indicates that the image is just a driver image for some
@@ -368,7 +371,12 @@ SPLASH_RLE
 
 INITRD_FS
   The filesystem to use for initrds, needs to be built into the kernel.
-  ext2, cramfs, or initramfs.
+  ext2, cramfs, initramfs, or jffs2.
+
+MKFS_JFFS2
+  If using jffs2 for the INITRD_FS, you will need to set this variable to
+  a command to use to create the image.
+  For example: MKFS_JFFS2 = mkfs.jffs2 -f -p -b -e 0x20000
 
 WRITE_MEDIA
   Add you configuration's name if it can be written to a raw device.
@@ -400,6 +408,16 @@ MIRROR
 SUITE
   The suite to use for the build. Defaults to unstable.
 
+UDEB_COMPONENTS
+  Archive components from which to fetch .udeb packages. Defaults to
+  main/debian-installer.
+
+PRESEED
+  An initrd preseed file to put in the initrd.
+
+PRESEED_SUITE
+  An initrd preseed file to append to any other preseed file put in the
+  initrd by PRESEED; used to preseed the suite for daily builds.
 
 Rules invoked from the various targets:
 

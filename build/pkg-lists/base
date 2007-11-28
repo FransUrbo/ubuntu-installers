@@ -1,11 +1,10 @@
 # These udebs will be needed on nearly every image. Include this file to
 # get them.
 busybox-udeb
-# busybox modprobe isn't quite up to speed with newer kernel features yet.
-module-init-tools-udeb [2.6]
 anna
 archdetect
 cdebconf-udeb
+cdebconf-priority
 di-utils
 di-utils-reboot
 di-utils-shell
@@ -19,5 +18,12 @@ rootskel
 udpkg
 rescue-check
 env-preseed
-#include "udev"
+pciutils-udeb [2.6]
 bootchart-udeb
+
+#include "udev"
+
+# busybox modutils is gone 
+module-init-tools-udeb [2.6]
+modutils-full [2.4]
+modutils-full [2.2]

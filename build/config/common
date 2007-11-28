@@ -20,9 +20,11 @@
 
 # This variable can be used to add a preseed file to the initrd itself.
 # It will be loaded by the initrd-preseed udeb.
+PRESEED = 
+
 # Right now we want all d-i development and daily builds to use udebs from
-# unstable, so load the unstable.cfg.
-#PRESEED ?= unstable.cfg
+# unstable, so load the unstable.cfg. This is disabled for official builds.
+#PRESEED_SUITE ?= unstable.cfg
 
 # The library reducer to use. Can be mklibs.sh or mklibs.py.
 MKLIBS = mklibs 
@@ -34,7 +36,10 @@ MKLIBS = mklibs
 
 # Define here if debian-installer should be built with modules from
 # stable, testing or unstable.
-SUITE ?= dapper
+SUITE ?= edgy
+
+# Archive components from which to fetch debian-installer modules.
+UDEB_COMPONENTS ?= main/debian-installer
 
 # Options to pass to dpkg when it is unpacking the udebs to create the
 # image. None should be needed, but --force-overwrite might need to be
@@ -80,3 +85,7 @@ LSB_DISTRIB_RELEASE="3.1 (installer build $(BUILD_DATE))"
 # will probably later move to a udeb. If your archive uses some other key,
 # you can change this.
 #KEYRING=/usr/share/apt/debian-archive.gpg
+
+# All images that include cdebconf should include symbols needed by these
+# plugins.
+EXTRAUDEBS=cdebconf-newt-entropy

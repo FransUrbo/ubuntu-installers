@@ -8,8 +8,6 @@ di-utils-terminfo
 cdebconf-text-udeb
 brltty-udeb
 
-nano-udeb
-
 # net installation support
 net-retriever
 download-installer
@@ -27,3 +25,4 @@ initrd-kickseed
 
 save-logs
 mountfloppy
+nano-udeb

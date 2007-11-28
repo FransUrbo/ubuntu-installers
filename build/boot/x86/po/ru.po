@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2006-03-27 10:07+0100\n"
+"POT-Creation-Date: 2006-07-12 11:00+0100\n"
 "PO-Revision-Date: 2006-05-17 20:55+0000\n"
 "Last-Translator: Igor Zubarev <igor4u@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -136,7 +136,7 @@ msgstr ""
 "Ubuntu , вам может потребоваться большее пространство для установки "
 "дополнительных пакетов."
 
-#: help.xml:131 help.xml:644
+#: help.xml:131 help.xml:624
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -161,7 +161,7 @@ msgstr ""
 "Live система не требует пространства на вашем жестком диске. Однако будут "
 "использованы существующие доступные разделы подкачки."
 
-#: help.xml:147 help.xml:650
+#: help.xml:147 help.xml:630
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -174,7 +174,7 @@ msgid "Thank you for choosing Ubuntu!"
 msgstr "Спасибо что вы выбрали Ubuntu!"
 
 #: help.xml:156 help.xml:230 help.xml:266 help.xml:333 help.xml:419
-#: help.xml:513 help.xml:599 help.xml:655 help.xml:711
+#: help.xml:488 help.xml:579 help.xml:635 help.xml:691
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
@@ -185,7 +185,7 @@ msgstr ""
 "${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:235 help.xml:271 help.xml:338 help.xml:424
-#: help.xml:518 help.xml:604 help.xml:660 help.xml:716
+#: help.xml:493 help.xml:584 help.xml:640 help.xml:696
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr "Нажмите F1 для контекстной справки, или Escape для выхода из нее."
 
@@ -342,7 +342,7 @@ msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - ОБЗОР"
 msgid "On a few systems, you may need to specify a parameter at the"
 msgstr "На некоторых системах Вам может понадобиться указать параметр в"
 
-#: help.xml:287 help.xml:353 help.xml:439 help.xml:531
+#: help.xml:287 help.xml:353 help.xml:439 help.xml:506
 #, no-wrap
 msgid "boot:"
 msgstr "boot:"
@@ -403,7 +403,7 @@ msgstr ""
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - РАЗЛИЧНЫЕ УСТРОЙСТВА"
 
-#: help.xml:353 help.xml:439 help.xml:531
+#: help.xml:353 help.xml:439 help.xml:506
 msgid "You can use the following boot parameters at the"
 msgstr "Вы можете использовать следующие параметры загрузки в"
 
@@ -442,8 +442,8 @@ msgid "Some IBM ThinkPads"
 msgstr "Некоторые IBM ThinkPads"
 
 #: help.xml:371
-msgid "<userinput>floppy=thinkpad</userinput>"
-msgstr "<userinput>floppy=thinkpad</userinput>"
+msgid "<userinput>floppy.floppy=thinkpad</userinput>"
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:375
 msgid "IBM Pentium Microchannel"
@@ -507,7 +507,7 @@ msgstr ""
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-#: help.xml:411 help.xml:505 help.xml:591
+#: help.xml:411 help.xml:480 help.xml:571
 msgid "For example:"
 msgstr "Например:"
 
@@ -525,7 +525,7 @@ msgstr "boot: live vga=771 noapic nolapic"
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - РАЗЛИЧНЫЕ ДИСКИ"
 
-#: help.xml:440 help.xml:532
+#: help.xml:440 help.xml:507
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
@@ -539,13 +539,13 @@ msgstr "Adaptec 151x, 152x"
 
 #: help.xml:451
 msgid ""
-"<userinput>aha152x=<replaceable>iobase</replaceable></"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>irq</replaceable></"
 "userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
-"<userinput>aha152x=<replaceable>iobase</replaceable></"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>irq</replaceable></"
 "userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
@@ -557,12 +557,12 @@ msgstr "Adaptec 1542"
 
 #: help.xml:456
 msgid ""
-"<userinput>aha1542=<replaceable>iobase</replaceable></"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>buson</replaceable>,"
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
-"<userinput>aha1542=<replaceable>iobase</replaceable></"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>buson</replaceable>,"
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
@@ -572,217 +572,173 @@ msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
 #: help.xml:461
-msgid "<userinput>aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr "<userinput>aic7xxx=no_reset</userinput> (включено если не ноль)"
+msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
+msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (включено если не ноль)"
 
 #: help.xml:465
 msgid "BusLogic SCSI Hosts"
 msgstr "BusLogic SCSI хосты"
 
 #: help.xml:466
-msgid "<userinput>buslogic=<replaceable>iobase</replaceable></userinput>"
-msgstr "<userinput>buslogic=<replaceable>iobase</replaceable></userinput>"
+msgid ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
+msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:470
 msgid "Certain DELL machines"
 msgstr "Некоторые DELL машины"
 
 #: help.xml:471
-msgid "<userinput>aic7xxx=no_probe</userinput>"
-msgstr "<userinput>aic7xxx=no_probe</userinput>"
+msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
-#: help.xml:475
-msgid "Future Domain TMC-8xx/950"
-msgstr "Future Domain TMC-8xx/950"
-
+# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:476
 msgid ""
-"<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</"
-"replaceable></userinput>"
+"This list is incomplete, see the kernel's kernel-parameters.txt file for "
+"more."
 msgstr ""
-"<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</"
-"replaceable></userinput>"
 
-#: help.xml:480
-msgid "NCR-based SCSI controller"
-msgstr "NCR-основанный SCSI контроллер"
+#: help.xml:483
+#, no-wrap
+msgid "boot: install aic7xxx.aic7xxx=no_probe"
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:481
-msgid "<userinput>sym53c8xx=safe:y</userinput>"
-msgstr "<userinput>sym53c8xx=safe:y</userinput>"
-
-#: help.xml:485
-msgid "Pro Audio Spectrum"
-msgstr "Pro Audio Spectrum"
-
-#: help.xml:486
-msgid ""
-"<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</"
-"replaceable></userinput>"
-msgstr ""
-"<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</"
-"replaceable></userinput>"
-
-#: help.xml:490
-msgid "PS/2 ESDI (MCA)"
-msgstr "PS/2 ESDI (MCA)"
-
-#: help.xml:491
-msgid ""
-"<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,"
-"<replaceable>sec</replaceable></userinput>"
-msgstr ""
-"<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,"
-"<replaceable>sec</replaceable></userinput>"
-
-#: help.xml:495
-msgid "Seagate ST-0x"
-msgstr "Seagate ST-0x"
-
-#: help.xml:496
-msgid ""
-"<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</"
-"replaceable></userinput>"
-msgstr ""
-"<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</"
-"replaceable></userinput>"
-
-#: help.xml:500
-msgid "Trantor T128"
-msgstr "Trantor T128"
+#: help.xml:484
+#, no-wrap
+msgid "boot: live aic7xxx.aic7xxx=no_probe"
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:501
-msgid ""
-"<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</"
-"replaceable></userinput>"
-msgstr ""
-"<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</"
-"replaceable></userinput>"
-
-#: help.xml:508
-#, no-wrap
-msgid "boot: install sym53c8xx=safe"
-msgstr "boot: install sym53c8xx=safe"
-
-#: help.xml:509
-#, no-wrap
-msgid "boot: live sym53c8xx=safe"
-msgstr "boot: live sym53c8xx=safe"
-
-#: help.xml:526
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - СИСТЕМА УСТАНОВКИ"
 
-#: help.xml:536
+#: help.xml:511
 msgid "These parameters control how the installer works."
 msgstr "Эти параметры управляют работой установщика."
 
-#: help.xml:539
+#: help.xml:514
 msgid "These parameters control how the bootstrap system works."
 msgstr "Эти параметры управляют работой системы bootstrap."
 
-#: help.xml:544
+#: help.xml:519
 msgid "RESULT"
 msgstr "РЕЗУЛЬТАТ"
 
-#: help.xml:545
+#: help.xml:520
 msgid "PARAMETER"
 msgstr "ПАРАМЕТР"
 
-#: help.xml:548
+#: help.xml:523
 msgid "Verbose debugging"
 msgstr "Отладка с выводом сообщений"
 
-#: help.xml:549
+#: help.xml:524
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
 msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
-#: help.xml:553
+#: help.xml:528
 msgid "Debug boot sequence"
 msgstr "Отладка загрузочной последовательности"
 
-#: help.xml:554
+#: help.xml:529
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
 msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
-#: help.xml:558
+#: help.xml:533
 msgid "Disable framebuffer"
 msgstr "Отключить framebuffer"
 
-#: help.xml:559
-msgid "<userinput>debian-installer/framebuffer=false</userinput>"
-msgstr "<userinput>debian-installer/framebuffer=false</userinput>"
+#: help.xml:534
+msgid "<userinput>fb=false</userinput>"
+msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:563
+#: help.xml:538
 msgid "Don't probe for USB"
 msgstr "Не проверять USB"
 
-#: help.xml:564
+#: help.xml:539
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
 msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
-#: help.xml:568
+#: help.xml:543
 msgid "Don't start PCMCIA"
 msgstr "Не включать PCMCIA"
 
-#: help.xml:569
+#: help.xml:544
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:573
+#: help.xml:548
 msgid "Force static network config"
 msgstr "Принудительно использовать статическую конфигурацию сети"
 
-#: help.xml:574
+#: help.xml:549
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:578
+#: help.xml:553
 msgid "Set keyboard map"
 msgstr "Задать раскладку клавиатуры"
 
-#: help.xml:579
+#: help.xml:554
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:584
+# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:558
+msgid "Use Braille tty"
+msgstr ""
+
+#: help.xml:559
+#, fuzzy
+msgid ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+msgstr ""
+"<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,"
+"<replaceable>sec</replaceable></userinput>"
+
+#: help.xml:564
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 "Выключить ACPI для PCI карт (полезно для некоторых серверов HP и машин от "
 "VIA)"
 
-#: help.xml:587
+#: help.xml:567
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:594
+#: help.xml:574
 #, no-wrap
-msgid "boot: install debian-installer/framebuffer=false"
-msgstr "boot: install debian-installer/framebuffer=false"
+msgid "boot: install fb=false"
+msgstr "boot: install fb=false"
 
-#: help.xml:595
+#: help.xml:575
 #, no-wrap
-msgid "boot: live debian-installer/framebuffer=false"
-msgstr "boot: live debian-installer/framebuffer=false"
+msgid "boot: live fb=false"
+msgstr "boot: live fb=false"
 
-#: help.xml:612
+#: help.xml:592
 msgid "GETTING HELP"
 msgstr "ПОЛУЧЕНИЕ ПОМОЩИ"
 
-#: help.xml:619
+#: help.xml:599
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "Если вы не можете установить Ubuntu, не отчаивайтесь!"
 
-#: help.xml:622
+#: help.xml:602
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "Если вы не можете запустить Ubuntu, не отчаивайтесь!"
 
-#: help.xml:625
+#: help.xml:605
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Команда Ubuntu готова помочь вам!"
 
-#: help.xml:628
+#: help.xml:608
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -791,7 +747,7 @@ msgstr ""
 "что в основном, они не случаются только с <emphasis>одним</emphasis> "
 "человеком."
 
-#: help.xml:633
+#: help.xml:613
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -800,7 +756,7 @@ msgstr ""
 "что в основном они не случаются только с <emphasis>одним</emphasis> "
 "человеком."
 
-#: help.xml:637
+#: help.xml:617
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -811,11 +767,11 @@ msgstr ""
 "или мы выслушаем ее и преодолеем ее вместе с вами, и ваш опыт будет полезен "
 "пользователю столкнувшемуся со схожей проблемой!"
 
-#: help.xml:668
+#: help.xml:648
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "АВТОРСКИЕ ПРАВА И ГАРАНТИИ"
 
-#: help.xml:675
+#: help.xml:655
 msgid ""
 "Ubuntu is Copyright (C) 2004-2006 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
@@ -823,11 +779,11 @@ msgstr ""
 "Ubuntu охраняется авторским правом (C) 2004-2006 Canonical Ltd., и "
 "объединяет труд многих других авторов и участников."
 
-#: help.xml:680
+#: help.xml:660
 msgid "The Ubuntu system is freely redistributable."
 msgstr "Система Ubuntu является свободно распространяемой."
 
-#: help.xml:683
+#: help.xml:663
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -837,7 +793,7 @@ msgstr ""
 "описаны в соответствующем файле\r\n"
 "/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 
-#: help.xml:688
+#: help.xml:668
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -847,7 +803,7 @@ msgstr ""
 "в соответствующем файле\r\n"
 "/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 
-#: help.xml:694
+#: help.xml:674
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
@@ -855,7 +811,7 @@ msgstr ""
 "Ubuntu распространяется <emphasis>АБСОЛЮТНО БЕЗ ГАРАНТИИ</emphasis>,\r\n"
 "на протяжении срока предусмотренного соответствующим законом."
 
-#: help.xml:699
+#: help.xml:679
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
@@ -865,10 +821,59 @@ msgstr ""
 "\"http://www.debian.org/\" /> для получения деталей и информации о проекте "
 "Debian."
 
-#: help.xml:705
+#: help.xml:685
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
 "Эта система основана на Debian. Смотрите на <ulink url=\"http://www.debian."
 "org/\" /> для получения деталей и информации о проекте Debian."
+
+#~ msgid "Future Domain TMC-8xx/950"
+#~ msgstr "Future Domain TMC-8xx/950"
+
+#~ msgid ""
+#~ "<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+#~ msgstr ""
+#~ "<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+
+#~ msgid "NCR-based SCSI controller"
+#~ msgstr "NCR-основанный SCSI контроллер"
+
+#~ msgid "<userinput>sym53c8xx=safe:y</userinput>"
+#~ msgstr "<userinput>sym53c8xx=safe:y</userinput>"
+
+#~ msgid "Pro Audio Spectrum"
+#~ msgstr "Pro Audio Spectrum"
+
+#~ msgid ""
+#~ "<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+#~ msgstr ""
+#~ "<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+
+#~ msgid "PS/2 ESDI (MCA)"
+#~ msgstr "PS/2 ESDI (MCA)"
+
+#~ msgid "Seagate ST-0x"
+#~ msgstr "Seagate ST-0x"
+
+#~ msgid ""
+#~ "<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+#~ msgstr ""
+#~ "<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+
+#~ msgid "Trantor T128"
+#~ msgstr "Trantor T128"
+
+#~ msgid ""
+#~ "<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+#~ msgstr ""
+#~ "<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"

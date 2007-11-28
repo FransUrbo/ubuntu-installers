@@ -20,7 +20,11 @@
 <!ENTITY backports "backports.debian.org">
 <!ENTITY url-backports "http://&backports;/">
 
-<!ENTITY url-status "http://people.debian.org/~seppy/d-i">
+<!ENTITY url-status "http://people.debian.org/~bubulle/d-i">
+
+<!ENTITY url-languagelist "http://people.debian.org/~bubulle/d-i/i18n-doc/languages.html">
+
+<!ENTITY url-spellchecker-status "http://d-i.alioth.debian.org/spellcheck/">
 
 <!ENTITY url-d-i-translation-status "&url-status;/translation-status.html">
 
@@ -62,9 +66,10 @@
 <!-- SVN/CVS URLs for various files locations -->
 <!ENTITY svn-level1 "<classname>svn+ssh://&svn-debian;/svn/d-i/trunk/packages/po</classname>">
 <!ENTITY svn-di-sandbox "<classname>svn+ssh://&svn-debian;/svn/d-i/people/sandbox</classname>">
-<!ENTITY svn-base-config "<classname>svn+ssh://&lt;alioth_login&gt;@&svn-debian;/svn/base-config/trunk</classname>">
-<!ENTITY svn-tasksel "<classname>svn+ssh://&lt;alioth_login&gt;@&svn-debian;/svn/tasksel/trunk</classname>">
+<!ENTITY svn-base-config "<classname>svn+ssh://&svn-debian;/svn/base-config/trunk</classname>">
+<!ENTITY svn-tasksel "<classname>svn+ssh://&svn-debian;/svn/tasksel/trunk</classname>">
 <!ENTITY svn-shadow "<classname>svn://&svn-debian;/svn/pkg-shadow/trunk</classname>">
+<!ENTITY svn-samba "<classname>svn://&svn-debian;/svn/pkg-samba/trunk</classname>">
 <!ENTITY cvs-shadow-upstream "<classname>cvs://anoncvs.pld.org.pl/cvsroot/shadow</classname>">
 <!ENTITY cvs-iso-codes "<classname>cvs://alioth.debian.org/cvsroot/pkg-isocodes</classname>">
 <!ENTITY svn-console-data "<classname>svn://&svn-debian;/svn/console-data</classname>">
@@ -75,11 +80,15 @@
 <!ENTITY svn-localization-config "<classname>svn://&svn-debian;/svn/debian-edu/trunk/src/localization-config</classname>">
 <!ENTITY svn-console-common "<classname>svn://&svn-debian;/svn/console-common/trunk/console-common</classname>">
 <!ENTITY svn-debconf "<classname>svn://&svn-debian;/svn/debconf/trunk</classname>">
+<!ENTITY svn-dpkg "<classname>svn://&svn-debian;/svn/dpkg/trunk</classname>">
 <!ENTITY svn-discover1 "<classname>svn://&svn-debian;/svn/pkg-discover/discover1/trunk</classname>">
 <!ENTITY cvs-menu "<classname>cvs://alioth.debian.org/cvsroot/menu</classname>">
 
-<!-- TO CHECK -->
-<!ENTITY svn-xorg "<classname>svn://&svn-debian;/svn/xserver-xorg</classname>">
+<!-- Wiki page for fonts -->
+<!ENTITY wiki-fonts "http://wiki.debian.org/DebianInstaller/GUIFonts">
+
+
+<!ENTITY svn-xorg "<classname>svn://necrotic.deadbeast.net/xorg-x11/trunk/debian</classname>">
 
 
 <!ENTITY url-bts "http://bugs.debian.org/">

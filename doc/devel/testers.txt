@@ -11,13 +11,14 @@ ARM:
     Vincent Sanders <vince@kyllikki.org>
     Martin Michlmayr <tbm@cyrius.com>
     Kyle McMartin <kyle@debian.org>
+    Jurij Smakov <jurij@wooyd.org>
 
 HPPA:
     Bernhard R. Link <brlink@debian.org>
     Kyle McMartin <kyle@debian.org>
 
 MIPS (big-endian):
-  r4k-ip22:
+  r4k-ip22 (SGI Indy):
     Julien BLACHE <jblache@debian.org>
         SGI Indigo2, R4K IP22, 384 MB RAM
     Rob Weir <rweir@ertius.org>
@@ -26,9 +27,9 @@ MIPS (big-endian):
     Martin Michlmayr <tbm@cyrius.com>
     Thiemo Seufer <ica2_ts@csv.ica.uni-stuttgart.de>
     Karsten Merker <karsten@excalibur.cologne.de>
-  r5k-ip22:
+  r5k-ip22 (SGI Indy):
     Peter 'p2' De Schrijver <p2@mind.be>
-  sb1-swarm-bn
+  sb1-bcm91250a (Broadcom SWARM):
     Karsten Merker <karsten@excalibur.cologne.de>
     Thiemo Seufer <ica2_ts@csv.ica.uni-stuttgart.de>
     Peter 'p2' De Schrijver <p2@mind.be>
@@ -41,17 +42,17 @@ MIPS (little-endian)
     Karsten Merker <karsten@excalibur.cologne.de>
     Martin Michlmayr <tbm@cyrius.com>
   r3k-kn02 (DECstation R3K)
-    Martin Michlmayr <tbm@cyrius.com>
     Peter 'p2' De Schrijver <p2@mind.be>
+    Ulrich Teichert <krypton@ulrich-teichert.org>
   r4k-kn04 (DECstation R4K)
     Karsten Merker <karsten@excalibur.cologne.de>
-  sb1-swarm-bn
-    Martin Michlmayr <tbm@cyrius.com>
 
 PowerPC:
   powermac_newworld:
     Colin Watson <cjwatson@debian.org>
     Gaudenz Steinlin <gaudenz@soziologie.ch>
+  powermac_oldworld:
+    Holger Levsen <holger@layer-acht.org>
 
 S/390
   Adam Thornton <adam@fsf.net>

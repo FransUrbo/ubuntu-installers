@@ -127,7 +127,7 @@ was provided.
 </listitem>
 <listitem>
 <para>
-<userinput>supported</userinput>: should be set to 0
+<userinput>supported</userinput>: should be set to <quote>false</quote>
 </para>
 </listitem>
 </itemizedlist>
@@ -206,11 +206,11 @@ Informations included in a locale:
 	    </itemizedlist>
 
 <para>
-Writing a locale need to be used to the locale files format, so
-translators shouldn't be afraid by this: this part may be handled by a
-i18n specialist in Debian, most often one of the &i18n-coords;. The
-new translator(s) will only need to provide him/her the above
-informations when (s)he will need it.
+The writer of a locale must use the locale files format. The contents
+of this file must be in UTF-8. Translators shouldn't be afraid by
+this: this part may be handled by a i18n specialist in Debian, most
+often one of the &i18n-coords;. The new translator(s) will only need
+to provide him/her the above informations when (s)he will need it.
 </para>
 
 <para>
@@ -275,7 +275,7 @@ value to <emphasis>language_name</emphasis>.
 
 </sect1>
 
-<sect1>
+<sect1 id="localechooser-entry">
 <title>
 Localechooser entry
 </title>
@@ -284,7 +284,7 @@ Localechooser entry
 First needed is having the new language added to
 <classname>localechooser</classname> (the package responsible for
 choosing language at the very beginning of the Debian Installer
-process) This will often be handled by the &i18n-coords;.
+process) This will be handled by the &i18n-coords;.
 </para>
 
 <para>
@@ -292,11 +292,63 @@ This entry will mention the &d-i; interfaces which this language is available on
 </para>
 
 <para>
-It also mentions a default country choice for this language. This
-country is often the country where the language is the most spoken (or
-the official language) and must be covered by an existing locale. If
-several supported locales exist for this language, this has to be
-mentioned to the &i18n-coords;.
+This defines four categories for languages:
+</para>
+
+<itemizedlist>
+
+<listitem>
+<para>
+<emphasis>Category 0</emphasis>: languages that can be rendered on any ASCII console. This only includes English by a design decision of &d-i;. In short, even if a language can be rendered using only ASCII characters, it will <emphasis>not</emphasis> be placed in category 0;
+</para>
+</listitem>
+
+<listitem>
+<para>
+<emphasis>Category 1</emphasis>: languages that can be rendered on any
+Latin-1 console (several serial terminals). This includes so-called <emphasis>Latin-1</emphasis> languages;
+</para>
+</listitem>
+
+<listitem>
+<para>
+<emphasis>Category 2</emphasis>: languages that can be rendered et the Linux text console, eventually by using a framebuffer terminal. 
+These languages must also be possible to use at the Linux console.
+</para>
+</listitem>
+
+<listitem>
+<para>
+<emphasis>Category 3</emphasis>: languages that can be rendered et the
+Linux text console, eventually by using a framebuffer terminal. The
+key point for these languages is the availability of their glyphs in
+the <classname>bterm-unifont</classname> package. These language should
+also not need complex rendering mechanisms such as combination
+mechanisms. The difference with 2 is the possibility to display the language
+at the Linux console. Category 3 groups together languages that can be
+displayed in text mode by using the framebuffer but cannot be displayed in a
+regular Linux console.
+This includes CJK (Chinese/Korean/Japanese) languages as well as Arabic,
+Hebrew, etc.
+</para>
+</listitem>
+
+<listitem>
+<para>
+<emphasis>Category 4</emphasis>: all other languages. Those can only be
+displayed in a graphical environment.
+</para>
+</listitem>
+
+</itemizedlist>
+
+<para>
+The <classname>localechooser</classname> entry also mentions a default
+country choice for this language. This country is often the country
+where the language is the most spoken (or the official language) and
+must be covered by an existing locale. If several supported locales
+exist for this language, this has to be mentioned to the
+&i18n-coords;.
 </para>
 
 <para>
@@ -335,17 +387,29 @@ Needed characters
 </title>
 
 <para>
+That step can be completely skipped for languages that can only be displayed
+with the graphical frontend of &d-i;
+</para>
+
+<para>
 The language coordinator must provide a file containing all characters
 needed for properly displaying the language, not including characters
 which are part of the ASCII character set (characters in the 32-127
 range). This file will be used by the font reduction mechanism (the
 UTF-8 font used in &d-i; is reduced for size constraints) and is
 needed for all Latin languages and all non-Latin languages with
-reasonably sized alphabet. If the new language uses hundreds or
-thousands of characters, the use of this file is not needed and the
-translator should rather check that the
-<classname>bterm-unifont</classname> package includes all characters
-needed by the language. Content example for French:
+reasonably sized alphabet.
+</para>
+
+<para>
+This step is optional for languages that can only be rendered with the
+graphical version of &d-i; (languages in category 4 at the previous step). 
+For languages which must used the graphical version of &d-i;, this step is automatically considered completed. Translators can however still provide the required file which could be useful in the future. 
+</para>
+
+<para>
+Below is an example of the contents of this file for a Latin language,
+namely French:
 </para>
 
 <informalexample>
@@ -357,7 +421,11 @@ needed by the language. Content example for French:
 <para>
 For this step to be completed, the new file must have been committed in
 the <classname>installer/built/needed-characters</classname>
-directory. The file name must be the ISO-639 language code.
+directory. The file name must be the ISO-639 language code with <filename>.utf</filename> as extension.
+</para>
+
+<para>
+As long as the language remains a prospective language, that file should be named after the language's ISO code and the <filename>.prospective</filename> file extension. The extension will be changed to <filename>.utf</filename> when the language is completely supported.
 </para>
 
 <para>
@@ -370,8 +438,45 @@ value to <emphasis>needed_characters</emphasis>.
 
 <sect1>
 <title>
+Font for the graphical version of &d-i;
+</title>
+
+<para>
+The graphical version of &d-i; will use several different font sets, depending on the language.
+</para>
+
+<para>
+For each new language, an OpenType font must be available in the main
+Debian archive. This font <emphasis>must</emphasis> respect the Debian
+Free Software Guidelines, in short it must be a free font.
+</para>
+
+
+<para>
+For this step to be completed, the name of the font and the relevant
+Debian package must have been recorded by the &i18n-coords; in the
+DebianInstallerGUIFonts wiki page (&wiki-fonts;).
+</para>
+
+<para>
+The &i18n-coords; will record this information in the supported
+languages list by changing the <userinput>nlp_step</userinput> field
+value to <emphasis>ttf_font</emphasis>.
+</para>
+
+</sect1>
+
+<sect1>
+<title>
 Default console keyboard and font
 </title>
+
+<para>
+This step is only relevant for languages which can be rendered at the
+console, namely languages in categories 0 to 2 (see <xref
+linkend="localechooser-entry"/>). For languages in category 3,
+this step will be automatically considered completed.
+</para>
 
 <para>
 If the language coordinator already knows about console font and
@@ -454,7 +559,7 @@ Granting and checking the translator commit access
 After the new translator is notified by the &i18n-coords; that (s)he
 has been granted commit access to the &d-i; <acronym>SVN</acronym>
 repositories, (s)he should check that (s)he's able to checkout the
-&d-i; repository, as well as &base-config; and &tasksel; repositories.
+&d-i; repository, as well as the &tasksel; repository.
 </para>
 
 <para>
@@ -491,12 +596,13 @@ should refer to <xref linkend="gettext-tools"/>.
 </para>
 
 <para>
-At the very minimum, (s) should choose a gettext file editor and
+At the very minimum, (s)he should choose a gettext file editor and
 practice with it enough to be familiar with its basic functions.
 </para>
 
 
-<para>In any case, translators should refer to <xref
+<para>
+In any case, translators should refer to <xref
 linkend="methods-advices"/> for information and guidelines about the
 way they should work.
 </para>
@@ -515,19 +621,11 @@ value to <emphasis>tools</emphasis>.
 </para>
 
 </sect1>
+
 <sect1>
 <title>
-Enter the &d-i; team
+Subscribe to the &email-debian-i18n-list; mailing list
 </title>
-
-<para>
-When a new translation effort is started, the language coordinator
-should announce it in the &email-debian-boot-list; mailing list so
-that all &d-i; developers are aware of the new translation effort. A
-short personal introduction will be appreciated, even if no
-mandatory. The &d-i; development team is a real team whose members
-appreciate working together in a friendly environment.
-</para>
 
 <para>
 &d-i; translators must subscribe to the &email-debian-i18n-list; where
@@ -538,9 +636,34 @@ can be done on &url-debian-list-archives;.
 
 <para>
 For this step to be completed, the language coordinator must be
-subscribed to the &email-debian-i18n-list; mailing list and should
-have announced the beginning of the new work to
-&email-debian-boot-list;.
+subscribed to the &email-debian-i18n-list; mailing list.
+</para>
+
+<para>
+The &i18n-coords; will record this information in the supported
+languages list by changing the <userinput>nlp_step</userinput> field
+value to <emphasis>mailing_list</emphasis>.
+</para>
+
+</sect1>
+
+<sect1>
+<title>
+Announcement of the translation effort
+</title>
+
+<para>
+When a new translation effort is started, the language coordinator
+must announce it in the &email-debian-boot-list; mailing list so
+that all &d-i; developers are aware of the new translation effort. A
+short personal introduction will be appreciated, even if no
+mandatory. The &d-i; development team is a real team whose members
+appreciate working together in a friendly environment.
+</para>
+
+<para>
+For this step to be completed, the language coordinator must have
+announced the beginning of the new work to &email-debian-boot-list;.
 </para>
 
 <para>
@@ -550,6 +673,13 @@ value to <emphasis>prospective</emphasis>. They will also add the
 language to the <command>/l10n/output-l10n-changes</command>.
 </para>
 
+<para>
+Finally, a new entry will be added to the file used by the scripts which generate the translation status pages (&url-d-i-translation-status;).
+</para>
+
+<para>
+The new language process officially finishes here. The only work that's left to do is...translating.
+</para>
 
 </sect1>
 
@@ -570,7 +700,9 @@ involved in &d-i; development.
 Many &d-i; developers and translators also use the #debian-boot
 channel on irc.debian.org for instant communication. Translators are
 highly welcomed on this channel which is regularly monitored by the
-&i18n-coords;.
+&i18n-coords;. A dedicated #debian-i18n channel also exists on
+irc.oftc.net. Feel free to join it and chat with your fellow
+colleagues who work on other languages.
 </para>
 
 <para>If translators, and especially language coordinators, happen to
@@ -581,7 +713,7 @@ the work on the given language.
 </para>
 
 <para>
-Welcome on board : you are now a &d-i; team member! In &d-i;
+Welcome on board: you are now a &d-i; team member! In &d-i;
 development process, translators are NOT a special kind of
 developers. I18n and l10n are full part of the development and
 translators are involved all along this development. Several &d-i;
@@ -601,7 +733,9 @@ As soon as you will have commited your PO file for level 1, even with
 only a few strings translated, the new language is temporarily called
 a <emphasis>prospective language</emphasis>. It will be removed from
 the list of such languages when the level 1 translation (see <xref linkend="translators-level1"/>) 
-will be 50% completed (except during the pre-release process).
+will be about 25% completed (except during the pre-release process), as long
+as these 25% cover the beginning of the file which contains the most used
+strings.
 </para>
 
 <para>

@@ -19,7 +19,6 @@ initrd-kickseed
 nano-udeb
 
 save-logs
-mountfloppy
 
 libfribidi0-udeb
 

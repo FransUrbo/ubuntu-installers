@@ -127,6 +127,12 @@ define mkcramfs
   mkcramfs -z $(TREE)
 endef
 
+# Define MKFS_JFFS2 in the config file for your target.
+# For example: MKFS_JFFS2 = mkfs.jffs2 -f -p -b -e 0x20000
+define mkjffs2
+  $(MKFS_JFFS2) -d $(TREE) -o
+endef
+
 # A generic recursion rule
 .PHONY: all_%
 all_%:
@@ -214,7 +220,7 @@ _list:
 .PHONY: reallyclean
 reallyclean: all_clean
 	rm -rf $(APTDIR) $(APTDIR).udeb $(APTDIR).deb $(BASE_DEST) $(BASE_TMP) $(SOURCEDIR) $(DEBUGUDEBDIR)
-	rm -f sources.list sources.list.udeb
+	rm -f sources.list sources.list.udeb $(LOCALUDEBDIR)/Packages.gz $(LOCALUDEBDIR)/Packages
 	rm -rf $(UDEBDIR) $(STAMPS)
 
 # For manual invocation, we provide a generic clean rule.
@@ -295,7 +301,7 @@ $(STAMPS)tree-unpack-$(targetstring)-stamp: $(STAMPS)get_udebs-$(targetstring)-s
 			usedsize=`echo $$newsize - $$oldsize | bc`; \
 			usedblocks=`echo $$newblocks - $$oldblocks | bc`; \
 			usedcount=`echo $$newcount - $$oldcount | bc`; \
-			version=`dpkg-deb --info $$udeb | grep '^Version:' | awk '{print $$2}'` ; \
+			version=`dpkg-deb --info $$udeb | grep '^ *Version:' | sed 's/^ *//' | awk '{print $$2}'` ; \
 			echo " $$usedsize B - $$usedblocks blocks - $$usedcount files from $$pkg (version $$version)" >>$(TEMP)/diskusage.txt;\
 			oldsize=$$newsize ; \
 			oldblocks=$$newblocks ; \
@@ -356,6 +362,10 @@ ifdef KERNELVERSION
 	# These files are used to build special kernel images for some
 	# subarchitectures. Move them out of the way.
 	$(foreach VERSION,$(KERNELVERSION), \
+		if [ -d $(TREE)/usr/lib/kernel-image-$(VERSION) ]; then \
+			mv $(TREE)/usr/lib/kernel-image-$(VERSION) \
+				$(TEMP)/lib; \
+		fi; \
 		if [ -d $(TREE)/usr/lib/linux-image-$(VERSION) ]; then \
 			mv $(TREE)/usr/lib/linux-image-$(VERSION) \
 				$(TEMP)/lib; \
@@ -372,6 +382,14 @@ endif
 ifdef PRESEED
 	# Copy in preseed file.
 	cp -a $(PRESEED) $(TREE)/preseed.cfg
+endif
+ifdef PRESEED_SUITE
+	# Add suite preseed file.
+	if [ -e "$(TREE)/preseed.cfg" ]; then \
+		cat $(PRESEED_SUITE) >> $(TREE)/preseed.cfg; \
+	else \
+		cp -a $(PRESEED_SUITE) $(TREE)/preseed.cfg; \
+	fi
 endif
 
 ifneq (,$(wildcard $(KEYRING)))
@@ -398,13 +416,27 @@ $(STAMPS)tree-$(targetstring)-stamp: $(STAMPS)tree-unpack-$(targetstring)-stamp
 	mknod $(TREE)/dev/console c 5 1
 	mknod $(TREE)/dev/null c 1 3
 
+	mkdir -p $(EXTRAUDEBSDIR)
+	mkdir -p $(EXTRAUDEBSDPKGDIR)/info $(EXTRAUDEBSDPKGDIR)/updates
+	touch $(EXTRAUDEBSDPKGDIR)/status $(EXTRAUDEBSDPKGDIR)/available
 ifdef EXTRADRIVERS
 	# Unpack the udebs of additional driver disks, so mklibs runs on them too.
-	mkdir -p $(EXTRADRIVERSDIR)
-	mkdir -p $(EXTRADRIVERSDPKGDIR)/info $(EXTRADRIVERSDPKGDIR)/updates
-	touch $(EXTRADRIVERSDPKGDIR)/status $(EXTRADRIVERSDPKGDIR)/available
-	dpkg $(DPKG_UNPACK_OPTIONS) --log=/dev/null --root=$(EXTRADRIVERSDIR) --unpack \
+	dpkg $(DPKG_UNPACK_OPTIONS) --log=/dev/null --root=$(EXTRAUDEBSDIR) --unpack \
 		$(wildcard $(foreach dir,$(EXTRADRIVERS),$(dir)/*.udeb))
+endif
+ifdef EXTRAUDEBS
+	# Get and unpack extra udebs too.
+	get-packages udeb $(EXTRAUDEBS)
+	dpkg $(DPKG_UNPACK_OPTIONS) --log=/dev/null --root=$(EXTRAUDEBSDIR) --unpack \
+		$(foreach udeb,$(EXTRAUDEBS),$(UDEBDIR)/$(udeb).udeb)
+endif
+
+ifdef GTK-TARBALL-SOURCE
+	@echo "# Unpacking temporary GTK tarballs into tree..."
+	for gtk_tb in $$(ls $(TEMP_GTK-TARBALLS)/*.tgz 2>/dev/null) ; do \
+		echo "# Unpacking: $$gtk_tb" ; \
+		tar xz --directory $(TREE) -f $$gtk_tb ; \
+	done
 endif
 
 	# Library reduction. Existing libs from udebs are put in the udeblibs
@@ -412,10 +444,11 @@ endif
 	# system libs.
 	rm -rf $(TEMP)/udeblibs
 	mkdir -p $(TEMP)/udeblibs
-	-cp -a `find $(EXTRADRIVERSDIR)/lib -type f -name '*.so.*'` $(TEMP)/udeblibs
-	-cp -a `find $(TREE)/lib -type f -name '*.so.*'` $(TEMP)/udeblibs
+	-cp -a `find $(EXTRAUDEBSDIR)/lib -name '*.so.*'` $(TEMP)/udeblibs
+	-cp -a `find $(TREE)/lib -name '*.so.*'` $(TEMP)/udeblibs
 	mkdir -p $(TREE)/lib
-	$(MKLIBS) -L $(TREE)/usr/lib -L $(TEMP)/udeblibs -v -d $(TREE)/lib --root=$(TREE) `find $(TEMP) -type f -perm +0111 -o -name '*.so' | grep -v udeblibs`
+	$(MKLIBS) -L $(TREE)/usr/lib -L $(TEMP)/udeblibs -v -d $(TREE)/lib --root=$(TREE) \
+		`find $(TEMP) -type f -a \( -perm +0111 -o -name '*.so' -o -name '*.so.*' \) | grep -v udeblibs`
 	rm -rf $(TEMP)/udeblibs
 
 	# Add missing symlinks for libraries
@@ -424,7 +457,7 @@ endif
 	# Remove any libraries that are present in both usr/lib and lib,
 	# from lib. These were unnecessarily copied in by mklibs, and
 	# we want to use the ones in usr/lib instead since they came 
-	# from udebs. Only libdebconf has this problem so far.
+	# from udebs. Only libdebconfclient0 has this problem so far.
 	set -e; \
 	for lib in `find $(TREE)/usr/lib/ -name "lib*" -type f -printf "%f\n" | cut -d . -f 1 | sort | uniq`; do \
 		rm -f $(TREE)/lib/$$lib.*; \
@@ -448,7 +481,7 @@ ifdef DROP_LANG
 	# Not ideal, but useful if you're very tight on space.
 	set -e; \
 	for FILE in $$(find $(TREE)/var/lib/dpkg -name "*.templates"); do \
-		perl -e 'my $$status=0; my $$drop=shift; while (<>) { if (/^[A-Z]/ || /^$$/) { if (/^(Choices|Description)-($$drop)/) { $$status = 0 } else { $$status = 1 } } print if ($$status); }' ${DROP_LANG} < $$FILE > temp; \
+		perl -e 'my $$status=0; my $$drop=shift; while (<>) { if (/^[A-Z]/ || /^$$/) { if (/^(Choices|Description|Indices|Default)-($$drop)/) { $$status = 0 } else { $$status = 1 } } print if ($$status); }' ${DROP_LANG} < $$FILE > temp; \
 		mv temp $$FILE; \
 	done
 endif
@@ -472,12 +505,10 @@ endif
 
 	# Collect the used UTF-8 strings, to know which glyphs to include in
 	# the font.
-	cat graphic.utf needed-characters/?? needed-characters/??_?? > $(TEMP)/all.utf
-ifdef EXTRADRIVERS
-	if [ -n "`find $(EXTRADRIVERSDPKGDIR)/info/ -name \\*.templates`" ]; then \
-		cat $(EXTRADRIVERSDPKGDIR)/info/*.templates >> $(TEMP)/all.utf; \
+	cat needed-characters/*.utf > $(TEMP)/all.utf
+	if [ -n "`find $(EXTRAUDEBSDPKGDIR)/info/ -name \\*.templates`" ]; then \
+		cat $(EXTRAUDEBSDPKGDIR)/info/*.templates >> $(TEMP)/all.utf; \
 	fi
-endif
 	if [ -n "`find $(DPKGDIR)/info/ -name \\*.templates`" ]; then \
 		cat $(DPKGDIR)/info/*.templates >> $(TEMP)/all.utf; \
 	fi
@@ -485,11 +516,8 @@ endif
 		cat $(TREE)/usr/share/keymaps/decision-tree >> $(TEMP)/all.utf; \
 	fi
 
-ifdef EXTRADRIVERS
-	# Remove additional driver disk contents now that we're done with
-	# them.
-	rm -rf $(EXTRADRIVERSDIR)
-endif
+	# Remove extra udebs now that we're done with them.
+	rm -rf $(EXTRAUDEBSDIR)
 
 	# Tree target ends here. Whew!
 	@touch $@
@@ -505,16 +533,11 @@ $(STAMPS)get_udebs-$(targetstring)-stamp: sources.list.udeb
 	get-packages udeb $(UDEBS)
 	@touch $@
 
-ifneq (,$(findstring :$(ARCH):,:amd64:i386:powerpc:sparc:))
-UDEB_COMPONENTS := main/debian-installer
-else
-UDEB_COMPONENTS := main/debian-installer universe/debian-installer
-endif
-
 # Auto-generate a sources.list.type
 sources.list.udeb:
 	(set -e; \
 	echo "# This file is automatically generated, edit $@.local instead."; \
+	echo "deb copy:$(shell pwd)/ $(LOCALUDEBDIR)/"; \
 	if [ "$(MIRROR)x" != "x" ]; then \
 		echo "deb $(MIRROR) $(SUITE) $(UDEB_COMPONENTS)"; \
 	else \
@@ -531,15 +554,15 @@ sources.list.udeb:
 
 # Font generation.
 #
-# Use the UTF-8 locale in rootskel-locale. This target shouldn't
+# Use the UTF-8 locale in installation-locale. This target shouldn't
 # be called when it is not present anyway.
 # The locale must be generated after installing the package locales
 $(TREE)/lib/unifont.bgf: $(TEMP)/all.utf
 	set -e; \
 	CHARMAP=`LOCPATH=$(LOCALE_PATH) LC_ALL=C.UTF-8 locale charmap`; \
             if [ UTF-8 != "$$CHARMAP" ]; then \
-	        echo "error: Trying to build unifont.bgf without rootskel-locale!"; \
-		echo "(Alternatively, rootskel-locale may have been built against"; \
+	        echo "error: Trying to build unifont.bgf without installation-locale!"; \
+		echo "(Alternatively, installation-locale may have been built against"; \
 		echo "a version of glibc with a different locale data format.)"; \
 	        exit 1; \
 	    fi
@@ -549,7 +572,7 @@ $(TREE)/lib/unifont.bgf: $(TEMP)/all.utf
 
 # Create a compressed image of the root filesystem.
 $(TEMP_INITRD): $(STAMPS)tree-$(targetstring)-stamp arch_tree
-	# Only build the font if we have rootskel-locale
+	# Only build the font if we have installation-locale
 	if [ -d "$(LOCALE_PATH)/C.UTF-8" ] && [ -e /usr/src/unifont.bdf ]; then \
 		$(submake) $(TREE)/lib/unifont.bgf; \
 	fi
@@ -558,16 +581,24 @@ $(TEMP_INITRD): $(STAMPS)tree-$(targetstring)-stamp arch_tree
 	case $(INITRD_FS) in \
 	ext2) \
 		$(genext2fs) $(TEMP)/initrd; \
-		$(e2fsck) $(TEMP)/initrd || true ;; \
+		$(e2fsck) $(TEMP)/initrd || true; \
+		gzip -v9f $(TEMP)/initrd; \
+	;; \
 	cramfs) \
-		$(mkcramfs) $(TEMP)/initrd ;; \
+		$(mkcramfs) $(TEMP)/initrd; \
+		gzip -v9f $(TEMP)/initrd; \
+	;; \
 	initramfs) \
-		$(mkinitramfs) $(TEMP)/initrd ;; \
+		$(mkinitramfs) $(TEMP)/initrd; \
+		gzip -v9f $(TEMP)/initrd; \
+	;; \
+	jffs2) \
+		$(mkjffs2) $(TEMP_INITRD); \
+	;; \
 	*) \
 		echo "Unsupported filesystem type"; \
 		exit 1 ;; \
 	esac
-	gzip -v9f $(TEMP)/initrd
 
 # Create the images for dest/. Those are the targets called from config.
 
@@ -696,8 +727,6 @@ pkg-lists/standard-udebs:
 		-sPackage apt.udeb/state/lists/*_Packages* | \
 		grep -v kernel-image | grep -v -- -modules | \
 		cut -d " " -f 2 > $@
-	# Add any local udebs to the list, skipping kernel stuff
-	find localudebs/*.udeb -printf '%f\n' | grep -v kernel-image | grep -v -- -modules- | sed 's/_.*//' >> $@
 
 # Get a list of all kernel modules matching the kernel version.
 pkg-lists/kernel-module-udebs:
@@ -707,9 +736,7 @@ pkg-lists/kernel-module-udebs:
 		grep-dctrl -P -e '.*-modules-$(VERSION)-$(KERNEL_FLAVOUR)' \
 			-sPackage apt.udeb/state/lists/*_Packages* | \
 			cut -d " " -f 2 >> $@;)
-	# Add any local kernel modules to the list.
-	$(foreach VERSION,$(KERNELVERSION), \
-		find localudebs/*-modules-$(VERSION)-$(KERNEL_FLAVOUR)_*.udeb -printf '%f\n' | sed 's/_.*//' >> $@;)
+
 # The kernel version changes from build to build, so always regen the file.
 .PHONY: pkg-lists/kernel-module-udebs
 
@@ -861,6 +888,9 @@ _qemu: $(TARGET)
 	@case "$(MEDIA_TYPE)" in \
 	floppy) \
 		$(QEMU) -fda $(BOOT); \
+	;; \
+	CD-ROM) \
+		$(QEMU) -cdrom $(BOOT); \
 	;; \
 	*) \
 		echo "Sorry, don't know how to handle media type '$(MEDIA_TYPE)'" >&2; \

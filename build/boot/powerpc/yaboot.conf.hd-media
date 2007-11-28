@@ -17,7 +17,7 @@ image=/vmlinux
 	label=expert
 	initrd=/initrd.gz
 	initrd-size=${RAMDISK_SIZE}
-	append="DEBCONF_PRIORITY=low --"
+	append="priority=low --"
 	read-only
 
 image=/vmlinux
@@ -31,7 +31,7 @@ image=/vmlinux
 	label=server-expert
 	initrd=/initrd.gz
 	initrd-size=${RAMDISK_SIZE}
-	append="base-installer/kernel/linux/extra-packages-2.6= pkgsel/install-pattern=~t^ubuntu-standard$ pkgsel/language-pack-patterns= pkgsel/install-language-support=false DEBCONF_PRIORITY=low --"
+	append="base-installer/kernel/linux/extra-packages-2.6= pkgsel/install-pattern=~t^ubuntu-standard$ pkgsel/language-pack-patterns= pkgsel/install-language-support=false priority=low --"
 	read-only
 
 image=/vmlinux

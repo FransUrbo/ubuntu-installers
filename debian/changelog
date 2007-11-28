@@ -1,3 +1,380 @@
+debian-installer (20060711ubuntu1) edgy; urgency=low
+
+  * Resynchronise with Debian, based on Subversion trunk as of 20060711
+    (20060304, the last release, predates a lot of udeb dependency fixes).
+  * Set default suite to edgy.
+  * Move to 2.6.17-4 kernels.
+  * Disable the graphical installer build targets for now; we'll wait for
+    this to mature a bit more in Debian.
+  * Fix build/boot/x86/po4a.cfg so that po4a can update all the .po files.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 12 Jul 2006 11:11:17 +0100
+
+debian-installer (20060711) UNRELEASED; urgency=low
+
+  [ Martin Michlmayr ]
+  * Make sure the Netwinder image doesn't exceed NeTTrom's size limit.
+    Closes: #345319.
+  * Include essential kernel modules on the Netwinder cdrom initrd.
+  * Fix a typo in the Cobalt preseed file.
+  * Rename sb1-swarm-bn to sb1-bcm91250a for consistency.
+  * Add 2.6 images on mips and mipel.
+  * Add support for the Broadcom BCM91480B evaluation board (aka "BigSur").
+  * Add support for the SGI O2 (IP32) machines (with R5000 CPU).
+  * Put beep-udeb on the NSLU2 initrd so we can notify people when SSH is
+    ready.
+  * Switch to 2.6.16 kernel on arm.
+  * Put the input-modules udeb on the NSLU2 image so the beeper will work.
+  * Remove (incomplete) LART and BAST support.
+  * Remove 2.4 images on arm.
+
+  [ Joey Hess ]
+  * Split off PRESEED_SUITE from PRESEED, use this for the suite setting
+    for development builds, and no longer unset PRESEED for release builds.
+    Should fix cobalt issues.
+  * Audited the x86 kernel parameter docs in the boot screens vs the 2.6.15
+    kernel. Removed documentation for parameters that are not listed in the
+    kernel's kernel-parameters.txt, and to a certian extent read the source
+    to find places where kernel-parameters.txt is wrong, and removed those
+    too. It's probably better to not document things than to document them
+    incorrectly.
+  * Modified kernel parameter docs to use the module.param=value syntax
+    for all parameters that are owned by a loadable kernel module. The old
+    param=value at the boot line won't work, since d-i doesn't pass kernel
+    command line to modules. The new syntax requires rootskel 1.30 to work.
+    (Not sure what module(s) own hd=, didn't change it yet.)
+  * Remove docs for how to disable gdth, which harks back to a non-modular
+    kernel.
+
+  [ Christian Perrier ]
+  * Rename Punjabi related files from pa_IN to pa.
+  * Add the list of needed characters for Northern Sami
+  * Add the list of needed characters for Thai
+
+  [ Frans Pop ]
+  * Remove no longer used graphical characters from graphic.utf (formerly used
+    in partman).
+  * Move graphic.utf to needed-characters.
+  * Rename all needed-character files to *.utf to simplify Makefile.
+  * Remove 2.6 references from hppa config as 2.6 is now default; keep
+    EXTRANAME=2.6/ for now in order to not break debian-cd.
+
+  [ Joey Hess ]
+  * Remove build dep on libdebian-installer4 now that all udeb deps are fixed
+  * Update i386 to 2.6.16.
+  * Copy library .so links from library-providing udebs into the udeblib
+    directory along with the library files, otherwise mklibs doesn't see them.
+    (Crossing fingers that this change, which has been tried once before,
+    doesn't break something..)
+  * Remove build dep on libdebconfclient0 since all relevant udeb deps are
+    fixed.
+  * Remove libdebconfclient0 from pkg-list/exclude too.
+  * Remove build dep on libdiscover1 now that there's a libdiscover1-udeb
+    and proper deps. Remove it from pkg-list/exclude too.
+  * Correct comment for libbogl-dev build dep.
+  * Add mips mipsel arm and armeb to arch list for the module-init-tools build
+    dep since they all use 2.6 kernels now.
+  * Limit modutils build dep to the arches that still use 2.4 [arm i386 mips
+    mipsel powerpc s390 sparc].
+
+  [ Frans Pop ]
+  * Update sparc to 2.6.16; re-enable 2.6 for sparc32.
+  * kbd-chooser 1.25 will no longer use usb-mac keymaps for 2.6 based
+    installations if AT keymaps are defined; therefore, no longer include
+    usb-mac keymaps in images using a 2.6 kernel. Not touching pkg-lists files
+    for mips(el) sb1-bcm91250a as they currently don't include AT keymaps.
+
+  [ Joey Hess ]
+  * Can't find any uses of cdrom-minimal and netboot-minimal, so removing
+    those directories from pkg-lists.
+
+  [ Colin Watson ]
+  * Update powerpc to 2.6.16.
+  * Pass -r $(KERNELVERSION) to mkvmlinuz rather than -r $(KERNELMAJOR), so
+    that it can tell the difference between 2.6.16 and earlier releases.
+  * Build chrp initrds for powerpc64.
+  * Restore usb-discover on 2.6 images; according to Martin-Éric Racine it's
+    still needed to load usbhid et al on some systems. Plus, it's tiny.
+  * Add support for OS-specific pkg-lists entries: use lines like
+    "gnumach-udeb [hurd]".
+
+  [ Joey Hess ]
+  * Comment out nano-udeb and save-logs in the access floppy list to try to
+    save space.
+  * New usb-serial-modules package added to access floppy, although that
+    floppy will now be well oversize.
+  * Add kfreebsd and some missing hurd stuff to build dependency info.
+    Closes: #363661
+  * Remove ide stuff from access floppy, fixing its size problem. Don't know
+    why ide stuff was ever on there.
+  * Remove USB floppy and keychain support from boot floppy as it was out of
+    space.
+
+  [ Kyle McMartin ]
+  * Update hppa to 2.6.16.
+
+  [ Frans Pop ]
+  * Also include libs named *.so.* when calling mklibs. Not including those
+    results in missing symbols when building the graphical installer.
+    Closes: #366441.
+
+  [ Joey Hess ]
+  * Patch from Samuel Thibault to support testing CD-ROM images in qemu.
+    Closes: #367068
+  * Add documentation for brltty= boot parameter (hope I got it right).
+  * Apply Samuel Thibault's patch to add brltty-udeb to the cdrom, netboot,
+    nativehd, and hd-media images. Closes: #355851
+  * Mark usb-serial-modules added by brltty patch as optional, since they're
+    not yet available on all arches.
+  * Increase size of the hd-media images from 128 mb to 256 mb to make more
+    room for the netinst.
+  * Put modutils udebs back on 2.4/2.2 images since new busybox has dropped
+    all support for that.
+  * Stop building el-torito i386 image, it's too big due to above busybox
+    change.
+  * i386 floppy is full due to above busybox change, moved half the network
+    stuff the the net-drivers floppy, which now must be used for all network
+    installs.
+  * i386 bootfloppy is broken:
+    mount: Couldn't setup loop device
+    No idea why. Disabled i386 root and boot floppies. :-(
+  * Add EXTRAUDEBS variable which can be used to pull in extra udebs for
+    library reduction that are not on boot images.
+  * Include cdebconf-newt-entropy in EXTRAUDEBS so that its symbols are in the
+    boot images; since it is linked into cdebconf which uses the reduced libc.
+  * No more parted build dep; those udeb deps are fixed.
+
+  [ Frans Pop ]
+  * Integrate graphical installer. Closes: #228808.
+
+  [ Steve Langasek ]
+  * Drop serial-modules from the alpha images, since this package is empty
+    now in 2.6.16 apparently due to drivers being built into the kernel
+
+  [ Colin Watson ]
+  * Integrate graphical installer on powerpc.
+
+  [ Joey Hess ]
+  * Workaround syslinux weirdness on hd-media images; when asked to boot
+    2.6/linux, it tries to boot "2.6/l". Rename files out of directories to
+    avoid this; the gtk initrd has the unappetizing name "initrdg.gz".
+  * Fix amd64 gtk miniiso build.
+  * Switch i386 to 2.6.16-2.
+
+  [ Sven luther ]
+  * Switch powerpc to 2.6.16-2 and disable non-working powerpc subarches.
+    Closes: #373264.
+
+  [ Martin Michlmayr ]
+  * Switch mips to 2.6.16-2.
+  * Switch arm to 2.6.16-2.
+  * Switch mipsel to 2.6.16-2.
+  * Add images for RiscPC (rpc).
+  * Remove 2.4 images on mips.
+  * Add 2.6 images for DECstation.
+  * Remove 2.4 images on mipsel.
+
+  [ Frans Pop ]
+  * Switch sparc and amd64 to 2.6.16-2.
+  * graphic.utf: add arrow characters needed for scrollbar display; remove
+    unused/duplicate characters.
+  * Remove needed_characters files for "level 4" languages (are not supported
+    in newt frontend).
+  * Rename needed_characters files for prospective languages so they're not
+    included yet.
+  * Switch hppa to 2.6.16-2.
+  * Switch ia64 to 2.6.16-2.
+  * Include USB-MAC keymaps again for powerpc with 2.6 kernels; they've been
+    re-enabled in kbd-chooser for that architecture.
+
+  [ Joey Hess ]
+  * Switch from using DEBCONF_PRIORITY and sometimes debconf/priority to
+    consistently using priority=low to boot to expert mode. Needs preseed
+    1.17.
+  * Change x86 help screen to document fb=false alias.
+  * Remove libtextwrap1 from build deps and pkg-lists/exclude; cdebconf
+    now uses the library udeb.
+
+  [ Christian Perrier ]
+  * Remove all *.prospective files as all these languages are only used in
+    the graphical installer.
+
+  [ Joey Hess ]
+  * Remove mountfloppy from netboot/common list, add it to only arches that
+    support floppies.
+  * Don't include brltty on the netboot image for nslu2 machines,
+    which uses network-console. Actually, I removed it from images for arches
+    except for alpha, amd64, i386, ia64, and powerpc, since the other netboot
+    images seem to lack serial-modules.
+  * Remove local copy of slugimage and use the debian package.
+
+  [ Frans Pop ]
+  * Disable powerpc/apus as the 2.4 kernels it currently uses were removed
+    from the archive.
+
+ -- Frans Pop <fjp@debian.org>  Sat,  8 Jul 2006 22:40:23 +0200
+
+debian-installer (20060304) unstable; urgency=low
+
+  * Add build dependency on debian-archive-keyring so that the archive key can
+    be checked. Closes: #355098.
+
+ -- Frans Pop <fjp@debian.org>  Sat,  4 Mar 2006 01:56:43 +0100
+
+debian-installer (20060302) unstable; urgency=low
+
+  * Remove floppy-modules udeb again from powerpc root floppy as it seems this
+    is not the cause of the problems in #345467.
+
+ -- Frans Pop <fjp@debian.org>  Thu,  2 Mar 2006 12:59:32 +0100
+
+debian-installer (20060218) unstable; urgency=low
+
+  [ Steve Langasek ]
+  * Add alpha to the list of archs build-depending on module-init-tools,
+    now that we're building 2.6.
+
+ -- Frans Pop <fjp@debian.org>  Fri, 17 Feb 2006 23:58:05 +0100
+
+debian-installer (20060217) unstable; urgency=low
+
+  * Add myself to uploaders.
+  * Acknowledge bugs closed in previous version which was uploaded as NMU by
+    mistake. Closes: #343674, #344854.
+  * Add missing build dependency on apt-utils (needed for localudebs handling).
+
+ -- Frans Pop <fjp@debian.org>  Fri, 17 Feb 2006 02:52:43 +0100
+
+debian-installer (20060215) unstable; urgency=low
+
+  [ dann frazier ]
+  * Stop using mklibs-copy on ia64, now that #326103 is fixed.
+
+  [ Joey Hess ]
+  * Deal with dpkg-deb output change in udeb version extraction code.
+
+  [ Frans Pop ]
+  * Switch to 2.6.14 kernel for i386 and sparc64.
+  * Run with udev by default (2.6 kernels only). This is now required for i386
+    and should also work with 2.6.12 kernels for other arches.
+
+  [ Colin Watson ]
+  * Add slightly more error checking to genbuilddeps.
+  * Include rescue-mode in monolithic images.
+  * Use pcmciautils-udeb instead of pcmcia-cs-udeb on architectures that
+    have moved to kernels newer than 2.6.12.
+
+  [ Joey Hess ]
+  * Make socket-modules kernel udeb optional in pkg-lists, it's going away in
+    current 2.6 kernels.
+
+  [ Kurt Roeckx ]
+  * Switch to 2.6.14 kernel for amd64.
+
+  [ dann frazier ]
+  * Switch to 2.6.14 kernel for ia64.
+
+  [ Frans Pop ]
+  * No longer use discover and usb-discover for 2.6 based installations (all
+    architectures).
+  * Include pciutils-udeb for 2.6 based installations (all architectures).
+    This brings back display of NIC names when a system has more than one and
+    allows save-logs to include lspci info.
+  * Update to libdevmapper1.02 in monolithic target.
+
+  [ Christian Perrier ]
+  * Add needed-characters for Khmer (1780-17FF range)
+  * Add needed-characters for Nepali
+
+  [ Joey Hess ]
+  * Removed nic-extra-modules, isa-pnp-modules, usb-modules from the netwinder
+    netboot image since none should be useful on a netwinder and the netwinder
+    has a hard 4 mb limit to the initrd size. Closes: #343674
+  * Switch all i386 2.6 images to initramfs.
+
+  [ Sven Luther ]
+  * Updated powerpc config to 2.6.14-2 kernels.
+
+  [ Joey Hess ]
+  * Patch from Rod Whitby to support jffs2 generation. Closes: #344854
+  * Document the new MKFS_JFFS2 variable.
+  * Allow for TEMP_INITRD (and presumably INITRD too) to be theoretically
+    changed to something that makes more sense for jffs2 images.
+
+  [ Martin Michlmayr ]
+  * Add initial support for BCM947xx mipsel devices but don't activate it.
+  * Add 2.6 images for Footbridge (CATS and Netwinder).
+  * Add support for NSLU2 devices on arm and armeb.
+  * Support SSH installations on Cobalt.
+  * Remove code to build xxs1500 images since this was never supported.
+  * Reorganize the DECstation tree and put images in sub-dirs.
+
+  [ Joey Hess ]
+  * Switch i386 to the 2.6.15-1 kernel.
+
+  [ Kurt Roeckx ]
+  * Switch amd64 to the 2.6.15-1 kernel.
+
+  [ Frans Pop ]
+  * Switch sparc to the 2.6.15-1 kernel.
+  * Change build dependency from sysutils to tofrodos as package was split.
+
+  [ Colin Watson ]
+  * Switch powerpc to the 2.6.15-1 kernel.
+
+  [ Steve Langasek ]
+  * Switch alpha to the 2.6.15-1 kernel.
+  * Add scsi-common-modules to the alpha cdrom initrd.
+
+  [ Frans Pop ]
+  * Don't drop English translations for S/390 initrds.
+  * Also remove Indices-* and Default-* lines when dropping translations.
+  * Include sparc-utils-udeb for sbus detection on Sparc 2.6 based installs.
+
+  [ Joey Hess ]
+  * Update hppa to 2.6.15-1 kernel. Completly and utterly untested.
+
+  [ Stephen R. Marenka ]
+  * Update m68k to 2.6.15-1 kernel.
+  * Add console-keymaps-at to m68k.cfg's to appease kbd-chooser
+    (keeps us from getting the console-keymaps-acorn).
+
+  [ Frans Pop ]
+  * Add missing floppy-modules udeb to powerpc root floppy.
+
+ -- Frans Pop <fjp@debian.org>  Wed, 15 Feb 2006 10:39:01 +0100
+
+debian-installer (20051031) unstable; urgency=low
+
+  [ Stephen R. Marenka ]
+  * Added amiboot dependency for m68k.
+
+  [ Kurt Roeckx ]
+  * Stop building the monolithic target on amd64.
+
+  [ Colin Watson ]
+  * Only generate /etc/lsb-release if a udeb hasn't already provided it.
+  * Move "main/debian-installer" (for sources.list.udeb) to a
+    UDEB_COMPONENTS variable in build/config/common, so that people can more
+    easily build with e.g. non-free udebs.
+  * Include module-init-tools-udeb when using udev; busybox modprobe doesn't
+    seem to support enough of newer kernel features like aliases and
+    blacklisting to be usable there yet.
+  * Use [2.6] for udev pkg-lists instead of kernel_specific.
+
+  [ Joey Hess ]
+  * Switch to root=/dev/ram in syslinux configs to support 2.6.14 post-devfs
+    kernels.
+  * Did away with the kernel_specific pkg-lists directories.
+  * Back to managing localudebs with apt. To support secure apt,
+    authentication is disabled and a warning printed if there are any udebs
+    in the localudebs directory. During an official build there will not be
+    any and the downloaded udebs will be properly authenticated.
+  * pkg-list: Turn off debugging as the dep resolutuon stuff is working ok
+    now.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 16 Nov 2005 15:04:47 -0500
+
 debian-installer (20051026ubuntu36) dapper; urgency=low
 
   * No-change rebuild to pick up new components.

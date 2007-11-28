@@ -20,20 +20,18 @@ by 10 to give us more space.)
 11 load-floppy
 12 kbd-chooser
 13 iso-scan
-   load-iso
-14 cdrom-detect
+   cdrom-detect
+14 file-preseed
+16 load-iso
    load-cdrom
-   file-preseed
-15 ethdetect
+18 ethdetect
    s390-netdevice (s390)
-18 netcfg
-   netcfg-dhcp
-20 netcfg-static
+   netcfg
+   netcfg-static
 21 network-preseed
    network-console
 23 choose-mirror
    download-installer
-
 25 lowmem
 
 30 -> 40 Disk detection & etc
@@ -48,31 +46,30 @@ by 10 to give us more space.)
 45 partconf (m68k, mips, s390)
 45 mdconfig
 47 evms
-49 partman (as non-default partitioner [m68k, s390])
-
-50 -> 60 Mount
+49 partman (as non-default partitioner [s390])
 50 autopartkit
-55 di-utils-mount-partitions
 
 60 -> 70 Base install
 62 tzsetup
    clock-setup
+63 user-setup
 65 base-installer
 
 70 -> 80 Post-base-install
 70 apt-setup
+   pkgsel
 73 palo-installer (hppa)
    grub-installer (i386)
-   yaboot-installer (powerpc/powermac_newworld)
+   yaboot-installer (powerpc/powermac_newworld, powerpc/chrp*)
    quik-installer (powerpc/powermac_oldworld)
-   elilo-installer (ia64)
    zipl-installer (s390)
    arcboot-installer (mips)
    delo-installer (mipsel)
    silo-installer (sparc)
 75 lilo-installer (i386)
+76 elilo-installer (ia64, i386)
 77 nobootloader (all)
-78 prebaseconfig
+78 finish-install
 
 80 -> 90 Reserved
 

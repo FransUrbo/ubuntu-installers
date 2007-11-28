@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2006-03-27 10:07+0100\n"
+"POT-Creation-Date: 2006-07-12 11:00+0100\n"
 "PO-Revision-Date: 2006-04-06 12:13+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -66,8 +66,7 @@ msgstr "Förutsättningar för att köra ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr ""
-"Uppstartsmetoder för speciella sätt att använda den här ${MEDIA_TYPE}."
+msgstr "Uppstartsmetoder för speciella sätt att använda den här ${MEDIA_TYPE}."
 
 #: help.xml:54
 msgid "Additional boot methods; rescue mode."
@@ -107,8 +106,7 @@ msgstr "Tryck F2 till F10 för detaljer, eller ENTER för ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr ""
-"Tryck F2 till F10 för detaljer, eller Escape för att avsluta hjälpen."
+msgstr "Tryck F2 till F10 för detaljer, eller Escape för att avsluta hjälpen."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
@@ -136,15 +134,15 @@ msgstr ""
 "ytterligare paket, beroende på vad du önskar att göra med ditt nya Ubuntu-"
 "system."
 
-#: help.xml:131 help.xml:644
+#: help.xml:131 help.xml:624
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
-"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
-"/>"
+"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
+">"
 msgstr ""
 "Se installationsmanualen eller FAQ för mer information; båda dokumenten "
-"finns tillgängliga på Ubuntus webbplats, <ulink "
-"url=\"http://www.ubuntu.com/\" />"
+"finns tillgängliga på Ubuntus webbplats, <ulink url=\"http://www.ubuntu.com/"
+"\" />"
 
 #: help.xml:137
 msgid ""
@@ -162,7 +160,7 @@ msgstr ""
 "existerande växlingspartitioner på disken att användas om de finns "
 "tillgängliga."
 
-#: help.xml:147 help.xml:650
+#: help.xml:147 help.xml:630
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -175,18 +173,18 @@ msgid "Thank you for choosing Ubuntu!"
 msgstr "Tack för att du valde Ubuntu!"
 
 #: help.xml:156 help.xml:230 help.xml:266 help.xml:333 help.xml:419
-#: help.xml:513 help.xml:599 help.xml:655 help.xml:711
+#: help.xml:488 help.xml:579 help.xml:635 help.xml:691
 msgid ""
-"Press <phrase class=\"not-serial\">F1</phrase><phrase "
-"class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
-"to ${BOOTPROMPT}"
+"Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">control and F then 1</phrase> for the help index, or ENTER to "
+"${BOOTPROMPT}"
 msgstr ""
-"Tryck <phrase class=\"not-serial\">F1</phrase><phrase "
-"class=\"serial\">control och F och sedan 1</phrase> för hjälpindexet, eller "
-"ENTER för ${BOOTPROMPT}"
+"Tryck <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">control och F och sedan 1</phrase> för hjälpindexet, eller ENTER för "
+"${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:235 help.xml:271 help.xml:338 help.xml:424
-#: help.xml:518 help.xml:604 help.xml:660 help.xml:716
+#: help.xml:493 help.xml:584 help.xml:640 help.xml:696
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr "Tryck F1 för hjälpindexet, eller Escape för att avsluta hjälpen."
 
@@ -305,7 +303,7 @@ msgstr "SPECIELLA UPPSTARTSPARAMETRAR - ÖVERSIKT"
 msgid "On a few systems, you may need to specify a parameter at the"
 msgstr "På ett fåtal system kan du behöva att ange en parameter på"
 
-#: help.xml:287 help.xml:353 help.xml:439 help.xml:531
+#: help.xml:287 help.xml:353 help.xml:439 help.xml:506
 #, no-wrap
 msgid "boot:"
 msgstr "boot:"
@@ -345,8 +343,8 @@ msgstr "uppstartsparametrar som accepteras av bootstrapsystemet"
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
-"parameters when modules are loaded, boot in expert mode (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"parameters when modules are loaded, boot in expert mode (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Många kärnmoduler läses in dynamiskt av installeraren och parametrar för de "
 "här modulerna kan inte anges på kommandoraden. För att bli frågad efter "
@@ -365,19 +363,19 @@ msgstr ""
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "SPECIELLA UPPSTARTSPARAMETRAR - DIVERSE MASKINVARA"
 
-#: help.xml:353 help.xml:439 help.xml:531
+#: help.xml:353 help.xml:439 help.xml:506
 msgid "You can use the following boot parameters at the"
 msgstr "Du kan använda följande uppstartsparametrar på"
 
 #: help.xml:354
 msgid ""
-"prompt, in combination with the boot method (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>>). If you use hex numbers you have "
-"to use the 0x prefix (e.g., 0x300)."
+"prompt, in combination with the boot method (see <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use the "
+"0x prefix (e.g., 0x300)."
 msgstr ""
-"prompten, i kombination med uppstartsmetoden (se <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>>). Om du använder hexadecimala "
-"nummer måste du använda 0x-prefixet (exempelvis 0x300)."
+"prompten, i kombination med uppstartsmetoden (se <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>>). Om du använder hexadecimala nummer måste du "
+"använda 0x-prefixet (exempelvis 0x300)."
 
 #: help.xml:361 help.xml:446
 msgid "HARDWARE"
@@ -393,21 +391,19 @@ msgstr "IBM PS/1 eller ValuePoint (IDE-disk)"
 
 #: help.xml:366
 msgid ""
-""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replace"
-"able>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-""
-"<userinput>hd=<replaceable>cylindrar</replaceable>,<replaceable>huvuden</repla"
-"ceable>,<replaceable>sektorer</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylindrar</replaceable>,<replaceable>huvuden</"
+"replaceable>,<replaceable>sektorer</replaceable></userinput>"
 
 #: help.xml:370
 msgid "Some IBM ThinkPads"
 msgstr "Vissa modeller av IBM ThinkPad"
 
 #: help.xml:371
-msgid "<userinput>floppy=thinkpad</userinput>"
-msgstr "<userinput>floppy=thinkpad</userinput>"
+msgid "<userinput>floppy.floppy=thinkpad</userinput>"
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:375
 msgid "IBM Pentium Microchannel"
@@ -423,17 +419,13 @@ msgstr "Skydda In/Ut-portregioner"
 
 #: help.xml:381
 msgid ""
-""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</repl"
-"a"
-"ceable></userinput><optional><userinput>,<replaceable>...</replaceable></user"
-"input></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 msgstr ""
-""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</repl"
-"a"
-"ceable></userinput><optional><userinput>,<replaceable>...</replaceable></user"
-"input></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #: help.xml:385
 msgid "Workaround faulty FPU (old machines)"
@@ -475,7 +467,7 @@ msgstr ""
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-#: help.xml:411 help.xml:505 help.xml:591
+#: help.xml:411 help.xml:480 help.xml:571
 msgid "For example:"
 msgstr "Exempelvis:"
 
@@ -493,13 +485,13 @@ msgstr "boot: live vga=771 noapic nolapic"
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "SPECIELLA UPPSTARTSPARAMETRAR - DIVERSE DISKENHETER"
 
-#: help.xml:440 help.xml:532
+#: help.xml:440 help.xml:507
 msgid ""
-"prompt, in combination with the boot method (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 msgstr ""
-"prompten, i kombination med uppstartsmetoden (se <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"prompten, i kombination med uppstartsmetoden (se <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:450
 msgid "Adaptec 151x, 152x"
@@ -507,21 +499,17 @@ msgstr "Adaptec 151x, 152x"
 
 #: help.xml:451
 msgid ""
-""
-"<userinput>aha152x=<replaceable>iobase</replaceable></userinput><optional><use"
-"r"
-"input>,<replaceable>irq</replaceable></userinput><optional><userinput>,<repla"
-"ceable>scsi-"
-"id</replaceable></userinput><optional><userinput>,<replaceable>rec"
-"onnect</replaceable></userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 msgstr ""
-""
-"<userinput>aha152x=<replaceable>iobase</replaceable></userinput><optional><use"
-"r"
-"input>,<replaceable>irq</replaceable></userinput><optional><userinput>,<repla"
-"ceable>scsi-"
-"id</replaceable></userinput><optional><userinput>,<replaceable>rec"
-"onnect</replaceable></userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #: help.xml:455
 msgid "Adaptec 1542"
@@ -529,249 +517,189 @@ msgstr "Adaptec 1542"
 
 #: help.xml:456
 msgid ""
-""
-"<userinput>aha1542=<replaceable>iobase</replaceable></userinput><optional><use"
-"r"
-"input>,<replaceable>buson</replaceable>,<replaceable>busoff</replaceable></us"
-"e"
-"rinput><optional><userinput>,<replaceable>dmaspeed</replaceable></userinput><"
-"/optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
-""
-"<userinput>aha1542=<replaceable>iobase</replaceable></userinput><optional><use"
-"r"
-"input>,<replaceable>buson</replaceable>,<replaceable>busoff</replaceable></us"
-"e"
-"rinput><optional><userinput>,<replaceable>dmaspeed</replaceable></userinput><"
-"/optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:460
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
 #: help.xml:461
-msgid "<userinput>aic7xxx=no_reset</userinput> (enabled if non-zero)"
+msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
-"<userinput>aic7xxx=no_reset</userinput> (aktiverad om den inte är noll)"
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (aktiverad om den inte är "
+"noll)"
 
 #: help.xml:465
 msgid "BusLogic SCSI Hosts"
 msgstr "BusLogic SCSI-värdar"
 
 #: help.xml:466
-msgid "<userinput>buslogic=<replaceable>iobase</replaceable></userinput>"
-msgstr "<userinput>buslogic=<replaceable>iobase</replaceable></userinput>"
+msgid ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
+msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:470
 msgid "Certain DELL machines"
 msgstr "Vissa DELL-maskiner"
 
 #: help.xml:471
-msgid "<userinput>aic7xxx=no_probe</userinput>"
-msgstr "<userinput>aic7xxx=no_probe</userinput>"
+msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
-#: help.xml:475
-msgid "Future Domain TMC-8xx/950"
-msgstr "Future Domain TMC-8xx/950"
-
+# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:476
 msgid ""
-""
-"<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</replac"
-"eable></userinput>"
+"This list is incomplete, see the kernel's kernel-parameters.txt file for "
+"more."
 msgstr ""
-""
-"<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</replac"
-"eable></userinput>"
 
-#: help.xml:480
-msgid "NCR-based SCSI controller"
-msgstr "NCR-baserad SCSI-kontroller"
+#: help.xml:483
+#, no-wrap
+msgid "boot: install aic7xxx.aic7xxx=no_probe"
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:481
-msgid "<userinput>sym53c8xx=safe:y</userinput>"
-msgstr "<userinput>sym53c8xx=safe:y</userinput>"
-
-#: help.xml:485
-msgid "Pro Audio Spectrum"
-msgstr "Pro Audio Spectrum"
-
-#: help.xml:486
-msgid ""
-""
-"<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</replaceab"
-"le></userinput>"
-msgstr ""
-""
-"<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</replaceab"
-"le></userinput>"
-
-#: help.xml:490
-msgid "PS/2 ESDI (MCA)"
-msgstr "PS/2 ESDI (MCA)"
-
-#: help.xml:491
-msgid ""
-""
-"<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,<"
-"replaceable>sec</replaceable></userinput>"
-msgstr ""
-""
-"<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>huvud</replaceable>,"
-"<replaceable>sekt</replaceable></userinput>"
-
-#: help.xml:495
-msgid "Seagate ST-0x"
-msgstr "Seagate ST-0x"
-
-#: help.xml:496
-msgid ""
-""
-"<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</replacea"
-"ble></userinput>"
-msgstr ""
-""
-"<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</replacea"
-"ble></userinput>"
-
-#: help.xml:500
-msgid "Trantor T128"
-msgstr "Trantor T128"
+#: help.xml:484
+#, no-wrap
+msgid "boot: live aic7xxx.aic7xxx=no_probe"
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:501
-msgid ""
-""
-"<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</replacea"
-"ble></userinput>"
-msgstr ""
-""
-"<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</replacea"
-"ble></userinput>"
-
-#: help.xml:508
-#, no-wrap
-msgid "boot: install sym53c8xx=safe"
-msgstr "boot: install sym53c8xx=safe"
-
-#: help.xml:509
-#, no-wrap
-msgid "boot: live sym53c8xx=safe"
-msgstr "boot: live sym53c8xx=safe"
-
-#: help.xml:526
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "SPECIELLA UPPSTARTSPARAMETRAR - INSTALLATIONSSYSTEMET"
 
-#: help.xml:536
+#: help.xml:511
 msgid "These parameters control how the installer works."
 msgstr "De här parametrarna kontrollerar hur installeraren fungerar."
 
-#: help.xml:539
+#: help.xml:514
 msgid "These parameters control how the bootstrap system works."
 msgstr "De här parametrarna kontrollerar hur bootstrapsystemet fungerar."
 
-#: help.xml:544
+#: help.xml:519
 msgid "RESULT"
 msgstr "RESULTAT"
 
-#: help.xml:545
+#: help.xml:520
 msgid "PARAMETER"
 msgstr "PARAMETER"
 
-#: help.xml:548
+#: help.xml:523
 msgid "Verbose debugging"
 msgstr "Informativ felsökning"
 
-#: help.xml:549
+#: help.xml:524
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
 msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
-#: help.xml:553
+#: help.xml:528
 msgid "Debug boot sequence"
 msgstr "Felsök uppstartssekvensen"
 
-#: help.xml:554
+#: help.xml:529
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
 msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
-#: help.xml:558
+#: help.xml:533
 msgid "Disable framebuffer"
 msgstr "Inaktivera grafikbuffert"
 
-#: help.xml:559
-msgid "<userinput>debian-installer/framebuffer=false</userinput>"
-msgstr "<userinput>debian-installer/framebuffer=false</userinput>"
+#: help.xml:534
+msgid "<userinput>fb=false</userinput>"
+msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:563
+#: help.xml:538
 msgid "Don't probe for USB"
 msgstr "Sök inte efter USB"
 
-#: help.xml:564
+#: help.xml:539
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
 msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
-#: help.xml:568
+#: help.xml:543
 msgid "Don't start PCMCIA"
 msgstr "Starta inte PCMCIA"
 
-#: help.xml:569
+#: help.xml:544
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:573
+#: help.xml:548
 msgid "Force static network config"
 msgstr "Tvinga statisk nätverkskonfiguration"
 
-#: help.xml:574
+#: help.xml:549
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:578
+#: help.xml:553
 msgid "Set keyboard map"
 msgstr "Ställ in tangentbordslayout"
 
-#: help.xml:579
+#: help.xml:554
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=se</userinput>"
 
-#: help.xml:584
+# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:558
+msgid "Use Braille tty"
+msgstr ""
+
+#: help.xml:559
+#, fuzzy
+msgid ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+msgstr ""
+"<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>huvud</"
+"replaceable>,<replaceable>sekt</replaceable></userinput>"
+
+#: help.xml:564
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 "Inaktivera ACPI för PCI-kartor (lämpligt för vissa HP-servrar och Via-"
 "baserade maskiner)"
 
-#: help.xml:587
+#: help.xml:567
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:594
+#: help.xml:574
 #, no-wrap
-msgid "boot: install debian-installer/framebuffer=false"
-msgstr "boot: install debian-installer/framebuffer=false"
+msgid "boot: install fb=false"
+msgstr "boot: install fb=false"
 
-#: help.xml:595
+#: help.xml:575
 #, no-wrap
-msgid "boot: live debian-installer/framebuffer=false"
-msgstr "boot: live debian-installer/framebuffer=false"
+msgid "boot: live fb=false"
+msgstr "boot: live fb=false"
 
-#: help.xml:612
+#: help.xml:592
 msgid "GETTING HELP"
 msgstr "FÅ HJÄLP"
 
-#: help.xml:619
+#: help.xml:599
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "Om du inte kan installera Ubuntu, misströsta inte!"
 
-#: help.xml:622
+#: help.xml:602
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "Om du inte kan starta Ubuntu, misströsta inte!"
 
-#: help.xml:625
+#: help.xml:605
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Ubuntu-teamet står redo att hjälpa dig!"
 
-#: help.xml:628
+#: help.xml:608
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -779,7 +707,7 @@ msgstr ""
 "Vi är speciellt intresserade av att höra om installationsproblem på grund av "
 "att de i allmänhet inträffar för fler än <emphasis>en</emphasis> person."
 
-#: help.xml:633
+#: help.xml:613
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -787,7 +715,7 @@ msgstr ""
 "Vi är speciellt intresserade av att höra om uppstartsproblem på grund av att "
 "de i allmänhet inträffar för fler än <emphasis>en</emphasis> person."
 
-#: help.xml:637
+#: help.xml:617
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -799,11 +727,11 @@ msgstr ""
 "tillsammans med dig, och nästa användare som påträffar samma problem kommer "
 "att dra fördelar av dina erfarenheter!"
 
-#: help.xml:668
+#: help.xml:648
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "COPYRIGHT OCH GARANTIER"
 
-#: help.xml:675
+#: help.xml:655
 msgid ""
 "Ubuntu is Copyright (C) 2004-2006 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
@@ -811,31 +739,31 @@ msgstr ""
 "Ubuntu är Copyright (C) 2004-2006 Canonical Ltd., och innefattar arbetet "
 "från många andra ursprungliga upphovsmän och bidragsgivare."
 
-#: help.xml:680
+#: help.xml:660
 msgid "The Ubuntu system is freely redistributable."
 msgstr "Ubuntu-systemet kan fritt distribueras."
 
-#: help.xml:683
+#: help.xml:663
 msgid ""
 "After installation, the exact distribution terms for each package are "
-"described in the corresponding file "
-"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"described in the corresponding file /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
 msgstr ""
 "Efter installationen finns de exakta utgivningsvillkoren för varje paket "
-"beskrivna i den motsvarande filen "
-"/usr/share/doc/<replaceable>paketnamn</replaceable>/copyright."
+"beskrivna i den motsvarande filen /usr/share/doc/<replaceable>paketnamn</"
+"replaceable>/copyright."
 
-#: help.xml:688
+#: help.xml:668
 msgid ""
 "After startup, the exact distribution terms for each package are described "
-"in the corresponding file "
-"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"in the corresponding file /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
 msgstr ""
 "Efter uppstart kommer de exakta utgivningsvillkoren för varje paket att "
-"beskrivas i den motsvarande filen "
-"/usr/share/doc/<replaceable>paketnamn</replaceable>/copyright."
+"beskrivas i den motsvarande filen /usr/share/doc/<replaceable>paketnamn</"
+"replaceable>/copyright."
 
-#: help.xml:694
+#: help.xml:674
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
@@ -843,21 +771,69 @@ msgstr ""
 "Ubuntu ges ut <emphasis>ABSOLUT UTAN GARANTI</emphasis>, så långt som "
 "tillåts av gällande lag."
 
-#: help.xml:699
+#: help.xml:679
 msgid ""
-"This installation system is based on the Debian installer. See <ulink "
-"url=\"http://www.debian.org/\" /> for more details and information on the "
-"Debian project."
+"This installation system is based on the Debian installer. See <ulink url="
+"\"http://www.debian.org/\" /> for more details and information on the Debian "
+"project."
 msgstr ""
-"Det här installationssystemet är baserat på Debian Installer. Se ulink "
-"url=\"http://www.debian.org/\" /> för fler detaljer och information om "
-"Debian-projektet."
+"Det här installationssystemet är baserat på Debian Installer. Se ulink url="
+"\"http://www.debian.org/\" /> för fler detaljer och information om Debian-"
+"projektet."
 
-#: help.xml:705
+#: help.xml:685
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"Det här systemet är baserat på Debian. Se ulink "
-"url=\"http://www.debian.org/\" /> för fler detaljer och information om "
-"Debian-projektet."
+"Det här systemet är baserat på Debian. Se ulink url=\"http://www.debian.org/"
+"\" /> för fler detaljer och information om Debian-projektet."
+
+#~ msgid "Future Domain TMC-8xx/950"
+#~ msgstr "Future Domain TMC-8xx/950"
+
+#~ msgid ""
+#~ "<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+#~ msgstr ""
+#~ "<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+
+#~ msgid "NCR-based SCSI controller"
+#~ msgstr "NCR-baserad SCSI-kontroller"
+
+#~ msgid "<userinput>sym53c8xx=safe:y</userinput>"
+#~ msgstr "<userinput>sym53c8xx=safe:y</userinput>"
+
+#~ msgid "Pro Audio Spectrum"
+#~ msgstr "Pro Audio Spectrum"
+
+#~ msgid ""
+#~ "<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+#~ msgstr ""
+#~ "<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+
+#~ msgid "PS/2 ESDI (MCA)"
+#~ msgstr "PS/2 ESDI (MCA)"
+
+#~ msgid "Seagate ST-0x"
+#~ msgstr "Seagate ST-0x"
+
+#~ msgid ""
+#~ "<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+#~ msgstr ""
+#~ "<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+
+#~ msgid "Trantor T128"
+#~ msgstr "Trantor T128"
+
+#~ msgid ""
+#~ "<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"
+#~ msgstr ""
+#~ "<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+#~ "replaceable></userinput>"

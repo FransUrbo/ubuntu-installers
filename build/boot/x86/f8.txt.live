@@ -6,18 +6,18 @@ control how the bootstrap system works.
 0f
 RESULT                                  PARAMETER07
 Verbose debugging                       0fDEBCONF_DEBUG=507
-Debug boot sequence                     0fBOOT_DEBUG=107
-Disable framebuffer                     0fdebian-installer/framebuffer=false07
+Debug boot sequence                     0fBOOT_DEBUG=2|307
+Disable framebuffer                     0ffb=false07
 Don't probe for USB                     0fdebian-installer/probe/usb=false07
 Don't start PCMCIA                      0fhw-detect/start_pcmcia=false07
 Force static network config             0fnetcfg/disable_dhcp=true07
 Set keyboard map                        0fbootkbd=es07
+Use Braille tty                         0fbrltty=driver,device,texttable07
 Disable ACPI for PCI maps (handy for    0fpci=noacpi07
 some HP servers and Via-based machines)
 
 For example:
 
-  boot: live debian-installer/framebuffer=false
-
+  boot: live fb=false
 
 Press F1control and F then 1 for the help index, or ENTER to ${BOOTPROMPT}
