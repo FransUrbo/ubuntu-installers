@@ -1,70 +1,17 @@
 <?xml version="1.0" encoding="EUC-JP"?>
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 11648 -->
+<!-- original version: 18642 -->
 
  <sect2 id="base-config-users">
+<!--
+ <title>Setting Up Users And Passwords</title>
+-->
  <title>ユーザとパスワードの設定</title>
 
-  <sect3 id="base-config-shadow">
-  <title>シャドウパスワード</title>
-
-<para>
-
-<!--
-Depending on a given priority, the system may ask whether you want to
-enable shadow passwords.  This is a system in which your GNU/Linux
-system is made to be a bit more secure.  In a system without shadow
-passwords, passwords are stored (encrypted) in a world-readable file,
-<filename>/etc/passwd</filename>.  This file has to be readable to
-anyone who can log in because it contains vital user information, for
-instance, how to map between numeric user identifiers and login names.
-Therefore, someone could conceivably grab your
-<filename>/etc/passwd</filename> file and run a brute force attack
-(i.e. run an automated test of all possible password combinations)
-against it to try to determine passwords.
--->
-与えられた優先順位に従って、シャドウパスワードを使うかどうか尋ねられる
-かもしれません。シャドウパスワードは、Linux システムのセキュリティを
-ある程度強化してくれる仕組みです。シャドウパスワードなしのシステムでは、
-パスワードは (暗号化されてはいるものの) 全ユーザが読むことができる
-<filename>/etc/passwd</filename> ファイルに記録されています。
-このファイルには重要なユーザ情報、例えばユーザ ID とログイン名を
-対応づける情報などが納められているので、システムにログインできる人なら
-誰でも参照できないと困るからです。こうなっていると、誰かが
-<filename>/etc/passwd</filename> ファイルをひったくり、総当たり攻撃
-(すなわち、可能なすべてのパスワード文字列を自動的に検索する方法)
-によってそのファイルを調べ、パスワードを手に入れようとするかもしれません。
-
-</para><para>
-
-<!--
-If you have shadow passwords enabled, passwords are instead stored in
-<filename>/etc/shadow</filename>, which is readable and writable only
-by root, and readable by group shadow. Therefore, we recommend that
-you enable shadow passwords.
--->
-シャドウパスワードを使用可能にすると、パスワードは
-<filename>/etc/shadow</filename> に納められます。
-このファイルを読み書きできるのは root アカウントだけで、
-読むことができるのも shadow グループに限られます。
-というわけで、シャドウパスワードを有効にすることをお勧めします。
-
-</para><para>
-
-<!--
-Reconfiguration of the shadow password system can be done at any time
-with the <command>shadowconfig</command> program.  After installation,
-see <filename>/usr/share/doc/passwd/README.debian.gz</filename> for
-more information.
--->
-シャドウパスワード機構の再設定は、<command>shadowconfig</command> プログラムを
-実行すればいつでも可能です。詳しくは、インストール後に
-<filename>/usr/share/doc/passwd/README.debian.gz</filename> をお読みください。
-
-</para>
-  </sect3>
-
   <sect3 id="base-config-root">
+<!--
+  <title>Set the Root Password</title>
+-->
   <title>root アカウントのパスワードを設定する</title>
 
 <para>
@@ -101,17 +48,20 @@ words or use of any personal information which could be guessed.
 
 <!--
 If anyone ever tells you they need your root password, be extremely
-wary. You should normally never give your root account out, unless you
+wary. You should normally never give your root password out, unless you
 are administering a machine with more than one system administrator.
 -->
 あなたの root アカウントのパスワードが必要だなどと誰かが言ってきても、
 絶対に油断しないでください。他のシステム管理者と協同でマシンを管理しているのでもない限り、
-通常は自分の root アカウントのパスワードを、絶対に人に知られてはいけません。
+通常は自分の root のパスワードを、絶対に人に知られてはいけません。
 
 </para>
   </sect3>
 
   <sect3 id="make-normal-user">
+<!--
+  <title>Create an Ordinary User</title>
+-->
   <title>一般ユーザの登録</title>
 
 <para>
@@ -148,17 +98,14 @@ Unix のシステム管理についての良書では、この話題についてより詳しく解説しています�
 </para><para>
 
 <!--
-Name the user account anything you like.  If your name is John Smith,
-you might use <userinput>smith</userinput>,
-<userinput>john</userinput>, <userinput>jsmith</userinput> or
-<userinput>js</userinput>.  You will also be prompted for the full
-name of the user, and, like before, a password.
+You will first be prompted for the user's full name. Then you'll be asked
+for a name for the user account; generally your first name or something
+similar will suffice and indeed will be the default. Finally, you will be
+prompted for a password for this account.
 -->
-ユーザアカウント名はお好きなものをつけてください。例えばあなたの
-名前が John Smith だとすると、新アカウント名としては <userinput>smith</userinput>、
-<userinput>john</userinput>、<userinput>jsmith</userinput>、
-<userinput>js</userinput> などが考えられます。
-さらに、ユーザのフルネームやパスワードなども尋ねられます。
+最初にユーザのフルネームを尋ねられます。その後、ユーザアカウント名を
+尋ねられます。一般にあなたの姓や何かそれに似通ったもので充分であり、実際に
+デフォルトになることでしょう。最後にそのアカウント用のパスワードを尋ねられます。
 
 </para><para>
 
@@ -168,21 +115,6 @@ account, use the <command>adduser</command> command.
 -->
 インストール後に新たなユーザアカウントを作成したい場合は、
 <command>adduser</command> コマンドを使ってください。
-
-</para><para arch="s390">
-
-<!--
-You need to create a user account on &arch-title; if you want to login
-over the network using telnet. The telnet server does not allow root
-logins in Debian's default configuration. However, you can use ssh
-(Secure SHell) to remotely login as root but this is not
-recommended.
--->
-telnet を用いてネットワーク越しにログインしたい場合、&arch-title; では
-ユーザアカウントを作成する必要があります。Debian のデフォルトの設定では、
-telnet サーバは root でのログインを許可していません。ssh
-(Secure SHell) を使えばリモートから root でログインできますが、
-これはお勧めしません。
 
 </para>
   </sect3>

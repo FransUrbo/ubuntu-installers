@@ -1,17 +1,19 @@
-Welcome to Ubuntu ${DEBIAN_VERSION}!
+Welcome to Debian GNU/Linux ${DEBIAN_VERSION}!
 
-This is an Ubuntu installation ${MEDIA_TYPE},
+This is a Debian installation ${MEDIA_TYPE},
 built on ${BUILD_DATE}.
 
-In addition to the default 'install' option, 
-there is 'install-safe' which you should try if 
-the system fails to boot at all (the typical
-symptom is a white screen which doesn't go away).
+The default option is 'install'. For maximum
+control, you can use the 'expert' option.
 
-For maximum control, you can use the 'expert'
-and 'expert-safe' options.
+If the system fails to boot at all (the typical
+symptom is a white screen which doesn't go away),
+use 'install video=ofonly' or 'expert video=ofonly'.
+
+Press the tab key for a list of options, or type
+'help' for help.
 
 ************************************
 If in doubt, just choose 'install', and if that 
-doesn't work, try 'install-safe'.
+doesn't work, try 'install video=ofonly'.
 ************************************

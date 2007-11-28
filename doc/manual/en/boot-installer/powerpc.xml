@@ -1,7 +1,7 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: powerpc.xml 15220 2004-05-12 14:14:13Z cjwatson $ -->
+<!-- $Id: powerpc.xml 18674 2004-07-28 20:51:03Z joeyh $ -->
 
-  <sect2 arch="powerpc"><title>Booting from a CD-ROM</title>
+  <sect2 arch="powerpc" id="boot-cd"><title>Booting from a CD-ROM</title>
 
 &boot-installer-intro-cd.xml;
 
@@ -105,9 +105,9 @@ boot:
 </screen></informalexample>
 
 At yaboot's <prompt>boot:</prompt> prompt, type either
-<userinput>install</userinput> or <userinput>install-safe</userinput>
-followed by a &enterkey;.  The `safe' option uses the
-<userinput>video=ofonly</userinput> argument for maximum
+<userinput>install</userinput> or <userinput>install video=ofonly</userinput>
+followed by a &enterkey;.  The
+<userinput>video=ofonly</userinput> argument is for maximum
 compatibility; you can try it if <userinput>install</userinput>
 doesn't work. The Debian installation program should start.
 

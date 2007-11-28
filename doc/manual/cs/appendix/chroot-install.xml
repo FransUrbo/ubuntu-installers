@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: chroot-install.xml 14389 2004-04-25 15:03:05Z mck-guest $ -->
-<!-- original version: 12756 -->
+<!-- $Id: chroot-install.xml 16468 2004-05-30 08:19:12Z mck-guest $ -->
+<!-- original version: 15442 -->
 
  <sect1 id="linux-upgrade">
  <title>Instalace Debianu ze stávajícího unixového/linuxového systému</title>
@@ -328,7 +328,7 @@ Klávesnici nastavíte:
 Síťování se nastavuje v souborech
 <filename>/etc/network/interfaces</filename>,
 <filename>/etc/resolv.conf</filename> a
-<filename>etc/hostname</filename>.
+<filename>/etc/hostname</filename>.
 
 <informalexample><screen>
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: kbd-chooser.xml 11865 2004-03-24 09:50:09Z mck-guest $ -->
-<!-- original version: 11648 -->
+<!-- $Id: kbd-chooser.xml 18038 2004-07-20 20:27:48Z mck-guest $ -->
+<!-- original version: 16990 -->
 
-   <sect2 id="kbd-chooser">
+   <sect3 id="kbd-chooser">
    <title>Výběr klávesnice</title>
 <para>
 
+Klávesnice bývají obvykle přizpůsobeny znakům používaným v daném jazyce.
 Vyberte klávesnici, která odpovídá vašemu národnímu rozložení, nebo je
 alespoň velmi podobná. Po skončení instalace si můžete vybrat vhodné
 klávesové rozložení z mnohem většího spektra (jako uživatel root
@@ -39,4 +40,4 @@ klávesnic nadepsaná <quote>alt</quote>). Až na tuto drobnost jsou obě
 klávesová rozložení shodná.
 
 </para>
-   </sect2>
+   </sect3>

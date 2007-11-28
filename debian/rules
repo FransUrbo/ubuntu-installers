@@ -3,11 +3,11 @@
 ARCH=$(shell dpkg-architecture -qDEB_BUILD_ARCH)
 VERSION=$(shell LC_ALL=C dpkg-parsechangelog | grep ^Version: | cut -d ' ' -f 2)
 DISTRIBUTION=$(shell LC_ALL=C dpkg-parsechangelog | grep ^Distribution: | cut -d ' ' -f 2)
-ifeq (${DISTRIBUTION},UNRELEASED)
-DISTRIBUTION=testing
-endif
 ifeq (${DISTRIBUTION},unstable)
 DISTRIBUTION=testing
+endif
+ifeq (${DISTRIBUTION},UNRELEASED)
+DISTRIBUTION=unstable
 endif
 
 ARCHIVEDIR=installer-$(ARCH)
@@ -30,6 +30,7 @@ build-stamp:
 build-manual:
 	-rm -rf debian/tmp/$(DESTDIR)/doc/manual
 	cd doc/manual/build && \
+	        official_build=1 \
 		destination=$(shell pwd)/debian/tmp/$(DESTDIR)/doc/manual \
 		architectures=$(ARCH) noarchdir=1 ./build.sh
 
@@ -39,8 +40,7 @@ install: build
 	dh_clean -k
 	dh_install
 	install -d debian/tmp/$(DESTDIR)/doc
-	cp debian/*.html doc/INSTALLATION-HOWTO doc/INSTALLATION-HOWTO.?? \
-		debian/tmp/$(DESTDIR)/doc
+	cp debian/*.html doc/INSTALLATION-HOWTO debian/tmp/$(DESTDIR)/doc
 	debian/rules build-manual
 	install -d debian/tmp/$(IMAGEDIR)
 	cp -a build/dest/* debian/tmp/$(IMAGEDIR)

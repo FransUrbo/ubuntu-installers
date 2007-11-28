@@ -1,7 +1,7 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: silo-installer.xml 14602 2004-05-02 16:31:59Z mck-guest $ -->
+<!-- $Id: silo-installer.xml 16467 2004-05-30 08:11:23Z mck-guest $ -->
 
-  <sect2 arch="sparc">
+  <sect3 arch="sparc">
   <title>Install the <command>SILO</command> Boot Loader
          on a Hard Disk</title>
 <para>
@@ -22,4 +22,4 @@ partitions as well. This is useful if you want to install GNU/Linux
 along side an existing SunOS/Solaris install.
 
 </para>
-  </sect2>
+  </sect3>

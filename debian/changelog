@@ -1,3 +1,159 @@
+debian-installer (20040801ubuntu1) warty; urgency=low
+
+  * Colin Watson
+    - Upgrade to a current build system, since the backports are getting too
+      awkward, particularly for amd64 and powerpc. This should stand a
+      better chance of building for non-i386.
+    - Merge warty branding changes.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Wed,  4 Aug 2004 14:57:11 +0100
+
+debian-installer (20040801) unstable; urgency=medium
+
+  * Joey Hess
+    - Work around a bug in genext2fs that causes it to produce 1441k floppies.
+      Closes: #262266
+    - Add ipv6-modules and wireless-tools-udeb back to net-drivers floppy.
+    - Built with newer version of lowmem.
+    - Temporarily add libnewt0.51 to build depends to work around libnewt-dev
+      dependency breakage.
+  * Stephen R. Marenka
+    - Update m68k manual.
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 31 Jul 2004 15:28:53 -0400
+
+debian-installer (20040728) unstable; urgency=low
+
+  * Steve Langasek
+    - Add additional missing ligature characters and harakat
+      (diacritics) to needed-characters/ar.
+  * Thiemo Seufer
+    - Add /dev/null to the image tree if !USERDEVFS.
+  * Bastian Blank
+    - Remove countrychooser and languagechoose from generic type.
+  * Joey Hess
+    - Switch release builds back to using udebs from testing.
+    - Add firewire-core-modules to the 2.6 kernel_specific nic-modules list, as
+      used by i386, amd64, and powerpc, all of which were just changed so that
+      nic-modules depend on firewire-modules for 2.6 kernels.
+    - Remove ipv6-modules and wireless-tools-udeb from the i386 net-drivers
+      floppy to get back under the floppy size limit. Closes: #261625
+    - Numerous fixes and updates to the installer manual, including
+      improved docs on PXE booting for i386 (Closes: #232252),
+      rewritten section of downloading files that avoids bad links and
+      outdated image names (Closes: #246890), document ramdisk_size for lilo
+      and grub booting better (Closes: #255821).
+    - i386 kernel no longer support rarp, disable that in install manual.
+      Closes: #250027 ; Same for hppa. Closes: #250026
+    - Integrate installation howto into manual. The old text format howto is
+      left for now until we update all links and docs to point to the new one.
+    - Full package builds build the manual in official build mode.
+  * Stephen R. Marenka
+    - Kill second set of m68k initrds, genext2fs seems to work.
+    - Add /dev/null to userdevfs-dev.txt.
+    - Update m68k manual.
+  * Colin Watson
+    - Document 'install video=ofonly' instead of 'install-safe', which is
+      going away (it caused combinatorial explosion in the yaboot prompt on
+      full CDs).
+    - Add fb-modules and floppy-modules to powerpc cdrom and netboot
+      initrds.
+  * Bastian Blank
+    - Update s390 manual: remove mention of second initrd and devfs.
+  * Martin Michlmayr
+    - Add cobalt-scripts and colo-udeb to the Cobalt initrd.
+  * Sven Luther
+    - Switch default powerpc kernel to 2.6.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 28 Jul 2004 17:54:19 -0400
+
+debian-installer (20040715) unstable; urgency=low
+
+  * Sven Luther
+    - Removed the -chrp image and renamed the -chrp-rs6k to -chrp,
+      as the addnote doesn't stop it from working on chrp.
+    - Fixed build for 2.6 -chrp kernels with builtin initrd.
+      only prep is missing now.
+  * Colin Watson
+    - Add usb-storage-modules and scsi-common-modules to the powerpc cdrom
+      initrds.
+    - Add cdrom-core-modules, input-modules, firewire-core-modules, and
+      scsi-core-modules to the powerpc 2.6 cdrom initrds. Should actually
+      work now.
+    - Add pcmcia udebs to powerpc net_drivers floppy and netboot images.
+    - Move $(TREE)/usr/lib/kernel-image-$(KERNELVERSION) out of the way to
+      $(TEMP)/lib when building boot images. powerpc subarchitectures that
+      need to use mkvmlinuz should now be able to do so.
+    - For every initrd, output an initrd.list file containing the packages
+      and their versions used to construct it.
+    - debootstrap-udeb is now priority optional. Add it back into monolithic
+      images.
+    - Drop G5 images; power4 works on G5s as of linux-kernel-di-powerpc-2.6
+      0.62. Build power4 netboot 2.6 images.
+    - Remove install-safe and expert-safe targets, advising people to add
+      'video=ofonly' instead. The -safe targets have got rather out of hand
+      on full CDs, so I'd like to think about removing them there.
+    - daily-build copies the previous build before rsyncing up the new one.
+      This saved 82MB of upload for my powerpc build.
+    - Add nic-shared-modules to powerpc netboot images, needed by
+      nic-modules.
+    - Bump powerpc 2.6 kernels to 2.6.7. Add firmware-modules, much as on
+      i386.
+    - Build-depend on module-init-tools on architectures with 2.6 images.
+  * Joey Hess
+    - Split out a new cyrllic root floppy on i386 as the regular root floppy
+      is full again.
+    - Fix stats for images without kernels.
+    - Fixes to INSTALLATION-HOWTO from Jan Minar. Closes: #253868
+    - Change netcfg/use_dhcp to netcfg/disable_dhcp in syslinux boot screens
+      and elsewhere.
+    - Update i386 to the 2.6.7 kernel.
+    - Add firmware-modules to i386 images that have either nic-modules or
+      scsi-modules on them. Make this happen only for the 2.6 kernel, using a
+      nasty pkg-lists/kernel_specific technique since we lack dependency
+      resolution in pkg-lists.
+    - Go back to pulling udebs from unstable when building official images.
+    - Produce a single hd-media boot image that includes both kernels.
+    - Parameterise filenames and paths in the syslinux.cfg files so that
+      files can have different names or locations.
+    - Provide a pxeboot.tar.gz on i386 that can just be untarred into a
+      tftpserver file space for easy PXE boot setup, and update
+      INSTALLATION-HOWTO.
+    - Merge the i386 and amd64 syslinux data and image build code.
+    - Add support for dual kernel minisos.
+    - Use the 2.4.46 kernel for speakup.
+    - Add pcmcia-cs to netboot initrd.
+  * Joshua Kwan
+    - Change netcfg/use_dhcp to netcfg/disable_dhcp in manual.
+  * Steve Langasek
+    - Add shaped Arabic characters to the needed-characters set
+    - Bump kernelversion to 2.4.26 for alpha
+    - Add libfribidi0-udeb to the package list for everything except floppy
+    - Add mideast-root floppy flavor and split languages for bidi support
+  * Goswin von Brederlow
+    - Update amd64 kernel version, and input-modules are now compiled in.
+      Closes: #253536
+  * Martin Michlmayr
+    - Start Cobalt netboot install via NFS instead of TFTP.
+  * Thiemo Seufer
+    - Use 2.4.26 kernels for mips, mipsel.
+  * Bastian Blank
+    - Use 2.4.26 for s390.
+    - Add network-console on s390.
+  * Kurt Roeckx
+    - Update kernel version for amd64 to 2.6.7-3 and use input-modules again.
+    - Reenable the monolithic target for amd64.
+    - Update config files to match i386 changes.
+    - Change kernel version for amd64 to 2.6.7-4.
+    - Change kernel version for amd64 to 2.6.7-5.
+  * Stephen R. Marenka
+    - Build second set of m68k initrds using dd/mke2fs instead of genext2fs.
+    - Update m68k kernel versions.
+  * Christian Perrier/Arash Bijanzadeh
+    - Added build/needed-characters/fa for Farsi characters
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 15 Jul 2004 15:15:34 -0400
+
 debian-installer (20040528ubuntu8) warty; urgency=low
 
   * Remove .with26 boot screens. We default to 2.6 and don't have linux26

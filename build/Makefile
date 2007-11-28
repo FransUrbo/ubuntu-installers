@@ -67,7 +67,7 @@ endif
 
 # We loop over all needed combinations of ARCH, SUBARCH, MEDIUM, FLAVOUR
 # via recursive make calls. ARCH is constant, we don't support
-# cosscompiling.
+# crosscompiling.
 ARCH = $(DEB_HOST_ARCH)
 
 #
@@ -103,35 +103,35 @@ include config/dir
 # Useful command sequences
 #
 define submake
-$(MAKE) --no-print-directory
+  $(MAKE) --no-print-directory
 endef
 
 define recurse_once
-	@set -e; $(submake) $(1)_$(2)
+  @set -e; $(submake) $(1)_$(2)
 endef
 
 define recurse_many
-	@set -e; $(foreach var,$($(1)_SUPPORTED),$(submake) $(2)_$(3) $(1)=$(var);)
+  @set -e; $(foreach var,$($(1)_SUPPORTED),$(submake) $(2)_$(3) $(1)=$(var);)
 endef
 
 define recurse
-	$(if $($(1)_SUPPORTED),$(call recurse_many,$(1),$(2),$(3)),$(call recurse_once,$(2),$(3)))
+  $(if $($(1)_SUPPORTED),$(call recurse_many,$(1),$(2),$(3)),$(call recurse_once,$(2),$(3)))
 endef
 
 define genext2fs-userdevfs
-       genext2fs -d $(TREE) -b $(USERDEVFS_SIZE) -r 0
+  genext2fs -d $(TREE) -b $(USERDEVFS_SIZE) -r 0 -f userdevfs-dev.txt
 endef
 
 define genext2fs
-	genext2fs -d $(TREE) -b `expr $$(du -s $(TREE) | cut -f 1) + $$(expr $$(find $(TREE) | wc -l) \* 2)` -r 0
+  genext2fs -d $(TREE) -b `expr $$(du -s $(TREE) | cut -f 1) + $$(expr $$(find $(TREE) | wc -l) \* 2)` -r 0
 endef
 
 define e2fsck
-	e2fsck -fy
+  e2fsck -fy
 endef
 
 define mkcramfs
-	mkcramfs $(TREE)
+  mkcramfs $(TREE)
 endef
 
 #
@@ -153,7 +153,6 @@ medium_%:
 .PHONY: flavour_%
 flavour_%:
 	$(if $(targetstring),@$(submake) _$*)
-
 
 #
 # Validate a targetstring, echo env variables for valid ones
@@ -272,7 +271,7 @@ rebuild_%:
 
 #
 # The general tree target.
-# FIXME: This is way to convoluted.
+# FIXME: This is way too convoluted.
 #
 $(STAMPS)tree-unpack-$(targetstring)-stamp: $(STAMPS)get_udebs-$(targetstring)-stamp
 	dh_testroot
@@ -345,6 +344,12 @@ ifdef KERNELVERSION
 	# need them, yet anyway.
 	find $(TREE)/lib/modules/ -name 'modules*' \
 		-not -name modules.dep -not -type d | xargs rm -f
+
+	# These files are used to build special kernel images for some
+	# subarchitectures. Move them out of the way.
+	if [ -d $(TREE)/usr/lib/kernel-image-$(KERNELVERSION) ]; then \
+		mv $(TREE)/usr/lib/kernel-image-$(KERNELVERSION) $(TEMP)/lib; \
+	fi
 endif
 
 ifdef KERNELNAME
@@ -379,28 +384,10 @@ $(STAMPS)tree-$(targetstring)-stamp: $(STAMPS)tree-unpack-$(targetstring)-stamp
 	# Create a dev tree.
 	mkdir -p $(TREE)/dev
 	# Always needed, in case devfs is not mounted on boot.
+	# userdevfs uses userdevfs-dev.txt w/genext2fs
+ifndef USERDEVFS
 	mknod $(TREE)/dev/console c 5 1
-ifdef USERDEVFS
-	# Create initial /dev entries -- only those that are absolutely
-	# required to boot sensibly, though.
-	mkdir -p $(TREE)/dev/vc
-	mknod $(TREE)/dev/vc/0 c 4 0
-	mknod $(TREE)/dev/vc/1 c 4 1
-	mknod $(TREE)/dev/vc/2 c 4 2
-	mknod $(TREE)/dev/vc/3 c 4 3
-	mknod $(TREE)/dev/vc/4 c 4 4
-	mknod $(TREE)/dev/vc/5 c 4 5
-	mkdir -p $(TREE)/dev/rd
-	mknod $(TREE)/dev/rd/0 b 1 0
-	mknod $(TREE)/dev/tty c 5 0
-	mknod $(TREE)/dev/ttyS0 c 4 64
-	mknod $(TREE)/dev/ttyS1 c 4 65
-	mknod $(TREE)/dev/scd0 b 11 0
-	mkdir -p $(TREE)/dev/loop
-	mknod $(TREE)/dev/loop/0 b 7 0
-	mknod $(TREE)/dev/loop/1 b 7 1
-	mknod $(TREE)/dev/loop/2 b 7 2 
-	mknod $(TREE)/dev/loop/3 b 7 3 
+	mknod $(TREE)/dev/null c 1 3
 endif
 
 ifdef EXTRADRIVERS
@@ -634,10 +621,16 @@ $(TEMP_MINIISO): $(TEMP_BOOT_SCREENS) arch_miniiso
 
 # various kinds of information, for use on debian-cd isos.
 $(DEBIAN_CD_INFO): $(TEMP_BOOT_SCREENS)
-	(cd $(TEMP_BOOT_SCREENS); tar cz .) > $@
+	(cd $(TEMP_BOOT_SCREENS); tar czf - .) > $@
 	./update-manifest $@ $(MANIFEST-DEBIAN_CD_INFO)
 
+# a tarball for pxe netbooting.
+$(PXE_BOOT): $(TEMP_BOOT_SCREENS) $(TEMP_PXE_BOOT)
+	(cd $(TEMP_PXE_BOOT); tar czf - .) > $@
+	./update-manifest $@ $(MANIFEST-PXE_BOOT)
+
 $(TEMP_BOOT_SCREENS): arch_boot_screens
+$(TEMP_PXE_BOOT): arch_pxe_boot
 
 $(MISC): TEMP_REAL_MISC = $(shell echo ./$@ |sed 's,$(SOME_DEST)/$(EXTRANAME),,')
 $(MISC): 
@@ -656,7 +649,12 @@ $(TEMP_EXTRA): $(STAMPS)extra-$(targetstring)-stamp
 	install -d $(TREE)
 	set -e; case $(INITRD_FS) in \
 	ext2) \
-		genext2fs -d $(TREE) -b $(IMAGE_SIZE) -r 0 $@ ;; \
+		if [ "$(IMAGE_SIZE)" = 1440 ]; then \
+			genext2fs -d $(TREE) -b 1433 -r 0 $@; \
+		else \
+			genext2fs -d $(TREE) -b $(IMAGE_SIZE) -r 0 $@;\
+		fi \
+	;; \
 	cramfs) \
 		$(mkcramfs) $@ ;; \
 	*) \
@@ -761,31 +759,42 @@ _stats:
 	@rm -f $(BASE_TMP)log
 	@[ ! -f $(TEMP)/diskusage.txt ] || $(submake) general-stats
 
-TOTAL_SZ = $(shell du -hs $(TREE) | cut -f 1)
+TOTAL_SZ = $(shell expr $(shell du -bs $(TREE) | cut -f 1) / 1024)
 LIBS_SZ = $(shell [ -d $(TREE)/lib ] && du -hs --exclude=modules $(TREE)/lib |cut -f 1)
 MODULES_SZ = $(shell [ -d $(TREE)/lib/modules ] && du -hs $(TREE)/lib/modules |cut -f 1)
-DISK_SZ = $(shell expr \( $(shell du -bs $(TREE) |cut -f 1) + 0 \) / 1024)
 ifeq ($(TEMP_INITRD),)
 INITRD_SZ = 0
 else
 INITRD_SZ = $(shell expr \( $(shell [ -f $(TEMP_INITRD) ] && du -bs $(TEMP_INITRD) |cut -f 1) + 0 \) / 1024)
 endif
+ifeq ($(TEMP_KERNEL),)
+KERNEL_SZ = 0
+else
 KERNEL_SZ = $(shell expr \( $(foreach kern,$(TEMP_KERNEL),$(shell [ -f $(kern) ] && du -bs $(kern) |cut -f 1)) + 0 \) / 1024)
+endif
+ifeq ($(TARGET),$(ROOT))
+# image without a kernel
+KERNEL_SZ = 0
+endif
 .PHONY: general-stats
 general-stats:
-	@echo
+	@echo k $(KERNEL_SZ) f $(FLOPPY_SIZE) i $(INITRD_SZ)
 	@echo "System stats for $(targetstring)"
 	@echo "-------------------------"
 	@echo "Installed udebs: $(UDEBS)"
-	@echo "Total system size: $(TOTAL_SZ) ($(LIBS_SZ) libs, $(MODULES_SZ) kernel modules)"
-	@echo "Uncompressed disk size: $(DISK_SZ)k"
+	@printf "Total system size: $(TOTAL_SZ)k"
+ifneq ($(LIBS_SZ)$(MODULES_SZ),)
+	@echo " ($(LIBS_SZ) libs, $(MODULES_SZ) kernel modules)"
+else
+	@echo
+endif
 	@echo "Initrd size: $(INITRD_SZ)k"
 	@echo "Kernel size: $(KERNEL_SZ)k"
 ifdef FLOPPY_SIZE
 ifneq ($(INITRD_SZ),0)
 	@echo "Free space: $(shell expr $(FLOPPY_SIZE) - $(KERNEL_SZ) - $(INITRD_SZ))k"
 else
-	@echo "Free space: $(shell expr $(FLOPPY_SIZE) - $(KERNEL_SZ) - $(DISK_SZ))k"
+	@echo "Free space: $(shell expr $(FLOPPY_SIZE) - $(KERNEL_SZ) - $(TOTAL_SZ))k"
 endif
 endif
 	@echo "Disk usage per package:"

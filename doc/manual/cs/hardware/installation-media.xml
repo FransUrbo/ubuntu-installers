@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: installation-media.xml 11865 2004-03-24 09:50:09Z mck-guest $ -->
-<!-- original version: 11648 -->
+<!-- $Id: installation-media.xml 16468 2004-05-30 08:19:12Z mck-guest $ -->
+<!-- original version: 16467 -->
 
  <sect1 id="installation-media">
  <title>Instalační média</title>
+
+<para>
+
+Tato podkapitola popisuje různé druhy instalačních médií, která můžete
+použít pro instalaci Debianu. Výhody a nevýhody jednotlivých médií pak
+podrobněji rozebírá kapitola <xref linkend="install-methods"/>.
+
+</para>
 
   <sect2 condition="supports-floppy-boot"><title>Diskety</title>
 
 <para>
 
-Přestože je instalace z disket nejméně pohodlná volba, používá se
-často pro počáteční zavedení instalačního systému.
+Přestože je instalace z disket nejméně pohodlná volba, stále se někdy
+používá pro počáteční zavedení instalačního systému.
 Vše co potřebujete, je pouze 3,5 palcová disketová jednotka
 s kapacitou 1440 kilobajtů. 
 

@@ -1,8 +1,7 @@
-<!-- retain these comments for translator revision tracking -->
-<!-- $Id: i386.xml 14559 2004-05-01 12:49:03Z waldi $ -->
+<!-- original version: 14559 -->
 
 
-  <sect2 arch="i386"><title>Partitioning From DOS or Windows</title>
+  <sect2 arch="i386"><title>Partitionierung aus DOS oder Windows</title>
 <para>
 
 If you are manipulating existing FAT or NTFS partitions, it is

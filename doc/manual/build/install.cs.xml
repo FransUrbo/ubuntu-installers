@@ -24,8 +24,8 @@
  <!ENTITY % install-docs   SYSTEM "install-docs.ent"  > %install-docs;
 ]>
 
-<!-- retain these comments for translator revision tracking -->
-<!-- $Id: install.cs.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
+<!-- $Id: install.cs.xml 16598 2004-06-02 17:00:16Z mck-guest $ -->
+<!-- original version: 11648 -->
 
 <book lang="cs">
 

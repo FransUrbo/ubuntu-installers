@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: parameters.xml 14389 2004-04-25 15:03:05Z mck-guest $ -->
-<!-- original version: 14350 -->
+<!-- $Id: parameters.xml 18038 2004-07-20 20:27:48Z mck-guest $ -->
+<!-- original version: 17333 -->
 
  <sect1 id="boot-parms"><title>Zaváděcí parametry</title>
 <para>
@@ -45,7 +45,7 @@ Pokud tato hodnota neodpovídá aktuálnímu stavu instalované paměti,
 potom byste měli použít zaváděcí parametr
 <userinput>mem=<replaceable>ram</replaceable></userinput>,
 kde <replaceable>ram</replaceable> je vámi udaná velikost paměti
-zakončená znakem ,,k'' pro kilobajty nebo ,,m'' pro megabajty.
+zakončená znakem <quote>k</quote> pro kilobajty nebo <quote>m</quote> pro megabajty.
 Například, obě hodnoty <userinput>mem=65536k</userinput> a
 <userinput>mem=64m</userinput> znamenají 64MB RAM.
 
@@ -92,18 +92,23 @@ otázek.
 
 </para><para>
 
-Hodnotou <userinput>DEBCONF_PRIORITY=critical</userinput> se potlačí
-všechny zprávy a otázky se stupněm důležitosti menším než kritickým.
-Pro tyto potlačené otázky se použijí přednastavené hodnoty. Jestliže
-se vyskytne problém, instalátor upraví priority otázek podle potřeb.
+Standardní instalace používá nastavení
+<userinput>DEBCONF_PRIORITY=high</userinput>.  To znamená, že se
+zobrazí jak kritické, tak důležité hlášky, ale normální a nevýznamné
+zprávy jsou přeskočeny. Jestliže se vyskytne problém, instalátor
+upraví priority otázek podle potřeb.
 
 </para><para>
 
-Standardní nastavení <userinput>DEBCONF_PRIORITY=high</userinput>
-zobrazí jak kritické, tak důležité hlášky, ale normální a nevýznamné
-zprávy jsou přeskočeny. Když použijete
-<userinput>DEBCONF_PRIORITY=low</userinput>, nic se nepřeskakuje a
-zobrazí se všechny hlášky instalačního programu.
+Když použijete parametr
+<userinput>DEBCONF_PRIORITY=medium</userinput>, zobrazí se instalační
+menu a získáte nad instalací větší kontrolu. Při použití
+<userinput>DEBCONF_PRIORITY=low</userinput>, nic se nepřeskakuje
+a zobrazí se všechny hlášky instalačního programu (to je ekvivalentní
+zaváděcí metodě <userinput>expert</userinput>).  Hodnotou
+<userinput>DEBCONF_PRIORITY=critical</userinput> se potlačí všechny
+zprávy a otázky se stupněm důležitosti menším než kritickým.  Pro tyto
+potlačené otázky se použijí přednastavené hodnoty.
 
 </para></listitem>
 </varlistentry>
@@ -238,7 +243,7 @@ na hodnotu <userinput>false</userinput>.
 </varlistentry>
 
 <varlistentry>
-<term>netcfg/use_dhcp</term>
+<term>netcfg/disable_dhcp</term>
 <listitem><para>
 
 Standardně se &d-i; snaží získat nastavení sítě přes DHCP. Je-li
@@ -251,7 +256,7 @@ dostanete pouze v případě, že dotaz na DHCP server selže.
 Máte-li tedy na místní síti DHCP server, ale z nějakého důvodu jej
 nechcete použít (protože např. pro účely instalace vrací špatné
 hodnoty), můžete použít parametr
-<userinput>netcfg/use_dhcp=false</userinput>, kterým zabráníte
+<userinput>netcfg/use_dhcp=true</userinput>, kterým zabráníte
 automatickému nastavení sítě přes DHCP a rovnou budete požádáni
 o ruční nastavení síťových údajů.
 

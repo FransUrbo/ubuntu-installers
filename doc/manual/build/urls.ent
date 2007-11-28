@@ -12,6 +12,8 @@
 <!ENTITY www-debian-org "www.debian.org">
 <!ENTITY url-debian-home "http://&www-debian-org;/">
 
+<!ENTITY url-d-i "http://&www-debian-org;/devel/debian-installer/">
+
 <!ENTITY ftp-debian-org "ftp.debian.org">
 <!ENTITY url-debian-ftp "ftp://&ftp-debian-org;/">
 
@@ -88,7 +90,9 @@
 <!-- ]]> -->
   <!ENTITY url-local-install-manual   "install&langext;.html">
   <!ENTITY url-local-dselect-beginner "dselect-beginner&langext;.html">
-  
+
+<!-- preinstalled debian -->
+<!ENTITY url-pre-installed "http://&www-debian-org;/distrib/pre-installed">
 
 <!ENTITY url-debian-list-archives "http://lists.debian.org/">
 
@@ -169,6 +173,8 @@
 
 <!ENTITY url-multidisk-howto "&url-ldp;HOWTO/Multi-Disk-HOWTO.html">
 
+<!ENTITY url-software-raid-howto "&url-ldp;HOWTO/Software-RAID-HOWTO.html">
+
 <!ENTITY url-boot-prompt-howto "&url-ldp;HOWTO/BootPrompt-HOWTO.html">
 
 <!ENTITY url-linux-freebsd "&url-ldp;HOWTO/mini/Linux+FreeBSD-2.html">
@@ -246,7 +252,7 @@ removed and text documention at link directs one to a URL that is broken." -->
      http://metalab.unc.edu/LDP/HOWTO/mini/Multiboot-with-LILO.html
   -->     
 
-<!ENTITY url-windows-refund "http://www.linuxmall.com/refund/">
+<!ENTITY url-windows-refund "http://www.windowsrefund.net/">
 
 <!ENTITY url-xfree86 "http://www.xfree86.org/">
 <!ENTITY url-xfree "&url-xfree86;">

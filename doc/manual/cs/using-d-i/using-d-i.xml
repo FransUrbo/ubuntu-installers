@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: using-d-i.xml 14389 2004-04-25 15:03:05Z mck-guest $ -->
-<!-- original version: 14337 -->
+<!-- $Id: using-d-i.xml 18038 2004-07-20 20:27:48Z mck-guest $ -->
+<!-- original version: 16407 -->
 
  <chapter id="d-i-intro">
  <title>Používáme instalační program Debianu</title>
@@ -62,7 +62,7 @@ Chybové hlášky jsou přesměrovány na třetí konzolu (známou jako
 <userinput>tty3</userinput>). Do této konzoly se můžete přepnout
 klávesami
 <keycombo><keycap>Levý Alt</keycap><keycap>F3</keycap></keycombo>
-(držte klávesu <keycap>Alt</keycap> a stiskněte funkční klávesu
+(držte levou klávesu <keycap>Alt</keycap> a stiskněte funkční klávesu
 <keycap>F3</keycap>). Zpět do instalačního programu se vrátíte stiskem
 <keycombo><keycap>Levý Alt</keycap><keycap>F1</keycap></keycombo>.
 
@@ -340,48 +340,6 @@ analyzování případného problému.
 
  </sect1>
 
- <sect1 id="module-details"><title>Použití jednotlivých komponent</title>
+&using-d-i-components.xml;
 
-&module-languagechooser.xml;
-&module-countrychooser.xml;
-&module-s390-netdevice.xml;
-&module-s390-dasd.xml;
-&module-ddetect.xml;
-&module-pcmcia.xml;
-&module-kbd-chooser.xml;
-&module-netcfg.xml;
-&module-iso-scan.xml;
-&module-choose-mirror.xml;
-&module-cdrom-detect.xml;
-&module-lowmem.xml;
-&module-anna.xml;
-&module-partman.xml;
-&module-autopartkit.xml;
-&module-partitioner.xml;
-&module-partconf.xml;
-&module-lvmcfg.xml;
-&module-mdcfg.xml;
-&module-prebaseconfig.xml;
-&module-base-installer.xml;
-&module-kernel-chooser.xml;
-&module-os-prober.xml;
-
-&module-mips-arcboot-installer.xml;
-&module-mipsel-colo-installer.xml;
-&module-mipsel-delo-installer.xml;
-&module-alpha-aboot-installer.xml;
-&module-i386-grub-installer.xml;
-&module-i386-lilo-installer.xml;
-&module-hppa-palo-installer.xml;
-&module-ia64-elilo-installer.xml;
-&module-s390-zipl-installer.xml;
-&module-powerpc-yaboot-installer.xml;
-&module-sparc-silo-installer.xml;
-
-&module-baseconfig.xml;
-&module-bugreporter.xml;
-&module-cdrom-checker.xml;
-&module-shell.xml;
-
- </sect1>
 </chapter>

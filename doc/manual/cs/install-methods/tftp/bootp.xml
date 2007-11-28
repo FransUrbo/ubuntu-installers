@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: bootp.xml 11865 2004-03-24 09:50:09Z mck-guest $ -->
-<!-- original version: 11648 -->
+<!-- $Id: bootp.xml 18038 2004-07-20 20:27:48Z mck-guest $ -->
+<!-- original version: 16879 -->
 
   <sect2 condition="supports-bootp" id="tftp-bootp">
   <title>Nastavení BOOTP serveru</title>
@@ -23,7 +23,7 @@ vypadat zhruba takto:
 
 <informalexample><screen>
 
-bootps   dgram   udp     wait    root    /usr/sbin/bootpd  bootpd -i -t 120
+bootps  dgram  udp  wait  root  /usr/sbin/bootpd  bootpd -i -t 120
 
 </screen></informalexample>
 

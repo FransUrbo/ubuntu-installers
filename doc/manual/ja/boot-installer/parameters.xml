@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="EUC-JP"?>
 <!-- retain these comments for translator revision tracking -->
-<!-- original version: 14359 -->
+<!-- original version: 17333 -->
 
  <sect1 id="boot-parms"><title>ブートパラメータ</title>
 <para>
@@ -143,7 +143,7 @@ Alternatively, set the <envar>input-device</envar> and
 The installation system recognizes a few boot arguments which may be
 useful. 
 -->
-インストールシステムは おそらく便利な引数を、いくつか認識します。
+インストールシステムは、おそらく便利だと思われる引数をいくつか認識します。
 
 </para>
 
@@ -386,7 +386,7 @@ boot, if that causes problems.
 </varlistentry>
 
 <varlistentry>
-<term>netcfg/use_dhcp</term>
+<term>netcfg/disable_dhcp</term>
 <listitem><para>
 
 <!--
@@ -404,13 +404,13 @@ DHCP の検出が失敗する場合のみ、手動ネットワーク設定を行えます。
 <!--
 If you have a DHCP server on your local network, but want to avoid it
 because e.g. it gives wrong answers, you can use the parameter
-<userinput>netcfg/use_dhcp=false</userinput> to prevent configuring
+<userinput>netcfg/disable_dhcp=true</userinput> to prevent configuring
 the network with DHCP and to enter the information manually.
 -->
 ローカルネットワークに DHCP サーバがあるのに、それを回避したい場合 
 (例: 誤った値を返す等)、
 DHCP でのネットワーク設定をせず手動で情報を入力するのに、
-<userinput>netcfg/use_dhcp=false</userinput> パラメータを使用できます。
+<userinput>netcfg/disable_dhcp=true</userinput> パラメータを使用できます。
 
 </para></listitem>
 </varlistentry>

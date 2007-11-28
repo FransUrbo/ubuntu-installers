@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: administrivia.xml 14602 2004-05-02 16:31:59Z mck-guest $ -->
+<!-- $Id: administrivia.xml 18675 2004-07-28 20:52:33Z joeyh $ -->
 
 <appendix id="administrivia">
  <title>Administrivia</title>
@@ -86,6 +86,9 @@ online.
 
 <para>
 
+This document was originally written by Bruce Perens, Sven Rudolph, Igor
+Grobman, James Treacy, and Adam Di Carlo. Sebastian Ley wrote the
+Installation Howto.
 Many, many Debian users and developers contributed to this document.
 Particular note must be made for Michael Schmitz (m68k support), Frank
 Neumann (original author of the <ulink

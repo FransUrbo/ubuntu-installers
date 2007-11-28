@@ -2,7 +2,7 @@
 
 if [ -z "$languages" ]; then
 	# Please add languages only if they build properly.
-	languages="en cs fr ja nl pt_BR de" # es
+	languages="en cs de es fr ja nl pt_BR" # el it
 fi
 
 if [ -z "$architectures" ]; then
@@ -15,8 +15,15 @@ fi
 
 [ -e "$destination" ] || mkdir -p "$destination"
 
+if [ "$official_build" ]; then
+	# Propigate this to children.
+	export official_build
+fi
+
 for lang in $languages; do
+    echo "Language: $lang";
     for arch in $architectures; do
+	echo "Architecture: $arch"
 	if [ -n "$noarchdir" ]; then
 		destsuffix="$lang"
 	else

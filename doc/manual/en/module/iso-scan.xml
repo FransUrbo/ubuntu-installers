@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: iso-scan.xml 14602 2004-05-02 16:31:59Z mck-guest $ -->
+<!-- $Id: iso-scan.xml 18640 2004-07-27 21:53:59Z joeyh $ -->
 
    <sect3 id="iso-scan">
    <title>Looking for the Debian Installer ISO Image</title>
@@ -23,7 +23,7 @@ directory and in the first level of subdirectories (i.e. it finds
 but not
 <filename>/data/tmp/<replaceable>whatever</replaceable>.iso</filename>).
 After an iso image has been found, <command>iso-scan</command> checks
-its content to determine, if the image is valid Debian iso image or
+its content to determine if the image is valid Debian iso image or
 not. In the former case we are done, in the latter
 <command>iso-scan</command> seeks for another image.
 

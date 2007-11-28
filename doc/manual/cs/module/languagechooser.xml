@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: languagechooser.xml 11865 2004-03-24 09:50:09Z mck-guest $ -->
-<!-- original version: 11648 -->
+<!-- $Id: languagechooser.xml 18038 2004-07-20 20:27:48Z mck-guest $ -->
+<!-- original version: 17788 -->
 
-  <sect2 id="lang-chooser">
+  <sect3 id="lang-chooser">
   <title>Výběr jazyka</title>
 <para>
 
 Úplně první krok instalace slouží k výběru jazyka, ve kterém se má
 instalace odehrávat. Některé jazyky mají k dispozici více variant
-(např. portugalská a brazilská portugalština).
+(např. portugalská a brazilská portugalština). Jednotlivé položky
+v seznamu jazyků se skládají z anglického názvu (vlevo) a lokálního
+názvu v daném jazyce (napravo). Pro češtinu vypadá záznam nějak takto:
+
+<screen>
+Czech       -      Čeština
+</screen>
+
+Seznam je setříděn abecedně podle levého sloupce (anglických názvů).
 
 </para><para>
 
-Kromě nastavení jazyka instalace ovlivníte touto volbou i výběr
-použité klávesnice.
+Ve výjmečných případech se může stát, že ve vybraném jazyce budou
+některé texty instalace nepřeloženy &mdash; pak se zobrazí
+v angličtině.  Na základě vybraného jazyka vám instalační program
+pomůže s volbou vhodného klávesnicového rozložení.
 
 </para>
-  </sect2>
+  </sect3>

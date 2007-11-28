@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: non-debian-partitioning.xml 12756 2004-04-06 22:23:56Z fjpop-guest $ -->
+<!-- $Id: non-debian-partitioning.xml 18672 2004-07-28 19:38:06Z smarenka $ -->
 
  <sect1 id="non-debian-partitioning">
  <title>Pre-Partitioning for Multi-Boot Systems</title>
@@ -30,6 +30,10 @@ If you already have an operating system on your system
 
 <phrase arch="s390">
 (VM, z/OS, OS/390, &hellip;)
+</phrase>
+
+<phrase arch="m68k">
+(Amiga OS, Atari TOS, Mac OS, &hellip;)
 </phrase>
 
 and want to stick Linux on the same disk, you will need to repartition

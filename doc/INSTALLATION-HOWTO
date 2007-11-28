@@ -1,14 +1,14 @@
 How to install sarge with the new debian-installer
 --------------------------------------------------
 
-This documents describes how to perform an installation with the new
+This document describes how to perform an installation with the new
 debian-installer, which will be released together with the upcoming
 Debian release, codename: sarge.
 
 For the most current version of this document or more information on
 the debian-installer project: http://www.debian.org/devel/debian-installer
 
-Last update: $Date: 2004-05-06 13:34:11 +0000 (Thu, 06 May 2004) $
+Last update: $Date: 2004-07-28 21:40:07 +0000 (Wed, 28 Jul 2004) $
 
 
 1. Preliminaries
@@ -36,7 +36,7 @@ http://d-i.alioth.debian.org/manual/
 2. Getting images
 
 The debian-cd team provides builds of CD images for debian-installer here:
-http://people.debian.org/cdimage/testing/
+http://cdimage.debian.org/pub/cdimage-testing/daily/
 
 The other kinds of images, including floppy images are in the Debian
 archive, in the main/installer-<arch> directories. For example:
@@ -102,7 +102,7 @@ root.img on it.
 2.3 USB memory stick
 
 It's also possible to install from removable USB storage devices. For
-example a USB keychain can make a handy Debian install media the you
+example a USB keychain can make a handy Debian install media that you
 can take with you anywhere.
 
 The easiest way to prepare your USB memory stick is to download
@@ -142,13 +142,14 @@ with booting from it.
 
 It's also possible to boot debian-installer completely from the net. The 
 various methods to netboot depend on your architecture and netboot setup. 
-They are not explaind here. For an explanation of how to do PXE netbooting
-(on i386), see this web page:
-http://wiki.debian.net/index.cgi?DebianInstallerNetbootPXE
-
 The files in netboot/ can be used to netboot debian-installer.
-If you don't have a netboot setup, you can write the netboot/mini.iso
-to a CD to produce a minimal netinst CD.
+
+On i386, the easiest thing to set up is probably PXE netbooting. Untar the
+file netboot/pxeboot.tar.gz into /var/lib/tftpboot or wherever is
+appropriate for your tftp server. Set up your DHCP server to pass filename
+"/pxelinux.0" to clients, and it with luck everything will just work. For
+more details, see this web page:
+http://wiki.debian.net/index.cgi?DebianInstallerNetbootPXE
 
 2.5 Booting from hard disk
 
@@ -168,7 +169,7 @@ grub>boot
 Note that the ramdisk_size parameter may need to be increased, depending on
 the image you are booting.
 
-Ater the installer boots , it should find the ISO you placed on the hard
+After the installer boots, it should find the ISO you placed on the hard
 disk, and continue with the install. You will not be able to reformat the
 partition the installer was booted from if you use this technique.
 
@@ -308,13 +309,13 @@ and confirm that the filesystems should be created as requested.
 
 Now we are ready to install the base system. Select the corresponding entry
 ("Install the base system") and lean back. The packages are retrieved from
-the CD and installed in the /target area. During this step, you will
-presented a list of all available kernel images on the CD. Select the most
-suitable for your system and wait until the installation has finished.
+the CD and installed in the /target area. During this step, you will be
+presented with a list of all available kernel images on the CD. Select the
+most suitable for your system and wait until the installation has finished.
 
 Now we are almost done. Select "Install GRUB on a hard disk" or
 "Install LILO on a hard disk" to make your harddisk bootable. You will
-be asked where GRUB/GRUB shall install the bootblock. A good idea is
+be asked where GRUB/LILO shall install the bootblock. A good idea is
 the first hard drive in your system which should be in fact the
 default selection.
 

@@ -1,5 +1,5 @@
 <!-- retain these comments for translator revision tracking -->
-<!-- $Id: doc-organization.xml 11648 2004-03-22 00:37:46Z joeyh $ -->
+<!-- $Id: doc-organization.xml 18602 2004-07-27 16:44:52Z joeyh $ -->
 
  <sect1 id="doc-organization">
  <title>Organization of This Document</title>
@@ -75,12 +75,6 @@ additional configuration tasks, from <xref linkend="boot-new"/>.
 <listitem><para>
 
 Install additional software in <xref linkend="install-packages"/>.
-Use <command>tasksel</command> to install groups of packages which
-form a computer `task', <command>dselect</command> to select
-individual packages from a long list, or <command>aptitude</command>
-to gain the best of both before-mentioned applications. You can
-also use <command>apt-get</command> to install individual packages
-when you already know the package names you want.
 
 </para></listitem>
 </orderedlist>
@@ -90,8 +84,10 @@ when you already know the package names you want.
 Once you've got your system installed, you can read 
 <xref linkend="post-install"/>.  That chapter explains where to
 look to find more information about Unix and Debian, and how to
-replace your kernel.  If you want to build your own install system
-from source, be sure to read <xref linkend="boot-floppy-techinfo"/>.
+replace your kernel. 
+
+<!-- XXX FIXME: If you want to build your own install system
+from source, be sure to read <xref linkend="boot-floppy-techinfo"/>. -->
 
 </para><para>
 
@@ -115,10 +111,10 @@ architectures and languages for which this document is available.
 
 </para><para>
 
-Source is also available publicly; look for more information
-concerning how to contribute in <xref linkend="administrivia"/>.
+Source is also available publicly; look in <xref linkend="administrivia"/>
+for more information concerning how to contribute.
 We welcome suggestions, comments, patches, and bug reports (use the
-package &d-i; for bugs, but check first to see if the problem is
+package &d-i-manual; for bugs, but check first to see if the problem is
 already reported).
 
 </para>

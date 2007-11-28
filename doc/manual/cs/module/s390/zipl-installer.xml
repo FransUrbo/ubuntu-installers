@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
-<!-- $Id: zipl-installer.xml 11865 2004-03-24 09:50:09Z mck-guest $ -->
-<!-- original version: 11648 -->
+<!-- $Id: zipl-installer.xml 16468 2004-05-30 08:19:12Z mck-guest $ -->
+<!-- original version: 14602 -->
+
+  <sect3 arch="s390">
+  <title>Instalovat zavaděč <command>zipl</command></title>
+<para>
+
+Zavaděč na &arch-title; se nazývá <quote>zipl</quote>.
+<command>ZIPL</command> se používá a konfiguruje podobně jako
+<command>LILO</command>.  Pokud se chcete o tomto zavaděči dozvědět
+více, podívejte se na článek <quote>LINUX for &arch-title; Device
+Drivers and Installation Commands</quote> na stránkách developerWorks
+firmy IBM.
+
+</para>
+  </sect3>
