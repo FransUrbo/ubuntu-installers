@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2006-02-07 15:14+0000\n"
+"POT-Creation-Date: 2006-03-27 10:07+0100\n"
 "PO-Revision-Date: 2006-02-08 14:15+0100\n"
 "Last-Translator: Rui Az. <astronomy@mail.pt>\n"
 "Language-Team: UBUNTU-PT <ubuntu-pt.org>\n"
@@ -909,10 +909,10 @@ msgstr "DIREITOS DE AUTOR E GARANTIAS"
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:675
 msgid ""
-"Ubuntu is Copyright (C) 2004, 2005 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2006 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu é Copyright (C) 2004, 2005 Canonical Ltd., e incorpora o trabalho de "
+"Ubuntu é Copyright (C) 2004-2006 Canonical Ltd., e incorpora o trabalho de "
 "muito outros autores e contribuintes."
 
 # type: Content of: <reference><refentry><refsection><para>

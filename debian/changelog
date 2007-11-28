@@ -1,3 +1,9 @@
+debian-installer (20051026ubuntu25) dapper; urgency=low
+
+  * Update copyright dates in boot screens (closes: Malone #36820).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 27 Mar 2006 13:57:40 +0100
+
 debian-installer (20051026ubuntu24) dapper; urgency=low
 
   * Ship elilo configuration on i386 for Intel-based Macs.

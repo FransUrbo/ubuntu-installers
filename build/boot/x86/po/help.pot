@@ -6,13 +6,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2006-02-07 15:14+0000\n"
+"POT-Creation-Date: 2006-03-27 10:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
-"Content-Transfer-Encoding: ENCODING"
+"Content-Transfer-Encoding: ENCODING\n"
 
 # type: Content of: <reference><title>
 #: help.xml:6
@@ -130,7 +130,8 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
-msgid "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
+msgid ""
+"You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
@@ -147,13 +148,14 @@ msgstr ""
 #: help.xml:131 help.xml:644
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
-"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
-"/>"
+"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
+">"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
-msgid "You must have at least 128 megabytes of RAM to use this Ubuntu live system."
+msgid ""
+"You must have at least 128 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
@@ -176,15 +178,17 @@ msgid "Thank you for choosing Ubuntu!"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
-#: help.xml:156 help.xml:230 help.xml:266 help.xml:333 help.xml:419 help.xml:513 help.xml:599 help.xml:655 help.xml:711
+#: help.xml:156 help.xml:230 help.xml:266 help.xml:333 help.xml:419
+#: help.xml:513 help.xml:599 help.xml:655 help.xml:711
 msgid ""
-"Press <phrase class=\"not-serial\">F1</phrase><phrase "
-"class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
-"to ${BOOTPROMPT}"
+"Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">control and F then 1</phrase> for the help index, or ENTER to "
+"${BOOTPROMPT}"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
-#: help.xml:161 help.xml:235 help.xml:271 help.xml:338 help.xml:424 help.xml:518 help.xml:604 help.xml:660 help.xml:716
+#: help.xml:161 help.xml:235 help.xml:271 help.xml:338 help.xml:424
+#: help.xml:518 help.xml:604 help.xml:660 help.xml:716
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
 
@@ -361,8 +365,8 @@ msgstr ""
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
-"parameters when modules are loaded, boot in expert mode (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"parameters when modules are loaded, boot in expert mode (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
@@ -385,9 +389,9 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:354
 msgid ""
-"prompt, in combination with the boot method (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>>). If you use hex numbers you have "
-"to use the 0x prefix (e.g., 0x300)."
+"prompt, in combination with the boot method (see <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use the "
+"0x prefix (e.g., 0x300)."
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
@@ -407,7 +411,9 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:366
-msgid "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replaceable>,<replaceable>sectors</replaceable></userinput>"
+msgid ""
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -437,7 +443,10 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:381
-msgid "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</replaceable></userinput><optional><userinput>,<replaceable>...</replaceable></userinput></optional>"
+msgid ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -463,8 +472,8 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:396
 msgid ""
-"If your system hangs when booting, and the last message you see is "
-"\"aec671x-detect..\", try"
+"If your system hangs when booting, and the last message you see is \"aec671x-"
+"detect..\", try"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -509,8 +518,8 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:440 help.xml:532
 msgid ""
-"prompt, in combination with the boot method (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -520,7 +529,12 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:451
-msgid "<userinput>aha152x=<replaceable>iobase</replaceable></userinput><optional><userinput>,<replaceable>irq</replaceable></userinput><optional><userinput>,<replaceable>scsi-id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</replaceable></userinput></optional></optional></optional>"
+msgid ""
+"<userinput>aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -530,7 +544,11 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
-msgid "<userinput>aha1542=<replaceable>iobase</replaceable></userinput><optional><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replaceable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+msgid ""
+"<userinput>aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -570,7 +588,9 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
-msgid "<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</replaceable></userinput>"
+msgid ""
+"<userinput>tmc8xx=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+"replaceable></userinput>"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -590,7 +610,9 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:486
-msgid "<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</replaceable></userinput>"
+msgid ""
+"<userinput>pas16=<replaceable>iobase</replaceable>,<replaceable>irq</"
+"replaceable></userinput>"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -600,7 +622,9 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:491
-msgid "<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,<replaceable>sec</replaceable></userinput>"
+msgid ""
+"<userinput>ed=<replaceable>cyl</replaceable>,<replaceable>head</replaceable>,"
+"<replaceable>sec</replaceable></userinput>"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -610,7 +634,9 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:496
-msgid "<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</replaceable></userinput>"
+msgid ""
+"<userinput>st0x=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+"replaceable></userinput>"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -620,7 +646,9 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:501
-msgid "<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</replaceable></userinput>"
+msgid ""
+"<userinput>t128=<replaceable>mem_base</replaceable>,<replaceable>irq</"
+"replaceable></userinput>"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><informalexample><screen>
@@ -732,7 +760,8 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:584
-msgid "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
+msgid ""
+"Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
@@ -803,7 +832,7 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:675
 msgid ""
-"Ubuntu is Copyright (C) 2004, 2005 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2006 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
 
@@ -816,16 +845,16 @@ msgstr ""
 #: help.xml:683
 msgid ""
 "After installation, the exact distribution terms for each package are "
-"described in the corresponding file "
-"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"described in the corresponding file /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:688
 msgid ""
 "After startup, the exact distribution terms for each package are described "
-"in the corresponding file "
-"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"in the corresponding file /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
@@ -838,9 +867,9 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:699
 msgid ""
-"This installation system is based on the Debian installer. See <ulink "
-"url=\"http://www.debian.org/\" /> for more details and information on the "
-"Debian project."
+"This installation system is based on the Debian installer. See <ulink url="
+"\"http://www.debian.org/\" /> for more details and information on the Debian "
+"project."
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
