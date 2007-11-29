@@ -1,11 +1,11 @@
-debian-installer (20070308ubuntu22) UNRELEASED; urgency=low
+debian-installer (20070308ubuntu22) hardy; urgency=low
 
   * Backport from trunk (Bastian Blank):
     - Support coming cdebconf frontend changes.
   * Update help text translations from Launchpad.
   * Set Vcs-Bzr for Ubuntu.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 29 Nov 2007 16:42:16 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 29 Nov 2007 18:02:12 +0000
 
 debian-installer (20070308ubuntu21) hardy; urgency=low
 
