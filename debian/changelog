@@ -1,8 +1,8 @@
-base-installer (1.85ubuntu2) UNRELEASED; urgency=low
+base-installer (1.85ubuntu2) hardy; urgency=low
 
   * Install busybox-initramfs rather than busybox.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 29 Nov 2007 14:27:57 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 29 Nov 2007 14:34:33 +0000
 
 base-installer (1.85ubuntu1) hardy; urgency=low
 
