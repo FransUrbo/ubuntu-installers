@@ -509,11 +509,11 @@ EOF
 			fi
 		fi
 
-		# initramfs-tools needs busybox pre-installed (and only
-		# recommends it)
+		# initramfs-tools needs busybox-initramfs pre-installed (and
+		# only recommends it)
 		if [ "$rd_generator" = "initramfs-tools" ]; then
-			if ! log-output -t base-installer apt-install busybox; then
-				db_subst base-installer/kernel/failed-package-install PACKAGE busybox
+			if ! log-output -t base-installer apt-install busybox-initramfs; then
+				db_subst base-installer/kernel/failed-package-install PACKAGE busybox-initramfs
 				exit_error base-installer/kernel/failed-package-install
 			fi
 		fi
