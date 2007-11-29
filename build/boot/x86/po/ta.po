@@ -9,15 +9,78 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta(debian-installerlat)\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2007-09-18 12:57+0100\n"
+"PO-Revision-Date: 2007-11-08 02:38+0000\n"
 "Last-Translator: drtvasudevan <agnihot3@gmail.com>\n"
 "Language-Team: tamil <Ubuntu-l10n-tam@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-10-05 11:27+0000\n"
+"X-Launchpad-Export-Date: 2007-11-29 16:48+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
+
+#~ msgid "server-expert"
+#~ msgstr "சேவையகம்-திறமையாளர்"
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link "
+#~ "linkend=\"F3\"><keycap>F3</keycap></link>>). If you use hex numbers you have "
+#~ "to use the 0x prefix (e.g., 0x300)."
+#~ msgstr ""
+#~ "தூண்டலில் துவக்கு (பூட்) முறையுடன் உள்ளிடலாம் <link linkend=\"F3\"><keycap> "
+#~ "F3</keycap></link>  ஐ பார்க்க. நீங்கள் பதின் அறும எண்ணை உள்ளிடுவதானால் அதன் "
+#~ "முன் 0x  எனக் குறிப்பிடுக. (எ.டு., 0x300)."
+
+#~ msgid ""
+#~ "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "இது ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} இக்கான, ஒரு நிறுவல் "
+#~ "${MEDIA_TYPE} உருவாக்கிய நாள் ${BUILD_DATE}."
+
+#~ msgid ""
+#~ "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "இது ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} இக்கான, ஒரு உயிர் "
+#~ "${MEDIA_TYPE} , உருவாக்கிய நாள் ${BUILD_DATE}."
+
+#~ msgid ""
+#~ "The live system does not require any space on your hard disk. However, "
+#~ "existing swap partitions on the disk will be used if available."
+#~ msgstr ""
+#~ "இந்த உபூன்டு உயிர் தட்டுக்கு உங்கள் வன் தட்டில் இடம் தேவை இல்லை. ஆயினும் இடை "
+#~ "மாற்று ஏதேனும் இருப்பின் அது பயன் படுத்தப் படும்."
+
+#~ msgid ""
+#~ "If your system hangs when booting, and the last message you see is \"aec671x-"
+#~ "detect..\", try"
+#~ msgstr ""
+#~ "துவங்கிய உடன் கணினி செயல் இழந்து மற்றும் கடைசி செய்திகள்  \"aec671x-"
+#~ "detect..\", ஆக இருப்பின் இதை முயற்சி செய்க"
+
+#~ msgid ""
+#~ "You must have at least 128 megabytes of RAM to use this Ubuntu live system."
+#~ msgstr ""
+#~ "இந்த உபூன்டு உயிர் தட்டை பயன் படுத்த குறைந்தது 128 மெகா பைட் ரேம் தேவை."
+
+#~ msgid ""
+#~ "Minimal system install. Recommended for servers, where a complete graphical "
+#~ "desktop environment is not desired."
+#~ msgstr ""
+#~ "குறைந்த பட்ச நிறுவல். வரைகலை காட்சி தேவையில்லாத சேவையகங்களுக்கு "
+#~ "பரிந்துரைக்கப் பட்டது."
+
+#~ msgid "server"
+#~ msgstr "சேவையகம்"
+
+#~ msgid "<userinput>gdth=disable:y</userinput>"
+#~ msgstr "<userinput>gdth=disable:y</userinput>"
+
+#~ msgid ""
+#~ "You must have at least 256 megabytes of RAM to use this Ubuntu live system."
+#~ msgstr ""
+#~ "இந்த உபூன்டு உயிர் தட்டை பயன் படுத்த குறைந்தது 256 மெகா பைட் ரேம் தேவை."
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -30,18 +93,14 @@ msgstr "${DISTRIBUTION_NAME}க்கு நல்வரவு!"
 #: help.xml:18
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"இது ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} இக்கான, ஒரு நிறுவல் "
-"${MEDIA_TYPE} உருவாக்கிய நாள் ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"இது ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} இக்கான, ஒரு உயிர் "
-"${MEDIA_TYPE} , உருவாக்கிய நாள் ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -85,7 +144,9 @@ msgstr "சிறப்பு கணினிகளுக்கு சிறப�
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr "தேர்ந்தெடுத்த வன்வட்டு கட்டுப் படுத்திகளுக்கு சிறப்பு துவக்க (பூட்) அளவுருக்கள்"
+msgstr ""
+"தேர்ந்தெடுத்த வன்வட்டு கட்டுப் படுத்திகளுக்கு சிறப்பு துவக்க (பூட்) "
+"அளவுருக்கள்"
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
@@ -93,7 +154,8 @@ msgstr "கணினி அமைப்பு நிறுவலுக்கு 
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "சிறப்பு துவக்கு (பூட்) அமைப்புக்கு. சிறப்பு துவக்க (பூட்) அளவுருக்கள்"
+msgstr ""
+"சிறப்பு துவக்கு (பூட்) அமைப்புக்கு. சிறப்பு துவக்க (பூட்) அளவுருக்கள்"
 
 #: help.xml:84
 msgid "How to get help."
@@ -106,14 +168,14 @@ msgstr "காப்புரிமை மற்றும் உத்தரவ�
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
-"F2 முதல் F10 வரை விவரங்களுக்கு அழுத்தவும். அல்லது என்டர் விசையை ${BOOTPROMPT} க்கு "
-"அழுத்தவும்."
+"F2 முதல் F10 வரை விவரங்களுக்கு அழுத்தவும். அல்லது என்டர் விசையை "
+"${BOOTPROMPT} க்கு அழுத்தவும்."
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
-"F2 முதல் F10 வரை விவரங்களுக்கு அழுத்தவும். அல்லது உதவியை விட்டு வெளியேற எஸ்கேப் ஐ "
-"அழுத்துக."
+"F2 முதல் F10 வரை விவரங்களுக்கு அழுத்தவும். அல்லது உதவியை விட்டு வெளியேற "
+"எஸ்கேப் ஐ அழுத்துக."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
@@ -132,61 +194,61 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"வழக்கமான உபூன்டு இயங்கு தளம் நிறுவ 2 கிகா பைட் இடமும் குறைந்த பட்ச சேவையக நிறுவலுக்கு "
-"குறைந்தது 400 மெகா பைட் இடமும் கொண்ட புதிய பகிர்வு உருவாக்க உங்கள் வன் வட்டில் இடைவெளி "
-"தேவை. அதில் நீங்கள் புதிய இயங்கு தளத்தில் என்ன செய்ய விரும்புகிறீர்கள் என்பதைப் பொறுத்து "
-"அதிக நிறுவல் தொகுப்புகளுக்கு கூடுதல் இடம் தேவை."
+"வழக்கமான உபூன்டு இயங்கு தளம் நிறுவ 2 கிகா பைட் இடமும் குறைந்த பட்ச சேவையக "
+"நிறுவலுக்கு குறைந்தது 400 மெகா பைட் இடமும் கொண்ட புதிய பகிர்வு உருவாக்க "
+"உங்கள் வன் வட்டில் இடைவெளி தேவை. அதில் நீங்கள் புதிய இயங்கு தளத்தில் என்ன "
+"செய்ய விரும்புகிறீர்கள் என்பதைப் பொறுத்து அதிக நிறுவல் தொகுப்புகளுக்கு "
+"கூடுதல் இடம் தேவை."
 
-#: help.xml:131 help.xml:658
+#: help.xml:131 help.xml:664
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
-"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
-">"
+"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
+"/>"
 msgstr ""
-"மேலும் தகவல்களுக்கு நிறுவல் கைம்முறை ஏடு அல்லது எப்ஏக்யூ (FAQ) ஐ பார்க்க. அதிக ஆவணங்கள் "
-"உபூன்டு வலைப் பக்கங்கள்<ulink url=\"http://www.ubuntu.com/\" /> இல் கிடைக்கும்."
+"மேலும் தகவல்களுக்கு நிறுவல் கைம்முறை ஏடு அல்லது எப்ஏக்யூ (FAQ) ஐ பார்க்க. "
+"அதிக ஆவணங்கள் உபூன்டு வலைப் பக்கங்கள்<ulink url=\"http://www.ubuntu.com/\" "
+"/> இல் கிடைக்கும்."
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr "இந்த உபூன்டு உயிர் தட்டை பயன் படுத்த குறைந்தது 384 மெகா பைட் ரேம் தேவை."
+msgstr ""
+"இந்த உபூன்டு உயிர் தட்டை பயன் படுத்த குறைந்தது 384 மெகா பைட் ரேம் தேவை."
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
-"existing swap partitions on the disk will be used if available."
+"existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"இந்த உபூன்டு உயிர் தட்டுக்கு உங்கள் வன் தட்டில் இடம் தேவை இல்லை. ஆயினும் இடை மாற்று ஏதேனும் "
-"இருப்பின் அது பயன் படுத்தப் படும்."
 
-#: help.xml:147 help.xml:664
+#: help.xml:147 help.xml:670
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"மேலும் தகவல்களுக்கு எப்ஏக்யூ (FAQ) ஐ பார்க்க. இந்த ஆவணம் உபூன்டு வலைப் பக்கங்கள் <ulink "
-"url=\"http://www.ubuntu.com/\" /> இல் கிடைக்கும்."
+"மேலும் தகவல்களுக்கு எப்ஏக்யூ (FAQ) ஐ பார்க்க. இந்த ஆவணம் உபூன்டு வலைப் "
+"பக்கங்கள் <ulink url=\"http://www.ubuntu.com/\" /> இல் கிடைக்கும்."
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
 msgstr "உபூன்டுவை தேர்ந்தெடுத்தமைக்கு நன்றி!"
 
-#: help.xml:156 help.xml:230 help.xml:266 help.xml:295 help.xml:362
-#: help.xml:453 help.xml:522 help.xml:613 help.xml:669 help.xml:725
+#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361 help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""
-"Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control and F then 1</phrase> for the help index, or ENTER to "
-"${BOOTPROMPT}"
+"Press <phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
+"to ${BOOTPROMPT}"
 msgstr ""
-"உதவி சுட்டுக்கு <phrase class=\"not-serial\"> F1</phrase><phrase class=\"serial"
-"\"> கன்ட்ரோல் மற்றும் F அதன் பின்1</phrase> ஐ அழுத்தவும் அல்லது என்டர் விசையை "
-"${BOOTPROMPT} க்கு அழுத்தவும்."
+"உதவி சுட்டுக்கு <phrase class=\"not-serial\"> F1</phrase><phrase "
+"class=\"serial\"> கன்ட்ரோல் மற்றும் F அதன் பின்1</phrase> ஐ அழுத்தவும் "
+"அல்லது என்டர் விசையை ${BOOTPROMPT} க்கு அழுத்தவும்."
 
-#: help.xml:161 help.xml:235 help.xml:271 help.xml:300 help.xml:367
-#: help.xml:458 help.xml:527 help.xml:618 help.xml:674 help.xml:730
+#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366 help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
-"உதவி சுட்டுக்கு F1 ஐ அழுத்துக. அல்லது உதவியை விட்டு வெளியேற எஸ்கேப் ஐ அழுத்துக."
+"உதவி சுட்டுக்கு F1 ஐ அழுத்துக. அல்லது உதவியை விட்டு வெளியேற எஸ்கேப் ஐ "
+"அழுத்துக."
 
 #: help.xml:169
 msgid "BOOT METHODS"
@@ -210,89 +272,87 @@ msgstr "திறமையாளர்"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "அதிக பட்ச கட்டுப் பாட்டுக்கு திறமையாளர் முறைமையில் நிறுவலை துவக்கவும்."
+msgstr ""
+"அதிக பட்ச கட்டுப் பாட்டுக்கு திறமையாளர் முறைமையில் நிறுவலை துவக்கவும்."
 
 #: help.xml:191
-msgid "server"
-msgstr "சேவையகம்"
+msgid "cli"
+msgstr ""
 
 #: help.xml:192
-msgid "server-expert"
-msgstr "சேவையகம்-திறமையாளர்"
+msgid "cli-expert"
+msgstr ""
 
 #: help.xml:194
-msgid ""
-"Minimal system install. Recommended for servers, where a complete graphical "
-"desktop environment is not desired."
+msgid "Minimal command-line system install."
 msgstr ""
-"குறைந்த பட்ச நிறுவல். வரைகலை காட்சி தேவையில்லாத சேவையகங்களுக்கு பரிந்துரைக்கப் பட்டது."
 
-#: help.xml:200
+#: help.xml:199
 msgid "live"
 msgstr "உயிர்"
 
-#: help.xml:202
+#: help.xml:201
 msgid "Start the live system."
 msgstr "உயிர் இயங்கு தளத்தை துவக்குக"
 
-#: help.xml:207
+#: help.xml:206
 msgid "memtest"
 msgstr "மெம்டெஸ்ட்"
 
-#: help.xml:209
+#: help.xml:208
 msgid "Perform a memory test."
 msgstr "ஒரு நினவு சக்தி சோதனையை செய்க"
 
-#: help.xml:215 help.xml:259
+#: help.xml:214 help.xml:258
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"துவக்கு (பூட்) வகைகளில் ஏதேனும் ஒன்றை பயன் படுத்த, அதை தூண்டியில் உள்ளிடவும். தேவையானால் "
-"துவக்க (பூட்) அளவுருக்களை பின்னிடவும். உதாரணம்:"
+"துவக்கு (பூட்) வகைகளில் ஏதேனும் ஒன்றை பயன் படுத்த, அதை தூண்டியில் "
+"உள்ளிடவும். தேவையானால் துவக்க (பூட்) அளவுருக்களை பின்னிடவும். உதாரணம்:"
 
-#: help.xml:220
+#: help.xml:219
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr "boot: install acpi=off"
 
-#: help.xml:221
+#: help.xml:220
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
-#: help.xml:225
+#: help.xml:224
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"தெளிவாக இல்லையானால் முன்னிருப்பு முறையை கையான வேண்டும். சிறப்பு அளவுருக்கள் இல்லாத இதை "
-"தூண்டியில் என்டர் விசையை அமுக்கித் துவக்கலாம்"
+"தெளிவாக இல்லையானால் முன்னிருப்பு முறையை கையான வேண்டும். சிறப்பு அளவுருக்கள் "
+"இல்லாத இதை தூண்டியில் என்டர் விசையை அமுக்கித் துவக்கலாம்"
 
-#: help.xml:243 help.xml:279
+#: help.xml:242 help.xml:278
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "சிதைந்த இயங்கு தளத்தை மீட்டு சீரமைத்தல்"
 
-#: help.xml:247
+#: help.xml:246
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
-"இருப்பில் உள்ள சிதைந்த இயங்கு தளத்தை மீட்டு சீரமைக்க இந்த துவக்க (பூட்) வகைகளில் ஏதேனும் "
-"ஒன்றை பயன்படுத்து."
+"இருப்பில் உள்ள சிதைந்த இயங்கு தளத்தை மீட்டு சீரமைக்க இந்த துவக்க (பூட்) "
+"வகைகளில் ஏதேனும் ஒன்றை பயன்படுத்து."
 
-#: help.xml:251
+#: help.xml:250
 msgid "rescue"
 msgstr "மீட்பு"
 
-#: help.xml:253
+#: help.xml:252
 msgid "Boot into rescue mode."
 msgstr "மீட்பு முறைமையில் துவக்குக."
 
-#: help.xml:263
+#: help.xml:262
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
-#: help.xml:286
+#: help.xml:285
 msgid ""
 "There is no dedicated rescue mode on this CD. However, since the entire "
 "system runs from the CD, it is possible to use the command-line and/or "
@@ -300,503 +360,528 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
-"இந்த குறுந் தட்டில் தனியாக மீட்பு முறைமை ஏதும் இல்லை. எனினும் கணினி அமைப்பு குறுந் "
-"தட்டிலிருந்து இயங்குவதால் கட்டளை வரியையோ அல்லது/கூட வரைகலை கருவிகளையோ பயன் படுத்தி "
-"சிதைந்த அமைப்பை சீர் செய்ய இயலும்; உலாவியால் வலையில் உதவி தேட இயலும். உங்கள் கணினி "
-"சரியாக துவங்காததற்கு விரிவான பல உதவிகள் கிடைக்கின்றன."
+"இந்த குறுந் தட்டில் தனியாக மீட்பு முறைமை ஏதும் இல்லை. எனினும் கணினி அமைப்பு "
+"குறுந் தட்டிலிருந்து இயங்குவதால் கட்டளை வரியையோ அல்லது/கூட வரைகலை கருவிகளையோ "
+"பயன் படுத்தி சிதைந்த அமைப்பை சீர் செய்ய இயலும்; உலாவியால் வலையில் உதவி தேட "
+"இயலும். உங்கள் கணினி சரியாக துவங்காததற்கு விரிவான பல உதவிகள் கிடைக்கின்றன."
 
-#: help.xml:308
+#: help.xml:307
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "சிறப்பு துவக்க (பூட்) அளவுருக்கள், ஒரு பார்வை:"
 
-#: help.xml:315
+#: help.xml:314
 msgid "On a few systems, you may need to specify a parameter at the"
 msgstr ""
-"சில கணினிகளில் நீங்கள் ஒரு சில சிறப்பு துவக்க (பூட்) அளவுருக்கள்,குறிப்பிட தேவை "
-"இருக்கலாம், இவ்விடத்தில்"
+"சில கணினிகளில் நீங்கள் ஒரு சில சிறப்பு துவக்க (பூட்) அளவுருக்கள்,குறிப்பிட "
+"தேவை இருக்கலாம், இவ்விடத்தில்"
 
-#: help.xml:316 help.xml:382 help.xml:473 help.xml:540
+#: help.xml:315 help.xml:381 help.xml:469 help.xml:536
 #, no-wrap
 msgid "boot:"
 msgstr "(துவக்கு பூட்) boot:"
 
-#: help.xml:316
+#: help.xml:315
 msgid ""
 "prompt in order to boot the system. For example, Linux may not be able to "
 "autodetect your hardware, and you may need to explicitly specify its "
 "location or type for it to be recognized."
 msgstr ""
-"தூண்டலில் உள்ளிட வேண்டும். உதாரணமாக லினக்ஸ் ஆல் உங்கள் வன் பொருட்களை தானாக கண்டறிய "
-"முடியாமல் போகலாம். ஆகவே அவற்றை தெளிவாக எங்கே என்ன வகை உள்ளது என   குறிப்பிட "
-"வேண்டியிருக்கும்."
+"தூண்டலில் உள்ளிட வேண்டும். உதாரணமாக லினக்ஸ் ஆல் உங்கள் வன் பொருட்களை தானாக "
+"கண்டறிய முடியாமல் போகலாம். ஆகவே அவற்றை தெளிவாக எங்கே என்ன வகை உள்ளது என   "
+"குறிப்பிட வேண்டியிருக்கும்."
 
-#: help.xml:322
+#: help.xml:321
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
-"நீங்கள் பயன் படுத்தக் கூடிய சிறப்பு துவக்க (பூட்) அளவுருக்கள் குறித்து மேலதிக தகவல்களுக்கு "
-"இதை அழுத்துங்கள்:"
+"நீங்கள் பயன் படுத்தக் கூடிய சிறப்பு துவக்க (பூட்) அளவுருக்கள் குறித்து "
+"மேலதிக தகவல்களுக்கு இதை அழுத்துங்கள்:"
 
-#: help.xml:330
+#: help.xml:329
 msgid "boot parameters for special machines"
 msgstr "சிறப்பு கணினிகளுக்கு சிறப்பு துவக்க (பூட்) அளவுருக்கள்"
 
-#: help.xml:335
+#: help.xml:334
 msgid "boot parameters for various disk controllers"
-msgstr "தேர்ந்தெடுத்த வன்வட்டு கட்டுப் படுத்திகளுக்கு சிறப்பு துவக்க (பூட்) அளவுருக்கள்"
+msgstr ""
+"தேர்ந்தெடுத்த வன்வட்டு கட்டுப் படுத்திகளுக்கு சிறப்பு துவக்க (பூட்) "
+"அளவுருக்கள்"
 
-#: help.xml:340
+#: help.xml:339
 msgid "boot parameters understood by the install system"
-msgstr "கணினி அமைப்பு நிறுவல் புரிந்து கொள்ளக் கூடிய துவக்க (பூட்) அளவுருக்கள்"
+msgstr ""
+"கணினி அமைப்பு நிறுவல் புரிந்து கொள்ளக் கூடிய துவக்க (பூட்) அளவுருக்கள்"
 
-#: help.xml:345
+#: help.xml:344
 msgid "boot parameters understood by the bootstrap system"
-msgstr "துவக்க (பூட்) அமைப்பு புரிந்து கொள்ளக் கூடிய சிறப்பு துவக்க (பூட்) அளவுருக்கள்"
+msgstr ""
+"துவக்க (பூட்) அமைப்பு புரிந்து கொள்ளக் கூடிய சிறப்பு துவக்க (பூட்) "
+"அளவுருக்கள்"
 
-#: help.xml:350
+#: help.xml:349
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
-"parameters when modules are loaded, boot in expert mode (see <link linkend="
-"\"F3\"><keycap>F3</keycap></link>)."
+"parameters when modules are loaded, boot in expert mode (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"பல உட் கூறு பகுதிகள் நிறுவியால் அவ்வப்போது ஏற்றப் படுகின்றன. அதனால் அந்த பகுதிகளுக்கான "
-"கட்டளையை அப்போது கட்டளை வரியில் தர இயலாது. பகுதிகள் ஏற்றப் படும் போது அளவுருக்கள் "
-"கேட்டு தூண்டுவதற்கு திறமையாளர் முறைமையில் துவக்குக <link linkend=\"F3\"><keycap> "
-"F3</keycap></link> ஐ பார்க்கவும்."
+"பல உட் கூறு பகுதிகள் நிறுவியால் அவ்வப்போது ஏற்றப் படுகின்றன. அதனால் அந்த "
+"பகுதிகளுக்கான கட்டளையை அப்போது கட்டளை வரியில் தர இயலாது. பகுதிகள் ஏற்றப் "
+"படும் போது அளவுருக்கள் கேட்டு தூண்டுவதற்கு திறமையாளர் முறைமையில் துவக்குக "
+"<link linkend=\"F3\"><keycap> F3</keycap></link> ஐ பார்க்கவும்."
 
-#: help.xml:357
+#: help.xml:356
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"பல உட் கூறு பகுதிகள் துவக்கியால் அவ்வப்போது ஏற்றப் படுகின்றன. அதனால் அந்த பகுதிகளுக்கான "
-"கட்டளையை அப்போது கட்டளை வரியில் தர இயலாது."
+"பல உட் கூறு பகுதிகள் துவக்கியால் அவ்வப்போது ஏற்றப் படுகின்றன. அதனால் அந்த "
+"பகுதிகளுக்கான கட்டளையை அப்போது கட்டளை வரியில் தர இயலாது."
 
-#: help.xml:375
+#: help.xml:374
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "பல்வித வன் பொருட்களுக்கான சிறப்பு துவக்க (பூட்) அளவுருக்கள்"
 
-#: help.xml:382 help.xml:473 help.xml:540
+#: help.xml:381 help.xml:469 help.xml:536
 msgid "You can use the following boot parameters at the"
 msgstr "நீங்கள் பின்வரும் துவக்க (பூட்) அளவுருக்களை"
 
-#: help.xml:383
+#: help.xml:382
 msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
-"0x prefix (e.g., 0x300)."
+"prompt, in combination with the boot method (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>). If you use hex numbers you have "
+"to use the 0x prefix (e.g., 0x300)."
 msgstr ""
-"தூண்டலில் துவக்கு (பூட்) முறையுடன் உள்ளிடலாம் <link linkend=\"F3\"><keycap> F3</"
-"keycap></link>  ஐ பார்க்க. நீங்கள் பதின் அறும எண்ணை உள்ளிடுவதானால் அதன் முன் 0x  எனக் "
-"குறிப்பிடுக. (எ.டு., 0x300)."
+"தூண்டலில் துவக்கு (பூட்) முறையுடன் உள்ளிடலாம் <link linkend=\"F3\"><keycap> "
+"F3</keycap></link>  ஐ பார்க்க. நீங்கள் பதின் அறும எண்ணை உள்ளிடுவதானால் அதன் "
+"முன் 0x  எனக் குறிப்பிடுக. (எ.டு., 0x300)."
 
-#: help.xml:390 help.xml:480
+#: help.xml:389 help.xml:476
 msgid "HARDWARE"
 msgstr "வன் பொருள்"
 
-#: help.xml:391 help.xml:481
+#: help.xml:390 help.xml:477
 msgid "PARAMETER TO SPECIFY"
 msgstr "குறிப்பிட வேண்டிய அளவுருக்கள்"
 
-#: help.xml:394
+#: help.xml:393
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1 அல்லது ValuePoint (IDE disk)"
 
-#: help.xml:395
+#: help.xml:394
 msgid ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
+"eable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
+"eable>,<replaceable>sectors</replaceable></userinput>"
 
-#: help.xml:399
+#: help.xml:398
 msgid "Some IBM ThinkPads"
 msgstr "சிவ ஐபிஎம் மடிக் கணினிகள் (IBM ThinkPads)"
 
-#: help.xml:400
+#: help.xml:399
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
 msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
-#: help.xml:404
+#: help.xml:403
 msgid "IBM Pentium Microchannel"
 msgstr "ஐபிஎம் பென்டியம் மைக்ரோசானல் (IBM Pentium Microchannel)"
 
-#: help.xml:405
+#: help.xml:404
 msgid "<userinput>mca-pentium no-hlt</userinput>"
 msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
-#: help.xml:409
+#: help.xml:408
 msgid "Protect I/O port regions"
 msgstr "(I/O port regions) துறை இடங்களை பாதுகாக்க"
 
-#: help.xml:410
+#: help.xml:409
 msgid ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 msgstr ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 
-#: help.xml:414
+#: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
 msgstr "தவறான எப்ஃபியு வுக்கு தீர்வு (பழைய கணினிகள்)"
 
-#: help.xml:415
+#: help.xml:414
 msgid "<userinput>no387</userinput>"
 msgstr "<userinput>no387</userinput>"
 
-#: help.xml:419
+#: help.xml:418
 msgid "Laptops with screen display problems"
 msgstr "திரைக் காட்சி பிரச்சினை உள்ள மடிக் கணினிகள்"
 
-#: help.xml:420
+#: help.xml:419
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-#: help.xml:424
+#: help.xml:423
 msgid "Use first serial port at 9600 baud"
 msgstr ""
 
-#: help.xml:425
+#: help.xml:424
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr ""
 
-#: help.xml:430
-msgid ""
-"If your system hangs when booting, and the last message you see is \"aec671x-"
-"detect..\", try"
+#: help.xml:428
+msgid "Force use of generic IDE driver"
 msgstr ""
-"துவங்கிய உடன் கணினி செயல் இழந்து மற்றும் கடைசி செய்திகள்  \"aec671x-detect..\", ஆக "
-"இருப்பின் இதை முயற்சி செய்க"
 
-#: help.xml:433
-msgid "<userinput>gdth=disable:y</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+#: help.xml:429
+msgid "<userinput>generic.all_generic_ide=1</userinput>"
+msgstr ""
 
-#: help.xml:438
+#: help.xml:434
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
 msgstr ""
-"பூட்டப் பட்டாலோ அல்லது மற்ற வன் பொருள் செயல் நீக்கமானாலோ ஏபிஐசி குறுக்கீட்டு வழி "
-"அனுப்புதலை செயல் நீக்கம் செய்யவும்"
+"பூட்டப் பட்டாலோ அல்லது மற்ற வன் பொருள் செயல் நீக்கமானாலோ ஏபிஐசி குறுக்கீட்டு "
+"வழி அனுப்புதலை செயல் நீக்கம் செய்யவும்"
 
-#: help.xml:441
+#: help.xml:437
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-#: help.xml:445 help.xml:514 help.xml:605
+#: help.xml:441 help.xml:510 help.xml:611
 msgid "For example:"
 msgstr "உதாரணம்:"
 
-#: help.xml:448
+#: help.xml:444
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
-#: help.xml:449
+#: help.xml:445
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
-#: help.xml:466
+#: help.xml:462
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "சிறப்பு துவக்க (பூட்) அளவுருக்கள் - பல்வித வட்டு இயக்கிகளுக்கு"
 
-#: help.xml:474 help.xml:541
+#: help.xml:470 help.xml:537
 msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"தூண்டல் துவக்கு (பூட்) முறையுடன்<link linkend=\"F3\"><keycap> F3</keycap></link> "
-"ஐ பார்க்கவும்"
+"தூண்டல் துவக்கு (பூட்) முறையுடன்<link linkend=\"F3\"><keycap> "
+"F3</keycap></link> ஐ பார்க்கவும்"
 
-#: help.xml:484
+#: help.xml:480
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
-#: help.xml:485
+#: help.xml:481
 msgid ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>irq</replaceable></"
-"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
-"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
-"userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 msgstr ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>irq</replaceable></"
-"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
-"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
-"userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 
-#: help.xml:489
+#: help.xml:485
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
-#: help.xml:490
+#: help.xml:486
 msgid ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
-"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 msgstr ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
-"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 
-#: help.xml:494
+#: help.xml:490
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
-#: help.xml:495
+#: help.xml:491
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
+msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 
-#: help.xml:499
+#: help.xml:495
 msgid "BusLogic SCSI Hosts"
 msgstr "பஸ் லாஜிக் SCSI புரவலன்"
 
-#: help.xml:500
+#: help.xml:496
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
-#: help.xml:504
+#: help.xml:500
 msgid "Certain DELL machines"
 msgstr "சில டெல் கணினிகள்"
 
-#: help.xml:505
+#: help.xml:501
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
-#: help.xml:510
+#: help.xml:506
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"இந்த பட்டியல் முடியவில்லை. உட் கூறின் kernel-parameters.txt கோப்பு ஐ அதிக தகவலுக்குப் "
-"பார்க்க"
+"இந்த பட்டியல் முடியவில்லை. உட் கூறின் kernel-parameters.txt கோப்பு ஐ அதிக "
+"தகவலுக்குப் பார்க்க"
 
-#: help.xml:517
+#: help.xml:513
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:518
+#: help.xml:514
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:535
+#: help.xml:531
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "சிறப்பு துவக்க (பூட்) அளவுருக்கள் - நிறுவல் அமைப்புகள்"
 
-#: help.xml:545
+#: help.xml:541
 msgid "These parameters control how the installer works."
-msgstr "இந்த அளவுருக்கள் நிறுவி எப்படி வேலை செய்யும் என்பதை கட்டுப் படுத்துகின்றன."
+msgstr ""
+"இந்த அளவுருக்கள் நிறுவி எப்படி வேலை செய்யும் என்பதை கட்டுப் படுத்துகின்றன."
 
-#: help.xml:548
+#: help.xml:544
 msgid "These parameters control how the bootstrap system works."
-msgstr "இந்த அளவுருக்கள் துவக்கி அமைப்பு எப்படி வேலை செய்யும் என்பதை கட்டுப் படுத்துகின்றன."
+msgstr ""
+"இந்த அளவுருக்கள் துவக்கி அமைப்பு எப்படி வேலை செய்யும் என்பதை கட்டுப் "
+"படுத்துகின்றன."
 
-#: help.xml:553
+#: help.xml:549
 msgid "RESULT"
 msgstr "விளைவு:"
 
-#: help.xml:554
+#: help.xml:550
 msgid "PARAMETER"
 msgstr "அளவுருக்கள்"
 
-#: help.xml:557
+#: help.xml:553
 msgid "Verbose debugging"
 msgstr "வழு நீக்கம் உரையுடன்"
 
-#: help.xml:558
+#: help.xml:554
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
 msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
-#: help.xml:562
+#: help.xml:558
 msgid "Debug boot sequence"
 msgstr "பிழை நீக்கு துவக்கு (பூட்) வரிசைமுறை"
 
-#: help.xml:563
+#: help.xml:559
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
 msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
-#: help.xml:567
+#: help.xml:563
 msgid "Disable framebuffer"
 msgstr "சட்ட இடையகத்தை முடக்குக"
 
-#: help.xml:568
+#: help.xml:564
 msgid "<userinput>fb=false</userinput>"
 msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:572
+#: help.xml:568
 msgid "Don't probe for USB"
 msgstr "யுஎஸ்பி (USB) ஐ தேடாதே"
 
-#: help.xml:573
+#: help.xml:569
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
 msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
-#: help.xml:577
+#: help.xml:573
 msgid "Don't start PCMCIA"
 msgstr "பிசிஎம்சிஐஏ (PCMCIA) ஐ துவக்காதே"
 
-#: help.xml:578
+#: help.xml:574
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:582
+#: help.xml:578
 msgid "Force static network config"
 msgstr "நிலையான வலைப் பின்னல் வடிவமைப்பை கட்டாயப் படுத்து"
 
-#: help.xml:583
+#: help.xml:579
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:587
+#: help.xml:583
 msgid "Set keyboard map"
 msgstr "விசைப்பலகை வரைபடத்தை அமை"
 
-#: help.xml:588
+#: help.xml:584
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:592
+#: help.xml:588
 msgid "Use Braille tty"
 msgstr "ப்ரெய்லி tyy ஐ பயன்படுத்து"
 
-#: help.xml:593
+#: help.xml:589
 msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
+
+#: help.xml:593
+msgid "Use high contrast accessibility theme"
+msgstr ""
+
+#: help.xml:594
+msgid "<userinput>theme=dark</userinput>"
+msgstr ""
 
 #: help.xml:598
+msgid "Use special tasks"
+msgstr ""
+
+#: help.xml:599
+msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
+msgstr ""
+
+#: help.xml:604
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 "PCI வரைபடத்துக்கான ACPI ஐ முடக்கு (ஹெச்பி சேவையகம் மற்றும் வயா அடிப்படையான "
 "கணினிகளுக்கு உபயோகமானது.)"
 
-#: help.xml:601
+#: help.xml:607
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:608
+#: help.xml:614
 #, no-wrap
 msgid "boot: install pci=noacpi"
 msgstr ""
 
-#: help.xml:609
+#: help.xml:615
 #, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr ""
 
-#: help.xml:626
+#: help.xml:632
 msgid "GETTING HELP"
 msgstr "உதவி கண்டு பிடித்தல்"
 
-#: help.xml:633
+#: help.xml:639
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "உபூன்டுவை நிறுவ இயலவில்லையானால் கவலைப் பட வேண்டாம்!"
 
-#: help.xml:636
+#: help.xml:642
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "உபூன்டுவை துவக்க இயலவில்லையானால் கவலைப் பட வேண்டாம்!"
 
-#: help.xml:639
+#: help.xml:645
 msgid "The Ubuntu team is ready to help you!"
 msgstr "உபூன்டு குழு உங்களுக்கு உதவ தயாராக உள்ளது!"
 
-#: help.xml:642
+#: help.xml:648
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"குறிப்பாக நாங்கள் நிறுவல் தொடர்பான பிரச்சினைகளில் ஆர்வம் காட்டுகிறோம். ஏனெனில் பொதுவாக "
-"அவை<emphasis> ஒரு</emphasis> தனிமனிதனுக்கு மட்டும் ஏற்படுபவை அல்ல."
+"குறிப்பாக நாங்கள் நிறுவல் தொடர்பான பிரச்சினைகளில் ஆர்வம் காட்டுகிறோம். "
+"ஏனெனில் பொதுவாக அவை<emphasis> ஒரு</emphasis> தனிமனிதனுக்கு மட்டும் ஏற்படுபவை "
+"அல்ல."
 
-#: help.xml:647
+#: help.xml:653
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"குறிப்பாக நாங்கள் துவக்கம் தொடர்பான பிரச்சினைகளில் ஆர்வம் காட்டுகிறோம். ஏனெனில் பொதுவாக "
-"அவை<emphasis> ஒரு</emphasis> தனிமனிதனுக்கு மட்டும் ஏற்படுபவை அல்ல."
+"குறிப்பாக நாங்கள் துவக்கம் தொடர்பான பிரச்சினைகளில் ஆர்வம் காட்டுகிறோம். "
+"ஏனெனில் பொதுவாக அவை<emphasis> ஒரு</emphasis> தனிமனிதனுக்கு மட்டும் ஏற்படுபவை "
+"அல்ல."
 
-#: help.xml:651
+#: help.xml:657
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"உங்கள் பிரச்சினையை பற்றி நாங்கள் ஏற்கெனவே கேள்வி பட்டுள்ளோம். அதற்கான தீர்வை உடனடியாக "
-"கொடுக்க இயலும். அல்லது பிரச்சினையை உங்களுடன் சேர்ந்து தீர்வு காண்போம். உங்கள் அனுபவத்தால் "
-"இதே பிரச்சினையுடன் அடுத்து வருபவர் பயன் அடைவார்!"
+"உங்கள் பிரச்சினையை பற்றி நாங்கள் ஏற்கெனவே கேள்வி பட்டுள்ளோம். அதற்கான தீர்வை "
+"உடனடியாக கொடுக்க இயலும். அல்லது பிரச்சினையை உங்களுடன் சேர்ந்து தீர்வு "
+"காண்போம். உங்கள் அனுபவத்தால் இதே பிரச்சினையுடன் அடுத்து வருபவர் பயன் அடைவார்!"
 
-#: help.xml:682
+#: help.xml:688
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "காப்புரிமை மற்றும் உத்தரவாதங்கள்"
 
-#: help.xml:689
+#: help.xml:695
 msgid ""
 "Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
 
-#: help.xml:694
+#: help.xml:700
 msgid "The Ubuntu system is freely redistributable."
 msgstr "இந்த உபூன்டு அமைப்பை இவலசமாக மறு வினியோகம் செய்யலாம்."
 
-#: help.xml:697
+#: help.xml:703
 msgid ""
 "After installation, the exact distribution terms for each package are "
-"described in the corresponding file /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"described in the corresponding file "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
-"நிறுவலுக்குப் பிறகு ஒவ்வொரு பொதியின் வினியோக நிபந்தனைகளையும் இந்த கோப்பில் காணலாம்: /"
-"usr/share/doc/<replaceable>packagename</replaceable>/copyright."
-
-#: help.xml:702
-msgid ""
-"After startup, the exact distribution terms for each package are described "
-"in the corresponding file /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
-msgstr ""
-"துவக்கத்திற்குப் பிறகு ஒவ்வொரு பொதியின் வினியோக நிபந்தனைகளையும் இந்த கோப்பில் காணலாம்: /"
-"usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"நிறுவலுக்குப் பிறகு ஒவ்வொரு பொதியின் வினியோக நிபந்தனைகளையும் இந்த கோப்பில் "
+"காணலாம்: /usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 
 #: help.xml:708
+msgid ""
+"After startup, the exact distribution terms for each package are described "
+"in the corresponding file "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+msgstr ""
+"துவக்கத்திற்குப் பிறகு ஒவ்வொரு பொதியின் வினியோக நிபந்தனைகளையும் இந்த "
+"கோப்பில் காணலாம்: "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+
+#: help.xml:714
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"இதற்கு பொருந்தும் எந்த சட்டத்தின் படியும் உபூன்டு <emphasis> எந்த வித உத்திரவாதத்துடனும் "
-"வரவில்லை. </emphasis>"
-
-#: help.xml:713
-msgid ""
-"This installation system is based on the Debian installer. See <ulink url="
-"\"http://www.debian.org/\" /> for more details and information on the Debian "
-"project."
-msgstr ""
-"இந்த நிறுவல் அமைப்பு டெபியன் நிறுவியை அடிப்படையாகக் கொண்டது. டெபியன் திட்டம் குறித்த "
-"மேலுமதிக தகவல்களுக்கு <ulink url=\"http://www.debian.org/\" /> ஐ பார்க்க."
+"இதற்கு பொருந்தும் எந்த சட்டத்தின் படியும் உபூன்டு <emphasis> எந்த வித "
+"உத்திரவாதத்துடனும் வரவில்லை. </emphasis>"
 
 #: help.xml:719
+msgid ""
+"This installation system is based on the Debian installer. See <ulink "
+"url=\"http://www.debian.org/\" /> for more details and information on the "
+"Debian project."
+msgstr ""
+"இந்த நிறுவல் அமைப்பு டெபியன் நிறுவியை அடிப்படையாகக் கொண்டது. டெபியன் திட்டம் "
+"குறித்த மேலுமதிக தகவல்களுக்கு <ulink url=\"http://www.debian.org/\" /> ஐ "
+"பார்க்க."
+
+#: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"இந்த கணினி அமைப்பு டெபியன் ஐ அடிப்படையாகக் கொண்டது. டெபியன் திட்டம் குறித்த மேலுமதிக "
-"தகவல்களுக்கு <ulink url=\"http://www.debian.org/\" /> ஐ பார்க்க."
+"இந்த கணினி அமைப்பு டெபியன் ஐ அடிப்படையாகக் கொண்டது. டெபியன் திட்டம் குறித்த "
+"மேலுமதிக தகவல்களுக்கு <ulink url=\"http://www.debian.org/\" /> ஐ பார்க்க."

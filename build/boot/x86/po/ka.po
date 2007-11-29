@@ -8,16 +8,76 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ka\n"
-"Report-Msgid-Bugs-To:\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-09-27 13:36+0000\n"
+"PO-Revision-Date: 2007-11-08 02:38+0000\n"
 "Last-Translator: Vladimer Sichinava <vsichi@gnome.org>\n"
 "Language-Team: Georgian <www.gia.ge>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-10-05 11:27+0000\n"
+"X-Launchpad-Export-Date: 2007-11-29 16:48+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
+
+#~ msgid "server-expert"
+#~ msgstr "სერვერ-ექსპერტი"
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link "
+#~ "linkend=\"F3\"><keycap>F3</keycap></link>>). If you use hex numbers you have "
+#~ "to use the 0x prefix (e.g., 0x300)."
+#~ msgstr ""
+#~ "მიუთითოთ ჩატვირთვის პარამეტრები (იხ.: <link "
+#~ "linkend=\"F3\"><keycap>F3</keycap></link>). თექვსმეტობით მნიშვნელობებს წინ "
+#~ "დაუსვით პრეფიქსი 0x (მაგ.: 0x300)."
+
+#~ msgid ""
+#~ "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "მიმდინარეობს ${MEDIA_TYPE}-დან  ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}-"
+#~ "ის ინსტალაცია (გამოშვების თარიღი ${BUILD_DATE})."
+
+#~ msgid ""
+#~ "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "ეს არის ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}, ლაივ-${MEDIA_TYPE} "
+#~ "ვარიანტი (გამოშვების თარიღი ${BUILD_DATE})."
+
+#~ msgid ""
+#~ "The live system does not require any space on your hard disk. However, "
+#~ "existing swap partitions on the disk will be used if available."
+#~ msgstr ""
+#~ "ლაივ-სისტემას არ სჭირდება დისკზე ადგილი, მაგრამ გამოიყენებს სვოპ-არეს, თუ "
+#~ "არის სექმნილი."
+
+#~ msgid ""
+#~ "If your system hangs when booting, and the last message you see is \"aec671x-"
+#~ "detect..\", try"
+#~ msgstr ""
+#~ "თუ სისტემა იჭედება ჩატვირთვისას შეტყობინებაზე \"aec671x-detect..\", სცადეთ"
+
+#~ msgid ""
+#~ "You must have at least 128 megabytes of RAM to use this Ubuntu live system."
+#~ msgstr "უბუნტუს ლაივ-სისტემისათვის საჭიროა არანაკლებ 128 მბ მეხსიერება."
+
+#~ msgid ""
+#~ "Minimal system install. Recommended for servers, where a complete graphical "
+#~ "desktop environment is not desired."
+#~ msgstr ""
+#~ "შეკვეცილი სისტემა. რეკომენდებულია სერვერებისათვის, სადაც არ არის გრაფიკული "
+#~ "ინსტრუმენტების აუცილებლობა."
+
+#~ msgid "server"
+#~ msgstr "სერვერი"
+
+#~ msgid "<userinput>gdth=disable:y</userinput>"
+#~ msgstr "<userinput>gdth=disable:y</userinput>"
+
+#~ msgid ""
+#~ "You must have at least 256 megabytes of RAM to use this Ubuntu live system."
+#~ msgstr "უბუნტუს ლაივ-სისტემისათვის საჭიროა არანაკლებ 256 მბ მეხსიერება."
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -33,7 +93,7 @@ msgid ""
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "${MEDIA_TYPE}, ჩადგმის მედიაა, ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}-"
-"თვის. \r\n"
+"თვის. \n"
 "აგების თარიღი: ${BUILD_DATE})."
 
 #: help.xml:23
@@ -42,7 +102,7 @@ msgid ""
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "${MEDIA_TYPE}, Live მედიაა, ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}-"
-"თვის. \r\n"
+"თვის. \n"
 "აგების თარიღი: ${BUILD_DATE})."
 
 #: help.xml:28
@@ -96,7 +156,8 @@ msgstr "ჩატვირთვის სპეციალური პარ�
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "ჩატვირთვის სპეციალური პარამეტრები პირველადი ჩატვირთვის სისტემისათვის."
+msgstr ""
+"ჩატვირთვის სპეციალური პარამეტრები პირველადი ჩატვირთვის სისტემისათვის."
 
 #: help.xml:84
 msgid "How to get help."
@@ -142,12 +203,12 @@ msgstr ""
 #: help.xml:131 help.xml:664
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
-"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
-">"
+"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
+"/>"
 msgstr ""
 "დაწვრილებითი ცნობებისათვის გაეცანით დაყენების სახელმძღვანელოს ან კითხვარს; "
-"ორივე დოკუმენტი გამოქვეყნებულია უბუნტუს ვებ-საიტზე: <ulink url=\"http://www."
-"ubuntu.com/\" />"
+"ორივე დოკუმენტი გამოქვეყნებულია უბუნტუს ვებ-საიტზე: <ulink "
+"url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
@@ -159,7 +220,7 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"ლაივ სისტემა არ საჭიროებს მყარ დისკზე ადგილს, მაგრამ თუ შესაძლებელია\r\n"
+"ლაივ სისტემა არ საჭიროებს მყარ დისკზე ადგილს, მაგრამ თუ შესაძლებელია\n"
 "გამოიყენებს სვოპ არეს."
 
 #: help.xml:147 help.xml:670
@@ -174,19 +235,17 @@ msgstr ""
 msgid "Thank you for choosing Ubuntu!"
 msgstr "გმადლობთ უბუნტუს გამოყენებისათვის!"
 
-#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
-#: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
+#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361 help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""
-"Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control and F then 1</phrase> for the help index, or ENTER to "
-"${BOOTPROMPT}"
+"Press <phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
+"to ${BOOTPROMPT}"
 msgstr ""
-"დააჭირეთ <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control და F შემდეგ 1</phrase> დახმარების სარჩევში გადასვლისთვის, ან "
-"ENTER-ს ${BOOTPROMPT}-თვის"
+"დააჭირეთ <phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\">control და F შემდეგ 1</phrase> დახმარების სარჩევში "
+"გადასვლისთვის, ან ENTER-ს ${BOOTPROMPT}-თვის"
 
-#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
-#: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
+#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366 help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr "F1 - ცნობარის ინდექსი, Escape - ცნობარიდან გასვლა."
 
@@ -351,8 +410,8 @@ msgstr "ჩატვირთვის პარამეტრები  bootst
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
-"parameters when modules are loaded, boot in expert mode (see <link linkend="
-"\"F3\"><keycap>F3</keycap></link>)."
+"parameters when modules are loaded, boot in expert mode (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "ინსტალერი დინამიურად ტვირთავს ბირთვის მოდულებს, რომელთათვისაც შეუძლებელია "
 "პარამეტრების გადაცემა ბრძანებათა სტრიქონიდან. თუ გინდათ თვალყური ადევნოთ "
@@ -377,13 +436,13 @@ msgstr "ჩატვირთვის მეთოდებთან ერთ�
 
 #: help.xml:382
 msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
-"0x prefix (e.g., 0x300)."
+"prompt, in combination with the boot method (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>). If you use hex numbers you have "
+"to use the 0x prefix (e.g., 0x300)."
 msgstr ""
-"მიუთითოთ ჩატვირთვის პარამეტრები (იხ.: <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>). თექვსმეტობით მნიშვნელობებს წინ დაუსვით პრეფიქსი 0x (მაგ.: "
-"0x300)."
+"მიუთითოთ ჩატვირთვის პარამეტრები (იხ.: <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>). თექვსმეტობით მნიშვნელობებს წინ "
+"დაუსვით პრეფიქსი 0x (მაგ.: 0x300)."
 
 #: help.xml:389 help.xml:476
 msgid "HARDWARE"
@@ -399,11 +458,11 @@ msgstr "IBM PS/1 ან ValuePoint (IDE დისკი)"
 
 #: help.xml:394
 msgid ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
+"eable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable></"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable></replaceable"
+">,<replaceable>sectors</replaceable></userinput>"
 
 #: help.xml:398
 msgid "Some IBM ThinkPads"
@@ -427,13 +486,13 @@ msgstr "I/O პორტ რეგიონების დაცვა"
 
 #: help.xml:409
 msgid ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 msgstr ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 
 #: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
@@ -499,11 +558,11 @@ msgstr "ჩატვირთვის სპეც პარამეტრე�
 
 #: help.xml:470 help.xml:537
 msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"პრომტი, და მისი კომბინაცია ჩატვირთვის მეთოდებთან ერთად (იხილეთ <link linkend="
-"\"F3\"><keycap>F3</keycap></link>)."
+"პრომტი, და მისი კომბინაცია ჩატვირთვის მეთოდებთან ერთად (იხილეთ <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:480
 msgid "Adaptec 151x, 152x"
@@ -511,17 +570,17 @@ msgstr "Adaptec 151x, 152x"
 
 #: help.xml:481
 msgid ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>irq</replaceable></"
-"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
-"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
-"userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 msgstr ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>irq</replaceable></"
-"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
-"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
-"userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 
 #: help.xml:485
 msgid "Adaptec 1542"
@@ -529,15 +588,15 @@ msgstr "Adaptec 1542"
 
 #: help.xml:486
 msgid ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
-"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 msgstr ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
-"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 
 #: help.xml:490
 msgid "Adaptec 274x, 284x"
@@ -590,7 +649,8 @@ msgstr "ჩატვირთვის სპეც პარამეტრე�
 
 #: help.xml:541
 msgid "These parameters control how the installer works."
-msgstr "მოცემული პარამეტრები გვაწვდიან ინფორმაციას თუ როგორ მუშაობს ჩამდგმელი."
+msgstr ""
+"მოცემული პარამეტრები გვაწვდიან ინფორმაციას თუ როგორ მუშაობს ჩამდგმელი."
 
 #: help.xml:544
 msgid "These parameters control how the bootstrap system works."
@@ -667,11 +727,11 @@ msgstr "ბრეილის გარემოს გამოყენებ�
 
 #: help.xml:589
 msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
@@ -718,7 +778,8 @@ msgstr "დახმარების მიღება"
 
 #: help.xml:639
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr "თუ შეუძლებელი გახდა უბუნტუს დაყენება, არ დაიდარდოთ!(ფილმის არ იყოს;))"
+msgstr ""
+"თუ შეუძლებელი გახდა უბუნტუს დაყენება, არ დაიდარდოთ!(ფილმის არ იყოს;))"
 
 #: help.xml:642
 msgid "If you can't start Ubuntu, don't despair!"
@@ -775,46 +836,46 @@ msgstr "უბუნტუს სისტემის თავისუფლ�
 #: help.xml:703
 msgid ""
 "After installation, the exact distribution terms for each package are "
-"described in the corresponding file /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"described in the corresponding file "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
 "სისტემის ჩადგმის შემდეგ, პროგრამების ლიცენზიების პოვნა შესაძლებელია "
-"დირექტორიაში: /usr/share/doc/<replaceable>packagename</replaceable>/"
-"copyright."
+"დირექტორიაში: "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 
 #: help.xml:708
 msgid ""
 "After startup, the exact distribution terms for each package are described "
-"in the corresponding file /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"in the corresponding file "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
 "ჩატვირთვის შემდეგ, სისტემაში ჩადგმული პროგრამების ლიცენზიების პოვნა "
-"შესაძლებელია დირექტორიაში: /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"შესაძლებელია დირექტორიაში: "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 
 #: help.xml:714
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"გამოყენებითი საკანონმდებლო ნორმებით უბუნტუს <emphasis>არ გააჩნია გარანტია</"
-"emphasis>."
+"გამოყენებითი საკანონმდებლო ნორმებით უბუნტუს <emphasis>არ გააჩნია "
+"გარანტია</emphasis>."
 
 #: help.xml:719
 msgid ""
-"This installation system is based on the Debian installer. See <ulink url="
-"\"http://www.debian.org/\" /> for more details and information on the Debian "
-"project."
+"This installation system is based on the Debian installer. See <ulink "
+"url=\"http://www.debian.org/\" /> for more details and information on the "
+"Debian project."
 msgstr ""
-"მოცემული ჩადგმის სისტემა დაფუძნებულია Debian ინსტალატორზე. იხილეთ <ulink url="
-"\"HTTP://www.debian.org/\" /> დეტალებისთვის, აგრეთვე Debian პროექტის შესახებ "
-"ინფორმაციის მოძიებისთვის."
+"მოცემული ჩადგმის სისტემა დაფუძნებულია Debian ინსტალატორზე. იხილეთ <ulink "
+"url=\"HTTP://www.debian.org/\" /> დეტალებისთვის, აგრეთვე Debian პროექტის "
+"შესახებ ინფორმაციის მოძიებისთვის."
 
 #: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"მოცემული სისტემა Debian-ზეა დაფუძნებული. იხილეთ <ulink url=\"http://www."
-"debian.org/\" /> დეტალებისთვის, იხილეთ აგრეთვე ინფორმაცია Debian პროექტის "
-"შესახებ."
+"მოცემული სისტემა Debian-ზეა დაფუძნებული. იხილეთ <ulink "
+"url=\"http://www.debian.org/\" /> დეტალებისთვის, იხილეთ აგრეთვე ინფორმაცია "
+"Debian პროექტის შესახებ."

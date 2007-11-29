@@ -7,15 +7,56 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2007-01-30 14:42+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2007-09-18 12:57+0100\n"
+"PO-Revision-Date: 2007-11-08 02:38+0000\n"
 "Last-Translator: Shushi Kurose <md81@bird.email.ne.jp>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-10-05 11:27+0000\n"
+"X-Launchpad-Export-Date: 2007-11-29 16:48+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
+
+#~ msgid "server-expert"
+#~ msgstr "server-expert"
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link "
+#~ "linkend=\"F3\"><keycap>F3</keycap></link>>). If you use hex numbers you have "
+#~ "to use the 0x prefix (e.g., 0x300)."
+#~ msgstr ""
+#~ "プロンプトで使うことができます。ブートメソッド(<link "
+#~ "linkend=\"F3\"><keycap>F3</keycap></link>>参照)と組み合わせて使います。16進数を使う場合は、0xを頭に付けます"
+#~ " (例: 0x300) 。"
+
+#~ msgid ""
+#~ "The live system does not require any space on your hard disk. However, "
+#~ "existing swap partitions on the disk will be used if available."
+#~ msgstr "ライブシステムは、ハードディスクの領域を必要としません。しかし、もし利用可能なスワップパーティションがディスク上に見つかれば利用します。"
+
+#~ msgid ""
+#~ "If your system hangs when booting, and the last message you see is \"aec671x-"
+#~ "detect..\", try"
+#~ msgstr "ブート中に\"aec671x-detect..\"と表示されて停止する場合"
+
+#~ msgid ""
+#~ "You must have at least 128 megabytes of RAM to use this Ubuntu live system."
+#~ msgstr "Ubuntuライブシステムを使うには、128メガバイト以上のRAMが必要です。"
+
+#~ msgid ""
+#~ "Minimal system install. Recommended for servers, where a complete graphical "
+#~ "desktop environment is not desired."
+#~ msgstr "最小システムインストール。グラフィカルなデスクトップ環境が全く必要のない、サーバにはお勧めです。"
+
+#~ msgid "server"
+#~ msgstr "server"
+
+#~ msgid "<userinput>gdth=disable:y</userinput>"
+#~ msgstr "<userinput>gdth=disable:y</userinput>"
+
+#~ msgid ""
+#~ "You must have at least 256 megabytes of RAM to use this Ubuntu live system."
+#~ msgstr "Ubuntuライブシステムを使うには、256メガバイト以上のRAMが必要です。"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -28,18 +69,14 @@ msgstr "${DISTRIBUTION_NAME}へようこそ！"
 #: help.xml:18
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"これは${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}のインストール${MEDIA_TYPE}"
-"です(ビルド ${BUILD_DATE})。"
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"これは${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}のライブ${MEDIA_TYPE}です"
-"(ビルド ${BUILD_DATE})。"
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -126,21 +163,18 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Ubuntuの標準的なデスクトップシステムをインストールするには少なくとも2ギガバイ"
-"ト、最小限のサーバインストールには少なくとも400メガバイトの、新しいディスク"
-"パーティションを作成するための領域がハードディスクに必要です。新しくインス"
-"トールしたUbuntuシステムで行いたいことによっては、追加パッケージのインストー"
-"ルにさらなるディスク領域が必要になるでしょう。"
+"Ubuntuの標準的なデスクトップシステムをインストールするには少なくとも2ギガバイト、最小限のサーバインストールには少なくとも400メガバイトの、新しい"
+"ディスクパーティションを作成するための領域がハードディスクに必要です。新しくインストールしたUbuntuシステムで行いたいことによっては、追加パッケージの"
+"インストールにさらなるディスク領域が必要になるでしょう。"
 
-#: help.xml:131 help.xml:658
+#: help.xml:131 help.xml:664
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
-"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
-">"
+"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
+"/>"
 msgstr ""
-"詳細な情報は、インストールマニュアルもしくはFAQを参照してください。両ドキュメ"
-"ントは、Ubuntuウェブサイト <ulink url=\"http://www.ubuntu.com/\" /> にて利用"
-"できます。"
+"詳細な情報は、インストールマニュアルもしくはFAQを参照してください。両ドキュメントは、Ubuntuウェブサイト <ulink "
+"url=\"http://www.ubuntu.com/\" /> にて利用できます。"
 
 #: help.xml:137
 msgid ""
@@ -150,40 +184,33 @@ msgstr "Ubuntuライブシステムを使うには、384メガバイト以上の
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
-"existing swap partitions on the disk will be used if available."
+"existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"ライブシステムは、ハードディスクの領域を必要としません。しかし、もし利用可能"
-"なスワップパーティションがディスク上に見つかれば利用します。"
 
-#: help.xml:147 help.xml:664
+#: help.xml:147 help.xml:670
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"より詳しい情報はFAQを参照してください。このドキュメントは、Ubuntuのウェブサイ"
-"ト(<ulink url=\"http://www.ubuntu.com/\" />)で参照できます。"
+"より詳しい情報はFAQを参照してください。このドキュメントは、Ubuntuのウェブサイト(<ulink "
+"url=\"http://www.ubuntu.com/\" />)で参照できます。"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
 msgstr "Ubuntuを選んでいただき、ありがとうございます！"
 
-#: help.xml:156 help.xml:230 help.xml:266 help.xml:295 help.xml:362
-#: help.xml:453 help.xml:522 help.xml:613 help.xml:669 help.xml:725
+#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361 help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""
-"Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control and F then 1</phrase> for the help index, or ENTER to "
-"${BOOTPROMPT}"
+"Press <phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
+"to ${BOOTPROMPT}"
 msgstr ""
-"ヘルプインデックスを参照するには<phrase class=\"not-serial\">F1</"
-"phrase><phrase class=\"serial\">CtrlとFを押して1</phrase>を押すか、"
-"${BOOTPROMPT} でENTERを押してください。"
+"ヘルプインデックスを参照するには<phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\">CtrlとFを押して1</phrase>を押すか、${BOOTPROMPT} でENTERを押してください。"
 
-#: help.xml:161 help.xml:235 help.xml:271 help.xml:300 help.xml:367
-#: help.xml:458 help.xml:527 help.xml:618 help.xml:674 help.xml:730
+#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366 help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr ""
-"ヘルプインデックスを表示するにはF1を押してください。Escapeを押すとヘルプを閉"
-"じます。"
+msgstr "ヘルプインデックスを表示するにはF1を押してください。Escapeを押すとヘルプを閉じます。"
 
 #: help.xml:169
 msgid "BOOT METHODS"
@@ -199,8 +226,7 @@ msgstr "install"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr ""
-"インストールを開始 -- これは ${MEDIA_TYPE} のデフォルトのインストールです。"
+msgstr "インストールを開始 -- これは ${MEDIA_TYPE} のデフォルトのインストールです。"
 
 #: help.xml:184
 msgid "expert"
@@ -211,85 +237,77 @@ msgid "Start the installation in expert mode, for maximum control."
 msgstr "最大限の設定の行える、エキスパートモードでインストールを開始します。"
 
 #: help.xml:191
-msgid "server"
-msgstr "server"
+msgid "cli"
+msgstr ""
 
 #: help.xml:192
-msgid "server-expert"
-msgstr "server-expert"
+msgid "cli-expert"
+msgstr ""
 
 #: help.xml:194
-msgid ""
-"Minimal system install. Recommended for servers, where a complete graphical "
-"desktop environment is not desired."
+msgid "Minimal command-line system install."
 msgstr ""
-"最小システムインストール。グラフィカルなデスクトップ環境が全く必要のない、"
-"サーバにはお勧めです。"
 
-#: help.xml:200
+#: help.xml:199
 msgid "live"
 msgstr "live"
 
-#: help.xml:202
+#: help.xml:201
 msgid "Start the live system."
 msgstr "ライブシステムを開始します。"
 
-#: help.xml:207
+#: help.xml:206
 msgid "memtest"
 msgstr "memtest"
 
-#: help.xml:209
+#: help.xml:208
 msgid "Perform a memory test."
 msgstr "メモリテストを実行します。"
 
-#: help.xml:215 help.xml:259
+#: help.xml:214 help.xml:258
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
-msgstr ""
-"これらのブートメソッドを使うには、以下のようにプロンプトで入力してください。"
-"他のブートパラメータを続けて入力することもできます。"
+msgstr "これらのブートメソッドを使うには、以下のようにプロンプトで入力してください。他のブートパラメータを続けて入力することもできます。"
 
-#: help.xml:220
+#: help.xml:219
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr "boot: install acpi=off"
 
-#: help.xml:221
+#: help.xml:220
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
-#: help.xml:225
+#: help.xml:224
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
-msgstr ""
-"よく分からなければ、ブートパラメータを入力せず、ブートプロンプトでEnterだけを"
-"押してデフォルトのブートメソッドを用いてください。"
+msgstr "よく分からなければ、ブートパラメータを入力せず、ブートプロンプトでEnterだけを押してデフォルトのブートメソッドを用いてください。"
 
-#: help.xml:243 help.xml:279
+#: help.xml:242 help.xml:278
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "レスキューモード"
 
-#: help.xml:247
+#: help.xml:246
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr "インストールされたシステムを復旧するブートメソッドの利用"
 
-#: help.xml:251
+#: help.xml:250
 msgid "rescue"
 msgstr "rescue"
 
-#: help.xml:253
+#: help.xml:252
 msgid "Boot into rescue mode."
 msgstr "レスキューモードで起動します。"
 
-#: help.xml:263
+#: help.xml:262
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
-#: help.xml:286
+#: help.xml:285
 msgid ""
 "There is no dedicated rescue mode on this CD. However, since the entire "
 "system runs from the CD, it is possible to use the command-line and/or "
@@ -297,506 +315,501 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
-"このCDにはレスキュー専用モードは搭載されていません。しかし、CDから完全なシス"
-"テムが起動するので、コマンドラインやグラフィカルツールを使って壊れたシステム"
-"を復旧することができます。また、ウェブブラウザを使って検索することもできま"
-"す。あなたのシステムが起動に失敗する原因となっているかもしれない、さまざまな"
-"種類の問題についての広範囲に渡るアドバイスが、オンラインで利用可能です。"
+"このCDにはレスキュー専用モードは搭載されていません。しかし、CDから完全なシステムが起動するので、コマンドラインやグラフィカルツールを使って壊れたシステ"
+"ムを復旧することができます。また、ウェブブラウザを使って検索することもできます。あなたのシステムが起動に失敗する原因となっているかもしれない、さまざまな種"
+"類の問題についての広範囲に渡るアドバイスが、オンラインで利用可能です。"
 
-#: help.xml:308
+#: help.xml:307
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "特別なブートパラメータ - 概要"
 
-#: help.xml:315
+#: help.xml:314
 msgid "On a few systems, you may need to specify a parameter at the"
 msgstr "いくつかのシステムでは、システムを起動するために"
 
-#: help.xml:316 help.xml:382 help.xml:473 help.xml:540
+#: help.xml:315 help.xml:381 help.xml:469 help.xml:536
 #, no-wrap
 msgid "boot:"
 msgstr "boot:"
 
-#: help.xml:316
+#: help.xml:315
 msgid ""
 "prompt in order to boot the system. For example, Linux may not be able to "
 "autodetect your hardware, and you may need to explicitly specify its "
 "location or type for it to be recognized."
 msgstr ""
-"プロンプトで特別なパラメータを入力する必要があるかもしれません。たとえば、"
-"Linuxがハードウェアを自動認識できなかった場合、それが搭載されている場所や種類"
-"が認識されるよう指定する必要があるでしょう。"
+"プロンプトで特別なパラメータを入力する必要があるかもしれません。たとえば、Linuxがハードウェアを自動認識できなかった場合、それが搭載されている場所や種"
+"類が認識されるよう指定する必要があるでしょう。"
 
-#: help.xml:322
+#: help.xml:321
 msgid "For more information about what boot parameters you can use, press:"
-msgstr ""
-"利用可能なブートパラメータについての詳しい情報を参照するには、以下のキーを押"
-"して下さい。"
+msgstr "利用可能なブートパラメータについての詳しい情報を参照するには、以下のキーを押して下さい。"
 
-#: help.xml:330
+#: help.xml:329
 msgid "boot parameters for special machines"
 msgstr "特殊なマシン向けのブートパラメータ"
 
-#: help.xml:335
+#: help.xml:334
 msgid "boot parameters for various disk controllers"
 msgstr "さまざまなディスクコントローラのためのブートパラメータ"
 
-#: help.xml:340
+#: help.xml:339
 msgid "boot parameters understood by the install system"
 msgstr "インストールシステムによって使われるブートパラメータ"
 
-#: help.xml:345
+#: help.xml:344
 msgid "boot parameters understood by the bootstrap system"
 msgstr "ブートストラップシステムによって使われるブートパラメータ"
 
-#: help.xml:350
+#: help.xml:349
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
-"parameters when modules are loaded, boot in expert mode (see <link linkend="
-"\"F3\"><keycap>F3</keycap></link>)."
+"parameters when modules are loaded, boot in expert mode (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"多くのカーネルモジュールはブートストラップシステムによって動的にロードされま"
-"す。コマンドラインでそれらのモジュールにパラメータを与えることはできません。"
-"モジュールがロードされるときにパラメータを入力するためには、エキスパートモー"
-"ドで起動してください(<link linkend=\"F3\"><keycap>F3</keycap></link>参照)。"
+"多くのカーネルモジュールはブートストラップシステムによって動的にロードされます。コマンドラインでそれらのモジュールにパラメータを与えることはできません。モ"
+"ジュールがロードされるときにパラメータを入力するためには、エキスパートモードで起動してください(<link "
+"linkend=\"F3\"><keycap>F3</keycap></link>参照)。"
 
-#: help.xml:357
+#: help.xml:356
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"多くのカーネルモジュールはブートストラップシステムによって動的にロードされま"
-"す。コマンドラインでそれらのモジュールにパラメータを与えることはできません。"
+"多くのカーネルモジュールはブートストラップシステムによって動的にロードされます。コマンドラインでそれらのモジュールにパラメータを与えることはできません。"
 
-#: help.xml:375
+#: help.xml:374
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "特別なブートパラメータ - さまざまなハードウェア"
 
-#: help.xml:382 help.xml:473 help.xml:540
+#: help.xml:381 help.xml:469 help.xml:536
 msgid "You can use the following boot parameters at the"
 msgstr "以下のブートパラメータを、"
 
-#: help.xml:383
+#: help.xml:382
 msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
-"0x prefix (e.g., 0x300)."
+"prompt, in combination with the boot method (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>). If you use hex numbers you have "
+"to use the 0x prefix (e.g., 0x300)."
 msgstr ""
-"プロンプトで使うことができます。ブートメソッド(<link linkend=\"F3"
-"\"><keycap>F3</keycap></link>参照)と組み合わせて使います。16進数を使う場合"
-"は、0xを頭に付けます (例: 0x300) 。"
+"プロンプトで使うことができます。ブートメソッド(<link "
+"linkend=\"F3\"><keycap>F3</keycap></link>参照)と組み合わせて使います。16進数を使う場合は、0xを頭に付けます "
+"(例: 0x300) 。"
 
-#: help.xml:390 help.xml:480
+#: help.xml:389 help.xml:476
 msgid "HARDWARE"
 msgstr "ハードウェア"
 
-#: help.xml:391 help.xml:481
+#: help.xml:390 help.xml:477
 msgid "PARAMETER TO SPECIFY"
 msgstr "入力するパラメータ"
 
-#: help.xml:394
+#: help.xml:393
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1 or ValuePoint (IDE disk)"
 
-#: help.xml:395
+#: help.xml:394
 msgid ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
+"eable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
+"eable>,<replaceable>sectors</replaceable></userinput>"
 
-#: help.xml:399
+#: help.xml:398
 msgid "Some IBM ThinkPads"
 msgstr "一部のIBM ThinkPad"
 
-#: help.xml:400
+#: help.xml:399
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
 msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
-#: help.xml:404
+#: help.xml:403
 msgid "IBM Pentium Microchannel"
 msgstr "IBM Pentium Microchannel"
 
-#: help.xml:405
+#: help.xml:404
 msgid "<userinput>mca-pentium no-hlt</userinput>"
 msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
-#: help.xml:409
+#: help.xml:408
 msgid "Protect I/O port regions"
 msgstr "I/Oポート範囲の保護"
 
-#: help.xml:410
+#: help.xml:409
 msgid ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 msgstr ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 
-#: help.xml:414
+#: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
 msgstr "古いマシンの欠陥FPU"
 
-#: help.xml:415
+#: help.xml:414
 msgid "<userinput>no387</userinput>"
 msgstr "<userinput>no387</userinput>"
 
-#: help.xml:419
+#: help.xml:418
 msgid "Laptops with screen display problems"
 msgstr "表示に問題があるラップトップ："
 
-#: help.xml:420
+#: help.xml:419
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-#: help.xml:424
+#: help.xml:423
 msgid "Use first serial port at 9600 baud"
 msgstr "9600ボーでシリアルポート1を使用"
 
-#: help.xml:425
+#: help.xml:424
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
-#: help.xml:430
-msgid ""
-"If your system hangs when booting, and the last message you see is \"aec671x-"
-"detect..\", try"
-msgstr "ブート中に\"aec671x-detect..\"と表示されて停止する場合"
+#: help.xml:428
+msgid "Force use of generic IDE driver"
+msgstr ""
 
-#: help.xml:433
-msgid "<userinput>gdth=disable:y</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+#: help.xml:429
+msgid "<userinput>generic.all_generic_ide=1</userinput>"
+msgstr ""
 
-#: help.xml:438
+#: help.xml:434
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
-msgstr ""
-"システムが停止したりハードウェアエラーが起こる場合、バグのあるAPICによる割り"
-"込みルーチンを無効にする"
+msgstr "システムが停止したりハードウェアエラーが起こる場合、バグのあるAPICによる割り込みルーチンを無効にする"
 
-#: help.xml:441
+#: help.xml:437
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-#: help.xml:445 help.xml:514 help.xml:605
+#: help.xml:441 help.xml:510 help.xml:611
 msgid "For example:"
 msgstr "例："
 
-#: help.xml:448
+#: help.xml:444
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
-#: help.xml:449
+#: help.xml:445
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
-#: help.xml:466
+#: help.xml:462
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "特別なブートパラメータ - さまざまなディスクドライブ"
 
-#: help.xml:474 help.xml:541
+#: help.xml:470 help.xml:537
 msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"プロンプトで使うことができます。ブートメソッド (<link linkend=\"F3"
-"\"><keycap>F3</keycap></link>参照) と組み合わせて使います。"
+"プロンプトで使うことができます。ブートメソッド (<link linkend=\"F3\"><keycap>F3</keycap></link>参照) "
+"と組み合わせて使います。"
 
-#: help.xml:484
+#: help.xml:480
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
-#: help.xml:485
+#: help.xml:481
 msgid ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>irq</replaceable></"
-"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
-"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
-"userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 msgstr ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>irq</replaceable></"
-"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
-"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
-"userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 
-#: help.xml:489
+#: help.xml:485
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
-#: help.xml:490
+#: help.xml:486
 msgid ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
-"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 msgstr ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
-"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 
-#: help.xml:494
+#: help.xml:490
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
-#: help.xml:495
+#: help.xml:491
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
+msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 
-#: help.xml:499
+#: help.xml:495
 msgid "BusLogic SCSI Hosts"
 msgstr "BusLogic SCSI Hosts"
 
-#: help.xml:500
+#: help.xml:496
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
-#: help.xml:504
+#: help.xml:500
 msgid "Certain DELL machines"
 msgstr "一部のDELL製マシン"
 
-#: help.xml:505
+#: help.xml:501
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
-#: help.xml:510
+#: help.xml:506
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
-msgstr ""
-"このリストは完全ではありません。詳しくはカーネルに付属のkernel-parameters.txt"
-"を参照してください。"
+msgstr "このリストは完全ではありません。詳しくはカーネルに付属のkernel-parameters.txtを参照してください。"
 
-#: help.xml:517
+#: help.xml:513
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:518
+#: help.xml:514
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:535
+#: help.xml:531
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "特別なブートパラメータ - インストールシステム"
 
-#: help.xml:545
+#: help.xml:541
 msgid "These parameters control how the installer works."
-msgstr ""
-"れらのパラメータは、インストールシステムがどのように動作するかをコントロール"
-"します。"
+msgstr "れらのパラメータは、インストールシステムがどのように動作するかをコントロールします。"
 
-#: help.xml:548
+#: help.xml:544
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
-"れらのパラメータは、ブートストラップシステムがどのように動作するかをコント"
-"ロールします。"
+msgstr "れらのパラメータは、ブートストラップシステムがどのように動作するかをコントロールします。"
 
-#: help.xml:553
+#: help.xml:549
 msgid "RESULT"
 msgstr "効果"
 
-#: help.xml:554
+#: help.xml:550
 msgid "PARAMETER"
 msgstr "パラメータ"
 
-#: help.xml:557
+#: help.xml:553
 msgid "Verbose debugging"
 msgstr "詳細なデバッグ出力"
 
-#: help.xml:558
+#: help.xml:554
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
 msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
-#: help.xml:562
+#: help.xml:558
 msgid "Debug boot sequence"
 msgstr "ブートシーケンスのデバッグ"
 
-#: help.xml:563
+#: help.xml:559
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
 msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
-#: help.xml:567
+#: help.xml:563
 msgid "Disable framebuffer"
 msgstr "フレームバッファの無効化"
 
-#: help.xml:568
+#: help.xml:564
 msgid "<userinput>fb=false</userinput>"
 msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:572
+#: help.xml:568
 msgid "Don't probe for USB"
 msgstr "USBを調べない"
 
-#: help.xml:573
+#: help.xml:569
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
 msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
-#: help.xml:577
+#: help.xml:573
 msgid "Don't start PCMCIA"
 msgstr "PCMCIAを開始しない"
 
-#: help.xml:578
+#: help.xml:574
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:582
+#: help.xml:578
 msgid "Force static network config"
 msgstr "DHCPクライアント機能を無効化"
 
-#: help.xml:583
+#: help.xml:579
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:587
+#: help.xml:583
 msgid "Set keyboard map"
 msgstr "キーボードマップを設定"
 
-#: help.xml:588
+#: help.xml:584
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:592
+#: help.xml:588
 msgid "Use Braille tty"
 msgstr "点字端末を使う"
 
-#: help.xml:593
+#: help.xml:589
 msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
+
+#: help.xml:593
+msgid "Use high contrast accessibility theme"
+msgstr ""
+
+#: help.xml:594
+msgid "<userinput>theme=dark</userinput>"
+msgstr ""
 
 #: help.xml:598
+msgid "Use special tasks"
+msgstr ""
+
+#: help.xml:599
+msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
+msgstr ""
+
+#: help.xml:604
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr "PCIマップにACPIを使用しない (一部のHPサーバやVIAベースのマシンに有用)"
 
-#: help.xml:601
+#: help.xml:607
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:608
+#: help.xml:614
 #, no-wrap
 msgid "boot: install pci=noacpi"
 msgstr "boot: install pci=noacpi"
 
-#: help.xml:609
+#: help.xml:615
 #, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr "boot: live pci=noacpi"
 
-#: help.xml:626
+#: help.xml:632
 msgid "GETTING HELP"
 msgstr "助けてもらうには"
 
-#: help.xml:633
+#: help.xml:639
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "もしUbuntuがインストールできなくても、がっかりしないでください！"
 
-#: help.xml:636
+#: help.xml:642
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "もしUbuntuが起動しなくても、がっかりしないでください！"
 
-#: help.xml:639
+#: help.xml:645
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Ubuntuチームがあなたを手助けします！"
 
-#: help.xml:642
+#: help.xml:648
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"私たちは、インストール時に起きた問題についてお聞きしたいと思っています。なぜ"
-"なら、通常それらの問題は<emphasis>一人だけ</emphasis>に起こるものではないから"
-"です。"
+"私たちは、インストール時に起きた問題についてお聞きしたいと思っています。なぜなら、通常それらの問題は<emphasis>一人だけ</emphasis>に起"
+"こるものではないからです。"
 
-#: help.xml:647
+#: help.xml:653
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"私たちは、起動時に起きた問題についてお聞きしたいと思っています。なぜなら、通"
-"常それらの問題は<emphasis>一人だけ</emphasis>に起こるものではないからです。"
+"私たちは、起動時に起きた問題についてお聞きしたいと思っています。なぜなら、通常それらの問題は<emphasis>一人だけ</emphasis>に起こるもの"
+"ではないからです。"
 
-#: help.xml:651
+#: help.xml:657
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"私たちは、あなたが出くわした問題について既に聞いたことがあれば、すぐに解決方"
-"法を提供することができます。そうでなければ一緒に解決方法を探したいと考えてい"
-"ます。そうすれば、次に同じ問題に出くわしたユーザは、あなたのおかげですぐに解"
-"決方法を知ることができます。"
+"私たちは、あなたが出くわした問題について既に聞いたことがあれば、すぐに解決方法を提供することができます。そうでなければ一緒に解決方法を探したいと考えていま"
+"す。そうすれば、次に同じ問題に出くわしたユーザは、あなたのおかげですぐに解決方法を知ることができます。"
 
-#: help.xml:682
+#: help.xml:688
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "著作権と保証"
 
-#: help.xml:689
+#: help.xml:695
 msgid ""
 "Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
 
-#: help.xml:694
+#: help.xml:700
 msgid "The Ubuntu system is freely redistributable."
 msgstr "Ubuntuシステムは自由に再配布することができます。"
 
-#: help.xml:697
+#: help.xml:703
 msgid ""
 "After installation, the exact distribution terms for each package are "
-"described in the corresponding file /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"described in the corresponding file "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
-"インストール後、それぞれのパッケージの正確な配布条件を usr/share/doc/"
-"<replaceable>packagename</replaceable>/copyright ファイルで読むことができま"
-"す。"
-
-#: help.xml:702
-msgid ""
-"After startup, the exact distribution terms for each package are described "
-"in the corresponding file /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
-msgstr ""
-"起動後、それぞれのパッケージの正確な配布条件を usr/share/doc/"
-"<replaceable>packagename</replaceable>/copyright ファイルで読むことができま"
-"す。"
+"インストール後、それぞれのパッケージの正確な配布条件を "
+"usr/share/doc/<replaceable>packagename</replaceable>/copyright "
+"ファイルで読むことができます。"
 
 #: help.xml:708
 msgid ""
+"After startup, the exact distribution terms for each package are described "
+"in the corresponding file "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+msgstr ""
+"起動後、それぞれのパッケージの正確な配布条件を "
+"usr/share/doc/<replaceable>packagename</replaceable>/copyright "
+"ファイルで読むことができます。"
+
+#: help.xml:714
+msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
-msgstr ""
-"Ubuntuは、適用法の範囲内において<emphasis>全くの無保証で</emphasis>提供されま"
-"す。"
-
-#: help.xml:713
-msgid ""
-"This installation system is based on the Debian installer. See <ulink url="
-"\"http://www.debian.org/\" /> for more details and information on the Debian "
-"project."
-msgstr ""
-"このインストールシステムはDebianがベースになっています。詳細とDebianプロジェ"
-"クトについては、<ulink url=\"http://www.debian.org/\" /> を参照してください。"
+msgstr "Ubuntuは、適用法の範囲内において<emphasis>全くの無保証で</emphasis>提供されます。"
 
 #: help.xml:719
+msgid ""
+"This installation system is based on the Debian installer. See <ulink "
+"url=\"http://www.debian.org/\" /> for more details and information on the "
+"Debian project."
+msgstr ""
+"このインストールシステムはDebianがベースになっています。詳細とDebianプロジェクトについては、<ulink "
+"url=\"http://www.debian.org/\" /> を参照してください。"
+
+#: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"このシステムはDebianがベースになっています。詳細とDebianプロジェクトについて"
-"は、<ulink url=\"http://www.debian.org/\" /> を参照してください。"
+"このシステムはDebianがベースになっています。詳細とDebianプロジェクトについては、<ulink "
+"url=\"http://www.debian.org/\" /> を参照してください。"

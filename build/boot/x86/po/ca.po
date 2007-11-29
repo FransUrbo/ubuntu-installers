@@ -1,4 +1,4 @@
-# Malay translation for debian-installer
+# Catalan translation for debian-installer
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-08-07 08:47+0000\n"
-"Last-Translator: manteros <msr_1st@yahoo.com>\n"
-"Language-Team: Malay <ms@li.org>\n"
+"PO-Revision-Date: 2007-11-17 07:27+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,100 +19,111 @@ msgstr ""
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr ""
+msgstr "Pantalles d'ajuda de l'instal·lador referents a l'arrencada"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "Selamat Datang ke ${DISTRIBUTION_NAME}!"
+msgstr "Us donem la benvinguda a ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Això és un ${MEDIA_TYPE} d'instal·lació per a ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Fou muntat el ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Aquest és un ${MEDIA_TYPE} autònom per a ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Fou muntat el ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "Indeks Bantuan"
+msgstr "ÍNDEX DE L'AJUDA"
 
 #: help.xml:29
 msgid "KEY"
-msgstr "Kunci"
+msgstr "TECLA"
 
 #: help.xml:30
 msgid "TOPIC"
-msgstr "TOPIK"
+msgstr "TEMA"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Mukasurat ini, ialah indeks bantuan"
+msgstr "Aquesta pàgina, l'índex de l'ajuda."
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr ""
+msgstr "Prerequisits per a instal·lar ${DISTRIBUTION_NAME}."
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr ""
+msgstr "Prerequisits per a executar ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr ""
+msgstr "Sistemes d'arrencada per a usos especials d'aquest ${MEDIA_TYPE}."
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr ""
+msgstr "Mètodes d'arrencada addicionals; rescat d'un sistema espatllat."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr ""
+msgstr "Paràmetres d'arrencada especials, resum."
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "Paràmetres d'arrencada especials per a màquines especials."
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
 msgstr ""
+"Paràmetres d'arrencada especials per a controladors de disc particulars."
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "Paràmetres d'arrencada especials per al sistema d'instal·lació."
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "Paràmetres d'arrencada especials per al programa d'arrencada."
 
 #: help.xml:84
 msgid "How to get help."
-msgstr "Bagaimana untuk mendapat bantuan"
+msgstr "Com podeu obtenir ajuda."
 
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "Hakcipta dan waranti"
+msgstr "Copyrights i garanties."
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
+"Premeu les tecles F2 a F10 per més detalls, o bé la tecla de RETORN per a "
+"${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
+"Premeu les tecles F2 a F10 per més detalls, o bé la tecla d'escapada per "
+"sortir de l'ajuda."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr ""
+msgstr "PREREQUISITS PER A INSTAL·LAR L'UBUNTU"
 
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
+"Heu de tenir com a mínim 32 megabytes de RAM per a utilitzar aquest "
+"instal·lador de l'Ubuntu."
 
 #: help.xml:123
 msgid ""
@@ -122,6 +133,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"Per a instal·lar el sistema típic d'escriptori de l'Ubuntu hauríeu de tenir "
+"almenys 2 gigabytes d'espai al disc dur per a crear una partició nova, o bé "
+"com a mínim 400 megabytes per a una instal·lació mínima de tipus servidor. "
+"Depenent de la utilització que feu del sistema Ubuntu, necessitareu més "
+"espai per a instal·lar paquets addicionals."
 
 #: help.xml:131 help.xml:664
 msgid ""
@@ -129,27 +145,37 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
 "/>"
 msgstr ""
+"Consulteu el manual d'instal·lació o les PMF (preguntes més freqüents) per a "
+"més informació; ambdós documents els trobareu al lloc web de l'Ubuntu, "
+"<ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
+"Heu de tenir com a mínim 384 megabytes de RAM per a utilitzar aquest sistema "
+"autònom de l'Ubuntu."
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"El sistema autònom no requereix espai al vostre disc dur. De totes maneres, "
+"aquest utilitzarà les particions d'intercanvi Linux existents en el disc, si "
+"és que n'hi ha alguna."
 
 #: help.xml:147 help.xml:670
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
+"Consulteu les PMF (preguntes més freqüents) per a més informació, les quals "
+"trobareu al lloc web de l'Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Terima kasih memilih Ubuntu!"
+msgstr "Us agraïm que hàgiu escollit l'Ubuntu!"
 
 #: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361 help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""
@@ -157,105 +183,120 @@ msgid ""
 "class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
 "to ${BOOTPROMPT}"
 msgstr ""
+"Premeu <phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\">control and F then 1</phrase> per a l'índex de l'ajuda, o "
+"bé RETORN per a ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366 help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
+"Premeu F1 per a mostrar l'index de l'ajuda, o bé la tecla d'escapada per a "
+"sortir de l'ajuda."
 
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr ""
+msgstr "MÈTODES D'ARRENCADA"
 
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr ""
+msgstr "Mètodes d'arrencada disponibles:"
 
 #: help.xml:177
 msgid "install"
-msgstr ""
+msgstr "install"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgstr ""
+"Comença la instal·lació -- aquest és el sistema d'instal·lació per "
+"${MEDIA_TYPE} predeterminat."
 
 #: help.xml:184
 msgid "expert"
-msgstr ""
+msgstr "expert"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
-msgstr ""
+msgstr "Comença la instal·lació en mode expert per a un màxim de control."
 
 #: help.xml:191
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #: help.xml:192
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #: help.xml:194
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Instal·lació mínima a través de la línia d'ordres."
 
 #: help.xml:199
 msgid "live"
-msgstr ""
+msgstr "live"
 
 #: help.xml:201
 msgid "Start the live system."
-msgstr ""
+msgstr "Inicia el sistema autònom."
 
 #: help.xml:206
 msgid "memtest"
-msgstr ""
+msgstr "memtest"
 
 #: help.xml:208
 msgid "Perform a memory test."
-msgstr ""
+msgstr "Realitza una prova de la memòria."
 
 #: help.xml:214 help.xml:258
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"Per a utilitzar algun d'aquests mètodes d'arrencada, introduïu-lo a "
+"l'indicador, seguit dels paràmetres d'arrencada que siguin necessaris. Per "
+"exemple:"
 
 #: help.xml:219
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "boot: install acpi=off"
 
 #: help.xml:220
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #: help.xml:224
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
+"Si no esteu segur/a del que heu de fer, utilitzeu el mètode d'arrencada "
+"predeterminat sense paràmetres especials. Simplement premeu la tecla de "
+"retorn a l'indicador d'arrencada."
 
 #: help.xml:242 help.xml:278
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "RESCAT D'UN SISTEMA ESPATLLAT"
 
 #: help.xml:246
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
+"Utilitzeu un d'aquests mètodes d'arrencada per a rescatar una instal·lació "
+"existent"
 
 #: help.xml:250
 msgid "rescue"
-msgstr ""
+msgstr "rescue"
 
 #: help.xml:252
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "Arrenca en el mode de rescat."
 
 #: help.xml:262
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "boot: rescue acpi=off"
 
 #: help.xml:285
 msgid ""
@@ -265,19 +306,25 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
+"Aquest CD no disposa d'un mode de rescat explícit. De totes maneres, com que "
+"tot el sistema s'executa del CD, podeu utilizar la línia d'ordres i les "
+"eines gràfiques disponibles per a rescatar el sistema espatllat, i fins i "
+"tot fer servir un navegador web per a cercar ajuda. Un cop sigueu en línia, "
+"podreu trobar un gran nombre de consells per a la majoria dels problemes que "
+"puguin causar fallades en arrencar el sistema."
 
 #: help.xml:307
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr ""
+msgstr "PARÀMETRES D'ARRENCADA ESPECIALS - RESUM"
 
 #: help.xml:314
 msgid "On a few systems, you may need to specify a parameter at the"
-msgstr ""
+msgstr "En alguns sistemes pot ser que hàgiu d'especificar un paràmetre a"
 
 #: help.xml:315 help.xml:381 help.xml:469 help.xml:536
 #, no-wrap
 msgid "boot:"
-msgstr ""
+msgstr "l'indicador d'arrencada:"
 
 #: help.xml:315
 msgid ""
@@ -285,26 +332,30 @@ msgid ""
 "autodetect your hardware, and you may need to explicitly specify its "
 "location or type for it to be recognized."
 msgstr ""
+"perquè el sistema pugui arrencar. Per exemple, pot ser que el Linux no pugui "
+"detectar automàticament el vostre maquinari i hàgiu d'especificar-ne el "
+"tipus o la ubicació de manera explícita perquè pugui ser reconegut."
 
 #: help.xml:321
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
+"Premeu el següent per a més informació sobre els paràmetres d'arrencada:"
 
 #: help.xml:329
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "paràmetres d'arrencada per a màquines especials"
 
 #: help.xml:334
 msgid "boot parameters for various disk controllers"
-msgstr ""
+msgstr "paràmetres d'arrencada per a diversos controladors de disc"
 
 #: help.xml:339
 msgid "boot parameters understood by the install system"
-msgstr ""
+msgstr "paràmetres d'arrencada compatibles amb el sistema d'instal·lació"
 
 #: help.xml:344
 msgid "boot parameters understood by the bootstrap system"
-msgstr ""
+msgstr "paràmetres d'arrencada compatibles amb el programa d'arrencada"
 
 #: help.xml:349
 msgid ""
@@ -313,20 +364,28 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link "
 "linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"L'instal·lador carrega un gran nombre de mòduls del nucli de manera "
+"dinàmica, els paràmetres dels quals no es poden especificar a la línia "
+"d'ordres. Si voleu que se us pregunti sobre els paràmetres en carregar els "
+"mòduls, haureu d'arrencar en mode expert (vegeu <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:356
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
+"El programa d'arrencada carrega un gran nombre de mòduls del nucli de manera "
+"dinàmica, els paràmetres dels quals no es poden especificar a la línia "
+"d'ordres."
 
 #: help.xml:374
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr ""
+msgstr "PARÀMETRES D'ARRENCADA ESPECIALS - MAQUINARI DIVERS"
 
 #: help.xml:381 help.xml:469 help.xml:536
 msgid "You can use the following boot parameters at the"
-msgstr ""
+msgstr "Podeu utilitzar els paràmetres d'arrencada següents a"
 
 #: help.xml:382
 msgid ""
@@ -334,44 +393,49 @@ msgid ""
 "linkend=\"F3\"><keycap>F3</keycap></link>). If you use hex numbers you have "
 "to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"l'indicador, en combinació amb el mètode d'arrencada (vegeu <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>). Si utilitzeu números "
+"hexadecimals, haureu de prefixar-los amb 0x (p.ex. 0x300)."
 
 #: help.xml:389 help.xml:476
 msgid "HARDWARE"
-msgstr ""
+msgstr "MAQUINARI"
 
 #: help.xml:390 help.xml:477
 msgid "PARAMETER TO SPECIFY"
-msgstr ""
+msgstr "PARÀMETRE A ESPECIFICAR"
 
 #: help.xml:393
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr ""
+msgstr "IBM PS/1 o ValuePoint (disc IDE)"
 
 #: help.xml:394
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
 "eable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+"<userinput>hd=<replaceable>cilindres</replaceable>,<replaceable>capçals</repl"
+"aceable>,<replaceable>sectors</replaceable></userinput>"
 
 #: help.xml:398
 msgid "Some IBM ThinkPads"
-msgstr ""
+msgstr "Alguns models ThinkPad d'IBM"
 
 #: help.xml:399
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:403
 msgid "IBM Pentium Microchannel"
-msgstr ""
+msgstr "Pentium Microchannel d'IBM"
 
 #: help.xml:404
 msgid "<userinput>mca-pentium no-hlt</userinput>"
-msgstr ""
+msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
 #: help.xml:408
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "Protegeix regions de ports d'E/S"
 
 #: help.xml:409
 msgid ""
@@ -379,76 +443,83 @@ msgid ""
 "laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
 "erinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 
 #: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
-msgstr ""
+msgstr "Solució temporal per a una FPU defectuosa (per a màquines velles)"
 
 #: help.xml:414
 msgid "<userinput>no387</userinput>"
-msgstr ""
+msgstr "<userinput>no387</userinput>"
 
 #: help.xml:418
 msgid "Laptops with screen display problems"
-msgstr ""
+msgstr "Ordinadors portàtils amb problemes de visualització a la pantalla"
 
 #: help.xml:419
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:423
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Utilitza el primer port sèria a 9600 bauds"
 
 #: help.xml:424
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:428
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Força l'ús del controlador IDE genèric"
 
 #: help.xml:429
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:434
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
 msgstr ""
+"Si us trobeu amb blocatges, o bé altres fallades del maquinari, inhabiliteu "
+"l'encaminament (defectuós) de les interrupcions de l'APIC."
 
 #: help.xml:437
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:441 help.xml:510 help.xml:611
 msgid "For example:"
-msgstr ""
+msgstr "Per exemple:"
 
 #: help.xml:444
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: install vga=771 noapic nolapic"
 
 #: help.xml:445
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:462
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr ""
+msgstr "PARÀMETRES D'ARRENCADA ESPECIALS - UNITATS DE DISC DIVERSES"
 
 #: help.xml:470 help.xml:537
 msgid ""
 "prompt, in combination with the boot method (see <link "
 "linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"en combinació amb el mètode d'arrencada (vegeu <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:480
 msgid "Adaptec 151x, 152x"
-msgstr ""
+msgstr "Adaptec 151x, 152x"
 
 #: help.xml:481
 msgid ""
@@ -458,10 +529,15 @@ msgid ""
 "id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
 "laceable></userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 
 #: help.xml:485
 msgid "Adaptec 1542"
-msgstr ""
+msgstr "Adaptec 1542"
 
 #: help.xml:486
 msgid ""
@@ -470,196 +546,214 @@ msgid ""
 "eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
 "userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 
 #: help.xml:490
 msgid "Adaptec 274x, 284x"
-msgstr ""
+msgstr "Adaptec 274x, 284x"
 
 #: help.xml:491
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (habilitat si és diferent de "
+"zero)"
 
 #: help.xml:495
 msgid "BusLogic SCSI Hosts"
-msgstr ""
+msgstr "Amfitrions SCSI BusLogic"
 
 #: help.xml:496
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:500
 msgid "Certain DELL machines"
-msgstr ""
+msgstr "Algunes màquines de DELL"
 
 #: help.xml:501
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #: help.xml:506
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"Aquesta llista no és completa; consulteu el fitxer kernel-parameters.txt per "
+"a obtenir més informació."
 
 #: help.xml:513
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:514
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:531
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr ""
+msgstr "PARÀMETRES D'ARRENCADA ESPECIALS - SISTEMA D'INSTAL·LACIÓ"
 
 #: help.xml:541
 msgid "These parameters control how the installer works."
-msgstr ""
+msgstr "Aquests paràmetres controlen com funciona l'instal·lador."
 
 #: help.xml:544
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
+msgstr "Aquests paràmetres controlen com funciona el programa d'arrencada."
 
 #: help.xml:549
 msgid "RESULT"
-msgstr ""
+msgstr "RESULTAT"
 
 #: help.xml:550
 msgid "PARAMETER"
-msgstr ""
+msgstr "PARÀMETRE"
 
 #: help.xml:553
 msgid "Verbose debugging"
-msgstr ""
+msgstr "Depuració detallada"
 
 #: help.xml:554
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr ""
+msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:558
 msgid "Debug boot sequence"
-msgstr ""
+msgstr "Depura la seqüència d'arrencada"
 
 #: help.xml:559
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr ""
+msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:563
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "Inhabilita la memòria d'imatge («framebuffer»)"
 
 #: help.xml:564
 msgid "<userinput>fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:568
 msgid "Don't probe for USB"
-msgstr ""
+msgstr "No explorie els dispositius USB"
 
 #: help.xml:569
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-msgstr ""
+msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
 #: help.xml:573
 msgid "Don't start PCMCIA"
-msgstr ""
+msgstr "No iniciïs el sistema PCMCIA"
 
 #: help.xml:574
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
-msgstr ""
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:578
 msgid "Force static network config"
-msgstr ""
+msgstr "Força la configuració estàtica de la xarxa"
 
 #: help.xml:579
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr ""
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:583
 msgid "Set keyboard map"
-msgstr ""
+msgstr "Defineix el mapa de teclat"
 
 #: help.xml:584
 msgid "<userinput>bootkbd=es</userinput>"
-msgstr ""
+msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:588
 msgid "Use Braille tty"
-msgstr ""
+msgstr "Utilitza un terminal Braille"
 
 #: help.xml:589
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
 "aceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
 
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Utilitza un sistema accessible d'alt contrast"
 
 #: help.xml:594
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 #: help.xml:598
 msgid "Use special tasks"
-msgstr ""
+msgstr "Utilitza tasques especials"
 
 #: help.xml:599
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
 #: help.xml:604
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
+"Inhabilita l'ACPI per als mapes PCI (això és útil per a alguns servidors "
+"d'HP i màquines Via)"
 
 #: help.xml:607
 msgid "<userinput>pci=noacpi</userinput>"
-msgstr ""
+msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:614
 #, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr ""
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:615
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:632
 msgid "GETTING HELP"
-msgstr ""
+msgstr "COM PODEU OBTENIR AJUDA"
 
 #: help.xml:639
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr ""
+msgstr "No us preocupeu si no podeu instal·lar l'Ubuntu."
 
 #: help.xml:642
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr ""
+msgstr "No us preocupeu si no podeu iniciar l'Ubuntu."
 
 #: help.xml:645
 msgid "The Ubuntu team is ready to help you!"
-msgstr ""
+msgstr "L'equip de l'Ubuntu sempre és a punt per a ajudar-vos."
 
 #: help.xml:648
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Ens interessa especialment que ens comuniqueu els problemes d'instal·lació, "
+"atès que generalment no els passen només a <emphasis>una sola</emphasis> "
+"persona."
 
 #: help.xml:653
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Ens interessa especialment que ens comuniqueu els problemes d'inici, atès "
+"que generalment no els passen només a <emphasis>una sola</emphasis> persona."
 
 #: help.xml:657
 msgid ""
@@ -668,20 +762,26 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"És possible que ja coneguem aquest problema i puguem oferir una solució "
+"ràpida, o bé que ens interessi conèixer-lo a través vostre i solucionar-lo "
+"amb la vostra ajuda, de manera que el següent usuari amb el mateix problema "
+"pugui beneficiar-se de la vostra experiència."
 
 #: help.xml:688
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr ""
+msgstr "COPYRIGHTS I GARANTIES"
 
 #: help.xml:695
 msgid ""
 "Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"L'Ubuntu és Copyright (C) 2004-2007 de Canonical Ltd., i inclou el treball "
+"de molts altres autors originals i col·laboradors."
 
 #: help.xml:700
 msgid "The Ubuntu system is freely redistributable."
-msgstr ""
+msgstr "El sistema Ubuntu es pot redistribuir lliurement."
 
 #: help.xml:703
 msgid ""
@@ -689,6 +789,10 @@ msgid ""
 "described in the corresponding file "
 "/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
+"Després de la instal·lació, les condicions precises de distribució per a "
+"cada paquet es descriuen en el fitxer "
+"/usr/share/doc/<replaceable>nomdelpaquet</replaceable>/copyright "
+"corresponent."
 
 #: help.xml:708
 msgid ""
@@ -696,12 +800,18 @@ msgid ""
 "in the corresponding file "
 "/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
+"Després de l'inici, les condicions precises de distribució per a cada paquet "
+"es descriuen en el fitxer "
+"/usr/share/doc/<replaceable>nomdelpaquet</replaceable>/copyright "
+"corresponent."
 
 #: help.xml:714
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
+"L'Ubuntu no ofereix <emphasis>CAP TIPUS DE GARANTIA</emphasis>, en la mesura "
+"permesa per les lleis aplicables."
 
 #: help.xml:719
 msgid ""
@@ -709,9 +819,15 @@ msgid ""
 "url=\"http://www.debian.org/\" /> for more details and information on the "
 "Debian project."
 msgstr ""
+"Aquest sistema d'instal·lació es basa en l'instal·lador de Debian. Aneu a "
+"<ulink url=\"http://www.debian.org/\" /> per més detalls i informació sobre "
+"el projecte Debian."
 
 #: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"Aquest sistema es basa en Debian. Aneu a <ulink "
+"url=\"http://www.debian.org/\" /> per a més detalls i informació sobre el "
+"projecte Debian."

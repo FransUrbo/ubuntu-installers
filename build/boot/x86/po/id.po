@@ -8,14 +8,79 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2007-11-08 02:37+0000\n"
 "Last-Translator: Andy Apdhani <imtheface@ubuntu.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-10-05 11:27+0000\n"
+"X-Launchpad-Export-Date: 2007-11-29 16:48+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
+
+#~ msgid "server-expert"
+#~ msgstr "server-ahli"
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link "
+#~ "linkend=\"F3\"><keycap>F3</keycap></link>>). If you use hex numbers you have "
+#~ "to use the 0x prefix (e.g., 0x300)."
+#~ msgstr ""
+#~ "prompt, dikombinasikan dengan metode boot (lihat <link "
+#~ "linkend=\"F3\"><keycap>F3</keycap></link>>). Jika anda menggunakan angka "
+#~ "heksa anda mesti menggunakan awalan 0x (misal 0x300)."
+
+#~ msgid ""
+#~ "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "Ini adalah ${MEDIA_TYPE} instalasi untuk ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, dibuat pada tanggal ${BUILD_DATE}."
+
+#~ msgid ""
+#~ "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "Ini adalah ${MEDIA_TYPE} live untuk ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, dibuat pada tanggal ${BUILD_DATE}."
+
+#~ msgid ""
+#~ "The live system does not require any space on your hard disk. However, "
+#~ "existing swap partitions on the disk will be used if available."
+#~ msgstr ""
+#~ "Sistem live ini tidak memerlukan ruang apapun dalam hard disk anda. Namun, "
+#~ "partisi swap yang sudah ada pada disk tersebut akan digunakan jika tersedia."
+
+#~ msgid ""
+#~ "If your system hangs when booting, and the last message you see is \"aec671x-"
+#~ "detect..\", try"
+#~ msgstr ""
+#~ "Jika sistem anda hang ketika booting, dan pesan terakhir yang anda lihat "
+#~ "adalah \"aec671x-detect..\", cobalah"
+
+#~ msgid ""
+#~ "You must have at least 128 megabytes of RAM to use this Ubuntu live system."
+#~ msgstr ""
+#~ "Anda mesti memiliki paling sedikit 128 megabyte RAM untuk menggunakan sistem "
+#~ "live Ubuntu ini."
+
+#~ msgid ""
+#~ "Minimal system install. Recommended for servers, where a complete graphical "
+#~ "desktop environment is not desired."
+#~ msgstr ""
+#~ "Install sistem minimal. Disarankan untuk server, di mana tidak diinginkan "
+#~ "graphical desktop environment yang lengkap."
+
+#~ msgid "server"
+#~ msgstr "server"
+
+#~ msgid "<userinput>gdth=disable:y</userinput>"
+#~ msgstr "<userinput>gdth=disable:y</userinput>"
+
+#~ msgid ""
+#~ "You must have at least 256 megabytes of RAM to use this Ubuntu live system."
+#~ msgstr ""
+#~ "Anda mesti memiliki paling sedikit 256 megabyte RAM untuk menggunakan sistem "
+#~ "live Ubuntu ini."
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -141,12 +206,12 @@ msgstr ""
 #: help.xml:131 help.xml:664
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
-"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
-">"
+"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
+"/>"
 msgstr ""
 "Lihatlah Manual Instalasi atau FAQ untuk informasi lebih lanjut; kedua "
-"dokumen tersebut tersedia di situs web Ubuntu, <ulink url=\"http://www."
-"ubuntu.com/\" />"
+"dokumen tersebut tersedia di situs web Ubuntu, <ulink "
+"url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
@@ -176,19 +241,17 @@ msgstr ""
 msgid "Thank you for choosing Ubuntu!"
 msgstr "Terima kasih telah memilih Ubuntu!"
 
-#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
-#: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
+#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361 help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""
-"Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control and F then 1</phrase> for the help index, or ENTER to "
-"${BOOTPROMPT}"
+"Press <phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
+"to ${BOOTPROMPT}"
 msgstr ""
-"Tekan <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control dan F lalu 1</phrase> untuk index bantuan, atau ENTER untuk "
-"${BOOTPROMPT}"
+"Tekan <phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\">control dan F lalu 1</phrase> untuk index bantuan, atau "
+"ENTER untuk ${BOOTPROMPT}"
 
-#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
-#: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
+#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366 help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr "Tekan F1 untuk index bantuan, atau Escape untuk keluar dari bantuan."
 
@@ -216,17 +279,14 @@ msgstr "ahli"
 msgid "Start the installation in expert mode, for maximum control."
 msgstr "Memulai instalasi dalam mode ahli, untuk kontrol yang maksimum."
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:191
 msgid "cli"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli-expert"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
 msgid "Minimal command-line system install."
 msgstr ""
@@ -305,11 +365,11 @@ msgid ""
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
 "Tidak ada mode penyelamatan pada CD ini. Akan tetapi, karena seluruh sistem "
-"berjalan dari CD, sangat memungkinkan untuk menggunakan baris perintah dan/"
-"atau perkakas berbasis grafik untuk digunakan sebagai penyelamat sistem yang "
-"rusak, dan menggunakan browser web untuk mencari bantuan. Banyak bantuan "
-"tersedia online untuk setiap jenis masalah yang dapat menyebabkan sistem "
-"normal ANda gagal boot dengan benar."
+"berjalan dari CD, sangat memungkinkan untuk menggunakan baris perintah "
+"dan/atau perkakas berbasis grafik untuk digunakan sebagai penyelamat sistem "
+"yang rusak, dan menggunakan browser web untuk mencari bantuan. Banyak "
+"bantuan tersedia online untuk setiap jenis masalah yang dapat menyebabkan "
+"sistem normal ANda gagal boot dengan benar."
 
 #: help.xml:307
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
@@ -361,8 +421,8 @@ msgstr "parameter boot yang dimengerti oleh sistem bootstrap"
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
-"parameters when modules are loaded, boot in expert mode (see <link linkend="
-"\"F3\"><keycap>F3</keycap></link>)."
+"parameters when modules are loaded, boot in expert mode (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Banyak modul kernel yang dimuat secara dinamis oleh installer, dan parameter "
 "untuk modul tersebut tidak bisa diberikan pada baris perintah ini. Agar "
@@ -387,13 +447,13 @@ msgstr "Anda dapat menggunakan parameter boot berikut pada"
 
 #: help.xml:382
 msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
-"0x prefix (e.g., 0x300)."
+"prompt, in combination with the boot method (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>). If you use hex numbers you have "
+"to use the 0x prefix (e.g., 0x300)."
 msgstr ""
-"prompt, dikombinasikan dengan metode boot (lihat <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). Jika anda menggunakan angka heksa anda mesti "
-"menggunakan awalan 0x (misal 0x300)."
+"prompt, dikombinasikan dengan metode boot (lihat <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>). Jika anda menggunakan angka "
+"heksa anda mesti menggunakan awalan 0x (misal 0x300)."
 
 #: help.xml:389 help.xml:476
 msgid "HARDWARE"
@@ -409,11 +469,11 @@ msgstr "IBM PS/1 atau ValuePoint (IDE disk)"
 
 #: help.xml:394
 msgid ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
+"eable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
+"eable>,<replaceable>sectors</replaceable></userinput>"
 
 #: help.xml:398
 msgid "Some IBM ThinkPads"
@@ -437,13 +497,13 @@ msgstr "Proteksi bagian I/O port"
 
 #: help.xml:409
 msgid ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 msgstr ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 
 #: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
@@ -470,7 +530,6 @@ msgstr ""
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>no387</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:428
 msgid "Force use of generic IDE driver"
 msgstr ""
@@ -512,11 +571,11 @@ msgstr "PARAMETER BOOT KHUSUS - BERBAGAI DISK DRIVE"
 
 #: help.xml:470 help.xml:537
 msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"prompt, dikombinasi dengan metode boot (lihat <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, dikombinasi dengan metode boot (lihat <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:480
 msgid "Adaptec 151x, 152x"
@@ -524,17 +583,17 @@ msgstr "Adaptec 151x, 152x"
 
 #: help.xml:481
 msgid ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>irq</replaceable></"
-"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
-"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
-"userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 msgstr ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>irq</replaceable></"
-"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
-"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
-"userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 
 #: help.xml:485
 msgid "Adaptec 1542"
@@ -542,15 +601,15 @@ msgstr "Adaptec 1542"
 
 #: help.xml:486
 msgid ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
-"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 msgstr ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
-"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 
 #: help.xml:490
 msgid "Adaptec 274x, 284x"
@@ -558,7 +617,8 @@ msgstr "Adaptec 274x, 284x"
 
 #: help.xml:491
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (aktif jika bukan nol)"
+msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (aktif jika bukan nol)"
 
 #: help.xml:495
 msgid "BusLogic SCSI Hosts"
@@ -678,13 +738,12 @@ msgstr "Menggunakan Braille tty"
 
 #: help.xml:589
 msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
 msgstr ""
@@ -694,7 +753,6 @@ msgstr ""
 msgid "<userinput>theme=dark</userinput>"
 msgstr "<userinput>gdth=disable:y</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:598
 msgid "Use special tasks"
 msgstr ""
@@ -788,22 +846,22 @@ msgstr "Sistem Ubuntu ini dapat disebarkan kembali dengan bebas."
 #: help.xml:703
 msgid ""
 "After installation, the exact distribution terms for each package are "
-"described in the corresponding file /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"described in the corresponding file "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
 "Setelah instalasi, persyaratan distribusi yang pasti bagi tiap paket "
-"dijelaskan dalam file yang berkaitan /usr/share/doc/<replaceable>nama paket</"
-"replaceable>/copyright."
+"dijelaskan dalam file yang berkaitan /usr/share/doc/<replaceable>nama "
+"paket</replaceable>/copyright."
 
 #: help.xml:708
 msgid ""
 "After startup, the exact distribution terms for each package are described "
-"in the corresponding file /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"in the corresponding file "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
 "Setelah startup, persyaratan distribusi yang pasti bagi tiap paket "
-"dijelaskan dalam file yang berkaitan /usr/share/doc/<replaceable>nama paket</"
-"replaceable>/copyright."
+"dijelaskan dalam file yang berkaitan /usr/share/doc/<replaceable>nama "
+"paket</replaceable>/copyright."
 
 #: help.xml:714
 msgid ""
@@ -815,12 +873,12 @@ msgstr ""
 
 #: help.xml:719
 msgid ""
-"This installation system is based on the Debian installer. See <ulink url="
-"\"http://www.debian.org/\" /> for more details and information on the Debian "
-"project."
+"This installation system is based on the Debian installer. See <ulink "
+"url=\"http://www.debian.org/\" /> for more details and information on the "
+"Debian project."
 msgstr ""
-"Sistem instalasi ini didasarkan atas installer Debian. Lihatlah <ulink url="
-"\"http://www.debian.org/\" /> untuk keterangan lebih detil dan lanjut "
+"Sistem instalasi ini didasarkan atas installer Debian. Lihatlah <ulink "
+"url=\"http://www.debian.org/\" /> untuk keterangan lebih detil dan lanjut "
 "tentang proyek Debian."
 
 #: help.xml:725
@@ -828,5 +886,6 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"Sistem ini didasarkan atas Debian. Lihatlah <ulink url=\"http://www.debian."
-"org/\" /> untuk keterangan lebih detil dan lanjut tentang proyek Debian."
+"Sistem ini didasarkan atas Debian. Lihatlah <ulink "
+"url=\"http://www.debian.org/\" /> untuk keterangan lebih detil dan lanjut "
+"tentang proyek Debian."

@@ -1,4 +1,4 @@
-# Malay translation for debian-installer
+# Chinese (Taiwan) translation for debian-installer
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-08-07 08:47+0000\n"
-"Last-Translator: manteros <msr_1st@yahoo.com>\n"
-"Language-Team: Malay <ms@li.org>\n"
+"PO-Revision-Date: 2007-10-13 06:39+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,47 +19,52 @@ msgstr ""
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr ""
+msgstr "安裝程式啟動說明畫面"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "Selamat Datang ke ${DISTRIBUTION_NAME}!"
+msgstr "歡迎使用 ${DISTRIBUTION_NAME}！"
 
 #: help.xml:18
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"這是個 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的安裝 ${MEDIA_TYPE}。建立日期為 "
+"${BUILD_DATE}。"
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"這是個 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的 Live ${MEDIA_TYPE}。建立日期為 "
+"${BUILD_DATE}。"
 
 #: help.xml:28
+#, fuzzy
 msgid "HELP INDEX"
-msgstr "Indeks Bantuan"
+msgstr "說明索引"
 
 #: help.xml:29
 msgid "KEY"
-msgstr "Kunci"
+msgstr "按鍵"
 
 #: help.xml:30
 msgid "TOPIC"
-msgstr "TOPIK"
+msgstr "主題"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Mukasurat ini, ialah indeks bantuan"
+msgstr "本頁面，即說明索引。"
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr ""
+msgstr "安裝 ${DISTRIBUTION_NAME} 的必備需求。"
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr ""
+msgstr "執行 ${DISTRIBUTION_NAME} 的必備需求。"
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
@@ -91,11 +96,11 @@ msgstr ""
 
 #: help.xml:84
 msgid "How to get help."
-msgstr "Bagaimana untuk mendapat bantuan"
+msgstr ""
 
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "Hakcipta dan waranti"
+msgstr ""
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
@@ -107,12 +112,12 @@ msgstr ""
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr ""
+msgstr "安裝 Ubuntu 的必備需求"
 
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr ""
+msgstr "您必須有至少 32 MB 的 RAM 以使用本 Ubuntu 安裝程式。"
 
 #: help.xml:123
 msgid ""
@@ -122,6 +127,8 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"您必須要有建立至少 2 GB 的分割區以安裝標準的 Ubuntu 桌面系統，或是至少 400 MB "
+"的分割區進行伺服器最小安裝。依照您的需求，您將需要更多的硬碟空間以安裝額外的套件。"
 
 #: help.xml:131 help.xml:664
 msgid ""
@@ -129,6 +136,8 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
 "/>"
 msgstr ""
+"更多資訊請參閱 Ubuntu 官方網站(<ulink url=\"http://www.ubuntu.com/\" />)中的安裝指南或是常見問題區 "
+"(FAQ)。"
 
 #: help.xml:137
 msgid ""
@@ -139,17 +148,18 @@ msgstr ""
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
-msgstr ""
+msgstr "本 Live 系統不需要額外的硬碟空間，但您的硬碟上若有 Linux 使用的置換 (Swap) 分割區，本系統將會一併使用。"
 
 #: help.xml:147 help.xml:670
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
+"更多資訊請參閱 Ubuntu 官方網站(<ulink url=\"http://www.ubuntu.com/\" />)中的常見問題區 (FAQ)。"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Terima kasih memilih Ubuntu!"
+msgstr "感謝您選擇 Ubuntu！"
 
 #: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361 help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""

@@ -8,14 +8,79 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2007-11-08 02:38+0000\n"
 "Last-Translator: Babak Manssouri <ubuntu@yuzu.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-10-05 11:27+0000\n"
+"X-Launchpad-Export-Date: 2007-11-29 16:48+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
+
+#~ msgid "server-expert"
+#~ msgstr "server-expert"
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link "
+#~ "linkend=\"F3\"><keycap>F3</keycap></link>>). If you use hex numbers you have "
+#~ "to use the 0x prefix (e.g., 0x300)."
+#~ msgstr ""
+#~ "Prompt eingeben, im Verbindung mit der Bootmethode(siehe <link "
+#~ "linkend=\"F3\"><keycap>F3</keycap></link>>). Wenn Sie Hexadezimalzahlen "
+#~ "eingeben, müssen sie 0x voranstellen (z.B. 0x300)."
+
+#~ msgid ""
+#~ "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "Dies ist eine Installations-${MEDIA_TYPE} für ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, erstellt am ${BUILD_DATE}."
+
+#~ msgid ""
+#~ "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "Dies ist eine Live-${MEDIA_TYPE} für ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, erstellt am ${BUILD_DATE}."
+
+#~ msgid ""
+#~ "The live system does not require any space on your hard disk. However, "
+#~ "existing swap partitions on the disk will be used if available."
+#~ msgstr ""
+#~ "Das Live-System braucht überhaupt keinen Platz auf Ihrer Festplatte. "
+#~ "Vorhandene Swap-Partitionen werden jedoch genutzt."
+
+#~ msgid ""
+#~ "If your system hangs when booting, and the last message you see is \"aec671x-"
+#~ "detect..\", try"
+#~ msgstr ""
+#~ "Wenn Ihr System beim Starten einfriert, und die letzte Zeile \"aec671x-"
+#~ "detect..\" lautet, versuchen Sie es mit"
+
+#~ msgid ""
+#~ "You must have at least 128 megabytes of RAM to use this Ubuntu live system."
+#~ msgstr ""
+#~ "Sie brauchen mindestens 128 Megabyte RAM, um dieses Ubuntu Live-System zu "
+#~ "nutzen."
+
+#~ msgid ""
+#~ "Minimal system install. Recommended for servers, where a complete graphical "
+#~ "desktop environment is not desired."
+#~ msgstr ""
+#~ "Minimalsystem installieren. Empfohlen für Server, auf denen eine graphische "
+#~ "Desktop-Umgebung nicht gewünscht ist."
+
+#~ msgid "server"
+#~ msgstr "server"
+
+#~ msgid "<userinput>gdth=disable:y</userinput>"
+#~ msgstr "<userinput>gdth=disable:y</userinput>"
+
+#~ msgid ""
+#~ "You must have at least 256 megabytes of RAM to use this Ubuntu live system."
+#~ msgstr ""
+#~ "Sie brauchen mindestens 256 Megabyte RAM, um dieses Ubuntu Live-System zu "
+#~ "nutzen."
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -105,7 +170,8 @@ msgstr "Copyright und Garantie."
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "Drücken Sie F2 bis F10 für Einzelheiten, oder ENTER zum ${BOOTPROMPT}"
+msgstr ""
+"Drücken Sie F2 bis F10 für Einzelheiten, oder ENTER zum ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
@@ -140,12 +206,12 @@ msgstr ""
 #: help.xml:131 help.xml:664
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
-"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
-">"
+"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
+"/>"
 msgstr ""
 "Das Installationshandbuch oder die FAQ enthält weitere Informationen; beide "
-"Dokumente finden Sie auf der Ubuntu Webseite <ulink url=\"http://www.ubuntu."
-"com/\" />"
+"Dokumente finden Sie auf der Ubuntu Webseite <ulink "
+"url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
@@ -175,19 +241,17 @@ msgstr ""
 msgid "Thank you for choosing Ubuntu!"
 msgstr "Vielen Dank, dass Sie Ubuntu gewählt haben!"
 
-#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
-#: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
+#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361 help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""
-"Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control and F then 1</phrase> for the help index, or ENTER to "
-"${BOOTPROMPT}"
+"Press <phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
+"to ${BOOTPROMPT}"
 msgstr ""
-"Drücken Sie <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">Strg+F, dann 1</phrase> für das Hilfe-Inhaltsverzeichnis, oder ENTER zum "
-"${BOOTPROMPT}"
+"Drücken Sie <phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\">Strg+F, dann 1</phrase> für das Hilfe-Inhaltsverzeichnis, "
+"oder ENTER zum ${BOOTPROMPT}"
 
-#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
-#: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
+#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366 help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
 "Drücken Sie F1 für das Hilfe Inhaltsverzeichnis, oder Esc, um die Hilfe zu "
@@ -218,17 +282,14 @@ msgstr "expert"
 msgid "Start the installation in expert mode, for maximum control."
 msgstr "Installation im Expertenmodus starten, mit größtmöglicher Kontrolle."
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:191
 msgid "cli"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli-expert"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:194
 msgid "Minimal command-line system install."
 msgstr ""
@@ -319,7 +380,8 @@ msgstr "SPEZIELLE BOOT-PARAMETER - ÜBERSICHT"
 
 #: help.xml:314
 msgid "On a few systems, you may need to specify a parameter at the"
-msgstr "Auf manchen Systemen müssen Sie vielleicht einen Parameter hinter dem"
+msgstr ""
+"Auf manchen Systemen müssen Sie vielleicht einen Parameter hinter dem"
 
 #: help.xml:315 help.xml:381 help.xml:469 help.xml:536
 #, no-wrap
@@ -362,8 +424,8 @@ msgstr "Boot-Parameter, die vom Start-System verstanden werden"
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
-"parameters when modules are loaded, boot in expert mode (see <link linkend="
-"\"F3\"><keycap>F3</keycap></link>)."
+"parameters when modules are loaded, boot in expert mode (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Viele Kernel-Module werden vom Installationssystem dynamisch geladen; deren "
 "Parameter können nicht auf der Befehlszeile angegeben werden. Um Parameter "
@@ -388,13 +450,13 @@ msgstr "Die folgenden Boot-Parameter können Sie am"
 
 #: help.xml:382
 msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
-"0x prefix (e.g., 0x300)."
+"prompt, in combination with the boot method (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>). If you use hex numbers you have "
+"to use the 0x prefix (e.g., 0x300)."
 msgstr ""
-"Prompt eingeben, im Verbindung mit der Bootmethode(siehe <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). Wenn Sie Hexadezimalzahlen eingeben, müssen "
-"sie 0x voranstellen (z.B. 0x300)."
+"Prompt eingeben, im Verbindung mit der Bootmethode(siehe <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>). Wenn Sie Hexadezimalzahlen "
+"eingeben, müssen sie 0x voranstellen (z.B. 0x300)."
 
 #: help.xml:389 help.xml:476
 msgid "HARDWARE"
@@ -410,11 +472,11 @@ msgstr "IBM PS/1 oder ValuePoint (IDE Festplatte)"
 
 #: help.xml:394
 msgid ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
+"eable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
+"eable>,<replaceable>sectors</replaceable></userinput>"
 
 #: help.xml:398
 msgid "Some IBM ThinkPads"
@@ -438,13 +500,13 @@ msgstr "Geschützte I/O-Port Bereiche"
 
 #: help.xml:409
 msgid ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 msgstr ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 
 #: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
@@ -471,7 +533,6 @@ msgstr ""
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>no387</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:428
 msgid "Force use of generic IDE driver"
 msgstr ""
@@ -513,11 +574,11 @@ msgstr "SPEZIELLE BOOT-PARAMETER - VERSCHIEDENE FESTPLATTEN"
 
 #: help.xml:470 help.xml:537
 msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Prompt, in Verbindung mit der Bootmethode (siehe <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"Prompt, in Verbindung mit der Bootmethode (siehe <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:480
 msgid "Adaptec 151x, 152x"
@@ -525,11 +586,11 @@ msgstr "Adaptec 151x, 152x"
 
 #: help.xml:481
 msgid ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>irq</replaceable></"
-"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
-"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
-"userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 msgstr ""
 
 #: help.xml:485
@@ -538,10 +599,10 @@ msgstr "Adaptec 1542"
 
 #: help.xml:486
 msgid ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
-"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 msgstr ""
 
 #: help.xml:490
@@ -669,11 +730,10 @@ msgstr "Braille tty verwenden"
 
 #: help.xml:589
 msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
 msgstr ""
@@ -683,7 +743,6 @@ msgstr ""
 msgid "<userinput>theme=dark</userinput>"
 msgstr "<userinput>gdth=disable:y</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:598
 msgid "Use special tasks"
 msgstr ""
@@ -779,22 +838,22 @@ msgstr "Das Ubuntu System darf frei weiterverteilt werden."
 #: help.xml:703
 msgid ""
 "After installation, the exact distribution terms for each package are "
-"described in the corresponding file /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"described in the corresponding file "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
 "Nach der Installation sind die genauen Bedingungen zur Verbreitung für jedes "
-"einzelne Paket in der entsprechenden Datei /usr/share/doc/"
-"<replaceable>Paketname</replaceable>/copyright beschrieben."
+"einzelne Paket in der entsprechenden Datei "
+"/usr/share/doc/<replaceable>Paketname</replaceable>/copyright beschrieben."
 
 #: help.xml:708
 msgid ""
 "After startup, the exact distribution terms for each package are described "
-"in the corresponding file /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"in the corresponding file "
+"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
 "Nach dem Starten sind die genauen Bedingungen zur Verbreitung für jedes "
-"einzelne Paket in der entsprechenden Datei /usr/share/doc/"
-"<replaceable>Paketname</replaceable>/copyright beschrieben."
+"einzelne Paket in der entsprechenden Datei "
+"/usr/share/doc/<replaceable>Paketname</replaceable>/copyright beschrieben."
 
 #: help.xml:714
 msgid ""
@@ -806,18 +865,18 @@ msgstr ""
 
 #: help.xml:719
 msgid ""
-"This installation system is based on the Debian installer. See <ulink url="
-"\"http://www.debian.org/\" /> for more details and information on the Debian "
-"project."
+"This installation system is based on the Debian installer. See <ulink "
+"url=\"http://www.debian.org/\" /> for more details and information on the "
+"Debian project."
 msgstr ""
-"Dieses Installationssystem basiert auf dem Debian Installer. Auf <ulink url="
-"\"http://www.debian.org/\" /> finden Sie Genaueres dazu, sowie Informationen "
-"zum Debian Projekt."
+"Dieses Installationssystem basiert auf dem Debian Installer. Auf <ulink "
+"url=\"http://www.debian.org/\" /> finden Sie Genaueres dazu, sowie "
+"Informationen zum Debian Projekt."
 
 #: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"Dieses System basiert auf Debian. Auf <ulink url=\"http://www.debian.org/\" /"
-"> finden Sie Genaueres dazu, sowie Informationen zum Debian Projekt."
+"Dieses System basiert auf Debian. Auf <ulink url=\"http://www.debian.org/\" "
+"/> finden Sie Genaueres dazu, sowie Informationen zum Debian Projekt."

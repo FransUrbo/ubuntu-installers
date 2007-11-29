@@ -1,4 +1,4 @@
-# Malay translation for debian-installer
+# Norwegian Bokmål translation for debian-installer
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2007-08-07 08:47+0000\n"
-"Last-Translator: manteros <msr_1st@yahoo.com>\n"
-"Language-Team: Malay <ms@li.org>\n"
+"PO-Revision-Date: 2007-10-15 22:30+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Norwegian Bokmål <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,100 +19,106 @@ msgstr ""
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr ""
+msgstr "Hjelpeskjerm for installasjonsprogrammet"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "Selamat Datang ke ${DISTRIBUTION_NAME}!"
+msgstr "Velkommen til ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Dette er en ${MEDIA_TYPE} for å installere ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Den ble kompilert den ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Dette er en live-${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Den ble kompilert den ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "Indeks Bantuan"
+msgstr "HJELPEREGISTER"
 
 #: help.xml:29
 msgid "KEY"
-msgstr "Kunci"
+msgstr "NØKKEL"
 
 #: help.xml:30
 msgid "TOPIC"
-msgstr "TOPIK"
+msgstr "EMNE"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Mukasurat ini, ialah indeks bantuan"
+msgstr "Denne side, hjelperegisteret."
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr ""
+msgstr "Forutsetninger for å kunne installere ${DISTRIBUTION_NAME}."
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr ""
+msgstr "Forutsetninger for å kunne bruke ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr ""
+msgstr "Spesielle oppstartsmetoder for denne ${MEDIA_TYPE}."
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr ""
+msgstr "Flere oppstartsmetoder; redde et brukket system."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr ""
+msgstr "Oversikt over spesielle oppstartsparametere."
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "Oppstartsparametere for spesielle maskiner."
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
+msgstr "Oppstartsparametere for utvalgte diskkontrollere."
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "Oppstartsparametere for installasjonssystemet."
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "Parametere for oppstartsprosessen."
 
 #: help.xml:84
 msgid "How to get help."
-msgstr "Bagaimana untuk mendapat bantuan"
+msgstr "Hvordan få hjelp."
 
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "Hakcipta dan waranti"
+msgstr "Opphavsrett og garanti"
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr ""
+msgstr "Trykk F2 til F10 for detaljer, eller ENTER for ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr ""
+msgstr "Trykk F2 til F10 for detaljer, eller Esc for å avslutte hjelp."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr ""
+msgstr "FORUTSETNINGER FOR Å INSTALLERE UBUNTU"
 
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
+"Du må ha minst 32 MB internminne (RAM) for å bruke dette "
+"installasjonsprogrammet for Ubuntu."
 
 #: help.xml:123
 msgid ""
@@ -122,6 +128,10 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"Du burde ha nok plass på harddisken til å lage en ny partisjon på minst 2 GB "
+"for å installere et standard Ubuntu skrivebordssystem eller minst 400 MB for "
+"en minimal tjenerinstallasjon. Du vil trenge mer diskplass for å installere "
+"flere pakker, avhengig av hva du ønsker å gjøre med ditt nye Ubuntu-system."
 
 #: help.xml:131 help.xml:664
 msgid ""
@@ -129,6 +139,9 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
 "/>"
 msgstr ""
+"Se Installasjonsmanualen eller Ofte Stilte Spørsmål for mer informasjon; "
+"begge dokumentene er tilgjengelig på Ubuntu sin hjemmeside, <ulink "
+"url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
@@ -140,16 +153,20 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"Dette live-systemet krever ikke noe harddiskplass, men eventuelle "
+"eksisterende Linux swap-partisjoner på harddisken vil brukes."
 
 #: help.xml:147 help.xml:670
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
+"Se Ofte Stilte Spørsmål for mer informasjon. Dokumentet OSS er tilgjengelig "
+"på Ubuntu sin hjemmeside, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Terima kasih memilih Ubuntu!"
+msgstr "Takk for at du valgte Ubuntu!"
 
 #: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361 help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""
@@ -157,105 +174,114 @@ msgid ""
 "class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
 "to ${BOOTPROMPT}"
 msgstr ""
+"Trykk <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial\">Ctrl "
+"og F så 1</phrase> for hjelperegisteret, eller ENTER for ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366 help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr ""
+msgstr "Trykk F1 for hjelperegisteret eller Esc for å avslutte hjelpen."
 
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr ""
+msgstr "OPPSTARTSMETODER"
 
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr ""
+msgstr "TIlgjengelig oppstartsmetoder:"
 
 #: help.xml:177
 msgid "install"
-msgstr ""
+msgstr "installer"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgstr ""
+"Start installasjonen -- dette er den vanlige ${MEDIA_TYPE}-installasjonen."
 
 #: help.xml:184
 msgid "expert"
-msgstr ""
+msgstr "ekspert"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
-msgstr ""
+msgstr "Start installasjonen i ekspertmodus, for maksimal kontroll."
 
 #: help.xml:191
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #: help.xml:192
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-ekspert"
 
 #: help.xml:194
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Installasjon av et minimalt kommandolinje-system."
 
 #: help.xml:199
 msgid "live"
-msgstr ""
+msgstr "live"
 
 #: help.xml:201
 msgid "Start the live system."
-msgstr ""
+msgstr "Start live-systemet."
 
 #: help.xml:206
 msgid "memtest"
-msgstr ""
+msgstr "minnetest"
 
 #: help.xml:208
 msgid "Perform a memory test."
-msgstr ""
+msgstr "Utfør en test av internminnet (RAM)."
 
 #: help.xml:214 help.xml:258
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"For å bruke en av disse oppstartsmetodene, skriv oppstartsmetoden ved "
+"ledeteksten, eventuelt etterfulgt av valgfrie oppstartsparametere. For "
+"eksempel:"
 
 #: help.xml:219
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "Starte opp: installer acpi=off"
 
 #: help.xml:220
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "Starte opp: live acpi=off"
 
 #: help.xml:224
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
+"Hvis du er usikker burde du bruke den forhåndsvalgte metoden uten spesielle "
+"parametere, ved rett og slett å trykke enter ved ledeteksten."
 
 #: help.xml:242 help.xml:278
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "REDDE ET HAVARERT SYSTEM"
 
 #: help.xml:246
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
+"Bruk en av disse oppstartsmetodene for å redde en eksisterende installasjon"
 
 #: help.xml:250
 msgid "rescue"
-msgstr ""
+msgstr "redde"
 
 #: help.xml:252
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "Start opp i reddemodus."
 
 #: help.xml:262
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "Start opp: redde acpi=off"
 
 #: help.xml:285
 msgid ""
@@ -265,19 +291,24 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
+"Det er ingen dedikert reddemodus på denne CD. Men siden hele systemet kjører "
+"fra CD, er det mulig å bruke kommandolinjen og/eller grafiske verktøy for å "
+"redde et havarert system, og å bruke nettleser for å lete etter hjelp. "
+"Omfattende hjelp er tilgjengelig på Internett for de fleste problemer som "
+"kan hindre det normale systemet ditt i å starte riktig."
 
 #: help.xml:307
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr ""
+msgstr "SPESIELLE OPPSTARTSPARAMETERE - OVERSIKT"
 
 #: help.xml:314
 msgid "On a few systems, you may need to specify a parameter at the"
-msgstr ""
+msgstr "Noen få systemer kan kreve at du spesifiserer en parameter ved"
 
 #: help.xml:315 help.xml:381 help.xml:469 help.xml:536
 #, no-wrap
 msgid "boot:"
-msgstr ""
+msgstr "oppstart:"
 
 #: help.xml:315
 msgid ""
@@ -285,26 +316,30 @@ msgid ""
 "autodetect your hardware, and you may need to explicitly specify its "
 "location or type for it to be recognized."
 msgstr ""
+"ledetekst for å starte opp systemet. For eksempel, kan det hende at Linux "
+"ikke klarer å oppdage maskinvaren din automatisk uten at du oppgir hvor den "
+"befinner seg eller skriver noe for at den skal oppdages."
 
 #: help.xml:321
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
+"For mer informasjon om hvilke oppstartsparametere du kan bruke, trykk:"
 
 #: help.xml:329
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "oppstartsparametere for spesielle maskiner"
 
 #: help.xml:334
 msgid "boot parameters for various disk controllers"
-msgstr ""
+msgstr "oppstartsparametere for forskjellige harddiskkontrollere"
 
 #: help.xml:339
 msgid "boot parameters understood by the install system"
-msgstr ""
+msgstr "oppstartsparametere som installasjonssystemet forstår"
 
 #: help.xml:344
 msgid "boot parameters understood by the bootstrap system"
-msgstr ""
+msgstr "oppstartsparametere som oppstartssystemet forstår"
 
 #: help.xml:349
 msgid ""
@@ -313,20 +348,26 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link "
 "linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Mange kjernemoduler lastes dynamisk av installasjonsprogrammet. Parametrene "
+"for disse modulene kan ikke gis ved ledeteksten. For å bli spurt om "
+"parametere når moduler lastes, start opp i ekspertmodus (se <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:356
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
+"Mange kjernemoduler lastes dynamisk av oppstartssystemet, og parametere for "
+"disse modulene kan ikke bli gitt ved ledeteksten."
 
 #: help.xml:374
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr ""
+msgstr "SPESIELLE OPPSTARTSPARAMETERE - FORSKJELLIG MASKINVARE"
 
 #: help.xml:381 help.xml:469 help.xml:536
 msgid "You can use the following boot parameters at the"
-msgstr ""
+msgstr "Du kan bruke følgende oppstartsparametere ved"
 
 #: help.xml:382
 msgid ""
@@ -334,44 +375,49 @@ msgid ""
 "linkend=\"F3\"><keycap>F3</keycap></link>). If you use hex numbers you have "
 "to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"ledeteksten i kombinasjon med oppstartsmetoden (se <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>). Hvis du bruker heksadesimale "
+"tall, må du bruke 0x forran (f.eks. 0x300)."
 
 #: help.xml:389 help.xml:476
 msgid "HARDWARE"
-msgstr ""
+msgstr "MASKINVARE"
 
 #: help.xml:390 help.xml:477
 msgid "PARAMETER TO SPECIFY"
-msgstr ""
+msgstr "SPESIFISER PARAMETER"
 
 #: help.xml:393
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr ""
+msgstr "IBM PS/1 eller ValuePoint (IDE disk)"
 
 #: help.xml:394
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
 "eable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+"<userinput>hd=<replaceable>syllindere</replaceable>,<replaceable>hoder</repla"
+"ceable>,<replaceable>sektorer</replaceable></userinput>"
 
 #: help.xml:398
 msgid "Some IBM ThinkPads"
-msgstr ""
+msgstr "Noen IBM ThinkPad"
 
 #: help.xml:399
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:403
 msgid "IBM Pentium Microchannel"
-msgstr ""
+msgstr "IBM Pentium Microchannel"
 
 #: help.xml:404
 msgid "<userinput>mca-pentium no-hlt</userinput>"
-msgstr ""
+msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
 #: help.xml:408
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "Beskytt I/U-portområder"
 
 #: help.xml:409
 msgid ""
@@ -379,76 +425,83 @@ msgid ""
 "laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
 "erinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
+"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
+"erinput></optional>"
 
 #: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
-msgstr ""
+msgstr "Jobb rundt feilende FPU (eldre maskiner)"
 
 #: help.xml:414
 msgid "<userinput>no387</userinput>"
-msgstr ""
+msgstr "<userinput>no387</userinput>"
 
 #: help.xml:418
 msgid "Laptops with screen display problems"
-msgstr ""
+msgstr "Bærbare med skjermvisningsproblemer"
 
 #: help.xml:419
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:423
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Bruk første seriellport med overføringshastighet 9600"
 
 #: help.xml:424
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:428
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Tving til å bruke generell IDE-driver"
 
 #: help.xml:429
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:434
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
 msgstr ""
+"Hvis du erfarer at maskinen henger seg eller andre maskinvarefeil, slå av "
+"APIC avbruddsadressering"
 
 #: help.xml:437
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:441 help.xml:510 help.xml:611
 msgid "For example:"
-msgstr ""
+msgstr "For eksempel:"
 
 #: help.xml:444
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "Start opp: installer vga=771 noapic nolapic"
 
 #: help.xml:445
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr ""
+msgstr "Start opp: live vga=771 noapic nolapic"
 
 #: help.xml:462
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr ""
+msgstr "SPESIELLE OPPSTARTSPARAMETERE - FORSKJELLIGE HARDDISKER"
 
 #: help.xml:470 help.xml:537
 msgid ""
 "prompt, in combination with the boot method (see <link "
 "linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"ledetekst i kombinasjon med oppstartsmetoden (se <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:480
 msgid "Adaptec 151x, 152x"
-msgstr ""
+msgstr "Adaptec 151x, 152x"
 
 #: help.xml:481
 msgid ""
@@ -458,10 +511,15 @@ msgid ""
 "id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
 "laceable></userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
+"ut>,<replaceable>scsi-"
+"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
+"laceable></userinput></optional></optional></optional>"
 
 #: help.xml:485
 msgid "Adaptec 1542"
-msgstr ""
+msgstr "Adaptec 1542"
 
 #: help.xml:486
 msgid ""
@@ -470,196 +528,213 @@ msgid ""
 "eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
 "userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
+"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
+"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
+"userinput></optional></optional>"
 
 #: help.xml:490
 msgid "Adaptec 274x, 284x"
-msgstr ""
+msgstr "Adaptec 274x, 284x"
 
 #: help.xml:491
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (aktivert hvis ikke null)"
 
 #: help.xml:495
 msgid "BusLogic SCSI Hosts"
-msgstr ""
+msgstr "BusLogic SCSI-verter"
 
 #: help.xml:496
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:500
 msgid "Certain DELL machines"
-msgstr ""
+msgstr "Gitte DELL-maskiner"
 
 #: help.xml:501
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #: help.xml:506
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"Denne listen er ikke komplett, se kjerneparametrene i filen kernel-"
+"parameters.txt for mer informasjon."
 
 #: help.xml:513
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "Start opp: installer aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:514
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "Start opp: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:531
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr ""
+msgstr "SPESIELLE OPPSTARTSPARAMETERE - INSTALLASJONSSYSTEMET"
 
 #: help.xml:541
 msgid "These parameters control how the installer works."
 msgstr ""
+"Disse parametrene kontrollerer hvordan installasjonsprogrammet fungerer."
 
 #: help.xml:544
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
+msgstr "Disse parametrene kontrollerer hvordan oppstartssystemet fungerer."
 
 #: help.xml:549
 msgid "RESULT"
-msgstr ""
+msgstr "RESULTAT"
 
 #: help.xml:550
 msgid "PARAMETER"
-msgstr ""
+msgstr "PARAMETER"
 
 #: help.xml:553
 msgid "Verbose debugging"
-msgstr ""
+msgstr "Utvidet feilsøking"
 
 #: help.xml:554
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr ""
+msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:558
 msgid "Debug boot sequence"
-msgstr ""
+msgstr "Feilsøk oppstartssekvensen"
 
 #: help.xml:559
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr ""
+msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:563
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "Deaktiver mellomlagring av skjermbilder"
 
 #: help.xml:564
 msgid "<userinput>fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:568
 msgid "Don't probe for USB"
-msgstr ""
+msgstr "Ikke søk gjennom USB"
 
 #: help.xml:569
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-msgstr ""
+msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
 #: help.xml:573
 msgid "Don't start PCMCIA"
-msgstr ""
+msgstr "Ikke start PCMCIA"
 
 #: help.xml:574
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
-msgstr ""
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:578
 msgid "Force static network config"
-msgstr ""
+msgstr "Tving statisk nettverkskonfigurasjon"
 
 #: help.xml:579
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr ""
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:583
 msgid "Set keyboard map"
-msgstr ""
+msgstr "Sett tastaturoppsett"
 
 #: help.xml:584
 msgid "<userinput>bootkbd=es</userinput>"
-msgstr ""
+msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:588
 msgid "Use Braille tty"
-msgstr ""
+msgstr "Bruk blindeskrifts-tty"
 
 #: help.xml:589
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
 "aceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
+"aceable>,<replaceable>texttable</replaceable></userinput>"
 
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Bruk høykontrastshjelpetema"
 
 #: help.xml:594
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 #: help.xml:598
 msgid "Use special tasks"
-msgstr ""
+msgstr "Bruk spesielle oppgaver"
 
 #: help.xml:599
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
 #: help.xml:604
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
+"Deaktiver ACPI for PCI oppsett (hjelper for noen HP-tjenere og Via-baserte "
+"maskiner)"
 
 #: help.xml:607
 msgid "<userinput>pci=noacpi</userinput>"
-msgstr ""
+msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:614
 #, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr ""
+msgstr "Start opp: installer pci=noacpi"
 
 #: help.xml:615
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "Start opp: live pci=noacpi"
 
 #: help.xml:632
 msgid "GETTING HELP"
-msgstr ""
+msgstr "Å FÅ HJELP"
 
 #: help.xml:639
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr ""
+msgstr "Om du ikke klarer å installere Ubuntu, fortvil ikke!"
 
 #: help.xml:642
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr ""
+msgstr "Om du ikke klarer å starte Ubuntu, fortvil ikke!"
 
 #: help.xml:645
 msgid "The Ubuntu team is ready to help you!"
-msgstr ""
+msgstr "Ubuntu-teamet står klare til å hjelpe deg!"
 
 #: help.xml:648
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Vi er spesielt interessert i å høre om installasjonsproblemer, fordi de "
+"generelt ikke bare skjer <emphasis>én</emphasis> person."
 
 #: help.xml:653
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Vi er spesielt interesserte i å høre om oppstartsproblemer, fordi de "
+"generelt ikke bare skjer <emphasis>én</emphasis> person."
 
 #: help.xml:657
 msgid ""
@@ -668,20 +743,25 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"Vi har enten allerede hørt om akkurat ditt problem og kan utgi en kjapp "
+"oppretting, eller så vil vi gjerne høre om det og jobbe gjennom det med deg, "
+"slik at den neste brukeren som får samme problem kan tjene på erfaringen din!"
 
 #: help.xml:688
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr ""
+msgstr "OPPHAVSRETT OG GARANTIER"
 
 #: help.xml:695
 msgid ""
 "Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"Canonical Ltd. eier opphavsrettighetene til Ubuntu og bruker arbeid fra "
+"mange andre forfattere og bidragsytere."
 
 #: help.xml:700
 msgid "The Ubuntu system is freely redistributable."
-msgstr ""
+msgstr "Ubuntusystemet er fritt distribuerbart."
 
 #: help.xml:703
 msgid ""
@@ -689,6 +769,9 @@ msgid ""
 "described in the corresponding file "
 "/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
+"Etter installasjonen er de eksakte distribusjonsbetingelsene for hver pakke "
+"beskrevet i den tilhørende filen "
+"/usr/share/doc/<replaceable>pakkenavn</replaceable>/copyright"
 
 #: help.xml:708
 msgid ""
@@ -696,12 +779,17 @@ msgid ""
 "in the corresponding file "
 "/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
 msgstr ""
+"Etter oppstart er de eksakte distribusjonsbetingelsene for hver pakke "
+"beskrevet i den tilhørende filen "
+"/usr/share/doc/<replaceable>pakkenavn</replaceable>/copyright"
 
 #: help.xml:714
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
+"Ubuntu kommer med <emphasis>ABSOLUTT INGEN GARANTI</emphasis>, i den grad "
+"det er tillatt av gjeldende lover."
 
 #: help.xml:719
 msgid ""
@@ -709,9 +797,15 @@ msgid ""
 "url=\"http://www.debian.org/\" /> for more details and information on the "
 "Debian project."
 msgstr ""
+"Dette installasjonssystemet er basert på Debian installer. Se <ulink "
+"url=\"http://www.debian.org/\" /> for flere detaljer og informasjon om "
+"Debian-prosjektet."
 
 #: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"Dette systemet er basert på Debian installer. Se <ulink "
+"url=\"http://www.debian.org/\" /> for flere detaljer og informasjon om "
+"Debian-prosjektet."
