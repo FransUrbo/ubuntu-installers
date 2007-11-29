@@ -1,3 +1,10 @@
+debian-installer (20070308ubuntu22) UNRELEASED; urgency=low
+
+  * Backport from trunk (Bastian Blank):
+    - Support coming cdebconf frontend changes.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 29 Nov 2007 16:42:16 +0000
+
 debian-installer (20070308ubuntu21) hardy; urgency=low
 
   * Set default suite to hardy.
