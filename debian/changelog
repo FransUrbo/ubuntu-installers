@@ -1,3 +1,10 @@
+base-installer (1.85ubuntu3) UNRELEASED; urgency=low
+
+  * Fix construction of sources.list when installing from the network (">"
+    used in place of ">>"). Thanks to Timo Aaltonen for the report.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 30 Nov 2007 10:03:01 +0000
+
 base-installer (1.85ubuntu2) hardy; urgency=low
 
   * Install busybox-initramfs rather than busybox.
