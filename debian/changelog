@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu23) UNRELEASED; urgency=low
+
+  * Switch from upx-ucl-beta to upx-ucl, now that it's out of beta.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Dec 2007 18:08:39 +0000
+
 debian-installer (20070308ubuntu22) hardy; urgency=low
 
   * Backport from trunk (Bastian Blank):
