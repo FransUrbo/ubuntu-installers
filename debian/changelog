@@ -1,3 +1,28 @@
+base-installer (1.86ubuntu1) UNRELEASED; urgency=low
+
+  * Resynchronise with Debian. Remaining changes:
+    - Use and depend on the Ubuntu keyring.
+    - Enable the restricted component by default.
+    - Set up the default sources.list to look in -updates and -security (the
+      latter from apt-setup/security_host) as well as the unadorned suite.
+    - Use Ubuntu kernel image names.
+    - Allow preseeding base-installer/kernel/override-image to force a given
+      kernel to be used.
+    - Write out the resume partition as a UUID if possible.
+    - Install busybox-initramfs rather than busybox.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 10 Dec 2007 17:44:43 +0000
+
+base-installer (1.86) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * Add support for the Orion (ARM) platform.
+
+  [ Updated translations ]
+  * Slovak (sk.po) by Ivan Masár
+
+ -- Martin Michlmayr <tbm@cyrius.com>  Thu, 29 Nov 2007 09:15:41 +0100
+
 base-installer (1.85ubuntu3) hardy; urgency=low
 
   * Fix construction of sources.list when installing from the network (">"
