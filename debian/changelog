@@ -1,4 +1,4 @@
-base-installer (1.86ubuntu1) UNRELEASED; urgency=low
+base-installer (1.86ubuntu1) hardy; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Use and depend on the Ubuntu keyring.
@@ -11,7 +11,7 @@ base-installer (1.86ubuntu1) UNRELEASED; urgency=low
     - Write out the resume partition as a UUID if possible.
     - Install busybox-initramfs rather than busybox.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 10 Dec 2007 17:44:43 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 10 Dec 2007 17:46:16 +0000
 
 base-installer (1.86) unstable; urgency=low
 
