@@ -1,6 +1,7 @@
 debian-installer (20070308ubuntu23) UNRELEASED; urgency=low
 
   * Switch from upx-ucl-beta to upx-ucl, now that it's out of beta.
+  * Move to 2.6.24-2 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Dec 2007 18:08:39 +0000
 
