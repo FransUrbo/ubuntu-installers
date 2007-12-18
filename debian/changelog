@@ -2,6 +2,9 @@ debian-installer (20070308ubuntu23) UNRELEASED; urgency=low
 
   * Switch from upx-ucl-beta to upx-ucl, now that it's out of beta.
   * Move to 2.6.24-2 kernels.
+  * Encapsulate UTF-8 encoding pain differently in
+    build/util/help-to-gfxboot.py. (The resulting code is longer but I think
+    the horribleness is better-positioned.)
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Dec 2007 18:08:39 +0000
 
