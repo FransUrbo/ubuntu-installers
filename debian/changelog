@@ -1,4 +1,4 @@
-debian-installer (20070308ubuntu23) UNRELEASED; urgency=low
+debian-installer (20070308ubuntu23) hardy; urgency=low
 
   * Switch from upx-ucl-beta to upx-ucl, now that it's out of beta.
   * Move to 2.6.24-2 kernels.
@@ -6,7 +6,7 @@ debian-installer (20070308ubuntu23) UNRELEASED; urgency=low
     build/util/help-to-gfxboot.py. (The resulting code is longer but I think
     the horribleness is better-positioned.)
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Dec 2007 18:08:39 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 18 Dec 2007 21:13:12 +0000
 
 debian-installer (20070308ubuntu22) hardy; urgency=low
 
