@@ -1,3 +1,10 @@
+grub-installer (1.27ubuntu2) UNRELEASED; urgency=low
+
+  * udev 117 merged all udev tools into a single binary called udevadm.
+    Check for this and use it instead of udevinfo if available.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 20 Dec 2007 11:59:16 +0000
+
 grub-installer (1.27ubuntu1) hardy; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
