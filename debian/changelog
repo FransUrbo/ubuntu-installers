@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu24) hardy; urgency=low
+
+  * Rebuild-only upload to pick up fixes from udev 0.117-3.
+
+ -- Steve Langasek <slangasek@canonical.com>  Wed, 19 Dec 2007 20:16:28 -0800
+
 debian-installer (20070308ubuntu23) hardy; urgency=low
 
   * Switch from upx-ucl-beta to upx-ucl, now that it's out of beta.
