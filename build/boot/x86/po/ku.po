@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2007-09-18 12:57+0100\n"
+"POT-Creation-Date: 2008-01-09 21:55+0000\n"
 "PO-Revision-Date: 2007-06-03 18:14+0000\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
@@ -16,23 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2007-11-29 16:48+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
-
-#~ msgid ""
-#~ "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
-#~ msgstr ""
-#~ "Ev bo ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ji ${BUILD_DATE} "
-#~ "${MEDIA_TYPE} ya sazkirinê  ye."
-
-#~ msgid ""
-#~ "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
-#~ msgstr ""
-#~ "Ev ${MEDIA_TYPE} ya zindî ji ${BUILD_DATE} û vir ve bo ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION} dixebite."
-
-#~ msgid "server"
-#~ msgstr "pêşkêşkar"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -102,8 +85,7 @@ msgstr "Parametreyên bi taybet yê pêşbarkirinê bo mekîneyên bi taybet."
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
-"Parametreyên bi taybet yê pêşbarkirinê bo kontrolên dîskên hilbijartî."
+msgstr "Parametreyên bi taybet yê pêşbarkirinê bo kontrolên dîskên hilbijartî."
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
@@ -124,8 +106,8 @@ msgstr "Mafên telîfê û ewlehî."
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
-"Bo kîtekîtan(Detayan) ji F2yan heta F10an pêlî bikin yan jî bo "
-"${BOOTPROMPT}ê pêlî ENTER bikin."
+"Bo kîtekîtan(Detayan) ji F2yan heta F10an pêlî bikin yan jî bo ${BOOTPROMPT}"
+"ê pêlî ENTER bikin."
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
@@ -152,8 +134,8 @@ msgstr ""
 #: help.xml:131 help.xml:664
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
-"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
-"/>"
+"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
+">"
 msgstr ""
 
 #: help.xml:137
@@ -177,14 +159,16 @@ msgstr ""
 msgid "Thank you for choosing Ubuntu!"
 msgstr ""
 
-#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361 help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
+#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
+#: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""
-"Press <phrase class=\"not-serial\">F1</phrase><phrase "
-"class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
-"to ${BOOTPROMPT}"
+"Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">control and F then 1</phrase> for the help index, or ENTER to "
+"${BOOTPROMPT}"
 msgstr ""
 
-#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366 help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
+#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
+#: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
 
@@ -336,8 +320,8 @@ msgstr ""
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
-"parameters when modules are loaded, boot in expert mode (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"parameters when modules are loaded, boot in expert mode (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 
 #: help.xml:356
@@ -356,9 +340,9 @@ msgstr ""
 
 #: help.xml:382
 msgid ""
-"prompt, in combination with the boot method (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>). If you use hex numbers you have "
-"to use the 0x prefix (e.g., 0x300)."
+"prompt, in combination with the boot method (see <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
+"0x prefix (e.g., 0x300)."
 msgstr ""
 
 #: help.xml:389 help.xml:476
@@ -375,8 +359,8 @@ msgstr ""
 
 #: help.xml:394
 msgid ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
-"eable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
 
 #: help.xml:398
@@ -401,9 +385,9 @@ msgstr ""
 
 #: help.xml:409
 msgid ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
-"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
-"erinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 msgstr ""
 
 #: help.xml:413
@@ -468,8 +452,8 @@ msgstr ""
 
 #: help.xml:470 help.xml:537
 msgid ""
-"prompt, in combination with the boot method (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 msgstr ""
 
 #: help.xml:480
@@ -478,11 +462,11 @@ msgstr ""
 
 #: help.xml:481
 msgid ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
-"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
-"ut>,<replaceable>scsi-"
-"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
-"laceable></userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 msgstr ""
 
 #: help.xml:485
@@ -491,10 +475,10 @@ msgstr ""
 
 #: help.xml:486
 msgid ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
-"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
-"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
-"userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
 
 #: help.xml:490
@@ -620,8 +604,8 @@ msgstr ""
 
 #: help.xml:589
 msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
-"aceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
 
 #: help.xml:593
@@ -699,9 +683,10 @@ msgstr ""
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr ""
 
+# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:695
 msgid ""
-"Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
 
@@ -712,15 +697,15 @@ msgstr ""
 #: help.xml:703
 msgid ""
 "After installation, the exact distribution terms for each package are "
-"described in the corresponding file "
-"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"described in the corresponding file /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
 msgstr ""
 
 #: help.xml:708
 msgid ""
 "After startup, the exact distribution terms for each package are described "
-"in the corresponding file "
-"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"in the corresponding file /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
 msgstr ""
 
 #: help.xml:714
@@ -731,9 +716,9 @@ msgstr ""
 
 #: help.xml:719
 msgid ""
-"This installation system is based on the Debian installer. See <ulink "
-"url=\"http://www.debian.org/\" /> for more details and information on the "
-"Debian project."
+"This installation system is based on the Debian installer. See <ulink url="
+"\"http://www.debian.org/\" /> for more details and information on the Debian "
+"project."
 msgstr ""
 
 #: help.xml:725
@@ -741,3 +726,20 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+
+#~ msgid ""
+#~ "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "Ev bo ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ji ${BUILD_DATE} "
+#~ "${MEDIA_TYPE} ya sazkirinê  ye."
+
+#~ msgid ""
+#~ "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "Ev ${MEDIA_TYPE} ya zindî ji ${BUILD_DATE} û vir ve bo "
+#~ "${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} dixebite."
+
+#~ msgid "server"
+#~ msgstr "pêşkêşkar"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2007-09-18 12:57+0100\n"
+"POT-Creation-Date: 2008-01-09 21:55+0000\n"
 "PO-Revision-Date: 2007-11-08 02:40+0000\n"
 "Last-Translator: ZhengPeng Hou <zhengpeng.hou@gmail.com>\n"
 "Language-Team: Chinese (China) <zh_CN@li.org>\n"
@@ -16,61 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2007-11-29 16:48+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
-
-#~ msgid "server-expert"
-#~ msgstr "服务器专家级安装"
-
-#~ msgid ""
-#~ "prompt, in combination with the boot method (see <link "
-#~ "linkend=\"F3\"><keycap>F3</keycap></link>>). If you use hex numbers you have "
-#~ "to use the 0x prefix (e.g., 0x300)."
-#~ msgstr ""
-#~ "提示列，接合启动方式（参阅<link "
-#~ "linkend=\"F3\"><keycap>F3</keycap></link>>）。如果您使用16进制的数字，那您必须要用0x前缀的格式（例如，0x3"
-#~ "00）。"
-
-#~ msgid ""
-#~ "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
-#~ msgstr ""
-#~ "这是采用${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}的 ${MEDIA_TYPE}方式来安装，构建于 "
-#~ "${BUILD_DATE}."
-
-#~ msgid ""
-#~ "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
-#~ msgstr ""
-#~ "这是采用${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}的 Live${MEDIA_TYPE}方式来安装，构建于 "
-#~ "${BUILD_DATE}."
-
-#~ msgid ""
-#~ "The live system does not require any space on your hard disk. However, "
-#~ "existing swap partitions on the disk will be used if available."
-#~ msgstr "live系统不会占用您硬盘上的一点空间。但会使用您硬盘上既有的swap分区。"
-
-#~ msgid ""
-#~ "If your system hangs when booting, and the last message you see is \"aec671x-"
-#~ "detect..\", try"
-#~ msgstr "如果您的系统在启动的时候死机，并且您最后看到的信息是“aec671x-detect..”，那么试试看"
-
-#~ msgid ""
-#~ "You must have at least 128 megabytes of RAM to use this Ubuntu live system."
-#~ msgstr "您至少需要128M的内存才能使用Ubuntu live系统。"
-
-#~ msgid ""
-#~ "Minimal system install. Recommended for servers, where a complete graphical "
-#~ "desktop environment is not desired."
-#~ msgstr "占用系统资源最少化安装。推荐服务器使用，因为服务器一般不需要图形桌面系统。"
-
-#~ msgid "server"
-#~ msgstr "服务器安装"
-
-#~ msgid "<userinput>gdth=disable:y</userinput>"
-#~ msgstr "<userinput>gdth=disable:y</userinput>"
-
-#~ msgid ""
-#~ "You must have at least 256 megabytes of RAM to use this Ubuntu live system."
-#~ msgstr "您至少需要256M的内存才能使用Ubuntu live系统。"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
@@ -85,16 +30,16 @@ msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"这是采用${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}的 ${MEDIA_TYPE}方式来安装，构建于 "
-"${BUILD_DATE}."
+"这是采用${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}的 ${MEDIA_TYPE}方式来安"
+"装，构建于 ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"这是采用${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}的 Live${MEDIA_TYPE}方式来安装，构建于 "
-"${BUILD_DATE}."
+"这是采用${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}的 Live${MEDIA_TYPE}方式"
+"来安装，构建于 ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -181,17 +126,18 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"您的硬盘上要有足够的空间,安装桌面版,您要创建至少2G大小的新分区，server模式的最小安装需要至少400M的空间.如果您要安装额外的软件包，所需空间大"
-"小视您的需要而定."
+"您的硬盘上要有足够的空间,安装桌面版,您要创建至少2G大小的新分区，server模式的"
+"最小安装需要至少400M的空间.如果您要安装额外的软件包，所需空间大小视您的需要而"
+"定."
 
 #: help.xml:131 help.xml:664
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
-"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" "
-"/>"
+"are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
+">"
 msgstr ""
-"参阅安装手册或者FAQ（常见的问题）来获知更多的信息；这两份文档都可以在Ubuntu网站上找到，<ulink "
-"url=\"http://www.ubuntu.com/\" />"
+"参阅安装手册或者FAQ（常见的问题）来获知更多的信息；这两份文档都可以在Ubuntu网"
+"站上找到，<ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
@@ -202,29 +148,33 @@ msgstr "您至少需要384M的内存才能使用Ubuntu live系统。"
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
-msgstr "live系统不会占用您硬盘上的一点空间。但会使用您硬盘上既有的 linux swap 分区。"
+msgstr ""
+"live系统不会占用您硬盘上的一点空间。但会使用您硬盘上既有的 linux swap 分区。"
 
 #: help.xml:147 help.xml:670
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"参阅FAQ获知更多信息；此文档可在Ubuntu的网站上找到，<ulink url=\"http://www.ubuntu.com/\" />"
+"参阅FAQ获知更多信息；此文档可在Ubuntu的网站上找到，<ulink url=\"http://www."
+"ubuntu.com/\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
 msgstr "谢谢您选择了Ubuntu！"
 
-#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361 help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
+#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
+#: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
 msgid ""
-"Press <phrase class=\"not-serial\">F1</phrase><phrase "
-"class=\"serial\">control and F then 1</phrase> for the help index, or ENTER "
-"to ${BOOTPROMPT}"
+"Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">control and F then 1</phrase> for the help index, or ENTER to "
+"${BOOTPROMPT}"
 msgstr ""
-"按<phrase class=\"not-serial\">F1</phrase><phrase class=\"serial\">control "
-"和F然后按1</phrase>调出帮助目录，或者按回车来${BOOTPROMPT}"
+"按<phrase class=\"not-serial\">F1</phrase><phrase class=\"serial\">control 和"
+"F然后按1</phrase>调出帮助目录，或者按回车来${BOOTPROMPT}"
 
-#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366 help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
+#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
+#: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr "按F1调出帮助目录，或者按Escape退出帮助。"
 
@@ -287,7 +237,9 @@ msgstr "进行内存测试"
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
-msgstr "要使用其中一种启动方式，在提示栏输入即可，还可以根据自己的需要选择任意的启动参数。例如："
+msgstr ""
+"要使用其中一种启动方式，在提示栏输入即可，还可以根据自己的需要选择任意的启动"
+"参数。例如："
 
 #: help.xml:219
 #, no-wrap
@@ -303,7 +255,9 @@ msgstr "boot: live acpi=off"
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
-msgstr "如果不确定，您应该使用默认的启动方式，不带特定的参数，当出现提示的时候，按回车键就可以了。"
+msgstr ""
+"如果不确定，您应该使用默认的启动方式，不带特定的参数，当出现提示的时候，按回"
+"车键就可以了。"
 
 #: help.xml:242 help.xml:278
 msgid "RESCUING A BROKEN SYSTEM"
@@ -334,9 +288,9 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
-"本CD不包含专用的救援模式（rescue "
-"mode)。但是，由于整个系统都是基于CD而运行的，所以您也许可以使用命令和/或图形界面来修复损坏的系统，并且使用浏览器来寻找帮助信息。在网上可以找到绝大"
-"部分关于系统无法正常启动的问题相关帮助信息。"
+"本CD不包含专用的救援模式（rescue mode)。但是，由于整个系统都是基于CD而运行"
+"的，所以您也许可以使用命令和/或图形界面来修复损坏的系统，并且使用浏览器来寻找"
+"帮助信息。在网上可以找到绝大部分关于系统无法正常启动的问题相关帮助信息。"
 
 #: help.xml:307
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
@@ -356,7 +310,9 @@ msgid ""
 "prompt in order to boot the system. For example, Linux may not be able to "
 "autodetect your hardware, and you may need to explicitly specify its "
 "location or type for it to be recognized."
-msgstr "提示以便启动系统。例如：Linux可能不能自动探测到您的硬件，您也许需要清楚地指定它的位置或者类型使它能够被系统辨认。"
+msgstr ""
+"提示以便启动系统。例如：Linux可能不能自动探测到您的硬件，您也许需要清楚地指定"
+"它的位置或者类型使它能够被系统辨认。"
 
 #: help.xml:321
 msgid "For more information about what boot parameters you can use, press:"
@@ -382,11 +338,12 @@ msgstr "自举系统已解析启动参数"
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
-"parameters when modules are loaded, boot in expert mode (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"parameters when modules are loaded, boot in expert mode (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"安装器在动态地读取很多内核模块，并且这些模块的参数不能在命令行给出。想在模块读取的时候有参数提示，请以专家级模式启动（参阅<link "
-"linkend=\"F3\"><keycap>F3</keycap></link>）。"
+"安装器在动态地读取很多内核模块，并且这些模块的参数不能在命令行给出。想在模块"
+"读取的时候有参数提示，请以专家级模式启动（参阅<link linkend=\"F3"
+"\"><keycap>F3</keycap></link>）。"
 
 #: help.xml:356
 msgid ""
@@ -404,13 +361,12 @@ msgstr "您可以在如下的情况中使用下列这些启动参数"
 
 #: help.xml:382
 msgid ""
-"prompt, in combination with the boot method (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>). If you use hex numbers you have "
-"to use the 0x prefix (e.g., 0x300)."
+"prompt, in combination with the boot method (see <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
+"0x prefix (e.g., 0x300)."
 msgstr ""
-"提示列，接合启动方式（参阅<link "
-"linkend=\"F3\"><keycap>F3</keycap></link>）。如果您使用16进制的数字，那您必须要用0x前缀的格式（例如，0x30"
-"0）。"
+"提示列，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></link>）。"
+"如果您使用16进制的数字，那您必须要用0x前缀的格式（例如，0x300）。"
 
 #: help.xml:389 help.xml:476
 msgid "HARDWARE"
@@ -426,11 +382,11 @@ msgstr "IBM PS/1或者ValuePoint （IDE硬盘）"
 
 #: help.xml:394
 msgid ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
-"eable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</replac"
-"eable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 
 #: help.xml:398
 msgid "Some IBM ThinkPads"
@@ -454,13 +410,13 @@ msgstr "Protect I/O port regions"
 
 #: help.xml:409
 msgid ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
-"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
-"erinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 msgstr ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</rep"
-"laceable></userinput><optional><userinput>,<replaceable>...</replaceable></us"
-"erinput></optional>"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
@@ -525,9 +481,10 @@ msgstr "特定的启动参数──各式各样的光/软/硬盘"
 
 #: help.xml:470 help.xml:537
 msgid ""
-"prompt, in combination with the boot method (see <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
-msgstr "提示栏，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></link>）。"
+"prompt, in combination with the boot method (see <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
+msgstr ""
+"提示栏，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></link>）。"
 
 #: help.xml:480
 msgid "Adaptec 151x, 152x"
@@ -535,17 +492,17 @@ msgstr "Adaptec 151x, 152x"
 
 #: help.xml:481
 msgid ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
-"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
-"ut>,<replaceable>scsi-"
-"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
-"laceable></userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 msgstr ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></userinput><opti"
-"onal><userinput>,<replaceable>irq</replaceable></userinput><optional><userinp"
-"ut>,<replaceable>scsi-"
-"id</replaceable></userinput><optional><userinput>,<replaceable>reconnect</rep"
-"laceable></userinput></optional></optional></optional>"
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #: help.xml:485
 msgid "Adaptec 1542"
@@ -553,15 +510,15 @@ msgstr "Adaptec 1542"
 
 #: help.xml:486
 msgid ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
-"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
-"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
-"userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></userinput><opti"
-"onal><userinput>,<replaceable>buson</replaceable>,<replaceable>busoff</replac"
-"eable></userinput><optional><userinput>,<replaceable>dmaspeed</replaceable></"
-"userinput></optional></optional>"
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:490
 msgid "Adaptec 274x, 284x"
@@ -569,8 +526,7 @@ msgstr "Adaptec 274x，284x"
 
 #: help.xml:491
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr ""
-"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
+msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 
 #: help.xml:495
 msgid "BusLogic SCSI Hosts"
@@ -594,7 +550,9 @@ msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
-msgstr "本列表所含内容并不完整，请参阅内核的 kernel-parameters.txt 文件以了解更多内容。"
+msgstr ""
+"本列表所含内容并不完整，请参阅内核的 kernel-parameters.txt 文件以了解更多内"
+"容。"
 
 #: help.xml:513
 #, no-wrap
@@ -688,11 +646,11 @@ msgstr "使用凸点（盲人使用）tty"
 
 #: help.xml:589
 msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
-"aceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</repl"
-"aceable>,<replaceable>texttable</replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
@@ -751,13 +709,17 @@ msgstr "Ubuntu团队总会及时的给您帮助！"
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
-msgstr "我们特别乐于听到关于安装的问题，因为大部分时候这不仅仅发生在<emphasis>一个</emphasis>人身上。"
+msgstr ""
+"我们特别乐于听到关于安装的问题，因为大部分时候这不仅仅发生在<emphasis>一个</"
+"emphasis>人身上。"
 
 #: help.xml:653
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
-msgstr "我们特别乐于听到关于启动的问题，因为大部分时候这不仅仅发生在<emphasis>一个</emphasis>人身上。"
+msgstr ""
+"我们特别乐于听到关于启动的问题，因为大部分时候这不仅仅发生在<emphasis>一个</"
+"emphasis>人身上。"
 
 #: help.xml:657
 msgid ""
@@ -766,18 +728,22 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"我们要么已经听过跟您一样的问题，从而能提供一个迅速的解决方案，要么我们期待了解您的问题并和您一起研究解决，这样下一个和您遇到同样问题的用户将从您的经验中获"
-"益良多。"
+"我们要么已经听过跟您一样的问题，从而能提供一个迅速的解决方案，要么我们期待了"
+"解您的问题并和您一起研究解决，这样下一个和您遇到同样问题的用户将从您的经验中"
+"获益良多。"
 
 #: help.xml:688
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "版权和担保"
 
 #: help.xml:695
+#, fuzzy
 msgid ""
-"Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
-msgstr "Ubuntu的版权(C) 2004-2007属于Canonical有限公司，包括许多作者和贡献者所做的一切工作。"
+msgstr ""
+"Ubuntu的版权(C) 2004-2007属于Canonical有限公司，包括许多作者和贡献者所做的一"
+"切工作。"
 
 #: help.xml:700
 msgid "The Ubuntu system is freely redistributable."
@@ -786,40 +752,102 @@ msgstr "Ubuntu系统可自由地重新发行。"
 #: help.xml:703
 msgid ""
 "After installation, the exact distribution terms for each package are "
-"described in the corresponding file "
-"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"described in the corresponding file /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
 msgstr ""
-"安装完毕之后，每个包的具体的发行条款都在对应的文件/usr/share/doc/<replaceable>包的名称</replaceable>/copyr"
-"ight里有详细的描述。"
+"安装完毕之后，每个包的具体的发行条款都在对应的文件/usr/share/doc/"
+"<replaceable>包的名称</replaceable>/copyright里有详细的描述。"
 
 #: help.xml:708
 msgid ""
 "After startup, the exact distribution terms for each package are described "
-"in the corresponding file "
-"/usr/share/doc/<replaceable>packagename</replaceable>/copyright."
+"in the corresponding file /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright."
 msgstr ""
-"启动结束后，每个包的具体的发行条款都在对应的文件/usr/share/doc/<replaceable>包的名称</replaceable>/copyri"
-"ght里有详细的描述。"
+"启动结束后，每个包的具体的发行条款都在对应的文件/usr/share/doc/<replaceable>"
+"包的名称</replaceable>/copyright里有详细的描述。"
 
 #: help.xml:714
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
-msgstr "除了遵守相关的法律条款，Ubuntu<emphasis>没有任何形式的任何担保</emphasis>。"
+msgstr ""
+"除了遵守相关的法律条款，Ubuntu<emphasis>没有任何形式的任何担保</emphasis>。"
 
 #: help.xml:719
 msgid ""
-"This installation system is based on the Debian installer. See <ulink "
-"url=\"http://www.debian.org/\" /> for more details and information on the "
-"Debian project."
+"This installation system is based on the Debian installer. See <ulink url="
+"\"http://www.debian.org/\" /> for more details and information on the Debian "
+"project."
 msgstr ""
-"本安装系统是在Debian安装器的基础上构建的。参阅<ulink url=\"http://www.debian.org/\" "
-"/>来获知更多关于Debian项目的细节和信息。"
+"本安装系统是在Debian安装器的基础上构建的。参阅<ulink url=\"http://www.debian."
+"org/\" />来获知更多关于Debian项目的细节和信息。"
 
 #: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"本系统是在Debian的基础上构建的。参阅<ulink url=\"http://www.debian.org/\" "
-"/>来获知更多关于Debian项目的细节和信息。"
+"本系统是在Debian的基础上构建的。参阅<ulink url=\"http://www.debian.org/\" />"
+"来获知更多关于Debian项目的细节和信息。"
+
+#~ msgid "server-expert"
+#~ msgstr "服务器专家级安装"
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
+#~ "\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use "
+#~ "the 0x prefix (e.g., 0x300)."
+#~ msgstr ""
+#~ "提示列，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></"
+#~ "link>>）。如果您使用16进制的数字，那您必须要用0x前缀的格式（例如，"
+#~ "0x300）。"
+
+#~ msgid ""
+#~ "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "这是采用${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}的 ${MEDIA_TYPE}方式来"
+#~ "安装，构建于 ${BUILD_DATE}."
+
+#~ msgid ""
+#~ "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
+#~ msgstr ""
+#~ "这是采用${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}的 Live${MEDIA_TYPE}方"
+#~ "式来安装，构建于 ${BUILD_DATE}."
+
+#~ msgid ""
+#~ "The live system does not require any space on your hard disk. However, "
+#~ "existing swap partitions on the disk will be used if available."
+#~ msgstr ""
+#~ "live系统不会占用您硬盘上的一点空间。但会使用您硬盘上既有的swap分区。"
+
+#~ msgid ""
+#~ "If your system hangs when booting, and the last message you see is "
+#~ "\"aec671x-detect..\", try"
+#~ msgstr ""
+#~ "如果您的系统在启动的时候死机，并且您最后看到的信息是“aec671x-detect..”，那"
+#~ "么试试看"
+
+#~ msgid ""
+#~ "You must have at least 128 megabytes of RAM to use this Ubuntu live "
+#~ "system."
+#~ msgstr "您至少需要128M的内存才能使用Ubuntu live系统。"
+
+#~ msgid ""
+#~ "Minimal system install. Recommended for servers, where a complete "
+#~ "graphical desktop environment is not desired."
+#~ msgstr ""
+#~ "占用系统资源最少化安装。推荐服务器使用，因为服务器一般不需要图形桌面系统。"
+
+#~ msgid "server"
+#~ msgstr "服务器安装"
+
+#~ msgid "<userinput>gdth=disable:y</userinput>"
+#~ msgstr "<userinput>gdth=disable:y</userinput>"
+
+#~ msgid ""
+#~ "You must have at least 256 megabytes of RAM to use this Ubuntu live "
+#~ "system."
+#~ msgstr "您至少需要256M的内存才能使用Ubuntu live系统。"

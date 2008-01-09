@@ -1,12 +1,13 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2007-09-18 12:57+0100\n"
+"POT-Creation-Date: 2008-01-09 21:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -796,7 +797,7 @@ msgstr ""
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:695
 msgid ""
-"Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
 
