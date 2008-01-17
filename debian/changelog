@@ -3,6 +3,7 @@ debian-installer (20070308ubuntu26) UNRELEASED; urgency=low
   * Update copyright years to 2008.
   * Drop powerpc/cell subarchitecture at least for now, as the kernel no
     longer builds it.
+  * Move to 2.6.24-4 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 09 Jan 2008 21:57:43 +0000
 
