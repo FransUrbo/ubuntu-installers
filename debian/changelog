@@ -1,8 +1,8 @@
-debian-installer (20070308ubuntu27) UNRELEASED; urgency=low
+debian-installer (20070308ubuntu27) hardy; urgency=low
 
   * Move to 2.6.24-5 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 25 Jan 2008 09:25:47 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 29 Jan 2008 00:23:09 +0000
 
 debian-installer (20070308ubuntu26) hardy; urgency=low
 
