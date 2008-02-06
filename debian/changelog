@@ -1,9 +1,13 @@
 base-installer (1.86ubuntu2) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * If apt-setup/proposed is true, set up the default sources.list to look
     in -proposed as well (LP: #181776).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 29 Jan 2008 17:07:42 +0000
+  [ Soren Hansen ]
+  * Add support for AMD CPU family 16 on i386.
+
+ -- Soren Hansen <soren@ubuntu.com>  Wed, 06 Feb 2008 08:50:50 +0100
 
 base-installer (1.86ubuntu1) hardy; urgency=low
 
