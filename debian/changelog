@@ -3,6 +3,8 @@ base-installer (1.86ubuntu2) UNRELEASED; urgency=low
   [ Colin Watson ]
   * If apt-setup/proposed is true, set up the default sources.list to look
     in -proposed as well (LP: #181776).
+  * If base-installer/use_unclean_target is asked, emit a warning to the
+    logs so that we know about it when diagnosing problems.
 
   [ Soren Hansen ]
   * Add support for AMD CPU family 16 on i386.
