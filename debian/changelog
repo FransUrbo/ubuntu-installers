@@ -7,9 +7,9 @@ base-installer (1.86ubuntu2) UNRELEASED; urgency=low
     logs so that we know about it when diagnosing problems.
 
   [ Soren Hansen ]
-  * Add support for AMD CPU family 16 on i386.
+  * Add support for AMD CPU family 16 on i386 (LP: #187869).
 
- -- Soren Hansen <soren@ubuntu.com>  Wed, 06 Feb 2008 08:50:50 +0100
+ -- Soren Hansen <soren@ubuntu.com>  Fri, 08 Feb 2008 16:41:24 +0100
 
 base-installer (1.86ubuntu1) hardy; urgency=low
 
