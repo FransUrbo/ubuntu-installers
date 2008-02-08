@@ -2,6 +2,7 @@ debian-installer (20070308ubuntu28) UNRELEASED; urgency=low
 
   * build/config/common: Update for Hardy (oops; fortunately this only
     mattered for manual builds).
+  * Move to 2.6.24-7 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 07 Feb 2008 18:22:43 +0000
 
