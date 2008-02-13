@@ -1,9 +1,9 @@
-grub-installer (1.27ubuntu5) UNRELEASED; urgency=low
+grub-installer (1.27ubuntu5) hardy; urgency=low
 
   * grub-installer: Pass the correct number of arguments to db_input for
     grub-installer/sataraid-error.
 
- -- Luke Yelavich <luke.yelavich@canonical.com>  Wed, 13 Feb 2008 22:25:21 +1100
+ -- Luke Yelavich <luke.yelavich@canonical.com>  Wed, 13 Feb 2008 23:15:50 +1100
 
 grub-installer (1.27ubuntu4) hardy; urgency=low
 
