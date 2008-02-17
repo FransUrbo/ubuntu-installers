@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu29) UNRELEASED; urgency=low
+
+  * Move to 2.6.24-8 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 17 Feb 2008 16:55:07 +0000
+
 debian-installer (20070308ubuntu28) hardy; urgency=low
 
   * build/config/common: Update for Hardy (oops; fortunately this only
