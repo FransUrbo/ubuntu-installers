@@ -2,6 +2,8 @@ debian-installer (20070308ubuntu30) UNRELEASED; urgency=low
 
   * Remove powerpc/cell subarchitecture altogether; support for these
     systems is now integrated into powerpc64.
+  * Make ubuntu-modules mandatory on powerpc again; it was only made
+    optional for cell.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 22 Feb 2008 15:08:33 +0000
 
