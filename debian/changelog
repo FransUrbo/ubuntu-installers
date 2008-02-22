@@ -1,3 +1,10 @@
+debian-installer (20070308ubuntu30) UNRELEASED; urgency=low
+
+  * Remove powerpc/cell subarchitecture altogether; support for these
+    systems is now integrated into powerpc64.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 22 Feb 2008 15:08:33 +0000
+
 debian-installer (20070308ubuntu29) hardy; urgency=low
 
   * Move to 2.6.24-8 kernels.
