@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-01-09 21:55+0000\n"
-"PO-Revision-Date: 2007-11-20 11:53+0000\n"
-"Last-Translator: Jan Claeys <ubuntu@janc.be>\n"
+"PO-Revision-Date: 2008-02-23 03:17+0000\n"
+"Last-Translator: Balaam's Miracle <Unknown>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-11-29 16:48+0000\n"
+"X-Launchpad-Export-Date: 2008-02-26 11:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -23,7 +23,7 @@ msgstr "Hulpschermen voor opstarten van de installatie"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "Welkome bij ${DISTRIBUTION_NAME}!"
+msgstr "Welkom bij ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
 msgid ""
@@ -38,7 +38,7 @@ msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"This is een live-${MEDIA_TYPE} voor ${DISTRIBUTION_NAME} "
+"Dit is een live-${MEDIA_TYPE} voor ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}, gemaakt op ${BUILD_DATE}."
 
 #: help.xml:28
@@ -72,7 +72,7 @@ msgstr ""
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Bijkomende opstartmethoden; reddingsmodus."
+msgstr "Extra opstartmethoden; een beschadigd systeem redden."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
@@ -80,11 +80,11 @@ msgstr "Speciale opstartparameters, overzicht."
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "Speciale opstartparameters voor speciale toestellen."
+msgstr "Speciale opstartparameters voor speciale machines."
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr "Speciale opstartparameters voor bepaalde disk controllers."
+msgstr "Speciale opstartparameters voor bepaalde schijfcontrollers."
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
@@ -118,8 +118,8 @@ msgstr "VEREISTEN OM UBUNTU TE INSTALLEREN"
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
-"U hebt minstens 32 MiB RAM nodig om dit Ubuntu-installatieprogramma te "
-"gebruiken."
+"U hebt minstens 32 megabytes  RAM nodig om dit Ubuntu-installatieprogramma "
+"te gebruiken."
 
 #: help.xml:123
 msgid ""
@@ -129,11 +129,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"U zou minstens 2 GiB vrije ruimte moeten hebben op uw harde schijf om een "
-"nieuwe partitie te maken voor een standaard Ubuntu desktop-systeem, of "
-"minstens 400 MiB voor een minimale server-installatie.  U zal ook meer "
-"schijfruimte nodig hebben om bijkomende pakketten te installeren, "
-"afhankelijk van wat u met uw nieuwe Ubuntu-systeem wil doen."
+"U hebt voldoende vrije ruimte op uw harde schijf nodig om een nieuwe "
+"partitie van minimaal 2 gigabytes te kunnen aanmaken voor een standaard "
+"Ubuntu desktop-systeem, of minstens 400 megabytes voor een minimale server-"
+"installatie. U zult meer schijfruimte nodig hebben om aanvullende pakketten "
+"te installeren, afhankelijk van wat u met uw nieuwe Ubuntu-systeem wil doen."
 
 #: help.xml:131 help.xml:664
 msgid ""
@@ -141,35 +141,36 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"Zie de Installatiehandleiding of the FAQ voor meer informatie; beide "
-"documenten zijn beschikbaar op de Ubuntu website, <ulink url=\"http://www."
+"Zie de Installatiehandleiding of de FAQ voor meer informatie; beide "
+"documenten zijn beschikbaar op de Ubuntu-website, <ulink url=\"http://www."
 "ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"U hebt minstens 384 MiB RAM nodig om dit Ubuntu live-systeem te gebruiken."
+"U hebt minstens 384 megabytes aan RAM nodig om dit Ubuntu live-systeem te "
+"gebruiken."
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Het live-systeem heeft geen schijfruimte op uw harde schijf nodig, maar "
-"bestaande swap-partities zullen wel gebruikt worden indien beschikbaar."
+"Het live-systeem vereist geen ruimte op uw harde schijf. Bestaande Linux-"
+"swap partities zullen echter wel worden gebruikt, indien beschikbaar."
 
 #: help.xml:147 help.xml:670
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Zie de FAQ voor meer informatie; dit document is beschikbaar op de Ubuntu "
+"Zie de FAQ voor meer informatie; dit document is beschikbaar op de Ubuntu-"
 "website, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Bedankt om Ubuntu te kiezen!"
+msgstr "Dank u dat u voor Ubuntu hebt gekozen!"
 
 #: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
 #: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
@@ -178,14 +179,13 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
-"Druk <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control en F, dan 1</phrase> voor de hulpindex, of ENTER voor "
-"${BOOTPROMPT}"
+"Druk op <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial\">, "
+"control en F, dan 1</phrase> voor de hulpindex, of ENTER voor ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
 #: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Druk F1 voor de hulpindex of Escape om de hulp te verlaten."
+msgstr "Druk op F1 voor de hulpindex, of op Escape om de hulp te verlaten."
 
 #: help.xml:169
 msgid "BOOT METHODS"
@@ -209,7 +209,7 @@ msgstr "expert"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "Start de installatie in expert modus, voor maximale controle."
+msgstr "Start de installatie in expertmodus, voor optimale controle."
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:191
@@ -247,8 +247,8 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"Om één van deze opstartmethoden te gebruiken tikt u deze aan de prompt, "
-"eventueel gevolgd door de gewenste opstartparameters.  Bijvoorbeeld:"
+"Om één van deze opstartmethoden te gebruiken tikt u deze in bij de prompt, "
+"eventueel gevolgd door de gewenste opstartparameters. Bijvoorbeeld:"
 
 #: help.xml:219
 #, no-wrap
@@ -265,17 +265,17 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Indien u onzeker bent, gebruik dan de standaard opstartmethode zonder "
-"speciale parameters, door simpelweg Enter te drukken aan de opstart-prompt."
+"Gebruik bij twijfel de standaard opstartmethode zonder speciale parameters, "
+"door simpelweg op Enter te drukken bij de opstart-prompt."
 
 #: help.xml:242 help.xml:278
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr "EEN KAPOT SYSTEEM REDDEN"
+msgstr "EEN BESCHADIGD SYSTEEM REDDEN"
 
 #: help.xml:246
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
-"Gebruik één deze opstartmethoden om een bestaande installatie te repareren"
+"Gebruik één van deze opstartmethoden om een bestaande installatie te redden"
 
 #: help.xml:250
 msgid "rescue"
@@ -298,12 +298,12 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
-"Er is geen specifieke reddingsmodus op deze CD.  Echter, aangezien het hele "
-"systeem vanaf de CD draait, is het mogelijk om de opdrachtregel en/of "
-"bepaalde meegeleverde grafische tools te gebruiken om het kapotte systeem te "
-"redden, en kan u ook de webbrowser gebruiken om hulp te zoeken.  Uitgebreid "
-"advies voor de meeste soorten problemen die het opstarten van uw systeem "
-"kunnen doen falen is online beschikbaar."
+"Er is geen specifieke reddingsmodus op deze CD.  Echter, aangezien het "
+"gehele systeem vanaf de CD draait, is het mogelijk om de opdrachtregel en/of "
+"meegeleverde grafische hulpmiddelen te gebruiken om het beschadigde systeem "
+"te redden, en kan u ook de webbrowser gebruiken om hulp te zoeken. "
+"Uitgebreid advies is online beschikbaar voor de meeste soorten problemen die "
+"ervoor kunnen zorgen dat uw systeem niet meer opstart.."
 
 #: help.xml:307
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
@@ -311,7 +311,7 @@ msgstr "SPECIALE OPSTARTPARAMETERS - OVERZICHT"
 
 #: help.xml:314
 msgid "On a few systems, you may need to specify a parameter at the"
-msgstr "Op sommige systemen moet u misschien parameters opgeven aan de"
+msgstr "Op enkele systemen kan het nodig zijn om parameters mee te geven op de"
 
 #: help.xml:315 help.xml:381 help.xml:469 help.xml:536
 #, no-wrap
@@ -324,9 +324,10 @@ msgid ""
 "autodetect your hardware, and you may need to explicitly specify its "
 "location or type for it to be recognized."
 msgstr ""
-"prompt om het systeem op te starten.  Bijvoorbeeld, mogelijk kan Linux uw "
-"hardware niet automatisch detecteren, en dan kan het nodig zijn om de "
-"locatie ervan specifiek door te geven opdat die herkend wordt."
+"prompt om het systeem te kunnen starten. Bijvoorbeeld, Linux is misschien "
+"niet in staat om uw hardware automatisch te detecteren, en het kan nodig "
+"zijn om nadrukkelijk de locatie of het type ervan op te geven voordat deze "
+"herkend wordt."
 
 #: help.xml:321
 msgid "For more information about what boot parameters you can use, press:"
@@ -335,19 +336,19 @@ msgstr ""
 
 #: help.xml:329
 msgid "boot parameters for special machines"
-msgstr "opstartparameters voor speciale toestellen"
+msgstr "opstartparameters voor speciale machines"
 
 #: help.xml:334
 msgid "boot parameters for various disk controllers"
-msgstr "opstartparameters voor diverse disk controllers"
+msgstr "opstartparameters voor diverse schijfcontrollers"
 
 #: help.xml:339
 msgid "boot parameters understood by the install system"
-msgstr "opstartparameters begrepen door het installatiesysteem"
+msgstr "opstartparameters die door het installatiesysteem worden begrepen"
 
 #: help.xml:344
 msgid "boot parameters understood by the bootstrap system"
-msgstr "opstartparameters begrepen door het opstartsysteem"
+msgstr "opstartparameters die door het opstartsysteem worden begrepen"
 
 #: help.xml:349
 msgid ""
@@ -356,19 +357,19 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Veel kernelmodules worden dynamisch geladen door het installatieprogramma, "
-"en parameters voor deze modules kunnen niet op de opdrachtregel gegeven "
-"worden.  Als u om parameters gevraagd wil worden bij het laden van modules, "
-"start dan op in expert-modus (zie <link linkend=\"F3\"><keycap>F3</keycap></"
-"link>)."
+"Veel kernelmodules worden dynamisch door het installatieprogramma geladen, "
+"en parameters voor die modules kunnen niet via de opdrachtregel worden "
+"gegeven worden. Als u bij het laden van de modules naar de parameters "
+"gevraagd wil worden, start dan op in expert-modus (zie <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:356
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"Veel kernelmodules worden dynamisch geladen door het opstartsysteem, en "
-"parameters voor deze modules kunnen niet op de opdrachtregel gegeven worden."
+"Veel kernelmodules worden dynamisch door het opstartsysteem geladen, en "
+"parameters voor deze modules kunnen niet op de opdrachtregel worden gegeven."
 
 #: help.xml:374
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
@@ -376,7 +377,7 @@ msgstr "SPECIALE OPSTARTPARAMETERS - DIVERSE HARDWARE"
 
 #: help.xml:381 help.xml:469 help.xml:536
 msgid "You can use the following boot parameters at the"
-msgstr "U kan de volgende opstartparameters gebruiken aan de"
+msgstr "U kunt de volgende opstartparameters gebruiken op de"
 
 #: help.xml:382
 msgid ""
@@ -385,8 +386,8 @@ msgid ""
 "0x prefix (e.g., 0x300)."
 msgstr ""
 "prompt, in combinatie met de opstartmethode (zie <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). Als u hexadeciamle nummers gebruikt, dient u "
-"een 0x te gebruiken (vb., 0x300)."
+"\"><keycap>F3</keycap></link>). Als u hexadeciamle nummers gebruikt, moet u "
+"dit vooraf laten gaan door 0x (bijv., 0x300)."
 
 #: help.xml:389 help.xml:476
 msgid "HARDWARE"
@@ -394,11 +395,11 @@ msgstr "HARDWARE"
 
 #: help.xml:390 help.xml:477
 msgid "PARAMETER TO SPECIFY"
-msgstr "TE GEBRUIKEN PARAMETER"
+msgstr "OP TE GEVEN PARAMETER"
 
 #: help.xml:393
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr "IBM PS/1 of ValuePoint (IDE schijf)"
+msgstr "IBM PS/1 of ValuePoint (IDE-schijf)"
 
 #: help.xml:394
 msgid ""
@@ -410,7 +411,7 @@ msgstr ""
 
 #: help.xml:398
 msgid "Some IBM ThinkPads"
-msgstr "Sommige ThinkPads"
+msgstr "Sommige IBM ThinkPads"
 
 #: help.xml:399
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
@@ -426,7 +427,7 @@ msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
 #: help.xml:408
 msgid "Protect I/O port regions"
-msgstr "Bescherm \"I/O port regions\""
+msgstr "I/O-poort reeksen beschermen"
 
 #: help.xml:409
 msgid ""
@@ -440,7 +441,7 @@ msgstr ""
 
 #: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
-msgstr "Omzeil problemen met foute FPU (oude toestellen)"
+msgstr "Omzeil slecht werkende FPU (oude machines)"
 
 #: help.xml:414
 msgid "<userinput>no387</userinput>"
@@ -448,7 +449,7 @@ msgstr "<userinput>no387</userinput>"
 
 #: help.xml:418
 msgid "Laptops with screen display problems"
-msgstr "Schootcomputers met schermproblemen"
+msgstr "Laptops met schermweergaveproblemen"
 
 #: help.xml:419
 msgid "<userinput>vga=771</userinput>"
@@ -456,7 +457,7 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:423
 msgid "Use first serial port at 9600 baud"
-msgstr "Gebruik de eerste seriële poort aan 9600 baud"
+msgstr "Gebruik eerste seriële poort op 9600 baud"
 
 #: help.xml:424
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
@@ -476,8 +477,8 @@ msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
 msgstr ""
-"Indien uw systeem regelmatig hangt of andere hardwarefouten vertoont, zet "
-"dan foute 'APIC interrupt routing' uit"
+"Als uw systeem vaak hangt of andere hardwarefouten vertoont, schakel dan "
+"foutieve APIC interrupt routering uit"
 
 #: help.xml:437
 msgid "<userinput>noapic nolapic</userinput>"
@@ -555,7 +556,7 @@ msgstr ""
 
 #: help.xml:495
 msgid "BusLogic SCSI Hosts"
-msgstr "BusLogic SCSI Hosts"
+msgstr "BusLogic SCSI-hosts"
 
 #: help.xml:496
 msgid ""
@@ -565,7 +566,7 @@ msgstr ""
 
 #: help.xml:500
 msgid "Certain DELL machines"
-msgstr "Sommige Dell toestellen"
+msgstr "Bepaalde Dell machines"
 
 #: help.xml:501
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
@@ -576,8 +577,7 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"Deze lijst is onvolledig, zie de kernel-parameters.txt die bij de gebruikte "
-"kernel hoort voor meer."
+"Deze lijst is onvolledig, zie de kernel's kernel-parameters.txt voor meer."
 
 #: help.xml:513
 #, no-wrap
@@ -611,7 +611,7 @@ msgstr "PARAMETER"
 
 #: help.xml:553
 msgid "Verbose debugging"
-msgstr "Meer debug-informatie"
+msgstr "Veel debug-informatie"
 
 #: help.xml:554
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
@@ -619,7 +619,7 @@ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:558
 msgid "Debug boot sequence"
-msgstr "Debuggen van het opstarten"
+msgstr "Opstartproces debuggen"
 
 #: help.xml:559
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
@@ -635,7 +635,7 @@ msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:568
 msgid "Don't probe for USB"
-msgstr "Zoek niet naar USB"
+msgstr "Niet naar USB zoeken"
 
 #: help.xml:569
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
@@ -651,7 +651,7 @@ msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:578
 msgid "Force static network config"
-msgstr "Forceer statische netwerkconfiguratie"
+msgstr "Statische netwerkconfiguratie afdwingen"
 
 #: help.xml:579
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
@@ -678,10 +678,9 @@ msgstr ""
 "<replaceable>apparaat</replaceable>,<replaceable>teksttabel</replaceable></"
 "userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
-msgstr "Gebruik hoog contrast toegankelijkheidsthema"
+msgstr "Gebruik toegankelijkheidsthema met hoog contrast"
 
 #: help.xml:594
 msgid "<userinput>theme=dark</userinput>"
@@ -723,11 +722,11 @@ msgstr "HULP KRIJGEN"
 
 #: help.xml:639
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr "Indien u Ubuntu niet kan installeren, wanhoop dan niet!"
+msgstr "Wanhoop niet als u Ubuntu niet kunt installeren!"
 
 #: help.xml:642
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr "Indien u Ubuntu niet kan starten, wanhoop dan niet!"
+msgstr "Wanhoop niet als u Ubuntu niet kunt starten!"
 
 #: help.xml:645
 msgid "The Ubuntu team is ready to help you!"
@@ -738,16 +737,16 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"We zijn bijzonder geïnteresseerd in installatieproblemen, want over het "
-"algemeen treden ze niet enkel bij <emphasis>één</emphasis> persoon op."
+"We zijn vooral geïnteresseerd in installatieproblemen, want over het "
+"algemeen komen ze niet bij slechts <emphasis>één</emphasis> persoon voor."
 
 #: help.xml:653
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"We zijn bijzonder geïnteresseerd in opstartproblemen, want over het algemeen "
-"treden ze niet enkel bij <emphasis>één</emphasis> persoon op."
+"We zijn vooral geïnteresseerd in opstartproblemen, want over het algemeen "
+"komen ze niet bij slechts <emphasis>één</emphasis> persoon voor."
 
 #: help.xml:657
 msgid ""
@@ -756,22 +755,22 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Ofwel hebben we al over uw probleem gehoord, en dan kunnen we u snel een "
-"oplossing bezorgen, ofwel willen we u helpen het op te lossen, en dan kan de "
-"volgende met hetzelfde probleem van de zo opgedane kennis genieten!"
+"We hebben ofwel eerder van uw specifieke probleem gehoord en kunnen u een "
+"snelle oplossing bieden, of we willen helpen het samen met u op te lossen, "
+"zodat de volgende met hetzelfde probleem voordeel van uw ervaringen zal "
+"hebben!"
 
 #: help.xml:688
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "AUTEURSRECHTEN EN GARANTIES"
 
 #: help.xml:695
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu is Copyright (C) 2004-2007 Canonical Ltd., en bevat het werk van vele "
-"andere auteurs en medewerkers."
+"Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., en bevat het werk van vele "
+"andere oorspronkelijke auteurs en medewerkers."
 
 #: help.xml:700
 msgid "The Ubuntu system is freely redistributable."
@@ -783,7 +782,7 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Na de installatie vindt u de precieze distributievoorwaarden voor elk pakket "
+"Na installatie staan de exacte distributievoorwaarden voor elk pakket "
 "beschreven in het bijhorende /usr/share/doc/<replaceable>pakketnaam</"
 "replaceable>/copyright bestand."
 
@@ -793,8 +792,8 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Na het opstarten vindt u de precieze verspreidingsvoorwaarden voor elk "
-"pakket beschreven in het bijhorende /usr/share/doc/<replaceable>pakketnaam</"
+"Na het opstarten staan de exacte verspreidingsvoorwaarden voor elk pakket "
+"beschreven in het bijhorende /usr/share/doc/<replaceable>pakketnaam</"
 "replaceable>/copyright bestand."
 
 #: help.xml:714
@@ -802,8 +801,8 @@ msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Ubuntu komt <emphasis>ZONDER ENIGE GARANTIE</emphasis>, voor zover de wet "
-"dat toelaat."
+"Ubuntu wordt geleverd <emphasis>ZONDER ENIGE GARANTIE</emphasis>, voor zover "
+"de wet dat toelaat."
 
 #: help.xml:719
 msgid ""
@@ -811,9 +810,9 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
-"Dit installatiesysteem is gebaseerd op het Debian-installatiesysteem.  Zie "
+"Dit installatiesysteem is gebaseerd op het Debian-installatieprogramma. Zie "
 "<ulink url=\"http://www.debian.org/\" /> voor meer details en informatie "
-"over het Debian project."
+"over het Debian-project."
 
 #: help.xml:725
 msgid ""
@@ -821,69 +820,4 @@ msgid ""
 "for more details and information on the Debian project."
 msgstr ""
 "Dit systeem is gebaseerd op Debian.  Zie <ulink url=\"http://www.debian.org/"
-"\" /> voor meer details en informatie over het Debian project."
-
-#~ msgid "server-expert"
-#~ msgstr "server-expert"
-
-#~ msgid ""
-#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
-#~ "\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use "
-#~ "the 0x prefix (e.g., 0x300)."
-#~ msgstr ""
-#~ "prompt, in combinatie met de opstartmethode (zie <link linkend=\"F3"
-#~ "\"><keycap>F3</keycap></link>>). Als u hexadeciamle nummers gebruikt, "
-#~ "dient u een 0x te gebruiken (vb., 0x300)."
-
-#~ msgid ""
-#~ "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
-#~ msgstr ""
-#~ "Dit is een installatie-${MEDIA_TYPE} voor ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, gemaakt op ${BUILD_DATE}."
-
-#~ msgid ""
-#~ "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
-#~ msgstr ""
-#~ "This is een live-${MEDIA_TYPE} voor ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, gemaakt op ${BUILD_DATE}."
-
-#~ msgid ""
-#~ "The live system does not require any space on your hard disk. However, "
-#~ "existing swap partitions on the disk will be used if available."
-#~ msgstr ""
-#~ "Het live-systeem heeft geen schijfruimte op uw harde schijf nodig, maar "
-#~ "bestaande swap-partities zullen wel gebruikt worden indien beschikbaar."
-
-#~ msgid ""
-#~ "If your system hangs when booting, and the last message you see is "
-#~ "\"aec671x-detect..\", try"
-#~ msgstr ""
-#~ "Als uw systeem hangt bij het opstarten, en het laatste zichtbare bericht "
-#~ "is \"aec671x-detect..\", probeer"
-
-#~ msgid ""
-#~ "You must have at least 128 megabytes of RAM to use this Ubuntu live "
-#~ "system."
-#~ msgstr ""
-#~ "U hebt minstens 128 MiB RAM nodig om dit Ubuntu live-systeem te gebruiken."
-
-#~ msgid ""
-#~ "Minimal system install. Recommended for servers, where a complete "
-#~ "graphical desktop environment is not desired."
-#~ msgstr ""
-#~ "Minimale systeeminstallatie.  Aangeraden voor servers, waarop geen "
-#~ "volledige grafische desktop-omgeving gewenst is."
-
-#~ msgid "server"
-#~ msgstr "server"
-
-#~ msgid "<userinput>gdth=disable:y</userinput>"
-#~ msgstr "<userinput>gdth=disable:y</userinput>"
-
-#~ msgid ""
-#~ "You must have at least 256 megabytes of RAM to use this Ubuntu live "
-#~ "system."
-#~ msgstr ""
-#~ "U hebt minstens 256 MiB RAM nodig om dit Ubuntu live-systeem te gebruiken."
+"\" /> voor meer details en informatie over het Debian-project."

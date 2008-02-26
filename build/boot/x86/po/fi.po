@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-01-09 21:55+0000\n"
-"PO-Revision-Date: 2007-11-08 02:37+0000\n"
-"Last-Translator: Tommi Tauriainen <t.tauriainen@mbnet.fi>\n"
+"PO-Revision-Date: 2008-02-15 20:29+0000\n"
+"Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-11-29 16:48+0000\n"
+"X-Launchpad-Export-Date: 2008-02-26 11:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -213,15 +213,15 @@ msgstr "Käynnistää asennuksen asiantuntijatilassa, suurin määrä valintoja.
 
 #: help.xml:191
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #: help.xml:192
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #: help.xml:194
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Minimaalisen komentorivijärjestelmän asennus."
 
 #: help.xml:199
 msgid "live"
@@ -760,12 +760,11 @@ msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "TEKIJÄNOIKEUDET JA TAKUUT"
 
 #: help.xml:695
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntun tekijänoikeudet omistaa (C) 2004-2007 Canonical Ltd., ja siihen "
+"Ubuntun tekijänoikeudet omistaa (C) 2004-2008 Canonical Ltd., ja siihen "
 "sisältyy monien alkuperäisten tekijöiden ja osallistujien työtä."
 
 #: help.xml:700
@@ -816,70 +815,3 @@ msgid ""
 msgstr ""
 "Tämä järjestelmä perustuu Debianiin. Katso <ulink url=\"http://www.debian."
 "org/\" /> saadaksesi lisätietoja Debian-projektista."
-
-#~ msgid "server-expert"
-#~ msgstr "server-expert"
-
-#~ msgid ""
-#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
-#~ "\"><keycap>F3</keycap></link>>). If you use hex numbers you have to use "
-#~ "the 0x prefix (e.g., 0x300)."
-#~ msgstr ""
-#~ ", yhdessä käynnistystavan kanssa (katso <link linkend=\"F3\"><keycap>F3</"
-#~ "keycap></link>>). Jos käytetään heksadesimaalinumeroita, tulee käyttää 0x-"
-#~ "etuliitettä (esim. 0x300)."
-
-#~ msgid ""
-#~ "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
-#~ msgstr ""
-#~ "Tämä on asennus-${MEDIA_TYPE} jakelulle ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, käännetty: ${BUILD_DATE}."
-
-#~ msgid ""
-#~ "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, built on ${BUILD_DATE}."
-#~ msgstr ""
-#~ "Tämä on esittely-${MEDIA_TYPE} jakelulle ${DISTRIBUTION_NAME} "
-#~ "${DISTRIBUTION_VERSION}, käännetty: ${BUILD_DATE}."
-
-#~ msgid ""
-#~ "The live system does not require any space on your hard disk. However, "
-#~ "existing swap partitions on the disk will be used if available."
-#~ msgstr ""
-#~ "Esittelyjärjestelmä ei tarvitse tilaa kovalevylläsi. Olemassaolevia "
-#~ "sivutusosioita kuitenkin käytetään, jos niitä on."
-
-#~ msgid ""
-#~ "If your system hangs when booting, and the last message you see is "
-#~ "\"aec671x-detect..\", try"
-#~ msgstr ""
-#~ "Jos järjestelmä jumiutuu käynnistettäessä, ja viimeinen viesti on "
-#~ "\"aec671x-detect..\", kokeile"
-
-#~ msgid ""
-#~ "You must have at least 128 megabytes of RAM to use this Ubuntu live "
-#~ "system."
-#~ msgstr ""
-#~ "Ubuntu-esittelyjärjestelmän käyttämiseksi täytyy olla vähintään 128 "
-#~ "megatavua RAM-muistia."
-
-#~ msgid ""
-#~ "Minimal system install. Recommended for servers, where a complete "
-#~ "graphical desktop environment is not desired."
-#~ msgstr ""
-#~ "Minimaalinen järjestelmäasennus. Suositellaan palvelimille, joille täyttä "
-#~ "graafista työpöytäympäristöä ei haluta."
-
-#~ msgid "server"
-#~ msgstr "server"
-
-#~ msgid "<userinput>gdth=disable:y</userinput>"
-#~ msgstr "<userinput>gdth=disable:y</userinput>"
-
-#~ msgid ""
-#~ "You must have at least 256 megabytes of RAM to use this Ubuntu live "
-#~ "system."
-#~ msgstr ""
-#~ "Ubuntu-esittelyjärjestelmän käyttämiseksi täytyy olla vähintään 256 "
-#~ "megatavua RAM-muistia."
