@@ -5,6 +5,8 @@ debian-installer (20070308ubuntu30) UNRELEASED; urgency=low
   * Make ubuntu-modules mandatory on powerpc again; it was only made
     optional for cell.
   * Update help text translations from Launchpad.
+  * Copy the live CD F4 help text from gfxboot into syslinux display format
+    (LP: #195564).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 22 Feb 2008 15:08:33 +0000
 
