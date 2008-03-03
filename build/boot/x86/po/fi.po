@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-03-03 11:09+0000\n"
+"POT-Creation-Date: 2008-03-03 11:27+0000\n"
 "PO-Revision-Date: 2008-02-15 20:29+0000\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
@@ -134,7 +134,7 @@ msgstr ""
 "lisäpaketeille, riippuen siitä mitä uudella Ubuntu-järjestelmällä halutaan "
 "tehdä."
 
-#: help.xml:131 help.xml:719
+#: help.xml:131 help.xml:728
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -159,7 +159,7 @@ msgstr ""
 "Esittelyjärjestelmä ei tarvitse tilaa kovalevylläsi. Olemassaolevia "
 "sivutusosioita kuitenkin käytetään, jos niitä on."
 
-#: help.xml:147 help.xml:725
+#: help.xml:147 help.xml:734
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -171,8 +171,8 @@ msgstr ""
 msgid "Thank you for choosing Ubuntu!"
 msgstr "Kiitokset Ubuntun valitsemista!"
 
-#: help.xml:156 help.xml:253 help.xml:299 help.xml:328 help.xml:402
-#: help.xml:496 help.xml:569 help.xml:674 help.xml:730 help.xml:786
+#: help.xml:156 help.xml:262 help.xml:308 help.xml:337 help.xml:411
+#: help.xml:505 help.xml:578 help.xml:683 help.xml:739 help.xml:795
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
@@ -182,8 +182,8 @@ msgstr ""
 "\">control and F then 1</phrase> ohjehakemistoa varten, tai ENTER "
 "(${BOOTPROMPT})"
 
-#: help.xml:161 help.xml:258 help.xml:304 help.xml:333 help.xml:407
-#: help.xml:501 help.xml:574 help.xml:679 help.xml:735 help.xml:791
+#: help.xml:161 help.xml:267 help.xml:313 help.xml:342 help.xml:416
+#: help.xml:510 help.xml:583 help.xml:688 help.xml:744 help.xml:800
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr "F1 näyttää ohjeluettelon, Esc-näppäin poistuu ohjeista."
 
@@ -254,20 +254,32 @@ msgstr "install"
 msgid "Start the installation."
 msgstr "Käynnistää esittelytilan."
 
-#: help.xml:217
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
+#: help.xml:218
+msgid "Check CD for defects"
+msgstr ""
+
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
+#: help.xml:220
+msgid ""
+"Check the CD for defects caused by faulty media or hardware. This may take "
+"some time."
+msgstr ""
+
+#: help.xml:226
 msgid "memtest"
 msgstr "memtest"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
-#: help.xml:218
+#: help.xml:227
 msgid "Test memory"
 msgstr ""
 
-#: help.xml:220
+#: help.xml:229
 msgid "Perform a memory test."
 msgstr "Tekee muistitestin."
 
-#: help.xml:226 help.xml:283
+#: help.xml:235 help.xml:292
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
@@ -275,17 +287,17 @@ msgstr ""
 "Käyttääksesi näitä käynnistystapoja, kirjoita se kehotteeseen, mahdollisilla "
 "käynnistysparametreilla lisättynä. Esimerkiksi:"
 
-#: help.xml:231
+#: help.xml:240
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr "boot: install acpi=off"
 
-#: help.xml:232
+#: help.xml:241
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
-#: help.xml:236
+#: help.xml:245
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
@@ -294,14 +306,14 @@ msgstr ""
 "painamalla Enter kehotteessa."
 
 # type: Content of: <reference><refentry><refsection><para>
-#: help.xml:241
+#: help.xml:250
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
-#: help.xml:246 help.xml:292
+#: help.xml:255 help.xml:301
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
 "keys. Press F4 to select alternative start-up and installation modes.  Press "
@@ -309,34 +321,34 @@ msgid ""
 "used boot parameters."
 msgstr ""
 
-#: help.xml:266 help.xml:312
+#: help.xml:275 help.xml:321
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "RIKKINÄISEN JÄRJESTELMÄN KORJAAMINEN"
 
-#: help.xml:270
+#: help.xml:279
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
 "Käytä näitä käynnistysvaihtoehtoja korjataksesi olemassa olevan asennuksen"
 
-#: help.xml:274
+#: help.xml:283
 msgid "rescue"
 msgstr "rescue"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
-#: help.xml:275
+#: help.xml:284
 msgid "Rescue a broken system"
 msgstr ""
 
-#: help.xml:277
+#: help.xml:286
 msgid "Boot into rescue mode."
 msgstr "Käynnistä hätäkäynnistystilassa."
 
-#: help.xml:288
+#: help.xml:297
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
-#: help.xml:319
+#: help.xml:328
 msgid ""
 "There is no dedicated rescue mode on this CD. However, since the entire "
 "system runs from the CD, it is possible to use the command-line and/or "
@@ -351,32 +363,32 @@ msgstr ""
 "useimmantyyppisille ongelmille jotka voivat aiheuttaa järjestelmän "
 "käynnistymisen epäonnistumisen."
 
-#: help.xml:341
+#: help.xml:350
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "KÄYNNISTYSPARAMETRIT - YLEISKUVAUS"
 
-#: help.xml:348
+#: help.xml:357
 msgid "On a few systems, you may need to specify a parameter at the"
 msgstr "Joillain järjestelmillä täytyy määritellä erityisparametrejä kohdassa"
 
-#: help.xml:349 help.xml:422 help.xml:516 help.xml:587
+#: help.xml:358 help.xml:431 help.xml:525 help.xml:596
 #, no-wrap
 msgid "boot:"
 msgstr "boot:"
 
 # type: Content of: <reference><refentry><refsection><para>
-#: help.xml:349
+#: help.xml:358
 msgid "prompt in order to boot the system."
 msgstr ""
 
-#: help.xml:352
+#: help.xml:361
 #, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr "Joillain järjestelmillä täytyy määritellä erityisparametrejä kohdassa"
 
-#: help.xml:356
+#: help.xml:365
 #, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
@@ -386,27 +398,27 @@ msgstr ""
 "tunnistaa automaattisesti laitteistoa, jolloin laitteen sijainti tai tyyppi "
 "tulee erikseen määritellä sen tunnistamiseksi."
 
-#: help.xml:362
+#: help.xml:371
 msgid "For more information about what boot parameters you can use, press:"
 msgstr "Saadaksesi lisätietoja mahdollisista käynnistysparametreistä, paina:"
 
-#: help.xml:370
+#: help.xml:379
 msgid "boot parameters for special machines"
 msgstr "käynnistysparametrit tietyille koneille"
 
-#: help.xml:375
+#: help.xml:384
 msgid "boot parameters for various disk controllers"
 msgstr "käynnistysparametrit tietyille levyohjaimille"
 
-#: help.xml:380
+#: help.xml:389
 msgid "boot parameters understood by the install system"
 msgstr "käynnistysparametrit jotka asennusjärjestelmä ymmärtää"
 
-#: help.xml:385
+#: help.xml:394
 msgid "boot parameters understood by the bootstrap system"
 msgstr "käynnistysparametrit jotka alkulatausohjelma (bootstrap) ymmärtää"
 
-#: help.xml:390
+#: help.xml:399
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
@@ -418,7 +430,7 @@ msgstr ""
 "varten moduuleita ladattaessa, käynnistä asiantuntijatilassa (expert), katso "
 "<link linkend=\"F3\"><keycap>F3</keycap></link>."
 
-#: help.xml:397
+#: help.xml:406
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
@@ -426,15 +438,15 @@ msgstr ""
 "Alkulatausohjelma lataa dynaamisesti monia ydinmoduuleita, ja parametreja "
 "näille moduuleille ei voi antaa komentoriviltä."
 
-#: help.xml:415
+#: help.xml:424
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "KÄYNNISTYSPARAMETRIT - LAITTEISTO"
 
-#: help.xml:422 help.xml:516 help.xml:587
+#: help.xml:431 help.xml:525 help.xml:596
 msgid "You can use the following boot parameters at the"
 msgstr "Seuraavia käynnistysparametreja voidaan käyttää kohdassa"
 
-#: help.xml:423 help.xml:517 help.xml:588
+#: help.xml:432 help.xml:526 help.xml:597
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
@@ -442,7 +454,7 @@ msgstr ""
 ", yhdessä käynnistystavan kanssa (katso <link linkend=\"F3\"><keycap>F3</"
 "keycap></link>)."
 
-#: help.xml:427 help.xml:521 help.xml:592
+#: help.xml:436 help.xml:530 help.xml:601
 #, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
@@ -452,23 +464,23 @@ msgstr ""
 "keycap></link>)."
 
 # type: Content of: <reference><refentry><refsection><para>
-#: help.xml:431
+#: help.xml:440
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
 
-#: help.xml:436 help.xml:527
+#: help.xml:445 help.xml:536
 msgid "HARDWARE"
 msgstr "LAITTEISTO"
 
-#: help.xml:437 help.xml:528
+#: help.xml:446 help.xml:537
 msgid "PARAMETER TO SPECIFY"
 msgstr "MÄÄRITELTÄVÄ PARAMETRI"
 
-#: help.xml:440
+#: help.xml:449
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1 tai ValuePoint (IDE-levy)"
 
-#: help.xml:441
+#: help.xml:450
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
@@ -476,27 +488,27 @@ msgstr ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 
-#: help.xml:445
+#: help.xml:454
 msgid "Some IBM ThinkPads"
 msgstr "Jotkin IBM ThinkPadit"
 
-#: help.xml:446
+#: help.xml:455
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
 msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
-#: help.xml:450
+#: help.xml:459
 msgid "IBM Pentium Microchannel"
 msgstr "IBM Pentium Microchannel"
 
-#: help.xml:451
+#: help.xml:460
 msgid "<userinput>mca-pentium no-hlt</userinput>"
 msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
-#: help.xml:455
+#: help.xml:464
 msgid "Protect I/O port regions"
 msgstr "Suojaa I/O-porttialueet"
 
-#: help.xml:456
+#: help.xml:465
 msgid ""
 "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
@@ -506,40 +518,40 @@ msgstr ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 
-#: help.xml:460
+#: help.xml:469
 msgid "Workaround faulty FPU (old machines)"
 msgstr "Viallisten FPU:iden vikojen kompensointi (vanhoilla koneilla)"
 
-#: help.xml:461
+#: help.xml:470
 msgid "<userinput>no387</userinput>"
 msgstr "<userinput>no387</userinput>"
 
-#: help.xml:465
+#: help.xml:474
 msgid "Laptops with screen display problems"
 msgstr "Kannettavat joilla näyttöongelmia"
 
-#: help.xml:466
+#: help.xml:475
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-#: help.xml:470
+#: help.xml:479
 msgid "Use first serial port at 9600 baud"
 msgstr "Käytä ensimmäistä sarjaporttia 9600bps-nopeudella"
 
-#: help.xml:471
+#: help.xml:480
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#: help.xml:475
+#: help.xml:484
 msgid "Force use of generic IDE driver"
 msgstr "Pakota käyttöön yleinen IDE-ajuri"
 
-#: help.xml:476
+#: help.xml:485
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
-#: help.xml:481
+#: help.xml:490
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
@@ -547,33 +559,33 @@ msgstr ""
 "Jos jumiutumisia tai muita laitteisto-ongelmia tapahtuu, ota viallinen APIC-"
 "keskeytysten reititys pois käytöstä"
 
-#: help.xml:484
+#: help.xml:493
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-#: help.xml:488 help.xml:561 help.xml:666
+#: help.xml:497 help.xml:570 help.xml:675
 msgid "For example:"
 msgstr "Esimerkiksi:"
 
-#: help.xml:491
+#: help.xml:500
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
-#: help.xml:492
+#: help.xml:501
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
-#: help.xml:509
+#: help.xml:518
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "KÄYNNISTYSPARAMETRIT - TIETYT LEVYOHJAIMET"
 
-#: help.xml:531
+#: help.xml:540
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
-#: help.xml:532
+#: help.xml:541
 msgid ""
 "<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>irq</replaceable></"
@@ -587,11 +599,11 @@ msgstr ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 
-#: help.xml:536
+#: help.xml:545
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
-#: help.xml:537
+#: help.xml:546
 msgid ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>buson</replaceable>,"
@@ -603,34 +615,34 @@ msgstr ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
-#: help.xml:541
+#: help.xml:550
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
-#: help.xml:542
+#: help.xml:551
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
 "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (käytössä jos eri kuin nolla)"
 
-#: help.xml:546
+#: help.xml:555
 msgid "BusLogic SCSI Hosts"
 msgstr "BusLogic SCSI-isännät"
 
-#: help.xml:547
+#: help.xml:556
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
-#: help.xml:551
+#: help.xml:560
 msgid "Certain DELL machines"
 msgstr "Tietyt Dell-koneet"
 
-#: help.xml:552
+#: help.xml:561
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
-#: help.xml:557
+#: help.xml:566
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
@@ -638,98 +650,98 @@ msgstr ""
 "Tämä luettelo ei ole täydellinen, katso ytimen kernel-parameters.txt "
 "lukeaksesi muista."
 
-#: help.xml:564
+#: help.xml:573
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:565
+#: help.xml:574
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:582
+#: help.xml:591
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "KÄYNNISTYSPARAMETRIT - ASENNUSJÄRJESTELMÄ"
 
-#: help.xml:596
+#: help.xml:605
 msgid "These parameters control how the installer works."
 msgstr "Nämä parametrit liittyvät asentimen toimintaan."
 
-#: help.xml:599
+#: help.xml:608
 msgid "These parameters control how the bootstrap system works."
 msgstr ""
 "Nämä parametrit liittyvät alkulatausjärjestelmän (bootstrap) toimintaan."
 
-#: help.xml:604
+#: help.xml:613
 msgid "RESULT"
 msgstr "TULOS"
 
-#: help.xml:605
+#: help.xml:614
 msgid "PARAMETER"
 msgstr "PARAMETRI"
 
-#: help.xml:608
+#: help.xml:617
 msgid "Verbose debugging"
 msgstr "Laaja vianjäljitystulostus"
 
-#: help.xml:609
+#: help.xml:618
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
 msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
-#: help.xml:613
+#: help.xml:622
 msgid "Debug boot sequence"
 msgstr "Jäljitä vikoja käynnistyksen aikana"
 
-#: help.xml:614
+#: help.xml:623
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
 msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
-#: help.xml:618
+#: help.xml:627
 msgid "Disable framebuffer"
 msgstr "Ota kehyspuskuri pois käytöstä"
 
-#: help.xml:619
+#: help.xml:628
 msgid "<userinput>fb=false</userinput>"
 msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:623
+#: help.xml:632
 msgid "Don't probe for USB"
 msgstr "Älä tutki USB-laitteita"
 
-#: help.xml:624
+#: help.xml:633
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
 msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
-#: help.xml:628
+#: help.xml:637
 msgid "Don't start PCMCIA"
 msgstr "Älä aloita PCMCIA:ta"
 
-#: help.xml:629
+#: help.xml:638
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:633
+#: help.xml:642
 msgid "Force static network config"
 msgstr "Pakota staattiset verkkoasetukset"
 
-#: help.xml:634
+#: help.xml:643
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:638
+#: help.xml:647
 msgid "Set keyboard map"
 msgstr "Valitse näppäimistöasettelu"
 
-#: help.xml:639
+#: help.xml:648
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=fi</userinput>"
 
-#: help.xml:643
+#: help.xml:652
 msgid "Use Braille tty"
 msgstr "Käytä sokeainkirjoitus-tty:tä"
 
-#: help.xml:644
+#: help.xml:653
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
@@ -738,61 +750,61 @@ msgstr ""
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#: help.xml:648
+#: help.xml:657
 msgid "Use high contrast accessibility theme"
 msgstr "Käytä korkean kontrastin esteettömyysteemaa"
 
-#: help.xml:649
+#: help.xml:658
 msgid "<userinput>theme=dark</userinput>"
 msgstr "<userinput>theme=dark</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#: help.xml:653
+#: help.xml:662
 msgid "Use special tasks"
 msgstr "Käytä erityistehtäviä"
 
-#: help.xml:654
+#: help.xml:663
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
-#: help.xml:659
+#: help.xml:668
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 "Ota ACPI PCI-kartoille pois käytöstä (esim. joillain HP-palvelimilla ja Via-"
 "pohjaisilla koneilla)"
 
-#: help.xml:662
+#: help.xml:671
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:669
+#: help.xml:678
 #, no-wrap
 msgid "boot: install pci=noacpi"
 msgstr "boot: install pci=noacpi"
 
-#: help.xml:670
+#: help.xml:679
 #, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr "boot: live pci=noacpi"
 
-#: help.xml:687
+#: help.xml:696
 msgid "GETTING HELP"
 msgstr "OHJEIDEN HAKEMINEN"
 
-#: help.xml:694
+#: help.xml:703
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "Jos Ubuntun asennus ei onnistu, älä luovu toivosta."
 
-#: help.xml:697
+#: help.xml:706
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "Jos et pysty käynnistämään Ubuntua, älä luovu toivosta."
 
-#: help.xml:700
+#: help.xml:709
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Ubuntu-tiimi on valmiina auttamaan!"
 
-#: help.xml:703
+#: help.xml:712
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -800,7 +812,7 @@ msgstr ""
 "Olemme kiinnostuneita kuulemaan asennusongelmista, koska yleensä ne eivät "
 "tapahdu pelkästään <emphasis>yhdelle</emphasis> ihmiselle."
 
-#: help.xml:708
+#: help.xml:717
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -808,7 +820,7 @@ msgstr ""
 "Olemme kiinnostuneita kuulemaan käynnistysongelmista, koska yleensä ne eivät "
 "tapahdu pelkästään <emphasis>yhdelle</emphasis> ihmiselle."
 
-#: help.xml:712
+#: help.xml:721
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -820,11 +832,11 @@ msgstr ""
 "ongelmasta lisää ja selvittää sen kanssasi - tällöin seuraava saman ongelman "
 "kohtaava käyttäjä hyötyy kokemuksestasi."
 
-#: help.xml:743
+#: help.xml:752
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "TEKIJÄNOIKEUDET JA TAKUUT"
 
-#: help.xml:750
+#: help.xml:759
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
@@ -832,11 +844,11 @@ msgstr ""
 "Ubuntun tekijänoikeudet omistaa (C) 2004-2008 Canonical Ltd., ja siihen "
 "sisältyy monien alkuperäisten tekijöiden ja osallistujien työtä."
 
-#: help.xml:755
+#: help.xml:764
 msgid "The Ubuntu system is freely redistributable."
 msgstr "Ubuntu-järjestelmää voi vapaasti jakaa eteenpäin."
 
-#: help.xml:758
+#: help.xml:767
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -846,7 +858,7 @@ msgstr ""
 "määriteltyinä pakettiin liittyvässä tiedostossa /usr/share/doc/"
 "<replaceable>paketinnimi</replaceable>/copyright."
 
-#: help.xml:763
+#: help.xml:772
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -856,7 +868,7 @@ msgstr ""
 "määriteltyinä pakettiin liittyvässä tiedostossa /usr/share/doc/"
 "<replaceable>paketinnimi</replaceable>/copyright."
 
-#: help.xml:769
+#: help.xml:778
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
@@ -864,7 +876,7 @@ msgstr ""
 "Ubuntuun ei liity <emphasis>minkäänlaista takuuta</emphasis>, siltä osin "
 "kuin laki sen sallii."
 
-#: help.xml:774
+#: help.xml:783
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
@@ -873,7 +885,7 @@ msgstr ""
 "Tämä asennusjärjestelmä perustuu Debian-asentimeen. Katso <ulink url="
 "\"http://www.debian.org/\" /> saadaksesi lisätietoja Debian-projektista."
 
-#: help.xml:780
+#: help.xml:789
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."

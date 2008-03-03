@@ -5,6 +5,8 @@ debian-installer (20070308ubuntu31) UNRELEASED; urgency=low
   * Adjust help text to refer to gfxboot UI where appropriate (LP: #66881).
   * Update the syslinux live CD F3 help text to talk about live-install
     rather than live-expert.
+  * Document "Check CD for defects" boot option (only for gfxboot, due to
+    space constraints).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Mar 2008 09:21:17 +0000
 
