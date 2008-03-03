@@ -1,18 +1,16 @@
-# translation of debian-installer-help.po to Polish
-# Polish translation for debian-installer
-# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# Latvian translation for debian-installer
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
 # This file is distributed under the same license as the debian-installer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 #
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
-# Krzysztof Lichota <lichota@mimuw.edu.pl>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer-help\n"
+"Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-01-09 21:55+0000\n"
-"PO-Revision-Date: 2008-02-26 20:33+0000\n"
-"Last-Translator: Dominik Zablotny <doza@g.pl>\n"
-"Language-Team: Polish <pl@li.org>\n"
+"PO-Revision-Date: 2008-03-01 18:32+0000\n"
+"Last-Translator: Peteris Krisjanis <pecisk@gmail.com>\n"
+"Language-Team: Latvian <lv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,111 +19,109 @@ msgstr ""
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Ekrany pomocy programu rozruchowego"
+msgstr "Instalatora ielādes palīdzības ekrāni"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "Witamy w ${DISTRIBUTION_NAME}!"
+msgstr "Esiet sveicināti ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"To jest instalacyjny ${MEDIA_TYPE} dla ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, data budowania: ${BUILD_DATE}."
+"Šī ir ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ${MEDIA_TYPE} tipa "
+"instalācija. Tā ir veidota ${BUILD_DATE}."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"To jest uruchamialny ${MEDIA_TYPE} dla ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, data budowania: ${BUILD_DATE}."
+"Šī ir ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ${MEDIA_TYPE} tipa \"dzīvā"
+"\" sistēma. Tā ir veidota ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "Indeks pomocy"
+msgstr "PALĪDZĪBAS INDEKSS"
 
 #: help.xml:29
 msgid "KEY"
-msgstr "Klawisz"
+msgstr "ATSLĒGA"
 
 #: help.xml:30
 msgid "TOPIC"
-msgstr "Temat"
+msgstr "TĒMA"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Ta strona - indeks pomocy."
+msgstr "Šī lapa, palīdzības indekss."
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "Wymagania do instalacji ${DISTRIBUTION_NAME}."
+msgstr "Prasības, lai uzstādītu ${DISTRIBUTION_NAME}."
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "Wymagania do uruchomienia ${DISTRIBUTION_NAME}."
+msgstr "Prasības, lai palaistu ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr "Specjalne sposoby uruchomienia systemu z tego ${MEDIA_TYPE}."
+msgstr "Ielādes metodes, lai izmantotu šo ${MEDIA_TYPE} sevišķos veidos."
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Dodatkowe metody startu; odzyskiwanie uszkodzonego systemu."
+msgstr "Papildus ielādes metodes; sabeigtas sistēmas darbības atjaunošana."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr "Przegląd specjalnych parametrów uruchomienia."
+msgstr "Speciālie ielādes parametri, pārskats."
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "Specjalne parametry uruchomienia dla nietypowych komputerów."
+msgstr "Speciālie ielādes parametri speciālām mašīnām."
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr "Specjalne parametry uruchomienia dla wybranych kontrolerów dysków."
+msgstr "Speciālie ielādes parametri izvēlētiem disku kontrolieriem."
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr "Specjalne parametry uruchomienia do instalacji systemu."
+msgstr "Speciālie ielādes parametri instalācijas sistēmai."
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "Specjalne parametry uruchomienia do rozruchu systemu."
+msgstr "Speciālie ielādes parametri sāknēšanas programmas sistēmai."
 
 #: help.xml:84
 msgid "How to get help."
-msgstr "Jak uzyskać pomoc."
+msgstr "Kā sameklēt palīdzību."
 
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "Prawa autorskie i gwarancje."
+msgstr "Autortiesības un garantijas."
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
-"Naciśnij od F2 do F10, żeby obejrzeć szczegóły albo ENTER, aby przejść do "
-"${BOOTPROMPT}"
+"Spiediet no F2 līdz F10, lai uzzinātu sīkāk, vai arī ENTER, lai ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
-"Naciśnij od F2 do F10, żeby obejrzeć szczegóły albo Esc, aby opuścić pomoc."
+"Spiediet no F2 līdz F10, lai uzzinātu sīkāk, vai arī Escape, lai izietu no "
+"palīdzības."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "Wymagania do instalacji"
+msgstr "Prasības Ubuntu uzstādīšanai"
 
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
-"Musisz mieć przynajmniej 32 megabajty pamięci RAM, aby używać tego programu "
-"instalacyjnego."
+"Jūsu datoram ir jābūt vismaz 32 megabaiti operatīvās atmiņas, lai izmantotu "
+"Ubuntu instalatoru."
 
 #: help.xml:123
 msgid ""
@@ -135,11 +131,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Na twardym dysku powinno być miejsce na utworzenie partycji o rozmiarze "
-"przynajmniej 2 gigabajtów dla standardowego systemu biurkowego albo "
-"przynajmniej 400 megabajtów w przypadku instalacji minimalnego systemu dla "
-"serwera. Do instalacji dodatkowych pakietów będzie konieczna większa ilość "
-"miejsca, zależnie od tego, do czego chcesz używać Twojego nowego systemu."
+"Uz jūsu datora vajadzētu būt brīvai vietai, lai izveidotu vismaz jaunu, 2 "
+"gigabaitus lielu diska sadaļu standarta Ubuntu darbavirsmas sistēmai vai arī "
+"vismaz 400 megabaiti minimālai servera instalācijai. Jums vajadzēs vairāk "
+"diska vietas, lai uzstādītu papildus pakotnes; to apjoms atkarīgs no tā, ko "
+"jūs vēlēsieties darīt ar jauno Ubuntu sistēmu."
 
 #: help.xml:131 help.xml:664
 msgid ""
@@ -147,39 +143,38 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"Więcej informacji znajdziesz w Podręczniku instalacji lub FAQ (najczęściej "
-"zadawanych pytaniach). Oba dokumenty są dostępne na stronie głównej Ubuntu, "
-"<ulink url=\"http://www.ubuntu.com/\" />"
+"Lasiet uzstādīšanas rokasgrāmatu vai arī BUJ (bieži uzdotie jautājumi), lai "
+"saņemtu vairāk informācijas; abi dokumenti ir pieejami Ubuntu tīmekļa "
+"vietnē. <ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Żeby używać tego systemu z płyty, musisz mieć przynajmniej 384 megabajtów "
-"pamięci RAM."
+"Jums jābūt vismaz 384 megabaitiem operatīvās atmiņas, lai izmantotu Ubuntu "
+"\"dzīvo\" sistēmu."
 
 #: help.xml:142
-#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Ten system uruchamiany z płyty nie wymaga żadnego miejsca na dysku. "
-"Jednakże, jeśli posiadasz na dysku partycje wymiany, zostaną one "
-"wykorzystane."
+"\"Dzīvās\" sistēmas izmantošana neprasa nekādu brīvo vietu uz jūsu cietā "
+"diska. Taču uz diska esošās Linux maiņvietas sadaļas tiks izmantotas, ja tās "
+"būs pieejamas."
 
 #: help.xml:147 help.xml:670
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Więcej informacji znajdziesz w FAQ (najczęściej zadawanych pytaniach). "
-"Dokument ten możesz znaleźć na stronie Ubuntu, <ulink url=\"http://www."
-"ubuntu.com/\" />"
+"Lasiet BUJ (bieži uzdotie jautājumi), lai saņemtu vairāk informācijas; šis "
+"dokuments ir pieejams Ubuntu tīmekļa vietnē. <ulink url=\"http://www.ubuntu."
+"com/\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Dziękujemy za wybranie Ubuntu!"
+msgstr "Paldies, ka izvēlējāties Ubuntu!"
 
 #: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
 #: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
@@ -188,31 +183,32 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
-"Naciśnij <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">Ctrl, F i 1</phrase> aby przejść do indeksu pomocy, albo ENTER, aby "
-"przejść do ${BOOTPROMPT}"
+"Spiediet <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">control un F, un tad 1</phrase>, lai saņemtu palīdzības indeksu, vai "
+"ENTER lai ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
 #: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
-"Naciśnij F1, aby przejść do indeksu pomocy, lub Esc, aby opuścić pomoc."
+"Spiediet F1, lai saņemtu palīdzības indeksu, vai Escape, lai izietu no "
+"palīdzības."
 
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr "Sposoby uruchamiania"
+msgstr "IELĀDES METODES"
 
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr "Dostępne sposoby uruchomienia:"
+msgstr "Pieejamās ielādes metodes:"
 
 #: help.xml:177
 msgid "install"
-msgstr "install"
+msgstr "uzstādīt"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr "Uruchamia instalację -- jest to domyślna instalacja z ${MEDIA_TYPE}."
+msgstr "Sākt uzstādīšanu - šī ir noklusētā ${MEDIA_TYPE} uzstādīšana."
 
 #: help.xml:184
 msgid "expert"
@@ -220,19 +216,19 @@ msgstr "expert"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "Uruchamia instalację w trybie eksperta, co daje największą kontrolę."
+msgstr "Sākt uzstādīšanu eksperta režīmā, maksimālai kontrolei."
 
 #: help.xml:191
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #: help.xml:192
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #: help.xml:194
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Minimāla komandrindas sistēmas uzstādīšana."
 
 #: help.xml:199
 msgid "live"
@@ -240,7 +236,7 @@ msgstr "live"
 
 #: help.xml:201
 msgid "Start the live system."
-msgstr "Uruchamia system z płyty."
+msgstr "Startēt \"dzīvo\" sistēmu."
 
 #: help.xml:206
 msgid "memtest"
@@ -248,16 +244,15 @@ msgstr "memtest"
 
 #: help.xml:208
 msgid "Perform a memory test."
-msgstr "Wykonuje sprawdzenie pamięci RAM."
+msgstr "Izpildīt operatīvās atmiņas testu."
 
 #: help.xml:214 help.xml:258
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"Aby użyć jednej z tych metod uruchamiania, należy wpisać jej nazwę w oknie "
-"polecenia uruchamiania, dodając ewentualnie za nią parametry uruchomienia. "
-"Na przykład:"
+"Lai izpildītu vienu no šīm ielādes metodēm, ievadiet to komandrindā, ja "
+"nepieciešams, papildiniet ar jebkādiem ielādes parametriem. Piemēram:"
 
 #: help.xml:219
 #, no-wrap
@@ -274,19 +269,18 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Jeśli nie masz pewności, której metody użyć, użyj domyślnej metody, bez "
-"żadnych parametrów, poprzez naciśnięcie klawisza Enter na głównym ekranie "
-"systemu rozruchowego."
+"Ja neesat pārliecināts/-ta, jums vajadzētu izmantot noklusēto ielādes "
+"metodi, bez speciālajiem parametriem, vienkārši nospiežot Enter pie ielādes "
+"ievades."
 
 #: help.xml:242 help.xml:278
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr "ODZYSKIWANIE USZKODZONEGO SYSTEMU"
+msgstr "Sabeigtas sistēmas atjaunošana"
 
 #: help.xml:246
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
-"Poniższych metod uruchomienia możesz użyć do odratowania istniejącej "
-"instalacji"
+"Izmantojiet vienu no šīm ielades metodēm lai atjaunotu esošo instalāciju"
 
 #: help.xml:250
 msgid "rescue"
@@ -294,7 +288,7 @@ msgstr "rescue"
 
 #: help.xml:252
 msgid "Boot into rescue mode."
-msgstr "Uruchamia system w trybie ratunkowym."
+msgstr "Ielādēt atjaunošanas režīmu."
 
 #: help.xml:262
 #, no-wrap
@@ -309,21 +303,20 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
-"Ta płyta CD nie ma specjalnego trybu odzyskiwania, jednak ponieważ cały "
-"system uruchamia się z płyty, możliwe jest użycie narzędzi wiersza poleceń "
-"oraz graficznych do naprawienia systemu, który nie uruchamia się poprawnie. "
-"Możliwe jest również użycie przeglądarki internetowej w celu uzyskania "
-"pomocy. W sieci dostępne są wyczerpujące porady dotyczące większośc "
-"iproblemów, które mogą spowodować nieprawidłowe uruchamianie się systemu."
+"Šajā CD nav paredzēta speciāla atjaunošanas režīma. Taču, tā kā visa sistēma "
+"tiek ielādēta no CD, jums ir iespējams izmantot komandrindu un/vai "
+"piedāvātos grafiskos rīkus, lai atjaunotu sabeigto sistēmu, un izmantotu "
+"tīmekļa pārlūku, lai meklētu palīdzību. Tiešsaistē ir pieejami padomi par "
+"lielāko daļu problēmu, kas varētu radīt problēmas jūsu sistēmai ielādēties "
+"korekti."
 
 #: help.xml:307
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "Przegląd specjalnych parametrów uruchomienia"
+msgstr "SPECIĀLIE IELĀDES PARAMETRI - PĀRSKATS"
 
 #: help.xml:314
 msgid "On a few systems, you may need to specify a parameter at the"
-msgstr ""
-"Na niektórych komputerach, może być konieczne podanie parametrów w linii"
+msgstr "Uz dažām sistēmām jums varētu būt nepieciešams norādīt parametru pie"
 
 #: help.xml:315 help.xml:381 help.xml:469 help.xml:536
 #, no-wrap
@@ -336,31 +329,31 @@ msgid ""
 "autodetect your hardware, and you may need to explicitly specify its "
 "location or type for it to be recognized."
 msgstr ""
-"aby można było uruchomić system. Na przykład, Linux może nie być w stanie "
-"wykryć automatycznie Twojego sprzętu i wtedy musisz podać jego lokalizację "
-"lub typ, aby mógł zostać rozpoznany."
+"uzvednes, lai veiksmīgi ielādētu sistēmu. Piemēram, Linux varētu nespēt "
+"automātiski noteikt jūsu aparatūru, un jums varētu būt nepieciešams tieši "
+"norādīt tās atrašanās vietu vai tipu, lai tā tiktu atpazīta."
 
 #: help.xml:321
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
-"Aby uzyskać więcej informacji o parametrach uruchomienia, których możesz "
-"użyć, naciśnij:"
+"Lai saņemtu vairāk informācijas par ielādes parametriem, kurus jūs varat "
+"izmantot, spiediet:"
 
 #: help.xml:329
 msgid "boot parameters for special machines"
-msgstr "parametry uruchomienia dla nietypowych komputerów"
+msgstr "ielādes parametri speciālām mašīnām"
 
 #: help.xml:334
 msgid "boot parameters for various disk controllers"
-msgstr "parametry uruchomienia dla różnych kontrolerów dysków"
+msgstr "ielādes parametri dažādiem disku kontrolieriem"
 
 #: help.xml:339
 msgid "boot parameters understood by the install system"
-msgstr "parametry uruchomienia wykorzystywane przez program instalacyjny"
+msgstr "ielādes parametri, kurus saprot uzstādīšanas sistēma"
 
 #: help.xml:344
 msgid "boot parameters understood by the bootstrap system"
-msgstr "parametry uruchomienia wykorzystywane przez system rozruchowy"
+msgstr "ielādes parametri, kurus saprot sāknēšanas programmas sistēma"
 
 #: help.xml:349
 msgid ""
@@ -369,26 +362,26 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Wiele modułów jądra jest ładowanych dynamicznie przez program instalacyjny, "
-"ale parametry dla tych modułów nie mogą być podane w linii poleceń. Aby "
-"system zapytał o parametry modułów przed ich załadowaniem, uruchom system w "
-"trybie eksperta (patrz <link linkend=\"F3\"><keycap>F3</keycap></link>)."
+"Instalators daudzus kodola moduļus ielādē dinamiski, un šo moduļu parametri "
+"nevar tikt doti komandrindā. Lai sistēma jums vaicātu parametrus, kad moduļi "
+"tiek ielādēti, ielādējiet sistēmu eksperta (expert) režīmā (skatiet <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:356
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"Wiele modułów jądra jest ładowanych dynamicznie przez system rozruchowy, ale "
-"parametry dla tych modułów nie mogą być podane w linii poleceń."
+"Sāknēšanas programmas sistēma daudzus kodola moduļus ielādē dinamiski, un šo "
+"moduļu parametri nevar tikt doti komandrindā."
 
 #: help.xml:374
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr "Specjalne parametry uruchomienia - różny sprzęt"
+msgstr "SPECIĀLIE IELĀDES PARAMETRI - DAŽĀDA APARATŪRA"
 
 #: help.xml:381 help.xml:469 help.xml:536
 msgid "You can use the following boot parameters at the"
-msgstr "Możesz użyć następujących parametrów uruchomienia w linii"
+msgstr "Jūs varat izmantot sekojošus ielādes parametrus pie"
 
 #: help.xml:382
 msgid ""
@@ -396,37 +389,37 @@ msgid ""
 "\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
 "0x prefix (e.g., 0x300)."
 msgstr ""
-", w połączeniu z metodą uruchomienia (patrz <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>). Jeśli używasz liczb szesnastkowych, musisz użyć przedrostka "
-"0x (np., 0x300)."
+"uzvednes, kombinācijā ar ielādes metodi (skatiet <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>). Ja jūs izmantojat ciparus heksā, priekšā "
+"pierakstiet 0x (piem. 0x300)."
 
 #: help.xml:389 help.xml:476
 msgid "HARDWARE"
-msgstr "Sprzęt"
+msgstr "APARATŪRA"
 
 #: help.xml:390 help.xml:477
 msgid "PARAMETER TO SPECIFY"
-msgstr "Parametr"
+msgstr "NORĀDĀMIE PARAMETRI"
 
 #: help.xml:393
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr "IBM PS/1 lub ValuePoint (dysk IDE)"
+msgstr "IBM PS/1 vai ValuePoint (IDE disks)"
 
 #: help.xml:394
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cylindry</replaceable>,<replaceable>głowice</"
-"replaceable>,<replaceable>sektory</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 
 #: help.xml:398
 msgid "Some IBM ThinkPads"
-msgstr "Niektóre komputery IBM ThinkPad"
+msgstr "Daži IBM ThinkPad tipa laptopi"
 
 #: help.xml:399
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:403
 msgid "IBM Pentium Microchannel"
@@ -438,7 +431,7 @@ msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
 #: help.xml:408
 msgid "Protect I/O port regions"
-msgstr "Ochrona zakresów portów I/O"
+msgstr "Aizsargāt I/O (izejas/ieejas) portu reģionus"
 
 #: help.xml:409
 msgid ""
@@ -446,13 +439,13 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
-"<userinput>reserve=<replaceable>baza</replaceable>,<replaceable>zakres</"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 
 #: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
-msgstr "Ominięcie niesprawnych FPU (stare komputery)"
+msgstr "Apiet kļūdainu FPU (vecajām mašīnām)"
 
 #: help.xml:414
 msgid "<userinput>no387</userinput>"
@@ -460,7 +453,7 @@ msgstr "<userinput>no387</userinput>"
 
 #: help.xml:418
 msgid "Laptops with screen display problems"
-msgstr "Laptopy z problemami wyświetlania na konsoli"
+msgstr "Klēpjdatori ar ekrānu attēlošanas problēmām"
 
 #: help.xml:419
 msgid "<userinput>vga=771</userinput>"
@@ -468,29 +461,27 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:423
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Izmantot pirmo seriālo portu ar 9600 bodiem"
 
 #: help.xml:424
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:428
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Forsēta vispārējā IDE draivera izmantošana"
 
 #: help.xml:429
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:434
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
 msgstr ""
-"Jeśli zauważysz zawieszenia systemu lub inne błędy sprzętowe, wyłącz "
-"niepoprawne przekierowanie przerwać w APIC"
+"Ja jūs pieredzat uzkāršanos vai citas aparatūras kļūmes, izslēdziet kļūdaino "
+"APIC pārtraukumu maršrutēšanu"
 
 #: help.xml:437
 msgid "<userinput>noapic nolapic</userinput>"
@@ -498,7 +489,7 @@ msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:441 help.xml:510 help.xml:611
 msgid "For example:"
-msgstr "Na przykład:"
+msgstr "Piemēram:"
 
 #: help.xml:444
 #, no-wrap
@@ -512,15 +503,15 @@ msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:462
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "Specjalne parametry uruchomienia - różne napędy dysków"
+msgstr "SPECIĀLIE IELĀDES PARAMETRI - DAŽĀDI DISKDZIŅI"
 
 #: help.xml:470 help.xml:537
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-", w połączeniu z metodą uruchomienia (patrz <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
+"uzvednes, kombinācijā ar ielādes metodi (skatiet <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:480
 msgid "Adaptec 151x, 152x"
@@ -534,6 +525,11 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #: help.xml:485
 msgid "Adaptec 1542"
@@ -546,76 +542,79 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:490
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:491
-#, fuzzy
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
-"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (włączony jeśli niezerowe)"
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (aktivizēts, ja nav nulle)"
 
 #: help.xml:495
 msgid "BusLogic SCSI Hosts"
-msgstr "Hosty SCSI BusLogic"
+msgstr "BusLogic SCSI hosti"
 
 #: help.xml:496
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:500
 msgid "Certain DELL machines"
-msgstr "Niektóre komputery DELL"
+msgstr "Konkrētas DELL mašīnas"
 
 #: help.xml:501
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #: help.xml:506
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"Niniejsza lista jest niekompletna, więcej w pliku jądra kernel-parameters."
-"txt."
+"Šis saraksts nav pilnīgs, lasiet kernel-parameters.txt failu, lai uzzinātu "
+"vairāk."
 
 #: help.xml:513
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:514
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:531
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr "Specjalne parametry uruchomienia - program instalacyjny"
+msgstr "SPECIĀLIE IELĀDES PARAMETRI - UZSTĀDĪŠANAS SISTĒMA"
 
 #: help.xml:541
 msgid "These parameters control how the installer works."
-msgstr "Te parametry określają zachowanie programu instalującego system."
+msgstr "Šie parametri kontrolē, kā darbojas instalators"
 
 #: help.xml:544
 msgid "These parameters control how the bootstrap system works."
-msgstr "Te parametry określają zachowanie programu uruchamiającego system."
+msgstr "Šie parametri kontrolē, kā darbojas sāknēšanas programmas sistēma."
 
 #: help.xml:549
 msgid "RESULT"
-msgstr "Działanie"
+msgstr "REZULTĀTS"
 
 #: help.xml:550
 msgid "PARAMETER"
-msgstr "Parametr"
+msgstr "PARAMETRS"
 
 #: help.xml:553
 msgid "Verbose debugging"
-msgstr "Wyświetlanie informacji do znajdowania błędów"
+msgstr "Atkļūdošana ar daudzvārdīgu izvadi"
 
 #: help.xml:554
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
@@ -623,7 +622,7 @@ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:558
 msgid "Debug boot sequence"
-msgstr "Znajdowanie błędów w sekwencji rozruchowej"
+msgstr "Atkļūdot ielādes secību"
 
 #: help.xml:559
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
@@ -631,15 +630,15 @@ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:563
 msgid "Disable framebuffer"
-msgstr "Wyłączenie framebuffera"
+msgstr "Izslēgt kadru buferi"
 
 #: help.xml:564
 msgid "<userinput>fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:568
 msgid "Don't probe for USB"
-msgstr "Wyłączenie wyszukiwania USB"
+msgstr "Nenoteikt USB aparatūru"
 
 #: help.xml:569
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
@@ -647,7 +646,7 @@ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
 #: help.xml:573
 msgid "Don't start PCMCIA"
-msgstr "Wyłączenie uruchamiania PCMCIA"
+msgstr "Nestartēt PCMCIA sistēmu"
 
 #: help.xml:574
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
@@ -655,7 +654,7 @@ msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:578
 msgid "Force static network config"
-msgstr "Wymuszenie statycznej konfiguracji sieci"
+msgstr "Forsēt statisku tīkla konfigurāciju"
 
 #: help.xml:579
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
@@ -663,7 +662,7 @@ msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:583
 msgid "Set keyboard map"
-msgstr "Ustawienie mapy klawiatury"
+msgstr "Uzstādīt tastūras karti"
 
 #: help.xml:584
 msgid "<userinput>bootkbd=es</userinput>"
@@ -671,85 +670,84 @@ msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:588
 msgid "Use Braille tty"
-msgstr "Użyj terminala tty Braile'a"
+msgstr "Lietot Braila izvadi uz tty"
 
 #: help.xml:589
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Izmantot liela kontrasta pieejamības tēmu"
 
 #: help.xml:594
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
 
 #: help.xml:598
 msgid "Use special tasks"
-msgstr ""
+msgstr "Izmantot speciālus uzdevumus"
 
 #: help.xml:599
-#, fuzzy
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=es</userinput>"
+msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
 #: help.xml:604
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
-"Wyłączenie ACPI dla map PCI (przydatne dla niektórych serwerów HP i "
-"komputerów opartych na Via)"
+"Izslēgt ACPI sistēmu PCI kartēm (noderīgi dažiem HP serveriem un Via bāzētām "
+"mašīnām)"
 
 #: help.xml:607
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:614
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:615
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:632
 msgid "GETTING HELP"
-msgstr "Uzyskiwanie pomocy"
+msgstr "SAMEKLĒT PALĪDZĪBU"
 
 #: help.xml:639
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr "Jeśli nie możesz zainstalować systemu, nie panikuj!"
+msgstr "Ja jūs nevarat uzstādīt Ubuntu, nekrītiet panikā!"
 
 #: help.xml:642
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr "Jeśli nie możesz uruchomić systemu, nie panikuj!"
+msgstr "Ja jūs nevarat palaist Ubuntu, nekrītiet panikā!"
 
 #: help.xml:645
 msgid "The Ubuntu team is ready to help you!"
-msgstr "Zespół Ubuntu jest gotowy, aby Ci pomóc!"
+msgstr "Ubuntu komanda ir gatava jums palīdzēt!"
 
 #: help.xml:648
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Jesteśmy zwłaszcza zainteresowani problemami z instalacją, ponieważ "
-"zazwyczaj nie przytrafiają się tylko <emphasis>jednej</emphasis> osobie."
+"Mēs esam īpaši ieinteresēti dzirdēt par uzstādīšanas problēmām, tāpēc ka "
+"parasti tās nepiemeklē tikai <emphasis>vienu</emphasis> personu."
 
 #: help.xml:653
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Jesteśmy zwłaszcza zainteresowani problemami z uruchomieniem systemu, "
-"ponieważ zazwyczaj nie przytrafiają się tylko <emphasis>jednej</emphasis> "
-"osobie."
+"Mēs esam īpaši ieinteresēti dzirdēt par startēšanas problēmām, tāpēc ka "
+"parasti tās nepiemeklē tikai <emphasis>vienu</emphasis> personu."
 
 #: help.xml:657
 msgid ""
@@ -758,27 +756,26 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Albo już słyszeliśmy o Twoim problemie i możemy podać sposób naprawienia, "
-"albo chcemy usłyszeć o problemie i wypracować z Tobą sposób jego "
-"naprawienia, tak by następny użytkownik, który napotka taki sam problem, "
-"mógł wykorzystać Twoje doświadczenia!"
+"Mēs vai nu esam jau dzirdējuši par jūsu konkrēto problēmu un varam piedāvāt "
+"ātru labojumu, vai arī mēs vēlētos par to dzirdēt vairāk un strādāt kopā ar "
+"jums pie tās, lai to atrisinātu; lai nākošais lietotājs, kurš saskarsies ar "
+"tādu pašu problēmu, varētu iegūt risinājumu no jūsu pieredzes."
 
 #: help.xml:688
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr "Prawa autorskie i gwarancje"
+msgstr "AUTORTIESĪBAS UN GARANTIJAS"
 
 #: help.xml:695
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Prawa autorskie do Ubuntu: Copyright (C) 2004-2007 Canonical Ltd. Ubuntu "
-"zawiera wynik prac wielu autorów i współpracowników."
+"Ubuntu autortiesības (C) 2004.-2008. gads, Cannonical Ltd. Tas iekļauj arī "
+"daudzu citu autoru un atbalstītāju darbu."
 
 #: help.xml:700
 msgid "The Ubuntu system is freely redistributable."
-msgstr "System Ubuntu można dowolnie rozpowszechniać."
+msgstr "Ubuntu sistēma ir brīvi izplatāma."
 
 #: help.xml:703
 msgid ""
@@ -786,8 +783,8 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Po instalacji, dokładne warunki rozpowszechniania dla każdego pakietu są "
-"opisane w odpowiednim pliku /usr/share/doc/<replaceable>packagename</"
+"Pēc uzstādīšanas katras pakotnes tiešie izplatīšanas noteikumi ir aprakstīti "
+"attiecīgajā pakotnes failā /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 
 #: help.xml:708
@@ -796,8 +793,8 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Po uruchomieniu, dokładne warunki rozpowszechniania dla każdego pakietu są "
-"opisane w odpowiednim pliku /usr/share/doc/<replaceable>packagename</"
+"Pēc palaišanas katras pakotnes tiešie izplatīšanas noteikumi ir aprakstīti "
+"attiecīgajā pakotnes failā /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 
 #: help.xml:714
@@ -805,8 +802,8 @@ msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Ubuntu jest rozprowadzane <emphasis>BEZ ŻADNEJ GWARANCJI</emphasis>, w "
-"zakresie dopuszczalnym odpowiednimi prawami."
+"Par Ubuntu programmatūru netiek dotas <emphasis>NEKĀDAS GARANTIJAS</"
+"emphasis> līdz likumā pieļaujamām robežām."
 
 #: help.xml:719
 msgid ""
@@ -814,14 +811,15 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
-"Ten program instalacyjny jest oparty na programie instalacyjnym Debiana. "
-"Więcej informacji o projekcie Debian znajdziesz na stronie <ulink url="
-"\"http://www.debian.org/\" />."
+"Šī uzstādīšanas sistēma ir bāzēta uz Debian instalatora. Skatieties <ulink "
+"url=\"http://www.debian.org/\" />, lai uzzinātu vairāk detalizētu "
+"informāciju par Debian projektu."
 
 #: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"Ten system jest oparty na Debianie. Więcej informacji o projekcie Debian "
-"znajdziesz na stronie <ulink url=\"http://www.debian.org/\" />."
+"Šī sistēma ir bāzēta uz Debian distribūcijas. Skatieties <ulink url=\"http://"
+"www.debian.org/\" />, lai uzzinātu vairāk detalizētu informāciju par Debian "
+"projektu."

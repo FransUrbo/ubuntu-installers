@@ -1,6 +1,7 @@
 debian-installer (20070308ubuntu31) UNRELEASED; urgency=low
 
   * Move to 2.6.24-11 kernels.
+  * Update help text translations from Launchpad.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Mar 2008 09:21:17 +0000
 
