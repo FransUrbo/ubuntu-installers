@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-01-09 21:55+0000\n"
+"POT-Creation-Date: 2008-03-03 11:09+0000\n"
 "PO-Revision-Date: 2008-01-18 18:12+0000\n"
 "Last-Translator: ZhengPeng Hou <zhengpeng.hou@gmail.com>\n"
 "Language-Team: Chinese (China) <zh_CN@li.org>\n"
@@ -130,7 +130,7 @@ msgstr ""
 "最小安装需要至少400M的空间.如果您要安装额外的软件包，所需空间大小视您的需要而"
 "定."
 
-#: help.xml:131 help.xml:664
+#: help.xml:131 help.xml:719
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -151,7 +151,7 @@ msgid ""
 msgstr ""
 "live系统不会占用您硬盘上的一点空间。但会使用您硬盘上既有的 linux swap 分区。"
 
-#: help.xml:147 help.xml:670
+#: help.xml:147 help.xml:725
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -163,8 +163,8 @@ msgstr ""
 msgid "Thank you for choosing Ubuntu!"
 msgstr "谢谢您选择了Ubuntu！"
 
-#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
-#: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
+#: help.xml:156 help.xml:253 help.xml:299 help.xml:328 help.xml:402
+#: help.xml:496 help.xml:569 help.xml:674 help.xml:730 help.xml:786
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
@@ -173,8 +173,8 @@ msgstr ""
 "按<phrase class=\"not-serial\">F1</phrase><phrase class=\"serial\">control 和"
 "F然后按1</phrase>调出帮助目录，或者按回车来${BOOTPROMPT}"
 
-#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
-#: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
+#: help.xml:161 help.xml:258 help.xml:304 help.xml:333 help.xml:407
+#: help.xml:501 help.xml:574 help.xml:679 help.xml:735 help.xml:791
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr "按F1调出帮助目录，或者按Escape退出帮助。"
 
@@ -190,50 +190,78 @@ msgstr "可行的启动方式："
 msgid "install"
 msgstr "安装"
 
-#: help.xml:179
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
+#: help.xml:178 help.xml:210
+msgid "Install Ubuntu"
+msgstr ""
+
+#: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgstr "开始安装──这是默认的${MEDIA_TYPE}安装。"
 
-#: help.xml:184
+#: help.xml:185
 msgid "expert"
 msgstr "专家级安装"
 
-#: help.xml:186
+#: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
 msgstr "以专家级模式开始安装，可以手动控制最多安装选项。"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
-#: help.xml:191
+#: help.xml:192
 msgid "cli"
 msgstr "cli"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
-#: help.xml:192
+#: help.xml:193
 msgid "cli-expert"
 msgstr "cli-expert"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
-#: help.xml:194
+#: help.xml:195
 msgid "Minimal command-line system install."
 msgstr "最小化命令行系统安装。"
 
-#: help.xml:199
+#: help.xml:200
 msgid "live"
 msgstr "live"
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
-msgid "Start the live system."
+msgid "Try Ubuntu without any change to your computer"
+msgstr ""
+
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
+#: help.xml:203
+msgid ""
+"Start the live system. If you wish, you can install it later using the "
+"\"Install\" icon on the desktop."
+msgstr ""
+
+#: help.xml:209
+#, fuzzy
+msgid "live-install"
+msgstr "安装"
+
+#: help.xml:212
+#, fuzzy
+msgid "Start the installation."
 msgstr "开始live系统"
 
-#: help.xml:206
+#: help.xml:217
 msgid "memtest"
 msgstr "内存测试"
 
-#: help.xml:208
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
+#: help.xml:218
+msgid "Test memory"
+msgstr ""
+
+#: help.xml:220
 msgid "Perform a memory test."
 msgstr "进行内存测试"
 
-#: help.xml:214 help.xml:258
+#: help.xml:226 help.xml:283
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
@@ -241,17 +269,17 @@ msgstr ""
 "要使用其中一种启动方式，在提示栏输入即可，还可以根据自己的需要选择任意的启动"
 "参数。例如："
 
-#: help.xml:219
+#: help.xml:231
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr "boot: install acpi=off"
 
-#: help.xml:220
+#: help.xml:232
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
-#: help.xml:224
+#: help.xml:236
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
@@ -259,28 +287,49 @@ msgstr ""
 "如果不确定，您应该使用默认的启动方式，不带特定的参数，当出现提示的时候，按回"
 "车键就可以了。"
 
-#: help.xml:242 help.xml:278
+# type: Content of: <reference><refentry><refsection><para>
+#: help.xml:241
+msgid ""
+"(\"Ubuntu\" may be replaced with other related operating system names. This "
+"help text is generic.)"
+msgstr ""
+
+# type: Content of: <reference><refentry><refsection><para>
+#: help.xml:246 help.xml:292
+msgid ""
+"To use one of these boot methods, select it from the menu with the cursor "
+"keys. Press F4 to select alternative start-up and installation modes.  Press "
+"F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
+"used boot parameters."
+msgstr ""
+
+#: help.xml:266 help.xml:312
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "正在修复损坏的系统"
 
-#: help.xml:246
+#: help.xml:270
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr "用其中一个启动方式来救援一个已经存在的安装"
 
-#: help.xml:250
+#: help.xml:274
 msgid "rescue"
 msgstr "救援"
 
-#: help.xml:252
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
+#: help.xml:275
+msgid "Rescue a broken system"
+msgstr ""
+
+#: help.xml:277
 msgid "Boot into rescue mode."
 msgstr "启动并进入救援模式"
 
-#: help.xml:262
+#: help.xml:288
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
-#: help.xml:285
+#: help.xml:319
 msgid ""
 "There is no dedicated rescue mode on this CD. However, since the entire "
 "system runs from the CD, it is possible to use the command-line and/or "
@@ -292,49 +341,61 @@ msgstr ""
 "的，所以您也许可以使用命令和/或图形界面来修复损坏的系统，并且使用浏览器来寻找"
 "帮助信息。在网上可以找到绝大部分关于系统无法正常启动的问题相关帮助信息。"
 
-#: help.xml:307
+#: help.xml:341
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "特定启动参数 - 综览"
 
-#: help.xml:314
+#: help.xml:348
 msgid "On a few systems, you may need to specify a parameter at the"
 msgstr "某些系统，您要在如下指定参数."
 
-#: help.xml:315 help.xml:381 help.xml:469 help.xml:536
+#: help.xml:349 help.xml:422 help.xml:516 help.xml:587
 #, no-wrap
 msgid "boot:"
 msgstr "boot:"
 
-#: help.xml:315
+# type: Content of: <reference><refentry><refsection><para>
+#: help.xml:349
+msgid "prompt in order to boot the system."
+msgstr ""
+
+#: help.xml:352
+#, fuzzy
 msgid ""
-"prompt in order to boot the system. For example, Linux may not be able to "
-"autodetect your hardware, and you may need to explicitly specify its "
-"location or type for it to be recognized."
+"On a few systems, you may need to specify a parameter by pressing F6 in "
+"order to boot the system."
+msgstr "某些系统，您要在如下指定参数."
+
+#: help.xml:356
+#, fuzzy
+msgid ""
+"For example, Linux may not be able to autodetect your hardware, and you may "
+"need to explicitly specify its location or type for it to be recognized."
 msgstr ""
 "提示以便启动系统。例如：Linux可能不能自动探测到您的硬件，您也许需要清楚地指定"
 "它的位置或者类型使它能够被系统辨认。"
 
-#: help.xml:321
+#: help.xml:362
 msgid "For more information about what boot parameters you can use, press:"
 msgstr "想了解您可以使用的启动参数更多的信息，请按："
 
-#: help.xml:329
+#: help.xml:370
 msgid "boot parameters for special machines"
 msgstr "特定机器的启动参数"
 
-#: help.xml:334
+#: help.xml:375
 msgid "boot parameters for various disk controllers"
 msgstr "不同磁盘控制器的启动参数"
 
-#: help.xml:339
+#: help.xml:380
 msgid "boot parameters understood by the install system"
 msgstr "安装系统已解析启动参数"
 
-#: help.xml:344
+#: help.xml:385
 msgid "boot parameters understood by the bootstrap system"
 msgstr "自举系统已解析启动参数"
 
-#: help.xml:349
+#: help.xml:390
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
@@ -345,153 +406,157 @@ msgstr ""
 "读取的时候有参数提示，请以专家级模式启动（参阅<link linkend=\"F3"
 "\"><keycap>F3</keycap></link>）。"
 
-#: help.xml:356
+#: help.xml:397
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr "自举系统在动态地读取很多内核模块，并且这些模块的参数不能在命令行给出。"
 
-#: help.xml:374
+#: help.xml:415
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "特定的启动参数──各式各样的硬件"
 
-#: help.xml:381 help.xml:469 help.xml:536
+#: help.xml:422 help.xml:516 help.xml:587
 msgid "You can use the following boot parameters at the"
 msgstr "您可以在如下的情况中使用下列这些启动参数"
 
-#: help.xml:382
-msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
-"0x prefix (e.g., 0x300)."
-msgstr ""
-"提示列，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></link>）。"
-"如果您使用16进制的数字，那您必须要用0x前缀的格式（例如，0x300）。"
-
-#: help.xml:389 help.xml:476
-msgid "HARDWARE"
-msgstr "硬件"
-
-#: help.xml:390 help.xml:477
-msgid "PARAMETER TO SPECIFY"
-msgstr "要指定的参数"
-
-#: help.xml:393
-msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr "IBM PS/1或者ValuePoint （IDE硬盘）"
-
-#: help.xml:394
-msgid ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
-msgstr ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
-
-#: help.xml:398
-msgid "Some IBM ThinkPads"
-msgstr "一些IBM ThinkPad系列"
-
-#: help.xml:399
-msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
-
-#: help.xml:403
-msgid "IBM Pentium Microchannel"
-msgstr "IBM奔腾Microchannel"
-
-#: help.xml:404
-msgid "<userinput>mca-pentium no-hlt</userinput>"
-msgstr "<userinput>mca-pentium no-hlt</userinput>"
-
-#: help.xml:408
-msgid "Protect I/O port regions"
-msgstr "Protect I/O port regions"
-
-#: help.xml:409
-msgid ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
-msgstr ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
-
-#: help.xml:413
-msgid "Workaround faulty FPU (old machines)"
-msgstr "Workaround faulty FPU（老机器）"
-
-#: help.xml:414
-msgid "<userinput>no387</userinput>"
-msgstr "<userinput>no387</userinput>"
-
-#: help.xml:418
-msgid "Laptops with screen display problems"
-msgstr "屏幕显示有问题的笔记本电脑"
-
-#: help.xml:419
-msgid "<userinput>vga=771</userinput>"
-msgstr "<userinput>vga=771</userinput>"
-
-#: help.xml:423
-msgid "Use first serial port at 9600 baud"
-msgstr "使用第一个串行口，速率9600"
-
-#: help.xml:424
-msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>console=ttyS0,9600n8</userinput>"
-
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#: help.xml:428
-msgid "Force use of generic IDE driver"
-msgstr "强制使用通用 IDE 驱动"
-
-#: help.xml:429
-msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>generic.all_generic_ide=1</userinput>"
-
-#: help.xml:434
-msgid ""
-"If you experience lockups or other hardware failures, disable buggy APIC "
-"interrupt routing"
-msgstr "如果您被锁定或者经历了其他的硬件故障，禁用不稳定的APIC干扰路由功能"
-
-#: help.xml:437
-msgid "<userinput>noapic nolapic</userinput>"
-msgstr "<userinput>noapic nolapic</userinput>"
-
-#: help.xml:441 help.xml:510 help.xml:611
-msgid "For example:"
-msgstr "例如"
-
-#: help.xml:444
-#, no-wrap
-msgid "boot: install vga=771 noapic nolapic"
-msgstr "boot: install vga=771 noapic nolapic"
-
-#: help.xml:445
-#, no-wrap
-msgid "boot: live vga=771 noapic nolapic"
-msgstr "boot: live vga=771 noapic nolapic"
-
-#: help.xml:462
-msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "特定的启动参数──各式各样的光/软/硬盘"
-
-#: help.xml:470 help.xml:537
+#: help.xml:423 help.xml:517 help.xml:588
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
 "提示栏，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></link>）。"
 
-#: help.xml:480
-msgid "Adaptec 151x, 152x"
-msgstr "Adaptec 151x, 152x"
+#: help.xml:427 help.xml:521 help.xml:592
+#, fuzzy
+msgid ""
+"You can use the following boot parameters by pressing F6, in combination "
+"with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
+msgstr ""
+"提示栏，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></link>）。"
+
+# type: Content of: <reference><refentry><refsection><para>
+#: help.xml:431
+msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
+msgstr ""
+
+#: help.xml:436 help.xml:527
+msgid "HARDWARE"
+msgstr "硬件"
+
+#: help.xml:437 help.xml:528
+msgid "PARAMETER TO SPECIFY"
+msgstr "要指定的参数"
+
+#: help.xml:440
+msgid "IBM PS/1 or ValuePoint (IDE disk)"
+msgstr "IBM PS/1或者ValuePoint （IDE硬盘）"
+
+#: help.xml:441
+msgid ""
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
+msgstr ""
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
+
+#: help.xml:445
+msgid "Some IBM ThinkPads"
+msgstr "一些IBM ThinkPad系列"
+
+#: help.xml:446
+msgid "<userinput>floppy.floppy=thinkpad</userinput>"
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
+
+#: help.xml:450
+msgid "IBM Pentium Microchannel"
+msgstr "IBM奔腾Microchannel"
+
+#: help.xml:451
+msgid "<userinput>mca-pentium no-hlt</userinput>"
+msgstr "<userinput>mca-pentium no-hlt</userinput>"
+
+#: help.xml:455
+msgid "Protect I/O port regions"
+msgstr "Protect I/O port regions"
+
+#: help.xml:456
+msgid ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
+msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
+
+#: help.xml:460
+msgid "Workaround faulty FPU (old machines)"
+msgstr "Workaround faulty FPU（老机器）"
+
+#: help.xml:461
+msgid "<userinput>no387</userinput>"
+msgstr "<userinput>no387</userinput>"
+
+#: help.xml:465
+msgid "Laptops with screen display problems"
+msgstr "屏幕显示有问题的笔记本电脑"
+
+#: help.xml:466
+msgid "<userinput>vga=771</userinput>"
+msgstr "<userinput>vga=771</userinput>"
+
+#: help.xml:470
+msgid "Use first serial port at 9600 baud"
+msgstr "使用第一个串行口，速率9600"
+
+#: help.xml:471
+msgid "<userinput>console=ttyS0,9600n8</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
+
+# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:475
+msgid "Force use of generic IDE driver"
+msgstr "强制使用通用 IDE 驱动"
+
+#: help.xml:476
+msgid "<userinput>generic.all_generic_ide=1</userinput>"
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:481
 msgid ""
+"If you experience lockups or other hardware failures, disable buggy APIC "
+"interrupt routing"
+msgstr "如果您被锁定或者经历了其他的硬件故障，禁用不稳定的APIC干扰路由功能"
+
+#: help.xml:484
+msgid "<userinput>noapic nolapic</userinput>"
+msgstr "<userinput>noapic nolapic</userinput>"
+
+#: help.xml:488 help.xml:561 help.xml:666
+msgid "For example:"
+msgstr "例如"
+
+#: help.xml:491
+#, no-wrap
+msgid "boot: install vga=771 noapic nolapic"
+msgstr "boot: install vga=771 noapic nolapic"
+
+#: help.xml:492
+#, no-wrap
+msgid "boot: live vga=771 noapic nolapic"
+msgstr "boot: live vga=771 noapic nolapic"
+
+#: help.xml:509
+msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
+msgstr "特定的启动参数──各式各样的光/软/硬盘"
+
+#: help.xml:531
+msgid "Adaptec 151x, 152x"
+msgstr "Adaptec 151x, 152x"
+
+#: help.xml:532
+msgid ""
 "<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>irq</replaceable></"
 "userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
@@ -504,11 +569,11 @@ msgstr ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 
-#: help.xml:485
+#: help.xml:536
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
-#: help.xml:486
+#: help.xml:537
 msgid ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>buson</replaceable>,"
@@ -520,33 +585,33 @@ msgstr ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
-#: help.xml:490
+#: help.xml:541
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x，284x"
 
-#: help.xml:491
+#: help.xml:542
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 
-#: help.xml:495
+#: help.xml:546
 msgid "BusLogic SCSI Hosts"
 msgstr "BusLogic SCSI Hosts"
 
-#: help.xml:496
+#: help.xml:547
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
-#: help.xml:500
+#: help.xml:551
 msgid "Certain DELL machines"
 msgstr "某些戴尔机器"
 
-#: help.xml:501
+#: help.xml:552
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
-#: help.xml:506
+#: help.xml:557
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
@@ -554,97 +619,97 @@ msgstr ""
 "本列表所含内容并不完整，请参阅内核的 kernel-parameters.txt 文件以了解更多内"
 "容。"
 
-#: help.xml:513
+#: help.xml:564
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:514
+#: help.xml:565
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
-#: help.xml:531
+#: help.xml:582
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "特定启动参数──安装系统"
 
-#: help.xml:541
+#: help.xml:596
 msgid "These parameters control how the installer works."
 msgstr "这些参数控制着安装器的工作。"
 
-#: help.xml:544
+#: help.xml:599
 msgid "These parameters control how the bootstrap system works."
 msgstr "这些参数控制着自举系统的工作。"
 
-#: help.xml:549
+#: help.xml:604
 msgid "RESULT"
 msgstr "结果"
 
-#: help.xml:550
+#: help.xml:605
 msgid "PARAMETER"
 msgstr "参数"
 
-#: help.xml:553
+#: help.xml:608
 msgid "Verbose debugging"
 msgstr "详述debug过程"
 
-#: help.xml:554
+#: help.xml:609
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
 msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
-#: help.xml:558
+#: help.xml:613
 msgid "Debug boot sequence"
 msgstr "debug启动序列"
 
-#: help.xml:559
+#: help.xml:614
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
 msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
-#: help.xml:563
+#: help.xml:618
 msgid "Disable framebuffer"
 msgstr "禁用framebuffer"
 
-#: help.xml:564
+#: help.xml:619
 msgid "<userinput>fb=false</userinput>"
 msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:568
+#: help.xml:623
 msgid "Don't probe for USB"
 msgstr "不要侦测USB"
 
-#: help.xml:569
+#: help.xml:624
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
 msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
-#: help.xml:573
+#: help.xml:628
 msgid "Don't start PCMCIA"
 msgstr "不要开启PCMCIA"
 
-#: help.xml:574
+#: help.xml:629
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:578
+#: help.xml:633
 msgid "Force static network config"
 msgstr "强制静态网络设置"
 
-#: help.xml:579
+#: help.xml:634
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:583
+#: help.xml:638
 msgid "Set keyboard map"
 msgstr "设定键盘映射"
 
-#: help.xml:584
+#: help.xml:639
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:588
+#: help.xml:643
 msgid "Use Braille tty"
 msgstr "使用凸点（盲人使用）tty"
 
-#: help.xml:589
+#: help.xml:644
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
@@ -653,59 +718,59 @@ msgstr ""
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#: help.xml:593
+#: help.xml:648
 msgid "Use high contrast accessibility theme"
 msgstr "使用高对比主题"
 
-#: help.xml:594
+#: help.xml:649
 msgid "<userinput>theme=dark</userinput>"
 msgstr "<userinput>theme=dark</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#: help.xml:598
+#: help.xml:653
 msgid "Use special tasks"
 msgstr "使用特殊任务"
 
-#: help.xml:599
+#: help.xml:654
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
-#: help.xml:604
+#: help.xml:659
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr "禁用PCI映射的ACPI功能（适用于一些HP服务器和由其搭建的机器）"
 
-#: help.xml:607
+#: help.xml:662
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:614
+#: help.xml:669
 #, no-wrap
 msgid "boot: install pci=noacpi"
 msgstr "boot: install pci=noacpi"
 
-#: help.xml:615
+#: help.xml:670
 #, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr "boot: live pci=noacpi"
 
-#: help.xml:632
+#: help.xml:687
 msgid "GETTING HELP"
 msgstr "获得帮助"
 
-#: help.xml:639
+#: help.xml:694
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "如果您不能安装Ubuntu，不要灰心"
 
-#: help.xml:642
+#: help.xml:697
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "如果您不能启动Ubuntu，不要灰心"
 
-#: help.xml:645
+#: help.xml:700
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Ubuntu团队总会及时的给您帮助！"
 
-#: help.xml:648
+#: help.xml:703
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -713,7 +778,7 @@ msgstr ""
 "我们特别乐于听到关于安装的问题，因为大部分时候这不仅仅发生在<emphasis>一个</"
 "emphasis>人身上。"
 
-#: help.xml:653
+#: help.xml:708
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -721,7 +786,7 @@ msgstr ""
 "我们特别乐于听到关于启动的问题，因为大部分时候这不仅仅发生在<emphasis>一个</"
 "emphasis>人身上。"
 
-#: help.xml:657
+#: help.xml:712
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -732,11 +797,11 @@ msgstr ""
 "解您的问题并和您一起研究解决，这样下一个和您遇到同样问题的用户将从您的经验中"
 "获益良多。"
 
-#: help.xml:688
+#: help.xml:743
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "版权和担保"
 
-#: help.xml:695
+#: help.xml:750
 #, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
@@ -745,11 +810,11 @@ msgstr ""
 "Ubuntu的版权(C) 2004-2007属于Canonical有限公司，包括许多作者和贡献者所做的一"
 "切工作。"
 
-#: help.xml:700
+#: help.xml:755
 msgid "The Ubuntu system is freely redistributable."
 msgstr "Ubuntu系统可自由地重新发行。"
 
-#: help.xml:703
+#: help.xml:758
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -758,7 +823,7 @@ msgstr ""
 "安装完毕之后，每个包的具体的发行条款都在对应的文件/usr/share/doc/"
 "<replaceable>包的名称</replaceable>/copyright里有详细的描述。"
 
-#: help.xml:708
+#: help.xml:763
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -767,14 +832,14 @@ msgstr ""
 "启动结束后，每个包的具体的发行条款都在对应的文件/usr/share/doc/<replaceable>"
 "包的名称</replaceable>/copyright里有详细的描述。"
 
-#: help.xml:714
+#: help.xml:769
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
 "除了遵守相关的法律条款，Ubuntu<emphasis>没有任何形式的任何担保</emphasis>。"
 
-#: help.xml:719
+#: help.xml:774
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
@@ -783,10 +848,18 @@ msgstr ""
 "本安装系统是在Debian安装器的基础上构建的。参阅<ulink url=\"http://www.debian."
 "org/\" />来获知更多关于Debian项目的细节和信息。"
 
-#: help.xml:725
+#: help.xml:780
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
 "本系统是在Debian的基础上构建的。参阅<ulink url=\"http://www.debian.org/\" />"
 "来获知更多关于Debian项目的细节和信息。"
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
+#~ "\"><keycap>F3</keycap></link>). If you use hex numbers you have to use "
+#~ "the 0x prefix (e.g., 0x300)."
+#~ msgstr ""
+#~ "提示列，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></"
+#~ "link>）。如果您使用16进制的数字，那您必须要用0x前缀的格式（例如，0x300）。"

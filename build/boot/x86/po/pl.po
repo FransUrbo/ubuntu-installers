@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer-help\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-01-09 21:55+0000\n"
+"POT-Creation-Date: 2008-03-03 11:09+0000\n"
 "PO-Revision-Date: 2008-02-26 20:33+0000\n"
 "Last-Translator: Dominik Zablotny <doza@g.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -141,7 +141,7 @@ msgstr ""
 "serwera. Do instalacji dodatkowych pakietów będzie konieczna większa ilość "
 "miejsca, zależnie od tego, do czego chcesz używać Twojego nowego systemu."
 
-#: help.xml:131 help.xml:664
+#: help.xml:131 help.xml:719
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -168,7 +168,7 @@ msgstr ""
 "Jednakże, jeśli posiadasz na dysku partycje wymiany, zostaną one "
 "wykorzystane."
 
-#: help.xml:147 help.xml:670
+#: help.xml:147 help.xml:725
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -181,8 +181,8 @@ msgstr ""
 msgid "Thank you for choosing Ubuntu!"
 msgstr "Dziękujemy za wybranie Ubuntu!"
 
-#: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
-#: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
+#: help.xml:156 help.xml:253 help.xml:299 help.xml:328 help.xml:402
+#: help.xml:496 help.xml:569 help.xml:674 help.xml:730 help.xml:786
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
@@ -192,8 +192,8 @@ msgstr ""
 "\">Ctrl, F i 1</phrase> aby przejść do indeksu pomocy, albo ENTER, aby "
 "przejść do ${BOOTPROMPT}"
 
-#: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
-#: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
+#: help.xml:161 help.xml:258 help.xml:304 help.xml:333 help.xml:407
+#: help.xml:501 help.xml:574 help.xml:679 help.xml:735 help.xml:791
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
 "Naciśnij F1, aby przejść do indeksu pomocy, lub Esc, aby opuścić pomoc."
@@ -210,47 +210,75 @@ msgstr "Dostępne sposoby uruchomienia:"
 msgid "install"
 msgstr "install"
 
-#: help.xml:179
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
+#: help.xml:178 help.xml:210
+msgid "Install Ubuntu"
+msgstr ""
+
+#: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgstr "Uruchamia instalację -- jest to domyślna instalacja z ${MEDIA_TYPE}."
 
-#: help.xml:184
+#: help.xml:185
 msgid "expert"
 msgstr "expert"
 
-#: help.xml:186
+#: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
 msgstr "Uruchamia instalację w trybie eksperta, co daje największą kontrolę."
 
-#: help.xml:191
+#: help.xml:192
 msgid "cli"
 msgstr ""
 
-#: help.xml:192
+#: help.xml:193
 msgid "cli-expert"
 msgstr ""
 
-#: help.xml:194
+#: help.xml:195
 msgid "Minimal command-line system install."
 msgstr ""
 
-#: help.xml:199
+#: help.xml:200
 msgid "live"
 msgstr "live"
 
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
-msgid "Start the live system."
+msgid "Try Ubuntu without any change to your computer"
+msgstr ""
+
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
+#: help.xml:203
+msgid ""
+"Start the live system. If you wish, you can install it later using the "
+"\"Install\" icon on the desktop."
+msgstr ""
+
+#: help.xml:209
+#, fuzzy
+msgid "live-install"
+msgstr "install"
+
+#: help.xml:212
+#, fuzzy
+msgid "Start the installation."
 msgstr "Uruchamia system z płyty."
 
-#: help.xml:206
+#: help.xml:217
 msgid "memtest"
 msgstr "memtest"
 
-#: help.xml:208
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
+#: help.xml:218
+msgid "Test memory"
+msgstr ""
+
+#: help.xml:220
 msgid "Perform a memory test."
 msgstr "Wykonuje sprawdzenie pamięci RAM."
 
-#: help.xml:214 help.xml:258
+#: help.xml:226 help.xml:283
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
@@ -259,17 +287,17 @@ msgstr ""
 "polecenia uruchamiania, dodając ewentualnie za nią parametry uruchomienia. "
 "Na przykład:"
 
-#: help.xml:219
+#: help.xml:231
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr "boot: install acpi=off"
 
-#: help.xml:220
+#: help.xml:232
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
-#: help.xml:224
+#: help.xml:236
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
@@ -278,30 +306,51 @@ msgstr ""
 "żadnych parametrów, poprzez naciśnięcie klawisza Enter na głównym ekranie "
 "systemu rozruchowego."
 
-#: help.xml:242 help.xml:278
+# type: Content of: <reference><refentry><refsection><para>
+#: help.xml:241
+msgid ""
+"(\"Ubuntu\" may be replaced with other related operating system names. This "
+"help text is generic.)"
+msgstr ""
+
+# type: Content of: <reference><refentry><refsection><para>
+#: help.xml:246 help.xml:292
+msgid ""
+"To use one of these boot methods, select it from the menu with the cursor "
+"keys. Press F4 to select alternative start-up and installation modes.  Press "
+"F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
+"used boot parameters."
+msgstr ""
+
+#: help.xml:266 help.xml:312
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "ODZYSKIWANIE USZKODZONEGO SYSTEMU"
 
-#: help.xml:246
+#: help.xml:270
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
 "Poniższych metod uruchomienia możesz użyć do odratowania istniejącej "
 "instalacji"
 
-#: help.xml:250
+#: help.xml:274
 msgid "rescue"
 msgstr "rescue"
 
-#: help.xml:252
+# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
+#: help.xml:275
+msgid "Rescue a broken system"
+msgstr ""
+
+#: help.xml:277
 msgid "Boot into rescue mode."
 msgstr "Uruchamia system w trybie ratunkowym."
 
-#: help.xml:262
+#: help.xml:288
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
-#: help.xml:285
+#: help.xml:319
 msgid ""
 "There is no dedicated rescue mode on this CD. However, since the entire "
 "system runs from the CD, it is possible to use the command-line and/or "
@@ -316,53 +365,66 @@ msgstr ""
 "pomocy. W sieci dostępne są wyczerpujące porady dotyczące większośc "
 "iproblemów, które mogą spowodować nieprawidłowe uruchamianie się systemu."
 
-#: help.xml:307
+#: help.xml:341
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "Przegląd specjalnych parametrów uruchomienia"
 
-#: help.xml:314
+#: help.xml:348
 msgid "On a few systems, you may need to specify a parameter at the"
 msgstr ""
 "Na niektórych komputerach, może być konieczne podanie parametrów w linii"
 
-#: help.xml:315 help.xml:381 help.xml:469 help.xml:536
+#: help.xml:349 help.xml:422 help.xml:516 help.xml:587
 #, no-wrap
 msgid "boot:"
 msgstr "boot:"
 
-#: help.xml:315
+# type: Content of: <reference><refentry><refsection><para>
+#: help.xml:349
+msgid "prompt in order to boot the system."
+msgstr ""
+
+#: help.xml:352
+#, fuzzy
 msgid ""
-"prompt in order to boot the system. For example, Linux may not be able to "
-"autodetect your hardware, and you may need to explicitly specify its "
-"location or type for it to be recognized."
+"On a few systems, you may need to specify a parameter by pressing F6 in "
+"order to boot the system."
+msgstr ""
+"Na niektórych komputerach, może być konieczne podanie parametrów w linii"
+
+#: help.xml:356
+#, fuzzy
+msgid ""
+"For example, Linux may not be able to autodetect your hardware, and you may "
+"need to explicitly specify its location or type for it to be recognized."
 msgstr ""
 "aby można było uruchomić system. Na przykład, Linux może nie być w stanie "
 "wykryć automatycznie Twojego sprzętu i wtedy musisz podać jego lokalizację "
 "lub typ, aby mógł zostać rozpoznany."
 
-#: help.xml:321
+#: help.xml:362
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
 "Aby uzyskać więcej informacji o parametrach uruchomienia, których możesz "
 "użyć, naciśnij:"
 
-#: help.xml:329
+#: help.xml:370
 msgid "boot parameters for special machines"
 msgstr "parametry uruchomienia dla nietypowych komputerów"
 
-#: help.xml:334
+#: help.xml:375
 msgid "boot parameters for various disk controllers"
 msgstr "parametry uruchomienia dla różnych kontrolerów dysków"
 
-#: help.xml:339
+#: help.xml:380
 msgid "boot parameters understood by the install system"
 msgstr "parametry uruchomienia wykorzystywane przez program instalacyjny"
 
-#: help.xml:344
+#: help.xml:385
 msgid "boot parameters understood by the bootstrap system"
 msgstr "parametry uruchomienia wykorzystywane przez system rozruchowy"
 
-#: help.xml:349
+#: help.xml:390
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
 "for those modules cannot be given on the command line. To be prompted for "
@@ -374,7 +436,7 @@ msgstr ""
 "system zapytał o parametry modułów przed ich załadowaniem, uruchom system w "
 "trybie eksperta (patrz <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
-#: help.xml:356
+#: help.xml:397
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
@@ -382,37 +444,49 @@ msgstr ""
 "Wiele modułów jądra jest ładowanych dynamicznie przez system rozruchowy, ale "
 "parametry dla tych modułów nie mogą być podane w linii poleceń."
 
-#: help.xml:374
+#: help.xml:415
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "Specjalne parametry uruchomienia - różny sprzęt"
 
-#: help.xml:381 help.xml:469 help.xml:536
+#: help.xml:422 help.xml:516 help.xml:587
 msgid "You can use the following boot parameters at the"
 msgstr "Możesz użyć następujących parametrów uruchomienia w linii"
 
-#: help.xml:382
+#: help.xml:423 help.xml:517 help.xml:588
 msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>). If you use hex numbers you have to use the "
-"0x prefix (e.g., 0x300)."
+"\"><keycap>F3</keycap></link>)."
 msgstr ""
 ", w połączeniu z metodą uruchomienia (patrz <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>). Jeśli używasz liczb szesnastkowych, musisz użyć przedrostka "
-"0x (np., 0x300)."
+"keycap></link>)."
 
-#: help.xml:389 help.xml:476
+#: help.xml:427 help.xml:521 help.xml:592
+#, fuzzy
+msgid ""
+"You can use the following boot parameters by pressing F6, in combination "
+"with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
+msgstr ""
+", w połączeniu z metodą uruchomienia (patrz <link linkend=\"F3\"><keycap>F3</"
+"keycap></link>)."
+
+# type: Content of: <reference><refentry><refsection><para>
+#: help.xml:431
+msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
+msgstr ""
+
+#: help.xml:436 help.xml:527
 msgid "HARDWARE"
 msgstr "Sprzęt"
 
-#: help.xml:390 help.xml:477
+#: help.xml:437 help.xml:528
 msgid "PARAMETER TO SPECIFY"
 msgstr "Parametr"
 
-#: help.xml:393
+#: help.xml:440
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1 lub ValuePoint (dysk IDE)"
 
-#: help.xml:394
+#: help.xml:441
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
@@ -420,27 +494,27 @@ msgstr ""
 "<userinput>hd=<replaceable>cylindry</replaceable>,<replaceable>głowice</"
 "replaceable>,<replaceable>sektory</replaceable></userinput>"
 
-#: help.xml:398
+#: help.xml:445
 msgid "Some IBM ThinkPads"
 msgstr "Niektóre komputery IBM ThinkPad"
 
-#: help.xml:399
+#: help.xml:446
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
 msgstr ""
 
-#: help.xml:403
+#: help.xml:450
 msgid "IBM Pentium Microchannel"
 msgstr "IBM Pentium Microchannel"
 
-#: help.xml:404
+#: help.xml:451
 msgid "<userinput>mca-pentium no-hlt</userinput>"
 msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
-#: help.xml:408
+#: help.xml:455
 msgid "Protect I/O port regions"
 msgstr "Ochrona zakresów portów I/O"
 
-#: help.xml:409
+#: help.xml:456
 msgid ""
 "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
@@ -450,41 +524,41 @@ msgstr ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 
-#: help.xml:413
+#: help.xml:460
 msgid "Workaround faulty FPU (old machines)"
 msgstr "Ominięcie niesprawnych FPU (stare komputery)"
 
-#: help.xml:414
+#: help.xml:461
 msgid "<userinput>no387</userinput>"
 msgstr "<userinput>no387</userinput>"
 
-#: help.xml:418
+#: help.xml:465
 msgid "Laptops with screen display problems"
 msgstr "Laptopy z problemami wyświetlania na konsoli"
 
-#: help.xml:419
+#: help.xml:466
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-#: help.xml:423
+#: help.xml:470
 msgid "Use first serial port at 9600 baud"
 msgstr ""
 
-#: help.xml:424
+#: help.xml:471
 #, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>no387</userinput>"
 
-#: help.xml:428
+#: help.xml:475
 msgid "Force use of generic IDE driver"
 msgstr ""
 
-#: help.xml:429
+#: help.xml:476
 #, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
-#: help.xml:434
+#: help.xml:481
 msgid ""
 "If you experience lockups or other hardware failures, disable buggy APIC "
 "interrupt routing"
@@ -492,41 +566,33 @@ msgstr ""
 "Jeśli zauważysz zawieszenia systemu lub inne błędy sprzętowe, wyłącz "
 "niepoprawne przekierowanie przerwać w APIC"
 
-#: help.xml:437
+#: help.xml:484
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-#: help.xml:441 help.xml:510 help.xml:611
+#: help.xml:488 help.xml:561 help.xml:666
 msgid "For example:"
 msgstr "Na przykład:"
 
-#: help.xml:444
+#: help.xml:491
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
-#: help.xml:445
+#: help.xml:492
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
-#: help.xml:462
+#: help.xml:509
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "Specjalne parametry uruchomienia - różne napędy dysków"
 
-#: help.xml:470 help.xml:537
-msgid ""
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
-msgstr ""
-", w połączeniu z metodą uruchomienia (patrz <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
-
-#: help.xml:480
+#: help.xml:531
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
-#: help.xml:481
+#: help.xml:532
 msgid ""
 "<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>irq</replaceable></"
@@ -535,11 +601,11 @@ msgid ""
 "userinput></optional></optional></optional>"
 msgstr ""
 
-#: help.xml:485
+#: help.xml:536
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
-#: help.xml:486
+#: help.xml:537
 msgid ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>buson</replaceable>,"
@@ -547,35 +613,35 @@ msgid ""
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
 
-#: help.xml:490
+#: help.xml:541
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#: help.xml:491
+#: help.xml:542
 #, fuzzy
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
 "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (włączony jeśli niezerowe)"
 
-#: help.xml:495
+#: help.xml:546
 msgid "BusLogic SCSI Hosts"
 msgstr "Hosty SCSI BusLogic"
 
-#: help.xml:496
+#: help.xml:547
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 
-#: help.xml:500
+#: help.xml:551
 msgid "Certain DELL machines"
 msgstr "Niektóre komputery DELL"
 
-#: help.xml:501
+#: help.xml:552
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr ""
 
-#: help.xml:506
+#: help.xml:557
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
@@ -583,158 +649,158 @@ msgstr ""
 "Niniejsza lista jest niekompletna, więcej w pliku jądra kernel-parameters."
 "txt."
 
-#: help.xml:513
+#: help.xml:564
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr ""
 
-#: help.xml:514
+#: help.xml:565
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr ""
 
-#: help.xml:531
+#: help.xml:582
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "Specjalne parametry uruchomienia - program instalacyjny"
 
-#: help.xml:541
+#: help.xml:596
 msgid "These parameters control how the installer works."
 msgstr "Te parametry określają zachowanie programu instalującego system."
 
-#: help.xml:544
+#: help.xml:599
 msgid "These parameters control how the bootstrap system works."
 msgstr "Te parametry określają zachowanie programu uruchamiającego system."
 
-#: help.xml:549
+#: help.xml:604
 msgid "RESULT"
 msgstr "Działanie"
 
-#: help.xml:550
+#: help.xml:605
 msgid "PARAMETER"
 msgstr "Parametr"
 
-#: help.xml:553
+#: help.xml:608
 msgid "Verbose debugging"
 msgstr "Wyświetlanie informacji do znajdowania błędów"
 
-#: help.xml:554
+#: help.xml:609
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
 msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
-#: help.xml:558
+#: help.xml:613
 msgid "Debug boot sequence"
 msgstr "Znajdowanie błędów w sekwencji rozruchowej"
 
-#: help.xml:559
+#: help.xml:614
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
 msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
-#: help.xml:563
+#: help.xml:618
 msgid "Disable framebuffer"
 msgstr "Wyłączenie framebuffera"
 
-#: help.xml:564
+#: help.xml:619
 msgid "<userinput>fb=false</userinput>"
 msgstr ""
 
-#: help.xml:568
+#: help.xml:623
 msgid "Don't probe for USB"
 msgstr "Wyłączenie wyszukiwania USB"
 
-#: help.xml:569
+#: help.xml:624
 msgid "<userinput>debian-installer/probe/usb=false</userinput>"
 msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
 
-#: help.xml:573
+#: help.xml:628
 msgid "Don't start PCMCIA"
 msgstr "Wyłączenie uruchamiania PCMCIA"
 
-#: help.xml:574
+#: help.xml:629
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:578
+#: help.xml:633
 msgid "Force static network config"
 msgstr "Wymuszenie statycznej konfiguracji sieci"
 
-#: help.xml:579
+#: help.xml:634
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:583
+#: help.xml:638
 msgid "Set keyboard map"
 msgstr "Ustawienie mapy klawiatury"
 
-#: help.xml:584
+#: help.xml:639
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:588
+#: help.xml:643
 msgid "Use Braille tty"
 msgstr "Użyj terminala tty Braile'a"
 
-#: help.xml:589
+#: help.xml:644
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
 
-#: help.xml:593
+#: help.xml:648
 msgid "Use high contrast accessibility theme"
 msgstr ""
 
-#: help.xml:594
+#: help.xml:649
 #, fuzzy
 msgid "<userinput>theme=dark</userinput>"
 msgstr "<userinput>gdth=disable:y</userinput>"
 
-#: help.xml:598
+#: help.xml:653
 msgid "Use special tasks"
 msgstr ""
 
-#: help.xml:599
+#: help.xml:654
 #, fuzzy
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:604
+#: help.xml:659
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 "Wyłączenie ACPI dla map PCI (przydatne dla niektórych serwerów HP i "
 "komputerów opartych na Via)"
 
-#: help.xml:607
+#: help.xml:662
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:614
+#: help.xml:669
 #, fuzzy, no-wrap
 msgid "boot: install pci=noacpi"
 msgstr "boot: install acpi=off"
 
-#: help.xml:615
+#: help.xml:670
 #, fuzzy, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr "boot: live acpi=off"
 
-#: help.xml:632
+#: help.xml:687
 msgid "GETTING HELP"
 msgstr "Uzyskiwanie pomocy"
 
-#: help.xml:639
+#: help.xml:694
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "Jeśli nie możesz zainstalować systemu, nie panikuj!"
 
-#: help.xml:642
+#: help.xml:697
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "Jeśli nie możesz uruchomić systemu, nie panikuj!"
 
-#: help.xml:645
+#: help.xml:700
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Zespół Ubuntu jest gotowy, aby Ci pomóc!"
 
-#: help.xml:648
+#: help.xml:703
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -742,7 +808,7 @@ msgstr ""
 "Jesteśmy zwłaszcza zainteresowani problemami z instalacją, ponieważ "
 "zazwyczaj nie przytrafiają się tylko <emphasis>jednej</emphasis> osobie."
 
-#: help.xml:653
+#: help.xml:708
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -751,7 +817,7 @@ msgstr ""
 "ponieważ zazwyczaj nie przytrafiają się tylko <emphasis>jednej</emphasis> "
 "osobie."
 
-#: help.xml:657
+#: help.xml:712
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -763,11 +829,11 @@ msgstr ""
 "naprawienia, tak by następny użytkownik, który napotka taki sam problem, "
 "mógł wykorzystać Twoje doświadczenia!"
 
-#: help.xml:688
+#: help.xml:743
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "Prawa autorskie i gwarancje"
 
-#: help.xml:695
+#: help.xml:750
 #, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
@@ -776,11 +842,11 @@ msgstr ""
 "Prawa autorskie do Ubuntu: Copyright (C) 2004-2007 Canonical Ltd. Ubuntu "
 "zawiera wynik prac wielu autorów i współpracowników."
 
-#: help.xml:700
+#: help.xml:755
 msgid "The Ubuntu system is freely redistributable."
 msgstr "System Ubuntu można dowolnie rozpowszechniać."
 
-#: help.xml:703
+#: help.xml:758
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -790,7 +856,7 @@ msgstr ""
 "opisane w odpowiednim pliku /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 
-#: help.xml:708
+#: help.xml:763
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -800,7 +866,7 @@ msgstr ""
 "opisane w odpowiednim pliku /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 
-#: help.xml:714
+#: help.xml:769
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
@@ -808,7 +874,7 @@ msgstr ""
 "Ubuntu jest rozprowadzane <emphasis>BEZ ŻADNEJ GWARANCJI</emphasis>, w "
 "zakresie dopuszczalnym odpowiednimi prawami."
 
-#: help.xml:719
+#: help.xml:774
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
@@ -818,10 +884,19 @@ msgstr ""
 "Więcej informacji o projekcie Debian znajdziesz na stronie <ulink url="
 "\"http://www.debian.org/\" />."
 
-#: help.xml:725
+#: help.xml:780
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
 "Ten system jest oparty na Debianie. Więcej informacji o projekcie Debian "
 "znajdziesz na stronie <ulink url=\"http://www.debian.org/\" />."
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
+#~ "\"><keycap>F3</keycap></link>). If you use hex numbers you have to use "
+#~ "the 0x prefix (e.g., 0x300)."
+#~ msgstr ""
+#~ ", w połączeniu z metodą uruchomienia (patrz <link linkend=\"F3"
+#~ "\"><keycap>F3</keycap></link>). Jeśli używasz liczb szesnastkowych, "
+#~ "musisz użyć przedrostka 0x (np., 0x300)."

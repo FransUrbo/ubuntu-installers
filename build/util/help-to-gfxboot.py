@@ -195,8 +195,12 @@ def preprocess(parent):
     for node in nodelist:
         if node.nodeType == node.ELEMENT_NODE:
             if node.hasAttribute("condition"):
-                condition = node.getAttribute("condition")
-                if condition != "gfxboot" and condition != mode:
+                match = True
+                for condition in node.getAttribute("condition").split(';'):
+                    if condition != "gfxboot" and condition != mode:
+                        match = False
+                        break
+                if not match:
                     parent.removeChild(node).unlink()
                     continue
         preprocess(node)

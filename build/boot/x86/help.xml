@@ -174,20 +174,21 @@ For F10 type control and F then the digit 0
 
   <variablelist>
    <varlistentry condition="install">
-    <term>install</term>
+    <term condition="syslinux">install</term>
+    <term condition="gfxboot">Install Ubuntu</term>
     <listitem><para>
      Start the installation -- this is the default ${MEDIA_TYPE} install.
     </para></listitem>
    </varlistentry>
 
-   <varlistentry condition="install">
+   <varlistentry condition="syslinux;install">
     <term>expert</term>
     <listitem><para>
      Start the installation in expert mode, for maximum control.
     </para></listitem>
    </varlistentry>
 
-   <varlistentry condition="install">
+   <varlistentry condition="syslinux;install">
     <term>cli</term>
     <term>cli-expert</term>
     <listitem><para>
@@ -196,33 +197,56 @@ For F10 type control and F then the digit 0
    </varlistentry>
 
    <varlistentry condition="live">
-    <term>live</term>
+    <term condition="syslinux">live</term>
+    <term condition="gfxboot">Try Ubuntu without any change to your computer</term>
     <listitem><para>
-     Start the live system.
+     Start the live system. If you wish, you can install it later using the
+     "Install" icon on the desktop.
+    </para></listitem>
+   </varlistentry>
+
+   <varlistentry condition="live">
+    <term condition="syslinux">live-install</term>
+    <term condition="gfxboot">Install Ubuntu</term>
+    <listitem><para>
+     Start the installation.
     </para></listitem>
    </varlistentry>
 
    <varlistentry>
-    <term>memtest</term>
+    <term condition="syslinux">memtest</term>
+    <term condition="gfxboot">Test memory</term>
     <listitem><para>
      Perform a memory test.
     </para></listitem>
    </varlistentry>
   </variablelist>
 
-  <para>
+  <para condition="syslinux">
    To use one of these boot methods, type it at the prompt, optionally
    followed by any boot parameters. For example:
   </para>
 
-  <informalexample>
+  <informalexample condition="syslinux">
    <screen condition="install">boot: install acpi=off</screen>
    <screen condition="live">boot: live acpi=off</screen>
   </informalexample>
 
-  <para>
+  <para condition="syslinux">
    If unsure, you should use the default boot method, with no special
    parameters, by simply pressing enter at the boot prompt.
+  </para>
+
+  <para condition="gfxboot">
+   ("Ubuntu" may be replaced with other related operating system names. This
+   help text is generic.)
+  </para>
+
+  <para condition="gfxboot">
+   To use one of these boot methods, select it from the menu with the cursor
+   keys. Press F4 to select alternative start-up and installation modes.
+   Press F6 to edit boot parameters. Press F6 again to select from a menu of
+   commonly-used boot parameters.
   </para>
 
   <para condition="syslinux">
@@ -247,19 +271,29 @@ For F10 type control and F then the digit 0
 
   <variablelist>
    <varlistentry>
-    <term>rescue</term>
+    <term condition="syslinux">rescue</term>
+    <term condition="gfxboot">Rescue a broken system</term>
     <listitem><para>
      Boot into rescue mode.
     </para></listitem>
    </varlistentry>
   </variablelist>
 
-  <para>
+  <para condition="syslinux">
    To use one of these boot methods, type it at the prompt, optionally
    followed by any boot parameters. For example:
   </para>
 
-  <informalexample><screen>boot: rescue acpi=off</screen></informalexample>
+  <informalexample condition="syslinux">
+   <screen>boot: rescue acpi=off</screen>
+  </informalexample>
+
+  <para condition="gfxboot">
+   To use one of these boot methods, select it from the menu with the cursor
+   keys. Press F4 to select alternative start-up and installation modes.
+   Press F6 to edit boot parameters. Press F6 again to select from a menu of
+   commonly-used boot parameters.
+  </para>
 
   <para condition="syslinux">
    Press <phrase class="not-serial">F1</phrase><phrase class="serial">control and F then 1</phrase>
@@ -310,11 +344,18 @@ For F10 type control and F then the digit 0
  <refsection>
   <title />
 
-  <para>
+  <para condition="syslinux" class="nobreak">
    On a few systems, you may need to specify a parameter at the
-   <screen>boot:</screen> prompt in order to boot the system. For example,
-   Linux may not be able to autodetect your hardware, and you may need to
-   explicitly specify its location or type for it to be recognized.
+   <screen>boot:</screen> prompt in order to boot the system.
+  </para>
+  <para condition="gfxboot" class="nobreak">
+   On a few systems, you may need to specify a parameter by pressing F6 in
+   order to boot the system.
+  </para>
+  <para>
+   For example, Linux may not be able to autodetect your hardware, and you
+   may need to explicitly specify its location or type for it to be
+   recognized.
   </para>
 
   <para>
@@ -377,11 +418,17 @@ For F10 type control and F then the digit 0
  <refsection>
   <title />
 
-  <para>
+  <para condition="syslinux" class="nobreak">
    You can use the following boot parameters at the <screen>boot:</screen>
    prompt, in combination with the boot method (see
-   <link linkend="F3"><keycap>F3</keycap></link>). If you use hex numbers
-   you have to use the 0x prefix (e.g., 0x300).
+   <link linkend="F3"><keycap>F3</keycap></link>).
+  </para>
+  <para condition="gfxboot" class="nobreak">
+   You can use the following boot parameters by pressing F6, in combination
+   with the boot method (see <link linkend="F3"><keycap>F3</keycap></link>).
+  </para>
+  <para>
+   If you use hex numbers you have to use the 0x prefix (e.g., 0x300).
   </para>
 
   <segmentedlist class="bootparams-hardware">
@@ -438,9 +485,9 @@ For F10 type control and F then the digit 0
    </seglistitem>
   </segmentedlist>
 
-  <para>For example:</para>
+  <para condition="syslinux">For example:</para>
 
-  <informalexample>
+  <informalexample condition="syslinux">
    <screen condition="install">boot: install vga=771 noapic nolapic</screen>
    <screen condition="live">boot: live vga=771 noapic nolapic</screen>
   </informalexample>
@@ -465,10 +512,14 @@ For F10 type control and F then the digit 0
  <refsection>
   <title />
 
-  <para>
+  <para condition="syslinux">
    You can use the following boot parameters at the <screen>boot:</screen>
    prompt, in combination with the boot method (see
    <link linkend="F3"><keycap>F3</keycap></link>).
+  </para>
+  <para condition="gfxboot">
+   You can use the following boot parameters by pressing F6, in combination
+   with the boot method (see <link linkend="F3"><keycap>F3</keycap></link>).
   </para>
 
   <segmentedlist class="bootparams-disk">
@@ -507,9 +558,9 @@ For F10 type control and F then the digit 0
    for more.
   </para>
 
-  <para>For example:</para>
+  <para condition="syslinux">For example:</para>
 
-  <informalexample>
+  <informalexample condition="syslinux">
    <screen condition="install">boot: install aic7xxx.aic7xxx=no_probe</screen>
    <screen condition="live">boot: live aic7xxx.aic7xxx=no_probe</screen>
   </informalexample>
@@ -532,10 +583,14 @@ For F10 type control and F then the digit 0
  </refnamediv>
 
  <refsection>
-  <para class="nobreak">
+  <para condition="syslinux" class="nobreak">
    You can use the following boot parameters at the <screen>boot:</screen>
    prompt, in combination with the boot method (see
    <link linkend="F3"><keycap>F3</keycap></link>).
+  </para>
+  <para condition="gfxboot" class="nobreak">
+   You can use the following boot parameters by pressing F6, in combination
+   with the boot method (see <link linkend="F3"><keycap>F3</keycap></link>).
   </para>
   <para condition="install">
    These parameters control how the installer works.
@@ -608,9 +663,9 @@ For F10 type control and F then the digit 0
    </seglistitem>
   </segmentedlist>
 
-  <para>For example:</para>
+  <para condition="syslinux">For example:</para>
 
-  <informalexample>
+  <informalexample condition="syslinux">
    <screen condition="install">boot: install pci=noacpi</screen>
    <screen condition="live">boot: live pci=noacpi</screen>
   </informalexample>
