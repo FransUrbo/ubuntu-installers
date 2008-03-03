@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu31) UNRELEASED; urgency=low
+
+  * Move to 2.6.24-11 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Mar 2008 09:21:17 +0000
+
 debian-installer (20070308ubuntu30) hardy; urgency=low
 
   * Remove powerpc/cell subarchitecture altogether; support for these
