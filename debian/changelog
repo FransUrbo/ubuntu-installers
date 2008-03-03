@@ -10,6 +10,8 @@ debian-installer (20070308ubuntu31) UNRELEASED; urgency=low
   * Use <literal> rather than <screen> when referring to the boot: prompt in
     the middle of a sentence, to avoid making translators work with sentence
     fragments.
+  * Resync syslinux live CD F1 and F5 help page cross-references with
+    help.xml (thanks, Steve Langasek; LP: #151127).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Mar 2008 09:21:17 +0000
 
