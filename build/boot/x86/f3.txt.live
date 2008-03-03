@@ -3,9 +3,10 @@
 0fAvailable boot methods:07
 
 0flive07
-  Start the live system.
-0flive-expert07
-  Start the live system in expert mode, for maximum control.
+  Start the live system. If you wish, you can install it later using the
+  "Install" icon on the desktop.
+0flive-install07
+  Start the installation.
 0fmemtest07
   Perform a memory test.
 
@@ -16,7 +17,6 @@ followed by any boot parameters. For example:
 
 If unsure, you should use the default boot method, with no special
 parameters, by simply pressing enter at the boot prompt.
-
 
 
 

@@ -3,6 +3,8 @@ debian-installer (20070308ubuntu31) UNRELEASED; urgency=low
   * Move to 2.6.24-11 kernels.
   * Update help text translations from Launchpad.
   * Adjust help text to refer to gfxboot UI where appropriate (LP: #66881).
+  * Update the syslinux live CD F3 help text to talk about live-install
+    rather than live-expert.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Mar 2008 09:21:17 +0000
 
