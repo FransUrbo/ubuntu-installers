@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-03-03 11:27+0000\n"
+"POT-Creation-Date: 2008-03-03 11:30+0000\n"
 "PO-Revision-Date: 2008-02-17 19:32+0000\n"
 "Last-Translator: Alex Rocha <alexnrocha@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <pt_BR@li.org>\n"
@@ -375,18 +375,11 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "PARÂMETROS ESPECIAIS DE INICIALIZAÇÃO - VISÃO GERAL"
 
 #: help.xml:357
-msgid "On a few systems, you may need to specify a parameter at the"
+#, fuzzy
+msgid ""
+"On a few systems, you may need to specify a parameter at the <literal>boot:</"
+"literal> prompt in order to boot the system."
 msgstr "Em alguns sistemas, você precisará especificar um parâmetro na"
-
-#: help.xml:358 help.xml:431 help.xml:525 help.xml:596
-#, no-wrap
-msgid "boot:"
-msgstr "inicialização:"
-
-# type: Content of: <reference><refentry><refsection><para>
-#: help.xml:358
-msgid "prompt in order to boot the system."
-msgstr ""
 
 #: help.xml:361
 #, fuzzy
@@ -454,11 +447,9 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "PARÂMETROS ESPECIAIS DE INICIALIZAÇÃO - HARDWARE DIVERSO"
 
 #: help.xml:431 help.xml:525 help.xml:596
-msgid "You can use the following boot parameters at the"
-msgstr "Você pode usar os seguintes parâmetros de inicialização na"
-
-#: help.xml:432 help.xml:526 help.xml:597
+#, fuzzy
 msgid ""
+"You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
@@ -906,6 +897,22 @@ msgid ""
 msgstr ""
 "Este sistema é baseado no Debian. Veja <ulink url=\"http://www.debian.org/"
 "\" /> para mais detalhes e informações sobre o projeto Debian."
+
+#~ msgid "On a few systems, you may need to specify a parameter at the"
+#~ msgstr "Em alguns sistemas, você precisará especificar um parâmetro na"
+
+#~ msgid "boot:"
+#~ msgstr "inicialização:"
+
+#~ msgid "You can use the following boot parameters at the"
+#~ msgstr "Você pode usar os seguintes parâmetros de inicialização na"
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
+#~ "\"><keycap>F3</keycap></link>)."
+#~ msgstr ""
+#~ "linha de comando, em combinação com o método de inicialização (veja <link "
+#~ "linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #~ msgid ""
 #~ "prompt, in combination with the boot method (see <link linkend=\"F3"

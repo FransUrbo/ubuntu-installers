@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-03-03 11:27+0000\n"
+"POT-Creation-Date: 2008-03-03 11:30+0000\n"
 "PO-Revision-Date: 2008-02-26 20:33+0000\n"
 "Last-Translator: Lorenzo Sfarra <lorenzosfarra@ubuntu.com>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -376,20 +376,13 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "PARAMETRI DI AVVIO SPECIALI - PANORAMICA"
 
 #: help.xml:357
-msgid "On a few systems, you may need to specify a parameter at the"
+#, fuzzy
+msgid ""
+"On a few systems, you may need to specify a parameter at the <literal>boot:</"
+"literal> prompt in order to boot the system."
 msgstr ""
 "In alcuni sistemi potrebbe essere necessario specificare un parametro dalla "
 "linea di comando"
-
-#: help.xml:358 help.xml:431 help.xml:525 help.xml:596
-#, no-wrap
-msgid "boot:"
-msgstr "boot:"
-
-# type: Content of: <reference><refentry><refsection><para>
-#: help.xml:358
-msgid "prompt in order to boot the system."
-msgstr ""
 
 #: help.xml:361
 #, fuzzy
@@ -446,14 +439,15 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "PARAMETI DI AVVIO SPECIALI - VARI HARDWARE"
 
 #: help.xml:431 help.xml:525 help.xml:596
-msgid "You can use the following boot parameters at the"
-msgstr "Si possono usare i seguentu parametri di avvio nella"
-
-#: help.xml:432 help.xml:526 help.xml:597
+#, fuzzy
 msgid ""
+"You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
+"linea di comando, in combinazione con un metodo di avvio (vedi <link linkend="
+"\"F3\"><keycap>F3</keycap></link>). Se utilizzi dei numeri esadecimanli "
+"metti come prefisso 0x (ad es. 0x300)."
 
 #: help.xml:436 help.xml:530 help.xml:601
 #, fuzzy
@@ -870,3 +864,14 @@ msgid ""
 msgstr ""
 "Questo sistema e' basato su Debian. Vedi <ulink url=\"http://www.debian.org/"
 "\" /> per maggiori dettagli e informazioni sul progetto Debian."
+
+#~ msgid "On a few systems, you may need to specify a parameter at the"
+#~ msgstr ""
+#~ "In alcuni sistemi potrebbe essere necessario specificare un parametro "
+#~ "dalla linea di comando"
+
+#~ msgid "boot:"
+#~ msgstr "boot:"
+
+#~ msgid "You can use the following boot parameters at the"
+#~ msgstr "Si possono usare i seguentu parametri di avvio nella"

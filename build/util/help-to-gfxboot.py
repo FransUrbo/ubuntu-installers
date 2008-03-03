@@ -35,7 +35,7 @@ def getText(nodelist):
                                                 getText(node.childNodes))
             elif node.tagName == "ulink":
                 text += "\x11%s\x10" % node.getAttribute("url")
-            elif node.tagName == "emphasis" or node.tagName == "screen":
+            elif node.tagName in ("emphasis", "screen", "literal"):
                 text += "\x11%s\x10" % getText(node.childNodes)
             elif node.tagName == "userinput":
                 text += "\x11%s\x10" % getText(node.childNodes).rstrip("\x10")

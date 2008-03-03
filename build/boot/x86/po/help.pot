@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2008-03-03 11:27+0000\n"
+"POT-Creation-Date: 2008-03-03 11:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -383,18 +383,9 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:357
-msgid "On a few systems, you may need to specify a parameter at the"
-msgstr ""
-
-# type: Content of: <reference><refentry><refsection><para><screen>
-#: help.xml:358 help.xml:431 help.xml:525 help.xml:596
-#, no-wrap
-msgid "boot:"
-msgstr ""
-
-# type: Content of: <reference><refentry><refsection><para>
-#: help.xml:358
-msgid "prompt in order to boot the system."
+msgid ""
+"On a few systems, you may need to specify a parameter at the "
+"<literal>boot:</literal> prompt in order to boot the system."
 msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
@@ -459,12 +450,8 @@ msgstr ""
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:431 help.xml:525 help.xml:596
-msgid "You can use the following boot parameters at the"
-msgstr ""
-
-# type: Content of: <reference><refentry><refsection><para>
-#: help.xml:432 help.xml:526 help.xml:597
 msgid ""
+"You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link "
 "linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-03-03 11:27+0000\n"
+"POT-Creation-Date: 2008-03-03 11:30+0000\n"
 "PO-Revision-Date: 2008-02-15 20:29+0000\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
@@ -368,18 +368,11 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "KÄYNNISTYSPARAMETRIT - YLEISKUVAUS"
 
 #: help.xml:357
-msgid "On a few systems, you may need to specify a parameter at the"
+#, fuzzy
+msgid ""
+"On a few systems, you may need to specify a parameter at the <literal>boot:</"
+"literal> prompt in order to boot the system."
 msgstr "Joillain järjestelmillä täytyy määritellä erityisparametrejä kohdassa"
-
-#: help.xml:358 help.xml:431 help.xml:525 help.xml:596
-#, no-wrap
-msgid "boot:"
-msgstr "boot:"
-
-# type: Content of: <reference><refentry><refsection><para>
-#: help.xml:358
-msgid "prompt in order to boot the system."
-msgstr ""
 
 #: help.xml:361
 #, fuzzy
@@ -443,11 +436,9 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "KÄYNNISTYSPARAMETRIT - LAITTEISTO"
 
 #: help.xml:431 help.xml:525 help.xml:596
-msgid "You can use the following boot parameters at the"
-msgstr "Seuraavia käynnistysparametreja voidaan käyttää kohdassa"
-
-#: help.xml:432 help.xml:526 help.xml:597
+#, fuzzy
 msgid ""
+"You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
@@ -892,6 +883,23 @@ msgid ""
 msgstr ""
 "Tämä järjestelmä perustuu Debianiin. Katso <ulink url=\"http://www.debian."
 "org/\" /> saadaksesi lisätietoja Debian-projektista."
+
+#~ msgid "On a few systems, you may need to specify a parameter at the"
+#~ msgstr ""
+#~ "Joillain järjestelmillä täytyy määritellä erityisparametrejä kohdassa"
+
+#~ msgid "boot:"
+#~ msgstr "boot:"
+
+#~ msgid "You can use the following boot parameters at the"
+#~ msgstr "Seuraavia käynnistysparametreja voidaan käyttää kohdassa"
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
+#~ "\"><keycap>F3</keycap></link>)."
+#~ msgstr ""
+#~ ", yhdessä käynnistystavan kanssa (katso <link linkend=\"F3\"><keycap>F3</"
+#~ "keycap></link>)."
 
 #~ msgid ""
 #~ "prompt, in combination with the boot method (see <link linkend=\"F3"

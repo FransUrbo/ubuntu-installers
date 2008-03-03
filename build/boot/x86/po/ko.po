@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-03-03 11:27+0000\n"
+"POT-Creation-Date: 2008-03-03 11:30+0000\n"
 "PO-Revision-Date: 2008-02-26 20:32+0000\n"
 "Last-Translator: Sunjae Park <darehanl@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -371,18 +371,11 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "특수한 부팅 인자 - 개관"
 
 #: help.xml:357
-msgid "On a few systems, you may need to specify a parameter at the"
+#, fuzzy
+msgid ""
+"On a few systems, you may need to specify a parameter at the <literal>boot:</"
+"literal> prompt in order to boot the system."
 msgstr "일부 시스템에서는 특별한 부팅 인자를 입력해야 하는 경우도 있습니다."
-
-#: help.xml:358 help.xml:431 help.xml:525 help.xml:596
-#, no-wrap
-msgid "boot:"
-msgstr "boot:"
-
-# type: Content of: <reference><refentry><refsection><para>
-#: help.xml:358
-msgid "prompt in order to boot the system."
-msgstr ""
 
 #: help.xml:361
 #, fuzzy
@@ -448,12 +441,8 @@ msgstr "특수한 부팅 인자 - 다양한 하드웨어의 지원"
 
 #: help.xml:431 help.xml:525 help.xml:596
 #, fuzzy
-msgid "You can use the following boot parameters at the"
-msgstr ""
-"다음 프롬프트에서 부팅 방식과 함께 아래 부팅 인자를 사용할 수 있습니다."
-
-#: help.xml:432 help.xml:526 help.xml:597
 msgid ""
+"You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
@@ -896,6 +885,24 @@ msgid ""
 msgstr ""
 "이 시스템은 데비안 기반 시스템입니다. 데비안 프로젝트에 대해서 더 자세히 알고"
 "자 할 경우 <ulink url=\"http://www.debian.org/\" />를 참조하십시오."
+
+#~ msgid "On a few systems, you may need to specify a parameter at the"
+#~ msgstr "일부 시스템에서는 특별한 부팅 인자를 입력해야 하는 경우도 있습니다."
+
+#~ msgid "boot:"
+#~ msgstr "boot:"
+
+#, fuzzy
+#~ msgid "You can use the following boot parameters at the"
+#~ msgstr ""
+#~ "다음 프롬프트에서 부팅 방식과 함께 아래 부팅 인자를 사용할 수 있습니다."
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
+#~ "\"><keycap>F3</keycap></link>)."
+#~ msgstr ""
+#~ "프롬프트에 부팅 방식과 함께 입력하시면 됩니다(<link linkend=\"F3"
+#~ "\"><keycap>F3</keycap></link> 참조)."
 
 #, fuzzy
 #~ msgid ""

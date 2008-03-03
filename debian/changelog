@@ -7,6 +7,9 @@ debian-installer (20070308ubuntu31) UNRELEASED; urgency=low
     rather than live-expert.
   * Document "Check CD for defects" boot option (only for gfxboot, due to
     space constraints).
+  * Use <literal> rather than <screen> when referring to the boot: prompt in
+    the middle of a sentence, to avoid making translators work with sentence
+    fragments.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Mar 2008 09:21:17 +0000
 

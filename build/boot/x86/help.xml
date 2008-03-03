@@ -355,7 +355,7 @@ For F10 type control and F then the digit 0
 
   <para condition="syslinux" class="nobreak">
    On a few systems, you may need to specify a parameter at the
-   <screen>boot:</screen> prompt in order to boot the system.
+   <literal>boot:</literal> prompt in order to boot the system.
   </para>
   <para condition="gfxboot" class="nobreak">
    On a few systems, you may need to specify a parameter by pressing F6 in
@@ -428,7 +428,7 @@ For F10 type control and F then the digit 0
   <title />
 
   <para condition="syslinux" class="nobreak">
-   You can use the following boot parameters at the <screen>boot:</screen>
+   You can use the following boot parameters at the <literal>boot:</literal>
    prompt, in combination with the boot method (see
    <link linkend="F3"><keycap>F3</keycap></link>).
   </para>
@@ -522,7 +522,7 @@ For F10 type control and F then the digit 0
   <title />
 
   <para condition="syslinux">
-   You can use the following boot parameters at the <screen>boot:</screen>
+   You can use the following boot parameters at the <literal>boot:</literal>
    prompt, in combination with the boot method (see
    <link linkend="F3"><keycap>F3</keycap></link>).
   </para>
@@ -593,7 +593,7 @@ For F10 type control and F then the digit 0
 
  <refsection>
   <para condition="syslinux" class="nobreak">
-   You can use the following boot parameters at the <screen>boot:</screen>
+   You can use the following boot parameters at the <literal>boot:</literal>
    prompt, in combination with the boot method (see
    <link linkend="F3"><keycap>F3</keycap></link>).
   </para>

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-03-03 11:27+0000\n"
+"POT-Creation-Date: 2008-03-03 11:30+0000\n"
 "PO-Revision-Date: 2008-02-26 20:33+0000\n"
 "Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
 "net>\n"
@@ -363,18 +363,11 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "ŠPECIÁLNE PARAMETRE ZAVÁDZANIA - PREHĽAD"
 
 #: help.xml:357
-msgid "On a few systems, you may need to specify a parameter at the"
+#, fuzzy
+msgid ""
+"On a few systems, you may need to specify a parameter at the <literal>boot:</"
+"literal> prompt in order to boot the system."
 msgstr "Na niektorých systémoch je potrebné zadať parameter pri"
-
-#: help.xml:358 help.xml:431 help.xml:525 help.xml:596
-#, no-wrap
-msgid "boot:"
-msgstr "boot:"
-
-# type: Content of: <reference><refentry><refsection><para>
-#: help.xml:358
-msgid "prompt in order to boot the system."
-msgstr ""
 
 #: help.xml:361
 #, fuzzy
@@ -438,11 +431,9 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "ŠPECIÁLNE PARAMETRE ZAVÁDZANIA - ROZLIČNÝ HARDVÉR"
 
 #: help.xml:431 help.xml:525 help.xml:596
-msgid "You can use the following boot parameters at the"
-msgstr "Pri výzve môžete použiť nasledujúce parametre zavádzania,"
-
-#: help.xml:432 help.xml:526 help.xml:597
+#, fuzzy
 msgid ""
+"You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
@@ -862,6 +853,22 @@ msgid ""
 msgstr ""
 "Tento systém je založený na systéme Debian. Pozrite <ulink url=\"http://www."
 "debian.sk/\" /> pre viac podrobností a informácií o projekte Debian."
+
+#~ msgid "On a few systems, you may need to specify a parameter at the"
+#~ msgstr "Na niektorých systémoch je potrebné zadať parameter pri"
+
+#~ msgid "boot:"
+#~ msgstr "boot:"
+
+#~ msgid "You can use the following boot parameters at the"
+#~ msgstr "Pri výzve môžete použiť nasledujúce parametre zavádzania,"
+
+#~ msgid ""
+#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
+#~ "\"><keycap>F3</keycap></link>)."
+#~ msgstr ""
+#~ "riadku, v kombinácií s metódou zavádzania (pozrite <link linkend=\"F3"
+#~ "\"><keycap>F3</keycap></link>)."
 
 #~ msgid ""
 #~ "prompt, in combination with the boot method (see <link linkend=\"F3"
