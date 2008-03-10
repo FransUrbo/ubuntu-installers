@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2008-02-26 20:32+0000\n"
-"Last-Translator: Shushi Kurose <md81bird@hitaki.net>\n"
+"PO-Revision-Date: 2008-03-10 06:48+0000\n"
+"Last-Translator: Jun Kobayashi <kobayashi+ubuntu@junkobayashi.jp>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-03-03 09:32+0000\n"
+"X-Launchpad-Export-Date: 2008-03-10 13:56+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -36,6 +36,8 @@ msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"これは${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}のライブ${MEDIA_TYPE}です。"
+"${BUILD_DATE}に作成されました。"
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -148,6 +150,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"ライブシステムはハードディスクに領域を必要としません。ただし、もしディスク上"
+"にLinux用のスワップパーティションがあれば使用されます。"
 
 #: help.xml:147 help.xml:670
 msgid ""
@@ -214,7 +218,7 @@ msgstr ""
 
 #: help.xml:194
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "最小限のコマンドラインシステムをインストール"
 
 #: help.xml:199
 msgid "live"
