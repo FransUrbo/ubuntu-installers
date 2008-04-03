@@ -1,8 +1,8 @@
-debian-installer (20070308ubuntu35) UNRELEASED; urgency=low
+debian-installer (20070308ubuntu35) hardy; urgency=low
 
   * Update help text translations from Launchpad.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 03 Apr 2008 11:42:58 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 03 Apr 2008 11:44:25 +0100
 
 debian-installer (20070308ubuntu34) hardy; urgency=low
 
