@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-03-03 11:30+0000\n"
-"PO-Revision-Date: 2008-03-06 15:30+0000\n"
-"Last-Translator: Igor Zubarev <igor4u@gmail.com>\n"
+"PO-Revision-Date: 2008-03-24 22:06+0000\n"
+"Last-Translator: Agafonov <Dmitry@Agafonov.pp.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-03-10 13:56+0000\n"
+"X-Launchpad-Export-Date: 2008-04-03 10:20+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -30,16 +30,16 @@ msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Это установочный ${MEDIA_TYPE} для ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. Дата сборки: ${BUILD_DATE}."
+"Это установочный ${MEDIA_TYPE} ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
+"Дата сборки: ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Это live ${MEDIA_TYPE} для ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
-"Дата сборки: ${BUILD_DATE}."
+"Это живой ${MEDIA_TYPE} ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. Дата "
+"сборки: ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -71,7 +71,7 @@ msgstr "Способы загрузки для специального испо
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Дополнительные способы загрузки; восстановление системы."
+msgstr "Дополнительные способы загрузки, восстановление системы."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
@@ -103,11 +103,12 @@ msgstr "Авторские права и гарантии."
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "Нажмите клавиши F2-F10 для просмотра или ENTER для ${BOOTPROMPT}"
+msgstr "Нажмите клавиши F2-F10 для просмотра, или ENTER для ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr "Нажмите клавиши F2-F10 для просмотра, или Escape для выхода из помощи."
+msgstr ""
+"Нажмите клавиши F2-F10 для просмотра, или Escape для выхода из справки."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
@@ -142,14 +143,14 @@ msgid ""
 ">"
 msgstr ""
 "Прочтите Инструкцию по установке или FAQ для получения дополнительной "
-"информации; оба документа доступны на сайте Ubuntu, <ulink url=\"http://www."
+"информации. Оба документа доступны на сайте Ubuntu: <ulink url=\"http://www."
 "ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Для использования live-системы Ubuntu, вам потребуется как минимум 384 "
+"Для использования живой системы Ubuntu, вам потребуется как минимум 384 "
 "мегабайт оперативной памяти."
 
 #: help.xml:142
@@ -157,7 +158,7 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Live-система не требует пространства на вашем жестком диске. Однако, если "
+"Живая система не требует пространства на вашем жестком диске. Однако, если "
 "это возможно, будут использованы существующие разделы подкачки."
 
 #: help.xml:147 help.xml:734
@@ -170,7 +171,7 @@ msgstr ""
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Спасибо что вы выбрали Ubuntu!"
+msgstr "Спасибо, что вы выбрали Ubuntu!"
 
 #: help.xml:156 help.xml:262 help.xml:308 help.xml:337 help.xml:411
 #: help.xml:505 help.xml:578 help.xml:683 help.xml:739 help.xml:795
@@ -201,10 +202,9 @@ msgstr "Доступные способы загрузки:"
 msgid "install"
 msgstr "установить"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Установить Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -239,48 +239,45 @@ msgstr "Установка минимальной системы (командн
 msgid "live"
 msgstr "live"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "Запустить Ubuntu без установки на компьютер"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Загрузить живую систему. По желанию, вы сможете запустить установку системы "
+"с рабочего стола."
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "установить"
+msgstr "live-install"
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "Запустить live-систему."
+msgstr "Начать установку."
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:218
 msgid "Check CD for defects"
-msgstr ""
+msgstr "Проверить CD"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:220
 msgid ""
 "Check the CD for defects caused by faulty media or hardware. This may take "
 "some time."
 msgstr ""
+"Проверить CD на наличие ошибок, вызванных испорченным носителем или "
+"оборудованием. Этот процесс может занять некоторое время."
 
 #: help.xml:226
 msgid "memtest"
 msgstr "memtest"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:227
 msgid "Test memory"
-msgstr ""
+msgstr "Проверить память"
 
 #: help.xml:229
 msgid "Perform a memory test."
@@ -312,14 +309,14 @@ msgstr ""
 "Если вы не уверены, используйте стандартный метод загрузки без специальных "
 "параметров, просто нажав Enter в ответ на приглашение."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:250
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(Этот файл справки универсален. Слово \"Ubuntu\" может быть заменено именами "
+"родственных операционных систем.)"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:255 help.xml:301
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -327,6 +324,10 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Для использования одного из методов загрузки, выберите его в меню, пользуясь "
+"клавишами управлениями курсором. Нажмите F4 для выбора альтернативных "
+"режимов запуска и установки. Нажмите F6 для изменения параметров загрузки. "
+"Повторное нажатие F6 вызовет меню типовых параметров загрузки."
 
 #: help.xml:275 help.xml:321
 msgid "RESCUING A BROKEN SYSTEM"
@@ -342,10 +343,9 @@ msgstr ""
 msgid "rescue"
 msgstr "rescue"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:284
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Восстановление системы"
 
 #: help.xml:286
 msgid "Boot into rescue mode."
@@ -375,28 +375,28 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - ОБЗОР"
 
 #: help.xml:357
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
-msgstr "На некоторых системах вам может понадобиться указать параметр в"
+msgstr ""
+"Для успешного запуска на некоторых системах вам будет необходимо указать "
+"параметр загрузки в приглашении <literal>boot:</literal>."
 
 #: help.xml:361
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "На некоторых системах вам может понадобиться указать параметр в"
+msgstr ""
+"Для успешного запуска на некоторых системах вам будет необходимо указать "
+"параметр загрузки по нажатию F6."
 
 #: help.xml:365
-#, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"приглашении для загрузки системы. К примеру, Linux может автоматически не "
-"определить ваши устройства, и вам придется явно указать их местонахождение "
-"или тип для правильного определения."
+"К примеру, Linux может автоматически не определить ваши устройства, и вам "
+"придется явно указать их местонахождение или тип для правильного определения."
 
 #: help.xml:371
 msgid "For more information about what boot parameters you can use, press:"
@@ -445,28 +445,28 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - РАЗЛИЧНЫЕ УСТРОЙСТВА"
 
 #: help.xml:431 help.xml:525 help.xml:596
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"приглашении, в сочетании с методом загрузки (см. <link linkend=\"F3"
+"В приглашении <literal>boot:</literal> вы можете использовать следующие "
+"параметры, в сочетании с методом загрузки (см. <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 
 #: help.xml:436 help.xml:530 help.xml:601
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"приглашении, в сочетании с методом загрузки (см. <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"По нажатию F6 вы можете использовать следующие параметры, в сочетании с "
+"методом загрузки (см. <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:440
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"При использовании шестнадцатеричных чисел необходимо вводить префикс 0x "
+"(напр. 0x300)."
 
 #: help.xml:445 help.xml:536
 msgid "HARDWARE"
@@ -647,8 +647,8 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"Этот список не полон, для дополнительной информации смотрите файл ядра "
-"kernel-parameters.txt."
+"Этот список неполон, для дополнительной информации смотрите файл ядра kernel-"
+"parameters.txt."
 
 #: help.xml:573
 #, no-wrap
@@ -837,12 +837,11 @@ msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "АВТОРСКИЕ ПРАВА И ГАРАНТИИ"
 
 #: help.xml:759
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu охраняется авторским правом (C) 2004-2007 Canonical Ltd., и "
+"Ubuntu охраняется авторским правом (C) 2004-2008 Canonical Ltd., и "
 "объединяет труд многих других авторов и участников."
 
 #: help.xml:764
@@ -874,8 +873,8 @@ msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Ubuntu распространяется <emphasis>АБСОЛЮТНО БЕЗ ГАРАНТИИ</emphasis>, в "
-"рамках, определённых соответствующим законом."
+"Ubuntu распространяется <emphasis>БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ ГАРАНТИИ</"
+"emphasis>, в рамках, определённых соответствующим законодательством."
 
 #: help.xml:783
 msgid ""

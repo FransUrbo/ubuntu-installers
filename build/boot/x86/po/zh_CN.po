@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-03-03 11:30+0000\n"
-"PO-Revision-Date: 2008-03-06 15:31+0000\n"
-"Last-Translator: ZhengPeng Hou <zhengpeng.hou@gmail.com>\n"
+"PO-Revision-Date: 2008-03-22 21:16+0000\n"
+"Last-Translator: Tao Wei <weitao1979@gmail.com>\n"
 "Language-Team: Chinese (China) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-03-10 13:56+0000\n"
+"X-Launchpad-Export-Date: 2008-04-03 10:20+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -190,10 +190,9 @@ msgstr "可行的启动方式："
 msgid "install"
 msgstr "安装"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "安装Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -226,48 +225,42 @@ msgstr "最小化命令行系统安装。"
 msgid "live"
 msgstr "live"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "尝试Ubuntu而不对你的电脑做任何改变"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"启动 live 系统。如果你愿意，你可以以后使用桌面上的 \"安装\" 按钮来安装它。"
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "安装"
+msgstr "live-安装"
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "开始live系统"
+msgstr "开始安装。"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:218
 msgid "Check CD for defects"
-msgstr ""
+msgstr "检查 CD 是否损坏"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:220
 msgid ""
 "Check the CD for defects caused by faulty media or hardware. This may take "
 "some time."
-msgstr ""
+msgstr "检查这张 CD 是否由于媒介或者硬件造成了损坏。这将花费一些时间。"
 
 #: help.xml:226
 msgid "memtest"
 msgstr "内存测试"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:227
 msgid "Test memory"
-msgstr ""
+msgstr "检查内存"
 
 #: help.xml:229
 msgid "Perform a memory test."
@@ -299,14 +292,13 @@ msgstr ""
 "如果不确定，您应该使用默认的启动方式，不带特定的参数，当出现提示的时候，按回"
 "车键就可以了。"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:250
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(\"Ubuntu\" 可以被其它相关的操作系统名称所代替。这个帮助文本是一般的。)"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:255 help.xml:301
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -314,6 +306,9 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"要使用这些启动方法之一，在菜单上使用箭头按键来选择它。按下 F4 来选择可选的启"
+"动和安装模式。按下 F6 来编辑启动参数。再次按下 F6 来从普通使用的启动参数菜单"
+"上选择。"
 
 #: help.xml:275 help.xml:321
 msgid "RESCUING A BROKEN SYSTEM"
@@ -327,10 +322,9 @@ msgstr "用其中一个启动方式来救援一个已经存在的安装"
 msgid "rescue"
 msgstr "救援"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:284
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "恢复一个破损的系统"
 
 #: help.xml:286
 msgid "Boot into rescue mode."
@@ -358,27 +352,26 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "特定启动参数 - 综览"
 
 #: help.xml:357
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
-msgstr "某些系统，您要在如下指定参数."
+msgstr ""
+"在一些系统上，你也许需要在 <literal>boot:</literal> 提示行下指定一个参数来启"
+"动系统。"
 
 #: help.xml:361
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "某些系统，您要在如下指定参数."
+msgstr "在一些系统上，你也许需要通过按下 F6 来指定一个参数以便启动系统。"
 
 #: help.xml:365
-#, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"提示以便启动系统。例如：Linux可能不能自动探测到您的硬件，您也许需要清楚地指定"
-"它的位置或者类型使它能够被系统辨认。"
+"例如， Linux 也许不能够自动检测到你的硬件，你也许需要清楚地指定它的位置或者类"
+"型以便它能够被辨认。"
 
 #: help.xml:371
 msgid "For more information about what boot parameters you can use, press:"
@@ -422,26 +415,25 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "特定的启动参数──各式各样的硬件"
 
 #: help.xml:431 help.xml:525 help.xml:596
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"提示栏，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></link>）。"
+"你可以在 <literal>boot:</literal> 提示行下使用下列启动选项，和启动方式一起 "
+"(参考 <link linkend=\"F3\"><keycap>F3</keycap></link>)。"
 
 #: help.xml:436 help.xml:530 help.xml:601
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"提示栏，接合启动方式（参阅<link linkend=\"F3\"><keycap>F3</keycap></link>）。"
+"你可以通过按下 F6 使用下列启动参数， 和启动方式一起 (参考 <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)。"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:440
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr ""
+msgstr "如果你使用 16 进制的数字你必须使用 0x 前缀 (例如， 0x300)。"
 
 #: help.xml:445 help.xml:536
 msgid "HARDWARE"
@@ -805,13 +797,12 @@ msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "版权和担保"
 
 #: help.xml:759
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu的版权(C) 2004-2007属于Canonical有限公司，包括许多作者和贡献者所做的一"
-"切工作。"
+"Ubuntu 的版权 (C) 2004-2008 属于 Canonical 有限公司，包括许多作者和贡献者所做"
+"的一切工作。"
 
 #: help.xml:764
 msgid "The Ubuntu system is freely redistributable."

@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-03-03 11:30+0000\n"
-"PO-Revision-Date: 2008-03-07 17:53+0000\n"
-"Last-Translator: Ricardo Pérez López <ricardo@iesdonana.org>\n"
+"PO-Revision-Date: 2008-03-29 07:20+0000\n"
+"Last-Translator: Paco Molinero <paco@byasl.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-03-10 13:56+0000\n"
+"X-Launchpad-Export-Date: 2008-04-03 10:21+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -23,7 +23,7 @@ msgstr "Pantallas de ayuda del arranque del instalador"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "¡Bienvenido a ${DISTRIBUTION_NAME}!"
+msgstr "¡Bienvenido/a a ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
 msgid ""
@@ -227,10 +227,9 @@ msgstr "cli"
 msgid "cli-expert"
 msgstr "cli-expert"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr "Instalación de un sistema mínimo de línea de comandos."
+msgstr "Instalación de un sistema mínimo de línea de órdenes."
 
 #: help.xml:200
 msgid "live"
@@ -249,7 +248,6 @@ msgstr ""
 "icono 'Instalar' del escritorio."
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
 msgstr "live-install"
 
@@ -271,7 +269,7 @@ msgstr ""
 
 #: help.xml:226
 msgid "memtest"
-msgstr "memtest"
+msgstr "Test de memoria"
 
 #: help.xml:227
 msgid "Test memory"
@@ -286,8 +284,9 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"Para usar uno de esos métodos de arranque, tecléelo en boot:, seguido "
-"opcionalmente por cualquiera de los parámetros de arranque. Por ejemplo:"
+"Para usar uno de esos métodos de arranque, escríbalo en la línea de órdenes, "
+"seguido opcionalmente por cualquiera de los parámetros de arranque. Por "
+"ejemplo:"
 
 #: help.xml:240
 #, no-wrap
@@ -363,10 +362,10 @@ msgid ""
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
 "No hay un modo de rescate dedicado en este CD. Sin embargo, como el sistema "
-"completo se ejecuta desde el CD, es posible usar la línea de comandos y/o "
-"las herramientas gráficas proporcionadas para recuperar un sistema dañado, y "
-"usar un navegador web para buscar ayuda. Hay disponibles en línea muchos "
-"consejos para muchos tipos de problemas que pueden provocar que su sistema "
+"completo se ejecuta desde el CD, es posible usar la línea de órdenes o las "
+"herramientas gráficas proporcionadas para recuperar un sistema dañado, y "
+"usar un navegador web para buscar ayuda. Hay muchos consejos disponibles en "
+"línea para muchos tipos de problemas que pueden provocar que su sistema "
 "normal no se arranque correctamente."
 
 #: help.xml:350
@@ -829,7 +828,7 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"También escuchamos su problema particular y podemos distribuirle una "
+"Seguramente ya escuchamos sobre su problema particular y podemos darle una "
 "solución rápida, o bien podemos estudiar su problema y trabajar con usted en "
 "su resolución, de manera que el próximo usuario que venga con el mismo "
 "problema se beneficie de su experiencia."
@@ -876,7 +875,7 @@ msgid ""
 "permitted by applicable law."
 msgstr ""
 "Ubuntu se proporciona <emphasis>ABSOLUTAMENTE SIN NINGUNA GARANTÍA</"
-"emphasis>, con las extensiones permitidas por las leyes aplicables."
+"emphasis>, hasta donde está permitido por las leyes aplicables."
 
 #: help.xml:783
 msgid ""

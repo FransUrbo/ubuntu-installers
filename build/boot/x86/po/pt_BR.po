@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-03-03 11:30+0000\n"
-"PO-Revision-Date: 2008-03-06 15:31+0000\n"
-"Last-Translator: Alex Rocha <alexnrocha@gmail.com>\n"
+"PO-Revision-Date: 2008-03-14 20:05+0000\n"
+"Last-Translator: André Gondim <andregondim@ubuntu.com>\n"
 "Language-Team: Portuguese (Brazil) <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-03-10 13:56+0000\n"
+"X-Launchpad-Export-Date: 2008-04-03 10:20+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -202,10 +202,9 @@ msgstr "Métodos de inicialização disponíveis:"
 msgid "install"
 msgstr "instalar"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Instalar Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -238,48 +237,45 @@ msgstr "Sistema de Instalação Minima por Linha de comando"
 msgid "live"
 msgstr "live"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "Tentar o Ubunto sem nenhuma mudança no seu computador"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Iniciar o sistema Live. Se preferir, você pode instalá-lo depois utilizando "
+"o ícone \"Instalar\" no desktop."
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
 msgstr "instalar"
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "Iniciar o sistema live."
+msgstr "Iniciar a instalação"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:218
 msgid "Check CD for defects"
-msgstr ""
+msgstr "Verificar defeitos no CD"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:220
 msgid ""
 "Check the CD for defects caused by faulty media or hardware. This may take "
 "some time."
 msgstr ""
+"Verificar defeitos no CD causados por mídia ou hardware corrompido. Isto "
+"levará algum tempo."
 
 #: help.xml:226
 msgid "memtest"
 msgstr "memtest"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:227
 msgid "Test memory"
-msgstr ""
+msgstr "Teste de memória"
 
 #: help.xml:229
 msgid "Perform a memory test."
@@ -311,14 +307,14 @@ msgstr ""
 "Se não tiver certeza, use o método de inicialização padrão, sem parâmetros "
 "especiais, apenas pressionando enter na linha de comando."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:250
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(\"Ubuntu\" pode ser substituído por outros nomes de sistema operacional "
+"relacionados. Este texto de ajuda é genérico.)"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:255 help.xml:301
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -326,6 +322,10 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Para utilizar um desses métodos de boot, selecione-o do menu com as setas do "
+"teclado. Tecle F4 para selecionar a inicialização alternativa e os modos de "
+"instalação. Tecle F6 para editar os parâmetros de boot. Tecle F6 novamente "
+"para selecionar do menu dos parâmetros de boot mais usados."
 
 #: help.xml:275 help.xml:321
 msgid "RESCUING A BROKEN SYSTEM"
@@ -341,10 +341,9 @@ msgstr ""
 msgid "rescue"
 msgstr "recuperação"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:284
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Recuperar um sistema quebrado"
 
 #: help.xml:286
 msgid "Boot into rescue mode."
@@ -375,28 +374,29 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "PARÂMETROS ESPECIAIS DE INICIALIZAÇÃO - VISÃO GERAL"
 
 #: help.xml:357
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
-msgstr "Em alguns sistemas, você precisará especificar um parâmetro na"
+msgstr ""
+"Em alguns sistemas, é preciso especificar um parâmetro no prompt "
+"<literal>boot:</literal> para dar o boot no sistema."
 
 #: help.xml:361
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "Em alguns sistemas, você precisará especificar um parâmetro na"
+msgstr ""
+"Em alguns sistemas, é preciso especificar um parâmetro teclando F6 para dar "
+"o boot no sistema."
 
 #: help.xml:365
-#, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"linha de comando para iniciar o sistema. Por exemplo, o Linux pode não "
-"autodetectar seu hardware, e você pode então precisar especificar a sua "
-"localização ou tipo para que ele possa ser reconhecido."
+"Por exemplo, o Linux pode não detectar o seu hardware automaticamente, sendo "
+"necessário você especificar a sua localização ou tipo para que ele possa ser "
+"reconhecido."
 
 #: help.xml:371
 msgid "For more information about what boot parameters you can use, press:"
@@ -447,28 +447,26 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "PARÂMETROS ESPECIAIS DE INICIALIZAÇÃO - HARDWARE DIVERSO"
 
 #: help.xml:431 help.xml:525 help.xml:596
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"linha de comando, em combinação com o método de inicialização (veja <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"Você pode usar os parâmetros de boot abaixo no prompt <literal>boot:</"
+"literal>, em combinação com o método de boot (veja <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:436 help.xml:530 help.xml:601
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"linha de comando, em combinação com o método de inicialização (veja <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"Você pode usar os parâmetros de boot abaixo teclando F6 em combinação com o "
+"método de boot (veja <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:440
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr ""
+msgstr "Se você usar números hexadecimais, use o prefixo 0x (exemplo: 0x300)."
 
 #: help.xml:445 help.xml:536
 msgid "HARDWARE"

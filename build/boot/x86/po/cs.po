@@ -1,20 +1,19 @@
-# Czech translation for debian-installer
-# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the debian-installer package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# Czech messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2007-09-18 12:57+0100\n"
-"PO-Revision-Date: 2008-03-06 15:30+0000\n"
-"Last-Translator: Vojtěch Smejkal <goldfreedom@centrum.cz>\n"
-"Language-Team: Czech <cs@li.org>\n"
+"PO-Revision-Date: 2008-03-24 13:27+0000\n"
+"Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
+"Language-Team: Czech <provoz@debian.cz>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-03-10 13:56+0000\n"
+"X-Launchpad-Export-Date: 2008-04-03 10:20+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -147,6 +146,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"Live systém nevyžaduje žádné místo na vašem pevném disku. Nicméně pokud na "
+"něm existuje odkládací linuxový oddíl, tak bude použit."
 
 #: help.xml:147 help.xml:670
 msgid ""
@@ -162,20 +163,19 @@ msgstr "Děkujeme, že jste si vybrali Ubuntu!"
 
 #: help.xml:156 help.xml:229 help.xml:265 help.xml:294 help.xml:361
 #: help.xml:449 help.xml:518 help.xml:619 help.xml:675 help.xml:731
-#, fuzzy
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
 "Stiskněte <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control a F potom 1</phrase> pro obsah nápovědy, nebo ENTER k "
+"\">control a F potom 1</phrase> pro rejstřík nápovědy, nebo ENTER k "
 "${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:234 help.xml:270 help.xml:299 help.xml:366
 #: help.xml:454 help.xml:523 help.xml:624 help.xml:680 help.xml:736
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr ""
+msgstr "Stiskněte F1 pro rejstřík nápovědy, nebo Escape pro ukončení."
 
 #: help.xml:169
 msgid "BOOT METHODS"
@@ -191,7 +191,7 @@ msgstr "install"
 
 #: help.xml:179
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr ""
+msgstr "Spustit instalaci -- toto je výchozí ${MEDIA_TYPE} instalace."
 
 #: help.xml:184
 msgid "expert"
@@ -199,7 +199,7 @@ msgstr "expert"
 
 #: help.xml:186
 msgid "Start the installation in expert mode, for maximum control."
-msgstr ""
+msgstr "Spustit instalaci v expertním režimu pro maximální kontrolu."
 
 #: help.xml:191
 msgid "cli"
@@ -211,11 +211,11 @@ msgstr ""
 
 #: help.xml:194
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Minimalistická instalace systému z příkazové řádky."
 
 #: help.xml:199
 msgid "live"
-msgstr ""
+msgstr "live"
 
 #: help.xml:201
 msgid "Start the live system."
@@ -223,7 +223,7 @@ msgstr ""
 
 #: help.xml:206
 msgid "memtest"
-msgstr ""
+msgstr "memtest"
 
 #: help.xml:208
 msgid "Perform a memory test."
@@ -234,6 +234,8 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"Pro zavedení systému jedním z těchto způsobů jej vložte na vstup, případně "
+"následován zaváděcím parametrem. Například:"
 
 #: help.xml:219
 #, no-wrap
@@ -311,19 +313,19 @@ msgstr ""
 
 #: help.xml:321
 msgid "For more information about what boot parameters you can use, press:"
-msgstr ""
+msgstr "Pro více informací o dostupných zaváděcích parametrech stiskněte:"
 
 #: help.xml:329
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "zaváděcí parametry pro speciální zařízení"
 
 #: help.xml:334
 msgid "boot parameters for various disk controllers"
-msgstr ""
+msgstr "zaváděcí parametry pro různé diskové řadiče"
 
 #: help.xml:339
 msgid "boot parameters understood by the install system"
-msgstr ""
+msgstr "zaváděcí parametry, kterým rozumí instalátor"
 
 #: help.xml:344
 msgid "boot parameters understood by the bootstrap system"
@@ -336,16 +338,22 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Mnoho jaderných modulů je načteno dynamicky při instalaci a parametry pro "
+"tyto moduly nemohou být zadány skrze příkazovou řádku. Pro zadávání "
+"parametrů modulů při jejich načítání zaveďte systém v expertním režimu (viz "
+"<link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:356
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
+"Mnoho jaderných modulů je načteno dynamicky při instalaci zavaděčem systému "
+"a parametry pro tyto moduly nemohou být zadány skrze příkazovou řádku."
 
 #: help.xml:374
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr ""
+msgstr "SPECIÁLNÍ ZAVÁDĚCÍ PARAMETRY - RŮZNÝ HARDWARE"
 
 #: help.xml:381 help.xml:469 help.xml:536
 msgid "You can use the following boot parameters at the"
@@ -399,7 +407,7 @@ msgstr "<userinput>mca-pentium no-hlt</userinput>"
 
 #: help.xml:408
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "Chráněné oblasti portů I/O"
 
 #: help.xml:409
 msgid ""
@@ -410,7 +418,7 @@ msgstr ""
 
 #: help.xml:413
 msgid "Workaround faulty FPU (old machines)"
-msgstr ""
+msgstr "Obejítí vadného FPU (staré počítače)"
 
 #: help.xml:414
 msgid "<userinput>no387</userinput>"
@@ -426,7 +434,7 @@ msgstr ""
 
 #: help.xml:423
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Použít první sériový port při 9600 baudech"
 
 #: help.xml:424
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
@@ -434,7 +442,7 @@ msgstr ""
 
 #: help.xml:428
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Vynutit užití obecného IDE ovladače."
 
 #: help.xml:429
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
@@ -514,6 +522,7 @@ msgstr ""
 #: help.xml:491
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (zapnut pokud nenulový)"
 
 #: help.xml:495
 msgid "BusLogic SCSI Hosts"
@@ -537,6 +546,8 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"Tento seznam je neúplný, pro více informací zhlédněte soubor kernel-"
+"parameters.txt."
 
 #: help.xml:513
 #, no-wrap
@@ -610,7 +621,7 @@ msgstr ""
 
 #: help.xml:578
 msgid "Force static network config"
-msgstr ""
+msgstr "Vynutit statické nastavení sítě"
 
 #: help.xml:579
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
@@ -636,7 +647,7 @@ msgstr ""
 
 #: help.xml:593
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Použít vysoce kontrastní motiv"
 
 #: help.xml:594
 msgid "<userinput>theme=dark</userinput>"
@@ -654,6 +665,8 @@ msgstr ""
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
+"Zakázat ACPI pro PCI sběrnice (vhodné pro některé servery HP a zařízení "
+"založené na Via)"
 
 #: help.xml:607
 msgid "<userinput>pci=noacpi</userinput>"
@@ -683,7 +696,7 @@ msgstr ""
 
 #: help.xml:645
 msgid "The Ubuntu team is ready to help you!"
-msgstr ""
+msgstr "Ubuntu tým je připraven vám pomoci!"
 
 #: help.xml:648
 msgid ""
@@ -704,6 +717,9 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"Už jsme buď slyšeli o vašem problému a můžeme ho rychle opravit, nebo bychom "
+"jej rádi nalezli a pracovali s vámi na tom, aby další uživatel, který stane "
+"před tímtéž problémem, mohl využít vaše zkušenosti!"
 
 #: help.xml:688
 msgid "COPYRIGHTS AND WARRANTIES"
@@ -725,6 +741,8 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"Po nainstalování jsou přesné distribuční podmínky každého balíku k nalezení "
+"v souboru /usr/share/doc/<replaceable>jméno_balíku</replaceable>/copyright."
 
 #: help.xml:708
 msgid ""
@@ -732,6 +750,8 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"Po spuštění jsou přesné distribuční podmínky každého balíku k nalezení v "
+"souboru /usr/share/doc/<replaceable>jméno_balíku</replaceable>/copyright."
 
 #: help.xml:714
 msgid ""
@@ -745,9 +765,13 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
+"Tento instalační systém je založen na Debian instalátoru. Navštivte <ulink "
+"url=\"http://www.debian.org/\" /> pro více detailů o projektu Debian."
 
 #: help.xml:725
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"Tento systém je založen na Debianu. Navštivte <ulink url=\"http://www.debian."
+"org/\" /> pro více detailů o projektu Debian."

@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-03-03 11:30+0000\n"
-"PO-Revision-Date: 2008-03-06 15:30+0000\n"
-"Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
+"PO-Revision-Date: 2008-03-26 16:00+0000\n"
+"Last-Translator: Miika Metsälä <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-03-10 13:56+0000\n"
+"X-Launchpad-Export-Date: 2008-04-03 10:20+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -199,10 +199,9 @@ msgstr "Mahdolliset käynnistysvaihtoehdot:"
 msgid "install"
 msgstr "install"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Asenna Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -334,10 +333,9 @@ msgstr ""
 msgid "rescue"
 msgstr "rescue"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:284
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Pelasta rikkoutunut järjestelmä"
 
 #: help.xml:286
 msgid "Boot into rescue mode."
