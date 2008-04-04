@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu36) UNRELEASED; urgency=low
+
+  * Move to 2.6.24-15 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 04 Apr 2008 14:34:03 +0100
+
 debian-installer (20070308ubuntu35) hardy; urgency=low
 
   * Update help text translations from Launchpad.
