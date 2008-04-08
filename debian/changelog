@@ -1,3 +1,11 @@
+debian-installer (20070308ubuntu37) UNRELEASED; urgency=low
+
+  * Put fat-modules back in various cdrom, netboot, and speakup initrds
+    (removed in 20061102ubuntu1), since it was split out from
+    fs-secondary-modules again.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 08 Apr 2008 16:19:03 +0100
+
 debian-installer (20070308ubuntu36) hardy; urgency=low
 
   * Move to 2.6.24-15 kernels.
