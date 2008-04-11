@@ -1,3 +1,9 @@
+debian-installer (20070308ubuntu38) UNRELEASED; urgency=low
+
+  * Move to 2.6.24-16 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 11 Apr 2008 15:18:19 +0100
+
 debian-installer (20070308ubuntu37) hardy; urgency=low
 
   * Put fat-modules back in various cdrom, netboot, and speakup initrds
