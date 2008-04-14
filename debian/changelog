@@ -2,6 +2,7 @@ debian-installer (20070308ubuntu39) UNRELEASED; urgency=low
 
   * Remove documentation of "Check CD for defects"; even in gfxboot we don't
     have enough screen space for it.
+  * Resynchronise build/boot/x86/po4a.cfg with our real set of translations.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 14 Apr 2008 13:48:20 +0100
 
