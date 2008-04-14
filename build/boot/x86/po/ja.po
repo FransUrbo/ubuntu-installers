@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-04-14 13:48+0100\n"
-"PO-Revision-Date: 2008-03-11 00:32+0000\n"
+"PO-Revision-Date: 2008-04-14 10:36+0000\n"
 "Last-Translator: Jun Kobayashi <kobayashi+ubuntu@junkobayashi.jp>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-03 10:20+0000\n"
+"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -30,6 +30,8 @@ msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"これは、${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} の インストール "
+"${MEDIA_TYPE} です。${BUILD_DATE} に作成されました。"
 
 #: help.xml:23
 msgid ""
@@ -195,10 +197,9 @@ msgstr "利用可能なブートメソッド:"
 msgid "install"
 msgstr "install"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Ubuntuのインストール"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -229,40 +230,37 @@ msgstr "最小限のコマンドラインシステムをインストール"
 msgid "live"
 msgstr "live"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "コンピュータに変更を加えずUbuntuを試す"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"ライブシステムを起動します。起動後、デスクトップ上の「インストール」アイコン"
+"を使ってインストールすることもできます。"
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "install"
+msgstr ""
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "ライブシステムを開始します。"
+msgstr "インストールの開始"
 
 #: help.xml:228
 msgid "memtest"
 msgstr "memtest"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "メモリのテスト"
 
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr "メモリテストを実行します。"
+msgstr "メモリのテストを実行します。"
 
 #: help.xml:237 help.xml:294
 msgid ""
@@ -290,14 +288,12 @@ msgstr ""
 "よく分からなければ、ブートパラメータを入力せず、ブートプロンプトでEnterだけを"
 "押してデフォルトのブートメソッドを用いてください。"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:303
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -305,6 +301,10 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"これらの起動方法のうちひとつを使うには、カーソルキーでメニューから選んでくだ"
+"さい。F4を押すと、別の起動およびインストールモードを選択できます。F6を押す"
+"と、起動パラメータを編集できます。さらにもう一度F6を押すと、よく使われる起動"
+"パラメータをメニューから選択できます。"
 
 #: help.xml:277 help.xml:323
 msgid "RESCUING A BROKEN SYSTEM"
@@ -318,10 +318,9 @@ msgstr "インストールされたシステムを復旧するブートメソッ
 msgid "rescue"
 msgstr "rescue"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:286
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "壊れたシステムの復旧"
 
 #: help.xml:288
 msgid "Boot into rescue mode."
@@ -351,28 +350,28 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "特別なブートパラメータ - 概要"
 
 #: help.xml:359
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
-msgstr "いくつかのシステムでは、システムを起動するために"
+msgstr ""
+"ごく一部のシステムでは、正常に起動するために<literal>boot:</literal>プロンプ"
+"トにパラメータを記入する必要があります。"
 
 #: help.xml:363
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "いくつかのシステムでは、システムを起動するために"
+msgstr ""
+"ごく一部のシステムでは、正常に起動するためにF6を押してパラメータを記入する必"
+"要があります。"
 
 #: help.xml:367
-#, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"プロンプトで特別なパラメータを入力する必要があるかもしれません。たとえば、"
-"Linuxがハードウェアを自動認識できなかった場合、それが搭載されている場所や種類"
-"が認識されるよう指定する必要があるでしょう。"
+"たとえば、Linuxがハードウェアを自動認識できない場合、その場所や種類を明確に記"
+"入することが必要になる場合があります。"
 
 #: help.xml:373
 msgid "For more information about what boot parameters you can use, press:"
@@ -421,28 +420,26 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "特別なブートパラメータ - さまざまなハードウェア"
 
 #: help.xml:433 help.xml:527 help.xml:598
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"プロンプトで使うことができます。ブートメソッド (<link linkend=\"F3"
-"\"><keycap>F3</keycap></link>参照) と組み合わせて使います。"
+"以下のパラメータを、起動方法と組み合わせて<literal>boot:</literal> プロンプト"
+"で使うことができます（<link linkend=\"F3\"><keycap>F3</keycap></link>参照）。"
 
 #: help.xml:438 help.xml:532 help.xml:603
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"プロンプトで使うことができます。ブートメソッド (<link linkend=\"F3"
-"\"><keycap>F3</keycap></link>参照) と組み合わせて使います。"
+"F6を押して、各起動方法に以下の起動パラメータを組み合わせることができます"
+"（<link linkend=\"F3\"><keycap>F3</keycap></link>参照）。"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"16進数で入力する場合は、0xを前につける必要があります（0x300のように）。"
 
 #: help.xml:447 help.xml:538
 msgid "HARDWARE"
@@ -520,11 +517,11 @@ msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:486
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "強制的に標準IDEドライバを使う"
 
 #: help.xml:487
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:492
 msgid ""
@@ -641,13 +638,13 @@ msgstr "特別なブートパラメータ - インストールシステム"
 #: help.xml:607
 msgid "These parameters control how the installer works."
 msgstr ""
-"れらのパラメータは、インストールシステムがどのように動作するかをコントロール"
-"します。"
+"これらのパラメータは、インストールシステムがどのように動作するかをコントロー"
+"ルします。"
 
 #: help.xml:610
 msgid "These parameters control how the bootstrap system works."
 msgstr ""
-"れらのパラメータは、ブートストラップシステムがどのように動作するかをコント"
+"これらのパラメータは、ブートストラップシステムがどのように動作するかをコント"
 "ロールします。"
 
 #: help.xml:615
@@ -728,11 +725,11 @@ msgstr ""
 
 #: help.xml:659
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "ハイコントラスト・アクセシビリティ・テーマを使う"
 
 #: help.xml:660
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 #: help.xml:664
 msgid "Use special tasks"
@@ -740,7 +737,7 @@ msgstr ""
 
 #: help.xml:665
 msgid "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
 
 #: help.xml:670
 msgid ""
@@ -810,12 +807,13 @@ msgstr ""
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "著作権と保証"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:761
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
+"of many other original authors and contributors."
 
 #: help.xml:766
 msgid "The Ubuntu system is freely redistributable."
@@ -865,18 +863,3 @@ msgid ""
 msgstr ""
 "このシステムはDebianがベースになっています。詳細とDebianプロジェクトについて"
 "は、<ulink url=\"http://www.debian.org/\" /> を参照してください。"
-
-#~ msgid "boot:"
-#~ msgstr "boot:"
-
-#~ msgid "You can use the following boot parameters at the"
-#~ msgstr "以下のブートパラメータを、"
-
-#~ msgid ""
-#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
-#~ "\"><keycap>F3</keycap></link>). If you use hex numbers you have to use "
-#~ "the 0x prefix (e.g., 0x300)."
-#~ msgstr ""
-#~ "プロンプトで使うことができます。ブートメソッド(<link linkend=\"F3"
-#~ "\"><keycap>F3</keycap></link>参照)と組み合わせて使います。16進数を使う場合"
-#~ "は、0xを頭に付けます (例: 0x300) 。"

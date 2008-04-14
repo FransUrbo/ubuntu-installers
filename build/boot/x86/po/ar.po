@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-04-14 13:48+0100\n"
-"PO-Revision-Date: 2008-03-11 00:32+0000\n"
+"PO-Revision-Date: 2008-04-08 13:09+0000\n"
 "Last-Translator: ALAYA <alaya.zied@gmail.com>\n"
 "Language-Team: Arabic <ar@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-03 10:20+0000\n"
+"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -181,7 +181,6 @@ msgstr "طرق الإقل المتوفّرة:"
 msgid "install"
 msgstr "ثبّت"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
 msgstr ""
@@ -214,12 +213,10 @@ msgstr ""
 msgid "live"
 msgstr "حيّ"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
@@ -227,20 +224,17 @@ msgid ""
 msgstr ""
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "ثبّت"
+msgstr ""
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "إبدأ النّظام الحيّ."
+msgstr ""
 
 #: help.xml:228
 msgid "memtest"
 msgstr "اختبار الذّاكرة"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
 msgstr ""
@@ -271,14 +265,12 @@ msgid ""
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:303
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -299,7 +291,6 @@ msgstr ""
 msgid "rescue"
 msgstr "إنقاذ"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:286
 msgid "Rescue a broken system"
 msgstr ""
@@ -326,21 +317,18 @@ msgstr ""
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:359
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
@@ -385,7 +373,6 @@ msgstr ""
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:433 help.xml:527 help.xml:598
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
@@ -393,14 +380,12 @@ msgid ""
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:438 help.xml:532 help.xml:603
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
@@ -741,7 +726,6 @@ msgstr ""
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "الحقوق والتّحذيرات"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:761
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
@@ -784,6 +768,3 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-
-#~ msgid "boot:"
-#~ msgstr "إقلاع:"

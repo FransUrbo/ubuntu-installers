@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-04-14 13:48+0100\n"
-"PO-Revision-Date: 2008-03-26 16:00+0000\n"
-"Last-Translator: Miika Metsälä <Unknown>\n"
+"PO-Revision-Date: 2008-04-08 16:03+0000\n"
+"Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-03 10:20+0000\n"
+"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -231,36 +231,33 @@ msgstr "Minimaalisen komentorivijärjestelmän asennus."
 msgid "live"
 msgstr "live"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "Kokeile Ubuntua ilman muutoksia koneelle"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Käynnistää esittelytilan. Asennus voidaan käynnistää haluttaessa käyttämällä "
+"työpöydän \"Asenna\"-kuvaketta."
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "install"
+msgstr "live-install"
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "Käynnistää esittelytilan."
+msgstr "Käynnistää asennuksen."
 
 #: help.xml:228
 msgid "memtest"
 msgstr "memtest"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "Muistin tarkistus"
 
 #: help.xml:231
 msgid "Perform a memory test."
@@ -292,14 +289,14 @@ msgstr ""
 "Jos olet epävarma, valitse oletuskäynnistystapa ilman parametreja, "
 "painamalla Enter kehotteessa."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(\"Ubuntu\" voidaan korvata toisella käyttöjärjestelmän nimellä. Tämä "
+"ohjeteksti on yleinen.)"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:303
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -307,6 +304,10 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Käyttääksesi yhtä näistä valinnoista, valitse se valikosta nuolinäppäimillä. "
+"Paina F4 valitaksesi vaihtoehtoisen käynnistys- tai asennustilan. Paina F6 "
+"muokataksesi käynnistysparametreja. Paina F6 uudelleen saadaksesi valikon "
+"usein käytetyistä käynnistysparametreista."
 
 #: help.xml:277 help.xml:323
 msgid "RESCUING A BROKEN SYSTEM"
@@ -354,28 +355,29 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "KÄYNNISTYSPARAMETRIT - YLEISKUVAUS"
 
 #: help.xml:359
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
-msgstr "Joillain järjestelmillä täytyy määritellä erityisparametrejä kohdassa"
+msgstr ""
+"Muutamilla järjestelmillä täytyy kohdassa <literal>boot:</literal> "
+"määritellä jokin parametri, jotta järjestelmä käynnistyisi oikein."
 
 #: help.xml:363
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "Joillain järjestelmillä täytyy määritellä erityisparametrejä kohdassa"
+msgstr ""
+"Muutamilla järjestelmillä täytyy määritellä jokin parametri järjestelmän "
+"käynnistämiseksi oikein painamalla F6."
 
 #: help.xml:367
-#, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"järjestelmän käynnistämiseksi. Linux ei esimerkiksi välttämättä osaa "
-"tunnistaa automaattisesti laitteistoa, jolloin laitteen sijainti tai tyyppi "
-"tulee erikseen määritellä sen tunnistamiseksi."
+"Linux ei esimerkiksi välttämättä osaa tunnistaa automaattisesti laitteistoa, "
+"jolloin laitteen sijainti tai tyyppi tulee erikseen määritellä sen "
+"tunnistamiseksi."
 
 #: help.xml:373
 msgid "For more information about what boot parameters you can use, press:"
@@ -422,28 +424,27 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "KÄYNNISTYSPARAMETRIT - LAITTEISTO"
 
 #: help.xml:433 help.xml:527 help.xml:598
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-", yhdessä käynnistystavan kanssa (katso <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
+"Seuraavia käynnistysparametreja voidaan käyttää kohdassa <literal>boot:</"
+"literal> yhdessä käynnistysvalinnan kanssa (katso <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:438 help.xml:532 help.xml:603
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-", yhdessä käynnistystavan kanssa (katso <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
+"Seuraavia käynnistysparametreja voidaan käyttää painamalla F6, yhdessä "
+"käynnistysvalinnan kanssa (katso <link linkend=\"F3\"><keycap>F3</keycap></"
+"link>)."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr ""
+msgstr "Jos käytät heksadesimaalilukuja, käytä 0x-etuliitettä (esim. 0x300)."
 
 #: help.xml:447 help.xml:538
 msgid "HARDWARE"

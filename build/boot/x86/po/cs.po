@@ -7,13 +7,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-04-14 13:48+0100\n"
-"PO-Revision-Date: 2008-03-24 13:27+0000\n"
+"PO-Revision-Date: 2008-04-08 13:01+0000\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <provoz@debian.cz>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-03 10:20+0000\n"
+"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -189,7 +189,6 @@ msgstr "Dostupně metody zavádění:"
 msgid "install"
 msgstr "install"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
 msgstr ""
@@ -222,12 +221,10 @@ msgstr "Minimalistická instalace systému z příkazové řádky."
 msgid "live"
 msgstr "live"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
@@ -235,11 +232,9 @@ msgid ""
 msgstr ""
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "install"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
 msgstr ""
@@ -248,7 +243,6 @@ msgstr ""
 msgid "memtest"
 msgstr "memtest"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
 msgstr ""
@@ -283,14 +277,12 @@ msgstr ""
 "Pokud si nejste jisti, měli byste jednoduše použít výchozí zaváděcí metodu "
 "bez speciálních parametrů stisknutím enter na bootovací řádce."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:303
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -312,7 +304,6 @@ msgstr ""
 msgid "rescue"
 msgstr "zachránit"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:286
 msgid "Rescue a broken system"
 msgstr ""
@@ -345,20 +336,17 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "SPECIÁLNÍ ZAVÁDĚCÍ PARAMETRY - PŘEHLED"
 
 #: help.xml:359
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
-msgstr "Na několika málo systémech možná budete potřebovat uvést parametr v"
+msgstr ""
 
 #: help.xml:363
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "Na několika málo systémech možná budete potřebovat uvést parametr v"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
@@ -410,25 +398,18 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "SPECIÁLNÍ ZAVÁDĚCÍ PARAMETRY - RŮZNÝ HARDWARE"
 
 #: help.xml:433 help.xml:527 help.xml:598
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"řádek, v kombinaci se zaváděcí metodou (podívejte se na <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:438 help.xml:532 help.xml:603
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"řádek, v kombinaci se zaváděcí metodou (podívejte se na <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
@@ -781,7 +762,6 @@ msgstr ""
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:761
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
@@ -832,15 +812,3 @@ msgid ""
 msgstr ""
 "Tento systém je založen na Debianu. Navštivte <ulink url=\"http://www.debian."
 "org/\" /> pro více detailů o projektu Debian."
-
-#~ msgid "You can use the following boot parameters at the"
-#~ msgstr "Můžete použít následující zaváděcí parametry v"
-
-#~ msgid ""
-#~ "prompt, in combination with the boot method (see <link linkend=\"F3"
-#~ "\"><keycap>F3</keycap></link>). If you use hex numbers you have to use "
-#~ "the 0x prefix (e.g., 0x300)."
-#~ msgstr ""
-#~ "řádka, v kombinaci se zaváděcí metodou (podívejte se na <link linkend=\"F3"
-#~ "\"><keycap>F3</keycap></link>). Pokud používáte hexadecimální čísla, "
-#~ "musíte použít předponu 0x (např., 0x300)."
