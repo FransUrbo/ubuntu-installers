@@ -1,3 +1,10 @@
+debian-installer (20070308ubuntu39) UNRELEASED; urgency=low
+
+  * Remove documentation of "Check CD for defects"; even in gfxboot we don't
+    have enough screen space for it.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 14 Apr 2008 13:48:20 +0100
+
 debian-installer (20070308ubuntu38) hardy; urgency=low
 
   * Move to 2.6.24-16 kernels.

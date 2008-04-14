@@ -213,14 +213,16 @@ For F10 type control and F then the digit 0
     </para></listitem>
    </varlistentry>
 
-   <!-- syslinux doesn't have space for this -->
-   <varlistentry condition="gfxboot">
+   <!-- no space in either syslinux or gfxboot for this at the moment -->
+   <!--
+   <varlistentry>
     <term>Check CD for defects</term>
     <listitem><para>
      Check the CD for defects caused by faulty media or hardware. This may
      take some time.
     </para></listitem>
    </varlistentry>
+   -->
 
    <varlistentry>
     <term condition="syslinux">memtest</term>
