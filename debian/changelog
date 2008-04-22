@@ -1,9 +1,9 @@
-debian-installer (20070308ubuntu40) UNRELEASED; urgency=low
+debian-installer (20070308ubuntu40) hardy; urgency=low
 
   * No-change rebuild to pick up new components (choose-mirror,
     console-setup).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 22 Apr 2008 01:54:19 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 22 Apr 2008 02:02:03 +0100
 
 debian-installer (20070308ubuntu39) hardy; urgency=low
 
