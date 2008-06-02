@@ -1,3 +1,10 @@
+debian-installer (20070308ubuntu41) UNRELEASED; urgency=low
+
+  * Bump hd-media image size to 800MB so that Ubuntu ISO images fit on them
+    (LP: #225402).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 02 Jun 2008 15:27:23 +0100
+
 debian-installer (20070308ubuntu40) hardy; urgency=low
 
   * No-change rebuild to pick up new components (choose-mirror,
