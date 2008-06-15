@@ -481,6 +481,17 @@ input and output).
 </para>
 
 <para>
+For each specified console keyboard mapping the language coordinator
+should provide an equivalent X keyboard mapping. This information
+will be used to choose the correct default keyboard layout in the
+installed X environment. The &i18n-coords; will record the pairs and
+should make sure this information is passed to the X Task Force. The
+X Task Force will use this information to choose the correct default
+keyboard mapping on fresh installations based on selected console
+layout selection.
+</para>
+
+<para>
 Translators should be aware that this information is about input and
 display for the Linux console and not for the X environment. Linux
 console support is often very scarce for many languages, so this step
@@ -637,6 +648,14 @@ subscribed to the &email-debian-i18n-list; mailing list.
 The &i18n-coords; will record this information in the supported
 languages list by changing the <userinput>nlp_step</userinput> field
 value to <emphasis>mailing_list</emphasis>.
+</para>
+
+<para>
+Optionnally, translators may subscribe to the &email-debian-boot-list; which is the development mailing list for &d-i;. Topics there are more technical but will allow translators to participate more deeply in &d-i; development.
+</para>
+
+<para>
+Joining IRC channels is also a good communication method: Debian i18n contributors usually hang around on #debian-i18n on irc.debian.org while &d-i; developers join #debian-boot.
 </para>
 
 </sect1>

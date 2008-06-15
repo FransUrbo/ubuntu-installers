@@ -8,6 +8,8 @@
 # Files:
 #   sources.list.udeb / sources.list.udeb.local
 #   sources.list.deb  / sources.list.deb.local
+#   preferences.udeb.local
+#   preferences.deb.local
 #
 # Environment:
 #   APTDIR       - basename for the apt directory (default: apt.$TYPE)
@@ -44,6 +46,10 @@ if [ ! $KEYRING ]; then
 	KEYRING=/etc/apt/trusted.gpg
 fi
 
+if [ ! -e "$LOCALUDEBDIR" ]; then
+	mkdir -p "$LOCALUDEBDIR"
+fi
+
 # Set APTDIR according to type
 # debs are kept in another apt cache so only the needed Packages files
 # are downloaded and autoclean doesnt run wild.
@@ -73,10 +79,13 @@ fi
 # everything so it need not run as root.
 APT_GET="apt-get --assume-yes \
 	-o Dir::Etc::sourcelist=`pwd`/$LIST \
+	-o Dir::Etc::sourceparts=/dev/null \
+	-o Dir::Etc::Preferences=`pwd`/preferences.$TYPE.local \
 	-o Dir::State=`pwd`/$APTDIR/state \
 	-o Debug::NoLocking=true \
 	-o Dir::Cache=`pwd`/$APTDIR/cache \
 	-o Acquire::Retries=3 \
+	-o APT::Install-Recommends=false
 	-o Apt::Architecture=`dpkg-architecture -qDEB_HOST_ARCH` \
 	-o Apt::GPGV::TrustedKeyring="$KEYRING" \
 	$SECOPTS"

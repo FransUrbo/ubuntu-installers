@@ -11,7 +11,7 @@
 
 # List here any extra udebs that are not in the list file but that
 # should still be included on the system.
-#EXTRAS =
+EXTRAS ?=
 
 # This variable can be used to copy in additional files from the system
 # that is doing the build. Useful if you need to include strace, or gdb,
@@ -22,10 +22,6 @@
 # It will be loaded by the initrd-preseed udeb.
 PRESEED = 
 
-# Right now we want all d-i development and daily builds to use udebs from
-# unstable, so load the unstable.cfg. This is disabled for official builds.
-PRESEED_SUITE ?=
-
 # The library reducer to use. Can be mklibs.sh or mklibs.py.
 MKLIBS = mklibs 
 
@@ -33,13 +29,6 @@ MKLIBS = mklibs
 # "normal" sources.list. However, you can specify a mirror here to override
 # this. You can use copy:/ to use a local mirror
 #MIRROR = http://www.us.debian.org/debian
-
-# Define here if debian-installer should be built with modules from
-# stable, testing or unstable.
-SUITE ?= hardy
-
-# Archive components from which to fetch debian-installer modules.
-UDEB_COMPONENTS ?= main/debian-installer
 
 # Options to pass to dpkg when it is unpacking the udebs to create the
 # image. None should be needed, but --force-overwrite might need to be
@@ -49,8 +38,19 @@ DPKG_UNPACK_OPTIONS = --force-overwrite
 # The distribution name (e.g. "Debian").
 DISTRIBUTION_NAME := $(shell lsb_release -si)
 
+# The codename of the distribution release that should be installed by default.
+DEBIAN_RELEASE = hardy
+
 # The version of the distribution targeted by the installation images.
 DEBIAN_VERSION := $(shell lsb_release -sr)
+
+# Define here from what release (codename!) components (udebs) should be taken
+# to build debian-installer. By default this is set to 'unstable' for building
+# daily images. For official builds this is overruled in debian/rules.
+USE_UDEBS_FROM ?= hardy
+
+# Archive components from which to fetch debian-installer modules.
+UDEB_COMPONENTS ?= main/debian-installer
 
 # The date the installer is built.
 BUILD_DATE ?= $(shell date -u '+%Y%m%d-%H:%M')
@@ -78,14 +78,12 @@ TYPE = $(MEDIUM)
 LSB_DISTRIB_ID=Debian
 LSB_DISTRIB_DESCRIPTION="Debian GNU/Linux installer"
 # Inlude the build date of the installer in here.
-LSB_DISTRIB_RELEASE="4.0 (installer build $(BUILD_DATE))"
+LSB_DISTRIB_RELEASE="$(DEBIAN_VERSION) - installer build $(BUILD_DATE)"
 
-# This keyring is copied into the install image to allow d-i to verify
-# signatures of things it downloads. This is probably temporary, and it
-# will probably later move to a udeb. If your archive uses some other key,
-# you can change this.
-#KEYRING=/usr/share/keyrings/debian-archive-keyring.gpg
+# This keyring is only used to verify udeb downloads using apt. Since the
+# build process does not run as root, apt cannot read /etc/apt/trusted.gpg.
+KEYRING=/usr/share/keyrings/ubuntu-archive-keyring.gpg
 
 # All images that include cdebconf should include symbols needed by these
 # plugins.
-EXTRAUDEBS=cdebconf-newt-detect-keys
+EXTRAUDEBS=cdebconf-newt-detect-keys cdebconf-newt-entropy cdebconf-text-entropy

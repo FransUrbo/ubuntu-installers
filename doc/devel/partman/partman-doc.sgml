@@ -7,7 +7,7 @@
 </author>
 
 <copyright>
-<copyrightsummary> &copy;&nbsp;2003,2004 Anton Zinoviev </copyrightsummary>
+<copyrightsummary> &copy;&nbsp;2003,2004,2007 Anton Zinoviev </copyrightsummary>
 
 <p> This manual is free software; you may redistribute it and/or
 modify it under the terms of the GNU General Public License as
@@ -67,7 +67,7 @@ them to undo their partitioning operations.
   existing udebs and no recompilation would be required.
 
 <p> The script <file>partman</file> from the package
-<package>partman</package> opens the main partitioning menu; it may
+<package>partman-base</package> opens the main partitioning menu; it may
 look like this one:
 <example>
 +------------------+ [!!] Partition the storage devices +-----------------+
@@ -132,6 +132,20 @@ for <tt>ext2</tt>, <tt>linux-swap</tt>, <tt>fat16</tt> and
 <tt>fat32</tt>.  The package <package>partman-ext3</package> adds
 support for <tt>ext3</tt>.
 
+<chapt> Changes in partman since 2005
+
+<p> This chapter documents important changes in the sctructure of
+partman.  It is provided as a test if you need to reread some of the
+sections in this document.
+
+<list>
+<item> New directory <prgn>check.d</prgn> with some of the scripts
+formerly in <prgn>finish.d</prgn>
+<item> New directory <prgn>display.d</prgn> with different methods to
+do the partitioning (manual, automatic, etc.)
+<item> New command GET_LABEL_TYPE in parted_server
+</list>
+
 <chapt> Package interrelations
 
 <sect id="basics"> Basics
@@ -159,7 +173,7 @@ allowed to undo everything.
 keep the data structures of libparted in a daemon process and
 communicate with it in order to make changes in these data structures.
 This process is <file>/bin/parted_server</file> from the package
-<package>partman</package>.
+<package>partman-base</package>.
 
 <p> The scripts from <file>/lib/partman/init.d/</file> are executed
   before all partitioning operations.  They can be used to initialise
@@ -170,14 +184,46 @@ This process is <file>/bin/parted_server</file> from the package
   check if there is some new kernel module giving access to new still
   undiscovered device.
 
-<p> Any udeb may install a script in this directory.  For example the
-script <file>/lib/partman/init.d/30parted</file> from the package
-<package>partman</package> is responsible for running
+  <p> Any udeb may install a script in this directory.  For example
+the script <file>/lib/partman/init.d/30parted</file> from the package
+<package>partman-base</package> is responsible for running
 <prgn>parted_server</prgn>.  Notice that the scripts are prefixed by a
 two-digit number.  This number determines the order the scripts are
 executed.  If any of the scripts exit with non-zero exit code the
 partitioning will be aborted.  This means that in almost all cases
 these scripts must end with exit-code 0.
+
+<p> When the initialisation completes, the scripts from
+<file>/lib/partman/display.d</file> are executed.  These scripts are
+supposed to make the actual partitioning interactively or
+non-interactively.  The exit code <var>code</var> of these scripts is
+interpreted as follows:
+<taglist compact>
+<tag><var>code</var> = 0<item>The script did nothing, move to the next
+script in <prgn>display.d</prgn>.
+<tag>1 &lt;= <var>code</var> &lt;= 99<item>Restart the partitioning (move
+again to the first script in <prgn>display.d</prgn>).
+<tag>100 &lt;= <var>code</var> &lt;= 254<item>The script succesfuly
+partitioned the disks, do not execute the following scripts in
+<prgn>display.d</prgn>.
+<tag><var>code</var> = 255<item>Abort the partitioning.
+</taglist>
+
+<p> When the disks become ready, the scripts in
+<file>/lib/partman/check.d</file> are executed.  They have to check if
+everything is OK to proceed with commiting the changes on the disks,
+mounting file systems, etc.  For example the package
+<package>partman-target</package> installs there a script to check if
+there is a root file system.  If a script in <prgn>check.d</prgn>
+exits with non-zero exit code then the scripts in
+<prgn>display.d</prgn > are executed again and as a result the user is
+allowed to fix the partitioning.
+
+<p> The directory <prgn>check.d</prgn> is remarkable with the fact
+that some of the scripts in it are installed by non-partman packages.
+The packages for the various bootloaders (lilo, grub, palo, etc.)
+install there scripts to ensure the partitioning scheme conforms to
+their requirements.
 
 <p> While the user is modifying the partitions this happens only in
   the memory of the computer and not in the edited devices.  This is
@@ -187,11 +233,12 @@ these scripts must end with exit-code 0.
   everything.  When the user chooses to undo the scripts in the
   directory <file>/lib/partman/undo.d/</file> are executed.  Any udeb
   may install a script in this directory.  For example the script
-  <file>/lib/partman/undo.d/30parted</file> is responsible for restoring
-  the contents of the data structures of <prgn>parted_server</prgn>.
-  In most cases the scripts from <prgn>undo.d</prgn> must exit with
-  exit-code 0.  If any of the scripts exit with non-zero exit code
-  the partitioning will be aborted.
+  <file>/lib/partman/undo.d/30parted</file> is responsible for
+  restoring the contents of the data structures of
+  <prgn>parted_server</prgn>.  In most cases the scripts from
+  <prgn>undo.d</prgn> must exit with exit-code 0.  If any of the
+  scripts exit with non-zero exit code the partitioning will be
+  aborted.
 
 <p> In order to perform the editing operations on the storage devices
 (and in particular to transfer the partitions from the internal
@@ -282,7 +329,7 @@ installer.  If we want to add support to the installer say for XFS or
 UMSDOS file systems, only a few new udebs must be all that is needed.
 
 <p> In order to achieve this flexibility the package
- <package>partman</package> provides support for the so-called
+ <package>partman-base</package> provides support for the so-called
  menu-directories.  Every such a directory contains files named
  <prgn>question</prgn> and <prgn>priority</prgn>.  They contain the
  name of a Debconf template and the priority of the question
@@ -440,7 +487,7 @@ the partition tables from the internal structures of
 <file>/lib/partman/finish.d/80parted</file> stops
 <prgn>parted_server</prgn>.
 
-<p> The package <package>partman</package> installs in
+<p> The package <package>partman-base</package> installs in
 <prgn>update.d</prgn> (see <ref id="update_partitions">) a script to
 ensure that for every partition that contains some file system there
 is a file <prgn>detected_filesystem</prgn> in the directory of the
@@ -450,7 +497,7 @@ returned by <prgn>parted_server</prgn>.
 <sect> Setup <file>/target</file>
 
 <p> Without the package <package>partman-target</package> the packages
-<package>partman</package> and <package>partman-partitioning</package>
+<package>partman-base</package> and <package>partman-partitioning</package>
 provide only the regular partitioning operations.  However if the
 package <package>partman-target</package> is also unpacked then the
 user will be provided with options to choose file systems for the
@@ -623,15 +670,23 @@ ensure that for every partition that is to be used there is a file
 contents is the identifier of the type of file system under which the
 partition should be used.
 
-<chapt> <file>/lib/partman/definitions.sh</file>
+<chapt> <file>/lib/partman/lib/*</file>
 
-<p> The package <package>partman</package> contains the script
-<file>/lib/partman/definitions.sh</file>.  It defines some useful
-variables and functions.  They are documented in this chapter.
-<footnote>The script <file>/lib/partman/definitions.sh</file> became
-too long and this probably makes its sourcing slow.  Maybe it will be
-a good idea to split it into smaller pieces or even convert some of
-the functions to scripts in <file>/bin</file>.</footnote>
+<p> Various scripts in partman make use of <em>function libraries</em>:
+separate files, mostly containing shell functions, that are sourced
+by scripts so they can make use of common functions and code duplication
+can be avoided.
+
+<p> The main function library is <file>base.sh</file>, provided by
+<package>partman-base</package>.  This file is sourced by most scripts
+in partman as it defines a lot of useful variables and common functions.
+Some of these are documented in the remainder of this chapter.
+<footnote>The script <file>base.sh</file> has become somewhat too long and
+this probably makes its sourcing slow.  Although some reorganization has
+already taken place, it could be a good idea to split it up further.</footnote>
+
+<p> Other packages provide more targeted function libraries.  In most cases
+their scope and use can easily be determined from their name.
 
 <sect> Environment
 
@@ -641,7 +696,7 @@ temporary values for the variable <tt>IFS</tt>.  The function
 <prgn>restore_ifs</prgn> restores the variable <tt>IFS</tt> its
 original value.
 
-<p> The script <prgn>definitions.sh</prgn> contains also simple
+<p> The function library <prgn>base.sh</prgn> also contains simple
 reimplementations of <prgn>basename</prgn> and <prgn>dirname</prgn> so
 that busybox doesn't have to provide them.
 
@@ -811,7 +866,7 @@ removed.
 
 <p> In order to solve this difficulty every script that makes changes
 to some partition should invoke the function
-<prgn>update_partition</prgn> from <prgn>definitions.sh</prgn>.
+<prgn>update_partition</prgn> from <prgn>base.sh</prgn>.
 Synopsis:
 <example>
 update_partition <var>device_directory</var> <var>partition_id</var>
@@ -836,13 +891,13 @@ $10,... are not defined.
 
 <sect> Communication with <prgn>parted_server</prgn>
 
-<p> The package <package>partman</package> creates two FIFOs &ndash;
+<p> The package <package>partman-base</package> creates two FIFOs &ndash;
 <file>/var/lib/partman/infifo</file> and
 <file>/var/lib/partman/outfifo</file>.  <prgn>Parted_server</prgn>
 reads instructions from <prgn>infifo</prgn> and responds by writting
 to <prgn>outfifo</prgn>.  Consequently the clients write to
-<prgn>infifo</prgn> and read from <prgn>outfifo</prgn>.  The script
-<prgn>definitions.sh</prgn> contain several functions to make the
+<prgn>infifo</prgn> and read from <prgn>outfifo</prgn>.  The function
+library <prgn>base.sh</prgn> contain several functions to make the
 communication with <prgn>parted_server</prgn> easier.  Here we will
 omit the details, if you want to know the exact communication protocol
 please read how these functions are implemented.
@@ -1113,7 +1168,7 @@ close_dialog
 cd <var>device_directory</var>
 open_dialog LABEL_TYPES
 supported=$(read_list)
-end_dialog
+close_dialog
 </example>
 For the result of this command <var><tt>device_directory</tt></var> is
 irrelevant.  Despite this <var><tt>device_directory</tt></var> must be
@@ -1125,13 +1180,33 @@ $supported is a comma-separated list of the supported types.  At the
 time of writting the following types are supported: bsd, gpt, mac,
 dvh, msdos, pc98, sun and loop.
 
+<sect> Get the type of the disk label
+
+<p> Synopsis:
+<example>
+cd <var>device_directory</var>
+open_dialog GET_LABEL_TYPE
+read_line label_type
+close_dialog
+if [ "$label_type" = unknown ]; then
+    echo "The disk is unknown or it has no disk label
+          or the disk label is unknown"
+else
+    echo "The type of the disk label is:" "$label_type"
+fi
+</example>
+This command returns the type of the disk label (i.e. the partition
+table) of a disk.  It can be used to check if there is a partition
+table (if not, then it is safe to create a new partition table or to
+use the entire disk for RAID, LVM, encrypted unit, etc).
+
 <sect> Create a new empty partition table
 
 <p> Synopsis:
 <example>
 cd <var>device_directory</var>
 open_dialog NEW_LABEL <var>partition_table_type</var>
-end_dialog
+close_dialog
 </example>
 This command creates in the device a new empty partition table with
 type <var><tt>partition_table_type</tt></var>.  (Of course it won't be
@@ -1144,7 +1219,7 @@ written to the disk if you don't use the command COMMIT.)
 cd <var>device_directory</var>
 open_dialog VALID_FLAGS <var>partition_id</var>
 meaningful_flags=$(read_list)
-end_dialog
+close_dialog
 </example>
 $meaningful_flags is a comma-separated list of the flags that are
 meaningful for the partition with id
@@ -1162,7 +1237,7 @@ while { read_line flag; [ "$flag" ]; }; do
         # you may not use break here
     fi
 done
-end_dialog
+close_dialog
 </example>
 
 <sect> Getting the active flags of a partition
@@ -1172,7 +1247,7 @@ end_dialog
 cd <var>device_directory</var>
 open_dialog GET_FLAGS <var>partition_id</var>
 active_flags=$(read_list)
-end_dialog
+close_dialog
 </example>
 $active_flags is a comma-separated list of the flags of the partition
 with id <var><tt>partition_id</tt></var> that are in state 1.  This is
@@ -1190,7 +1265,7 @@ while { read_line flag; [ "$flag" ]; }; do
         # you may not use break here
     fi
 done
-end_dialog
+close_dialog
 </example>
 
 <sect> Set the flags of a partition
@@ -1203,7 +1278,7 @@ for flag in $all_flags_that_should_be_active; do
     write_line $flag
 done
 write_line NO_MORE
-end_dialog
+close_dialog
 </example>
 
 <p> If you want to denote some partition as non-bootable you can use
@@ -1234,7 +1309,7 @@ close_dialog
 cd <var>device_directory</var>
 open_dialog USES_NAMES
 read_line supported
-end_dialog
+close_dialog
 case $supported in
     yes)
         # the partition table supports partition names
@@ -1251,7 +1326,7 @@ esac
 <example>
 cd <var>device_directory</var>
 open_dialog SET_NAME <var>partition_id</var> <var>new_name</var>
-end_dialog
+close_dialog
 </example>
 After this command the name of <var><tt>partition_id</tt></var> will
 be <var><tt>new_name</tt></var>.  It is an error to use this command with
@@ -1275,7 +1350,7 @@ logger "This disk may contain up to $primaries primary partitions"
 cd <var>device_directory</var>
 open_dialog USES_EXTENDED
 read_line supported
-end_dialog
+close_dialog
 case $supported in
     yes)
         # the partition table supports extended and logical partitions
@@ -1293,7 +1368,7 @@ esac
 cd <var>device_directory</var>
 open_dialog FILE_SYSTEM_TYPES
 known_filesystems=$(read_list)
-end_dialog
+close_dialog
 </example>
 $known_filesystems is a comma-separated list of the file systems that
 are known to <prgn>parted_server</prgn>.  You probably won't need to
@@ -1306,7 +1381,7 @@ use this command.
 cd <var>device_directory</var>
 open_dialog GET_FILE_SYSTEM <var>partition_id</var>
 read_line filesystem
-end_dialog
+close_dialog
 if [ "$filesystem" = none ]; then
     # no known file system is detected
 else
@@ -1320,7 +1395,7 @@ fi
 <example>
 cd <var>device_directory</var>
 open_dialog CHANGE_FILE_SYSTEM <var>partition_id</var> <var>new_filesystem</var>
-end_dialog
+close_dialog
 </example>
 
 <p> libparted assigns every partition some file system.  This command
@@ -1339,7 +1414,7 @@ cd <var>device_directory</var>
 name_progress_bar <var>some/debconf/template</var>
 open_dialog CHECK_FILE_SYSTEM <var>partition_id</var>
 read_line result
-end_dialog
+close_dialog
 case $result in
     good)
         # The file system is in good state
@@ -1365,7 +1440,7 @@ cd <var>device_directory</var>
 name_progress_bar <var>some/debconf/template</var>
 open_dialog CREATE_FILE_SYSTEM <var>partition_id</var> <var>new_filesystem</var>
 read_line result
-end_dialog
+close_dialog
 case $result in
     OK)
         # the file system is successfuly created

@@ -486,14 +486,14 @@ Files location and access methods
 
 <para>
 This package is a <quote>regular</quote> Debian package. The
-package maintainer uses a <acronym>darcs</acronym> repository for the program development
-(the Debian package is handled in a separate <acronym>SVN</acronym> repository).
+package maintainer uses a <acronym>Mercurial</acronym> repository for the program development
+(the Debian package is handled in a separate <acronym>Mercurial</acronym> repository).
 </para>
 
 <itemizedlist>
   <listitem>
     <para>
-      Anonymous <acronym>darcs</acronym> access: <command>&darcs-aptitude;</command>
+      Anonymous <acronym>Mercurial</acronym> access: <command>&hg-aptitude;</command>
     </para>
   </listitem>
   <listitem>
@@ -879,13 +879,13 @@ Files location and access methods
 
 <para>
 This package is a <quote>regular</quote> Debian package. The
-package maintenance team uses a SVN repository to maintain
+package maintenance team uses GIT to maintain
 it. 
 </para>
 
 <itemizedlist>
 <listitem>
-Anonymous <acronym>SVN</acronym> access: <command>&svn-dpkg;</command>
+<acronym>GIT</acronym> access: &git-dpkg; (Some documentation:<ulink url="&git-dpkg-doc;">&git-dpkg-doc;</ulink>)
 </listitem>
   <listitem>
     <para>
@@ -915,7 +915,7 @@ Updating/Adding translations
 
 <para>
 Translations should be reported as bugs against the
-<classname>dpkg</classname> package or commited directly to the SVN repository. Don't forget updating the <classname>po/Changelog</classname> and <classname>debian/changelog</classname> files if you update the translations yourself by getting SVN commit access.
+<classname>dpkg</classname> package or commited directly to the GIT repository (in such case, please read maintainers' instructions at <command>&git-dpkg;</command>). Don't forget updating the <classname>po/Changelog</classname> and <classname>debian/changelog</classname> files if you update the translations yourself via GIT.
 
 </para>
 
@@ -955,7 +955,7 @@ will not be used.
 <para>
 <classname>dpkg</classname> man pages can also be translated, using
 gettext files. Please look into the <classname>man/</classname>
-directory in SVN for examples.
+directory in GIT for examples.
 </para>
 
 </sect3>

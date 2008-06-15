@@ -260,6 +260,10 @@ For F10 type control and F then the digit 0
    commonly-used boot parameters.
   </para>
 
+  <para>
+   Except in expert mode, non-critical kernel boot messages are suppressed.
+  </para>
+
   <para condition="syslinux">
    Press <phrase class="not-serial">F1</phrase><phrase class="serial">control and F then 1</phrase>
    for the help index, or ENTER to ${BOOTPROMPT}
@@ -458,18 +462,8 @@ For F10 type control and F then the digit 0
    </seglistitem>
 
    <seglistitem>
-    <seg>IBM Pentium Microchannel</seg>
-    <seg><userinput>mca-pentium no-hlt</userinput></seg>
-   </seglistitem>
-
-   <seglistitem>
     <seg>Protect I/O port regions</seg>
     <seg><userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</replaceable></userinput><optional><userinput>,<replaceable>...</replaceable></userinput></optional></seg>
-   </seglistitem>
-
-   <seglistitem>
-    <seg>Workaround faulty FPU (old machines)</seg>
-    <seg><userinput>no387</userinput></seg>
    </seglistitem>
 
    <seglistitem>
@@ -486,13 +480,36 @@ For F10 type control and F then the digit 0
     <seg>Force use of generic IDE driver</seg>
     <seg><userinput>generic.all_generic_ide=1</userinput></seg>
    </seglistitem>
+  </segmentedlist>
+
+  <para>
+   Possible (temporary) workarounds for lockups or other hardware failures:
+  </para>
+
+  <segmentedlist class="bootparams-hardware">
+   <title />
 
    <seglistitem>
-    <seg>
-     If you experience lockups or other hardware failures, disable buggy
-     APIC interrupt routing
-    </seg>
+    <seg>disable buggy APIC interrupt routing</seg>
     <seg><userinput>noapic nolapic</userinput></seg>
+   </seglistitem>
+
+   <seglistitem>
+    <seg>(partly) disable ACPI</seg>
+    <seg>
+     <userinput>acpi=noirq</userinput> or
+     <userinput>acpi=off</userinput>
+    </seg>
+   </seglistitem>
+
+   <seglistitem>
+    <seg>disable USB</seg>
+    <seg><userinput>nousb</userinput></seg>
+   </seglistitem>
+
+   <seglistitem>
+    <seg>poll for interrupts</seg>
+    <seg><userinput>irqpoll</userinput></seg>
    </seglistitem>
   </segmentedlist>
 
@@ -631,11 +648,6 @@ For F10 type control and F then the digit 0
    </seglistitem>
 
    <seglistitem condition="install">
-    <seg>Don't probe for USB</seg>
-    <seg><userinput>debian-installer/probe/usb=false</userinput></seg>
-   </seglistitem>
-
-   <seglistitem condition="install">
     <seg>Don't start PCMCIA</seg>
     <seg><userinput>hw-detect/start_pcmcia=false</userinput></seg>
    </seglistitem>
@@ -662,7 +674,7 @@ For F10 type control and F then the digit 0
 
    <seglistitem condition="install">
     <seg>Use special tasks</seg>
-    <seg><userinput>tasks="kde-desktop, standard"</userinput></seg>
+    <seg><userinput>tasks="kubuntu-desktop, standard"</userinput></seg>
    </seglistitem>
 
    <seglistitem condition="live">

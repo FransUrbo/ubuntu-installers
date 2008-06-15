@@ -38,24 +38,30 @@
 -->
 
 <!DOCTYPE language_entries [ <!ELEMENT language_entries (language_entry+)>
-		<!ELEMENT language_entry EMPTY> <!ATTLIST language_entry
-		code CDATA	#IMPLIED code3 CDATA	#IMPLIED
-		english_name CDATA	#REQUIRED coord_name CDATA
-		#REQUIRED coord_email CDATA	#REQUIRED coord_gpg CDATA
-		#IMPLIED coord_account CDATA	#IMPLIED bkp_coord_name
-		CDATA	#IMPLIED bkp_coord_email CDATA	#IMPLIED
-		bkp_coord_gpg CDATA	#IMPLIED bkp_coord_account
-		CDATA	#IMPLIED manual_coord_name	CDATA	#IMPLIED
-	manual_coord_email	CDATA	#IMPLIED
-		manual_coord_account	CDATA	#IMPLIED 
-		team_email CDATA #IMPLIED 
-		team_repository CDATA	#IMPLIED 
-		supported ( potato | woody | sarge | etch_beta1| etch_beta2 | etch_beta3 | etch_rc1 | etch | false ) #REQUIRED 
-		nlp_step ( initial | identification | locale | language_name | localechooser_entry | needed_characters | ttf_font | keymap | account | commit | tools | mailing_list | announce | prospective | contact_lost )	#IMPLIED 
-		speakers CDATA	#IMPLIED
-		speakers_corr CDATA	#IMPLIED
+		<!ELEMENT language_entry EMPTY>
+		 <!ATTLIST language_entry
+		code CDATA #IMPLIED 
+		code3 CDATA #IMPLIED
+		english_name CDATA #REQUIRED
+		coord_name CDATA #REQUIRED
+		coord_email CDATA #REQUIRED
+		coord_gpg CDATA #IMPLIED
+		coord_account CDATA #IMPLIED
+		bkp_coord_name CDATA #IMPLIED
+		bkp_coord_email CDATA #IMPLIED
+		bkp_coord_gpg CDATA #IMPLIED
+		bkp_coord_account CDATA	#IMPLIED
+		manual_coord_name CDATA #IMPLIED
+		manual_coord_email CDATA #IMPLIED
+		manual_coord_account CDATA #IMPLIED 
+		team_email CDATA #IMPLIED
+		team_repository CDATA #IMPLIED 
+		supported ( potato | woody | sarge | etch | lenny_beta1 | lenny_beta2 | lenny | false ) #REQUIRED 
+		nlp_step ( initial | identification | locale | language_name | localechooser_entry | needed_characters | ttf_font | keymap | account | commit | tools | mailing_list | announce | prospective | contact_lost )	#IMPLIED
+		speakers CDATA #IMPLIED
+		speakers_corr CDATA #IMPLIED
 		countries_official CDATA #IMPLIED 
-		countries_most_spoken CDATA	#IMPLIED > ]>
+		countries_most_spoken CDATA #IMPLIED > ]>
 
 <language_entries>
 	<language_entry
@@ -73,8 +79,8 @@
 		manual_coord_email=""
 		team_email="ubuntu-l10n-am@lists.ubuntu.com"
 		team_repository=""
-		supported="false"
-		nlp_step="prospective"
+		supported="lenny_beta1"
+		nlp_step=""
 		speakers="17417913"
 		speakers_corr="45000000"
 	      countries_official="ET"
@@ -108,11 +114,12 @@
 		coord_name="Andrei Darashenka"
 		coord_email="adorosh2@it.org.by"
 		coord_account="adorosh-guest"
-		bkp_coord_name="Hleb Rubanau"
-		bkp_coord_email="g.rubanau@gmail.com"
+		bkp_coord_name="Hleb Rubanau,Pavel Piatruk"
+		bkp_coord_email="g.rubanau@gmail.com,berserker@neolocation.com"
+		bkp_coord_account="berserker-guest"
 		manual_coord_name=""
 		manual_coord_email=""
-		team_email=""
+		team_email="be@d-i.tanatos.org."
 		team_repository=""
 		nlp_step=""
 		supported="etch"
@@ -155,7 +162,7 @@
 		manual_coord_email=""
 		team_email=""
 		team_repository=""
-		supported="etch_beta3"
+		supported="etch"
                 nlp_step=""
 		speakers="171070202"
 		speakers_corr="189000000"
@@ -217,7 +224,8 @@
 		team_repository=""
 		speakers="0"
 		speakers_corr="0"
-                nlp_step="mailing_list"
+                nlp_step="prospective"
+		supported="false"
 	      countries_official=""
 	      countries_most_spoken=""
 		/>
@@ -316,7 +324,7 @@
 		manual_coord_email=""
 		team_email=""
 		team_repository=""
-		supported="etch_beta3"
+		supported="etch"
 		nlp_step=""
 		speakers="133009"
 		speakers_corr="530000"
@@ -414,7 +422,7 @@
 		manual_coord_email=""
 		team_email=""
 		team_repository=""
-		supported="etch_beta1"
+		supported="etch"
 		speakers="1075497"
 		speakers_corr="1075497"
 	      countries_official="EE"
@@ -544,11 +552,11 @@
 		code="gu"
 		code3="guj"
 	  english_name="Gujarati"
-		coord_name="Kartik Mistry"
+		coord_name="Katik Mistry"
 		coord_email="kartik.mistry@gmail.com"
 		coord_account="kartikm-guest"
 		team_email="http://www.utkarsh.org"
-		supported="etch_rc1"
+		supported="etch"
 		speakers="46106136"
 		speakers_corr="46106136"
 	      countries_official="IN"
@@ -588,7 +596,7 @@
 		manual_coord_email=""
 		team_email="debian-in-workers@lists.alioth.debian.org"
 		team_repository=""
-		supported="etch_beta3"
+		supported="etch"
                 nlp_step=""
 		speakers="180764791"
 		speakers_corr="180764791"
@@ -633,6 +641,26 @@
 		speakers_corr="13611600"
 	      countries_official="HUYUSI"
 	      countries_most_spoken="HU"
+		/>
+	<language_entry
+		code="hy"
+		code3="hye"
+		english_name="Armenian"
+		coord_name="Vardan Gevorgyan"
+		coord_email="vardangevorgyan@yahoo.com"
+		coord_account=""
+		bkp_coord_name=""
+		bkp_coord_email=""
+		manual_coord_name=""
+		manual_coord_email=""
+		team_email=""
+		team_repository=""
+		supported="false"
+                nlp_step="prospective"    
+		speakers="6723840"
+		speakers_corr="6723840"
+	      countries_official="AM"
+	      countries_most_spoken="AM"
 		/>
 	<language_entry
 		code="id"
@@ -768,7 +796,7 @@
 		manual_coord_email=""
 		team_email="khos-discuss@forum.org.kh"
 		team_repository=""
-		supported="etch_beta3"
+		supported="etch"
 		nlp_step=""
 		speakers="13276639"
 		speakers_corr="13276639"
@@ -779,18 +807,19 @@
 		code="kn"
 		code3="kan"
 		english_name="Kannada"
-		coord_name="Thejesh G Nagarathna"
-		coord_email="thej@techmag.biz"
-		coord_account="thej-guest"
-		bkp_coord_name=",,Manu Aradhya"
-		bkp_coord_email="niranjansm@gmail.com, vincentvikram@gmail.com,manu_aradhya@yahoo.co.in"
-		team_email="http://sampada.net/kannada-l10n/"
+		bkp_coord_name="Thejesh G Nagarathna"
+		bkp_coord_email="thej@techmag.biz"
+		bkp_coord_account="thej-guest"
+		coord_name="Vikram Vincent"
+		coord_email="vincentvikram@swatantra.org"
+		account="vincent-guest"
+		team_email="debian-l10n-kannada@lists.debian.org"
 		supported="false"
-		nlp_step="account"
+		nlp_step="prospective"
 	  speakers="35346000"
 		speakers_corr="35346000"
 	      countries_official="IN"
-	      countries_most_spoken=""
+	      countries_most_spoken="IN"
                 />
 	<language_entry
 		code="ko"
@@ -814,6 +843,24 @@
 	      countries_most_spoken="KRKP"
 		/>
 	<language_entry
+		code="ks"
+		code3="kas"
+		english_name="Kashmiri"
+		coord_name="Rakesh Pandit"
+		coord_email="rakesh.pandit@gmail.com"
+		coord_account=""
+		bkp_coord_name=""
+		bkp_coord_email=""
+		bkp_coord_account=""
+		team_email=""
+		supported="false"
+		nlp_step="prospective"
+		speakers="4611000"
+		speakers_corr="4611000"
+		countries_official="IN"
+		countries_most_spoken="IN"
+                />
+	<language_entry
 		code="ku"
 		code3="kmr"
 		english_name="Kurdish"
@@ -822,7 +869,7 @@
 		coord_account="erdal-guest"
 		team_email="gnu-ku-wergerandin@lists.sourceforge.net"
 		team_repository=""
-		supported="etch_beta1"
+		supported="etch"
 		speakers="15825505"
 		speakers_corr="25000000"
 	      countries_official=""
@@ -842,7 +889,7 @@
 		team_email=""
 		team_repository=""
 		supported="false"
-		nlp_step="account"
+		nlp_step="prospective"
 		speakers="3188577"
 		speakers_corr="3188577"
 	      countries_official="LA"
@@ -875,8 +922,8 @@
 		coord_email="aigarius@debian.org"
 		coord_account="aigarius"
 		coord_gpg="0x67209BDE"
-		bkp_coord_name="Raivis Dejus"
-		bkp_coord_email="orvils@gmail.com"
+		bkp_coord_name="Raivis Dejus,Viesturs Zarins"
+		bkp_coord_email="orvils@gmail.com,viesturs.zarins@mii.lu.lv"
 		manual_coord_name=""
 		manual_coord_email=""
 		team_email=""
@@ -920,7 +967,7 @@
 		manual_coord_email=""
 		team_email=""
 		team_repository=""
-		supported="etch_beta1"
+		supported="etch"
 		speakers="1598247"
 		speakers_corr="1598247"
 	      countries_official="MK"
@@ -930,13 +977,13 @@
 		code="ml"
 		code3="mal"
 		english_name="Malayalam"
-		coord_name="Vivek Varghese Cherian"
-		coord_email="vivekvc@riseup.net"
-		coord_account="vivekvc-guest"
+		bkp_coord_name="Vivek Varghese Cherian"
+		bkp_coord_email="vivekvc@riseup.net"
+		bkp_coord_account="vivekvc-guest"
 		coord_gpg="0x49564AFE"
-		bkp_coord_name="Praveen Arimbrathodiyil"
-		bkp_coord_email="pravi.a@gmail.com"
-		bkp_coord_account="pravi-guest"
+		coord_name="Praveen Arimbrathodiyil"
+		coord_email="pravi.a@gmail.com"
+		coord_account="pravi-guest"
 		manual_coord_name=""
 		manual_coord_email=""
 		team_email="smc-discuss@googlegroups.com"
@@ -962,8 +1009,8 @@
 		manual_coord_name=""
 		manual_coord_email=""
 		team_repository=""
-		nlp_step="prospective"
-		supported="false"
+		supported="lenny_beta2"
+		nlp_step=""
 		speakers="68049787"
 		speakers_corr="90000000"
 	      countries_official="IN"
@@ -1023,7 +1070,7 @@
 		manual_coord_email=""
 		team_email="ganesh@mpp.org.np"
 		team_repository=""
-		supported="etch_beta3"
+		supported="etch"
 		speakers="17209255"
 		speakers_corr="17209255"
 	      countries_official="NP"
@@ -1084,7 +1131,7 @@
 		manual_coord_email=""
 		team_email="punlinux-i18n@lists.sourceforge.net"
 		team_repository=""
-		supported="etch_beta3"
+		supported="etch"
               nlp_step=""
 		speakers="28006704"
 		speakers_corr="28006704"
@@ -1193,7 +1240,7 @@
 		code="sa"
 		code3="san"
 		english_name="Sanskrit"
-		coord_name="svaksha"
+		coord_name="Vidya Ayer"
 		coord_email="svaksha@gmail.com"
 		coord_account="svaksha-guest"
 		bkp_coord_name="Nishant Sharma"
@@ -1225,6 +1272,26 @@
                 speakers="21000"
                 speakers_corr="21000"
               countries_official="NOSEFI"
+              countries_most_spoken=""
+                />
+        <language_entry
+                code="shs"
+                code3="shs"
+                english_name="Shuswap"
+                coord_name="Neskie Manuel"
+                coord_email="neskiem@gmail.com"
+		coord_account=""
+                bkp_coord_name=""
+                bkp_coord_email=""
+                manual_coord_name=""
+                manual_coord_email=""
+                team_email=""
+                team_repository=""
+		supported="false"
+                nlp_step="prospective"    
+                speakers="500"
+                speakers_corr="500"
+              countries_official=""
               countries_most_spoken=""
                 />
 	<language_entry
@@ -1317,7 +1384,7 @@
 		bkp_coord_name="Jayaradha,Muguntharaj,Damodharan Rajalingam"
 		bkp_coord_email="njayaradha@yahoo.com,mugunth@gmail.com,psg_01l109@yahoo.co.in"
 		team_email="tamilinix@yahoogroups.com"
-		supported="etch_beta3"
+		supported="etch"
 		nlp_step=""
 		speakers="66020200"
 		speakers_corr="66020200"
@@ -1352,8 +1419,8 @@
 		coord_account="thep-guest"
 		bkp_coord_name="Isriya Paireepairit"
 		bkp_coord_email="markpeak@gmail.com"
-		team_email="l10n@opentle.org"
-		supported="etch_beta3"
+		team_email="thai-l10n@googlegroups.com"
+		supported="etch"
 		nlp_step=""
 	  speakers="46200000"
 		speakers_corr="64865523"
@@ -1373,7 +1440,7 @@
 		manual_coord_email=""
 		team_email="debian-tl@banwa.upm.edu.ph"
 		team_repository=""
-		supported="etch_beta1"
+		supported="etch"
 		speakers="15900098"
 		speakers_corr="15900098"
 	      countries_official="PH"
@@ -1386,8 +1453,9 @@
 		coord_name="Recai Oktas"
 		coord_email="roktas@omu.edu.tr"
 		coord_account="roktas-guest"
-		bkp_coord_name="Murat Demirten, Osman Yuksel,Erçin EKER"
-		bkp_coord_email="murat@debian.org,yuxel@sonsuzdongu.com,erc.caldera@gmx.net"
+		bkp_coord_name="Murat Demirten, Osman Yuksel,Erçin EKER,Mert Dirik"
+		bkp_coord_email="murat@debian.org,yuxel@sonsuzdongu.com,erc.caldera@gmx.net,mertdirik@gmail.com"
+		bkp_coord_account="tejas-guest"
 		manual_coord_name=""
 		manual_coord_email=""
 		team_email="debian-l10n-turkish@lists.debian.org"
@@ -1450,9 +1518,9 @@
 		bkp_coord_account="progfpou-guest"
 		manual_coord_name=""
 		manual_coord_email="clytie-guest"
-		team_email="debian-l10n@vn.refer.org"
-		team_repository=""
-		supported="etch_beta1"
+		team_email="translation-i18n@lists.sourceforge.net"
+		team_repository="http://vnoss.net/dokuwiki/doku.php?id=projects:l10n"
+		supported="etch"
 		speakers="67439139"
 		speakers_corr="67439139"
 	      countries_official="VN"
@@ -1471,30 +1539,11 @@
 		manual_coord_email=""
 		team_email=""
 		team_repository=""
-		supported="etch_beta1"
+		supported="etch"
 		speakers="3612560"
 		speakers_corr="3612560"
 	      countries_official="SN"
 	      countries_most_spoken="SN"
-		/>
-	<language_entry
-		code="xh"
-		code3="xho"
-		english_name="Xhosa"
-		coord_name="Adi Attar"
-		coord_email="translations@canonical.com"
-		bkp_coord_name=""
-		bkp_coord_email=""
-		manual_coord_name=""
-		manual_coord_email=""
-		team_email="xh-translate@ubuntu.com"
-		team_repository=""
-		supported="false"
-		nlp_step="contact_lost"
-		speakers="7214118"
-		speakers_corr="7214118"
-	      countries_official="ZA"
-	      countries_most_spoken=""
 		/>
 	<language_entry
 		code="zh_CN"
