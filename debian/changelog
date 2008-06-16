@@ -47,6 +47,9 @@ debian-installer (20080522ubuntu1) UNRELEASED; urgency=low
     - Add a new netboot/386 build for i386 that uses the -386 kernel
       flavour.
     - Publish separate kernel and initrd for sparc64 netboot.
+  * Backport from trunk:
+    - Test OMIT_WIN32_LOADER in arch_cd_info_dir and arch_miniiso targets as
+      well as arch_boot.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 15 Jun 2008 21:06:31 +0100
 
