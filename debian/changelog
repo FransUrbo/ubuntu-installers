@@ -1,4 +1,4 @@
-grub-installer (1.32ubuntu1) UNRELEASED; urgency=low
+grub-installer (1.32ubuntu1) intrepid; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Show the grub menu and raise the menu timeout if other operating
@@ -23,7 +23,7 @@ grub-installer (1.32ubuntu1) UNRELEASED; urgency=low
       for now.
     - Handle cases where /boot is bind-mounted.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 16 Jun 2008 16:24:04 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 16 Jun 2008 16:45:11 +0100
 
 grub-installer (1.32) unstable; urgency=low
 
