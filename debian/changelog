@@ -50,6 +50,7 @@ debian-installer (20080522ubuntu1) UNRELEASED; urgency=low
   * Backport from trunk:
     - Test OMIT_WIN32_LOADER in arch_cd_info_dir and arch_miniiso targets as
       well as arch_boot.
+  * Don't use win32-loader on Ubuntu.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 15 Jun 2008 21:06:31 +0100
 
