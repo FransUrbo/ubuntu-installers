@@ -52,6 +52,8 @@ debian-installer (20080522ubuntu1) UNRELEASED; urgency=low
       well as arch_boot.
   * Don't use win32-loader on Ubuntu.
   * Set default suite to intrepid.
+  * Replace the splash image with a converted copy of the one we use for
+    gfxboot, which fits better with vesamenu.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 15 Jun 2008 21:06:31 +0100
 
