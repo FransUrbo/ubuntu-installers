@@ -35,7 +35,6 @@ debian-installer (20080522ubuntu1) UNRELEASED; urgency=low
     - Add nic-firmware to netboot images and scsi-firmware to cdrom and
       hd-media images.
     - Make scsi-firmware optional.
-    - Add ubuntu-modules to all images containing nic-modules.
     - Add oem-config-check to all images.
     - Ship elilo configuration on i386 for Intel-based Macs.
     - Use mkvmlinuz's fallback object files on powerpc rather than relying
@@ -55,6 +54,7 @@ debian-installer (20080522ubuntu1) UNRELEASED; urgency=low
   * Replace the splash image with a converted copy of the one we use for
     gfxboot, which fits better with vesamenu.
   * Adjust vesamenu margin to accommodate our menu item names.
+  * Move to 2.6.26-1 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 15 Jun 2008 21:06:31 +0100
 
