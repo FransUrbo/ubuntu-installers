@@ -55,6 +55,8 @@ debian-installer (20080522ubuntu1) UNRELEASED; urgency=low
     gfxboot, which fits better with vesamenu.
   * Adjust vesamenu margin to accommodate our menu item names.
   * Move to 2.6.26-1 kernels.
+  * Temporarily disable netboot/386 for now; we don't seem to have the
+    pieces needed to build it.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 15 Jun 2008 21:06:31 +0100
 
