@@ -18,7 +18,6 @@ debian-installer (20080522ubuntu1) UNRELEASED; urgency=low
       refer to gfxboot UI where appropriate.
     - Use ubuntu-keyring-udeb (and gpgv-udeb) instead of the Debian archive
       keyring.
-    - Switch all images to initramfs.
     - Add netboot images suitable for USB memory sticks.
     - Remove floppy support, since it never used to work with 2.6. (This may
       be fixed in the future.)
