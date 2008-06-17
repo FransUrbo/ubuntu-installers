@@ -1,3 +1,9 @@
+debian-installer (20080522ubuntu2) UNRELEASED; urgency=low
+
+  * Move back to 2.6.25-1 kernels for ports architectures.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 17 Jun 2008 17:50:17 +0100
+
 debian-installer (20080522ubuntu1) intrepid; urgency=low
 
   * Bump hd-media image size to 800MB so that Ubuntu ISO images fit on them
