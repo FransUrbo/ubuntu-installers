@@ -1,9 +1,9 @@
-debian-installer (20080522ubuntu3) UNRELEASED; urgency=low
+debian-installer (20080522ubuntu3) intrepid; urgency=low
 
   * Disable VERSIONED_SYSTEM_MAP again for sparc.
   * Fix some leftover calls to bootscreen-subst (renamed to bootvars-subst).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Jun 2008 11:08:56 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Jun 2008 11:12:39 +0100
 
 debian-installer (20080522ubuntu2) intrepid; urgency=low
 
