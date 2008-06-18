@@ -1,3 +1,9 @@
+debian-installer (20080522ubuntu3) UNRELEASED; urgency=low
+
+  * Disable VERSIONED_SYSTEM_MAP again for sparc.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Jun 2008 11:08:56 +0100
+
 debian-installer (20080522ubuntu2) intrepid; urgency=low
 
   * Move back to 2.6.25-1 kernels for ports architectures.
