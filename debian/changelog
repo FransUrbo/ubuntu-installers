@@ -1,6 +1,7 @@
 debian-installer (20080522ubuntu3) UNRELEASED; urgency=low
 
   * Disable VERSIONED_SYSTEM_MAP again for sparc.
+  * Fix some leftover calls to bootscreen-subst (renamed to bootvars-subst).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Jun 2008 11:08:56 +0100
 
