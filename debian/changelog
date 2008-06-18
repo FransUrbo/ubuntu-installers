@@ -2,6 +2,8 @@ debian-installer (20080522ubuntu4) UNRELEASED; urgency=low
 
   * Remove build/boot/x86/boot.txt.live, no longer used.
   * Another System.map fix for sparc.
+  * Temporarily add fs-core-modules to cdrom initrd, since isofs was moved
+    there. It should really be moved back.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Jun 2008 11:44:47 +0100
 

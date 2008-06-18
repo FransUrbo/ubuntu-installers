@@ -31,3 +31,4 @@ save-logs
 mountfloppy
 
 libfribidi0-udeb
+fs-core-modules-${kernel:Version}
