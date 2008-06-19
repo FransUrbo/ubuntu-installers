@@ -1,3 +1,9 @@
+debian-installer (20080522ubuntu5) UNRELEASED; urgency=low
+
+  * Move mainline architectures to 2.6.26-2 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 19 Jun 2008 20:14:51 +0100
+
 debian-installer (20080522ubuntu4) intrepid; urgency=low
 
   * Remove build/boot/x86/boot.txt.live, no longer used.
