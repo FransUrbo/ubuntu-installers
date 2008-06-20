@@ -1,10 +1,10 @@
-debian-installer (20080522ubuntu5) UNRELEASED; urgency=low
+debian-installer (20080522ubuntu5) intrepid; urgency=low
 
   * Move mainline architectures to 2.6.26-2 kernels.
   * Revert fs-core-modules change; isofs is now back in storage-core-modules
     where it belongs.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 19 Jun 2008 20:14:51 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 20 Jun 2008 10:54:34 +0100
 
 debian-installer (20080522ubuntu4) intrepid; urgency=low
 
