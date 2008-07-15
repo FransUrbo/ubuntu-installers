@@ -260,6 +260,9 @@ is_removable () {
 			return
 		fi
 	fi
+	if [ -z "$removabledevice" ]; then
+		return
+	fi
 	if type udevadm >/dev/null 2>&1; then
 		bus="$(udevadm info -q env -n $removabledevice)"
 	else
