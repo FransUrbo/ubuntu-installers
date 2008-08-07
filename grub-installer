@@ -713,7 +713,7 @@ else
 			frdev=$(echo "$frdisk" | sed "s/[0-9]\+$//")
 			disc_offered=$frdev
 			frbootpart=${frdisk#$frdev}
-			frgrubroot=$((frbootpart-1))
+			frgrubroot=$(($frbootpart-1))
 			write_grub
 		done
 	else
