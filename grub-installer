@@ -630,6 +630,19 @@ update_mtab
 
 mkdir -p $ROOT/boot/grub
 
+write_grub() {
+	info "Installing GRUB to $frdev; grub root is $disc_offered"
+	# TODO: Check for errors during this process!
+	TERM=linux $chroot $ROOT \
+        grub --device-map=/dev/null >/var/log/grub-${frtype}.log 2>&1 </dev/null <<EOF
+device (hd0,$frgrubroot) $disc_offered
+device (hd0) $frdev
+root (hd0,$frgrubroot)
+setup (hd0)
+quit
+EOF
+}
+
 if [ -z "$frdisk" ]; then
 
 	# Install grub on each space separated disk in the list
@@ -708,19 +721,6 @@ else
 	fi
 
 fi
-
-write_grub() {
-	info "Installing GRUB to $frdev; grub root is $disc_offered"
-	# TODO: Check for errors during this process!
-	TERM=linux $chroot $ROOT \
-        grub --device-map=/dev/null >/var/log/grub-${frtype}.log 2>&1 </dev/null <<EOF
-device (hd0,$frgrubroot) $disc_offered
-device (hd0) $frdev
-root (hd0,$frgrubroot)
-setup (hd0)
-quit
-EOF
-}
 
 # Split a device name into a disk device name and a partition number, if
 # possible.
