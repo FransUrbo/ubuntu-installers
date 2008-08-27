@@ -1,3 +1,9 @@
+debian-installer (20080522ubuntu11) UNRELEASED; urgency=low
+
+  * Move mainline architectures to 2.6.27-1 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 27 Aug 2008 23:14:12 +0100
+
 debian-installer (20080522ubuntu10) intrepid; urgency=low
 
   * No-change rebuild to pick up new components (particularly busybox and
