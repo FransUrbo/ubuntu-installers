@@ -1,3 +1,9 @@
+debian-installer (20080522ubuntu12) UNRELEASED; urgency=low
+
+  * Move mainline architectures to 2.6.27-2 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 29 Aug 2008 15:21:07 +0100
+
 debian-installer (20080522ubuntu11) intrepid; urgency=low
 
   * Move mainline architectures to 2.6.27-1 kernels.
