@@ -1,3 +1,9 @@
+grub-installer (1.32ubuntu3) UNRELEASED; urgency=low
+
+  * grub-installer: fix broken md device determination (LP: #264533).
+
+ -- Dustin Kirkland <kirkland@ubuntu.com>  Wed, 03 Sep 2008 20:08:13 -0500
+
 grub-installer (1.32ubuntu2) intrepid; urgency=low
 
   [ Colin Watson ]
