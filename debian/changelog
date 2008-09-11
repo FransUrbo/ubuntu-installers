@@ -1,10 +1,10 @@
-debian-installer (20080522ubuntu13) UNRELEASED; urgency=low
+debian-installer (20080522ubuntu13) intrepid; urgency=low
 
   * Move mainline architectures to 2.6.27-3 kernels.
   * Move lpia to 2.6.27-2 kernels.
   * Move 386 back to 2.6.25-1 kernels, since it's built from linux-ports.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 11 Sep 2008 18:57:20 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 11 Sep 2008 21:36:54 +0100
 
 debian-installer (20080522ubuntu12) intrepid; urgency=low
 
