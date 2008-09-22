@@ -1,3 +1,9 @@
+debian-installer (20080522ubuntu15) UNRELEASED; urgency=low
+
+  * Move mainline architectures to 2.6.27-4 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 22 Sep 2008 08:22:39 +0100
+
 debian-installer (20080522ubuntu14) intrepid; urgency=low
 
   * Move lpia to 2.6.27-3 kernels.
