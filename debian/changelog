@@ -1,3 +1,9 @@
+grub-installer (1.32ubuntu6) intrepid; urgency=low
+
+  * Add support for lpia (LP: #274781)
+
+ -- Emmet Hikory <persia@ubuntu.com>  Fri, 26 Sep 2008 22:38:21 +0900
+
 grub-installer (1.32ubuntu5) intrepid; urgency=low
 
   * grub-installer: Properly make use of output from os-prober to configure
