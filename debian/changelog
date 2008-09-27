@@ -1,3 +1,10 @@
+debian-installer (20080522ubuntu16) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new components, including disabling the
+    broken e1000e driver.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 27 Sep 2008 08:20:55 +0100
+
 debian-installer (20080522ubuntu15) intrepid; urgency=low
 
   * Move mainline architectures to 2.6.27-4 kernels.
