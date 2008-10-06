@@ -1,9 +1,9 @@
-debian-installer (20080522ubuntu17) UNRELEASED; urgency=low
+debian-installer (20080522ubuntu17) intrepid; urgency=low
 
   * Move ports architectures to 2.6.25-2 kernels.
   * Move mainline architectures to 2.6.27-5 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 02 Oct 2008 14:07:42 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 06 Oct 2008 10:54:41 +0100
 
 debian-installer (20080522ubuntu16) intrepid; urgency=low
 
