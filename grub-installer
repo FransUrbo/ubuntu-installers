@@ -394,6 +394,11 @@ if [ "$found" = "0" ] && type mdadm >/dev/null 2>&1; then
 		found=1
 	done
 fi
+# Check if the boot file system is on a virtio device, /dev/vd*
+if [ "$found" = "0" ] && echo "$bootfs" | grep -qs "^\/dev\/vd[a-z]"; then
+	frdisk=
+	found=1
+fi
 
 info "Identified partition label for $bootfs: $bootfslabel"
 
