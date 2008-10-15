@@ -1,9 +1,9 @@
-grub-installer (1.32ubuntu9) UNRELEASED; urgency=low
+grub-installer (1.32ubuntu9) intrepid; urgency=low
 
   * grub4dos can't handle UUIDs, so tweak previous change to continue using
     groot=()/ubuntu/disks in that case (LP: #283520).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 15 Oct 2008 11:14:49 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 15 Oct 2008 11:17:06 +0100
 
 grub-installer (1.32ubuntu8) intrepid; urgency=low
 
