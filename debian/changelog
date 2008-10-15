@@ -1,3 +1,10 @@
+grub-installer (1.32ubuntu8) UNRELEASED; urgency=low
+
+  * Cope with new UUID-style groot when handling
+    grub-installer/bootdev_directory (LP: #283520).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 15 Oct 2008 09:18:34 +0100
+
 grub-installer (1.32ubuntu7) intrepid; urgency=low
 
   * grub-installer: if the boot filesystem is on a virtio device, we need to

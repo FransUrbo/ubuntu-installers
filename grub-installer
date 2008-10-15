@@ -960,7 +960,8 @@ if [ "$kopt_params" ]; then
 fi
 if db_get grub-installer/bootdev_directory && [ "$RET" ]; then
 	bootdev_directory="$RET"
-	sed -i "/^# groot=/s:).*:)$bootdev_directory:" $ROOT/boot/grub/$menu_file
+	# Be careful to deal with either UUID-style or non-UUID-style groot.
+	sed -i "s:^\(# groot=\(([^)]*)\|.*\)\).*:\1$bootdev_directory:" $ROOT/boot/grub/$menu_file
 fi
 # In either case, update the Debian kernel entries
 if [ "$user_params" ] || [ "$bootdev_directory" ]; then
