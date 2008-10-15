@@ -961,7 +961,8 @@ fi
 if db_get grub-installer/bootdev_directory && [ "$RET" ]; then
 	bootdev_directory="$RET"
 	# Be careful to deal with either UUID-style or non-UUID-style groot.
-	sed -i "s:^\(# groot=\(([^)]*)\|.*\)\).*:\1$bootdev_directory:" $ROOT/boot/grub/$menu_file
+	# grub4dos doesn't recognise UUIDs yet.
+	sed -i "s:^\(# groot=\)[^(].*:\1():; s:^\(# groot=([^)]*)\).*:\1$bootdev_directory:" $ROOT/boot/grub/$menu_file
 fi
 # In either case, update the Debian kernel entries
 if [ "$user_params" ] || [ "$bootdev_directory" ]; then
