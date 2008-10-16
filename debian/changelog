@@ -1,6 +1,8 @@
 debian-installer (20080522ubuntu20) UNRELEASED; urgency=low
 
   * Update help text translations from Launchpad.
+  * Use unversioned nic-firmware and scsi-firmware packages instead of the
+    old versioned ones (LP: #220917).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 16 Oct 2008 19:41:46 +0100
 
