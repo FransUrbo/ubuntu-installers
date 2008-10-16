@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-08 13:12+0000\n"
+"PO-Revision-Date: 2008-09-12 17:32+0000\n"
 "Last-Translator: Daniel Nylander <yeager@ubuntu.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
+"X-Launchpad-Export-Date: 2008-10-16 18:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -200,10 +200,9 @@ msgstr "Tillgängliga uppstartsmetoder:"
 msgid "install"
 msgstr "install"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Installera Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -237,36 +236,33 @@ msgstr "Minimal kommandoradsinstallation."
 msgid "live"
 msgstr "live"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "Prova Ubuntu utan att göra några ändringar på din dator"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Starta live-systemet. Om du så önskar kan du installera det senare genom att "
+"trycka på \"Installera\"-ikonen på skrivbordet."
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "install"
+msgstr "live-install"
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "Starta livesystemet."
+msgstr "Starta installationen."
 
 #: help.xml:228
 msgid "memtest"
 msgstr "memtest"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "Kontrollera minnet"
 
 #: help.xml:231
 msgid "Perform a memory test."
@@ -299,14 +295,14 @@ msgstr ""
 "speciella parametrar, genom att helt enkelt trycka Enter vid "
 "uppstartsprompten."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(Detta är en allmän hjälptext. \"Ubuntu\" kan ersättas med något annat "
+"operativsystems namn.)"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -314,12 +310,17 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Välj uppstartsmetod från menyn med piltangenterna för att använda den. Tryck "
+"på F4 för att välja alternativa lägen för uppstart och installation.  Tryck "
+"på F6 för att redigera uppstartsparametrar. Tryck på F6 igen för att välja "
+"ofta använda uppstartsparametrar från en meny."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"Icke-kritiska uppstartsmeddelanden från kärnan visas inte, förutom i "
+"expertläget."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
@@ -335,10 +336,9 @@ msgstr ""
 msgid "rescue"
 msgstr "rescue"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Rädda ett trasigt system"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
@@ -369,28 +369,29 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "SPECIELLA UPPSTARTSPARAMETRAR - ÖVERSIKT"
 
 #: help.xml:363
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
-msgstr "På ett fåtal system kan du behöva att ange en parameter vid"
+msgstr ""
+"På ett fåtal system kan du behöva att ange en parameter vid <literal>boot:</"
+"literal>-prompten för att kunna starta upp systemet."
 
 #: help.xml:367
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "På ett fåtal system kan du behöva att ange en parameter vid"
+msgstr ""
+"På ett fåtal system kan du behöva att ange en parameter genom att trycka på "
+"F6 för att kunna starta upp systemet."
 
 #: help.xml:371
-#, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"-prompten för att kunna starta upp systemet. Exempelvis, Linux kanske inte "
-"kan identifiera din maskinvara automatiskt och du behöver specifikt ange "
-"dess plats eller typ för att den ska hittas."
+"Exempelvis, Linux kanske inte kan identifiera din maskinvara automatiskt och "
+"du kan behöva ange specifikt dess plats eller typ för att den ska kännas "
+"igen."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
@@ -438,28 +439,29 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "SPECIELLA UPPSTARTSPARAMETRAR - DIVERSE MASKINVARA"
 
 #: help.xml:437 help.xml:544 help.xml:615
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Du kan använda följande uppstartsparametrar vid <literal>boot:</literal>-"
 "prompten, i kombination med uppstartsmetoden (se <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"prompten, i kombination med uppstartsmetoden (se <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"Du kan använda följande uppstartsparametrar genom att trycka på F6, i "
+"kombination med uppstartsmetoden (se <link linkend=\"F3\"><keycap>F3</"
+"keycap></link>)."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"Om du använder hexadecimala tal så måste du använda prefixet \"0x\" (t.ex. "
+"0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
@@ -528,50 +530,44 @@ msgstr "Tvinga användningen av allmän IDE-drivrutin"
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
+"Möjliga (temporära) sätt att undvika låsningar eller andra maskinvarufel:"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "inaktivera trasig APIC-avbrottsrouting"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "(delvis) inaktivera ACPI"
 
 #: help.xml:500
-#, fuzzy
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>pci=noacpi</userinput>"
+msgstr ""
+"<userinput>acpi=noirq</userinput> eller <userinput>acpi=off</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "inaktivera USB"
 
 #: help.xml:507
-#, fuzzy
 msgid "<userinput>nousb</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>nousb</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "fråga efter avbrott"
 
 #: help.xml:512
-#, fuzzy
 msgid "<userinput>irqpoll</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -765,9 +761,8 @@ msgid "Use special tasks"
 msgstr "Använd specialfunktioner"
 
 #: help.xml:677
-#, fuzzy
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
+msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 
 #: help.xml:682
 msgid ""
@@ -839,12 +834,11 @@ msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "COPYRIGHT OCH GARANTIER"
 
 #: help.xml:773
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu är Copyright (C) 2004-2007 Canonical Ltd., och innefattar arbetet "
+"Ubuntu är Copyright (C) 2004-2008 Canonical Ltd., och innefattar arbetet "
 "från många andra ursprungliga upphovsmän och bidragsgivare."
 
 #: help.xml:778
@@ -896,25 +890,3 @@ msgid ""
 msgstr ""
 "Det här systemet är baserat på Debian. Se <ulink url=\"http://www.debian.org/"
 "\" /> för fler detaljer och information om Debian-projektet."
-
-#~ msgid "IBM Pentium Microchannel"
-#~ msgstr "IBM Pentium Microchannel"
-
-#~ msgid "<userinput>mca-pentium no-hlt</userinput>"
-#~ msgstr "<userinput>mca-pentium no-hlt</userinput>"
-
-#~ msgid "Workaround faulty FPU (old machines)"
-#~ msgstr "Problemlösning för felaktig FPU (äldre maskiner)"
-
-#~ msgid ""
-#~ "If you experience lockups or other hardware failures, disable buggy APIC "
-#~ "interrupt routing"
-#~ msgstr ""
-#~ "Om du upplever låsningar eller andra maskinvarufel, inaktivera felaktig "
-#~ "dirigering av APIC-avbrott"
-
-#~ msgid "Don't probe for USB"
-#~ msgstr "Sök inte efter USB"
-
-#~ msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-#~ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"

@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-08 16:03+0000\n"
-"Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
+"PO-Revision-Date: 2008-10-06 14:16+0000\n"
+"Last-Translator: Elias Julkunen <elias.julkunen@gmail.com>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
+"X-Launchpad-Export-Date: 2008-10-16 18:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -309,7 +309,6 @@ msgstr ""
 "muokataksesi käynnistysparametreja. Paina F6 uudelleen saadaksesi valikon "
 "usein käytetyistä käynnistysparametreista."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
@@ -519,13 +518,11 @@ msgstr "Pakota käyttöön yleinen IDE-ajuri"
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
-msgstr ""
+msgstr "Mahdollisia (tilapäisiä) tapoja korja virheet tai muut laitevirheet:"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
@@ -534,35 +531,29 @@ msgstr ""
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "ota ACPI (osittain) pois käytöstä"
 
 #: help.xml:500
-#, fuzzy
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>pci=noacpi</userinput>"
+msgstr "<userinput>acpi=noirq</userinput> tai <userinput>acpi=off</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "ota USB pois käytöstä"
 
 #: help.xml:507
-#, fuzzy
 msgid "<userinput>nousb</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>nousb</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
 #: help.xml:512
-#, fuzzy
 msgid "<userinput>irqpoll</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -757,9 +748,8 @@ msgid "Use special tasks"
 msgstr "Käytä erityistehtäviä"
 
 #: help.xml:677
-#, fuzzy
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
+msgstr ""
 
 #: help.xml:682
 msgid ""
@@ -886,25 +876,3 @@ msgid ""
 msgstr ""
 "Tämä järjestelmä perustuu Debianiin. Katso <ulink url=\"http://www.debian."
 "org/\" /> saadaksesi lisätietoja Debian-projektista."
-
-#~ msgid "IBM Pentium Microchannel"
-#~ msgstr "IBM Pentium Microchannel"
-
-#~ msgid "<userinput>mca-pentium no-hlt</userinput>"
-#~ msgstr "<userinput>mca-pentium no-hlt</userinput>"
-
-#~ msgid "Workaround faulty FPU (old machines)"
-#~ msgstr "Viallisten FPU:iden vikojen kompensointi (vanhoilla koneilla)"
-
-#~ msgid ""
-#~ "If you experience lockups or other hardware failures, disable buggy APIC "
-#~ "interrupt routing"
-#~ msgstr ""
-#~ "Jos jumiutumisia tai muita laitteisto-ongelmia tapahtuu, ota viallinen "
-#~ "APIC-keskeytysten reititys pois käytöstä"
-
-#~ msgid "Don't probe for USB"
-#~ msgstr "Älä tutki USB-laitteita"
-
-#~ msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-#~ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"

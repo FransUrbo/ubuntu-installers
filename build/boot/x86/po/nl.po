@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-08 13:11+0000\n"
+"PO-Revision-Date: 2008-04-23 20:48+0000\n"
 "Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
 "net>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
+"X-Launchpad-Export-Date: 2008-10-16 18:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -314,7 +314,6 @@ msgstr ""
 "om een keuze te kunnen maken uit een menu met veel voorkomende "
 "opstartparameters."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
@@ -528,13 +527,11 @@ msgstr "Gebruik van de algemene IDE-driver afdwingen"
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
@@ -543,35 +540,29 @@ msgstr ""
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr ""
 
 #: help.xml:500
-#, fuzzy
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>pci=noacpi</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr ""
 
 #: help.xml:507
-#, fuzzy
 msgid "<userinput>nousb</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
 #: help.xml:512
-#, fuzzy
 msgid "<userinput>irqpoll</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -765,9 +756,8 @@ msgid "Use special tasks"
 msgstr "Gebruik speciale taken"
 
 #: help.xml:677
-#, fuzzy
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
+msgstr ""
 
 #: help.xml:682
 msgid ""
@@ -895,25 +885,3 @@ msgid ""
 msgstr ""
 "Dit systeem is gebaseerd op Debian.  Zie <ulink url=\"http://www.debian.org/"
 "\" /> voor meer details en informatie over het Debian-project."
-
-#~ msgid "IBM Pentium Microchannel"
-#~ msgstr "IBM Pentium Microchannel"
-
-#~ msgid "<userinput>mca-pentium no-hlt</userinput>"
-#~ msgstr "<userinput>mca-pentium no-hlt</userinput>"
-
-#~ msgid "Workaround faulty FPU (old machines)"
-#~ msgstr "Omzeil slecht werkende FPU (oude machines)"
-
-#~ msgid ""
-#~ "If you experience lockups or other hardware failures, disable buggy APIC "
-#~ "interrupt routing"
-#~ msgstr ""
-#~ "Als uw systeem vaak hangt of andere hardwarefouten vertoont, schakel dan "
-#~ "foutieve APIC interrupt routering uit"
-
-#~ msgid "Don't probe for USB"
-#~ msgstr "Niet naar USB zoeken"
-
-#~ msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-#~ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"

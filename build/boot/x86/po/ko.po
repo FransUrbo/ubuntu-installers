@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-08 13:10+0000\n"
+"PO-Revision-Date: 2008-07-10 01:33+0000\n"
 "Last-Translator: Sunjae Park <darehanl@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
+"X-Launchpad-Export-Date: 2008-10-16 18:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -26,22 +26,16 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "${DISTRIBUTION_NAME}에 오신 것을 환영합니다."
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}의 ${MEDIA_TYPE} 인스톨러입니다. "
-"빌드 날짜는 ${BUILD_DATE}입니다."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}의 라이브 ${MEDIA_TYPE} 입니다. "
-"빌드 날짜는 ${BUILD_DATE}입니다."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -100,9 +94,8 @@ msgid "How to get help."
 msgstr "도움을 받으려면,"
 
 #: help.xml:89
-#, fuzzy
 msgid "Copyrights and warranties."
-msgstr "저작권과 보증 관련"
+msgstr ""
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
@@ -155,13 +148,10 @@ msgid ""
 msgstr ""
 
 #: help.xml:142
-#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"라이브 시스템은 하드디스크에 있는 공간을 사용하지는 않습니다. 하지만 스왑 공"
-"간이 있을 경우 스왑 공간을 사용할 것입니다."
 
 #: help.xml:147 help.xml:748
 msgid ""
@@ -250,14 +240,12 @@ msgid ""
 msgstr ""
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "install"
+msgstr ""
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "라이브 시스템을 시작합니다."
+msgstr ""
 
 #: help.xml:228
 msgid "memtest"
@@ -314,7 +302,6 @@ msgid ""
 "used boot parameters."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
@@ -365,27 +352,22 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "특수한 부팅 인자 - 개관"
 
 #: help.xml:363
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
-msgstr "일부 시스템에서는 특별한 부팅 인자를 입력해야 하는 경우도 있습니다."
+msgstr ""
 
 #: help.xml:367
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "일부 시스템에서는 특별한 부팅 인자를 입력해야 하는 경우도 있습니다."
+msgstr ""
 
 #: help.xml:371
-#, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"프롬프트에 입력하면 됩니다. 예를 들어 리눅스가 하드웨어를 자동으로 감지하지 "
-"못할 경우, 그 하드웨어의 위치라든지 유형을 입력하시면 됩니다."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
@@ -434,23 +416,17 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "특수한 부팅 인자 - 다양한 하드웨어의 지원"
 
 #: help.xml:437 help.xml:544 help.xml:615
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"프롬프트에 부팅 방식과 함께 입력하시면 됩니다(<link linkend=\"F3"
-"\"><keycap>F3</keycap></link> 참조)."
 
 #: help.xml:442 help.xml:549 help.xml:620
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"프롬프트에 부팅 방식과 함께 입력하시면 됩니다(<link linkend=\"F3"
-"\"><keycap>F3</keycap></link> 참조)."
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
@@ -470,13 +446,10 @@ msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1이나 ValuePoint (IDE 디스크)"
 
 #: help.xml:456
-#, fuzzy
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>실린더</replaceable>,<replaceable>헤드</"
-"replaceable>,<replaceable>섹터</replaceable></userinput>"
 
 #: help.xml:460
 msgid "Some IBM ThinkPads"
@@ -491,15 +464,11 @@ msgid "Protect I/O port regions"
 msgstr "I/O 포트 보호"
 
 #: help.xml:466
-#, fuzzy
 msgid ""
 "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
 
 #: help.xml:470
 msgid "Laptops with screen display problems"
@@ -514,26 +483,22 @@ msgid "Use first serial port at 9600 baud"
 msgstr ""
 
 #: help.xml:476
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
 msgstr ""
 
 #: help.xml:481
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
@@ -542,35 +507,29 @@ msgstr ""
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr ""
 
 #: help.xml:500
-#, fuzzy
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>pci=noacpi</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr ""
 
 #: help.xml:507
-#, fuzzy
 msgid "<userinput>nousb</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
 #: help.xml:512
-#, fuzzy
 msgid "<userinput>irqpoll</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -753,18 +712,16 @@ msgid "Use high contrast accessibility theme"
 msgstr ""
 
 #: help.xml:672
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+msgstr ""
 
 #: help.xml:676
 msgid "Use special tasks"
 msgstr ""
 
 #: help.xml:677
-#, fuzzy
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=es</userinput>"
+msgstr ""
 
 #: help.xml:682
 msgid ""
@@ -777,14 +734,14 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:692
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr ""
 
 #: help.xml:693
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr ""
 
 #: help.xml:710
 msgid "GETTING HELP"
@@ -835,13 +792,10 @@ msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "저작권과 보증"
 
 #: help.xml:773
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"우분투는 Copyright (C) 2004-2007 Canonical Ltd.입니다. 다른 여러 개발자들과 "
-"사용자들의 노력도 포함하고 있습니다."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
@@ -888,25 +842,3 @@ msgid ""
 msgstr ""
 "이 시스템은 데비안 기반 시스템입니다. 데비안 프로젝트에 대해서 더 자세히 알고"
 "자 할 경우 <ulink url=\"http://www.debian.org/\" />를 참조하십시오."
-
-#~ msgid "IBM Pentium Microchannel"
-#~ msgstr "IBM Pentium Microchannel"
-
-#~ msgid "<userinput>mca-pentium no-hlt</userinput>"
-#~ msgstr "<userinput>mca-pentium no-hlt</userinput>"
-
-#~ msgid "Workaround faulty FPU (old machines)"
-#~ msgstr "FPU에 문제가 있는 오래된 머신"
-
-#~ msgid ""
-#~ "If you experience lockups or other hardware failures, disable buggy APIC "
-#~ "interrupt routing"
-#~ msgstr ""
-#~ "시스템이 멈추거나 다른 여러 가지 하드웨어 문제가 발생할 경우 APIC 인터럽"
-#~ "트 라우팅을 해제하십시오."
-
-#~ msgid "Don't probe for USB"
-#~ msgstr "USB 자동 인식을 사용하지 않음"
-
-#~ msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-#~ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"

@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-08 13:09+0000\n"
+"PO-Revision-Date: 2008-10-13 21:54+0000\n"
 "Last-Translator: Andy Apdhani <imtheface@ubuntu.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
+"X-Launchpad-Export-Date: 2008-10-16 18:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -26,7 +26,6 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "Selamat datang di ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
@@ -35,7 +34,6 @@ msgstr ""
 "${DISTRIBUTION_VERSION}, dibuat pada tanggal ${BUILD_DATE}."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
@@ -114,7 +112,7 @@ msgstr ""
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "PRASYARAT UNTUK INSTALASI UBUNTU"
+msgstr "PRASYARAT UNTUK INSTALASI BLANKON"
 
 #: help.xml:119
 msgid ""
@@ -156,12 +154,11 @@ msgstr ""
 "live Ubuntu ini."
 
 #: help.xml:142
-#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Sistem live ini tidak memerlukan ruang apapun dalam hard disk anda. Namun, "
+"Sistem live ini tidak memerlukan ruang apapun dalam hard disk Anda. Namun, "
 "partisi swap yang sudah ada pada disk tersebut akan digunakan jika tersedia."
 
 #: help.xml:147 help.xml:748
@@ -223,15 +220,15 @@ msgstr "Memulai instalasi dalam mode ahli, untuk kontrol yang maksimum."
 
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Instal sistem tanpa mode grafis"
 
 #: help.xml:200
 msgid "live"
@@ -248,16 +245,16 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Mulai sistem live. Anda dapat menginstalnya nanti dengan mengeklik ikon "
+"\"Install\" pada desktop jika menginginkannya."
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "install"
+msgstr "live-install"
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "Memulai sistem live."
+msgstr "Mulai instalasi."
 
 #: help.xml:228
 msgid "memtest"
@@ -266,7 +263,7 @@ msgstr "memtest"
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "Uji memori"
 
 #: help.xml:231
 msgid "Perform a memory test."
@@ -295,7 +292,7 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Jika tidak pasti, anda semestinya menggunakan metode boot default, tanpa "
+"Jika tidak pasti, Anda semestinya menggunakan metode boot default, tanpa "
 "parameter khusus, dengan cara menekan enter pada prompt boot."
 
 # type: Content of: <reference><refentry><refsection><para>
@@ -313,12 +310,18 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Untuk menggunakan salah satu metode boot ini, pilih dari menu menggunakan "
+"tombol kursor. Tekan F4 untuk memilih mode start-up dan instalasi "
+"alternatif. Tekan F6 untuk menyunting parameter boot. Tekan F6 lagi untuk "
+"memilih menu parameter boot yang sering digunakan."
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"Kecuali dalam mode ahli, pesan boot kernel yang tidak kritis tidak akan "
+"ditampilkan."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
@@ -337,7 +340,7 @@ msgstr "rescue"
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Perbaikan sistem rusak"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
@@ -368,36 +371,35 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "PARAMETER BOOT KHUSUS - PENJELASAN UMUM"
 
 #: help.xml:363
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
-"Pada beberapa sistem, anda mungkin mesti menentukan suatu parameter pada"
+"Pada beberapa sistem, Anda mungkin mesti menentukan suatu parameter pada "
+"prompt <literal>boot:</literal> untuk dapat boot sistem."
 
 #: help.xml:367
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
-"Pada beberapa sistem, anda mungkin mesti menentukan suatu parameter pada"
+"Pada beberapa sistem, Anda mungkin mesti menentukan suatu parameter dengan "
+"menekan F6 untuk dapat boot sistem."
 
 #: help.xml:371
-#, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"prompt untuk melakukan boot sistem tersebut. Contohnya, Linux mungkin tidak "
-"bisa melakukan autodeteksi hardware anda, dan anda mungkin perlu secara "
-"eksplisit menentukan lokasinya atau jenisnya agar bisa dikenali."
+"Contohnya, Linux mungkin tidak bisa melakukan autodeteksi hardware Anda, dan "
+"Anda mungkin perlu secara eksplisit menentukan lokasinya atau jenisnya agar "
+"bisa dikenali."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
-"Untuk keterangan lebih lanjut tentang parameter boot apa saja yang bisa anda "
-"gunakan, tekan:"
+"Untuk informasi lebih lanjut mengenai parameter boot yang dapat Anda "
+"gunakan, silakan tekan:"
 
 #: help.xml:385
 msgid "boot parameters for special machines"
@@ -440,28 +442,30 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "PARAMETER BOOT KHUSUS - BERBAGAI HARDWARE"
 
 #: help.xml:437 help.xml:544 help.xml:615
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"prompt, dikombinasi dengan metode boot (lihat <link linkend=\"F3"
+"Anda dapat menggunakan parameter boot berikut pada prompt <literal>boot:</"
+"literal>, dalam kombinasi dengan metode boot (lihat <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"prompt, dikombinasi dengan metode boot (lihat <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"Anda dapat menggunakan parameter boot berikut dengan menekan F6, dalam "
+"kombinasi dengan metode boot (lihat <link linkend=\"F3\"><keycap>F3</"
+"keycap></link>)."
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"Jika Anda menggunakan angka hex Anda harus menggunakan awalan 0x (contoh "
+"0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
@@ -515,32 +519,32 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Gunakan port serial pertama dengan 9600 baud"
 
 #: help.xml:476
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Paksakan penggunaan driver IDE generik"
 
 #: help.xml:481
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
+"Perbaikan (sementara) untuk penguncian atau kegagalan perangkat keras "
+"lainnya:"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "nonaktifkan routing interrupt APIC yang bermasalah"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
@@ -549,32 +553,29 @@ msgstr "<userinput>noapic nolapic</userinput>"
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "menonaktifkan ACPI (setengah)"
 
 #: help.xml:500
-#, fuzzy
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>pci=noacpi</userinput>"
+msgstr "<userinput>acpi=noirq</userinput> atau <userinput>acpi=off</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "menonaktifkan USB"
 
 #: help.xml:507
-#, fuzzy
 msgid "<userinput>nousb</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>nousb</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "poll untuk interrupts"
 
 #: help.xml:512
-#, fuzzy
 msgid "<userinput>irqpoll</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -742,7 +743,7 @@ msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:666
 msgid "Use Braille tty"
-msgstr "Menggunakan Braille tty"
+msgstr "Menggunakan tty Braille"
 
 #: help.xml:667
 msgid ""
@@ -754,21 +755,19 @@ msgstr ""
 
 #: help.xml:671
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Menggunakan tema aksesibilitas kontras tinggi"
 
 #: help.xml:672
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
 
 #: help.xml:676
 msgid "Use special tasks"
-msgstr ""
+msgstr "Menggunakan task khusus"
 
 #: help.xml:677
-#, fuzzy
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=es</userinput>"
+msgstr "<userinput>tasks=\"blankon-desktop, standard\"</userinput>"
 
 #: help.xml:682
 msgid ""
@@ -782,14 +781,14 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:692
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:693
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:710
 msgid "GETTING HELP"
@@ -830,23 +829,20 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Kami mungkin telah mendengar tentang masalah anda tersebut dan telah "
+"Kami mungkin telah mendengar tentang masalah Anda tersebut dan telah "
 "mendapatkan cara penyelesaiannya, atau jika belum, kami ingin mengetahuinya "
-"dan menelusurinya bersama anda, sehingga pengguna berikutnya yang mengalami "
-"masalah yang sama dapat mengambil manfaat dari pengalaman anda!"
+"dan menelusurinya bersama Anda, sehingga pengguna berikutnya yang mengalami "
+"masalah yang sama dapat mengambil manfaat dari pengalaman Anda!"
 
 #: help.xml:766
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr "HAKCIPTA DAN JAMINAN"
+msgstr "HAK CIPTA DAN JAMINAN"
 
 #: help.xml:773
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu adalah Hakcipta (C) 2004-2007 Canonical Ltd., dan berisi hasil kerja "
-"dari banyak pengarang asli lain dan para kontributor."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
@@ -897,25 +893,3 @@ msgid ""
 msgstr ""
 "Sistem ini didasarkan atas Debian. Lihatlah <ulink url=\"http://www.debian."
 "org/\" /> untuk keterangan lebih detil dan lanjut tentang proyek Debian."
-
-#~ msgid "IBM Pentium Microchannel"
-#~ msgstr "IBM Pentium Microchannel"
-
-#~ msgid "<userinput>mca-pentium no-hlt</userinput>"
-#~ msgstr "<userinput>mca-pentium no-hlt</userinput>"
-
-#~ msgid "Workaround faulty FPU (old machines)"
-#~ msgstr "Workaround faulty FPU (mesin lama)"
-
-#~ msgid ""
-#~ "If you experience lockups or other hardware failures, disable buggy APIC "
-#~ "interrupt routing"
-#~ msgstr ""
-#~ "Jika anda mengalami kemacetan atau kegagalan hardware lainnya, non-"
-#~ "aktifkan routing interrupt APIC yang bermasalah"
-
-#~ msgid "Don't probe for USB"
-#~ msgstr "Tidak melakukan deteksi untuk USB"
-
-#~ msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-#~ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"

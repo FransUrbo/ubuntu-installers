@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-08 13:09+0000\n"
+"PO-Revision-Date: 2008-07-10 01:33+0000\n"
 "Last-Translator: Serhat Demirkol <serhat_demirkol@yahoo.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
+"X-Launchpad-Export-Date: 2008-10-16 18:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -26,22 +26,16 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "${DISTRIBUTION_NAME}'e hoşgeldiniz!"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Bu ${BUILD_DATE} tarihli ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} için "
-"bir kurulum ${MEDIA_TYPE}'dir."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Bu ${BUILD_DATE} tarihli ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} için "
-"bir çalışan ${MEDIA_TYPE}'dir."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -247,14 +241,12 @@ msgid ""
 msgstr ""
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "kur"
+msgstr ""
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "Çalışan sistemi başlatır."
+msgstr ""
 
 #: help.xml:228
 msgid "memtest"
@@ -307,7 +299,6 @@ msgid ""
 "used boot parameters."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
@@ -500,13 +491,11 @@ msgstr ""
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
@@ -515,32 +504,26 @@ msgstr ""
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
 msgstr ""
@@ -721,7 +704,6 @@ msgstr ""
 msgid "Use special tasks"
 msgstr "Özel görevler kullan"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 msgstr ""
@@ -794,13 +776,10 @@ msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "TELİFHAKLARI VE GARANTİLER"
 
 #: help.xml:773
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu'nun telif hakkı Canonical Ltd.'nindir (C) 2004-2007 ve diğer birçok "
-"özgün yazarların ve katılımcıların çalışmalarını birleştirir."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
@@ -848,9 +827,3 @@ msgid ""
 msgstr ""
 "Bu sistem Debian tabanlıdır. Daha fazla detay ve Debian projesi hakkında "
 "bilgi için bkz: <ulink url=\"http://www.debian.org/\" />."
-
-#~ msgid "Workaround faulty FPU (old machines)"
-#~ msgstr "Kusurlu FPU'ya çözüm bul (eski makineler)"
-
-#~ msgid "Don't probe for USB"
-#~ msgstr "USB'yi araştırma"

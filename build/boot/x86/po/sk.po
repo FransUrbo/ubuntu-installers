@@ -8,26 +8,24 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-08 13:13+0000\n"
-"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
-"net>\n"
+"PO-Revision-Date: 2008-04-14 23:29+0000\n"
+"Last-Translator: helix84 <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
+"X-Launchpad-Export-Date: 2008-10-16 18:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Pomocník pre inštalátora zavádzania"
+msgstr "Pomocník zavádzača inštalátora"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "Vitajte v ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
@@ -36,7 +34,6 @@ msgstr ""
 "${DISTRIBUTION_VERSION}, zostavené dňa ${BUILD_DATE}."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
@@ -62,11 +59,11 @@ msgstr "Táto strana, obsah pomocníka"
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "Požiadavky pre inštaláciu ${DISTRIBUTION_NAME}."
+msgstr "Požiadavky na inštaláciu ${DISTRIBUTION_NAME}."
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "Požiadavky pre spúšťanie ${DISTRIBUTION_NAME}."
+msgstr "Požiadavky na spúšťanie ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
@@ -75,7 +72,7 @@ msgstr ""
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr ""
+msgstr "Ďalšie metódy štartovania; záchrana poškodeného systému."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
@@ -95,7 +92,7 @@ msgstr "Špeciálne zavádzacie parametre pre inštalačný systém."
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "Špeciálne zavádzacie parametre pre bootstrap systém."
+msgstr "Špeciálne zavádzacie parametre pre zavádzací systém."
 
 #: help.xml:84
 msgid "How to get help."
@@ -107,12 +104,14 @@ msgstr "Autorské práva a záruky."
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "Stlačte F2 až F10 pre podrobnosti, alebo ENTER pre ${BOOTPROMPT}"
+msgstr ""
+"Stlačením F2 až F10 zobrazíte podrobnosti. Stlačením ENTER ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
-"Stlačte F2 až F10 pre podrobnosti, alebo Escape pre ukončenie pomocníka."
+"Stlačením F2 až F10 zobrazíte podrobnosti. Stlačením Escape ukončíte "
+"pomocníka."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
@@ -121,7 +120,7 @@ msgstr "POŽIADAVKY PRE INŠTALÁCIU UBUNTU"
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr "Pre použitie Ubuntu inštalátora musíte mať aspoň 32 megabajtov RAM."
+msgstr "Pre použitie inštalátora Ubuntu musíte mať aspoň 32 megabajtov RAM."
 
 #: help.xml:123
 msgid ""
@@ -131,11 +130,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Pre inštalovanie štandardného používateľského Ubuntu systému by ste mali mať "
-"aspoň 2 gigabajty voľného miesta na disku pre vytvorenie diskového oddielu, "
-"alebo aspoň 400 megabajtov pre minimálnu serverovú inštaláciu. Zrejme budete "
-"potrebovať viac miesta pre inštaláciu ďalších balíkov, v závislosti od toho, "
-"čo chcete s vašim novým systémom Ubuntu robiť."
+"Aby ste mohli nainštalovať štandardný používateľského systém Ubuntu, mali by "
+"ste mať aspoň 2 gigabajty voľného miesta na disku na vytvorenie diskového "
+"oddielu alebo aspoň 400 megabajtov na minimálnu serverovú inštaláciu. Zrejme "
+"budete potrebovať viac miesta pre inštaláciu ďalších balíkov, v závislosti "
+"od toho, čo chcete s vašim novým systémom Ubuntu robiť."
 
 #: help.xml:131 help.xml:742
 msgid ""
@@ -143,31 +142,31 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"Pozrite tiež inštalačný manuál, alebo často kladené otázky; oba dokumenty sa "
-"nachádzajú na internetovej stránke Ubuntu, <ulink url=\"http://www.ubuntu."
-"com/\" />"
+"Viac informácií sa dozviete v inštalačnej príručke alebo často kladených "
+"otázkach; oba dokumenty sa nachádzajú na webovej stránke Ubuntu, <ulink url="
+"\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr "Pre použitie Ubuntu live systému musíte mať aspoň 384 megabajtov RAM."
+msgstr ""
+"Aby ste mohli použiť Ubuntu live systém, musíte mať aspoň 384 megabajtov RAM."
 
 #: help.xml:142
-#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Live systém nevyžaduje žiadne miesto na vašom pevnom disku. Avšak, "
-"existujúce swap oddiely na disku sa použijú, ak sú k dispozícii."
+"Live systém nevyžaduje žiadne miesto na vašom pevnom disku. Avšak existujúce "
+"odkladacie oddiely na disku sa použijú, ak sú k dispozícii."
 
 #: help.xml:147 help.xml:748
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Pre viac informácií pozrite často kladené otázky; tento dokument sa nachádza "
-"na internetovej stránke Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
+"Viac informácií nájdete v často kladených otázkach; tento dokument sa "
+"nachádza na webvej stránke Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
@@ -180,14 +179,15 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
-"Stlačte <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control a F potom 1</phrase> pre obsah pomocníka, alebo ENTER pre "
+"Stlačením <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">control a F potom 1</phrase> zobrazíte obsah pomocníka. Stlačením ENTER "
 "${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Stlačte F1 pre obsah pomocníka, alebo Escape pre ukončenie pomocníka."
+msgstr ""
+"Stlačením F1 zobrazíte obsah pomocníka. Stlačením Escape ukončíte pomocníka."
 
 #: help.xml:169
 msgid "BOOT METHODS"
@@ -199,12 +199,12 @@ msgstr "Dostupné metódy zavádzania:"
 
 #: help.xml:177
 msgid "install"
-msgstr "install"
+msgstr "inštalovať"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Inštalovať Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -216,19 +216,19 @@ msgstr "expert"
 
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "Spustiť inštaláciu v režime experta, pre maximálnu kontrolu."
+msgstr "Spustiť inštaláciu v expertnom režime, pre maximálnu kontrolu."
 
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Inštalácia minimálneho systému s príkazovým riadkom"
 
 #: help.xml:200
 msgid "live"
@@ -237,7 +237,7 @@ msgstr "live"
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "Skúsiť Ubuntu bez vykonania zmien na vašom počítači"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -245,16 +245,16 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Spustiť živý systém. Ak si želáte, môžete ho neskôr nainštalovať pomocou "
+"ikony „Inštalovať“ na pracovnej ploche."
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "install"
+msgstr "live-install"
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "Spustí živý systém."
+msgstr "Spustí inštaláciu."
 
 #: help.xml:228
 msgid "memtest"
@@ -263,7 +263,7 @@ msgstr "memtest"
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "Otestovať pamäť"
 
 #: help.xml:231
 msgid "Perform a memory test."
@@ -293,7 +293,7 @@ msgid ""
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
 "Ak si nie ste istí, mali by ste použiť štandardnú metódu zavádzania, bez "
-"špeciálnych parametrov, jednoduchým stlačením klávesy enter pri výzve."
+"špeciálnych parametrov, jednoduchým stlačením klávesu enter pri výzve."
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
@@ -301,6 +301,8 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(„Ubuntu“ možno nahradiť názvami iných súvisiacich operačných systémov. "
+"Tento text je všeobecný.)"
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
@@ -310,8 +312,12 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Jednu z týcho štartoavcích metód môžete použiť, keď ju zvolíte z menu "
+"pomocou kláves šípok. Stlačením F4 zvolíte alternatívne režimy spustenia a "
+"inštalácie. Stlačením F6 môžete upraviť štartovacie parametre. Opätovným "
+"stlačením F6 si môžete vybrať z menu často používaných štartovacích "
+"parametrov."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
@@ -319,24 +325,24 @@ msgstr ""
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "ZÁCHRANA POŠKODENÉHO SYSTÉMU"
 
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr "Použite jednu s týchto metód na záchranu existujúcej inštlácie"
+msgstr "Použite jednu s týchto metód na záchranu existujúcej inštalácie"
 
 #: help.xml:289
 msgid "rescue"
-msgstr ""
+msgstr "rescue"
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Záchrana poškodeného systému"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "Naštartovať v záchrannom režime."
 
 #: help.xml:303
 #, no-wrap
@@ -351,34 +357,39 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
+"Na tomto CD sa nenachádza žiadny špeciálny záchranný režim. Avšak keďže celý "
+"systém beží z CD, je možné na záchranu poškodeného systému použiť nástroje "
+"príkazového riadka a/alebo grafické nástroje a webový prehliadač na "
+"vyhľadanie pomoci. Na internete sú dostupné vyčerpávajúce rady týkajúce sa "
+"väčšiny problémov, ktoré sa môžu vyskytnúť na bežnom systéme."
 
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "ŠPECIÁLNE PARAMETRE ZAVÁDZANIA - PREHĽAD"
 
 #: help.xml:363
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
-msgstr "Na niektorých systémoch je potrebné zadať parameter pri"
+msgstr ""
+"Na niektorých systémoch je potrebné zadať parameter počas výzvy "
+"<literal>boot:</literal>, aby bolo možné zaviesť systém."
 
 #: help.xml:367
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "Na niektorých systémoch je potrebné zadať parameter pri"
+msgstr ""
+"Na niektorých systémoch je potrebné zadať parameter stlačením F6, aby bolo "
+"možné zaviesť systém."
 
 #: help.xml:371
-#, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"výzve, inak sa systém nezavedie. Napríklad, Linux nemusí detekovať váš "
-"hardvér, a preto potrebujete presne zadať jeho umiestnenie alebo typ, aby "
-"bol správne rozoznaný."
+"Napríklad, Linux nemusí detekovať váš hardvér, a preto by ste museli presne "
+"zadať jeho umiestnenie alebo typ, aby bol správne rozoznaný."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
@@ -398,7 +409,7 @@ msgstr "zavádzacie parametre pre inštalačný systém"
 
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr "zavádzacie parametre pre bootstrap systém"
+msgstr "zavádzacie parametre pre zavádzací systém"
 
 #: help.xml:405
 msgid ""
@@ -407,46 +418,47 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Množstvo modulov jadra je dynamicky načítaných inštalátorom, preto parametre "
-"týchto modulov nemôžu byť zadané v príkazovom riadku. Ak chcete byť "
-"požiadaní o parametre po tom, ako budú moduly načítané, zavádzajte v režime "
-"experta (pozrite <link linkend=\"F3\"><keycap>F3</keycap></link>)."
+"Množstvo modulov jadra dynamicky načítava inštalátor, preto parametre týchto "
+"modulov nemožno zadať na príkazovom riadku. Ak chcete byť požiadaní o "
+"parametre po tom, ako sa moduly načítajú, spustite systém v expertnom režime "
+"(pozri <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"Množstvo modulov jadra je dynamicky načítaných systémom bootstrap, preto "
-"parametre týchto modulov nemôžu byť zadané v príkazovom riadku."
+"Množstvo modulov jadra dynamicky načítava systém bootstrap, preto parametre "
+"týchto modulov nemožno zadať na príkazovom riadku."
 
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "ŠPECIÁLNE PARAMETRE ZAVÁDZANIA - ROZLIČNÝ HARDVÉR"
 
 #: help.xml:437 help.xml:544 help.xml:615
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"riadku, v kombinácií s metódou zavádzania (pozrite <link linkend=\"F3"
+"Môžete použiť nasledovné parametre zavádzania počas výzvy <literal>boot:</"
+"literal>, v kombinácii s metódou zavádzania (pozri <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"riadku, v kombinácií s metódou zavádzania (pozrite <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"Môžete použiť nasledovné parametre zavádzania stlačením klávesu F6, v "
+"kombinácii s metódou zavádzania (pozri <link linkend=\"F3\"><keycap>F3</"
+"keycap></link>)."
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"Ak použijete hexadecimálne čísla, musíte použiť predponu 0x (napr., 0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
@@ -454,7 +466,7 @@ msgstr "HARDVÉR"
 
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr "PARAMETRE KTORÉ ŠPECIFIKOVAŤ"
+msgstr "ŠPECIFIKOVAŤ PARAMETER"
 
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
@@ -465,8 +477,8 @@ msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylindrov</replaceable>,<replaceable>hláv</"
+"replaceable>,<replaceable>sektorov</replaceable></userinput>"
 
 #: help.xml:460
 msgid "Some IBM ThinkPads"
@@ -474,11 +486,11 @@ msgstr "Niektoré IBM ThinkPady"
 
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr "Protect I/O port regions"
+msgstr "Chrániť oblasti V/V portov"
 
 #: help.xml:466
 msgid ""
@@ -486,7 +498,7 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>rozsah</"
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 
@@ -500,29 +512,25 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Použiť prvý sériový port s rýchlosťou 9600 baudov"
 
 #: help.xml:476
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Vynútiť použitie všeobecného ovládača IDE"
 
 #: help.xml:481
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
@@ -531,35 +539,29 @@ msgstr ""
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr ""
 
 #: help.xml:500
-#, fuzzy
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>pci=noacpi</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr ""
 
 #: help.xml:507
-#, fuzzy
 msgid "<userinput>nousb</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
 #: help.xml:512
-#, fuzzy
 msgid "<userinput>irqpoll</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -591,6 +593,11 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>znovupripojiť</replaceable></"
+"userinput></optional></optional></optional>"
 
 #: help.xml:564
 msgid "Adaptec 1542"
@@ -603,6 +610,10 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>rýchlosťdma</replaceable></userinput></optional></optional>"
 
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
@@ -610,7 +621,7 @@ msgstr "Adaptec 274x, 284x"
 
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
@@ -620,30 +631,33 @@ msgstr "BusLogic SCSI Hosts"
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr "Rôzne DELL počítače"
+msgstr "Rôzne počítače DELL"
 
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #: help.xml:585
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"Tento zoznam nie je úplný, pozri podrobnosti v súbore jadra kernel-"
+"parameters.txt"
 
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
@@ -651,11 +665,11 @@ msgstr "ŠPECIÁLNE PARAMETRE ZAVÁDZANIA - INŠTALAČNÝ SYSTÉM"
 
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr ""
+msgstr "Tieto parametre riadia funkcie inštalátora."
 
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
+msgstr "Tieto parametre riadia funkcie zavádzacieho systému."
 
 #: help.xml:632
 msgid "RESULT"
@@ -667,27 +681,27 @@ msgstr "PARAMETER"
 
 #: help.xml:636
 msgid "Verbose debugging"
-msgstr ""
+msgstr "Ladenie s výrečnými výpismi"
 
 #: help.xml:637
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr ""
+msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:641
 msgid "Debug boot sequence"
-msgstr ""
+msgstr "Ladenie zavádzania systému"
 
 #: help.xml:642
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr ""
+msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:646
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "Vypnúť framebuffer"
 
 #: help.xml:647
 msgid "<userinput>fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:651
 msgid "Don't start PCMCIA"
@@ -715,50 +729,53 @@ msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:666
 msgid "Use Braille tty"
-msgstr ""
+msgstr "Použiť Braillovu konzolu"
 
 #: help.xml:667
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>ovládač</replaceable>,"
+"<replaceable>zariadenie</replaceable>,<replaceable>tabuľkatextu</"
+"replaceable></userinput>"
 
 #: help.xml:671
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Použiť vzhľad s vysokým kontrastom na zlepšenie prístupnosti"
 
 #: help.xml:672
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
 
 #: help.xml:676
 msgid "Use special tasks"
-msgstr ""
+msgstr "Použiť špeciálne úlohy"
 
 #: help.xml:677
-#, fuzzy
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=es</userinput>"
+msgstr ""
 
 #: help.xml:682
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
+"Vypnúť ACPI rpe mapy PCI (užitočné pri niektorých serveroch HP a počítačoch "
+"založených na Via)"
 
 #: help.xml:685
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:692
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:693
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:710
 msgid "GETTING HELP"
@@ -774,14 +791,14 @@ msgstr "Ak nemôžete spustiť Ubuntu, nezúfajte!"
 
 #: help.xml:723
 msgid "The Ubuntu team is ready to help you!"
-msgstr "Tým Ubuntu je pripravený pomôcť vám!"
+msgstr "T9m Ubuntu je pripravený pomôcť vám!"
 
 #: help.xml:726
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Obzvlášť nás zaujímaju problémy pri inštalácií, pretože vo všeobecnosti sa "
+"Obzvlášť nás zaujímaju problémy pri inštalácii, pretože vo všeobecnosti sa "
 "nestávajú len <emphasis>jednému</emphasis> človeku."
 
 #: help.xml:731
@@ -799,23 +816,26 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"Buď sme už o vašom konkrétnom probléme počuli a môžeme vykonať rýchlu "
+"nápravu alebo by sme sa o ňom radi dozvedeli a radi si ho s vami prešli, čím "
+"vaše skúsenosti poslúžia ďalšiemu používateľovi, ktorý na rovnaký problém "
+"narazí."
 
 #: help.xml:766
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "AUTORSKÉ PRÁVA A ZÁRUKY"
 
 #: help.xml:773
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu je Copyright (C) 2004-2007 Canonical Ltd., a obsahuje prácu mnohých "
+"Ubuntu je Copyright (C) 2004-2008 Canonical Ltd., a obsahuje prácu mnohých "
 "ostatných pôvodných autorov a prispievateľov"
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
-msgstr "Systém ubuntu je voľne šíriteľný."
+msgstr "Systém Ubuntu je voľne šíriteľný."
 
 #: help.xml:781
 msgid ""
@@ -823,6 +843,9 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"Po inštalácii nájdete presné podmienky šírenia každého z balíkov v "
+"zodpovedajúcom súbore v /usr/share/doc/<replaceable>názovbalíka</"
+"replaceable>/copyright."
 
 #: help.xml:786
 msgid ""
@@ -830,12 +853,17 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"Po spustení nájdete presné podmienky šírenia každého z balíkov v "
+"zodpovedajúcom súbore v /usr/share/doc/<replaceable>názovbalíka</"
+"replaceable>/copyright."
 
 #: help.xml:792
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
+"Ubuntu neposkytuje <emphasis>ABSOLÚTNE ŽIADNU ZÁRUKU</emphasis> do rozsahu "
+"aký umožňuje aplikovateľné právo."
 
 #: help.xml:797
 msgid ""
@@ -854,27 +882,3 @@ msgid ""
 msgstr ""
 "Tento systém je založený na systéme Debian. Pozrite <ulink url=\"http://www."
 "debian.sk/\" /> pre viac podrobností a informácií o projekte Debian."
-
-#~ msgid "IBM Pentium Microchannel"
-#~ msgstr "IBM Pentium Microchannel"
-
-#~ msgid "<userinput>mca-pentium no-hlt</userinput>"
-#~ msgstr "<userinput>mca-pentium no-hlt</userinput>"
-
-#~ msgid "Workaround faulty FPU (old machines)"
-#~ msgstr "Workaround faulty FPU (staré počítače)"
-
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#, fuzzy
-#~ msgid ""
-#~ "If you experience lockups or other hardware failures, disable buggy APIC "
-#~ "interrupt routing"
-#~ msgstr ""
-#~ "Ak sa vyskytnú lockups alebo iné zlyhania hardvéru, vypnite APIC "
-#~ "interrupt routing"
-
-#~ msgid "Don't probe for USB"
-#~ msgstr "Nehľadať USB"
-
-#~ msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-#~ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"

@@ -8,14 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-08 13:12+0000\n"
-"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
-"net>\n"
+"PO-Revision-Date: 2008-07-10 01:33+0000\n"
+"Last-Translator: Anders Aase Martinsen <anders@andersmartinsen.net>\n"
 "Language-Team: Norwegian Bokmål <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
+"X-Launchpad-Export-Date: 2008-10-16 18:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -147,7 +146,7 @@ msgstr ""
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr ""
+msgstr "Du må ha minst 384 megabyte RAM for å benytte Ubuntu live system."
 
 #: help.xml:142
 msgid ""
@@ -198,7 +197,7 @@ msgstr "installer"
 
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Installer Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -231,21 +230,23 @@ msgstr "live"
 
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "Prøv Ubuntu uten å endre noe på datamaskinen"
 
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Start live systemet, hvis du ønsker kan du installere det senere ved å bruke "
+"\"Installer\" ikonet på skrivebordet."
 
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "live-installasjon"
 
 #: help.xml:212
 msgid "Start the installation."
-msgstr ""
+msgstr "Start installasjonen"
 
 #: help.xml:228
 msgid "memtest"
@@ -253,7 +254,7 @@ msgstr "minnetest"
 
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "Test minnet"
 
 #: help.xml:231
 msgid "Perform a memory test."
@@ -291,6 +292,8 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(\"Ubuntu\" kan erstattes med andre relaterte operativsystemers navn. Denne "
+"hjelpeteksten er generell.)"
 
 #: help.xml:257 help.xml:307
 msgid ""
@@ -300,7 +303,6 @@ msgid ""
 "used boot parameters."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
@@ -321,7 +323,7 @@ msgstr "redde"
 
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Reparer et ødelagt system"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
@@ -361,6 +363,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"På noen få systemer må du kanskje angi et parameter ved å trykke F6 for å "
+"starte systemet."
 
 #: help.xml:371
 msgid ""
@@ -495,13 +499,11 @@ msgstr "Tving til å bruke generell IDE-driver"
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
@@ -510,35 +512,29 @@ msgstr ""
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr ""
 
 #: help.xml:500
-#, fuzzy
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>pci=noacpi</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr ""
 
 #: help.xml:507
-#, fuzzy
 msgid "<userinput>nousb</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
 #: help.xml:512
-#, fuzzy
 msgid "<userinput>irqpoll</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -731,9 +727,8 @@ msgid "Use special tasks"
 msgstr "Bruk spesielle oppgaver"
 
 #: help.xml:677
-#, fuzzy
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>tasks=\"kde-desktop, standard\"</userinput>"
+msgstr ""
 
 #: help.xml:682
 msgid ""
@@ -858,25 +853,3 @@ msgid ""
 msgstr ""
 "Dette systemet er basert på Debian installer. Se <ulink url=\"http://www."
 "debian.org/\" /> for flere detaljer og informasjon om Debian-prosjektet."
-
-#~ msgid "IBM Pentium Microchannel"
-#~ msgstr "IBM Pentium Microchannel"
-
-#~ msgid "<userinput>mca-pentium no-hlt</userinput>"
-#~ msgstr "<userinput>mca-pentium no-hlt</userinput>"
-
-#~ msgid "Workaround faulty FPU (old machines)"
-#~ msgstr "Jobb rundt feilende FPU (eldre maskiner)"
-
-#~ msgid ""
-#~ "If you experience lockups or other hardware failures, disable buggy APIC "
-#~ "interrupt routing"
-#~ msgstr ""
-#~ "Hvis du erfarer at maskinen henger seg eller andre maskinvarefeil, slå av "
-#~ "APIC avbruddsadressering"
-
-#~ msgid "Don't probe for USB"
-#~ msgstr "Ikke søk gjennom USB"
-
-#~ msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-#~ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"

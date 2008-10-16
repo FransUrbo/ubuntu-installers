@@ -10,13 +10,13 @@ msgstr ""
 "Project-Id-Version: debian-installer-help\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-08 13:13+0000\n"
+"PO-Revision-Date: 2008-07-10 01:34+0000\n"
 "Last-Translator: Dominik Zablotny <doza@g.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
+"X-Launchpad-Export-Date: 2008-10-16 18:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -28,22 +28,16 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "Witamy w ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"To jest instalacyjny ${MEDIA_TYPE} dla ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, data budowania: ${BUILD_DATE}."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"To jest uruchamialny ${MEDIA_TYPE} dla ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, data budowania: ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -159,14 +153,10 @@ msgstr ""
 "pamięci RAM."
 
 #: help.xml:142
-#, fuzzy
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Ten system uruchamiany z płyty nie wymaga żadnego miejsca na dysku. "
-"Jednakże, jeśli posiadasz na dysku partycje wymiany, zostaną one "
-"wykorzystane."
 
 #: help.xml:147 help.xml:748
 msgid ""
@@ -256,14 +246,12 @@ msgid ""
 msgstr ""
 
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "install"
+msgstr ""
 
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "Uruchamia system z płyty."
+msgstr ""
 
 #: help.xml:228
 msgid "memtest"
@@ -322,7 +310,6 @@ msgid ""
 "used boot parameters."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
@@ -376,30 +363,22 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "Przegląd specjalnych parametrów uruchomienia"
 
 #: help.xml:363
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
-"Na niektórych komputerach, może być konieczne podanie parametrów w linii"
 
 #: help.xml:367
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
-"Na niektórych komputerach, może być konieczne podanie parametrów w linii"
 
 #: help.xml:371
-#, fuzzy
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"aby można było uruchomić system. Na przykład, Linux może nie być w stanie "
-"wykryć automatycznie Twojego sprzętu i wtedy musisz podać jego lokalizację "
-"lub typ, aby mógł zostać rozpoznany."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
@@ -448,23 +427,17 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "Specjalne parametry uruchomienia - różny sprzęt"
 
 #: help.xml:437 help.xml:544 help.xml:615
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-", w połączeniu z metodą uruchomienia (patrz <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-", w połączeniu z metodą uruchomienia (patrz <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
@@ -526,26 +499,22 @@ msgid "Use first serial port at 9600 baud"
 msgstr ""
 
 #: help.xml:476
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
 msgstr ""
 
 #: help.xml:481
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
@@ -554,35 +523,29 @@ msgstr ""
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr ""
 
 #: help.xml:500
-#, fuzzy
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>pci=noacpi</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr ""
 
 #: help.xml:507
-#, fuzzy
 msgid "<userinput>nousb</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
 #: help.xml:512
-#, fuzzy
 msgid "<userinput>irqpoll</userinput>"
-msgstr "<userinput>no387</userinput>"
+msgstr ""
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -631,12 +594,9 @@ msgstr ""
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
-#, fuzzy
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
-"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (włączony jeśli niezerowe)"
 
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
@@ -756,18 +716,16 @@ msgid "Use high contrast accessibility theme"
 msgstr ""
 
 #: help.xml:672
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>gdth=disable:y</userinput>"
+msgstr ""
 
 #: help.xml:676
 msgid "Use special tasks"
 msgstr ""
 
 #: help.xml:677
-#, fuzzy
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=es</userinput>"
+msgstr ""
 
 #: help.xml:682
 msgid ""
@@ -781,14 +739,14 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:692
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr ""
 
 #: help.xml:693
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr ""
 
 #: help.xml:710
 msgid "GETTING HELP"
@@ -840,13 +798,10 @@ msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "Prawa autorskie i gwarancje"
 
 #: help.xml:773
-#, fuzzy
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Prawa autorskie do Ubuntu: Copyright (C) 2004-2007 Canonical Ltd. Ubuntu "
-"zawiera wynik prac wielu autorów i współpracowników."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
@@ -897,25 +852,3 @@ msgid ""
 msgstr ""
 "Ten system jest oparty na Debianie. Więcej informacji o projekcie Debian "
 "znajdziesz na stronie <ulink url=\"http://www.debian.org/\" />."
-
-#~ msgid "IBM Pentium Microchannel"
-#~ msgstr "IBM Pentium Microchannel"
-
-#~ msgid "<userinput>mca-pentium no-hlt</userinput>"
-#~ msgstr "<userinput>mca-pentium no-hlt</userinput>"
-
-#~ msgid "Workaround faulty FPU (old machines)"
-#~ msgstr "Ominięcie niesprawnych FPU (stare komputery)"
-
-#~ msgid ""
-#~ "If you experience lockups or other hardware failures, disable buggy APIC "
-#~ "interrupt routing"
-#~ msgstr ""
-#~ "Jeśli zauważysz zawieszenia systemu lub inne błędy sprzętowe, wyłącz "
-#~ "niepoprawne przekierowanie przerwać w APIC"
-
-#~ msgid "Don't probe for USB"
-#~ msgstr "Wyłączenie wyszukiwania USB"
-
-#~ msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-#~ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"

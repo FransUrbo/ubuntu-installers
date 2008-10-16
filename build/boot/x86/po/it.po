@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-08 13:12+0000\n"
-"Last-Translator: Lorenzo Sfarra <lorenzosfarra@ubuntu.com>\n"
+"PO-Revision-Date: 2008-07-10 01:33+0000\n"
+"Last-Translator: Giorgio Catanzaro <catanzag@gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-04-14 13:28+0000\n"
+"X-Launchpad-Export-Date: 2008-10-16 18:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -26,22 +26,16 @@ msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "Benvenuto in ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
-#, fuzzy
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Questo è un ${MEDIA_TYPE} di installazione di ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, del ${BUILD_DATE}."
 
 #: help.xml:23
-#, fuzzy
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Questo è un ${MEDIA_TYPE} di installazione di ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, del ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -79,38 +73,29 @@ msgstr ""
 msgid "Special boot parameters, overview."
 msgstr "Parametri di avvio speciali, panoramica."
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
-#, fuzzy
 msgid "Special boot parameters for special machines."
-msgstr "Parametri di avvio speciali per macchine speciali."
+msgstr ""
 
 #: help.xml:69
-#, fuzzy
 msgid "Special boot parameters for selected disk controllers."
-msgstr "Parametri di avvio speciali per determinati controller di dischi."
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
-#, fuzzy
 msgid "Special boot parameters for the install system."
-msgstr "Parametri di avvio speciali per l'installazione del sistema."
+msgstr ""
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
 msgstr "Parametri di avvio speciali per il bootstrap di sistema."
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
-#, fuzzy
 msgid "How to get help."
-msgstr "Come ricevere aiuto"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
-#, fuzzy
 msgid "Copyrights and warranties."
-msgstr "Copyright e garanzie."
+msgstr ""
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
@@ -122,18 +107,14 @@ msgstr ""
 "Premi un tasto tra F2 e F10 per maggiori dettagli, o Escape (ESC) per uscire "
 "dall'aiuto."
 
-# type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
-#, fuzzy
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "PREREQUISITI PER INSTALLARE UBUNTU"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
-#, fuzzy
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr "Devi avere almeno 32 megabyte di RAM per installare da qui Ubuntu."
+msgstr "È necessario avere almeno 32 megabyte di RAM per installare Ubuntu."
 
 #: help.xml:123
 msgid ""
@@ -162,15 +143,11 @@ msgid ""
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:748
-#, fuzzy
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Guarda le FAQ per maggiori informazioni; questo documento è disponibile nel "
-"sito web di Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
@@ -184,30 +161,22 @@ msgid ""
 "${BOOTPROMPT}"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
-#, fuzzy
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Premere F1 per l'indice della guida o Esc per uscire."
+msgstr ""
 
-# type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
-#, fuzzy
 msgid "BOOT METHODS"
-msgstr "METODI D'AVVIO"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
-#, fuzzy
 msgid "Available boot methods:"
-msgstr "Metodi di avvio disponibili:"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
-#, fuzzy
 msgid "install"
-msgstr "Installare"
+msgstr ""
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
@@ -238,11 +207,9 @@ msgstr ""
 msgid "Minimal command-line system install."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
-#, fuzzy
 msgid "live"
-msgstr "live"
+msgstr ""
 
 # type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
@@ -256,17 +223,13 @@ msgid ""
 "\"Install\" icon on the desktop."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
-#, fuzzy
 msgid "live-install"
-msgstr "Installare"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
-#, fuzzy
 msgid "Start the installation."
-msgstr "Avvia il sistema live."
+msgstr ""
 
 #: help.xml:228
 msgid "memtest"
@@ -306,14 +269,14 @@ msgstr ""
 "parametri speciali, emplicemente premendo INVIO durante la schermata di "
 "avvio."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(\"Ubuntu\" può essere sostituito con altri nomi di sistemi operativi "
+"simili. Questo testo di aiuto è generico.)"
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -321,8 +284,11 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Per usare uno di questi metodi di avvio, selezionarlo dal menù con i tasti "
+"cursore. Premere F4 per selezionare modi di installazione e di avvio "
+"alternativi. Premere F6 per modificare i parametri di avvio. Premere F6 di "
+"nuovo per selezionare da un menù di parametri di avvio usati comunemente."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
@@ -342,10 +308,9 @@ msgstr ""
 msgid "rescue"
 msgstr "rescue"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Ripristino di un sistema danneggiato"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
@@ -370,22 +335,18 @@ msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "PARAMETRI DI AVVIO SPECIALI - PANORAMICA"
 
 #: help.xml:363
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
-"In alcuni sistemi potrebbe essere necessario specificare un parametro dalla "
-"linea di comando"
 
 #: help.xml:367
-#, fuzzy
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
-"In alcuni sistemi potrebbe essere necessario specificare un parametro dalla "
-"linea di comando"
+"In alcuni sistemi potrebbe essere necessario specificare un parametro "
+"premendo F6 per avviare il sistema."
 
 # type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -433,30 +394,23 @@ msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "PARAMETI DI AVVIO SPECIALI - VARI HARDWARE"
 
 #: help.xml:437 help.xml:544 help.xml:615
-#, fuzzy
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"linea di comando, in combinazione con un metodo di avvio (vedi <link linkend="
-"\"F3\"><keycap>F3</keycap></link>). Se utilizzi dei numeri esadecimanli "
-"metti come prefisso 0x (ad es. 0x300)."
 
 #: help.xml:442 help.xml:549 help.xml:620
-#, fuzzy
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"linea di comando, in combinazione con un metodo di avvio (vedi <link linkend="
-"\"F3\"><keycap>F3</keycap></link>). Se utilizzi dei numeri esadecimanli "
-"metti come prefisso 0x (ad es. 0x300)."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"Quando si utilizzano numeri esadecimali si deve usare il prefisso 0x (per "
+"esempio 0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
@@ -508,64 +462,53 @@ msgid "Use first serial port at 9600 baud"
 msgstr ""
 
 #: help.xml:476
-#, fuzzy
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr ""
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
 msgstr ""
 
 #: help.xml:481
-#, fuzzy
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
 
 #: help.xml:494
-#, fuzzy
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr ""
 
 #: help.xml:500
-#, fuzzy
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>pci=noacpi</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr ""
 
 #: help.xml:507
-#, fuzzy
 msgid "<userinput>nousb</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
 #: help.xml:512
-#, fuzzy
 msgid "<userinput>irqpoll</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr ""
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -582,9 +525,8 @@ msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:537
-#, fuzzy
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "PARAMETRI DI AVVIO SPECIALI - VARI DRIVER DISCO"
+msgstr ""
 
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
@@ -725,31 +667,26 @@ msgid "Use Braille tty"
 msgstr "Usa tty Braille"
 
 #: help.xml:667
-#, fuzzy
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #: help.xml:671
 msgid "Use high contrast accessibility theme"
 msgstr ""
 
 #: help.xml:672
-#, fuzzy
 msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>vga=771</userinput>"
+msgstr ""
 
 #: help.xml:676
 msgid "Use special tasks"
 msgstr ""
 
 #: help.xml:677
-#, fuzzy
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>bootkbd=es</userinput>"
+msgstr ""
 
 #: help.xml:682
 msgid ""
@@ -761,19 +698,18 @@ msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:692
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install acpi=off"
+msgstr ""
 
 #: help.xml:693
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live acpi=off"
+msgstr ""
 
 #: help.xml:710
-#, fuzzy
 msgid "GETTING HELP"
-msgstr "COME OTTENERE AIUTO"
+msgstr ""
 
 #: help.xml:717
 msgid "If you can't install Ubuntu, don't despair!"
@@ -827,9 +763,8 @@ msgid ""
 msgstr ""
 
 #: help.xml:778
-#, fuzzy
 msgid "The Ubuntu system is freely redistributable."
-msgstr "Il sistema Ubuntu e' liberamente ridistribuibile."
+msgstr ""
 
 #: help.xml:781
 msgid ""
@@ -865,20 +800,3 @@ msgid ""
 msgstr ""
 "Questo sistema e' basato su Debian. Vedi <ulink url=\"http://www.debian.org/"
 "\" /> per maggiori dettagli e informazioni sul progetto Debian."
-
-#~ msgid "IBM Pentium Microchannel"
-#~ msgstr "IBM Pentium Microchannel"
-
-#~ msgid "Workaround faulty FPU (old machines)"
-#~ msgstr "Per FPU difettose (vecchi calcolatori)"
-
-#, fuzzy
-#~ msgid ""
-#~ "If you experience lockups or other hardware failures, disable buggy APIC "
-#~ "interrupt routing"
-#~ msgstr ""
-#~ "Se si verificano blocchi o altri malfunzionamenti hardware, disabilitare "
-#~ "il \"buggy APIC interrupt routing\""
-
-#~ msgid "<userinput>debian-installer/probe/usb=false</userinput>"
-#~ msgstr "<userinput>debian-installer/probe/usb=false</userinput>"
