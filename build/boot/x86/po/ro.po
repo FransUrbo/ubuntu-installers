@@ -1,4 +1,4 @@
-# Chinese (Taiwan) translation for debian-installer
+# Romanian translation for debian-installer
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
@@ -8,116 +8,124 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-10-17 01:31+0000\n"
-"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
-"net>\n"
-"Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
+"PO-Revision-Date: 2008-10-05 16:13+0000\n"
+"Last-Translator: Adi Roiban <adi@roiban.ro>\n"
+"Language-Team: Romanian <ro@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2008-10-20 21:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
+"100 > 19) || ((n % 100 == 0) && (n != 0))) ? 2: 1))\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "安裝程式啟動說明畫面"
+msgstr "Ecrane de ajutor ale programului de inițializare a instalării"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "歡迎使用 ${DISTRIBUTION_NAME}！"
+msgstr "Bine ați venit în ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"這是個 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的安裝 ${MEDIA_TYPE}。建"
-"立日期為 ${BUILD_DATE}。"
+"Acesta este un $(MEDIA_TYPE) de instalare pentru ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. A fost construit la data de ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"這是個 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的 Live ${MEDIA_TYPE}。建"
-"立日期為 ${BUILD_DATE}。"
+"Acesta este un Live ${MEDIA_TYPE} pentru ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. A fost construit la data de ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr ""
+msgstr "Index al programelor de ajutor"
 
 #: help.xml:29
 msgid "KEY"
-msgstr "按鍵"
+msgstr "CHEIE"
 
 #: help.xml:30
 msgid "TOPIC"
-msgstr "主題"
+msgstr "SUBIECT"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "本頁面，即說明索引。"
+msgstr "Acestă pagină, indexul programelor de ajutor."
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "安裝 ${DISTRIBUTION_NAME} 的必備需求。"
+msgstr "Cerințe esențiale pentru a instala ${DISTRIBUTION_NAME}."
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "執行 ${DISTRIBUTION_NAME} 的必備需求。"
+msgstr "Cerințe esențiale pentru a rula ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
 msgstr ""
+"Metode de inițializare pentru moduri speciale de folosire a acestui "
+"${MEDIA_TYPE}."
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "其它啟動方法；拯救破損系統。"
+msgstr "Metode adiționale de inițializare; recuperarea unui sistem deteriorat."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr "特殊啟動參數總覽。"
+msgstr "Parametri speciali de inițializare, vedere de ansamblu."
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "Parametri speciali de inițializare pentru mașini speciale."
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
+msgstr "Parametri speciali de inițializare pentru anumite controlere de disc."
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "Parametri speciali de inițializare pentru sistemul de instalare."
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "Parametri speciali de inițializare pentru sistemul de bootstrap."
 
 #: help.xml:84
 msgid "How to get help."
-msgstr "如何取得幫助"
+msgstr "Cum se obține ajutor."
 
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "版權和保證"
+msgstr "Drepturi de autor și garanții."
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
+"Apăsați tastele de la F2 la F10 pentru detalii sau tasta ENTER pentru "
+"${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
+"Apăsați tastele de la F2 la F10 pentru detalii, sau tasta Escape pentru a "
+"ieși din sistemul de ajutor."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "安裝 Ubuntu 的必備需求"
+msgstr "CERINȚE OBLIGATORII PENTRU A INSTALA UBUNTU"
 
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr "您必須有至少 32 MB 的 RAM 以使用本 Ubuntu 安裝程式。"
+msgstr ""
+"Trebuie să aveți cel puțin 32 MB de memorie RAM pentru a folosi programul de "
+"instalare Ubuntu."
 
 #: help.xml:123
 msgid ""
@@ -127,9 +135,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"您必須要有建立至少 2 GB 的分割區以安裝標準的 Ubuntu 桌面系統，或是至少 400 "
-"MB 的分割區進行伺服器最小安裝。依照您的需求，您將需要更多的硬碟空間以安裝額外"
-"的套件。"
+"Pentru a instala un sistem personal Ubuntu standard, trebuie să aveți "
+"suficient spațiu pe disc pentru a crea o partiție de cel puțin 2 GB , sau "
+"cel puțin 400 MB pentru o instalare de server minimală. Veți avea nevoie de "
+"mai mult spațiu pentru a instala pachetele adiționale, în funcție de ceea ce "
+"doriți să faceți cu noul sistem Ubuntu."
 
 #: help.xml:131 help.xml:742
 msgid ""
@@ -137,33 +147,38 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"更多資訊請參閱 Ubuntu 官方網站(<ulink url=\"http://www.ubuntu.com/\" />)中的"
-"安裝指南或是常見問題區 (FAQ)。"
+"Pentru mai multe informații, consultați manualul de instalare sau lista "
+"întrebărilor frecvente („FAQ”); ambele documente sunt disponibile pe site-ul "
+"Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
+"Trebuie să aveți cel puțin 384 MB de memorie RAM pentru a folosi acest "
+"sistem Ubuntu „live”."
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"本 Live 系統不需要額外的硬碟空間，但您的硬碟上若有 Linux 使用的置換 (Swap) 分"
-"割區，本系統將會一併使用。"
+"Sistemul „live” nu necesită spațiu pe discul dumneavoastră. În orice caz, "
+"partițiile swap de Linux existente pe disc vor fi folosite dacă sunt "
+"disponibile."
 
 #: help.xml:147 help.xml:748
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"更多資訊請參閱 Ubuntu 官方網站(<ulink url=\"http://www.ubuntu.com/\" />)中的"
-"常見問題區 (FAQ)。"
+"Pentru mai multe informații, consultați lista întrebărilor frecvente "
+"(„FAQ”); documentul este disponibil pe site-ul Ubuntu, <ulink url=\"http://"
+"www.ubuntu.com/\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "感謝您選擇 Ubuntu！"
+msgstr "Mulțumiri pentru că ați ales Ubuntu!"
 
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
 #: help.xml:524 help.xml:597 help.xml:697 help.xml:753 help.xml:809
@@ -172,113 +187,130 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
+"Apăsați <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial\"> "
+"control și F, apoi 1</phrase> pentru indexul programului de ajutor, sau "
+"ENTER pentru ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
+"Apăsați F1 pentru indexul programului de ajutor, sau Escape pentru a ieși "
+"din programul de ajutor."
 
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr ""
+msgstr "METODE DE INIȚIALIZARE A SISTEMULUI"
 
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr ""
+msgstr "Metode disponibile de inițializare a sistemului:"
 
 #: help.xml:177
 msgid "install"
-msgstr ""
+msgstr "instalare"
 
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Instalare Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr ""
+msgstr "Pornire instalare -- acesta este ${MEDIA_TYPE} implicit de instalare."
 
 #: help.xml:185
 msgid "expert"
-msgstr ""
+msgstr "expert"
 
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr ""
+msgstr "Pornire instalare în mod expert, pentru control maxim."
 
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "linie de comandă"
 
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "expert la lucrul în linia de comandă"
 
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Instalare minimă a sistemului, doar în linie de comandă."
 
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "live"
 
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
 msgstr ""
+"Încercați Ubuntu fără nu a aduce nicio schimbare calculatorului "
+"dumneavoastră."
 
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Pornire sistem „live”. Dacă doriți, îl puteți instala mai târziu folosind "
+"pictograma „Instalare” de pe suprafața de lucru."
 
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "live-install"
 
 #: help.xml:212
 msgid "Start the installation."
-msgstr ""
+msgstr "Pornire instalare."
 
 #: help.xml:228
 msgid "memtest"
-msgstr ""
+msgstr "memtest"
 
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "Testare memorie"
 
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr ""
+msgstr "Executare test memorie."
 
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"Pentru a folosi una din aceste metode de inițializare a sistemului, tastați-"
+"o la prompter, urmată opțional de orice parametru de inițializare. De "
+"exemplu:"
 
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "boot: install acpi=off"
 
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #: help.xml:247
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
+"Dacă nu sunteți sigur, ar trebui să folosiți metoda de inițializare "
+"implicită, fără niciun parametru special, apăsând tasta Enter la prompterul "
+"de inițializare."
 
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(„Ubuntu” poate fi înlocuit de alte nume de sisteme de operare asemănătoare. "
+"Acest text de ajutor este general.)"
 
 #: help.xml:257 help.xml:307
 msgid ""
@@ -287,36 +319,45 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Pentru a folosi una din aceste metode de inițializare, selectați-o din meniu "
+"cu tastele-săgeți. Apăsați F4 pentru a alege moduri alternative de pornire "
+"și instalare. Apăsați F6 pentru a edita parametrii de inițializare. Apăsați "
+"F6 din nou pentru a selecta o valoare dintr-un meniu ce conține parametri de "
+"inițializare folosiți în mod obișnuit."
 
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"Cu excepția modului export, mesajele non-critice de pornire ale kernel-ului "
+"sunt suprimate."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "RESTAURAREA UNUI SISTEM DEFECT"
 
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
+"Folosți una dintre aceste metode de inițializare a sistemului pentru a "
+"restaura o instalare existentă"
 
 #: help.xml:289
 msgid "rescue"
-msgstr ""
+msgstr "restaurare"
 
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Restaurare a unui sistem defect"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "Pornire în mod restaurare."
 
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "boot: rescue acpi=off"
 
 #: help.xml:334
 msgid ""
@@ -326,48 +367,63 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
+"Nu există un mod de restaurare dedicat pe acest CD. În orice caz, întrucât "
+"întregul sistem rulează de pe CD, este posibil să utilizați linia de comandă "
+"și/sau instrumentele grafice oferite pentru a restaura un sistem defect și "
+"să folosiți un navigator web pentru a căuta ajutor. Instrucțiuni detaliate "
+"sunt disponibile online pentru majoritatea tipurilor de probleme care ar "
+"putea cauza eșecul inițializării corecte a unui sistem obișnuit."
 
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr ""
+msgstr "PARAMETRI SPECIALI DE INIȚIALIZARE - VEDERE GENERALĂ"
 
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
+"Pe unele sisteme, pentru a putea inițializa sistemul, s-ar putea să fie "
+"nevoie să specificați un parametru la prompterul<literal>boot:</literal>."
 
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"Pe unele sisteme, pentru a putea inițializa sistemul, s-ar putea să fie "
+"nevoie să specificați un parametru apăsând F6."
 
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"De exemplu, s-ar putea ca Linux să nu fie capabil să facă autodetectarea "
+"echipamentelor hardware, în acest caz fiind nevoit să specificați explicit "
+"locația sau tipul lor pentru a putea fi recunoscute."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
+"Pentru mai multe informații despre ce parametri de inițializare puteți "
+"folosi, apăsați:"
 
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "parametri de inițializare pentru mașini speciale"
 
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr ""
+msgstr "parametri de inițializare pentru diverse controlere de disc"
 
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr ""
+msgstr "parametri de inițializare acceptați de sistemul de instalare"
 
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr ""
+msgstr "parametri de inițializare acceptați de sistemul de bootstrap"
 
 #: help.xml:405
 msgid ""
@@ -376,16 +432,24 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Multe module ale nucleului sunt încărcate dinamic de către programul de "
+"instalare, iar parametrii pentru aceste module nu pot fi specificați în "
+"linia de comandă. Pentru ca parametrii să vă fie solicitați atunci când "
+"modulele se încarcă, porniți sistemul în mod expert (vezi <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
+"Multe module ale nucleului sunt încărcate dinamic de către sistemul de "
+"bootstrap, iar parametrii pentru aceste module nu pot fi specificați în "
+"linia de comandă."
 
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr ""
+msgstr "PARAMETRI SPECIALI DE INIȚIALIZARE - DIVERSE ECHIPAMENTE HARDWARE"
 
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
@@ -393,46 +457,54 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Se pot folosi următorii parametri de inițializare la prompterul "
+"<literal>boot:</literal>, în combinație cu metoda de inițializare (vezi "
+"<link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Se pot folosi următorii parametri de inițializare apăsând F6, în combinație "
+"cu metoda de inițializare (vezi <link linkend=\"F3\"><keycap>F3</keycap></"
+"link>)."
 
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr ""
+msgstr "Pentru numerele hexazacimale trebuie folosit prefixul 0x (ex: 0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr ""
+msgstr "HARDWARE"
 
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr ""
+msgstr "PARAMETRUL DE SPECIFICAT"
 
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr ""
+msgstr "IBM PS/1 sau ValuePoint (disc IDE)"
 
 #: help.xml:456
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+"<userinput>hd=<replaceable>cilindri</replaceable>,<replaceable>capete</"
+"replaceable>,<replaceable>sectoare</replaceable></userinput>"
 
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr ""
+msgstr "Unele laptopuri IBM ThinkPad"
 
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "Protejare regiune porturi intrare/ieșire (I/O)"
 
 #: help.xml:466
 msgid ""
@@ -440,30 +512,33 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr ""
+msgstr "Laptopuri cu probleme de afișare pe ecran"
 
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Folosire a primul port serial la 9600 baud"
 
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Forțare a folosirii unui driver IDE generic"
 
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:486
 msgid ""
@@ -472,27 +547,27 @@ msgstr ""
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "dezactivează rutarea defectuoasă a întreruperilor APIC"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "(parțial) dizactivare ACPI"
 
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> sau <userinput>acpi=off</userinput>"
 
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "dezactivare USB"
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
@@ -500,29 +575,29 @@ msgstr ""
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
-msgstr ""
+msgstr "De exemplu:"
 
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: install vga=771 noapic nolapic"
 
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr ""
+msgstr "PARAMETRI SPECIALI DE INIȚIALIZARE - DIVERȘI DRIVERI DE DISC"
 
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
-msgstr ""
+msgstr "Adaptec 151x, 152x"
 
 #: help.xml:560
 msgid ""
@@ -532,10 +607,15 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #: help.xml:564
 msgid "Adaptec 1542"
-msgstr ""
+msgstr "Adaptec 1542"
 
 #: help.xml:565
 msgid ""
@@ -544,188 +624,209 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
-msgstr ""
+msgstr "Adaptec 274x, 284x"
 
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (activat dacă nu e zero)"
 
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
-msgstr ""
+msgstr "Gazde SCSI BusLogic"
 
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr ""
+msgstr "Anumite maşini DELL"
 
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #: help.xml:585
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"Această listă este incompletă, pentru mai multe informații consultaț "
+"fișierul kernel-parameters.txt al nucleului."
 
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr ""
+msgstr "PARAMETRI SPECIALI DE INIȚIALIZARE - SISTEMUL DE INSTALARE"
 
 #: help.xml:624
 msgid "These parameters control how the installer works."
 msgstr ""
+"Acești parametri controlează modul de funcționare al programului de "
+"instalare."
 
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
 msgstr ""
+"Acești parametri controlează modul de funcționare al sistemului de bootstrap."
 
 #: help.xml:632
 msgid "RESULT"
-msgstr ""
+msgstr "REZULTAT"
 
 #: help.xml:633
 msgid "PARAMETER"
-msgstr ""
+msgstr "PARAMETRU"
 
 #: help.xml:636
 msgid "Verbose debugging"
-msgstr ""
+msgstr "Depanare detaliată"
 
 #: help.xml:637
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr ""
+msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:641
 msgid "Debug boot sequence"
-msgstr ""
+msgstr "Depanarea secvenței de inițializare a sistemului"
 
 #: help.xml:642
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr ""
+msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:646
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "Dezactivare framebuffer"
 
 #: help.xml:647
 msgid "<userinput>fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:651
 msgid "Don't start PCMCIA"
-msgstr ""
+msgstr "Nu porni interfața PCMCIA"
 
 #: help.xml:652
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
-msgstr ""
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:656
 msgid "Force static network config"
-msgstr ""
+msgstr "Forțare a configurării statice pentru rețea"
 
 #: help.xml:657
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr ""
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:661
 msgid "Set keyboard map"
-msgstr ""
+msgstr "Stabilirea aranjament tastatură"
 
 #: help.xml:662
 msgid "<userinput>bootkbd=es</userinput>"
-msgstr ""
+msgstr "<userinput>bootkbd=ro</userinput>"
 
 #: help.xml:666
 msgid "Use Braille tty"
-msgstr ""
+msgstr "Folosirea unei console Braille"
 
 #: help.xml:667
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>dispozitib</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #: help.xml:671
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Folosirea unei teme cu contrast înalt"
 
 #: help.xml:672
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 #: help.xml:676
 msgid "Use special tasks"
-msgstr ""
+msgstr "Folosirea unor sarcini speciale"
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 
 #: help.xml:682
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
+"Dezactivarea ACPI pentru mapările PCI (utilă pentru unele servere HP și a "
+"unor mașini bazate pe Via)"
 
 #: help.xml:685
 msgid "<userinput>pci=noacpi</userinput>"
-msgstr ""
+msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:692
 #, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr ""
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:693
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:710
 msgid "GETTING HELP"
-msgstr ""
+msgstr "OBȚINERE AJUTOR"
 
 #: help.xml:717
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr ""
+msgstr "Nu vă panicați dacă nu puteți instala Ubuntu!"
 
 #: help.xml:720
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr ""
+msgstr "Nu vă panicați dacă nu puteți porni Ubuntu!"
 
 #: help.xml:723
 msgid "The Ubuntu team is ready to help you!"
-msgstr ""
+msgstr "Echipa Ubuntu este gata să vă ajute!"
 
 #: help.xml:726
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Suntem interesați în mod special să aflăm despre problemele de instalare "
+"pentru că, în general, ele nu apar numai la <emphasis>o singură</emphasis> "
+"persoană."
 
 #: help.xml:731
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Suntem interesați în mod special să aflăm despre problemele de pornire a "
+"sistemului pentru că, în general, ele nu apar numai la <emphasis>o singură</"
+"emphasis> persoană."
 
 #: help.xml:735
 msgid ""
@@ -734,20 +835,27 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"Fie am aflat deja despre problema dumneavoastră particulară și vă putem "
+"oferi o soluție rapidă, fie am dori să aflăm despre ea și să lucrăm împreună "
+"cu dumneavoastră la soluționare ei, astfel încât următorul utilizator care "
+"va avea aceeași problemă va putea profita de experiența dumneavoastră!"
 
 #: help.xml:766
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr ""
+msgstr "DREPTURI DE AUTOR ȘI GARANȚII"
 
 #: help.xml:773
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"Drepturile de autor asupra Ubuntu: (C) 2004-2008 Canonical Ltd. Sistemul "
+"încorporează și munca multor alți autori sau persoane care au contribuit la "
+"realizarea lui."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
-msgstr ""
+msgstr "Sistemul Ubuntu se poate redistribui în mod liber."
 
 #: help.xml:781
 msgid ""
@@ -755,6 +863,9 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"După instalare, termenii exacți de distribuție pentru fiecare pachet sunt "
+"descriși în fișierele corespunzătoare din /usr/share/doc/<replaceable>nume "
+"pachet</replaceable>/copyright."
 
 #: help.xml:786
 msgid ""
@@ -762,12 +873,17 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"După pornirea sistemului, termenii exacți de distribuție pentru fiecare "
+"pachet sunt descriși în fișierele corespunzătoare din /usr/share/doc/"
+"<replaceable>nume pachet</replaceable>/copyright."
 
 #: help.xml:792
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
+"Ubuntu vine <emphasis>ABSOLUT FĂRĂ NICIO GARANȚIE</emphasis>, în măsura în "
+"care este permis de legile în vigoare."
 
 #: help.xml:797
 msgid ""
@@ -775,9 +891,15 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
+"Sistemul de instalare este bazat pe sistemul de instalare Debian. Consultați "
+"pagina <ulink url=\"http://www.debian.org/\" />pentru mai multe detalii și "
+"informații despre proiectul Debian."
 
 #: help.xml:803
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"Acest sistem este bazat pe sistemul Debian. Consultați <ulink url=\"http://"
+"www.debian.org/\" />pentru mai multe detalii și informații despre proiectul "
+"Debian."

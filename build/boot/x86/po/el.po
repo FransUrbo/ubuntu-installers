@@ -1,4 +1,4 @@
-# Spanish translation for debian-installer
+# Greek, Modern (1453-) translation for debian-installer
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-09-12 15:55+0000\n"
-"Last-Translator: Ricardo Pérez López <ricpelo@gmail.com>\n"
-"Language-Team: Spanish <es@li.org>\n"
+"PO-Revision-Date: 2008-05-15 16:30+0000\n"
+"Last-Translator: Kainourgiakis Giorgos <kaingeo@yahoo.gr>\n"
+"Language-Team: Greek, Modern (1453-) <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,106 +19,107 @@ msgstr ""
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Pantallas de ayuda del arranque del instalador"
+msgstr "Οθόνες βοήθειας της εκκίνησης του προγράμματος εγκατάστασης"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "¡Bienvenido/a a ${DISTRIBUTION_NAME}!"
+msgstr "Καλώς ήλθατε στο ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Este es un ${MEDIA_TYPE} de instalación para ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, creado el ${BUILD_DATE}."
+"Εγκατάσταση ${MEDIA_TYPE} για την διανομή ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Δημιουργήθηκε την ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Este es un ${MEDIA_TYPE} ejecutable para ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, creado el ${BUILD_DATE}."
+"Live ${MEDIA_TYPE} της διανομής  ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Δημιουργήθηκε την ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "ÍNDICE DE LA AYUDA"
+msgstr "Ευρετήριο βοήθειας"
 
 #: help.xml:29
 msgid "KEY"
-msgstr "CLAVE"
+msgstr "ΚΛΕΙΔΙ"
 
 #: help.xml:30
 msgid "TOPIC"
-msgstr "TÓPICO"
+msgstr "ΘΕΜΑ"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Ésta página, el índice de la ayuda."
+msgstr "Η τρέχουσα σελίδα, το ευρετήριο βοήθειας."
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "Requisitos previos para instalar ${DISTRIBUTION_NAME}."
+msgstr "Απαιτήσεις για την εγκατάσταση του ${DISTRIBUTION_NAME}."
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "Requisitos previos para ejecutar ${DISTRIBUTION_NAME}."
+msgstr "Απαιτήσεις για την εκτέλεση του ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr "Métodos de arranque para formas especiales de usar este ${MEDIA_TYPE}."
+msgstr "Μέθοδοι εκκίνησης για ειδική χρήση αυτού του ${MEDIA_TYPE}."
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Métodos de arranque adicionales; rescatar un sistema dañado."
+msgstr "Πρόσθετοι μέθοδοι εκκίνησης, σώζοντας ένα κατεστραμένο σύστημα."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr "Parámetros especiales de arranque; visión general."
+msgstr "Ειδικοί παράμετροι εκκίνησης, επαλήθευση"
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "Parámetros especiales de arranque para máquinas especiales."
+msgstr "Ειδικοί παράμετροι εκκίνησης για ειδικά μηχανήματα"
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
-"Parámetros especiales de arranque para controladoras de disco específicas."
+msgstr "Ειδικοί παράμετροι εκκίνησης για ελεγκτές δίσκων"
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr "Parámetros especiales de arranque para el sistema de instalación."
+msgstr "Ειδικοί παράμετροι εκκίνησης για το σύστημα εγκατάστασης"
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "Parámetros especiales de arranque para el sistema de bootstrap."
+msgstr "Ειδικές παράμετροι για το σύστημα εκκίνησης"
 
 #: help.xml:84
 msgid "How to get help."
-msgstr "Cómo conseguir ayuda."
+msgstr "Που θα βρείτε βοήθεια."
 
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "Copyrights y garantías."
+msgstr "Πνευματικά δικαιώματα και εγγυήσεις."
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "Pulse de F2 a F10 para detalles, o INTRO para ${BOOTPROMPT}"
+msgstr "Πατήστε F2 μέχρι F10 για λεπτομέρειες, ή ENTER για ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr "Pulse de F2 a F10 para detalles, o Esc para salir de la ayuda."
+msgstr ""
+"Πατήστε F2 μέχρι F10 για λεπτομέρειες, ή Escape για έξοδο από την βοήθεια."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "REQUISITOS PREVIOS PARA INSTALAR UBUNTU"
+msgstr "Απαιτήσεις συστήματος για την εγκατάσταση του Ubuntu"
 
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
-"Debe tener al menos 32 Megabytes de RAM para usar este instalador de Ubuntu."
+"Απαιτούνται τουλάχιστον 32 megabytes μνήμης για να χρησιμοποιήσετε αυτό το "
+"πρόγραμμα εγκατάστασης του Ubuntu."
 
 #: help.xml:123
 msgid ""
@@ -128,11 +129,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Debe tener espacio en el disco duro para crear una nueva partición de, al "
-"menos, 2 Gigabytes para instalar un sistema Ubuntu estándar de escritorio, "
-"o, al menos, 400 Megabytes para una instalación mínima de servidor. "
-"Necesitará más espacio en disco para instalar paquetes adicionales, "
-"dependiendo de lo que desee hacer con su nuevo sistema Ubuntu."
+"Απαιτείται χώρος τουλάχιστον 2 GB στον σκληρό σας δίσκο για την εγκατάσταση "
+"ενός πρότυπου περιβάλλοντος εργασίας Ubuntu. Εναλλακτικά, τουλάχιστον 400 ΜΒ "
+"για μια ελάχιστη εγκατάσταση της έκδοσης εξυπηρετητή (server). Θα "
+"χρειαστείτε επιπρόσθετο χώρο για εγκατάσταση επιπλέον προγραμμάτων αναλόγως "
+"με το τρόπο που επιθυμείτε να χρησιμοποιήσετε το νέο Ubuntu σύστημά σας."
 
 #: help.xml:131 help.xml:742
 msgid ""
@@ -140,36 +141,38 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"Vea el Manual de Instalación o las FAQ para más información; ambos "
-"documentos están disponibles en la web de Ubuntu, <ulink url=\"http://www."
-"ubuntu.com/\" />"
+"Για περισσότερες πληροφορίες δείτε τον \"Οδηγό εγκατάστασης\" ή την λίστα "
+"συχνών ερωτήσεων (FAQ) που είναι διαθέσιμα στον διαδικτυακό τόπο του Ubuntu: "
+"<ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Debe tener al menos 384 Megabytes de RAM para usar este sistema Ubuntu Live."
+"Πρέπει να διαθέτετε τουλάχιστον 384 ΜΒ μνήμης RAM  για να χρησιμοποιήσετε "
+"αυτό το live σύστημα."
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"El sistema ejecutable no requiere espacio en su disco duro. No obstante, se "
-"usarán las particiones de intercambio que haya en el disco si están "
-"disponibles."
+"Δεν απαιτείται ελεύθερος χώρος στον σκληρό δίσκο για το live σύστημα. "
+"Ωστόσο, προϋπάρχοντα διαμερίσματα εικονικής μνήμης (linux swap), θα "
+"χρησιμοποιηθούν εφόσον είναι διαθέσιμα."
 
 #: help.xml:147 help.xml:748
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Vea las FAQ para más información; este documento está disponible en la web "
-"de Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
+"Για περισσότερες πληροφορίες επισκεφθείτε τις συχνές ερωτήσεις (FAQ), που "
+"βρίσκονται στην Ιστοσελίδα του Ubuntu, <ulink url=\"http://www.ubuntu.com/"
+"\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "¡Gracias por elegir Ubuntu!"
+msgstr "Ευχαριστούμε που επιλέξατε το Ubuntu!"
 
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
 #: help.xml:524 help.xml:597 help.xml:697 help.xml:753 help.xml:809
@@ -178,58 +181,58 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
-"Pulse <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control y F, y luego 1</phrase> para ir al índice de la ayuda, o INTRO "
-"para ${BOOTPROMPT}"
+"Πατήστε <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">Ctrl-F ακολουθούμενο από 1</phrase> για να προβάλλετε τον κατάλογο "
+"βοήθειας, ή ENTER για ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Pulse F1 para ir al índice de la ayuda, o Esc para salir de la ayuda."
+msgstr ""
+"Πιέστε το πλήκτρο F1 για το ευρετήριο βοήθειας ή το πλήκτρο Esc για να "
+"εξέλθετε από την βοήθεια"
 
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr "MÉTODOS DE ARRANQUE"
+msgstr "ΜΕΘΟΔΟΙ ΕΚΚΙΝΗΣΗΣ"
 
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr "Métodos de arranque disponibles:"
+msgstr "Διαθέσιμες μέθοδοι εκκίνησης:"
 
 #: help.xml:177
 msgid "install"
-msgstr "instalar"
+msgstr "εγκατάσταση"
 
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr "Instalar Ubuntu"
+msgstr "Εγκατάσταση του Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgstr ""
-"Comenzar la instalación -- esta es la instalación predeterminada del "
-"${MEDIA_TYPE}"
+"Έναρξη της εγκατάστασης -- αυτή είναι η προεπιλεγμένη ${MEDIA_TYPE} "
+"εγκατάσταση."
 
 #: help.xml:185
 msgid "expert"
-msgstr "experto"
+msgstr "προχωρημένα"
 
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "Comenzar la instalación en modo experto, para tener el máximo control."
+msgstr "Έναρξη της εγκατάστασης για προχωρημένους, για μέγιστο έλεγχο."
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
-msgstr "cli"
+msgstr "γραμμή εντολών"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
-msgstr "cli-expert"
+msgstr "γραμμή εντολών για προχωριμένους"
 
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr "Instalación de un sistema mínimo de línea de órdenes."
+msgstr "Εγκατάσταση ελάχιστου συστήματος γραμμής εντολών."
 
 #: help.xml:200
 msgid "live"
@@ -237,15 +240,15 @@ msgstr "live"
 
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr "Probar Ubuntu sin cambiar nada en su equipo"
+msgstr "Δοκιμάστε το Ubuntu χωρίς καμία αλλαγή στον υπολογιστή σας."
 
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
-"Iniciar el sistema Live. Si lo desea, puede instalarlo más tarde usando el "
-"icono 'Instalar' del escritorio."
+"Εκκινήσετε το live σύστημα. Αν θέλετε μπορείτε να το εγκαταστήσετε "
+"χρησιμοποιώντας το εικονίδιο \"Εγκατάσταση\" στην επιφάνεια εργασίας."
 
 #: help.xml:209
 msgid "live-install"
@@ -253,28 +256,28 @@ msgstr "live-install"
 
 #: help.xml:212
 msgid "Start the installation."
-msgstr "Iniciar la instalación."
+msgstr "Έναρξη της εγκατάστασης"
 
 #: help.xml:228
 msgid "memtest"
-msgstr "Test de memoria"
+msgstr "memtest"
 
 #: help.xml:229
 msgid "Test memory"
-msgstr "Test de memoria"
+msgstr "Έλεγχος μνήμης"
 
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr "Realizar un chequeo de la memoria."
+msgstr "Διεξαγωγή ενός ελέγχου μνήμης."
 
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"Para usar uno de esos métodos de arranque, escríbalo en la línea de órdenes, "
-"seguido opcionalmente por cualquiera de los parámetros de arranque. Por "
-"ejemplo:"
+"Για να χρησιμοποιήσετε μια από τις μεθόδους εκκίνησης, γράψτε την στην "
+"γραμμή εντολών ακολουθούμενη από οποιαδήποτε παράμετρο εκκίνησης. Για "
+"παράδειγμα:"
 
 #: help.xml:242
 #, no-wrap
@@ -291,16 +294,17 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Si no está seguro, debería usar el método de arranque predeterminado, sin "
-"parámetros especiales, simplemente pulsando Intro en boot:"
+"Αν δεν είστε σίγουροι χρησιμοποιήσετε την προεπιλεγμένη μέθοδο εκκίνησης "
+"χωρίς επιπλέον παραμέτρους, απλά πατώντας Enter στην γραμμή εντολών της "
+"εκκίνησης."
 
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
-"(\"Ubuntu\" puede ser sustituido por otros nombres de sistemas operativos "
-"relacionados. Este texto de ayuda es genérico.)"
+"(Το \"Ubuntu\" μπορεί να αντικατασταθεί με άλλα σχετικά λειτουργικά "
+"συστήματα. Αυτό το κείμενο βοήθειας είναι γενικό.)"
 
 #: help.xml:257 help.xml:307
 msgid ""
@@ -309,27 +313,26 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
-"Para usar uno de esos métodos de arranque, selecciónelo en el menú con las "
-"teclas del cursor. Pulse F4 para seleccionar otros modos de instalación y "
-"arranque alternativos. Pulse F6 para editar los parámetros de arranque. "
-"Pulse F6 de nuevo para seleccionarlos desde un menú con los parámetros de "
-"arranque más comunes."
+"Για να χρησιμοποιήσετε μια από αυτές τις μεθόδους, επιλέξτε την από το μενού "
+"με τα βελάκια. Πατήστε F4 για να επιλέξετε εναλλακτικούς τρόπους εκκίνησης "
+"και εγκατάστασης. Πατήστε F6 για να ρυθμίσετε τις παραμέτρους εκκίνησης. "
+"Πατήστε F6 ξανά για να διαλέξετε από ένα μενού τις συνήθως χρησιμοποιούμενες "
+"παραμέτρους."
 
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
-"Excepto en el modo experto, se suprimen los mensajes no críticos de arranque "
-"del núcleo."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr "RESCATAR UN SISTEMA DAÑADO"
+msgstr "ΔΙΑΣΩΣΗ ΚΑΤΕΣΤΡΑΜΜΕΝΟΥ ΣΥΣΤΗΜΑΤΟΣ"
 
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
-"Use uno de los métodos de arranque para rescatar una instalación existente"
+"Χρησιμοποιείστε μια από τις μεθόδους εκκίνησης για να διασώσετε ένα υπάρχον "
+"σύστημα."
 
 #: help.xml:289
 msgid "rescue"
@@ -337,11 +340,11 @@ msgstr "rescue"
 
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr "Recuperar un sistema dañado"
+msgstr "Διάσωση ενός κατεστραμμένου συστήματος"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr "Arrancar en modo de rescate."
+msgstr "Εκκίνηση σε λειτουργία διάσωσης (rescue mode)"
 
 #: help.xml:303
 #, no-wrap
@@ -356,62 +359,61 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
-"No hay un modo de rescate dedicado en este CD. Sin embargo, como el sistema "
-"completo se ejecuta desde el CD, es posible usar la línea de órdenes o las "
-"herramientas gráficas proporcionadas para recuperar un sistema dañado, y "
-"usar un navegador web para buscar ayuda. Hay muchos consejos disponibles en "
-"línea para muchos tipos de problemas que pueden provocar que su sistema "
-"normal no se arranque correctamente."
+"Δεν υπάρχει ειδική λειτουργία διάσωσης σε αυτό το CD. Παρόλα αυτά ολόκληρο "
+"το σύστημα εκτελείται από το CD, άρα είναι εφικτό να χρησιμοποιήσετε την "
+"γραμμή εντολών ή και τα γραφικά εργαλεία για να διασώσετε ένα κατεστραμμένο "
+"σύστημα. Επίσης μπορείτε να χρησιμοποιήσετε και έναν περιηγητή ιστού για "
+"αναζήτηση βοήθειας στο διαδίκτυο. Εκτενής βοήθεια βρίσκεται εκεί για τα "
+"περισσότερα προβλήματα που αποτρέπουν το σύστημα σας να εκκινήσει σωστά."
 
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "PARÁMETROS ESPECIALES DE ARRANQUE - VISIÓN GENERAL"
+msgstr "ΕΙΔΙΚΕΣ ΠΑΡΑΜΕΤΡΟΙ ΕΚΚΙΝΗΣΗΣ - ΓΕΝΙΚΗ ΕΠΙΣΚΟΠΗΣΗ"
 
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
-"En algunos sistemas, puede que necesite especificar un parámetro en el "
-"indicador <literal>boot:</literal> para poder arrancar el sistema."
+"Σε μερικά συστήματα μπορεί να χρειαστεί να ορίσετε μια παράμετρο στην γραμμή "
+"εντολών στης εκκίνησης <literal>boot:</literal> για να εκκινήσετε το σύστημα."
 
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
-"En algunos sistemas, puede que necesite especificar un parámetro pulsando F6 "
-"para poder arrancar el sistema."
+"Σε μερικά συστήματα μπορεί να χρειαστεί να ορίσετε μια παράμετρο πατώντας το "
+"F6 για να εκκινήσετε το σύστημα."
 
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"Por ejemplo, puede que Linux no sea capaz de autodetectar su hardware, y "
-"tenga que especificar explícitamente su ubicación o su tipo para que lo "
-"pueda reconocer."
+"Για παράδειγμα το Linux μπορεί να μην αναγνωρίσει αυτόματα το υλικό σας και "
+"να χρειαστεί να ορίσετε εσείς την τοποθεσία του ή τον τύπο του υλικού που "
+"δεν μπορεί να αναγνωρίσει."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
-msgstr ""
-"Para más información sobre los parámetros de arranque que puede usar, pulse:"
+msgstr "Για περισσότερες πληροφορίες για τους παραμέτρους εκκίνησης, πατήστε:"
 
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr "parámetros de arranque para máquinas especiales"
+msgstr "παράμετροι εκκίνησης για ειδικά μηχανήματα"
 
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr "parámetros de arranque para varias controladoras de disco"
+msgstr "παράμετροι εκκίνησης για διάφορους ελεγκτές δίσκων"
 
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr "parámetros de arranque que entiende el sistema de instalación"
+msgstr "παράμετροι εκκίνησης κατανοητοί από το σύστημα εγκατάστασης"
 
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr "parámetros de arranque que entiende el sistema de bootstrap"
+msgstr "παράμετροι εκκίνησης που κατανοούνται από το σύστημα εκκίνησης"
 
 #: help.xml:405
 msgid ""
@@ -420,23 +422,23 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"El instalador carga dinámicamente muchos módulos del núcleo, y los "
-"parámetros para esos módulos no se pueden especificar en la línea de "
-"órdenes. Para que se le soliciten los parámetros cuando se carguen los "
-"módulos, arranque en modo experto (vea <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
+"Πολλά στοιχεία (modules) του πυρήνα φορτώνονται δυναμικά από το πρόγραμμα "
+"εγκατάστασης και οι παράμετροι τους δεν μπορούν να εισαχθούν από την γραμμή "
+"εντολών. Για να σας εμφανιστεί γραμμή εντολών όταν τα στοιχεία αυτά "
+"φορτώνονται, εκκινήσετε στην λειτουργία για προχωρημένους (δείτε το <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"El sistema de bootstrap carga dinámicamente muchos módulos del núcleo, y los "
-"parámetros para esos módulos no se pueden especificar en la línea de órdenes."
+"Πολλά στοιχεία του πυρήνα φορτώνονται δυναμικά από το σύστημα εκκίνησης και "
+"οι παράμετροι τους δεν μπορούν να εισαχθούν από την γραμμή εντολών."
 
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr "PARÁMETROS ESPECIALES DE ARRANQUE - HARDWARE VARIADO"
+msgstr "ΕΙΔΙΚΕΣ ΠΑΡΑΜΕΤΡΟΙ ΕΚΚΙΝΗΣΗΣ - ΔΙΑΦΟΡΑ ΕΙΔΗ ΥΛΙΚΟΥ"
 
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
@@ -444,47 +446,48 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Puede usar los siguientes parámetros de arranque en el indicador "
-"<literal>boot:</literal>, en combinación con el método de arranque (vea "
-"<link linkend=\"F3\"><keycap>F3</keycap></link>)."
+"Μπορείτε να χρησιμοποιήσετε τις παρακάτω παραμέτρους εκκίνησης στην γραμμή "
+"εντολών <literal>boot:</literal>, σε συνδυασμό με την μέθοδο εκκίνησης "
+"(δείτε το <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Puede usar los siguientes parámetros de arranque pulsando F6, en combinación "
-"con el método de arranque (vea <link linkend=\"F3\"><keycap>F3</keycap></"
-"link>)."
+"Μπορείτε να χρησιμοποιήσετε τις παρακάτω παραμέτρους εκκίνησης πατώντας το "
+"πλήκτρο F6, σε συνδυασμό με την μέθοδο εκκίνησης (δείτε το <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
-"Si usa números hexadecimales, tendrá que usar el prefijo 0x (p.ej. 0x300)."
+"Αν χρησιμοποιείτε δεκαεξαδικούς αριθμούς θα πρέπει να χρησιμοποιείται το "
+"πρόθεμα 0x (π.χ. 0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr "HARDWARE"
+msgstr "ΥΛΙΚΟ"
 
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr "PARÁMETRO A ESPECIFICAR"
+msgstr "ΚΑΘΟΡΙΣΜΟΣ ΤΗΣ ΠΑΡΑΜΕΤΡΟΥ"
 
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr "IBM PS/1 o ValuePoint (disco IDE)"
+msgstr "IBM PS/1 ή ValuePoint (δίσκος IDE)"
 
 #: help.xml:456
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cilindros</replaceable>,<replaceable>cabezas</"
-"replaceable>,<replaceable>sectores</replaceable></userinput>"
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr "Algunos IBM ThinkPads"
+msgstr "Ορισμένα IBM ThinkPads"
 
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
@@ -492,7 +495,7 @@ msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr "Proteger rangos de puertos de E/S"
+msgstr "Προστασία περιοχών θυρών εισόδου εξόδου Ι/Ο"
 
 #: help.xml:466
 msgid ""
@@ -506,7 +509,7 @@ msgstr ""
 
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr "Portátiles con problemas de pantalla"
+msgstr "Φορητοί υπολογιστές με προβλήματα απεικόνισης στις οθόνες"
 
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
@@ -514,16 +517,15 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr "Usar el primer puerto serie a 9600 baudios"
+msgstr "Χρήση της πρώτης σειριακής θύρας στα 9600 baud"
 
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr "Forzar el uso del controlador IDE genérico"
+msgstr "Επιβολή της χρήσης του οδηγού IDE γενικής χρήσης"
 
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
@@ -533,11 +535,10 @@ msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
-"Posibles soluciones temporales para bloqueos u otros fallos del hardware:"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr "desactivar rutas de interrupción defectuosas en el APIC"
+msgstr ""
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
@@ -545,31 +546,31 @@ msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr "deshabilitar (parcialmente) el ACPI"
+msgstr ""
 
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>acpi=noirq</userinput> o <userinput>acpi=off</userinput>"
+msgstr ""
 
 #: help.xml:506
 msgid "disable USB"
-msgstr "deshabilitar el USB"
+msgstr ""
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr "<userinput>nousb</userinput>"
+msgstr ""
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr "sondeos para las interrupciones"
+msgstr ""
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr "<userinput>irqpoll</userinput>"
+msgstr ""
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
-msgstr "Por ejemplo:"
+msgstr "Για παράδειγμα:"
 
 #: help.xml:519
 #, no-wrap
@@ -583,7 +584,7 @@ msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "PARÁMETROS ESPECIALES DE ARRANQUE - UNIDADES DE DISCO VARIADAS"
+msgstr "ΕΙΔΙΚΟΙ ΠΑΡΑΜΕΤΡΟΙ ΕΚΚΙΝΗΣΗΣ - ΔΙΑΦΟΡΟΙ ΟΔΗΓΟΙ ΔΙΣΚΩΝ"
 
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
@@ -617,7 +618,7 @@ msgstr ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
 "userinput><optional><userinput>,<replaceable>buson</replaceable>,"
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>velocidad_dma</replaceable></userinput></optional></optional>"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
@@ -626,11 +627,12 @@ msgstr "Adaptec 274x, 284x"
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
-"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (se activa si no es cero)"
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (ενεργοποιημένη αν δεν είναι "
+"μηδέν)"
 
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
-msgstr "Hosts BusLogic SCSI"
+msgstr "Εξυπηρετητής SCSI BusLogic"
 
 #: help.xml:575
 msgid ""
@@ -640,7 +642,7 @@ msgstr ""
 
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr "Algunas máquinas DELL"
+msgstr "Συγκεκριμένα συστήματα DELL"
 
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
@@ -651,8 +653,8 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"Esta lista está incompleta; consulte el archivo kernel-parameters.txt del "
-"núcleo para más información."
+"Αυτή η λίστα είναι ημιτελής, δείτε το αρχείο του πυρήνα kernel-parameters."
+"txt για περισσότερα."
 
 #: help.xml:592
 #, no-wrap
@@ -666,27 +668,30 @@ msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr "PARÁMETROS ESPECIALES DE ARRANQUE - SISTEMA DE INSTALACIÓN"
+msgstr "ΕΙΔΙΚΕΣ ΠΑΡΑΜΕΤΡΟΙ ΕΚΚΙΝΗΣΗΣ - ΣΥΣΤΗΜΑ ΕΓΚΑΤΑΣΤΑΣΗΣ"
 
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr "Estos parámetros controlan cómo trabaja el instalador."
+msgstr ""
+"Αυτές οι παράμετροι ελέγχουν τον τρόπο που λειτουργεί το πρόγραμμα "
+"εγκατάστασης."
 
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
-msgstr "Estos parámetros controlan cómo trabaja el sistema de bootstrap."
+msgstr ""
+"Αυτές οι παράμετροι ελέγχουν τον τρόπο που λειτουργεί το σύστημα εκκίνησης."
 
 #: help.xml:632
 msgid "RESULT"
-msgstr "RESULTADO"
+msgstr "ΑΠΟΤΕΛΕΣΜΑ"
 
 #: help.xml:633
 msgid "PARAMETER"
-msgstr "PARÁMETRO"
+msgstr "ΠΑΡΑΜΕΤΡΟΣ"
 
 #: help.xml:636
 msgid "Verbose debugging"
-msgstr "Depuración detallada"
+msgstr "Αναλυτικός εντοπισμός σφαλμάτων"
 
 #: help.xml:637
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
@@ -694,7 +699,7 @@ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:641
 msgid "Debug boot sequence"
-msgstr "Depuración de la secuencia de arranque"
+msgstr "Εντοπισμός σφαλμάτων στην σειρά εκκίνησης"
 
 #: help.xml:642
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
@@ -702,7 +707,7 @@ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:646
 msgid "Disable framebuffer"
-msgstr "Desactivar el framebuffer"
+msgstr "Απενεργοποίηση του framebuffer"
 
 #: help.xml:647
 msgid "<userinput>fb=false</userinput>"
@@ -710,7 +715,7 @@ msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:651
 msgid "Don't start PCMCIA"
-msgstr "No arrancar el PCMCIA"
+msgstr "Μη εκκίνηση συσκευών PCMCIA"
 
 #: help.xml:652
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
@@ -718,7 +723,7 @@ msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:656
 msgid "Force static network config"
-msgstr "Forzar la configuración estática de la red"
+msgstr "Επιβολή ρύθμισης στατικού δικτύου"
 
 #: help.xml:657
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
@@ -726,7 +731,7 @@ msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:661
 msgid "Set keyboard map"
-msgstr "Establecer el mapa de teclado"
+msgstr "Ορίστε την διάταξη του πληκτρολογίου"
 
 #: help.xml:662
 msgid "<userinput>bootkbd=es</userinput>"
@@ -734,41 +739,38 @@ msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:666
 msgid "Use Braille tty"
-msgstr "Usar una terminal Braille"
+msgstr "Χρήση συσκευής Braille"
 
 #: help.xml:667
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>brltty=<replaceable>controlador</replaceable>,"
-"<replaceable>dispositivo</replaceable>,<replaceable>tabla_de_texto</"
-"replaceable></userinput>"
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:671
 msgid "Use high contrast accessibility theme"
-msgstr "Utilizar tema de accesibilidad de alto contraste"
+msgstr "Χρήση θέματος υψηλής αντίθεσης"
 
 #: help.xml:672
 msgid "<userinput>theme=dark</userinput>"
 msgstr "<userinput>theme=dark</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:676
 msgid "Use special tasks"
-msgstr "Utilizar tareas especiales"
+msgstr "Χρήση ειδικών εργασιών"
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
+msgstr ""
 
 #: help.xml:682
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
-"Desactivar el ACPI para los mapeos PCI (de utilidad para algunos servidores "
-"HP y máquinas basadas en Via)"
+"Απενεργοποίηση του ACPI για χάρτες PCI (χρήσιμο για ορισμένους εξυπηρετητές "
+"HP και μηχανήματα Via)"
 
 #: help.xml:685
 msgid "<userinput>pci=noacpi</userinput>"
@@ -786,37 +788,35 @@ msgstr "boot: live pci=noacpi"
 
 #: help.xml:710
 msgid "GETTING HELP"
-msgstr "OBTENER AYUDA"
+msgstr "ΛΗΨΗ ΒΟΗΘΕΙΑΣ"
 
 #: help.xml:717
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr "Si no puede instalar Ubuntu, ¡no desespere!"
+msgstr "Αν δεν μπορείτε να εγκαταστήσετε το Ubuntu, μην απελπίζεστε!"
 
 #: help.xml:720
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr "Si no puede arrancar Ubuntu, ¡no desespere!"
+msgstr "Αν δεν μπορείτε να εκκινήσετε το Ubuntu, μην απελπίζεστε!"
 
 #: help.xml:723
 msgid "The Ubuntu team is ready to help you!"
-msgstr "El equipo de Ubuntu está listo para ayudarle."
+msgstr "Η ομάδα του Ubuntu είναι έτοιμη να σας βοηθήσει!"
 
 #: help.xml:726
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Estamos especialmente interesados en recibir avisos de problemas de "
-"instalación, porque normalmente no suelen ocurrirle a <emphasis>una única</"
-"emphasis> persona."
+"Ενδιαφερόμαστε ιδιαίτερα να μαθαίνουμε τα προβλήματα εγκατάστασης, καθώς "
+"συνήθως δεν αφορούν μόνο <emphasis>ένα</emphasis> άτομο."
 
 #: help.xml:731
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Estamos especialmente interesados en recibir avisos de problemas de "
-"arranque, porque normalmente no suelen ocurrirle a <emphasis>una única</"
-"emphasis> persona."
+"Ενδιαφερόμαστε ιδιαίτερα να μαθαίνουμε τα προβλήματα εκκίνησης, καθώς "
+"συνήθως δεν αφορούν μόνο <emphasis>ένα</emphasis> άτομο."
 
 #: help.xml:735
 msgid ""
@@ -825,26 +825,26 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Seguramente ya escuchamos sobre su problema particular y podemos darle una "
-"solución rápida, o bien podemos estudiar su problema y trabajar con usted en "
-"su resolución, de manera que el próximo usuario que venga con el mismo "
-"problema se beneficie de su experiencia."
+"Είτε έχουμε ήδη ακούσει για το συγκεκριμένο πρόβλημα και μπορούμε να "
+"διανείμουμε μια γρήγορη λύση ή θα θέλαμε να ακούσουμε και να εργαστούμε μαζί "
+"για αυτό. Ο επόμενος χρήστης που θα έχει το ίδιο πρόβλημα θα επωφεληθεί από "
+"την εμπειρία σας."
 
 #: help.xml:766
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr "COPYRIGHTS Y GARANTÍAS"
+msgstr "ΠΝΕΥΜΑΤΙΚΑ ΔΙΚΑΙΩΜΑΤΑ ΚΑΙ ΕΓΓΥΗΣΕΙΣ"
 
 #: help.xml:773
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu es Copyright (c) 2004-2007 Canonical Ltd., e incorpora el trabajo de "
-"muchos otros autores y contribuyentes originales."
+"Το Ubuntu Copyright (C) 2004-2008 είναι εμπορικό σήμα της εταιρίας Canonical "
+"Ltd, η οποία συνεργάζεται με πολλούς άλλους συγγραφείς και συνεργάτες."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
-msgstr "El sistema Ubuntu se distribuye libremente de forma gratuita."
+msgstr "Το σύστημα Ubuntu είναι ελεύθερο για αναδιανομή."
 
 #: help.xml:781
 msgid ""
@@ -852,9 +852,9 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Tras la instalación, los términos exactos de distribución de cada paquete se "
-"describen en el correspondiente archivo usr/share/doc/"
-"<replaceable>nombredelpaquete</replaceable>/copyright."
+"Μετά την εγκατάσταση, οι ακριβείς όροι διανομής για κάθε πακέτο "
+"περιγράφονται αντίστοιχα στο αρχείο /usr/share/doc/"
+"<replaceable>όνομα_πακέτου</replaceable>/copyright."
 
 #: help.xml:786
 msgid ""
@@ -862,17 +862,17 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Tras el arranque, los términos exactos de distribución de cada paquete se "
-"describen en el correspondiente archivo usr/share/doc/"
-"<replaceable>nombredelpaquete</replaceable>/copyright."
+"Μετά την εκκίνηση, οι ακριβείς όροι διανομής για κάθε πακέτο περιγράφονται "
+"αντίστοιχα στο αρχείο /usr/share/doc/<replaceable>όνομα_πακέτου</"
+"replaceable>/copyright."
 
 #: help.xml:792
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Ubuntu se proporciona <emphasis>ABSOLUTAMENTE SIN NINGUNA GARANTÍA</"
-"emphasis>, hasta donde está permitido por las leyes aplicables."
+"Το Ubuntu διατίθεται με <emphasis>ΑΠΟΛΥΤΩΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ</emphasis> στην "
+"έκταση που επιτρέπεται από τον νόμο."
 
 #: help.xml:797
 msgid ""
@@ -880,14 +880,15 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
-"El sistema de instalación está basado en el instalador de Debian. Visite "
-"<ulink url=\"http://www.debian.org/\" /> para más detalles e información "
-"sobre el proyecto Debian."
+"To σύστημα εγκατάστασης βασίζεται στο πρόγραμμα εγκατάστασης του Debian. "
+"Δείτε το <ulink url=\"http://www.debian.org/\" /> για περισσότερες "
+"λεπτομέρειες και πληροφορίες για το έργο Debian."
 
 #: help.xml:803
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"Este sistema está basado en Debian. Visite <ulink url=\"http://www.debian."
-"org/\" /> para más detalles e información sobre el proyecto Debian."
+"To σύστημα βασίζεται στο πρόγραμμα εγκατάστασης του Debian. Δείτε το <ulink "
+"url=\"http://www.debian.org/\" /> για περισσότερες λεπτομέρειες και "
+"πληροφορίες για το έργο Debian."
