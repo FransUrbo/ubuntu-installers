@@ -537,6 +537,10 @@ endif
 	if [ -n "`find $(DPKGDIR)/info/ -name \\*.templates`" ]; then \
 		cat $(DPKGDIR)/info/*.templates >> $(TEMP)/all.utf; \
 	fi
+	if test -f $(TREE)/usr/share/localechooser/languagelist.data.gz; then \
+		zcat $(TREE)/usr/share/localechooser/languagelist.data.gz | \
+			grep '^[0-3]:' >> $(TEMP)/all.utf; \
+	fi
 	if test -f $(TREE)/usr/share/keymaps/decision-tree ; then \
 		cat $(TREE)/usr/share/keymaps/decision-tree >> $(TEMP)/all.utf; \
 	fi

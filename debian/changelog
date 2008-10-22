@@ -1,3 +1,10 @@
+debian-installer (20080522ubuntu23) UNRELEASED; urgency=low
+
+  * Take /usr/share/localechooser/languagelist.data.gz into account when
+    building reduced font (LP: #287668).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 22 Oct 2008 21:51:22 +0100
+
 debian-installer (20080522ubuntu22) intrepid; urgency=low
 
   * Update help text translations from Launchpad.
