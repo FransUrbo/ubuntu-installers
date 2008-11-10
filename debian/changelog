@@ -1,4 +1,4 @@
-grub-installer (1.35ubuntu1) UNRELEASED; urgency=low
+grub-installer (1.35ubuntu1) jaunty; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Show the grub menu and raise the menu timeout if other operating
@@ -37,7 +37,7 @@ grub-installer (1.35ubuntu1) UNRELEASED; urgency=low
       is probably a USB install and (hd0) does not make sense when
       installing from a removable disk.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Sun, 09 Nov 2008 21:41:11 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 10 Nov 2008 00:39:33 +0000
 
 grub-installer (1.35) unstable; urgency=low
 
