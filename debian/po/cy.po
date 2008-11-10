@@ -3,18 +3,19 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of wo.po to Wolof
+# translation of Debian Installer templates to Welsh
+# Copyright (C) 2004-2008 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
 #
-#
-# Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>, 2005, 2006, 2007, 2008.
+# Jonathan Price <mynamesnotclive@notclive.co.uk>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: wo\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-28 22:53+0000\n"
-"PO-Revision-Date: 2008-09-12 23:29+0200\n"
-"Last-Translator: Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>\n"
-"Language-Team: Wolof <en@li.org>\n"
+"PO-Revision-Date: 2008-08-20 21:58+0100\n"
+"Last-Translator: Jonathan Price <mynamesnotclive@notclive.co.uk>\n"
+"Language-Team: Welsh <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,7 +28,7 @@ msgstr ""
 #. :sl1:
 #: ../grub-installer.templates:1001 ../grub-installer.templates:2001
 msgid "Install the GRUB boot loader to the master boot record?"
-msgstr "Ndax nu istale sëfkatu boot bii di GRUB ci MBR bi?"
+msgstr "Sefydlu'r bŵtlwythydd GRUB i'r cofnod bŵt meistr?"
 
 #. Type: boolean
 #. Description
@@ -37,7 +38,8 @@ msgid ""
 "The following other operating systems have been detected on this computer: "
 "${OS_LIST}"
 msgstr ""
-"Yaneen sistem u doxaliin yii giseesna leen ci bii kompiyutar: ${OS_LIST}"
+"Mae'r systemau gweithredu canlynol wedi eu canfod ar y cyfrifiadur hwn: "
+"${OS_LIST}"
 
 #. Type: boolean
 #. Description
@@ -49,10 +51,10 @@ msgid ""
 "When your computer boots, you will be able to choose to load one of these "
 "operating systems or your new system."
 msgstr ""
-"Bu fekkee sa sistem i doxal yeppu ñi ngi ci list bi, kon man ngaa istale "
-"sëfkatu boot bi ci MBR bu sa disk budëgër bu jëkk. Saa bu sa kompiyutar di "
-"boot, danga mana tann benn ci yooyu sistem u doxaliin walla nga tann sa "
-"sistem u Debian bu bees bi."
+"Os mae eich holl systemau gweithredu wedi eu rhestru uchod, yna dylai fod yn "
+"ddiogel i sefydlu'r bŵtlwythydd ar gofnod bŵt meistr y disgen galed cyntaf. "
+"Pan mae eich cyfrifiadur yn bŵtio, cewch ddewis lwytho un o'r systemau "
+"gweithredu yma neu eich system newydd."
 
 #. Type: boolean
 #. Description
@@ -63,9 +65,9 @@ msgid ""
 "computer. If so, it should be safe to install the GRUB boot loader to the "
 "master boot record of your first hard drive."
 msgstr ""
-"Dafa mel ne Debian bii ngay istale moom rekk mooy sistem u doxal bi ne ci "
-"bii kompiyutar. Su demee noonu, kon man ngaa istale sëfkatu boot bii di GRUB "
-"ci MBR bu disk budëgër bu jëkk bi."
+"Ymddengys mai'r sefydliad yma yw'r unig system weithredu ar y cyfrifiadur "
+"hwn. Os felly, dylai fod yn ddiogel i sefydlu'r bŵtlwythydd GRUB ar gofnod "
+"bŵt meistr eich disgen galed cyntaf."
 
 #. Type: boolean
 #. Description
@@ -77,18 +79,16 @@ msgid ""
 "operating system temporarily unbootable, though GRUB can be manually "
 "configured later to boot it."
 msgstr ""
-"Wattandikul: Bu installer bii manula daj baneen sistem u doxaliin bu ne ci "
-"sa kompiyutar bi, kon boo soppee dara ci MBR bi man naa tax doo man a boot "
-"boobu sistem u doxaliin, doonte sax man ngaa komfigure waat GRUB ak sa loxo "
-"ngir man koo boot."
+"Rhybudd: Os methodd y sefydlydd ganfod system weithredu arall sy'n bresennol "
+"ar eich cyfrifiadur, bydd newid eich cofnod bŵt meistr yn rhwystro'r system "
+"weithredu rhag bŵtio, er gellir cuflunio GRUB i'w fŵtio yn hwyrach."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:3001
-#, fuzzy
 msgid "Install the GRUB boot loader to the Serial ATA RAID disk?"
-msgstr "Istale sëfkatu boot bi GRUB ci ab disk budëgër"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -129,15 +129,14 @@ msgstr ""
 #: ../grub-installer.templates:4001 ../grub-installer.templates:6001
 #: ../grub-installer.templates:15001
 msgid "Unable to configure GRUB"
-msgstr "Manul a komfigure GRUB"
+msgstr "Methwyd cyflunio GRUB"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:4001
-#, fuzzy
 msgid "An error occurred while setting up GRUB for your Serial ATA RAID disk."
-msgstr "Ab njuumte amna bi nuy sampu wolim yiñu kiripte."
+msgstr ""
 
 #. Type: error
 #. Description
@@ -146,9 +145,8 @@ msgstr "Ab njuumte amna bi nuy sampu wolim yiñu kiripte."
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:4001 ../grub-installer.templates:6001
-#, fuzzy
 msgid "The GRUB installation has been aborted."
-msgstr "Komfiguraasioŋ bi bayyeesna ko."
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -156,7 +154,7 @@ msgstr "Komfiguraasioŋ bi bayyeesna ko."
 #: ../grub-installer.templates:5001
 #, fuzzy
 msgid "Install the GRUB boot loader to the multipath device?"
-msgstr "Ndax nu istale sëfkatu boot bii di GRUB ci MBR bi?"
+msgstr "Sefydlu'r bŵtlwythydd GRUB i'r cofnod bŵt meistr?"
 
 #. Type: boolean
 #. Description
@@ -181,14 +179,14 @@ msgstr ""
 #: ../grub-installer.templates:6001
 #, fuzzy
 msgid "An error occurred while setting up GRUB for the multipath device."
-msgstr "Ab njuumte amna bi nuy sampu wolim yiñu kiripte."
+msgstr "Digwyddodd gwall wrth ysgrifennu'r newidiadau i'r dyfeisiau storfa."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:7001
 msgid "Install the GRUB boot loader to XFS file system?"
-msgstr "Ndax nu istale sëfkatu boot bii di GRUB ci sistem u fiise XFS?"
+msgstr "Sefydlu'r bŵtlwythydd GRUB ar system ffeiliau XFS?"
 
 #. Type: boolean
 #. Description
@@ -198,16 +196,15 @@ msgid ""
 "The GRUB boot loader installation often fails or hangs when /boot is on a "
 "XFS file system. Using LILO in this situation is recommended."
 msgstr ""
-"Istale sëfkatu boot bii di GRUB lu ci ëpp du antu, walla dafay kal bu "
-"fekkee /boot dafa ne ci ab sistem u fiise XFS. Fu mel nooni, danu fiy "
-"laybiire ñu jëfandikoo LILO."
+"Mae sefydliad bŵtlwythydd GRUB yn methu neu'n hongian yn aml pan mae /boot "
+"ar system ffeiliau XFS. Argymhellir defnydd LILO yn y sefyllfa hwn."
 
 #. Type: string
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:8001
 msgid "Device for boot loader installation:"
-msgstr "Periferik u istalaasioŋ bu sëfkatu boot bi:"
+msgstr "Y dyfais ar gyfer sefydliad llwythydd bŵtio:"
 
 #. Type: string
 #. Description
@@ -220,11 +217,11 @@ msgid ""
 "can install GRUB elsewhere on the drive, or to another drive, or even to a "
 "floppy."
 msgstr ""
-"Sa  sistem bii ngay door a istlale dafa wara man a demaare (boot), ngir "
-"loolu man a am da ngay istale sëfkatu boot bii di GRUB ci ab periferik bu "
-"mana demaare (boot). Li ñu baaxoo def moodi istale GRUB ci MBR bu sa disk "
-"budëgër bu jëkk bi. Bula gënalee nak man nga koo istale faneen ci disk bi, "
-"walla ci baneen disk, walla sax ci ab disket."
+"Rhaid i chi wneud y system Debian sydd newydd gael ei sefydlu yn fŵtiadwy, "
+"gan sefydlu'r bŵtlwythydd GRUB ar ddyfais bŵtiadwy. Y ffordd arferol i wneud "
+"hyn yw i sefydlu GRUB ar gofnod bŵt meistr eich disgen galed cyntaf. Os "
+"hoffech, gallwch sefydlu GRUB rhywle arall ar y disg, neu ar ddisg arall, "
+"neu hyd yn oed at ddisgen hyblyg."
 
 #. Type: string
 #. Description
@@ -241,24 +238,22 @@ msgid ""
 "   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
-"Man ngaa joxee turu periferik bi niko GRUB di binde \"(hdn,m)\", walla niki "
-"periferik yi ci /dev. Ay misaal ñi ngi ci suuf:\n"
-"- \"(hd0)\" walla \"/dev/hda\" dana istale GRUB ci MBR bi\n"
-"   ci sa disk budëgër bu jëkk (IDE);\n"
-" - \"(hd0,1)\" walla \"/dev/hda2\"dana jëfandikoo ñareel u partisoŋbu sa "
-"disk\n"
-"   IDE bu jëkk;\n"
-" - \"(hd2,4)\" walla \"/dev/sdc5\" dana jëfandikoo bi jëkk ci sa partisoŋ "
-"yiñu yaatal yi ne ci\n"
-"   ñatteel u disk (SCSI fii);\n"
-" - \"(fd0)\" walla \"/dev/fd0\" dana istale GRUB ci ab disket."
+"Gellir penodi'r dyfais gan ddefnyddio nodiant \"(hdn,m)\" GRUB, neu fel "
+"dyfais yn /dev. Enghreifftiau:\n"
+" - bydd \"(hd0)\" neu \"/dev/hda\" yn sefydlu GRUB at gofnod bŵt meistr\n"
+"   eich disgen caled cyntaf (IDE);\n"
+" - bydd \"(hd0,1)\" neu \"/dev/hda2\" yn defnyddio ail rhaniad eich\n"
+"   disgen IDE cyntaf;\n"
+" - bydd \"(hd2,4)\" neu \"/dev/sdc5\" yn defnyddio rhaniad estynedig cyntaf\n"
+"   eich trydydd disgen (SCSI yma);\n"
+" - bydd \"(fd0)\" neu \"/dev/fd0\" yn sefydlu GRUB ar ddisgen hyblyg."
 
 #. Type: password
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:9001
 msgid "GRUB password:"
-msgstr "Baatujall bu GRUB:"
+msgstr "Cyfrinair GRUB:"
 
 #. Type: password
 #. Description
@@ -272,27 +267,20 @@ msgid ""
 "GRUB command-line interface. By default, any user will still be able to "
 "start any menu entry without entering the password."
 msgstr ""
-"Sëfkatu boot bii di GRUB amna ay karakteeristik yu interaktif yu bare yoo "
-"xamne, bu nit ku amul ndigal manee aksi ci sa sistem bi, man na leen a "
-"jëfandikoo ngir def ci lula neexul. Ngir aaru ci lumel nee man ngaa joxe ab "
-"baatujall booxam ne deesnako laaj keppu ku nara soppi dara ci antre yi ci "
-"menu bi, walla muy dugg ci interfaas bu liiñ u komaand bu GRUB. Ci defóo nak "
-"kuy jëfandikoo masin bi kune man naa tambule menu bu ko neex ci ludul muy "
-"joxe ab baatujall."
 
 #. Type: password
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:9001
 msgid "If you do not wish to set a GRUB password, leave this field blank."
-msgstr "Soo baggul a joxe ab baatu jall bu GRUB, kon bul bind fii dara."
+msgstr "Os nad ydych chi'n gwybod beth i'w rhoi, gadewch e'n wag"
 
 #. Type: password
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:10001
 msgid "Re-enter password to verify:"
-msgstr "Dugëlaatal baatujall bi ngir nu wóorlu:"
+msgstr "Ail-rhowch y cyfrinair er mwyn dilysu:"
 
 #. Type: password
 #. Description
@@ -302,29 +290,31 @@ msgid ""
 "Please enter the same GRUB password again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Dugëlaatal  baatujall bu GRUB binga defoon ngir seet baxam tappeewoon nga ko "
-"bu baax."
+"Os gwelwch yn dda, rhowch yr un cyfrinair 'root' eto er mwyn gwirio eich bod "
+"wedi ei deipio'n gywir."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:11001
 msgid "Password input error"
-msgstr "Njuumte bu dugël baatujall bi"
+msgstr "Gwall mewnbwn cyfrinair"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:11001
 msgid "The two passwords you entered were not the same. Please try again."
-msgstr "Ñaari baatujall yi nga dugël bokku ñu. Jéemaatal baneen yoon ba xam."
+msgstr ""
+"Nid oedd y ddau gryfinair y rhoddoch yr yn peth. Ceisiwch eto os gwelwch yn "
+"dda."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:13001
 msgid "GRUB installation failed"
-msgstr "Istalaasioŋ u GRUB antuwul"
+msgstr "Gosodiad GRUB wedi methu"
 
 #. Type: error
 #. Description
@@ -334,22 +324,22 @@ msgid ""
 "The '${GRUB}' package failed to install into /target/. Without the GRUB boot "
 "loader, the installed system will not boot."
 msgstr ""
-"Paketu '${GRUB}' manula istalewu ci /target/. Boo amul prograam demaare bii "
-"di GRUB kon sa sistem bi nga istale du demaare."
+"Methodd y pecyn '${GRUB}' gosod i fewn i /target/. Ni all y system gosodedig "
+"gychwyn heb y llwythwr cychwyn GRUB."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:14001
 msgid "Unable to install GRUB in ${BOOTDEV}"
-msgstr "Manula istale GRUB ci ${BOOTDEV}"
+msgstr "Methywd sefydlu GRUB yn ${BOOTDEV}"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:14001
 msgid "Executing 'grub-install ${BOOTDEV}' failed."
-msgstr "Doxal 'grub-install ${BOOTDEV}' antuwul."
+msgstr "Methwyd rhedeg 'grub-install ${BOOTDEV}'."
 
 #. Type: error
 #. Description
@@ -359,63 +349,63 @@ msgstr "Doxal 'grub-install ${BOOTDEV}' antuwul."
 #. :sl2:
 #: ../grub-installer.templates:14001 ../grub-installer.templates:15001
 msgid "This is a fatal error."
-msgstr "Lii ab njuumte buy faat la."
+msgstr "Mae hyn yn wall marwol."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:15001
 msgid "Executing 'update-grub' failed."
-msgstr "Doxal 'update-grub' antuwul."
+msgstr "Methwyd rhedeg 'update-grub'."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:18001
 msgid "Installing GRUB boot loader"
-msgstr "Mi ngi istale sëfkatu boot bi GRUB"
+msgstr "Sefydlu'r bŵtlwythydd GRUB"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:19001
 msgid "Looking for other operating systems..."
-msgstr "Mi ngi wër yaneen sistem u doxaliin yi..."
+msgstr "Yn chwilio am systemau gweithredu eraill..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:20001
 msgid "Installing the '${GRUB}' package..."
-msgstr "Mingi istale paket bu '${GRUB}'..."
+msgstr "Sefydlu'r pecyn '${GRUB}'..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:21001
 msgid "Determining GRUB boot device..."
-msgstr "Mi ngi jéema xam periferik bu boot bu GRUB..."
+msgstr "Yn dehongli dyfais bŵt GRUB..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:22001
 msgid "Running \"grub-install ${BOOTDEV}\"..."
-msgstr "Mi ngi doxal \"grub-install ${BOOTDEV}\"..."
+msgstr "Yn rhedeg \"grub-install ${BOOTDEV}\"..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:23001
 msgid "Running \"update-grub\"..."
-msgstr "Mi ngi doxal \"update-grub\"..."
+msgstr "Yn rhedeg \"update-grub\"..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:24001
 msgid "Updating /etc/kernel-img.conf..."
-msgstr "Mi ngi yeesal /etc/kernel-img.conf..."
+msgstr "Yn diweddaru /etc/kernel-img.conf..."
 
 #. Type: text
 #. Description
@@ -423,7 +413,7 @@ msgstr "Mi ngi yeesal /etc/kernel-img.conf..."
 #. :sl1:
 #: ../grub-installer.templates:25001
 msgid "Install the GRUB boot loader on a hard disk"
-msgstr "Istale sëfkatu boot bi GRUB ci ab disk budëgër"
+msgstr "Sefydlu'r bŵtlwythydd GRUB ar ddisgen galed"
 
 #. Type: text
 #. Description
@@ -431,4 +421,4 @@ msgstr "Istale sëfkatu boot bi GRUB ci ab disk budëgër"
 #. :sl2:
 #: ../grub-installer.templates:26001
 msgid "Reinstall GRUB boot loader"
-msgstr "Istalewaat prograam u tambule bii di GRUB"
+msgstr "Sefydlu'r bŵtlwythydd GRUB"
