@@ -1,3 +1,12 @@
+grub-installer (1.35ubuntu2) UNRELEASED; urgency=low
+
+  * Hide GRUB menu if grub-installer/bootdev_directory is preseeded; this is
+    used in the Wubi case where GRUB is used as a secondary boot loader, and
+    so the user already had a chance to boot from another operating system
+    (thanks, Agostino Russo; LP: #289791).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 11 Nov 2008 12:07:29 +0000
+
 grub-installer (1.35ubuntu1) jaunty; urgency=low
 
   * Resynchronise with Debian. Remaining changes:

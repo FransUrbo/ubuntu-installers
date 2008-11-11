@@ -960,6 +960,7 @@ user_params=$(user-params) || true
 defopt_params=""
 kopt_params=""
 bootdev_directory=""
+hide_menu=""
 for u_param in $user_params; do
 	case "$u_param" in
 	    quiet)
@@ -984,13 +985,14 @@ if db_get grub-installer/bootdev_directory && [ "$RET" ]; then
 	# Be careful to deal with either UUID-style or non-UUID-style groot.
 	# grub4dos doesn't recognise UUIDs yet.
 	sed -i "s:^\(# groot=\)[^(].*:\1():; s:^\(# groot=([^)]*)\).*:\1$bootdev_directory:" $ROOT/boot/grub/$menu_file
+	hide_menu=1
 fi
 # In either case, update the Debian kernel entries
 if [ "$user_params" ] || [ "$bootdev_directory" ]; then
 	update_grub
 fi
 
-if [ -s /tmp/os-probed ]; then
+if [ -z "$hide_menu" ] && [ -s /tmp/os-probed ]; then
 	# Other operating systems are installed, so show the menu by default
 	# and raise the timeout.
 	sed -i 's/^hiddenmenu[[:space:]]*$/#hiddenmenu/;
