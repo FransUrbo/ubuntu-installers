@@ -9,7 +9,7 @@ XS-Debian-Vcs-Svn: svn://svn.debian.org/d-i/trunk/installer
 Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-core-dev/debian-installer/ubuntu
 Build-Conflicts: libnewt-pic [mipsel]
 # NOTE: Do not edit the next line by hand. See comment below.
-Build-Depends: debhelper (>= 4), apt, apt-utils, gnupg, ubuntu-keyring, dpkg (>= 1.13.9), dctrl-tools, bc, debiandoc-sgml, xsltproc, docbook-xsl, libbogl-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], lsb-release, belocs-locales-bin, glibc-pic, libslang2-pic (>= 2.0.6-4), libnewt-pic [!mipsel], libnewt-dev [mipsel], libgcc1 [i386 amd64 lpia], cramfsprogs [powerpc ppc64 ia64 mips mipsel arm armeb armel], genext2fs (>= 1.3-7.1), e2fsprogs, mklibs (>= 0.1.25), mklibs-copy [mips mipsel], genisoimage [!s390 !s390x], genromfs [sparc], hfsutils [powerpc ppc64], dosfstools [i386 ia64 m68k amd64 lpia], cpio, devio [arm armeb armel], slugimage (>= 0.10+r58-6) [arm armeb armel], nwutil [arm], syslinux (>= 2.11-0.1) [i386 amd64 lpia], palo [hppa], elilo [ia64], yaboot [powerpc ppc64], aboot (>= 0.9b-2) [alpha], silo [sparc], sparc-utils [sparc], genisovh [mips], delo [mipsel], tip22 [mips], colo (>= 1.21-1) [mipsel], sibyl [mips mipsel], atari-bootstrap [m68k], vmelilo [m68k], m68k-vme-tftplilo [m68k], amiboot [m68k], emile [m68k], emile-bootblocks [m68k], apex-nslu2 [arm armeb armel], tofrodos [i386 amd64 lpia kfreebsd-i386 kfreebsd-amd64], mtools (>= 3.9.9-1) [i386 ia64 m68k amd64 lpia kfreebsd-i386 kfreebsd-amd64], po4a [i386 amd64 lpia], python [i386 amd64 lpia], module-init-tools [i386 arm armeb armel amd64 alpha hppa ia64 lpia m68k mips mipsel powerpc ppc64 s390 sparc], bf-utf-source [!s390 !s390x], upx-ucl (>= 3) [i386 lpia], mkvmlinuz [powerpc ppc64], openssl [arm armel]
+Build-Depends: debhelper (>= 4), apt, apt-utils, gnupg, ubuntu-keyring, dpkg (>= 1.13.9), dctrl-tools, wget, bc, debiandoc-sgml, xsltproc, docbook-xsl, libbogl-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], lsb-release, belocs-locales-bin, glibc-pic, libslang2-pic (>= 2.0.6-4), libnewt-pic (>= 0.52.2-11.3) [!mipsel], libnewt-dev (>= 0.52.2-11.3) [mipsel], libgcc1 [i386 amd64 lpia], cramfsprogs [powerpc ppc64 ia64 mips mipsel arm armeb armel], genext2fs (>= 1.3-7.1), e2fsprogs, mklibs (>= 0.1.25), mklibs-copy [mips mipsel], genisoimage [!s390 !s390x], genromfs [sparc], hfsutils [powerpc ppc64], dosfstools [i386 ia64 m68k amd64 lpia], cpio, devio [arm armeb armel], slugimage (>= 0.10+r58-6) [arm armeb armel], nwutil [arm], uboot-mkimage [arm armel], syslinux (>= 2:3.63+dfsg-2) [i386 amd64 lpia], palo [hppa], elilo [ia64], yaboot [powerpc ppc64], aboot (>= 0.9b-2) [alpha], silo [sparc], sparc-utils [sparc], genisovh [mips], tip22 [mips], colo (>= 1.21-1) [mipsel], sibyl [mips mipsel], atari-bootstrap [m68k], vmelilo [m68k], m68k-vme-tftplilo [m68k], amiboot [m68k], emile [m68k], emile-bootblocks [m68k], apex-nslu2 [arm armeb armel], tofrodos [i386 amd64 lpia kfreebsd-i386 kfreebsd-amd64], mtools (>= 3.9.9-1) [i386 ia64 m68k amd64 lpia kfreebsd-i386 kfreebsd-amd64], po4a [i386 amd64 lpia], python [i386 amd64 lpia], module-init-tools [i386 arm armeb armel amd64 alpha hppa ia64 lpia m68k mips mipsel powerpc ppc64 s390 sparc], bf-utf-source [!s390 !s390x], upx-ucl (>= 3) [i386 lpia], mkvmlinuz [powerpc ppc64], openssl [arm armel]
 # This package has the worst Build-Depends in Debian, so it deserves some
 # explanation. Note that this comment can also be used to generate a
 # Build-Depends line, by running the debian/genbuilddeps program.
@@ -33,6 +33,8 @@ Build-Depends: debhelper (>= 4), apt, apt-utils, gnupg, ubuntu-keyring, dpkg (>=
 #		version.
 #	- dctrl-tools
 #		Various manipulations of the udeb Packages files.
+#	- wget
+#		Used to test validity of mirrors.
 #	- bc
 #		Used for some image size calculations.
 #	- debiandoc-sgml
@@ -53,10 +55,10 @@ Build-Depends: debhelper (>= 4), apt, apt-utils, gnupg, ubuntu-keyring, dpkg (>=
 #		For library reduction.
 #	- libslang2-pic (>= 2.0.6-4)
 #		Make dependency versioned temporarily to make sure we avoid #392942
-#	- libnewt-pic [!mipsel]
+#	- libnewt-pic (>= 0.52.2-11.3) [!mipsel]
 #		Rather than use slang and newt udebs, reduced versions of
 #		the libraries are put onto images to save space.
-#	- libnewt-dev [mipsel]
+#	- libnewt-dev (>= 0.52.2-11.3) [mipsel]
 #		On mipsel, we can't use libnewt-pic right now due to bug
 #		#329733. See also Build-Conflicts above.
 #	- libgcc1 [i386 amd64 lpia]
@@ -101,13 +103,15 @@ Build-Depends: debhelper (>= 4), apt, apt-utils, gnupg, ubuntu-keyring, dpkg (>=
 #		For building nslu2 firmware images.
 #	- nwutil [arm]
 #		For building netwinder netinst images.
+#	- uboot-mkimage [arm armel]
+#		For creating u-boot images
 #
 # Boot loaders:
 #	On many arches boot loaders are copied onto or ran on the boot
 #	images in one way or another. There's a reason our mailing list is
 #	still called debian-boot..
-#	- syslinux (>= 2.11-0.1) [i386 amd64 lpia]
-#		There were some crippling bugs in version 2.10.
+#	- syslinux (>= 2:3.63+dfsg-2) [i386 amd64 lpia]
+#		With menu default64 support.		
 #	- palo [hppa]
 #	- elilo [ia64]
 #	- yaboot [powerpc ppc64]
@@ -122,8 +126,6 @@ Build-Depends: debhelper (>= 4), apt, apt-utils, gnupg, ubuntu-keyring, dpkg (>=
 #		For elftoaout and piggyback, to make netboot images.
 #	- genisovh [mips]
 #		Makes mini iso images bootable on SGI MIPSen.
-#	- delo [mipsel]
-#		For booting DECstations from storage media.
 #	- tip22 [mips]
 #		Piggyback netboot images.
 #	- colo (>= 1.21-1) [mipsel]

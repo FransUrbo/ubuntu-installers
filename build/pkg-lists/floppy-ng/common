@@ -21,8 +21,8 @@ installation-locale
 nano-udeb
 
 # floppy loading support
-load-floppy
-floppy-retriever
+load-media
+media-retriever
 
 preseed-common
 initrd-preseed

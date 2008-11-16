@@ -17,6 +17,9 @@ initrd-kickseed
 
 nano-udeb
 
+# Starting from 2.6.25, the isofs module is in a separate udeb
+isofs-modules-${kernel:Version} ?
+
 # an iso from the hard drive is loop-mounted, and the cd retriever used
 # to load it
 iso-scan
@@ -28,6 +31,8 @@ cdrom-retriever
 cdrom-detect -
 
 save-logs
-mountfloppy
+
+# for saving logs, and loading drivers
+mountmedia
 
 libfribidi0-udeb

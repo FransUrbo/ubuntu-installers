@@ -572,14 +572,7 @@ sources.list.udeb:
 	if [ "$(MIRROR)x" != "x" ]; then \
 		echo "deb $(MIRROR) $(USE_UDEBS_FROM) $(UDEB_COMPONENTS)"; \
 	else \
-		grep '^deb[ \t]' $(SYSTEM_SOURCES_LIST) \
-		|grep -v '^deb[ \t]cdrom:' \
-		|grep -v '\(security.debian.org\|volatile.debian.\(net\|org\)\)' \
-		|grep '[ \t]main' \
-		|awk '{print $$1 " " $$2}' \
-		|sed "s,/* *$$, $(USE_UDEBS_FROM) $(UDEB_COMPONENTS)," \
-		|sed "s,^deb file,deb copy," \
-		|perl -ne 'print unless $$seen{$$_}; $$seen{$$_}=1' ; \
+		gen-sources.list.udeb "$(SYSTEM_SOURCES_LIST)" $(USE_UDEBS_FROM) $(UDEB_COMPONENTS) ; \
 	fi) > $@
 
 

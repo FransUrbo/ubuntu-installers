@@ -396,6 +396,14 @@ reasonably sized alphabet.
 </para>
 
 <para>
+It is allowed to add characters that can be entered directly using a
+"standard" keyboard for the language and are printed on the tops of keys,
+for example as displayed on http://en.wikipedia.org/wiki/Keymap. This
+includes characters accessible through alt-gr and characters that can be
+created using dead keys.
+</para>
+
+<para>
 This step is optional for languages that can only be rendered with the
 graphical version of &d-i; (languages in category 4 at the previous step). 
 For languages which must used the graphical version of &d-i;, this step is automatically considered completed. Translators can however still provide the required file which could be useful in the future. 
@@ -408,7 +416,7 @@ namely French:
 
 <informalexample>
 <screen>
-àâéèëêïîôùûüÿÀÂÉÈËÊÔÙÛÜŸÇ°
+àâéèëêïîôùûüÿÀÂÉÈËÊÔÙÛÜŸÇ°£§µ
 </screen>
 </informalexample>
 

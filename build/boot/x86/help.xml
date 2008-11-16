@@ -633,16 +633,6 @@ For F10 type control and F then the digit 0
    <segtitle>PARAMETER</segtitle>
 
    <seglistitem condition="install">
-    <seg>Verbose debugging</seg>
-    <seg><userinput>DEBCONF_DEBUG=5</userinput></seg>
-   </seglistitem>
-
-   <seglistitem condition="install">
-    <seg>Debug boot sequence</seg>
-    <seg><userinput>BOOT_DEBUG=2|3</userinput></seg>
-   </seglistitem>
-
-   <seglistitem condition="install">
     <seg>Disable framebuffer</seg>
     <seg><userinput>fb=false</userinput></seg>
    </seglistitem>
@@ -662,19 +652,9 @@ For F10 type control and F then the digit 0
     <seg><userinput>bootkbd=es</userinput></seg>
    </seglistitem>
 
-   <seglistitem>
-    <seg>Use Braille tty</seg>
-    <seg><userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</replaceable>,<replaceable>texttable</replaceable></userinput></seg>
-   </seglistitem>
-
    <seglistitem condition="install">
-    <seg>Use high contrast accessibility theme</seg>
-    <seg><userinput>theme=dark</userinput></seg>
-   </seglistitem>
-
-   <seglistitem condition="install">
-    <seg>Use special tasks</seg>
-    <seg><userinput>tasks="kubuntu-desktop, standard"</userinput></seg>
+    <seg>Select the Kubuntu desktop</seg>
+    <seg><userinput>tasks=kubuntu-desktop</userinput></seg>
    </seglistitem>
 
    <seglistitem condition="live">
@@ -684,12 +664,22 @@ For F10 type control and F then the digit 0
     </seg>
     <seg><userinput>pci=noacpi</userinput></seg>
    </seglistitem>
+
+   <seglistitem condition="install">
+    <seg>Use high contrast theme</seg>
+    <seg><userinput>theme=dark</userinput></seg>
+   </seglistitem>
+
+   <seglistitem>
+    <seg>Use Braille tty</seg>
+    <seg><userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</replaceable>,<replaceable>texttable</replaceable></userinput></seg>
+   </seglistitem>
   </segmentedlist>
 
   <para condition="syslinux">For example:</para>
 
   <informalexample condition="syslinux">
-   <screen condition="install">boot: install pci=noacpi</screen>
+   <screen condition="install">boot: install fb=false</screen>
    <screen condition="live">boot: live pci=noacpi</screen>
   </informalexample>
 
