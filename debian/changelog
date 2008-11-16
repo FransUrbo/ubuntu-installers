@@ -48,6 +48,7 @@ debian-installer (20081029ubuntu1) UNRELEASED; urgency=low
     - Take /usr/share/localechooser/languagelist.data.gz into account when
       building reduced font.
   * Enable GTK frontend, as we're interested in trying it out in Ubuntu now.
+  * Make speakup-modules optional, as we don't have it in Ubuntu yet.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sat, 15 Nov 2008 21:43:45 +0000
 
