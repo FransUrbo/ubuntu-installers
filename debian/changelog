@@ -50,6 +50,7 @@ debian-installer (20081029ubuntu1) UNRELEASED; urgency=low
   * Enable GTK frontend, as we're interested in trying it out in Ubuntu now.
   * Make speakup-modules optional, as we don't have it in Ubuntu yet.
   * Move mainline architectures to 2.6.27-9 kernels.
+  * Move ports architectures to 2.6.27-1 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sat, 15 Nov 2008 21:43:45 +0000
 
