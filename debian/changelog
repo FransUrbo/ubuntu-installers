@@ -51,6 +51,8 @@ debian-installer (20081029ubuntu1) UNRELEASED; urgency=low
   * Make speakup-modules optional, as we don't have it in Ubuntu yet.
   * Move mainline architectures to 2.6.27-9 kernels.
   * Move ports architectures to 2.6.27-1 kernels.
+  * Move armel to 2.6.27-9, since it's currently being built as a mainline
+    architecture.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sat, 15 Nov 2008 21:43:45 +0000
 
