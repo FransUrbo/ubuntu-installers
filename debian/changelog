@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu2) UNRELEASED; urgency=low
+
+  * Make mouse-modules temporarily optional on lpia and powerpc.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 19 Nov 2008 12:48:42 +0000
+
 debian-installer (20081029ubuntu1) jaunty; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
