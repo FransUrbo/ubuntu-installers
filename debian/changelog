@@ -1,4 +1,4 @@
-grub-installer (1.35ubuntu2) UNRELEASED; urgency=low
+grub-installer (1.35ubuntu2) jaunty; urgency=low
 
   * Hide GRUB menu if grub-installer/bootdev_directory is preseeded; this is
     used in the Wubi case where GRUB is used as a secondary boot loader, and
@@ -8,7 +8,7 @@ grub-installer (1.35ubuntu2) UNRELEASED; urgency=low
     systems (LP: #10661).
   * 'dmraid -c -s' changed its output format; cope with both old and new.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 11 Nov 2008 12:07:29 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 21 Nov 2008 21:00:39 +0000
 
 grub-installer (1.35ubuntu1) jaunty; urgency=low
 
