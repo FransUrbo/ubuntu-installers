@@ -6,6 +6,7 @@ grub-installer (1.35ubuntu2) UNRELEASED; urgency=low
     (thanks, Agostino Russo; LP: #289791).
   * Use rootnoverify rather than root when chain-loading Microsoft operating
     systems (LP: #10661).
+  * 'dmraid -c -s' changed its output format; cope with both old and new.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 11 Nov 2008 12:07:29 +0000
 
