@@ -1,9 +1,9 @@
-debian-installer (20081029ubuntu2) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu2) jaunty; urgency=low
 
   * Make mouse-modules temporarily optional on lpia and powerpc.
   * Drop pata-modules from ia64.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 19 Nov 2008 12:48:42 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 21 Nov 2008 09:26:00 +0000
 
 debian-installer (20081029ubuntu1) jaunty; urgency=low
 
