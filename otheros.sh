@@ -12,10 +12,12 @@ EOF
 		cat >> $tmpfile <<EOF
 rootnoverify	$grubdrive
 EOF
+	    ;;
 	    *)
 		cat >> $tmpfile <<EOF
 root		$grubdrive
 EOF
+	    ;;
 	esac
 	cat >> $tmpfile <<EOF
 savedefault

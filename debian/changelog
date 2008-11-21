@@ -1,3 +1,9 @@
+grub-installer (1.35ubuntu4) UNRELEASED; urgency=low
+
+  * Fix syntax error in otheros.sh.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 21 Nov 2008 23:51:39 +0000
+
 grub-installer (1.35ubuntu3) jaunty; urgency=low
 
   * Nail another instance of dmraid output-checking.
