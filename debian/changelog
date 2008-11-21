@@ -1,3 +1,9 @@
+grub-installer (1.35ubuntu3) UNRELEASED; urgency=low
+
+  * Nail another instance of dmraid output-checking.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 21 Nov 2008 21:08:22 +0000
+
 grub-installer (1.35ubuntu2) jaunty; urgency=low
 
   * Hide GRUB menu if grub-installer/bootdev_directory is preseeded; this is
