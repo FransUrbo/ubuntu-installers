@@ -3,6 +3,7 @@ debian-installer (20081029ubuntu3) UNRELEASED; urgency=low
   * Require mouse-modules again on lpia and powerpc. rootskel-gtk depends on
     it anyway, so we might as well just fail to build until linux-lpia and
     linux-ports are updated.
+  * Make serial-modules optional on ia64; it's currently built-in.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 21 Nov 2008 12:10:17 +0000
 
