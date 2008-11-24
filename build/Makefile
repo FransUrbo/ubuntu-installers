@@ -571,8 +571,11 @@ sources.list.udeb:
 	echo "deb copy:$(shell pwd)/ $(LOCALUDEBDIR)/"; \
 	if [ "$(MIRROR)x" != "x" ]; then \
 		echo "deb $(MIRROR) $(USE_UDEBS_FROM) $(UDEB_COMPONENTS)"; \
+		for suite in $(USE_UDEBS_FROM_EXTRA); do \
+			echo "deb $(MIRROR) $$suite $(UDEB_COMPONENTS)"; \
+		done; \
 	else \
-		gen-sources.list.udeb "$(SYSTEM_SOURCES_LIST)" $(USE_UDEBS_FROM) $(UDEB_COMPONENTS) ; \
+		gen-sources.list.udeb "$(SYSTEM_SOURCES_LIST)" $(USE_UDEBS_FROM) "$(USE_UDEBS_FROM_EXTRA)" $(UDEB_COMPONENTS) ; \
 	fi) > $@
 
 
