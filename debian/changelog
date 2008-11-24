@@ -8,6 +8,7 @@ debian-installer (20081029ubuntu3) UNRELEASED; urgency=low
   * Support USE_UDEBS_FROM_EXTRA configuration variable to fetch udebs from
     some extra suites as well as the main one (USE_UDEBS_FROM). Useful for
     stable release updates.
+  * Dump the generated sources.list.udeb to the build log.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 21 Nov 2008 12:10:17 +0000
 

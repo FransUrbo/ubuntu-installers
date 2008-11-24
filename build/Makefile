@@ -577,6 +577,7 @@ sources.list.udeb:
 	else \
 		gen-sources.list.udeb "$(SYSTEM_SOURCES_LIST)" $(USE_UDEBS_FROM) "$(USE_UDEBS_FROM_EXTRA)" $(UDEB_COMPONENTS) ; \
 	fi) > $@
+	cat $@
 
 
 # Font generation.
