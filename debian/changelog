@@ -1,4 +1,4 @@
-debian-installer (20081029ubuntu3) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu3) jaunty; urgency=low
 
   * Require mouse-modules again on lpia and powerpc. rootskel-gtk depends on
     it anyway, so we might as well just fail to build until linux-lpia and
@@ -12,7 +12,7 @@ debian-installer (20081029ubuntu3) UNRELEASED; urgency=low
   * Apply Ubuntu branding to version.info.
   * Move mainline architectures to 2.6.28-1 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 21 Nov 2008 12:10:17 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 27 Nov 2008 13:31:36 +0000
 
 debian-installer (20081029ubuntu2) jaunty; urgency=low
 
