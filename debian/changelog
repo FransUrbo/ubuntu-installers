@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu4) UNRELEASED; urgency=low
+
+  * Make nic-usb-modules optional on ia64.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 27 Nov 2008 14:55:54 +0000
+
 debian-installer (20081029ubuntu3) jaunty; urgency=low
 
   * Require mouse-modules again on lpia and powerpc. rootskel-gtk depends on
