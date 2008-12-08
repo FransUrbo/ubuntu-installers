@@ -1,4 +1,4 @@
-debian-installer (20081029ubuntu4) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu4) jaunty; urgency=low
 
   [ Colin Watson ]
   * Make nic-usb-modules optional on ia64.
@@ -6,7 +6,7 @@ debian-installer (20081029ubuntu4) UNRELEASED; urgency=low
   [ Steve Langasek ]
   * Move mainline architectures to 2.6.28-2 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 27 Nov 2008 14:55:54 +0000
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 08 Dec 2008 14:05:16 -0800
 
 debian-installer (20081029ubuntu3) jaunty; urgency=low
 
