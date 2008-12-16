@@ -1,8 +1,8 @@
-debian-installer (20081029ubuntu5) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu5) jaunty; urgency=low
 
   * Move mainline architectures to 2.6.28-3 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 16 Dec 2008 19:45:30 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 16 Dec 2008 21:13:38 +0000
 
 debian-installer (20081029ubuntu4) jaunty; urgency=low
 
