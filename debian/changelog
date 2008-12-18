@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu6) UNRELEASED; urgency=low
+
+  * Disable GTK frontend on powerpc so that mouse-modules won't be required
+    either. (lpia is harder because its configuration is a symlink to i386.)
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 18 Dec 2008 11:42:54 +0000
+
 debian-installer (20081029ubuntu5) jaunty; urgency=low
 
   * Move mainline architectures to 2.6.28-3 kernels.
