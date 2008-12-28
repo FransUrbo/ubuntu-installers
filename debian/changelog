@@ -1,9 +1,9 @@
-debian-installer (20081029ubuntu7) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu7) jaunty; urgency=low
 
   * Make acpi-modules and ipv6-modules optional, since they're now built in
     on mainline architectures.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Sun, 28 Dec 2008 17:04:48 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 28 Dec 2008 17:08:02 +0000
 
 debian-installer (20081029ubuntu6) jaunty; urgency=low
 
