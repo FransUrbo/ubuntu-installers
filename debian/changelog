@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu8) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new components (udev, hw-detect).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 30 Dec 2008 13:27:15 +0000
+
 debian-installer (20081029ubuntu7) jaunty; urgency=low
 
   * Make acpi-modules and ipv6-modules optional, since they're now built in
