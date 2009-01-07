@@ -1,10 +1,10 @@
-debian-installer (20081029ubuntu9) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu9) jaunty; urgency=low
 
   * No-change rebuild with new kernel, including some crypto bits built as
     modules again, and with any luck enough support to let us build on
     armel.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 07 Jan 2009 14:06:21 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 07 Jan 2009 15:12:41 +0000
 
 debian-installer (20081029ubuntu8) jaunty; urgency=low
 
