@@ -1,4 +1,4 @@
-grub-installer (1.36ubuntu1) UNRELEASED; urgency=low
+grub-installer (1.36ubuntu1) jaunty; urgency=low
 
   * Resynchronise with Debian (XFS change fixes LP: #8058). Remaining
     changes:
@@ -42,7 +42,7 @@ grub-installer (1.36ubuntu1) UNRELEASED; urgency=low
       operating systems.
     - 'dmraid -c -s' changed its output format; cope with both old and new.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 23 Jan 2009 13:14:45 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 23 Jan 2009 13:19:18 +0000
 
 grub-installer (1.36) unstable; urgency=low
 
