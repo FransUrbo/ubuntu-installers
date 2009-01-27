@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu11) UNRELEASED; urgency=low
+
+  * Reduce nslu2 initrd padding by the same amount as I previously increased
+    the kernel padding, since there's plenty of room for the initrd.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 27 Jan 2009 16:33:02 +0000
+
 debian-installer (20081029ubuntu10) jaunty; urgency=low
 
   * Move lpia to 2.6.28-1 kernels.
