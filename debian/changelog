@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu10) UNRELEASED; urgency=low
+
+  * Move lpia to 2.6.28-1 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 27 Jan 2009 10:38:59 +0000
+
 debian-installer (20081029ubuntu9) jaunty; urgency=low
 
   * No-change rebuild with new kernel, including some crypto bits built as
