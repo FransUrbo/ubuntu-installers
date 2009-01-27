@@ -1,9 +1,3 @@
-debian-installer (20081029ubuntu11) UNRELEASED; urgency=low
-
-  * Disable nslu2 image until somebody gets it to build.
-
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 27 Jan 2009 16:23:56 +0000
-
 debian-installer (20081029ubuntu10) jaunty; urgency=low
 
   * Move lpia to 2.6.28-1 kernels.
