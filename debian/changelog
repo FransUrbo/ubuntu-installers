@@ -2,6 +2,8 @@ debian-installer (20081029ubuntu10) UNRELEASED; urgency=low
 
   * Move lpia to 2.6.28-1 kernels.
   * Move mainline architectures to 2.6.28-5 kernels.
+  * Pad the nslu2 kernel to 16 blocks rather than 11, so that the Ubuntu
+    kernel fits.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 27 Jan 2009 10:38:59 +0000
 
