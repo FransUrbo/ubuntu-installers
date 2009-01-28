@@ -3,6 +3,8 @@ debian-installer (20081029ubuntu11) UNRELEASED; urgency=low
   * Reduce nslu2 initrd padding by the same amount as I previously increased
     the kernel padding, since there's plenty of room for the initrd.
   * Move mainline architectures to 2.6.28-6 kernels.
+  * Build orion5x images without micro-evtd for now, as it needs work before
+    inclusion in main.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 27 Jan 2009 16:33:02 +0000
 
