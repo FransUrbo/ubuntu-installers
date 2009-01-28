@@ -1,4 +1,4 @@
-debian-installer (20081029ubuntu11) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu11) jaunty; urgency=low
 
   * Reduce nslu2 initrd padding by the same amount as I previously increased
     the kernel padding, since there's plenty of room for the initrd.
@@ -6,7 +6,7 @@ debian-installer (20081029ubuntu11) UNRELEASED; urgency=low
   * Build orion5x images without micro-evtd for now, as it needs work before
     inclusion in main.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 27 Jan 2009 16:33:02 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 28 Jan 2009 22:58:00 +0000
 
 debian-installer (20081029ubuntu10) jaunty; urgency=low
 
