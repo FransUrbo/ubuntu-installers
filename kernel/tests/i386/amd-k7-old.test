@@ -1,13 +1,26 @@
 cpuinfo amd-k7-old.cpuinfo
 majors 2.6
-flavour 486
+flavour 586
 kernel-2.6 \
-  linux-image-2.6-486
+  linux-generic \
+  linux-image-generic \
+  linux-virtual \
+  linux-image-virtual \
+  linux-rt \
+  linux-image-rt \
+  linux-386 \
+  linux-image-386
 usable \
-  linux-image-2.6-486 \
-  linux-image-2.6.25-1-486
+  linux-386 \
+  linux-generic \
+  linux-image-386 \
+  linux-image-generic \
+  linux-image-2.6.20-15-386 \
+  linux-image-2.6.20-15-generic
 unusable \
-  linux-image-2.6-686 \
-  linux-image-2.6-686-bigmem \
-  linux-image-2.6.25-1-686 \
-  linux-image-2.6.25-1-686-bigmem
+  linux-server \
+  linux-server-bigiron \
+  linux-image-server \
+  linux-image-server-bigiron \
+  linux-image-2.6.20-15-server \
+  linux-image-2.6.20-15-server-bigiron
