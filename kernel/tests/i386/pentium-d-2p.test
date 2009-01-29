@@ -1,6 +1,6 @@
 cpuinfo pentium-d-2p.cpuinfo
 majors 2.6
-flavour 686
+flavour 686-may-bigmem
 kernel-2.6 \
   linux-generic \
   linux-image-generic \
