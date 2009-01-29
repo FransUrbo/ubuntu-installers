@@ -39,6 +39,12 @@ arch_get_kernel_flavour () {
 		    *)		echo 486 ;;
 		esac
 		;;
+	    " GenuineTMx86"*)
+		case "$FAMILY" in
+		    " 5"|" 6"|" 15")	echo 586 ;;
+		    *)			echo 486 ;;
+		esac
+		;;
 	    " CentaurHauls")
 		case "$FAMILY" in
 		    " 6")
