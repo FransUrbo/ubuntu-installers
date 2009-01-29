@@ -15,7 +15,7 @@ base-installer (1.98ubuntu1) UNRELEASED; urgency=low
     - If base-installer/use_unclean_target is asked, emit a warning to the
       logs so that we know about it when diagnosing problems.
     - Never select /dev/ramzswap* as a hibernation target.
-  * Backport from trunk (Ian Campbell):
+  * Backport from trunk (Ian Campbell, Frans Pop):
     - Use -686 kernels for CentaurHauls processors again (effectively
       undoing r55059) . According to 464962 the kernel has been fixed since
       2.6.26-8. Closes: #504095
