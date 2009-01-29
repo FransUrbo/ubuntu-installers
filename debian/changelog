@@ -1,4 +1,4 @@
-base-installer (1.98ubuntu1) UNRELEASED; urgency=low
+base-installer (1.98ubuntu1) jaunty; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Use and depend on the Ubuntu keyring.
@@ -20,7 +20,7 @@ base-installer (1.98ubuntu1) UNRELEASED; urgency=low
       undoing r55059) . According to 464962 the kernel has been fixed since
       2.6.26-8. Closes: #504095
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 29 Jan 2009 12:33:04 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 29 Jan 2009 22:14:20 +0000
 
 base-installer (1.98) unstable; urgency=low
 
