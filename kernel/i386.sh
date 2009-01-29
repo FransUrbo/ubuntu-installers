@@ -22,7 +22,7 @@ arch_get_kernel_flavour () {
 			case "$MODEL" in
 			    " 0"|" 1"|" 2"|" 3"|" 4"|" 5")
 				# May not have SSE support
-				echo 486 ;;
+				echo 586 ;;
 			    *)	echo 686$BIGMEM ;;
 			esac
 			;;
