@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu13) UNRELEASED; urgency=low
+
+  * Disable armel ads subarchitecture. We don't have a kernel for it (not
+    that Debian does either, but I don't want to support udev-less builds).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 29 Jan 2009 00:53:57 +0000
+
 debian-installer (20081029ubuntu12) jaunty; urgency=low
 
   * Apparently nic-modules no longer exists on versatile, presumably
