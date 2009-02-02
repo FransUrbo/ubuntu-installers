@@ -1,8 +1,8 @@
-debian-installer (20081029ubuntu14) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu14) jaunty; urgency=low
 
   * Remove CD-specific language from boot screens (LP: #14722).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 02 Feb 2009 13:48:51 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 02 Feb 2009 14:00:22 +0100
 
 debian-installer (20081029ubuntu13) jaunty; urgency=low
 
