@@ -3,7 +3,7 @@
 0fAvailable boot methods:07
 
 0finstall07
-  Start the installation -- this is the default ${MEDIA_TYPE} install.
+  Start the installation -- this is the default option.
 0fexpert07
   Start the installation in expert mode, for maximum control.
 0fcli07, 0fcli-expert07

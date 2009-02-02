@@ -15,12 +15,12 @@
   <title />
 
   <para condition="install">
-   This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME}
+   This is an installation system for ${DISTRIBUTION_NAME}
    ${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}.
   </para>
 
   <para condition="live">
-   This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME}
+   This is a live system for ${DISTRIBUTION_NAME}
    ${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}.
   </para>
 
@@ -46,7 +46,7 @@
 
    <seglistitem>
     <seg><link linkend="F3"><keycap>F3</keycap></link></seg>
-    <seg>Boot methods for special ways of using this ${MEDIA_TYPE}.</seg>
+    <seg>Boot methods for special ways of using this system.</seg>
    </seglistitem>
 
    <seglistitem>
@@ -177,7 +177,7 @@ For F10 type control and F then the digit 0
     <term condition="syslinux">install</term>
     <term condition="gfxboot">Install Ubuntu</term>
     <listitem><para>
-     Start the installation -- this is the default ${MEDIA_TYPE} install.
+     Start the installation -- this is the default option.
     </para></listitem>
    </varlistentry>
 
@@ -216,9 +216,9 @@ For F10 type control and F then the digit 0
    <!-- no space in either syslinux or gfxboot for this at the moment -->
    <!--
    <varlistentry>
-    <term>Check CD for defects</term>
+    <term>Check disc for defects</term>
     <listitem><para>
-     Check the CD for defects caused by faulty media or hardware. This may
+     Check the disc for defects caused by faulty media or hardware. This may
      take some time.
     </para></listitem>
    </varlistentry>
@@ -331,12 +331,12 @@ For F10 type control and F then the digit 0
   <title />
 
   <para>
-   There is no dedicated rescue mode on this CD. However, since the entire
-   system runs from the CD, it is possible to use the command-line and/or
-   graphical tools provided to rescue a broken system, and to use a web
-   browser to search for help. Extensive advice is available online for most
-   kinds of problems that might cause your normal system to fail to boot
-   correctly.
+   There is no dedicated rescue mode on this disc. However, since the disc
+   provides a complete user environment, it is possible to use the
+   command-line and/or graphical tools provided to rescue a broken system,
+   and to use a web browser to search for help. Extensive advice is
+   available online for most kinds of problems that might cause your normal
+   system to fail to boot correctly.
   </para>
 
   <para condition="syslinux">
