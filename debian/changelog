@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu16) UNRELEASED; urgency=low
+
+  * Remove bootchart-udeb; it's been unmaintained for a long time, may not
+    work properly any more anyway, and we hardly ever used it.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 05 Feb 2009 15:04:09 +0100
+
 debian-installer (20081029ubuntu15) jaunty; urgency=low
 
   * Move lpia to 2.6.28-2 kernels.

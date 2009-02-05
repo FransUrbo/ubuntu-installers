@@ -19,7 +19,6 @@ udpkg
 rescue-check
 env-preseed
 pciutils-udeb
-bootchart-udeb
 oem-config-check
 
 #include "udev"
