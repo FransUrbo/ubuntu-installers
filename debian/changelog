@@ -2,6 +2,8 @@ debian-installer (20081029ubuntu16) UNRELEASED; urgency=low
 
   * Remove bootchart-udeb; it's been unmaintained for a long time, may not
     work properly any more anyway, and we hardly ever used it.
+  * Document new $default_filesystem substitution and $default_filesystem{ }
+    internal specifier in partman recipes.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 05 Feb 2009 15:04:09 +0100
 

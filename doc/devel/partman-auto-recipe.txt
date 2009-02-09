@@ -68,16 +68,19 @@ recommended to give small partitions a <priority> larger than their
 <maximal size>.
 
 <parted fs> is the file system as known to parted of this partition.
+It may be $default_filesystem to use partman's default (currently ext3).
 
 
 <specifiers>::=<specifier>|<specifier>_<specifiers>
 
 <specifier>::=<internal specifier>|<regular specifier>|<type specifier>
 
-<internal specifier>::=$primary{_}|$bootable{_}
+<internal specifier>::=$primary{_}|$bootable{_}|$default_filesystem{_}
 
 $primary{_} says that the partition should be primary (if possible).
 $bootable{_} says that the bootable flag will be set.
+$default_filesystem{_} says that partman's default filesystem (currently
+ext3) should be used.
 
 <regular specifier>::=<file name>{ <file contents> }
 
