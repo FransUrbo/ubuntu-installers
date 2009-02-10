@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu17) UNRELEASED; urgency=low
+
+  * Fix my confused comment change in nslu2 initrd padding code (thanks,
+    Loïc Minier).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 10 Feb 2009 14:09:35 +0000
+
 debian-installer (20081029ubuntu16) jaunty; urgency=low
 
   * Remove bootchart-udeb; it's been unmaintained for a long time, may not
