@@ -1,9 +1,13 @@
 debian-installer (20081029ubuntu17) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Fix my confused comment change in nslu2 initrd padding code (thanks,
     Loïc Minier).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 10 Feb 2009 14:09:35 +0000
+  [ Luke Yelavich ]
+  * Move ports architectures to 2.6.28-1 kernels.
+
+ -- Luke Yelavich <themuso@ubuntu.com>  Mon, 16 Feb 2009 18:16:25 +1100
 
 debian-installer (20081029ubuntu16) jaunty; urgency=low
 
