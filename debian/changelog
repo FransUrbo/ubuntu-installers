@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu19) UNRELEASED; urgency=low
+
+  * Remove console-setup from armel network-console initrds, per Oliver
+    Grawert.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 19 Feb 2009 16:13:00 +0000
+
 debian-installer (20081029ubuntu18) jaunty; urgency=low
 
   * Add cdebconf-newt-terminal to most images that include
