@@ -1,7 +1,11 @@
 debian-installer (20081029ubuntu19) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Remove console-setup from armel network-console initrds, per Oliver
     Grawert.
+
+  [ Steve Langasek ]
+  * Move ports architectures to 2.6.28-2 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 19 Feb 2009 16:13:00 +0000
 
