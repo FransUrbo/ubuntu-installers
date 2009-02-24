@@ -1,9 +1,9 @@
-debian-installer (20081029ubuntu20) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu20) jaunty; urgency=low
 
   * No-change rebuild to pick up new components (particularly udev and
     rescue).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 24 Feb 2009 18:56:39 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 24 Feb 2009 18:59:16 +0000
 
 debian-installer (20081029ubuntu19) jaunty; urgency=low
 
