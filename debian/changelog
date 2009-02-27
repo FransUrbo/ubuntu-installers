@@ -1,3 +1,11 @@
+debian-installer (20081029ubuntu22) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new components (particularly udev with the
+    inotify-watch-on-device-remove fix, and debian-installer-utils with
+    update-dev --settle).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 27 Feb 2009 15:37:10 +0000
+
 debian-installer (20081029ubuntu21) jaunty; urgency=low
 
   * No-change rebuild to pick up new kernel.
