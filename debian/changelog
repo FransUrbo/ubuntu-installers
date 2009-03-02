@@ -1,3 +1,10 @@
+grub-installer (1.36ubuntu3) UNRELEASED; urgency=low
+
+  * Clarify why we cannot always default to the device that contains the
+    boot partition for grub-installer/bootdev.
+
+ -- Evan Dandrea <evand@ubuntu.com>  Mon, 02 Mar 2009 17:47:14 +0000
+
 grub-installer (1.36ubuntu2) jaunty; urgency=low
 
   * Check dmraid's exit code as well as parsing its output, the latter for
