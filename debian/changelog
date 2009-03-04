@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu23) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 04 Mar 2009 10:12:53 +0000
+
 debian-installer (20081029ubuntu22) jaunty; urgency=low
 
   * No-change rebuild to pick up new components (particularly udev with the
