@@ -1,6 +1,7 @@
 debian-installer (20081029ubuntu24) UNRELEASED; urgency=low
 
   * Move mainline architectures to 2.6.28-9 kernels.
+  * Move ports architectures to 2.6.28-4 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 10 Mar 2009 21:38:16 +0000
 
