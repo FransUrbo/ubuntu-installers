@@ -1,9 +1,9 @@
-debian-installer (20081029ubuntu25) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu25) jaunty; urgency=low
 
   * Disable armel/orion5x/netboot/mv2120 flavour for now, since the kernel
     is slightly too big.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 13 Mar 2009 14:06:02 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 13 Mar 2009 14:07:23 +0000
 
 debian-installer (20081029ubuntu24) jaunty; urgency=low
 
