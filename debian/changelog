@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu25) UNRELEASED; urgency=low
+
+  * Disable armel/orion5x/netboot/mv2120 flavour for now, since the kernel
+    is slightly too big.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 13 Mar 2009 14:06:02 +0000
+
 debian-installer (20081029ubuntu24) jaunty; urgency=low
 
   * Move mainline architectures to 2.6.28-9 kernels.
