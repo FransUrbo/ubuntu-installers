@@ -433,8 +433,8 @@ case "$bootfstype:$bootfslabel:$grub_package" in
 	# Ubuntu's grub package supports GPT, although Debian's doesn't.
 	: ;;
     *:*:grub)
-	#db_input low grub-installer/grub2_instead_of_grub_legacy || [ $? -eq 30 ]
-	#db_go || true
+	db_input low grub-installer/grub2_instead_of_grub_legacy || [ $? -eq 30 ]
+	db_go || true
 	db_get grub-installer/grub2_instead_of_grub_legacy
 	if [ "$RET" = true ]; then
 		grub_package="grub-pc"
