@@ -1,6 +1,16 @@
 debian-installer (20081029ubuntu27) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Adjust netboot/386 inclusion to avoid breaking lpia.
+
+  [ Michael Casadevall ]
+  * Fixed ia64 d-i builds by bumping image size
+    - The build failure "Disk Full" was caused by the last linux-ports
+      kernel upload due to the size of the kernel growing. d-i on ia64
+      makes a large "floppy" disk image of a specified size (this was 16MB
+      before hand). The new kernel plus the RAMdisk came out to be 17.1MB,
+      causing the failure. The new size is 18MB to give the kernel some
+      growing room.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 19 Mar 2009 01:32:53 +0000
 
