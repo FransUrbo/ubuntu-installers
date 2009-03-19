@@ -1,10 +1,10 @@
-debian-installer (20081029ubuntu26) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu26) jaunty; urgency=low
 
   * Move mainline architectures to 2.6.28-11 kernels.
   * Move ports architectures to 2.6.28-5 kernels.
   * Re-enable netboot/386 as a ports architecture, since it builds again.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Mar 2009 11:13:39 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 19 Mar 2009 00:58:07 +0000
 
 debian-installer (20081029ubuntu25) jaunty; urgency=low
 
