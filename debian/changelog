@@ -1,3 +1,9 @@
+base-installer (1.98ubuntu4) jaunty; urgency=low
+
+  * Added imx51 to armel as a new sub-architecture and added its test suite
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Fri, 20 Mar 2009 08:58:29 -0400
+
 base-installer (1.98ubuntu3) jaunty; urgency=low
 
   * Revert Joey's patch to call base-installer.d hooks after running
