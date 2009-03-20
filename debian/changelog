@@ -11,8 +11,10 @@ debian-installer (20081029ubuntu27) UNRELEASED; urgency=low
       before hand). The new kernel plus the RAMdisk came out to be 17.1MB,
       causing the failure. The new size is 18MB to give the kernel some
       growing room.
+  * Added initial imx51 installer support, in both the CDROM and netboot
+    versions.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 19 Mar 2009 01:32:53 +0000
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Thu, 19 Mar 2009 12:36:40 -0400
 
 debian-installer (20081029ubuntu26) jaunty; urgency=low
 
