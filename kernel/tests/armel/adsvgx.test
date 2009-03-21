@@ -9,6 +9,11 @@ usable \
   linux-image-ads \
   linux-image-2.6.18-4-ads
 unusable \
+  linux-iop32x \
+  linux-ixp4xx \
+  linux-netwinder \
+  linux-orion5x \
+  linux-rpc \
   linux-image-footbridge \
   linux-image-iop32x \
   linux-image-ixp4xx \

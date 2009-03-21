@@ -9,6 +9,11 @@ usable \
   linux-image-orion5x \
   linux-image-2.6.25-1-orion5x
 unusable \
+  linux-imx51 \
+  linux-iop32x \
+  linux-ixp4xx \
+  linux-netwinder \
+  linux-rpc \
   linux-image-iop32x \
   linux-image-netwinder \
   linux-image-rpc \
