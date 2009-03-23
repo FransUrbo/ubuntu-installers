@@ -1,4 +1,4 @@
-base-installer (1.98ubuntu4) jaunty; urgency=low
+base-installer (1.98ubuntu4) UNRELEASED; urgency=low
 
   * Add lpia kernel selection and tests (LP: #291670)
 
