@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu28) UNRELEASED; urgency=low
+
+  * Remove armel orion5x subarchitecture, per the kernel team.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 23 Mar 2009 14:12:06 +0000
+
 debian-installer (20081029ubuntu27) jaunty; urgency=low
 
   [ Colin Watson ]
