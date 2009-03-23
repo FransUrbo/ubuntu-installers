@@ -2,7 +2,8 @@ base-installer (1.98ubuntu4) UNRELEASED; urgency=low
 
   * Fixed armel arch_get_kernel() call for Ubuntu/armel
   * Updated the test suite for Ubuntu/armel
-  * Added imx51 to armel as a new sub-architecture and added its test suite
+  * Added imx51 to armel as a new sub-architecture and added its 
+    test suite (LP: #345534)
 
  -- Michael Casadevall <mcasadevall@ubuntu.com>  Fri, 20 Mar 2009 08:58:29 -0400
 
