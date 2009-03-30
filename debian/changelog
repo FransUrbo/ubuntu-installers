@@ -1,7 +1,7 @@
 debian-installer (20081029ubuntu29) UNRELEASED; urgency=low
 
   * Added initial imx51 installer support, in both the CDROM and netboot
-    versions.
+    versions (LP: #345534).
 
  -- Michael Casadevall <mcasadevall@ubuntu.com>  Thu, 26 Mar 2009 01:55:40 +0000
 
