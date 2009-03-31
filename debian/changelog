@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu30) UNRELEASED; urgency=low
+
+  * Move ports architectures to 2.6.28-6 kernels.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 31 Mar 2009 14:34:27 -0700
+
 debian-installer (20081029ubuntu29) jaunty; urgency=low
 
   [ Michael Casadevall ]
