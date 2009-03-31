@@ -8,5 +8,6 @@ arch_check_usable_kernel () {
 }
 
 arch_get_kernel () {
+	echo "linux-$1"
 	echo "linux-image-$1"
 }
