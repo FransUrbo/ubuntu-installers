@@ -1,0 +1,8 @@
+cpuinfo dennis.cpuinfo
+machine i686
+flavour lpia
+majors 2.6
+kernel-2.6 \
+  linux-image-lpia
+usable \
+  linux-image-lpia
