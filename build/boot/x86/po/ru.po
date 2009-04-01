@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-23 20:48+0000\n"
-"Last-Translator: Agafonov <Dmitry@Agafonov.pp.ru>\n"
+"PO-Revision-Date: 2008-11-07 13:05+0000\n"
+"Last-Translator: Alyx Nikolaenko <ceekay80@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-10-20 21:52+0000\n"
+"X-Launchpad-Export-Date: 2009-04-01 11:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -321,6 +321,8 @@ msgstr ""
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"За исключением режима эксперта, не критичные сообщения загрузки ядра будут "
+"пропущены."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
@@ -532,10 +534,12 @@ msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
+"Возможные (временные) обходные методы для блокировок или других сбоев "
+"аппаратного обеспечения:"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "отключить ошибочную APIC маршрутизацию прерываний"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
@@ -543,27 +547,27 @@ msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "(частично) отключить ACPI"
 
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> или <userinput>acpi=off</userinput>"
 
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "отключить USB"
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "Опрос прерываний"
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -758,7 +762,7 @@ msgstr "Использовать специальные задачи"
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 
 #: help.xml:682
 msgid ""

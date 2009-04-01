@@ -8,14 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-04-23 20:49+0000\n"
-"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
-"net>\n"
+"PO-Revision-Date: 2009-03-15 07:06+0000\n"
+"Last-Translator: zhangmiao <mymzhang@gmail.com>\n"
 "Language-Team: Chinese (China) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-10-20 21:52+0000\n"
+"X-Launchpad-Export-Date: 2009-04-01 11:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -304,7 +303,7 @@ msgstr ""
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
-msgstr ""
+msgstr "专家模式除外，隐藏非关键的内核启动信息。"
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
@@ -324,7 +323,7 @@ msgstr "恢复一个破损的系统"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr "启动并进入救援模式"
+msgstr "启动救援模式"
 
 #: help.xml:303
 #, no-wrap
@@ -345,33 +344,33 @@ msgstr ""
 
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "特定启动参数 - 综览"
+msgstr "特定启动参数 - 总览"
 
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
-"在一些系统上，你也许需要在 <literal>boot:</literal> 提示行下指定一个参数来启"
+"在一些系统上，您也许需要在 <literal>boot:</literal> 提示行下指定一个参数来启"
 "动系统。"
 
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "在一些系统上，你也许需要通过按下 F6 来指定一个参数以便启动系统。"
+msgstr "在一些系统上，您也许需要通过按下 F6 来指定一个参数以便启动系统。"
 
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"例如， Linux 也许不能够自动检测到你的硬件，你也许需要清楚地指定它的位置或者类"
-"型以便它能够被辨认。"
+"例如，Linux 也许不能自动检测到您的硬件，您也许需要指定它的具体位置或者类型以"
+"便它能够被识别。"
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
-msgstr "想了解您可以使用的启动参数更多的信息，请按："
+msgstr "想了解您可以使用的启动参数的更多信息，请按："
 
 #: help.xml:385
 msgid "boot parameters for special machines"
@@ -387,7 +386,7 @@ msgstr "安装系统已解析启动参数"
 
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr "自举系统已解析启动参数"
+msgstr "引导程序已解析启动参数"
 
 #: help.xml:405
 msgid ""
@@ -404,7 +403,7 @@ msgstr ""
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
-msgstr "自举系统在动态地读取很多内核模块，并且这些模块的参数不能在命令行给出。"
+msgstr "引导程序在动态地装载多块内核模块，这些模块的参数不能在命令行给出。"
 
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
@@ -429,7 +428,7 @@ msgstr ""
 
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr "如果你使用 16 进制的数字你必须使用 0x 前缀 (例如， 0x300)。"
+msgstr "如果您要使用 16 进制的数字，您必须使用 0x 前缀 (例如， 0x300)。"
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
@@ -437,7 +436,7 @@ msgstr "硬件"
 
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr "要指定的参数"
+msgstr "参数说明"
 
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
@@ -513,19 +512,19 @@ msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "(部分地)禁止ACPI"
 
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> 或者 <userinput>acpi=off</userinput>"
 
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "禁用 USB"
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
@@ -533,7 +532,7 @@ msgstr ""
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -701,7 +700,7 @@ msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:666
 msgid "Use Braille tty"
-msgstr "使用凸点（盲人使用）tty"
+msgstr "使用布莱叶电传打字机"
 
 #: help.xml:667
 msgid ""
@@ -727,7 +726,7 @@ msgstr "使用特殊任务"
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 
 #: help.xml:682
 msgid ""

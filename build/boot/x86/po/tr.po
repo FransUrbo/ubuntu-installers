@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-10-17 01:19+0000\n"
-"Last-Translator: Serhat Demirkol <serhat_demirkol@yahoo.com>\n"
+"PO-Revision-Date: 2009-03-10 21:33+0000\n"
+"Last-Translator: Hasan Yılmaz <iletisim@hasanyilmaz.net>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-10-20 21:52+0000\n"
+"X-Launchpad-Export-Date: 2009-04-01 11:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -167,7 +167,7 @@ msgstr ""
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr ""
+msgstr "Ubuntu'yu seçtiğiniz için teşekkür ederiz!"
 
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
 #: help.xml:524 help.xml:597 help.xml:697 help.xml:753 help.xml:809
@@ -195,10 +195,9 @@ msgstr "Kullanılabilir önyükleme yöntemleri:"
 msgid "install"
 msgstr "kur"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Ubuntu'yu Yükle"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
@@ -214,11 +213,11 @@ msgstr "Maksimum kontrol için, kurulumu uzman kipinde başlatır."
 
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #: help.xml:195
 msgid "Minimal command-line system install."
@@ -228,34 +227,33 @@ msgstr "Minimal komut-satırı sistem kurulumu."
 msgid "live"
 msgstr "Çalışan"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "Ubuntu'yu bilgisayarınızda değişiklik olmadan deneyin"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Canlı sistemi başlatın. Eğer isterseniz daha sonra masaüstünüzdeki \"Yükle\" "
+"simgesinden sistemi kurabilirsiniz."
 
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "live-install"
 
 #: help.xml:212
 msgid "Start the installation."
-msgstr ""
+msgstr "Kurulumu başlat."
 
 #: help.xml:228
 msgid "memtest"
 msgstr "memtest"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "Belleği sına"
 
 #: help.xml:231
 msgid "Perform a memory test."
@@ -270,12 +268,12 @@ msgstr ""
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "boot: install acpi=off"
 
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #: help.xml:247
 msgid ""
@@ -283,14 +281,12 @@ msgid ""
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -318,7 +314,6 @@ msgstr ""
 msgid "rescue"
 msgstr "kurtarma"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
 msgstr ""
@@ -330,7 +325,7 @@ msgstr ""
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "boot: rescue acpi=off"
 
 #: help.xml:334
 msgid ""
@@ -351,21 +346,18 @@ msgstr ""
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
@@ -410,7 +402,6 @@ msgstr ""
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
@@ -418,14 +409,12 @@ msgid ""
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""

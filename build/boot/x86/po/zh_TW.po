@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-10-17 01:31+0000\n"
+"PO-Revision-Date: 2008-12-04 19:29+0000\n"
 "Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
 "net>\n"
 "Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-10-20 21:52+0000\n"
+"X-Launchpad-Export-Date: 2009-04-01 11:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -176,35 +176,35 @@ msgstr ""
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr ""
+msgstr "按下F1檢視說明索引，或Esc離開"
 
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr ""
+msgstr "開機方法"
 
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr ""
+msgstr "可用的開機方法︰"
 
 #: help.xml:177
 msgid "install"
-msgstr ""
+msgstr "安裝"
 
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "安裝 Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr ""
+msgstr "開始安裝 - 這是預設的${MEDIA_TYPE}安裝。"
 
 #: help.xml:185
 msgid "expert"
-msgstr ""
+msgstr "專家"
 
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr ""
+msgstr "使用專家模式來安裝，讓您有最多的控制權"
 
 #: help.xml:192
 msgid "cli"

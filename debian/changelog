@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu31) UNRELEASED; urgency=low
+
+  * Update help text translations from Launchpad.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 01 Apr 2009 12:33:57 +0100
+
 debian-installer (20081029ubuntu30) jaunty; urgency=low
 
   * Move ports architectures to 2.6.28-6 kernels.

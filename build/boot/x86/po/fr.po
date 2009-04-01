@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-10-17 01:29+0000\n"
+"PO-Revision-Date: 2008-11-07 23:55+0000\n"
 "Last-Translator: Bruno Patri <bruno.patri@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-10-20 21:52+0000\n"
+"X-Launchpad-Export-Date: 2009-04-01 11:08+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -388,12 +388,17 @@ msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"Sur quelques systèmes, vous aurez besoin de préciser un paramètre en "
+"appuyant sur F6 pour pouvoir démarrer le système."
 
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"Par exemple, Linux ne sera pas capable d'autodétecter votre matériel, et "
+"vous aurez besoin de spécifier explicitement son emplacement ou son type "
+"pour qu'il soit reconnu."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
@@ -449,17 +454,24 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Vous pouvez utiliser les paramètres de démarrage à l'invite <literal>boot:</"
+"literal>, en combinaistion avec la méthode de démarrage (voir <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)"
 
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Vous pouvez utiliser les paramètres de démarrage suivants en appuyant sur "
+"F6, en combinaison avec la méthode de démarrage (voir <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
-# type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"Si vous utilisez des nombres hexadécimaux, vous devez utiliser le préfixe 0x "
+"(exemple : 0x300)"
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
@@ -532,10 +544,12 @@ msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
+"Contournements possibles (temporaires) pour les blocages et autres problèmes "
+"matériels :"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "désactive le routage bogué de l'APIC"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
@@ -543,27 +557,27 @@ msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "désactive (partiellement) ACPI"
 
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> ou <userinput>acpi=off</userinput>"
 
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "désactive l'USB"
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "investigation des interruptions"
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -758,7 +772,7 @@ msgstr "Utiliser des tâches spéciales"
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 
 #: help.xml:682
 msgid ""
@@ -834,6 +848,8 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"Ubuntu (C) 2004-2008 Canonical Ltd., inclut le travail de nombreux autres "
+"auteurs et contributeurs."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
