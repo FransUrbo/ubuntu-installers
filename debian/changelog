@@ -1,3 +1,9 @@
+base-installer (1.98ubuntu6) UNRELEASED; urgency=low
+
+  * Silently skip non-existent devices in /proc/swaps (LP: #290947).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 03 Apr 2009 01:43:09 +0100
+
 base-installer (1.98ubuntu5) jaunty; urgency=low
 
   [ Emmet Hikory ]
