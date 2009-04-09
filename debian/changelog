@@ -1,6 +1,11 @@
 debian-installer (20081029ubuntu32) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Update help text translations from Launchpad.
+
+  [ Loic Minier ]
+  * arm.cfg, armel.cfg: only allow a single version in KERNELVERSION; don't
+    use the kernel version in the KERNELNAME.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 09 Apr 2009 00:57:47 +0100
 
