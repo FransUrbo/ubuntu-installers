@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu33) UNRELEASED; urgency=low
+
+  * Revert arm KERNELVERSION change for now; this needs to be done in sync
+    with a change in debian/d-i/kernel-versions.in in the kernel.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 10 Apr 2009 13:20:27 +0100
+
 debian-installer (20081029ubuntu32) jaunty; urgency=low
 
   [ Colin Watson ]
