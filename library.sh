@@ -141,8 +141,7 @@ install_filesystems () {
 		fi
 
 		if type dmraid >/dev/null 2>&1; then
-			if dmraid -s -c >/dev/null 2>&1 && \
-			   [ "$(dmraid -s -c | grep -iv "No RAID disks")" ]; then
+			if dmraid -s -c >/dev/null 2>&1; then
 				apt-install dmraid
 			fi
 		fi
@@ -578,7 +577,7 @@ EOF
 		# Select and set driver inclusion policy for initramfs-tools
 		if [ "$rd_generator" = initramfs-tools ]; then
 			if db_get base-installer/initramfs-tools/driver-policy && \
-			   [ "$RET" = "" ]; then
+			   [ -z "$RET" ]; then
 				# Get default for architecture
 				db_get base-installer/kernel/linux/initramfs-tools/driver-policy
 				db_set base-installer/initramfs-tools/driver-policy "$RET"

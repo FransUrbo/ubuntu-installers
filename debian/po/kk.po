@@ -3,35 +3,32 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of eu.po to Euskara
-# Basque messages for debian-installer.
+# Kazakh messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Inaki Larranaga Murgoitio 2005
 #
-# Piarres Beobide <pi@beobide.net>, 2004, 2005, 2006, 2007, 2008.
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008.
+# Talgat Daniyarov
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2008, 2009
+# Dauren Sarsenov <daur88@inbox.ru>, 2008, 2009
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: eu\n"
+"Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-08-16 23:36+0000\n"
-"PO-Revision-Date: 2009-01-14 09:20+0200\n"
-"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
-"Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
+"PO-Revision-Date: 2009-03-24 15:02+0600\n"
+"Last-Translator: Dauren Sarsenov <daur88@inbox.ru>\n"
+"Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: eu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Content-Transfer-Encoding=UTF-8Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../base-installer.templates:1001
 msgid "Proceed with installation to unclean target?"
-msgstr "Bertsio zaharraren gainean jarraitu nahi duzu instalazioarekin?"
+msgstr "Бос емес бөлімге орнатуды жалғастыру керек пе?"
 
 #. Type: boolean
 #. Description
@@ -42,16 +39,16 @@ msgid ""
 "could cause problems with the installation process, and if you proceed, some "
 "of the existing files may be overwritten."
 msgstr ""
-"Helburuko fitxategi-sistemak aurreko instalazio bateko fitxategiak ditu. "
-"Fitxategi hauek instalazioa honda dezakete, edo aurrera jarraitzen baduzu, "
-"existitzen diren fitxategiak gainidatz daitezke."
+"Түпкі файлдық жүйеде алдыңғы орнатудан қалған файлдар бар. Олар орнату "
+"кезінде қиындықтар туғызуы мүмкін. Жалғастыру кезінде кейбір ескі файлдардың "
+"үстіне жазылып кетуі мүмкін."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../base-installer.templates:2001
 msgid "No file system mounted on /target"
-msgstr "Ez dago fitxategi-sistemarik /target-en muntatuta"
+msgstr "/target нүктесіне файлдық жүйе тіркелмеген"
 
 #. Type: error
 #. Description
@@ -61,16 +58,15 @@ msgid ""
 "Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
-"Instalazioak aurrera jarraitu aurretik, erroko fitxategi-sistema muntatu "
-"behar da /-en. Partiziogileak eta formateatzaileak hau zure ordez egin behar "
-"izango lukete."
+"Орнатуды жалғастырмас бұрын /target нүктесіне түбірлік файлдық жүйе тіркелуі "
+"тиіс. Мұны дискті бөлімдерге бөлуші орындайды."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../base-installer.templates:3001
 msgid "Not installing to unclean target"
-msgstr "Ez da bertsio zaharraren gainean instalatzen ari"
+msgstr "Бос емес бөлімге орнатпау"
 
 #. Type: error
 #. Description
@@ -81,58 +77,58 @@ msgid ""
 "back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
-"Helburuko fitxategi-sistemako instalazioa bertan behera utzi da. Atzera joan "
-"eta helburuko fitxategi-sistema formateatu edo garbitu egin beharko zenuke "
-"instalazioarekin aurrera jarraitu aurretik."
+"Түпкі файлдық жүйеге орнатудан бас тартылды. Орнатуды жалғастырмас бұрын "
+"ескі файлдық жүйеден қалған файлдарды жойыңыз немесе бөлімді түгелімен "
+"пішімдеңіз."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:4001
 msgid "Preparing to install the base system..."
-msgstr "Debian-en oinarri-sistema instalatzeko prestatzen..."
+msgstr "Базалық жүйені орнатуға дайындық..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:5001 ../bootstrap-base.templates:30001
 msgid "Installing the base system"
-msgstr "Oinarri-sistema instalatzen"
+msgstr "Базалық жүйені орнату"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:6001
 msgid "Running ${SCRIPT}..."
-msgstr "${SCRIPT} exekutatzen..."
+msgstr "${SCRIPT} іске қосу"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:7001
 msgid "Setting up the base system..."
-msgstr "Oinarri-sistema konfiguratzen..."
+msgstr "Негізгі жүйені орнату..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:8001 ../bootstrap-base.templates:59001
 msgid "Configuring APT sources..."
-msgstr "APT iturburuak konfiguratzen..."
+msgstr "АРТ көздерін орнату..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:9001
 msgid "Updating the list of available packages..."
-msgstr "Pakete erabilgarrien zerrenda eguneratzen..."
+msgstr "Қол жетерлік дестелердің тізімін жаңарту..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:10001
 msgid "Installing extra packages..."
-msgstr "Pakete gehigarriak instalatzen..."
+msgstr "Қосымша (extra) дестелерін орнату..."
 
 #. Type: text
 #. Description
@@ -140,8 +136,7 @@ msgstr "Pakete gehigarriak instalatzen..."
 #. :sl1:
 #: ../base-installer.templates:11001
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
-msgstr ""
-"Pakete gehigarriak instalatzen - ${SUBST0} eskuratzen eta instalatzen..."
+msgstr "Қосымша (extra) дестелерін орнату - ${SUBST0} алу және орнату..."
 
 #. Type: text
 #. Description
@@ -150,7 +145,7 @@ msgstr ""
 #. :sl1:
 #: ../bootstrap-base.templates:1001
 msgid "Install the base system"
-msgstr "Instalatu oinarri-sistema"
+msgstr "Базалық жүйені орнату"
 
 #. Type: error
 #. Description
@@ -159,7 +154,7 @@ msgstr "Instalatu oinarri-sistema"
 #. :sl2:
 #: ../bootstrap-base.templates:2001
 msgid "Cannot install base system"
-msgstr "Ezin izan da oinarri-sistema instalatu"
+msgstr "Базалық жүйені орнату мүмкін болмады"
 
 #. Type: error
 #. Description
@@ -171,8 +166,8 @@ msgid ""
 "The installer cannot figure out how to install the base system. No "
 "installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Instalatzaileak ez daki nola instalatu Debian. Ez da CD-ROM instalagarririk "
-"aurkitu eta ez dago baliozko ispilurik konfiguraturik."
+"Орнатушы базалық жүйені қалай орнатарын білмеді. Орнатуға жарамды CD-ROM да, "
+"айна да табылмады."
 
 #. Type: error
 #. Description
@@ -209,28 +204,28 @@ msgstr ""
 #: ../bootstrap-base.templates:19001 ../bootstrap-base.templates:20001
 #: ../bootstrap-base.templates:21001 ../bootstrap-base.templates:22001
 msgid "Debootstrap Error"
-msgstr "Debootstrap errorea"
+msgstr "Debootstrap қатесі"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:3001
 msgid "Failed to determine the codename for the release."
-msgstr "Huts egin du argitalpenaren kode-izena zehaztean."
+msgstr "Басылымның кодтық атын анықтау мүмкін болмады."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:4001
 msgid "Failed to install the base system"
-msgstr "Huts egin du oinarri-sistema instalatzean"
+msgstr "Базалық жүйені орнату мүмкін болмады"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:4001
 msgid "The base system installation into /target/ failed."
-msgstr "Huts egin du oinarri-sistema instalatzean /target/ direktorioan."
+msgstr "Базалық жүйені /target/ ішіне орнату мүмкін болмады."
 
 #. Type: error
 #. Description
@@ -254,7 +249,8 @@ msgstr "Huts egin du oinarri-sistema instalatzean /target/ direktorioan."
 #: ../bootstrap-base.templates:6001 ../bootstrap-base.templates:7001
 #: ../bootstrap-base.templates:11001 ../bootstrap-base.templates:16001
 msgid "Check /var/log/syslog or see virtual console 4 for the details."
-msgstr "Egiaztatu /var/log/messages edo ikusi 4. kontsola xehetasunetarako."
+msgstr ""
+"Қосымша мәліметті /var/log/syslog файлынан не 4 виртуал консольдан қараңыз."
 
 #. Type: error
 #. Description
@@ -264,7 +260,7 @@ msgstr "Egiaztatu /var/log/messages edo ikusi 4. kontsola xehetasunetarako."
 #. :sl2:
 #: ../bootstrap-base.templates:5001 ../bootstrap-base.templates:6001
 msgid "Base system installation error"
-msgstr "Oinarri-sistemaren instalazioko errorea"
+msgstr "Базалық жүйені орнату қатесі"
 
 #. Type: error
 #. Description
@@ -272,29 +268,27 @@ msgstr "Oinarri-sistemaren instalazioko errorea"
 #: ../bootstrap-base.templates:5001
 msgid ""
 "The debootstrap program exited with an error (return value ${EXITCODE})."
-msgstr ""
-"debootstrap programa errore batekin irten da (itzulitako balioa: "
-"${EXITCODE})."
+msgstr "Debootstrap бағдарламасы жұмысын тоқтатты (қате коды ${EXITCODE})."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:6001
 msgid "The debootstrap program exited abnormally."
-msgstr "debootstrap programa ez da behar bezala irten."
+msgstr "Debootstrap бағдарламасы жабылып қалды."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:7001
 msgid "The following error occurred:"
-msgstr "Honako errorea gertatu da:"
+msgstr "Келесі қате орын алды:"
 
 #. Type: select
 #. Description
 #: ../bootstrap-base.templates:8001
 msgid "Tool to use to generate boot initrd:"
-msgstr "Tresna abikoko initrd-a sortzeko:"
+msgstr "initrd жүктеушісін жасайтын бағдарлама:"
 
 #. Type: select
 #. Description
@@ -304,16 +298,16 @@ msgid ""
 "should select the default. If your system fails to boot, you can retry the "
 "installation using the other options."
 msgstr ""
-"Zerrenda honek tresna erabilgarriak eskeintzen ditu. Zein aukeratu ziur ez "
-"egonez gero, lehenetsia aukeratu beharko zenuke. Sistemak huts egiten badu "
-"abiaraztean, saiatu berriro instalazioa bestelako aukerak erabiliz."
+"Тізімде қол жетерлік бағдарламалар тізілген. Егер таңдай алмасаңыз, "
+"әдеттегісі қала берсін. Егер жүйеңіз жүктеле алмаса, осы мәнді басқасына "
+"ауыстырып көріңіз."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../bootstrap-base.templates:9001
 msgid "Unsupported initrd generator"
-msgstr "Onartu gabeko initrd sortzailea"
+msgstr "Жарамсыз initrd генераторы"
 
 #. Type: error
 #. Description
@@ -322,28 +316,28 @@ msgstr "Onartu gabeko initrd sortzailea"
 msgid ""
 "The package ${GENERATOR} that was selected to generate the initrd is not "
 "supported."
-msgstr "Aukeratutako ${GENERATOR} paketea ez dago onartuta initrd sortzeko."
+msgstr "initrd генераторы ретінде таңдалған ${GENERATOR} қолдануға жарамайды."
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../bootstrap-base.templates:10001
 msgid "generic: include all available drivers"
-msgstr "generikoa: eskuragarri dauden kontrolatzaile guztiak ipini"
+msgstr "жалпы: барлық қол жеткілікті драйверді қосу"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../bootstrap-base.templates:10001
 msgid "targeted: only include drivers needed for this system"
-msgstr "helburuduna: bakarrik sistemak behar dituen kontrolatzaileak ipini"
+msgstr "арнаулы: осы жүйеге ғана қажетті драйверді қосу"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../bootstrap-base.templates:10002
 msgid "Drivers to include in the initrd:"
-msgstr "initrd-en ipini behar diren kontrolatzaileak:"
+msgstr "initrd құрамына қосатын драйверлер:"
 
 #. Type: select
 #. Description
@@ -354,9 +348,9 @@ msgid ""
 "file system. It therefore needs to contain all drivers and supporting "
 "programs required to do that."
 msgstr ""
-"Initrd-en funtzio nagusia kernelari erro fitxategi-sistema muntatzeko aukera "
-"ematea da. Horregatik bertan honetarako beharrezko diren kontrolatzaile eta "
-"programa guztiak egon behar dira."
+"initrd негізгі мақсаты ядроға түбірлік файлық жүйені тіркеуге мүмкіндік беру "
+"болып табылады. Сондықтан оның құрамында тіркеуге қажетті барлық драйвер мен "
+"бағдарламалар болу керек."
 
 #. Type: select
 #. Description
@@ -369,17 +363,17 @@ msgid ""
 "smaller targeted initrd there is a very small chance that not all needed "
 "drivers are included."
 msgstr ""
-"Initrd generikoa helburuduna baino askoz handiagoa da eta zenbait abio "
-"kargatzailek ezin du kargatu baina helburu sistema makina gehienetan "
-"abiarazteko gai izatearen abanatiula du. Helburudun initrd-a erabiliaz behar "
-"diren kontrolatzaile guztiak ez egotearen arrisku txiki bat dago."
+"Жалпы initrd арнаулыға қарағанда көбірек орын алады, сондықтан кейбір "
+"жүктеушілер оны пайдалана алмауы мүмкін. Жалпы initrd кез-келген жабдықта "
+"жұмыс істей са, аз көлемді арнаулы initrd басқа жабдықта жұмыс істемеуі "
+"мүмкін."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:11001
 msgid "Unable to install the selected kernel"
-msgstr "Ezin da hautatutako nukleoa instalatu"
+msgstr "Таңдалған ядроны орнату мүмкін емес"
 
 #. Type: error
 #. Description
@@ -388,14 +382,14 @@ msgstr "Ezin da hautatutako nukleoa instalatu"
 msgid ""
 "An error was returned while trying to install the kernel into the target "
 "system."
-msgstr "Errorea itzuli da nukleoa helburuko sisteman instalatzen saiatzean."
+msgstr "Ядроны түпкі бөлімге орнату кезінде қате кетті."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:11001
 msgid "Kernel package: '${KERNEL}'."
-msgstr "Nukleo-paketea: '${KERNEL}'."
+msgstr "Ядросы бар десте: '${KERNEL}'."
 
 #. Type: select
 #. Choices
@@ -405,14 +399,14 @@ msgid ""
 "none[ Do not translate what's inside the brackets and just put the "
 "translation for the word \"none\" in your language without any brackets. "
 "This \"none\" means \"no kernel\" ]"
-msgstr "bat ere ez"
+msgstr "жоқ"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:12002
 msgid "Kernel to install:"
-msgstr "Instalatu beharreko nukleoa:"
+msgstr "Орнатылатын ядро:"
 
 #. Type: select
 #. Description
@@ -422,22 +416,22 @@ msgid ""
 "The list shows the available kernels. Please choose one of them in order to "
 "make the system bootable from the hard drive."
 msgstr ""
-"Zerrendan erabilgarri dauden nukleoak daude. Aukeratu bat sistema disko "
-"gogorretik abiatzeko."
+"Тізімде жарамды ядролар көрсетілген. Жүйе қатқыл дискіден жүктелуі үшін "
+"біреуін таңдаңыз."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:14001
 msgid "Continue without installing a kernel?"
-msgstr "Nukleoa instalatu gabe jarraitu?"
+msgstr "Орнатуды ядросыз жалғастыруды қалайсыз ба?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:14001
 msgid "No installable kernel was found in the defined APT sources."
-msgstr "Ez da nukleo instalagarririk aurkitu definitutako APT iturburuetan."
+msgstr "Берілген АРТ көздерінде орнатуға жарайстын ядро табылмады."
 
 #. Type: boolean
 #. Description
@@ -448,30 +442,30 @@ msgid ""
 "kernel later. This is only recommended for experts, otherwise you will "
 "likely end up with a machine that doesn't boot."
 msgstr ""
-"Nukleo gabe jarrai dezakezu, eta beranduago eskuz nukleo pertsonalizatua "
-"instalatu. Hau erabiltzaile aurreratuentzat bakarrik gomendatzen da, bestela "
-"baliteke ordenagailua ez abiatzea."
+"Сіз орнатуды ядросыз жалғастыра аласыз, бірақ кейін өзіңізге керек ядро "
+"түрін қолдан орнатуыңыз керек. Мұны тек арнайы тәжірибеңіз бар болғанда ғана "
+"істеуді сұраймыз, өйткені жүйеңіздің жүктелмей қалуы әбден мүмкін."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:15001
 msgid "Cannot install kernel"
-msgstr "Ezin da nukleoa instalatu"
+msgstr "Ядроны орнату мүмкін болмады"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:15001
 msgid "The installer cannot find a suitable kernel package to install."
-msgstr "Ezin da nukleoaren pakete egokirik aurkitu instalatzeko."
+msgstr "Орнату бағдарламасы сәйкес келетін ядро бар дестесін таба алмады."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:16001
 msgid "Unable to install ${PACKAGE}"
-msgstr "Ezin da ${PACKAGE} instalatu"
+msgstr "${PACKAGE} орнату мүмкін болмады"
 
 #. Type: error
 #. Description
@@ -480,7 +474,7 @@ msgstr "Ezin da ${PACKAGE} instalatu"
 msgid ""
 "An error was returned while trying to install the ${PACKAGE} package onto "
 "the target system."
-msgstr "Errorea gertatu da ${PACKAGE} paketea instalatzean helburuko sisteman."
+msgstr "Түпкі жүйеге ${PACKAGE} дестесін орнату кезінде қате кетті."
 
 #. Type: error
 #. Description
@@ -488,7 +482,7 @@ msgstr "Errorea gertatu da ${PACKAGE} paketea instalatzean helburuko sisteman."
 #. SUBST0 is a Release file name.
 #: ../bootstrap-base.templates:17001
 msgid "Failed getting Release file ${SUBST0}."
-msgstr "Huts egin du Release ${SUBST0} fitxategia lortzean."
+msgstr "${SUBST0} Release файлын алу мүмкін болмады."
 
 #. Type: error
 #. Description
@@ -496,7 +490,7 @@ msgstr "Huts egin du Release ${SUBST0} fitxategia lortzean."
 #. SUBST0 is a Release.gpg file name
 #: ../bootstrap-base.templates:18001
 msgid "Failed getting Release signature file ${SUBST0}."
-msgstr "Huts egin du Release ${SUBST0} sinadura-fitxategia lortzean."
+msgstr "${SUBST0} Release қолтаңба файлын алу мүмкін болмады."
 
 #. Type: error
 #. Description
@@ -504,14 +498,14 @@ msgstr "Huts egin du Release ${SUBST0} sinadura-fitxategia lortzean."
 #. SUBST0 is a gpg key ID
 #: ../bootstrap-base.templates:19001
 msgid "Release file signed by unknown key (key id ${SUBST0})"
-msgstr "Release fitxategia gako ezezagunarekin sinatua (gako-IDa: ${SUBST0})"
+msgstr "Release файлы белгісіз кілтпен қолтаңбаланған (key id ${SUBST0})"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:20001
 msgid "Invalid Release file: no valid components."
-msgstr "Release fitxategia baliogabea: osagaiak ez dira baliozkoak."
+msgstr "Release файлы қате: ешбір құрама табылмады."
 
 #. Type: error
 #. Description
@@ -519,7 +513,7 @@ msgstr "Release fitxategia baliogabea: osagaiak ez dira baliozkoak."
 #. SUBST0 is a filename
 #: ../bootstrap-base.templates:21001
 msgid "Invalid Release file: no entry for ${SUBST0}."
-msgstr "Release fitxategia baliogabea: ${SUBST0}(r)en sarrerarik ez dago."
+msgstr "Release файлы қате: ${SUBST0} жазбасы жоқ."
 
 #. Type: error
 #. Description
@@ -531,8 +525,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
-"Ezin izan da ${SUBST0} eskuratu. Sareko arazoa edo okerreko CD baten erruz "
-"izan daiteke (erabiltzen ari zaren instalazio metodoaren arabera)."
+"${SUBST0} алғанда қате кетті. Себебі желілік қиындықтардан немесе жаман "
+"компакт-дискіден болуы мүмкін."
 
 #. Type: error
 #. Description
@@ -544,8 +538,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
-"CD edo CD-RW bidez instalatzen ari bazara, CDa abiadura motelago batetan "
-"grabatzeak lagundu lezake."
+"Егер сіз жүйені CD-R немесе CD-RW дискілерден орнатсаңыз, дискілерді төмен "
+"жылдамдықпен жазу көмектеседі."
 
 #. Type: text
 #. Description
@@ -553,7 +547,7 @@ msgstr ""
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:23001
 msgid "Retrieving Release file"
-msgstr "Release fitxategia berreskuratzen"
+msgstr "Release файлын алу"
 
 #. Type: text
 #. Description
@@ -561,7 +555,7 @@ msgstr "Release fitxategia berreskuratzen"
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:24001
 msgid "Retrieving Release file signature"
-msgstr "Release fitxategi-sinadura eskuratzen"
+msgstr "Release файлының қолтаңбасын алу"
 
 #. Type: text
 #. Description
@@ -569,7 +563,7 @@ msgstr "Release fitxategi-sinadura eskuratzen"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:25001
 msgid "Finding package sizes"
-msgstr "Paketeen tamainak bilatzen"
+msgstr "Дестелер мөлшерін анықтау"
 
 #. Type: text
 #. Description
@@ -577,7 +571,7 @@ msgstr "Paketeen tamainak bilatzen"
 #. Packages is a filename which should not be translated
 #: ../bootstrap-base.templates:26001
 msgid "Retrieving Packages files"
-msgstr "'Packages' fitxategiak eskuratzen"
+msgstr "Packages файлдарын алу"
 
 #. Type: text
 #. Description
@@ -585,7 +579,7 @@ msgstr "'Packages' fitxategiak eskuratzen"
 #. Packages is a filename which should not be translated
 #: ../bootstrap-base.templates:27001
 msgid "Retrieving Packages file"
-msgstr "'Packages' fitxategia eskuratzen"
+msgstr "Packages файлын алу"
 
 #. Type: text
 #. Description
@@ -593,7 +587,7 @@ msgstr "'Packages' fitxategia eskuratzen"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:28001
 msgid "Retrieving packages"
-msgstr "Paketeak eskuratzen"
+msgstr "Дестелерді алу"
 
 #. Type: text
 #. Description
@@ -601,7 +595,7 @@ msgstr "Paketeak eskuratzen"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:29001
 msgid "Extracting packages"
-msgstr "Paketeak erauzten"
+msgstr "Дестелерді тарқату"
 
 #. Type: text
 #. Description
@@ -612,7 +606,7 @@ msgstr "Paketeak erauzten"
 #. be installed on the base system because of dependency resolution
 #: ../bootstrap-base.templates:31001
 msgid "Installing core packages"
-msgstr "Oinarrizko paketeak instalatzen"
+msgstr "Негізгі (core) дестелерін орнату"
 
 #. Type: text
 #. Description
@@ -623,14 +617,14 @@ msgstr "Oinarrizko paketeak instalatzen"
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:32001
 msgid "Unpacking required packages"
-msgstr "Beharrezko paketeak deskonprimitzen"
+msgstr "Қажетті (required) дестелерді тарқату"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:33001
 msgid "Configuring required packages"
-msgstr "Beharrezko paketeak konfiguratzen"
+msgstr "Қажетті (required) дестелерді баптау..."
 
 #. Type: text
 #. Description
@@ -639,7 +633,7 @@ msgstr "Beharrezko paketeak konfiguratzen"
 #. See http://www.debian.org/doc/debian-policy/ch-binary.html#s3.7
 #: ../bootstrap-base.templates:34001
 msgid "Unpacking the base system"
-msgstr "Oinarri-sistema deskonprimitzen"
+msgstr "Базалық жүйені тарқату"
 
 #. Type: text
 #. Description
@@ -648,7 +642,7 @@ msgstr "Oinarri-sistema deskonprimitzen"
 #. See http://www.debian.org/doc/debian-policy/ch-binary.html#s3.7
 #: ../bootstrap-base.templates:35001
 msgid "Configuring the base system"
-msgstr "Oinarri-sistema konfiguratzen"
+msgstr "Базалық жүйені баптау"
 
 #. Type: text
 #. Description
@@ -663,7 +657,7 @@ msgstr "${SECTION}: ${INFO}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:37001
 msgid "Validating ${SUBST0}..."
-msgstr "${SUBST0} egiaztatzen..."
+msgstr "${SUBST0} тексеру..."
 
 #. Type: text
 #. Description
@@ -671,7 +665,7 @@ msgstr "${SUBST0} egiaztatzen..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:38001
 msgid "Retrieving ${SUBST0}..."
-msgstr "${SUBST0} eskuratzen..."
+msgstr "${SUBST0} алу..."
 
 #. Type: text
 #. Description
@@ -679,7 +673,7 @@ msgstr "${SUBST0} eskuratzen..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:39001
 msgid "Extracting ${SUBST0}..."
-msgstr "${SUBST0} erauzten..."
+msgstr "${SUBST0} ашу..."
 
 #. Type: text
 #. Description
@@ -687,7 +681,7 @@ msgstr "${SUBST0} erauzten..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:40001
 msgid "Unpacking ${SUBST0}..."
-msgstr "${SUBST0} deskonprimitzen..."
+msgstr "${SUBST0} тарқату..."
 
 #. Type: text
 #. Description
@@ -695,14 +689,14 @@ msgstr "${SUBST0} deskonprimitzen..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:41001
 msgid "Configuring ${SUBST0}..."
-msgstr "${SUBST0} konfiguratzen..."
+msgstr "${SUBST0} баптау..."
 
 #. Type: text
 #. Description
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:42001
 msgid "Checking Release signature"
-msgstr "'Release'-ren sinadura egiaztatzen"
+msgstr "Release файлының қолтаңбасын тексеру"
 
 #. Type: text
 #. Description
@@ -711,14 +705,14 @@ msgstr "'Release'-ren sinadura egiaztatzen"
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:43001
 msgid "Valid Release signature (key id ${SUBST0})"
-msgstr "Baliozko Release sinadura (gako-IDa: ${SUBST0})"
+msgstr "Release файлының қолтаңбасы дұрыс (id ${SUBST0})"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:44001
 msgid "Resolving dependencies of base packages..."
-msgstr "Oinarrizko paketeen mendekotasunak ebazten..."
+msgstr "Базалық дестелердің тәуелділіктерін өңдеу..."
 
 #. Type: text
 #. Description
@@ -726,7 +720,8 @@ msgstr "Oinarrizko paketeen mendekotasunak ebazten..."
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:45001
 msgid "Found additional base dependencies: ${SUBST0}"
-msgstr "Oinarrizko mendekotasun gehigarriak aurkitu dira: ${SUBST0}"
+msgstr ""
+"Базалық дестелер үшін келесідей қосымша тәуелділіктері табылды: ${SUBST0}"
 
 #. Type: text
 #. Description
@@ -734,7 +729,8 @@ msgstr "Oinarrizko mendekotasun gehigarriak aurkitu dira: ${SUBST0}"
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:46001
 msgid "Found additional required dependencies: ${SUBST0}"
-msgstr "Beharrezko mendekotasun gehigarriak aurkitu dira: ${SUBST0}"
+msgstr ""
+"Қажетті дестелер үшін келесідей қосымша тәуелділіктері табылды: ${SUBST0}"
 
 #. Type: text
 #. Description
@@ -742,14 +738,15 @@ msgstr "Beharrezko mendekotasun gehigarriak aurkitu dira: ${SUBST0}"
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:47001
 msgid "Found packages in base already in required: ${SUBST0}"
-msgstr "Beharrezko paketeak dagoneko oinarrian aurkitu dira: ${SUBST0}"
+msgstr ""
+"Базалық дестелер ішінде қажеттілердің ішіндегі барлар табылды: ${SUBST0}"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:48001
 msgid "Resolving dependencies of required packages..."
-msgstr "Beharrezko paketeen mendekotasunak ebazten..."
+msgstr "Міндетті (required) дестелердің тәуелділіктерін өңдеу..."
 
 #. Type: text
 #. Description
@@ -758,7 +755,7 @@ msgstr "Beharrezko paketeen mendekotasunak ebazten..."
 #. SUBST1 is a mirror
 #: ../bootstrap-base.templates:49001
 msgid "Checking component ${SUBST0} on ${SUBST1}..."
-msgstr "${SUBST0} osagaia egiaztatzen ${SUBST1}(e)n..."
+msgstr "${SUBST1} орналасуындағы ${SUBST0} құрамасын тексеру..."
 
 #. Type: text
 #. Description
@@ -769,7 +766,7 @@ msgstr "${SUBST0} osagaia egiaztatzen ${SUBST1}(e)n..."
 #. be installed on the base system because of dependency resolution
 #: ../bootstrap-base.templates:50001
 msgid "Installing core packages..."
-msgstr "Oinarrizko paketeak instalatzen..."
+msgstr "Негізгі (core) дестелерін орнату..."
 
 #. Type: text
 #. Description
@@ -780,7 +777,7 @@ msgstr "Oinarrizko paketeak instalatzen..."
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:51001
 msgid "Unpacking required packages..."
-msgstr "Beharrezko paketeak deskonprimitzen..."
+msgstr "Қажетті (required) дестелерді тарқату..."
 
 #. Type: text
 #. Description
@@ -791,35 +788,35 @@ msgstr "Beharrezko paketeak deskonprimitzen..."
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:52001
 msgid "Configuring required packages..."
-msgstr "Beharrezko paketeak konfiguratzen..."
+msgstr "Қажетті (required) дестелерін орнату..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:53001
 msgid "Installing base packages..."
-msgstr "Oinarrizko paketeak instalatzen..."
+msgstr "Базалық (base) дестелерді орнату..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:54001
 msgid "Unpacking the base system..."
-msgstr "Oinarri-sistema deskonprimitzen..."
+msgstr "Базалық жүйені тарқату..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:55001
 msgid "Configuring the base system..."
-msgstr "Oinarri-sistema konfiguratzen..."
+msgstr "Базалық жүйені баптау..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:56001
 msgid "Base system installed successfully."
-msgstr "Oinarri-sistema ondo instalatu da."
+msgstr "Базалық жүйені орнату сәтті аяқталды."
 
 #. Type: error
 #. Description
@@ -827,7 +824,7 @@ msgstr "Oinarri-sistema ondo instalatu da."
 #. :sl2:
 #: ../bootstrap-base.templates:57001
 msgid "Debootstrap warning"
-msgstr "Debootstrap abisua"
+msgstr "Debootstrap ескертуі"
 
 #. Type: error
 #. Description
@@ -835,7 +832,7 @@ msgstr "Debootstrap abisua"
 #. :sl2:
 #: ../bootstrap-base.templates:57001
 msgid "Warning: ${INFO}"
-msgstr "Abisua: ${INFO}"
+msgstr "Ескерту: ${INFO}"
 
 #. Type: text
 #. Description
@@ -843,21 +840,21 @@ msgstr "Abisua: ${INFO}"
 #. :sl2:
 #: ../bootstrap-base.templates:58001
 msgid "Retrying failed download of ${SUBST0}"
-msgstr "Huts egindako ${SUBST0}(r)en deskarga berriz saiatzen"
+msgstr "${SUBST0} қайта жүктеп көру"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:60001
 msgid "Selecting the kernel to install..."
-msgstr "Nukleoa hautatzea instalatzeko..."
+msgstr "Орнату үшін ядро таңдау..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:61001
 msgid "Installing the kernel..."
-msgstr "Nukleoa instalatzea..."
+msgstr "Ядроны орнату..."
 
 #. Type: text
 #. Description
@@ -865,4 +862,4 @@ msgstr "Nukleoa instalatzea..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:62001
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
-msgstr "Nukleoa instalatzea - ${SUBST0} eskuratzen eta instalatzen..."
+msgstr "Ядроны орнату - ${SUBST0} алу және орнату..."
