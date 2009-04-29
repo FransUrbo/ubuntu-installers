@@ -1,4 +1,4 @@
-base-installer (1.99ubuntu1) UNRELEASED; urgency=low
+base-installer (1.99ubuntu1) karmic; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Use and depend on the Ubuntu keyring.
@@ -20,7 +20,7 @@ base-installer (1.99ubuntu1) UNRELEASED; urgency=low
     - Silently skip non-existent devices in /proc/swaps.
   * Use -ia64 kernel across the board on ia64.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 29 Apr 2009 16:33:19 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 29 Apr 2009 16:51:19 +0100
 
 base-installer (1.99) unstable; urgency=low
 
