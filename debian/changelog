@@ -1,4 +1,4 @@
-grub-installer (1.37ubuntu1) UNRELEASED; urgency=low
+grub-installer (1.37ubuntu1) karmic; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Show the grub menu and raise the menu timeout if other operating
@@ -42,7 +42,7 @@ grub-installer (1.37ubuntu1) UNRELEASED; urgency=low
       boot partition for grub-installer/bootdev.
     - Handle /dev/mmcblk* in split_device (LP: #348411).
 
- -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 04 May 2009 06:52:00 -0700
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 04 May 2009 07:40:22 -0700
 
 grub-installer (1.37) unstable; urgency=low
 
