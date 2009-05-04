@@ -3,13 +3,13 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# Finnish messages for debian-installer.
-# Copyright (C) 2003 Software in the Public Interest, Inc.
-# This file is distributed under the same license as debian-installer.
-# Tommi Vainikainen <thv+debian@iki.fi>, 2003 - 2004
-# Tapio Lehtonen <tale@debian.org>, 2004 - 2006
-# Esko Arajärvi <edu@iki.fi>, 2007 - 2008
-# Thanks to laatu@lokalisointi.org.
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
 #
 #
 msgid ""
@@ -17,9 +17,10 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2009-01-23 07:29+0000\n"
-"PO-Revision-Date: 2008-08-29 10:07+0200\n"
-"Last-Translator: Esko Arajärvi <edu@iki.fi>\n"
-"Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
+"PO-Revision-Date: 2009-01-07 12:15+0100\n"
+"Last-Translator: Marcos Alvarez Costales <marcos.alvarez.costales@gmail."
+"com>\n"
+"Language-Team: Asturian <ubuntu-l10n-ast@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,7 +33,7 @@ msgstr ""
 #. :sl1:
 #: ../grub-installer.templates:1001 ../grub-installer.templates:2001
 msgid "Install the GRUB boot loader to the master boot record?"
-msgstr "Asennetaanko GRUB-alkulatausohjelma pääkäynnistyslohkoon?"
+msgstr "¿Instalar el cargador d'arranque GRUB nel master boot record?"
 
 #. Type: boolean
 #. Description
@@ -41,7 +42,8 @@ msgstr "Asennetaanko GRUB-alkulatausohjelma pääkäynnistyslohkoon?"
 msgid ""
 "The following other operating systems have been detected on this computer: "
 "${OS_LIST}"
-msgstr "Koneelta löytyivät seuraavat muut käyttöjärjestelmät: ${OS_LIST}"
+msgstr ""
+"Se deteutaron los siguientes sistemes operativos nel to ordenador: ${OS_LIST}"
 
 #. Type: boolean
 #. Description
@@ -53,10 +55,10 @@ msgid ""
 "When your computer boots, you will be able to choose to load one of these "
 "operating systems or your new system."
 msgstr ""
-"Jos koneen kaikki käyttöjärjestelmät löytyvät yllä olevasta listasta, "
-"pitäisi olla turvallista asentaa alkulatausohjelma ensimmäisen kiintolevyn "
-"pääkäynnistyslohkoon. Kun tietokone käynnistyy, voit valita "
-"käynnistettäväksi jonkin näistä käyttöjärjestelmistä tai uuden järjestelmän."
+"Si tolos los tos sistemes operativos tan llistaos abaxo, entós ye seguro "
+"instalar el cargador d'arranque nel master boot record del to primer discu "
+"duru. Cuando'l to ordenador arranque, podrás escoyer cargar un d'esos "
+"sistemes operativos o'l to nuevu sistema."
 
 #. Type: boolean
 #. Description
@@ -67,9 +69,9 @@ msgid ""
 "computer. If so, it should be safe to install the GRUB boot loader to the "
 "master boot record of your first hard drive."
 msgstr ""
-"Nähtävästi tämä uusi asennus on tämän tietokoneen ainoa käyttöjärjestelmä. "
-"Mikäli näin on, pitäisi olla turvallista asentaa GRUB-alkulatausohjelma "
-"ensimmäisen kiintolevyn pääkäynnistyslohkoon."
+"Vese que n'esta nueva instalación ye l'únicu sistema operativu n'esti "
+"ordenador. Si ye asina, debieres instalar el cargador d'arranque GRUB nel "
+"master boot record del to primer discu duru."
 
 #. Type: boolean
 #. Description
@@ -81,24 +83,24 @@ msgid ""
 "operating system temporarily unbootable, though GRUB can be manually "
 "configured later to boot it."
 msgstr ""
-"Varoitus: Jos asennin ei löytänyt koneeseen asennettua toista "
-"käyttöjärjestelmää, pääkäynnistyslohkon muokkaaminen estää tilapäisesti tuon "
-"toisen käyttöjärjestelmän käynnistämisen. GRUBin asetuksia voidaan myöhemmin "
-"muokata käynnistämään myös se."
+"Avisu: Si l'instalador falló al deteutar otru sistema operativu que ta "
+"presente nel to ordenador, modificando'l master boot record faera que esi "
+"sistema operativu seya temporalmente nun arrancable, a través de GRUB puedes "
+"configuralu manualmente más tarde p'arrancar."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:3001
 msgid "Install the GRUB boot loader to the Serial ATA RAID disk?"
-msgstr "Asennetaanko GRUB-alkulatausohjelma SATA RAID -levylle?"
+msgstr "¿Instalar el cargador d'arranque GRUB al iscu Serial ATA RAID?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:3001
 msgid "Installation of GRUB on Serial ATA RAID is experimental."
-msgstr "GRUBin asennus SATA RAIDille on kokeiluasteella."
+msgstr "Instalación de GRUB nel Serial ATA RAID ta en pruebes."
 
 #. Type: boolean
 #. Description
@@ -109,9 +111,9 @@ msgid ""
 "RAID disk. It is also assumed that disk is listed as the first hard disk in "
 "the boot order defined in the system's BIOS setup."
 msgstr ""
-"GRUB asennetaan aina SATA RAID -levyn pääkäynnistyslohkoon (MBR). Lisäksi "
-"oletetaan, että levy on BIOS-asetuksissa valittu käynnistymään ensimmäisenä "
-"kovalevynä."
+"GRUB Siempre s'instala nel master boot record (MBR) del discu Serial ATA "
+"RAID. Esto asume que'l discu ta puestu como primer discu duru nel orde "
+"definíu na configuración del sisema na BIOS."
 
 #. Type: boolean
 #. Description
@@ -121,7 +123,7 @@ msgstr ""
 #. :sl3:
 #: ../grub-installer.templates:3001 ../grub-installer.templates:5001
 msgid "The GRUB root device is: ${GRUBROOT}."
-msgstr "GRUBin juurilaite on: ${GRUBROOT}."
+msgstr "El preseu root GRUB ye: ${GRUBROOT}."
 
 #. Type: error
 #. Description
@@ -135,14 +137,14 @@ msgstr "GRUBin juurilaite on: ${GRUBROOT}."
 #: ../grub-installer.templates:4001 ../grub-installer.templates:6001
 #: ../grub-installer.templates:14001
 msgid "Unable to configure GRUB"
-msgstr "GRUBin asetuksia ei voida tehdä."
+msgstr "Nun puede configurase GRUB"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:4001
 msgid "An error occurred while setting up GRUB for your Serial ATA RAID disk."
-msgstr "Tapahtui virhe tehtäessä GRUBin asetuksia SATA RAID -levylle."
+msgstr "Ocurrió un fallu mientres s'afitaba GRUB pal to discu Serial ATA RAID."
 
 #. Type: error
 #. Description
@@ -152,21 +154,21 @@ msgstr "Tapahtui virhe tehtäessä GRUBin asetuksia SATA RAID -levylle."
 #. :sl3:
 #: ../grub-installer.templates:4001 ../grub-installer.templates:6001
 msgid "The GRUB installation has been aborted."
-msgstr "GRUBin asennus on keskeytetty."
+msgstr "La instalación de GRUB fué encaboxada."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:5001
 msgid "Install the GRUB boot loader to the multipath device?"
-msgstr "Asennetaanko GRUB-alkulatausohjelma monipolkulaitteelle?"
+msgstr "¿Instalar el cargador d'arranque GRUB nel preséu multicamín?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:5001
 msgid "Installation of GRUB on multipath is experimental."
-msgstr "GRUBin asennus monipolkulaitteelle on kokeiluasteella."
+msgstr "Instalación de GRUB en multicamín ta en pruebes."
 
 #. Type: boolean
 #. Description
@@ -177,23 +179,23 @@ msgid ""
 "device. It is also assumed that the WWID of this device is selected as boot "
 "device in the system's FibreChannel adapter BIOS."
 msgstr ""
-"GRUB asennetaan aina monipolkulaitteen pääkäynnistyslohkoon (MBR). Lisäksi "
-"oletetaan, että järjestelmän FibreChannel-liitännän BIOS-asetuksissa tämän "
-"laitteen WWID on valittu käynnistyslaitteeksi."
+"GRUB siempre ta instaláu nel master boot record (MBR) del preséu multicamín. "
+"Tamién ta asumíu que el WWID del preséu ta seleicionáu cómo preséu "
+"d'arranque nel adaptador FibreChannel del sistema BIOS."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:6001
 msgid "An error occurred while setting up GRUB for the multipath device."
-msgstr "Tapahtui virhe tehtäessä GRUB-asetuksia monipolkulaitteelle."
+msgstr "Ocurrió un fallu mientres s'afitaba GRUB nel preséu multicamín."
 
 #. Type: string
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:7001
 msgid "Device for boot loader installation:"
-msgstr "Laite johon alkulatausohjelma asennetaan:"
+msgstr "Preseu pa la instalación del cargador d'arranque:"
 
 #. Type: string
 #. Description
@@ -206,11 +208,11 @@ msgid ""
 "can install GRUB elsewhere on the drive, or to another drive, or even to a "
 "floppy."
 msgstr ""
-"Asennettu järjestelmä on tehtävä käynnistyväksi asentamalla GRUB-"
-"alkulatausohjelma käynnistyskelpoiselle laitteelle. Tämä tehdään "
-"tavallisesti asentamalla GRUB ensimmäisen kiintolevyn pääkäynnistyslohkoon. "
-"Halutessasi voit asentaa GRUBin muualle levylle, toiselle kiintolevylle tai "
-"jopa levykkeelle."
+"Necesites facer el nuevu sistema instaláu arrancable, cola instalación del "
+"cargador d'arranque GRUB nun preséu arrancable. El métodu usual pa facelo ye "
+"instalar GRUB nel master boot record del to primer discu duru. Si lo "
+"prefieres, puedes instalar GRUB tamién nuna unidá, o n'otra unidá, o incluso "
+"nun disquete."
 
 #. Type: string
 #. Description
@@ -227,22 +229,22 @@ msgid ""
 "   your third drive (SCSI here);\n"
 " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
-"Laite voidaan määrittää käyttäen GRUBin ”(hdn,m)”-merkintää tai laitteena "
-"hakemistossa /dev. Muutamia esimerkkejä:\n"
-" - ”(hd0)” tai ”/dev/hda” asentaa GRUB:n ensimmäisen kiintolevyn\n"
-"   pääkäynnistyslohkoon (IDE);\n"
-"  - ”(hd0,1)” tai ”/dev/hda2” käyttää ensimmäisen IDE-levyn toista\n"
-"   levyosiota;\n"
-" - ”(hd2,4)” tai ”/dev/sdc5” käyttää kolmannen levyn ensimmäistä\n"
-"   jatkettua osiota (tässä SCSI);\n"
-" - ”(fd0)” tai ”/dev/fd0” asentaa GRUB:n levykkeelle."
+"El preséu puede especificase usando notación GRUB \"(hdn,m)\", o cómo un "
+"preséu en /dev. Debaxo tienes dalgunos exemplos::\n"
+" - \"(hd0)\" o \"/dev/hda\" instalará GRUB nel the master boot record\n"
+"   del to primer discu duru (IDE);\n"
+" - \"(hd0,1)\" o \"/dev/hda2\" usará la segunda partición del to\n"
+"   primer unidá IDE;\n"
+" - \"(hd2,4)\" o \"/dev/sdc5\" usará la primer partición extendida de\n"
+"   la to tercer unidá (equí SCSI);\n"
+" - \"(fd0)\" o \"/dev/fd0\" instalará GRUB a un disquete."
 
 #. Type: password
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:8001
 msgid "GRUB password:"
-msgstr "GRUB-salasana:"
+msgstr "Contraseña GRUB:"
 
 #. Type: password
 #. Description
@@ -256,26 +258,27 @@ msgid ""
 "GRUB command-line interface. By default, any user will still be able to "
 "start any menu entry without entering the password."
 msgstr ""
-"GRUB-alkulatausohjelmassa on useita vuorovaikutteisia ominaisuuksia, joita "
-"voidaan käyttää järjestelmään murtautumiseen, jos asiattomilla käyttäjillä "
-"on pääsy koneen ääreen sen käynnistyessä. Tämän estämiseksi voidaan valikon "
-"muokkaaminen tai GRUBin komentorivin käyttäminen suojata salasanalla. "
-"Oletusarvona kaikki käyttäjät voivat silti käynnistää minkä tahansa valikon "
-"järjestelmän ilman salasanaa. "
+"El cargador d'arranque GRUB ufierta delles característiques interactives mui "
+"potentes, les cuales pueden usase pa protexer el to sistema d'accesos a la "
+"maquina d'usuarios non autorizaos cuando s'anicia l'ordenador. Pa protexese "
+"d'esti ataque, puedes escoyer una contraseña, la cual será requerida anantes "
+"d'editar entraes del menú o entrar a la llínea de comandos GRUB. Por "
+"defeuto, cualisquier usuariu podrá aniciar cualisquier menú ensín introducir "
+"la contraseña."
 
 #. Type: password
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:8001
 msgid "If you do not wish to set a GRUB password, leave this field blank."
-msgstr "Jos et halua asettaa GRUB-salasanaa, jätä tyhjäksi."
+msgstr "Si nun quies afitar la contraseña GRUB, dexa esti campu vacíu."
 
 #. Type: password
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:9001
 msgid "Re-enter password to verify:"
-msgstr "Syötä salasana uudelleen varmuuden vuoksi:"
+msgstr "Reintroduz la contraseña pa verificar:"
 
 #. Type: password
 #. Description
@@ -285,28 +288,31 @@ msgid ""
 "Please enter the same GRUB password again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Syötä sama GRUB-salasana uudelleen varmistaaksesi, että kirjoitit sen oikein."
+"Por favor, introduz otra vegada la contraseña GRUB pa comprobar que la "
+"escribiste bien."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:10001
 msgid "Password input error"
-msgstr "Salasanan syöttövirhe"
+msgstr "Fallu d'entrada de contraseña"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:10001
 msgid "The two passwords you entered were not the same. Please try again."
-msgstr "Syöttämäsi kaksi salasanaa eivät olleet sama. Yritä uudelleen."
+msgstr ""
+"Les dos contraseñes qu'introduciste nun son iguales. Por favor, intentalo "
+"otra vegada."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:12001
 msgid "GRUB installation failed"
-msgstr "GRUBin asennus epäonnistui"
+msgstr "Falló instalación GRUB"
 
 #. Type: error
 #. Description
@@ -316,22 +322,22 @@ msgid ""
 "The '${GRUB}' package failed to install into /target/. Without the GRUB boot "
 "loader, the installed system will not boot."
 msgstr ""
-"Paketin ${GRUB} asennus hakemistoon /target/ epäonnistui. Asennettu "
-"järjestelmä ei käynnisty ilman GRUB-alkulatausohjelmaa."
+"El paquete '${GRUB}' falló al instalase en /target/. Ensín cargador "
+"d'arranque GRUB, el sistema instaláu nun arrancará."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:13001
 msgid "Unable to install GRUB in ${BOOTDEV}"
-msgstr "GRUBia ei voitu asentaa laitteelle ${BOOTDEV}"
+msgstr "Nun puede instalase GRUB en ${BOOTDEV}"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:13001
 msgid "Executing 'grub-install ${BOOTDEV}' failed."
-msgstr "Komennon ”grub-install ${BOOTDEV}” suoritus epäonnistui."
+msgstr "Falló la execución 'grub-install ${BOOTDEV}'"
 
 #. Type: error
 #. Description
@@ -341,63 +347,63 @@ msgstr "Komennon ”grub-install ${BOOTDEV}” suoritus epäonnistui."
 #. :sl2:
 #: ../grub-installer.templates:13001 ../grub-installer.templates:14001
 msgid "This is a fatal error."
-msgstr "Tämä on vakava virhe."
+msgstr "Esti ye un fallu grave."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:14001
 msgid "Executing 'update-grub' failed."
-msgstr "Komennon ”update-grub” suoritus epäonnistui."
+msgstr "Falló executar 'update-grub'."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:17001
 msgid "Installing GRUB boot loader"
-msgstr "Asennetaan GRUB-alkulatausohjelma"
+msgstr "Instalando cargador d'arranque GRUB"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:18001
 msgid "Looking for other operating systems..."
-msgstr "Etsitään muita käyttöjärjestelmiä..."
+msgstr "Guetando otros sistemes operativos..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:19001
 msgid "Installing the '${GRUB}' package..."
-msgstr "Asennetaan pakettia ”${GRUB}”..."
+msgstr "Instalando'l paquete '${GRUB}'..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:20001
 msgid "Determining GRUB boot device..."
-msgstr "Selvitetään GRUB-käynnistyslaitetta..."
+msgstr "Determinando preseu d'arranque GRUB"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:21001
 msgid "Running \"grub-install ${BOOTDEV}\"..."
-msgstr "Suoritetaan ”grub-install ${BOOTDEV}”..."
+msgstr "Executando \"grub-install ${BOOTDEV}\"..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:22001
 msgid "Running \"update-grub\"..."
-msgstr "Suoritetaan ”update-grub”..."
+msgstr "Executando \"update-grub\"..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:23001
 msgid "Updating /etc/kernel-img.conf..."
-msgstr "Päivitetään /etc/kernel-img.conf..."
+msgstr "Actualizando /etc/kernel-img.conf..."
 
 #. Type: text
 #. Description
@@ -405,7 +411,7 @@ msgstr "Päivitetään /etc/kernel-img.conf..."
 #. :sl1:
 #: ../grub-installer.templates:24001
 msgid "Install the GRUB boot loader on a hard disk"
-msgstr "Asenna GRUB-alkulatausohjelma kiintolevylle"
+msgstr "Instalar el cargador d'arranque GRUB nel discu duru"
 
 #. Type: text
 #. Description
@@ -413,15 +419,4 @@ msgstr "Asenna GRUB-alkulatausohjelma kiintolevylle"
 #. :sl2:
 #: ../grub-installer.templates:25001
 msgid "Reinstall GRUB boot loader"
-msgstr "Asennetaan GRUB-alkulatausohjelma uudelleen"
-
-#~ msgid "Install the GRUB boot loader to XFS file system?"
-#~ msgstr "Asenna GRUB-alkulatausohjelma XFS-tiedostojärjestelmään?"
-
-#~ msgid ""
-#~ "The GRUB boot loader installation often fails or hangs when /boot is on a "
-#~ "XFS file system. Using LILO in this situation is recommended."
-#~ msgstr ""
-#~ "GRUB-alkulatausohjelman asennus epäonnistuu tai jumittuu usein, jos "
-#~ "hakemisto /boot on XFS-tiedostojärjestelmässä. Tässä tilanteessa "
-#~ "suositellaan LILOn käyttöä."
+msgstr "Reinstalar el cargador d'arranque GRUB"
