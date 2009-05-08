@@ -1,10 +1,10 @@
-debian-installer (20081029ubuntu36) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu36) karmic; urgency=low
 
   * Move mainline architectures to 2.6.30-4 kernels.
   * Move ports architectures to 2.6.30-1 kernels.
   * The ia64 kernel is now called -ia64 rather than -itanium.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Sat, 09 May 2009 00:36:25 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 09 May 2009 00:48:54 +0100
 
 debian-installer (20081029ubuntu35) karmic; urgency=low
 
