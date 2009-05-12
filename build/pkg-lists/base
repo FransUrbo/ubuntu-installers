@@ -16,6 +16,7 @@ lsb-release-udeb
 main-menu
 rootskel
 udpkg
+util-linux-udeb
 rescue-check
 env-preseed
 pciutils-udeb

@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu38) UNRELEASED; urgency=low
+
+  * Add util-linux-udeb to base, for blkid.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 12 May 2009 12:42:45 +0100
+
 debian-installer (20081029ubuntu37) karmic; urgency=low
 
   * Move mainline architectures to 2.6.30-5 kernels.
