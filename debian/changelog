@@ -1,3 +1,12 @@
+grub-installer (1.37ubuntu2) UNRELEASED; urgency=low
+
+  * If sfdisk fails to set the first primary partition we try as active, try
+    the other primary partitions rather than failing. Don't fail even if
+    none of them can be set as active, since the BIOS may not mind anyway
+    (LP: #285716).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 14 May 2009 10:08:00 +0100
+
 grub-installer (1.37ubuntu1) karmic; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
