@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu39) UNRELEASED; urgency=low
+
+  * Move ports architectures to 2.6.30-2 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 22 May 2009 23:48:54 +0100
+
 debian-installer (20081029ubuntu38) karmic; urgency=low
 
   * Add util-linux-udeb to base, for blkid.
