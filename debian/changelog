@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu40) UNRELEASED; urgency=low
+
+  * Move mainline architectures to 2.6.30-8 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 05 Jun 2009 16:52:17 +0100
+
 debian-installer (20081029ubuntu39) karmic; urgency=low
 
   * Move ports architectures to 2.6.30-2 kernels.
