@@ -1,3 +1,11 @@
+debian-installer (20081029ubuntu41) karmic; urgency=low
+
+  * Drop all armel subarchitectures except imx51. This matches the kernel
+    change since these sub-architectures will not be supported after the
+    transition from ARMv5->ARMv6+VFP
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Mon, 08 Jun 2009 12:04:35 -0400
+
 debian-installer (20081029ubuntu40) karmic; urgency=low
 
   * Move mainline architectures to 2.6.30-8 kernels.
