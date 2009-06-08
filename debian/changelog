@@ -4,6 +4,7 @@ grub-installer (1.37ubuntu2) UNRELEASED; urgency=low
     the other primary partitions rather than failing. Don't fail even if
     none of them can be set as active, since the BIOS may not mind anyway
     (LP: #285716).
+  * Use GRUB 2 by default.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 14 May 2009 10:08:00 +0100
 
