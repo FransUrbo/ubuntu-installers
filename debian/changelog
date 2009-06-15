@@ -38,6 +38,7 @@ grub-installer (1.38ubuntu1) UNRELEASED; urgency=low
   * Go back to using update-grub -y for GRUB Legacy for now; our grub
     package is a bit old and still requires this.
   * Default to grub2 for GPT systems.
+  * Allow grub/grub2 choice for ext4, though still default to grub2.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 15 Jun 2009 22:09:36 +0100
 
