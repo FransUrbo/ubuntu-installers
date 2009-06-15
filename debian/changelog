@@ -35,6 +35,8 @@ grub-installer (1.38ubuntu1) UNRELEASED; urgency=low
     - Use rootnoverify rather than root when chain-loading Microsoft
       operating systems.
     - 'dmraid -c -s' changed its output format; cope with both old and new.
+  * Go back to using update-grub -y for GRUB Legacy for now; our grub
+    package is a bit old and still requires this.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 15 Jun 2009 22:09:36 +0100
 
