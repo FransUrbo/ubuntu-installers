@@ -430,9 +430,6 @@ case "$bootfstype:$bootfslabel:$grub_package" in
     *:loop:*)
 	# Serial ATA RAID partition, currently only grub is supported
 	: ;;
-    *:gpt:*)
-	# Ubuntu's grub package supports GPT, although Debian's doesn't.
-	: ;;
     ext4:*:grub)
 	# We boot from ext4, requires grub2
 	grub_package="grub-pc"
