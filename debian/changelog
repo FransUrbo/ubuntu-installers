@@ -1,8 +1,8 @@
-debian-installer (20081029ubuntu42) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu42) karmic; urgency=low
 
   * Move mainline architectures to 2.6.30-9 kernels.
 
- -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 15 Jun 2009 15:20:19 -0700
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 15 Jun 2009 15:21:02 -0700
 
 debian-installer (20081029ubuntu41) karmic; urgency=low
 
