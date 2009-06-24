@@ -1,9 +1,9 @@
-debian-installer (20081029ubuntu44) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu44) karmic; urgency=low
 
   * Disable netboot/386 for now, as the 386 kernel apparently wasn't merged
     along with the rest of ports.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 24 Jun 2009 09:45:44 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 24 Jun 2009 09:47:34 +0100
 
 debian-installer (20081029ubuntu43) karmic; urgency=low
 
