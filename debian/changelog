@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu44) UNRELEASED; urgency=low
+
+  * Disable netboot/386 for now, as the 386 kernel apparently wasn't merged
+    along with the rest of ports.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 24 Jun 2009 09:45:44 +0100
+
 debian-installer (20081029ubuntu43) karmic; urgency=low
 
   * Move all architectures to 2.6.30-10 kernels.
