@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu45) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new components (especially fixed busybox).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 25 Jun 2009 22:42:56 +0100
+
 debian-installer (20081029ubuntu44) karmic; urgency=low
 
   * Disable netboot/386 for now, as the 386 kernel apparently wasn't merged
