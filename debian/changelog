@@ -1,3 +1,9 @@
+base-installer (1.101ubuntu2) UNRELEASED; urgency=low
+
+  * Adjust for new PAE kernel package naming on i386.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 22 Jun 2009 16:15:37 +0100
+
 base-installer (1.101ubuntu1) karmic; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
