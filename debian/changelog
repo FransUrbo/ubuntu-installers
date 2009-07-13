@@ -36,6 +36,8 @@ grub-installer (1.39ubuntu1) UNRELEASED; urgency=low
       package is a bit old and still requires this.
     - Default to grub2 for GPT systems.
     - Allow grub/grub2 choice for ext4, though still default to grub2.
+  * If using grub2, then use ordinary grub-install for mdadm-managed RAID
+    /boot rather than trying to implement it ourselves.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 13 Jul 2009 11:56:48 +0100
 

@@ -703,7 +703,7 @@ quit
 EOF
 }
 
-if [ -z "$frdisk" ]; then
+if [ -z "$frdisk" ] || ([ "$grub_version" = grub2 ] && [ "$frtype" = mdadm ]); then
 
 	# Install grub on each space separated disk in the list
 	bootdevs="$bootdev"
