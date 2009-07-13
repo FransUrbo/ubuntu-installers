@@ -1,4 +1,4 @@
-grub-installer (1.39ubuntu1) UNRELEASED; urgency=low
+grub-installer (1.39ubuntu1) karmic; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Show the grub menu and raise the menu timeout if other operating
@@ -39,7 +39,7 @@ grub-installer (1.39ubuntu1) UNRELEASED; urgency=low
   * If using grub2, then use ordinary grub-install for mdadm-managed RAID
     /boot rather than trying to implement it ourselves.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 13 Jul 2009 11:56:48 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 13 Jul 2009 12:09:43 +0100
 
 grub-installer (1.39) unstable; urgency=low
 
