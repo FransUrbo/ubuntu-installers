@@ -2,6 +2,7 @@ debian-installer (20081029ubuntu48) UNRELEASED; urgency=low
 
   * Disable GTK frontend for now; the GDK directfb backend needs some work
     in the current development series.
+  * Move to 2.6.31-3 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 10 Jul 2009 17:23:43 +0100
 
