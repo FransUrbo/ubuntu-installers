@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu49) UNRELEASED; urgency=low
+
+  * Move to 2.6.31-4 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 24 Jul 2009 10:08:34 +0100
+
 debian-installer (20081029ubuntu48) karmic; urgency=low
 
   * Disable GTK frontend for now; the GDK directfb backend needs some work
