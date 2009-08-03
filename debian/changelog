@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu50) UNRELEASED; urgency=low
+
+  * Move to 2.6.31-5 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 03 Aug 2009 09:56:56 +0100
+
 debian-installer (20081029ubuntu49) karmic; urgency=low
 
   * Move to 2.6.31-4 kernels.
