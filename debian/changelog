@@ -1,3 +1,9 @@
+base-installer (1.101ubuntu3) UNRELEASED; urgency=low
+
+  * Added support for the Marvell dove SoC
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Wed, 05 Aug 2009 05:42:14 -0400
+
 base-installer (1.101ubuntu2) karmic; urgency=low
 
   * Adjust for new PAE kernel package naming on i386.
