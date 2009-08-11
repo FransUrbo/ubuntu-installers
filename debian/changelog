@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu51) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new components for Alpha 4.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 11 Aug 2009 13:14:43 +0100
+
 debian-installer (20081029ubuntu50) karmic; urgency=low
 
   * Move to 2.6.31-5 kernels.
