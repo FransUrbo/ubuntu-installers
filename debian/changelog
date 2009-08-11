@@ -1,8 +1,8 @@
-debian-installer (20081029ubuntu51) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu51) karmic; urgency=low
 
   * No-change rebuild to pick up new components for Alpha 4.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 11 Aug 2009 13:14:43 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 11 Aug 2009 13:16:26 +0100
 
 debian-installer (20081029ubuntu50) karmic; urgency=low
 
