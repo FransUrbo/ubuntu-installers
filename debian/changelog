@@ -1,6 +1,10 @@
 debian-installer (20081029ubuntu52) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Move to 2.6.31-6 kernels.
+
+  [ Michael Casadevall ]
+  * Add support for building Marvell dove images (LP: #409238)
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 24 Aug 2009 10:45:07 +0100
 
