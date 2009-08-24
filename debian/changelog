@@ -2,6 +2,7 @@ debian-installer (20081029ubuntu52) UNRELEASED; urgency=low
 
   [ Colin Watson ]
   * Move to 2.6.31-6 kernels.
+  * Add pcmcia-modules to hd-media images (LP: #415675).
 
   [ Michael Casadevall ]
   * Add support for building Marvell dove images (LP: #409238)
