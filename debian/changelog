@@ -1,8 +1,8 @@
-base-installer (1.101ubuntu3) UNRELEASED; urgency=low
+base-installer (1.101ubuntu3) karmic; urgency=low
 
   * Added support for the Marvell dove SoC (LP: #409238)
 
- -- Michael Casadevall <mcasadevall@ubuntu.com>  Wed, 05 Aug 2009 05:42:14 -0400
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Mon, 24 Aug 2009 12:30:29 +0100
 
 base-installer (1.101ubuntu2) karmic; urgency=low
 
