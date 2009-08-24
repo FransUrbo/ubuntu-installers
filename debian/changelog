@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu53) UNRELEASED; urgency=low
+
+  * Marvell Dove kernel udebs are called *-dove-di, not *-mvl-dove-di.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 25 Aug 2009 00:26:25 +0100
+
 debian-installer (20081029ubuntu52) karmic; urgency=low
 
   [ Colin Watson ]
