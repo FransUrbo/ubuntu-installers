@@ -1,125 +1,119 @@
-# Basque translation for debian-installer
-# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# Ukrainian translation for debian-installer
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
 # This file is distributed under the same license as the debian-installer package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-12-04 18:54+0000\n"
-"Last-Translator: jon latorre <moebius@etxea.net>\n"
-"Language-Team: Basque <eu@li.org>\n"
+"PO-Revision-Date: 2009-05-24 14:47+0000\n"
+"Last-Translator: Nizzzia <Unknown>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-04-08 23:44+0000\n"
+"X-Launchpad-Export-Date: 2009-08-25 08:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Instalatzailearen Abioaren Laguntza-Pantailak"
+msgstr ""
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "Ongietorri ${DISTRIBUTION_NAME}-ra !"
+msgstr "Вітаємо в ${DISTRIBUTION_NAME}!"
 
 #: help.xml:18
 msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Hau ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} instalatzeko ${MEDIA_TYPE}-"
-"a da, ${BUILD_DATE}-an eraikia."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Hau ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}-ren ${MEDIA_TYPE} "
-"exekutagarria da, ${BUILD_DATE}-an eraikia."
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "LAGUNTZAREN AURKIBIDEA"
+msgstr ""
 
 #: help.xml:29
 msgid "KEY"
-msgstr "TEKLA"
+msgstr ""
 
 #: help.xml:30
 msgid "TOPIC"
-msgstr "GAIA"
+msgstr "ТЕМА"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Orri hau, laguntzaren aurkibidea."
+msgstr ""
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "${DISTRIBUTION_NAME} instalatu aurretiko beharrak."
+msgstr "Необхідні передумови для встановлення ${DISTRIBUTION_NAME}."
 
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "${DISTRIBUTION_NAME} exekutatu aurretiko beharrak."
+msgstr "Необхідні передумови для роботи ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr "${MEDIA_TYPE} hau modu berezian erabiltzeko abio-moduak."
+msgstr ""
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Abio-modu estrak; sistema apurtu bat berreskuratzen."
+msgstr ""
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr "Abio-parametro bereziak, sarrera."
+msgstr "Загальний огляд особливих параметрів завантаження."
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "Makina berezientzako abio-parametro bereziak."
+msgstr ""
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr "Disko-kontroladore zehatzentzako abio-parametro bereziak."
+msgstr ""
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr "Instalazio-sistemarentzako abio-parametro bereziak."
+msgstr ""
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "Bootstrap sistemarentzako abio-parametro bereziak."
+msgstr ""
 
 #: help.xml:84
 msgid "How to get help."
-msgstr "Laguntza nola lortu."
+msgstr "Як отримати допомогу."
 
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "Copyright eta garantiak."
+msgstr "Авторські права та гарантії."
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
-"Sakatu F2-tik F10-era xehetasunak ikusteko, edo ENTER ${BOOTPROMPT}-rako"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
-"Sakatu F2-tik F10-era xehetasunak ikusteko, edo Escape laguntzatik irteteko."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "UBUNTU INSTALATU AURRETIKO BEHARRAK"
+msgstr "НЕОБХІДНІ ПЕРЕДУМОВИ ДЛЯ ВСТАНОВЛЕННЯ UBUNTU"
 
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
-"Ubuntu instaladorea erabiltzeko gutxienez 32 megabyte RAM eduki behar dituzu."
+"Для використання цього встановлювача Ubuntu необхідно щонайменше 32 Мб RAM."
 
 #: help.xml:123
 msgid ""
@@ -129,11 +123,6 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Ubuntu mahaigain-sistema arrunta instalatzeko, zure disko gogorrean "
-"gutxienez 2 gigabyteko partizio bat egiteko lekua izan behar duzu; 400 "
-"megabyte, zerbitzari-sistema minimoa instalatu nahi baduzu. Pakete gehiago "
-"instalatzeko, leku gehiago beharko duzu diskoan, zure sistemari eman nahi "
-"diozun erabileraren arabera."
 
 #: help.xml:131 help.xml:742
 msgid ""
@@ -141,36 +130,27 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"Instalazio Gidaliburua edo maiz egiten diren galderak (FAQ) irakurri "
-"informazio gehiago eskuratzeko. Ubunturen webgunean <ulink url=\"http://www."
-"ubuntu.com/\" /> dituzu eskuragarri bi dokumentu horiek."
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Ubunturen live sistema erabiltzeko gutxienes 384 megabyte RAM behar dituzu."
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Sistema exekutagarriak ez du lekurik behar zure disko gogorrean. Ala ere, "
-"trukerako partizioriok (swap) baduzu, erabili egingo da."
 
 #: help.xml:147 help.xml:748
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Maiz egiten diren galderak (FAQ) irakurri informazio gehiago eskuratzeko. "
-"Dokumentu hau Ubunturen webgunean <ulink url=\"http://www.ubuntu.com/\" /> "
-"duzu eskuragarri."
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Mila esker Ubuntu aukeratzeagatik!"
+msgstr "Дякуємо за те, що ви обрали Ubuntu!"
 
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
 #: help.xml:524 help.xml:597 help.xml:697 help.xml:753 help.xml:809
@@ -179,99 +159,94 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
-"Sakatu <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control eta F, eta gero 1 </phrase> laguntzaren aurkibidea ikusteko, edo "
-"ENTER ${BOOTPROMPT}-rako"
 
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
-"Sakatu F1 laguntzaren aurkizibidea ikusteko, edo Escape laguntzatik irteteko."
 
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr "ABIO MODUAK"
+msgstr "СПОСОБИ ЗАВАНТАЖЕННЯ"
 
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr "Abio-modu erabilgarriak:"
+msgstr "Доступні способи завантаження:"
 
 #: help.xml:177
 msgid "install"
-msgstr "instalatu"
+msgstr "встановити"
 
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr "Ubuntu Instalatu"
+msgstr "Встановити Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr "Instalazioa hasi -- Hau da lehetsitako ${MEDIA_TYPE} instalazioa."
+msgstr ""
 
 #: help.xml:185
 msgid "expert"
-msgstr "aditua"
+msgstr ""
 
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "Aditu moduan abiatu instalazioa, kontrol maximoa izateko."
+msgstr ""
 
 #: help.xml:192
 msgid "cli"
-msgstr "cli"
+msgstr ""
 
 #: help.xml:193
 msgid "cli-expert"
-msgstr "cli-expert"
+msgstr ""
 
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr "Agindu-lerroko instalazio minimoa."
+msgstr ""
 
 #: help.xml:200
 msgid "live"
-msgstr "exekutagarria"
+msgstr ""
 
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr "Ubuntu probatu zure ordenagailuan aldaketarik euin gabe"
+msgstr "Спробуйте Ubuntu без застосування будь-яких змін до вашого комп'ютера."
 
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
-"Sistema bizia hasiarazi. Hala nahi baduzu, mahaigaineko \"Instalatu\" ikurra "
-"erabili ahalko duzu instalazioa ubrutzeko."
 
 #: help.xml:209
 msgid "live-install"
-msgstr "live-install"
+msgstr ""
 
 #: help.xml:212
 msgid "Start the installation."
-msgstr "Instalazioa hasi"
+msgstr "Розпочати встановлення."
 
 #: help.xml:228
 msgid "memtest"
-msgstr "memtest"
+msgstr ""
 
 #: help.xml:229
 msgid "Test memory"
-msgstr "Memorya probatu"
+msgstr "Тестування пам'яті"
 
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr "Memoriaren egiaztapena burutu"
+msgstr "Виконати перевірку пам'яті."
 
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"Abio-modu hauteko bat erabiltzeko, gonbitan idatzi abio-modua; beharrezkoa "
-"bada, abio-parametroak gehituta. Adibidez:"
+"Для використання одного зі згаданих методів завантаження вкажіть його в "
+"командному рядку й після нього зазначте будь-які параметри завантаження. "
+"Наприклад:"
 
 #: help.xml:242
 #, no-wrap
@@ -288,16 +263,12 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Zalantzarik baduzu, abio-modu lehenetsia erabili, parametro berezirik gabe. "
-"Enter sakatu abio-gonbitan."
 
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
-"(Beste hainbat sistema-eragileren izenekin ordezkatu liteke \"Ubuntu\". "
-"Laguntza-testua generikoa da.)"
 
 #: help.xml:257 help.xml:307
 msgid ""
@@ -306,37 +277,31 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
-"Abio-modu hauetako bat erabiltzeko, geziak erabiliz hautatu ezazu menuan. F4 "
-"sakatu ezazu beste abio-aukera eta instalazio-moduen artean aukeratzeko. F6 "
-"sakatu ezazu abio-parametroak aldatzeko. F6 berriro sakatu ezazu ohiko abio-"
-"parametro batzuen menua ikusteko."
 
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
-"Aditu-moduan izan ezik, ez da erakusten nukleoaren abio-mezu ez-larririk."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr "SISTEMA APURTU BAT BERRESKURATZEN"
+msgstr ""
 
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
-"Abio-modu hauetako bat erabili aurrez instalatuta sistema bat berreskuratzeko"
 
 #: help.xml:289
 msgid "rescue"
-msgstr "berreskuratu"
+msgstr ""
 
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr "Apurtutako sistema bat berreskuratu"
+msgstr ""
 
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr "Berreskuratze-moduan abiatu."
+msgstr ""
 
 #: help.xml:303
 #, no-wrap
@@ -351,61 +316,50 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
-"Ez dago berreskuratze-modu berezirik CD honetan. Halaere, sistema osoa CDtik "
-"exekutatzen denez, agindu-lerroa eta/edo herraminta grafikoak erabil "
-"ditzakezu sistema apurtu bat berreskuratzeko, eta web arakatzaile bat "
-"erabili laguntza bilatzeko. Aholku ugari duzu eskuragarri online zure "
-"sistemaren abioa oker funtzionarazi dezaketen arazo mota gehienei buruz."
 
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "ABIO-PARAMETRO BEREZIAK - SARRERA"
+msgstr "ЗАГАЛЬНИЙ ОГЛЯД ОСОБЛИВИХ ПАРАМЕТРІВ ЗАВАНТАЖЕННЯ"
 
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
-"Sistema batzutan, posible da <literal>boot:</literal> agindu-lerroan "
-"parametro batenbat idatzi behar izatea sistema abiarazteko."
 
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
-"Sistema batzutan, parametroren bat zehaztu beharko duzu sistemaren abioan F6 "
-"sakatuz."
 
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"Adibidez, posible da Linux-ek zure hardwarea automatikoki ezin detektatzea, "
-"eta zuk zehaztu behar izatea bere kokapena edo mota."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
-"Erabili ditzakezun abio-parametroei buruzko informazio gehiago ikusteko, "
-"sakatu:"
+"Для більш детальної інформації щодо можливих параметрів завантаження "
+"натисніть:"
 
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr "makina berezientzako abio-parametroak"
+msgstr ""
 
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr "diska-kontrolagailu ezberdinentzako abio-parametroak"
+msgstr ""
 
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr "instalazio-sistemak ulertzen dituen abio-parametroak"
+msgstr ""
 
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr "bootstrap sistemak ulertzen dituen abio-parametroak"
+msgstr ""
 
 #: help.xml:405
 msgid ""
@@ -414,22 +368,16 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Kernel-modulo asko automatikoki kargatzen ditu instalazio-sistemak eta "
-"modulo horientzako parametroak ezin dira agindu-lerroan ezarri. Moduloak "
-"kargatzen direnean parametroei buruz galdetzea nahi baduzu, aditu moduan "
-"abiatu (ikusi <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"Kernel modulo asko automatikoki kargatzen ditu bootstrap sistemak eta modulo "
-"horientzako parametroak ezin dira agindu-lerroan ezarri."
 
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr "ABIO-PARAMETRO BEREZIAK - HARDWARE EZBERDINAK"
+msgstr ""
 
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
@@ -437,55 +385,46 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Abio-parametro hauek erabil ditzakezu <literal>boot:</literal> agindu-"
-"lerroan, abio-moduarekin batera (ikus <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Abio-parametro hauek erabil ditzakezu F6 sakatuz, abio-moduarekin batera "
-"(ikus <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
-"Zenbaki hamaseitarrak erabiltzeko, 0x aurrizkia erabili behar duzu (adib., "
-"0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr "HARDWAREA"
+msgstr ""
 
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr "ZEHAZTU BEHARREKO PARAMETROAK"
+msgstr ""
 
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr "IBM PS/1 edo ValuePoint (IDE diskoa)"
+msgstr ""
 
 #: help.xml:456
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>zilindroak</replaceable>,<replaceable>buruak</"
-"replaceable>,<replaceable>sektoreak</replaceable></userinput>"
 
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr "IBM ThinkPad batzuk"
+msgstr ""
 
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
+msgstr ""
 
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr "S/I ataka zonaldeak babestu"
+msgstr ""
 
 #: help.xml:466
 msgid ""
@@ -493,13 +432,10 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
-"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
-"replaceable></userinput><optional><userinput>,<replaceable>...</"
-"replaceable></userinput></optional>"
 
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr "Pantailarekin arazoak dituzten ordenagailu eramangarriak"
+msgstr ""
 
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
@@ -507,47 +443,44 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr "9600 baudiotara erabili serieko lehen ataka"
+msgstr ""
 
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr "<userinput>console=ttyS0,9600n8</userinput>"
+msgstr ""
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr "IDE kontrolatzaile generikoa erabiltzera behartu"
+msgstr ""
 
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>generic.all_generic_ide=1</userinput>"
+msgstr ""
 
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
-"Blokeo edo beste hardware-errore batzuentzako konponbide (tenporalak) izan "
-"daitezke:"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr "APIC interrupzio-kudeatze baldarrak ezgaitu"
+msgstr ""
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr "<userinput>noapic nolapic</userinput>"
+msgstr ""
 
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr "(partzialki) ezgaitu ACPI"
+msgstr ""
 
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>acpi=noirq</userinput> edo <userinput>acpi=off</userinput>"
+msgstr "<userinput>acpi=noirq</userinput> або <userinput>acpi=off</userinput>"
 
 #: help.xml:506
 msgid "disable USB"
-msgstr "USB ezgaitu"
+msgstr ""
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
@@ -555,7 +488,7 @@ msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr "interrupzio-inkesta"
+msgstr ""
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
@@ -563,7 +496,7 @@ msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
-msgstr "Adibidez:"
+msgstr "Наприклад:"
 
 #: help.xml:519
 #, no-wrap
@@ -577,11 +510,11 @@ msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "ABIO-PARAMETRO BEREZIAK - DISKO-KONTROLATZAILE ANITZ"
+msgstr ""
 
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
-msgstr "Adaptec 151x, 152x"
+msgstr ""
 
 #: help.xml:560
 msgid ""
@@ -591,11 +524,6 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
-"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>irq</replaceable></"
-"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
-"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
-"userinput></optional></optional></optional>"
 
 #: help.xml:564
 msgid "Adaptec 1542"
@@ -608,10 +536,6 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
-"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
-"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
-"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
-"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
@@ -619,21 +543,20 @@ msgstr "Adaptec 274x, 284x"
 
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (gaituta zero ez bada)"
+msgstr ""
 
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
-msgstr "BusLogic SCSI Bezeroak"
+msgstr ""
 
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
-"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr "DELL makina batzuk"
+msgstr "Деякі комп'ютери DELL"
 
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
@@ -644,44 +567,40 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"Zerrenda hau ez dago guztiz osatua, ikusi nukleoaren kernel-parameters.txt "
-"fitxategia gehiagorako."
 
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr "boot: install aic7xxx.aic7xxx=no_probe"
+msgstr ""
 
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr "boot: live aic7xxx.aic7xxx=no_probe"
+msgstr ""
 
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr "ABIO-PARAMETRO BEREZIAK - INSTALAZIO-SISTEMA"
+msgstr ""
 
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr ""
-"Parametro hauek instalazio-sistemaren funtzionamendua kontrolatzen dute."
+msgstr "Ці параметри відповідають за роботу встановлювача."
 
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
 msgstr ""
-"Parametro hauek bootstrap sistemaren funtzionamendua kontrolatzen dute."
 
 #: help.xml:632
 msgid "RESULT"
-msgstr "EMAITZA"
+msgstr ""
 
 #: help.xml:633
 msgid "PARAMETER"
-msgstr "PARAMETROA"
+msgstr "ПАРАМЕТР"
 
 #: help.xml:636
 msgid "Verbose debugging"
-msgstr "Arazte berbaduna"
+msgstr ""
 
 #: help.xml:637
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
@@ -689,7 +608,7 @@ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:641
 msgid "Debug boot sequence"
-msgstr "Abio-sekuentzia araztu"
+msgstr ""
 
 #: help.xml:642
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
@@ -697,7 +616,7 @@ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:646
 msgid "Disable framebuffer"
-msgstr "Framebuffer-a ezgaitu"
+msgstr ""
 
 #: help.xml:647
 msgid "<userinput>fb=false</userinput>"
@@ -705,7 +624,7 @@ msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:651
 msgid "Don't start PCMCIA"
-msgstr "Ez PCMCIA abiatu"
+msgstr ""
 
 #: help.xml:652
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
@@ -713,7 +632,7 @@ msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:656
 msgid "Force static network config"
-msgstr "Sare-konfigurazio estatikoa behartu"
+msgstr ""
 
 #: help.xml:657
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
@@ -721,7 +640,7 @@ msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:661
 msgid "Set keyboard map"
-msgstr "Teklatu-mapa ezarri"
+msgstr ""
 
 #: help.xml:662
 msgid "<userinput>bootkbd=es</userinput>"
@@ -729,30 +648,25 @@ msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:666
 msgid "Use Braille tty"
-msgstr "Braille terminala erabili"
+msgstr ""
 
 #: help.xml:667
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
-"<userinput>brltty=<replaceable>kontrolatzailea</replaceable>,"
-"<replaceable>gailua</replaceable>,<replaceable>testu_taula</replaceable></"
-"userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:671
 msgid "Use high contrast accessibility theme"
-msgstr "Kontraste handiko erabilgarritasun-gaia erabili"
+msgstr ""
 
 #: help.xml:672
 msgid "<userinput>theme=dark</userinput>"
 msgstr "<userinput>theme=dark</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:676
 msgid "Use special tasks"
-msgstr "Ataza bereziak erabili"
+msgstr ""
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
@@ -762,8 +676,6 @@ msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
-"ACPI ezgaitu PCI mapentzako (erabilgarria HP zerbitzari batzuentzako eta VIA-"
-"n oinarritutako makinentzako)"
 
 #: help.xml:685
 msgid "<userinput>pci=noacpi</userinput>"
@@ -772,44 +684,40 @@ msgstr "<userinput>pci=noacpi</userinput>"
 #: help.xml:692
 #, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr "boot: install pci=noacpi"
+msgstr ""
 
 #: help.xml:693
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "boot: live pci=noacpi"
+msgstr ""
 
 #: help.xml:710
 msgid "GETTING HELP"
-msgstr "LAGUNTZA LORTZEN"
+msgstr ""
 
 #: help.xml:717
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr "Ezin baduzu Ubuntu instalatu, ez etsi!"
+msgstr ""
 
 #: help.xml:720
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr "Ezin baduzu Ubuntu abiarazi, ez etsi!"
+msgstr ""
 
 #: help.xml:723
 msgid "The Ubuntu team is ready to help you!"
-msgstr "Ubuntu taldea zuri laguntzeko prest dago!"
+msgstr "Команда Ubuntu готова вам допомогти!"
 
 #: help.xml:726
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Instalazioan izandako arazoiei buruzko informazioa jasotzeko interes berezia "
-"dugu, normalean ez baita pertsona <emphasis>bakar</emphasis> baten arazoa."
 
 #: help.xml:731
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Abioan izandako arazoiei buruzko informazioa jasotzeko interes berezia dugu, "
-"normalean ez baita pertsona <emphasis>bakar</emphasis> baten arazoa."
 
 #: help.xml:735
 msgid ""
@@ -818,27 +726,20 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Jadanik zure arazoaren berri izan dugu eta konponbide azkar bat eman "
-"diezazukegu, edo bestela, gustora jasoko genuke zure arazoaren berri eta "
-"zurekin lan egin konponbide bat aurkitzeko; horrela, arazo berdinarekin topo "
-"egiten duen hurrengo erabiltzaileak zure esperientziaren onura jaso ahalko "
-"du!"
 
 #: help.xml:766
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr "COPYRIGTH ETA GARANTIAK"
+msgstr "АВТОРСЬКІ ПРАВА ТА ГАРАНТІЇ"
 
 #: help.xml:773
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Copyright (C) 2004-2008 Canonical Ltd. da Ubuntu, eta beste egile edo "
-"kontribuitzaile ugariren lana darabil."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
-msgstr "Ubuntu-sistema edozein modutan elkarbanatu daiteke."
+msgstr ""
 
 #: help.xml:781
 msgid ""
@@ -846,9 +747,6 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Instalazioaren ondoren, pakete bakotzaren banaketa-baldintzak irakurri "
-"ditzakezu dagokion /usr/share/doc/<replaceable>paketearenizena</replaceable>/"
-"copyright fitxategian."
 
 #: help.xml:786
 msgid ""
@@ -856,17 +754,12 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Abiatu ondoren, pakete bakotzaren banaketa-baldintzak irakurri ditzakezu "
-"dagokion /usr/share/doc/<replaceable>paketearenizena</replaceable>/copyright "
-"fitxategian."
 
 #: help.xml:792
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Ubuntu <emphasis>INOLAKO GARANTIARIK GABE</emphasis> banatzen da, tokian "
-"tokiko legearen hedaduraren arabera."
 
 #: help.xml:797
 msgid ""
@@ -874,15 +767,11 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
-"Instalazio-sistema hau Debian Instalatzailean oinarrituta dago. Ikusi <ulink "
-"url=\"http://www.debian.org/\" /> Debian proiektuari buruzko informazio eta "
-"xehetasun gehiago irakurtzeko."
 
 #: help.xml:803
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"Sistema hau Debian-en oinarrituta dago. Ikusi <ulink url=\"http://www.debian."
-"org/\" /> Debian proiektuari buruzko informazio eta xehetasun gehiago "
-"irakurtzeko."
+"Ця система основана на Debian. Більш детальна інформація щодо проекту Debian "
+"доступна тут <ulink url=\"http://www.debian.org/\" />."

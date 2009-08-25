@@ -323,6 +323,7 @@ msgstr ""
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"Nekritické hlásenia jadra sú potlačené všade okrem režimu pre expertov."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
@@ -530,11 +531,11 @@ msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
-msgstr ""
+msgstr "Možné (dočasné) obídenie zamrznutí alebo iných hardvérových chýb:"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "vypnúť chybné smerovanie prerušení APIC"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
@@ -542,27 +543,28 @@ msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "(čiastočne) vypnúť ACPI"
 
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 msgstr ""
+"<userinput>acpi=noirq</userinput> alebo <userinput>acpi=off</userinput>"
 
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "vypnúť USB"
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "pravidelná kontrola prerušení (poll)"
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -755,7 +757,7 @@ msgstr "Použiť špeciálne úlohy"
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 
 #: help.xml:682
 msgid ""

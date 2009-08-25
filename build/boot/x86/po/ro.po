@@ -544,6 +544,7 @@ msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
+"Metode ocolitoare (temporare) pentru blocările sau alte defectuări hardware:"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
@@ -571,7 +572,7 @@ msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "interoghează repetitiv hardware-ul pentru întreruperi"
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"

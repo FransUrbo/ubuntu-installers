@@ -19,7 +19,7 @@ msgstr ""
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr ""
+msgstr "Màn hình trợ giúp khởi động bộ cài đặt"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
@@ -30,12 +30,16 @@ msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Đây là bản cài đặt ${MEDIA_TYPE} cho ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Được tạo ra ngày ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Đây là bản sử dụng trực tiếp từ đĩa ${MEDIA_TYPE} cho ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Được tạo ra ngày ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -51,7 +55,7 @@ msgstr "CHỦ ĐỀ"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr ""
+msgstr "Chỉ mục trợ giúp tại trang này."
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
@@ -63,31 +67,31 @@ msgstr "Điều kiện để chạy ${DISTRIBUTION_NAME}."
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr ""
+msgstr "Phương thức khởi động đặc biệt sử dụng cho ${MEDIA_TYPE}"
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr ""
+msgstr "Phương thức khởi động bổ sung; khôi phục hệ thống bị lỗi."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr ""
+msgstr "Tổng quan về các tham số khởi động đặc biệt."
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "Các tham số khởi động đặc biệt."
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
+msgstr "Các tham số khởi động đặc biệt cho các trình điều khiển đĩa được chọn."
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "Các tham số khởi động đặc biệt cho hệ thống cài đặt."
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "Các tham biến khởi động đặc biệt cho hệ thống khởi động kiểu bootstrap"
 
 #: help.xml:84
 msgid "How to get help."
@@ -99,15 +103,15 @@ msgstr "Có bản quyền và được đảm bảo về luật pháp"
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr ""
+msgstr "Nhấn F2 tới F10 để biết chi tiết, hoặc nhấn ENTER để ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr ""
+msgstr "Nhấn F2 tới F10 để biết chi tiết, hoặc nhấn Escape để thoát trợ giúp."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr ""
+msgstr "CÁC ĐIỀU KIỆN ĐỂ CÀI ĐẶT UBUNTU"
 
 #: help.xml:119
 msgid ""
@@ -123,6 +127,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"Bạn nên có dung lượng trống trên đĩa cứng để tạo phân vùng mới với ít nhất 2 "
+"GB để cài đặt hệ thống cơ bản Ubuntu cho máy tính để bàn hoặc ít nhất 400 MB "
+"để cài đặt máy chủ cấu hình tối thiểu. Bạn sẽ cần thêm dung lượng đĩa cứng "
+"trống để cài đặt các gói bổ sung, phụ thuộc vào nhu cầu bạn cần trên hệ "
+"thống Ubuntu mới."
 
 #: help.xml:131 help.xml:742
 msgid ""
@@ -130,27 +139,37 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
+"Xem hướng dẫn cài đặt hoặc danh sách các câu hỏi thường gặp để biết thêm "
+"thông tin; những tài liệu trên đều có sẵn trên trang web của Ubuntu, <ulink "
+"url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
+"Bạn phải có ít nhất 384 MB RAM để sử dụng hệ thống Ubuntu trực tiếp trên đĩa "
+"này."
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"Bản sử dụng trực tiếp từ đĩa không yêu cầu bất kì dung lượng trống trên đĩa "
+"cứng của bạn. Tuy vậy, phân vùng swap của Linux có sẵn trên đĩa cứng sẽ được "
+"sử dụng nếu có."
 
 #: help.xml:147 help.xml:748
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
+"Xem danh sách các câu hỏi thường gặp để biết thêm thông tin; tài liệu này có "
+"sẵn trên trang web của Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr ""
+msgstr "Cám ơn bạn đã chọn Ubuntu!"
 
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
 #: help.xml:524 help.xml:597 help.xml:697 help.xml:753 help.xml:809
@@ -164,108 +183,117 @@ msgstr ""
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
+"Nhấn phím F1 để xem chỉ mục của trợ giúp, hoặc Escape để đóng trợ giúp."
 
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr ""
+msgstr "CÁC PHƯƠNG THỨC KHỞI ĐỘNG"
 
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr ""
+msgstr "Các phương thức khởi động sẵn có"
 
 #: help.xml:177
 msgid "install"
-msgstr ""
+msgstr "cài đặt"
 
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Cài đặt Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr ""
+msgstr "Bắt đầu cài đặt -- đây là cài đặt ${MEDIA_TYPE} mặc định."
 
 #: help.xml:185
 msgid "expert"
-msgstr ""
+msgstr "nâng cao"
 
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr ""
+msgstr "Khởi động cài đặt nâng cao, với nhiều tùy biến."
 
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "giao diện dòng lệnh"
 
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "giao diện dòng lệnh nâng cao"
 
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Cài đặt hệ thống tối thiểu chỉ gồm giao diện dòng lệnh."
 
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "chạy trực tiếp"
 
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "Dùng thử Ubuntu mà không thay đổi máy của bạn"
 
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Chạy trực tiếp trên đĩa. Bạn vẫn có thể cài đặt sau này bằng biểu tượng "
+"\"Cài đặt\" trên màn hình nền."
 
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "Cài đặt trực tiếp từ đĩa"
 
 #: help.xml:212
 msgid "Start the installation."
-msgstr ""
+msgstr "Khởi động quá trình cài đặt."
 
 #: help.xml:228
 msgid "memtest"
-msgstr ""
+msgstr "Kiểm tra bộ nhớ RAM"
 
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "Kiểm tra bộ nhớ RAM"
 
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr ""
+msgstr "Thực hiện kiểm tra bộ nhớ RAM."
 
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"Để sử dụng một trong các phương thức khởi động sau, gõ nó ở dòng lệnh, theo "
+"sau có thể là các tham số khởi động. Ví dụ như:"
 
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "boot: install acpi=off"
 
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #: help.xml:247
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
+"Nếu không chắc chắn, bạn hãy sử dụng chế độ khởi động mặc định, không dùng "
+"các tham số đặc biệt, bằng cách nhấn phím Enter tại dấu nhắc khởi động."
 
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(\"Ubuntu\" có thể được thay thế bởi tên các hệ điều hành liên quan khác. "
+"Đây là hướng dẫn chung.)"
 
 #: help.xml:257 help.xml:307
 msgid ""
@@ -274,36 +302,42 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Để sử dụng các kiểu khởi động này, hãy lựa chọn từ trình đơn bằng các phím "
+"mũi tên. Nhấn F4 để lựa chọn những kiểu khởi động và cài đặt khác. Nhấn F6 "
+"để thay đổi các tham số khởi động. Nhấn F6 một lần nữa để chọn các tham số "
+"thường dùng từ một trình đơn."
 
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"Mọi thông báo trong quá trình sẽ không được hiển thị trừ khi trong chế độ "
+"cài đặt cao cấp."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "SỬA CHỮA HỆ THỐNG BỊ LỖI"
 
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr ""
+msgstr "Khởi động theo các cách trên để sửa chữa hệ thống bị hỏng"
 
 #: help.xml:289
 msgid "rescue"
-msgstr ""
+msgstr "sửa chữa"
 
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Sửa chữa hệ thống bị hỏng"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "Khởi động vào chế độ cứu hộ."
 
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "boot: rescue acpi=off"
 
 #: help.xml:334
 msgid ""
@@ -313,48 +347,59 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
+"Đĩa CD này không được thiết kế chuyên để sửa lỗi. Tuy nhiên, vì cả hệ thống "
+"chạy trực tiếp trên đĩa CD nên bạn có thể sử dụng các lệnh, các công cụ đồ "
+"họa để sửa chữa hệ thống bị hỏng, có thể dùng trình duyệt Internet tìm kiếm "
+"thông tin và trợ giúp về các lỗi xảy ra với hệ thống cũ."
 
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr ""
+msgstr "TỔNG QUAN VỀ CÁC THAM SỐ KHỞI ĐỘNG ĐẶC BIỆT"
 
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
+"Trong vài trường hợp bạn cần nhập thêm các tham số tại dấu nhắc "
+"<literal>boot:</literal> để khởi động hệ thống."
 
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"Trong vài trường hợp, để khởi động được hệ thống bạn cần lựa chọn các tham "
+"số bằng cách nhần phím F6."
 
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"Thí dụ, Linux có thể không tự phát hiện được phần cứng của bạn, và có thể "
+"bạn chỉ định cụ thể đường dẫn hoặc loại thiết bị để nó có thể được nhận diện."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
+"Để có thểm thông tin về các tham số khởi động bạn có thể sử dụng, hãy bấm:"
 
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "các tham số khởi động cho các máy tính đặc biệt"
 
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr ""
+msgstr "các tham số khởi động cho các bộ điều khiển đĩa"
 
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr ""
+msgstr "Những tham số khởi động của trình cài đặt."
 
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr ""
+msgstr "Những tham số khởi động của hệ thống mồi."
 
 #: help.xml:405
 msgid ""
@@ -363,16 +408,22 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Có nhiều các mô đun cho nhân hệ thống được nạp một cách tự động bởi trình "
+"cài đặt, những mô đun này không thể nhận tham số từ dòng lệnh. Để có thể "
+"truyền tham số cho chúng trong quá trình nạp, hãy khởi động trong chế độ cao "
+"cấp (xem <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
+"Có nhiều các mô đun nhân hệ thống được nạp động bởi hệ thống mồi khởi động, "
+"và tham số cho các mô đun này không thể nhập thông qua dòng lệnh"
 
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr ""
+msgstr "CÁC THAM SỐ KHỞI ĐỘNG ĐẶC BIỆT DÀNH RIÊNG CHO MỘT SỐ PHẦN CỨNG"
 
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
@@ -380,46 +431,56 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Bạn có thể sử dụng những tham số khởi động sao tại dòng nhập <literal>boot:</"
+"literal>, kết hợp với kiểu khởi động (xem thêm <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Bạn có thể sử dụng những tham số khởi động sau bằng cách nhấn F6, kết hợp "
+"cùng kiểu khởi động (xem thêm <link linkend=\"F3\"><keycap>F3</keycap></"
+"link>)."
 
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"Nếu muốn sử dụng các số hệ thập lục phân bạn phải thêm vào tiền tố 0x (ví dụ "
+"0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr ""
+msgstr "PHẦN CỨNG"
 
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr ""
+msgstr "CÁC THAM SỐ CẦN CHỈ ĐỊNH"
 
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr ""
+msgstr "Chuẩn IBM PS/1 hoặc ValueaPoint (đĩa cứng chuẩn IDE)"
 
 #: help.xml:456
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr ""
+msgstr "Một số máy IBM ThinkPads"
 
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "Bảo vệ các vùng truy xuất vào ra"
 
 #: help.xml:466
 msgid ""
@@ -427,89 +488,94 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr ""
+msgstr "Một số máy xách tay có vấn đề với màn hình"
 
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Sử dụng cổng nối tiếp với tốc độ 9600 baud"
 
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
 msgstr ""
+"Cưỡng chế sử dụng trình điều khiển IDE chung (không dùng loại dành riêng cho "
+"phần cứng hiện tại)"
 
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "Copy text   \t <userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
-msgstr ""
+msgstr "Những cách giải quyết (tạm thời) cho các sự cố phần cứng hay treo:"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "tắt chế độ định hướng ngắt APIC (hay gặp lỗi)"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "tắt ACPI (một phần)"
 
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "tắt việc sử dụng cổng USB"
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "truy cấn liên tục cho các ngắt"
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
-msgstr ""
+msgstr "Ví dụ:"
 
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: install vga=771 noapic nolapic"
 
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr ""
+msgstr "CÁC THAM SỐ KHỞI ĐỘNG ĐẶC BIỆT - MỘT SỐ TRÌNH ĐIỀU KHIỂN ĐĨA CỨNG"
 
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
-msgstr ""
+msgstr "Adaptec 151x, 152x"
 
 #: help.xml:560
 msgid ""
@@ -519,10 +585,15 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #: help.xml:564
 msgid "Adaptec 1542"
-msgstr ""
+msgstr "Adaptec 1542"
 
 #: help.xml:565
 msgid ""
@@ -531,188 +602,206 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
-msgstr ""
+msgstr "Adaptec 274x, 284x"
 
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (được kích hoạt nếu như khác "
+"không)"
 
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
-msgstr ""
+msgstr "Mạch chủ SCSI của hãng BusLogic"
 
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr ""
+msgstr "Một số máy tính của DELL"
 
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #: help.xml:585
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"Danh sách này chưa đầy đủ, xin xem thêm tập tin kernel-parameters.txt để có "
+"thêm các tham số khác."
 
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr ""
+msgstr "CÁC THAM SỐ KHỞI ĐỘNG ĐẶC BIỆT - TRÌNH CÀI ĐẶT"
 
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr ""
+msgstr "Các tham số này giúp điều chỉnh chương trình cài đặt."
 
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
+msgstr "Các tham số sau điều chỉnh cách hoạt động của hệ thống mồi khởi động."
 
 #: help.xml:632
 msgid "RESULT"
-msgstr ""
+msgstr "KẾT QUẢ"
 
 #: help.xml:633
 msgid "PARAMETER"
-msgstr ""
+msgstr "THAM SỐ"
 
 #: help.xml:636
 msgid "Verbose debugging"
-msgstr ""
+msgstr "Hiển thị đầy đủ thông tin dò lỗi"
 
 #: help.xml:637
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr ""
+msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:641
 msgid "Debug boot sequence"
-msgstr ""
+msgstr "Dò lỗi trong quá trình khởi động"
 
 #: help.xml:642
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr ""
+msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:646
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "Tắt bộ đệm hình ảnh"
 
 #: help.xml:647
 msgid "<userinput>fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:651
 msgid "Don't start PCMCIA"
-msgstr ""
+msgstr "Không khởi động hệ thống PCMCIA"
 
 #: help.xml:652
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
-msgstr ""
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:656
 msgid "Force static network config"
-msgstr ""
+msgstr "Sử dụng các thông số tĩnh cho thiết lập mạng (thay vì sử dụng DHCP)"
 
 #: help.xml:657
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr ""
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:661
 msgid "Set keyboard map"
-msgstr ""
+msgstr "Đặt mã bàn phím"
 
 #: help.xml:662
 msgid "<userinput>bootkbd=es</userinput>"
-msgstr ""
+msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:666
 msgid "Use Braille tty"
-msgstr ""
+msgstr "Sử dụng nhập liệu Braille (dành cho người khiếm thị)"
 
 #: help.xml:667
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #: help.xml:671
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Sử dụng giao diện có độ tương phản cao (giúp dễ đọc)"
 
 #: help.xml:672
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 #: help.xml:676
 msgid "Use special tasks"
-msgstr ""
+msgstr "Sử dụng các tác vụ đặc biệt"
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 
 #: help.xml:682
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
+"Tắt ACPI cho ánh xạ PCI (dùng cho một số máy chủ của HP hay các máy tính "
+"dùng chip của VIA)"
 
 #: help.xml:685
 msgid "<userinput>pci=noacpi</userinput>"
-msgstr ""
+msgstr "<userinput>pci=noacpi</userinput>"
 
 #: help.xml:692
 #, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr ""
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:693
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:710
 msgid "GETTING HELP"
-msgstr ""
+msgstr "TÌM THÊM TRỢ GIÚP"
 
 #: help.xml:717
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr ""
+msgstr "Đừng thất vọng nếu như bạn chưa thể cài đặt Ubuntu!"
 
 #: help.xml:720
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr ""
+msgstr "Nếu như bạn không thể khởi động Ubuntu, hãy đừng thất vọng!"
 
 #: help.xml:723
 msgid "The Ubuntu team is ready to help you!"
-msgstr ""
+msgstr "Nhóm trợ giúp Ubuntu luôn sẵn sàng giúp đỡ bạn!"
 
 #: help.xml:726
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Chúng tôi đặc biệt quan tâm tới các vấn đề liên quan tới cài đặt, vì nói "
+"chung đây không chỉ xảy ra với <emphasis>riêng một ai cả</emphasis>."
 
 #: help.xml:731
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Chúng tôi đặc biệt quan tâm đến việc được thông báo các sự cố khi khởi động, "
+"bởi vì nói chung chúng không chỉ xảy ra với chỉ <emphasis>một</emphasis> "
+"người."
 
 #: help.xml:735
 msgid ""
@@ -721,16 +810,22 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"Hoặc là chúng tôi đã biết đến sự cố của bạn và có thể cung cấp cho bạn một "
+"cách giải quyết nhanh, hoặc chúng tôi rất muốn bạn thông báo để cùng giải "
+"quyết vấn đề với bạn, nhờ đó người dùng tiếp theo gặp phải cùng sự cố này sẽ "
+"được hưởng lợi từ kinh nghiệm của bạn!"
 
 #: help.xml:766
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr ""
+msgstr "BẢN QUYỀN VÀ BẢO ĐẢM"
 
 #: help.xml:773
 msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"Ubuntu thuộc Bản quyền (C) 2004-2008 của Canonical Ltd., và tập hợp công "
+"trình của nhiều tác giả nguyên bản và người đóng góp."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
@@ -742,6 +837,9 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"Sau quá trình cài đặt, các điều khoản phân phối chính xác của từng gói được "
+"mô tả trong tâp tin bản quyền /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright tương ứng."
 
 #: help.xml:786
 msgid ""
@@ -749,12 +847,17 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"Sau khi khởi động, những điều khoản phân phát lại cho từng gói phần mềm được "
+"ghi trong các tập tin tương ứng nằm trong /usr/share/doc/"
+"<replaceable>TênGói</replaceable>/copyright."
 
 #: help.xml:792
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
+"Ubuntu <emphasis>KHÔNG ĐI KÈM VỚI BẤT KÌ BẢO ĐẢM NÀO</emphasis> trong giới "
+"hạn cho phép của luật pháp hiện hành."
 
 #: help.xml:797
 msgid ""
@@ -762,9 +865,14 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
+"Trình cài đặt này dựa trên trình cài đặt của Debian. Xem thêm <ulink url="
+"\"http://www.debian.org/\" /> để biết thêm chi tiết và thông tin về dự án "
+"Debian."
 
 #: help.xml:803
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"Hệ thống này được dựa trên Debian. Xem thêm <ulink url=\"http://www.debian."
+"org/\" /> để biết thêm chi tiết và thông tin về dự án Debian."

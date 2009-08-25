@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu55) UNRELEASED; urgency=low
+
+  * Update help text translations from Launchpad.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 25 Aug 2009 13:23:29 +0100
+
 debian-installer (20081029ubuntu54) karmic; urgency=low
 
   *  change imx51 kernel versioning to new abi naming scheme

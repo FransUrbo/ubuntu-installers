@@ -500,11 +500,11 @@ msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
-msgstr ""
+msgstr "针对锁定或其它硬件失效的（临时）处理办法："
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "禁用不稳定的 APIC 中断查询"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
@@ -528,7 +528,7 @@ msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "轮询中断"
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
