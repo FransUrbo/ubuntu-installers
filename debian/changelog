@@ -1,6 +1,10 @@
 debian-installer (20081029ubuntu55) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Update help text translations from Launchpad.
+
+  [ Oliver Grawert ]
+  * bump dove ABI version to 2.6.31-201
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 25 Aug 2009 13:23:29 +0100
 
