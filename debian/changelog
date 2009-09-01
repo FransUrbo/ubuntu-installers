@@ -1,3 +1,10 @@
+grub-installer (1.40ubuntu3) UNRELEASED; urgency=low
+
+  * Restrict code to generate device.map for loop installations to GRUB
+    Legacy (LP: #421873).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Sep 2009 12:53:41 +0100
+
 grub-installer (1.40ubuntu2) karmic; urgency=low
 
   * Handle showing the menu and raising the timeout for grub2 if other
