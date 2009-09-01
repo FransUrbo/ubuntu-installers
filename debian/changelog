@@ -1,4 +1,4 @@
-grub-installer (1.42ubuntu1) UNRELEASED; urgency=low
+grub-installer (1.42ubuntu1) karmic; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Show the grub menu and raise the menu timeout if other operating
@@ -39,7 +39,7 @@ grub-installer (1.42ubuntu1) UNRELEASED; urgency=low
     Legacy (LP: #421873).
   * Fix said code to run grub chrooted into /target.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Sep 2009 13:41:46 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Sep 2009 13:50:59 +0100
 
 grub-installer (1.42) unstable; urgency=low
 
