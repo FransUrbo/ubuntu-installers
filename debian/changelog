@@ -2,6 +2,7 @@ grub-installer (1.40ubuntu3) UNRELEASED; urgency=low
 
   * Restrict code to generate device.map for loop installations to GRUB
     Legacy (LP: #421873).
+  * Fix said code to run grub chrooted into /target.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Sep 2009 12:53:41 +0100
 

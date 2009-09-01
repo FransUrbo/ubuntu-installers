@@ -676,7 +676,7 @@ done
 if db_get grub-installer/bootdev_directory && [ "$RET" ]; then
 	bootdev=
 	if [ "$grub_version" = grub ] && ! [ -f "$device_map" ]; then
-		echo quit | grub --batch --device-map="$device_map" >/dev/null 2>&1
+		echo quit | chroot /target /usr/sbin/grub --batch --device-map="${device_map#$ROOT}" >/dev/null 2>&1
 	fi
 fi
 
