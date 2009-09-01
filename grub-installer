@@ -528,6 +528,7 @@ if [ "$grub_version" = grub2 ]; then
 $grub_package grub2/linux_cmdline string $kopt_params
 $grub_package grub2/linux_cmdline_default string $defopt_params
 EOF
+fi
 
 db_progress START 0 6 grub-installer/progress/title
 
