@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu57) UNRELEASED; urgency=low
+
+  * bump dove ABI version to 2.6.31-203
+
+ -- Oliver Grawert <ogra@ubuntu.com>  Wed, 02 Sep 2009 10:08:57 +0200
+
 debian-installer (20081029ubuntu56) karmic; urgency=low
 
   * Move to 2.6.31-9 kernels.
