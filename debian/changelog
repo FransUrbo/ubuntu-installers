@@ -10,6 +10,7 @@ debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
   * build/config/armel/{dove,imx51}.cfg: s/kernel API/kernel ABI/.
   * Add a dove-z0 flavour with a netboot image copied from the dove one, but
     using dove-z0 as output dir.
+  * Drop useless "mkdir -p $(TEMP)/dove" in dove's and dove-z0's netboot.cfg.
 
  -- Loïc Minier <lool@dooz.org>  Wed, 16 Sep 2009 12:17:56 +0200
 
