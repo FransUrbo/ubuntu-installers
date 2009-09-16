@@ -7,6 +7,7 @@ debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
   * armel/dove/netboot.cfg: Use $(TEMP_INITRD) $(TEMP_KERNEL) in TARGET
     instead of $(KERNEL) and $(INITRD) as these are the ones we actually take
     as input.
+  * build/config/armel/dove.cfg: s/kernel API/kernel ABI/.
 
  -- Loïc Minier <lool@dooz.org>  Wed, 16 Sep 2009 12:17:56 +0200
 
