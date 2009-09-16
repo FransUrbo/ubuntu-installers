@@ -2,6 +2,8 @@ debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
 
   * armel/dove/netboot.cfg: Use the same MANIFEST-KERNEL as all other kernels,
     i.e. don't mention uImage specially.
+  * armel/dove/netboot.cfg: Re-add generation of an uImage since the kernel
+    packages/udebs ship zImages again.
 
  -- Loïc Minier <lool@dooz.org>  Wed, 16 Sep 2009 12:17:56 +0200
 
