@@ -1,10 +1,10 @@
-debian-installer (20081029ubuntu60) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu60) karmic; urgency=low
 
   * Set KERNELNAME to vmlinuz and VERSIONED_SYSTEM_MAP to the empty string in
     dove.cfg since the kernel and System.map filenames in the udeb aren't
     suffixed with the version number anymore.
 
- -- Loïc Minier <lool@dooz.org>  Wed, 16 Sep 2009 11:11:58 +0200
+ -- Loïc Minier <loic.minier@ubuntu.com>  Wed, 16 Sep 2009 12:08:23 +0200
 
 debian-installer (20081029ubuntu59) karmic; urgency=low
 
