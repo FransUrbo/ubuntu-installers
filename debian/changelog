@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
+
+  * armel/dove/netboot.cfg: Use the same MANIFEST-KERNEL as all other kernels,
+    i.e. don't mention uImage specially.
+
+ -- Loïc Minier <lool@dooz.org>  Wed, 16 Sep 2009 12:17:56 +0200
+
 debian-installer (20081029ubuntu60) karmic; urgency=low
 
   * Set KERNELNAME to vmlinuz and VERSIONED_SYSTEM_MAP to the empty string in
