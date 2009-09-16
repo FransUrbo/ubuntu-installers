@@ -4,6 +4,9 @@ debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
     i.e. don't mention uImage specially.
   * armel/dove/netboot.cfg: Re-add generation of an uImage since the kernel
     packages/udebs ship zImages again.
+  * armel/dove/netboot.cfg: Use $(TEMP_INITRD) $(TEMP_KERNEL) in TARGET
+    instead of $(KERNEL) and $(INITRD) as these are the ones we actually take
+    as input.
 
  -- Loïc Minier <lool@dooz.org>  Wed, 16 Sep 2009 12:17:56 +0200
 
