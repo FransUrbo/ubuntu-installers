@@ -11,6 +11,15 @@ debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
   * Add a dove-z0 flavour with a netboot image copied from the dove one, but
     using dove-z0 as output dir.
   * Drop useless "mkdir -p $(TEMP)/dove" in dove's and dove-z0's netboot.cfg.
+  * Misc fixes to armel+imx51 pkg-lists:
+    - Add netboot/armel/imx51.cfg to include
+      nic-modules{,-shared,-usb}-${kernel:Version} and nic-firmware (optional)
+      since we currently lack support for builtin ethernet on Babbage 2.x
+      boards; also include input-modules-${kernel:Version} for USB keyboard.
+    - Add cdrom/arm dir and cdrom/armel symlink and add cdrom/armel/imx51.cfg
+      to pull the same modules as for netboot plus
+      fat-modules-${kernel:Version} to allow mounting a VFAT on an USB key or
+      a SD/MMC card; LP: #364604.
 
  -- Loïc Minier <lool@dooz.org>  Wed, 16 Sep 2009 12:17:56 +0200
 
