@@ -15,7 +15,8 @@ debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
     - Add netboot/armel/imx51.cfg to include
       nic-modules{,-shared,-usb}-${kernel:Version} and nic-firmware (optional)
       since we currently lack support for builtin ethernet on Babbage 2.x
-      boards; also include input-modules-${kernel:Version} for USB keyboard.
+      boards; also include input-modules-${kernel:Version} for USB keyboard;
+      LP: #431283.
     - Add cdrom/arm dir and cdrom/armel symlink and add cdrom/armel/imx51.cfg
       to pull the same modules as for netboot plus
       fat-modules-${kernel:Version} to allow mounting a VFAT on an USB key or
