@@ -21,6 +21,9 @@ debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
       to pull the same modules as for netboot plus
       fat-modules-${kernel:Version} to allow mounting a VFAT on an USB key or
       a SD/MMC card; LP: #364604.
+  * Set KERNELNAME to vmlinuz and VERSIONED_SYSTEM_MAP to the empty string in
+    imx51.cfg since the kernel and System.map filenames in the udeb aren't
+    suffixed with the version number anymore.
 
  -- Loïc Minier <lool@dooz.org>  Wed, 16 Sep 2009 12:17:56 +0200
 
