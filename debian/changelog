@@ -1,3 +1,10 @@
+grub-installer (1.43ubuntu2) UNRELEASED; urgency=low
+
+  * Explicitly install os-prober when using GRUB 2, since it does a better
+    job than the otheros script (LP: #433259).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 19 Sep 2009 23:16:21 +0100
+
 grub-installer (1.43ubuntu1) karmic; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
