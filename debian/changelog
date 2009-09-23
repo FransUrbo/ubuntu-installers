@@ -1,6 +1,7 @@
 grub-installer (1.43ubuntu3) UNRELEASED; urgency=low
 
   * Fix some hardcoded uses of /target.
+  * grub_write_divider is specific to GRUB Legacy; don't call it for GRUB 2.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 21 Sep 2009 12:53:42 +0100
 
