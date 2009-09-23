@@ -1,4 +1,4 @@
-base-installer (1.102ubuntu1) UNRELEASED; urgency=low
+base-installer (1.102ubuntu1) karmic; urgency=low
 
   * Resynchronise with Debian (STANZAS addition fixes LP: #435376).
     Remaining changes:
@@ -19,7 +19,7 @@ base-installer (1.102ubuntu1) UNRELEASED; urgency=low
     - Add armel/imx51 and armel/dove subarchitectures.
     - Prefer PAE kernels on machines with >3GB of RAM.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 23 Sep 2009 16:43:16 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 23 Sep 2009 16:47:35 +0100
 
 base-installer (1.102) unstable; urgency=low
 
