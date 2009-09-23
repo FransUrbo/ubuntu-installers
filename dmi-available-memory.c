@@ -3,8 +3,8 @@
  *   (C) 2002-2005 Jean Delvare <khali@linux-fr.org>
  * I (Colin Watson) copied it in reduced form rather than using dmidecode
  * directly because (a) the d-i initrd is tight on space and this is much
- * smaller (1.8KB versus 46KB, at the time of writing) and (b) parsing the
- * output of dmidecode in shell is unreasonably painful.
+ * smaller and (b) parsing the output of dmidecode in shell is unreasonably
+ * painful.
  */
 
 #include <stdlib.h>
