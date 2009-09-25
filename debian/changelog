@@ -1,4 +1,4 @@
-debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu61) karmic; urgency=low
 
   [ Loïc Minier ]
   * armel/dove/netboot.cfg: Use the same MANIFEST-KERNEL as all other kernels,
@@ -37,7 +37,7 @@ debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
   [ Colin Watson ]
   * Move to 2.6.31-11 kernels.
 
- -- Oliver Grawert <ogra@ubuntu.com>  Fri, 25 Sep 2009 18:17:44 +0200
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 25 Sep 2009 22:45:59 +0100
 
 debian-installer (20081029ubuntu60) karmic; urgency=low
 
