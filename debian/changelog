@@ -1,5 +1,6 @@
 debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
 
+  [ Loïc Minier ]
   * armel/dove/netboot.cfg: Use the same MANIFEST-KERNEL as all other kernels,
     i.e. don't mention uImage specially.
   * armel/dove/netboot.cfg: Re-add generation of an uImage since the kernel
@@ -26,7 +27,14 @@ debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
     suffixed with the version number anymore.
   * Bump imx51 ABI version to 2.6.31-101.
 
- -- Loïc Minier <lool@dooz.org>  Wed, 16 Sep 2009 12:17:56 +0200
+  [ Oliver Grawert ]
+  * build/config/armel/imx51/netboot.cfg create babbage-TO2-sd.img similar to
+    the nslu2 netinstall image to easily start a netinstall from SD on
+    babbage 2.x boards
+  * add build dependency on redboot-tools to create the above image from
+    initrd.gz and vmlinuz files in the netboot dir
+
+ -- Oliver Grawert <ogra@ubuntu.com>  Fri, 25 Sep 2009 18:17:44 +0200
 
 debian-installer (20081029ubuntu60) karmic; urgency=low
 
