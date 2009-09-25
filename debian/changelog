@@ -34,6 +34,9 @@ debian-installer (20081029ubuntu61) UNRELEASED; urgency=low
   * add build dependency on redboot-tools to create the above image from
     initrd.gz and vmlinuz files in the netboot dir
 
+  [ Colin Watson ]
+  * Move to 2.6.31-11 kernels.
+
  -- Oliver Grawert <ogra@ubuntu.com>  Fri, 25 Sep 2009 18:17:44 +0200
 
 debian-installer (20081029ubuntu60) karmic; urgency=low
