@@ -102,7 +102,7 @@ Build-Depends: debhelper (>= 4), apt, apt-utils, gnupg, ubuntu-keyring, dpkg (>=
 #		For building netwinder netinst images.
 #	- uboot-mkimage [arm armel]
 #		For creating u-boot images
-#	- redboot-tools (>= 0.6) [arm armel
+#	- redboot-tools (>= 0.6) [arm armel]
 #		For creating redboot SD card images for imx51 babbage boards
 #
 # Boot loaders:
