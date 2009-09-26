@@ -1,8 +1,8 @@
-debian-installer (20081029ubuntu62) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu62) karmic; urgency=low
 
   * Fix make syntax in build/config/armel/imx51/netboot.cfg.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Sat, 26 Sep 2009 00:49:20 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 26 Sep 2009 01:13:59 +0100
 
 debian-installer (20081029ubuntu61) karmic; urgency=low
 
