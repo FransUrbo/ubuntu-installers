@@ -104,6 +104,8 @@ Build-Depends: debhelper (>= 4), apt, apt-utils, gnupg, ubuntu-keyring, dpkg (>=
 #		For creating u-boot images
 #	- redboot-tools (>= 0.6) [arm armel]
 #		For creating redboot SD card images for imx51 babbage boards
+#	- redboot-imx51-babbage [arm armel]
+#		Redboot bootloader binaries for SD card images for imx51
 #
 # Boot loaders:
 #	On many arches boot loaders are copied onto or ran on the boot
