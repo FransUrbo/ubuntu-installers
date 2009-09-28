@@ -1,10 +1,10 @@
-debian-installer (20081029ubuntu63) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu63) karmic; urgency=low
 
   * bump armel (dove/imx) ABIs to recent versions (dove: -205, imx: -102)
   * cut down size of combined netinst image for imx51 babbage TO2 boards to
     16MB
 
- -- Oliver Grawert <ogra@ubuntu.com>  Mon, 28 Sep 2009 09:46:10 +0200
+ -- Oliver Grawert <ogra@osiris>  Mon, 28 Sep 2009 09:56:29 +0200
 
 debian-installer (20081029ubuntu62) karmic; urgency=low
 
