@@ -1,4 +1,4 @@
-debian-installer (20081029ubuntu64) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu64) karmic; urgency=low
 
   [ Oliver Grawert ]
   * add redboot bootloader binaries to build-dep for the SD card netinst image
@@ -9,7 +9,7 @@ debian-installer (20081029ubuntu64) UNRELEASED; urgency=low
     - Add netboot/armel/dove.cfg to pull the input modules for USB keyboards.
     - Add cdrom/armel/dove.cfg to pull input modules as well as fat modules.
 
- -- Oliver Grawert <ogra@ubuntu.com>  Mon, 28 Sep 2009 17:57:53 +0200
+ -- Loïc Minier <loic.minier@ubuntu.com>  Mon, 28 Sep 2009 20:03:57 +0200
 
 debian-installer (20081029ubuntu63) karmic; urgency=low
 
