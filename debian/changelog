@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu64) UNRELEASED; urgency=low
+
+  * add redboot bootloader binaries to build-dep for the SD card netinst image
+    for babbage boards
+
+ -- Oliver Grawert <ogra@ubuntu.com>  Mon, 28 Sep 2009 17:57:53 +0200
+
 debian-installer (20081029ubuntu63) karmic; urgency=low
 
   * bump armel (dove/imx) ABIs to recent versions (dove: -205, imx: -102)
