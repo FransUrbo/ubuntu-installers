@@ -655,6 +655,7 @@ if [ "$frdev" ] && [ "$frtype" != "sataraid" ]; then
 	fi
 fi
 
+default_bootdev='(hd0)'
 # Set a sensible default boot device as hd0 does not make sense when
 # installing from a removable disk.  We have to be specific here and not always
 # set the installation target to the disk that /boot resides on because we
@@ -671,6 +672,9 @@ if [ -n "$cdfs" ] && [ "$cdfs" != "iso9660" ]; then
 		db_set grub-installer/bootdev "$disk"
 		state=2
 	fi
+elif [ "$grub_version" = grub2 ] && [ "$frtype" = mdadm ]; then
+	default_bootdev="$bootfs_nodevfs"
+	db_set grub-installer/bootdev "$default_bootdev"
 fi
 
 db_progress STEP 1
@@ -693,7 +697,7 @@ while : ; do
 					echo "(hd0) $bootremovable" > "$device_map"
 				fi
 			else
-				bootdev="(hd0)"
+				bootdev="$default_bootdev"
 			fi
 			break
 		else

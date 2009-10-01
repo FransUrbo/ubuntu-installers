@@ -1,6 +1,9 @@
 grub-installer (1.43ubuntu4) UNRELEASED; urgency=low
 
   * Fix typo in fallback case when computing $disc_offered_devfs.
+  * If /boot is on an MD device and we're using GRUB 2, install GRUB there
+    rather than (hd0); GRUB 2 will interpret that as meaning that it needs
+    to install to each of the RAID members (LP: #427048).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 01 Oct 2009 14:35:43 +0100
 
