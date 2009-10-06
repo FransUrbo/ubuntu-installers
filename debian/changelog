@@ -3,6 +3,8 @@ grub-installer (1.43ubuntu5) UNRELEASED; urgency=low
   * Fix mishandling of loop variable that caused the semi-manual
     dmraid/multipath/mdadm handling to fire even for disks that don't need
     it (LP: #444583).
+  * Never use the semi-manual GRUB setup code for GRUB 2, since it won't
+    work anyway.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 06 Oct 2009 15:27:02 +0100
 
