@@ -363,6 +363,7 @@ if [ "$found" = "0" ] && type dmraid >/dev/null 2>&1 && \
 			break
 		fi
 	done
+	[ "$found" = "1" ] || frdisk=
 fi
 # Check if the boot file system is on multipath
 if [ "$found" = "0" ] && type multipath >/dev/null 2>&1; then
@@ -378,11 +379,13 @@ if [ "$found" = "0" ] && type multipath >/dev/null 2>&1; then
 			break
 		fi
 	done
-	if [ "$frdisk" ]; then
+	if [ "$found" = "1" ]; then
 		# Create the device nodes for grub:
 		apt-install dmsetup
 		$chroot $ROOT mount /proc
 		$chroot $ROOT dmsetup mknodes
+	else
+		frdisk=
 	fi
 elif type lvdisplay >/dev/null 2>&1 && \
      (lvdisplay "$disc_offered" | grep -q 'LV Name' 2>/dev/null || \

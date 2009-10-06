@@ -1,3 +1,11 @@
+grub-installer (1.43ubuntu5) UNRELEASED; urgency=low
+
+  * Fix mishandling of loop variable that caused the semi-manual
+    dmraid/multipath/mdadm handling to fire even for disks that don't need
+    it (LP: #444583).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 06 Oct 2009 15:27:02 +0100
+
 grub-installer (1.43ubuntu4) karmic; urgency=low
 
   * Fix typo in fallback case when computing $disc_offered_devfs.
