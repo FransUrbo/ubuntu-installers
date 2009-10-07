@@ -1,11 +1,11 @@
-debian-installer (20081029ubuntu66) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu66) karmic; urgency=low
 
   * move redboot bootloader lines in the comments in debian/control to the
     proper section (bootloaders)
   * run debian/genbuilddeps so the added redboot actually shows up in the
     build-deps
 
- -- Oliver Grawert <ogra@ubuntu.com>  Wed, 07 Oct 2009 09:38:34 +0200
+ -- Oliver Grawert <ogra@ubuntu.com>  Wed, 07 Oct 2009 09:42:14 +0200
 
 debian-installer (20081029ubuntu65) karmic; urgency=low
 
