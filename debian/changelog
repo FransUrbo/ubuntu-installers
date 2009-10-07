@@ -1,3 +1,12 @@
+debian-installer (20081029ubuntu66) UNRELEASED; urgency=low
+
+  * move redboot bootloader lines in the comments in debian/control to the
+    proper section (bootloaders)
+  * run debian/genbuilddeps so the added redboot actually shows up in the
+    build-deps
+
+ -- Oliver Grawert <ogra@ubuntu.com>  Wed, 07 Oct 2009 09:38:34 +0200
+
 debian-installer (20081029ubuntu65) karmic; urgency=low
 
   * Move to 2.6.31-12 kernels.
