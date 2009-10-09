@@ -2,6 +2,7 @@ debian-installer (20081029ubuntu67) UNRELEASED; urgency=low
 
   [ Colin Watson ]
   * Move Dove images to 2.6.31-206 kernels.
+  * Move to 2.6.31-13 kernels.
 
   [ Oliver Grawert ]
   * Move iMX51 images to 2.6.31-103 kernels.
