@@ -1,3 +1,9 @@
+grub-installer (1.43ubuntu6) UNRELEASED; urgency=low
+
+  * Always use GRUB Legacy when /boot is on a multipath device.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 15 Oct 2009 15:09:02 +0100
+
 grub-installer (1.43ubuntu5) karmic; urgency=low
 
   * Fix mishandling of loop variable that caused the semi-manual
