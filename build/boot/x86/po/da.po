@@ -1,25 +1,25 @@
-# Danish translation for debian-installer
-# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the debian-installer package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# Danish translation for debian-installer-help
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2009
+# This file is distributed under the same license as the debian-installer-help package.
+# Mads Lundby <lundbymads@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2009-03-31 22:54+0000\n"
+"PO-Revision-Date: 2009-10-15 13:52+0000\n"
 "Last-Translator: Mads Lundby <Unknown>\n"
-"Language-Team: Danish <da@li.org>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-04-08 23:44+0000\n"
+"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Installationsprogrammets opstarts hjælpeskærme"
+msgstr "Installationsprogrammets opstartshjælpeskærme"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
@@ -30,20 +30,20 @@ msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Dette er en installations-${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. Den blev kompileret ${BUILD_DATE}."
+"Dette er en installations-${MEDIA_TYPE} til ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Den blev bygget ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Dette er en live-${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. Den blev kompileret ${BUILD_DATE}."
+"Dette er en live-${MEDIA_TYPE} til ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Den blev bygget ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "HJÆLP-INDEX"
+msgstr "HJÆLP-INDEKS"
 
 #: help.xml:29
 msgid "KEY"
@@ -91,7 +91,7 @@ msgstr "Specielle opstartsparametre for installationssystemet."
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "Specielle opstartsparametre for initialiseringssystemet."
+msgstr "Specielle opstartsparametre for bootstrap-systemet."
 
 #: help.xml:84
 msgid "How to get help."
@@ -104,7 +104,7 @@ msgstr "Ophavsrettigheder og garantier."
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
-"Tryk på tasterne F2 til F10 for detaljer, eller ENTER for at ${BOOTPROMPT}"
+"Tryk på tasterne F2 til F10 for detaljer, eller Enter for at ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
@@ -130,10 +130,10 @@ msgid ""
 "new Ubuntu system."
 msgstr ""
 "Du skal have plads på din harddisk til at lave en ny diskpartition på mindst "
-"2 GB for at installere Ubuntu-systemet, eller mindst 400 MB for en minimail "
-"server installation. Du skal bruge mere diskplads for at installere "
-"yderligere programer, afhængigt af hvad du ønsker at køre på dit nye Ubuntu-"
-"system."
+"2 GB for at installere den almindelige Ubuntu eller mindst 400 MB for en "
+"minimal serverinstallation. Du skal bruge mere diskplads for at installere "
+"yderligere programer, alt afhængig af hvad du ønsker at køre på dit nye "
+"Ubuntu-system."
 
 #: help.xml:131 help.xml:742
 msgid ""
@@ -149,6 +149,7 @@ msgstr ""
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
+"Du skal have mindst 384 megabyte RAM for at bruge dette Ubuntu-live-syste."
 
 #: help.xml:142
 msgid ""
@@ -177,6 +178,9 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
+"Klik på <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">control og F, derefter 1</phrase> for at se hjælp-indekset, eller Enter "
+"for at ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
@@ -197,12 +201,12 @@ msgstr "installér"
 
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "Installér Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgstr ""
-"Begynd installationen -- dette er den standard ${MEDIA_TYPE}-installation."
+"Begynd installationen -- dette er standard ${MEDIA_TYPE}-installationen."
 
 #: help.xml:185
 msgid "expert"
@@ -210,7 +214,7 @@ msgstr "ekspert"
 
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "Start installationen i avanceret tilstand for maksimal kontrol."
+msgstr "Start installationen i eksperttilstand for maksimal kontrol."
 
 #: help.xml:192
 msgid "cli"
@@ -222,7 +226,7 @@ msgstr "cli-ekspert"
 
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr "Minmal installation vha. kommandolinje."
+msgstr "Minimal installation vha. kommandolinje."
 
 #: help.xml:200
 msgid "live"
@@ -230,21 +234,23 @@ msgstr "live"
 
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "Prøv Ubuntu uden at lave ændringer på din computer"
 
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Start live-systemet. Hvis du ønsker det, kan du senere installere det ved at "
+"klikke på \"Installér\"-ikonet på skrivebordet."
 
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "live-installation"
 
 #: help.xml:212
 msgid "Start the installation."
-msgstr ""
+msgstr "Start installationen."
 
 #: help.xml:228
 msgid "memtest"
@@ -252,43 +258,45 @@ msgstr "Hukommelsestest"
 
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "Test hukommelse"
 
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr "Kør en hukommelsestest"
+msgstr "Kør en hukommelsestest."
 
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"Indtast ønsket opstartsmetode efterfulgt af eventuelle opstartsparametre i "
-"prompten. For eksempel:"
+"For at anvende en af disse opstartsmetoder, indtast den efterfulgt af "
+"eventuelle opstartsparametre i prompten. For eksempel:"
 
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr "start: installer acpi=fra"
+msgstr "boot: installer acpi=off"
 
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr "start: live acpi=fra"
+msgstr "boot: live acpi=off"
 
 #: help.xml:247
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Benyt standard opstartsmetoden uden parametre ved simpelthen bare at trykke "
-"Enter, hvis du er i tvivl."
+"Hvis du er i tvivl, benyt den almindelige opstartsmetode uden parametre ved "
+"bare at trykke Enter ved opstartsprompten."
 
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(\"Ubuntu\" kan udskiftes med andre relaterede operativsystemnavne. Denne "
+"hjælpetekst er generisk.)"
 
 #: help.xml:257 help.xml:307
 msgid ""
@@ -297,11 +305,17 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"For at bruge en af disse opstartsmetoder, vælg den fra menuen med "
+"piletasterne. Tryk F4 for at vælge alternative start- og "
+"installationstilstande. Tryk F6 for at redigere opstartsparametre. Tryk F6 "
+"igen for at vælge ud fra en menu med alment brugte opstartsparametre."
 
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"Ikke-kritiske kerne-opstarts-meddelelser bliver undertrykt, medmindre det er "
+"i eksperttilstand."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
@@ -319,7 +333,7 @@ msgstr "gendan"
 
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Red et ødelagt system"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
@@ -328,7 +342,7 @@ msgstr "Start op i gendannelsestilstand."
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr "start: gendan acpi=fra"
+msgstr "boot: rescue acpi=off"
 
 #: help.xml:334
 msgid ""
@@ -340,9 +354,10 @@ msgid ""
 msgstr ""
 "Denne CD understøtter ikke en egentlig gendannelsestilstand. Men eftersom "
 "hele systemet kører fra CD'en, er det muligt at bruge de inkluderede "
-"kommandolinie- og grafiske værktøjer til at gendanne et ødelagt system, og "
-"at benytte en web browser til at lede efter hjælp. Omfattende råd til "
-"løsning af de mest almindelige opstartsproblemer findes på nettet."
+"kommandolinie- og/eller grafiske værktøjer til at gendanne et ødelagt "
+"system, og at benytte en webbrowser til at lede efter hjælp. Omfattende "
+"vejledning om løsning af de mest almindelige opstartsproblemer findes på "
+"nettet."
 
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
@@ -385,7 +400,7 @@ msgstr "opstartsparametre til installationssystemet"
 
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr "opstartsparametre til initialiseringssystemet"
+msgstr "opstartsparametre til bootstrap-systemet"
 
 #: help.xml:405
 msgid ""
@@ -395,17 +410,17 @@ msgid ""
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Mange kernemoduler indlæses dynamisk af installationssystemet, og parametre "
-"til de moduler kan ikke angives på kommandolinjen. Start op i ekspert-"
-"tilstand for at blive spurgt om parametre når moduler indlæses (se <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"til de moduler kan ikke angives på kommandolinjen. Start op i "
+"eksperttilstand for at blive spurgt om parametre, når moduler indlæses (se "
+"<link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"Mange kernemoduler indlæses dynamisk af initialiseringssystemet, og "
-"parametre til de moduler kan ikke angives i kommandolinjen."
+"Mange kernemoduler indlæses dynamisk af bootstrap-systemet, og parametre til "
+"de moduler kan ikke angives i kommandolinjen."
 
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
@@ -458,7 +473,7 @@ msgstr ""
 
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr "Beskyt I/O portområder"
+msgstr "Beskyt I/O-portområder"
 
 #: help.xml:466
 msgid ""
@@ -485,7 +500,7 @@ msgstr ""
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr "Tvunget brug af generisk IDE driver"
+msgstr "Tvungen brug af generisk IDE-driver"
 
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
@@ -544,7 +559,7 @@ msgstr ""
 
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "SPECIELLE OPSTARTSPARAMETRE - DIVERSE DISK DREV"
+msgstr "SPECIELLE OPSTARTSPARAMETRE - DIVERSE DISKDREV"
 
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
@@ -594,7 +609,7 @@ msgstr ""
 
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr "Enkelte DELL maskiner"
+msgstr "Enkelte DELL-maskiner"
 
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
@@ -628,7 +643,7 @@ msgstr "Disse parametre styrer installationssystemet."
 
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
-msgstr "Disse parametre styrer initialiseringssystemet."
+msgstr "Disse parametre styrer hvordan bootstrap-systemet fungerer."
 
 #: help.xml:632
 msgid "RESULT"
@@ -680,7 +695,7 @@ msgstr ""
 
 #: help.xml:661
 msgid "Set keyboard map"
-msgstr "Vælg keyboardlayout"
+msgstr "Vælg tastaturlayout"
 
 #: help.xml:662
 msgid "<userinput>bootkbd=es</userinput>"
@@ -688,7 +703,7 @@ msgstr ""
 
 #: help.xml:666
 msgid "Use Braille tty"
-msgstr "Benyt Braille tty"
+msgstr "Brug Braille tty"
 
 #: help.xml:667
 msgid ""
@@ -698,7 +713,7 @@ msgstr ""
 
 #: help.xml:671
 msgid "Use high contrast accessibility theme"
-msgstr "Benyt handicapvenligt tema med høj kontrast"
+msgstr "Benyt tilgængelighedstema med høj kontrast"
 
 #: help.xml:672
 msgid "<userinput>theme=dark</userinput>"
@@ -754,8 +769,8 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Vi er især interesserede i at høre om installationsproblemer, fordi de "
-"oftest ikke kun forekommer for <emphasis>en</emphasis> person."
+"Vi er især interesserede i at høre om opstartsproblemer, fordi de ofte ikke "
+"kun rammer <emphasis>en</emphasis> person."
 
 #: help.xml:731
 msgid ""
@@ -773,8 +788,8 @@ msgid ""
 "experience!"
 msgstr ""
 "Vi har enten allerede hørt om netop dit problem og kender en hurtig løsning, "
-"eller også ønsker vi at høre nærmere og løse det i samarbejde med dig, så "
-"den næste bruger der får samme problem også kan få glæde af løsningen!"
+"eller også ønsker vi at høre om det og løse det i sammen med dig, så den "
+"næste bruger, der oplever samme problem også kan få glæde af løsningen!"
 
 #: help.xml:766
 msgid "COPYRIGHTS AND WARRANTIES"
@@ -788,7 +803,7 @@ msgstr ""
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
-msgstr "Ubuntu systemet kan frit videredistribueres."
+msgstr "Ubuntu-systemet kan frit videredistribueres."
 
 #: help.xml:781
 msgid ""
@@ -815,8 +830,8 @@ msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Ubuntu leveres <emphasis>ABSOLUT UDEN GARANTI</emphasis>, til den grænse "
-"gældende lov tillader det."
+"Ubuntu leveres <emphasis>ABSOLUT UDEN GARANTI</emphasis>, inden for de "
+"grænser gældende lov tillader det."
 
 #: help.xml:797
 msgid ""
@@ -826,7 +841,7 @@ msgid ""
 msgstr ""
 "Installationssystemet er baseret på Debian installationsprogrammet. Se "
 "<ulink url=\"http://www.debian.org/\" /> for flere detaljer og information "
-"om Debian projektet."
+"om Debianprojektet."
 
 #: help.xml:803
 msgid ""
@@ -834,4 +849,4 @@ msgid ""
 "for more details and information on the Debian project."
 msgstr ""
 "Dette system er baseret på Debian. Se <ulink url=\"http://www.debian.org/\" /"
-"> for flere detaljer og information om Debian projektet."
+"> for flere detaljer og information om Debian-projektet."

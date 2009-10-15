@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-12-04 18:54+0000\n"
-"Last-Translator: Elias Julkunen <elias.julkunen@gmail.com>\n"
+"PO-Revision-Date: 2009-10-10 15:07+0000\n"
+"Last-Translator: Christian Hellberg <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-04-08 23:44+0000\n"
+"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -313,6 +313,8 @@ msgstr ""
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"Muut kuin kriittiset ytimen viestit piilotetaan jos järjestelmää ei käytetä "
+"edistyneen käyttäjän tilassa."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
@@ -525,7 +527,7 @@ msgstr "Mahdollisia (tilapäisiä) tapoja korja virheet tai muut laitevirheet:"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "poista käytöstä ongelia aiheuttava APIC-keskeytysten reitittäminen"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
@@ -549,7 +551,7 @@ msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "Virhekysely"
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
@@ -749,7 +751,7 @@ msgstr "Käytä erityistehtäviä"
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 
 #: help.xml:682
 msgid ""

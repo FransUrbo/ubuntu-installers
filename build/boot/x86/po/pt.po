@@ -7,13 +7,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-12-04 18:54+0000\n"
-"Last-Translator: Pedro Machado Santa <pedro.santa@gmail.com>\n"
+"PO-Revision-Date: 2009-10-14 14:14+0000\n"
+"Last-Translator: Rui Moreira <rui.f.moreira@gmail.com>\n"
 "Language-Team: UBUNTU-PT <ubuntu-pt.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-04-08 23:44+0000\n"
+"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 "X-Poedit-Language: Portuguese\n"
 
@@ -30,12 +30,16 @@ msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Esta é uma instalação ${MEDIA_TYPE} para ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Foi desenvolvida em ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Este é um Live ${MEDIA_TYPE}  para ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Foi desenvolvida em ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
@@ -152,6 +156,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"O sistema \"live\" não requer qualquer espaço em disco. Contudo, se "
+"existirem partições swap no disco rígido serão utilizadas."
 
 #: help.xml:147 help.xml:748
 msgid ""
@@ -211,15 +217,15 @@ msgstr "Iniciar a instalação no modo avançado para controlo máximo."
 
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Instalação mínima de sistema por linha de comandos."
 
 #: help.xml:200
 msgid "live"
@@ -234,10 +240,12 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Iniciar o sistema \"live\". Se desejar, pode instalar mais tarde usando o "
+"ícone \"Instalar\" no ambiente de trabalho."
 
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "Instalação live"
 
 #: help.xml:212
 msgid "Start the installation."
@@ -286,6 +294,8 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(\"Ubuntu\" pode ser substituído por outros nomes de sistemas operativos "
+"relacionados. Esta ajuda é genérica.)"
 
 #: help.xml:257 help.xml:307
 msgid ""
@@ -294,11 +304,18 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Para usar um destes métodos de arranque, seleccione-o no menu com as setas "
+"do seu teclado. Pressione F4 para seleccionar um arranque e modo se "
+"instalação alternativo. Pressione F6 para editar os parâmetros de arranque. "
+"Pressione F6 outra vez para seleccionar os parâmetros de arranque mais "
+"comuns de um menu."
 
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"Excepto no modo expert, as mensagens não criticas de arranque do kernel "
+"serão suprimidas."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
@@ -315,7 +332,7 @@ msgstr "rescue"
 
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Recuperar um sistema danificado"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
@@ -350,18 +367,25 @@ msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
+"Em alguns sistemas, poderá ter de especificar um parâmetro de linha de "
+"comandos em <literal>boot:</literal> para que o sistema arranque"
 
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"Em alguns sistemas, poderá ter de especificar um parâmetro premindo F6 para "
+"que o sistema arranque"
 
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"Por exemplo, o Linux poderá não conseguir detectar automaticamente os "
+"componentes de hardware, poderá ter de especificar o tipo ou localização "
+"para que este seja reconhecido."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
@@ -415,16 +439,22 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Pode usar os seguintes parâmetros de arranque na consola em <literal>boot:</"
+"literal> , a condizer com o método de arranque (veja <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Poderá seguir os seguintes parametros de arranque premindo F6,  a condizer "
+"com o método de arranque (veja <link linkend=\"F3\"><keycap>F3</keycap></"
+"link>)."
 
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr ""
+msgstr "Se usar números hexadecimais deve usar o prefixo 0x (ex. 0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
@@ -491,16 +521,17 @@ msgstr "Forçar o uso de uma driver IDE genérica"
 
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
+"Possíveis solucoes (temporárias) para bloqueios ou outras falhas de hardware:"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "Desactivar interruptor de roteamento APIC em erro"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
@@ -508,27 +539,27 @@ msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "desactivar (parcialmente) ACPI"
 
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> ou <userinput>acpi=off</userinput>"
 
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "Desactivar USB"
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "poll de interrupções"
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
@@ -715,7 +746,7 @@ msgstr "Usar tema de acessibilidade de alto constraste"
 
 #: help.xml:672
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 # type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:676
@@ -724,7 +755,7 @@ msgstr "Utiliza tarefas especiais"
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr ""
+msgstr "<userinput>tarefas=\"kubuntu-desktop, padrão\"</userinput>"
 
 #: help.xml:682
 msgid ""

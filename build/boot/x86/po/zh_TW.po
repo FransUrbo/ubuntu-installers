@@ -8,14 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-12-04 19:29+0000\n"
-"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
-"net>\n"
+"PO-Revision-Date: 2009-10-14 14:29+0000\n"
+"Last-Translator: Rossi Liu <Unknown>\n"
 "Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-04-08 23:44+0000\n"
+"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -44,7 +43,7 @@ msgstr ""
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr ""
+msgstr "說明索引"
 
 #: help.xml:29
 msgid "KEY"
@@ -68,7 +67,7 @@ msgstr "執行 ${DISTRIBUTION_NAME} 的必備需求。"
 
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr ""
+msgstr "使用 ${MEDIA_TYPE} 的特殊的開機方法。"
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
@@ -80,19 +79,19 @@ msgstr "特殊啟動參數總覽。"
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "給特殊機器的特殊開機參數。"
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
+msgstr "給已選取的磁碟控制裝置的特殊開機參數。"
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "給安裝系統的特殊開機參數。"
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "給開機系統的特殊開機參數。"
 
 #: help.xml:84
 msgid "How to get help."
@@ -104,11 +103,11 @@ msgstr "版權和保證"
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr ""
+msgstr "按F2~F10鍵以瞭解細節，或是按Enter以 ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr ""
+msgstr "按F2~F10鍵以瞭解細節，或是按ESC鍵結束說明。"
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
@@ -143,7 +142,7 @@ msgstr ""
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr ""
+msgstr "使用Ubuntu Live，您必須有至少384MB的記憶體"
 
 #: help.xml:142
 msgid ""
@@ -172,6 +171,8 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
+"按下 <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial\">Ctrl "
+"與 F1</phrase>取得說明索引，或者 ENTER 到  ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
@@ -208,77 +209,82 @@ msgstr "使用專家模式來安裝，讓您有最多的控制權"
 
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "最精簡的命令列系統安裝"
 
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "live"
 
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "試用 Ubuntu (不對您的電腦進行任何變更)。"
 
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"啟動live系統。若您稍後想要進行安裝作業，您可以點選桌面上的\"安裝\"圖示。"
 
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "live-install"
 
 #: help.xml:212
 msgid "Start the installation."
-msgstr ""
+msgstr "開始安裝作業。"
 
 #: help.xml:228
 msgid "memtest"
-msgstr ""
+msgstr "記憶體測試"
 
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "記憶體測試"
 
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr ""
+msgstr "執行記憶體測試。"
 
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"要使用這些開機方法其中一個，可在命令列提示當中輸入，其次是選擇任何一種啟動參"
+"數。例如："
 
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "boot: install acpi=off"
 
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #: help.xml:247
 msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
+"假如不確定，你可以使用預設的開機選項，沒有特殊的參數，只是很單純的在開機提示"
+"當中按下Enter。"
 
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
-msgstr ""
+msgstr "(\"Ubuntu\"也許會替換其他有關於作業系統的名稱，這個是通用的求助文件。)"
 
 #: help.xml:257 help.xml:307
 msgid ""
@@ -295,23 +301,23 @@ msgstr ""
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "正在修復損壞的系統"
 
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr ""
+msgstr "使用此種開機方法修復已存在的安裝"
 
 #: help.xml:289
 msgid "rescue"
-msgstr ""
+msgstr "rescue"
 
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "對已損壞的系統進行救援。"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "開機到rescue模式。"
 
 #: help.xml:303
 #, no-wrap
@@ -326,10 +332,13 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
+"這片CD沒有指定的救援模式。無論如何，既然整個系統從CD執行，可以使用命令列或圖"
+"形工具救援損壞的系統，並使用網頁瀏覽器搜尋幫助。您可以在網上取得很多關於引起"
+"您系統不正確開機大部分問題的建議。"
 
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr ""
+msgstr "特殊啟動參數 - 概觀"
 
 #: help.xml:363
 msgid ""
@@ -351,23 +360,23 @@ msgstr ""
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
-msgstr ""
+msgstr "檢視更多有關於您可以使用的開機參數的資訊，請按︰"
 
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "特殊機器的開機參數"
 
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr ""
+msgstr "給不同的磁碟控制器的開機參數"
 
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr ""
+msgstr "安裝系統已知的開機參數"
 
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr ""
+msgstr "開機參數被啟動系統解讀"
 
 #: help.xml:405
 msgid ""
@@ -376,12 +385,17 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"許多核心模組被安裝程式動態載入，且那些模組的參數不能以命令列方式設給安裝程"
+"式。為了模組被載入時的參數，使用專家模式開機(參考<link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
+"許多核心模組被啟動系統動態載入，且那些模組的參數不能以命令列方式設給啟動系"
+"統。"
 
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
@@ -402,19 +416,19 @@ msgstr ""
 
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr ""
+msgstr "若使用16進位您必須以0x作為開頭(e.g., 0x300)。"
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr ""
+msgstr "硬體"
 
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr ""
+msgstr "要指定的參數"
 
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr ""
+msgstr "IBM PS/1 或 ValuePoint (IDE disk)"
 
 #: help.xml:456
 msgid ""
@@ -424,7 +438,7 @@ msgstr ""
 
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr ""
+msgstr "某些 IBM ThinkPads電腦"
 
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
@@ -443,7 +457,7 @@ msgstr ""
 
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr ""
+msgstr "筆記型電腦有螢幕顯示問題"
 
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
@@ -459,7 +473,7 @@ msgstr ""
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "強制使用一般 IDE 驅動程式"
 
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
@@ -472,7 +486,7 @@ msgstr ""
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "停用很多問題的 APIC 中斷程序"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
@@ -488,7 +502,7 @@ msgstr ""
 
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "停用 USB"
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
@@ -504,7 +518,7 @@ msgstr ""
 
 #: help.xml:516 help.xml:589 help.xml:689
 msgid "For example:"
-msgstr ""
+msgstr "例如："
 
 #: help.xml:519
 #, no-wrap

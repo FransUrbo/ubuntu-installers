@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2009-01-10 07:25+0000\n"
-"Last-Translator: Marcos <marcos.alvarez.costales@gmail.com>\n"
+"PO-Revision-Date: 2009-09-04 11:31+0000\n"
+"Last-Translator: Iñigo Varela <malditoastur@gmail.com>\n"
 "Language-Team: Asturian <ast@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-08-25 08:52+0000\n"
+"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Pantalla d'aida al arranque de la instalación"
+msgstr "Pantalles d'aida del arranque del instalador"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
@@ -30,16 +30,16 @@ msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Esta ye una instalación ${MEDIA_TYPE} pa ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, construyida el ${BUILD_DATE}."
+"Esti ye un ${MEDIA_TYPE} d'instalación pa ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}, fechu el ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Esti ye un ${MEDIA_TYPE} en vivo de ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. Fabricose el ${BUILD_DATE}."
+"Esti ye un ${MEDIA_TYPE} «en vivo» (live) de ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Fabricóse el ${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"

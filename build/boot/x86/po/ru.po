@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2008-11-07 13:05+0000\n"
-"Last-Translator: Alyx Nikolaenko <ceekay80@gmail.com>\n"
+"PO-Revision-Date: 2009-10-12 18:35+0000\n"
+"Last-Translator: Alexey Balmashnov <a.balmashnov@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-04-08 23:44+0000\n"
+"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -47,7 +47,7 @@ msgstr "СОДЕРЖАНИЕ"
 
 #: help.xml:29
 msgid "KEY"
-msgstr "КЛАВИША"
+msgstr "КЛАВИША—"
 
 #: help.xml:30
 msgid "TOPIC"
@@ -79,7 +79,7 @@ msgstr "Специальные параметры загрузки, обзор."
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "Специальные параметры загрузки для отдельных платформ."
+msgstr "Специальные параметры загрузки для определенных платформ"
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
@@ -91,7 +91,7 @@ msgstr "Специальные параметры загрузки для сис
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "Специальные параметры для начального загрузчика системы."
+msgstr "Специальные параметры начального загрузчика системы."
 
 #: help.xml:84
 msgid "How to get help."
@@ -107,12 +107,11 @@ msgstr "Нажмите клавиши F2-F10 для просмотра, или E
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr ""
-"Нажмите клавиши F2-F10 для просмотра, или Escape для выхода из справки."
+msgstr "Нажмите клавиши F2-F10 для просмотра или Escape для выхода из справки."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "ТРЕБОВАНИЯ ДЛЯ УСТАНОВКИ UBUNTU"
+msgstr "ТРЕБОВАНИЯ ДЛЯ ЗАПУСКА UBUNTU"
 
 #: help.xml:119
 msgid ""
@@ -132,7 +131,7 @@ msgstr ""
 "На жёстком диске должно быть достаточно пространства для создания нового "
 "раздела - размером не менее 2 гигабайт для установки стандартной настольной "
 "системы Ubuntu, либо не менее 400 мегабайт для минимальной серверной "
-"установки. В зависимости от того как вы собираетесь использовать вашу новую "
+"установки. В зависимости от того, как вы собираетесь использовать вашу новую "
 "систему Ubuntu, вам может потребоваться больше дискового пространства для "
 "установки дополнительных пакетов."
 
@@ -150,15 +149,15 @@ msgstr ""
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Для использования живой системы Ubuntu, вам потребуется как минимум 384 "
-"мегабайт оперативной памяти."
+"Для использования live-системы Ubuntu потребуется как минимум 384 мегабайт "
+"оперативной памяти."
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Живая система не требует пространства на вашем жестком диске. Однако, если "
+"Живая система не требует пространства на вашем жёстком диске. Однако, если "
 "это возможно, будут использованы существующие разделы подкачки."
 
 #: help.xml:147 help.xml:748
@@ -166,8 +165,8 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Прочтите FAQ для для получения дополнительной информации; этот документ "
-"доступен на сайте Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
+"Прочтите FAQ для получения дополнительной информации. Этот документ доступен "
+"на сайте Ubuntu, см. <ulink url=\"http://www.ubuntu.com/\" />."
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
@@ -181,14 +180,14 @@ msgid ""
 "${BOOTPROMPT}"
 msgstr ""
 "Нажмите <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control и F затем 1</phrase> для перехода к оглавлению справки, или ENTER "
+"\">control и F затем 1</phrase> для перехода к оглавлению справки или ENTER "
 "для ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
-"Нажмите F1 для перехода к оглавлению справки, или Escape для выхода из неё."
+"Нажмите F1 для перехода к оглавлению справки или Escape для выхода из неё."
 
 #: help.xml:169
 msgid "BOOT METHODS"
@@ -248,8 +247,8 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
-"Загрузить живую систему. По желанию, вы сможете запустить установку системы "
-"с рабочего стола."
+"Загрузить живую систему. Вы сможете запустить установку системы позже, "
+"воспользовавшись ярлыком «Установить...» на рабочем столе."
 
 #: help.xml:209
 msgid "live-install"
@@ -294,8 +293,8 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Если вы не уверены, используйте стандартный метод загрузки без специальных "
-"параметров, просто нажав Enter в ответ на приглашение."
+"Если вы неуверены, используйте стандартный тип установки без специальных "
+"параметров, просто нажав Enter."
 
 #: help.xml:252
 msgid ""
@@ -312,17 +311,18 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
-"Для использования одного из методов загрузки, выберите его в меню, пользуясь "
-"клавишами управлениями курсором. Нажмите F4 для выбора альтернативных "
-"режимов запуска и установки. Нажмите F6 для изменения параметров загрузки. "
-"Повторное нажатие F6 вызовет меню типовых параметров загрузки."
+"Чтобы воспользоваться одним из методов загрузки, выберите его в меню, "
+"пользуясь клавишами управления курсором. Нажмите F4 для выбора "
+"альтернативных режимов запуска и установки. Нажмите F6 для изменения "
+"параметров загрузки. Повторное нажатие F6 вызовет меню типовых параметров "
+"загрузки."
 
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
-"За исключением режима эксперта, не критичные сообщения загрузки ядра будут "
-"пропущены."
+"Некритичные сообщения загрузки ядра будут отображаться только в режима "
+"эксперта."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
@@ -390,22 +390,22 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"К примеру, Linux может автоматически не определить ваши устройства, и вам "
-"придется явно указать их местонахождение или тип для правильного определения."
+"К примеру, Linux может не определить автоматически ваши устройства, и вам "
+"придётся явно указать их местонахождение или тип для правильного определения."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
-"Для дополнительной информации о параметрах загрузки, которые вы можете "
-"использовать, нажмите:"
+"Для получения дополнительной информации о параметрах загрузки, которые вы "
+"можете использовать, нажмите:"
 
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr "загрузочные параметры для специальных платформ"
+msgstr "загрузочные параметры для отдельных платформ"
 
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr "загрузочные параметры для различных дисковых контроллеров"
+msgstr "загрузочные параметры для некоторых дисковых контроллеров"
 
 #: help.xml:395
 msgid "boot parameters understood by the install system"
@@ -437,7 +437,7 @@ msgstr ""
 
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - РАЗЛИЧНЫЕ УСТРОЙСТВА"
+msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - ОТДЕЛЬНЫЕ УСТРОЙСТВА"
 
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
@@ -446,7 +446,7 @@ msgid ""
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
 "В приглашении <literal>boot:</literal> вы можете использовать следующие "
-"параметры, в сочетании с методом загрузки (см. <link linkend=\"F3"
+"параметры в сочетании с методом загрузки (смотри <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
@@ -454,14 +454,14 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"По нажатию F6 вы можете использовать следующие параметры, в сочетании с "
-"методом загрузки (см. <link linkend=\"F3\"><keycap>F3</keycap></link>)."
+"По нажатию F6 вы можете использовать следующие параметры в сочетании с "
+"методом загрузки (смотри <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
 "При использовании шестнадцатеричных чисел необходимо вводить префикс 0x "
-"(напр. 0x300)."
+"(например 0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
@@ -534,12 +534,12 @@ msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
-"Возможные (временные) обходные методы для блокировок или других сбоев "
+"Возможные (временные) обходные методы при блокировках или других сбоях "
 "аппаратного обеспечения:"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr "отключить ошибочную APIC маршрутизацию прерываний"
+msgstr "отключить APIC"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
@@ -585,7 +585,7 @@ msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - РАЗЛИЧНЫЕ ДИСКИ"
+msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - НЕКОТОРЫЕ КОНТРОЛЛЕРЫ ДИСКОВ"
 
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
@@ -653,8 +653,8 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"Этот список неполон, для дополнительной информации смотрите файл ядра kernel-"
-"parameters.txt."
+"Этот список неполон, для получения дополнительной информации смотрите файл "
+"документации ядра kernel-parameters.txt."
 
 #: help.xml:592
 #, no-wrap
@@ -668,11 +668,11 @@ msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - СИСТЕМА УСТАНОВКИ"
+msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - НАЧАЛЬНЫЙ ЗАГРУЗЧИК"
 
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr "Эти параметры управляют работой установщика."
+msgstr "Эти параметры управляют работой начального загрузчика."
 
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
@@ -787,7 +787,7 @@ msgstr "boot: live pci=noacpi"
 
 #: help.xml:710
 msgid "GETTING HELP"
-msgstr "ПОЛУЧЕНИЕ ПОМОЩИ"
+msgstr "КАК ПОЛУЧИТЬ ПОМОЩЬ"
 
 #: help.xml:717
 msgid "If you can't install Ubuntu, don't despair!"
@@ -806,18 +806,18 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Мы особо заинтересованы в выявлении проблем связанных с установкой, потому "
-"что они, как правило, обнаруживаются не только у <emphasis>одного</emphasis> "
-"человека."
+"Мы особо заинтересованы в выявлении проблем, связанных с установкой. "
+"Подобные проблемы, как правило, обнаруживаются не только у <emphasis>одного</"
+"emphasis> человека."
 
 #: help.xml:731
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Мы особо заинтересованы в выявлении проблем, связанных с запуском, потому "
-"что они, как правило, обнаруживаются не только у <emphasis>одного</emphasis> "
-"человека."
+"Мы особо заинтересованы в выявлении проблем, связанных с установкой. "
+"Подобные проблемы, как правило, обнаруживаются не только у <emphasis>одного</"
+"emphasis> человека."
 
 #: help.xml:735
 msgid ""
@@ -826,9 +826,10 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Если мы уже знаем о вашей проблеме, то мы сможем обеспечить быстрое её "
-"решение, или же мы выслушаем о ней и преодолеем её вместе с вами, а ваш опыт "
-"будет полезен другому пользователю столкнувшемуся с такой же проблемой!"
+"Возможно мы уже знаем о данной конкретной проблеме, тогда мы сможем "
+"обеспечить более быстрое её решение. В противном случае, мы желаем знать о "
+"ней и готовы работать над её решением вместе с вами. Позже ваш опыт будет "
+"полезен другому пользователю столкнувшемуся с такой же проблемой!"
 
 #: help.xml:766
 msgid "COPYRIGHTS AND WARRANTIES"
@@ -839,8 +840,8 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu охраняется авторским правом (C) 2004-2008 Canonical Ltd., и "
-"объединяет труд многих других авторов и участников."
+"Ubuntu охраняется авторским правом (C) 2004-2008 Canonical Ltd. и объединяет "
+"труд многих других авторов и участников."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
@@ -852,9 +853,9 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"После установки, точные соглашения распространения для каждого пакета "
-"описаны в соответствующем файле /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"Точные соглашения о порядке распространения для каждого пакета описаны в "
+"соответствующем файле /usr/share/doc/<replaceable>packagename</replaceable>/"
+"copyright, доступном после установки системы."
 
 #: help.xml:786
 msgid ""
@@ -862,17 +863,17 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"После запуска, точные соглашения распространения для каждого пакета описаны "
-"в соответствующем файле /usr/share/doc/<replaceable>packagename</"
-"replaceable>/copyright."
+"Точные соглашения о порядке распространения для каждого пакета описаны в "
+"соответствующем файле /usr/share/doc/<replaceable>packagename</replaceable>/"
+"copyright, доступном после установки системы."
 
 #: help.xml:792
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Ubuntu распространяется <emphasis>БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ ГАРАНТИИ</"
-"emphasis>, в рамках, определённых соответствующим законодательством."
+"Ubuntu распространяется <emphasis>БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ</emphasis>, в "
+"рамках, определённых соответствующим законодательством."
 
 #: help.xml:797
 msgid ""
@@ -880,14 +881,14 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
-"Эта система установки основана на установщике Debian. Для дополнительной "
-"информации о проекте Debian, смотрите <ulink url=\"http://www.debian.org/\" /"
-">"
+"Данная программа основана на установщике Debian. Для получения "
+"дополнительной информации о проекте Debian смотрите <ulink url=\"http://www."
+"debian.org/\" />"
 
 #: help.xml:803
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"Эта система основана на Debian. Для дополнительной информации о проекте "
-"Debian, смотрите <ulink url=\"http://www.debian.org/\" />"
+"Данная система основана на Debian. Для получения дополнительной информации о "
+"проекте Debian смотрите <ulink url=\"http://www.debian.org/\" />"

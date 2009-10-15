@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2009-05-24 14:47+0000\n"
-"Last-Translator: Nizzzia <Unknown>\n"
+"PO-Revision-Date: 2009-09-30 01:52+0000\n"
+"Last-Translator: Sergio Gavrylov <sergiovana@bigmir.net>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-08-25 08:52+0000\n"
+"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr ""
+msgstr "Екрани допомоги інсталятора"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
@@ -30,20 +30,24 @@ msgid ""
 "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Інсталяційний ${MEDIA_TYPE}  ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
+"Зібрано: ${BUILD_DATE}."
 
 #: help.xml:23
 msgid ""
 "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Live ${MEDIA_TYPE} ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. Зібрано: "
+"${BUILD_DATE}."
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr ""
+msgstr "ЗМІСТ"
 
 #: help.xml:29
 msgid "KEY"
-msgstr ""
+msgstr "КЛАВІША"
 
 #: help.xml:30
 msgid "TOPIC"
@@ -51,7 +55,7 @@ msgstr "ТЕМА"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr ""
+msgstr "Дана сторінка - зміст довідки."
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
@@ -64,10 +68,11 @@ msgstr "Необхідні передумови для роботи ${DISTRIBUTI
 #: help.xml:49
 msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
 msgstr ""
+"Способи завантаження для специфічного використання цього ${MEDIA_TYPE}."
 
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr ""
+msgstr "Додаткові способи завантаження; відновлення пошкодженої системи."
 
 #: help.xml:59
 msgid "Special boot parameters, overview."
@@ -75,19 +80,19 @@ msgstr "Загальний огляд особливих параметрів з
 
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "Спеціальні параметри завантаження для окремих платформ."
 
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
+msgstr "Спеціальні параметри завантаження для деяких дискових контроллерів."
 
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "Спеціальні параметри завантаження для системи інсталяції."
 
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "Спеціальні параметри для початкового завантажувача системи."
 
 #: help.xml:84
 msgid "How to get help."
@@ -99,11 +104,12 @@ msgstr "Авторські права та гарантії."
 
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr ""
+msgstr "Натисніть клавіші F2-F10 для перегляду, або ENTER для ${BOOTPROMPT}"
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
+"Натисніть клавіші F2-F10 для перегляду, або Escape для виходу з довідки."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
@@ -123,6 +129,12 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"На жорсткому диску повинно бути достатньо місця для створення нового розділу "
+"- не менше 2 гігабайтів для встановлення стандартної настільної системи "
+"Ubuntu, або щонайменше 400 мегабайтів для мінімальної серверної установки. "
+"Залежно від того, як Ви збираєтеся використовувати Вашу нову систему Ubuntu, "
+"Вам може знадобитись більше дискового простору для встановлення додаткових "
+"пакунків."
 
 #: help.xml:131 help.xml:742
 msgid ""
@@ -130,23 +142,32 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
+"Прочитайте Інструкцію з встановлення або FAQ для отримання додаткової "
+"інформації. Обидва документи доступні на сайті Ubuntu: <ulink url=\"http://"
+"www.ubuntu.com/\" />"
 
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
+"Ви повинні мати щонайменше 384 мегабайт оперативної пам'яті, щоб "
+"використовувати Ubuntu в режимі LiveCD."
 
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"Режим LiveCD не вимагає місця на жорсткому диску. Однак, будуть використані "
+"розділи Linux swap, якщо вони є на жорсткому диску."
 
 #: help.xml:147 help.xml:748
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
+"Прочитайте FAQ для отримання додаткової інформації; цей документ доступний "
+"на сайті Ubuntu: <ulink url=\"http://www.ubuntu.com/\" />"
 
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
@@ -159,11 +180,15 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
+"Натисніть <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
+"\">control та F потім 1</phrase> для переходу до змісту довідки, або ENTER "
+"для ${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
+"Натисніть F1, щоб перейти до змісту довідки, або Escape для виходу з неї."
 
 #: help.xml:169
 msgid "BOOT METHODS"
@@ -183,31 +208,31 @@ msgstr "Встановити Ubuntu"
 
 #: help.xml:180
 msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr ""
+msgstr "Почати установку -- за замовчуванням з ${MEDIA_TYPE}."
 
 #: help.xml:185
 msgid "expert"
-msgstr ""
+msgstr "експерт"
 
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr ""
+msgstr "Почати установку в режимі експерта -- для повного контролю."
 
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "Інтерфейс командного рядку (cli)"
 
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "Інтерфейс командного рядку (cli) -- експерт"
 
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Установка мінімальної системи -- командний рядок."
 
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "live -- сесія"
 
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
@@ -218,10 +243,12 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Завантажити live -- сесію. Ви можете встановити систему пізніше, натиснувши "
+"піктограму \"Install\" на стільниці."
 
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "live-install"
 
 #: help.xml:212
 msgid "Start the installation."
@@ -229,7 +256,7 @@ msgstr "Розпочати встановлення."
 
 #: help.xml:228
 msgid "memtest"
-msgstr ""
+msgstr "Перевірка оперативної пам'яті"
 
 #: help.xml:229
 msgid "Test memory"
@@ -263,12 +290,16 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
+"Якщо Ви невпевнені, використовуйте метод завантаження за замовчуванням, без "
+"спеціальних параметрів, просто натиснувши Enter у відповідь на запрошення."
 
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(Слово \"Ubuntu\" може бути замінено назвами споріднених операційних систем. "
+"Цей файл довідки універсальний.)"
 
 #: help.xml:257 help.xml:307
 msgid ""
@@ -277,31 +308,38 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Для використання одного з методів завантаження, виберіть його в меню, "
+"користуючись клавішами управління курсором. Натисніть F4, для вибору "
+"альтернативних режимів запуску та установки. Натисніть F6 для зміни "
+"параметрів завантаження. Повторне натискання F6 викличе меню типових "
+"параметрів завантаження."
 
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"За винятком режиму експерта, не критичні повідомлення завантаження ядра "
+"будуть пропущені."
 
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "ВІДНОВЛЕННЯ ПОШКОДЖЕНОЇ СИСТЕМИ"
 
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr ""
+msgstr "Скористайтеся одним з цих методів для відновлення існуючої установки"
 
 #: help.xml:289
 msgid "rescue"
-msgstr ""
+msgstr "відновлення"
 
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "Відновлення пошкодженої системи"
 
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "Завантажитись в режимі відновлення"
 
 #: help.xml:303
 #, no-wrap
@@ -316,6 +354,11 @@ msgid ""
 "to search for help. Extensive advice is available online for most kinds of "
 "problems that might cause your normal system to fail to boot correctly."
 msgstr ""
+"На цьому CD відсутній окремий режим відновлення системи. Оскільки вся "
+"система працює з CD, Ви можете скористатися командним рядком і/або "
+"графічними програмами для відновлення пошкодженої системи, а також запустити "
+"веб-браузер для пошуку інформації. Вичерпні поради пов'язані зі "
+"завантаженням системи, доступні онлайн."
 
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
@@ -326,18 +369,25 @@ msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
+"Для успішного запуску на деяких системах Вам буде необхідно вказати параметр "
+"завантаження в запрошенні <literal>boot:</literal>"
 
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"Для успішного запуску на деяких системах Вам буде необхідно вказати параметр "
+"завантаження після натискання F6."
 
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"Приміром, Linux може автоматично не визначити Ваше устаткування, і Вам "
+"доведеться явно вказати їх місцезнаходження або тип, для правильного "
+"визначення системою."
 
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
@@ -347,19 +397,19 @@ msgstr ""
 
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "завантажувальні параметри для спеціальних платформ"
 
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr ""
+msgstr "завантажувальні параметри для різних дискових контроллерів"
 
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr ""
+msgstr "завантажувальні параметри системи установки"
 
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr ""
+msgstr "параметри початкового завантажувача системи"
 
 #: help.xml:405
 msgid ""
@@ -368,16 +418,24 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Багато модулів ядра динамічно завантажуються інсталятором і параметри для "
+"цих модулів не можуть бути введені через командний рядок. Для отримання "
+"можливості введення параметрів під час завантаження модулів, необхідно "
+"завантажитись в режимі експерта (див. <link linkend=\"F3\"><keycap>F3</"
+"keycap></link>)."
 
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
+"Багато модулів ядра динамічно завантажуються системою початкового "
+"завантаження і параметри для цих модулів не можуть бути задані в командному "
+"рядку."
 
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr ""
+msgstr "СПЕЦІАЛЬНІ ПАРАМЕТРИ ЗАВАНТАЖЕННЯ - РІЗНЕ ОБЛАДНАННЯ"
 
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
@@ -385,46 +443,56 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
+"В запрошенні <literal>boot:</literal> ви можете використовувати наступні "
+"параметри в поєднанні з методом завантаження (див. <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>)."
 
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Ви можете використовувати наступні параметри завантаження натиснувши F6, в "
+"поєднанні з методом завантаження (див. <link linkend=\"F3\"><keycap>F3</"
+"keycap></link>)."
 
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"Якщо Ви використовуєте шістнадцяткові числа необхідно вводити префікс 0x "
+"(напр. 0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr ""
+msgstr "ОБЛАДНАННЯ"
 
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr ""
+msgstr "ЗАЗНАЧЕНИЙ ПАРАМЕТР"
 
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr ""
+msgstr "IBM PS/1 або ValuePoint (IDE disk)"
 
 #: help.xml:456
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr ""
+msgstr "Деякі моделі IBM ThinkPad"
 
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "Захист портів I/O"
 
 #: help.xml:466
 msgid ""
@@ -432,10 +500,13 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr ""
+msgstr "Ноутбуки з проблемами виводу на екран"
 
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
@@ -443,36 +514,37 @@ msgstr "<userinput>vga=771</userinput>"
 
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Використовувати перший серійний порт на 9600 бод"
 
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Використовувати базовий IDE драйвер"
 
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
+"Можливі (тимчасові) обхідні методи для блокування або інших збоїв обладнання:"
 
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "відключити помилкову APIC маршрутизацію переривань"
 
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "(частково) відключити ACPI"
 
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
@@ -480,7 +552,7 @@ msgstr "<userinput>acpi=noirq</userinput> або <userinput>acpi=off</userinput>
 
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "відключити USB"
 
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
@@ -488,7 +560,7 @@ msgstr "<userinput>nousb</userinput>"
 
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "опитування переривань"
 
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
@@ -510,11 +582,11 @@ msgstr "boot: live vga=771 noapic nolapic"
 
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr ""
+msgstr "СПЕЦІАЛЬНІ ПАРАМЕТРИ ЗАВАНТАЖЕННЯ - РІЗНІ ДИСКИ"
 
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
-msgstr ""
+msgstr "Adaptec 151x, 152x"
 
 #: help.xml:560
 msgid ""
@@ -524,6 +596,11 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #: help.xml:564
 msgid "Adaptec 1542"
@@ -536,6 +613,10 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
@@ -544,15 +625,17 @@ msgstr "Adaptec 274x, 284x"
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (включено якщо не нуль)"
 
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
-msgstr ""
+msgstr "SCSI-хости BusLogic"
 
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #: help.xml:579
 msgid "Certain DELL machines"
@@ -567,20 +650,22 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"Цей список неповний, для додаткової інформації дивіться файл ядра kernel-"
+"parameters.txt."
 
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr ""
+msgstr "СПЕЦІАЛЬНІ ПАРАМЕТРИ ЗАВАНТАЖЕННЯ - СИСТЕМА УСТАНОВКИ"
 
 #: help.xml:624
 msgid "These parameters control how the installer works."
@@ -588,11 +673,11 @@ msgstr "Ці параметри відповідають за роботу вс�
 
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
+msgstr "Ці параметри керують роботою початкового завантажувача."
 
 #: help.xml:632
 msgid "RESULT"
-msgstr ""
+msgstr "РЕЗУЛЬТАТ"
 
 #: help.xml:633
 msgid "PARAMETER"
@@ -600,7 +685,7 @@ msgstr "ПАРАМЕТР"
 
 #: help.xml:636
 msgid "Verbose debugging"
-msgstr ""
+msgstr "Налагодження з виводом повідомлень"
 
 #: help.xml:637
 msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
@@ -608,7 +693,7 @@ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
 
 #: help.xml:641
 msgid "Debug boot sequence"
-msgstr ""
+msgstr "Налагодження послідовності завантаження"
 
 #: help.xml:642
 msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
@@ -616,7 +701,7 @@ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:646
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "Відключити framebuffer"
 
 #: help.xml:647
 msgid "<userinput>fb=false</userinput>"
@@ -624,7 +709,7 @@ msgstr "<userinput>fb=false</userinput>"
 
 #: help.xml:651
 msgid "Don't start PCMCIA"
-msgstr ""
+msgstr "Не вмикати PCMCIA"
 
 #: help.xml:652
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
@@ -632,7 +717,7 @@ msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:656
 msgid "Force static network config"
-msgstr ""
+msgstr "Примусово використовувати статичну конфігурацію мережі"
 
 #: help.xml:657
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
@@ -640,7 +725,7 @@ msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #: help.xml:661
 msgid "Set keyboard map"
-msgstr ""
+msgstr "Встановити розкладку клавіатури"
 
 #: help.xml:662
 msgid "<userinput>bootkbd=es</userinput>"
@@ -648,17 +733,19 @@ msgstr "<userinput>bootkbd=es</userinput>"
 
 #: help.xml:666
 msgid "Use Braille tty"
-msgstr ""
+msgstr "Використовувати інтерфейс Брайля"
 
 #: help.xml:667
 msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #: help.xml:671
 msgid "Use high contrast accessibility theme"
-msgstr ""
+msgstr "Використовувати висококонтрастну тему"
 
 #: help.xml:672
 msgid "<userinput>theme=dark</userinput>"
@@ -666,7 +753,7 @@ msgstr "<userinput>theme=dark</userinput>"
 
 #: help.xml:676
 msgid "Use special tasks"
-msgstr ""
+msgstr "Використовувати спеціальні завдання"
 
 #: help.xml:677
 msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
@@ -676,6 +763,8 @@ msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
+"Вимкнути ACPI для карт PCI (корисно для деяких серверів HP та машин на "
+"основі VIA)"
 
 #: help.xml:685
 msgid "<userinput>pci=noacpi</userinput>"
@@ -684,24 +773,24 @@ msgstr "<userinput>pci=noacpi</userinput>"
 #: help.xml:692
 #, no-wrap
 msgid "boot: install pci=noacpi"
-msgstr ""
+msgstr "boot: install pci=noacpi"
 
 #: help.xml:693
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "boot: live pci=noacpi"
 
 #: help.xml:710
 msgid "GETTING HELP"
-msgstr ""
+msgstr "ОТРИМАННЯ ДОПОМОГИ"
 
 #: help.xml:717
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr ""
+msgstr "Якщо ви не можете встановити Ubuntu, не впадайте у відчай!"
 
 #: help.xml:720
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr ""
+msgstr "Якщо ви не можете запустити Ubuntu, не впадайте у відчай!"
 
 #: help.xml:723
 msgid "The Ubuntu team is ready to help you!"
@@ -712,12 +801,16 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Ми особливо зацікавлені у виявленні проблем, пов'язаних з установкою, вони "
+"виявляються не тільки в <emphasis>однієї</emphasis> людини, як правило."
 
 #: help.xml:731
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Ми особливо зацікавлені у виявленні проблем, пов'язаних з запуском, вони "
+"виявляються не тільки в <emphasis>однієї</emphasis> людини, як правило."
 
 #: help.xml:735
 msgid ""
@@ -726,6 +819,9 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"Якщо ми вже знаємо про вашу проблему, то ми зможемо швидко її вирішити, або "
+"ми вислухаємо Вас і подолаємо її разом, а ваш досвід буде корисним іншому "
+"користувачеві, який зіткнувся з такою самою проблемою!"
 
 #: help.xml:766
 msgid "COPYRIGHTS AND WARRANTIES"
@@ -736,10 +832,12 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"Ubuntu охороняється авторським правом (C) 2004-2008 Canonical Ltd., та "
+"об'єднує працю багатьох самобутніх  авторів та учасників."
 
 #: help.xml:778
 msgid "The Ubuntu system is freely redistributable."
-msgstr ""
+msgstr "Система Ubuntu вільно розповсюджується."
 
 #: help.xml:781
 msgid ""
@@ -747,6 +845,9 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"Після установки, точні умови розповсюдження кожного пакунку описані у "
+"відповідному файлі /usr/share /doc/<replaceable>packagename</replaceable>/"
+"copyright."
 
 #: help.xml:786
 msgid ""
@@ -754,12 +855,17 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"Після запуску, точні умови розповсюдження кожного пакунку описані у "
+"відповідному файлі /usr/share /doc/<replaceable>packagename</replaceable>/"
+"copyright."
 
 #: help.xml:792
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
+"Ubuntu розповсюджується <emphasis>БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ</ emphasis>, в "
+"рамках визначених відповідним законодавством."
 
 #: help.xml:797
 msgid ""
@@ -767,6 +873,9 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
+"Ця система установки заснована на завантажувачі Debian. Для додаткової "
+"інформації про проект Debian, дивіться <ulink url=\"http://www.debian.org/"
+"\" />"
 
 #: help.xml:803
 msgid ""

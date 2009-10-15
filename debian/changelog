@@ -7,6 +7,7 @@ debian-installer (20081029ubuntu69) UNRELEASED; urgency=low
   * Horrible workaround for LP #452212: add a 512*50-byte padding file to
     the powerpc64_netboot mini.iso image tree, to avoid a genisoimage
     segfault at certain tree sizes.
+  * Update help text translations from Launchpad.
 
  -- Loïc Minier <loic.minier@ubuntu.com>  Thu, 15 Oct 2009 14:05:08 +0200
 
