@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu70) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new kernel.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 17 Oct 2009 02:16:10 +0100
+
 debian-installer (20081029ubuntu69) karmic; urgency=low
 
   [ Loïc Minier ]
