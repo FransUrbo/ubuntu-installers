@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu71) UNRELEASED; urgency=low
+
+  * Set default suite to lucid.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 14 Nov 2009 05:47:24 +0000
+
 debian-installer (20081029ubuntu70) karmic; urgency=low
 
   * No-change rebuild to pick up new kernel.
