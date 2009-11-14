@@ -1,6 +1,7 @@
 debian-installer (20081029ubuntu71) UNRELEASED; urgency=low
 
   * Set default suite to lucid.
+  * Move to 2.6.32-4 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sat, 14 Nov 2009 05:47:24 +0000
 
