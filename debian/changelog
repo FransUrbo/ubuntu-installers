@@ -19,6 +19,8 @@ base-installer (1.103ubuntu1) UNRELEASED; urgency=low
     - Prefer PAE kernels on machines with >3GB of RAM.
     - Install kernel headers to match the kernel. This may be overridden by
       setting base-installer/kernel/headers to false.
+  * Remove all traces of lpia, which is being decommissioned (see
+    https://blueprints.launchpad.net/ubuntu/+spec/mobile-lucid-lpia-future).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 03 Dec 2009 12:09:44 +0000
 
