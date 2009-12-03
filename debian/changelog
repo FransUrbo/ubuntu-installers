@@ -1,4 +1,4 @@
-base-installer (1.103ubuntu1) UNRELEASED; urgency=low
+base-installer (1.103ubuntu1) lucid; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Use and depend on the Ubuntu keyring.
@@ -22,7 +22,7 @@ base-installer (1.103ubuntu1) UNRELEASED; urgency=low
   * Remove all traces of lpia, which is being decommissioned (see
     https://blueprints.launchpad.net/ubuntu/+spec/mobile-lucid-lpia-future).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 03 Dec 2009 12:09:44 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 03 Dec 2009 12:21:27 +0000
 
 base-installer (1.103) unstable; urgency=low
 
