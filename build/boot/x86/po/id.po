@@ -839,10 +839,10 @@ msgstr "HAK CIPTA DAN JAMINAN"
 
 #: help.xml:773
 msgid ""
-"Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2009 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu adalah Hak Cipta (C) 2004-2008 Canonical Ltd., dan berisi hasil kerja "
+"Ubuntu adalah Hak Cipta (C) 2004-2009 Canonical Ltd., dan berisi hasil kerja "
 "dari banyak pengarang dan kontributor lainnya."
 
 #: help.xml:778

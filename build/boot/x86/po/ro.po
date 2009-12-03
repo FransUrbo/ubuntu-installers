@@ -847,10 +847,10 @@ msgstr "DREPTURI DE AUTOR ȘI GARANȚII"
 
 #: help.xml:773
 msgid ""
-"Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2009 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Drepturile de autor asupra Ubuntu: (C) 2004-2008 Canonical Ltd. Sistemul "
+"Drepturile de autor asupra Ubuntu: (C) 2004-2009 Canonical Ltd. Sistemul "
 "încorporează și munca multor alți autori sau persoane care au contribuit la "
 "realizarea lui."
 

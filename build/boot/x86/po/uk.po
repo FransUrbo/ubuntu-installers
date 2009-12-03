@@ -829,10 +829,10 @@ msgstr "АВТОРСЬКІ ПРАВА ТА ГАРАНТІЇ"
 
 #: help.xml:773
 msgid ""
-"Ubuntu is Copyright (C) 2004-2008 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2009 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu охороняється авторським правом (C) 2004-2008 Canonical Ltd., та "
+"Ubuntu охороняється авторським правом (C) 2004-2009 Canonical Ltd., та "
 "об'єднує працю багатьох самобутніх  авторів та учасників."
 
 #: help.xml:778
