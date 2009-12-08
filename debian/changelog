@@ -1,11 +1,11 @@
-debian-installer (20081029ubuntu73) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu73) lucid; urgency=low
 
   * Remove all traces of lpia, which is being decommissioned (see
     https://blueprints.launchpad.net/ubuntu/+spec/mobile-lucid-lpia-future).
   * Move to 2.6.32-7 kernels.
   * Belatedly update Canonical copyright dates for 2009 (LP: #448647).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Dec 2009 17:14:50 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 08 Dec 2009 10:43:05 +0000
 
 debian-installer (20081029ubuntu72) lucid; urgency=low
 
