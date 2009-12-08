@@ -2,7 +2,7 @@ debian-installer (20081029ubuntu73) UNRELEASED; urgency=low
 
   * Remove all traces of lpia, which is being decommissioned (see
     https://blueprints.launchpad.net/ubuntu/+spec/mobile-lucid-lpia-future).
-  * Move to 2.6.32-6 kernels.
+  * Move to 2.6.32-7 kernels.
   * Belatedly update Canonical copyright dates for 2009 (LP: #448647).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Dec 2009 17:14:50 +0000
