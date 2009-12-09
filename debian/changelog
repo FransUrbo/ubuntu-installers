@@ -1,3 +1,9 @@
+grub-installer (1.47ubuntu2) UNRELEASED; urgency=low
+
+  * GRUB 2 now supports installation on SATA RAID and multipath.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 Dec 2009 21:00:17 +0000
+
 grub-installer (1.47ubuntu1) lucid; urgency=low
 
   * Resynchronise with Debian. Remaining changes:

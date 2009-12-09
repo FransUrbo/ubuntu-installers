@@ -452,10 +452,6 @@ case $ARCH in
 esac
 
 case "$frtype:$bootfstype:$bootfslabel:$grub_package" in
-    sataraid:*:*:*|multipath:*:*:*)
-	# Serial ATA RAID partition or multipath, currently only grub is
-	# supported
-	: ;;
     lvm:*:*:*)
 	# Booting from LVM requires grub2
 	grub_package="grub-pc"
