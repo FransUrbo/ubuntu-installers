@@ -1,8 +1,8 @@
-debian-installer (20081029ubuntu75) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu75) lucid; urgency=low
 
   * No-change rebuild to pick up new components.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 15 Dec 2009 09:27:43 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 15 Dec 2009 09:29:34 +0000
 
 debian-installer (20081029ubuntu74) lucid; urgency=low
 
