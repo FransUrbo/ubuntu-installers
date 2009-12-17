@@ -1,8 +1,8 @@
-debian-installer (20081029ubuntu76) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu76) lucid; urgency=low
 
   * Move to 2.6.32-8 kernels.
 
- -- Evan Dandrea <evand@ubuntu.com>  Thu, 17 Dec 2009 16:36:43 +0000
+ -- Evan Dandrea <evand@ubuntu.com>  Thu, 17 Dec 2009 16:43:25 +0000
 
 debian-installer (20081029ubuntu75) lucid; urgency=low
 
