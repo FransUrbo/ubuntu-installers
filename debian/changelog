@@ -1,4 +1,4 @@
-grub-installer (1.49ubuntu1) UNRELEASED; urgency=low
+grub-installer (1.49ubuntu1) lucid; urgency=low
 
   * Resynchronise with Debian. Remaining changes:
     - Show the grub menu and raise the menu timeout if other operating
@@ -45,7 +45,7 @@ grub-installer (1.49ubuntu1) UNRELEASED; urgency=low
       the partition devices.
   * GRUB 2 now supports installation on SATA RAID and multipath.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 04 Jan 2010 14:32:34 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 04 Jan 2010 15:58:21 +0000
 
 grub-installer (1.49) unstable; urgency=low
 
