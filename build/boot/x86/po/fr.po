@@ -845,10 +845,10 @@ msgstr "COPYRIGHTS ET GARANTIES"
 
 #: help.xml:773
 msgid ""
-"Ubuntu is Copyright (C) 2004-2009 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu (C) 2004-2009 Canonical Ltd., inclut le travail de nombreux autres "
+"Ubuntu (C) 2004-2010 Canonical Ltd., inclut le travail de nombreux autres "
 "auteurs et contributeurs."
 
 #: help.xml:778

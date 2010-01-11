@@ -838,10 +838,10 @@ msgstr "ΠΝΕΥΜΑΤΙΚΑ ΔΙΚΑΙΩΜΑΤΑ ΚΑΙ ΕΓΓΥΗΣΕΙΣ"
 
 #: help.xml:773
 msgid ""
-"Ubuntu is Copyright (C) 2004-2009 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Το Ubuntu Copyright (C) 2004-2009 είναι εμπορικό σήμα της εταιρίας Canonical "
+"Το Ubuntu Copyright (C) 2004-2010 είναι εμπορικό σήμα της εταιρίας Canonical "
 "Ltd, η οποία συνεργάζεται με πολλούς άλλους συγγραφείς και συνεργάτες."
 
 #: help.xml:778

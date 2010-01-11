@@ -804,7 +804,7 @@ msgstr "სავაჭრო ნიშანი და გარანტია
 
 #: help.xml:773
 msgid ""
-"Ubuntu is Copyright (C) 2004-2009 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
 

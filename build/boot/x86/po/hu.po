@@ -833,10 +833,10 @@ msgstr "SZERZŐI JOGOK ÉS GARANCIA"
 
 #: help.xml:773
 msgid ""
-"Ubuntu is Copyright (C) 2004-2009 Canonical Ltd., and incorporates the work "
+"Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Az Ubuntu Copyright (C) 2004-2009 Canonical Ltd., és magába foglalja sok más "
+"Az Ubuntu Copyright (C) 2004-2010 Canonical Ltd., és magába foglalja sok más "
 "eredeti szerző és közreműködő munkáját."
 
 #: help.xml:778

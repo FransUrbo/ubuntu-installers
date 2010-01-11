@@ -14,7 +14,7 @@
  7f³70      http://www.ubuntu.com/                                                ³10
  7f³70                                                                            ³10
  7f³70                                                                            ³10
- 7f³70    Ubuntu is Copyright (C) 2004-2009 Canonical Ltd., and incorporates      ³10
+ 7f³70    Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates      ³10
  7f³70    the work of many other original authors and contributors.               ³10
  7f³70                                                                            ³10
  7f³70                                                                            ³10
