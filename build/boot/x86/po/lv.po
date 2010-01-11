@@ -833,7 +833,7 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu autortiesības (C) 2004.-2008. gads, Cannonical Ltd. Tas iekļauj arī "
+"Ubuntu autortiesības (C) 2004.-2010. gads, Cannonical Ltd. Tas iekļauj arī "
 "daudzu citu autoru un atbalstītāju darbu."
 
 #: help.xml:778
