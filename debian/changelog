@@ -1,6 +1,8 @@
 debian-installer (20081029ubuntu79) UNRELEASED; urgency=low
 
   * Move iMX51 images to 2.6.31-602 kernels.
+  * Use mklibs-copy on amd64. I'm not quite sure what's wrong here, and it
+    needs further investigation.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 12 Jan 2010 12:59:05 +0000
 
