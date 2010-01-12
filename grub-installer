@@ -638,7 +638,8 @@ while : ; do
 		if [ "$RET" = true ]; then
 			if [ -n "$bootremovable" ]; then
 				bootdev="$bootremovable"
-				if [ ! -e "$device_map" ]; then
+				if [ "$grub_version" = grub ] && \
+				   [ ! -e "$device_map" ]; then
 					mkdir -p "$(dirname "$device_map")"
 					echo "(hd0) $bootremovable" > "$device_map"
 				fi

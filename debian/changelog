@@ -2,6 +2,7 @@ grub-installer (1.49ubuntu2) UNRELEASED; urgency=low
 
   * Use grub-probe to convert device names rather than relying on
     device.map.
+  * Only add removable devices to device.map if using GRUB Legacy.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 12 Jan 2010 11:24:09 +0000
 
