@@ -584,8 +584,10 @@ fi
 # set the installation target to the disk that /boot resides on because we
 # cannot reliably determine the GRUB device name for a disk that was not the
 # boot device.
+cdsrc=$(mount | grep "on /cdrom " | cut -d' ' -f1)
 cdfs=$(mount | grep "on /cdrom " | cut -d' ' -f5)
-if [ -n "$cdfs" ] && [ "$cdfs" != "iso9660" ]; then
+if ([ "$cdsrc" = "$default_bootdev" ] || [ "$default_bootdev" = '(hd0)' ]) && \
+   [ -n "$cdfs" ] && [ "$cdfs" != "iso9660" ]; then
 	db_fget grub-installer/bootdev seen
 	if [ "$RET" != true ]; then
 		bootfs=$(findfs /boot)
