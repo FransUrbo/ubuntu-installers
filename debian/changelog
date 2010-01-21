@@ -1,4 +1,4 @@
-debian-installer (20081029ubuntu80) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu80) lucid; urgency=low
 
   * Move to 2.6.32-11 kernels. 
 
