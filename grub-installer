@@ -939,6 +939,9 @@ make_active_partition () {
 				| sed 's/^ *(.*)[[:space:]]*\(.*\)/\1/')"
 			bootpart="$(echo "$bootdev" | sed 's/.*,\([^)]*\).*/\1/')"
 			[ "$bootpart" != "$bootdev" ] || bootpart=
+			if [ "$bootpart" ]; then
+				bootpart="$(($bootpart + $partition_offset))"
+			fi
 			;;
 		[hf]d[0-9]*)
 			# The GRUB format with no parenthesis.
@@ -946,6 +949,9 @@ make_active_partition () {
 				| sed 's/^ *(.*)[[:space:]]*\(.*\)/\1/')"
 			bootpart="${bootdev#*,}"
 			[ "$bootpart" != "$bootdev" ] || bootpart=
+			if [ "$bootpart" ]; then
+				bootpart="$(($bootpart + $partition_offset))"
+			fi
 			;;
 	esac
 

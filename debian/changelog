@@ -1,3 +1,11 @@
+grub-installer (1.49ubuntu3) UNRELEASED; urgency=low
+
+  * Add $partition_offset to $bootpart when deciding which partition to make
+    active based on GRUB-style device names (found while testing fix for LP
+    #185878).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 22 Jan 2010 17:04:29 +0000
+
 grub-installer (1.49ubuntu2) lucid; urgency=low
 
   * Don't check for LVM when we've already worked out that we're installing
