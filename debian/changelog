@@ -1,9 +1,9 @@
-debian-installer (20081029ubuntu83) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu83) lucid; urgency=low
 
   * Move iMX51 images to 2.6.31-603 kernels.
   * Move Dove images to 2.6.32-200 kernels.
 
- -- Steve Kowalik <stevenk@ubuntu.com>  Mon, 01 Feb 2010 15:30:55 -0800
+ -- Steve Kowalik <stevenk@ubuntu.com>  Mon, 01 Feb 2010 15:36:00 -0800
 
 debian-installer (20081029ubuntu82) lucid; urgency=low
 
