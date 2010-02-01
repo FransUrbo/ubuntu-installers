@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu82) UNRELEASED; urgency=low
+
+  * Move to 2.6.32-12 kernels. 
+
+ -- Steve Kowalik <stevenk@ubuntu.com>  Mon, 01 Feb 2010 13:16:55 -0800
+
 debian-installer (20081029ubuntu81) lucid; urgency=low
 
   * No-change rebuild to pick up new components.
