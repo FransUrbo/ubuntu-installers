@@ -3,6 +3,13 @@ grub-installer (1.49ubuntu3) UNRELEASED; urgency=low
   * Add $partition_offset to $bootpart when deciding which partition to make
     active based on GRUB-style device names (found while testing fix for LP
     #185878).
+  * Use grub-probe to convert device names rather than relying on
+    device.map.
+  * Only add removable devices to device.map if using GRUB Legacy.
+  * Use an appropriate OS device name rather than (hd0) if possible.
+  * When installing from a non-CD medium, we only need to reset the default
+    boot device if we would otherwise end up installing GRUB to the
+    installation medium.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 22 Jan 2010 17:04:29 +0000
 
