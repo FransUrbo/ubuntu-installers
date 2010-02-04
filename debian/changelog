@@ -1,10 +1,10 @@
-grub-installer (1.49ubuntu4) UNRELEASED; urgency=low
+grub-installer (1.49ubuntu4) lucid; urgency=low
 
   * Preseed grub-pc/install_devices_empty while installing grub-pc, since we
     deliberately defer calling grub-install until a later point.  Thanks to
     Dustin Kirkland for debugging assistance.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 04 Feb 2010 12:23:41 -0800
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 04 Feb 2010 12:24:22 -0800
 
 grub-installer (1.49ubuntu3) lucid; urgency=low
 
