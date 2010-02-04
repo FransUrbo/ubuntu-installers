@@ -1,4 +1,4 @@
-grub-installer (1.49ubuntu3) UNRELEASED; urgency=low
+grub-installer (1.49ubuntu3) lucid; urgency=low
 
   * Add $partition_offset to $bootpart when deciding which partition to make
     active based on GRUB-style device names (found while testing fix for LP
@@ -13,7 +13,7 @@ grub-installer (1.49ubuntu3) UNRELEASED; urgency=low
   * Convert device names to by-id form before preseeding
     grub-pc/install_devices.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 22 Jan 2010 17:04:29 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 03 Feb 2010 17:08:02 -0800
 
 grub-installer (1.49ubuntu2) lucid; urgency=low
 
