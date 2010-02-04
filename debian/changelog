@@ -10,6 +10,8 @@ grub-installer (1.49ubuntu3) UNRELEASED; urgency=low
   * When installing from a non-CD medium, we only need to reset the default
     boot device if we would otherwise end up installing GRUB to the
     installation medium.
+  * Convert device names to by-id form before preseeding
+    grub-pc/install_devices.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 22 Jan 2010 17:04:29 +0000
 
