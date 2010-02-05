@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-06-15 21:26+0100\n"
+"POT-Creation-Date: 2010-02-05 15:45-0800\n"
 "PO-Revision-Date: 2009-07-06 18:38+0000\n"
 "Last-Translator: Jun Kobayashi <kobayashi+ubuntu@junkobayashi.jp>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -17,107 +17,210 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
+#. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
 msgstr "インストーラ起動ヘルプ画面"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:10
+msgid "<keycap>F1</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "${DISTRIBUTION_NAME}へようこそ！"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
+#, fuzzy
+#| msgid ""
+#| "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
-"This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+"This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "これは、${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} の インストール "
 "${MEDIA_TYPE} です。${BUILD_DATE} に作成されました。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
+#, fuzzy
+#| msgid ""
+#| "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
-"This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
+"This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
+"was built on ${BUILD_DATE}."
 msgstr ""
 "これは${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}のライブ${MEDIA_TYPE}です。"
 "${BUILD_DATE}に作成されました。"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
 msgstr "ヘルプインデックス"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
 msgid "KEY"
 msgstr "キー"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:30
 msgid "TOPIC"
 msgstr "トピック"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:33
+msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
 msgstr "ヘルプインデックス (このページ)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:38 help.xml:43
+msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
 msgstr "${DISTRIBUTION_NAME}をインストールするための必要条件"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
 msgstr "${DISTRIBUTION_NAME}を実行するための必要条件"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:48
+msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
+#, fuzzy
+#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
+msgid "Boot methods for special ways of using this system."
 msgstr "この${MEDIA_TYPE}で利用できるブートメソッド"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:53
+msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
 msgstr "付加的なブート方法(壊れたシステムのレスキュー)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:58
+msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
 msgstr "特別なブートパラメータの概要"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:63 help.xml:384
+msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
 msgstr "特殊なマシン向けの特別なブートパラメータ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:68 help.xml:389
+msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
 msgstr "特殊なディスクコントローラ向けの特別なブートパラメータ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:73 help.xml:78 help.xml:394 help.xml:399
+msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
 msgstr "インストールシステムのための特別なブートパラメータ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
 msgstr "ブートストラップシステムのための特別なブートパラメータ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:83
+msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
 msgstr "助けてもらうには"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:88
+msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
 msgid "Copyrights and warranties."
 msgstr "著作権と保証"
 
+#.  deliberately unindented 
+#. type: Content of: <reference><refentry><refsection><literallayout>
+#: help.xml:95
+#, no-wrap
+msgid ""
+"For F1-F19 type control and F then the digit 1-9\n"
+"For F10 type control and F then the digit 0\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr "詳細はF2からF10を押すか、${BOOTPROMPT}でENTERを押してください。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr "詳細はF2からF10を押してください。Escapeを押すとヘルプを閉じます。"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:111
+msgid "<keycap>F2</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
 msgstr "Ubuntuをインストールするための必要条件"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr "Ubuntuインストーラを使うには、少なくとも32メガバイトのRAMが必要です。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
@@ -132,7 +235,8 @@ msgstr ""
 "トールしたUbuntuシステムで行いたいことによっては、追加パッケージのインストー"
 "ルにさらなるディスク領域が必要になるでしょう。"
 
-#: help.xml:131 help.xml:742
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:131 help.xml:732
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -142,11 +246,13 @@ msgstr ""
 "ントは、Ubuntuウェブサイト <ulink url=\"http://www.ubuntu.com/\" /> にて利用"
 "できます。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr "Ubuntuライブシステムを使うには、384メガバイト以上のRAMが必要です。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
@@ -155,7 +261,8 @@ msgstr ""
 "ライブシステムはハードディスクに領域を必要としません。ただし、もしディスク上"
 "にLinux用のスワップパーティションがあれば使用されます。"
 
-#: help.xml:147 help.xml:748
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:147 help.xml:738
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -163,12 +270,14 @@ msgstr ""
 "より詳しい情報はFAQを参照してください。このドキュメントは、Ubuntuのウェブサイ"
 "ト(<ulink url=\"http://www.ubuntu.com/\" />)で参照できます。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
 msgstr "Ubuntuを選んでいただき、ありがとうございます！"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
-#: help.xml:524 help.xml:597 help.xml:697 help.xml:753 help.xml:809
+#: help.xml:524 help.xml:597 help.xml:687 help.xml:743 help.xml:799
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
@@ -178,62 +287,83 @@ msgstr ""
 "phrase><phrase class=\"serial\">CtrlとFを押して1</phrase>を押すか、"
 "${BOOTPROMPT} でENTERを押してください。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
-#: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
+#: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
 "ヘルプインデックスを表示するにはF1を押してください。Escapeを押すとヘルプを閉"
 "じます。"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:168
+msgid "<keycap>F3</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
 msgstr "ブートメソッド"
 
+#. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
 msgstr "利用可能なブートメソッド:"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
 msgstr "install"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
 msgstr "Ubuntuのインストール"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
+#, fuzzy
+#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
+msgid "Start the installation -- this is the default option."
 msgstr ""
 "インストールを開始 -- これは ${MEDIA_TYPE} のデフォルトのインストールです。"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
 msgstr "expert"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
 msgstr "最大限の設定の行える、エキスパートモードでインストールを開始します。"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
 msgstr "最小限のコマンドラインシステムをインストール"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
 msgstr "live"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
 msgstr "コンピュータに変更を加ないでUbuntuを使ってみる"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
@@ -242,26 +372,32 @@ msgstr ""
 "ライブシステムを起動します。起動後、デスクトップ上の「インストール」アイコン"
 "を使ってインストールすることもできます。"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
 msgstr "インストールの開始"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
 msgstr "memtest"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
 msgstr "メモリのテスト"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
 msgstr "メモリのテストを実行します。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
@@ -270,16 +406,19 @@ msgstr ""
 "これらのブートメソッドを使うには、以下のようにプロンプトで入力してください。"
 "他のブートパラメータを続けて入力することもできます。"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr "boot: install acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
 msgid ""
 "If unsure, you should use the default boot method, with no special "
@@ -288,12 +427,14 @@ msgstr ""
 "よく分からなければ、ブートパラメータを入力せず、ブートプロンプトでEnterだけを"
 "押してデフォルトのブートメソッドを用いてください。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -306,43 +447,65 @@ msgstr ""
 "と、起動パラメータを編集できます。さらにもう一度F6を押すと、よく使われる起動"
 "パラメータをメニューから選択できます。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:280 help.xml:326
+msgid "<keycap>F4</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "レスキューモード"
 
+#. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr "インストールされたシステムを復旧するブートメソッドの利用"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
 msgstr "rescue"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
 msgstr "壊れたシステムの復旧"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
 msgstr "レスキューモードで起動します。"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
+#, fuzzy
+#| msgid ""
+#| "There is no dedicated rescue mode on this CD. However, since the entire "
+#| "system runs from the CD, it is possible to use the command-line and/or "
+#| "graphical tools provided to rescue a broken system, and to use a web "
+#| "browser to search for help. Extensive advice is available online for most "
+#| "kinds of problems that might cause your normal system to fail to boot "
+#| "correctly."
 msgid ""
-"There is no dedicated rescue mode on this CD. However, since the entire "
-"system runs from the CD, it is possible to use the command-line and/or "
-"graphical tools provided to rescue a broken system, and to use a web browser "
-"to search for help. Extensive advice is available online for most kinds of "
-"problems that might cause your normal system to fail to boot correctly."
+"There is no dedicated rescue mode on this disc. However, since the disc "
+"provides a complete user environment, it is possible to use the command-line "
+"and/or graphical tools provided to rescue a broken system, and to use a web "
+"browser to search for help. Extensive advice is available online for most "
+"kinds of problems that might cause your normal system to fail to boot "
+"correctly."
 msgstr ""
 "このCDにはレスキュー専用モードは搭載されていません。しかし、CDから完全なシス"
 "テムが起動するので、コマンドラインやグラフィカルツールを使って壊れたシステム"
@@ -350,10 +513,17 @@ msgstr ""
 "す。あなたのシステムが起動に失敗する原因となっているかもしれない、さまざまな"
 "種類の問題についての広範囲に渡るアドバイスが、オンラインで利用可能です。"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:355
+msgid "<keycap>F5</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "特別なブートパラメータ - 概要"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
@@ -362,6 +532,7 @@ msgstr ""
 "ごく一部のシステムでは、正常に起動するために<literal>boot:</literal>プロンプ"
 "トにパラメータを記入する必要があります。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
@@ -370,6 +541,7 @@ msgstr ""
 "ごく一部のシステムでは、正常に起動するためにF6を押してパラメータを記入する必"
 "要があります。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
@@ -378,28 +550,34 @@ msgstr ""
 "たとえば、Linuxがハードウェアを自動認識できない場合、その場所や種類を明確に記"
 "入することが必要になる場合があります。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
 "利用可能なブートパラメータについての詳しい情報を参照するには、以下のキーを押"
 "して下さい。"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
 msgstr "特殊なマシン向けのブートパラメータ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
 msgstr "さまざまなディスクコントローラのためのブートパラメータ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
 msgstr "インストールシステムによって使われるブートパラメータ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
 msgstr "ブートストラップシステムによって使われるブートパラメータ"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
@@ -412,6 +590,7 @@ msgstr ""
 "モジュールがロードされるときにパラメータを入力するためには、エキスパートモー"
 "ドで起動してください(<link linkend=\"F3\"><keycap>F3</keycap></link>参照)。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
@@ -420,10 +599,17 @@ msgstr ""
 "多くのカーネルモジュールはブートストラップシステムによって動的にロードされま"
 "す。コマンドラインでそれらのモジュールにパラメータを与えることはできません。"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:429
+msgid "<keycap>F6</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "特別なブートパラメータ - さまざまなハードウェア"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
@@ -433,6 +619,7 @@ msgstr ""
 "以下のパラメータを、起動方法と組み合わせて<literal>boot:</literal> プロンプト"
 "で使うことができます(<link linkend=\"F3\"><keycap>F3</keycap></link>参照)。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
@@ -441,22 +628,27 @@ msgstr ""
 "F6を押して、各起動方法に以下の起動パラメータを組み合わせることができます"
 "(<link linkend=\"F3\"><keycap>F3</keycap></link>参照)。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr "16進数で入力する場合は、0xを前につける必要があります(0x300のように)。"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
 msgstr "ハードウェア"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
 msgstr "入力するパラメータ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1 or ValuePoint (IDE disk)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
@@ -465,18 +657,22 @@ msgstr ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
 msgstr "一部のIBM ThinkPad"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
 msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
 msgid "Protect I/O port regions"
 msgstr "I/Oポート範囲の保護"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:466
 msgid ""
 "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
@@ -487,89 +683,115 @@ msgstr ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
 msgstr "表示に問題があるラップトップ："
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
 msgstr "9600ボーでシリアルポート1を使用"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
 msgstr "強制的に標準IDEドライバを使う"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
 msgstr ""
 
-#: help.xml:516 help.xml:589 help.xml:689
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
 msgstr "例："
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:536
+msgid "<keycap>F7</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "特別なブートパラメータ - さまざまなディスクドライブ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:560
 msgid ""
 "<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
@@ -584,10 +806,12 @@ msgstr ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:565
 msgid ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
@@ -600,32 +824,39 @@ msgstr ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
 msgstr "BusLogic SCSI Hosts"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
 msgid "Certain DELL machines"
 msgstr "一部のDELL製マシン"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:585
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
@@ -634,152 +865,181 @@ msgstr ""
 "このリストは完全ではありません。詳しくはカーネルに付属のkernel-parameters.txt"
 "を参照してください。"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:609
+msgid "<keycap>F8</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "特別なブートパラメータ - インストールシステム"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
 msgstr ""
 "これらのパラメータは、インストールシステムがどのように動作するかをコントロー"
 "ルします。"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
 msgstr ""
 "これらのパラメータは、ブートストラップシステムがどのように動作するかをコント"
 "ロールします。"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
 msgid "RESULT"
 msgstr "効果"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:633
 msgid "PARAMETER"
 msgstr "パラメータ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
-msgid "Verbose debugging"
-msgstr "詳細なデバッグ出力"
-
-#: help.xml:637
-msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#: help.xml:641
-msgid "Debug boot sequence"
-msgstr "ブートシーケンスのデバッグ"
-
-#: help.xml:642
-msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
-
-#: help.xml:646
 msgid "Disable framebuffer"
 msgstr "フレームバッファの無効化"
 
-#: help.xml:647
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:637
 msgid "<userinput>fb=false</userinput>"
 msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:651
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:641
 msgid "Don't start PCMCIA"
 msgstr "PCMCIAを開始しない"
 
-#: help.xml:652
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:642
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:656
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:646
 msgid "Force static network config"
 msgstr "DHCPクライアント機能を無効化"
 
-#: help.xml:657
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:647
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:661
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:651
 msgid "Set keyboard map"
 msgstr "キーボードマップを設定"
 
-#: help.xml:662
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:652
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:666
-msgid "Use Braille tty"
-msgstr "点字端末を使う"
-
-#: help.xml:667
-msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
-msgstr ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
-
-#: help.xml:671
-msgid "Use high contrast accessibility theme"
-msgstr "ハイコントラスト・アクセシビリティ・テーマを使う"
-
-#: help.xml:672
-msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>theme=dark</userinput>"
-
-#: help.xml:676
-msgid "Use special tasks"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:656
+msgid "Select the Kubuntu desktop"
 msgstr ""
 
-#: help.xml:677
-msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr ""
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:657
+#, fuzzy
+#| msgid "<userinput>bootkbd=es</userinput>"
+msgid "<userinput>tasks=kubuntu-desktop</userinput>"
+msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:682
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr "PCIマップにACPIを使用しない (一部のHPサーバやVIAベースのマシンに有用)"
 
-#: help.xml:685
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:665
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:692
-#, no-wrap
-msgid "boot: install pci=noacpi"
-msgstr "boot: install pci=noacpi"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:669
+#, fuzzy
+#| msgid "Use high contrast accessibility theme"
+msgid "Use high contrast theme"
+msgstr "ハイコントラスト・アクセシビリティ・テーマを使う"
 
-#: help.xml:693
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:670
+msgid "<userinput>theme=dark</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:674
+msgid "Use Braille tty"
+msgstr "点字端末を使う"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:675
+msgid ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
+#: help.xml:682
+#, fuzzy, no-wrap
+#| msgid "boot: install acpi=off"
+msgid "boot: install fb=false"
+msgstr "boot: install acpi=off"
+
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
+#: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr "boot: live pci=noacpi"
 
-#: help.xml:710
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:699
+msgid "<keycap>F9</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: help.xml:700
 msgid "GETTING HELP"
 msgstr "助けてもらうには"
 
-#: help.xml:717
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "もしUbuntuがインストールできなくても、がっかりしないでください！"
 
-#: help.xml:720
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "もしUbuntuが起動しなくても、がっかりしないでください！"
 
-#: help.xml:723
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Ubuntuチームがあなたを手助けします！"
 
-#: help.xml:726
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:716
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -788,7 +1048,8 @@ msgstr ""
 "なら、通常それらの問題は<emphasis>一人だけ</emphasis>に起こるものではないから"
 "です。"
 
-#: help.xml:731
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:721
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -796,7 +1057,8 @@ msgstr ""
 "私たちは、起動時に起きた問題についてお聞きしたいと思っています。なぜなら、通"
 "常それらの問題は<emphasis>一人だけ</emphasis>に起こるものではないからです。"
 
-#: help.xml:735
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:725
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -808,11 +1070,18 @@ msgstr ""
 "ます。そうすれば、次に同じ問題に出くわしたユーザは、あなたのおかげですぐに解"
 "決方法を知ることができます。"
 
-#: help.xml:766
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:755
+msgid "<keycap>F10</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "著作権と保証"
 
-#: help.xml:773
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:763
 msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
@@ -820,11 +1089,13 @@ msgstr ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 
-#: help.xml:778
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:768
 msgid "The Ubuntu system is freely redistributable."
 msgstr "Ubuntuシステムは自由に再配布することができます。"
 
-#: help.xml:781
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:771
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -834,7 +1105,8 @@ msgstr ""
 "<replaceable>packagename</replaceable>/copyright ファイルで読むことができま"
 "す。"
 
-#: help.xml:786
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:776
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -844,7 +1116,8 @@ msgstr ""
 "<replaceable>packagename</replaceable>/copyright ファイルで読むことができま"
 "す。"
 
-#: help.xml:792
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:782
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
@@ -852,7 +1125,8 @@ msgstr ""
 "Ubuntuは、適用法の範囲内において<emphasis>全くの無保証で</emphasis>提供されま"
 "す。"
 
-#: help.xml:797
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:787
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
@@ -861,10 +1135,26 @@ msgstr ""
 "このインストールシステムはDebianがベースになっています。詳細とDebianプロジェ"
 "クトについては、<ulink url=\"http://www.debian.org/\" /> を参照してください。"
 
-#: help.xml:803
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:793
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
 "このシステムはDebianがベースになっています。詳細とDebianプロジェクトについて"
 "は、<ulink url=\"http://www.debian.org/\" /> を参照してください。"
+
+#~ msgid "Verbose debugging"
+#~ msgstr "詳細なデバッグ出力"
+
+#~ msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
+#~ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
+
+#~ msgid "Debug boot sequence"
+#~ msgstr "ブートシーケンスのデバッグ"
+
+#~ msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
+#~ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
+
+#~ msgid "boot: install pci=noacpi"
+#~ msgstr "boot: install pci=noacpi"

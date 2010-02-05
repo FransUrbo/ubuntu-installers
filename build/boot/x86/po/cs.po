@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-06-15 21:26+0100\n"
+"POT-Creation-Date: 2010-02-05 15:45-0800\n"
 "PO-Revision-Date: 2009-07-06 18:38+0000\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <provoz@debian.cz>\n"
@@ -16,103 +16,198 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
+#. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
 msgstr "Obrazovka nápovědy"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:10
+msgid "<keycap>F1</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "Vítejte v ${DISTRIBUTION_NAME}!"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
 msgid ""
-"This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+"This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
 msgid ""
-"This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
+"This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
+"was built on ${BUILD_DATE}."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
 msgstr "Obsah nápovědy"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
 msgid "KEY"
 msgstr "KLÍČ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:30
 msgid "TOPIC"
 msgstr "TÉMA"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:33
+msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
 msgstr "Tato stránka, obsah nápovědy."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:38 help.xml:43
+msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
 msgstr "Předpoklady pro instalaci ${DISTRIBUTION_NAME}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
 msgstr "Předpoklady pro spuštění ${DISTRIBUTION_NAME}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:48
+msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
+#, fuzzy
+#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
+msgid "Boot methods for special ways of using this system."
 msgstr "Zaváděcí metody pro speciální využití tohoto ${MEDIA_TYPE}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:53
+msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
 msgstr "Doplňkové metody zavádění; záchrana a poškozený systém."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:58
+msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
 msgstr "Speciální parametry zavádění, přehled"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:63 help.xml:384
+msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
 msgstr "Speciální parametry zavádění pro speciální stroje."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:68 help.xml:389
+msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
 msgstr "Speciální parametry zavádění pro vybrané řadiče disků."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:73 help.xml:78 help.xml:394 help.xml:399
+msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
 msgstr "Speciální parametry zavádění pro instalaci systému."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
 msgstr "Speciální bootovací parametry pro zavaděč."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:83
+msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
 msgstr "Jak získat nápovědu."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:88
+msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
 msgid "Copyrights and warranties."
 msgstr "Autorská práva a záruky."
 
+#.  deliberately unindented 
+#. type: Content of: <reference><refentry><refsection><literallayout>
+#: help.xml:95
+#, no-wrap
+msgid ""
+"For F1-F19 type control and F then the digit 1-9\n"
+"For F10 type control and F then the digit 0\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr "Stiskni F2 až F10 pro detaily nebo ENTER pro ${BOOTPROMPT}"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr "Stiskni F2 až F10 pro detaily nebo Esc pro ukončení nápovědy."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:111
+msgid "<keycap>F2</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
 msgstr "PŘEDPOKLADY PRO INSTALACI UBUNTU"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr "Musíte mít minimálně 32 MB RAM pro použití tohoto Ubuntu instalátoru."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
@@ -126,7 +221,8 @@ msgstr ""
 "instalaci. Budete potřebovat další místo pro instalaci dalších balíčků, v "
 "závislosti na tom, co chcece dělat s novým systémem Ubuntu."
 
-#: help.xml:131 help.xml:742
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:131 help.xml:732
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -136,11 +232,13 @@ msgstr ""
 "jsou k dispozici na oficiálních stránkách Ubuntu, <ulink url=\"http://www."
 "ubuntu.com/\" />"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr "Musíte mít minimálně 384 MB RAM na používání Ubuntu live systému."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
@@ -149,7 +247,8 @@ msgstr ""
 "Live systém nevyžaduje žádné místo na vašem pevném disku. Nicméně pokud na "
 "něm existuje odkládací linuxový oddíl, tak bude použit."
 
-#: help.xml:147 help.xml:748
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:147 help.xml:738
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -157,12 +256,14 @@ msgstr ""
 "Přečtěte si FAQ pro více informací; tento dokument je k dispozici na "
 "oficiálních stránkách Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
 msgstr "Děkujeme, že jste si vybrali Ubuntu!"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
-#: help.xml:524 help.xml:597 help.xml:697 help.xml:753 help.xml:809
+#: help.xml:524 help.xml:597 help.xml:687 help.xml:743 help.xml:799
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
@@ -172,85 +273,112 @@ msgstr ""
 "\">control a F potom 1</phrase> pro rejstřík nápovědy, nebo ENTER k "
 "${BOOTPROMPT}"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
-#: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
+#: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr "Stiskněte F1 pro rejstřík nápovědy, nebo Escape pro ukončení."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:168
+msgid "<keycap>F3</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
 msgstr "METODY ZAVÁDĚNÍ"
 
+#. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
 msgstr "Dostupně metody zavádění:"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
 msgstr "install"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
+#, fuzzy
+#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
+msgid "Start the installation -- this is the default option."
 msgstr "Spustit instalaci -- toto je výchozí ${MEDIA_TYPE} instalace."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
 msgstr "expert"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
 msgstr "Spustit instalaci v expertním režimu pro maximální kontrolu."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
 msgstr "Minimalistická instalace systému z příkazové řádky."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
 msgstr "live"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
 msgstr "memtest"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
 msgstr "Provede kontrolu paměti."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
@@ -259,16 +387,19 @@ msgstr ""
 "Pro zavedení systému jedním z těchto způsobů jej vložte na vstup, případně "
 "následován zaváděcím parametrem. Například:"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
 msgid ""
 "If unsure, you should use the default boot method, with no special "
@@ -277,12 +408,14 @@ msgstr ""
 "Pokud si nejste jisti, měli byste jednoduše použít výchozí zaváděcí metodu "
 "bez speciálních parametrů stisknutím enter na bootovací řádce."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -291,44 +424,66 @@ msgid ""
 "used boot parameters."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:280 help.xml:326
+msgid "<keycap>F4</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "OPRAVUJI POŠKOZENÝ SYSTÉM"
 
+#. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
 "Použijte jednu z těchto zaváděcích metod pro záchranu existující instalace"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
 msgstr "zachránit"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
 msgstr "Zavést zachranný režim"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
+#, fuzzy
+#| msgid ""
+#| "There is no dedicated rescue mode on this CD. However, since the entire "
+#| "system runs from the CD, it is possible to use the command-line and/or "
+#| "graphical tools provided to rescue a broken system, and to use a web "
+#| "browser to search for help. Extensive advice is available online for most "
+#| "kinds of problems that might cause your normal system to fail to boot "
+#| "correctly."
 msgid ""
-"There is no dedicated rescue mode on this CD. However, since the entire "
-"system runs from the CD, it is possible to use the command-line and/or "
-"graphical tools provided to rescue a broken system, and to use a web browser "
-"to search for help. Extensive advice is available online for most kinds of "
-"problems that might cause your normal system to fail to boot correctly."
+"There is no dedicated rescue mode on this disc. However, since the disc "
+"provides a complete user environment, it is possible to use the command-line "
+"and/or graphical tools provided to rescue a broken system, and to use a web "
+"browser to search for help. Extensive advice is available online for most "
+"kinds of problems that might cause your normal system to fail to boot "
+"correctly."
 msgstr ""
 "Na tomto CD není žádný vyhrazený záchranný režim. Jelikož celý systém běží z "
 "CD, je možné použít textové a/nebo grafické nástroje poskytující záchranu "
@@ -336,48 +491,63 @@ msgstr ""
 "množství rad pro většinu problémů, které mohou způsobit, že se váš systém "
 "nespustí správně, je dostupné online."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:355
+msgid "<keycap>F5</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "SPECIÁLNÍ ZAVÁDĚCÍ PARAMETRY - PŘEHLED"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr "Pro více informací o dostupných zaváděcích parametrech stiskněte:"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
 msgstr "zaváděcí parametry pro speciální zařízení"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
 msgstr "zaváděcí parametry pro různé diskové řadiče"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
 msgstr "zaváděcí parametry, kterým rozumí instalátor"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
@@ -390,6 +560,7 @@ msgstr ""
 "parametrů modulů při jejich načítání zaveďte systém v expertním režimu (viz "
 "<link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
@@ -398,10 +569,17 @@ msgstr ""
 "Mnoho jaderných modulů je načteno dynamicky při instalaci zavaděčem systému "
 "a parametry pro tyto moduly nemohou být zadány skrze příkazovou řádku."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:429
+msgid "<keycap>F6</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "SPECIÁLNÍ ZAVÁDĚCÍ PARAMETRY - RŮZNÝ HARDWARE"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
@@ -409,28 +587,34 @@ msgid ""
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
 msgstr "HARDWARE"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
 msgstr "PARAMETR K URČENÍ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1 nebo ValuePoint (IDE disk)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
@@ -439,18 +623,22 @@ msgstr ""
 "<userinput>hd=<replaceable>cylindrů</replaceable>,<replaceable>hlav</"
 "replaceable>,<replaceable>sektorů</replaceable></userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
 msgstr "Některé IBM ThinkPads"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
 msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
 msgid "Protect I/O port regions"
 msgstr "Chráněné oblasti portů I/O"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:466
 msgid ""
 "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
@@ -458,89 +646,115 @@ msgid ""
 "replaceable></userinput></optional>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
 msgstr "Použít první sériový port při 9600 baudech"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
 msgstr "Vynutit užití obecného IDE ovladače."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
 msgstr ""
 
-#: help.xml:516 help.xml:589 help.xml:689
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
 msgstr "Například:"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:536
+msgid "<keycap>F7</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "SPECIÁLNÍ ZAVÁDĚCÍ PARAMETRY - RŮZNÉ DISKOVÉ JEDNOTKY"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:560
 msgid ""
 "<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
@@ -555,10 +769,12 @@ msgstr ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:565
 msgid ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
@@ -567,32 +783,39 @@ msgid ""
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
 "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (zapnut pokud nenulový)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
 msgid "Certain DELL machines"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:585
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
@@ -601,160 +824,190 @@ msgstr ""
 "Tento seznam je neúplný, pro více informací zhlédněte soubor kernel-"
 "parameters.txt."
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:609
+msgid "<keycap>F8</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "SPECIÁLNÍ ZAVÁDĚCÍ PARAMETRY - INSTALAČNÍ SYSTÉM"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
 msgstr "Tyto parametry určují, jak bude instalační program pracovat."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
 msgstr "Tyto parametry určují, jak bude zavaděč pracovat."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
 msgid "RESULT"
 msgstr "VÝSLEDEK"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:633
 msgid "PARAMETER"
 msgstr "PARAMETR"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
-msgid "Verbose debugging"
-msgstr "Upovídané ladění"
-
-#: help.xml:637
-msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#: help.xml:641
-msgid "Debug boot sequence"
-msgstr "Ladící zaváděcí sekvence"
-
-#: help.xml:642
-msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
-
-#: help.xml:646
 msgid "Disable framebuffer"
 msgstr "Zablokovat framebuffer"
 
-#: help.xml:647
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:637
 msgid "<userinput>fb=false</userinput>"
 msgstr ""
 
-#: help.xml:651
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:641
 msgid "Don't start PCMCIA"
 msgstr ""
 
-#: help.xml:652
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:642
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr ""
 
-#: help.xml:656
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:646
 msgid "Force static network config"
 msgstr "Vynutit statické nastavení sítě"
 
-#: help.xml:657
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:647
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr ""
 
-#: help.xml:661
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:651
 msgid "Set keyboard map"
 msgstr ""
 
-#: help.xml:662
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:652
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr ""
 
-#: help.xml:666
-msgid "Use Braille tty"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:656
+msgid "Select the Kubuntu desktop"
 msgstr ""
 
-#: help.xml:667
-msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
-msgstr ""
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:657
+#, fuzzy
+#| msgid "<userinput>noapic nolapic</userinput>"
+msgid "<userinput>tasks=kubuntu-desktop</userinput>"
+msgstr "<userinput>noapic nolapic</userinput>"
 
-#: help.xml:671
-msgid "Use high contrast accessibility theme"
-msgstr "Použít vysoce kontrastní motiv"
-
-#: help.xml:672
-msgid "<userinput>theme=dark</userinput>"
-msgstr ""
-
-#: help.xml:676
-msgid "Use special tasks"
-msgstr ""
-
-#: help.xml:677
-msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr ""
-
-#: help.xml:682
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 "Zakázat ACPI pro PCI sběrnice (vhodné pro některé servery HP a zařízení "
 "založené na Via)"
 
-#: help.xml:685
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:665
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr ""
 
-#: help.xml:692
-#, no-wrap
-msgid "boot: install pci=noacpi"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:669
+#, fuzzy
+#| msgid "Use high contrast accessibility theme"
+msgid "Use high contrast theme"
+msgstr "Použít vysoce kontrastní motiv"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:670
+msgid "<userinput>theme=dark</userinput>"
 msgstr ""
 
-#: help.xml:693
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:674
+msgid "Use Braille tty"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:675
+msgid ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
+#: help.xml:682
+#, no-wrap
+msgid "boot: install fb=false"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
+#: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr ""
 
-#: help.xml:710
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:699
+msgid "<keycap>F9</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: help.xml:700
 msgid "GETTING HELP"
 msgstr ""
 
-#: help.xml:717
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr ""
 
-#: help.xml:720
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr ""
 
-#: help.xml:723
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Ubuntu tým je připraven vám pomoci!"
 
-#: help.xml:726
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:716
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
 
-#: help.xml:731
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:721
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
 
-#: help.xml:735
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:725
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -765,21 +1018,30 @@ msgstr ""
 "jej rádi nalezli a pracovali s vámi na tom, aby další uživatel, který stane "
 "před tímtéž problémem, mohl využít vaše zkušenosti!"
 
-#: help.xml:766
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:755
+msgid "<keycap>F10</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr ""
 
-#: help.xml:773
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:763
 msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
 
-#: help.xml:778
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:768
 msgid "The Ubuntu system is freely redistributable."
 msgstr ""
 
-#: help.xml:781
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:771
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -788,7 +1050,8 @@ msgstr ""
 "Po nainstalování jsou přesné distribuční podmínky každého balíku k nalezení "
 "v souboru /usr/share/doc/<replaceable>jméno_balíku</replaceable>/copyright."
 
-#: help.xml:786
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:776
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -797,13 +1060,15 @@ msgstr ""
 "Po spuštění jsou přesné distribuční podmínky každého balíku k nalezení v "
 "souboru /usr/share/doc/<replaceable>jméno_balíku</replaceable>/copyright."
 
-#: help.xml:792
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:782
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
 
-#: help.xml:797
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:787
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
@@ -812,10 +1077,23 @@ msgstr ""
 "Tento instalační systém je založen na Debian instalátoru. Navštivte <ulink "
 "url=\"http://www.debian.org/\" /> pro více detailů o projektu Debian."
 
-#: help.xml:803
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:793
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
 "Tento systém je založen na Debianu. Navštivte <ulink url=\"http://www.debian."
 "org/\" /> pro více detailů o projektu Debian."
+
+#~ msgid "Verbose debugging"
+#~ msgstr "Upovídané ladění"
+
+#~ msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
+#~ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
+
+#~ msgid "Debug boot sequence"
+#~ msgstr "Ladící zaváděcí sekvence"
+
+#~ msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
+#~ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"

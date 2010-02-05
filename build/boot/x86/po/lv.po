@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-06-15 21:26+0100\n"
+"POT-Creation-Date: 2010-02-05 15:45-0800\n"
 "PO-Revision-Date: 2009-07-06 18:37+0000\n"
 "Last-Translator: Pēteris Krišjānis <pecisk@gmail.com>\n"
 "Language-Team: Latvian <lv@li.org>\n"
@@ -17,105 +17,207 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
+#. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
 msgstr "Instalatora palaišanas palīdzības ekrāni"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:10
+msgid "<keycap>F1</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "Esiet sveicināti ${DISTRIBUTION_NAME}!"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
+#, fuzzy
+#| msgid ""
+#| "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
-"This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+"This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Šī ir ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ${MEDIA_TYPE} tipa "
 "instalācija. Tā ir veidota ${BUILD_DATE}."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
+#, fuzzy
+#| msgid ""
+#| "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
-"This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
+"This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
+"was built on ${BUILD_DATE}."
 msgstr ""
 "Šī ir ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ${MEDIA_TYPE} tipa \"dzīvā"
 "\" sistēma. Tā ir veidota ${BUILD_DATE}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
 msgstr "PALĪDZĪBAS INDEKSS"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
 msgid "KEY"
 msgstr "ATSL."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:30
 msgid "TOPIC"
 msgstr "TĒMA"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:33
+msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
 msgstr "Šī lapa, palīdzības indekss."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:38 help.xml:43
+msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
 msgstr "Prasības, lai uzstādītu ${DISTRIBUTION_NAME}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
 msgstr "Prasības, lai palaistu ${DISTRIBUTION_NAME}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:48
+msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
+#, fuzzy
+#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
+msgid "Boot methods for special ways of using this system."
 msgstr "Palaišanas metodes, lai izmantotu šo ${MEDIA_TYPE} sevišķos veidos."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:53
+msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
 msgstr "Papildus palaišanas metodes; bojātas sistēmas darbības atjaunošana."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:58
+msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
 msgstr "Speciālie palaišanas parametri, pārskats."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:63 help.xml:384
+msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
 msgstr "Speciālie palaišanas parametri speciālām mašīnām."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:68 help.xml:389
+msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
 msgstr "Speciālie palaišanas parametri izvēlētiem disku kontrolieriem."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:73 help.xml:78 help.xml:394 help.xml:399
+msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
 msgstr "Speciālie palaišanas parametri instalācijas sistēmai."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
 msgstr "Speciālie palaišanas parametri palaišanas programmas sistēmai."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:83
+msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
 msgstr "Kā sameklēt palīdzību."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:88
+msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
 msgid "Copyrights and warranties."
 msgstr "Autortiesības un garantijas."
 
+#.  deliberately unindented 
+#. type: Content of: <reference><refentry><refsection><literallayout>
+#: help.xml:95
+#, no-wrap
+msgid ""
+"For F1-F19 type control and F then the digit 1-9\n"
+"For F10 type control and F then the digit 0\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
 "Spiediet no F2 līdz F10, lai uzzinātu sīkāk, vai arī ENTER, lai ${BOOTPROMPT}"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
 "Spiediet no F2 līdz F10, lai uzzinātu sīkāk, vai arī Escape, lai izietu no "
 "palīdzības."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:111
+msgid "<keycap>F2</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
 msgstr "Prasības Ubuntu instalēšanai"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
@@ -123,6 +225,7 @@ msgstr ""
 "Jūsu datoram ir jābūt vismaz 32 megabaiti operatīvās atmiņas, lai izmantotu "
 "Ubuntu instalatoru."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
@@ -137,7 +240,8 @@ msgstr ""
 "diska vietas, lai uzinstalētu papildus pakotnes; to apjoms atkarīgs no tā, "
 "ko jūs vēlēsieties darīt ar jauno Ubuntu sistēmu."
 
-#: help.xml:131 help.xml:742
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:131 help.xml:732
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -147,6 +251,7 @@ msgstr ""
 "saņemtu vairāk informācijas; abi dokumenti ir pieejami Ubuntu tīmekļa "
 "vietnē. <ulink url=\"http://www.ubuntu.com/\" />"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
@@ -154,6 +259,7 @@ msgstr ""
 "Jums jābūt vismaz 384 megabaitiem operatīvās atmiņas, lai izmantotu Ubuntu "
 "\"dzīvo\" sistēmu."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
@@ -163,7 +269,8 @@ msgstr ""
 "diska. Taču uz diska esošie Linux maiņvietas sējumi tiks izmantoti, ja tās "
 "būs pieejami."
 
-#: help.xml:147 help.xml:748
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:147 help.xml:738
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -172,12 +279,14 @@ msgstr ""
 "dokuments ir pieejams Ubuntu tīmekļa vietnē. <ulink url=\"http://www.ubuntu."
 "com/\" />"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
 msgstr "Paldies, ka izvēlējāties Ubuntu!"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
-#: help.xml:524 help.xml:597 help.xml:697 help.xml:753 help.xml:809
+#: help.xml:524 help.xml:597 help.xml:687 help.xml:743 help.xml:799
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
@@ -187,61 +296,82 @@ msgstr ""
 "\">control un F, un tad 1</phrase>, lai saņemtu palīdzības indeksu, vai "
 "ENTER lai ${BOOTPROMPT}"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
-#: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
+#: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
 "Spiediet F1, lai saņemtu palīdzības indeksu, vai Escape, lai izietu no "
 "palīdzības."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:168
+msgid "<keycap>F3</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
 msgstr "PALAIŠANAS METODES"
 
+#. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
 msgstr "Pieejamās palaišanas metodes:"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
 msgstr "instalēt"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
 msgstr "Instalēt Ubuntu"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
+#, fuzzy
+#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
+msgid "Start the installation -- this is the default option."
 msgstr "Sākt instalēšanu - šī ir noklusētā ${MEDIA_TYPE} instalēšana."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
 msgstr "expert"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
 msgstr "Sākt instalāciju eksperta režīmā, maksimālai kontrolei."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
 msgstr "cli"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
 msgstr "cli-expert"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
 msgstr "Minimāla komandrindas sistēmas instalācija."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
 msgstr "live"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
 msgstr "Pamēģiniet Ubuntu bez jebkādām izmaiņam jūsu datorā"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
@@ -250,26 +380,32 @@ msgstr ""
 "Startēt \"dzīvo\" sistēmu. Ja jūs vēlaties, jūs to varat uzinstalēt vēlāk "
 "izmantojot \"Instalēt\" ikonu uz darbvirsmas."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
 msgstr "live-install"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
 msgstr "Sākt instalēšanu"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
 msgstr "memtest"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
 msgstr "Pārbaudīt atmiņu"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
 msgstr "Izpildīt operatīvās atmiņas testu."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
@@ -278,16 +414,19 @@ msgstr ""
 "Lai izpildītu vienu no šīm palaišanas metodēm, ievadiet to komandrindā, ja "
 "nepieciešams, papildiniet ar jebkādiem palaišanas parametriem. Piemēram:"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr "boot: install acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
 msgid ""
 "If unsure, you should use the default boot method, with no special "
@@ -297,6 +436,7 @@ msgstr ""
 "metodi, bez speciālajiem parametriem, vienkārši nospiežot Enter pie "
 "palaišanas ievades."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
@@ -305,6 +445,7 @@ msgstr ""
 "(\"Ubuntu\" var tikt aizvietots ar citu saistītu operētājsistēmu "
 "nosaukumiem. Šis palīdzības teksts ir vispārējs.)"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -318,44 +459,66 @@ msgstr ""
 "Spiediet F6 vēlreiz, lai izvēlētos no bieži lietoto palaišanas parametru "
 "izvēlnes."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:280 help.xml:326
+msgid "<keycap>F4</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "Bojātas sistēmas atjaunošana"
 
+#. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
 "Izmantojiet vienu no šīm palaišanas metodēm, lai atjaunotu esošo instalāciju"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
 msgstr "rescue"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
 msgstr "Atjaunot bojātu sistēmu"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
 msgstr "Palaist atjaunošanas režīmu."
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
+#, fuzzy
+#| msgid ""
+#| "There is no dedicated rescue mode on this CD. However, since the entire "
+#| "system runs from the CD, it is possible to use the command-line and/or "
+#| "graphical tools provided to rescue a broken system, and to use a web "
+#| "browser to search for help. Extensive advice is available online for most "
+#| "kinds of problems that might cause your normal system to fail to boot "
+#| "correctly."
 msgid ""
-"There is no dedicated rescue mode on this CD. However, since the entire "
-"system runs from the CD, it is possible to use the command-line and/or "
-"graphical tools provided to rescue a broken system, and to use a web browser "
-"to search for help. Extensive advice is available online for most kinds of "
-"problems that might cause your normal system to fail to boot correctly."
+"There is no dedicated rescue mode on this disc. However, since the disc "
+"provides a complete user environment, it is possible to use the command-line "
+"and/or graphical tools provided to rescue a broken system, and to use a web "
+"browser to search for help. Extensive advice is available online for most "
+"kinds of problems that might cause your normal system to fail to boot "
+"correctly."
 msgstr ""
 "Šajā CD nav paredzēta speciāla atjaunošanas režīma. Taču, tā kā visa sistēma "
 "tiek izpildīta no CD, jums ir iespējams izmantot komandrindu un/vai "
@@ -364,10 +527,17 @@ msgstr ""
 "lielāko daļu problēmu, kas varētu radīt problēmas jūsu sistēmu palaist "
 "korekti."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:355
+msgid "<keycap>F5</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "SPECIĀLIE PALAIŠANAS PARAMETRI - PĀRSKATS"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
@@ -376,6 +546,7 @@ msgstr ""
 "Dažās sistēmās jums iespējams vajag norādīt parametru <literal>boot:</"
 "literal> uzvednē, lai palaistu sistēmu."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
@@ -384,6 +555,7 @@ msgstr ""
 "Dažās sistēmās jums iespējams vajag norādīt parametru spiežot F6, lai "
 "palaistu sistēmu."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
@@ -393,28 +565,34 @@ msgstr ""
 "varētu būt nepieciešams speciāli norādīt tās atrašanās vietu vai tipu, lai "
 "tā tiktu atpazīta."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
 "Lai saņemtu vairāk informācijas par palaišanas parametriem, kurus jūs varat "
 "izmantot, spiediet:"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
 msgstr "palaišanas parametri speciālām mašīnām"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
 msgstr "palaišanas parametri dažādiem disku kontrolieriem"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
 msgstr "palaišanas parametri, kurus saprot uzstādīšanas sistēma"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
 msgstr "palaišanas parametri, kurus saprot sāknēšanas programmas sistēma"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
@@ -427,6 +605,7 @@ msgstr ""
 "tiek ielādēti, palaidiet sistēmu eksperta (expert) režīmā (skatiet <link "
 "linkend=\"F3\"><keycap>F3</keycap></link>)."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
@@ -435,10 +614,17 @@ msgstr ""
 "Palaišanas programmas sistēma daudzus kodola moduļus ielādē dinamiski, un šo "
 "moduļu parametri nevar tikt doti komandrindā."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:429
+msgid "<keycap>F6</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "SPECIĀLIE PALAIŠANAS PARAMETRI - DAŽĀDA APARATŪRA"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
@@ -449,6 +635,7 @@ msgstr ""
 "uzvednē kombinācijā ar palaišanas metodi (skat. <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
@@ -457,24 +644,29 @@ msgstr ""
 "Jūs varat izmantot sekojošus palaišanas parametrus spiežot F6 kombinācijā ar "
 "palaišanas metodi (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
 "Ja jūs izmantojiet heksadecimālskaitļus, jums sākumā jāpievieno 0x (piem. "
 "0x300)."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
 msgstr "APARATŪRA"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
 msgstr "NORĀDĀMIE PARAMETRI"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1 vai ValuePoint (IDE disks)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
@@ -483,18 +675,22 @@ msgstr ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
 msgstr "Daži IBM ThinkPad tipa laptopi"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
 msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
 msgid "Protect I/O port regions"
 msgstr "Aizsargāt I/O (izejas/ieejas) portu reģionus"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:466
 msgid ""
 "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
@@ -505,89 +701,115 @@ msgstr ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
 msgstr "Klēpjdatori ar ekrānu attēlošanas problēmām"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
 msgstr "Izmantot pirmo seriālo portu ar 9600 bodiem"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
 msgstr "Forsēta vispārējā IDE draivera izmantošana"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
 msgstr ""
 
-#: help.xml:516 help.xml:589 help.xml:689
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
 msgstr "Piemēram:"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:536
+msgid "<keycap>F7</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "SPECIĀLIE PALAIŠANAS PARAMETRI - DAŽĀDI DISKDZIŅI"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:560
 msgid ""
 "<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
@@ -602,10 +824,12 @@ msgstr ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:565
 msgid ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
@@ -618,33 +842,40 @@ msgstr ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
 "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (aktivizēts, ja nav nulle)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
 msgstr "BusLogic SCSI hosti"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
 msgid "Certain DELL machines"
 msgstr "Konkrētas DELL mašīnas"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:585
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
@@ -653,150 +884,179 @@ msgstr ""
 "Šis saraksts nav pilnīgs. Lasiet kernel-parameters.txt failu, lai uzzinātu "
 "vairāk."
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:609
+msgid "<keycap>F8</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "SPECIĀLIE PALAIŠANAS PARAMETRI - UZSTĀDĪŠANAS SISTĒMA"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
 msgstr "Šie parametri kontrolē, kā darbojas instalators"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
 msgstr "Šie parametri kontrolē, kā darbojas palaišanas programmas sistēma."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
 msgid "RESULT"
 msgstr "REZULTĀTS"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:633
 msgid "PARAMETER"
 msgstr "PARAMETRS"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
-msgid "Verbose debugging"
-msgstr "Atkļūdošana ar paplašinātu izvadi"
-
-#: help.xml:637
-msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#: help.xml:641
-msgid "Debug boot sequence"
-msgstr "Izsekot palaišanas secībai"
-
-#: help.xml:642
-msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
-
-#: help.xml:646
 msgid "Disable framebuffer"
 msgstr "Izslēgt kadru buferi"
 
-#: help.xml:647
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:637
 msgid "<userinput>fb=false</userinput>"
 msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:651
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:641
 msgid "Don't start PCMCIA"
 msgstr "Nestartēt PCMCIA sistēmu"
 
-#: help.xml:652
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:642
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:656
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:646
 msgid "Force static network config"
 msgstr "Forsēt statisku tīkla konfigurāciju"
 
-#: help.xml:657
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:647
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:661
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:651
 msgid "Set keyboard map"
 msgstr "Uzstādīt tastūras karti"
 
-#: help.xml:662
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:652
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:666
-msgid "Use Braille tty"
-msgstr "Lietot Braila izvadi uz tty"
-
-#: help.xml:667
-msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
-msgstr ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
-
-#: help.xml:671
-msgid "Use high contrast accessibility theme"
-msgstr "Izmantot liela kontrasta pieejamības tēmu"
-
-#: help.xml:672
-msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>theme=dark</userinput>"
-
-#: help.xml:676
-msgid "Use special tasks"
-msgstr "Izmantot speciālus uzdevumus"
-
-#: help.xml:677
-msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:656
+msgid "Select the Kubuntu desktop"
 msgstr ""
 
-#: help.xml:682
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:657
+#, fuzzy
+#| msgid "<userinput>bootkbd=es</userinput>"
+msgid "<userinput>tasks=kubuntu-desktop</userinput>"
+msgstr "<userinput>bootkbd=es</userinput>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 "Izslēgt ACPI sistēmu PCI kartēm (noderīgi dažiem HP serveriem un Via bāzētām "
 "mašīnām)"
 
-#: help.xml:685
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:665
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:692
-#, no-wrap
-msgid "boot: install pci=noacpi"
-msgstr "boot: install pci=noacpi"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:669
+#, fuzzy
+#| msgid "Use high contrast accessibility theme"
+msgid "Use high contrast theme"
+msgstr "Izmantot liela kontrasta pieejamības tēmu"
 
-#: help.xml:693
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:670
+msgid "<userinput>theme=dark</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:674
+msgid "Use Braille tty"
+msgstr "Lietot Braila izvadi uz tty"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:675
+msgid ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
+#: help.xml:682
+#, fuzzy, no-wrap
+#| msgid "boot: install acpi=off"
+msgid "boot: install fb=false"
+msgstr "boot: install acpi=off"
+
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
+#: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr "boot: live pci=noacpi"
 
-#: help.xml:710
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:699
+msgid "<keycap>F9</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: help.xml:700
 msgid "GETTING HELP"
 msgstr "SAMEKLĒT PALĪDZĪBU"
 
-#: help.xml:717
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "Ja jūs nevarat uzstādīt Ubuntu, nekrītiet panikā!"
 
-#: help.xml:720
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "Ja jūs nevarat palaist Ubuntu, nekrītiet panikā!"
 
-#: help.xml:723
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Ubuntu komanda ir gatava jums palīdzēt!"
 
-#: help.xml:726
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:716
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -804,7 +1064,8 @@ msgstr ""
 "Mēs esam īpaši ieinteresēti dzirdēt par instalēšanas problēmām, tāpēc ka "
 "parasti tās nepiemeklē tikai <emphasis>vienu</emphasis> personu."
 
-#: help.xml:731
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:721
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -812,7 +1073,8 @@ msgstr ""
 "Mēs esam īpaši ieinteresēti dzirdēt par startēšanas problēmām, tāpēc ka "
 "parasti tās nepiemeklē tikai <emphasis>vienu</emphasis> personu."
 
-#: help.xml:735
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:725
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -824,11 +1086,18 @@ msgstr ""
 "jums pie tās, lai to atrisinātu; lai nākošais lietotājs, kurš saskarsies ar "
 "tādu pašu problēmu, varētu iegūt risinājumu no jūsu pieredzes."
 
-#: help.xml:766
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:755
+msgid "<keycap>F10</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "AUTORTIESĪBAS UN GARANTIJAS"
 
-#: help.xml:773
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:763
 msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
@@ -836,11 +1105,13 @@ msgstr ""
 "Ubuntu autortiesības (C) 2004.-2010. gads, Cannonical Ltd. Tas iekļauj arī "
 "daudzu citu autoru un atbalstītāju darbu."
 
-#: help.xml:778
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:768
 msgid "The Ubuntu system is freely redistributable."
 msgstr "Ubuntu sistēma ir brīvi izplatāma."
 
-#: help.xml:781
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:771
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -850,7 +1121,8 @@ msgstr ""
 "attiecīgajā pakotnes failā /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 
-#: help.xml:786
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:776
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -860,7 +1132,8 @@ msgstr ""
 "attiecīgajā pakotnes failā /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 
-#: help.xml:792
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:782
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
@@ -868,7 +1141,8 @@ msgstr ""
 "Par Ubuntu programmatūru netiek dotas <emphasis>NEKĀDAS GARANTIJAS</"
 "emphasis> līdz likumā pieļaujamām robežām."
 
-#: help.xml:797
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:787
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
@@ -878,10 +1152,29 @@ msgstr ""
 "url=\"http://www.debian.org/\" />, lai iegūtu plašāku informāciju par Debian "
 "projektu."
 
-#: help.xml:803
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:793
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
 "Šī sistēma ir bāzēta uz Debian distribūcijas. Skatieties <ulink url=\"http://"
 "www.debian.org/\" />, lai iegūtu plašāku informāciju par Debian projektu."
+
+#~ msgid "Verbose debugging"
+#~ msgstr "Atkļūdošana ar paplašinātu izvadi"
+
+#~ msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
+#~ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
+
+#~ msgid "Debug boot sequence"
+#~ msgstr "Izsekot palaišanas secībai"
+
+#~ msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
+#~ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
+
+#~ msgid "Use special tasks"
+#~ msgstr "Izmantot speciālus uzdevumus"
+
+#~ msgid "boot: install pci=noacpi"
+#~ msgstr "boot: install pci=noacpi"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-06-15 21:26+0100\n"
+"POT-Creation-Date: 2010-02-05 15:45-0800\n"
 "PO-Revision-Date: 2009-10-14 21:23+0000\n"
 "Last-Translator: Hoàng Minh Thông <chantroikhatvong@gmail.com>\n"
 "Language-Team: Vietnamese <vi@li.org>\n"
@@ -17,108 +17,211 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
+#. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
 msgstr "Màn hình trợ giúp khởi động bộ cài đặt"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:10
+msgid "<keycap>F1</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "Chào mừng bạn đến với ${DISTRIBUTION_NAME}!"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
+#, fuzzy
+#| msgid ""
+#| "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
-"This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+"This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Đây là bản cài đặt ${MEDIA_TYPE} cho ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. Được tạo ra ngày ${BUILD_DATE}."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
+#, fuzzy
+#| msgid ""
+#| "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
-"This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
+"This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
+"was built on ${BUILD_DATE}."
 msgstr ""
 "Đây là bản sử dụng trực tiếp từ đĩa ${MEDIA_TYPE} cho ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. Được tạo ra ngày ${BUILD_DATE}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
 msgstr "CHỈ MỤC TRỢ GIÚP"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
 msgid "KEY"
 msgstr "KHÓA"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:30
 msgid "TOPIC"
 msgstr "CHỦ ĐỀ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:33
+msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
 msgstr "Chỉ mục trợ giúp tại trang này."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:38 help.xml:43
+msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
 msgstr "Điều kiện để cài đặt ${DISTRIBUTION_NAME}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
 msgstr "Điều kiện để chạy ${DISTRIBUTION_NAME}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:48
+msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
+#, fuzzy
+#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
+msgid "Boot methods for special ways of using this system."
 msgstr "Phương thức khởi động đặc biệt sử dụng cho ${MEDIA_TYPE}"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:53
+msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
 msgstr "Phương thức khởi động bổ sung; khôi phục hệ thống bị lỗi."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:58
+msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
 msgstr "Tổng quan về các tham số khởi động đặc biệt."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:63 help.xml:384
+msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
 msgstr "Các tham số khởi động đặc biệt."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:68 help.xml:389
+msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
 msgstr "Các tham số khởi động đặc biệt cho các trình điều khiển đĩa được chọn."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:73 help.xml:78 help.xml:394 help.xml:399
+msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
 msgstr "Các tham số khởi động đặc biệt cho hệ thống cài đặt."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
 msgstr "Các tham biến khởi động đặc biệt cho hệ thống khởi động kiểu bootstrap"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:83
+msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
 msgstr "Làm thế nào để nhận được sự trợ giúp"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:88
+msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
 msgid "Copyrights and warranties."
 msgstr "Có bản quyền và được đảm bảo về luật pháp"
 
+#.  deliberately unindented 
+#. type: Content of: <reference><refentry><refsection><literallayout>
+#: help.xml:95
+#, no-wrap
+msgid ""
+"For F1-F19 type control and F then the digit 1-9\n"
+"For F10 type control and F then the digit 0\n"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr "Nhấn F2 tới F10 để biết chi tiết, hoặc nhấn ENTER để ${BOOTPROMPT}"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr "Nhấn F2 tới F10 để biết chi tiết, hoặc nhấn Escape để thoát trợ giúp."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:111
+msgid "<keycap>F2</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
 msgstr "CÁC ĐIỀU KIỆN ĐỂ CÀI ĐẶT UBUNTU"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
 "Bạn cần có ít nhất 32 megabytes Ram để sử dụng chương trình cài đặt Ubuntu"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
@@ -133,7 +236,8 @@ msgstr ""
 "trống để cài đặt các gói bổ sung, phụ thuộc vào nhu cầu bạn cần trên hệ "
 "thống Ubuntu mới."
 
-#: help.xml:131 help.xml:742
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:131 help.xml:732
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -143,6 +247,7 @@ msgstr ""
 "thông tin; những tài liệu trên đều có sẵn trên trang web của Ubuntu, <ulink "
 "url=\"http://www.ubuntu.com/\" />"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
@@ -150,6 +255,7 @@ msgstr ""
 "Bạn phải có ít nhất 384 MB RAM để sử dụng hệ thống Ubuntu trực tiếp trên đĩa "
 "này."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
@@ -159,7 +265,8 @@ msgstr ""
 "cứng của bạn. Tuy vậy, phân vùng swap của Linux có sẵn trên đĩa cứng sẽ được "
 "sử dụng nếu có."
 
-#: help.xml:147 help.xml:748
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:147 help.xml:738
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -167,72 +274,95 @@ msgstr ""
 "Xem danh sách các câu hỏi thường gặp để biết thêm thông tin; tài liệu này có "
 "sẵn trên trang web của Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
 msgstr "Cám ơn bạn đã chọn Ubuntu!"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
-#: help.xml:524 help.xml:597 help.xml:697 help.xml:753 help.xml:809
+#: help.xml:524 help.xml:597 help.xml:687 help.xml:743 help.xml:799
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
-#: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
+#: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr ""
 "Nhấn phím F1 để xem chỉ mục của trợ giúp, hoặc Escape để đóng trợ giúp."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:168
+msgid "<keycap>F3</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
 msgstr "CÁC PHƯƠNG THỨC KHỞI ĐỘNG"
 
+#. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
 msgstr "Các phương thức khởi động sẵn có"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
 msgstr "cài đặt"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
 msgstr "Cài đặt Ubuntu"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
+#, fuzzy
+#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
+msgid "Start the installation -- this is the default option."
 msgstr "Bắt đầu cài đặt -- đây là cài đặt ${MEDIA_TYPE} mặc định."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
 msgstr "nâng cao"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
 msgstr "Khởi động cài đặt nâng cao, với nhiều tùy biến."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
 msgstr "giao diện dòng lệnh"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
 msgstr "giao diện dòng lệnh nâng cao"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
 msgstr "Cài đặt hệ thống tối thiểu chỉ gồm giao diện dòng lệnh."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
 msgstr "chạy trực tiếp"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
 msgstr "Dùng thử Ubuntu mà không thay đổi máy của bạn"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
@@ -241,26 +371,32 @@ msgstr ""
 "Chạy trực tiếp trên đĩa. Bạn vẫn có thể cài đặt sau này bằng biểu tượng "
 "\"Cài đặt\" trên màn hình nền."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
 msgstr "Cài đặt trực tiếp từ đĩa"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
 msgstr "Khởi động quá trình cài đặt."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
 msgstr "Kiểm tra bộ nhớ RAM"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
 msgstr "Kiểm tra bộ nhớ RAM"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
 msgstr "Thực hiện kiểm tra bộ nhớ RAM."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
@@ -269,16 +405,19 @@ msgstr ""
 "Để sử dụng một trong các phương thức khởi động sau, gõ nó ở dòng lệnh, theo "
 "sau có thể là các tham số khởi động. Ví dụ như:"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr "boot: install acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
 msgid ""
 "If unsure, you should use the default boot method, with no special "
@@ -287,6 +426,7 @@ msgstr ""
 "Nếu không chắc chắn, bạn hãy sử dụng chế độ khởi động mặc định, không dùng "
 "các tham số đặc biệt, bằng cách nhấn phím Enter tại dấu nhắc khởi động."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
@@ -295,6 +435,7 @@ msgstr ""
 "(\"Ubuntu\" có thể được thay thế bởi tên các hệ điều hành liên quan khác. "
 "Đây là hướng dẫn chung.)"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -307,6 +448,7 @@ msgstr ""
 "để thay đổi các tham số khởi động. Nhấn F6 một lần nữa để chọn các tham số "
 "thường dùng từ một trình đơn."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
@@ -314,48 +456,76 @@ msgstr ""
 "Mọi thông báo trong quá trình sẽ không được hiển thị trừ khi trong chế độ "
 "cài đặt cao cấp."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:280 help.xml:326
+msgid "<keycap>F4</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "SỬA CHỮA HỆ THỐNG BỊ LỖI"
 
+#. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr "Khởi động theo các cách trên để sửa chữa hệ thống bị hỏng"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
 msgstr "sửa chữa"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
 msgstr "Sửa chữa hệ thống bị hỏng"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
 msgstr "Khởi động vào chế độ cứu hộ."
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
+#, fuzzy
+#| msgid ""
+#| "There is no dedicated rescue mode on this CD. However, since the entire "
+#| "system runs from the CD, it is possible to use the command-line and/or "
+#| "graphical tools provided to rescue a broken system, and to use a web "
+#| "browser to search for help. Extensive advice is available online for most "
+#| "kinds of problems that might cause your normal system to fail to boot "
+#| "correctly."
 msgid ""
-"There is no dedicated rescue mode on this CD. However, since the entire "
-"system runs from the CD, it is possible to use the command-line and/or "
-"graphical tools provided to rescue a broken system, and to use a web browser "
-"to search for help. Extensive advice is available online for most kinds of "
-"problems that might cause your normal system to fail to boot correctly."
+"There is no dedicated rescue mode on this disc. However, since the disc "
+"provides a complete user environment, it is possible to use the command-line "
+"and/or graphical tools provided to rescue a broken system, and to use a web "
+"browser to search for help. Extensive advice is available online for most "
+"kinds of problems that might cause your normal system to fail to boot "
+"correctly."
 msgstr ""
 "Đĩa CD này không được thiết kế chuyên để sửa lỗi. Tuy nhiên, vì cả hệ thống "
 "chạy trực tiếp trên đĩa CD nên bạn có thể sử dụng các lệnh, các công cụ đồ "
 "họa để sửa chữa hệ thống bị hỏng, có thể dùng trình duyệt Internet tìm kiếm "
 "thông tin và trợ giúp về các lỗi xảy ra với hệ thống cũ."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:355
+msgid "<keycap>F5</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "TỔNG QUAN VỀ CÁC THAM SỐ KHỞI ĐỘNG ĐẶC BIỆT"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
@@ -364,6 +534,7 @@ msgstr ""
 "Trong vài trường hợp bạn cần nhập thêm các tham số tại dấu nhắc "
 "<literal>boot:</literal> để khởi động hệ thống."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
@@ -372,6 +543,7 @@ msgstr ""
 "Trong vài trường hợp, để khởi động được hệ thống bạn cần lựa chọn các tham "
 "số bằng cách nhần phím F6."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
@@ -380,27 +552,33 @@ msgstr ""
 "Thí dụ, Linux có thể không tự phát hiện được phần cứng của bạn, và có thể "
 "bạn chỉ định cụ thể đường dẫn hoặc loại thiết bị để nó có thể được nhận diện."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
 "Để có thểm thông tin về các tham số khởi động bạn có thể sử dụng, hãy bấm:"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
 msgstr "các tham số khởi động cho các máy tính đặc biệt"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
 msgstr "các tham số khởi động cho các bộ điều khiển đĩa"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
 msgstr "Những tham số khởi động của trình cài đặt."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
 msgstr "Những tham số khởi động của hệ thống mồi."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
@@ -413,6 +591,7 @@ msgstr ""
 "truyền tham số cho chúng trong quá trình nạp, hãy khởi động trong chế độ cao "
 "cấp (xem <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
@@ -421,10 +600,17 @@ msgstr ""
 "Có nhiều các mô đun nhân hệ thống được nạp động bởi hệ thống mồi khởi động, "
 "và tham số cho các mô đun này không thể nhập thông qua dòng lệnh"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:429
+msgid "<keycap>F6</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "CÁC THAM SỐ KHỞI ĐỘNG ĐẶC BIỆT DÀNH RIÊNG CHO MỘT SỐ PHẦN CỨNG"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
@@ -435,6 +621,7 @@ msgstr ""
 "literal>, kết hợp với kiểu khởi động (xem thêm <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
@@ -444,24 +631,29 @@ msgstr ""
 "cùng kiểu khởi động (xem thêm <link linkend=\"F3\"><keycap>F3</keycap></"
 "link>)."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
 "Nếu muốn sử dụng các số hệ thập lục phân bạn phải thêm vào tiền tố 0x (ví dụ "
 "0x300)."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
 msgstr "PHẦN CỨNG"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
 msgstr "CÁC THAM SỐ CẦN CHỈ ĐỊNH"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "Chuẩn IBM PS/1 hoặc ValueaPoint (đĩa cứng chuẩn IDE)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
@@ -470,18 +662,22 @@ msgstr ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
 msgstr "Một số máy IBM ThinkPads"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
 msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
 msgid "Protect I/O port regions"
 msgstr "Bảo vệ các vùng truy xuất vào ra"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:466
 msgid ""
 "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
@@ -492,91 +688,117 @@ msgstr ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
 msgstr "Một số máy xách tay có vấn đề với màn hình"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
 msgstr "Sử dụng cổng nối tiếp với tốc độ 9600 baud"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
 msgstr ""
 "Cưỡng chế sử dụng trình điều khiển IDE chung (không dùng loại dành riêng cho "
 "phần cứng hiện tại)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
 msgstr "Copy text   \t <userinput>generic.all_generic_ide=1</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr "Những cách giải quyết (tạm thời) cho các sự cố phần cứng hay treo:"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr "tắt chế độ định hướng ngắt APIC (hay gặp lỗi)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr "tắt ACPI (một phần)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 msgstr "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr "tắt việc sử dụng cổng USB"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
 msgstr "<userinput>nousb</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr "truy cấn liên tục cho các ngắt"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
 msgstr "<userinput>irqpoll</userinput>"
 
-#: help.xml:516 help.xml:589 help.xml:689
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
 msgstr "Ví dụ:"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:536
+msgid "<keycap>F7</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "CÁC THAM SỐ KHỞI ĐỘNG ĐẶC BIỆT - MỘT SỐ TRÌNH ĐIỀU KHIỂN ĐĨA CỨNG"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:560
 msgid ""
 "<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
@@ -591,10 +813,12 @@ msgstr ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:565
 msgid ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
@@ -607,34 +831,41 @@ msgstr ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
 "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (được kích hoạt nếu như khác "
 "không)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
 msgstr "Mạch chủ SCSI của hãng BusLogic"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
 msgid "Certain DELL machines"
 msgstr "Một số máy tính của DELL"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:585
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
@@ -643,150 +874,179 @@ msgstr ""
 "Danh sách này chưa đầy đủ, xin xem thêm tập tin kernel-parameters.txt để có "
 "thêm các tham số khác."
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:609
+msgid "<keycap>F8</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "CÁC THAM SỐ KHỞI ĐỘNG ĐẶC BIỆT - TRÌNH CÀI ĐẶT"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
 msgstr "Các tham số này giúp điều chỉnh chương trình cài đặt."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
 msgstr "Các tham số sau điều chỉnh cách hoạt động của hệ thống mồi khởi động."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
 msgid "RESULT"
 msgstr "KẾT QUẢ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:633
 msgid "PARAMETER"
 msgstr "THAM SỐ"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
-msgid "Verbose debugging"
-msgstr "Hiển thị đầy đủ thông tin dò lỗi"
-
-#: help.xml:637
-msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#: help.xml:641
-msgid "Debug boot sequence"
-msgstr "Dò lỗi trong quá trình khởi động"
-
-#: help.xml:642
-msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
-
-#: help.xml:646
 msgid "Disable framebuffer"
 msgstr "Tắt bộ đệm hình ảnh"
 
-#: help.xml:647
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:637
 msgid "<userinput>fb=false</userinput>"
 msgstr "<userinput>fb=false</userinput>"
 
-#: help.xml:651
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:641
 msgid "Don't start PCMCIA"
 msgstr "Không khởi động hệ thống PCMCIA"
 
-#: help.xml:652
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:642
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:656
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:646
 msgid "Force static network config"
 msgstr "Sử dụng các thông số tĩnh cho thiết lập mạng (thay vì sử dụng DHCP)"
 
-#: help.xml:657
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:647
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:661
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:651
 msgid "Set keyboard map"
 msgstr "Đặt mã bàn phím"
 
-#: help.xml:662
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:652
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:666
-msgid "Use Braille tty"
-msgstr "Sử dụng nhập liệu Braille (dành cho người khiếm thị)"
-
-#: help.xml:667
-msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:656
+msgid "Select the Kubuntu desktop"
 msgstr ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
-#: help.xml:671
-msgid "Use high contrast accessibility theme"
-msgstr "Sử dụng giao diện có độ tương phản cao (giúp dễ đọc)"
-
-#: help.xml:672
-msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>theme=dark</userinput>"
-
-#: help.xml:676
-msgid "Use special tasks"
-msgstr "Sử dụng các tác vụ đặc biệt"
-
-#: help.xml:677
-msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:657
+#, fuzzy
+#| msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
+msgid "<userinput>tasks=kubuntu-desktop</userinput>"
 msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 
-#: help.xml:682
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 "Tắt ACPI cho ánh xạ PCI (dùng cho một số máy chủ của HP hay các máy tính "
 "dùng chip của VIA)"
 
-#: help.xml:685
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:665
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:692
-#, no-wrap
-msgid "boot: install pci=noacpi"
-msgstr "boot: install pci=noacpi"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:669
+#, fuzzy
+#| msgid "Use high contrast accessibility theme"
+msgid "Use high contrast theme"
+msgstr "Sử dụng giao diện có độ tương phản cao (giúp dễ đọc)"
 
-#: help.xml:693
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:670
+msgid "<userinput>theme=dark</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:674
+msgid "Use Braille tty"
+msgstr "Sử dụng nhập liệu Braille (dành cho người khiếm thị)"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:675
+msgid ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
+#: help.xml:682
+#, fuzzy, no-wrap
+#| msgid "boot: install acpi=off"
+msgid "boot: install fb=false"
+msgstr "boot: install acpi=off"
+
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
+#: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr "boot: live pci=noacpi"
 
-#: help.xml:710
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:699
+msgid "<keycap>F9</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: help.xml:700
 msgid "GETTING HELP"
 msgstr "TÌM THÊM TRỢ GIÚP"
 
-#: help.xml:717
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "Đừng thất vọng nếu như bạn chưa thể cài đặt Ubuntu!"
 
-#: help.xml:720
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "Nếu như bạn không thể khởi động Ubuntu, hãy đừng thất vọng!"
 
-#: help.xml:723
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
 msgstr "Nhóm trợ giúp Ubuntu luôn sẵn sàng giúp đỡ bạn!"
 
-#: help.xml:726
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:716
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -794,7 +1054,8 @@ msgstr ""
 "Chúng tôi đặc biệt quan tâm tới các vấn đề liên quan tới cài đặt, vì nói "
 "chung đây không chỉ xảy ra với <emphasis>riêng một ai cả</emphasis>."
 
-#: help.xml:731
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:721
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -803,7 +1064,8 @@ msgstr ""
 "bởi vì nói chung chúng không chỉ xảy ra với chỉ <emphasis>một</emphasis> "
 "người."
 
-#: help.xml:735
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:725
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -815,11 +1077,18 @@ msgstr ""
 "quyết vấn đề với bạn, nhờ đó người dùng tiếp theo gặp phải cùng sự cố này sẽ "
 "được hưởng lợi từ kinh nghiệm của bạn!"
 
-#: help.xml:766
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:755
+msgid "<keycap>F10</keycap>"
+msgstr ""
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "BẢN QUYỀN VÀ BẢO ĐẢM"
 
-#: help.xml:773
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:763
 msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
@@ -827,11 +1096,13 @@ msgstr ""
 "Ubuntu thuộc Bản quyền (C) 2004-2010 của Canonical Ltd., và tập hợp công "
 "trình của nhiều tác giả nguyên bản và người đóng góp."
 
-#: help.xml:778
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:768
 msgid "The Ubuntu system is freely redistributable."
 msgstr ""
 
-#: help.xml:781
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:771
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -841,7 +1112,8 @@ msgstr ""
 "mô tả trong tâp tin bản quyền /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright tương ứng."
 
-#: help.xml:786
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:776
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -851,7 +1123,8 @@ msgstr ""
 "ghi trong các tập tin tương ứng nằm trong /usr/share/doc/"
 "<replaceable>TênGói</replaceable>/copyright."
 
-#: help.xml:792
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:782
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
@@ -859,7 +1132,8 @@ msgstr ""
 "Ubuntu <emphasis>KHÔNG ĐI KÈM VỚI BẤT KÌ BẢO ĐẢM NÀO</emphasis> trong giới "
 "hạn cho phép của luật pháp hiện hành."
 
-#: help.xml:797
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:787
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
@@ -869,10 +1143,29 @@ msgstr ""
 "\"http://www.debian.org/\" /> để biết thêm chi tiết và thông tin về dự án "
 "Debian."
 
-#: help.xml:803
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:793
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
 "Hệ thống này được dựa trên Debian. Xem thêm <ulink url=\"http://www.debian."
 "org/\" /> để biết thêm chi tiết và thông tin về dự án Debian."
+
+#~ msgid "Verbose debugging"
+#~ msgstr "Hiển thị đầy đủ thông tin dò lỗi"
+
+#~ msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
+#~ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
+
+#~ msgid "Debug boot sequence"
+#~ msgstr "Dò lỗi trong quá trình khởi động"
+
+#~ msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
+#~ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
+
+#~ msgid "Use special tasks"
+#~ msgstr "Sử dụng các tác vụ đặc biệt"
+
+#~ msgid "boot: install pci=noacpi"
+#~ msgstr "boot: install pci=noacpi"

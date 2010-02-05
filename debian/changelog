@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu84) UNRELEASED; urgency=low
+
+  * Update help translation files (LP: #508385, #508387, #508389).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 05 Feb 2010 15:46:10 -0800
+
 debian-installer (20081029ubuntu83) lucid; urgency=low
 
   * Move iMX51 images to 2.6.31-603 kernels.
