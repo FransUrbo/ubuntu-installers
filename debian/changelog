@@ -1,6 +1,12 @@
 debian-installer (20081029ubuntu84) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Update help translation files (LP: #508385, #508387, #508389).
+
+  [ Luke Yelavich ]
+  * Slightly increase the netboot initrd for powerpc to allow d-i to build on
+    powerpc. The only platforms we support are chrp and macs, which shouldn't
+    have a problem with the increased initrd image size.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 05 Feb 2010 15:46:10 -0800
 
