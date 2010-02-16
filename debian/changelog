@@ -8,7 +8,10 @@ debian-installer (20081029ubuntu84) UNRELEASED; urgency=low
     powerpc. The only platforms we support are chrp and macs, which shouldn't
     have a problem with the increased initrd image size.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 05 Feb 2010 15:46:10 -0800
+  [ Steve Kowalik ]
+  * Move to 2.6.32-13 kernels. 
+
+ -- Steve Kowalik <stevenk@ubuntu.com>  Tue, 16 Feb 2010 15:05:38 +1100
 
 debian-installer (20081029ubuntu83) lucid; urgency=low
 
