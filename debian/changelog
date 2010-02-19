@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu86) UNRELEASED; urgency=low
+
+  * Bump kernel version to 2.6.32-14 for images built against udebs from the
+    linux source.
+
+ -- Loïc Minier <loic.minier@ubuntu.com>  Fri, 19 Feb 2010 18:46:49 +0100
+
 debian-installer (20081029ubuntu85) lucid; urgency=low
 
   * Move iMX51 images to 2.6.31-604 kernels.
