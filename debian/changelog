@@ -1,9 +1,10 @@
 grub-installer (1.49ubuntu5) lucid; urgency=low
 
+  [ Joel Ebel ]
   * Add missing $serial to get proper detection of serial console options
     working.
 
- -- Joel Ebel <jbebel@google.com>  Fri, 19 Feb 2010 11:55:29 -0800
+ -- Evan Dandrea <evand@ubuntu.com>  Fri, 19 Feb 2010 17:41:03 -0500
 
 grub-installer (1.49ubuntu4) lucid; urgency=low
 
