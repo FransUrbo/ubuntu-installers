@@ -1,3 +1,10 @@
+grub-installer (1.49ubuntu5) lucid; urgency=low
+
+  * Add missing $serial to get proper detection of serial console options
+    working.
+
+ -- Joel Ebel <jbebel@google.com>  Fri, 19 Feb 2010 11:55:29 -0800
+
 grub-installer (1.49ubuntu4) lucid; urgency=low
 
   * Preseed grub-pc/install_devices_empty while installing grub-pc, since we
