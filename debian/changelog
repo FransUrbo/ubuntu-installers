@@ -6,6 +6,7 @@ debian-installer (20081029ubuntu86) UNRELEASED; urgency=low
   * build/config/armel.cfg: enable versatile.
   * build/config/armel/versatile.cfg: versatile kernel udebs don't use
     versioned filenames anymore.
+  * build/config/armel/imx51.cfg: fix typo in comment.
 
  -- Loïc Minier <loic.minier@ubuntu.com>  Fri, 19 Feb 2010 18:46:49 +0100
 
