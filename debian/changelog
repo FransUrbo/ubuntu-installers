@@ -3,6 +3,9 @@ debian-installer (20081029ubuntu86) UNRELEASED; urgency=low
   * Bump kernel version to 2.6.32-14 for images built against udebs from the
     linux source, and to 2.6.32-201 for images built against udebs from the
     linux-mvl-dove source.
+  * build/config/armel.cfg: enable versatile.
+  * build/config/armel/versatile.cfg: versatile kernel udebs don't use
+    versioned filenames anymore.
 
  -- Loïc Minier <loic.minier@ubuntu.com>  Fri, 19 Feb 2010 18:46:49 +0100
 
