@@ -1,10 +1,11 @@
-debian-installer (20081029ubuntu88) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu88) lucid; urgency=low
 
+  [ Colin Watson ]
   * Stop build-depending on apex-nslu2 on armel, since we no longer build
     ixp4xx images (LP: #503093).
   * Add SHA1SUMS and SHA256SUMS files (see LP #431790).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 23 Feb 2010 02:19:51 +0000
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 23 Feb 2010 14:40:53 -0800
 
 debian-installer (20081029ubuntu87) lucid; urgency=low
 
