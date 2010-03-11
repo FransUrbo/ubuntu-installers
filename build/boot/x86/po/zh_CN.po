@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2009-10-15 06:51+0000\n"
-"Last-Translator: Aron Xu <happyaron.xu@gmail.com>\n"
+"PO-Revision-Date: 2010-03-05 04:30+0000\n"
+"Last-Translator: Aron Xu <Unknown>\n"
 "Language-Team: Chinese (China) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
+"X-Launchpad-Export-Date: 2010-03-11 20:16+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -25,38 +25,26 @@ msgstr "安装程序帮助画面"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
 msgid "<keycap>F1</keycap>"
-msgstr ""
+msgstr "<keycap>F1</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "欢迎使用${DISTRIBUTION_NAME}!"
+msgstr "欢迎使用 ${DISTRIBUTION_NAME}!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
-#, fuzzy
-#| msgid ""
-#| "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"这是采用 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的 ${MEDIA_TYPE} 方式安"
-"装，构建于 ${BUILD_DATE}。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
-#, fuzzy
-#| msgid ""
-#| "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"这是采用 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的 Live${MEDIA_TYPE} 方"
-"式来安装，构建于 ${BUILD_DATE}。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -76,7 +64,7 @@ msgstr "主题"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
 msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
@@ -86,7 +74,7 @@ msgstr "本页，帮助目录."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
 msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
@@ -101,19 +89,17 @@ msgstr "运行 ${DISTRIBUTION_NAME} 的必需条件。"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
 msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-#, fuzzy
-#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
 msgid "Boot methods for special ways of using this system."
-msgstr "以特定方式使用 ${MEDIA_TYPE} 的启动方式。"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
 msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
@@ -123,7 +109,7 @@ msgstr "其它启动方式；恢复一个破损的系统。"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
 msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
@@ -133,7 +119,7 @@ msgstr "特定启动参数，概览。"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
 msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
@@ -315,10 +301,8 @@ msgstr "安装 Ubuntu"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-#, fuzzy
-#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgid "Start the installation -- this is the default option."
-msgstr "开始安装 - 这是默认的 ${MEDIA_TYPE} 安装。"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -484,14 +468,6 @@ msgstr "boot: rescue acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
-#, fuzzy
-#| msgid ""
-#| "There is no dedicated rescue mode on this CD. However, since the entire "
-#| "system runs from the CD, it is possible to use the command-line and/or "
-#| "graphical tools provided to rescue a broken system, and to use a web "
-#| "browser to search for help. Extensive advice is available online for most "
-#| "kinds of problems that might cause your normal system to fail to boot "
-#| "correctly."
 msgid ""
 "There is no dedicated rescue mode on this disc. However, since the disc "
 "provides a complete user environment, it is possible to use the command-line "
@@ -500,9 +476,6 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"本 CD 不包含专用的救援模式(rescue mode)。但是，由于整个系统都是基于CD而运行"
-"的，所以您也许可以使用命令和/或图形界面来修复损坏的系统，并且使用浏览器来寻找"
-"帮助信息。在网上可以找到绝大部分关于系统无法正常启动的问题相关帮助信息。"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -939,10 +912,8 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
-#, fuzzy
-#| msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
@@ -955,13 +926,10 @@ msgstr "禁用 PCI 映射的 ACPI 功能(适用于一些 HP 服务器和由其�
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
-#, fuzzy
-#| msgid "Use high contrast accessibility theme"
 msgid "Use high contrast theme"
-msgstr "使用高对比主题"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
@@ -984,10 +952,9 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
-#, fuzzy, no-wrap
-#| msgid "boot: install acpi=off"
+#, no-wrap
 msgid "boot: install fb=false"
-msgstr "boot: install acpi=off"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
@@ -1119,22 +1086,3 @@ msgid ""
 msgstr ""
 "本系统是在 Debian 的基础上构建的。参阅<ulink url=\"http://www.debian.org/\" /"
 ">来获知更多关于 Debian 项目的细节和信息。"
-
-#~ msgid "Verbose debugging"
-#~ msgstr "详细调试"
-
-#~ msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-#~ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#~ msgid "Debug boot sequence"
-#~ msgstr "调试启动序列"
-
-#~ msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-#~ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
-
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#~ msgid "Use special tasks"
-#~ msgstr "使用特殊任务"
-
-#~ msgid "boot: install pci=noacpi"
-#~ msgstr "boot: install pci=noacpi"

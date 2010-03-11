@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2009-07-06 18:39+0000\n"
-"Last-Translator: Khandakar Mujahidul Islam <suzan229@gmail.com>\n"
+"PO-Revision-Date: 2010-03-04 04:53+0000\n"
+"Last-Translator: nasir khan saikat <nasir8891@gmail.com>\n"
 "Language-Team: Bengali <bn@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
+"X-Launchpad-Export-Date: 2010-03-11 20:17+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -25,7 +25,7 @@ msgstr "ইনস্টলারের বুট সহায়িকা পর্
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
 msgid "<keycap>F1</keycap>"
-msgstr ""
+msgstr "<keycap>F1</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
@@ -38,6 +38,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} এর ইনস্টল পদ্ধতি। এটি তৈরী করা "
+"হয়েছিল ${BUILD_DATE} তারিখে।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -45,11 +47,13 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
+"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} এর লাইভ সিস্টেম। এটি তৈরী করা "
+"হয়েছিল ${BUILD_DATE} তারিখে।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr ""
+msgstr "সহায়িকার সূচীপত্র"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
@@ -59,12 +63,12 @@ msgstr "কী"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:30
 msgid "TOPIC"
-msgstr ""
+msgstr "বিষয়"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
 msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
@@ -74,7 +78,7 @@ msgstr "এই পাতা, সহায়িকা ইনডেক্স।"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
 msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
@@ -89,72 +93,72 @@ msgstr "${DISTRIBUTION_NAME} চালানোর করার জন্য প
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
 msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr ""
+msgstr "এই সিস্টেমটি বুট করার বিকল্প পদ্ধতি সমূহ।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
 msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr ""
+msgstr "বুট করার অতিরিক্ত পদ্ধতি সমূহ; এটি কোন সিস্টেমকে পুনরুদ্ধারে সাহায্য করে।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
 msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr ""
+msgstr "বুট এর বিশেষ প্যারামিটার সমূহ।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
 msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "বিশেষ সরঞ্জামের উপযোগী বুট প্যারামিটারসমূহ।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
 msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
+msgstr "বিশেষ ডিস্ক নিয়ন্ত্রকের জন্য বিশেষ বুট প্যারামিটারসমূহ।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
 msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "ইনস্টল করার জন্য বিশেষ প্যারামিটার নির্ধারন করা।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "বুটস্ট্রাপ সিস্টেমের জন্য বুট প্যারামিটারসমূহ।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
 msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
@@ -164,7 +168,7 @@ msgstr "কিভাবে সহায়তা পেতে পারেন।"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
 msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
@@ -179,32 +183,35 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"F1 থেকে F19 নির্বাচন করার জন্য চাপুন Ctrl এবং F এরপর 1 থেকে 9 যেকোনটি\n"
+"F10 এর জন্য Ctrl এবং F এরপর 0 চাপতে হবে\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr ""
+msgstr "বিস্তারিত জানতে F2 থেকে F10 চাপুন, অথবা ${BOOTPROMPT} এ এন্টার চাপুন।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
+"বিস্তারিত জানতে F2 থেকে F10 চাপুন অথবা সহায়িকা বন্ধ করে দিতে Esc বাটন চাপুন।"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
 msgid "<keycap>F2</keycap>"
-msgstr ""
+msgstr "<keycap>F2</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr ""
+msgstr "উবুন্টু ইনস্টলের পূর্বশর্ত"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr ""
+msgstr "উবুন্টু ইনস্টল করতে নূন্যতম আপনার ৩২ মেগাবাইট মেমরী প্রয়োজন হবে।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -223,12 +230,14 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
+"বিস্তারিত জানতে উবুন্টু সহায়িকা অথবা প্রায়স জিজ্ঞাসিত প্রশ্নসমূহ দেখুন; উভয় ডকুমেন্টই "
+"উবুন্টু ওয়েব সাইটে পাওয়া যাবে, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr ""
+msgstr "উবুন্টু লাইভ পদ্ধতিতে ব্যবহার করতে নূন্যতম ৩৮৪ মেগাবাইট মেমরী প্রয়োজন হবে।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -236,6 +245,9 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"লাইভ পদ্ধতিতে ব্যবহার করতে আপনার হার্ডডিস্কের কোন অংশ ব্যবহৃত হবে না। তবে "
+"হার্ডডিস্কে যদি আগে থেকে লিনাক্স ইনস্টল করা থাকে তবে সেই সোয়াপ স্থানটি ব্যবহৃত হতে "
+"পারে।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -243,6 +255,8 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
+"বিস্তারিত জানতে প্রায়শ জিজ্ঞাসিত প্রশ্নসমূহ দেখুন; এটি উবুন্টু ওয়েবসাইটে পাওয়া যাবে,  "
+"<ulink url=\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
@@ -262,42 +276,42 @@ msgstr ""
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr ""
+msgstr "সাহায্য সূচির জন্য F1 এবং প্রস্থান করতে Escape বাটন চাপতে হবে।"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
 msgid "<keycap>F3</keycap>"
-msgstr ""
+msgstr "<keycap>F3</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr ""
+msgstr "বুট পদ্ধতিসমূহ"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr ""
+msgstr "সম্ভাব্য বুট পদ্ধতিসমূহ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
-msgstr ""
+msgstr "ইনস্টল"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "উবুন্টু ইনস্টল করা"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr ""
+msgstr "ইনস্টল শুরু করুন -- এটি ডিফল্ট অপশন"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
-msgstr ""
+msgstr "দক্ষ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
@@ -307,27 +321,27 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "সংক্ষিপ্ত পরিসরে কমান্ড লাইন থেকে ইনস্টল করা।"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "লাইভ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "কম্পিউটারে কোন পরিবর্তন না করেই উবুন্টু ব্যবহার করুন"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -335,31 +349,33 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"উবুন্টু লাইভ সেশন চালু করুন। ইনস্টল করতে চাইলে পরবর্তীতে ডেক্সটপের \"ইনস্টল\" বাটন "
+"ব্যবহার করে করতে হবে।"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "লাইভ-ইনস্টল"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
-msgstr ""
+msgstr "ইনস্টল শুরু করুন।"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
-msgstr ""
+msgstr "memtest"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "মেমরী পরীক্ষা করা"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr ""
+msgstr "মেমরী পরীক্ষা করুন।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
@@ -372,13 +388,13 @@ msgstr ""
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "boot: install acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
@@ -412,7 +428,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
 msgid "<keycap>F4</keycap>"
-msgstr ""
+msgstr "<keycap>F4</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
@@ -427,7 +443,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
-msgstr ""
+msgstr "পুনরুদ্ধার"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
@@ -459,7 +475,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
 msgid "<keycap>F5</keycap>"
-msgstr ""
+msgstr "<keycap>F5</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356

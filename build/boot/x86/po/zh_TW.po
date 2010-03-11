@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2009-10-14 14:29+0000\n"
-"Last-Translator: Rossi Liu <Unknown>\n"
+"PO-Revision-Date: 2010-03-09 21:25+0000\n"
+"Last-Translator: Yuki Seaside <iam@yukiseaside.com>\n"
 "Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
+"X-Launchpad-Export-Date: 2010-03-11 20:17+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -25,7 +25,7 @@ msgstr "安裝程式啟動說明畫面"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
 msgid "<keycap>F1</keycap>"
-msgstr ""
+msgstr "<keycap>F1</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
@@ -34,34 +34,26 @@ msgstr "歡迎使用 ${DISTRIBUTION_NAME}！"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
-#, fuzzy
-#| msgid ""
-#| "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"這是個 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的安裝 ${MEDIA_TYPE}。建"
-"立日期為 ${BUILD_DATE}。"
+"這是 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的安裝系統‧在 "
+"${BUILD_DATE}. 建置"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
-#, fuzzy
-#| msgid ""
-#| "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"這是個 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的 Live ${MEDIA_TYPE}。建"
-"立日期為 ${BUILD_DATE}。"
+"這是 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的live系統‧在 "
+"${BUILD_DATE}. 建置"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "說明索引"
+msgstr "輔助說明索引"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
@@ -76,17 +68,17 @@ msgstr "主題"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
 msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "本頁面，即說明索引。"
+msgstr "本頁面，即輔助說明索引。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
 msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
@@ -101,29 +93,27 @@ msgstr "執行 ${DISTRIBUTION_NAME} 的必備需求。"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
 msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-#, fuzzy
-#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
 msgid "Boot methods for special ways of using this system."
-msgstr "使用 ${MEDIA_TYPE} 的特殊的開機方法。"
+msgstr "用特殊方式啟動系統"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
 msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "其它啟動方法；拯救破損系統。"
+msgstr "其它啟動方法；拯救毀損的系統。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
 msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
@@ -133,42 +123,42 @@ msgstr "特殊啟動參數總覽。"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
 msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "給特殊機器的特殊開機參數。"
+msgstr "給某些特殊機器的其他啟動參數。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
 msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr "給已選取的磁碟控制裝置的特殊開機參數。"
+msgstr "給已選取的磁碟控制裝置的特殊啟動參數。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
 msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr "給安裝系統的特殊開機參數。"
+msgstr "給安裝系統的特殊啟動參數。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "給開機系統的特殊開機參數。"
+msgstr "給 bootstrap 系統的特殊啟動參數。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
 msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
@@ -178,7 +168,7 @@ msgstr "如何取得幫助"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
 msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
@@ -193,21 +183,23 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"按緊 control 及  F 加 上 1-9 的數字鍵以輸入 F1- F19\n"
+"按緊 control 及  F 加上 0 的數未字鍵以輸入 F10\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "按F2~F10鍵以瞭解細節，或是按Enter以 ${BOOTPROMPT}"
+msgstr "按F2~F10鍵以瞭解細節，或是按 Enter 以 ${BOOTPROMPT}"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr "按F2~F10鍵以瞭解細節，或是按ESC鍵結束說明。"
+msgstr "按F2~F10鍵以瞭解細節，或是按 ESC 鍵結束說明。"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
 msgid "<keycap>F2</keycap>"
-msgstr ""
+msgstr "<keycap>F2</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
@@ -218,7 +210,7 @@ msgstr "安裝 Ubuntu 的必備需求"
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr "您必須有至少 32 MB 的 RAM 以使用本 Ubuntu 安裝程式。"
+msgstr "您至少需要 32 MB 的記憶體來使用 Ubuntu 安裝程式。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -229,9 +221,9 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"您必須要有建立至少 2 GB 的分割區以安裝標準的 Ubuntu 桌面系統，或是至少 400 "
-"MB 的分割區進行伺服器最小安裝。依照您的需求，您將需要更多的硬碟空間以安裝額外"
-"的套件。"
+"您的硬碟中必須至少要有 2 GB 的空間用以建立分割區，來安裝標準的 Ubuntu 桌面系"
+"統，或是至少 400 MB 的空間進行伺服器版本的最小安裝。依照您需求的不同，可能需"
+"要更多的硬碟空間，用來選擇安裝額外的套件。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -240,14 +232,14 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"更多資訊請參閱 Ubuntu 官方網站(<ulink url=\"http://www.ubuntu.com/\" />)中的"
-"安裝指南或是常見問題區 (FAQ)。"
+"更多資訊請參閱 Ubuntu 官方網站(<ulink url=\"http://www.ubuntu.com/\" />)中的 "
+"安裝指南 或是 常見問題區 (FAQ)。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr "使用Ubuntu Live，您必須有至少384MB的記憶體"
+msgstr "您必須有至少 384MB 的記憶體來使用 Ubuntu Live。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -255,8 +247,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"本 Live 系統不需要額外的硬碟空間，但您的硬碟上若有 Linux 使用的置換 (Swap) 分"
-"割區，本系統將會一併使用。"
+"使用 Live 系統並不需要額外的硬碟空間，但若您的硬碟上有 Linux 可使用的置換 "
+"(Swap) 分割區，Live 系統將會自動使用它。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -264,7 +256,7 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"更多資訊請參閱 Ubuntu 官方網站(<ulink url=\"http://www.ubuntu.com/\" />)中的"
+"更多資訊請參閱 Ubuntu 官方網站(<ulink url=\"http://www.ubuntu.com/\" />)中的 "
 "常見問題區 (FAQ)。"
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -287,12 +279,12 @@ msgstr ""
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "按下F1檢視說明索引，或Esc離開"
+msgstr "按下 F1 檢視說明索引，或 Esc 離開。"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
 msgid "<keycap>F3</keycap>"
-msgstr ""
+msgstr "<keycap>F3</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
@@ -316,10 +308,8 @@ msgstr "安裝 Ubuntu"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-#, fuzzy
-#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgid "Start the installation -- this is the default option."
-msgstr "開始安裝 - 這是預設的${MEDIA_TYPE}安裝。"
+msgstr "開始安裝 -- 這是以預設設定安裝。"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -329,7 +319,7 @@ msgstr "專家"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "使用專家模式來安裝，讓您有最多的控制權"
+msgstr "使用專家模式來安裝，您可以擁有較多的控制權。"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
@@ -354,7 +344,7 @@ msgstr "live"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr "試用 Ubuntu (不對您的電腦進行任何變更)。"
+msgstr "在不對電腦進行任何變動的情況下直接試用 Ubuntu。"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -362,7 +352,8 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
-"啟動live系統。若您稍後想要進行安裝作業，您可以點選桌面上的\"安裝\"圖示。"
+"啟動 live 系統。若您稍後想要進行將系統安裝到硬碟，您可以點選桌面上的\"安裝"
+"\"圖示。"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
@@ -382,7 +373,7 @@ msgstr "記憶體測試"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr "記憶體測試"
+msgstr "測試記憶體"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
@@ -395,8 +386,8 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"要使用這些開機方法其中一個，可在命令列提示當中輸入，其次是選擇任何一種啟動參"
-"數。例如："
+"要使用這些開機方法其中一個，可在命令列提示當中輸入，另外也可以選擇任何一種啟"
+"動參數。例如："
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
@@ -416,15 +407,17 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"假如不確定，你可以使用預設的開機選項，沒有特殊的參數，只是很單純的在開機提示"
-"當中按下Enter。"
+"假如你不確定該使用哪些選項，建議你使用預設的開機選項，不需要加上特殊的參數，"
+"只要在開機提示中按下 Enter 即可。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
-msgstr "(\"Ubuntu\"也許會替換其他有關於作業系統的名稱，這個是通用的求助文件。)"
+msgstr ""
+"(因為這是一份通用的說明文件，文件中 \"Ubuntu\" 這個字樣也許會被其他有相關的作"
+"業系統的名稱替換。)"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
@@ -434,59 +427,53 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"欲使用其中一種開機方法，在選單中使用方向鍵選擇；按下 F4 選擇另一種啟動和安裝"
+"模式；按下 F6 以編輯開機參數；再次按下 F6 可從常用開機參數中選擇。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
-msgstr ""
+msgstr "除非在專家模式，否則非嚴重核心開機訊息將不會顯示。"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
 msgid "<keycap>F4</keycap>"
-msgstr ""
+msgstr "<keycap>F4</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr "正在修復損壞的系統"
+msgstr "修復損壞的系統"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr "使用此種開機方法修復已存在的安裝"
+msgstr "使用此種開機方法修復已安裝的系統"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
-msgstr "rescue"
+msgstr "修復"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr "對已損壞的系統進行救援。"
+msgstr "拯救損壞的系統"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr "開機到rescue模式。"
+msgstr "以修復模式啟動。"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "boot: rescue acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
-#, fuzzy
-#| msgid ""
-#| "There is no dedicated rescue mode on this CD. However, since the entire "
-#| "system runs from the CD, it is possible to use the command-line and/or "
-#| "graphical tools provided to rescue a broken system, and to use a web "
-#| "browser to search for help. Extensive advice is available online for most "
-#| "kinds of problems that might cause your normal system to fail to boot "
-#| "correctly."
 msgid ""
 "There is no dedicated rescue mode on this disc. However, since the disc "
 "provides a complete user environment, it is possible to use the command-line "
@@ -495,19 +482,18 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"這片CD沒有指定的救援模式。無論如何，既然整個系統從CD執行，可以使用命令列或圖"
-"形工具救援損壞的系統，並使用網頁瀏覽器搜尋幫助。您可以在網上取得很多關於引起"
-"您系統不正確開機大部分問題的建議。"
+"這光碟沒有救援模式。然因光碟提供完整的使用環境，還是可以使用指令列 / 圖形工具"
+"救援損壞系統，或用瀏覽器尋求幫助。對於大部份開機問題，網絡上有詳細指引。"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
 msgid "<keycap>F5</keycap>"
-msgstr ""
+msgstr "<keycap>F5</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "特殊啟動參數 - 概觀"
+msgstr "特殊啟動參數 - 總覽"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
@@ -515,13 +501,15 @@ msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
+"在少部份系統中，您可能需要在 <literal>boot:</literal> 提示符號下輸入參數來啟"
+"動系統。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr ""
+msgstr "在少部份系統中，您可能需要按下 F6 來輸入參數以啟動系統。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -529,31 +517,33 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"例如，Linux 可能無法自動偵測到您的硬體，您可能需要明確地指定其位置或型式讓系"
+"統得以辨識它。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
-msgstr "檢視更多有關於您可以使用的開機參數的資訊，請按︰"
+msgstr "檢視更多有關於您可以使用的啟動參數資訊，請按︰"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr "特殊機器的開機參數"
+msgstr "特殊機器的啟動參數"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr "給不同的磁碟控制器的開機參數"
+msgstr "給不同的磁碟控制器的啟動參數"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr "安裝系統已知的開機參數"
+msgstr "安裝系統已知的啟動參數"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr "開機參數被啟動系統解讀"
+msgstr "啟動系統已知的啟動參數"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
@@ -563,9 +553,9 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"許多核心模組被安裝程式動態載入，且那些模組的參數不能以命令列方式設給安裝程"
-"式。為了模組被載入時的參數，使用專家模式開機(參考<link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"許多核心模組經由安裝程式動態載入，且那些模組的參數無法透過命令列來指定。如果"
+"你需要在模組載入時輸入參數，請使用專家模式啟動（參考 <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>）。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
@@ -573,18 +563,17 @@ msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"許多核心模組被啟動系統動態載入，且那些模組的參數不能以命令列方式設給啟動系"
-"統。"
+"許多核心模組經由啟動系統動態載入，且那些模組的參數無法透過命令列來指定。"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
 msgid "<keycap>F6</keycap>"
-msgstr ""
+msgstr "<keycap>F6</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr ""
+msgstr "特殊啟動參數 - 各類硬體"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
@@ -593,6 +582,8 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
+"您可在 <literal>boot:</literal> 提示符號下使用以下啟動參數，配合啟動方法（參"
+"考 <link linkend=\"F3\"><keycap>F3</keycap></link>）。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
@@ -600,11 +591,13 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"您可透過按下 F6 使用以下啟動參數，配合啟動方法（參考 <link linkend=\"F3"
+"\"><keycap>F3</keycap></link>）。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr "若使用16進位您必須以0x作為開頭(e.g., 0x300)。"
+msgstr "若使用 16 進位您必須以 0x 作為開頭 (e.g., 0x300)。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
@@ -614,12 +607,12 @@ msgstr "硬體"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr "要指定的參數"
+msgstr "需要指定的參數"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr "IBM PS/1 或 ValuePoint (IDE disk)"
+msgstr "IBM PS/1 或 ValuePoint (IDE 磁碟)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
@@ -627,21 +620,23 @@ msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr "某些 IBM ThinkPads電腦"
+msgstr "某些 IBM ThinkPad 的筆電"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "保護輸入/輸出埠地區"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:466
@@ -650,62 +645,65 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr "筆記型電腦有螢幕顯示問題"
+msgstr "有螢幕顯示問題的筆記型電腦"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "以 9600 傳輸速率使用第一個序列埠"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr "強制使用一般 IDE 驅動程式"
+msgstr "強制使用通用的 IDE 驅動程式"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
-msgstr ""
+msgstr "對鎖死或其他硬體故障的可能（暫時性）解決方案："
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr "停用很多問題的 APIC 中斷程序"
+msgstr "停用問題很多的 APIC 中斷程序"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "（局部）停用 ACPI"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> 或 <userinput>acpi=off</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
@@ -715,17 +713,17 @@ msgstr "停用 USB"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "中斷輪詢"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
@@ -736,28 +734,28 @@ msgstr "例如："
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: install vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: live vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:536
 msgid "<keycap>F7</keycap>"
-msgstr ""
+msgstr "<keycap>F7</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr ""
+msgstr "特殊啟動參數 - 各類磁碟機"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
-msgstr ""
+msgstr "Adaptec 151x, 152x"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:560
@@ -768,11 +766,16 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
 msgid "Adaptec 1542"
-msgstr ""
+msgstr "Adaptec 1542"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:565
@@ -782,37 +785,42 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
-msgstr ""
+msgstr "Adaptec 274x, 284x"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (非零則啟用)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
-msgstr ""
+msgstr "BusLogic SCSI 主端"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr ""
+msgstr "一些 DELL 機器"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:585
@@ -820,124 +828,126 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"這份列表還不是很完整，額外資訊請參考系統核心的 kernel-parameters.txt 檔案中的"
+"說明。"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:609
 msgid "<keycap>F8</keycap>"
-msgstr ""
+msgstr "<keycap>F8</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr ""
+msgstr "特殊啟動參數 - 安裝系統"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr ""
+msgstr "這些參數控制安裝程式如何工作。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
+msgstr "這些參數控制 Bootstrap 系統如何工作。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
 msgid "RESULT"
-msgstr ""
+msgstr "結果"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:633
 msgid "PARAMETER"
-msgstr ""
+msgstr "參數"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "停用 framebuffer"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:637
 msgid "<userinput>fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>fb=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
 msgid "Don't start PCMCIA"
-msgstr ""
+msgstr "不啟動 PCMCIA"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:642
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
-msgstr ""
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:646
 msgid "Force static network config"
-msgstr ""
+msgstr "強制使用靜態網路設定"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:647
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr ""
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:651
 msgid "Set keyboard map"
-msgstr ""
+msgstr "設定鍵盤排列方式"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:652
 msgid "<userinput>bootkbd=es</userinput>"
-msgstr ""
+msgstr "<userinput>bootkbd=es</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr ""
+msgstr "選擇Kubuntu桌面"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr ""
+msgstr "<userinput>工作=kubuntu-桌面</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
-msgstr ""
+msgstr "停用 ACPI 對 PCI 對映（在某些 HP 伺服器和以 VIA 為基礎的機器上很好用）"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:665
 msgid "<userinput>pci=noacpi</userinput>"
-msgstr ""
+msgstr "<userinput>pci=noacpi</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr ""
+msgstr "使用高對比的佈景主題"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:674
 msgid "Use Braille tty"
-msgstr ""
+msgstr "使用盲人打字機"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:675
@@ -945,44 +955,45 @@ msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
-#, fuzzy, no-wrap
-#| msgid "boot: install acpi=off"
+#, no-wrap
 msgid "boot: install fb=false"
-msgstr "boot: install acpi=off"
+msgstr "boot: install fb=false"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "boot: live pci=noacpi"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:699
 msgid "<keycap>F9</keycap>"
-msgstr ""
+msgstr "<keycap>F9</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:700
 msgid "GETTING HELP"
-msgstr ""
+msgstr "取得協助"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr ""
+msgstr "若您無法安裝 Ubuntu，請不要失望！"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr ""
+msgstr "若您無法啟動 Ubuntu，請不要失望！"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
-msgstr ""
+msgstr "Ubuntu 團隊已準備好為您提供必要的協助！"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:716
@@ -990,6 +1001,8 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"我們對於聽到關於安裝上的問題特別有興趣，因為基本上這並不只發生在<emphasis>一"
+"</emphasis>個人身上。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:721
@@ -997,6 +1010,8 @@ msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"我們對於聽到關於啟動上的問題特別有興趣，因為基本上這並不只發生在<emphasis>一"
+"</emphasis>個人身上。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:725
@@ -1006,16 +1021,18 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"我們已準備好聆聽關於您的特殊問題並公佈一個快速的修復程式，或者我們也想要聆聽"
+"問題並和您一起解決它，而下一個碰到同樣問題的使用者將會受益於您的經驗！"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
 msgid "<keycap>F10</keycap>"
-msgstr ""
+msgstr "<keycap>F10</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr ""
+msgstr "版權和保證"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:763
@@ -1023,11 +1040,13 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"Ubuntu 為 Canonical 公司版權所有 (C) 2004 - 2010，並包含許多其他原作者和貢獻"
+"者的作品。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:768
 msgid "The Ubuntu system is freely redistributable."
-msgstr ""
+msgstr "Ubuntu 系統可自由散佈。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:771
@@ -1036,6 +1055,8 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"在安裝之後，每一份套件的詳細散佈條約都在其對應的檔案 usr/share/doc/"
+"<replaceable>套件名稱</replaceable>/copyright. 中描述。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:776
@@ -1044,6 +1065,8 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"在啟動之後，每一份套件的詳細散佈條約都在其對應的檔案 usr/share/doc/"
+"<replaceable>套件名稱</replaceable>/copyright. 中描述。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:782
@@ -1051,6 +1074,7 @@ msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
+"Ubuntu <emphasis>絕無附帶任何擔保</emphasis>，在適用之法律所允許範圍內。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:787
@@ -1059,6 +1083,8 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
+"此安裝系統是以 Debian 安裝程式為基礎，更多關於 Debian 計畫的細節及資訊請參考 "
+"<ulink url=\"http://www.debian.org/\" />。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:793
@@ -1066,3 +1092,5 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"此系統是以 Debian 為基礎，更多關於 Debian 計畫的細節及資訊請參考 <ulink url="
+"\"http://www.debian.org/\" />。"

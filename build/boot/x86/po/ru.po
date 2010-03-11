@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2009-10-12 18:35+0000\n"
-"Last-Translator: Alexey Balmashnov <a.balmashnov@gmail.com>\n"
+"PO-Revision-Date: 2010-02-21 18:22+0000\n"
+"Last-Translator: Maxim Petrov <maximpetrov@yahoo.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
+"X-Launchpad-Export-Date: 2010-03-11 20:16+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -25,7 +25,7 @@ msgstr "Экраны помощи установщика"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
 msgid "<keycap>F1</keycap>"
-msgstr ""
+msgstr "<keycap>F1</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
@@ -34,29 +34,21 @@ msgstr "Добро пожаловать в ${DISTRIBUTION_NAME}!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
-#, fuzzy
-#| msgid ""
-#| "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Это установочный ${MEDIA_TYPE} ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
-"Дата сборки: ${BUILD_DATE}."
+"Это установщик операционной системы ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Он был создан ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
-#, fuzzy
-#| msgid ""
-#| "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"Это живой ${MEDIA_TYPE} ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. Дата "
-"сборки: ${BUILD_DATE}."
+"Это live-версия ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. Создано "
+"${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -76,7 +68,7 @@ msgstr "ТЕМА"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
 msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
@@ -86,7 +78,7 @@ msgstr "Данная страница - содержание справки."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
 msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
@@ -101,19 +93,17 @@ msgstr "Требования для запуска ${DISTRIBUTION_NAME}."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
 msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-#, fuzzy
-#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
 msgid "Boot methods for special ways of using this system."
-msgstr "Способы загрузки для специального использования этого ${MEDIA_TYPE}."
+msgstr "Варианты загрузки для особых вариантов использования системы."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
 msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
@@ -123,7 +113,7 @@ msgstr "Дополнительные способы загрузки, восст
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
 msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
@@ -133,7 +123,7 @@ msgstr "Специальные параметры загрузки, обзор."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
 msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
@@ -143,7 +133,7 @@ msgstr "Специальные параметры загрузки для опр
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
 msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
@@ -153,7 +143,7 @@ msgstr "Специальные параметры загрузки для нек
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
 msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
@@ -168,7 +158,7 @@ msgstr "Специальные параметры начального загр�
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
 msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
@@ -178,7 +168,7 @@ msgstr "Как получить помощь."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
 msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
@@ -193,6 +183,8 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"Для F1-F19 нажмите Ctrl и F, а затем одну из цифр 1-9\n"
+"Для F10 нажмите Ctrl и F, а затем цифру 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -207,7 +199,7 @@ msgstr "Нажмите клавиши F2-F10 для просмотра или Es
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
 msgid "<keycap>F2</keycap>"
-msgstr ""
+msgstr "<keycap>F2</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
@@ -302,7 +294,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
 msgid "<keycap>F3</keycap>"
-msgstr ""
+msgstr "<keycap>F3</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
@@ -326,12 +318,8 @@ msgstr "Установить Ubuntu"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-#, fuzzy
-#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgid "Start the installation -- this is the default option."
-msgstr ""
-"Начать установку -- это тип установки с ${MEDIA_TYPE} используется по "
-"умолчанию."
+msgstr "Начать установку -- это опция по умолчанию."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -469,7 +457,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
 msgid "<keycap>F4</keycap>"
-msgstr ""
+msgstr "<keycap>F4</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
@@ -480,8 +468,8 @@ msgstr "ВОССТАНОВЛЕНИЕ СИСТЕМЫ"
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
-"Воспользуйтесь одним из этих методов для восстановления существующей "
-"установки"
+"Воспользуйтесь одним из этих способов загрузки для восстановления уже "
+"установленной системы"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
@@ -506,14 +494,6 @@ msgstr "boot: rescue acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
-#, fuzzy
-#| msgid ""
-#| "There is no dedicated rescue mode on this CD. However, since the entire "
-#| "system runs from the CD, it is possible to use the command-line and/or "
-#| "graphical tools provided to rescue a broken system, and to use a web "
-#| "browser to search for help. Extensive advice is available online for most "
-#| "kinds of problems that might cause your normal system to fail to boot "
-#| "correctly."
 msgid ""
 "There is no dedicated rescue mode on this disc. However, since the disc "
 "provides a complete user environment, it is possible to use the command-line "
@@ -522,16 +502,17 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"На этом CD отсутствует отдельный режим восстановления системы. Но поскольку "
-"вся система работает с CD, вы можете воспользоваться командной строкой и/или "
-"графическими программами для восстановления испорченной системы, а также "
-"запустить веб-браузер для поиска информации. Исчерпывающие советы по решению "
-"большинства проблем, связанных с загрузкой системы, доступны онлайн."
+"На этом диске нет режима восстановления. Однако диск предоставляет полное "
+"пользовательское окружение, дающее возможность использовать как консольные, "
+"так и утилиты с графическим интерфейсом для восстановления работоспособности "
+"системы, а также использовать интернет для поиска помощи. В интернете можно "
+"найти подробные советы по решению большинства проблем, которые могут "
+"привести вашу систему в неисправное состояние."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
 msgid "<keycap>F5</keycap>"
-msgstr ""
+msgstr "<keycap>F5</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
@@ -617,7 +598,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
 msgid "<keycap>F6</keycap>"
-msgstr ""
+msgstr "<keycap>F6</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
@@ -800,7 +781,7 @@ msgstr "boot: live vga=771 noapic nolapic"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:536
 msgid "<keycap>F7</keycap>"
-msgstr ""
+msgstr "<keycap>F7</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
@@ -902,7 +883,7 @@ msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:609
 msgid "<keycap>F8</keycap>"
-msgstr ""
+msgstr "<keycap>F8</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
@@ -972,14 +953,12 @@ msgstr "<userinput>bootkbd=es</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr ""
+msgstr "Выбрать окружение рабочего стола Kubuntu"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
-#, fuzzy
-#| msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
+msgstr "<userinput>tasks=kubuntu-desktop</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
@@ -994,11 +973,8 @@ msgstr ""
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
-#, fuzzy
-#| msgid "Use high contrast accessibility theme"
 msgid "Use high contrast theme"
 msgstr "Использовать высококонтрастную тему"
 
@@ -1023,10 +999,9 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
-#, fuzzy, no-wrap
-#| msgid "boot: install acpi=off"
+#, no-wrap
 msgid "boot: install fb=false"
-msgstr "boot: install acpi=off"
+msgstr "boot: install fb=false"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
@@ -1037,7 +1012,7 @@ msgstr "boot: live pci=noacpi"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:699
 msgid "<keycap>F9</keycap>"
-msgstr ""
+msgstr "<keycap>F9</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:700
@@ -1095,7 +1070,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
 msgid "<keycap>F10</keycap>"
-msgstr ""
+msgstr "<keycap>F10</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:756
@@ -1166,22 +1141,3 @@ msgid ""
 msgstr ""
 "Данная система основана на Debian. Для получения дополнительной информации о "
 "проекте Debian смотрите <ulink url=\"http://www.debian.org/\" />"
-
-#~ msgid "Verbose debugging"
-#~ msgstr "Отладка с выводом сообщений"
-
-#~ msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-#~ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#~ msgid "Debug boot sequence"
-#~ msgstr "Отладка загрузочной последовательности"
-
-#~ msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-#~ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
-
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#~ msgid "Use special tasks"
-#~ msgstr "Использовать специальные задачи"
-
-#~ msgid "boot: install pci=noacpi"
-#~ msgstr "boot: install pci=noacpi"

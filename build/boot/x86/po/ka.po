@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
+"X-Launchpad-Export-Date: 2010-03-11 20:17+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -36,31 +36,17 @@ msgstr "მოგესალმებათ ${DISTRIBUTION_NAME}!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
-#, fuzzy
-#| msgid ""
-#| "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"${MEDIA_TYPE}, ჩადგმის მედიაა, ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}-"
-"თვის. \r\n"
-"აგების თარიღი: ${BUILD_DATE})."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
-#, fuzzy
-#| msgid ""
-#| "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"${MEDIA_TYPE}, Live მედიაა, ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}-"
-"თვის. \r\n"
-"აგების თარიღი: ${BUILD_DATE})."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -109,11 +95,8 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-#, fuzzy
-#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
 msgid "Boot methods for special ways of using this system."
 msgstr ""
-"ჩატვირთვის მეთოდები ამ ${MEDIA_TYPE}-ს არასტანდარტული გამოყენებისათვის."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -327,10 +310,8 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-#, fuzzy
-#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgid "Start the installation -- this is the default option."
-msgstr "იწყება ინსტალაცია: ნაგულისხმევი ${MEDIA_TYPE}-ინსტალაცია."
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -492,14 +473,6 @@ msgstr "ჩატვირთვის მეთოდი: აღდგენა
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
-#, fuzzy
-#| msgid ""
-#| "There is no dedicated rescue mode on this CD. However, since the entire "
-#| "system runs from the CD, it is possible to use the command-line and/or "
-#| "graphical tools provided to rescue a broken system, and to use a web "
-#| "browser to search for help. Extensive advice is available online for most "
-#| "kinds of problems that might cause your normal system to fail to boot "
-#| "correctly."
 msgid ""
 "There is no dedicated rescue mode on this disc. However, since the disc "
 "provides a complete user environment, it is possible to use the command-line "
@@ -508,10 +481,6 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"დისკზე არ არსებობს გამართვის რეჟიმის ფაილები. ამის მიუხედავად მთლიანი "
-"სისტემა დისკიდან იტვირთება, სისტემის გამართვის მიზნით შესაძლებელია გრაფიკული "
-"ან არაგრაფიკული ხელსაწყოების გამოყენება, ამის გარდა დახმარებისთვის "
-"გამოიყენეთ ვებ ბრაუზერი."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -945,10 +914,8 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
-#, fuzzy
-#| msgid "<userinput>bootkbd=es</userinput>"
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr "<userinput>bootkbd=ka</userinput>"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
@@ -963,13 +930,10 @@ msgstr ""
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
-#, fuzzy
-#| msgid "Use high contrast accessibility theme"
 msgid "Use high contrast theme"
-msgstr "მაღალი კონტრასტის მქონე თემის გამოყენება"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
@@ -992,10 +956,9 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
-#, fuzzy, no-wrap
-#| msgid "boot: install acpi=off"
+#, no-wrap
 msgid "boot: install fb=false"
-msgstr "ჩატვირთვის მეთოდი: ინსტალაცია acpi=off"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
@@ -1132,22 +1095,3 @@ msgstr ""
 "მოცემული სისტემა Debian-ზეა დაფუძნებული. იხილეთ <ulink url=\"http://www."
 "debian.org/\" /> დეტალებისთვის, იხილეთ აგრეთვე ინფორმაცია Debian პროექტის "
 "შესახებ."
-
-#~ msgid "Verbose debugging"
-#~ msgstr "გამართვის დაწვრილებით ჩვენება"
-
-#~ msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-#~ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#~ msgid "Debug boot sequence"
-#~ msgstr "ჩატვირთვის სეკვენციის შესწორება"
-
-#~ msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-#~ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
-
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
-#~ msgid "Use special tasks"
-#~ msgstr "სპეც დავალებების გამოყენება"
-
-#~ msgid "boot: install pci=noacpi"
-#~ msgstr "boot: install pci=noacpi"

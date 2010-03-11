@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
+"X-Launchpad-Export-Date: 2010-03-11 20:16+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -92,10 +92,8 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-#, fuzzy
-#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
 msgid "Boot methods for special ways of using this system."
-msgstr "Zaváděcí metody pro speciální využití tohoto ${MEDIA_TYPE}."
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -306,10 +304,8 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-#, fuzzy
-#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgid "Start the installation -- this is the default option."
-msgstr "Spustit instalaci -- toto je výchozí ${MEDIA_TYPE} instalace."
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -469,14 +465,6 @@ msgstr "boot: rescue acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
-#, fuzzy
-#| msgid ""
-#| "There is no dedicated rescue mode on this CD. However, since the entire "
-#| "system runs from the CD, it is possible to use the command-line and/or "
-#| "graphical tools provided to rescue a broken system, and to use a web "
-#| "browser to search for help. Extensive advice is available online for most "
-#| "kinds of problems that might cause your normal system to fail to boot "
-#| "correctly."
 msgid ""
 "There is no dedicated rescue mode on this disc. However, since the disc "
 "provides a complete user environment, it is possible to use the command-line "
@@ -485,11 +473,6 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"Na tomto CD není žádný vyhrazený záchranný režim. Jelikož celý systém běží z "
-"CD, je možné použít textové a/nebo grafické nástroje poskytující záchranu "
-"poškozeného systému, a použít webový prohlížeč pro nalezení pomoci. Velké "
-"množství rad pro většinu problémů, které mohou způsobit, že se váš systém "
-"nespustí správně, je dostupné online."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -913,10 +896,8 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
-#, fuzzy
-#| msgid "<userinput>noapic nolapic</userinput>"
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr "<userinput>noapic nolapic</userinput>"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
@@ -933,10 +914,8 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
-#, fuzzy
-#| msgid "Use high contrast accessibility theme"
 msgid "Use high contrast theme"
-msgstr "Použít vysoce kontrastní motiv"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
@@ -1085,15 +1064,3 @@ msgid ""
 msgstr ""
 "Tento systém je založen na Debianu. Navštivte <ulink url=\"http://www.debian."
 "org/\" /> pro více detailů o projektu Debian."
-
-#~ msgid "Verbose debugging"
-#~ msgstr "Upovídané ladění"
-
-#~ msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-#~ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#~ msgid "Debug boot sequence"
-#~ msgstr "Ladící zaváděcí sekvence"
-
-#~ msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-#~ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"

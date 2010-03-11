@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2009-07-06 18:38+0000\n"
+"PO-Revision-Date: 2010-01-14 23:56+0000\n"
 "Last-Translator: Jun Kobayashi <kobayashi+ubuntu@junkobayashi.jp>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
+"X-Launchpad-Export-Date: 2010-03-11 20:16+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -34,29 +34,17 @@ msgstr "${DISTRIBUTION_NAME}へようこそ！"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
-#, fuzzy
-#| msgid ""
-#| "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"これは、${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} の インストール "
-"${MEDIA_TYPE} です。${BUILD_DATE} に作成されました。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
-#, fuzzy
-#| msgid ""
-#| "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"これは${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}のライブ${MEDIA_TYPE}です。"
-"${BUILD_DATE}に作成されました。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -105,10 +93,8 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-#, fuzzy
-#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
 msgid "Boot methods for special ways of using this system."
-msgstr "この${MEDIA_TYPE}で利用できるブートメソッド"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -322,11 +308,8 @@ msgstr "Ubuntuのインストール"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-#, fuzzy
-#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgid "Start the installation -- this is the default option."
 msgstr ""
-"インストールを開始 -- これは ${MEDIA_TYPE} のデフォルトのインストールです。"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -341,12 +324,12 @@ msgstr "最大限の設定の行える、エキスパートモードでインス
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
@@ -375,7 +358,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "live-install"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
@@ -433,6 +416,8 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"（\"Ubuntu\"は他の関連するオペレーティングシステムの名前に置き換えられるべき"
+"です。このヘルプは凡例です。）"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
@@ -452,6 +437,8 @@ msgstr ""
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"エキスパートモードを除き、クリティカルでないカーネルの起動メッセージは表示さ"
+"れません。"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
@@ -491,14 +478,6 @@ msgstr "boot: rescue acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
-#, fuzzy
-#| msgid ""
-#| "There is no dedicated rescue mode on this CD. However, since the entire "
-#| "system runs from the CD, it is possible to use the command-line and/or "
-#| "graphical tools provided to rescue a broken system, and to use a web "
-#| "browser to search for help. Extensive advice is available online for most "
-#| "kinds of problems that might cause your normal system to fail to boot "
-#| "correctly."
 msgid ""
 "There is no dedicated rescue mode on this disc. However, since the disc "
 "provides a complete user environment, it is possible to use the command-line "
@@ -507,11 +486,6 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"このCDにはレスキュー専用モードは搭載されていません。しかし、CDから完全なシス"
-"テムが起動するので、コマンドラインやグラフィカルツールを使って壊れたシステム"
-"を復旧することができます。また、ウェブブラウザを使って検索することもできま"
-"す。あなたのシステムが起動に失敗する原因となっているかもしれない、さまざまな"
-"種類の問題についての広範囲に渡るアドバイスが、オンラインで利用可能です。"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -737,7 +711,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput>または<userinput>acpi=off</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
@@ -747,7 +721,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
@@ -757,7 +731,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
@@ -958,10 +932,8 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
-#, fuzzy
-#| msgid "<userinput>bootkbd=es</userinput>"
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr "<userinput>bootkbd=es</userinput>"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
@@ -976,10 +948,8 @@ msgstr "<userinput>pci=noacpi</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
-#, fuzzy
-#| msgid "Use high contrast accessibility theme"
 msgid "Use high contrast theme"
-msgstr "ハイコントラスト・アクセシビリティ・テーマを使う"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
@@ -1002,10 +972,9 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
-#, fuzzy, no-wrap
-#| msgid "boot: install acpi=off"
+#, no-wrap
 msgid "boot: install fb=false"
-msgstr "boot: install acpi=off"
+msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
@@ -1143,18 +1112,3 @@ msgid ""
 msgstr ""
 "このシステムはDebianがベースになっています。詳細とDebianプロジェクトについて"
 "は、<ulink url=\"http://www.debian.org/\" /> を参照してください。"
-
-#~ msgid "Verbose debugging"
-#~ msgstr "詳細なデバッグ出力"
-
-#~ msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-#~ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#~ msgid "Debug boot sequence"
-#~ msgstr "ブートシーケンスのデバッグ"
-
-#~ msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-#~ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
-
-#~ msgid "boot: install pci=noacpi"
-#~ msgstr "boot: install pci=noacpi"

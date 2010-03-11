@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2009-10-01 03:43+0000\n"
+"PO-Revision-Date: 2010-03-10 07:09+0000\n"
 "Last-Translator: Christian Aasan <christian.aasan@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-10-15 15:24+0000\n"
+"X-Launchpad-Export-Date: 2010-03-11 20:16+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -25,7 +25,7 @@ msgstr "Hjelpeskjerm for installasjonsprogrammet"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
 msgid "<keycap>F1</keycap>"
-msgstr ""
+msgstr "<keycap>F1</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
@@ -34,29 +34,19 @@ msgstr "Velkommen til ${DISTRIBUTION_NAME}!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
-#, fuzzy
-#| msgid ""
-#| "This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Dette er en ${MEDIA_TYPE} for å installere ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. Den ble kompilert den ${BUILD_DATE}."
+"Dette er et installasjonssystem for ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Den ble bygget ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
-#, fuzzy
-#| msgid ""
-#| "This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-#| "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"Dette er en live-${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. Den ble kompilert den ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -76,7 +66,7 @@ msgstr "EMNE"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
 msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
@@ -86,7 +76,7 @@ msgstr "Denne side, hjelperegisteret."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
 msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
@@ -101,19 +91,17 @@ msgstr "Forutsetninger for å kunne bruke ${DISTRIBUTION_NAME}."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
 msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
-#, fuzzy
-#| msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
 msgid "Boot methods for special ways of using this system."
-msgstr "Spesielle oppstartsmetoder for denne ${MEDIA_TYPE}."
+msgstr "Oppstartsmetoder for spesielle bruksmåter av dette systemet."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
 msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
@@ -123,7 +111,7 @@ msgstr "Flere oppstartsmetoder; redde et brukket system."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
 msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
@@ -133,7 +121,7 @@ msgstr "Oversikt over spesielle oppstartsparametere."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
 msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
@@ -143,7 +131,7 @@ msgstr "Oppstartsparametere for spesielle maskiner."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
 msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
@@ -153,7 +141,7 @@ msgstr "Oppstartsparametere for utvalgte diskkontrollere."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
 msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
@@ -168,7 +156,7 @@ msgstr "Parametere for oppstartsprosessen."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
 msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
@@ -178,7 +166,7 @@ msgstr "Hvordan få hjelp."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
 msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
@@ -207,7 +195,7 @@ msgstr "Trykk F2 til F10 for detaljer, eller Esc for å avslutte hjelp."
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
 msgid "<keycap>F2</keycap>"
-msgstr ""
+msgstr "<keycap>F2</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
@@ -296,7 +284,7 @@ msgstr "Trykk F1 for hjelperegisteret eller Esc for å avslutte hjelpen."
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
 msgid "<keycap>F3</keycap>"
-msgstr ""
+msgstr "<keycap>F3</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
@@ -320,11 +308,8 @@ msgstr "Installer Ubuntu"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-#, fuzzy
-#| msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
 msgid "Start the installation -- this is the default option."
-msgstr ""
-"Start installasjonen -- dette er den vanlige ${MEDIA_TYPE}-installasjonen."
+msgstr "Start installasjonen -- dette er standardalternativet ."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -458,7 +443,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
 msgid "<keycap>F4</keycap>"
-msgstr ""
+msgstr "<keycap>F4</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
@@ -494,14 +479,6 @@ msgstr "Start opp: redde acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
-#, fuzzy
-#| msgid ""
-#| "There is no dedicated rescue mode on this CD. However, since the entire "
-#| "system runs from the CD, it is possible to use the command-line and/or "
-#| "graphical tools provided to rescue a broken system, and to use a web "
-#| "browser to search for help. Extensive advice is available online for most "
-#| "kinds of problems that might cause your normal system to fail to boot "
-#| "correctly."
 msgid ""
 "There is no dedicated rescue mode on this disc. However, since the disc "
 "provides a complete user environment, it is possible to use the command-line "
@@ -510,16 +487,17 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"Det er ingen dedikert reddemodus på denne CD. Men siden hele systemet kjører "
-"fra CD, er det mulig å bruke kommandolinjen og/eller grafiske verktøy for å "
-"redde et havarert system, og å bruke nettleser for å lete etter hjelp. "
-"Omfattende hjelp er tilgjengelig på Internett for de fleste problemer som "
-"kan hindre det normale systemet ditt i å starte riktig."
+"Det finnes ingen dedikert rescue-modus på denne platen. Men siden platen gir "
+"et komplett brukermiljø, er det mulig å bruke kommandolinjeverktøy og / "
+"eller grafiske verktøy gitt for å redde et ødelagt system, og å bruke en "
+"nettleser for å søke etter hjelp. Omfattende råd er tilgjengelig på nettet "
+"for de fleste typer problemer som kan føre til at vanlige systemet for å "
+"unnlate å starte riktig."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
 msgid "<keycap>F5</keycap>"
-msgstr ""
+msgstr "<keycap>F5</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
@@ -604,7 +582,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
 msgid "<keycap>F6</keycap>"
-msgstr ""
+msgstr "<keycap>F6</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
@@ -786,7 +764,7 @@ msgstr "Start opp: live vga=771 noapic nolapic"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:536
 msgid "<keycap>F7</keycap>"
-msgstr ""
+msgstr "<keycap>F7</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
@@ -888,7 +866,7 @@ msgstr "Start opp: live aic7xxx.aic7xxx=no_probe"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:609
 msgid "<keycap>F8</keycap>"
-msgstr ""
+msgstr "<keycap>F8</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
@@ -959,14 +937,12 @@ msgstr "<userinput>bootkbd=es</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr ""
+msgstr "Velg Kubuntu-skrivebordet"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
-#, fuzzy
-#| msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
+msgstr "<userinput>tasks=kubuntu-desktop</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
@@ -983,10 +959,8 @@ msgstr "<userinput>pci=noacpi</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
-#, fuzzy
-#| msgid "Use high contrast accessibility theme"
 msgid "Use high contrast theme"
-msgstr "Bruk høykontrastshjelpetema"
+msgstr "Bruk høykontrasttema"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
@@ -1009,10 +983,9 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
-#, fuzzy, no-wrap
-#| msgid "boot: install acpi=off"
+#, no-wrap
 msgid "boot: install fb=false"
-msgstr "Starte opp: installer acpi=off"
+msgstr "boot: install fb=false"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
@@ -1023,7 +996,7 @@ msgstr "Start opp: live pci=noacpi"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:699
 msgid "<keycap>F9</keycap>"
-msgstr ""
+msgstr "<keycap>F9</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:700
@@ -1078,7 +1051,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
 msgid "<keycap>F10</keycap>"
-msgstr ""
+msgstr "<keycap>F10</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:756
@@ -1150,21 +1123,3 @@ msgid ""
 msgstr ""
 "Dette systemet er basert på Debian installer. Se <ulink url=\"http://www."
 "debian.org/\" /> for flere detaljer og informasjon om Debian-prosjektet."
-
-#~ msgid "Verbose debugging"
-#~ msgstr "Utvidet feilsøking"
-
-#~ msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-#~ msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#~ msgid "Debug boot sequence"
-#~ msgstr "Feilsøk oppstartssekvensen"
-
-#~ msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-#~ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
-
-#~ msgid "Use special tasks"
-#~ msgstr "Bruk spesielle oppgaver"
-
-#~ msgid "boot: install pci=noacpi"
-#~ msgstr "Start opp: installer pci=noacpi"
