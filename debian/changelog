@@ -1,9 +1,9 @@
-debian-installer (20081029ubuntu90) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu90) lucid; urgency=low
 
   * Move Dove images to 2.6.32-202 kernels.
   * Update help translation files.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 11 Mar 2010 19:26:23 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 11 Mar 2010 20:51:22 +0000
 
 debian-installer (20081029ubuntu89) lucid; urgency=low
 
