@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu92) UNRELEASED; urgency=low
+
+  * Add vlan-udeb to netboot images (LP: #530459).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 22 Mar 2010 21:18:07 +0000
+
 debian-installer (20081029ubuntu91) lucid; urgency=low
 
   * Move to 2.6.32-17 kernels.
