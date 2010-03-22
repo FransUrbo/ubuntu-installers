@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2010-02-20 18:42+0000\n"
-"Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
+"PO-Revision-Date: 2010-03-21 20:04+0000\n"
+"Last-Translator: Красимир Чонов (bfaf) <mk2616@abv.bg>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-03-11 20:17+0000\n"
+"X-Launchpad-Export-Date: 2010-03-22 20:36+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: help.xml:6
@@ -157,7 +157,7 @@ msgid ""
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
 "Живата система не изисква никакво място на твърдия диск. Ако има "
-"съществуващи swa дялове на диска, те ще бъдат използвани."
+"съществуващи swap дялове на диска, те ще бъдат използвани."
 
 #: help.xml:147 help.xml:748
 msgid ""
@@ -421,7 +421,7 @@ msgstr ""
 "Много от модулите на ядрото се зареждат динамично от инсталатора и параметри "
 "за тези модули не могат да се указват от командния ред. За да се появи "
 "подкана за параметрите, когато модули са заредени, стартирайте в експертен "
-"режим (вж. <link linkend=\"F3\"> <keycap>F3</ keycap></link>)."
+"режим (вж. <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #: help.xml:412
 msgid ""
@@ -451,14 +451,14 @@ msgid ""
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Можете да използвате следните параметри за стартиране като натиснете F6 в "
-"комбинация д метод за стартиране (вижте <link linkend=\"F3\"><keycap>F3</"
+"комбинация с метод за стартиране (вижте <link linkend=\"F3\"><keycap>F3</"
 "keycap></link>)."
 
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
-"Ако използвате шестнадесетичния номера трябва да използвате 0x като "
-"представка (като 0x300)."
+"Ако използвате шестнадесетични номера трябва да използвате 0x като "
+"представка (пример 0x300)."
 
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
@@ -520,7 +520,7 @@ msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr "Насилване на използване на общ IDE драйвер"
+msgstr "Изрично използване на общ IDE драйвер"
 
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
@@ -530,7 +530,7 @@ msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
-"Възможни (временно) за заобикаляне на заключвания или други хардуерни "
+"Възможности (временно) за заобикаляне на заключвания или други хардуерни "
 "повреди:"
 
 #: help.xml:493
@@ -700,7 +700,7 @@ msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
 
 #: help.xml:646
 msgid "Disable framebuffer"
-msgstr "Забраняване на рамков буфир"
+msgstr "Забраняване на кадрови буфер"
 
 #: help.xml:647
 msgid "<userinput>fb=false</userinput>"
@@ -716,7 +716,7 @@ msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #: help.xml:656
 msgid "Force static network config"
-msgstr "Насилване на статична настройка на мрежа"
+msgstr "Изрично използване на статична настройка на мрежата"
 
 #: help.xml:657
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
@@ -800,16 +800,18 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Ние сме особено заинтересовани да слушаме за проблеми с инсталирането, тъй "
-"като по принцип те не се случват, само на <emphasis>един</emphasis> човек."
+"Ние сме особено заинтересовани да получаваме обратна връзка за проблеми с "
+"инсталирането, тъй като по принцип те не се случват само на <emphasis>един</"
+"emphasis> човек."
 
 #: help.xml:731
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"Ние сме особено заинтересовани да слушаме за проблеми със стартирането, тъй "
-"като по принцип те не се случват, само на <emphasis>един</emphasis> човек."
+"Ние сме особено заинтересовани да получаваме обратна връзка за проблеми със "
+"стартирането, тъй като по принцип те не се случват само на <emphasis>един</"
+"emphasis> човек."
 
 #: help.xml:735
 msgid ""
@@ -818,7 +820,7 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Ние или вече сме чули за вашия проблем и можем да издадем бърза поправка или "
+"Вече сме научили за вашия проблем и можем да предоставим бърза поправка или "
 "бихме искали да чуем за него и да поработим върху него, и следващия "
 "потребител, който има същия проблем ще се възползват от опита ви!"
 

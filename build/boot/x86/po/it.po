@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-02-19 22:36+0000\n"
+"PO-Revision-Date: 2010-03-14 21:03+0000\n"
 "Last-Translator: Giorgio Catanzaro <catanzag@gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-03-11 20:17+0000\n"
+"X-Launchpad-Export-Date: 2010-03-22 20:36+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -38,6 +38,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Questo è un sistema di installazione per ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. È stato creato il ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -45,6 +47,8 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
+"Questo è un sistema live per ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. È "
+"stato creato il ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -94,7 +98,7 @@ msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr ""
+msgstr "Metodi di avvio per l'utilizzo del sistema in modi speciali."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -179,6 +183,8 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"Per i tasti da F1 a F19 digitare  control, F e poi i tasti da 1 a 9\n"
+"Per il testo F10 digitare control, F e poi il tasto 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -312,7 +318,7 @@ msgstr "Installa Ubuntu"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr ""
+msgstr "Avvia l'installazione -- questa è l'opzione predefinita."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -491,6 +497,12 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
+"Sul disco non è presente una modalità di emergenza dedicata. Comunque, dato "
+"che il disco contiene un ambiente completo, è possibile usare la riga di "
+"comando o i programmi grafici forniti per riparare un sistema danneggiato e "
+"usare un browser web per cercare aiuto. In rete si possono trovare soluzioni "
+"esaustive per la maggior parte dei problemi che possono causare il mancato "
+"avvio corretto del sistema."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -936,7 +948,7 @@ msgstr "<userinput>bootkbd=es</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr ""
+msgstr "Seleziona il desktop Kubuntu"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
@@ -959,7 +971,7 @@ msgstr "<userinput>pci=noacpi</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr ""
+msgstr "Usa un tema a contrasto elevato"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670

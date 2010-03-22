@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-03-09 21:25+0000\n"
-"Last-Translator: Yuki Seaside <iam@yukiseaside.com>\n"
+"PO-Revision-Date: 2010-03-22 07:57+0000\n"
+"Last-Translator: Roy Chan <roy.chan@linux.org.hk>\n"
 "Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-03-11 20:17+0000\n"
+"X-Launchpad-Export-Date: 2010-03-22 20:36+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -1021,8 +1021,8 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"我們已準備好聆聽關於您的特殊問題並公佈一個快速的修復程式，或者我們也想要聆聽"
-"問題並和您一起解決它，而下一個碰到同樣問題的使用者將會受益於您的經驗！"
+"我們已知道您的特殊問題並可公佈一個快速的修復，或者我們也想要聆聽問題並和您一"
+"起解決它，而下一個碰到同樣問題的使用者將會受益於您的經驗！"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755

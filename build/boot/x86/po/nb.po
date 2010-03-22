@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-03-10 07:09+0000\n"
-"Last-Translator: Christian Aasan <christian.aasan@gmail.com>\n"
+"PO-Revision-Date: 2010-03-16 11:12+0000\n"
+"Last-Translator: Kjetil Birkeland Moe <kjetilbi@stud.ntnu.no>\n"
 "Language-Team: Norwegian Bokmål <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-03-11 20:16+0000\n"
+"X-Launchpad-Export-Date: 2010-03-22 20:36+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -47,6 +47,8 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
+"Dette er et live-system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
+"Kompilert ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -181,6 +183,8 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"For F1-F9 trykk CTRL og F etterfulgt av tall 1-9\n"
+"For F10 trykk CTRL og F etterfulgt av tallet 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
