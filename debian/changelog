@@ -9,6 +9,9 @@ grub-installer (1.49ubuntu9) UNRELEASED; urgency=low
     is inadequate for many more complex situations.  Ironically, Ubiquity
     makes this option easily accessible from the "Advanced" dialog box, but
     Ubuntu's d-i required a special boot parameter to display it.
+  * Update grub-installer/bootdev text to avoid GRUB device naming that
+    changed between GRUB Legacy and GRUB 2, and to use libata-style device
+    naming since that is more accurate for most people (LP: #391775)
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 25 Mar 2010 15:42:38 +0000
 
