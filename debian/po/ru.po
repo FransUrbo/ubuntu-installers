@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
-"Report-Msgid-Bugs-To: grub-installer@packages.debian.org\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2010-03-26 09:46+0000\n"
 "PO-Revision-Date: 2008-09-19 08:03+0400\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"

@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: dDz.po\n"
-"Report-Msgid-Bugs-To: grub-installer@packages.debian.org\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2010-03-26 09:46+0000\n"
 "PO-Revision-Date: 2008-08-28 21:18+0530\n"
 "Last-Translator: Jurmey Rabgay <jrabgay@gmail.com>\n"
