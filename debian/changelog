@@ -1,4 +1,4 @@
-grub-installer (1.49ubuntu9) UNRELEASED; urgency=low
+grub-installer (1.49ubuntu9) lucid; urgency=low
 
   * Ask grub-installer/only_debian at high priority again (LP: #47135).
     Originally, in Warty, we ensured that this question wouldn't be visible
@@ -13,7 +13,7 @@ grub-installer (1.49ubuntu9) UNRELEASED; urgency=low
     changed between GRUB Legacy and GRUB 2, and to use libata-style device
     naming since that is more accurate for most people (LP: #391775)
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 25 Mar 2010 15:42:38 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 26 Mar 2010 11:34:43 +0000
 
 grub-installer (1.49ubuntu8) lucid; urgency=low
 
