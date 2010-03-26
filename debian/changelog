@@ -1,6 +1,10 @@
 debian-installer (20081029ubuntu92) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Add vlan-udeb to netboot images (LP: #530459).
+
+  [ Oliver Grawert ]
+  * add support for armel+omap architecture
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 22 Mar 2010 21:18:07 +0000
 
