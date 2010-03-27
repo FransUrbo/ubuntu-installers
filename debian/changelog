@@ -1,6 +1,10 @@
 debian-installer (20081029ubuntu93) UNRELEASED; urgency=low
 
+  [ Oliver Grawert ]
   * armel+omap netinst initrd needs gzip compression in mkimage call
+
+  [ Colin Watson ]
+  * Move to 2.6.32-18 kernels.
 
  -- Oliver Grawert <ogra@ubuntu.com>  Sat, 27 Mar 2010 14:48:32 +0100
 
