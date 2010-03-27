@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu93) UNRELEASED; urgency=low
+
+  * armel+omap netinst initrd needs gzip compression in mkimage call
+
+ -- Oliver Grawert <ogra@ubuntu.com>  Sat, 27 Mar 2010 14:48:32 +0100
+
 debian-installer (20081029ubuntu92) lucid; urgency=low
 
   [ Colin Watson ]
