@@ -1,8 +1,8 @@
-base-installer (1.103ubuntu6) UNRELEASED; urgency=low
+base-installer (1.103ubuntu6) lucid; urgency=low
 
   * Handle armel metapackages in ordering hack (imx51, dove, and omap).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 29 Mar 2010 14:53:06 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 30 Mar 2010 10:21:10 +0100
 
 base-installer (1.103ubuntu5) lucid; urgency=low
 
