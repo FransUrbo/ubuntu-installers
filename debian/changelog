@@ -1,4 +1,4 @@
-grub-installer (1.49ubuntu10) UNRELEASED; urgency=low
+grub-installer (1.49ubuntu10) lucid; urgency=low
 
   * Historically, Ubuntu's default behaviour in the absence of command-line
     arguments to the installer has been to pass 'splash' to the installed
@@ -9,7 +9,7 @@ grub-installer (1.49ubuntu10) UNRELEASED; urgency=low
     'splash' in the installed system, so introduce a 'nosplash' argument
     which inhibits this, for use by the server CD (LP: #548954).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 01 Apr 2010 23:41:59 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 01 Apr 2010 23:44:48 +0100
 
 grub-installer (1.49ubuntu9) lucid; urgency=low
 
