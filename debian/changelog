@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu95) UNRELEASED; urgency=low
+
+  * Move iMX51 images to 2.6.31-607 kernels, and dove images to 2.6.32-203
+    kernels.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Fri, 02 Apr 2010 12:43:33 -0700
+
 debian-installer (20081029ubuntu94) lucid; urgency=low
 
   * Move to 2.6.32-19 kernels.
