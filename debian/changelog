@@ -1,10 +1,10 @@
-grub-installer (1.49ubuntu11) UNRELEASED; urgency=low
+grub-installer (1.49ubuntu11) lucid; urgency=low
 
   * 'nosplash' doesn't work because it isn't passed through by user-params.
     Use debian-installer/splash=false for this behaviour instead
     (LP: #548954).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 06 Apr 2010 13:19:32 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 06 Apr 2010 13:26:16 +0100
 
 grub-installer (1.49ubuntu10) lucid; urgency=low
 
