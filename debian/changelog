@@ -1,9 +1,9 @@
-debian-installer (20081029ubuntu96) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu96) lucid; urgency=low
 
   * build/config/armel/dove/netboot.cfg: set the right load address in the
     netboot image.  LP: #541399.
 
- -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 08 Apr 2010 03:05:02 -0700
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Fri, 09 Apr 2010 17:31:56 -0700
 
 debian-installer (20081029ubuntu95) lucid; urgency=low
 
