@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu97) UNRELEASED; urgency=low
+
+  * on OMAP the HID stack was decided to not be built in so we need
+    input-modules-*.udeb in d-i by default
+
+ -- Oliver Grawert <ogra@ubuntu.com>  Sat, 10 Apr 2010 08:36:57 +0200
+
 debian-installer (20081029ubuntu96) lucid; urgency=low
 
   * build/config/armel/dove/netboot.cfg: set the right load address in the
