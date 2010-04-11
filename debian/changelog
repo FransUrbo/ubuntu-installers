@@ -1,7 +1,11 @@
 debian-installer (20081029ubuntu97) UNRELEASED; urgency=low
 
+  [ Oliver Grawert ]
   * on OMAP the HID stack was decided to not be built in so we need
     input-modules-*.udeb in d-i by default
+
+  [ Steve Langasek ]
+  * Move to 2.6.32-20 kernels.
 
  -- Oliver Grawert <ogra@ubuntu.com>  Sat, 10 Apr 2010 08:36:57 +0200
 
