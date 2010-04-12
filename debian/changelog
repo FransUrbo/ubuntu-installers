@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu98) UNRELEASED; urgency=low
+
+  * add boot.scr to boot OMAP netinst kernel and initrd from SD card
+
+ -- Oliver Grawert <ogra@ubuntu.com>  Mon, 12 Apr 2010 14:30:08 +0200
+
 debian-installer (20081029ubuntu97) lucid; urgency=low
 
   [ Oliver Grawert ]
