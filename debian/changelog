@@ -1,10 +1,11 @@
-debian-installer (20081029ubuntu98) UNRELEASED; urgency=low
+debian-installer (20081029ubuntu98) lucid; urgency=low
 
+  [ Oliver Grawert ]
   * add boot.scr to boot OMAP netinst kernel and initrd from SD card
   * make sure dove also uses INITRD_FS = initramfs for netboot, else it fails
     to uncompress the initrd LP: #541399.
 
- -- Oliver Grawert <ogra@ubuntu.com>  Mon, 12 Apr 2010 14:30:08 +0200
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 13 Apr 2010 12:54:36 -0700
 
 debian-installer (20081029ubuntu97) lucid; urgency=low
 
