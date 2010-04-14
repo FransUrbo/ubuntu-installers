@@ -1,3 +1,10 @@
+debian-installer (20081029ubuntu99) UNRELEASED; urgency=low
+
+  * Tidy up the i386/netboot-xen configuration for Ubuntu, and enable it
+    (LP: #532547).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 14 Apr 2010 09:21:27 +0100
+
 debian-installer (20081029ubuntu98) lucid; urgency=low
 
   [ Oliver Grawert ]
