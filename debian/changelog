@@ -1,3 +1,9 @@
+debian-installer (20081029ubuntu100) UNRELEASED; urgency=low
+
+  * Move dove images to 2.6.32-204
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 15 Apr 2010 04:41:58 -0700
+
 debian-installer (20081029ubuntu99) lucid; urgency=low
 
   * Tidy up the i386/netboot-xen configuration for Ubuntu, and enable it
