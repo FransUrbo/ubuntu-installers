@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-03-11 22:29+0000\n"
-"Last-Translator: nasir khan saikat <nasir8891@gmail.com>\n"
+"PO-Revision-Date: 2010-04-16 20:38+0000\n"
+"Last-Translator: Kushal <Unknown>\n"
 "Language-Team: Bengali <bn@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-03-22 20:36+0000\n"
+"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -222,6 +222,10 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"সাধারন উবুন্টু ডেস্কটপ ইন্সটলেশন এর জন্য আপনার হার্ড ডিস্ক এ অন্তত ২ গিগাবাইট, অথবা "
+"মিনিমাল সার্ভার ইন্সটলেশন এর জন্য ৪০০ মেগাবাইট ফ্রি স্পেস প্রয়োজন। পরবর্তিতে আপনার "
+"উবুন্টু সিস্টেম আপনি কিরুপে ব্যাবহার করবেন সে অনুযাই বারতি প্যাকেজ ইন্সটলেশন এর জন্য "
+"বারতি ফ্রি স্পেস দরকার হবে।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -433,7 +437,7 @@ msgstr "<keycap>F4</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "ক্ষতিগ্রস্থ সিস্টেমকে পুনরুদ্ধারকরণ"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
@@ -448,12 +452,12 @@ msgstr "পুনরুদ্ধার"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "ক্ষতিগ্রস্থ সিস্টেমকে পুনরুদ্ধার করুন"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "পুনরুদ্ধারকরণ মোডে বুট করুন"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
@@ -547,7 +551,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
 msgid "<keycap>F6</keycap>"
-msgstr ""
+msgstr "<keycap>F6</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
@@ -577,7 +581,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr ""
+msgstr "হার্ডওয়্যার"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
@@ -587,7 +591,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr ""
+msgstr "আই.বি.এম. পিএস/১ অথবা ভ্যালুপয়েন্ট  (IDE disk)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
@@ -599,7 +603,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr ""
+msgstr "কিছু আই.বি.এম. থিঙ্কপ্যাড"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
@@ -627,7 +631,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
@@ -637,7 +641,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
@@ -647,7 +651,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
@@ -683,7 +687,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
@@ -824,12 +828,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
 msgid "RESULT"
-msgstr ""
+msgstr "ফলাফল"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:633
 msgid "PARAMETER"
-msgstr ""
+msgstr "প্যারামিটার"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
@@ -839,17 +843,17 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:637
 msgid "<userinput>fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>fb=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
 msgid "Don't start PCMCIA"
-msgstr ""
+msgstr "PCMCIA চালু করবেন না"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:642
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
-msgstr ""
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:646
@@ -895,7 +899,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr ""
+msgstr "উচ্চ কন্ট্রাস্টের থিম ব্যবহার করুন"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
@@ -929,7 +933,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:699
 msgid "<keycap>F9</keycap>"
-msgstr ""
+msgstr "<keycap>F9</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:700
@@ -939,17 +943,17 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr ""
+msgstr "উবুন্টু ইন্সটল করতে না পারলে হতাশ হবেন না!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr ""
+msgstr "উবুন্টু চালু করতে না পারলে হতাশ হবেন না!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
-msgstr ""
+msgstr "ঊবুন্টু টীম আপনাকে সাহায্য করতে প্রস্তুত!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:716
@@ -977,12 +981,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
 msgid "<keycap>F10</keycap>"
-msgstr ""
+msgstr "<keycap>F10</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr ""
+msgstr "কপিরাইট ও ওয়ারেন্টি"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:763
@@ -994,7 +998,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:768
 msgid "The Ubuntu system is freely redistributable."
-msgstr ""
+msgstr "ঊবুন্টু সিস্টেম বিনামূল্যে বিতরণযোগ্য।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:771

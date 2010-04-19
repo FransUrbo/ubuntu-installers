@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-03-22 18:31+0000\n"
-"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
+"PO-Revision-Date: 2010-04-15 08:55+0000\n"
+"Last-Translator: TLE <k.nielsen81@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-03-22 20:36+0000\n"
+"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -25,7 +25,7 @@ msgstr "Installationsprogrammets opstartshjælpeskærme"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
 msgid "<keycap>F1</keycap>"
-msgstr ""
+msgstr "<keycap>F1</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
@@ -38,6 +38,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Dette er et installationssystem for ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Det blev bygget ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -45,6 +47,8 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
+"Dette er et live ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} system. Det "
+"blev bygget ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -64,7 +68,7 @@ msgstr "EMNE"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
 msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
@@ -74,7 +78,7 @@ msgstr "Denne side, hjælpeindekset."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
 msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
@@ -89,17 +93,17 @@ msgstr "Forudsætninger for at køre ${DISTRIBUTION_NAME}."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
 msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr ""
+msgstr "Opstartsmetoder for specifikke anvendelser af dette system."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
 msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
@@ -109,7 +113,7 @@ msgstr "Yderligere opstartsmetoder; redning af et ødelagt system."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
 msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
@@ -119,7 +123,7 @@ msgstr "Specielle opstartsparametre, oversigt."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
 msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
@@ -129,7 +133,7 @@ msgstr "Specielle opstartsparametre for specielle maskiner."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
 msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
@@ -139,7 +143,7 @@ msgstr "Specielle opstartsparametre for udvalgte diskstyreenheder."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
 msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
@@ -154,7 +158,7 @@ msgstr "Specielle opstartsparametre for bootstrap-systemet."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
 msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
@@ -164,7 +168,7 @@ msgstr "Hvordan man får hjælp."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
 msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
@@ -179,6 +183,8 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"Tryk Ctrl og F efterfulgt af et af cifrene 1-9 for F1-F9\\n\n"
+"Tryk Ctrl og F efterfulgt af 0 for F10\\n\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -195,7 +201,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
 msgid "<keycap>F2</keycap>"
-msgstr ""
+msgstr "<keycap>F2</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
@@ -248,8 +254,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Live-systemet har ikke brug for at skrive på din harddisk. Dog, vil det "
-"benytte sig af eventuelle eksisterende Linux swap-partitioner på disken."
+"Live-systemet har ikke brug for plads på din harddisk. Dog, vil det benytte "
+"sig af eventuelle eksisterende Linux swap-partitioner på disken."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -286,7 +292,7 @@ msgstr "Tryk F1 for hjælp, eller Escape for at afslutte hjælp."
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
 msgid "<keycap>F3</keycap>"
-msgstr ""
+msgstr "<keycap>F3</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
@@ -311,7 +317,7 @@ msgstr "Installér Ubuntu"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr ""
+msgstr "Start installationen -- dette er standardvalget."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -445,7 +451,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
 msgid "<keycap>F4</keycap>"
-msgstr ""
+msgstr "<keycap>F4</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
@@ -490,11 +496,17 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
+"Der er ikke en dedikeret redningstilstand på denne disk. Men da disken giver "
+"et komplet brugermiljø, er det muligt at bruge kommandolinje- og/eller "
+"grafiske værktøjer, for at redde et beskadiget system, og at bruge en "
+"webbrowser til at søge om hjælp. Omfattende rådgivning er tilgængelig online "
+"for de fleste typer af problemer, der kan forårsage at dit normale system "
+"ikke kan starte korrekt."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
 msgid "<keycap>F5</keycap>"
-msgstr ""
+msgstr "<keycap>F5</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
@@ -507,6 +519,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
+"På nogle systemer kan det være nødvendigt at specificere en parameter ved "
+"<literal>boot:</literal>-prompten, for at kunne starte systemet."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
@@ -514,6 +528,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"På nogle systemer kan det være nødvendigt at specificere en parameter ved at "
+"trykke F6, for at kunne starte systemet."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -521,6 +537,9 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"Hvis Linux for eksempel ikke var i stand til automatisk at finde dit "
+"hardware, bliver du nødt til at specificere dets placering eller type for at "
+"det bliver genkendt."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
@@ -573,7 +592,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
 msgid "<keycap>F6</keycap>"
-msgstr ""
+msgstr "<keycap>F6</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
@@ -587,6 +606,9 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend=\"F3"
 "\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Du kan bruge følgende opstartstilvalg ved <literal>boot:</literal>-prompten, "
+"i kombination med opstartsmetoden (læs <link linkend=\\\"F3\\\"><keycap>F3</"
+"keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
@@ -594,11 +616,13 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Du kan bruge følgende opstartstilvalg ved at tykke F6, i kombination med "
+"opstartsmetoden (se <link linkend=\\\"F3\\\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr ""
+msgstr "Hvis du bruger hexadecimale tal, skal du foranstille 0x (f.eks 0x300)."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
@@ -608,7 +632,7 @@ msgstr "HARDWARE"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr ""
+msgstr "PARAMETER AT SPECIFICERE"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
@@ -632,7 +656,7 @@ msgstr "Nogle IBM Thinkpads"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
@@ -646,6 +670,9 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
@@ -655,7 +682,7 @@ msgstr "Bærbare med skærmvisningsproblemer"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
@@ -665,7 +692,7 @@ msgstr "Benyt seriel port ved 9600 baud"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
@@ -675,53 +702,56 @@ msgstr "Tvungen brug af generisk IDE-driver"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
+"Mulige (midlertidige) løsninger for fastfrysning eller andre "
+"hardwareproblemer:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "deaktiver problematisk routing af APIC-afbrydelsessignaler"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "(delvis) deaktivering af ACPI"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 msgstr ""
+"<userinput>acpi=noirq</userinput> eller <userinput>acpi=off</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "deaktivér USB"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "vent på afbrydelsessignaler"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
@@ -732,18 +762,18 @@ msgstr "For eksempel:"
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: install vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: live vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:536
 msgid "<keycap>F7</keycap>"
-msgstr ""
+msgstr "<keycap>F7</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
@@ -764,6 +794,11 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
@@ -780,6 +815,10 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
@@ -827,18 +866,18 @@ msgstr ""
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:609
 msgid "<keycap>F8</keycap>"
-msgstr ""
+msgstr "<keycap>F8</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
@@ -873,7 +912,7 @@ msgstr "Slå framebuffer fra"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:637
 msgid "<userinput>fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>fb=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
@@ -883,7 +922,7 @@ msgstr "Start ikke PCMCIA"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:642
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
-msgstr ""
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:646
@@ -893,7 +932,7 @@ msgstr "Tving statisk netværkskonfiguration"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:647
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr ""
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:651
@@ -903,17 +942,17 @@ msgstr "Vælg tastaturlayout"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:652
 msgid "<userinput>bootkbd=es</userinput>"
-msgstr ""
+msgstr "<userinput>bootkbd=es</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr ""
+msgstr "Vælg Kubuntu-skrivebordet"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=kubuntu-desktop</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
@@ -926,17 +965,17 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:665
 msgid "<userinput>pci=noacpi</userinput>"
-msgstr ""
+msgstr "<userinput>pci=noacpi</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr ""
+msgstr "Brug tema med høj kontrast"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:674
@@ -949,23 +988,25 @@ msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
 #, no-wrap
 msgid "boot: install fb=false"
-msgstr ""
+msgstr "boot: install fb=false"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "boot: live pci=noacpi"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:699
 msgid "<keycap>F9</keycap>"
-msgstr ""
+msgstr "<keycap>F9</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:700
@@ -1020,12 +1061,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
 msgid "<keycap>F10</keycap>"
-msgstr ""
+msgstr "<keycap>F10</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr ""
+msgstr "OPHAVSRET OG GARANTIER"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:763
@@ -1033,6 +1074,8 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"Ubuntu er Copyright (C) 2004-2010 Canonical Ltd, og omfatter arbejdet af "
+"mange andre originale forfattere og bidragydere."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:768

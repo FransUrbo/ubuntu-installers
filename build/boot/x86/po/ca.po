@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-03-11 22:28+0000\n"
-"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
+"PO-Revision-Date: 2010-04-10 08:38+0000\n"
+"Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-03-22 20:36+0000\n"
+"X-Launchpad-Export-Date: 2010-04-18 23:36+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -184,6 +184,8 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"Per a F1-F19 premeu control i F i després el dígit 1-9\n"
+"Per a F10 premeu control i F i després el dígit 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -323,7 +325,7 @@ msgstr "Instal·la l'Ubuntu"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr ""
+msgstr "Comença la instal·lació -- aquesta és l'opció predeterminada."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -505,6 +507,12 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
+"No hi ha mode de rescat dedicat en aquest disc. Tanmateix, com que el disc "
+"proporciona un entorn d'usuari complet, és possible utilitzar eines "
+"proporcionades de la línia d'ordres i gràfiques per recuperar un sistema "
+"malmès, i utilitzar un navegador web per buscar ajuda. A Internet hi ha un "
+"gran número de consells per a la majoria de problemes que poden causar que "
+"el vostre sistema no arranqui correctament."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -954,7 +962,7 @@ msgstr "<userinput>bootkbd=es</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr ""
+msgstr "Selecciona l'escriptori Kubuntu"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
@@ -977,7 +985,7 @@ msgstr "<userinput>pci=noacpi</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr ""
+msgstr "Utilitza el tema d'alt contrast"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670

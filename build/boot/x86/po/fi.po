@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-03-11 22:28+0000\n"
-"Last-Translator: Elias Julkunen <elias.julkunen@gmail.com>\n"
+"PO-Revision-Date: 2010-03-30 19:28+0000\n"
+"Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-03-22 20:36+0000\n"
+"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -38,6 +38,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Tämä on asennusjärjestelmä ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} "
+"jakelulle, ja se on koottu ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -45,6 +47,8 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
+"Tämä on live-järjestemä ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} "
+"jakelulle, ja se on koottu ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -94,7 +98,7 @@ msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr ""
+msgstr "Käynnistysmenetelmät tämän järjestelmän käyttöön erityismenetelmin."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -179,6 +183,8 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"Käyttääksesi näppäimiä F1-F19 paina ensin F ja sen jälkeen numero väliltä 1-9\n"
+"Käyttääksesi näppäintä F10 paina ensin F ja sitten numero 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -489,6 +495,12 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
+"Tämä levy ei sisällä varsinaista pelastus-/korjaustilaa. Rikkoontunut "
+"järjestelmä on kuitenkin mahdollista korjata käyttäen esimerkiksi "
+"komentoriviä tai graafisia työkaluja, sillä levy tarjoaa täysin graafisen "
+"käyttöympäristön. Voit myös selata internetsivuja etsiäksesi apua, sillä "
+"suurimpaan osaan järjestelmän käynnistymiseen liittyvistä ongelmista löytyy "
+"vastaus internetistä."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355

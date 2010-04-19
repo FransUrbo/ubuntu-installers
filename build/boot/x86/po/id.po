@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-03-15 11:30+0000\n"
+"PO-Revision-Date: 2010-04-07 10:28+0000\n"
 "Last-Translator: Bagus Herlambang <bagus@vfemail.net>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-03-22 20:36+0000\n"
+"X-Launchpad-Export-Date: 2010-04-18 23:36+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -503,6 +503,12 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
+"Tidak ada mode penyelamatan pada CD ini. Namun, karena disk pengguna "
+"menyediakan lingkungan yang lengkap, sehingga memungkin untuk menggunakan "
+"baris perintah dan/atau perkakas berbasis grafik untuk menyelamatkan sistem "
+"yang rusak, dan menggunakan browser web untuk mencari bantuan. Banyak "
+"bantuan tersedia online untuk setiap jenis masalah yang dapat menyebabkan "
+"sistem normal Anda gagal boot dengan benar."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -977,7 +983,7 @@ msgstr "<userinput>pci=noacpi</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr ""
+msgstr "Menggunakan tema kontras tinggi"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
