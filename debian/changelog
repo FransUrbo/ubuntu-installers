@@ -71,6 +71,9 @@ debian-installer (20100211ubuntu1) UNRELEASED; urgency=low
     - Add vlan-udeb to netboot images.
   * Set default suite to maverick.
   * Move to 2.6.34-3 kernels.
+  * Switch back to vga=normal rather than vga=788 for now; the latter will
+    cause problems until such time as fbcon is built into Ubuntu kernels,
+    and it at least doesn't seem to work in kvm at the moment.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 24 May 2010 14:19:39 +0100
 
