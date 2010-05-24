@@ -83,6 +83,7 @@ APT_GET="apt-get --assume-yes \
 	-o Dir::Etc::Preferences=`pwd`/preferences.$TYPE.local \
 	-o Dir::State=`pwd`/$APTDIR/state \
 	-o Debug::NoLocking=true \
+	-o Debug::pkgDepCache::AutoInstall=true \
 	-o Dir::Cache=`pwd`/$APTDIR/cache \
 	-o Acquire::Retries=3 \
 	-o APT::Install-Recommends=false
@@ -103,7 +104,7 @@ else
 	echo -n > $APTDIR/state/status
 	# Some archs have libc6, others have libc6.1. libgcc1 is not used
 	# on all architectures.
-	for i in libc6 libc6.1 libnewt0.52 libgcc1; do
+	for i in libc0.1 libc0.3 libc6 libc6.1 libnewt0.52 libgcc1; do
 		if dpkg -s $i >/dev/null 2>&1; then
 			dpkg -s $i | grep -v Depends: >> $APTDIR/state/status
 			echo >> $APTDIR/state/status
@@ -138,6 +139,29 @@ fi
 
 if [ "$PACKAGES" = update ]; then
 	exit 0
+fi
+
+# We do Kernel-Version filtering in pkg-list as well, but for some reason
+# apt pulls in multiple providers of virtual packages unnecessarily which
+# causes problems.
+if [ "$KERNELVERSION" ]; then
+	for packages in `find $APTDIR/state -maxdepth 2 -type f -name \*_Packages ! -name \*_localudebs_Packages -print`; do
+		KV_COND=
+		for KV in $KERNELVERSION; do
+			KV_COND="${KV_COND:+$KV_COND }-o -XFKernel-Version $KV"
+		done
+		grep-dctrl -! -rFKernel-Version . $KV_COND "$packages" > "$packages.tmp"
+		ln "$packages" "$packages.orig"
+		mv "$packages.tmp" "$packages"
+	done
+
+	# Ensure the original Packages files get restored
+	cleanup () {
+		for file in `find $APTDIR/state -maxdepth 2 -type f -name \*_Packages.orig -print`; do
+			mv "$file" "${file%.orig}" || true
+		done
+	}
+	trap cleanup EXIT HUP INT QUIT TERM
 fi
 
 # Get udebs.

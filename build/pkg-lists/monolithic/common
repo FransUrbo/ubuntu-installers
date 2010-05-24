@@ -27,4 +27,4 @@ kickseed-common
 initrd-kickseed
 libfribidi0-udeb
 cdebconf-newt-udeb
-cdebconf-newt-terminal
+cdebconf-newt-terminal ?

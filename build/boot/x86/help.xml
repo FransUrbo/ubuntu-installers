@@ -116,7 +116,7 @@ For F10 type control and F then the digit 0
   <title />
 
   <para condition="install">
-   You must have at least 32 megabytes of RAM to use this Ubuntu installer.
+   You must have at least 44 megabytes of RAM to use this Ubuntu installer.
   </para>
 
   <para condition="install">
@@ -128,7 +128,7 @@ For F10 type control and F then the digit 0
   </para>
 
   <para condition="install">
-   See the Installation Manual or the FAQ for more information; both
+   See the Installation Guide or the FAQ for more information; both
    documents are available at the Ubuntu web site,
    <ulink url="http://www.ubuntu.com/" />
   </para>
@@ -729,7 +729,7 @@ For F10 type control and F then the digit 0
   </para>
 
   <para condition="install">
-   See the Installation Manual or the FAQ for more information; both
+   See the Installation Guide or the FAQ for more information; both
    documents are available at the Ubuntu web site,
    <ulink url="http://www.ubuntu.com/" />
   </para>

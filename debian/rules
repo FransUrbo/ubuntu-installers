@@ -1,4 +1,4 @@
-#!/usr/bin/make -f
+#! /usr/bin/make -f
 
 ARCH=$(shell dpkg-architecture -qDEB_BUILD_ARCH)
 VERSION=$(shell LC_ALL=C dpkg-parsechangelog | grep ^Version: | cut -d ' ' -f 2)
@@ -10,6 +10,7 @@ TRANSSTATUS=
 BOOTMENU_BEEP=n
 else
 USE_UDEBS_FROM=$(SUITE)
+USE_PROPOSED_UPDATES=0
 TRANSSTATUS=translation-status
 BOOTMENU_BEEP=y
 endif
@@ -22,7 +23,7 @@ TARNAME=debian-installer-images_$(VERSION)_$(ARCH).tar.gz
 clean:
 	dh_testdir
 	dh_testroot
-	dh_clean build-stamp
+	dh_clean
 	$(MAKE) -C build reallyclean
 	$(MAKE) -C doc/devel/partman clean
 	$(MAKE) -C doc/devel/internals clean
@@ -31,6 +32,7 @@ clean:
 build-images:
 	$(MAKE) -C build all_build stats release \
 		USE_UDEBS_FROM=$(USE_UDEBS_FROM) BUILD_DATE=$(DATE) \
+		USE_PROPOSED_UPDATES=$(USE_PROPOSED_UPDATES) \
 		TRANSSTATUS=$(TRANSSTATUS) BOOTMENU_BEEP=$(BOOTMENU_BEEP)
 	
 build: build-stamp
@@ -43,7 +45,7 @@ build-stamp:
 install: build
 	dh_testdir
 	dh_testroot
-	dh_clean -k
+	dh_prep
 	dh_installdirs
 	
 	debian/rules build-images

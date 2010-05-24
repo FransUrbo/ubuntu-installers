@@ -9,7 +9,7 @@
  7f³70    packages and automatically configures them with the default settings.   ³10
  7f³70                                                                            ³10
  7f³70                                                                            ³10
- 7f³70    See the Installation Manual or the FAQ for more information; both       ³10
+ 7f³70    See the Installation Guide or the FAQ for more information; both        ³10
  7f³70    documents are available at the Ubuntu web site:                         ³10
  7f³70      http://www.ubuntu.com/                                                ³10
  7f³70                                                                            ³10

@@ -1,7 +1,7 @@
 To upload a package correctly, do the following:
 
 * Ensure that your build environment is set up correctly to avoid .svn
-  directories to be included in your uploads.
+  directories being included in your uploads.
   The following settings in your configuration should do this (assuming
   'debuild' is used to build the package):
   - ~/.bashrc:
@@ -12,6 +12,11 @@ To upload a package correctly, do the following:
     # You may also want to add this setting if you work on D-I components
     # for which you're not an uploader.
     DEBCHANGE_AUTO_NMU=no
+   
+  If you use pdebuild from pbuilder the following settings should be used:
+  - ~/.pbuilderrc
+    export DH_ALWAYS_EXCLUDE=CVS:.svn
+    DEBBUILDOPTS="-i -I"
 
 * Update from Subversion:
   svn up
@@ -36,3 +41,11 @@ To upload a package correctly, do the following:
 
 * Commit and tag the release:
   debcommit --release
+
+Since many packages in d-i only contain shell scripts and the like, you can
+build them even if they aren't for your normal host architecture: just pass
+-a<architecture> to most of the devscripts commands (debuild, debsign, debc,
+and debrelease, but not debcommit and not necessarily debdiff). Be careful
+not to do this for packages containing compiled C code; if you do this by
+accident, you'll get a "binary-from-other-architecture" warning from
+Lintian.

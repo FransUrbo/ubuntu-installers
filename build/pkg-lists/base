@@ -25,4 +25,5 @@ oem-config-check
 #include "udev"
 
 # busybox modutils is gone 
-module-init-tools-udeb
+module-init-tools-udeb [linux]
+kldutils-udeb [kfreebsd]
