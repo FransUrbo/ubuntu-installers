@@ -66,8 +66,6 @@ add_desktop_configs() {
 case $TYPE in
     template)
 	cp -r "$SRC"/*.cfg "$DST"/
-	mkdir "$DST"/desktop
-	cp -r "$SRC"/desktop/*.cfg "$DST"/desktop/
 	if [ -z "$INCLUDE_GTK" ]; then
 		rm -f "$DST"/*gtk.cfg "$DST"/desktop/*{gtk,ag}dt.cfg
 	fi
