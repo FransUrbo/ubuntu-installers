@@ -1,3 +1,9 @@
+debian-installer (20100211ubuntu3) UNRELEASED; urgency=low
+
+  * Move to 2.6.34-5 kernels.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 31 May 2010 07:52:10 +0200
+
 debian-installer (20100211ubuntu2) maverick; urgency=low
 
   * Move to 2.6.34-4 kernels.
