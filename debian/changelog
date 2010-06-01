@@ -1,9 +1,9 @@
-debian-installer (20100211ubuntu4) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu4) maverick; urgency=low
 
   * Remove dtmenu.cfg from default menu.cfg; it isn't used in Ubuntu and it
     confuses gfxboot-theme-ubuntu (LP: #588221).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Jun 2010 12:29:29 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Jun 2010 12:34:05 +0100
 
 debian-installer (20100211ubuntu3) maverick; urgency=low
 
