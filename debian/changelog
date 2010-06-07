@@ -1,8 +1,8 @@
-debian-installer (20100211ubuntu5) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu5) maverick; urgency=low
 
   * Move to 2.6.35-1 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 Jun 2010 16:24:16 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 Jun 2010 17:40:23 +0100
 
 debian-installer (20100211ubuntu4) maverick; urgency=low
 
