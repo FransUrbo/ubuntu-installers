@@ -1,9 +1,9 @@
-debian-installer (20100211ubuntu7) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu7) maverick; urgency=low
 
   * Switch to console-setup keymaps on armel, to match other architectures.
   * Increase the powerpc netboot image size a bit more, to 20MB.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 11 Jun 2010 08:41:03 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 11 Jun 2010 12:25:44 +0100
 
 debian-installer (20100211ubuntu6) maverick; urgency=low
 
