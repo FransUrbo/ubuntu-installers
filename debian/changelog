@@ -1,3 +1,9 @@
+debian-installer (20100211ubuntu8) UNRELEASED; urgency=low
+
+  * More console-setup fixes for armel.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 11 Jun 2010 15:39:36 +0100
+
 debian-installer (20100211ubuntu7) maverick; urgency=low
 
   * Switch to console-setup keymaps on armel, to match other architectures.
