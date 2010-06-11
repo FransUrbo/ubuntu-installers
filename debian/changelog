@@ -1,3 +1,9 @@
+debian-installer (20100211ubuntu7) UNRELEASED; urgency=low
+
+  * Switch to console-setup keymaps on armel, to match other architectures.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 11 Jun 2010 08:41:03 +0100
+
 debian-installer (20100211ubuntu6) maverick; urgency=low
 
   * Move to 2.6.35-2 kernels.
