@@ -1,10 +1,10 @@
-debian-installer (20100211ubuntu8) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu8) maverick; urgency=low
 
   * More console-setup fixes for armel.
   * Remove a few last vestiges of lpia.
   * Move to 2.6.35-4 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 11 Jun 2010 15:39:36 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 17 Jun 2010 12:33:24 +0100
 
 debian-installer (20100211ubuntu7) maverick; urgency=low
 
