@@ -380,6 +380,9 @@ case $ARCH in
 		grub_package="grub"
 	fi
 	;;
+    i386/efi|amd64/efi)
+	grub_package="grub-efi"
+	;;
     i386/*|amd64/*|lpia/*)
 	# On PC/BIOS, default to GRUB Legacy
 	grub_package="grub"
@@ -408,6 +411,9 @@ case "$frtype:$bootfstype:$bootfslabel:$grub_package" in
     *:ufs:*:*)
 	# Booting from UFS requires grub2
 	grub_package="grub-pc"
+	;;
+    *:*:*:grub-efi*)
+	# No reasonable alternative to GRUB here
 	;;
     *:*:*:*)
 	db_subst grub-installer/grub_not_mature_on_this_platform ARCH $ARCH
