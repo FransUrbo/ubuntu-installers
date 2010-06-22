@@ -1,6 +1,7 @@
 debian-installer (20100211ubuntu9) UNRELEASED; urgency=low
 
   * Argh.  It's console-setup-udeb, not console-setup.
+  * Move to 2.6.35-5 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 17 Jun 2010 14:35:08 +0100
 
