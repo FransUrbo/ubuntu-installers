@@ -1,3 +1,11 @@
+debian-installer (20100211ubuntu11) UNRELEASED; urgency=low
+
+  * vga=788 seems to work now that vesafb and fbcon are built into the
+    kernel, and it's very much faster in kvm, so resync with Debian and use
+    it.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 28 Jun 2010 17:43:40 +0100
+
 debian-installer (20100211ubuntu10) maverick; urgency=low
 
   * Move to 2.6.35-6 kernels.
