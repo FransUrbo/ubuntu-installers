@@ -1,3 +1,9 @@
+debian-installer (20100211ubuntu12) UNRELEASED; urgency=low
+
+  * Support building with new apt mirror method.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 01 Jul 2010 14:23:24 +0100
+
 debian-installer (20100211ubuntu11) maverick; urgency=low
 
   * vga=788 seems to work now that vesafb and fbcon are built into the
