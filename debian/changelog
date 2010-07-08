@@ -1,9 +1,9 @@
-debian-installer (20100211ubuntu12) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu12) maverick; urgency=low
 
   * Support building with new apt mirror method.
   * Move to 2.6.35-7 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 01 Jul 2010 14:23:24 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 08 Jul 2010 11:54:29 +0100
 
 debian-installer (20100211ubuntu11) maverick; urgency=low
 
