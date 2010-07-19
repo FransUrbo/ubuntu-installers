@@ -1,8 +1,8 @@
-debian-installer (20100211ubuntu14) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu14) maverick; urgency=low
 
   * Move to 2.6.35-9 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 19 Jul 2010 11:37:39 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 19 Jul 2010 11:39:07 +0100
 
 debian-installer (20100211ubuntu13) maverick; urgency=low
 
