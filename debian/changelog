@@ -1,9 +1,9 @@
-debian-installer (20100211ubuntu19) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu19) maverick; urgency=low
 
   * Move omap to 2.6.35-15 kernels, now that linux-ti-omap has been merged
     into linux.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 16 Aug 2010 12:59:34 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 16 Aug 2010 22:27:31 +0100
 
 debian-installer (20100211ubuntu18) maverick; urgency=low
 
