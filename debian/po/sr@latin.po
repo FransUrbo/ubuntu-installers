@@ -3,22 +3,26 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of Debian Installer templates to Welsh
-# Copyright (C) 2004-2008 Software in the Public Interest, Inc.
-# This file is distributed under the same license as debian-installer.
+# Serbian/Latin messages for debian-installer.
+# Copyright (C) 2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as the debian-installer package.
+# Karolina Kalic <karolina@janos.in.rs>, 2010.
+# Janos Guljas <janos@janos.in.rs>, 2010.
+# , fuzzy
 #
-# Jonathan Price <mynamesnotclive@notclive.co.uk>, 2008.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2010-03-26 09:46+0000\n"
-"PO-Revision-Date: 2008-08-20 21:58+0100\n"
-"Last-Translator: Jonathan Price <mynamesnotclive@notclive.co.uk>\n"
-"Language-Team: Welsh <>\n"
+"POT-Creation-Date: 2009-01-23 07:29+0000\n"
+"PO-Revision-Date: 2010-07-25 17:32+0100\n"
+"Last-Translator: Karolina Kalic <karolina@janos.in.rs>\n"
+"Language-Team: Serbian/Latin\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #. Type: boolean
 #. Description
@@ -28,7 +32,7 @@ msgstr ""
 #. :sl1:
 #: ../grub-installer.templates:1001 ../grub-installer.templates:2001
 msgid "Install the GRUB boot loader to the master boot record?"
-msgstr "Sefydlu'r bŵtlwythydd GRUB i'r cofnod bŵt meistr?"
+msgstr "Instalirati GRUB pokretački program u master but zapisu?"
 
 #. Type: boolean
 #. Description
@@ -37,9 +41,7 @@ msgstr "Sefydlu'r bŵtlwythydd GRUB i'r cofnod bŵt meistr?"
 msgid ""
 "The following other operating systems have been detected on this computer: "
 "${OS_LIST}"
-msgstr ""
-"Mae'r systemau gweithredu canlynol wedi eu canfod ar y cyfrifiadur hwn: "
-"${OS_LIST}"
+msgstr "Na ovom računaru su detektovani sledeći operativni sistemi: ${OS_LIST}"
 
 #. Type: boolean
 #. Description
@@ -51,10 +53,10 @@ msgid ""
 "When your computer boots, you will be able to choose to load one of these "
 "operating systems or your new system."
 msgstr ""
-"Os mae eich holl systemau gweithredu wedi eu rhestru uchod, yna dylai fod yn "
-"ddiogel i sefydlu'r bŵtlwythydd ar gofnod bŵt meistr y disgen galed cyntaf. "
-"Pan mae eich cyfrifiadur yn bŵtio, cewch ddewis lwytho un o'r systemau "
-"gweithredu yma neu eich system newydd."
+"Ako su gore nabrojani svi vaši operativni sistemi, onda bi trebalo biti "
+"bezbedno instalirati pokretački program na master but zapisu na vašem prvom "
+"hard disku. Kada se vaš računar startuje moći ćete da odaberete neki od ovih "
+"operativnih sistema ili vaš novi sistem."
 
 #. Type: boolean
 #. Description
@@ -65,9 +67,9 @@ msgid ""
 "computer. If so, it should be safe to install the GRUB boot loader to the "
 "master boot record of your first hard drive."
 msgstr ""
-"Ymddengys mai'r sefydliad yma yw'r unig system weithredu ar y cyfrifiadur "
-"hwn. Os felly, dylai fod yn ddiogel i sefydlu'r bŵtlwythydd GRUB ar gofnod "
-"bŵt meistr eich disgen galed cyntaf."
+"Izgleda da je nova instalacija jedini operativni sistem na ovom računaru. "
+"Ako je to tačno, bilo bi bezbedno instalirati GRUB pokretački program na "
+"master but zapisu vašeg prvog hard diska."
 
 #. Type: boolean
 #. Description
@@ -79,23 +81,24 @@ msgid ""
 "operating system temporarily unbootable, though GRUB can be manually "
 "configured later to boot it."
 msgstr ""
-"Rhybudd: Os methodd y sefydlydd ganfod system weithredu arall sy'n bresennol "
-"ar eich cyfrifiadur, bydd newid eich cofnod bŵt meistr yn rhwystro'r system "
-"weithredu rhag bŵtio, er gellir cuflunio GRUB i'w fŵtio yn hwyrach."
+"Upozorenje: ako program za instalaciju nije uspeo da detektuje neki drugi "
+"operativni sistem koji se nalazi na vašem računaru, menjanje master but "
+"zapisa će učiniti da taj operativni sistem privremeno neće moći da se "
+"pokrene, mada se GRUB može kasnije ručno podesiti da ga pokreće."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:3001
 msgid "Install the GRUB boot loader to the Serial ATA RAID disk?"
-msgstr ""
+msgstr "Instalirati GRUB but louder na SATA RAID hard disku?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:3001
 msgid "Installation of GRUB on Serial ATA RAID is experimental."
-msgstr ""
+msgstr "Instaliranje GRUB-a na SATA RAID je eksperimentalno."
 
 #. Type: boolean
 #. Description
@@ -106,6 +109,9 @@ msgid ""
 "RAID disk. It is also assumed that disk is listed as the first hard disk in "
 "the boot order defined in the system's BIOS setup."
 msgstr ""
+"GRUB je uvek instaliran na master but zapisu (MBR) SATA RAID diska. Takođe "
+"se pretpostavlja da je taj disk označen kao prvi hard disk u redosledu "
+"butovanja definisanom u podešavanjima sistemskog BIOS-a."
 
 #. Type: boolean
 #. Description
@@ -115,7 +121,7 @@ msgstr ""
 #. :sl3:
 #: ../grub-installer.templates:3001 ../grub-installer.templates:5001
 msgid "The GRUB root device is: ${GRUBROOT}."
-msgstr ""
+msgstr "Root uređaj za GRUB je: ${GRUBROOT}."
 
 #. Type: error
 #. Description
@@ -129,7 +135,7 @@ msgstr ""
 #: ../grub-installer.templates:4001 ../grub-installer.templates:6001
 #: ../grub-installer.templates:14001
 msgid "Unable to configure GRUB"
-msgstr "Methwyd cyflunio GRUB"
+msgstr "Nemoguće konfigurisanje GRUB-a"
 
 #. Type: error
 #. Description
@@ -137,6 +143,7 @@ msgstr "Methwyd cyflunio GRUB"
 #: ../grub-installer.templates:4001
 msgid "An error occurred while setting up GRUB for your Serial ATA RAID disk."
 msgstr ""
+"Došlo je do greške prilikom podešavanja GRUB-a na SATA RAID hard disku."
 
 #. Type: error
 #. Description
@@ -146,7 +153,7 @@ msgstr ""
 #. :sl3:
 #: ../grub-installer.templates:4001 ../grub-installer.templates:6001
 msgid "The GRUB installation has been aborted."
-msgstr ""
+msgstr "Instalacija GRUB-a je prekinuta."
 
 #. Type: boolean
 #. Description
@@ -154,24 +161,29 @@ msgstr ""
 #: ../grub-installer.templates:5001
 #, fuzzy
 msgid "Install the GRUB boot loader to the multipath device?"
-msgstr "Sefydlu'r bŵtlwythydd GRUB i'r cofnod bŵt meistr?"
+msgstr "Instalirati GRUB but louder u ?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:5001
+#, fuzzy
 msgid "Installation of GRUB on multipath is experimental."
-msgstr ""
+msgstr "Instalacija GRUB-a na SATA RAID je eksperimentalno."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../grub-installer.templates:5001
+#, fuzzy
 msgid ""
 "GRUB is always installed to the master boot record (MBR) of the multipath "
 "device. It is also assumed that the WWID of this device is selected as boot "
 "device in the system's FibreChannel adapter BIOS."
 msgstr ""
+"GRUB je uvek instaliran na master but zapisu (MBR) SATA RAID diska. Takođese "
+"pretpostavlja da je taj disk označen kao prvi hard disk u redosledu "
+"butovanja definisanom u podešavanjima sistemskog BIOS-a."
 
 #. Type: error
 #. Description
@@ -179,14 +191,14 @@ msgstr ""
 #: ../grub-installer.templates:6001
 #, fuzzy
 msgid "An error occurred while setting up GRUB for the multipath device."
-msgstr "Digwyddodd gwall wrth ysgrifennu'r newidiadau i'r dyfeisiau storfa."
+msgstr "Došlo je do greške prilikom podešavanja GRUB-a na SATA RAID disk."
 
 #. Type: string
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:7001
 msgid "Device for boot loader installation:"
-msgstr "Y dyfais ar gyfer sefydliad llwythydd bŵtio:"
+msgstr "Uređaj na kome će se instalirati but louder:"
 
 #. Type: string
 #. Description
@@ -199,53 +211,43 @@ msgid ""
 "can install GRUB elsewhere on the drive, or to another drive, or even to a "
 "floppy."
 msgstr ""
-"Rhaid i chi wneud y system Debian sydd newydd gael ei sefydlu yn fŵtiadwy, "
-"gan sefydlu'r bŵtlwythydd GRUB ar ddyfais bŵtiadwy. Y ffordd arferol i wneud "
-"hyn yw i sefydlu GRUB ar gofnod bŵt meistr eich disgen galed cyntaf. Os "
-"hoffech, gallwch sefydlu GRUB rhywle arall ar y disg, neu ar ddisg arall, "
-"neu hyd yn oed at ddisgen hyblyg."
+"Morate novoinstalirani sistem učiniti butabilnim tako što ćete instalirati "
+"GRUB but louder na butabilan uređaj. Uobičajen način da se to uradi je da se "
+"GRUB instalira na master but zapisu vašeg prvog hard disku. Ako želite, GRUB "
+"možete instalirati negde drugde na hard disku, na drugom disku ili čak na "
+"flopi disku."
 
 #. Type: string
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:7001
-#, fuzzy
-#| msgid ""
-#| "The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
-#| "device in /dev. Below are some examples:\n"
-#| " - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
-#| "   of your first hard drive (IDE);\n"
-#| " - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
-#| "   first IDE drive;\n"
-#| " - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
-#| "   your third drive (SCSI here);\n"
-#| " - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgid ""
-"The device should be specified as a device in /dev. Below are some "
-"examples:\n"
-" - \"/dev/sda\" will install GRUB to the master boot record of your first\n"
-"   hard drive;\n"
-" - \"/dev/sda2\" will use the second partition of your first hard drive;\n"
-" - \"/dev/sdc5\" will use the first extended partition of your third hard\n"
-"   drive;\n"
-" - \"/dev/fd0\" will install GRUB to a floppy."
+"The device can be specified using GRUB's \"(hdn,m)\" notation, or as a "
+"device in /dev. Below are some examples:\n"
+" - \"(hd0)\" or \"/dev/hda\" will install GRUB to the master boot record\n"
+"   of your first hard drive (IDE);\n"
+" - \"(hd0,1)\" or \"/dev/hda2\" will use the second partition of your\n"
+"   first IDE drive;\n"
+" - \"(hd2,4)\" or \"/dev/sdc5\" will use the first extended partition of\n"
+"   your third drive (SCSI here);\n"
+" - \"(fd0)\" or \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
-"Gellir penodi'r dyfais gan ddefnyddio nodiant \"(hdn,m)\" GRUB, neu fel "
-"dyfais yn /dev. Enghreifftiau:\n"
-" - bydd \"(hd0)\" neu \"/dev/hda\" yn sefydlu GRUB at gofnod bŵt meistr\n"
-"   eich disgen caled cyntaf (IDE);\n"
-" - bydd \"(hd0,1)\" neu \"/dev/hda2\" yn defnyddio ail rhaniad eich\n"
-"   disgen IDE cyntaf;\n"
-" - bydd \"(hd2,4)\" neu \"/dev/sdc5\" yn defnyddio rhaniad estynedig cyntaf\n"
-"   eich trydydd disgen (SCSI yma);\n"
-" - bydd \"(fd0)\" neu \"/dev/fd0\" yn sefydlu GRUB ar ddisgen hyblyg."
+"Uređaj može biti specificiran koristeći GRUB-ovu notaciju „(hdn,m)“ ili kao "
+"uređaj u /dev direktorijumu. Nekoliko primera:\n"
+"  - „(hd0)“ ili „/dev/hda“ će instalirati GRUB na master but zapis\n"
+"   vašeg prvog hard drajva (IDE);\n"
+" - „(hd0,1)“ ili „/dev/hda2“ će koristiti drugu particiju vašeg\n"
+"   prvog IDE drajva;\n"
+" - „(hd2,4)“ ili „/dev/sdc5“ će koristiti prvu proširenu particiju\n"
+"   vašeg trećeg drajva (SCSI ili SATA);\n"
+" - „(fd0)“ ili „/dev/fd0“ će instalirati GRUB na flopi disk."
 
 #. Type: password
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:8001
 msgid "GRUB password:"
-msgstr "Cyfrinair GRUB:"
+msgstr "GRUB lozinka:"
 
 #. Type: password
 #. Description
@@ -259,20 +261,27 @@ msgid ""
 "GRUB command-line interface. By default, any user will still be able to "
 "start any menu entry without entering the password."
 msgstr ""
+"GRUB but louder nudi mnogo moćnih interaktivnih opcija koje mogu biti "
+"upotrebljene da bi se kompromitovao vaš sistem ukoliko neautorizovani "
+"korisnici imaju pristup mašini kada se startuje. Da bi ste se odbranili od "
+"toga, možete izabrati lozinku koja će biti potrebna da bi se izmenile stavke "
+"menija ili ušlo u GRUB-ov komandni interfejs. U opštem slučaju, svi "
+"korisnici će i dalje moći pokrenuti bilo koju stavku menija bez unošenja "
+"lozinke."
 
 #. Type: password
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:8001
 msgid "If you do not wish to set a GRUB password, leave this field blank."
-msgstr "Os nad ydych chi'n gwybod beth i'w rhoi, gadewch e'n wag"
+msgstr "Ostavite ovo polje prazno ako ne želite da postavite lozinku za GRUB."
 
 #. Type: password
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:9001
 msgid "Re-enter password to verify:"
-msgstr "Ail-rhowch y cyfrinair er mwyn dilysu:"
+msgstr "Ponovo unesite lozinku radi provere:"
 
 #. Type: password
 #. Description
@@ -282,31 +291,28 @@ msgid ""
 "Please enter the same GRUB password again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Os gwelwch yn dda, rhowch yr un cyfrinair 'root' eto er mwyn gwirio eich bod "
-"wedi ei deipio'n gywir."
+"Unesite istu GRUB lozinku ponovo radi provere da li ste je uneli ispravno."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:10001
 msgid "Password input error"
-msgstr "Gwall mewnbwn cyfrinair"
+msgstr "Greška pri unosu lozinke"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:10001
 msgid "The two passwords you entered were not the same. Please try again."
-msgstr ""
-"Nid oedd y ddau gryfinair y rhoddoch yr yn peth. Ceisiwch eto os gwelwch yn "
-"dda."
+msgstr "Dve lozinke koje ste uneli se razlikuju. Probajte ponovo."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:12001
 msgid "GRUB installation failed"
-msgstr "Gosodiad GRUB wedi methu"
+msgstr "Instalacija GRUB-a nije uspela"
 
 #. Type: error
 #. Description
@@ -316,22 +322,22 @@ msgid ""
 "The '${GRUB}' package failed to install into /target/. Without the GRUB boot "
 "loader, the installed system will not boot."
 msgstr ""
-"Methodd y pecyn '${GRUB}' gosod i fewn i /target/. Ni all y system gosodedig "
-"gychwyn heb y llwythwr cychwyn GRUB."
+"Paket „${GRUB}“ nije uspeo da se instalira na /target/. Bez GRUB but loudera "
+"instalirani sistem se neće startovati."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:13001
 msgid "Unable to install GRUB in ${BOOTDEV}"
-msgstr "Methywd sefydlu GRUB yn ${BOOTDEV}"
+msgstr "Instaliranje GRUB-a na ${BOOTDEV} neuspešno"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:13001
 msgid "Executing 'grub-install ${BOOTDEV}' failed."
-msgstr "Methwyd rhedeg 'grub-install ${BOOTDEV}'."
+msgstr "Izvršavanje „grub-install ${BOOTDEV}“ nije uspelo."
 
 #. Type: error
 #. Description
@@ -341,63 +347,63 @@ msgstr "Methwyd rhedeg 'grub-install ${BOOTDEV}'."
 #. :sl2:
 #: ../grub-installer.templates:13001 ../grub-installer.templates:14001
 msgid "This is a fatal error."
-msgstr "Mae hyn yn wall marwol."
+msgstr "Ovo je fatalna greška."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:14001
 msgid "Executing 'update-grub' failed."
-msgstr "Methwyd rhedeg 'update-grub'."
+msgstr "Izvršavanje „update-grub“ nije uspelo."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:17001
 msgid "Installing GRUB boot loader"
-msgstr "Sefydlu'r bŵtlwythydd GRUB"
+msgstr "Instaliranje GRUB pokretačkog programa"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:18001
 msgid "Looking for other operating systems..."
-msgstr "Yn chwilio am systemau gweithredu eraill..."
+msgstr "Traženje drugih operativnih sistema..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:19001
 msgid "Installing the '${GRUB}' package..."
-msgstr "Sefydlu'r pecyn '${GRUB}'..."
+msgstr "Instaliranje paketa '${GRUB}'..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:20001
 msgid "Determining GRUB boot device..."
-msgstr "Yn dehongli dyfais bŵt GRUB..."
+msgstr "Određivanje pokretačkog uređaja za GRUB..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:21001
 msgid "Running \"grub-install ${BOOTDEV}\"..."
-msgstr "Yn rhedeg \"grub-install ${BOOTDEV}\"..."
+msgstr "Izvršavanje „grub-install ${BOOTDEV}“..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:22001
 msgid "Running \"update-grub\"..."
-msgstr "Yn rhedeg \"update-grub\"..."
+msgstr "Izvršavanje „update-grub“..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../grub-installer.templates:23001
 msgid "Updating /etc/kernel-img.conf..."
-msgstr "Yn diweddaru /etc/kernel-img.conf..."
+msgstr "Ažuriranje /etc/kernel-img.conf fajla..."
 
 #. Type: text
 #. Description
@@ -405,7 +411,7 @@ msgstr "Yn diweddaru /etc/kernel-img.conf..."
 #. :sl1:
 #: ../grub-installer.templates:24001
 msgid "Install the GRUB boot loader on a hard disk"
-msgstr "Sefydlu'r bŵtlwythydd GRUB ar ddisgen galed"
+msgstr "Instaliraj GRUB pokretački program na hard disk"
 
 #. Type: text
 #. Description
@@ -413,4 +419,4 @@ msgstr "Sefydlu'r bŵtlwythydd GRUB ar ddisgen galed"
 #. :sl2:
 #: ../grub-installer.templates:25001
 msgid "Reinstall GRUB boot loader"
-msgstr "Sefydlu'r bŵtlwythydd GRUB"
+msgstr "Ponovi instalaciju GRUB but loudera"

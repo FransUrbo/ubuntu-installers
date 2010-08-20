@@ -75,14 +75,10 @@ grub_serial_console() {
 
 serial="$(get_serial_console)"
 
-## This is copied from update-grub; we've requested that it be moved
-## to a utility or shell library
-## TODO: replace this with grub-probe
 device_map=$ROOT/boot/grub/device.map
 
 # Usage: convert os_device
 # Convert an OS device to the corresponding GRUB drive
-# This part is OS-specific
 convert () {
 	# Adjust the device map to add a SATA RAID array.
 	if [ "$grub_version" = grub ] && [ "$frtype" = "sataraid" ] && type dmraid >/dev/null 2>&1; then
@@ -238,6 +234,11 @@ device_to_id()
 			return 0
 		fi
 	done
+	# Fall back to the plain device name if there's no by-id link for it.
+	if [ -e "$1" ]; then
+		echo "$1"
+		return 0
+	fi
 	return 1
 }
 
@@ -383,7 +384,7 @@ case $ARCH in
     i386/efi|amd64/efi)
 	grub_package="grub-efi"
 	;;
-    i386/*|amd64/*|lpia/*)
+    i386/*|amd64/*)
 	# On PC/BIOS, default to GRUB Legacy
 	grub_package="grub"
 	;;
@@ -513,29 +514,29 @@ case "$grub_package" in
 	;;
     grub-pc)
 	log-output -t grub-installer $chroot $ROOT dpkg -P grub grub-legacy
-	# os-prober is only a Recommends so isn't installed by apt-install,
-	# but we make sure it's installed since it does a better
-	# job than the otheros script.
-	apt-install os-prober || true
 	;;
 esac
 
 exit_code=0
+inst_package=$grub_package
 case "$grub_package" in
     grub)
-	if ! apt-install grub-legacy ; then
+	if apt-install --no-recommends grub-legacy ; then
+		inst_package=grub-legacy
+	else
 		apt-install $grub_package || exit_code=$? 
 	fi
 	;;
    *)
+	# Will pull in os-prober based on global setting for Recommends
 	apt-install $grub_package || exit_code=$? 
 	;;
 esac
 
 if [ $exit_code -ne 0 ] ; then
 	db_progress STOP
-	info "Calling 'apt-install $grub_package' failed"
-	db_subst grub-installer/apt-install-failed GRUB "$grub_package"
+	info "Calling 'apt-install $inst_package' failed"
+	db_subst grub-installer/apt-install-failed GRUB "$inst_package"
 	db_input critical grub-installer/apt-install-failed || true
 	if ! db_go; then
 		exit 10 # back up to menu
@@ -543,7 +544,7 @@ if [ $exit_code -ne 0 ] ; then
 	exit 1
 fi
 
-grub_debian_version="$($chroot $ROOT dpkg-query -W -f '${Version}' $grub_package)"
+grub_debian_version="$($chroot $ROOT dpkg-query -W -f '${Version}' $inst_package)"
 
 if [ "$frtype" = multipath ]; then
 	$chroot $ROOT umount /proc
@@ -1291,7 +1292,8 @@ db_progress INFO grub-installer/progress/step_update_etc
 if [ -e $ROOT/etc/kernel-img.conf ] ; then
 	sed -i 's/do_bootloader = yes/do_bootloader = no/' $ROOT/etc/kernel-img.conf
 fi
-if [ -z "$(grep update-grub $ROOT/etc/kernel-img.conf)" ]; then
+if [ ! -e $ROOT/etc/kernel/postinst.d/zz-update-grub ] && \
+   [ -z "$(grep update-grub $ROOT/etc/kernel-img.conf)" ]; then
 	(
 		echo "postinst_hook = update-grub"
 		echo "postrm_hook   = update-grub"
