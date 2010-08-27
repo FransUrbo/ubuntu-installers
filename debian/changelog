@@ -1,10 +1,10 @@
-debian-installer (20100211ubuntu23) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu23) maverick; urgency=low
 
   * Disable imx51 armel flavour for now; linux-fsl-imx51 is no longer in the
     archive, and linux-linaro's i.MX51 support is still quite minimal
     according to Oliver Grawert and Loïc Minier.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 27 Aug 2010 14:02:30 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 27 Aug 2010 14:05:23 +0100
 
 debian-installer (20100211ubuntu22) maverick; urgency=low
 
