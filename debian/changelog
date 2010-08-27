@@ -1,11 +1,11 @@
-debian-installer (20100211ubuntu22) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu22) maverick; urgency=low
 
   * Move to 2.6.35-19 kernels.
   * Move dove to 2.6.32-409 kernels.
   * Add GRUB EFI configuration on amd64, and make mini.iso images there
     multi-catalog.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 25 Aug 2010 17:16:10 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 27 Aug 2010 10:11:36 +0100
 
 debian-installer (20100211ubuntu21) maverick; urgency=low
 
