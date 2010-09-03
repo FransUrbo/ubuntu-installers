@@ -48,6 +48,8 @@ grub-installer (1.54ubuntu1) UNRELEASED; urgency=low
       changed between GRUB Legacy and GRUB 2, and to use libata-style device
       naming since that is more accurate for most people.
     - Install grub-efi on i386/efi and amd64/efi subarchitectures.
+  * Don't ask for a boot device on EFI, and don't pass a boot device
+    argument to grub-install.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 20 Aug 2010 01:29:18 +0100
 

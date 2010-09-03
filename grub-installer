@@ -644,8 +644,12 @@ fi
 # boot device.
 cdsrc=$(mount | grep "on /cdrom " | cut -d' ' -f1)
 cdfs=$(mount | grep "on /cdrom " | cut -d' ' -f5)
-if ([ "$cdsrc" = "$default_bootdev" ] || [ "$default_bootdev" = '(hd0)' ]) && \
-   [ -n "$cdfs" ] && [ "$cdfs" != "iso9660" ]; then
+if [ "$grub_package" = grub-efi ]; then
+	# No need for install device selection on EFI.
+	bootdev=efi-dummy
+	state=3
+elif ([ "$cdsrc" = "$default_bootdev" ] || [ "$default_bootdev" = '(hd0)' ]) && \
+     [ -n "$cdfs" ] && [ "$cdfs" != "iso9660" ]; then
 	db_fget grub-installer/bootdev seen
 	if [ "$RET" != true ]; then
 		bootfs=$(findfs /boot)
@@ -723,7 +727,7 @@ while : ; do
 			fi
 			state=2
 		fi
-	else
+	elif [ "$state" = 2 ]; then
 		db_input critical grub-installer/bootdev || true
 		if ! db_go; then
 			if [ "$q" ]; then
@@ -744,6 +748,8 @@ while : ; do
 			fi
 			break
 		fi
+	else
+		break
 	fi
 done
 
@@ -822,11 +828,22 @@ if [ -z "$frdisk" ] || [ "$grub_version" = grub2 ]; then
 			umountsys=:
 		fi
 
-		info "Running $chroot $ROOT grub-install $grub_install_params \"$bootdev\""
-		if log-output -t grub-installer $chroot $ROOT grub-install $grub_install_params "$bootdev"; then
+		CODE=0
+		if [ "$grub_package" = grub-efi ]; then
+			info "Running $chroot $ROOT grub-install $grub_install_params"
+			log-output -t grub-installer $chroot $ROOT grub-install $grub_install_params || CODE=$?
+		else
+			info "Running $chroot $ROOT grub-install $grub_install_params \"$bootdev\""
+			log-output -t grub-installer $chroot $ROOT grub-install $grub_install_params "$bootdev" || CODE=$?
+		fi
+		if [ "$CODE" = 0 ]; then
 			info "grub-install ran successfully"
 		else
-			error "Running 'grub-install $grub_install_params \"$bootdev\"' failed."
+			if [ "$grub_package" = grub-efi ]; then
+				error "Running 'grub-install $grub_install_params' failed."
+			else
+				error "Running 'grub-install $grub_install_params \"$bootdev\"' failed."
+			fi
 			db_subst grub-installer/grub-install-failed BOOTDEV "$bootdev"
 			db_input critical grub-installer/grub-install-failed || [ $? -eq 30 ]
 			db_go || true
