@@ -413,6 +413,9 @@ case "$frtype:$bootfstype:$bootfslabel:$grub_package" in
 	# Booting from UFS requires grub2
 	grub_package="grub-pc"
 	;;
+    *:ext2fs:*:grub-pc | *:xfs:*:grub-pc)
+    	# Booting ext2fs or xfs using grub2 works
+        ;;
     *:*:*:grub-efi*)
 	# No reasonable alternative to GRUB here
 	;;
