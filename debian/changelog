@@ -1,3 +1,9 @@
+debian-installer (20100211ubuntu24) UNRELEASED; urgency=low
+
+  * Move to 2.6.35-20 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 03 Sep 2010 13:22:36 +0100
+
 debian-installer (20100211ubuntu23) maverick; urgency=low
 
   * Disable imx51 armel flavour for now; linux-fsl-imx51 is no longer in the
