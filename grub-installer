@@ -1162,13 +1162,12 @@ if [ "$grub_version" = grub ]; then
 	fi
 fi
 
-
-if db_get grub-installer/boot_delay
+if db_get grub-installer/timeout
 then
 	# Check whether it's a number
 	if [ "$RET" -eq "$RET" ] 2> /dev/null
 	then
-		boot_delay="$RET"
+		timeout="$RET"
 	fi
 fi
 
@@ -1185,14 +1184,14 @@ if [ -z "$hide_menu" ] && [ -s /tmp/os-probed ]; then
 			$ROOT/etc/default/grub
 		update_grub # propagate to grub.cfg
 	fi
-elif [ -n "$boot_delay" ]; then
+elif [ -n "$timeout" ]; then
 	# Leave a slight delay
 	if [ "$grub_version" = grub ]; then
-		sed -i 's/^\(timeout[[:space:]][[:space:]]*\).*/\1'$boot_delay'/' \
+		sed -i 's/^\(timeout[[:space:]][[:space:]]*\).*/\1'$timeout'/' \
 			$ROOT/boot/grub/menu.lst
 	else
 		sed -i 's/^GRUB_HIDDEN_TIMEOUT=.*/#&/;
-			s/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT='$boot_delay'/' \
+			s/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT='$timeout'/' \
 			$ROOT/etc/default/grub
 		update_grub # propagate to grub.cfg
 	fi
