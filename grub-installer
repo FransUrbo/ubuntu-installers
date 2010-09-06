@@ -1187,7 +1187,8 @@ if [ -z "$hide_menu" ] && [ -s /tmp/os-probed ]; then
 elif [ -n "$timeout" ]; then
 	# Leave a slight delay
 	if [ "$grub_version" = grub ]; then
-		sed -i 's/^\(timeout[[:space:]][[:space:]]*\).*/\1'$timeout'/' \
+		sed -i 's/^hiddenmenu[[:space:]]*$/#hiddenmenu/;
+			s/^\(timeout[[:space:]][[:space:]]*\).*/\1'$timeout'/' \
 			$ROOT/boot/grub/menu.lst
 	else
 		sed -i 's/^GRUB_HIDDEN_TIMEOUT=.*/#&/;
