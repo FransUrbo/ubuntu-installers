@@ -513,10 +513,13 @@ db_progress INFO grub-installer/progress/step_install
 # to grub legacy, or vice-versa
 case "$grub_package" in
     grub)
-	log-output -t grub-installer $chroot $ROOT dpkg -P grub-pc
+	log-output -t grub-installer $chroot $ROOT dpkg -P grub-pc grub-efi grub-efi-amd64 grub-efi-ia32
 	;;
     grub-pc)
-	log-output -t grub-installer $chroot $ROOT dpkg -P grub grub-legacy
+	log-output -t grub-installer $chroot $ROOT dpkg -P grub grub-legacy grub-efi grub-efi-amd64 grub-efi-ia32
+	;;
+    grub-efi)
+	log-output -t grub-installer $chroot $ROOT dpkg -P grub grub-legacy grub-pc
 	;;
 esac
 
