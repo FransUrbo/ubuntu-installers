@@ -1,8 +1,8 @@
-debian-installer (20100211ubuntu25) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu25) maverick; urgency=low
 
   * Move dove to 2.6.32-410 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 10 Sep 2010 16:58:51 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 10 Sep 2010 17:01:31 +0100
 
 debian-installer (20100211ubuntu24) maverick; urgency=low
 
