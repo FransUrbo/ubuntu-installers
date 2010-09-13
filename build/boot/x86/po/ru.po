@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-07 10:32+0000\n"
-"Last-Translator: Maxim Petrov <maximpetrov@yahoo.com>\n"
+"PO-Revision-Date: 2010-09-10 17:21+0000\n"
+"Last-Translator: Sergey Sedov <sedov@webmail.perm.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -39,7 +40,7 @@ msgid ""
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Это установщик операционной системы ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. Он был создан ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}. Создан ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -47,7 +48,7 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"Это live-версия ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. Создано "
+"Это live-версия ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. Создан "
 "${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
@@ -609,12 +610,12 @@ msgstr "СПЕЦИАЛЬНЫЕ ПАРАМЕТРЫ ЗАГРУЗКИ - ОТДЕЛ�
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "В приглашении <literal>boot:</literal> вы можете использовать следующие "
-"параметры в сочетании с методом загрузки (смотри <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"параметры в сочетании с методом загрузки (смотри <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620

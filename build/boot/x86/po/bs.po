@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-03-01 04:12+0000\n"
+"PO-Revision-Date: 2010-04-25 05:23+0000\n"
 "Last-Translator: Miro Glavić <glavicmiro@gmail.com>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
+"Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -38,6 +39,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"Ovo je instalacijski sistem za ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
+"Napravljen je ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -45,11 +48,13 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
+"Ovo je live sistem za ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
+"Napravljen je  ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr ""
+msgstr "INDEKS POMOĆI"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
@@ -69,7 +74,7 @@ msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
-msgstr ""
+msgstr "Ova strana, indeks pomoći"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
@@ -94,7 +99,7 @@ msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr ""
+msgstr "Boot metode za specijalne načine korištenja ovog sistema."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -104,7 +109,7 @@ msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr ""
+msgstr "Dodatne boot metode; popravak oštećenog sistema."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
@@ -124,7 +129,7 @@ msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "Specijalni boot parametri za specijalne mašine."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
@@ -134,7 +139,7 @@ msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
+msgstr "Specijalni boot parametri za odabrane disk kontrolere."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
@@ -144,12 +149,12 @@ msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "Specijalni boot parametri za sistem instalacije."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "Specijalni boot parametri za bootstrap sistem."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
@@ -179,6 +184,8 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"Za F1-F19 ukucaj Control i F onda broj od 1-9\n"
+"Za F10 ukucaj Control i F onda broj 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -216,6 +223,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"Potrebno je imati barem 2 GB slobodnog memorijskog prostora na vašem tvrdom "
+"disku da bi kreirali novu particiju za instalaciju standardnog Ubuntu "
+"desktop sistema ili barem 400 MB za minimalnu server instalaciju. Potrebno "
+"je takođe posjedovati dodatni slobodni prostor na disku za instalaciju "
+"ostalih paketa, u zavisnosti od toga kakav Ubuntu sistem želite imati."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -224,6 +236,9 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
+"Pogledajte Instalacijska uputstva ili FAQ(najčešće postavljenja pitanja) za "
+"više informacija; oba dokumenta su dostupna na Ubuntu web stranici, <ulink "
+"url=\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
@@ -237,6 +252,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"Live sistem ne zahtjeva nikakav prostor na vašem tvrdom disku. Međutim, "
+"postojeća swap particija na disku će biti iskorištena(ako postoji)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -244,6 +261,9 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
+"Pogledajte FAQ(najčešće postavljenja pitanja) za više informacija; ovaj "
+"dokumenat je dostupan na Ubuntu web stranici, <ulink url=\"http://www.ubuntu."
+"com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
@@ -318,7 +338,7 @@ msgstr "cli-ekspert"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Minimalno komandno linijska instalacije sistema."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
@@ -336,6 +356,8 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Pokreni live sistem. Ako želis, možes ga instalirati poslije koristeci ikonu "
+"\"Instalacija\" na radnoj površini."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
@@ -368,18 +390,20 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"Za korištenje jedne od ovih boot metoda, ukucaj ga u prompt, opciono sa bilo "
+"kojim boot parametrom. Na primjer:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "boot: install acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
@@ -546,8 +570,8 @@ msgstr ""
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -1020,6 +1044,9 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
+"Ovaj instalacijski sistem je baziran na Debian Installer-u. Pogledajte "
+"<ulink url=\"http://www.debian.org/\" /> za više detalja i informacija o "
+"Debian projektu."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:793
@@ -1027,3 +1054,5 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"Ovaj sistem je baziran na Debian-u. Pogledajte <ulink url=\"http://www."
+"debian.org/\" /> za više detalja i informacija o Debian projektu."

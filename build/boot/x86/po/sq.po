@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-02-16 23:23+0000\n"
+"PO-Revision-Date: 2010-04-25 05:24+0000\n"
 "Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
+"Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -608,12 +609,12 @@ msgstr "PARAMETRA TË VEÇANTË NISJEJE - HARDWARE TË NDRYSHËM"
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Ju nuk mund t'i përdorni parametrat e nisjes në <literal>boot:</literal> "
-"prompt, të kombinuara me mënyrën e nisjes (shikoni <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, të kombinuara me mënyrën e nisjes (shikoni <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620

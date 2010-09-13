@@ -8,19 +8,20 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-07 10:33+0000\n"
-"Last-Translator: Metelci <metelci@gmail.com>\n"
+"PO-Revision-Date: 2010-07-25 07:46+0000\n"
+"Last-Translator: Yiğit Ateş <yigitates@ceviri.ubuntu-tr.net>\n"
 "Language-Team: Turkish <tr@li.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Önyükleme Yardım Ekranı Kurucusu"
+msgstr "Önyükleme Yardım Ekranları Yükleyicisi"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
@@ -30,7 +31,7 @@ msgstr "<keycap>F1</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "${DISTRIBUTION_NAME}'e hoşgeldiniz!"
+msgstr "${DISTRIBUTION_NAME} sürümüne hoşgeldiniz!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
@@ -38,8 +39,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Bu ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} için bir yükleme sistemidir. "
-"${BUILD_DATE} üzerine kuruldu."
+"Bu, ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} için bir yükleme "
+"sistemidir. ${BUILD_DATE} tabanlıdır."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -47,8 +48,8 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"Bu ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} için bir canlı sistemdir. "
-"${BUILD_DATE} üzerine kuruldu."
+"Bu, ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} için bir çalışan sistemdir. "
+"${BUILD_DATE} tabanlıdır."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -83,12 +84,12 @@ msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "${DISTRIBUTION_NAME}'in kurulması için önkoşullar."
+msgstr "${DISTRIBUTION_NAME} sürümünün kurulabilmesi için önkoşullar."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "${DISTRIBUTION_NAME}'in çalıştırılması için önkoşullar."
+msgstr "${DISTRIBUTION_NAME} sürümünün çalıştırılabilmesi için önkoşullar."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
@@ -98,7 +99,7 @@ msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr "Bu sisteminin kullanımının özel yöntemleri için önyükleme metodları."
+msgstr "Bu sistemin kullanımının özel yolları için önyükleme yöntemleri."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -108,7 +109,7 @@ msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Ek ön yükleme yöntemleri; bozuk bir sistemi kurtarır"
+msgstr "Ek ön yükleme yöntemleri; bozuk bir sistemi kurtarır."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
@@ -128,7 +129,7 @@ msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "Özel makinalar için özel önyükleme parametreleri."
+msgstr "Özel makineler için özel önyükleme parametreleri."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
@@ -163,7 +164,7 @@ msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
-msgstr "Nasıl yardım alınır."
+msgstr "Yardım alma yolları."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
@@ -183,22 +184,22 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
-"F1-F19 için Ctrl ve F ardından 1-9 sayısı tuşlayın\n"
-"F10 için Ctrl ve F ardından 0 sayısı tuşlayın\n"
+"F1-F19 için Ctrl ve F ardından 1-9 sayılarını tuşlayın\n"
+"F10 için Ctrl ve F ardından 0 sayısını tuşlayın\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
-"Detaylar için F2'den F10'a kadar bir tuşa veya ${BOOTPROMPT} için ENTER "
+"Ayrıntılar için F2'den F10'a kadar bir tuşa veya ${BOOTPROMPT} için ENTER "
 "tuşuna basın."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
-"Detaylar için F2'den F10'a kadar bir tuşa veya yardımdan çıkmak için Escape "
-"tuşuna basın."
+"Ayrıntılar için F2'den F10'a kadar bir tuşa veya yardımdan çıkmak için "
+"Escape tuşuna basın."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
@@ -214,7 +215,7 @@ msgstr "UBUNTU KURULUMU İÇİN ÖNKOŞULLAR"
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr "Ubuntu kuru için en az 32 megabytes RAM gereklidir."
+msgstr "Ubuntu kurulumu için en az 32 megabayt bellek gereklidir."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -226,10 +227,10 @@ msgid ""
 "new Ubuntu system."
 msgstr ""
 "Sabit diskinizde standart bir Ubuntu masaüstü sistemi kurmak için en az 2 "
-"gigabyte'lık veya asgari bir sunucu kurulumu için 400 megabyte'lık bir bölüm "
-"kurmak üzere boş alana ihtiyacınız var. Yeni Ubuntu sisteminizle ne yapmak "
-"istediğinize bağlı olarak ek paketler kurmak istediğinizde daha fazla alana "
-"ihtiyacınız olacak."
+"gigabaytlık veya minimal bir sunucu kurulumu için en az 400 megabaytlık bir "
+"bölüm oluşturmalısınız. Yeni Ubuntu sisteminizle ne yapmak istediğinize "
+"bağlı olarak, ek paketler kurmak istediğinizde daha fazla alana ihtiyacınız "
+"olacak."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -238,16 +239,16 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"Daha fazla bilgi için Kurulum El Kitabı veya Sıkça Sorulan Sorulara bakınız; "
-"her iki belge Ubuntu internet sitesinde mevcuttur. <ulink url=\"http://www."
-"ubuntu.com/\" />"
+"Daha fazla bilgi için Kurulum El Kitabı veya Sıkça Sorulan Sorular'a "
+"bakınız; her iki belge de Ubuntu web sitesinde mevcuttur. <ulink url="
+"\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Bu Ubuntu Live sistemini kullanmak için en az 384MB belleğe sahip "
+"Bu Ubuntu çalışan sistemini kullanmak için en az 384 MB belleğe sahip "
 "olmalısınız."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -256,8 +257,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Live sistem sabit diskinizde herhangi bir alana gerek duymaz. Yine de, eğer "
-"varsa diskinizde bulunan Linux takas bölmeleri kullanılacaktır."
+"Çalışan sistem, sabit diskinizde herhangi bir alana gerek duymaz. Bununla "
+"birlikte, eğer varsa diskinizde bulunan Linux takas alanları kullanılacaktır."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -265,8 +266,8 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Daha fazla bilgi için Sıkça Sorulan Sorulara bakınız; bu belge Ubuntu "
-"internet sitesinde mevcuttur. <ulink url=\"http://www.ubuntu.com/\" />"
+"Daha fazla bilgi için Sıkça Sorulan Sorular'a bakınız; bu belge Ubuntu "
+"internet sitesinde mevcuttur, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
@@ -282,7 +283,8 @@ msgid ""
 "${BOOTPROMPT}"
 msgstr ""
 "Yardım dizini için <phrase class=\"not-serial\">F1</phrase><phrase class="
-"\"serial\">control and F then 1</phrase>e basın ya da ${BOOTPROMPT}a GİRİN."
+"\"serial\">kontrol ve F ardından 1</phrase> tuşlarına basın ya da "
+"${BOOTPROMPT} için ENTER tuşuna basın."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
@@ -319,7 +321,7 @@ msgstr "Ubuntu'yu Yükle"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr "Kurulumu başat -- bu ön tanımlı seçenektir."
+msgstr "Kurulumu başlat -- bu ön tanımlı seçenektir."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -329,7 +331,7 @@ msgstr "uzman"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "Maksimum kontrol için, kurulumu uzman kipinde başlatır."
+msgstr "En yüksek düzeyde denetim için, kurulumu uzman kipinde başlat."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
@@ -349,12 +351,12 @@ msgstr "Minimal komut-satırı sistem kurulumu."
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr "Çalışan"
+msgstr "çalışan"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr "Ubuntu'yu bilgisayarınızda değişiklik olmadan deneyin"
+msgstr "Ubuntu'yu bilgisayarınızda değişiklik yapmadan deneyin"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -362,8 +364,8 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
-"Canlı sistemi başlatın. Eğer isterseniz daha sonra masaüstünüzdeki \"Yükle\" "
-"simgesinden sistemi kurabilirsiniz."
+"Çalışan sistemi başlatın. Eğer isterseniz, daha sonra masaüstünüzdeki \"Kur"
+"\" simgesinden sistemi kurabilirsiniz."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
@@ -396,8 +398,8 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"Bu ön yükleme metodlarından birini kullanmak için, isteğe bağlı olarak "
-"herhangi bir açılış parametresini takiben imlece yazın. Örneğin:"
+"Bu önyükleme yöntemlerinden birini kullanmak için, isteğe bağlı olarak "
+"herhangi bir açılış parametresinin ardından isteme yazın. Örneğin:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
@@ -417,8 +419,8 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Eğer emin değilseniz, ön yükleme sisteminde basitçe girişe (Enter) basarak  "
-"özel olmayan parametrelerle, varsayılan önyükleme metodunu kullanmalısınız"
+"Eğer emin değilseniz, önyükleme isteminde basitçe enter'a basarak özel "
+"olmayan parametrelerle  varsayılan önyükleme yöntemini kullanmalısınız"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
@@ -437,18 +439,18 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
-"Bu ön yükleme metodlarından birini kullanmak için menüden imleç tuşları ile "
-"seçin. F4 basarak alternatif başlangıç ve yükleme yöntemi seçin. Ön yükleme "
-"karakteristiklerini düzenlemek için F6 ya basın. Daha yaygın ön yükleme "
-"karekteristiklerinin  kullanımı için tekrar F6 basarak menüden seçin."
+"Bu önyükleme yöntemlerinden birini kullanmak için, menüden imleç tuşları ile "
+"seçin. Alternatif başlangıç ve kurulum kiplerini seçmek için F4'e basın. "
+"Önyükleme parametrelerini düzenlemek için F6' ya basın. Daha yaygın "
+"önyükleme parametrelerinin kullanımı için F6'ya yeniden basarak menüden "
+"seçin."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
-"Uzman yönetimi hariç, kritik olmayan çekirdek ön yükleme mesajları "
-"bastırıldı."
+"Uzman kipi hariç, kritik olmayan çekirdek önyükleme iletileri yazdırıldı."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
@@ -464,7 +466,7 @@ msgstr "BOZUK BİR SİSTEM KURTARILIYOR"
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
-"Varolan bir kurulumu kurtarmak için bu önyükleme yöntemlerinden birini "
+"Varolan bir kurulumu kurtarmak için, bu önyükleme yöntemlerinden birini "
 "kullanın."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
@@ -475,12 +477,12 @@ msgstr "kurtarma"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr "Hatalı bir sistemi kurtar"
+msgstr "Bozuk bir sistemi kurtar"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr "Kurtarma kipini başlat."
+msgstr "Kurtarma kipini yükle."
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
@@ -498,11 +500,12 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"Bu diskte atanmış kurtarma modu yok. Yine de, disk tam bir kullanıcı ortamı "
-"sağladığında, çöken bir sistemi komut-satırı ve/veya grafiksel aletler "
-"kullanarak kurtarmayı sağlamak ve yardım almak için bir web tarayıcı "
-"kullanmak mümkün. Normal sisteminizin düzgün işlememesine sebep olabilecek "
-"birçok sorun için kapsamlı tavsiyeye çevrimiçi ulaşılabilir."
+"Bu diskte atanmış bir kurtarma kipi yok. Bununla birlikte; disk tam bir "
+"kullanıcı ortamı sağladığında, çöken bir sistemi komut satırı ve/veya "
+"grafiksel araçlar kullanarak kurtarmak ve yardım almak için bir web tarayıcı "
+"kullanmak mümkündür. Normal sisteminizin düzgün açılmamasına sebep "
+"olabilecek birçok sorun için kapsamlı önerilere çevrimiçi ortamda "
+"ulaşılabilir."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -512,7 +515,7 @@ msgstr "<keycap>F5</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "ÖZEL ÖN YÜKLEME PARAMETRELERI - GENEL"
+msgstr "ÖZEL ÖNYÜKLEME PARAMETRELERI - GENEL BAKIŞ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
@@ -520,8 +523,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
-"Az sayıda sistemlerde, sistemi önyüklemek için <literal>önyükleme:</literal> "
-"da bir parametre belirtmeye ihtiyacınız olabilir."
+"Az sayıda sistemde, sistemi önyüklemek için <literal>önyükleme:</literal> "
+"isteminde özel bir parametre belirtmeye ihtiyacınız olabilir."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
@@ -529,8 +532,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
-"Az sayıdaki sistemlerde, F6 ya basarak sistemi önyükleme için özel parametre "
-"belirtebilirsiniz."
+"Az sayıda sistemde, sistemi önyüklemek için F6'ya basarak özel bir parametre "
+"belirtmeniz gerekebilir."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -538,16 +541,16 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"Örneğin, Linux donanımlarınız otomatik algılayamayabilir ve onu "
-"algılatabilmek için açıkça yerini veya tipini belirtmeye ihtiyacınız "
-"olabilir."
+"Örneğin; Linux, donanımlarınızı otomatik algılayamayabilir ve bu donanımları "
+"tanıtabilmek için konumunu ve türünü açıkça belirtmek durumunda "
+"kalabilirsiniz."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
-"Kullanabileceğiniz önyükleme parametreleri hakkında daha fazla bilgi için, "
-"basın:"
+"Kullanabileceğiniz önyükleme parametreleri hakkında daha fazla bilgi için "
+"basmanız gereken tuş:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
@@ -557,17 +560,17 @@ msgstr "özel makineler için önyükleme parametreleri"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr "Çeşitli disk denetleyicileri için önyükleme parametreleri"
+msgstr "çeşitli disk denetleyicileri için önyükleme parametreleri"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr "Ön yükleme parametreleri kurulum sistemi tarafından anlaşıldı"
+msgstr "kurulum sistemi tarafından tanınan önyükleme parametreleri"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr "Ön yükleme parametreleri önyükleme sistemi tarafından anlaşıldı"
+msgstr "önyükleme sistemi tarafından tanınan önyükleme parametreleri"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
@@ -577,10 +580,10 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Dinamik yükleyici tarafından yüklenen birçok çekirdek modülleri ve bu "
-"modüller için parametreler komut satırında verilmeyebilir. Modüller "
-"yüklendiğinde parametreler için uzman modunda istemde bulunmak için (bakın "
-"<link linkend=\"F3\"><keycap>F3</keycap>"
+"Çoğu çekirdek modülü, kurulum sırasında dinamik olarak yüklenir ve bu "
+"modüllerin parametreleri komut satırında verilemez. Modüller yüklendiğinde "
+"parametreleri elle girebilmek için uzman kipinde önyükleyin ( <link linkend="
+"\"F3\"><keycap>F3</keycap></link> bağlantısına bakın)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
@@ -588,8 +591,8 @@ msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"Sistemin yüklenmesi ile bazı çekirdek modulleri dinamik olarak yüklenir ve "
-"bu modüller için parametreler komut satırında verilmeyebilir."
+"Çoğu çekirdek modülü, önyükleme sistemi tarafından dinamik olarak yüklenir "
+"ve bu modüllerin parametreleri komut satırında verilemez."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
@@ -599,18 +602,18 @@ msgstr "<keycap>F6</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr "ÖZEL ÖNYÜKLEME PARAMETRELERI - ÇEŞITLI DONANıMLAR"
+msgstr "ÖZEL ÖNYÜKLEME PARAMETRELERI - ÇEŞİTLİ DONANIMLAR"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
-msgstr ""
-"Ön yükleme metodlu kombinasyonda, <literal>boot:</literal> isteminde "
-"aşağıdaki önyükleme parametrelerini kullanabilirsiniz ( bakın <link linkend="
+"prompt, in combination with the boot method (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
+msgstr ""
+"Önyükleme yöntemi bileşimiyle birlikte <literal>önyükleme:</literal> "
+"isteminde aşağıdaki önyükleme parametrelerini kullanabilirsiniz ( bakınız "
+"<link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
@@ -618,16 +621,15 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Ön yükleme metodlu kombinasyonda, F6 ya basarak aşağıdaki önyükleme "
-"parametrelerini seçebilirsiniz (bakın <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
+"Önyükleme yöntemi bileşimiyle birlikte aşağıdaki önyükleme parametrelerini "
+"kullanabilirsiniz ( bakınız <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
-"Eğer onaltılık sayıları kullanırsanız 0x önekini kullanmalısınız (örnek "
-"olarak; 0x300)."
+"Eğer onaltılık sayıları kullanıyorsanız, 0x önekini kullanmalısınız "
+"(örneğin; 0x300)."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555

@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-07 10:29+0000\n"
+"PO-Revision-Date: 2010-04-25 05:09+0000\n"
 "Last-Translator: Bundo <bundo@bundo.biz>\n"
 "Language-Team: Korean <ko@li.org>\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -183,6 +184,8 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"F1-F19는 control과 F를 입력하고 숫자 1-9를 입력하세요.\n"
+"F10는 control과 F를 입력하고 숫자 0을 입력하세요.\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -322,7 +325,7 @@ msgstr "설치 시작 -- 기본옵션"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
-msgstr "expert"
+msgstr "전문가"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
@@ -424,8 +427,8 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
-"( \"Ubuntu\"는 다른 관련 운영 체제의 이름으로 대체해야 합니다.이 도움말은 일"
-"반적입니다.)"
+"(\"우분투\" 대신 다른 비슷한 운영 체제의 이름을 넣을 수도 있습니다. 이 도움말"
+"은 우분투에 국한되지 않습니다.)"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
@@ -445,8 +448,7 @@ msgstr ""
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
-"전 문가 모드를 제외하고, 중요하지 않은 커널의 시작 메시지가 표시되지 않습니"
-"다."
+"전문가 모드가 아니라면, 중요하지 않은 커널의 부트 메시지는 표시하지 않습니다."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
@@ -600,8 +602,8 @@ msgstr "특수한 부팅 인자 - 다양한 하드웨어의 지원"
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "다음 매개 변수를 시작하는 방법과 함께 <literal>boot:</literal> 프롬프트에서 "
 "사용할 수 있습니다 (link linkend=\"F3\"><keycap>F3</keycap></link> 참조)."
@@ -666,6 +668,9 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
@@ -701,12 +706,12 @@ msgstr "<userinput>generic.all_generic_ide=1</userinput>"
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
-msgstr ""
+msgstr "하드웨어가 잠기거나 문제가 생겼을 때 사용할 수 있는 (일시적인) 차선책:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "버그가 많은 APIC interrupt routing 사용하지 않기"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
@@ -981,13 +986,13 @@ msgstr ""
 #: help.xml:682
 #, no-wrap
 msgid "boot: install fb=false"
-msgstr ""
+msgstr "boot: install fb=false"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "boot: live pci=noacpi"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:699
@@ -1113,5 +1118,5 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"이 시스템은 데비안 기반 시스템입니다. 데비안 프로젝트에 대해서 더 자세히 알고"
-"자 할 경우 <ulink url=\"http://www.debian.org/\" />를 참조하십시오."
+"이 시스템은 데비안을 바탕으로 만들어졌습니다. 데비안 프로젝트에 대한 자세한 "
+"정보는 <ulink url=\"http://www.debian.org/\" />를 참조하십시오."

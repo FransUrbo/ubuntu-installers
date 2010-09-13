@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2009-11-03 08:20+0000\n"
+"PO-Revision-Date: 2010-09-12 09:17+0000\n"
 "Last-Translator: Rabi Poudyal <ubuntu@rabipoudel.com.np>\n"
 "Language-Team: Nepali <ne@li.org>\n"
+"Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -38,6 +39,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} को प्रतिस्थापन प्रणाली हो। यो "
+"${BUILD_DATE} मा निर्माण गरिएको हो।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -45,11 +48,13 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
+"यो ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} को जीवन्त प्रणाली हो। यो "
+"${BUILD_DATE} मा निर्माण गरिएको हो।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr ""
+msgstr "मद्दत सूची"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
@@ -59,7 +64,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:30
 msgid "TOPIC"
-msgstr ""
+msgstr "विषय"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
@@ -79,12 +84,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr ""
+msgstr "${DISTRIBUTION_NAME} को प्रतिस्थापनको लागि पूर्वापेक्षित।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr ""
+msgstr "${DISTRIBUTION_NAME} चलाउनको लागि पूर्वापेक्षित।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
@@ -94,7 +99,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr ""
+msgstr "यस प्रणालीलाई विशेष प्रकारले प्रयोग गर्नको लागि बूट तरीकाहरू।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -104,7 +109,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr ""
+msgstr "अतिरिक्त बूट तरीकाहरू; टुक्रिएको प्रणालीलाई उद्दार गर्ने।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
@@ -114,7 +119,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr ""
+msgstr "विशेष बूट चर, सिंहावलोकन।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
@@ -124,7 +129,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "विशेष मेसिनको लागि विशेष बूट मापदण्ड।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
@@ -134,7 +139,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
+msgstr "छनौट गरिएको डिस्क नियन्त्रकको लागि विशेष बूट मानदण्ड।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
@@ -144,12 +149,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "प्रतिस्थापन प्रणालीको लागि विशेष बूट मानदण्ड।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "बूटस्ट्राप प्रणालीको लागि विशेष बूट मानदण्ड।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
@@ -159,7 +164,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
-msgstr ""
+msgstr "मद्दत कसरी प्राप्त गर्ने"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
@@ -198,13 +203,13 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr ""
+msgstr "उबुन्टु प्रतिस्थापनको लागि पूर्वापेक्षाहरू"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr ""
+msgstr "यस उबुन्टु प्रतिस्थापकको लागि तपाईंसँग न्यूनतम ३२ मेगावाइट र्‍याम उपलब्ध हुनुपर्छ।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -223,12 +228,15 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
+"अरु जानकारीको लागि प्रतिस्थापन म्यानुअल वा FAQ हेर्नुहोस्; दुवै दस्ताबेज उबुन्टुको वेवसाइट "
+"<ulink url=\"http://www.ubuntu.com/\" /> मा उपलब्ध छ।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
+"उबुन्टु जीवन्त प्रणाली प्रयोग गर्नको लागि तपाईंसँग न्यूनतम् ३८४ मेगावाइट र्‍याम उपलब्ध हुनुपर्छ।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -247,7 +255,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr ""
+msgstr "उबुन्टु रोज्नुभएकोमा धन्यवाद!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
@@ -262,7 +270,7 @@ msgstr ""
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr ""
+msgstr "मद्दत सूचीको लागि F1 वा बाहिर जानको लागि Esc थिच्नुहोस्।"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
@@ -272,7 +280,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr ""
+msgstr "बूट पद्दतिहरू"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
@@ -292,7 +300,7 @@ msgstr "उबुन्टु प्रतिस्थापन गर्नु�
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr ""
+msgstr "प्रतिस्थापन शुरु गर्नुहोस् -- यो पूर्वनिर्धारित विकल्प हो।"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -307,27 +315,27 @@ msgstr "अधिकतम नियन्त्रणको लागि वि
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-विज्ञ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "न्यूनतम कमाण्ड-लाईन प्रणाली प्रतिस्थापन।"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "जीवन्त"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "आफ्नो कम्प्युटरमा कुनै परिवर्तन विना उबुन्टु प्रयोग गरी हेर्नुहोस्।"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -335,11 +343,13 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"जीवन्त प्रणाली शुरु गर्नुहोस्। यदि तपाईले चाहेमा पछाडि मण्डलाबाट \"प्रतिस्थापन\" छविको "
+"प्रयोग गरी प्रतिस्थापन गर्न सक्नुहुन्छ।"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "जीवन्त-प्रतिस्थापन"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
@@ -542,8 +552,8 @@ msgstr ""
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>

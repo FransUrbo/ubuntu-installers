@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-03-14 13:20+0000\n"
-"Last-Translator: Subin P Thomas <Unknown>\n"
+"PO-Revision-Date: 2010-06-17 14:19+0000\n"
+"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
 "Language-Team: Malayalam <ml@li.org>\n"
+"Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -25,7 +26,7 @@ msgstr "ഇന്‍സ്ടാളര്‍ ബൂട്ടിങ്ങുമ�
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
 msgid "<keycap>F1</keycap>"
-msgstr ""
+msgstr "<keycap>F1</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
@@ -47,8 +48,8 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"ഇത് ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ന്റെ തത്സമയ സംവിധാനം  ആണ്. ഇത് "
-"തയ്യാറാക്കിയ തീയതി ${BUILD_DATE} ആണ്."
+"ഇത് ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ന്റെ ${BUILD_DATE} ല്‍ "
+"തയ്യാറാക്കിയ ഒരു തത്സമയ സംവിധാനം ആണ്."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -68,7 +69,7 @@ msgstr "വിഷയം"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
 msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
@@ -78,22 +79,22 @@ msgstr "ഈ താള്‍, സഹായങ്ങളുടെ പട്ടി�
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
 msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "${DISTRIBUTION_NAME} ഇന്‍സ്ടാള്‍ ചെയ്യുന്നതിന് ആവശ്യമായവ."
+msgstr "${DISTRIBUTION_NAME} ഇന്‍സ്ടാള്‍ ചെയ്യുന്നതിന് ആവശ്യമായ ഉപാധികള്‍."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "${DISTRIBUTION_NAME} ഉപയോഗിക്കുന്നതിന് ആവശ്യമായവ."
+msgstr "${DISTRIBUTION_NAME} ഉപയോഗിക്കുന്നതിന് ആവശ്യമായ ഉപാധികള്‍."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
 msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
@@ -103,62 +104,62 @@ msgstr "ഈ സംവിധാനം  പ്രത്യേക രീതിക�
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
 msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "കൂടുതല്‍ ബൂട്ടിംഗ് രീതികള്‍; കേടുവന്ന ഒരു ഇന്‍സ്ടാളേഷന്‍ നന്നാക്കുന്നതിന്‌."
+msgstr "കൂടുതല്‍ ബൂട്ടിംഗ് രീതികള്‍; കേടുവന്ന ഒരു ഇന്‍സ്ടാളേഷന്‍ ശരിയാക്കുന്നതിന്‌."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
 msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr ""
+msgstr "പ്രത്യേക ബൂട്ട് രീതികള്‍, ഒരവലോകനം."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
 msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "ചില പ്രത്യേകമ കംപ്യൂട്ടറുകള്‍കുള്ള പ്രത്യേകമായ ബൂട്ട് രീതികള്‍."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
 msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
+msgstr "തിരഞ്ഞെടുത്ത disk controllersഇനു വേണ്ട പ്രത്യേകമായ ബൂട്ട് നിയന്ത്രണങ്ങള്‍"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
 msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "install systemഇനു വേണ്ട പ്രത്യേകമായ ബൂട്ട് നിയന്ത്രണങ്ങള്‍"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "bootstrap systemഇനു വേണ്ട പ്രത്യേകമായ ബൂട്ട് നിയന്ത്രണങ്ങള്‍"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
 msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
@@ -168,12 +169,12 @@ msgstr "എങ്ങനെ സഹായം നേടാം"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
 msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr ""
+msgstr "പകര്‍പ്പവകാശവും വാരണ്ടികളും"
 
 #.  deliberately unindented 
 #. type: Content of: <reference><refentry><refsection><literallayout>
@@ -183,6 +184,8 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"F1 മുതല്‍ F19 വരെ ലഭിക്കാന്‍ \"control\" അമര്‍ത്തി \"F\" അമര്‍ത്തിയ ശേഷം 1മുതല്‍ 9 വരെയുള്ള സംഖ്യ അമര്‍ത്തുക\n"
+"F10 ലഭിക്കാന്‍ \"control\" അമര്‍ത്തി \"F\" അമര്‍ത്തിയ ശേഷം 0 അമര്‍ത്തുക\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -195,22 +198,24 @@ msgstr ""
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr ""
+"വിശദാംശങ്ങള്‍ക്കായി F2 മുതല്‍ F10 വരെയും, സഹായത്തില്‍ നിന്നും പുറത്തു് കടക്കാന്‍  Escape ഉം "
+"അമര്‍ത്തുക."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
 msgid "<keycap>F2</keycap>"
-msgstr ""
+msgstr "<keycap>F2</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr ""
+msgstr "ഉബുണ്ടു ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നതിന്ന് അത്യാവശ്യമായത്"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr ""
+msgstr "ഈ ഉബുണ്ടു ഇന്‍സ്റ്റാളറിന് ചുരുങ്ങിയത് 32 മെഗാബൈറ്റ് RAM ആവശ്യമാണ്"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -221,6 +226,9 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"ഉബുണ്ടു ഡസ്കടോപ് ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നതിന്ന് ചുരുങ്ങിയത് 2 gigabyte മെമ്മറിയും ഉബുണ്ടു സര്‍വര്‍ "
+"ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നതിന്ന് ചുരുങ്ങിയത് 400 megabyte മെമ്മറിയും ആവശ്യമാണ്. പുറമെ നിങ്ങളുടെ "
+"ആവശ്യങ്ങള്‍ക്കനുസരിച്ച് കൂടുതല്‍ പേക്കേജ് ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നതിന്ന് കൂടുതല്‍ മെമ്മറി വേണ്ടിവരും."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -229,12 +237,14 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
+"കൂടുതല്‍ വിവരങ്ങള്‍ക്ക് FAQ അല്ലെങ്കില്‍ ഇന്‍സ്റ്റാള്‍ സഹായി കാണുക. ഇവ <ulink url=\"http://www."
+"ubuntu.com/\" /> എന്ന ഉബുണ്ടു വെബ് സൈറ്റില്‍ ലഭ്യമാണ്"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr ""
+msgstr "ഉബുണ്ടു ലൈവ് സിസ്റ്റം ഉപയോഗിക്കാന്‍ ചുരുങ്ങിയത് 384 megabyte RAM ആവശ്യമാണ്."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -242,6 +252,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"ലൈവ് സിസ്റ്റം ഉപയോഗിക്കാന്‍ നിങ്ങളുടെ ഹാര്‍ഡ് ഡിസ്കില്‍ ഇടം ഉണ്ടാകണം എന്ന്  നിര്‍ബന്ധം ഇല്ല. "
+"എങ്കിലും ലിനക്സ് സ്വാപ് സ്ഥലങ്ങള്‍ നിലവിലുണ്ടെങ്കില്‍ ഉപയോഗപ്പെടുത്തുന്നതാണ്."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -249,11 +261,13 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
+"കൂടുതല്‍ വിവരങ്ങള്‍ക്ക് FAQ കാണുക. ഈ ലേഖനം <ulink url=\"http://www.ubuntu.com/\" /> "
+"എന്ന ഉബുണ്ടു വെബ് സൈറ്റില്‍ ലഭ്യമാണ്"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr ""
+msgstr "ഉബുണ്ടു തിരഞ്ഞെടുത്തതിന്ന് നന്ദി!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
@@ -263,77 +277,79 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
+"സഹായപട്ടിക കാണാന്‍ <phrase class=\"not-serial\">F1</phrase><phrase class="
+"\"serial\"> അമര്‍ത്തുക.അതിന് വേണ്ടി  \"control\"അമര്‍ത്തി \"F\" അമര്‍ത്തിയ ശേഷം 1 അമര്‍ത്തുക."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr ""
+msgstr "സഹായപട്ടിക കാണാന്‍ F1 അമര്‍ത്തുക, അല്ലാത്ത പക്ഷം പുറത്തു പോകാന്‍ Escape അമര്‍ത്തുക."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
 msgid "<keycap>F3</keycap>"
-msgstr ""
+msgstr "<keycap>F3</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr ""
+msgstr "ബൂട്ടിങ്ങിനുള്ള മാര്‍ഗ്ഗങ്ങള്‍"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr ""
+msgstr "ലഭ്യമായ ബൂട്ടിങ്ങിനുള്ള മാര്‍ഗ്ഗങ്ങള്‍:"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
-msgstr ""
+msgstr "ഇന്‍സ്റ്റാള്‍"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "ഉബുണ്ടു ഇന്‍സ്റ്റാള്‍ ചെയ്യുക"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റാള്‍ തുടങ്ങുക -- ഇതാണ് ഡിഫാള്‍ട്ട് ഒപ്ഷന്‍"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
-msgstr ""
+msgstr "വിദഗ്ധന്‍"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr ""
+msgstr "പരമാവധി നിയന്ത്രണത്തിന്നു വേണ്ടി നിപുണമായ രീതിയില്‍ ഇന്‍സ്റ്റാള്‍ തുടങ്ങുക."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-വിദഗ്ധന്‍"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "ചുരുങ്ങിയ ഇന്‍സ്റ്റാള്‍ കമാന്‍ട് രീതിയില്‍ ചെയ്യുക"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "ലൈവ്"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "നിങ്ങളുടെ കംപ്യൂട്ടറിനു യാതൊരു മാറ്റവും ഇല്ലാതെ ഉബുണ്ടു പരീക്ഷിക്കുക"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -341,31 +357,33 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"ഉബുണ്ടു ലൈവ് സിസ്റ്റം ആരംഭിക്കുക.താങ്കള്‍ ഇന്‍സ്റ്റാള്‍ ചെയ്യാന്‍ ആഗ്രഹിക്കുന്നുണ്ടെങ്കില്‍ ബൂട്ട് ചെയ്ത ശേഷം "
+"ഡെസ്ക് ടോപില്‍ നിന്ന് \"Install\" തിരഞ്ഞെടുക്കാവുന്നതാണ്."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "ലൈവ്-ഇന്‍സ്റ്റാള്‍"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റാള്‍ ആരംഭിക്കുക."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
-msgstr ""
+msgstr "memtest"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "മെമ്മറി പരിശോധിക്കുക"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr ""
+msgstr "മെമ്മറി പരിശോധന നടത്തുക."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
@@ -373,18 +391,20 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"ഈ ബൂട്ട് രീതികള്‍ ഉപയോകിക്കണമെങ്കില്‍ അവ പ്രോംറ്റില്‍ എഴുതുക, മറ്റു ബൂട്ടിങ് പാരാമീഫൃറ്ററുകള്‍ "
+"ആവശ്യമെങ്കില്‍ ചേര്‍കാവുന്നതാണ്. ഉദാഹരണം:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "boot: install acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
@@ -392,6 +412,8 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
+"താങ്കള്‍ക്ക്  തീര്‍ച്ചയില്ലെങ്കില്‍, പരിച്ചിഹ്നങ്ങള്‍(parameters) ഒന്നും ഇല്ലാത്ത സാധാരണ ബൂട്ടിംഗ് "
+"രീതി ഉപയോഗിക്കണം. ഇതിനായി ബൂട്ട് പ്രോമ്പ്റ്റില്‍ എന്റര്‍ കീ അമര്‍ത്തണം."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
@@ -399,6 +421,8 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(\"ഉബുണ്ടു\" എന്നുള്ളതിന് പകരം മറ്റു ലിനക്സുകളും വയ്ക്കുക്കാവുന്നതാണ്. കാരണം ഈ സഹായകൃതി "
+"പൊതുവായിട്ടുള്ളതാണ്.)"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
@@ -418,12 +442,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
 msgid "<keycap>F4</keycap>"
-msgstr ""
+msgstr "<keycap>F4</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "കേട് സംഭവിച്ച സിസ്റ്റത്തെ രക്ഷിക്കുക"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
@@ -433,23 +457,23 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
-msgstr ""
+msgstr "രക്ഷിക്കുക"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr ""
+msgstr "കേട് സംഭവിച്ച സിസ്റ്റത്തെ രക്ഷിക്കുക"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "രക്ഷാ രീതിയിലേക്ക് ബൂട്ട് ചെയ്യുക"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "boot: rescue acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
@@ -465,7 +489,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
 msgid "<keycap>F5</keycap>"
-msgstr ""
+msgstr "<keycap>F5</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
@@ -485,6 +509,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"ചില സിസ്റ്റെങ്ങളില്‍, ബൂട്ട് ചെയ്യാനായി F6 കീ അമര്‍ത്തിയ ശേഷം ചില പരിച്ചിഹ്നങ്ങള്‍"
+"(parameters) വ്യക്തമാക്കേണ്ടതുണ്ട്."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -497,6 +523,8 @@ msgstr ""
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
+"താങ്കള്‍ക്ക് ഉപയോഗിക്കാന്‍ പറ്റിയ ബൂട്ട് പരിച്ചിഹ്നങ്ങളെ(parameters) പറ്റിയുള്ള കൂടുതല്‍ "
+"വിവരങ്ങള്‍ക്ക്, അമര്‍ത്തുക:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
@@ -537,7 +565,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
 msgid "<keycap>F6</keycap>"
-msgstr ""
+msgstr "<keycap>F6</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
@@ -548,8 +576,8 @@ msgstr ""
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -567,7 +595,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr ""
+msgstr "ഹാര്‍ഡ്​വയര്‍"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
@@ -585,6 +613,8 @@ msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
@@ -594,7 +624,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
@@ -608,16 +638,19 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr ""
+msgstr "സ്ക്രീന്‍ പിശകുകള്‍ ഉള്ള ലാപ്ടോപുകള്‍"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
@@ -627,7 +660,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
@@ -653,12 +686,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "ACPI അയോഗ്യമാക്കുക(ഭാഗികമായി)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
@@ -668,7 +701,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "USB അയോഗ്യമാക്കുക"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
@@ -688,7 +721,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
-msgstr ""
+msgstr "ഉദാഹരണം:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
@@ -705,7 +738,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:536
 msgid "<keycap>F7</keycap>"
-msgstr ""
+msgstr "<keycap>F7</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
@@ -939,7 +972,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
-msgstr ""
+msgstr "Ubuntu team താങ്കളെ സഹായിക്കാന്‍ തയ്യാറാണ്."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:716
@@ -1023,3 +1056,5 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"ഈ പദ്ധതി ഡെബിയന്‍ ആധാരമാക്കിയിട്ടുള്ളതാണ് .കൂടുതല്‍ വിശദീകരണങ്ങള്‍ക്കും വിവരങ്ങള്‍ക്കും <ulink url="
+"\"http://www.debian.org/\" /> സന്ദര്‍ശിക്കുക"

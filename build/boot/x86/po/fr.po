@@ -11,10 +11,11 @@ msgstr ""
 "PO-Revision-Date: 2010-04-07 10:31+0000\n"
 "Last-Translator: Bruno Patri <bruno.patri@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -262,9 +263,9 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Le système « live » ne requiert aucun espace sur votre disque dur. Cependant, "
-"les partitions d'échange (swap) existantes sur le disque seront utilisées si "
-"disponibles."
+"Le système « live » ne requiert aucun espace sur votre disque dur. "
+"Cependant, les partitions d'échange (swap) existantes sur le disque seront "
+"utilisées si disponibles."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -619,8 +620,8 @@ msgstr "PARAMÈTRES SPÉCIFIQUES DE DÉMARRAGE - DIVERS MATÉRIELS"
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Vous pouvez utiliser les paramètres de démarrage à l'invite <literal>boot:</"
 "literal>, en combinaistion avec la méthode de démarrage (voir <link linkend="
@@ -633,8 +634,8 @@ msgid ""
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Vous pouvez utiliser les paramètres de démarrage suivants en appuyant sur "
-"F6, en combinaison avec la méthode de démarrage (voir <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"F6, en combinaison avec la méthode de démarrage (voir <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446

@@ -11,10 +11,11 @@ msgstr ""
 "PO-Revision-Date: 2010-04-07 10:28+0000\n"
 "Last-Translator: Giorgio Catanzaro <catanzag@gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:36+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -578,8 +579,8 @@ msgstr ""
 "Molti moduli del kernel sono caricati dinamicamente dal programma di "
 "installazione e i parametri di questi non possono essere forniti sulla riga "
 "di comando. Affinché i parametri vengano richiesti quando i moduli sono "
-"caricati, avviare in modalità avanzata (consultare <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"caricati, avviare in modalità avanzata (consultare <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
@@ -604,12 +605,12 @@ msgstr "PARAMETRI DI AVVIO SPECIALI - VARI HARDWARE"
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "È possibile usare i seguenti parametri di avvio al prompt <literal>boot:</"
-"literal> in combinazione con i metodi di avvio (vedere <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"literal> in combinazione con i metodi di avvio (vedere <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620

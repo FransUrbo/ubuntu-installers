@@ -8,29 +8,30 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2009-10-12 22:09+0000\n"
+"PO-Revision-Date: 2010-04-25 05:23+0000\n"
 "Last-Translator: chhorran <khmeritforyou@gmail.com>\n"
 "Language-Team: Khmer <km@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr ""
+msgstr "អេក្រង់​ជំនួយ​ចាប់ផ្ដើម​របស់​កម្មវិធី​ដំឡើង"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
 msgid "<keycap>F1</keycap>"
-msgstr ""
+msgstr "<keycap>F1</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "ស្វាគម ទៅ ${DISTRIBUTION_NAME}!"
+msgstr "សូម​ស្វាគមន៍​មក​កាន់ ${DISTRIBUTION_NAME}!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
@@ -544,8 +545,8 @@ msgstr ""
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>

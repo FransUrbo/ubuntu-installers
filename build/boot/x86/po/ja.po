@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-10 07:17+0000\n"
+"PO-Revision-Date: 2010-04-25 05:09+0000\n"
 "Last-Translator: Fumihito YOSHIDA <hito@kugutsu.org>\n"
 "Language-Team: Japanese <ja@li.org>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -38,8 +39,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} のインストール･システムです。"
-"${BUILD_DATE} にビルドされました。"
+"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} のインストール･システムで"
+"す。${BUILD_DATE} にビルドされました。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -47,8 +48,8 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} の Live システムです。"
-"${BUILD_DATE} にビルドされました。"
+"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} の Live システムで"
+"す。${BUILD_DATE} にビルドされました。"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -276,8 +277,8 @@ msgid ""
 "${BOOTPROMPT}"
 msgstr ""
 "ヘルプインデックスを参照するには<phrase class=\"not-serial\">F1</"
-"phrase><phrase class=\"serial\">CtrlとFを押して1</phrase>を押すか、"
-"${BOOTPROMPT} でENTERを押してください。"
+"phrase><phrase class=\"serial\">CtrlとFを押して1</phrase>を押す"
+"か、${BOOTPROMPT} でENTERを押してください。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
@@ -598,8 +599,8 @@ msgstr "特別なブートパラメータ - さまざまなハードウェア"
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "以下のパラメータを、起動方法と組み合わせて<literal>boot:</literal> プロンプト"
 "で使うことができます(<link linkend=\"F3\"><keycap>F3</keycap></link>参照)。"

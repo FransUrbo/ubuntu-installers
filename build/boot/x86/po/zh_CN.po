@@ -11,10 +11,11 @@ msgstr ""
 "PO-Revision-Date: 2010-04-07 10:31+0000\n"
 "Last-Translator: Liu Qishuai <lqs.buaa@gmail.com>\n"
 "Language-Team: Chinese (China) <zh_CN@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -555,8 +556,8 @@ msgid ""
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "安装器在动态地读取很多内核模块，并且这些模块的参数不能在命令行给出。想在模块"
-"读取的时候有参数提示，请以专家级模式启动(参阅<link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)。"
+"读取的时候有参数提示，请以专家级模式启动(参阅<link linkend="
+"\"F3\"><keycap>F3</keycap></link>)。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
@@ -579,8 +580,8 @@ msgstr "特定的启动参数 - 各式各样的硬件"
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "你可以在 <literal>boot:</literal> 提示行下使用下列启动选项，和启动方式一起 "
 "(参考 <link linkend=\"F3\"><keycap>F3</keycap></link>)。"
@@ -591,8 +592,8 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"你可以通过按下 F6 使用下列启动参数， 和启动方式一起(参考 <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)。"
+"你可以通过按下 F6 使用下列启动参数， 和启动方式一起(参考 <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446

@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-16 20:38+0000\n"
-"Last-Translator: Kushal <Unknown>\n"
+"PO-Revision-Date: 2010-05-01 07:02+0000\n"
+"Last-Translator: nasir khan saikat <nasir8891@gmail.com>\n"
 "Language-Team: Bengali <bn@li.org>\n"
+"Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -275,6 +276,9 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
+"সাহায্য সূচি দেখার জন্য <phrase class=\"not-serial\">F1</phrase> চাপুন <phrase "
+"class=\"serial\">control এবং F এরপর 1</phrase>, অথবা  ${BOOTPROMPT} এ প্রবেশ "
+"করুন"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
@@ -321,6 +325,8 @@ msgstr "দক্ষ"
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
 msgstr ""
+"অভিজ্ঞ ব্যবহারকারী হিসাবে ইনস্টল শুরু করুন, এই পদ্ধতিতে নিয়ন্ত্রণের সর্বাধিক অপশন "
+"ব্যবহার করা যায়।"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
@@ -463,7 +469,7 @@ msgstr "পুনরুদ্ধারকরণ মোডে বুট করু
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "boot: rescue acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
@@ -484,7 +490,7 @@ msgstr "<keycap>F5</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr ""
+msgstr "SPECIAL BOOT PARAMETERS - OVERVIEW"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
@@ -499,6 +505,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"কোন কোন কম্পিউটারে, আপনাকে সিস্টেম বুট করার জন্য F6 চেপে কোন একটি প্যারামিটার "
+"নির্ধারন করে দিতে হবে।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -510,17 +518,17 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
-msgstr ""
+msgstr "আপনার উপযোগী সঠিক বুট প্যারামিটার ব্যবহার সম্পর্কে বিস্তারিত জানতে দেখুন:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "বিশেষ সিস্টেমের বুট প্যারামিটার"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr ""
+msgstr "একাধিক ডিস্ক নিয়ন্ত্রণের বুট প্যারামিটার"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
@@ -556,14 +564,14 @@ msgstr "<keycap>F6</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr ""
+msgstr "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -586,7 +594,7 @@ msgstr "হার্ডওয়্যার"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr ""
+msgstr "PARAMETER TO SPECIFY"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455

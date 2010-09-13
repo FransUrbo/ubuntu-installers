@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-07 10:32+0000\n"
-"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
+"PO-Revision-Date: 2010-09-03 22:12+0000\n"
+"Last-Translator: Xosé <Unknown>\n"
 "Language-Team: Galician <gl@li.org>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-04-18 23:35+0000\n"
+"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. type: Content of: <reference><title>
@@ -39,7 +40,7 @@ msgid ""
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Iste é un sistema de instalación para  ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. Foi construido o ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}. Foi construído o ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -48,7 +49,7 @@ msgid ""
 "was built on ${BUILD_DATE}."
 msgstr ""
 "Este é un sistema vivo para ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
-"Foi construido o  ${BUILD_DATE}."
+"Foi construído o  ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -139,7 +140,7 @@ msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
 msgstr ""
-"Parámetros de inicio especiais para controladores de disco seleccionados."
+"Parámetros de inicio especiais para os controladores de disco seleccionados."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
@@ -184,8 +185,8 @@ msgid ""
 "For F1-F19 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
-"Para F1-F19 prema control, F e logo un díxito entre 1-9\n"
-"Para F10 prema control, F e logo o díxito 0\n"
+"Para F1-F19 prema control, F e despois un díxito entre 1-9\n"
+"Para F10 prema control, F e despois o díxito 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -195,7 +196,7 @@ msgstr "Prema de F2 a F10 para detalles ou ENTER para ${BOOTPROMPT}"
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr "Prema entre F2 e F10 para detalles ou Escape para sair da axuda."
+msgstr "Prema entre F2 e F10 para detalles ou Escape para saír da axuda."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
@@ -289,7 +290,7 @@ msgstr ""
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Prema F1 para o índice da axuda ou Escape para sair da axuda."
+msgstr "Prema F1 para o índice da axuda ou Escape para saír da axuda."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
@@ -304,7 +305,7 @@ msgstr "MÉTODOS DE INICIO"
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr "Métodos de inicio dispoñibles:"
+msgstr "Métodos de inicio dispoñíbeis:"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
@@ -354,7 +355,7 @@ msgstr "ao vivo"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr "Experimente co Ubunto sen tocar o seu computador"
+msgstr "Experimente co Ubuntu sen tocar o seu computador"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -497,12 +498,12 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"Non hai un modo de recuperación adicado en este disco. Nembargantes, xa que "
-"o disco fornece un contorno de usuario completo é posíbel usar a liña de "
-"ordes e/ou as ferramentas gráficas fornecidas para recuperar un sistema "
-"roto, e usar un navegador web para buscar axuda. Pode atopar máis consellos "
-"en liña para a mioría dos problemas que poderían causar que o seu sistema "
-"normal falle ao iniciar correctamente."
+"Non hai un modo de recuperación adicado en este disco. Porén, xa que o disco "
+"fornece un contorno de usuario completo, é posíbel usar a liña de ordes e/ou "
+"as ferramentas gráficas fornecidas para recuperar un sistema roto e usar un "
+"navegador web para buscar axuda. Pode atopar máis consellos en liña para a "
+"maioría dos problemas que poderían causar que o seu sistema normal falle ao "
+"se iniciar correctamente."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -604,12 +605,12 @@ msgstr "PARÁMETROS DE INICIO ESPECIAIS - HARDWARE DIVERSO"
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
-"prompt, in combination with the boot method (see <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"prompt, in combination with the boot method (see <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Pode empregar os seguintes parámetros de arranque na consola <literal>boot:</"
-"literal>, en combinación co método de arranque (vexa <link linkend=\"F3"
-"\"><keycap>F3</keycap></link>)."
+"literal>, en combinación co método de arranque (vexa <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
