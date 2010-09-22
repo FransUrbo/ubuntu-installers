@@ -1,11 +1,11 @@
-base-installer (1.107ubuntu2) UNRELEASED; urgency=low
+base-installer (1.107ubuntu2) maverick; urgency=low
 
   * Backport from trunk:
     - Set Dir::Media::MountPath to /media/cdrom as well as
       Acquire::cdrom::mount, as otherwise apt doesn't consistently read from
       the right one.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 22 Sep 2010 13:27:32 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 22 Sep 2010 13:28:28 +0100
 
 base-installer (1.107ubuntu1) maverick; urgency=low
 
