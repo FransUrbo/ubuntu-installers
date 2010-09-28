@@ -1,3 +1,9 @@
+debian-installer (20100211ubuntu28) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 28 Sep 2010 13:03:29 +0100
+
 debian-installer (20100211ubuntu27) maverick; urgency=low
 
   * Move to 2.6.35-22 kernels.
