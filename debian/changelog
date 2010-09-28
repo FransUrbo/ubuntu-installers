@@ -1,8 +1,8 @@
-debian-installer (20100211ubuntu28) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu28) maverick; urgency=low
 
   * No-change rebuild to pick up new components.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 28 Sep 2010 13:03:29 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 28 Sep 2010 13:04:00 +0100
 
 debian-installer (20100211ubuntu27) maverick; urgency=low
 
