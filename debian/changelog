@@ -1,8 +1,8 @@
-debian-installer (20100211ubuntu29) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu29) maverick; urgency=low
 
   * Add input, NIC, and NFS modules to armel netboot images (LP: #652522).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 01 Oct 2010 16:31:01 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 05 Oct 2010 22:01:29 +0100
 
 debian-installer (20100211ubuntu28) maverick; urgency=low
 
