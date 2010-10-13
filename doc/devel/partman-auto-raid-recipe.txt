@@ -40,13 +40,12 @@ d-i partman-auto/method string raid
 
 d-i partman-auto/disk string /dev/sda /dev/sdb
 
+# raidid can be anything, as long as it doesn't contain spaces or slashes
+# and matches something in raidid{ } in partman-auto/expert_recipe. You can
+# use hash separated lists of ordinary device names instead if you prefer.
 d-i partman-auto-raid/recipe string			\
-	1 2 0 ext3 /boot				\
-		/dev/sda1#/dev/sdb1			\
-	.						\
-	1 2 0 lvm -					\
-		/dev/sda5#/dev/sdb5			\
-	.
+	1 2 0 ext3 /boot raidid=1 .			\
+	1 2 0 lvm - raidid=2 .
 
 # In the expert_recipe, there is a stanza for each RAID partition
 # and each LVM partition.
@@ -65,10 +64,12 @@ d-i partman-auto/expert_recipe string			\
 			$lvmignore{ }			\
 			$primary{ }			\
 			method{ raid }			\
+			raidid{ 1 }			\
 		.					\
 		900 5000 4000 raid			\
 			$lvmignore{ }			\
 			method{ raid }			\
+			raidid{ 2 }			\
 		.					\
 		700 5000 4000 ext3			\
 			$defaultignore{ }		\
