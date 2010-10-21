@@ -3,19 +3,18 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of Debian Installer templates to Welsh
-# Copyright (C) 2004-2008 Software in the Public Interest, Inc.
+# Persian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-#
-# Jonathan Price <mynamesnotclive@notclive.co.uk>, 2008.
+# , 2005.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: base-installer@packages.debian.org\n"
 "POT-Creation-Date: 2009-10-06 22:47+0000\n"
-"PO-Revision-Date: 2008-08-20 21:58+0100\n"
-"Last-Translator: Jonathan Price <mynamesnotclive@notclive.co.uk>\n"
-"Language-Team: Welsh <>\n"
+"PO-Revision-Date: 2010-07-29 02:08+0330\n"
+"Last-Translator: Ebrahim Byagowi <ebraminio@gmail.com>\n"
+"Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,7 +24,7 @@ msgstr ""
 #. :sl2:
 #: ../base-installer.templates:1001
 msgid "Proceed with installation to unclean target?"
-msgstr "Parhau gyda sefydliad at darged nid yw'n lân?"
+msgstr "تصب در مقصد ناسالم انجام شود؟"
 
 #. Type: boolean
 #. Description
@@ -36,16 +35,16 @@ msgid ""
 "could cause problems with the installation process, and if you proceed, some "
 "of the existing files may be overwritten."
 msgstr ""
-"Mae'r system ffeiliau targed yn cynnwys ffeiliau o sefydliad blaenorol. Gall "
-"y ffeiliau hyn dorri'r broses sefydlu neu achosi i system wedi torri gael ei "
-"sefydlu."
+"فایل‌سیستم مقصد حاوی پرونده‌هایی از نصب قدیم است. این پرونده‌ها ممکن است باعث "
+"ایجاد مشکلاتی در فرأیند نصب شود، و اگر انجام دهید، برخی از پرونده‌های کنونی "
+"ممکن است دوباره نوشته شوند."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../base-installer.templates:2001
 msgid "No file system mounted on /target"
-msgstr "Dim system ffeiliau wedi ei glymu at /target"
+msgstr "هیچ فایل‌سیستمی روی /target ماونت نشده است"
 
 #. Type: error
 #. Description
@@ -55,15 +54,15 @@ msgid ""
 "Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
-"Cyn gall y sefydliad lwytho, rhaid clymu system ffeiliau gwraidd at /target. "
-"Fe ddylai'r rhaniadydd a'r fformatiwr fod wedi gwneud hyn ar eich cyfer."
+"قبل از اینکه نصب بتواند انجام گیرد، یک فایل‌سیستم ریشه باید در /target ماونت "
+"شود. ابزار پارتیشن‌بندی و قالب‌بندی می‌بایست این را برای شما انجام داده باشند."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../base-installer.templates:3001
 msgid "Not installing to unclean target"
-msgstr "Ddim yn sefydlu at darged aflan"
+msgstr "در مقصد غیرپاک نصب نمی‌کند"
 
 #. Type: error
 #. Description
@@ -74,60 +73,57 @@ msgid ""
 "back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
-"Mae'r sefydliad i'r system ffeiliau targed wedi ei ddiddymu, gan fod y "
-"system ffeiliau targed yn cynnwys ffeiliau o sefydliad cynt, a all dorri'r "
-"proses sefydlu neu achosi i system dorredig gael ei sefydlu. Dylwch "
-"dychwelyd a dileu neu fformadu'r system ffeiliau targed cyn mynd ymlaen "
-"gyda'r sefydliad."
+"نصب در فایل‌سیستم مقصد لغو شد. باید باز گردید و قبل از انجام‌دادن نصب "
+"فایل‌سیستم مقصد را پاک یا قالب‌بندی کنید."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:4001
 msgid "Preparing to install the base system..."
-msgstr "Paratoi i sefydlu'r system sail..."
+msgstr "درحال آماده‌سازی نصب پایهٔ سیستم دبیان"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:5001 ../bootstrap-base.templates:31001
 msgid "Installing the base system"
-msgstr "Yn sefydlu'r system sail"
+msgstr "در حال نصب سیستم پایه"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:6001
 msgid "Running ${SCRIPT}..."
-msgstr "Yn rhedeg ${SCRIPT}..."
+msgstr "در حال اجرای ${SCRIPT}..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:7001
 msgid "Setting up the base system..."
-msgstr "Yn sefydlu'r system sail..."
+msgstr "تنظیم سیستم پایه ..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:8001 ../bootstrap-base.templates:60001
 msgid "Configuring APT sources..."
-msgstr "Yn cyflunio ffynhonellau APT..."
+msgstr "پیکربندی منابع APT..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:9001
 msgid "Updating the list of available packages..."
-msgstr "Yn diweddaru'r rhestr o becynnau sydd ar gael..."
+msgstr "بروزرسانی لیست بسته‌های موجود..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:10001
 msgid "Installing extra packages..."
-msgstr "Yn sefydlu pecynnau ychwanegol..."
+msgstr "در حال نصب بسته‌های اضافی..."
 
 #. Type: text
 #. Description
@@ -135,7 +131,7 @@ msgstr "Yn sefydlu pecynnau ychwanegol..."
 #. :sl1:
 #: ../base-installer.templates:11001
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
-msgstr "Yn sefydlu pecynnau ychwanegol - yn cyrchu a sefydlu ${SUBST0}..."
+msgstr "نصب بسته‌های اضافی - دریافت و نصب ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -144,7 +140,7 @@ msgstr "Yn sefydlu pecynnau ychwanegol - yn cyrchu a sefydlu ${SUBST0}..."
 #. :sl1:
 #: ../bootstrap-base.templates:1001
 msgid "Install the base system"
-msgstr "Sefydlu'r system sail"
+msgstr "در حال نصب سیستم پایه "
 
 #. Type: error
 #. Description
@@ -153,7 +149,7 @@ msgstr "Sefydlu'r system sail"
 #. :sl2:
 #: ../bootstrap-base.templates:3001
 msgid "Cannot install base system"
-msgstr "Methwyd sefydlu'r system sail"
+msgstr "نصب سیستم پایه شکست خورد."
 
 #. Type: error
 #. Description
@@ -165,8 +161,8 @@ msgid ""
 "The installer cannot figure out how to install the base system. No "
 "installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Nid yw sefydlydd yn gwybod sut i sefydlu Debian. Ni chanfuwyd CD-ROM "
-"sefydliadwy a ni chyfluniwyd drych dilys."
+"نصاب نمی‌تواند متوجه شود چگونه سیستم پایه را نصب کند. هیچ CD-ROM قابل نصبی "
+"یافت نشد و هیچ آینهٔ دریافت معتبری پیکر‌بندی نشد."
 
 #. Type: error
 #. Description
@@ -203,28 +199,28 @@ msgstr ""
 #: ../bootstrap-base.templates:20001 ../bootstrap-base.templates:21001
 #: ../bootstrap-base.templates:22001 ../bootstrap-base.templates:23001
 msgid "Debootstrap Error"
-msgstr "Gwall Debootstrap"
+msgstr "خطای Debootstrap"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:4001
 msgid "Failed to determine the codename for the release."
-msgstr "Methwyd cyrchu'r ffeil cyngyfluniad"
+msgstr "... اسم‌رمز برای انتشار شکست خورد."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:5001
 msgid "Failed to install the base system"
-msgstr "Methwyd sefydlu'r system sail"
+msgstr "نصب سیستم پایه شکست خورد."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:5001
 msgid "The base system installation into /target/ failed."
-msgstr "Methwyd sefydlu'r system sail i fewn i /target/."
+msgstr "نصب سسیستم پایه بر روی /target/ شکست خورد."
 
 #. Type: error
 #. Description
@@ -248,7 +244,7 @@ msgstr "Methwyd sefydlu'r system sail i fewn i /target/."
 #: ../bootstrap-base.templates:7001 ../bootstrap-base.templates:8001
 #: ../bootstrap-base.templates:12001 ../bootstrap-base.templates:17001
 msgid "Check /var/log/syslog or see virtual console 4 for the details."
-msgstr "Gwiriwch /var/log/syslog neu gwelwch consol rhithwir 4 am y manylion."
+msgstr "/var/log/syslog یا کنسول مجازی ۴ را برای جزئیات ببینید."
 
 #. Type: error
 #. Description
@@ -258,7 +254,7 @@ msgstr "Gwiriwch /var/log/syslog neu gwelwch consol rhithwir 4 am y manylion."
 #. :sl2:
 #: ../bootstrap-base.templates:6001 ../bootstrap-base.templates:7001
 msgid "Base system installation error"
-msgstr "Gwall sefydlu system sail"
+msgstr "خطا در سیستم پایهٔ نصب"
 
 #. Type: error
 #. Description
@@ -267,27 +263,27 @@ msgstr "Gwall sefydlu system sail"
 msgid ""
 "The debootstrap program exited with an error (return value ${EXITCODE})."
 msgstr ""
-"Gorffenodd y rhaglen debootstrap gyda gwall (gwerth dychwelyd ${EXITCODE})."
+"برنامهٔ debootstrap با یک خطا خاتمه یافت (مقدار برگردانده شده ${EXITCODE} )"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:7001
 msgid "The debootstrap program exited abnormally."
-msgstr "Gorffenodd y rhaglen debootstrap mewn ffordd anarferol."
+msgstr "برنامهٔ debootstrap به طور غیرعادی پایان یافت!"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:8001
 msgid "The following error occurred:"
-msgstr "Digwyddodd y gwall canlynol:"
+msgstr "خطای زیر اتفاق افتاد:"
 
 #. Type: select
 #. Description
 #: ../bootstrap-base.templates:9001
 msgid "Tool to use to generate boot initrd:"
-msgstr "Offeryn i defnydd i cynhyrchu bŵt initrd:"
+msgstr "ابزار برای ایجاد boot initrd:"
 
 #. Type: select
 #. Description
@@ -297,16 +293,16 @@ msgid ""
 "should select the default. If your system fails to boot, you can retry the "
 "installation using the other options."
 msgstr ""
-"Mae'r rhestr yn dangos y offer sy'n argael. Os nad ydych yn siwr pa un i "
-"dewis, dylech dewis y diofyn. Os nad yw eich system yn medri bwtio, gallech "
-"ailgeisio'r sefydliad gan defnyddio'r opsiynau arall."
+"این لیست ابزارهای موجود را نمایش می‌دهد. اگر از انتخاب خود مطمئن نیستید، "
+"مقدار پیش فرض را انتخاب کنید. در صورتی که سیستم شما بارگزاری نشد، می‌توانید "
+"دیگر گزینه‌ها امتحان کنید."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../bootstrap-base.templates:10001
 msgid "Unsupported initrd generator"
-msgstr ""
+msgstr "تولید کننده ی پشتیبانی نشده"
 
 #. Type: error
 #. Description
@@ -315,28 +311,28 @@ msgstr ""
 msgid ""
 "The package ${GENERATOR} that was selected to generate the initrd is not "
 "supported."
-msgstr ""
+msgstr "پکیج ${GENERATOR} که برای تولید اینیترد انتخاب شده پشتیبانی نشده است."
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../bootstrap-base.templates:11001
 msgid "generic: include all available drivers"
-msgstr ""
+msgstr "اصلی: همه ی درایورهای قابل دسترسی را قرار دهید"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../bootstrap-base.templates:11001
 msgid "targeted: only include drivers needed for this system"
-msgstr ""
+msgstr "هدف: فقط درایورهایی را قرار دهید که برای این سیستم نیاز است"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../bootstrap-base.templates:11002
 msgid "Drivers to include in the initrd:"
-msgstr ""
+msgstr "درایورهای مورد نیاز در اینیترد:"
 
 #. Type: select
 #. Description
@@ -347,6 +343,9 @@ msgid ""
 "file system. It therefore needs to contain all drivers and supporting "
 "programs required to do that."
 msgstr ""
+"تابع اولیه یک اینیترد این است که به کرنل اجازه داده شود تا فایل روت سیستم را "
+"مونت نماید. در نتیجه نیاز دارد تا تمام درایورها را شامل شود و برنامه هایی را "
+"که برای انجام آن لازم است پشتیبانی کند."
 
 #. Type: select
 #. Description
@@ -359,13 +358,18 @@ msgid ""
 "smaller targeted initrd there is a very small chance that not all needed "
 "drivers are included."
 msgstr ""
+"یک اینترد اصلی بسیار بزرگتر از یک هدفمند شده ی آن است و ممکن است تا حدی بزرگ "
+"باشد که بعضی راه‌اندازها نتوانند آن را راه‌اندازی کنند اما این فایده را دارد "
+"که می‌تواند برای راه‌اندازی کردن سیستم هدف روی تقریبا بیشتر سخت افزارها مورد "
+"استفاده قرار گیرد. با استفاده از یک اینیترد هدفمند کوچکتر شانس کمی وجود دارد "
+"که همه درایورهای مورد نیاز شامل شوند."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:12001
 msgid "Unable to install the selected kernel"
-msgstr "Ni ellir sefydlu'r cnewyllyn dewisiedig"
+msgstr "نمی‌توان هستهٔ انتخاب شده را نصب کرد."
 
 #. Type: error
 #. Description
@@ -374,15 +378,14 @@ msgstr "Ni ellir sefydlu'r cnewyllyn dewisiedig"
 msgid ""
 "An error was returned while trying to install the kernel into the target "
 "system."
-msgstr ""
-"Dychwelwyd gwall wrth geisio sefydlu'r cnewyllyn i fewn i'r system targed."
+msgstr "هنگام نصب هسته بر روی مسیر انتخاب شده خطایی رخ داد."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:12001
 msgid "Kernel package: '${KERNEL}'."
-msgstr "Pecyn cnewyllyn: '${KERNEL}'."
+msgstr "بستهٔ هسته '${KERNEL}'."
 
 #. Type: select
 #. Choices
@@ -392,14 +395,14 @@ msgid ""
 "none[ Do not translate what's inside the brackets and just put the "
 "translation for the word \"none\" in your language without any brackets. "
 "This \"none\" means \"no kernel\" ]"
-msgstr "dim"
+msgstr "هیچکدام"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:13002
 msgid "Kernel to install:"
-msgstr "Y cnewyllyn i'w sefydlu:"
+msgstr "هسته‌ای که قرار است نصب شود:"
 
 #. Type: select
 #. Description
@@ -409,23 +412,22 @@ msgid ""
 "The list shows the available kernels. Please choose one of them in order to "
 "make the system bootable from the hard drive."
 msgstr ""
-"Mae'r rhestr yn dangos y cnewyllynau sydd ar gael. Os gwelwch yn dda, "
-"dewiswch un ohonyn nhw er galluogi'r system i fŵtio o'r ddisgen galed."
+"لیست زیر هسته‌های قابل نصب را نشان می‌دهد. برای آنکه سیستم شما از طریق دیسک "
+"سخت قابل راه‌اندازی باشد یکی از آنها را انتخاب کنید."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:15001
 msgid "Continue without installing a kernel?"
-msgstr "Parhau heb sefydlu cnewyllyn?"
+msgstr "ادامه بدون نصب هسته؟"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:15001
 msgid "No installable kernel was found in the defined APT sources."
-msgstr ""
-"Ni chanfuwyd cnewyllyn gellir sefydlu yn y ffynhonellau APT a ddiffiniwyd."
+msgstr "هیچ هستهٔ قابل نصبی بر روی منبع apt پیدا نشد."
 
 #. Type: boolean
 #. Description
@@ -436,30 +438,30 @@ msgid ""
 "kernel later. This is only recommended for experts, otherwise you will "
 "likely end up with a machine that doesn't boot."
 msgstr ""
-"Medrwch ceisio parhau heb cnewyllyn, a gosod cnewyllyn eich hun a llaw nes "
-"ymlaen. Arbenigwyr yn unig dylai gwneud hyn, neu mae'n bosibl y bydd gennych "
-"peiriant nad sy'n dechrau."
+"ممکن است سعی کنید بدون هسته ادامه دهید، و بعداً به صورت دستی هسته‌ٔ شخصی را نصب "
+"کنید. این فقط برای متخصصان توصیه می‌شود، در غیر اینصورت شما در پایان احتمالاً "
+"با دستگاهی که بالا نمی‌آید روبرو خواهید بود."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:16001
 msgid "Cannot install kernel"
-msgstr "Ni ellir sefydlu Debian"
+msgstr "نمی‌تواند هسته را نصب کند"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:16001
 msgid "The installer cannot find a suitable kernel package to install."
-msgstr "Ni all y gosodwr ddod o hyn i becyn cnewyllyn cymwys i'w osod."
+msgstr "نصاب نمی‌تواند یک بسته‌ٔ هسته‌ٔ مناسب برای نصب بیابد."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:17001
 msgid "Unable to install ${PACKAGE}"
-msgstr "Methywd sefydlu ${PACKAGE}"
+msgstr "ناتوان در نصب ${PACKAGE}"
 
 #. Type: error
 #. Description
@@ -469,7 +471,7 @@ msgid ""
 "An error was returned while trying to install the ${PACKAGE} package onto "
 "the target system."
 msgstr ""
-"Dychwelwyd gwall wrth geisio sefydlu'r precyn ${PACKAGE} yn y system targed."
+"خطایی هنگام تلاش برای نصب بستهٔ ${PACKAGE} روی سیستم مقصد باز گردانده شد."
 
 #. Type: error
 #. Description
@@ -477,7 +479,7 @@ msgstr ""
 #. SUBST0 is a Release file name.
 #: ../bootstrap-base.templates:18001
 msgid "Failed getting Release file ${SUBST0}."
-msgstr "Methwyd cyrchu'r ffeil Release ${SUBST0}."
+msgstr "دریافت پروندهٔ انتشار ${SUBST0} شکست خورد."
 
 #. Type: error
 #. Description
@@ -485,7 +487,7 @@ msgstr "Methwyd cyrchu'r ffeil Release ${SUBST0}."
 #. SUBST0 is a Release.gpg file name
 #: ../bootstrap-base.templates:19001
 msgid "Failed getting Release signature file ${SUBST0}."
-msgstr "Methwyd cyrchu'r ffeil llofnod Release ${SUBST0}."
+msgstr "دریافت پروندهٔ امضای انتشار ${SUBST0} شکست خورد."
 
 #. Type: error
 #. Description
@@ -493,16 +495,14 @@ msgstr "Methwyd cyrchu'r ffeil llofnod Release ${SUBST0}."
 #. SUBST0 is a gpg key ID
 #: ../bootstrap-base.templates:20001
 msgid "Release file signed by unknown key (key id ${SUBST0})"
-msgstr ""
-"Mae'r ffeil Release wedi ei lofnodi gan allwedd anysbys (ID allwedd "
-"${SUBST0})"
+msgstr "پروندهٔ انتشار نامعتبر است. هیچ ورودی برای ${SUBST0} وجود ندارد."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:21001
 msgid "Invalid Release file: no valid components."
-msgstr "Ffeil Release annilys: dim cydrannau dilys."
+msgstr "پرونده انتشار نامعتبر است. مولفه‌های معتبری در این پرونده وجود ندارد."
 
 #. Type: error
 #. Description
@@ -510,7 +510,7 @@ msgstr "Ffeil Release annilys: dim cydrannau dilys."
 #. SUBST0 is a filename
 #: ../bootstrap-base.templates:22001
 msgid "Invalid Release file: no entry for ${SUBST0}."
-msgstr "Ffeil Release annilys: dim cofnod ar gyfer ${SUBST0}."
+msgstr "پروندهٔ انتشار نامعتبر است. هیچ ورودی برای ${SUBST0} وجود ندارد."
 
 #. Type: error
 #. Description
@@ -522,8 +522,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
-"Methwyd cyrchu ${SUBST0}. Gall hyn fod oherwydd problem rhwydwaith neu CD "
-"gwael, yn dibynnu ar eich dull sefydlu."
+"بازیابی ${SUBST0} ناممکن بود. ممکن است به علت مشکل شبکه یا CD بد باشد، بسته "
+"به روش نصب شما."
 
 #. Type: error
 #. Description
@@ -535,8 +535,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
-"Os ydych chi'n sefydlu o CD-R neu CD-RW, efallai gall ysgrifennu'r CD yn "
-"arafach helpu."
+"شما از روی CD-R یا CD-RW نصب می‌کنید، سوزاندن CD با سرعت پایین‌تری ممکن است "
+"کمک کند."
 
 #. Type: text
 #. Description
@@ -544,7 +544,7 @@ msgstr ""
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:24001
 msgid "Retrieving Release file"
-msgstr "Yn cyrchu'r ffeil Release"
+msgstr "در حال دریافت فایل انتشار"
 
 #. Type: text
 #. Description
@@ -552,7 +552,7 @@ msgstr "Yn cyrchu'r ffeil Release"
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:25001
 msgid "Retrieving Release file signature"
-msgstr "Cyrchu llofnod y ffeil Release"
+msgstr "در حال دریافت فایل امضای انتشار"
 
 #. Type: text
 #. Description
@@ -560,7 +560,7 @@ msgstr "Cyrchu llofnod y ffeil Release"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:26001
 msgid "Finding package sizes"
-msgstr "Yn canfod meintiau pecynnau"
+msgstr "در حال پیدا کردن اندازهٔ بسته‌ها"
 
 #. Type: text
 #. Description
@@ -568,7 +568,7 @@ msgstr "Yn canfod meintiau pecynnau"
 #. Packages is a filename which should not be translated
 #: ../bootstrap-base.templates:27001
 msgid "Retrieving Packages files"
-msgstr "Yn cyrchu'r ffeiliau Packages"
+msgstr "در حال دریافت پروندهٔ بسته‌ها"
 
 #. Type: text
 #. Description
@@ -576,7 +576,7 @@ msgstr "Yn cyrchu'r ffeiliau Packages"
 #. Packages is a filename which should not be translated
 #: ../bootstrap-base.templates:28001
 msgid "Retrieving Packages file"
-msgstr "Cyrchu'r ffeil Pecynnau"
+msgstr "دریافت بسته فایل"
 
 #. Type: text
 #. Description
@@ -584,7 +584,7 @@ msgstr "Cyrchu'r ffeil Pecynnau"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:29001
 msgid "Retrieving packages"
-msgstr "Yn cyrchu'r pecynnau"
+msgstr "در حال دریافت بسته‌ها"
 
 #. Type: text
 #. Description
@@ -592,7 +592,7 @@ msgstr "Yn cyrchu'r pecynnau"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:30001
 msgid "Extracting packages"
-msgstr "Yn echdynnu'r pecynnau"
+msgstr "در حال بازکردن بسته‌ها"
 
 #. Type: text
 #. Description
@@ -603,7 +603,7 @@ msgstr "Yn echdynnu'r pecynnau"
 #. be installed on the base system because of dependency resolution
 #: ../bootstrap-base.templates:32001
 msgid "Installing core packages"
-msgstr "Yn sefydlu'r pecynnau craidd"
+msgstr "در حال نصب بسته‌های پایه"
 
 #. Type: text
 #. Description
@@ -614,14 +614,14 @@ msgstr "Yn sefydlu'r pecynnau craidd"
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:33001
 msgid "Unpacking required packages"
-msgstr "Yn dadbacio'r pecynnau angenrheidiol"
+msgstr "در حال بازکردن بسته‌های مورد نیاز ..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:34001
 msgid "Configuring required packages"
-msgstr "Yn ffurfweddu'r pecynnau angenrheidiol"
+msgstr "پیکربندی بسته‌های درخواستی"
 
 #. Type: text
 #. Description
@@ -630,7 +630,7 @@ msgstr "Yn ffurfweddu'r pecynnau angenrheidiol"
 #. See http://www.debian.org/doc/debian-policy/ch-binary.html#s3.7
 #: ../bootstrap-base.templates:35001
 msgid "Unpacking the base system"
-msgstr "Yn dadbacio'r system sail"
+msgstr "باز کردن سیستم پایه"
 
 #. Type: text
 #. Description
@@ -639,7 +639,7 @@ msgstr "Yn dadbacio'r system sail"
 #. See http://www.debian.org/doc/debian-policy/ch-binary.html#s3.7
 #: ../bootstrap-base.templates:36001
 msgid "Configuring the base system"
-msgstr "Yn sefydlu'r system sail "
+msgstr "پیکربندی سیستم پایه"
 
 #. Type: text
 #. Description
@@ -654,7 +654,7 @@ msgstr "${SECTION}: ${INFO}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:38001
 msgid "Validating ${SUBST0}..."
-msgstr "Yn gwirio ${SUBST0}..."
+msgstr "تایید اعتبار ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -662,7 +662,7 @@ msgstr "Yn gwirio ${SUBST0}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:39001
 msgid "Retrieving ${SUBST0}..."
-msgstr "Yn cyrchu ${SUBST0}..."
+msgstr "دریافت ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -670,7 +670,7 @@ msgstr "Yn cyrchu ${SUBST0}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:40001
 msgid "Extracting ${SUBST0}..."
-msgstr "Yn echdynnu ${SUBST0}..."
+msgstr "بازکردن ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -678,7 +678,7 @@ msgstr "Yn echdynnu ${SUBST0}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:41001
 msgid "Unpacking ${SUBST0}..."
-msgstr "Yn echdynnu ${SUBST0}... "
+msgstr "بازکردن ${SUBST0}..."
 
 #. Type: text
 #. Description
@@ -686,14 +686,14 @@ msgstr "Yn echdynnu ${SUBST0}... "
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:42001
 msgid "Configuring ${SUBST0}..."
-msgstr "Yn ffurfweddu ${SUBST0}..."
+msgstr "پیکربندی ${SUBST0}..."
 
 #. Type: text
 #. Description
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:43001
 msgid "Checking Release signature"
-msgstr "Yn cyrchu'r ffeil Release"
+msgstr "چک‌کردن امضای فایل Release"
 
 #. Type: text
 #. Description
@@ -702,14 +702,14 @@ msgstr "Yn cyrchu'r ffeil Release"
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:44001
 msgid "Valid Release signature (key id ${SUBST0})"
-msgstr "Ffeil Release dilys (id allwedd ${SUBST0})"
+msgstr "امضای معتبر Release (key id ${SUBST0})"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:45001
 msgid "Resolving dependencies of base packages..."
-msgstr "Yn penderfynu ar dibyniadau y pecynnau sail..."
+msgstr "بررسی و یافتن وابستگی‌های بسته های پایه ..."
 
 #. Type: text
 #. Description
@@ -717,7 +717,7 @@ msgstr "Yn penderfynu ar dibyniadau y pecynnau sail..."
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:46001
 msgid "Found additional base dependencies: ${SUBST0}"
-msgstr "Dibyniadau sail ychwanegol sydd wedi'i darganfod: ${SUBST0}"
+msgstr "وابستگی‌های پایه دیگری یافت شد: ${SUBST0}"
 
 #. Type: text
 #. Description
@@ -725,7 +725,7 @@ msgstr "Dibyniadau sail ychwanegol sydd wedi'i darganfod: ${SUBST0}"
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:47001
 msgid "Found additional required dependencies: ${SUBST0}"
-msgstr "Dibyniadau gofynnol ychwanegol sydd wedi'i darganfod: ${SUBST0}"
+msgstr "وابستگی‌های مورد نیاز دیگری یافت شد: ${SUBST0}"
 
 #. Type: text
 #. Description
@@ -733,14 +733,14 @@ msgstr "Dibyniadau gofynnol ychwanegol sydd wedi'i darganfod: ${SUBST0}"
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:48001
 msgid "Found packages in base already in required: ${SUBST0}"
-msgstr "Peccynau sy'n mewn sail yn barod sydd mewn gofynnol: ${SUBST0}"
+msgstr "بسته‌هایی که در پایه مورد نیاز هستند یافت شد: ${SUBST0}"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:49001
 msgid "Resolving dependencies of required packages..."
-msgstr "Yn dadbacio pecynnau angenrheidiol..."
+msgstr "بررسی و یافتن وابستگی‌های بسته های مورد نیاز ..."
 
 #. Type: text
 #. Description
@@ -748,9 +748,8 @@ msgstr "Yn dadbacio pecynnau angenrheidiol..."
 #. SUBST0 is an archive component (main, etc)
 #. SUBST1 is a mirror
 #: ../bootstrap-base.templates:50001
-#, fuzzy
 msgid "Checking component ${SUBST0} on ${SUBST1}..."
-msgstr "Yn gwirio main y pecyn: ${SUBST0}..."
+msgstr "بررسی مؤلفه  ${SUBST0} در  ${SUBST1} ..."
 
 #. Type: text
 #. Description
@@ -761,7 +760,7 @@ msgstr "Yn gwirio main y pecyn: ${SUBST0}..."
 #. be installed on the base system because of dependency resolution
 #: ../bootstrap-base.templates:51001
 msgid "Installing core packages..."
-msgstr "Yn sefydlu pecynnau craidd..."
+msgstr "در حال نصب بسته‌های پایه..."
 
 #. Type: text
 #. Description
@@ -772,7 +771,7 @@ msgstr "Yn sefydlu pecynnau craidd..."
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:52001
 msgid "Unpacking required packages..."
-msgstr "Yn dadbacio pecynnau angenrheidiol..."
+msgstr "در حال بازکردن بسته‌های درخواستی..."
 
 #. Type: text
 #. Description
@@ -783,35 +782,35 @@ msgstr "Yn dadbacio pecynnau angenrheidiol..."
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:53001
 msgid "Configuring required packages..."
-msgstr "Yn cyflunio pecynnau angenrheidiol..."
+msgstr "در حال پیکربندی بسته‌های درخواستی..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:54001
 msgid "Installing base packages..."
-msgstr "Yn sefydlu pecynnau sail..."
+msgstr "در حال نصب بسته‌های درخواستی..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:55001
 msgid "Unpacking the base system..."
-msgstr "Yn dadpacio'r system sail..."
+msgstr "باز کردن سیتسم پایه (Base system) ..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:56001
 msgid "Configuring the base system..."
-msgstr "Yn ffurfweddu'r system sail..."
+msgstr "پیکربندی سیستم پایه"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:57001
 msgid "Base system installed successfully."
-msgstr "Sefydliwyd y system sail yn llwyddiannus."
+msgstr "نصب سیستم پایه با موفقیت به پایان رسید."
 
 #. Type: error
 #. Description
@@ -819,7 +818,7 @@ msgstr "Sefydliwyd y system sail yn llwyddiannus."
 #. :sl2:
 #: ../bootstrap-base.templates:58001
 msgid "Debootstrap warning"
-msgstr "Gwall Debootstrap"
+msgstr "اخطار Debootstrap"
 
 #. Type: error
 #. Description
@@ -827,7 +826,7 @@ msgstr "Gwall Debootstrap"
 #. :sl2:
 #: ../bootstrap-base.templates:58001
 msgid "Warning: ${INFO}"
-msgstr "Rhybudd: ${INFO}"
+msgstr "هشدار: ${INFO}"
 
 #. Type: text
 #. Description
@@ -835,21 +834,21 @@ msgstr "Rhybudd: ${INFO}"
 #. :sl2:
 #: ../bootstrap-base.templates:59001
 msgid "Retrying failed download of ${SUBST0}"
-msgstr "Methwyd lawrlwytho ${SUBST0}."
+msgstr "تلاش مجدد برای بارگیری ${SUBST0} شکست خورد"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:61001
 msgid "Selecting the kernel to install..."
-msgstr "Yn dewis y cnewyllyn i sefydlu..."
+msgstr "در حال انتخاب هسته برای نصب..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:62001
 msgid "Installing the kernel..."
-msgstr "Yn sefydlu'r cnewyllyn..."
+msgstr "در حال نصب هسته..."
 
 #. Type: text
 #. Description
@@ -857,4 +856,4 @@ msgstr "Yn sefydlu'r cnewyllyn..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:63001
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
-msgstr "Yn sefydlu'r cnewyllyn - yn cyrchu a sefydlu ${SUBST0}..."
+msgstr "نصب هسته - دریافت و نصب ${SUBST0} ..."

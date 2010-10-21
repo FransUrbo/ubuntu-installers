@@ -94,7 +94,8 @@ update_progress () {
 check_target () {
 	# Make sure something is mounted on the target.
 	# Partconf causes the latter format.
-	if ! grep -q '/target ' /proc/mounts && \
+	if [ -e /proc/mounts ] && \
+	   ! grep -q '/target ' /proc/mounts && \
 	   ! grep -q '/target/ ' /proc/mounts; then
 		exit_error base-installer/no_target_mounted
 	fi
@@ -870,9 +871,23 @@ configure_apt () {
 
 		# The bind mount is left mounted, for future apt-install
 		# calls to use.
-		if ! mount -o bind $DIRECTORY $tdir; then
-			warning "failed to bind mount $tdir"
-		fi
+		case "$OS" in
+			linux)
+			if ! mount -o bind $DIRECTORY $tdir; then
+				warning "failed to bind mount $tdir"
+			fi
+			;;
+			kfreebsd)
+			if ! mount -t nullfs $DIRECTORY $tdir ; then
+				warning "failed to bind mount $tdir"
+			fi
+			;;
+			hurd)
+			if ! mount -t firmlink $DIRECTORY $tdir ; then
+				warning "failed to bind mount $tdir"
+			fi
+			;;
+		esac
 
 		# Define the mount point for apt-cdrom
 		cat > $APT_CONFDIR/00CDMountPoint << EOT

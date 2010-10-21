@@ -3,29 +3,32 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of wo.po to Wolof
-#
-#
-# Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>, 2005, 2006, 2007, 2008.
-# Mouhamadou Mamoune Mbacke <wolofteam@gmail.com>, 2009.
+# translation of te.po to Telugu
+# Telugu translation for debian-installer
+# This file is distributed under the same license as the debian-installer package.
+# వీవెన్ (Veeven) <launchpad.net>, 2007.
+# Y Giridhar Appaji Nag <giridhar@appaji.net>, 2008.
+# Arjuna Rao Chavala <arjunaraoc@gmail.com>,2010
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
 msgid ""
 msgstr ""
-"Project-Id-Version: wo\n"
+"Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: base-installer@packages.debian.org\n"
 "POT-Creation-Date: 2009-10-06 22:47+0000\n"
-"PO-Revision-Date: 2009-06-26 13:24+0200\n"
-"Last-Translator: Mouhamadou Mamoune Mbacke <wolofteam@gmail.com>\n"
-"Language-Team: Wolof <wolofteam@gmail.com>\n"
+"PO-Revision-Date: 2010-07-27 14:46+0530\n"
+"Last-Translator: Arjuna Rao Chavala <arjunaraoc@gmail.com>\n"
+"Language-Team: Telugu <debian-in-workers@lists.alioth.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: te\n"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../base-installer.templates:1001
 msgid "Proceed with installation to unclean target?"
-msgstr "Ndax nu wéy ci istalaasioŋ bii jëm fu setul?"
+msgstr "శుభ్రంగాలేని లక్ష్యం (టార్గెట్ )పై స్థాపన కొనసాగించాలా?"
 
 #. Type: boolean
 #. Description
@@ -36,16 +39,15 @@ msgid ""
 "could cause problems with the installation process, and if you proceed, some "
 "of the existing files may be overwritten."
 msgstr ""
-"Sistem u fiise bii ngay istalee da fa yor ay fiise yu ab istalaasioŋ bu "
-"jiituwon. Fiise yooyu man naa andi ay jafejafe ci istalaasioŋ bi, boo jallee "
-"nak amaana ñu far yenn ci yooyalé fiise."
+"స్థాపన లక్ష్యమైన  ఫైల్ సిస్టమ్ లో గత స్థాపన నుండి ఫైళ్లువున్నాయి. ఈ ఫైళ్లు స్థాపన  ప్రక్రియలో సమస్యలకా "
+"కారణమవవచ్చు. మీరు కొనసాగితే, ప్రస్తుతమున్న ఫైళ్లలో కొన్ని తిరగరాయబడతాయి."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../base-installer.templates:2001
 msgid "No file system mounted on /target"
-msgstr "Monteesul benn sistem u fiise ci /target"
+msgstr "/target పై ఫైల్ సిస్టమ్  అనుసంధానం కాలేదు"
 
 #. Type: error
 #. Description
@@ -55,15 +57,15 @@ msgid ""
 "Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
-"Balaa istalaasioŋ bi de wéy, ab sistem u fiise bu reen wi wareesna koo monte "
-"ci / target. Partisoŋkat bi ak formaatekat bi waroon nañu la koo defal."
+" మీరు స్థాపన కొనసాగించేముందు,/target లో రూట్ ఫైల్ సిస్టమ్  అనుసంధానం కావాలి.  పార్టిషనర్, ఫార్మాటర్  మీ "
+"కొరకు ఈ పని చేసి వుండాలి."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../base-installer.templates:3001
 msgid "Not installing to unclean target"
-msgstr "Deeful istale ci ab jëmukaay bu setul"
+msgstr "శుభ్రంగాలేని లక్ష్యం (టార్గెట్ )పై స్థాపన  చేయుటలేదు"
 
 #. Type: error
 #. Description
@@ -74,58 +76,57 @@ msgid ""
 "back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
-"Istalaasioŋ ba ci sistem u fiise bu jëmukaay ba neenalees nako; Dangaa wara "
-"dellu gannaaw nga far sistem u fiise bu jëmukaay bi, walla nga formaate ko "
-"bala ngay wéy ci istalaasioŋ bi."
+"లక్ష్యమైన ఫైల్ సిస్టమ్ లో స్థాపన రద్దుచేయబడినది.  మీరు స్థాపన కొనసాగించేముందు,  వెనక్కి వెళ్లి లక్ష్యమైన ఫైల్ "
+"సిస్టమ్ ను చెరిపేసి లేక ఫార్మాట్ చేయండి."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:4001
 msgid "Preparing to install the base system..."
-msgstr "Mi ngi waajal a istale sistem u baas bi..."
+msgstr "బేస్ సిస్టమ్ ని స్థాపనకి తయారగుట..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:5001 ../bootstrap-base.templates:31001
 msgid "Installing the base system"
-msgstr "Mi ngi istale sistem u baas bi"
+msgstr "బేస్ సిస్టమ్  స్థాపన చేయుట..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:6001
 msgid "Running ${SCRIPT}..."
-msgstr "Mi ngi doxal ${SCRIPT}..."
+msgstr "${SCRIPT} నడుపుట..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:7001
 msgid "Setting up the base system..."
-msgstr "Mi ngi komfigurei sistem u baasbi..."
+msgstr "బేస్ సిస్టమ్ ని సిద్ద పరుచు..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:8001 ../bootstrap-base.templates:60001
 msgid "Configuring APT sources..."
-msgstr "Mi ngi komfigure suursu yu APT yi..."
+msgstr "APT మూలాల  అమరిక..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:9001
 msgid "Updating the list of available packages..."
-msgstr "Mi ngi yeesalaat list bu paket yi jappundi..."
+msgstr "అందుబాటులో గల పాకేజిల జాబితాను  తాజాచేయుట"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:10001
 msgid "Installing extra packages..."
-msgstr "Mi ngi istale paket i ndolliit..."
+msgstr "అదనపు పాకేజీలను  స్థాపన చేయుట..."
 
 #. Type: text
 #. Description
@@ -133,7 +134,7 @@ msgstr "Mi ngi istale paket i ndolliit..."
 #. :sl1:
 #: ../base-installer.templates:11001
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
-msgstr "Mi ngi istale paket i ndolliit - mi ngi génne ta istale ${SUBST0}..."
+msgstr "అదనపు పాకేజీలను  స్థాపన చేయుట     - ${SUBST0} తెచ్చుట మరియు స్థాపన చేయుట  ..."
 
 #. Type: text
 #. Description
@@ -142,7 +143,7 @@ msgstr "Mi ngi istale paket i ndolliit - mi ngi génne ta istale ${SUBST0}..."
 #. :sl1:
 #: ../bootstrap-base.templates:1001
 msgid "Install the base system"
-msgstr "Istale sistem u baas bi"
+msgstr "బేస్ సిస్టమ్  స్థాపన చేయు"
 
 #. Type: error
 #. Description
@@ -151,7 +152,7 @@ msgstr "Istale sistem u baas bi"
 #. :sl2:
 #: ../bootstrap-base.templates:3001
 msgid "Cannot install base system"
-msgstr "Manula istale sistem u baas bi"
+msgstr "బేస్ సిస్టమ్ ని స్థాపన చేయలేము"
 
 #. Type: error
 #. Description
@@ -163,8 +164,8 @@ msgid ""
 "The installer cannot figure out how to install the base system. No "
 "installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Installer bi manula fexe ba istale sistem u baas bi. Giseeful benn CD-ROM yu "
-"ñu mana istalee, komfigureesul yit benn seetu bu baax."
+"బేస్ సిస్టమ్ ని స్థాపన చేయుట ఎలాగో స్థాపన వ్యవస్థకి అర్థం కాలేదు. స్థాపన చేయుటకు CD-ROM కనబడలేదు "
+"మరియు సరియైన మిర్రర్  అమరిక లేదు."
 
 #. Type: error
 #. Description
@@ -201,28 +202,28 @@ msgstr ""
 #: ../bootstrap-base.templates:20001 ../bootstrap-base.templates:21001
 #: ../bootstrap-base.templates:22001 ../bootstrap-base.templates:23001
 msgid "Debootstrap Error"
-msgstr "Njuumte bu debootstrap"
+msgstr "Debootstrap తప్పు"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:4001
 msgid "Failed to determine the codename for the release."
-msgstr "Manul xam tur u kod bu génnebi."
+msgstr "విడుదల కి కోడ్ నేమ్  కనుగొనుట విఫలమైంది"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:5001
 msgid "Failed to install the base system"
-msgstr "Istalaasioŋ bu sistem u baas bi antuwul"
+msgstr "బేస్ సిస్టమ్ ని స్థాపన చేయుట విఫలమైంది"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:5001
 msgid "The base system installation into /target/ failed."
-msgstr "Istalaasioŋ bu sistem u baas bi ca /target/ antuwul."
+msgstr "/target/ లో  బేస్ సిస్టమ్ ని స్థాపన చేయుట   విఫలమైంది"
 
 #. Type: error
 #. Description
@@ -246,8 +247,7 @@ msgstr "Istalaasioŋ bu sistem u baas bi ca /target/ antuwul."
 #: ../bootstrap-base.templates:7001 ../bootstrap-base.templates:8001
 #: ../bootstrap-base.templates:12001 ../bootstrap-base.templates:17001
 msgid "Check /var/log/syslog or see virtual console 4 for the details."
-msgstr ""
-"Xoolal  /var/log/syslog walla nga seet Konsol wirtuwel 4 ngir am ay leeral."
+msgstr "వివరాలకు /var/log/syslog లేక virtual console 4 చూడండి. "
 
 #. Type: error
 #. Description
@@ -257,7 +257,7 @@ msgstr ""
 #. :sl2:
 #: ../bootstrap-base.templates:6001 ../bootstrap-base.templates:7001
 msgid "Base system installation error"
-msgstr "Njuumte ci istalaasioŋ bu sistem u baas bi"
+msgstr "బేస్ సిస్టమ్ ని స్థాపన చేయుటలో తప్పు"
 
 #. Type: error
 #. Description
@@ -265,28 +265,27 @@ msgstr "Njuumte ci istalaasioŋ bu sistem u baas bi"
 #: ../bootstrap-base.templates:6001
 msgid ""
 "The debootstrap program exited with an error (return value ${EXITCODE})."
-msgstr ""
-"Porogaraam u debootstrap génn na ak ab njuumte (return value ${EXITCODE})."
+msgstr "debootstrap ప్రోగ్రామ్  తప్పుతో నిష్క్రమించింది (తిరిగి ఇచ్చిన విలువ${EXITCODE})."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:7001
 msgid "The debootstrap program exited abnormally."
-msgstr "Porogaraam u debootstrap génnéna nu awul yoon."
+msgstr "debootstrap ప్రోగ్రామ్ అసాధారణంగా నిష్క్రమించింది. "
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:8001
 msgid "The following error occurred:"
-msgstr "Njuumte lii moo am:"
+msgstr "ఈ క్రింది పొరపాటు జరిగింది:"
 
 #. Type: select
 #. Description
 #: ../bootstrap-base.templates:9001
 msgid "Tool to use to generate boot initrd:"
-msgstr "Jumtukaay binuy jëfandikoo ngir sos boot initrd:"
+msgstr "బూట్ ఇనిట్-ఆర్-డి (boot initrd) ఉత్పత్తి చేయు సాఫ్ట్వేర్ ఉపకరణము:"
 
 #. Type: select
 #. Description
@@ -296,16 +295,15 @@ msgid ""
 "should select the default. If your system fails to boot, you can retry the "
 "installation using the other options."
 msgstr ""
-"List bii migni wane jumtukaay yifi am. Boo xamul looy tann, man ngaa tann "
-"defóo bi. Bu sa sistem bi naŋguwula boot, nga jéemaat def istalaasioŋbi ta "
-"tann yaneen."
+"ఈ జాబితాఅందుబాటులోగల పరికరాలను చూపుతున్నది. మీరు ఏది ఎంచుకోవాలో  తెలియకపోతే,  ఎంపిక ఇవ్వనపుడు "
+"తీసుకొనేదానికోసంENTER నొక్కండి. మీ వ్యవస్థబూట్ కాకపోతే, మిగతా స్థాపన   ఎంపికలతో ప్రయత్నించవచ్చు."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../bootstrap-base.templates:10001
 msgid "Unsupported initrd generator"
-msgstr "Soskat u initrd bi attaneesuko"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -314,28 +312,28 @@ msgstr "Soskat u initrd bi attaneesuko"
 msgid ""
 "The package ${GENERATOR} that was selected to generate the initrd is not "
 "supported."
-msgstr "Paket bii nga tann muy  ${GENERATOR} ngir muy sos initrd attaneesuko."
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../bootstrap-base.templates:11001
 msgid "generic: include all available drivers"
-msgstr "generic: mbooleem piloot yifi am"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../bootstrap-base.templates:11001
 msgid "targeted: only include drivers needed for this system"
-msgstr "jeneer biñuy dakk: piloot yi manula ñakk ci sistem bi rekk"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../bootstrap-base.templates:11002
 msgid "Drivers to include in the initrd:"
-msgstr "Piloot yiñuy boole ci initrd:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -346,9 +344,6 @@ msgid ""
 "file system. It therefore needs to contain all drivers and supporting "
 "programs required to do that."
 msgstr ""
-"Liggéey bu initrd bi gëna mak mooy def ba kernel bi mana monte sistemu fiise "
-"bu reen bi (root). Moo tax ba warna yore mbooleem piloot ak prograam yiy tax "
-"mu man koo def."
 
 #. Type: select
 #. Description
@@ -361,18 +356,13 @@ msgid ""
 "smaller targeted initrd there is a very small chance that not all needed "
 "drivers are included."
 msgstr ""
-"Jeneeru disk  bu nek ci memwaar bi mooy gënë rëy foppu jeneeru disk buñu "
-"dakk, ba nga xam ne sax yenn prograamu demaare yi duñu ko mana sëf, waaye "
-"ngënéelam moodi maneesna koo jëfandikoo ngir demaare sistem bi ci mataryeel "
-"bumu mana doon. Bu dee jeneeru disk buñu dakk bi, amaana yenn piloot yi bañ "
-"cee nekk."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:12001
 msgid "Unable to install the selected kernel"
-msgstr "Maneesula istale kernel bi nga tann"
+msgstr "ఎంపిక చేసుకున్న కెర్నెల్ స్థాపించడం కుదరలేదు"
 
 #. Type: error
 #. Description
@@ -381,15 +371,14 @@ msgstr "Maneesula istale kernel bi nga tann"
 msgid ""
 "An error was returned while trying to install the kernel into the target "
 "system."
-msgstr ""
-"Ab njuumte lees tontu bi nuy jéema istale kernel bi ca sistem u jëmukaayba."
+msgstr "లక్ష్యమైన వ్యవస్థలో కెర్నెల్ స్థాపన ప్రయత్నంలో తప్పు వచ్చింది."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:12001
 msgid "Kernel package: '${KERNEL}'."
-msgstr "Paket u kernel: '${KERNEL}'."
+msgstr "కెర్నెల్ ప్యాకేజీ: '${KERNEL}'."
 
 #. Type: select
 #. Choices
@@ -399,14 +388,14 @@ msgid ""
 "none[ Do not translate what's inside the brackets and just put the "
 "translation for the word \"none\" in your language without any brackets. "
 "This \"none\" means \"no kernel\" ]"
-msgstr "benn"
+msgstr "లేదు"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:13002
 msgid "Kernel to install:"
-msgstr "kernel bi nuy istale:"
+msgstr "స్థాపించాల్సిన కెర్నెల్:"
 
 #. Type: select
 #. Description
@@ -416,22 +405,22 @@ msgid ""
 "The list shows the available kernels. Please choose one of them in order to "
 "make the system bootable from the hard drive."
 msgstr ""
-"List bi dafay wane kernel yi fi am. Tannal benn ci ñoom ngir sistem bi mana "
-"boot ci disk bu dëgër bi."
+"అందుబాటులో వున్న కెర్నెల్ లు జాబితాలో చూపించబడినవి. హార్డ్ డిస్క్ నుండి వ్యవస్థ ని బూట్ చేయటానికి వాటిలో "
+"నుండి ఒకటి ఎంపికచేయండి."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:15001
 msgid "Continue without installing a kernel?"
-msgstr "Ndax nu kontine ci ludul nuy istale kernel bi?"
+msgstr "కెర్నెల్ స్థాపించకుండా కొనసాగు?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:15001
 msgid "No installable kernel was found in the defined APT sources."
-msgstr "Giseeful benn kernel bu ñu mana istalee ci suursu yu APT yi nga joxe."
+msgstr "ఇవ్వబడిన  APT మూలాలలో స్థాపనకు అనువైన కెర్నెల్ కనబడలేదు."
 
 #. Type: boolean
 #. Description
@@ -442,32 +431,29 @@ msgid ""
 "kernel later. This is only recommended for experts, otherwise you will "
 "likely end up with a machine that doesn't boot."
 msgstr ""
-"Amaana nga man a jéem a kontine ci ludul ab kernel, ta boo noppee nga istale "
-"kernel bi ak sa loxo. Loolu nak ñi xam mbirmi lool rekk lañuy laabiire ñu "
-"defko, luko moy rekk boo noppee dangay yor ab masin bu dul naŋgoo demaare "
-"(boot)."
+"కెర్నెల్ లేకుండా  కొనసాగించవచ్చు, మరియు మీ స్వంత కెర్నెల్ ని స్వయంగా తరువాత  స్థాపన చేయవచ్చు.  ఇది  "
+"నిపుణులు మాత్రమే చేయాలి లేకపోతే, బూట్ కాని మెషీన్ చివరికి మిగులుతుంది."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:16001
 msgid "Cannot install kernel"
-msgstr "Manula istale kernel bi"
+msgstr "కెర్నెల్ స్థాపించడం కుదరదు"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:16001
 msgid "The installer cannot find a suitable kernel package to install."
-msgstr ""
-"Porogaraam u istalaasioŋ bi manul a gis paket u kernel bu man a istale."
+msgstr "స్థాపన వ్యవస్థ కి   స్థాపనకి అనువైన కెర్నెల్  పాకేజీకనబడలేదు."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:17001
 msgid "Unable to install ${PACKAGE}"
-msgstr "Manula istale ${PACKAGE}"
+msgstr "${PACKAGE} స్థాపించడం కుదరలేదు"
 
 #. Type: error
 #. Description
@@ -476,7 +462,7 @@ msgstr "Manula istale ${PACKAGE}"
 msgid ""
 "An error was returned while trying to install the ${PACKAGE} package onto "
 "the target system."
-msgstr "Ab njuumte amna binuy jéem a istale paket bu ${PACKAGE} cisistem bi."
+msgstr "లక్ష్యమైన వ్యవస్థలో  ${PACKAGEపాకేజీ  స్థాపన ప్రయత్నంలో తప్పు వచ్చింది."
 
 #. Type: error
 #. Description
@@ -484,7 +470,7 @@ msgstr "Ab njuumte amna binuy jéem a istale paket bu ${PACKAGE} cisistem bi."
 #. SUBST0 is a Release file name.
 #: ../bootstrap-base.templates:18001
 msgid "Failed getting Release file ${SUBST0}."
-msgstr "Manu ñoo jot ci fiise génne bu ${SUBST0}."
+msgstr "${SUBST0}విడుదల ఫైల్ తెచ్చుట విఫలమైంది."
 
 #. Type: error
 #. Description
@@ -492,7 +478,7 @@ msgstr "Manu ñoo jot ci fiise génne bu ${SUBST0}."
 #. SUBST0 is a Release.gpg file name
 #: ../bootstrap-base.templates:19001
 msgid "Failed getting Release signature file ${SUBST0}."
-msgstr "Manu ñoo jot ci fiise bu siñaatiir u génne bu ${SUBST0}."
+msgstr "${SUBST0}విడుదల  సంతకం ఫైల్ తెచ్చుట విఫలమైంది."
 
 #. Type: error
 #. Description
@@ -500,15 +486,14 @@ msgstr "Manu ñoo jot ci fiise bu siñaatiir u génne bu ${SUBST0}."
 #. SUBST0 is a gpg key ID
 #: ../bootstrap-base.templates:20001
 msgid "Release file signed by unknown key (key id ${SUBST0})"
-msgstr ""
-"Fiise 'Release' bi ñi ngi ko siñee ak caabi bu nu xamul (key id ${SUBST0})"
+msgstr "విడుదల  సంతకం ఫైల్  గుర్తుతెలియని  కీ  ( కీ  id ${SUBST0}) తో  చేయబడింది."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:21001
 msgid "Invalid Release file: no valid components."
-msgstr "Fiise génne bu baaxul: amul ay komposaŋ yu baax."
+msgstr "విడుదల ఫైల్ సరిలేదు. ధృవీకరించిన అంశాలు లేవు"
 
 #. Type: error
 #. Description
@@ -516,7 +501,7 @@ msgstr "Fiise génne bu baaxul: amul ay komposaŋ yu baax."
 #. SUBST0 is a filename
 #: ../bootstrap-base.templates:22001
 msgid "Invalid Release file: no entry for ${SUBST0}."
-msgstr "Fiise génne bi baaxul: amul ab antre bu ${SUBST0}."
+msgstr "విడుదల ఫైల్ సరిలేదు. ${SUBST0} కొరకు నమోదు లేదు"
 
 #. Type: error
 #. Description
@@ -528,8 +513,8 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
-"Maneesula génne ${SUBST0}. Amaana porobaleem u resóo la wall ab CD bubon, "
-"mingi aju ci sa yoon u istalawiin."
+"${SUBST0} తెచ్చుట కుదరలేదు.  మీ స్థాపన  ప్రక్రియ ప్రకారం నెట్వర్క్ సమస్య లేక చెడిపోయిన  CD "
+"అయివుండవచ్చు."
 
 #. Type: error
 #. Description
@@ -541,8 +526,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
-"Bu fekkee dangay istalee ab CD-R walla CD-RW, amaana nga garaawe ak witees "
-"wu gëna yeex man laa dimbule."
+"CD-R లేక  CD-RW నుండి  మీరు స్థాపన చేస్తున్నట్లయితే, తక్కువ  వేగంలో CD బర్న్ చేయుట  సహాయంగా "
+"వుంటుంది"
 
 #. Type: text
 #. Description
@@ -550,7 +535,7 @@ msgstr ""
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:24001
 msgid "Retrieving Release file"
-msgstr "Mi ngi génne fiise bu génnebi"
+msgstr "విడుదల ఫైల్ పొందు"
 
 #. Type: text
 #. Description
@@ -558,7 +543,7 @@ msgstr "Mi ngi génne fiise bu génnebi"
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:25001
 msgid "Retrieving Release file signature"
-msgstr "Mi ngi génne siñaatir u fiise génnebi"
+msgstr " విడుదల ఫైల్ సంతకం పొందు"
 
 #. Type: text
 #. Description
@@ -566,7 +551,7 @@ msgstr "Mi ngi génne siñaatir u fiise génnebi"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:26001
 msgid "Finding package sizes"
-msgstr "Mi ngi xoole rëyaay i paket yi"
+msgstr "పాకేజి పరిమాణాలను కనుగొను"
 
 #. Type: text
 #. Description
@@ -574,7 +559,7 @@ msgstr "Mi ngi xoole rëyaay i paket yi"
 #. Packages is a filename which should not be translated
 #: ../bootstrap-base.templates:27001
 msgid "Retrieving Packages files"
-msgstr "Mi ngi génne fiise yu paket yi"
+msgstr "పాకేజి ఫైళ్లను పొందు"
 
 #. Type: text
 #. Description
@@ -582,7 +567,7 @@ msgstr "Mi ngi génne fiise yu paket yi"
 #. Packages is a filename which should not be translated
 #: ../bootstrap-base.templates:28001
 msgid "Retrieving Packages file"
-msgstr "Mi ngi génne fiise bu paket yi"
+msgstr "పాకేజి ఫైలును పొందు"
 
 #. Type: text
 #. Description
@@ -590,7 +575,7 @@ msgstr "Mi ngi génne fiise bu paket yi"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:29001
 msgid "Retrieving packages"
-msgstr "Mi ngi génne paket yi"
+msgstr "పాకేజీలను పొందు"
 
 #. Type: text
 #. Description
@@ -598,7 +583,7 @@ msgstr "Mi ngi génne paket yi"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:30001
 msgid "Extracting packages"
-msgstr "Mi ngi nocci paket yi"
+msgstr "పాకేజీలను విడిగా పొందు"
 
 #. Type: text
 #. Description
@@ -609,7 +594,7 @@ msgstr "Mi ngi nocci paket yi"
 #. be installed on the base system because of dependency resolution
 #: ../bootstrap-base.templates:32001
 msgid "Installing core packages"
-msgstr "Mi ngi istale paket yi ëppu solo"
+msgstr "కోర్ పాకేజీలను ప్రతిష్ఠించు"
 
 #. Type: text
 #. Description
@@ -620,14 +605,14 @@ msgstr "Mi ngi istale paket yi ëppu solo"
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:33001
 msgid "Unpacking required packages"
-msgstr "Mi ngi tajji paket yi nga laaj"
+msgstr "అవసరమైన పాకేజీలను  విడగొట్టు"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:34001
 msgid "Configuring required packages"
-msgstr "Mi ngi komfigure paket yi nga laaj"
+msgstr "అవసరమైన పాకేజీలను  అమరికచేయు"
 
 #. Type: text
 #. Description
@@ -636,7 +621,7 @@ msgstr "Mi ngi komfigure paket yi nga laaj"
 #. See http://www.debian.org/doc/debian-policy/ch-binary.html#s3.7
 #: ../bootstrap-base.templates:35001
 msgid "Unpacking the base system"
-msgstr "Mi ngi tajji sistem u baas bi"
+msgstr "బేస్ సిస్టమ్ ని విడగొట్టు"
 
 #. Type: text
 #. Description
@@ -645,7 +630,7 @@ msgstr "Mi ngi tajji sistem u baas bi"
 #. See http://www.debian.org/doc/debian-policy/ch-binary.html#s3.7
 #: ../bootstrap-base.templates:36001
 msgid "Configuring the base system"
-msgstr "Mi ngi komfigure sistem u baas bi"
+msgstr "బేస్ సిస్టమ్ ని అమరికచేయు"
 
 #. Type: text
 #. Description
@@ -660,7 +645,7 @@ msgstr "${SECTION}: ${INFO}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:38001
 msgid "Validating ${SUBST0}..."
-msgstr "Mi ngi wëyal ${SUBST0}..."
+msgstr "${SUBST0} ధృవీకరించు..."
 
 #. Type: text
 #. Description
@@ -668,7 +653,7 @@ msgstr "Mi ngi wëyal ${SUBST0}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:39001
 msgid "Retrieving ${SUBST0}..."
-msgstr "Mi ngi génne ${SUBST0}..."
+msgstr "${SUBST0} పొందు..."
 
 #. Type: text
 #. Description
@@ -676,7 +661,7 @@ msgstr "Mi ngi génne ${SUBST0}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:40001
 msgid "Extracting ${SUBST0}..."
-msgstr "Mi ngi nocci ${SUBST0}..."
+msgstr "${SUBST0} విడిగా పొందు..."
 
 #. Type: text
 #. Description
@@ -684,7 +669,7 @@ msgstr "Mi ngi nocci ${SUBST0}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:41001
 msgid "Unpacking ${SUBST0}..."
-msgstr "Mi ngi tajji ${SUBST0}..."
+msgstr "${SUBST0} విడగొట్టు..."
 
 #. Type: text
 #. Description
@@ -692,14 +677,14 @@ msgstr "Mi ngi tajji ${SUBST0}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:42001
 msgid "Configuring ${SUBST0}..."
-msgstr "Mi ngi komfigure ${SUBST0}..."
+msgstr "${SUBST0} అమరికచేయు..."
 
 #. Type: text
 #. Description
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:43001
 msgid "Checking Release signature"
-msgstr "Mi ngi seet siñaatiir u génne bi"
+msgstr "విడుదల సంతకము తనిఖీ జరుగుచున్నది"
 
 #. Type: text
 #. Description
@@ -708,14 +693,14 @@ msgstr "Mi ngi seet siñaatiir u génne bi"
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:44001
 msgid "Valid Release signature (key id ${SUBST0})"
-msgstr "Siñaatiir u génne bi baaxna (key id ${SUBST0})"
+msgstr "ధృవపరిచిన విడుదల సంతకము(కీ ఐడి ${SUBST0})"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:45001
 msgid "Resolving dependencies of base packages..."
-msgstr "Mi ngi lijjanti wéeruwóonte bu paket yu baas yi..."
+msgstr "బేస్ పాకేజీల  ఆధారాలను కనుగొనుట..."
 
 #. Type: text
 #. Description
@@ -723,7 +708,7 @@ msgstr "Mi ngi lijjanti wéeruwóonte bu paket yu baas yi..."
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:46001
 msgid "Found additional base dependencies: ${SUBST0}"
-msgstr "Giseesna yaneen wéeruwónte ñeel sistem u baas bi: ${SUBST0}"
+msgstr "బేస్ పాకేజీల  అదనపు ఆధారాలను కనుగొన్నాము: ${SUBST0}"
 
 #. Type: text
 #. Description
@@ -731,7 +716,7 @@ msgstr "Giseesna yaneen wéeruwónte ñeel sistem u baas bi: ${SUBST0}"
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:47001
 msgid "Found additional required dependencies: ${SUBST0}"
-msgstr "Soxlaasna yaneen wéeruwónte ñeel sistem u baas bi: ${SUBST0}"
+msgstr "అవసరమైన అదనపు ఆధారాలను కనుగొన్నాము: ${SUBST0}"
 
 #. Type: text
 #. Description
@@ -739,16 +724,14 @@ msgstr "Soxlaasna yaneen wéeruwónte ñeel sistem u baas bi: ${SUBST0}"
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:48001
 msgid "Found packages in base already in required: ${SUBST0}"
-msgstr ""
-"Giseesna ci sistem u baasbi ay paket yu nekkon ci yi ñu soxla (reqiured): "
-"${SUBST0}"
+msgstr "బేస్ లో గలపాకేజీలు, అవసరమైన వాటిలో ఇప్పటికే వున్నాయని కనుగొన్నాము: ${SUBST0}"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:49001
 msgid "Resolving dependencies of required packages..."
-msgstr "Mi ngi lijjanti wóoruwónte bu paket yi nga laaj..."
+msgstr "అవసరమైన పాకేజీల ఆధారాలు కనుగొనుట..."
 
 #. Type: text
 #. Description
@@ -757,7 +740,7 @@ msgstr "Mi ngi lijjanti wóoruwónte bu paket yi nga laaj..."
 #. SUBST1 is a mirror
 #: ../bootstrap-base.templates:50001
 msgid "Checking component ${SUBST0} on ${SUBST1}..."
-msgstr "Mi ngi seet komposaŋ ${SUBST0} ci ${SUBST1}..."
+msgstr "${SUBST1} పై  ${SUBST0} కాంపొంనెంటు  పరిశీలించు..."
 
 #. Type: text
 #. Description
@@ -768,7 +751,7 @@ msgstr "Mi ngi seet komposaŋ ${SUBST0} ci ${SUBST1}..."
 #. be installed on the base system because of dependency resolution
 #: ../bootstrap-base.templates:51001
 msgid "Installing core packages..."
-msgstr "Mi ngi istale paket yi ëppu solo..."
+msgstr "కోర్ పాకేజీల స్థాపన ..."
 
 #. Type: text
 #. Description
@@ -779,7 +762,7 @@ msgstr "Mi ngi istale paket yi ëppu solo..."
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:52001
 msgid "Unpacking required packages..."
-msgstr "Mi ngi tajji paket yis laaj..."
+msgstr "అవసరమైన పాకేజీలు విడగొట్టు..."
 
 #. Type: text
 #. Description
@@ -790,35 +773,35 @@ msgstr "Mi ngi tajji paket yis laaj..."
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:53001
 msgid "Configuring required packages..."
-msgstr "Mi ngi komfigure paket yis laaj..."
+msgstr "అవసరమైన పాకేజీలను అమరికచేయు..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:54001
 msgid "Installing base packages..."
-msgstr "Mi ngi istale paket yu baas yi..."
+msgstr "బేస్  పాకేజీల స్థాపన ..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:55001
 msgid "Unpacking the base system..."
-msgstr "Mi ngi tajji sistem u baasbi..."
+msgstr "బేస్ సిస్టమ్ విడగొట్టు ..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:56001
 msgid "Configuring the base system..."
-msgstr "Mi ngi komfigure sistem u baasbi..."
+msgstr "బేస్ సిస్టమ్ ను అమరికచేయు..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:57001
 msgid "Base system installed successfully."
-msgstr "Istaleesna sistem u baas bi bamu aw yoon."
+msgstr "బేస్  సిస్టమ్  స్థాపన విజయవంతమైంది."
 
 #. Type: error
 #. Description
@@ -826,7 +809,7 @@ msgstr "Istaleesna sistem u baas bi bamu aw yoon."
 #. :sl2:
 #: ../bootstrap-base.templates:58001
 msgid "Debootstrap warning"
-msgstr "Wattandikuloo bu debootstrap"
+msgstr "Debootstrap హెచ్చరిక"
 
 #. Type: error
 #. Description
@@ -834,7 +817,7 @@ msgstr "Wattandikuloo bu debootstrap"
 #. :sl2:
 #: ../bootstrap-base.templates:58001
 msgid "Warning: ${INFO}"
-msgstr "Wattandiku: ${INFO}"
+msgstr "హెచ్చరిక: ${INFO}"
 
 #. Type: text
 #. Description
@@ -842,21 +825,21 @@ msgstr "Wattandiku: ${INFO}"
 #. :sl2:
 #: ../bootstrap-base.templates:59001
 msgid "Retrying failed download of ${SUBST0}"
-msgstr "Mi ngi jéemaat wacce bi antuwulóon di bu ${SUBST0}"
+msgstr "విఫలమైన  ${SUBST0} డౌన్ లోడ్ మరల ప్రయత్నించుచున్నాము"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:61001
 msgid "Selecting the kernel to install..."
-msgstr "Mi ngi tann kernel bunuy istale..."
+msgstr "స్థాపనకు కెర్నెల్ ఎంపిక..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:62001
 msgid "Installing the kernel..."
-msgstr "Mi ngi istale kernel bi..."
+msgstr "కెర్నెల్ స్థాపన..."
 
 #. Type: text
 #. Description
@@ -864,4 +847,4 @@ msgstr "Mi ngi istale kernel bi..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:63001
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
-msgstr "Mi ngi istale kernel bi - mi ngi génne ta istale ${SUBST0}..."
+msgstr "కెర్నెల్ స్థాపన -  ${SUBST0} తెచ్చు మరియు స్థాపన..."
