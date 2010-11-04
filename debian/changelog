@@ -1,11 +1,11 @@
-debian-installer (20100211ubuntu30) UNRELEASED; urgency=low
+debian-installer (20100211ubuntu30) natty; urgency=low
 
   * Migrate raidid documentation from partman-auto-raid to
     doc/devel/partman-auto-raid-recipe.txt.
   * Set default suite to natty.
   * Move to 2.6.37-2 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 13 Oct 2010 15:15:32 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 04 Nov 2010 14:54:24 +0000
 
 debian-installer (20100211ubuntu29) maverick; urgency=low
 
