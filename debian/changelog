@@ -79,6 +79,7 @@ debian-installer (20101020ubuntu1) UNRELEASED; urgency=low
     - Add GRUB EFI configuration on amd64, and make mini.iso images there
       multi-catalog.
     - Document raidid= syntax in partman-auto-raid/recipe.
+  * Re-enable localudebs (cherry-picked from trunk).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 05 Nov 2010 16:15:43 +0000
 
