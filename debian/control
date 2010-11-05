@@ -3,13 +3,13 @@ Section: devel
 Priority: optional
 Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
-Uploaders: Joey Hess <joeyh@debian.org>, Frans Pop <fjp@debian.org>, Otavio Salvador <otavio@debian.org>
+Uploaders: Frans Pop <fjp@debian.org>, Otavio Salvador <otavio@debian.org>
 Standards-Version: 3.8.3
 XS-Debian-Vcs-Svn: svn://svn.debian.org/d-i/trunk/installer
 Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-core-dev/debian-installer/ubuntu
 Build-Conflicts: libnewt-pic [mipsel]
 # NOTE: Do not edit the next line by hand. See comment below.
-Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctrl-tools, wget, bc, debiandoc-sgml, xsltproc, docbook-xml, docbook-xsl, libbogl-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], lsb-release, glibc-pic, libslang2-pic (>= 2.0.6-4), libnewt-pic (>= 0.52.2-11.3) [!mipsel], libnewt-dev (>= 0.52.2-11.3) [mipsel], libgcc1 [i386 amd64], cramfsprogs [powerpc ia64 mips mipsel armeb armel], genext2fs (>= 1.3-7.1), e2fsprogs, mklibs (>= 0.1.25), genisoimage (>= 9:1.1.10-1ubuntu2) [!s390 !s390x], genromfs [sparc], hfsutils [powerpc], dosfstools [i386 ia64 m68k amd64], cpio, devio [armeb armel], slugimage (>= 0.10+r58-6) [armeb armel], uboot-mkimage [armel], redboot-tools (>= 0.6) [arm armel], syslinux (>= 2:3.63+dfsg-2) [i386 amd64], palo [hppa], elilo [ia64], yaboot [powerpc], aboot (>= 0.9b-2) [alpha], silo [sparc], sparc-utils [sparc], genisovh [mips], tip22 [mips], colo [mipsel], atari-bootstrap [m68k], vmelilo [m68k], m68k-vme-tftplilo [m68k], amiboot [m68k], emile [m68k], emile-bootblocks [m68k], redboot-imx51-babbage [arm armel], tofrodos [i386 amd64 kfreebsd-i386 kfreebsd-amd64], mtools [i386 ia64 m68k amd64 kfreebsd-i386 kfreebsd-amd64 hurd-i386], po4a [i386 amd64], python [i386 amd64], module-init-tools [i386 armeb armel amd64 alpha hppa ia64 m68k mips mipsel powerpc s390 sparc], bf-utf-source [!s390 !s390x], mkvmlinuz [powerpc], openssl [armel], makefs [kfreebsd-i386 kfreebsd-amd64], grub-pc (>= 1.98~20100101-1) [kfreebsd-i386 kfreebsd-amd64 hurd-i386], grub-rescue-efi-amd64 [amd64], grub-common [amd64]
+Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctrl-tools, wget, bc, debiandoc-sgml, xsltproc, docbook-xml, docbook-xsl, libbogl-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], lsb-release, glibc-pic, libslang2-pic (>= 2.0.6-4), libnewt-pic (>= 0.52.2-11.3) [!mipsel], libnewt-dev (>= 0.52.2-11.3) [mipsel], libgcc1 [i386 amd64], cramfsprogs [powerpc ia64 mips mipsel armeb armel], genext2fs (>= 1.3-7.1), e2fsprogs, mklibs (>= 0.1.25), genisoimage (>= 9:1.1.10-1ubuntu2) [!s390 !s390x], genromfs [sparc sparc64], hfsutils [powerpc], dosfstools [i386 ia64 m68k amd64], cpio, devio [armeb armel], slugimage (>= 0.10+r58-6) [armeb armel], uboot-mkimage [armel], redboot-tools (>= 0.6) [arm armel], syslinux (>= 2:4.02) [i386 amd64], palo [hppa], elilo [ia64], yaboot [powerpc], aboot (>= 0.9b-2) [alpha], silo [sparc], sparc-utils [sparc sparc64], genisovh [mips], tip22 [mips], colo [mipsel], sibyl [mips mipsel], atari-bootstrap [m68k], vmelilo [m68k], m68k-vme-tftplilo [m68k], amiboot [m68k], emile [m68k], emile-bootblocks [m68k], redboot-imx51-babbage [arm armel], tofrodos [i386 amd64 kfreebsd-i386 kfreebsd-amd64], mtools [i386 ia64 m68k amd64 kfreebsd-i386 kfreebsd-amd64 hurd-i386], po4a [i386 amd64], python [i386 amd64], module-init-tools [i386 armeb armel amd64 alpha hppa ia64 m68k mips mipsel powerpc s390 sh4 sparc sparc64], bf-utf-source [!s390 !s390x], mkvmlinuz [powerpc], openssl [armel], makefs [kfreebsd-i386 kfreebsd-amd64], grub-pc (>= 1.98~20100101-1) [kfreebsd-i386 kfreebsd-amd64 hurd-i386], xorriso [kfreebsd-i386 kfreebsd-amd64 hurd-i386], grub-rescue-efi-amd64 [amd64], grub-common [amd64], debian-ports-archive-keyring [sh4 sparc64]
 # This package has the worst Build-Depends in Debian, so it deserves some
 # explanation. Note that this comment can also be used to generate a
 # Build-Depends line, by running the debian/genbuilddeps program.
@@ -77,7 +77,7 @@ Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctr
 #		We use mklibs for library reduction.
 #	- genisoimage (>= 9:1.1.10-1ubuntu2) [!s390 !s390x]
 #		For making mini isos.
-#	- genromfs [sparc]
+#	- genromfs [sparc sparc64]
 #		Used for creating sparc floppies (which are not built by
 #		default.)
 #	- hfsutils [powerpc]
@@ -103,8 +103,8 @@ Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctr
 #	On many arches boot loaders are copied onto or ran on the boot
 #	images in one way or another. There's a reason our mailing list is
 #	still called debian-boot..
-#	- syslinux (>= 2:3.63+dfsg-2) [i386 amd64]
-#		With menu default64 support.		
+#	- syslinux (>= 2:4.02) [i386 amd64]
+#		With isohybrid.
 #	- palo [hppa]
 #	- elilo [ia64]
 #	- yaboot [powerpc]
@@ -115,7 +115,7 @@ Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctr
 #		Using silo is problimatic since it needs to run as root,
 #		so images that need it are not built by default, but we
 #		include it for completeness.
-#	- sparc-utils [sparc]
+#	- sparc-utils [sparc sparc64]
 #		For elftoaout and piggyback, to make netboot images.
 #	- genisovh [mips]
 #		Makes mini iso images bootable on SGI MIPSen.
@@ -123,6 +123,8 @@ Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctr
 #		Piggyback netboot images.
 #	- colo [mipsel]
 #		For booting Cobalt machines.
+#	- sibyl [mips mipsel]
+# 		For booting the SWARM board.
 #	- atari-bootstrap [m68k]
 #		Booting and other tools for Atari systems.
 #	- vmelilo [m68k]
@@ -149,7 +151,7 @@ Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctr
 #	- python [i386 amd64]
 #		For building gfxboot help texts.
 #
-#	- module-init-tools [i386 armeb armel amd64 alpha hppa ia64 m68k mips mipsel powerpc s390 sparc]
+#	- module-init-tools [i386 armeb armel amd64 alpha hppa ia64 m68k mips mipsel powerpc s390 sh4 sparc sparc64]
 #		depmod for 2.6 kernels on the arches that support 2.6.
 #
 #	- bf-utf-source [!s390 !s390x]
@@ -165,10 +167,14 @@ Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctr
 #		Used to create an UFS1 filesystem from a directory tree.
 #	- grub-pc (>= 1.98~20100101-1) [kfreebsd-i386 kfreebsd-amd64 hurd-i386]
 #		Used as the CD-ROM's bootloader
+#       - xorriso [kfreebsd-i386 kfreebsd-amd64 hurd-i386]
+#               Used by grub-pc to create the CD-ROM images
 #	- grub-rescue-efi-amd64 [amd64]
 #		EFI bootloader support.
 #	- grub-common [amd64]
 #		For the GRUB font.
+#	- debian-ports-archive-keyring [sh4 sparc64]
+#		Used for architectures hosted on debian-ports.org
 
 Package: debian-installer
 Architecture: any

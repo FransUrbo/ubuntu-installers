@@ -1,3 +1,271 @@
+debian-installer (20101020ubuntu1) UNRELEASED; urgency=low
+
+  * Resynchronise with Debian.  Remaining changes:
+    - Ubuntu branding of various kinds.
+    - Use Ubuntu kernels.  Various tweaks for different udeb splits.
+    - Fetch distribution name and version number from lsb_release.
+    - Use the full version number in image directories.
+    - Various boot screen text adjustments.
+    - Add cli boot options.
+    - Add memtest boot option.
+    - Add live CD boot screens.
+    - Adjust memory size recommendations.
+    - Document pci=noacpi.
+    - Add translatable boot screen text for gfxboot.  Adjust existing text
+      to refer to gfxboot UI where appropriate.
+    - Use ubuntu-keyring-udeb (and gpgv-udeb) instead of the Debian archive
+      keyring.
+    - Switch all images to initramfs.
+    - Add netboot images suitable for USB memory sticks.
+    - Remove floppy support, since it never used to work with 2.6.  (This
+      may be fixed in the future.)
+    - Add kickseed-common and initrd-kickseed to all images containing
+      preseed-common and initrd-preseed.
+    - Add nfs-modules to all netboot images except powerpc, for Kickstart.
+    - kbd-chooser -> console-setup.
+    - Include keymap decision tree in all.utf.
+    - Replace cdebconf-newt-entropy with cdebconf-newt-detect-keys in
+      EXTRAUDEBS.
+    - Add hdparm-udeb to cdrom images.
+    - Add nic-firmware to netboot images and scsi-firmware to cdrom and
+      hd-media images.
+    - Make scsi-firmware optional.
+    - Add oem-config-check to all images.
+    - Ship elilo configuration on i386 for Intel-based Macs.
+    - Use mkvmlinuz's fallback object files on powerpc rather than relying
+      on the kernel's.
+    - Use ${RAMDISK_SIZE} in sparc's silo.conf rather than a hardcoded size.
+    - Add input-modules to the sparc netboot image.
+    - Remove auto-install/ai-choosers targets, at least for now.
+    - Switch i386 builds to the -generic kernel flavour.
+    - Add a new netboot/386 build for i386 that uses the -386 kernel
+      flavour.
+    - Publish separate kernel and initrd for sparc64 netboot.
+    - Don't use win32-loader on Ubuntu.
+    - Take /usr/share/localechooser/languagelist.data.gz into account when
+      building reduced font.
+    - Make speakup-modules optional, as we don't have it in Ubuntu yet.
+    - Make serial-modules optional on ia64; it's currently built-in.
+    - Make some modules optional on armel that are built into the kernel.
+    - Support USE_UDEBS_FROM_EXTRA configuration variable to fetch udebs
+      from some extra suites as well as the main one (USE_UDEBS_FROM).
+      Useful for stable release updates.
+    - Make nic-usb-modules optional on ia64.
+    - Make acpi-modules and ipv6-modules optional, since they're now built
+      in on mainline architectures.
+    - Pad the nslu2 kernel to 16 blocks rather than 11, so that the Ubuntu
+      kernel fits.
+    - Make nic-modules optional on armel/versatile.
+    - Introduce the armel dove, imx51 (disabled for now), and omap
+      subarchitectures; drop iop32x, ixp4xx, kirkwood, orion5x, and ads.
+    - Remove CD-specific language from boot screens.
+    - Add util-linux-udeb to base, for blkid.
+    - Add pcmcia-modules to hd-media images.
+    - Set KERNELNAME to vmlinuz and VERSIONED_SYSTEM_MAP to the empty string
+      for armel subarchitectures.
+    - Add a 512*50-byte padding file to the powerpc64_netboot mini.iso image
+      tree, to avoid a genisoimage segfault at certain tree sizes.
+    - Use mklibs-copy on amd64.  I'm not quite sure what's wrong here, and
+      it needs further investigation.
+    - Increase the netboot initrd size to 20MB on powerpc.
+    - Add vlan-udeb to netboot images.
+    - Remove multiarch (amd64-on-i386) syslinux configuration files.
+    - Don't install separate desktop syslinux configuration files; we don't
+      use them in Ubuntu.
+    - Remove dtmenu.cfg from default menu.cfg; it isn't used in Ubuntu and
+      it confuses gfxboot-theme-ubuntu.
+    - Drop dns323-firmware-tools build-dependency on armel; this is only for
+      orion5x, which we don't build.
+    - Add GRUB EFI configuration on amd64, and make mini.iso images there
+      multi-catalog.
+    - Document raidid= syntax in partman-auto-raid/recipe.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 05 Nov 2010 16:15:43 +0000
+
+debian-installer (20101020) unstable; urgency=low
+
+  [ Joey Hess ]
+  * Run isohybrid on i386 and amd64 miniiso, which allows it to be written
+    directly to and booted from a USB stick. 
+
+  [ Samuel Thibault ]
+  * Explicitly set timeout to -1 in grub configurations, to make it easy to
+    set it to 0 for preseeding.
+
+  [ Otavio Salvador ]
+  * Update Linux kernel modules for 2.6.32-25.
+  * Fix parameter used to force generic IDE driver. Thanks to Rafael
+    rafuch0 Rumbos S <rafaeleduardo@esdebian.org> by reporting it.
+    Closes: #599041.
+  * Disable localudebs usage due APT bug #600852. This has been done to
+    not delay Beta1 release but needs to be reverted as soon as
+    possible.
+
+ -- Otavio Salvador <otavio@debian.org>  Wed, 20 Oct 2010 18:56:41 -0200
+
+debian-installer (20100912) unstable; urgency=low
+
+  * Skip last translation changes for rescue and debian-installer-
+    launcher when calculating the translation status since those are
+    rarely used until now.
+
+ -- Otavio Salvador <otavio@debian.org>  Sun, 12 Sep 2010 23:16:50 -0300
+
+debian-installer (20100911) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * Update the pkg-lists on ARM to reflect the renaming of input-modules
+    to event-modules.  (As a side effect, USB modules won't be pulled in
+    anymore when they are not needed).
+  * Revert the temporary removal of jffs2-modules and minix-modules from
+    the orion5x image.
+  * Add fb-modules to the Kirkwood netboot image.
+  * Add g-i images for Kirkwood.
+  * Add nic-modules to pkg-lists/netboot/armel.cfg so it doesn't have to
+    be listed for every armel flavour.
+  * Remove devio-udeb from most ARM images since it's only needed on
+    ixp4xx (for oldsys-preseed on the NSLU2).
+
+  [ Aurelien Jarno ]
+  * Build-depends on debian-ports-archive-keyring on architectures
+    hosted on debian-ports.org (sh4, sparc64).
+  * Build-depends on module-init-tools on sh4 and sparc64 as on other 
+    Linux architectures.
+  * Switch kfreebsd-amd64 and kfreebsd-i386 to 8.1 kernel.
+  * Don't try to build unifont.bdf on GNU/kFreeBSD as the console already 
+    has basic font support for level 1 and bogl-bterm is not available.
+  * Build-depends on xorriso on kfreebsd-amd64, kfreebsd-i386 and hurd-i386.
+  * Add support to generate cdrom images on GNU/kFreeBSD.
+  * Add support to generate netboot images using GRUB PXE on GNU/kFreeBSD.
+  * Add sparc64 support based on sparc configuration.
+
+  [ Joey Hess ]
+  * Fix build breakage introduced by tighter version parsing in
+    dpkg 1.15.8. Thanks, Thibaut Girka
+
+  [ Samuel Thibault ]
+  * Add pkg-lists/standard-udebs to kfreebsd and hurd's monolithic.cfg
+    TARGETS.
+
+  [ Jeremie Koenig ]
+  * Use mklibs-copy on hurd-i386 for the time being.
+  * Disable the uninstallable or otherwise broken standard udebs from the
+    monolithic hurd-i386 images.
+  * Add /lib/ld.so and /servers/exec to hurd-i386 initrd's.
+  * Include a BDF font on Hurd images.
+  * Use the newer "module --nounzip" grub command to load the initrd on Hurd,
+    and let the gunzip store do the job.
+  * Move the definition of the genext2fs command-line up, so we can
+    override it in hurd.cfg.
+
+  [ Christian Perrier ]
+  * Add ttf-telugu-fonts-udeb and ttf-kannada-fonts-udeb to the
+    graphical installer to properly display Telugu and Kannada
+    Closes: #593208
+
+  [ Joey Hess ]
+  * Use Dir::Etc::trusted rather than Apt::GPGV::TrustedKeyring, 
+    to work with apt 0.8.0.
+
+ -- Otavio Salvador <otavio@debian.org>  Sat, 11 Sep 2010 11:15:37 -0300
+
+debian-installer (20100722) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * orion5x: Temporarily remove jffs2-modules and minix-modules from
+    the initrd because the image is too large.  This will be fixed
+    properly soon when we move to new kernel udebs. Closes: #590010
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 22 Jul 2010 22:00:09 -0300
+
+debian-installer (20100719) unstable; urgency=low
+
+  [ Theppitak Karoonboonyanan ]
+  * Add needed characters for Thai.
+
+  [ Christian Perrier ]
+  * Remove Thai from the list of languages only supported with the
+    graphical cdebconf frontend.
+  * Activate needed characters for Persian
+
+  [ Frans Pop ]
+  * sparc: add components needed to load firmware for netboot images.
+  * Update pkg-lists for changes in auto-install (1.7). Main benefit is that
+    netcfg will no longer get pulled in on images that shouldn't have it.
+  * ia64: add support for loading firmware to images. Closes: #572724.
+  * Fix building with alternative LOCALUDEBDIR.
+  * Ensure glyphs used in the translated right column of localechooser are
+    included in images to avoid incomplete display of the languagelist when
+    some translations are dropped through DROP_LANG.
+  * Drop auto-install from pkg-lists now that it has been integrated in
+    the preseed udebs.
+
+  [ Otavio Salvador ]
+  * Switch amd64, i386, hppa, powerpc, mipsel, s390, ia64, mips, sparc to
+    2.6.32.
+
+  [ Martin Michlmayr ]
+  * Switch armel to 2.6.32.
+  * QNAP: make the check for a valid MAC address more reliable.
+  * QNAP: add a check to ensure that the right installer files for the
+    user's QNAP model are used.
+  * OpenRD-Base and OpenRD-Client can use the same image, so provide
+    only one generic image for OpenRD.
+  * QNAP: Copy uLinux.conf in case it's not there so we can identify
+    the QNAP model.
+  * QNAP: recognize Fujitsu Q600 and Q700.
+  * Generate an image for GuruPlug.
+  * Generate an image for HP t5325 Thin Client (but it requires a
+    serial console).
+  * Generate an image for QNAP TS-41x.
+  * Add a netboot image for SS4000-e.
+  * armel: Don't pretend that network-console images are "netboot"
+    images.
+
+  [ Cyril Brulebois ]
+  * Warn if only the 'build' directory has been checked out instead of the
+    full source of the 'debian-installer' package.
+  * Fix boot splash images to use 640x480. See #571045 for details.
+
+  [ Cyril Brulebois / Frans Pop ]
+  * Switch graphical installer from DirectFb to X.Org backend
+    - include xserver-xorg udebs for G-I images
+    - use console-setup instead of kbd-chooser for G-I images
+    - exclude X.Org modules from library reduction
+    - stop including libgcc_s.so.1 in G-I images; it's not needed with X.Org
+  * Enable graphical installer build targets again. With many thanks to
+    Cyril Brulebois, Julien Cristau and others who have contributed to
+    implementing the X.Org backend.
+
+  [ Frans Pop ]
+  * G-I: include gtk2-engines-udeb through pkg-lists.
+  * Add check for incorrect file attributes on device nodes, which can occur
+    when using fakeroot after restarting a (failed) build.
+  * x86: update info about disabling framebuffer in F8 syslinux help screen.
+
+  [ Aurelien Jarno ]
+  * mips/mipsel: re-enable Broadcom SWARM (sb1-bcm91250a) support.
+
+  [ Ryan Tandy ]
+  * Create images for Buffalo Linkstation Pro/Live. Closes: #580714
+
+  [ Otavio Salvador ]
+  * Move amd64, sparc, mipsel and i386 to linux 2.6.32 (ABI 5).
+
+  [ Samuel Thibault ]
+  * hurd-i386: Fix boot menu ramdisk support.
+
+  [ Otavio Salvador ]
+  * Move hppa, ia64, powerpc and s390 to linux 2.6.32 (ABI 5).
+
+  [ Jeremie Koenig ]
+  * util/get-packages: fix selection of the most recent packages.
+
+  [ Colin Watson ]
+  * Support new apt mirror method, available from apt 0.7.26~exp6.
+
+ -- Otavio Salvador <otavio@debian.org>  Mon, 19 Jul 2010 12:05:17 -0300
+
 debian-installer (20100211ubuntu31) natty; urgency=low
 
   * Rebuild against udpkg 1.12.

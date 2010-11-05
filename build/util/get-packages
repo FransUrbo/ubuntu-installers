@@ -88,7 +88,7 @@ APT_GET="apt-get --assume-yes \
 	-o Acquire::Retries=3 \
 	-o APT::Install-Recommends=false
 	-o Apt::Architecture=`dpkg-architecture -qDEB_HOST_ARCH` \
-	-o Apt::GPGV::TrustedKeyring="$KEYRING" \
+	-o Dir::Etc::trusted="$KEYRING" \
 	$SECOPTS"
 
 # Prepare APTDIR
@@ -187,7 +187,13 @@ mkdir -p $UDEBDIR
 
 lnpkg() {
 	local pkg=$1; local dir=$2 debdir=$3
-	local L="`find $dir -name "${pkg}_*" 2>/dev/null | sort | tail -n 1`"
+	local L LV l lv
+	for l in `find $dir -name "${pkg}_*" 2>/dev/null`; do
+		lv=$(dpkg -f "$l" Version); lv=${lv%"Version: "}
+		if dpkg --compare-versions "$lv" gt "$LV"; then
+			L=$l LV=$lv
+		fi
+	done
 	if [ -e "$L" ]; then
 		ln -f $L $debdir/$pkg.$TYPE
 	fi

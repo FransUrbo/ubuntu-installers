@@ -11,10 +11,10 @@ account creation pages.
 </para>
 
 <para>
-Official Debian developers will probably use the same login than their
+Official Debian developers will probably use the same login as their
 Debian login, but must go through the account creation process
-anyway. Non Debian developers should be aware that the login they
-will choose on &alioth; will be followed by "-guest". This has
+anyway. Non-Debian developers should be aware that the login they
+will choose on &alioth; will be followed by <quote>-guest</quote>. This has
 absolutely no meaning of any kind of <emphasis>second class
 citizens</emphasis> but is just an easy way for &alioth; system
 administrators to know who is an official Debian developer.
@@ -84,12 +84,7 @@ Using <acronym>SVN</acronym> to get and commit files
 <para>
 Once their account is allowed to write to the project, translators and
 developers can download the full project source tree using the
-checkout commands mentioned on the D-I translation reference
-pages:
-</para>
-
-<para>
-&url-d-i-checkout;
+checkout commands mentioned in <xref linkend="translators"/>.
 </para>
 
 <para>
@@ -206,11 +201,11 @@ lines
 
 <para>
 Typical non anonymous and anonymous checkout command lines for &d-i;
-and related packages are listed on &url-checkouts;.
+and related packages are listed in <xref linkend="translators"/>.
 </para>
 
 <para>
-Below is an example of a typical checkout for the &base-config; package:
+Below is an example of a typical checkout for the console-data package:
 </para>
 
 <informalexample>

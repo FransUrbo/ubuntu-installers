@@ -7,7 +7,3 @@ localechooser -
 # (and the devices for which it's used).
 console-setup -
 console-setup-pc-ekmap -
-# Also remove auto-install stuff as that's effectively already implemented
-# in these images.
-auto-install -
-ai-choosers -

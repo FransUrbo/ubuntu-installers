@@ -33,11 +33,6 @@
 
 <!ENTITY url-d-i-translation-status "&url-status;/translation-status.html">
 
-<!ENTITY url-d-i-checkout " &url-status;/checkouts.html">
-
-
-<!ENTITY url-checkouts "&url-status;/checkouts.html">
-
 <!ENTITY url-level1     "&url-status;/level1">
 <!ENTITY url-sublevel1-pot     "&url-status;/level1/POT/debian-installer_packages_po_sublevel1.pot">
 <!ENTITY url-sublevel2-pot     "&url-status;/level1/POT/debian-installer_packages_po_sublevel2.pot">
@@ -79,15 +74,16 @@
 <!ENTITY svn-di-sandbox "<classname>svn+ssh://&svn-debian-auth;/svn/d-i/people/sandbox</classname>">
 <!ENTITY svn-tasksel-anon "svn co svn://&svn-debian;/tasksel/trunk tasksel">
 <!ENTITY svn-tasksel "svn co svn+ssh://&svn-debian-auth;/svn/tasksel/trunk tasksel">
-<!ENTITY git-tasksel "git clone ssh://git.debian.org/git/tasksel/tasksel.git">
+<!ENTITY git-tasksel-anon "git clone ssh://&git-debian;/git/tasksel/tasksel.git">
+<!ENTITY git-tasksel "git clone ssh://&git-debian-auth;/git/tasksel/tasksel.git">
 <!ENTITY svn-win32-loader-anon "svn co svn://&svn-debian;/svn/d-i/trunk/win32-loader">
 <!ENTITY svn-win32-loader "svn co svn+ssh://&svn-debian-auth;/svn/d-i/trunk/win32-loader">
 <!ENTITY git-iso-codes-anon "git clone git://&git-debian;/git/iso-codes/iso-codes.git">
 <!ENTITY git-iso-codes "git clone ssh://&git-debian-auth;/git/iso-codes/iso-codes.git">
 <!ENTITY svn-console-data "svn co svn://&svn-debian;/console-data/trunk/debian/po console-data">
-<!ENTITY svn-grub2 "svn co svn://&svn-debian;/pkg-grub/grub2/trunk/debian/po grub2">
+<!ENTITY bzr-grub2 "bzr co bzr+ssh://bzr.debian.org/bzr/pkg-grub/trunk/grub/">
 <!ENTITY console-data-en     "&url-status;/level2/files/en/console-data_debian_po_en.po">
-<!ENTITY cvs-popcon "cvs -z3 -d:pserver:anonymous@alioth.debian.org/cvsroot/popcon co popularity-contest/debian/po">
+<!ENTITY svn-popcon "svn co svn://&svn-debian;/pkg-grub/grub2/trunk/debian/po popularity-contest">
 <!ENTITY svn-debconf "svn co svn://&svn-debian;/debconf/trunk/src/debconf debconf">
 <!ENTITY git-eject "git clone ssh://git.debian.org/git/collab-maint/eject">
 
