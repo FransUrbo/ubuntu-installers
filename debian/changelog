@@ -80,6 +80,8 @@ debian-installer (20101020ubuntu1) UNRELEASED; urgency=low
       multi-catalog.
     - Document raidid= syntax in partman-auto-raid/recipe.
   * Re-enable localudebs (cherry-picked from trunk).
+  * Fix Ubuntu boot splash images to use 640x480, since otherwise they often
+    end up being tiled.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 05 Nov 2010 16:15:43 +0000
 
