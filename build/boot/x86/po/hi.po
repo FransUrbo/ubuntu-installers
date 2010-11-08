@@ -687,7 +687,7 @@ msgstr "व्यापक आईडीई ड्राइवर का बल�
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
-msgid "<userinput>generic.all_generic_ide=1</userinput>"
+msgid "<userinput>all_generic_ide=1</userinput>"
 msgstr "<प्रयोक्तानिवेश>व्यापक.all_व्यापक_ide=1</प्रयोक्तानिवेश>"
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -892,8 +892,8 @@ msgstr "फ्रेमबफर को अशक्त करें"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:637
-msgid "<userinput>fb=false</userinput>"
-msgstr "<प्रयोक्तानिवेश>fb=गलत</प्रयोक्तानिवेश>"
+msgid "<userinput>vga=normal fb=false</userinput>"
+msgstr "<प्रयोक्तानिवेश>vga=normal fb=गलत</प्रयोक्तानिवेश>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
@@ -975,8 +975,8 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
 #, no-wrap
-msgid "boot: install fb=false"
-msgstr "बूट: संस्थापना fb=गलत"
+msgid "boot: install vga=normal fb=false"
+msgstr "बूट: संस्थापना vga=normal fb=गलत"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683

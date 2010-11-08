@@ -478,7 +478,7 @@ For F10 type control and F then the digit 0
 
    <seglistitem>
     <seg>Force use of generic IDE driver</seg>
-    <seg><userinput>generic.all_generic_ide=1</userinput></seg>
+    <seg><userinput>all_generic_ide=1</userinput></seg>
    </seglistitem>
   </segmentedlist>
 
@@ -634,7 +634,7 @@ For F10 type control and F then the digit 0
 
    <seglistitem condition="install">
     <seg>Disable framebuffer</seg>
-    <seg><userinput>fb=false</userinput></seg>
+    <seg><userinput>vga=normal fb=false</userinput></seg>
    </seglistitem>
 
    <seglistitem condition="install">
@@ -679,7 +679,7 @@ For F10 type control and F then the digit 0
   <para condition="syslinux">For example:</para>
 
   <informalexample condition="syslinux">
-   <screen condition="install">boot: install fb=false</screen>
+   <screen condition="install">boot: install vga=normal fb=false</screen>
    <screen condition="live">boot: live pci=noacpi</screen>
   </informalexample>
 

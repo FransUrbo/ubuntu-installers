@@ -531,8 +531,8 @@ msgid "Force use of generic IDE driver"
 msgstr "Επιβολή της χρήσης του οδηγού IDE γενικής χρήσης"
 
 #: help.xml:481
-msgid "<userinput>generic.all_generic_ide=1</userinput>"
-msgstr "<userinput>generic.all_generic_ide=1</userinput>"
+msgid "<userinput>all_generic_ide=1</userinput>"
+msgstr "<userinput>all_generic_ide=1</userinput>"
 
 #: help.xml:486
 msgid ""
@@ -713,8 +713,8 @@ msgid "Disable framebuffer"
 msgstr "Απενεργοποίηση του framebuffer"
 
 #: help.xml:647
-msgid "<userinput>fb=false</userinput>"
-msgstr "<userinput>fb=false</userinput>"
+msgid "<userinput>vga=normal fb=false</userinput>"
+msgstr "<userinput>vga=normal fb=false</userinput>"
 
 #: help.xml:651
 msgid "Don't start PCMCIA"

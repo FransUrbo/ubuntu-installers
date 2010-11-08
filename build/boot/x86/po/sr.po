@@ -698,7 +698,7 @@ msgstr "Форсирај употребу генеричких ИДЕ драјв
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
-msgid "<userinput>generic.all_generic_ide=1</userinput>"
+msgid "<userinput>all_generic_ide=1</userinput>"
 msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -892,8 +892,8 @@ msgstr "Онемогући фрејмбуфер"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:637
-msgid "<userinput>fb=false</userinput>"
-msgstr "<userinput>fb=false</userinput>"
+msgid "<userinput>vga=normal fb=false</userinput>"
+msgstr "<userinput>vga=normal fb=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
@@ -971,8 +971,8 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
 #, no-wrap
-msgid "boot: install fb=false"
-msgstr "покретање: инсталирај fb=false"
+msgid "boot: install vga=normal fb=false"
+msgstr "покретање: инсталирај vga=normal fb=false"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
