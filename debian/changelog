@@ -1,3 +1,13 @@
+debian-installer (20101020ubuntu2) UNRELEASED; urgency=low
+
+  * Backport from trunk:
+    - geniso_hybrid_plus_firmware_partition: Cope if the disk size exceeds
+      32MB.  (The previous code seems to have misunderstood isohybrid's
+      defaults slightly, but we now just specify the full CHS geometry
+      explicitly in case anything changes in the future.)
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 16 Nov 2010 11:05:37 +0000
+
 debian-installer (20101020ubuntu1) natty; urgency=low
 
   * Resynchronise with Debian.  Remaining changes:
