@@ -5,6 +5,7 @@ debian-installer (20101020ubuntu2) UNRELEASED; urgency=low
       32MB.  (The previous code seems to have misunderstood isohybrid's
       defaults slightly, but we now just specify the full CHS geometry
       explicitly in case anything changes in the future.)
+  * Move to 2.6.37-4 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 16 Nov 2010 11:05:37 +0000
 
