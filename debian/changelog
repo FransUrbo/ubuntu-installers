@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu3) UNRELEASED; urgency=low
+
+  * Move to 2.6.37-5 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 18 Nov 2010 01:32:07 +0000
+
 debian-installer (20101020ubuntu2) natty; urgency=low
 
   * Backport from trunk:
