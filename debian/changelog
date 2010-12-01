@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu6) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu6) natty; urgency=low
 
   * No-change rebuild to pick up new kernel.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 01 Dec 2010 10:36:32 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 01 Dec 2010 10:38:20 +0000
 
 debian-installer (20101020ubuntu5) natty; urgency=low
 
