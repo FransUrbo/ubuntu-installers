@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu6) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new kernel.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 01 Dec 2010 10:36:32 +0000
+
 debian-installer (20101020ubuntu5) natty; urgency=low
 
   * Move to 2.6.37-7 kernels.
