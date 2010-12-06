@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu7) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu7) natty; urgency=low
 
   * Move to 2.6.37-8 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 06 Dec 2010 13:40:59 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 06 Dec 2010 16:49:58 +0000
 
 debian-installer (20101020ubuntu6) natty; urgency=low
 
