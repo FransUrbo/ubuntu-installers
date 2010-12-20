@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu10) UNRELEASED; urgency=low
+
+  * Build-depend on u-boot [armel] rather than uboot-mkimage [armel] as
+    mkimage moved to this package in natty.
+
+ -- Loïc Minier <loic.minier@linaro.org>  Mon, 20 Dec 2010 17:27:58 +0100
+
 debian-installer (20101020ubuntu9) natty; urgency=low
 
   * Move to 2.6.37-10 kernels.
