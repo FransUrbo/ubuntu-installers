@@ -1,4 +1,4 @@
-debian-installer (20101020ubuntu10) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu10) natty; urgency=low
 
   [ Loïc Minier ]
   * Build-depend on u-boot [armel] rather than uboot-mkimage [armel] as
@@ -7,7 +7,7 @@ debian-installer (20101020ubuntu10) UNRELEASED; urgency=low
   [ Michael Vogt ]
   * Move to 2.6.37-11 kernels.
 
- -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 22 Dec 2010 11:27:49 +0100
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 22 Dec 2010 15:10:59 +0100
 
 debian-installer (20101020ubuntu9) natty; urgency=low
 
