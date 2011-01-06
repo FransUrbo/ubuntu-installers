@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu11) UNRELEASED; urgency=low
+
+  * Move to 2.6.37-12 kernels.
+
+ -- Andy Whitcroft <apw@canonical.com>  Thu, 06 Jan 2011 12:34:06 +0000
+
 debian-installer (20101020ubuntu10) natty; urgency=low
 
   [ Loïc Minier ]
