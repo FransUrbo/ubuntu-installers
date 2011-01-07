@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu12) UNRELEASED; urgency=low
+
+  * switch build-deps from u-boot to u-boot-tools
+
+ -- Oliver Grawert <ogra@ubuntu.com>  Fri, 07 Jan 2011 13:23:46 +0100
+
 debian-installer (20101020ubuntu11) natty; urgency=low
 
   * Move to 2.6.37-12 kernels.
