@@ -51,6 +51,8 @@ grub-installer (1.60ubuntu1) UNRELEASED; urgency=low
       initial GRUB timeout.
     - Install GRUB to the SATA RAID or multipath device when /boot is on
       such a device, rather than installing to the first hard disk.
+  * If the first disk has neither a partition table nor a filesystem, don't
+    try to install to it as grub-setup will refuse (LP: #711830).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 02 Feb 2011 21:04:38 +0000
 
