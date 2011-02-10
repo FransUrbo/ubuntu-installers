@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu15) UNRELEASED; urgency=low
+
+  * Move to 2.6.38-3 kernels.
+
+ -- Andy Whitcroft <apw@canonical.com>  Thu, 10 Feb 2011 20:13:00 +0000
+
 debian-installer (20101020ubuntu14) natty; urgency=low
 
   * Move to 2.6.38-2 kernels.
