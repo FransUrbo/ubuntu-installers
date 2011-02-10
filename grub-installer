@@ -358,7 +358,7 @@ if [ "$found" = "0" ] && type mdadm >/dev/null 2>&1; then
 		    *)		continue ;;
 		esac
 		# Build a list of devices in the mirror
-		frdisk_list="$frdisk_list $frdisk"
+		frdisk_list="$frdisk_list $(mapdevfs "$frdisk" || true)"
 		frdev=
 		frtype="mdadm"
 		found=1
