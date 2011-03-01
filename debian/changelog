@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu20) UNRELEASED; urgency=low
+
+  * Stop building the armel dove subarchitecture; it no longer has a kernel
+    in natty.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Mar 2011 10:30:22 +0000
+
 debian-installer (20101020ubuntu19) natty; urgency=low
 
   * Include biosdevname-udeb on architectures where it's available.
