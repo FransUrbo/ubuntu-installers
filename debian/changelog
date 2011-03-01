@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu21) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu21) natty; urgency=low
 
   * Install /var/lib/dpkg/info/$(dpkg --print-architecture) -> . symlink so
     that images build correctly in the presence of multiarch dpkg.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Mar 2011 11:41:38 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 01 Mar 2011 13:17:29 +0000
 
 debian-installer (20101020ubuntu20) natty; urgency=low
 
