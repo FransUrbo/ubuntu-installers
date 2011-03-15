@@ -181,7 +181,7 @@ msgstr "Avtorske pravice in jamstva."
 #: help.xml:95
 #, no-wrap
 msgid ""
-"For F1-F19 type control and F then the digit 1-9\n"
+"For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
 "Za F1-F9 pritisnite tipko Control in F ter številko 1-9\n"

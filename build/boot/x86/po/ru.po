@@ -181,10 +181,10 @@ msgstr "Авторские права и гарантии."
 #: help.xml:95
 #, no-wrap
 msgid ""
-"For F1-F19 type control and F then the digit 1-9\n"
+"For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
-"Для F1-F19 нажмите Ctrl и F, а затем одну из цифр 1-9\n"
+"Для F1-F9 нажмите Ctrl и F, а затем одну из цифр 1-9\n"
 "Для F10 нажмите Ctrl и F, а затем цифру 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>

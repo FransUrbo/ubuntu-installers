@@ -185,10 +185,10 @@ msgstr "Copyrights et garanties."
 #: help.xml:95
 #, no-wrap
 msgid ""
-"For F1-F19 type control and F then the digit 1-9\n"
+"For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
-"Pour F1-F19, appuyer simultanément sur CONTROL et F puis ensuite appuyer sur le chiffre correspondant 1-9\n"
+"Pour F1-F9, appuyer simultanément sur CONTROL et F puis ensuite appuyer sur le chiffre correspondant 1-9\n"
 "Pour F10, appuyer simultanément sur CONTROL et F puis ensuite sur le chiffre 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>

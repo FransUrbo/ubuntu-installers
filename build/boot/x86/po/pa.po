@@ -177,7 +177,7 @@ msgstr ""
 #: help.xml:95
 #, no-wrap
 msgid ""
-"For F1-F19 type control and F then the digit 1-9\n"
+"For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
 

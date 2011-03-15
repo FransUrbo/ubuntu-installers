@@ -182,10 +182,10 @@ msgstr "Direitos de autor e garantias."
 #: help.xml:95
 #, no-wrap
 msgid ""
-"For F1-F19 type control and F then the digit 1-9\n"
+"For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
-"Para F1-F19 pressione control e F seguido do número 1-9\n"
+"Para F1-F9 pressione control e F seguido do número 1-9\n"
 "Para F10 pressione control e F seguido do número 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>

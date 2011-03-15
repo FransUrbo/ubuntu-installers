@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu23) UNRELEASED; urgency=low
+
+  * Fix "F19" typo in gfxboot help text (LP: #537894).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 15 Mar 2011 11:12:03 +0000
+
 debian-installer (20101020ubuntu22) natty; urgency=low
 
   * Move to 2.6.38-6 kernels.

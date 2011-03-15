@@ -181,10 +181,10 @@ msgstr "版權和保證"
 #: help.xml:95
 #, no-wrap
 msgid ""
-"For F1-F19 type control and F then the digit 1-9\n"
+"For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
-"按緊 control 及  F 加 上 1-9 的數字鍵以輸入 F1- F19\n"
+"按緊 control 及  F 加 上 1-9 的數字鍵以輸入 F1- F9\n"
 "按緊 control 及  F 加上 0 的數未字鍵以輸入 F10\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
