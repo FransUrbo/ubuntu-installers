@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu24) UNRELEASED; urgency=low
+
+  * Skip the option field in sources.list lines, if present.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 18 Mar 2011 12:01:00 +0000
+
 debian-installer (20101020ubuntu23) natty; urgency=low
 
   * Fix "F19" typo in gfxboot help text (LP: #537894).
