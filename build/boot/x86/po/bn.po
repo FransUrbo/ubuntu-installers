@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-05-01 07:02+0000\n"
+"PO-Revision-Date: 2011-03-19 07:52+0000\n"
 "Last-Translator: nasir khan saikat <nasir8891@gmail.com>\n"
 "Language-Team: Bengali <bn@li.org>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -393,6 +393,8 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"এই বুট মেথডগুলোর যেকোন একটি ব্যবহার করতে চাইলে প্রম্পটে টাইপ করুন, ইচ্ছে করলে আপনি "
+"প্যারামিটারও ব্যবহার করতে পারেন। যেমনঃ"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
@@ -412,6 +414,8 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
+"আপনি যদি অনিশ্চিত হন, বুট প্রম্পটে শুধুমাত্র এন্টার চেপে কোন বিশেষ প্যারামিটার ছাড়াই "
+"ডিফল্ট বুট মেথডটি ব্যবহার করা উচিৎ।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
@@ -1002,6 +1006,8 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"Ubuntu (C) ২০০৪-২০১০ Canonical Ltd. কর্তৃক সংরক্ষিত, সাথে রয়েছে ভিন্ন লেখক ও "
+"অংশগ্রহনকারীদের অবদান।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:768
@@ -1015,6 +1021,8 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"ইনস্টলেশনের পর, সঠিক বিতরণ নীতিমালা \"/usr/share/doc/<replacable>packagename</"
+"replacable>/copyright.\" এ বর্ণিত রয়েছে |"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:776
@@ -1023,13 +1031,15 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"সিস্টেম চালু করার পর, প্রত্যেক প্যাকেজের নির্দিষ্ট পরিবর্তনশীল শর্তাবলীগুলো  \"/usr/"
+"shar/doc/<replacable>packagename</replacable>/copyright.\" স্থানে বর্ণিত আছে |"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:782
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
-msgstr ""
+msgstr "উবুন্টুর ওপর আইনানুযায়ী কোনোরকম  WARRANTY প্রযোজ্য নয় ||"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:787
@@ -1045,3 +1055,5 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"এই সিস্টেমটি ডেবিয়ান-এর উপর ভিত্তি করে তৈরি।  বিস্তারিত জানার জন্য ও ডেবিয়ান "
+"প্রজেক্ট সম্পর্কে জানতে হলে দেখুন <ulink url=\"http://www.debian.org/\" />"

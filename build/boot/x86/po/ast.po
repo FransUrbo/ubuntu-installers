@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2008-06-15 21:26+0100\n"
-"PO-Revision-Date: 2010-09-07 08:28+0000\n"
+"PO-Revision-Date: 2011-03-21 15:13+0000\n"
 "Last-Translator: Iñigo Varela <malditoastur@gmail.com>\n"
 "Language-Team: Asturian <ast@li.org>\n"
 "Language: ast\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Pantalles d'aida del arranque del instalador"
+msgstr "Pantalles d'ayuda del arranque del instalador"
 
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "ÍNDIZ DE L'AIDA"
+msgstr "ÍNDIZ DE L'AYUDA"
 
 #: help.xml:29
 msgid "KEY"
@@ -56,7 +56,7 @@ msgstr "TEMA"
 
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Esta páxina, l'índiz del ficheru d'aida."
+msgstr "Esta páxina, l'índiz del ficheru d'ayuda."
 
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
@@ -97,7 +97,7 @@ msgstr "Parámetros d'arranque especiales pal sistema d'arranque."
 
 #: help.xml:84
 msgid "How to get help."
-msgstr "Como tener aida."
+msgstr "Cómo tener ayuda."
 
 #: help.xml:89
 msgid "Copyrights and warranties."
@@ -110,7 +110,7 @@ msgstr ""
 
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr "Calca ente F2 y F10 pa los detalles, o Escape pa colar de l'aida."
+msgstr "Calca ente F2 y F10 pa los detalles, o Escape pa colar de l'ayuda."
 
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
@@ -181,13 +181,13 @@ msgid ""
 "${BOOTPROMPT}"
 msgstr ""
 "Calca <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control y F lluéu 1</phrase> pa l'indiz de l'aida, o ENTER pa "
+"\">control y F llueu 1</phrase> pa l'índiz de l'ayuda, o ENTER pa "
 "${BOOTPROMPT}"
 
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Calca F1 pa l'indiz de l'aida, o Escape pa colar de l'aida."
+msgstr "Calca F1 pa l'índiz de l'ayuda, o Escape pa colar de l'ayuda."
 
 #: help.xml:169
 msgid "BOOT METHODS"
@@ -299,7 +299,7 @@ msgid ""
 "help text is generic.)"
 msgstr ""
 "(\"Ubuntu\" pue camudase por otros nomes de sistemes operativos "
-"rellacionaos. Esti testu d'aida ye xenericu.)"
+"rellacionaos. Esti testu d'ayuda ye xenéricu.)"
 
 #: help.xml:257 help.xml:307
 msgid ""
@@ -778,7 +778,7 @@ msgstr "boot: live pci=noacpi"
 
 #: help.xml:710
 msgid "GETTING HELP"
-msgstr "GUETAR AIDA"
+msgstr "OBTENER AYUDA"
 
 #: help.xml:717
 msgid "If you can't install Ubuntu, don't despair!"

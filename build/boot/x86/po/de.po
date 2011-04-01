@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-07 10:34+0000\n"
+"PO-Revision-Date: 2011-03-19 07:51+0000\n"
 "Last-Translator: Daniel Schury <das.surst@googlemail.com>\n"
 "Language-Team: German <de@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -99,7 +99,7 @@ msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr "Boot-Methoden für die spezielle Anwendungsbereiche dieses Systems."
+msgstr "Boot-Methoden für die speziellen Anwendungsbereiche dieses Systems."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -229,7 +229,7 @@ msgstr ""
 "Sie sollten noch Platz auf der Festplatte für eine neue Partition haben: "
 "mindestens 2 Gigabyte für die Installation des Standard Ubuntu "
 "Desktopsystems oder mindestens 400 Megabyte für eine minimale Server-"
-"Installation. Je nachdem, was Sie mit ihrem neuen Ubuntu System machen "
+"Installation. Je nachdem, was Sie mit Ihrem neuen Ubuntu System machen "
 "möchten, brauchen Sie mehr Platz, um zusätzliche Softwarepakete zu "
 "installieren."
 
@@ -450,7 +450,8 @@ msgstr ""
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
-msgstr "Außer im Expertenmodus werden unkritische Startmeldungen unterdrückt."
+msgstr ""
+"Unkritische Startmeldungen werden, außer im Expertenmodus, unterdrückt."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
@@ -612,7 +613,7 @@ msgid ""
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Sie können folgende Startparameter in die <literal>boot:</literal>-"
-"Eingabeaufforderung in Kombination mit der Startmethode (siehe (see <link "
+"Eingabeaufforderung in Kombination mit der Startmethode (siehe  <link "
 "linkend=\"F3\"><keycap>F3</keycap></link>) verwenden."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -653,8 +654,8 @@ msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
-"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
-"replaceable>,<replaceable>sectors</replaceable></userinput>"
+"<userinput>hd=<replaceable>Zylinder</replaceable>,<replaceable>Köpfe</"
+"replaceable>,<replaceable>Sektoren</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
@@ -887,7 +888,7 @@ msgstr "<keycap>F8</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr "SPECIAL STARTPARAMETERS - INSTALLATIONSSYSTEM"
+msgstr "SPEZIELLE STARTPARAMETER - INSTALLATIONSSYSTEM"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
@@ -1050,7 +1051,7 @@ msgid ""
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
 "Wir sind sehr daran interessiert, von den Problemen beim Starten zu "
-"erfahren, da sie im allgemeinen nicht nur bei <emphasis>einer</emphasis> "
+"erfahren, da sie im Allgemeinen nicht nur bei <emphasis>einer</emphasis> "
 "Person auftreten."
 
 #. type: Content of: <reference><refentry><refsection><para>

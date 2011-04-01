@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-25 05:23+0000\n"
-"Last-Translator: chhorran <khmeritforyou@gmail.com>\n"
+"PO-Revision-Date: 2010-10-11 17:49+0000\n"
+"Last-Translator: ពៅ សុភា <Unknown>\n"
 "Language-Team: Khmer <km@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -31,7 +31,7 @@ msgstr "<keycap>F1</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "សូម​ស្វាគមន៍​មក​កាន់ ${DISTRIBUTION_NAME}!"
+msgstr "${DISTRIBUTION_NAME} សូមស្វាគមន៍!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
@@ -39,6 +39,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"នេះ​ជា​ប្រព័ន្ធ​ដំឡើង​សម្រាប់​​ ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ។​ វា​ត្រូវ​បាន​"
+"បង្កើត​លើ​​ ${BUILD_DATE} ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -46,131 +48,133 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
+"នេះ​ជា​​ប្រព័ន្ធ​ផ្ទាល់​សម្រាប់​​ ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ។​ ​វា​ត្រូវ​បាន​"
+"បង្កើត​លើ​​ ${BUILD_DATE} ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr ""
+msgstr "លិបិក្រម​ជំនួយ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
 msgid "KEY"
-msgstr ""
+msgstr "សោ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:30
 msgid "TOPIC"
-msgstr ""
+msgstr "ប្រធានបទ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
 msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
-msgstr ""
+msgstr "ទំព័រ​នេះ​ លិបិក្រម​ជំនួយ​ ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
 msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "ការទាមទារមុន សំរាប់តំលើង ${DISTRIBUTION_NAME}។"
+msgstr "តម្រូវ​ការ​មុន​ពេល​ដំឡើង ${DISTRIBUTION_NAME} ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "ការទាមទារមុន សំរាប់រត់ ${DISTRIBUTION_NAME}។"
+msgstr "តម្រូវ​ការ​មុន​ពេល​ដំណើរការ ${DISTRIBUTION_NAME} ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
 msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr ""
+msgstr "វិធីសាស្ត្រ​ចាប់ផ្ដើម​ សម្រាប់​មធ្យោបាយ​ពិសេស​​ដោយ​ប្រើ​ប្រព័ន្ធ​នេះ​​ ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
 msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr ""
+msgstr "វិធីសាស្ត្រ​​ចាប់ផ្ដើម​​បន្ថែម​​ ​សង្គ្រោះ​ប្រព័ន្ធ​ដែល​ខូច​ ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
 msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ពិសេស​​​ ​ទិដ្ឋភាព​ទូទៅ​ ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
 msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ពិសេស​​ សម្រាប់​ម៉ាស៊ីន​ពិសេស​ ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
 msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ពិសេស​​​ សម្រាប់​ឧបករណ៍​បញ្ជា​ថាស​ដែល​បាន​ជ្រើស​ ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
 msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​​ចាប់ផ្ដើម​ពិសេស​ សម្រាប់​ប្រព័ន្ធ​ដំឡើង​ ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ពិសេស​ សម្រាប់​ប្រព័ន្ធ​​ bootstrap ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
 msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
-msgstr ""
+msgstr "របៀប​ត្រូវ​ទទួល​យក​ជំនួយ​ ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
 msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "សិទ្ធិចំលង និង ការធានា។"
+msgstr "រក្សាសិទ្ធិ​ និង​ធានា​ ។"
 
 #.  deliberately unindented 
 #. type: Content of: <reference><refentry><refsection><literallayout>
@@ -184,29 +188,28 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "ចុច F2 ដល់ F10 សំរាប់លំអិត, ឬ ENTER ទៅ ${BOOTPROMPT}"
+msgstr "ចុច F2 ដល់ F10 សម្រាប់​ព័ត៌មាន​លម្អិត ឬ ENTER ដើម្បី ${BOOTPROMPT}"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr "ចុច F2 ដល់ F10 សំរាប់លំអិត, ឬ Escape សំរាប់ចេញផុត​ជំនួយ។"
+msgstr "ចុច F2 ដល់ F10 សម្រាប់​ព័ត៌មាន​លម្អិត ឬ Escape ដើម្បីចេញពីជំនួយ ។"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
 msgid "<keycap>F2</keycap>"
-msgstr ""
+msgstr "<keycap>F2</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr ""
+msgstr "តម្រូវ​ការ​មុន​ពេល សម្រាប់​ដំឡើង​អ៊ូប៊ុនទូ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr ""
-"អ្នកត្រូវតែមាន អង្គចងចាំ យ៉ាងតិច 32 មេកាបៃ RAM ដើម្បីប្រើប្រាស់ ឧបករតំលើង Ubuntu នេះ។"
+msgstr "អ្នក​ត្រូវ​មាន​អង្គ​ចងចាំ​យ៉ាងតិច ៣២ មេកាបៃ​ ដើម្បី​ប្រើ​ប្រាស់​កម្មវិធី​ដំឡើង​អ៊ូប៊ុនទូ​​នេះ ​។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -217,6 +220,9 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"អ្នក​គួរ​តែ​មាន​ទំហំ​លើ​​ថាស​រឹង​របស់​អ្នក​ ​ដើម្បី​បង្កើត​ភាគ​ថាស​ថ្មី​ យ៉ាង​ហោច​ណាស់​ ២ ជីកាបៃ​​ ដើម្បី​ដំឡើង​ប្រព័ន្ធ​"
+"ផ្ទៃតុ​របស់​អ៊ូប៊ុនទូ​ស្តង់ដារ​ ឬ​យ៉ាង​តិច​ ៤០០ មេកាបៃ​​ សម្រាប់​ការ​ដំឡើង​ម៉ាស៊ីន​បម្រើ​តូច​បំផុត​ ។​ អ្នក​នឹង​ត្រូវ​ការ​ទំហំ​"
+"ថាស​បន្ថែម​ ដើម្បី​ដំឡើង​​កញ្ចប់​បន្ថែម​​ អាស្រ័យ​លើ​ អ្វី​ដែល​អ្នក​ចង់​​ធ្វើ​ជាមួយ​នឹង​ប្រព័ន្ធ​អ៊ូប៊ុនទូ​ថ្មី​របស់​អ្នក​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -225,13 +231,14 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
+"ទស្សនា​សៀវភៅ​ដៃ​អំពី​ការ​ដំឡើង​​ ​ឬ​ FAQ សម្រាប់​ព័ត៌មាន​បន្ថែម​​ ឯកសារ​តាំង​ពីរ​មាន​នៅ​តំបន់​បណ្ដាញ​របស់​អ៊ូប៊ុនទូ​ "
+"<ulink url=\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr ""
-"អ្នកត្រូវតែមាន អង្គចងចាំ យ៉ាងតិច 384 មេកាបៃ RAM ដើម្បីប្រើប្រាស់ ប្រព័ន្ធរស់ Ubuntu នេះ។"
+msgstr "អ្នក​ត្រូវ​មាន RAM ​យ៉ាង​តិច ៣៨៤ មេកាបៃ ដើម្បី​ប្រើប្រាស់​ប្រព័ន្ធ​បន្ត​​​ផ្ទាល់​របស់​អ៊ូប៊ុនទូ​នេះ​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -239,6 +246,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"ប្រព័ន្ធ​​ផ្ទាល់​​មិន​ទាមទារ​ទំហំ​​​មួយ​ចំនួន​លើ​​ថាស​រឹង​របស់​អ្នក​ឡើយ​​ ។​ ទោះ​បី​យ៉ាង​ណា​ក៏ដោយ​ ភាគ​ថាស​ស្វប​លីនុច​ដែល​មាន​"
+"ស្រាប់​លើ​ថាស​នឹង​ត្រូវ​បាន​ប្រើ​ ប្រសិន​បើ​មាន​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -246,11 +255,13 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
+"ទស្សនា​ FAQ សម្រាប់​ព័ត៌មាន​បន្ថែម​​ ឯកសារ​នេះ​មាន​នៅ​តំបន់​បណ្ដាញ​របស់​អ៊ូប៊ុនទូ​​ <ulink url=\"http://"
+"www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "អរគុណអ្នក សំរាប់ការជ្រើសរើស Ubuntu!"
+msgstr "សូម​អរគុណ​ចំពោះ​ការ​ជ្រើសរើស​អ៊ូប៊ុនទូ!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
@@ -260,42 +271,44 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
+"ចុច​គ្រាប់ចុច​ <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial\"> "
+"និង F បន្ទាប់ 1</phrase> សម្រាប់​លិបិក្រម​ជំនួយ ឬ បញ្ចូល (ENTER) ទៅកាន់​ ${BOOTPROMPT}"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr ""
+msgstr "ចុច​​ F1 សម្រាប់​លិបិក្រម​ជំនួយ​​ ឬ​គេច (Escape) ដើម្បី​ចេញ​ជំនួយ​​ ។"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
 msgid "<keycap>F3</keycap>"
-msgstr ""
+msgstr "<keycap>F3</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr ""
+msgstr "វិធីសាស្ត្រ​ចាប់ផ្ដើម"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr ""
+msgstr "វិធីសាស្ត្រ​ចាប់ផ្ដើម​ដែល​មាន ៖"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
-msgstr "តំលើង"
+msgstr "ដំឡើង"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr "តំលើង Ubuntu"
+msgstr "ដំឡើង​អូប៊ុនទូ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr ""
+msgstr "ចាប់ផ្ដើម​ការ​ដំឡើង​ -- នេះ​ជា​ជម្រើស​លំនាំដើម​ ។"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -305,32 +318,32 @@ msgstr "ជំនាញ"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "ផ្តើមការតំលើង បែបជំនាញ, សំរាប់ ការត្រួតពិនិត្យអតិបរិមា។"
+msgstr "សម្រាប់​ការ​ត្រួត​ពិនិត្យ​កម្រិត​អតិបរមា សូម​ចាប់ផ្ដើម​ការ​ដំឡើង​ក្នុង​របៀប​ជំនាញ ។"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "ដំឡើង​ប្រព័ន្ធ​​បន្ទាត់​ពាក្យ​បញ្ជា​តូច​បំផុត​ ។"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "បន្ត​ផ្ទាល់"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "សាកល្បង​អ៊ូប៊ុនទូ​ដោយ​មិន​ចាំបាច់​ផ្លាស់ប្ដូរ​កុំព្យូទ័រ​របស់​អ្នក"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -338,31 +351,32 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"ចាប់ផ្ដើម​ប្រព័ន្ធ​​ផ្ទាល់​ ។​ បើ​អ្នក​ចង់​​ អ្នក​អាច​ដំឡើង​វា​ពេល​ក្រោយ ដោយ​ប្រើ​​រូបតំណាង​ \"ដំឡើង​​\" ​លើ​ផ្ទៃតុ​ ។"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "ដំឡើង​ផ្ទាល់"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
-msgstr "ផ្តើមការតំលើង។"
+msgstr "ចាប់ផ្ដើម​ការ​ដំឡើង​ ។"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
-msgstr ""
+msgstr "memtest"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "សាកល្បង​អង្គ​ចងចាំ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr ""
+msgstr "ធ្វើ​ការ​សាកល្បង​អង្គ​ចងចាំ​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
@@ -370,18 +384,20 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"ប្រើ​វិធីសាស្ត្រ​ចាប់ផ្ដើម​នេះ​មួយ​​​ វាយ​វា​នៅ​ប្រអប់​បញ្ចូល​ ដោយ​ជម្រើស​​ដែល​បំពេញ​តាម​ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​មួយ​​ ។ "
+"ឧទាហរណ៍​ ៖"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "ចាប់ផ្ដើម​ ៖​ ដំឡើង​​ acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "ចាប់ផ្ដើម​ ៖​ acpi=off ផ្ទាល់"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
@@ -389,6 +405,8 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
+"បើ​មិន​ប្រាកដ​​ ​អ្នក​គួរ​តែ​ប្រើ​​វិធីសាស្ត្រ​ចាប់ផ្ដើម​លំនាំដើម​​ ជា​មួយ​ប៉ារ៉ាម៉ែត្រ​ពិសេស​​ ដោយ​ចុច​​បញ្ចូល ( enter) "
+"ក្នុង​ប្រអប់​បញ្ចូល​​​​ចាប់ផ្ដើម​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
@@ -396,6 +414,8 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(\"អ៊ូប៊ុនទូ​​\" ​អាច​​ត្រូវ​បាន​ជំនួស​ដោយ​ឈ្មោះ​ប្រព័ន្ធ​ប្រតិបត្តិការ​ដែល​ទាក់ទង​ផ្សេង​ទៀត​​ ។​ អត្ថបទ​ជំនួយ​នេះ​​ជា​"
+"ទូទៅ​ ។​)"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
@@ -405,27 +425,30 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"ប្រើ​វិធីសាស្ត្រ​ចាប់ផ្ដើម​ទាំងនេះ​មួយ​​ ​ជម្រើស​វា​ពី​ម៉ឺនុយ​ដោយ​​គ្រាប់ចុច​ទស្សន៍ទ្រនិច ។​ ចុច​ F4 ​ដើម្បី​ជ្រើស​"
+"ចាប់ផ្ដើម​ផ្លាស់ប្ដូរ​ និង​របៀប​​ដំឡើង​ ។​ ចុច​ F6 ដើម្បី​កែសម្រួល​ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ ។ ​ចុច​ F6 ម្ដងទៀត​ "
+"ដើម្បី​ជ្រើស​ពី​ម៉ឺនុយ​ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​​ដែល​បាន​ប្រើ​​​ជា​ធម្មតា​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
-msgstr ""
+msgstr "លើកលែង​តែ​ជា​របៀប​វិធី​សាស្ត្រ​ជំនាញ ​​សារ​ចាប់ផ្ដើម​ខឺណែល​មិន​សំខាន់​ត្រូវ​បាន​​ហាមឃាត់ ។"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
 msgid "<keycap>F4</keycap>"
-msgstr ""
+msgstr "<keycap>F4</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr ""
+msgstr "សង្គ្រោះ​ប្រព័ន្ធ​ដែល​ខូច"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr ""
+msgstr "ប្រើ​វិធី​សាស្ត្រ​ចាប់ផ្ដើម​ទាំងនេះ​មួយ​ ដើម្បី​សង្គ្រោះ​​ដំឡើង​ដែល​មាន​ស្រាប់"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
@@ -435,18 +458,18 @@ msgstr "សង្គ្រោះ"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr "សង្គ្រោះប្រព័ន្ធខូច"
+msgstr "សង្គ្រោះ​ប្រព័ន្ធ​ខូច"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "ចាប់ផ្ដើម​ទៅកាន់​របៀប​សង្គ្រោះ​ ។"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "ចាប់ផ្ដើម​ ៖​​ ​​សង្គ្រោះ​ acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
@@ -458,16 +481,20 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
+"គ្មាន​របៀប​​សង្គ្រោះ​​ត្រូវ​បាន​ផ្ដល់​ថាស​នេះ​ទេ​ ។ យ៉ាងណាក៏ដោយ​​ នៅ​ពេល​ថាស​ផ្ដល់​​បរិស្ថាន​អ្នក​ប្រើ​ពេល​លេញ​​ ​វា​"
+"អាច​ប្រើ​បន្ទាត់​ពាក្យ​បញ្ជា​​ និង​/​ឬ​ ឧបករណ៍​ក្រាហ្វិក​​ដែល​បាន​ផ្ដល់​​ ​ដើម្បី​សង្គ្រោះ​​ប្រព័ន្ធ​ដែល​ខូច​​​ ហើយ​ប្រើ​"
+"កម្មវិធី​រុករក​បណ្ដាញ​ ដើម្បី​ជា​ជំនួយ​ស្វែងរក​ ។ ឧបករណ៍​​​សំបូរ​បែប​មាន​​​បញ្ហា​ជា​ច្រើន​នៅ​លើ​បណ្ដាញ​ ដែល​អាច​បង្ក​"
+"ឲ្យ​ប្រព័ន្ធ​របស់​អ្នក​​ខូច​ ដើម្បី​ចាប់ផ្ដើម​ ។"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
 msgid "<keycap>F5</keycap>"
-msgstr ""
+msgstr "<keycap>F5</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ពិសេស​ - ទិដ្ឋភាព​ទូទៅ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
@@ -475,13 +502,15 @@ msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
+"លើ​ប្រព័ន្ធ​ខ្លះ​​ អ្នក​​ចាំបាច់​ត្រូវ​បញ្ជាក់​​ប៉ារ៉ាម៉ែត្រ​​នៅ​ប្រអប់​បញ្ចូល​​​ <literal>​ចាប់ផ្ដើម​ ៖​</literal> ​"
+"តាម​លំដាប់​ប្រព័ន្ធ​ត្រូវ​​ចាប់ផ្ដើម​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr ""
+msgstr "លើ​ប្រព័ន្ធ​ខ្លះ​ អ្នក​ចាំបាច់​ត្រូវ​បញ្ជាក់​ប៉ារ៉ាម៉ែត្រ​ដោយ​ចុច​ F6 តាម​លំដាប់​ប្រព័ន្ធ​ត្រូវ​ចាប់ផ្ដើម​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -489,31 +518,33 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"ឧទាហរណ៍​​ លីនុច​​​ប្រហែល​ជា​មិន​អាច​ត្រូវ​រក​ឃើញ​​ស្វ័យ​ប្រវត្តិ​នៅ​ផ្នែក​រឹង​របស់​អ្នក​ទេ​​ ហើយ​អ្នក​​ចាំបាច់​ត្រូវ​បញ្ជាក់​"
+"ច្បាស់​ នៅ​ទីតាំង​របស់​វា​ ឬ​ប្រភេទ​​របស់​​វា​ដើម្បី​ឲ្យ​គេ​​​ទទួល​ស្គាល់​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
-msgstr ""
+msgstr "ព័ត៌មាន​បន្ថែម​អំពី​​អ្វី​ដែល​​អ្នក​អាច​ប្រើ​ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ ចុច​ ៖"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ សម្រាប់​ម៉ាស៊ីន​ពិសេស"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ សម្រាប់​ឧបករណ៍​បញ្ជា​ថាស​​នីមួយ​ៗ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ស្គាល់​​​​ដោយ​​ប្រព័ន្ធ​លំនាំដើម"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ស្គាល់​ដោយ​ប្រព័ន្ធ​ bootstrap"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
@@ -523,6 +554,9 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"ម៉ូឌុល​ខឺណែល​ជា​ច្រើន​​ត្រូវ​បាន​ផ្ទុក​ដោយ​​​ថាមវន្ត​​​តាម​កម្ម​វិធី​ដំឡើង​​ ហើយ​ប៉ារ៉ាម៉ែត្រ​​​ម៉ូឌុល​​​ទាំង​នេះ​​មិន​អាច​​ត្រូវ​បាន​"
+"ផ្ដល់​លើ​បន្ទាត់​ពាក្យ​បញ្ជា​ទេ​ ។​ ដើម្បី​​ដាក់​ក្នុង​ប្រអប់​បញ្ចូល​ប៉ារ៉ាម៉ែត្រ​ ​​នៅ​ពេល​ម៉ូឌុល​ត្រូវ​បាន​ផ្ទុក​​ ចាប់ផ្ដើម​​ជា​​"
+"របៀប​ជំនាញ​​ (ទស្សនា​​ <link linkend=\"F3\"><keycap>F3</keycap></link>) ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
@@ -530,16 +564,18 @@ msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
+"ម៉ូឌុល​​ខឺណែល​ជា​ច្រើន​ត្រូវ​បាន​ផ្ទុក​ដោយ​ថាមវន្ត​​ តាម​ប្រព័ន្ធ​​ bootstrap ​ហើយ​ប៉ារ៉ាម៉ែត្រ​​ សម្រាប់​ម៉ូឌុល​​ទាំង​នេះ​​"
+"មិន​អាច​ត្រូវ​បាន​ផ្ដល់​លើ​បន្ទាត់​ពាក្យ​បញ្ជា​ឡើយ​ ។"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
 msgid "<keycap>F6</keycap>"
-msgstr ""
+msgstr "<keycap>F6</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ពិសេស​ - ផ្នែក​រឹង​នីមួយ​ៗ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
@@ -548,6 +584,9 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"អ្នក​អាច​ប្រើ​ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ខាង​ក្រោម​​នៅ​ពេល​ប្រអប់​បញ្ចូល​​ <literal>​ចាប់ផ្ដើម​ ៖​​</literal> ​ក្នុង​"
+"បន្សំ​​ជាមួយ​វិធីសាស្ត្រ​ចាប់ផ្ដើម​​ (ទស្សនា​ <link linkend=\"F3\"><keycap>F3</keycap></"
+"link>) ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
@@ -555,26 +594,28 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"អ្នក​អាច​ប្រើ​ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ខាង​ក្រោម​​ដោយ​ចុច​ F6  បន្សំ​ជាមួយ​វិធីសាស្ត្រ​​ចាប់ផ្ដើម​ (ទស្សនា​​ <link "
+"linkend=\"F3\"><keycap>F3</keycap></link>) ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr ""
+msgstr "បើ​អ្នក​ប្រើ​ចំនួន​គោល​ដប់​ប្រាំមួយ​​ដែល​អ្នក​​មាន ដើម្បី​​​ប្រើ​បុព្វបទ​ 0x  (ឧ. 0x300) ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr ""
+msgstr "ផ្នែក​រឹង"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ត្រូវ​បញ្ជាក់"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr ""
+msgstr "IBM PS/1 or ValuePoint (ថាស IDE ​)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
@@ -582,21 +623,23 @@ msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>ភាគ</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr ""
+msgstr "IBM ThinkPads មួយ​ចំនួន"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "ការ​ពារ​តំបន់​ច្រក I/O"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:466
@@ -605,31 +648,34 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr ""
+msgstr "បញ្ហា​ទិដ្ឋភាព​អេក្រង់​កុំព្យូទ័រ​យួរ​ដៃ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "ប្រើ​ច្រក​សៀរៀល​ដំបូង​នៅ​​ 9600 baud"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "បង្ខំ​ប្រើ​កម្មវិធី​បញ្ជា​របស់​​ IDE"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
@@ -640,79 +686,79 @@ msgstr ""
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
-msgstr ""
+msgstr "workarounds (បណ្ដោះអាសន្ន​) អាច​ជាប់​សោ​ ឬ​បរាជ័យ​ផ្នែក​រឹង​​ផ្សេង​ទៀត​ ៖"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "បិទ​​ buggy APIC ផ្អាក routing"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "បិទ ACPI (តាម​ភាគ​​)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> ឬ <userinput>acpi=off</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "បិទ​​ USB"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "បោះ​ឆ្នោត​សម្រាប់​ផ្អាក"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
-msgstr ""
+msgstr "ឧទាហរណ៍​ ៖"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "ចាប់ផ្ដើម​ ៖​ ដំឡើង​​ vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr ""
+msgstr "ចាប់ផ្ដើម​ ៖ vga=771 noapic nolapic ផ្ទាល់"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:536
 msgid "<keycap>F7</keycap>"
-msgstr ""
+msgstr "<keycap>F7</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ពិសេស​​ - ​ដ្រាយ​ថាស​នីមួយ​ៗ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
-msgstr ""
+msgstr "Adaptec 151x, 152x"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:560
@@ -723,11 +769,16 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>តភ្ជាប់​ឡើង​វិញ​​</replaceable></"
+"userinput></optional></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
 msgid "Adaptec 1542"
-msgstr ""
+msgstr "Adaptec 1542"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:565
@@ -737,91 +788,96 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
-msgstr ""
+msgstr "Adaptec 274x, 284x"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (បើក បើ​មិន​មែន​សូន្យ​​)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
-msgstr ""
+msgstr "BusLogic SCSI Hosts"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr ""
+msgstr "ម៉ាស៊ីន​​ DELL"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:585
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
-msgstr ""
+msgstr "បញ្ជី​នេះ​មិន​ពេញ​លេញ​​ ទស្សនា​បន្ថែម​​​ឯកសារ​ kernel-parameters.txt ​របស់​ខឺណែល ។"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "ដំឡើង ៖​ aic7xxx.aic7xxx=no_probe ផ្ទាល់"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:609
 msgid "<keycap>F8</keycap>"
-msgstr ""
+msgstr "<keycap>F8</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់ផ្ដើម​ពិសេស​ - ប្រព័ន្ធ​ដំឡើង"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr ""
+msgstr "ដំណើរការ​កម្មវិធី​ដំឡើង​របៀប​វត្ថុ​បញ្ជា​ប៉ារ៉ាម៉ែត្រ​ទាំងនេះ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
+msgstr "ដំណើរ​ការ​ប្រព័ន្ធ​ bootstrap ​របៀប​វត្ថុ​បញ្ជា​ប៉ារ៉ាម៉ែត្រ​ទាំងនេះ ។"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
 msgid "RESULT"
-msgstr ""
+msgstr "លទ្ធផល"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:633
 msgid "PARAMETER"
-msgstr ""
+msgstr "ប៉ារ៉ាម៉ែត្រ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "បិទ framebuffer"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:637
@@ -831,68 +887,69 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
 msgid "Don't start PCMCIA"
-msgstr ""
+msgstr "កុំ​ចាប់ផ្ដើម​​ PCMCIA"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:642
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
-msgstr ""
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:646
 msgid "Force static network config"
-msgstr ""
+msgstr "បង្ខំ​ការ​កំណត់​រចនាសម្ព័ន្ធ​បណ្ដាញ​ឋិតិ​វន្ត"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:647
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr ""
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:651
 msgid "Set keyboard map"
-msgstr ""
+msgstr "កំណត់​ផ្គូផ្គង​ក្ដារចុច"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:652
 msgid "<userinput>bootkbd=es</userinput>"
-msgstr ""
+msgstr "<userinput>bootkbd=es</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr ""
+msgstr "ជ្រើស​ផ្ទៃតុ​ Kubuntu"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr ""
+msgstr "<userinput>ភារកិច្ច​=​ផ្ទៃតុ​ kubuntu</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
+"បិទ​ ACPI ​សម្រាប់​​ផ្គូផ្គង​ PCI (ជា​ប្រយោជន៍​សម្រាប់​ម៉ាស៊ីន​ដែល​មាន​មូលដ្ឋាន​លើ និង​ម៉ាស៊ីន​បម្រើ HP ​មួយ​ចំនួន​)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:665
 msgid "<userinput>pci=noacpi</userinput>"
-msgstr ""
+msgstr "<userinput>pci=noacpi</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr ""
+msgstr "ប្រើ​ស្បែក​កម្រិត​ពណ៌​ខ្ពស់"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:674
 msgid "Use Braille tty"
-msgstr ""
+msgstr "ប្រើ​ tty អក្សរ​សម្រាប់​អ្នក​ពិការភ្នែក"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:675
@@ -900,6 +957,8 @@ msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>កម្មវិធី​បញ្ជា</replaceable>,<replaceable>ឧបករណ៍</"
+"replaceable>,<replaceable>តារាង​អត្ថបទ​​</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
@@ -911,32 +970,32 @@ msgstr ""
 #: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "ចាប់ផ្ដើម​ ៖​ pci=noacpi ផ្ទាល់"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:699
 msgid "<keycap>F9</keycap>"
-msgstr ""
+msgstr "<keycap>F9</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:700
 msgid "GETTING HELP"
-msgstr ""
+msgstr "មាន​ជំនួយ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr ""
+msgstr "បើ​អ្នក​មិន​អាច​ដំឡើង​អ៊ូប៊ុនទូ​ កុំ​អស់សង្ឃឹម​ !"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr ""
+msgstr "បើ​អ្នក​មិន​អាច​ចាប់ផ្ដើម​អ៊ូប៊ុនទូ​ កុំ​អស់​សង្ឃឹម !"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
-msgstr ""
+msgstr "មាន​ក្រុម​អ៊ូប៊ុនទូ​​ សម្រាប់​ជួយ​អ្នក​ហើយ​ !"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:716
@@ -944,6 +1003,8 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"ជា​ពិសេស យើង​ចាប់អារម្មណ៍​ក្នុង​ការ​ស្ដាប់​អំពី​បញ្ហា​​ការ​ដំឡើង​ ពី​ព្រោះ​ជាទូទៅ​ ពួកគេ​​មិន​រីករាយ​ជាមួយ​​មនុស្ស​ "
+"<emphasis>តែ​ម្នាក់​ឡើយ​​</emphasis> ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:721
@@ -951,6 +1012,8 @@ msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"ជា​ពិសេស​ យើង​ចាប់អារម្មណ៍​ក្នុង​ការ​ស្ដាប់​អំពី​​បញ្ហា​ចាប់​ផ្ដើម​​ ​ពី​ព្រោះ​ជា​ទូទៅ​ ពួកគេ​មិន​រីករាយ​ជាមួយ​​មនុស្ស​ "
+"<emphasis>តែម្នាក់​ឡើយ​​</emphasis> ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:725
@@ -960,16 +1023,18 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"យើង​បាន​ស្ដាប់​អំពី​បញ្ហា​របស់​អ្នក​ហើយ​ ហើយ​​អាច​ចែក​ចាយ​យ៉ាង​រហ័ស​ ​យើង​ចង់​ស្ដាប់​អំពី​​​​បញ្ហា​ ​ធ្វើ​ការ​ដោះ​ស្រាយ​វា​​"
+"ជា​មួយ​អ្នក​ អ្នក​ប្រើ​បន្ត​​បន្ទាប់​ដែល​​មាន​បញ្ហា​​នេះ​នឹង​ទទួល​បាន​ប្រយោជន៍​ពី​បទពិសោធន៍​របស់​អ្នក​ !"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
 msgid "<keycap>F10</keycap>"
-msgstr ""
+msgstr "<keycap>F10</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr ""
+msgstr "រក្សាសិទ្ធិ​ និង​ធានា"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:763
@@ -977,11 +1042,13 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"អ៊ូប៊ុនទូ​ រក្សាសិទ្ធិ​ឆ្នាំ​ 2004-2010 ដោយ​ Canonical Ltd. ចូល​រួម​ដំណើរការ​ដោយ អ្នក​ចែកចាយ និង​​"
+"អ្នកនិពន្ធ​ដើម​ផ្សេង​ទៀត​ជា​ច្រើន​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:768
 msgid "The Ubuntu system is freely redistributable."
-msgstr ""
+msgstr "ប្រព័ន្ធ​អ៊ូប៊ុនទូ​ចែក​ចាយ​ឡើង​វិញ​ដោយ​ឥត​គិត​ថ្លៃ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:771
@@ -990,6 +1057,8 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"ក្រោយ​ពេល​ការ​ដំឡើង​​ ការ​កំណត់​ការ​ចែកចាយ​ សម្រាប់​កញ្ចប់​ត្រូវ​បាន​ពិពណ៌នា​​នៅ​ក្នុង​ឯកសារ​​ /usr/share/doc/"
+"<replaceable>ឈ្មោះ​កញ្ចប់​​</replaceable>/​រក្សាសិទ្ធិ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:776
@@ -998,6 +1067,8 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"ក្រោយ​ពេល​ចាប់ផ្ដើម​​ ការ​កំណត់​ចែកចាយ​ ​សម្រាប់​កញ្ចប់​នីមួយ​ៗ​​ត្រូវ​បាន​ពិពណ៌នា​ក្នុង​ឯកសារ​​ /usr/share/doc/"
+"<replaceable>​ឈ្មោះ​កញ្ចប់​​</replaceable>/​​រក្សា​សិទ្ធិ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:782
@@ -1005,6 +1076,8 @@ msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
+"អ៊ូប៊ុនទូ <emphasis>​ប្រាកដ​ជា​គ្មាន​ការ​ធានា​</emphasis> ត្រូវ​បាន​អនុញ្ញាត​វិសាលភាព​​ច្បាប់​ដែល​អាច​ប្រើ​"
+"ប្រាស់​បាន​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:787
@@ -1013,6 +1086,8 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
+"ប្រព័ន្ធ​ដំឡើង​នេះ​មាន​មូលដ្ឋាន​​​លើ​កម្មវិធី​ដំឡើង​​ដេបៀន​ ។ ​ទស្សនា​ <ulink url=\"http://www.debian."
+"org/\" /> ព័ត៌មាន និង​សេចក្ដី​លម្អិត​បន្ថែម​នៅ​លើ​គម្រោង​ដេបៀន​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:793
@@ -1020,3 +1095,5 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"ប្រព័ន្ធ​នេះ​មាន​មូលដ្ឋាន​លើ​ដេបៀន​ ។ ​ទស្សនា​​ <ulink url=\"http://www.debian.org/\" /> "
+"ព័ត៌មាន​ និង​សេចក្ដី​លម្អិត​បន្ថែម​លើ​គម្រោង​ដេបៀន​ ។"

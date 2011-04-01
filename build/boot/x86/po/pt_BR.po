@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-25 05:09+0000\n"
+"PO-Revision-Date: 2011-03-19 07:57+0000\n"
 "Last-Translator: Tiago Hillebrandt <tiagoscd@yahoo.com.br>\n"
 "Language-Team: Portuguese (Brazil) <pt_BR@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -74,7 +74,7 @@ msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Esta página, o índice de ajuda."
+msgstr "Esta página, índice de ajuda."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
@@ -119,7 +119,7 @@ msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr "Parâmetros especiais de inicialização, uma visão geral."
+msgstr "Parâmetros especiais de inicialização, visão geral."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
@@ -1078,7 +1078,7 @@ msgstr "<keycap>F10</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr "COPYRIGHTS E GARANTIAS"
+msgstr "DIREITOS AUTORAIS E GARANTIAS."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:763

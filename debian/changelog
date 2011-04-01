@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu25) UNRELEASED; urgency=low
+
+  * Update help text translations from Launchpad.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 01 Apr 2011 18:27:13 +0100
+
 debian-installer (20101020ubuntu24) natty; urgency=low
 
   * Skip the option field in sources.list lines, if present.

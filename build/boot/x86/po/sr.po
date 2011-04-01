@@ -2,21 +2,21 @@
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
 # This file is distributed under the same license as the debian-installer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 16.12.2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-25 05:25+0000\n"
+"PO-Revision-Date: 2011-03-19 07:50+0000\n"
 "Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
-"Language-Team: Serbian <sr@li.org>\n"
-"Language: sr\n"
+"Language-Team: Ubuntu Serbian Translators\n"
+"Language: Serbian (sr)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:57+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -190,12 +190,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "Притисните F2 у F10 за детаље, или ENTER за ${BOOTPROMPT}"
+msgstr "Притисните „F2“ кроз „F10“ за детаље или „ENTER“ за ${BOOTPROMPT}"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr "Притисните F2 у F10 за детаље, или ESC за излазак из помоћи."
+msgstr "Притисните „F2“ кроз „F10“ за детаље или „ESC“ за излазак из помоћи."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
@@ -212,7 +212,8 @@ msgstr "ПОТРЕБНО ЗА ИНСТАЛАЦИЈУ УБУНТУ-а"
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
-"Морате имати најмање 32 мегабајта РАМ-а да би користили овај Убунту инсталер."
+"Морате имати најмање 32 мегабајта РАМ-а да бисте користили овај Убунту "
+"инсталер."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -223,10 +224,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Морате имати најмање 2 гигабајта на партицији хард диска да би инсталирали "
-"стандарни Убунту десктоп систем, или 400 мегабајта за минималну серверску "
-"инсталацију. Требаћете још простора на диску да инсталирате додатне пакете, "
-"у зависности шта желите да радите са вашим новим Убунту системом."
+"Морате имати најмање 2 гигабајта на партицији чврстог диска да бисте "
+"инсталирали стандарни Убунту десктоп систем или 400 мегабајта за минималну "
+"серверску инсталацију. Требаће Вам још простора на диску да бисте "
+"инсталирали додатне пакете, у зависности шта желите да радите са Вашим новим "
+"Убунту системом."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -235,8 +237,8 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"Погледајте \"Приручник за инсталацију\" или \"Често постављана питања\" за "
-"више информација; оба документа су доступна на Убунту веб страни, <ulink url="
+"Погледајте „Приручник за инсталацију“ или „Често постављана питања“ за више "
+"информација; оба документа су доступна на Убунту веб страници: <ulink url="
 "\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -245,7 +247,7 @@ msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
 "Морате имати најмање 384 мегабајта РАМ-а да бисте користили овај Убунту "
-"пробни-систем."
+"пробни систем."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -253,7 +255,7 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Пробни систем не захтева простор на хард диску. Ипак, биће коришћена "
+"Пробни систем не захтева простор на чврстом диску. Ипак, биће коришћена "
 "постојећа Линукс своп партиција на диску ако је доступна."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -262,13 +264,13 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Погледајте \"Често постављана питања\" за више информација; овај документ је "
-"доступан на Убунту веб сајту, <ulink url=\"http://www.ubuntu.com/\" />"
+"Погледајте „Често постављана питања“ за више информација; овај документ је "
+"доступан на Убунту веб сајту: <ulink url=\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Хвала вам што сте изабрали Убунту!"
+msgstr "Хвала Вам што сте изабрали Убунту!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
@@ -278,14 +280,14 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
-"Притисните <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">Ctrl+F затим 1</phrase> за сдржај помоћи, или ENTER за ${BOOTPROMPT}"
+"Притисните <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial\">"
+"„Ctrl+F“ затим 1</phrase> за сдржај помоћи или „ENTER“ за ${BOOTPROMPT}"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Притисните F1 за садржај помоћи, или ESC за излазак из помоћи."
+msgstr "Притисните „F1“ за садржај помоћи или „ESC“ за излазак из помоћи."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
@@ -315,7 +317,7 @@ msgstr "Инсталирајте Убунту"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr "Покрени инсталацију -- ово је предодређена опција."
+msgstr "Покрени инсталацију — ово је основна опција."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -350,7 +352,7 @@ msgstr "проба"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr "Пробајте Убунту без икаквих промена на вашем рачунару"
+msgstr "Пробајте Убунту без икаквих промена на Вашем рачунару"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -359,7 +361,7 @@ msgid ""
 "\"Install\" icon on the desktop."
 msgstr ""
 "Покрените пробни систем. Ако желите, можете га инсталирати касније користећи "
-"иконицу \"Инсталирај\" на радној површини."
+"иконицу „Инсталирај“ на радној површини."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
@@ -399,13 +401,13 @@ msgstr ""
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr "покретање: инсталирање acpi=off"
+msgstr "boot: install acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr "покретање: проба acpi=off"
+msgstr "boot: live acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
@@ -413,7 +415,7 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Ако нисте сигурни, користите предодређени метод покретања, без посебних "
+"Ако нисте сигурни, користите основни метод покретања, без посебних "
 "параметара, једноставно притисните ОК при покретању."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -422,7 +424,7 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
-"(''Убунту'' може бити замењено неким другим сродним именима оперативног "
+"(„Убунту“ може бити замењено неким другим сродним именима оперативног "
 "система. Овај помоћни текст је уопштен.)"
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -434,10 +436,10 @@ msgid ""
 "used boot parameters."
 msgstr ""
 "Да бисте користили један од ових метода покретања, изаберите га из менија "
-"користећи тастере курсора. Притисните F4 да бисте изабрали алтернативни "
-"метод покретања и инсталације. Притисните F6 да бисте поставили параметр "
-"покретања. Притисните F6 још једном да бисте изабрали из менија најчешће "
-"коришћених параметара покретања."
+"користећи тастере курсора. Притисните „F4“ да изаберете алтернативни метод "
+"покретања и инсталације. Притисните „F6“ да поставите параметр покретања. "
+"Притисните „F6“ још једном да изаберете из менија најчешће коришћених "
+"параметара покретања."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
@@ -460,8 +462,7 @@ msgstr "СПАШАВАЊЕ ОШТЕЋЕНОГ СИСТЕМА"
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
-"Користите један од ових метода покретања да бисте спасили постојећу "
-"инсталацију"
+"Користите један од ових метода покретања да спасите постојећу инсталацију"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
@@ -482,7 +483,7 @@ msgstr "Покретање у режиму спашавања."
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr "покретање: спашавање acpi=off"
+msgstr "boot: rescue acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
@@ -496,9 +497,9 @@ msgid ""
 msgstr ""
 "На овом диску нема посвећеног режима спашавања. Међутим, пошто диск нуди "
 "комплетно корисничко окружење, могуће је користити конзолу и/или обезбеђене "
-"графичке алате за спашавање оштећеног система, и користити веб претраживач "
-"за тражење помоћи. Обиман савет је доступан на интернету за већину проблема "
-"који могу довести до тога да се ваш нормалан систем не покрене исправно."
+"графичке алате за спашавање оштећеног система и користити веб претраживач за "
+"тражење помоћи. Обиман савет је доступан на интернету за већину проблема "
+"који могу довести до тога да се Ваш нормалан систем не покрене исправно."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -508,7 +509,7 @@ msgstr "<keycap>F5</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "ПОСЕБНИ ПАРАМЕТРИ ПОКРЕТАЊА - ПРЕГЛЕД"
+msgstr "ПОСЕБНИ ПАРАМЕТРИ ПОКРЕТАЊА — ПРЕГЛЕД"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
@@ -517,7 +518,7 @@ msgid ""
 "literal> prompt in order to boot the system."
 msgstr ""
 "На неколико система, можда ћете морати да одредите параметар при "
-"<literal>покретању:</literal> приправност у циљу покретања ситема."
+"приправности <literal>boot:</literal> у циљу покретања ситема."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
@@ -525,8 +526,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
-"На неколико система, можда ћете морати да одредите параметар притиском на F6 "
-"да бисте покренули систем."
+"На неколико система, можда ћете морати да одредите параметар притиском на "
+"„F6“ да бисте покренули систем."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -534,8 +535,8 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"На пример, Линукс можда неће бити у могућности да аутоматски препозна ваш "
-"хардвер, и ви ћете можда морати јасно да одредите његову локацију или тип да "
+"На пример, Линукс можда неће бити у могућности да аутоматски препозна Ваш "
+"хардвер и Ви ћете можда морати јасно да одредите његову локацију или тип да "
 "би био препознат."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -573,10 +574,10 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Многи кернел модули су учитани динамички од стране инсталера, и параметри за "
-"те модуле не могу бити дати у командној линији. Да би били приправни за "
-"параметре када су учитани модули, покрените у експерт режиму (видите <link "
-"linkend=\"F3\"><keycap>F3</keycap></link>)."
+"Многи модули кернела су учитани динамички од стране инсталера и параметри за "
+"те модуле не могу бити дати у командној линији. Да бисте били приправни за "
+"параметре када су учитани модули, покрените у експерт режиму (погледајте "
+"<link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
@@ -584,8 +585,8 @@ msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"Многи кернел модули су учитани динамички од стране иницијалног система "
-"покретача, и параметри за те модуле не могу бити дати у командној линији."
+"Многи модули кернела су учитани динамички од стране иницијалног покретача "
+"система и параметри за те модуле не могу бити дати у командној линији."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
@@ -595,7 +596,7 @@ msgstr "<keycap>F6</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr "ПОСЕБНИ ПАРАМЕТРИ ПОКРЕТАЊА - РАЗНИ ХАРДВЕР"
+msgstr "ПОСЕБНИ ПАРАМЕТРИ ПОКРЕТАЊА — РАЗНИ ХАРДВЕР"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
@@ -604,8 +605,8 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Можете користити следеће параметре при <literal>покретању:</literal> "
-"приправност, у комбинацији са методима покретања (видите <link linkend="
+"Можете користити следеће параметре при приправности <literal>boot:</"
+"literal>, у комбинацији са методима покретања (погледајте <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -614,8 +615,9 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Можете користити следеће параметре притиском на F6, у комбинацији са "
-"методима покретања (видите <link linkend=\"F3\"><keycap>F3</keycap></link>)."
+"Можете користити следеће параметре притиском на „F6“ у комбинацији са "
+"методима покретања (погледајте <link linkend=\"F3\"><keycap>F3</keycap></"
+"link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
@@ -637,7 +639,7 @@ msgstr "ПАРАМЕТАР ЗА ОДРЕЂИВАЊЕ"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr "ИБМ ПС/1 или ValuePoint (ИДЕ диск)"
+msgstr "ИБМ ПС/1 или „ValuePoint“ (ИДЕ диск)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
@@ -656,7 +658,7 @@ msgstr "Неки ИБМ ТинкПад модели"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
@@ -670,6 +672,9 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
@@ -689,7 +694,7 @@ msgstr "Користите први серијски порт при 9600 бoдa
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
@@ -699,7 +704,7 @@ msgstr "Форсирај употребу генеричких ИДЕ драјв
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>all_generic_ide=1</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
@@ -710,17 +715,17 @@ msgstr "Могућа (привремена) решења за закључава
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr "онемогућити APIC прекид усмеравања"
+msgstr "онемогућити „APIC“ прекид усмеравања"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr "(делимично) онемогући ''ACPI''"
+msgstr "(делимично) онемогући „ACPI“"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
@@ -730,12 +735,12 @@ msgstr "<userinput>acpi=noirq</userinput> или <userinput>acpi=off</userinput>
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
-msgstr "онемогући ''USB''"
+msgstr "онемогући „USB“"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
@@ -745,7 +750,7 @@ msgstr "пропитивање за прекидима"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
@@ -756,13 +761,13 @@ msgstr "На пример:"
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr "покретање: инсталирај vga=771 noapic nolapic"
+msgstr "boot: install vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr "покретање: пробај vga=771 noapic nolapic"
+msgstr "boot: live vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:536
@@ -772,7 +777,7 @@ msgstr "<keycap>F7</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "ПОСЕБНИ ПАРАМЕТРИ ПОКРЕТАЊА - РАЗНИ ДИСК ЧИТАЧИ"
+msgstr "ПОСЕБНИ ПАРАМЕТРИ ПОКРЕТАЊА — РАЗНИ ДИСК ЧИТАЧИ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
@@ -788,6 +793,11 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
@@ -802,6 +812,10 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
@@ -823,6 +837,7 @@ msgstr "BusLogic SCSI домаћини"
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
@@ -840,20 +855,20 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"Ова листа није потпуна, погледајте ''kernel-parameters.txt'' датотеку за "
-"нешто више."
+"Ова листа није потпуна, погледајте „kernel-parameters.txt“ датотеку за нешто "
+"више."
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr "покретање: инсталирај aic7xxx.aic7xxx=no_probe"
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr "покретање: пробно aic7xxx.aic7xxx=no_probe"
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:609
@@ -863,12 +878,12 @@ msgstr "<keycap>F8</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr "ПОСЕБНИ ПАРАМЕТРИ ПОКРЕТАЊА - ИНСТАЛАЦИОНИ СИСТЕМ"
+msgstr "ПОСЕБНИ ПАРАМЕТРИ ПОКРЕТАЊА — ИНСТАЛАЦИОНИ СИСТЕМ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr "Ови параметри контролишу рад инсталера."
+msgstr "Ови параметри контролишу како ради инсталер."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
@@ -898,7 +913,7 @@ msgstr "<userinput>vga=normal fb=false</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
 msgid "Don't start PCMCIA"
-msgstr "Не покрећи ''PCMCIA''"
+msgstr "Не покрећи „PCMCIA“"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:642
@@ -908,7 +923,7 @@ msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:646
 msgid "Force static network config"
-msgstr "Форсирај статичку конфигурацију мреже"
+msgstr "Форсирај конфигурацију статичке мреже"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:647
@@ -928,7 +943,7 @@ msgstr "<userinput>bootkbd=es</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr "Изабери Кубунту радну површ"
+msgstr "Изабери Кубунту радну површину"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
@@ -939,7 +954,8 @@ msgstr "<userinput>tasks=kubuntu-desktop</userinput>"
 #: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
-msgstr "Онемогући ACPI за PCI мапе (погодно за неке HP сервере и Via машине)"
+msgstr ""
+"Онемогући „ACPI“ за „PCI“ мапе (погодно за неке „HP“ сервере и „Via“ машине)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:665
@@ -949,7 +965,7 @@ msgstr "<userinput>pci=noacpi</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr "Користи мотив високог контраста"
+msgstr "Користи тему високог контраста"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
@@ -959,7 +975,7 @@ msgstr "<userinput>theme=dark</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:674
 msgid "Use Braille tty"
-msgstr "Користи Брејев ''tty''"
+msgstr "Користи Брејев „tty“"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:675
@@ -967,18 +983,20 @@ msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
 #, no-wrap
 msgid "boot: install vga=normal fb=false"
-msgstr "покретање: инсталирај vga=normal fb=false"
+msgstr "boot: install vga=normal fb=false"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr "покретање: проба pci=noacpi"
+msgstr "boot: live pci=noacpi"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:699
@@ -1003,7 +1021,7 @@ msgstr "Ако не можете да покренете Убунту, не оч
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
-msgstr "Убунту тим је спреман да вам помогне!"
+msgstr "Убунту тим је спреман да Вам помогне!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:716
@@ -1031,9 +1049,9 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Или смо већ чули о вашем проблему и можемо омогућити брзо решавање, или "
-"желимо да чујемо о томе и да радимо на њему са вама, тако да ће следећи "
-"корисник који буде наишао на исти проблем имати користи од вашег искуства."
+"Или смо већ чули о Вашем проблему и можемо омогућити брзо решавање или "
+"желимо да чујемо о томе и да радимо на њему са Вама, тако да ће следећи "
+"корисник који буде наишао на исти проблем имати користи од Вашег искуства."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
@@ -1051,7 +1069,7 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Убунту ауторска права 2004-2010 задржава Каноникал Д.о.о., и обухвата рад "
+"Убунту ауторска права 2004-2010 задржава Каноникал Д.о.о. и обухвата рад "
 "многих других оригиналних аутора и сарадника."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -1067,8 +1085,8 @@ msgid ""
 "replaceable>/copyright."
 msgstr ""
 "Након инсталације, тачни дистрибуциони термини за сваки пакет су описани у "
-"одговарајућој датотеци /usr/share/doc/<replaceable>име пакета</replaceable>/"
-"copyright."
+"одговарајућој датотеци „/usr/share/doc/<replaceable>име пакета</replaceable>/"
+"copyright“."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:776
@@ -1078,8 +1096,8 @@ msgid ""
 "replaceable>/copyright."
 msgstr ""
 "Након покретања, тачни дистрибуциони термини за сваки пакет су описани у "
-"одговарајућој датотеци /usr/share/doc/<replaceable>име пакета</replaceable>/"
-"copyright."
+"одговарајућој датотеци „/usr/share/doc/<replaceable>име пакета</replaceable>/"
+"copyright“."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:782
@@ -1087,7 +1105,7 @@ msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Убунту долази <emphasis> БЕЗ ИКАКВЕ ГАРАНЦИЈЕ </emphasis>, у мери дозвољеној "
+"Убунту долази <emphasis>БЕЗ ИКАКВЕ ГАРАНЦИЈЕ</emphasis>, у мери дозвољеној "
 "важећим законом."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -1097,9 +1115,9 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
-"Овај инсталациони систем је базиран на Дебијан инсталеру. Погледајте <ulink "
-"url=\"http://www.debian.org/\" /> за више детаља и информација о Дебијан "
-"пројекту."
+"Овај инсталациони систем је заснован на Дебијан инсталеру. За више детаља и "
+"информација о Дебијан пројекту погледајте: <ulink url=\"http://www.debian."
+"org/\" />."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:793
@@ -1107,5 +1125,5 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"Овај систем је базиран на Дебијану. Видите <ulink url=\"http://www.debian."
-"org/\" /> за више детаља и информација о Дебијан пројекту."
+"Овај систем је заснован на Дебијану. За више детаља и информација о Дебијан "
+"пројекту погледајте: <ulink url=\"http://www.debian.org/\" />."

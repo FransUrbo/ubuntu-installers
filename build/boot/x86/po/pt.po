@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-07 10:28+0000\n"
+"PO-Revision-Date: 2011-03-19 07:51+0000\n"
 "Last-Translator: Dark_Webster <pedro_flores_16@hotmail.com>\n"
 "Language-Team: UBUNTU-PT <ubuntu-pt.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 "X-Poedit-Language: Portuguese\n"
 
 #. type: Content of: <reference><title>
@@ -31,7 +31,7 @@ msgstr "<keycap>F1</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "Bem-vindo ao ${DISTRIBUTION_NAME}!"
+msgstr "Bem-vindo(a) ao ${DISTRIBUTION_NAME}!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
@@ -109,7 +109,7 @@ msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Métodos de arranque adicionais; modo de recuperação."
+msgstr "Métodos de arranque adicionais; recuperação de um sistema avariado."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
@@ -238,15 +238,16 @@ msgid ""
 ">"
 msgstr ""
 "Veja o Manual de Instalação ou as FAQ para mais informações; ambos os "
-"documentos estão disponíveis no sítio Ubuntu, <ulink url=\"http://www.ubuntu."
-"com/\" /> />"
+"documentos estão disponíveis no sítio web do Ubuntu em <ulink url=\"http://"
+"www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Tem de ter pelo menos 384 megabytes de RAM para usar o sistema live Ubuntu."
+"Tem de ter pelo menos 384 megabytes de RAM para usar o sistema \"live\" "
+"Ubuntu."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -255,7 +256,7 @@ msgid ""
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
 "O sistema \"live\" não requer qualquer espaço em disco. Contudo, se "
-"existirem partições swap no disco rígido serão utilizadas."
+"existirem partições swap no disco rígido, estas serão utilizadas."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -322,12 +323,12 @@ msgstr "Iniciar a instalação -- esta é a opção predefinida"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
-msgstr "expert"
+msgstr "Modo avançado"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "Iniciar a instalação no modo avançado para controlo máximo."
+msgstr "Iniciar a instalação no Modo Avançado para controlo máximo."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
@@ -347,12 +348,12 @@ msgstr "Instalação mínima de sistema por linha de comandos."
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr "live"
+msgstr "\"live\""
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr "Tentar o Ubuntu sem qualquer mudança no seu computador"
+msgstr "Experimentar o Ubuntu sem fazer quaisquer alterações no seu computador"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -360,13 +361,13 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
-"Iniciar o sistema \"live\". Se desejar, pode instalar mais tarde usando o "
-"ícone \"Instalar\" no ambiente de trabalho."
+"Inicie o sistema \"live\". Mais tarde, se o desejar, pode instalar usando o "
+"ícone \"Instalar\" disponível  na Área de trabalho."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
-msgstr "Instalação live"
+msgstr "Instalação \"live\""
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
@@ -386,7 +387,7 @@ msgstr "Testar a memória"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr "Executa um teste de memória."
+msgstr "Executa um teste à memória RAM do seu computador."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
@@ -446,7 +447,7 @@ msgstr ""
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
-"Excepto no modo expert, as mensagens não criticas de arranque do kernel "
+"Excepto no Modo Avançado, as mensagens não criticas de arranque do kernel "
 "serão suprimidas."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
@@ -578,7 +579,7 @@ msgstr ""
 "Muitos módulos do kernel são carregados de forma dinâmica pelo instalador, e "
 "os parâmetros para esses módulos não podem ser fornecidos na linha de "
 "comandos. Para ser questionado por parâmetros quando os módulos são "
-"carregados, arranque no modo expert (veja <link linkend=\"F3\"><keycap>F3</"
+"carregados, arranque no Modo Avançado (veja <link linkend=\"F3\"><keycap>F3</"
 "keycap></link> )."
 
 #. type: Content of: <reference><refentry><refsection><para>

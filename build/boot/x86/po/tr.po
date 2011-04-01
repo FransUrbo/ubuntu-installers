@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-07-25 07:46+0000\n"
+"PO-Revision-Date: 2011-03-19 07:52+0000\n"
 "Last-Translator: Yiğit Ateş <yigitates@ceviri.ubuntu-tr.net>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -40,7 +40,7 @@ msgid ""
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Bu, ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} için bir yükleme "
-"sistemidir. ${BUILD_DATE} tabanlıdır."
+"sistemidir. ${BUILD_DATE} tarihinde oluşturulmuştur."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -49,7 +49,7 @@ msgid ""
 "was built on ${BUILD_DATE}."
 msgstr ""
 "Bu, ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} için bir çalışan sistemdir. "
-"${BUILD_DATE} tabanlıdır."
+"${BUILD_DATE} tarihinde oluşturulmuştur."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -266,8 +266,8 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Daha fazla bilgi için Sıkça Sorulan Sorular'a bakınız; bu belge Ubuntu "
-"internet sitesinde mevcuttur, <ulink url=\"http://www.ubuntu.com/\" />"
+"Daha fazla bilgi için Sıkça Sorulan Sorular'a bakınız; bu belge Ubuntu web "
+"sitesinde mevcuttur, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152

@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-03-11 22:28+0000\n"
+"PO-Revision-Date: 2011-03-19 07:52+0000\n"
 "Last-Translator: Ricardo Pérez López <ricpelo@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -40,7 +40,7 @@ msgid ""
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
 "Este es un sistema de instalación para ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. Se compiló el ${BUILD_DATE}."
+"${DISTRIBUTION_VERSION}. Compilado el ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -49,7 +49,7 @@ msgid ""
 "was built on ${BUILD_DATE}."
 msgstr ""
 "Este es un sistema «live» para ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
-"Se compiló el ${BUILD_DATE}."
+"Compilado el ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -389,7 +389,7 @@ msgstr "Test de memoria"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr "Realizar un chequeo de la memoria."
+msgstr "Realizar una comprobación de la memoria."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
@@ -732,7 +732,7 @@ msgstr "<userinput>noapic nolapic</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr "deshabilitar (parcialmente) el ACPI"
+msgstr "desactivar (parcialmente) el ACPI"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
@@ -742,7 +742,7 @@ msgstr "<userinput>acpi=noirq</userinput> o <userinput>acpi=off</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
-msgstr "deshabilitar el USB"
+msgstr "desactivar el USB"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507

@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-09-07 08:28+0000\n"
-"Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
+"PO-Revision-Date: 2011-03-13 18:09+0000\n"
+"Last-Translator: simurg56 <Unknown>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
 "Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -208,6 +208,8 @@ msgstr ""
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
+"Pêwist e tu xwedîyê herî kêm 32 Mb RAM bî, ku bikarî vê sazkarê Ubuntu bi "
+"kar bînî."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -250,7 +252,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr ""
+msgstr "Spas ji bo ku te Ubuntu hilbijart."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
@@ -265,7 +267,7 @@ msgstr ""
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr ""
+msgstr "Pêl F1 bike bo naveroka alîkarîyê, anjî Escape bo derketinê."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
@@ -305,7 +307,7 @@ msgstr "pîspor"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr ""
+msgstr "Avakirinê bi mod a pispor bide destpêkirin, ji bo kontrola zêdetirin."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
@@ -325,7 +327,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "zindî"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201

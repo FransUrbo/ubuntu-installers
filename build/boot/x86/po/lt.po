@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-25 05:24+0000\n"
+"PO-Revision-Date: 2011-03-19 07:52+0000\n"
 "Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
 "Language-Team: Lithuanian <lt@li.org>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-09-13 09:32+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
+"X-Generator: Launchpad (build 12710)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -99,7 +99,7 @@ msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr ""
+msgstr "Išskirtinių šios sistemos naudojimo būdų įkrovos metodai"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -224,6 +224,10 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"Jūs turėtumėte turėti mažiausiai 2 gigabaitus laisvos disko vietos norėdami "
+"įdiegti \"Ubuntu\" darbinę sistemą, arba mažiausiai 400 megabaitų minimalaus "
+"serverio įdiegimui. Jums reikės daugiau vietos papildomų programų įdiegimui, "
+"priklausomai nuo to ką Jūs norite daryti su savo nauja \"Ubuntu\" sistema"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -232,12 +236,17 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
+"Žiūrėkite įdiegimo instrukciją arba DUK (FAQ) jei norite daugiau "
+"informacijos; abu dokumentai yra Ubuntu interneto puslapyje <ulink url="
+"\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
+"Jūs turite turėti mažiausiai 384 megabaitus operatyviosios atminties (RAM) "
+"norėdami naudotis Live CD sistema."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -245,6 +254,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"Live CD nereikia jūsų kietojo disko vietos. Tačiau, Linux swap skirsniai, "
+"jei yra, bus naudojami."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -311,12 +322,14 @@ msgstr "Pradėti diegimą - numatytasis pasirinkimas."
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
-msgstr ""
+msgstr "patyres vartotojas (expert mode)"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
 msgstr ""
+"Norėdami nustatyti daugiau parametrų pasirinkite patyrusio režimą (expert "
+"mode)."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
@@ -349,11 +362,13 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"Paleisti live CD sistemą. Jei norėsite, vėliau galėsite įdiegti sistemą į "
+"kompiuterį, panaudodami \"Įdiegti\" ikoną esančią darbastalyje."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "Live CD įdiegimas"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
@@ -363,7 +378,7 @@ msgstr "Pradėti įdiegimą."
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
-msgstr ""
+msgstr "Operatyvinės atminties (RAM) testas (memtest)"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
@@ -381,12 +396,14 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
+"Norėdami panaudoti vieną iš įdiegimo būdų įveskite jį komandinėje eilutėje, "
+"papildomai,  jei reikia panaudokite reikalingus parametrus. Pavyzdžiui:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "įkrauti: įdiegti acpi=išjungti"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
@@ -420,17 +437,24 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"Norėdami panaudoti vieną iš šių įkrovos būdų, pasirinkite jį iš menių, "
+"naudodami klaviatūros klavišus. Norėdami pasirinkti alternatyvų paleidimo ir "
+"įdiegimo būdą paspauskite F4. Norint redaguoti įkrovos nustatymus "
+"paspauskite F6. Dar kart paspaudus F6 galėsite pasirinkti dažniausiai "
+"naudojamus įkrovos parametrus."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"Išskyrus patyrusio vartotojo režimą (expert mode) nekritiniai branduolio "
+"pranešimai nerodomi."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
 msgid "<keycap>F4</keycap>"
-msgstr ""
+msgstr "<keycap>F4</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
@@ -440,7 +464,7 @@ msgstr "SUGADINTOS SISTEMOS ATSTATYMAS"
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr ""
+msgstr "Sugadintos sistemos atstatymui pasirink vieną iš šių būdų"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
@@ -455,13 +479,13 @@ msgstr "Atstatyti sugedusią sistemą"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr ""
+msgstr "Įkrauti atstatymo režimą"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "įkrauti: atstatyti acpi=išjungti"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
@@ -477,12 +501,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
 msgid "<keycap>F5</keycap>"
-msgstr ""
+msgstr "<keycap>F5</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr ""
+msgstr "SPECIALŪS ĮKROVOS PARAMETRAI - PERŽIŪRA"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
@@ -490,6 +514,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
+"Kai kuriose sistemose, norint įkrauti sistemą komandinėje eilutėje gali "
+"reikėti nurodyti parametrus prie <literal>įkrauti:</literal>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
@@ -504,16 +530,20 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"Pavyzdžiui, jei Linux nepavyko automatiškai nustatyti kompiuterio įrangos "
+"Jums gali tekti tiksliai nurodyti įrangos tipą ar vietą"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
+"Platesnė informacija apie tai kokius įkrovos parametrus galima naudoti, yra "
+"pasiekiama paspaudus:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "įkrovos parametrai specialiems įrenginiams"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
@@ -523,7 +553,7 @@ msgstr "krovimo parametrai įvairiems diskų valdikliams"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr ""
+msgstr "diegimo sistemai suprantami įkrovos parametrai"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
@@ -538,6 +568,11 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Įdiegimo sistema, daugelį branduolio modulių įkelia dinamiškai ir šiems "
+"moduliams neįmanoma perduoti parametrų per komandinę eilutę. Jei norite "
+"įvesti parametrus kai yra įkeliami branduolio moduliai, įkraukite sitemą "
+"patyrusio vartotojo režimu (expert mode) (žr. <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
@@ -545,11 +580,13 @@ msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
+"Įkrovos sistema daugelį branduolio modulių įkelia dinamiškai ir šiems "
+"moduliams neįmanoma perduoti parametrų komandinėje eilutėje"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
 msgid "<keycap>F6</keycap>"
-msgstr ""
+msgstr "<keycap>F6</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
@@ -611,7 +648,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "Apsaugoti I/O (įvesties-išvesties) prievadų regionus"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:466
@@ -624,12 +661,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr ""
+msgstr "Nešiojami kompiuteriai su ekrano problemomis"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
@@ -670,7 +707,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "(dalinai) išjungti ACPI"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
@@ -700,7 +737,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
-msgstr ""
+msgstr "Pavyzdžiui:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
@@ -756,28 +793,29 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
-msgstr ""
+msgstr "Adaptec 274x, 284x"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (įjungta jei ne nulis)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
-msgstr ""
+msgstr "BusLogic SCSI Hosts"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr ""
+msgstr "Kai kurie Dell įrenginiai"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
@@ -790,6 +828,8 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"Šis sąrašas nepilnas. Peržiūrėk branduolio \"kernel-parameters.txt\" "
+"detalesnei informacijai."
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
@@ -806,7 +846,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:609
 msgid "<keycap>F8</keycap>"
-msgstr ""
+msgstr "<keycap>F8</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
@@ -816,22 +856,22 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr ""
+msgstr "Šie parametrai kontroliuoja kaip veikia diegimo sistema"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
+msgstr "Šie parametrai kontroliuoja kaip veikia įkrovos sistema"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
 msgid "RESULT"
-msgstr ""
+msgstr "REZULTATAS"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:633
 msgid "PARAMETER"
-msgstr ""
+msgstr "PARAMETRAS"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
@@ -846,7 +886,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
 msgid "Don't start PCMCIA"
-msgstr ""
+msgstr "Nepaleisti PCMCIA"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:642
@@ -866,7 +906,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:651
 msgid "Set keyboard map"
-msgstr ""
+msgstr "Nustatyti klaviatūros išdėstymą"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:652
@@ -876,7 +916,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr ""
+msgstr "Pasirinkti Kubuntu darbastalį"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
@@ -897,7 +937,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr ""
+msgstr "Naudoti dielės raiškos temą"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
@@ -936,17 +976,17 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:700
 msgid "GETTING HELP"
-msgstr ""
+msgstr "PAGALBOS GAVIMAS"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr ""
+msgstr "Jei Jums nepavyko įdiegti Ubuntu nepulkite į neviltį!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr ""
+msgstr "Jei Jums nepavyko paleisti Ubuntu nepulkite į neviltį!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:713
@@ -979,12 +1019,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
 msgid "<keycap>F10</keycap>"
-msgstr ""
+msgstr "<keycap>F10</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr ""
+msgstr "AUTORINĖS TEISĖS IR GARANTIJOS"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:763
@@ -1035,3 +1075,5 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
+"Ši sistema yra sukurta Debian pagrindu. Žiūrėkite <ulink url=\"http://www."
+"debian.org/\" /> jei norite daugiau informacijos apie Debian projektą."
