@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:51+0000\n"
-"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
+"PO-Revision-Date: 2011-04-03 09:16+0000\n"
+"Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
-"X-Generator: Launchpad (build 12710)\n"
+"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
+"X-Generator: Launchpad (build 12757)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -39,7 +39,7 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Iste é un sistema de instalación para  ${DISTRIBUTION_NAME} "
+"Este é un sistema de instalación para  ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. Foi construído o ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -99,7 +99,7 @@ msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr "Métodos de arrinque para as formas especiais de usar este sistema"
+msgstr "Métodos de arranque para as formas especiais de usar este sistema"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -109,7 +109,7 @@ msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Métodos de inicio adicionais; rescate dun sistema estropeado."
+msgstr "Métodos de inicio adicionais; rescate dun sistema estragado."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
@@ -175,7 +175,7 @@ msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "Copyrights e garantías."
+msgstr "Dereitos de autoría e garantías."
 
 #.  deliberately unindented 
 #. type: Content of: <reference><refentry><refsection><literallayout>
@@ -191,12 +191,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "Prema de F2 a F10 para detalles ou ENTER para ${BOOTPROMPT}"
+msgstr "Prema de F2 a F10 para obter detalles ou INTRO para ${BOOTPROMPT}"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr "Prema entre F2 e F10 para detalles ou Escape para saír da axuda."
+msgstr "Prema entre F2 e F10 para obter detalles ou Escape para saír da axuda."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
@@ -224,7 +224,7 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Debe ter espazo no seu disco duro para crear unha partición de disco nova "
+"Debe ter espazo no seu disco ríxido para crear unha partición de disco nova "
 "de, cando menos, 2 xigabytes para poder instalar un sistema de escritorio "
 "Ubuntu normal ou un mínimo de 400 megabytes para unha instalación mínima "
 "como servidor. Deberá dispor de máis espazo para instalar paquetes "
@@ -237,7 +237,7 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"Consulte o Manual de Instalación ou as Preguntas Frecuentes para máis "
+"Consulte o Manual de instalación ou as Preguntas frecuentes para máis "
 "información; os dous documentos están á súa disposición no sitio web de "
 "Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
@@ -247,7 +247,7 @@ msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
 "Debe ter un mínimo de 384 megabytes de RAM para utilizar este sistema Ubuntu "
-"\"ao vivo\"."
+"«ao vivo»."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -257,7 +257,7 @@ msgid ""
 msgstr ""
 "O sistema vivo non require de ningún espazo do seu disco duro. Porén, "
 "empregaranse as particións de intercambio de Linux que existan no disco de "
-"estaren disponíbeis."
+"estaren dispoñíbeis."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -265,9 +265,9 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Para máis información, consulte as Preguntas Frecuentes; este documento está "
-"á súa disposición no sitio web de Ubuntu, <ulink url=\"http://www.ubuntu.com/"
-"\" />"
+"Para obter máis información, consulte as Preguntas frecuentes; este "
+"documento está á súa disposición no sitio web de Ubuntu, <ulink url=\"http://"
+"www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
@@ -283,7 +283,7 @@ msgid ""
 "${BOOTPROMPT}"
 msgstr ""
 "Prema <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">control e F e logo 1</phrase> para o índice da axuda ou ENTER para "
+"\">control e F e logo 1</phrase> para o índice da axuda ou INTRO para "
 "${BOOTPROMPT}"
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -310,7 +310,7 @@ msgstr "Métodos de inicio dispoñíbeis:"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
-msgstr "instalación"
+msgstr "instalar"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
@@ -320,7 +320,7 @@ msgstr "Instalar Ubuntu"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr "Iniciar a instalación -- esta é a opción predefinida."
+msgstr "Iniciar a instalación -- esta é a opción predeterminada"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -355,7 +355,7 @@ msgstr "ao vivo"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr "Experimente co Ubuntu sen tocar o seu computador"
+msgstr "Experimente co Ubuntu sen facer cambios no seu computador"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -364,7 +364,7 @@ msgid ""
 "\"Install\" icon on the desktop."
 msgstr ""
 "Inicie o sistema ao vivo. Se quere, pódeo instalar máis tarde mediante a "
-"icona \"Instalar\" do escritorio."
+"icona «Instalar» do escritorio."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
@@ -374,7 +374,7 @@ msgstr "Instalación ao vivo"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
-msgstr "Encetar a instalación."
+msgstr "Iniciar a instalación."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
@@ -398,7 +398,7 @@ msgid ""
 "by any boot parameters. For example:"
 msgstr ""
 "Para usar un destes métodos de inicio, escríbao, seguido opcionalmente de "
-"calquer parámetro de inicio. Por exemplo:"
+"calquera parámetro de inicio. Por exemplo:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
@@ -418,8 +418,8 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Se non está seguro, utilice o método de inicio por omisión, sen parámetros "
-"especiais: simplemente premendo ENTER en boot:"
+"Se non está seguro, utilice o método de inicio predeterminado, sen "
+"parámetros especiais: simplemente premendo INTRO en boot:"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
@@ -427,7 +427,7 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
-"(Pódese substituir \"Ubuntu\" polo nome doutros sistemas operativos "
+"(Pódese substituír «Ubuntu» polo nome doutros sistemas operativos "
 "relacionados. Este texto de axuda é xenérico)."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -459,7 +459,7 @@ msgstr "<keycap>F4</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr "RESCATE DUN SISTEMA ESTROPEADO."
+msgstr "RESCATE DUN SISTEMA ESTRAGADO."
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
@@ -498,12 +498,12 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"Non hai un modo de recuperación adicado en este disco. Porén, xa que o disco "
+"Non hai un modo de recuperación adicado neste disco. Porén, xa que o disco "
 "fornece un contorno de usuario completo, é posíbel usar a liña de ordes e/ou "
-"as ferramentas gráficas fornecidas para recuperar un sistema roto e usar un "
-"navegador web para buscar axuda. Pode atopar máis consellos en liña para a "
-"maioría dos problemas que poderían causar que o seu sistema normal falle ao "
-"se iniciar correctamente."
+"as ferramentas gráficas fornecidas para recuperar un sistema estragado e "
+"usar un navegador web para buscar axuda. Pode atopar máis consellos en liña "
+"para a maioría dos problemas que poderían causar que o seu sistema normal "
+"falle ao se iniciar correctamente."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -547,7 +547,8 @@ msgstr ""
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
-"Para máis información sobre os parámetros de inicio que pode usar, prema:"
+"Para obter máis información sobre os parámetros de inicio que pode usar, "
+"prema:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
@@ -625,7 +626,7 @@ msgstr ""
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
-"Se ve números hexadecimais ten que empregar o prefixo 0x (p.ex. 0x300)."
+"Se emprega números hexadecimais ten que empregar o prefixo 0x (p.ex. 0x300)."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
@@ -718,7 +719,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr "desactivar o encamiñamento das interrupcións APIC problemáticas"
+msgstr "desactivar o enrutamento das interrupcións APIC problemáticas"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
@@ -860,19 +861,19 @@ msgid ""
 "more."
 msgstr ""
 "Esta lista está incompleta; consulte o ficheiro kernel-parameters.txt para "
-"ter máis información."
+"obter máis información."
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr "inicio: instalar aic7xxx.aic7xxx=no_probe"
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr "inicio: live aic7xxx.aic7xxx=no_probe"
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:609
@@ -948,7 +949,7 @@ msgstr "<userinput>bootkbd=es</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr "Select the Kubuntu desktop"
+msgstr "Selecionar o escritorio de Kubuntu"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
@@ -971,7 +972,7 @@ msgstr "<userinput>pci=noacpi</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr "Use high contrast theme"
+msgstr "Usar o tema de alto contraste"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
@@ -1057,9 +1058,9 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"Pode que xa teñamos información seu problema concreto e o podamos solucionar "
-"rapidamente. No caso contrario desexamos coñecelo e examinalo, así o "
-"seguinte usuario que se atope con el beneficiarase da súa experiencia!"
+"Pode que xa teñamos información do seu problema concreto e o poidamos "
+"solucionar rapidamente. No caso contrario desexamos coñecelo e examinalo, "
+"así o seguinte usuario que se atope con el beneficiarase da súa experiencia!"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
@@ -1069,7 +1070,7 @@ msgstr "<keycap>F10</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr "COPYRIGHTS E GARANTÍAS"
+msgstr "DEREITOS DE AUTORÍA E GARANTÍAS"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:763
@@ -1103,8 +1104,8 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"Logo do inicio, os termos de distribución exactos de cada paquete aparecen "
-"descritos no ficheiro correspondente en /usr/share/doc/"
+"Despois do inicio, os termos de distribución exactos de cada paquete "
+"aparecen descritos no ficheiro correspondente en /usr/share/doc/"
 "<replaceable>nome_do_paquete</replaceable>/copyright."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -1114,7 +1115,7 @@ msgid ""
 "permitted by applicable law."
 msgstr ""
 "Ubuntu ven sen <emphasis>ABSOLUTAMENTE NENGUNHA GARANTÍA</emphasis>, nos "
-"limites permitidos pola lexislación aplicable."
+"limites permitidos pola lexislación aplicábel."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:787
@@ -1124,8 +1125,8 @@ msgid ""
 "project."
 msgstr ""
 "Este sistema de instalación baséase no instalador de Debian. Consulte <ulink "
-"url=\"http://www.debian.org/\" /> para máis detalles e información sobre o "
-"proxecto Debian."
+"url=\"http://www.debian.org/\" /> para obter máis detalles e información "
+"sobre o proxecto Debian."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:793
@@ -1134,4 +1135,4 @@ msgid ""
 "for more details and information on the Debian project."
 msgstr ""
 "Este sistema baséase en Debian. Consulte <ulink url=\"http://www.debian.org/"
-"\" /> para máis detalles e información sobre o proxecto Debian."
+"\" /> para obter máis detalles e información sobre o proxecto Debian."

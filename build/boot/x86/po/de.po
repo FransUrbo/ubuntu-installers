@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:51+0000\n"
-"Last-Translator: Daniel Schury <das.surst@googlemail.com>\n"
+"PO-Revision-Date: 2011-04-03 23:29+0000\n"
+"Last-Translator: Dennis Baudys <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-01 14:56+0000\n"
-"X-Generator: Launchpad (build 12710)\n"
+"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
+"X-Generator: Launchpad (build 12757)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -1129,9 +1129,9 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
-"Dieses Installationssystem basiert auf dem Debian Installer. Unter <ulink "
-"url=\"http://www.debian.org/\" /> finden Sie weitere Informationen über das "
-"Debian Projekt."
+"Dieses Installationssystem basiert auf dem Debian-Installationsprogramm. "
+"Unter <ulink url=\"http://www.debian.org/\" /> finden Sie weitere "
+"Informationen über das Debian-Projekt."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:793
