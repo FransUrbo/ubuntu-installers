@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:50+0000\n"
-"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
+"PO-Revision-Date: 2011-04-11 06:51+0000\n"
+"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Ubuntu Serbian Translators\n"
 "Language: Serbian (sr)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:04+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-04-11 15:33+0000\n"
+"X-Generator: Launchpad (build 12792)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -184,8 +184,8 @@ msgid ""
 "For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
-"За F1-F9 укуцајте Ctrl+F затим број 1-9\n"
-"За F10 укуцајте Ctrl+F затим број 0\n"
+"За „F1-F9“ укуцајте „Ctrl+F“ затим број 1-9\n"
+"За „F10“ укуцајте „Ctrl+F“ затим број 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100

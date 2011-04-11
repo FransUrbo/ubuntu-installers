@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:57+0000\n"
-"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
+"PO-Revision-Date: 2011-04-10 05:15+0000\n"
+"Last-Translator: Sir Drinksalot <Unknown>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:04+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-04-11 15:33+0000\n"
+"X-Generator: Launchpad (build 12792)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -1074,7 +1074,7 @@ msgid ""
 "of many other original authors and contributors."
 msgstr ""
 "Ubuntu je blagovna znamka (C) 2004-2010 Canonical Ltd in vključuje delo "
-"veliko drugih izvirnih avtorjev in sodelavcev."
+"številnih drugih izvirnih avtorjev in sodelavcev."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:768
