@@ -1,22 +1,23 @@
 # Bengali translation for debian-installer
 # Copyright (c) 2006 Rosetta Contributors and Canonical Ltd 2006
 # This file is distributed under the same license as the debian-installer package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
-#
+# nasir khan saikat <nasir8891@gmail.com>, 2006.
+# Zenat Rahnuma <zenat@ankur.org.bd>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:52+0000\n"
-"Last-Translator: nasir khan saikat <nasir8891@gmail.com>\n"
-"Language-Team: Bengali <bn@li.org>\n"
+"PO-Revision-Date: 2011-04-14 06:30+0000\n"
+"Last-Translator: Zenat Rahnuma <Unknown>\n"
+"Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-04-20 23:49+0000\n"
+"X-Generator: Launchpad (build 12883)\n"
+"X-Language: bn_BD\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -423,6 +424,8 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
+"(অন্যান্য সংক্রান্ত অপারেটিং সিস্টেমের নাম \"উবুন্টু\" দ্বারা প্রতিস্থাপন করা যাবে। এই "
+"সহায়তা টেক্সট সামগ্রিক)"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
@@ -432,12 +435,15 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"এই বুট মেথডের যে কোন একটি ব্যবহার করতে, কার্সার কীর সাথে মেনু থেকে নির্বাচন করুন। "
+"বিকল্প  আরম্ভ করা এবং ইনস্টলেশন মেথড F4 চাপুন। বুট প্যারামিটার সম্পাদন করতে F6 "
+"চাপুন। সাধারন বুট প্যারামিটারের মেনু থেকে পুনরায় F6 চাপুন।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
-msgstr ""
+msgstr "অভিজ্ঞ মোড ছাড়া, ক্রিটিকাল নয় এরূপ কার্নেল বার্তা গোপন রাখা হয়।"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
@@ -452,7 +458,7 @@ msgstr "ক্ষতিগ্রস্থ সিস্টেমকে পুন�
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr ""
+msgstr "বিদ্যমান ইনস্টল উদ্ধার করতে যে কোন একটি মেথড ব্যবহার করুন"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
@@ -485,6 +491,11 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
+"এই ডিস্কে কোন নিবেদিত উদ্ধার মোড নেই। যদিও, যতক্ষণ পর্যন্ত ডিস্ক সম্পুর্ণ ব্যবহারকারী "
+"এনভারনমেন্ট দিবে, ভাঙ্গা সিস্টেম উদ্ধারের জন্য কমান্ড লাইন ব্যবহার করা সম্ভব এবং/"
+"অথবা গ্রাফিকাল টুল একটি দেওয়া হয়, এবং সহায়তা অনুসন্ধানের জন্য ওয়েব ব্রাউজার "
+"ব্যবহার। সঠিকভাবে বুট করতে যদি আপনার সাধারণ সিস্টেম প্রায় একই রকম সমস্যা হয় তাহলে "
+"ব্যাপক পরামর্শ অনলাইনে বিদ্যমান।"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -494,7 +505,7 @@ msgstr "<keycap>F5</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "SPECIAL BOOT PARAMETERS - OVERVIEW"
+msgstr "বিশেষ বুট প্যারামিটার - সারসংক্ষেপ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
@@ -502,6 +513,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
+"কোন কোন কম্পিউটারে, আপনাকে সিস্টেম বুট করার জন্য <literal>boot:</literal> প্রম্পটে "
+"একটি প্যারামিটার নির্ধারন করে দিতে হবে।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
@@ -518,6 +531,9 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"উদাহরণ স্বরূপ, লিনাক্স সম্ভবত স্বয়ংক্রিয়ভাবে আপনার হার্ডওয়্যার চিহ্নিত করতে পারেনা, "
+"এবং আপনাকে এটির অবস্থান অথবা ধরণবিশদভাবে সুনির্দিষ্টভাবে উল্লেখ করতে হবে যাতে করে "
+"এটি চিনতে পারার যায়।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
@@ -537,12 +553,12 @@ msgstr "একাধিক ডিস্ক নিয়ন্ত্রণের ব
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr ""
+msgstr "ইনস্টল সিস্টেম দ্বারা বুট প্যারামিটার বোঝা যায়"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr ""
+msgstr "বুট স্ট্র্যাপ সিস্টেম দ্বারা বুট প্যারামিটার বোঝা যায়"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
@@ -552,6 +568,10 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"বুটস্ট্র্যাপ সিস্টেম দ্বারা অনেক কার্নেল মডিউল চলন্ত অবস্থায় লোড হয়, এবং কমান্ড লাইনে "
+"এই মডিউলের জন্য প্যারামিটার দেওয়া যাবেনা। যখন মডিউল লোড হবে তখন প্যারামিটারের "
+"জন্য প্রম্পট হবে, অভিজ্ঞ মোডে বুট ( <link linkend=\"F3\"><keycap>F3</keycap></"
+"link> লিঙ্কটি দেখুন)।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
@@ -559,6 +579,8 @@ msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
+"বুটস্ট্র্যাপ সিস্টেম দ্বারা অনেক কার্নেল মডিউল চলন্ত অবস্থায় লোড হয়, এবং কমান্ড লাইনে "
+"এই মডিউলের জন্য প্যারামিটার দেওয়া যাবেনা।"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
@@ -577,6 +599,9 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"বুট মেথডের সমাবেশে <literal>boot:</literal>প্রম্পটে আপনি বর্ণিত বুট প্যারামিটার "
+"ব্যবহার করতে পারেন, (<link linkend=\"F3\"><keycap>F3</keycap></link> লিঙ্কটি "
+"দেখুন)।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
@@ -584,11 +609,14 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"বুট মেথডের সমাবেশে F6 চেপে আপনি বর্ণিত বুট প্যারামিটার ব্যবহার করতে পারেন (<link "
+"linkend=\"F3\"><keycap>F3</keycap></link> লিঙ্কটি দেখুন)।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
+"যদি হেক্স নাম্বার ব্যবহার করার জন্য 0x prefix (e.g., 0x300) ব্যবহার করতে হবে।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
@@ -611,21 +639,23 @@ msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+"<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
+"replaceable>,<replaceable>sectors</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr "কিছু আই.বি.এম. থিঙ্কপ্যাড"
+msgstr "কিছু IBM থিঙ্কপ্যাড"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr ""
+msgstr "I/O পোর্ট ক্ষেত্র সুরক্ষা"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:466
@@ -634,11 +664,14 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
+"replaceable></userinput><optional><userinput>,<replaceable>...</"
+"replaceable></userinput></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr ""
+msgstr "ল্যাপটপে স্ক্রীন প্রদর্শনে সমস্যা"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
@@ -648,7 +681,7 @@ msgstr "<userinput>vga=771</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "9600 baud এ প্রথম সিরিয়াল পোর্ট ব্যবহার করুন"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
@@ -658,7 +691,7 @@ msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "জেনেরিক IDE ড্রাইভার ব্যবহার করতে বাধ্য"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
@@ -669,32 +702,32 @@ msgstr "<userinput>all_generic_ide=1</userinput>"
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
-msgstr ""
+msgstr "সম্ভাব্য (অস্থায়ী) ওয়ার্কঅ্যারাউন্ডের  জন্য লকআপ অথবা হার্ডওয়্যার ব্যর্থতা:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "বাগি APIC বিঘ্নিত রাউট করতে নিষ্ক্রিয়"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "(আংশিকভাবে) ACPI নিষ্ক্রিয়"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> অথবা <userinput>acpi=off</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
-msgstr ""
+msgstr "USB নিষ্ক্রিয়"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
@@ -704,44 +737,44 @@ msgstr "<userinput>nousb</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "বিঘ্নের জন্য পোল"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
-msgstr ""
+msgstr "উদাহরণস্বরূপ:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: install vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: live vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:536
 msgid "<keycap>F7</keycap>"
-msgstr ""
+msgstr "<keycap>F7</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr ""
+msgstr "বিশেষ বুট প্যারামিটার - বিভিন্ন ডিস্ক ড্রাইভ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
-msgstr ""
+msgstr "Adaptec 151x, 152x"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:560
@@ -752,11 +785,16 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
 msgid "Adaptec 1542"
-msgstr ""
+msgstr "Adaptec 1542"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:565
@@ -766,37 +804,43 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
-msgstr ""
+msgstr "Adaptec 274x, 284x"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr ""
+"<userinput>aic7xxx.aic7xxx=no_reset</userinput> (যদি শূণ্য নয় এরূপ সক্রিয় থাকে)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
-msgstr ""
+msgstr "BusLogic SCSI Hosts"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr ""
+msgstr "অবশ্যম্ভাবী DELL মেশিন"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:585
@@ -804,38 +848,39 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
+"এই তালিকা অসম্পূর্ণ, আরও বেশির জন্য কার্নেলের kernel-parameters.txt ফাইল দেখুন।"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:609
 msgid "<keycap>F8</keycap>"
-msgstr ""
+msgstr "<keycap>F8</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr ""
+msgstr "বিশেষ বুট প্যারামিটার  - ইনস্টলেশন সিস্টেম"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr ""
+msgstr "কিভাবে ইনস্টলারটি কাজ করবে তা এই প্যারামিটার কন্ট্রোল করে।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
-msgstr ""
+msgstr "কিভাবে বুটস্ট্র্যাপ সিস্টেম কাজ করবে তা এই প্যারামিটার কন্ট্রোল করে।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
@@ -850,7 +895,7 @@ msgstr "প্যারামিটার"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "ফ্রেমবাফার নিষ্ক্রিয়"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:637
@@ -870,43 +915,45 @@ msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:646
 msgid "Force static network config"
-msgstr ""
+msgstr "স্ট্যাটিক নেটওয়ার্ক config এ বাধ্য"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:647
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr ""
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:651
 msgid "Set keyboard map"
-msgstr ""
+msgstr "কীবোর্ড ম্যাপ নির্ধারণ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:652
 msgid "<userinput>bootkbd=es</userinput>"
-msgstr ""
+msgstr "<userinput>bootkbd=es</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr ""
+msgstr "কুবুন্টু ডেস্কটপ নির্বাচন"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=kubuntu-desktop</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
+"PCI ম্যাপের জন্য ACPI নিষ্ক্রিয় (কিছু HP সার্ভার এবং Via-based machine এর জন্য "
+"দরকার)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:665
 msgid "<userinput>pci=noacpi</userinput>"
-msgstr ""
+msgstr "<userinput>pci=noacpi</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
@@ -916,12 +963,12 @@ msgstr "উচ্চ কন্ট্রাস্টের থিম ব্যব
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:674
 msgid "Use Braille tty"
-msgstr ""
+msgstr "ব্রেইল tty ব্যবহার"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:675
@@ -929,18 +976,20 @@ msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
 #, no-wrap
 msgid "boot: install vga=normal fb=false"
-msgstr ""
+msgstr "boot: install vga=normal fb=false"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "boot: live pci=noacpi"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:699
@@ -950,7 +999,7 @@ msgstr "<keycap>F9</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:700
 msgid "GETTING HELP"
-msgstr ""
+msgstr "সহায়তা নেওয়া"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:707
@@ -973,6 +1022,8 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"যে কোন ধরনের ইনস্টলেশন সমস্যা শোনার জন্য আমরা অপেক্ষা করছি, কারন সাধারণত এটি "
+"শুধুমাত্র  <emphasis>এক</emphasis> জনের জন্য হয়না।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:721
@@ -980,6 +1031,8 @@ msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"যে কোন ধরনের আরম্ভ করার সমস্যা শোনার জন্য আমরা অপেক্ষা করছি, কারন সাধারণত এটি "
+"শুধুমাত্র  <emphasis>এক</emphasis> জনের জন্য হয়না।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:725
@@ -989,6 +1042,10 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"আমরা  হয় ইতোমধ্যে আপনার নির্দিষ্ট সমস্যা শুনে ফেলেছি এবং দ্রুত ঠিক করা যাবে, অথবা "
+"এটি শোনার জন্য আমরা অপেক্ষা করছি এবং আপনার সাথে কাজটি করব, এবং পরবর্তী "
+"ব্যবহারকারী যে কিনা একই সমস্যার সম্মূখীন হবে তাদের জন্য আপনার অভিজ্ঞতা থেকে সুবিধা "
+"হবে।"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
@@ -1048,6 +1105,8 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
+"এই ইনস্টলেশন সিস্টেমটি ডেবিয়ান ইনস্টলার ভিত্তি করে তৈরি। আরও বিস্তারিত তথ্য এবং "
+"ডেবিয়ান প্রকল্পের তথ্যের জন্য দেখুন <ulink url=\"http://www.debian.org/\" />।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:793

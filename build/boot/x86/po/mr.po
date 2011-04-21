@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-09-14 15:15+0000\n"
-"Last-Translator: Onkar Shinde <onkarshinde@gmail.com>\n"
+"PO-Revision-Date: 2011-04-14 07:38+0000\n"
+"Last-Translator: Vaibhav S Dalvi <Unknown>\n"
 "Language-Team: Marathi <mr@li.org>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-04-20 23:49+0000\n"
+"X-Generator: Launchpad (build 12883)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -592,6 +592,8 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"तुम्ही <literal>बूट:<literal> प्रोम्प्टला बूट पद्धतीबरोबर हे पॅरामीटर वापरू शकता (<link "
+"linkend=\"F3\"><keycap>एफ़३</keycap></link> बघा)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
@@ -599,11 +601,13 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"तुम्ही एफ ६ दाबून बूट पद्धतीबरोबर हे पॅरामीटर वापरू शकता (<link linkend="
+"\"F3\"><keycap>एफ़३</keycap></link> बघा)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr ""
+msgstr "हेक्स आकड्यांना आधी 0x लावा(उदा. 0x300)."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
@@ -660,12 +664,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>वीजीए = ७७१</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "पहिले सीरिअल पोर्ट ९६०० बाॅड वेगाने वापरा."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
@@ -686,7 +690,7 @@ msgstr ""
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
-msgstr ""
+msgstr "लाॅकअप्स अथवा इतर हार्डवेअर अडचणींवर शक्य (तात्पुरते) उपाय"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493

@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu29) UNRELEASED; urgency=low
+
+  * Update help text translations from Launchpad.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 21 Apr 2011 00:59:49 +0100
+
 debian-installer (20101020ubuntu28) natty; urgency=low
 
   * Update help text translations from Launchpad.
