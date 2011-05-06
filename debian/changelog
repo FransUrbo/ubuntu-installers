@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu30) UNRELEASED; urgency=low
+
+  * Set default suite to oneiric.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 06 May 2011 10:32:55 +0100
+
 debian-installer (20101020ubuntu29) natty; urgency=low
 
   * Update help text translations from Launchpad.
