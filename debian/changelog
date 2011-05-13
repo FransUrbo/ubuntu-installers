@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu30) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu30) oneiric; urgency=low
 
   * Set default suite to oneiric.
   * Move to 2.6.39-2 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 06 May 2011 10:32:55 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 13 May 2011 13:01:20 +0100
 
 debian-installer (20101020ubuntu29) natty; urgency=low
 
