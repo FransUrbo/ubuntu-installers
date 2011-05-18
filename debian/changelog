@@ -51,6 +51,8 @@ grub-installer (1.64ubuntu1) UNRELEASED; urgency=low
       initial GRUB timeout.
     - Install GRUB to the SATA RAID or multipath device when /boot is on
       such a device, rather than installing to the first hard disk.
+    - Remove grub-gfxpayload-lists in situations where we need to remove
+      grub-pc.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 May 2011 11:11:14 +0100
 
