@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu31) UNRELEASED; urgency=low
+
+  * Move to 2.6.39-3 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 21 May 2011 22:32:54 +0100
+
 debian-installer (20101020ubuntu30) oneiric; urgency=low
 
   * Set default suite to oneiric.
