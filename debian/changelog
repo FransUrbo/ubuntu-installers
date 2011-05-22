@@ -1,10 +1,10 @@
-debian-installer (20101020ubuntu31) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu31) oneiric; urgency=low
 
   * Move to 2.6.39-3 kernels.
   * Switch to using grub-efi-amd64-bin to build EFI images.  Deliver EFI
     binaries to debian-cd via debian-cd_info.tar.gz on amd64.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Sat, 21 May 2011 22:32:54 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 22 May 2011 14:40:37 +0100
 
 debian-installer (20101020ubuntu30) oneiric; urgency=low
 
