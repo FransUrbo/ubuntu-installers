@@ -1,4 +1,4 @@
-base-installer (1.119ubuntu1) UNRELEASED; urgency=low
+base-installer (1.119ubuntu1) oneiric; urgency=low
 
   * Resynchronise with Debian.  Remaining changes:
     - Use and depend on the Ubuntu keyring.
@@ -24,7 +24,7 @@ base-installer (1.119ubuntu1) UNRELEASED; urgency=low
   * Explicitly drop code supporting -386 kernels, which were dropped from
     Ubuntu some time ago.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 26 May 2011 15:44:30 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 26 May 2011 15:54:12 +0100
 
 base-installer (1.119) unstable; urgency=low
 
