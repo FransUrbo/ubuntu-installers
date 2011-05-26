@@ -3,28 +3,34 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# Irish messages for debian-installer.
-# Copyright (C) 2003 Software in the Public Interest, Inc.
-# This file is distributed under the same license as debian-installer.
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: base-installer@packages.debian.org\n"
 "POT-Creation-Date: 2010-09-28 22:48+0000\n"
-"PO-Revision-Date: 2006-03-21 14:42-0500\n"
-"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
-"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2011-03-24 09:40+0600\n"
+"Last-Translator: Sahran <sahran.ug@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ga\n"
+"Language: \n"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../base-installer.templates:1001
 msgid "Proceed with installation to unclean target?"
-msgstr "Lean ar aghaidh le suiteáil ar sprioc-chóras neamhghlan?"
+msgstr "تازىلانمىغان نىشان ھۆججەت سىستېمىسىغا ئورنىتامسىز؟"
 
 #. Type: boolean
 #. Description
@@ -35,16 +41,17 @@ msgid ""
 "could cause problems with the installation process, and if you proceed, some "
 "of the existing files may be overwritten."
 msgstr ""
-"Tá comhaid ó shuiteáil roimhe seo sa sprioc-chóras comhad.  B'fhéidir go "
-"mbeadh fadhbanna leis an bpróiseas suiteála de bhrí na gcomhad seo, agus má "
-"leanann tú ar aghaidh, seans go bhforscríobhfar na comhaid atá ann."
+"نىشان ھۆججەت سىستېمىسىدا بۇرۇنقى ئورنىتىشتا قېلىپ قالغان ھۆججەت قالدۇقى بار. "
+"بۇ ھۆججەتلەر ئورنىتىش جەريانىدا بىر قىسىم مەسىلىلەرنى كەلتۈرۈپ چىقىرىشى "
+"مۇمكىن. ئەگەر ئورنىتىشنى ئىجرا قىلسىڭىز، بىر قىسىم مەۋجۇت ھۆججەتلەر قاپلىنىپ "
+"كېتىشى مۇمكىن."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../base-installer.templates:2001
 msgid "No file system mounted on /target"
-msgstr "Níl aon chóras comhad feistithe ar /target"
+msgstr "/target غا ھېچقانداق ھۆججەت سىستېمىسى ئېگەرلەنمىگەن"
 
 #. Type: error
 #. Description
@@ -54,16 +61,16 @@ msgid ""
 "Before the installation can proceed, a root file system must be mounted on /"
 "target. The partitioner and formatter should have done this for you."
 msgstr ""
-"Sular féidir dul ar aghaidh leis an tsuiteáil, ní mór duit fréamhchóras "
-"comhad a fheistiú ar /target. Ba chóir don deighilteoir agus don "
-"fhormáiditheoir é seo a dhéanamh ar do shon cheana."
+"ئورنىتىشنى باشلاشتىن ئىلگىرى، /target قا چوقۇم غول ھۆججەت سىستېمىسىدىن بىرنى "
+"ئېگەرلەش لازىم. دىسكا رايونغا ئايرىش پروگراممىسى ۋە فورماتلاش پروگراممىسى "
+"سىزگە ياردەملىشىپ بۇ خىزمەتلەرنى تاماملاپ بولدى."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../base-installer.templates:3001
 msgid "Not installing to unclean target"
-msgstr "Ní shuiteálfar ar sprioc-chóras neamhghlan"
+msgstr "پاكىز بولمىغان نىشان ھۆججەت سىستېمىسىغا ئورنىتىلمايدۇ"
 
 #. Type: error
 #. Description
@@ -74,58 +81,58 @@ msgid ""
 "back and erase or format the target file system before proceeding with the "
 "install."
 msgstr ""
-"Cealaíodh suiteáil ar an sprioc-chóras.  Ba chóir duit an sprioc-chóras "
-"comhad a léirscriosadh nó a fhormáidiú sula leanann tú ar aghaidh leis an "
-"tsuiteáil."
+"نىشان ھۆججەت سىستېمىسىغا ئورنىتىش جەريانى بىكار قىلىندى. سىز ئالدىنقى "
+"باسقۇچقا قايتىپ، نىشان ھۆججەت سىستېمىسىنى ئۆچۈرۈڭ ياكى فورماتلاڭ، ئاندىن "
+"يېڭىدىن ئورنىتىشنى باشلاڭ."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:4001
 msgid "Preparing to install the base system..."
-msgstr "Ag ullmhú leis an mbunchóras a shuiteáil..."
+msgstr "ئاساسىي سىستېما ئورنىتىشقا تەييارلىنىۋاتىدۇ…"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:5001 ../bootstrap-base.templates:30001
 msgid "Installing the base system"
-msgstr "Bunchóras á shuiteáil"
+msgstr "ئاساسىي سىستېمىنى ئورنىتىۋاتىدۇ"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:6001
 msgid "Running ${SCRIPT}..."
-msgstr "${SCRIPT} á rith..."
+msgstr "${SCRIPT} ئىجرا قىلىۋاتىدۇ…"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:7001
 msgid "Setting up the base system..."
-msgstr "Bunchóras á shocrú..."
+msgstr "ئاساسىي سىستېمىنى تەڭشەۋاتىدۇ…"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:8001 ../bootstrap-base.templates:59001
 msgid "Configuring APT sources..."
-msgstr "Foinsí API á gcumrú..."
+msgstr "APT مەنبەسىنى سەپلەۋاتىدۇ..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:9001
 msgid "Updating the list of available packages..."
-msgstr "Liosta na bpacáistí atá ar fáil á nuashonrú..."
+msgstr "ئىشلىتىشكە بولىدىغان بوغچا تىزىملىكىنى يېڭىلاۋاتىدۇ…"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../base-installer.templates:10001
 msgid "Installing extra packages..."
-msgstr "Pacáistí breisithe á suiteáil..."
+msgstr "قوشۇمچە بوغچىنى ئورنىتىۋاتىدۇ..."
 
 #. Type: text
 #. Description
@@ -133,7 +140,7 @@ msgstr "Pacáistí breisithe á suiteáil..."
 #. :sl1:
 #: ../base-installer.templates:11001
 msgid "Installing extra packages - retrieving and installing ${SUBST0}..."
-msgstr "Pacáistí breisithe á suiteáil - ${SUBST0} á fháil agus á shuiteáil..."
+msgstr "قوشۇمچە بوغچىنى ئورنىتىۋاتىدۇ - ${SUBST0} نى قوبۇللاپ ئورنىتىۋاتىدۇ…"
 
 #. Type: text
 #. Description
@@ -142,7 +149,7 @@ msgstr "Pacáistí breisithe á suiteáil - ${SUBST0} á fháil agus á shuiteá
 #. :sl1:
 #: ../bootstrap-base.templates:1001
 msgid "Install the base system"
-msgstr "Suiteáil an bunchóras"
+msgstr "ئاساسىي سىستېمىنى ئورنات"
 
 #. Type: error
 #. Description
@@ -151,7 +158,7 @@ msgstr "Suiteáil an bunchóras"
 #. :sl2:
 #: ../bootstrap-base.templates:2001
 msgid "Cannot install base system"
-msgstr "Ní féidir an bunchóras a shuiteáil"
+msgstr "ئاساسىي سىستېمىنى ئورنىتالمىدى"
 
 #. Type: error
 #. Description
@@ -163,9 +170,9 @@ msgid ""
 "The installer cannot figure out how to install the base system. No "
 "installable CD-ROM was found and no valid mirror was configured."
 msgstr ""
-"Ní féidir leis an suiteálaí déanamh amach conas is féidir an bunchóras a "
-"shuiteáil. Níor aimsíodh CD-ROM insuiteáilte agus níor cumraíodh suíomh "
-"scáthánaithe bailí ar bith."
+"ئورنىتىش پروگراممىسى ئاساسىي سىستېمىنى قانداق ئورنىتىشنى بىلەلمىدى. "
+"ئورنىتىشقا لازىملىق ھېچقانداق CD-ROM تاپالمىدى، ھېچقانداق ئىناۋەتلىك "
+"تەسۋىرمۇ تەڭشەلمىگەن."
 
 #. Type: error
 #. Description
@@ -202,28 +209,28 @@ msgstr ""
 #: ../bootstrap-base.templates:19001 ../bootstrap-base.templates:20001
 #: ../bootstrap-base.templates:21001 ../bootstrap-base.templates:22001
 msgid "Debootstrap Error"
-msgstr "Earráid Debootstrap"
+msgstr "Debootstrap خاتالىقى"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:3001
 msgid "Failed to determine the codename for the release."
-msgstr "Níorbh fhéidir códainm na heisiúna a dhéanamh amach."
+msgstr "تارقاتقان ۋاكالەت نومۇرىنى جەزملەش مەغلۇپ بولدى."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:4001
 msgid "Failed to install the base system"
-msgstr "Theip ar an mbunchóras a shuiteáil"
+msgstr "ئاساسىي سىستېمىنى ئورنىتىش مەغلۇپ بولدى"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:4001
 msgid "The base system installation into /target/ failed."
-msgstr "Níorbh fhéidir an bunchóras a shuiteáil i /target/."
+msgstr "ئاساسىي ھۆججەت سىستېمىسىنى /target/ غا ئورنىتىش مەغلۇپ بولدى."
 
 #. Type: error
 #. Description
@@ -248,8 +255,8 @@ msgstr "Níorbh fhéidir an bunchóras a shuiteáil i /target/."
 #: ../bootstrap-base.templates:11001 ../bootstrap-base.templates:16001
 msgid "Check /var/log/syslog or see virtual console 4 for the details."
 msgstr ""
-"Seiceáil /var/log/syslog nó féach ar chonsól fíorúil 4 le tuilleadh eolais a "
-"fháil."
+"/var/log/syslog نى تەكشۈرۈڭ ياكى 4-مەۋھۇم كونترول سۇپىسىنى(console) كۆرۈپ "
+"تېخىمۇ كۆپ تەپسىلىي ئۇچۇرغا ئېرىشىڭ."
 
 #. Type: error
 #. Description
@@ -259,7 +266,7 @@ msgstr ""
 #. :sl2:
 #: ../bootstrap-base.templates:5001 ../bootstrap-base.templates:6001
 msgid "Base system installation error"
-msgstr "Earráid agus an bunchóras á shuiteáil"
+msgstr "ئاساسىي سىستېما ئورنىتىش خاتالىقى"
 
 #. Type: error
 #. Description
@@ -267,27 +274,29 @@ msgstr "Earráid agus an bunchóras á shuiteáil"
 #: ../bootstrap-base.templates:5001
 msgid ""
 "The debootstrap program exited with an error (return value ${EXITCODE})."
-msgstr "Scoir an clár debootstrap le hearráid (luach ${EXITCODE})."
+msgstr ""
+"debootstrap پروگراممىسى خاتالىق تۈپەيلىدىن چېكىندى (قايتۇرغان قىممىتى "
+"${EXITCODE})."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:6001
 msgid "The debootstrap program exited abnormally."
-msgstr "Scoir an clár debootstrap go mínormálta."
+msgstr "debootstrap پروگراممىسى بىنورمال چېكىندى."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:7001
 msgid "The following error occurred:"
-msgstr "Tharla an earráid seo a leanas:"
+msgstr "تۆۋەندىكى خاتالىق يۈز بەردى:"
 
 #. Type: select
 #. Description
 #: ../bootstrap-base.templates:8001
 msgid "Tool to use to generate boot initrd:"
-msgstr "Uirlis le húsáid chun initrd a ghiniúint:"
+msgstr "boot initrd ھاسىل قىلىشتا ئىشلىتىدىغان قورال:"
 
 #. Type: select
 #. Description
@@ -297,16 +306,17 @@ msgid ""
 "should select the default. If your system fails to boot, you can retry the "
 "installation using the other options."
 msgstr ""
-"Taispeánann an liosta na huirlisí atá ar fáil. Mura bhfuil tú cinnte cé acu "
-"ba chóir a roghnú, roghnaigh na cinn réamhshocraithe. Mura dtosaíonn do "
-"chóras mar is ceart, déan an tsuiteáil arís le roghanna eile."
+"تىزىملىكتە تاللاشقا بولىدىغان قوراللار كۆرسىتىلدى. ئەگەر قايسىسىنى تاللاشنى "
+"جەزملىيەلمىسىڭىز، كۆڭۈلدىكى تاللانمىنى ئىشلىتىڭ. ئەگەر سىستېمىڭىزنىڭ "
+"قوزغىلىشى مەغلۇپ بولسا، ئورنىتىشنى قايتا سىنىسىڭىز ياكى باشقا تاللانمىنى "
+"تاللىسىڭىز بولىدۇ."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../bootstrap-base.templates:9001
 msgid "Unsupported initrd generator"
-msgstr "Gineadóir initrd gan tacaíocht"
+msgstr "قوللىمايدىغان initrd ھاسىل قىلغۇچ"
 
 #. Type: error
 #. Description
@@ -316,29 +326,28 @@ msgid ""
 "The package ${GENERATOR} that was selected to generate the initrd is not "
 "supported."
 msgstr ""
-"Ní thacaítear le pacáiste ${GENERATOR} a roghnaíodh chun initrd a ghiniúint."
+"تاللىغان initrd ھاسىل قىلىدىغان بوغچا ${GENERATOR} نى ئىشلەتكىلى بولمايدۇ."
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../bootstrap-base.templates:10001
 msgid "generic: include all available drivers"
-msgstr "ginearálta: cuir gach tiománaí san áireamh"
+msgstr "ئادەتتىكى: بارلىق ئىشلەتكىلى بولىدىغان قوزغاتقۇلارنى ئۆز ئىچىگە ئالىدۇ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../bootstrap-base.templates:10001
 msgid "targeted: only include drivers needed for this system"
-msgstr ""
-"spriocdhírithe: ná húsáid ach na tiománaithe atá de dhíth ar an gcóras seo"
+msgstr "نىشان: پەقەت سىستېمىغا لازىملىق قوزغاتقۇلارنىلا ئۆز ئىچىگە ئالىدۇ."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../bootstrap-base.templates:10002
 msgid "Drivers to include in the initrd:"
-msgstr "Tiománaithe le cur san áireamh san initrd:"
+msgstr "initrd ئىچىدە بار بولغان قوزغاتقۇلار:"
 
 #. Type: select
 #. Description
@@ -349,9 +358,9 @@ msgid ""
 "file system. It therefore needs to contain all drivers and supporting "
 "programs required to do that."
 msgstr ""
-"Is é príomhfheidhm initrd ná ligean don eithne an fréamhchóras comhad a "
-"fheistiú. Dá bharr sin, teastaíonn uaidh gach tiománaí agus ríomhchlár taca "
-"atá riachtanach don sprioc seo."
+"initrd نىڭ ئاساسلىق(primary) ئىقتىدارى يادرونىڭ غول ھۆججەت سىستېمىسىنى "
+"ئېگەرلىشىگە يول قويۇش. شۇڭا ئۇ بۇ ئىقتىدارنى تاماملاشقا كېرەكلىك بارلىق "
+"قوزغاتقۇلار ۋە قوللاش پروگراممىلىرىمۇ شۇنداق قىلىشى كېرەك."
 
 #. Type: select
 #. Description
@@ -364,19 +373,18 @@ msgid ""
 "smaller targeted initrd there is a very small chance that not all needed "
 "drivers are included."
 msgstr ""
-"Tá initrd ginearálta i bhfad níos mó ná ceann sainoiriúnaithe, agus "
-"b'fhéidir go mbeadh sé chomh mór sin nach mbeadh luchtóir tosaithe in ann é "
-"a luchtú.  Ach is é an príomhbhuntáiste atá aige ná gur féidir an córas "
-"sprice a thosú ar beagnach crua-earra ar bith.  Leis an initrd "
-"sainoiriúnaithe, tá caolseans nach mbeadh gach tiománaí riachtanach san "
-"áireamh."
+"ئادەتتىكى initrd بىر قانچە  boot loader لاردىمۇ ئوقۇيالمىغۇدەك دەرىجىدە "
+"نىشان قىلىنغاندىنمۇ چوڭ بولۇپ كېتىدىغان ئەھۋال بار بولسىمۇ، كوپ قىسىم قاتتىق "
+"دېتاللاردا سىستېمىنى قوزغىتالايدۇ. سىغىمى كىچىك بولغان initrd دا بولسا "
+"نۇرغۇن قوزغاتقۇلار قىسقارتىۋېتىلگەنلىكتىن، بىر قىسىم قاتتىق دېتاللاردا "
+"سىستېمىنى قوزغىتالماي قېلىشى مۇقەررەر."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:11001
 msgid "Unable to install the selected kernel"
-msgstr "Ní féidir an eithne roghnaithe a shuiteáil."
+msgstr "تاللىغان يادرونى ئورنىتالمايدۇ"
 
 #. Type: error
 #. Description
@@ -385,14 +393,14 @@ msgstr "Ní féidir an eithne roghnaithe a shuiteáil."
 msgid ""
 "An error was returned while trying to install the kernel into the target "
 "system."
-msgstr "Tharla earráid agus an eithne á suiteáil sa sprioc-chóras."
+msgstr "نىشان ھۆججەت سىستېمىسىغا يادرو ئورنىتىشتا خاتالىق يۈز بەردى."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:11001
 msgid "Kernel package: '${KERNEL}'."
-msgstr "Pacáiste eithne: '${KERNEL}'."
+msgstr "يادرو يۇمشاق دېتال بوغچىسى:  '${KERNEL}'"
 
 #. Type: select
 #. Choices
@@ -402,14 +410,14 @@ msgid ""
 "none[ Do not translate what's inside the brackets and just put the "
 "translation for the word \"none\" in your language without any brackets. "
 "This \"none\" means \"no kernel\" ]"
-msgstr "neamhní"
+msgstr "يوق"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:12002
 msgid "Kernel to install:"
-msgstr "Eithne le suiteáil:"
+msgstr "ئورنىتىدىغان يادرو:"
 
 #. Type: select
 #. Description
@@ -419,22 +427,22 @@ msgid ""
 "The list shows the available kernels. Please choose one of them in order to "
 "make the system bootable from the hard drive."
 msgstr ""
-"Taispeántar na heithní atá ar fáil sa liosta.  Roghnaigh ceann acu sa chaoi "
-"go mbeifear in ann an córas a thosú ón tiomántán crua."
+"تىزىملىكتە ئىشلەتكىلى بولىدىغان يادرو كۆرسىتىلدى. سىستېمىنىڭ قاتتىق دىسكىدىن "
+"قوزغىلىشى ئۈچۈن ئۇلارنىڭ ئىچىدىن بىرنى تاللاڭ."
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:14001
 msgid "Continue without installing a kernel?"
-msgstr "Lean ar aghaidh gan eithne a shuiteáil?"
+msgstr "يادرونى ئورناتماي داۋاملاشتۇرامسىز؟"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:14001
 msgid "No installable kernel was found in the defined APT sources."
-msgstr "Níor aimsíodh eithne insuiteáilte sna foinsí sainithe APT."
+msgstr "بەلگىلەنگەن APT مەنبەسى ئورنىتىشقا بولىدىغان يادرونى تاپالمىدى."
 
 #. Type: boolean
 #. Description
@@ -445,30 +453,31 @@ msgid ""
 "kernel later. This is only recommended for experts, otherwise you will "
 "likely end up with a machine that doesn't boot."
 msgstr ""
-"B'fhéidir leat dul ar aghaidh gan eithne, agus d'eithne féin a shuiteáil "
-"amach anseo.  Moltar é seo do shaineolaithe amháin, toisc go bhfuil seans "
-"maith ann nach mbeidh tú in ann do ríomhaire a thosú."
+"يادرونى ئورناتماي داۋاملاشتۇرۇشنى سىناپ، ئاندىن ئۆزىڭىزنىڭ يادروسىنى "
+"ئورناتسىڭىز بولىدۇ. بۇ ئۇسۇلنى مۇتەخەسسىسلەرنىڭ ئىشلىتىشى تەۋسىيە قىلىنىدۇ، "
+"بولمىسا ئاخىرىدا كومپيۇتېر قوزغالمايدىغان ئاقىۋەت كېلىپ چىقىشى مۇمكىن."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:15001
 msgid "Cannot install kernel"
-msgstr "Ní féidir eithne a shuiteáil"
+msgstr "يادرونى ئورنىتالمىدى"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:15001
 msgid "The installer cannot find a suitable kernel package to install."
-msgstr "Ní féidir leis an suiteálaí pacáiste oiriúnach eithne le suiteáil."
+msgstr ""
+"ئورنىتىش پروگراممىسى مۇناسىپ يادرو پروگرامما بوغچىسىنى تېپىپ ئورنىتالمىدى."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:16001
 msgid "Unable to install ${PACKAGE}"
-msgstr "Ní féidir ${PACKAGE} a shuiteáil"
+msgstr "${PACKAGE} ئورنىتالمىدى"
 
 #. Type: error
 #. Description
@@ -478,7 +487,7 @@ msgid ""
 "An error was returned while trying to install the ${PACKAGE} package onto "
 "the target system."
 msgstr ""
-"Tharla earráid agus pacáiste ${PACKAGE} á shuiteáil ar an sprioc-chóras."
+"نىشان سىستېمىغا ${PACKAGE} يۇمشاق دېتال بوغچىسى ئورنىتىشتا خاتالىق كۆرۈلدى."
 
 #. Type: error
 #. Description
@@ -486,7 +495,7 @@ msgstr ""
 #. SUBST0 is a Release file name.
 #: ../bootstrap-base.templates:17001
 msgid "Failed getting Release file ${SUBST0}."
-msgstr "Theip ar chomhad Release ${SUBST0} a fháil."
+msgstr "${SUBST0}  تارقىتىش ھۆججىتىگە ئېرىش مەغلۇپ بولدى."
 
 #. Type: error
 #. Description
@@ -494,7 +503,7 @@ msgstr "Theip ar chomhad Release ${SUBST0} a fháil."
 #. SUBST0 is a Release.gpg file name
 #: ../bootstrap-base.templates:18001
 msgid "Failed getting Release signature file ${SUBST0}."
-msgstr "Theip ar chomhad sínithe Release ${SUBST0} a fháil."
+msgstr "${SUBST0}  تارقىتىش ئىمزالىق ھۆججىتىگە ئېرىش مەغلۇپ بولدى."
 
 #. Type: error
 #. Description
@@ -502,15 +511,14 @@ msgstr "Theip ar chomhad sínithe Release ${SUBST0} a fháil."
 #. SUBST0 is a gpg key ID
 #: ../bootstrap-base.templates:19001
 msgid "Release file signed by unknown key (key id ${SUBST0})"
-msgstr ""
-"Bhí an comhad Release sínithe le heochair anaithnid (aitheantas ${SUBST0})"
+msgstr "تارقىتىش ھۆججىتىگە نامەلۇم ئاچقۇچلۇق ئىمزا قويۇلغان (key id ${SUBST0})"
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../bootstrap-base.templates:20001
 msgid "Invalid Release file: no valid components."
-msgstr "Comhad neamhbhailí Release: gan comhpháirteanna bailí."
+msgstr "ئىناۋەتسىز تارقىتىش ھۆججىتى: ئىناۋەتسىز بۆلەك."
 
 #. Type: error
 #. Description
@@ -518,7 +526,7 @@ msgstr "Comhad neamhbhailí Release: gan comhpháirteanna bailí."
 #. SUBST0 is a filename
 #: ../bootstrap-base.templates:21001
 msgid "Invalid Release file: no entry for ${SUBST0}."
-msgstr "Comhad neamhbhailí Release: gan iontráil ${SUBST0}."
+msgstr "ئىناۋەتسىز تارقىتىش ھۆججىتى: ${SUBST0} تۈرى يوق."
 
 #. Type: error
 #. Description
@@ -530,8 +538,9 @@ msgid ""
 "Couldn't retrieve ${SUBST0}. This may be due to a network problem or a bad "
 "CD, depending on your installation method."
 msgstr ""
-"Níorbh fhéidir ${SUBST0} a ghabháil.  B'fhéidir go raibh fadhb leis an "
-"líonra nó leis an dlúthdhiosca, ag brath ar do mhodh suiteála."
+"${SUBST0} غا ئېرىشەلمىدى. سىزنىڭ ئىشلەتكەن ئورنىتىش ئۇسۇلىڭىزغا ئاساسەن، بۇ "
+"مەسىلە كېلىپ چىقىشىنىڭ سەۋەبى تور كاشىلىسى ياكى CD-ROM بۇزۇلغان بولۇشى "
+"مۇمكىن."
 
 #. Type: error
 #. Description
@@ -543,8 +552,8 @@ msgid ""
 "If you are installing from CD-R or CD-RW, burning the CD at a lower speed "
 "may help."
 msgstr ""
-"Má tá tú ag suiteáil ó CD-R nó CD-RW, bain triail as an dlúthdhiosca a dhó "
-"ag luas níos moille."
+"سىز CD-ROM ياكى CD-ROM ئويغۇچ بىلەن ئورناتقان بولسىڭىز، CD-ROM نى تۆۋەنرەك "
+"سۈرئەتتە ئويۇپ سىناڭ، بۇنداق قىلسىڭىز سىزگە ياردىمى بولۇشى مۇمكىن."
 
 #. Type: text
 #. Description
@@ -552,7 +561,7 @@ msgstr ""
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:23001
 msgid "Retrieving Release file"
-msgstr "Comhad \"Release\" á fháil"
+msgstr "تارقىتىش ھۆججىتىگە ئېرىشىۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -560,7 +569,7 @@ msgstr "Comhad \"Release\" á fháil"
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:24001
 msgid "Retrieving Release file signature"
-msgstr "Síniú comhaid \"Release\" á fháil"
+msgstr "تارقىتىش ھۆججىتىنىڭ ئىمزاسىغا ئېرىشىۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -568,7 +577,7 @@ msgstr "Síniú comhaid \"Release\" á fháil"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:25001
 msgid "Finding package sizes"
-msgstr "Méideanna pacáistí á aimsiú"
+msgstr "بوغچا چوڭلۇقىنى ئىزدەۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -576,7 +585,7 @@ msgstr "Méideanna pacáistí á aimsiú"
 #. Packages is a filename which should not be translated
 #: ../bootstrap-base.templates:26001
 msgid "Retrieving Packages files"
-msgstr "Comhaid \"Packages\" á bhfáil"
+msgstr "بوغچا ھۆججەتلىرىگە ئېرىشىۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -584,7 +593,7 @@ msgstr "Comhaid \"Packages\" á bhfáil"
 #. Packages is a filename which should not be translated
 #: ../bootstrap-base.templates:27001
 msgid "Retrieving Packages file"
-msgstr "Comhad \"Packages\" á fháil"
+msgstr "بوغچا ھۆججىتىگە ئېرىشىۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -592,7 +601,7 @@ msgstr "Comhad \"Packages\" á fháil"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:28001
 msgid "Retrieving packages"
-msgstr "Pacáistí á bhfáil"
+msgstr "بوغچىغا ئېرىشىۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -600,7 +609,7 @@ msgstr "Pacáistí á bhfáil"
 #. "packages" here can be translated
 #: ../bootstrap-base.templates:29001
 msgid "Extracting packages"
-msgstr "Pacáistí á mbaint amach"
+msgstr "بوغچىنى يېشىۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -611,7 +620,7 @@ msgstr "Pacáistí á mbaint amach"
 #. be installed on the base system because of dependency resolution
 #: ../bootstrap-base.templates:31001
 msgid "Installing core packages"
-msgstr "Bunphacáistí á suiteáil"
+msgstr "غوللۇق بوغچىنى ئورنىتىۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -622,14 +631,14 @@ msgstr "Bunphacáistí á suiteáil"
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:32001
 msgid "Unpacking required packages"
-msgstr "Pacáistí riachtanacha á ndíphacáil"
+msgstr "زۆرۈر بوغچىنى يېشىۋاتىدۇ"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:33001
 msgid "Configuring required packages"
-msgstr "Pacáistí riachtanacha á gcumrú"
+msgstr "زۆرۈر بوغچىنى سەپلەۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -638,7 +647,7 @@ msgstr "Pacáistí riachtanacha á gcumrú"
 #. See http://www.debian.org/doc/debian-policy/ch-binary.html#s3.7
 #: ../bootstrap-base.templates:34001
 msgid "Unpacking the base system"
-msgstr "Bunchóras á dhíphacáil"
+msgstr "ئاساسىي سىستېمىنى يېشىۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -647,7 +656,7 @@ msgstr "Bunchóras á dhíphacáil"
 #. See http://www.debian.org/doc/debian-policy/ch-binary.html#s3.7
 #: ../bootstrap-base.templates:35001
 msgid "Configuring the base system"
-msgstr "Bunchóras á chumrú"
+msgstr "ئاساسىي سىستېمىنى سەپلەۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -662,7 +671,7 @@ msgstr "${SECTION}: ${INFO}..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:37001
 msgid "Validating ${SUBST0}..."
-msgstr "${SUBST0} á fhíorú..."
+msgstr "${SUBST0} دەلىللەۋاتىدۇ..."
 
 #. Type: text
 #. Description
@@ -670,7 +679,7 @@ msgstr "${SUBST0} á fhíorú..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:38001
 msgid "Retrieving ${SUBST0}..."
-msgstr "${SUBST0} á fháil..."
+msgstr "${SUBST0} ئىزدەۋاتىدۇ..."
 
 #. Type: text
 #. Description
@@ -678,7 +687,7 @@ msgstr "${SUBST0} á fháil..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:39001
 msgid "Extracting ${SUBST0}..."
-msgstr "${SUBST0} á bhaint amach..."
+msgstr "${SUBST0} يېشىۋاتىدۇ..."
 
 #. Type: text
 #. Description
@@ -686,7 +695,7 @@ msgstr "${SUBST0} á bhaint amach..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:40001
 msgid "Unpacking ${SUBST0}..."
-msgstr "${SUBST0} á dhíphacáil..."
+msgstr "${SUBST0} نى يېشىۋاتىدۇ..."
 
 #. Type: text
 #. Description
@@ -694,14 +703,14 @@ msgstr "${SUBST0} á dhíphacáil..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:41001
 msgid "Configuring ${SUBST0}..."
-msgstr "${SUBST0} á chumrú..."
+msgstr "${SUBST0} سەپلەۋاتىدۇ..."
 
 #. Type: text
 #. Description
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:42001
 msgid "Checking Release signature"
-msgstr "Síniú \"Release\" á sheiceáil"
+msgstr "تارقىتىش ئىمزاسىنى تەكشۈرۈۋاتىدۇ"
 
 #. Type: text
 #. Description
@@ -710,14 +719,14 @@ msgstr "Síniú \"Release\" á sheiceáil"
 #. Release is a filename which should not be translated
 #: ../bootstrap-base.templates:43001
 msgid "Valid Release signature (key id ${SUBST0})"
-msgstr "Síniú bailí ar \"Release\" (aitheantas eochrach ${SUBST0})"
+msgstr "ئىناۋەتلىك تارقىتىش ئىمزاسى (key id ${SUBST0})"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:44001
 msgid "Resolving dependencies of base packages..."
-msgstr "Spleáchóga na mbunphacáistí á réiteach..."
+msgstr "ئاساسىي يۇمشاق دېتال بوغچىسىنىڭ بېقىنىش مۇناسىۋىتىنى ھەل قىلىۋاتىدۇ…"
 
 #. Type: text
 #. Description
@@ -725,7 +734,7 @@ msgstr "Spleáchóga na mbunphacáistí á réiteach..."
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:45001
 msgid "Found additional base dependencies: ${SUBST0}"
-msgstr "Aimsíodh spleáchóga breise: ${SUBST0}"
+msgstr "قوشۇمچە ئاساسىي يۇمشاق دېتال بېقىنىش مۇناسىۋىتىنى تاپتى: ${SUBST0}"
 
 #. Type: text
 #. Description
@@ -733,7 +742,9 @@ msgstr "Aimsíodh spleáchóga breise: ${SUBST0}"
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:46001
 msgid "Found additional required dependencies: ${SUBST0}"
-msgstr "Aimsíodh spleáchóga breise riachtanacha: ${SUBST0}"
+msgstr ""
+"قوشۇمچە زۆرۈر بولغان ئاساسىي يۇمشاق دېتال بېقىنىش مۇناسىۋىتىنى تاپتى: "
+"${SUBST0}"
 
 #. Type: text
 #. Description
@@ -741,14 +752,15 @@ msgstr "Aimsíodh spleáchóga breise riachtanacha: ${SUBST0}"
 #. SUBST0 is a list of packages
 #: ../bootstrap-base.templates:47001
 msgid "Found packages in base already in required: ${SUBST0}"
-msgstr "Aimsíodh pacáistí sa bhunchóras atá riachtanach cheana: ${SUBST0}"
+msgstr ""
+"زۆرۈر تۈرلەردە بولۇشقا تېگىشلىك يۇمشاق دېتال بوغچىسىنى تاپتى: ${SUBST0}"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:48001
 msgid "Resolving dependencies of required packages..."
-msgstr "Spleáchóga na bpacáistí riachtanach á réiteach..."
+msgstr "زۆرۈر يۇمشاق دېتال بوغچىسىنىڭ بېقىنىش مۇناسىۋىتىنى ھەل قىلىۋاتىدۇ…"
 
 #. Type: text
 #. Description
@@ -757,7 +769,7 @@ msgstr "Spleáchóga na bpacáistí riachtanach á réiteach..."
 #. SUBST1 is a mirror
 #: ../bootstrap-base.templates:49001
 msgid "Checking component ${SUBST0} on ${SUBST1}..."
-msgstr "Comhpháirt ${SUBST0} á seiceáil ar ${SUBST1}..."
+msgstr "${SUBST1} دىكى ${SUBST0} بۆلەكنى تەكشۈرۈۋاتىدۇ…"
 
 #. Type: text
 #. Description
@@ -768,7 +780,7 @@ msgstr "Comhpháirt ${SUBST0} á seiceáil ar ${SUBST1}..."
 #. be installed on the base system because of dependency resolution
 #: ../bootstrap-base.templates:50001
 msgid "Installing core packages..."
-msgstr "Bunphacáistí á suiteáil..."
+msgstr "غوللۇق بوغچىنى ئورنىتىۋاتىدۇ…"
 
 #. Type: text
 #. Description
@@ -779,7 +791,7 @@ msgstr "Bunphacáistí á suiteáil..."
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:51001
 msgid "Unpacking required packages..."
-msgstr "Pacáistí riachtanacha á ndíphacáil..."
+msgstr "زۆرۈر بوغچىنى يېشىۋاتىدۇ…"
 
 #. Type: text
 #. Description
@@ -790,35 +802,35 @@ msgstr "Pacáistí riachtanacha á ndíphacáil..."
 #. packages from the core packages depends on them
 #: ../bootstrap-base.templates:52001
 msgid "Configuring required packages..."
-msgstr "Pacáistí riachtanacha á gcumrú..."
+msgstr "زۆرۈر بوغچىنى سەپلەۋاتىدۇ..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:53001
 msgid "Installing base packages..."
-msgstr "Bunphacáistí á suiteáil..."
+msgstr "ئاساسىي بوغچىنى ئورنىتىۋاتىدۇ..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:54001
 msgid "Unpacking the base system..."
-msgstr "Bunchóras á dhíphacáil..."
+msgstr "ئاساسىي سىستېما بوغچىسىنى يېشىۋاتىدۇ..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:55001
 msgid "Configuring the base system..."
-msgstr "Bunchóras á chumrú..."
+msgstr "ئاساسىي سىستېمىنى سەپلەۋاتىدۇ..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:56001
 msgid "Base system installed successfully."
-msgstr "D'éirigh le suiteáil an bhunchórais."
+msgstr "ئاساسىي سىستېما مۇۋەپپەقىيەتلىك ئورنىتىلدى."
 
 #. Type: error
 #. Description
@@ -826,7 +838,7 @@ msgstr "D'éirigh le suiteáil an bhunchórais."
 #. :sl2:
 #: ../bootstrap-base.templates:57001
 msgid "Debootstrap warning"
-msgstr "Rabhadh Debootstrap"
+msgstr "Debootstrap ئاگاھلاندۇرۇشى"
 
 #. Type: error
 #. Description
@@ -834,7 +846,7 @@ msgstr "Rabhadh Debootstrap"
 #. :sl2:
 #: ../bootstrap-base.templates:57001
 msgid "Warning: ${INFO}"
-msgstr "Rabhadh: ${INFO}"
+msgstr "ئاگاھلاندۇرۇش: ${INFO}"
 
 #. Type: text
 #. Description
@@ -842,21 +854,21 @@ msgstr "Rabhadh: ${INFO}"
 #. :sl2:
 #: ../bootstrap-base.templates:58001
 msgid "Retrying failed download of ${SUBST0}"
-msgstr "Iarracht eile ar ${SUBST0} a íosluchtú"
+msgstr "چۈشۈرۈش مەغلۇپ بولغان ${SUBST0} نى قايتا سىناش"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:60001
 msgid "Selecting the kernel to install..."
-msgstr "Eithne le suiteáil á roghnú..."
+msgstr "ئورنىتىدىغان يادرونى تاللاۋاتىدۇ…"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../bootstrap-base.templates:61001
 msgid "Installing the kernel..."
-msgstr "Eithne á suiteáil..."
+msgstr "يادرونى ئورنىتىۋاتىدۇ…"
 
 #. Type: text
 #. Description
@@ -864,4 +876,4 @@ msgstr "Eithne á suiteáil..."
 #. SUBST0 is a package name
 #: ../bootstrap-base.templates:62001
 msgid "Installing the kernel - retrieving and installing ${SUBST0}..."
-msgstr "Eithne á suiteáil - ${SUBST0} á fháil agus á shuiteáil..."
+msgstr "يادرونى ئورنىتىۋاتىدۇ - ${SUBST0} نى قوبۇللاپ ئورنىتىۋاتىدۇ…"
