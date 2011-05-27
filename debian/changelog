@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu32) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu32) oneiric; urgency=low
 
   * Add .disk/mini-info to x86 mini.iso images, loosely based on the format
     of .disk/info (LP: #765254).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 26 May 2011 21:56:59 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 27 May 2011 15:07:58 +0100
 
 debian-installer (20101020ubuntu31) oneiric; urgency=low
 
