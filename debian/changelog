@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu33) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 31 May 2011 20:14:00 +0100
+
 debian-installer (20101020ubuntu32) oneiric; urgency=low
 
   * Add .disk/mini-info to x86 mini.iso images, loosely based on the format
