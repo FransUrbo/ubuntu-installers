@@ -1,9 +1,9 @@
-grub-installer (1.64ubuntu2) UNRELEASED; urgency=low
+grub-installer (1.64ubuntu2) oneiric; urgency=low
 
   * Remove 'quiet' from target system command line if debian-installer/quiet
     is set to false.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 31 May 2011 10:03:35 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 31 May 2011 10:04:38 +0100
 
 grub-installer (1.64ubuntu1) oneiric; urgency=low
 
