@@ -475,7 +475,10 @@ for u_param in $user_params; do
 	case "$u_param" in
 	    quiet)
 		got_quiet=1
-		defopt_params=${defopt_params:+$defopt_params }$u_param ;;
+		if ! db_get debian-installer/quiet || [ "$RET" = true ]; then
+			defopt_params=${defopt_params:+$defopt_params }$u_param
+		fi
+		;;
 	    splash)
 		got_splash=1
 		;;
@@ -498,7 +501,8 @@ if [ "$grub_version" = grub2 ]; then
 	   (! db_get debian-installer/splash || [ "$RET" = true ]); then
 		defopt_params="splash${defopt_params:+ $defopt_params}"
 	fi
-	if [ -z "$got_quiet" ]; then
+	if [ -z "$got_quiet" ] && \
+	   (! db_get debian-installer/quiet || [ "$RET" = true ]); then
 		defopt_params="quiet${defopt_params:+ $defopt_params}"
 	fi
 	# (quoting to deconfuse vim)
