@@ -1,0 +1,4 @@
+fatload mmc 0:1 0x80000000 uImage
+fatload mmc 0:1 0x81600000 uInitrd
+setenv bootargs vram=32M mem=456M@0x80000000 mem=512M@0xA0000000 fixrtc quiet splash
+bootm 0x80000000 0x81600000

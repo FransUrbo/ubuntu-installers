@@ -1,0 +1,60 @@
+#!/bin/bash -x
+#
+# This script generates a partitioned image blob for use with ARM systems that
+# require a filesystem + MBR partition table. It takes in a FAT filesystem blob
+#
+# Parts of this script lifted from post-boot-armel+dove in debian-cd
+#
+# Copyright (C) 2011 Canonical
+# Authors: Michael Casadevall <michael.casadevall@canonical.com>
+
+set -e
+
+FAT_IMAGE="$1"
+IMAGE="$2"
+
+log() {
+    echo "$*" >&2
+}
+
+die() {
+    log "$@"
+    exit 1
+}
+
+file_length() {
+    stat -c %s "$1"
+}
+
+# Make sure we have our input
+if [ ! -e $FAT_IMAGE ]; then
+    die "no file found"
+fi
+
+IMAGE_SIZE="$(file_length "$FAT_IMAGE")"
+
+# round size to next block; note we add 512 for MBR + partition table; also
+# note we assume blocks of 512 B
+IMG_SIZE_BLOCKS="$(((512 + $IMAGE_SIZE + 512 - 1) / 512))"
+
+# create the blank disk image (and this is a sparse file)
+dd if=/dev/zero of="$IMAGE" bs=512 count=0 seek="$IMG_SIZE_BLOCKS" 2>/dev/null
+
+log "initializing disk label (MBR and partition table) ..."
+parted -s "$IMAGE" mklabel msdos
+
+# outputs actual partition start offset, end offset, and length, suffixed with
+# B
+get_part_data() {
+    local n="$1"
+    LANG=C parted -s "$IMAGE" unit B print | awk "/^ $n / { print \$2 \" \" \$3 \" \" \$4 }"
+}
+
+# create partition for the VFAT
+log "creating VFAT partition..."
+parted -s "$IMAGE" 'mkpart primary fat32 0 -1s'
+
+VFAT_START_B="`(set -- $(get_part_data 1); echo "$1")`"
+log "writing vfat contents..."
+dd conv=notrunc bs="${VFAT_START_B%B}" if="$FAT_IMAGE" of="$IMAGE" seek=1 2>/dev/null
+parted -s "$IMAGE" set 1 boot on
