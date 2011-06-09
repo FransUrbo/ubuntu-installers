@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 #
 # This script generates a partitioned image blob for use with ARM systems that
 # require a filesystem + MBR partition table. It takes in a FAT filesystem blob

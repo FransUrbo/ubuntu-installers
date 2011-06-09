@@ -1,0 +1,4 @@
+fatload mmc 0:1 0x80000000 uImage
+fatload mmc 0:1 0x81600000 uInitrd
+setenv bootargs vram=12M fixrtc quiet debian-installer/framebuffer=false console=ttyO2,115200n8
+bootm 0x80000000 0x81600000
