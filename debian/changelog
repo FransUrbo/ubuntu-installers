@@ -1,3 +1,9 @@
+base-installer (1.119ubuntu2) UNRELEASED; urgency=low
+
+  * Added omap4 subarchitecture
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Mon, 13 Jun 2011 19:09:15 +0000
+
 base-installer (1.119ubuntu1) oneiric; urgency=low
 
   * Resynchronise with Debian.  Remaining changes:
