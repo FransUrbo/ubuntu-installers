@@ -4,7 +4,7 @@ debian-installer (20101020ubuntu36) UNRELEASED; urgency=low
     of using a symlink.
   * build/config/armel/omap4.cfg: flip order or netboot and cdrom targets to
     match other *.cfg.
-  * config/armel.cfg: order targets alphabetically.
+  * build/config/armel.cfg: order targets alphabetically.
   * Add vexpress netboot target to armel images, copied from versatile; this
     is useful to run an ARMv7 userspace in QEMU.
     - build/config/armel.cfg: list vexpress.
