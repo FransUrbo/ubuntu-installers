@@ -5,10 +5,10 @@ debian-installer (20101020ubuntu36) UNRELEASED; urgency=low
   * build/config/armel/omap4.cfg: flip order or netboot and cdrom targets to
     match other *.cfg.
   * build/config/armel.cfg: order targets alphabetically.
-  * Add vexpress netboot target to armel images, copied from versatile; this
-    is useful to run an ARMv7 userspace in QEMU.
-    - build/config/armel.cfg: list vexpress.
-    - build/config/armel/{vexpress.cfg,vexpress/}: copy from versatile,
+  * Add linaro-vexpress netboot target to armel images, copied from versatile;
+    this is useful to run an ARMv7 userspace in QEMU.
+    - build/config/armel.cfg: list linaro-vexpress.
+    - build/config/armel/linaro-{vexpress.cfg,vexpress/}: copy from versatile,
       tweaking comments and setting kernel version to
       2.6.38-1002-linaro-vexpress.
 
