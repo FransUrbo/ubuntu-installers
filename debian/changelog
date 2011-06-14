@@ -11,6 +11,11 @@ debian-installer (20101020ubuntu36) UNRELEASED; urgency=low
     - build/config/armel/linaro-{vexpress.cfg,vexpress/}: copy from versatile,
       tweaking comments and setting kernel version to
       2.6.38-1002-linaro-vexpress.
+  * Add linaro-omap netboot target to armel images, copied from versatile;
+    this is useful for all OMAP2+ boards supported in this kernel.
+    - build/config/armel.cfg: list linaro-omap.
+    - build/config/armel/linaro-{omap.cfg,omap/}: copy from versatile,
+      tweaking comments and setting kernel version to 2.6.38-1002-linaro-omap.
 
  -- Loïc Minier <loic.minier@linaro.org>  Tue, 14 Jun 2011 10:50:22 +0200
 
