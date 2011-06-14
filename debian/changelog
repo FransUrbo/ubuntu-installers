@@ -20,6 +20,8 @@ debian-installer (20101020ubuntu36) UNRELEASED; urgency=low
     has been unused for years, allows dropping Debian delta and a build-dep,
     demoting this build-dep to universe and can be resurrected from history if
     needs be, albeit i.MX51 support would likely use U-Boot nowadays.
+  * Disable linaro-omap and linaro-vexpress flavors for now as the kernel
+    packages are needed in main first; see LP #797160.
 
  -- Loïc Minier <loic.minier@linaro.org>  Tue, 14 Jun 2011 10:50:22 +0200
 
