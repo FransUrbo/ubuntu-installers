@@ -1,8 +1,8 @@
-base-installer (1.119ubuntu3) UNRELEASED; urgency=low
+base-installer (1.119ubuntu3) oneiric; urgency=low
 
   * Adjust for Linux 3.0.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 16 Jun 2011 20:53:40 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 16 Jun 2011 20:54:48 +0100
 
 base-installer (1.119ubuntu2) oneiric; urgency=low
 
