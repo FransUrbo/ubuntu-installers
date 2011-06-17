@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu37) oneiric; urgency=low
+
+  * Add parted [armel] build-dep; needed for armel+omap and armel+omap4
+    netboot images (via build/boot/arm/generate-partitioned-filesystem).
+
+ -- Loïc Minier <loic.minier@linaro.org>  Sat, 18 Jun 2011 00:41:24 +0200
+
 debian-installer (20101020ubuntu36) oneiric; urgency=low
 
   [ Loïc Minier ]
