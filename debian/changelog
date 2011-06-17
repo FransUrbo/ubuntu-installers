@@ -1,5 +1,6 @@
 debian-installer (20101020ubuntu36) UNRELEASED; urgency=low
 
+  [ Loïc Minier ]
   * Rename build/pkg-lists/cdrom/arm/ to build/pkg-lists/cdrom/armel/ instead
     of using a symlink.
   * build/config/armel/omap4.cfg: flip order or netboot and cdrom targets to
@@ -22,6 +23,9 @@ debian-installer (20101020ubuntu36) UNRELEASED; urgency=low
     needs be, albeit i.MX51 support would likely use U-Boot nowadays.
   * Disable linaro-omap and linaro-vexpress flavors for now as the kernel
     packages are needed in main first; see LP #797160.
+
+  [ Colin Watson ]
+  * Move to 3.0-1 kernels.
 
  -- Loïc Minier <loic.minier@linaro.org>  Tue, 14 Jun 2011 10:50:22 +0200
 
