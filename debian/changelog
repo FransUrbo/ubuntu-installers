@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu38) UNRELEASED; urgency=low
+
+  * control: fix typo in comment about dosfstools bdep.
+
+ -- Loïc Minier <loic.minier@linaro.org>  Mon, 20 Jun 2011 18:47:15 +0200
+
 debian-installer (20101020ubuntu37) oneiric; urgency=low
 
   * Add parted [armel] build-dep; needed for armel+omap and armel+omap4

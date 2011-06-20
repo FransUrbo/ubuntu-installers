@@ -87,8 +87,8 @@ Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctr
 #		Of course i386/amd64 use this for floppies, CDs etc.
 #		ia64 uses it for floppies (?)
 #		m68k uses it for atari floppies
-#		armel uses it fr omap3/4 netboot images and requires 
-#			3.0.9-1ubuntu2 to create bootable filesystems on OMAP
+#		armel uses it for omap3/4 netboot images and requires
+#		3.0.9-1ubuntu2 to create bootable filesystems on OMAP
 #	- cpio
 #		For creating initramfs images.
 #	- devio [armeb armel]
