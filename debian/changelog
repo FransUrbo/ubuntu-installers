@@ -1,6 +1,10 @@
 debian-installer (20101020ubuntu38) UNRELEASED; urgency=low
 
+  [ Loïc Minier ]
   * control: fix typo in comment about dosfstools bdep.
+
+  [ Colin Watson ]
+  * Move to 3.0-2 kernels.
 
  -- Loïc Minier <loic.minier@linaro.org>  Mon, 20 Jun 2011 18:47:15 +0200
 
