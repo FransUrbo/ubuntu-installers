@@ -1,6 +1,7 @@
 debian-installer (20101020ubuntu40) UNRELEASED; urgency=low
 
   * Move armel/linaro-omap to 2.6.39-1001 kernels.
+  * Move armel/omap4 to 2.6.38-1309 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 28 Jun 2011 11:19:40 +0100
 
