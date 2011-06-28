@@ -1,7 +1,13 @@
 debian-installer (20101020ubuntu40) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Move armel/linaro-omap to 2.6.39-1001 kernels.
   * Move armel/omap4 to 2.6.38-1309 kernels.
+
+  [ Loïc Minier ]
+  * build/config/armel.cfg, armel/versatile.cfg: disable versatile and revert
+    now useless Ubuntu changes since the versatile flavor was disabled in the
+    linux source package.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 28 Jun 2011 11:19:40 +0100
 
