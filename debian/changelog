@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu41) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu41) oneiric; urgency=low
 
   * Move armel/linaro-vexpress to 2.6.39-1001 kernels.
   * Move to 3.0-3 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 30 Jun 2011 10:03:47 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 04 Jul 2011 16:32:44 +0100
 
 debian-installer (20101020ubuntu40) oneiric; urgency=low
 
