@@ -1,3 +1,11 @@
+debian-installer (20101020ubuntu43) oneiric; urgency=low
+
+  * Make nic-modules udeb optional on armel; currently not present on
+    armel+vexpress (builtin ethernet is built into the kernel); some USB NICs
+    should still be possible as modules, but that's optional; LP: #805596.
+
+ -- Loïc Minier <loic.minier@linaro.org>  Mon, 04 Jul 2011 19:17:13 +0200
+
 debian-installer (20101020ubuntu42) oneiric; urgency=low
 
   * Add multiarch library directories to mklibs' search path, in case
