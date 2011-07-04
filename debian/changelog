@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu42) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu42) oneiric; urgency=low
 
   * Add multiarch library directories to mklibs' search path, in case
     library udebs decide to install into them.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 04 Jul 2011 17:04:31 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 04 Jul 2011 17:05:32 +0100
 
 debian-installer (20101020ubuntu41) oneiric; urgency=low
 
