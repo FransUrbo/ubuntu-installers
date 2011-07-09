@@ -1,8 +1,14 @@
-debian-installer (20101020ubuntu44) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu45) UNRELEASED; urgency=low
 
   * Move to 3.0.0-4 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sat, 09 Jul 2011 16:59:11 +0100
+
+debian-installer (20101020ubuntu44) oneiric; urgency=low
+
+  * No-change rebuild to pick up new omap4 kernels for netboot images. 
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Wed, 06 Jul 2011 16:10:14 -0600
 
 debian-installer (20101020ubuntu43) oneiric; urgency=low
 
