@@ -215,10 +215,17 @@ msgstr "您至少需要 32M 内存来运行 Ubuntu 安装程序。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
+#, fuzzy
+#| msgid ""
+#| "You should have space on your hard disk to create a new disk partition of "
+#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
+#| "least 400 megabytes for a minimal server installation. You'll need more "
+#| "disk space to install additional packages, depending on what you wish to "
+#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
-"least 2 gigabytes to install a standard Ubuntu desktop system or at least "
-"400 megabytes for a minimal server installation. You'll need more disk space "
+"least 5 gigabytes to install a standard Ubuntu desktop system or at least "
+"500 megabytes for a minimal server installation. You'll need more disk space "
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
