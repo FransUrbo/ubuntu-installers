@@ -1,4 +1,4 @@
-debian-installer (20101020ubuntu46) oneiric; urgency=low
+debian-installer (20101020ubuntu46) UNRELEASED; urgency=low
 
   * Update minimum disk space requirements for installing Ubuntu.  Thanks to
     Matheus de Araújo for the patch.  (LP: #758942) 
