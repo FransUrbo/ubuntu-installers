@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu46) UNRELEASED; urgency=low
+
+  * Publish MLO and u-boot.bin for omap netboot targets (LP:#808810)
+
+ -- Emmet Hikory <persia@ubuntu.com>  Mon, 11 Jul 2011 23:47:22 +0900
+
 debian-installer (20101020ubuntu45) oneiric; urgency=low
 
   * Move to 3.0.0-4 kernels.
