@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu46) oneiric; urgency=low
+
+  * Update minimum disk space requirements for installing Ubuntu.  Thanks to
+    Matheus de Araújo for the patch.  (LP: #758942) 
+
+ -- Brian Murray <brian@ubuntu.com>  Mon, 11 Jul 2011 07:58:33 -0700
+
 debian-installer (20101020ubuntu45) oneiric; urgency=low
 
   * Move to 3.0.0-4 kernels.
