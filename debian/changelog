@@ -1,7 +1,11 @@
 debian-installer (20101020ubuntu46) UNRELEASED; urgency=low
 
+  [ Brian Murray ]
   * Update minimum disk space requirements for installing Ubuntu.  Thanks to
     Matheus de Araújo for the patch.  (LP: #758942) 
+
+  [ Emmet Hikory ]
+  * Publish MLO and u-boot.bin for omap netboot targets (LP: #808810)
 
  -- Brian Murray <brian@ubuntu.com>  Mon, 11 Jul 2011 07:58:33 -0700
 
