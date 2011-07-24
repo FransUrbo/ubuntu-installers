@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu48) UNRELEASED; urgency=low
+
+  * Move to 3.0.0-7 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 24 Jul 2011 16:44:45 +0100
+
 debian-installer (20101020ubuntu47) oneiric; urgency=low
 
   * Move to 3.0.0-6 kernels.
