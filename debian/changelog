@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu53) UNRELEASED; urgency=low
+
+  * Bump amd64 netboot image size by a megabyte or so; the addition of WPA
+    support makes this a bit bigger.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 13 Aug 2011 00:08:23 +0100
+
 debian-installer (20101020ubuntu52) oneiric; urgency=low
 
   * No-change rebuild to pick up new components.
