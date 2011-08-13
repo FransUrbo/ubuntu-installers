@@ -1,10 +1,10 @@
-debian-installer (20101020ubuntu53) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu53) oneiric; urgency=low
 
   * Bump amd64 netboot image size by a megabyte or so; the addition of WPA
     support makes this a bit bigger.
   * Move armel/omap4 to 3.0.0-1201 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Sat, 13 Aug 2011 00:08:23 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 13 Aug 2011 12:18:32 +0100
 
 debian-installer (20101020ubuntu52) oneiric; urgency=low
 
