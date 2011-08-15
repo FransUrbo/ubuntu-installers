@@ -2,6 +2,7 @@ debian-installer (20101020ubuntu54) UNRELEASED; urgency=low
 
   * Bump powerpc netboot image size by two megabytes to account for the
     addition of WPA support.
+  * Disable armel/linaro-vexpress until LP #826021 is fixed.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 15 Aug 2011 13:33:31 +0100
 
