@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu55) UNRELEASED; urgency=low
+
+  * And bump the armel/omap netboot image size by two megabytes too, also to
+    account for the addition of WPA support.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 15 Aug 2011 16:02:21 +0100
+
 debian-installer (20101020ubuntu54) oneiric; urgency=low
 
   * Bump powerpc netboot image size by two megabytes to account for the
