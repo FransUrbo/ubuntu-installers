@@ -1,9 +1,9 @@
-base-installer (1.119ubuntu4) UNRELEASED; urgency=low
+base-installer (1.119ubuntu4) oneiric; urgency=low
 
   * Honour apt-setup/security_path when constructing initial security
     entries in sources.list (LP: #820306).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 16 Aug 2011 10:50:54 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 16 Aug 2011 10:53:17 +0100
 
 base-installer (1.119ubuntu3) oneiric; urgency=low
 
