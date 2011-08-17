@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu56) UNRELEASED; urgency=low
+
+  * Move armel/omap4 to 3.0.0-1202 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 18 Aug 2011 00:39:16 +0100
+
 debian-installer (20101020ubuntu55) oneiric; urgency=low
 
   * And bump the armel/omap netboot image size by two megabytes too, also to
