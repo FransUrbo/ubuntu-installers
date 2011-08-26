@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu59) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new kernel.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 26 Aug 2011 16:08:52 +0100
+
 debian-installer (20101020ubuntu58) oneiric; urgency=low
 
   * Move to 3.0.0-9 kernels.
