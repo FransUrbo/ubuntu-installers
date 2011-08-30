@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu60) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu60) oneiric; urgency=low
 
   * tell d-i about the new location of MLO for panda netboot images
   * drop build-dependency on omap4 x-loader
 
- -- Oliver Grawert <ogra@ubuntu.com>  Tue, 30 Aug 2011 18:10:19 +0200
+ -- Oliver Grawert <ogra@ubuntu.com>  Wed, 31 Aug 2011 00:03:05 +0100
 
 debian-installer (20101020ubuntu59) oneiric; urgency=low
 
