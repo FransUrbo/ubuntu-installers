@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu60) UNRELEASED; urgency=low
+
+  * tell d-i about the new location of MLO for panda netboot images
+
+ -- Oliver Grawert <ogra@ubuntu.com>  Tue, 30 Aug 2011 18:10:19 +0200
+
 debian-installer (20101020ubuntu59) oneiric; urgency=low
 
   * No-change rebuild to pick up new kernel.
