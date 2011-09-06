@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu62) UNRELEASED; urgency=low
+
+  * Move armel/omap4 to 3.0.0-1204 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 06 Sep 2011 14:04:19 +0100
+
 debian-installer (20101020ubuntu61) oneiric; urgency=low
 
   * Move to 3.0.0-10 kernels.
