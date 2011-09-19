@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:57+0000\n"
-"Last-Translator: Tiago Hillebrandt <tiagoscd@yahoo.com.br>\n"
+"PO-Revision-Date: 2011-07-18 21:22+0000\n"
+"Last-Translator: André Gondim <Unknown>\n"
 "Language-Team: Portuguese (Brazil) <pt_BR@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:04+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -219,13 +219,6 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -233,11 +226,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Você deve ter espaço no disco para criar uma partição de pelo menos 2 "
-"gigabytes para a instalação desktop padrão do Ubuntu, ou pelo menos 400 "
-"megabytes para uma instalação de servidor. Você precisará de mais espaço em "
-"disco para instalar outros pacotes adicionais, dependendo de como deseja "
-"utilizar seu novo sistema Ubuntu."
+"Você deve ter espaço no seu disco rígido para criar uma nova partição de "
+"disco de pelo 5 gigabytes para instalar o sistema Ubuntu estação de trabalho "
+"padrão ou pelo menos 500 megabytes para instalação  mínima de servidor. Você "
+"precisará de mais espaço em disco para instalar pacotes adicionais, "
+"dependendo do que você deseja fazer com seu novo sistema Ubuntu."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

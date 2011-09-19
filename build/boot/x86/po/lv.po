@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -221,13 +221,6 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -235,11 +228,6 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Uz jūsu datora vajadzētu būt brīvai vietai, lai izveidotu vismaz jaunu, 2 "
-"gigabaitus lielu diska sadaļu standarta Ubuntu darbvirsmas sistēmai, vai arī "
-"vismaz 400 megabaiti minimālai servera instalēšanai. Jums vajadzēs vairāk "
-"diska vietas, lai uzinstalētu papildus pakotnes; to apjoms atkarīgs no tā, "
-"ko jūs vēlēsieties darīt ar jauno Ubuntu sistēmu."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:52+0000\n"
-"Last-Translator: Bruno Patri <bruno.patri@gmail.com>\n"
+"PO-Revision-Date: 2011-07-15 14:35+0000\n"
+"Last-Translator: Pierre Slamich <pierre.slamich@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -224,13 +224,6 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -238,12 +231,12 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Vous devez disposer de suffisamment d'espace sur votre disque dur pour créer "
-"une nouvelle partition d'au moins 2 gigaoctets pour installer un système "
-"d'exploitation standard Ubuntu ou d'au moins 400 mégaoctets pour une "
+"Vous devez avoir de l'espace sur votre disque dur pour créer une nouvelle "
+"partition de disque d'au moins 5 gigaoctets pour installer un système "
+"d'exploitation standard Ubuntu ou d'au moins 500 mégaoctets pour une "
 "installation serveur minimale. Vous aurez besoin de plus d'espace disque "
-"pour installer des paquets additionels, cela dépend de ce que vous désirez "
-"faire avec votre nouveau système Ubuntu."
+"pour installer des paquets supplémentaires, selon ce que vous voulez faire "
+"avec votre nouveau système Ubuntu."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

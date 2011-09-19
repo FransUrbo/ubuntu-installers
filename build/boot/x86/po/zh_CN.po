@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:52+0000\n"
-"Last-Translator: Liu Qishuai <lqs.buaa@gmail.com>\n"
+"PO-Revision-Date: 2011-08-20 15:52+0000\n"
+"Last-Translator: 英华 <wantinghard@gmail.com>\n"
 "Language-Team: Chinese (China) <zh_CN@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -215,13 +215,6 @@ msgstr "您至少需要 32M 内存来运行 Ubuntu 安装程序。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -229,9 +222,9 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"您的硬盘上要有足够的空间，安装桌面版，您要创建至少 2G 大小的新分区，服务器模"
-"式的最小安装需要至少 400M 空间。如果您要安装额外的软件包，所需空间大小视您的"
-"需要而定.。"
+"要安装标准的Ubuntu桌面系统，你的硬盘上需要有足够空间来创建一个至少5GB的新分"
+"区；安装最小服务器系统需要至少 500MB。根据您对 Ubuntu 系统的使用需求，可能将"
+"需要更多磁盘空间来安装额外的软件包。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

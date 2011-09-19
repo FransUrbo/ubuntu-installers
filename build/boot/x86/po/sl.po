@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-04-10 05:15+0000\n"
+"PO-Revision-Date: 2011-09-12 11:18+0000\n"
 "Last-Translator: Sir Drinksalot <Unknown>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-11 15:33+0000\n"
-"X-Generator: Launchpad (build 12792)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -284,7 +284,7 @@ msgid ""
 msgstr ""
 "Pritisnite <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">Control in F nato 1</phrase> za kazalo pomoči, ali vnosno tipko (enter) "
-"za $<BOOTPROMPT}"
+"za ${BOOTPROMPT}"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
@@ -1089,7 +1089,7 @@ msgid ""
 "replaceable>/copyright."
 msgstr ""
 "Po namestitvi so natančni pogoji razširjanja za vsak paket zapisani v "
-"datotekav v /usr/share/doc/<replaceable>imepaketa</replaceable>/copyright."
+"datotekah v /usr/share/doc/<replaceable>imepaketa</replaceable>/copyright."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:776

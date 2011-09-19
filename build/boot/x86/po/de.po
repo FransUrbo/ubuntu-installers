@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-04-03 23:29+0000\n"
-"Last-Translator: Dennis Baudys <Unknown>\n"
+"PO-Revision-Date: 2011-07-26 08:28+0000\n"
+"Last-Translator: Wolf Goetze <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -219,13 +219,6 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -233,12 +226,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Sie sollten noch Platz auf der Festplatte für eine neue Partition haben: "
-"mindestens 2 Gigabyte für die Installation des Standard Ubuntu "
-"Desktopsystems oder mindestens 400 Megabyte für eine minimale Server-"
-"Installation. Je nachdem, was Sie mit Ihrem neuen Ubuntu System machen "
-"möchten, brauchen Sie mehr Platz, um zusätzliche Softwarepakete zu "
-"installieren."
+"Sie sollten auf Ihrer Festplatte ausreichend Platz zum Erstellen einer neuen "
+"Partition von 5 Gigabyte Größe für einen typischen Ubuntu-"
+"Arbeitsplatzrechner bzw. 500 Megabyte für eine minimale Serverinstallation "
+"haben. Abhängig vom geplanten Einsatzzweck Ihres neuen Ubuntu-Systems werden "
+"Sie weiteren Festplattenplatz zum Installieren zusätzlicher Pakete benötigen."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

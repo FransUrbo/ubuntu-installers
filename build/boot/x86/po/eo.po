@@ -8,20 +8,20 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:51+0000\n"
-"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
+"PO-Revision-Date: 2011-07-16 02:49+0000\n"
+"Last-Translator: Gabriel Calegari <Unknown>\n"
 "Language-Team: Esperanto <eo@li.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Dumŝargaj Helppaĝoj por la Instalilo"
+msgstr "it"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
@@ -39,8 +39,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Tio ĉi estas instalilo por ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. Ĝi "
-"kompiliĝi en ${BUILD_DATE}."
+"Tio estas instalilo por ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. Ĝi "
+"estis kompilita je ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -48,8 +48,8 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"Tio ĉi estas viva sistemo por ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
-"Ĝi estis kompilita en ${BUILD_DATE}."
+"Tio estas viva sistemo por ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. Ĝi "
+"estis kompilita je ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -74,7 +74,7 @@ msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "Tiu ĉi paĝo, la helpindekso"
+msgstr "Ĉi tiu paĝo, la helpindekso"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
@@ -84,12 +84,12 @@ msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "Necesaĵoj por instalo de ${DISTRIBUTION_NAME}."
+msgstr "Postuloj por instalo de ${DISTRIBUTION_NAME}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "Necesaĵoj por ruli ${DISTRIBUTION_NAME}-on."
+msgstr "Postuloj por ruli ${DISTRIBUTION_NAME}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
@@ -99,7 +99,7 @@ msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr "Praŝargaj metodoj por specialaj manieroj uzi ĉi tiun sistemon."
+msgstr "Praŝargaj metodoj por specialaj manieroj por uzi ĉi tiun sistemon."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -109,7 +109,7 @@ msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "Pliaj ŝargometodoj; savi kadukiĝintan sistemon."
+msgstr "Pliaj ŝargometodoj; helpanta rompitan sistemon."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
@@ -190,12 +190,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "Premu F2 ĝis F10 por delaloj, aŭ ENIGI por ${BOOTPROMPT}"
+msgstr "Premu F2 ĝis F10 por delaloj, aŭ ENIGAN KLAVON por ${BOOTPROMPT}"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr "Premu F2 ĝis F10 por detaloj aŭ Eskapi por forlasi helpon."
+msgstr "Premu F2 ĝis F10 por detaloj aŭ eskapan klavon por forlasi helpon."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
@@ -205,7 +205,7 @@ msgstr "<keycap>F2</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "NECESAĴOJ POR INSTALI UBUNTU-ON"
+msgstr "POSTULOJ POR INSTALI UBUNTU"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
@@ -237,16 +237,16 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"Por pli da informoj, vidu la Instal-manlibron aŭ la Oftajn Demandojn; ambaŭ "
-"dokumentoj haveblas je la retejo de Ubuntu, <ulink url=\"http://www.ubuntu."
-"com/\" />"
+"Por pli da informoj, vidu la Instal-manlibron aŭ la oftajn demandojn; ambaŭ "
+"dokumentoj disponeblas ĉe la retejo de Ubuntu, <ulink url=\"http://www."
+"ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"Vi bezonas almenaŭ 384 megabajtojn da ĉefmemoro por uzi tiun ĉi vivan Ubuntu-"
+"Vi bezonas almenaŭ 384 megabajtojn da ĉefmemoro por uzi ĉi tiun vivan Ubuntu-"
 "sistemon."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -256,7 +256,7 @@ msgid ""
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
 "La viva sistemo ne postulas ajnan lokon sur via fiksita disko. Tamen, "
-"ekzistantaj Linuksaj permut-subdiskoj (swap) estos uzataj, se disponeblaj."
+"ekzistantaj Linuksaj permut-subdiskoj estos uzataj, se disponeblaj."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -264,8 +264,8 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"Vidu la Oftajn Demandojn por pli da informoj; tiu ĉi dokumento haveblas je "
-"la retejo de Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
+"Vidu la oftajn demandojn por pli da informoj; ĉi tiu dokumento disponeblas "
+"ĉe la retejo de Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
@@ -281,14 +281,14 @@ msgid ""
 "${BOOTPROMPT}"
 msgstr ""
 "Premu <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
-"\">stirklavon kaj F kaj poste 1</phrase> por la helpindekso, aŭ ENIGI por "
-"${BOOTPROMPT}"
+"\">stirklavon kaj F kaj poste 1</phrase> por la helpindekso aŭ ENIGAN KLAVON "
+"por ${BOOTPROMPT}"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Premu F1 por la helpindekso, aŭ Eskapon por fini helpon."
+msgstr "Premu F1 por la helpindekso, aŭ eskapan klavon por eliri helpon."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
@@ -313,22 +313,22 @@ msgstr "instali"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr "Instali Ubuntu-on"
+msgstr "Instali Ubuntu"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr "Starti la instalon -- tio ĉi estas la defaŭlta opcio."
+msgstr "Starti la instalon -- tio estas la apriora opcio."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
-msgstr "eksperto"
+msgstr "sperta"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "Startas la instalon en eksperta reĝimo, por maksimuma kontrolo."
+msgstr "Starti la instalon en sperta reĝimo, por maksimuma kontrolo."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
@@ -338,7 +338,7 @@ msgstr "kli"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
-msgstr "kli-eksperto"
+msgstr "kli-sperta"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
@@ -353,7 +353,7 @@ msgstr "viva"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr "Provi Ubuntu-on sen ajna ŝanĝo al via komputilo"
+msgstr "Provi Ubuntu sen ajna ŝanĝo al via komputilo"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -361,8 +361,8 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
-"Startas la vivan sistemon. Laŭvole, vi povos instali ĝin poste uzante la "
-"\"Install\"-ikonon sur la labortabulo."
+"Starti la vivan sistemon. Laŭvole, vi povos instali ĝin poste uzante la "
+"\"Install\"-piktogramon sur la labortabulo."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
@@ -372,7 +372,7 @@ msgstr "viva-instalo"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
-msgstr "Startas la instaladon"
+msgstr "Starti la instaladon"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
@@ -387,7 +387,7 @@ msgstr "Testi la memoron"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr "Faras memorteston"
+msgstr "Fari memorteston."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
@@ -416,8 +416,8 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"Se vi malcertas, uzu la defaŭltan praŝargo-metodon, kun neniu speciala "
-"parametro, simple premante 'enigi' je la invito."
+"Se vi malcertas, uzu la aprioran praŝargo-metodon, kun neniu speciala "
+"parametro, simple premante la enigan klavon ĉe la invito."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
@@ -426,7 +426,7 @@ msgid ""
 "help text is generic.)"
 msgstr ""
 "(\"Ubuntu\" rajtas esti anstataŭigata kun aliaj parancaj operaciumaj nomoj. "
-"Tiu ĉi helpteksto estas ĝenerala.)"
+"Ĉi tiu helpteksto estas ĝenerala.)"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
@@ -446,7 +446,7 @@ msgstr ""
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
-"Krom en ekspera reĝimo, ne-kritikaj kernaj praŝargo-mesaĝoj estas ne "
+"Krom en sperta reĝimo, ne-kritikaj kernaj praŝargo-mesaĝoj ne estas "
 "montrataj."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
@@ -457,27 +457,27 @@ msgstr "<keycap>F4</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr "SAVI KADUKAN SISTEMON"
+msgstr "HELPANTE ROMPITAN SISTEMON"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr "Uzu unu el tiuj ĉi praŝargo-metodoj por savi ekzistantan instalon"
+msgstr "Uzu unu el ĉi tiuj praŝargo-metodoj por helpi ekzistantan instalon"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
-msgstr "savi"
+msgstr "helpi"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr "Savi kadukiĝintan sistemon"
+msgstr "Helpi rompitan sistemon"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr "Praŝargi al sav-reĝimo."
+msgstr "Praŝargi al helpreĝimo."
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
@@ -495,11 +495,11 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"Ne ekzistas speciala reĝimo dediĉita al sistemsavigo. Sed ĉar la disko "
-"oferas kompletan ĉirkaŭaĵon de uzanto, eblas uzi la komandlinion kaj/aŭ "
-"grafikajn ilojn provizitajn por savi kadukiĝintan sistemon, kaj por uzi "
-"retfoliumilon por serĉi helpon. Ampleksaj konsiloj haveblas rete por preskaŭ "
-"ĉiaj problemoj kiuj povus kaŭzi ke via normala sistemo nekorekte ŝargiĝas."
+"Ne ekzistas speciala reĝimo dediĉita al sistemhelpo. Sed ĉar la disko oferas "
+"kompletan ĉirkaŭaĵon de uzanto, eblas uzi la komandlinion kaj/aŭ grafikajn "
+"ilojn provizitajn por helpi rompitan sistemon kaj por uzi retfoliumilon por "
+"serĉi helpon. Ampleksaj konsiloj disponeblas rete por preskaŭ ĉiaj problemoj "
+"kiuj povus kaŭzi, ke via normala sistemo nekorekte ŝargiĝas."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355

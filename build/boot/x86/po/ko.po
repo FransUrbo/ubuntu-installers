@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:50+0000\n"
-"Last-Translator: Bundo <bundo@bundo.biz>\n"
+"PO-Revision-Date: 2011-08-26 17:53+0000\n"
+"Last-Translator: Thedis <Unknown>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:04+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -220,13 +220,6 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -234,9 +227,10 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"일반적인 우분투 데스크탑 시스템을 설치하기 위해서는 최소 2GB, 서버를 위해 최"
-"소 설치를 하기 위해서는 최소 400MB의 디스크 공간이 필요합니다. 우분투를 설치"
-"한 뒤 다른 꾸러미를 설치하려면 디스크 공간이 더 필요합니다."
+"새 파티션을 생성하여 표준 우분투 데스크탑을 설치하시려면 하드디스크에 공간이 "
+"적어도 5 기가바이트 필요합니다.  최소 서버 설치를 한다면  적어도 500 메가바이"
+"트가 필요합니다. 패키지를 추가로 설치하실 경우 더 많은 공간을 필요로 하게 됩"
+"니다."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -609,7 +603,7 @@ msgid ""
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "아래의 매개변수를 부팅 방법과 함께 <literal>boot:</literal> 프롬프트에서 사용"
-"할 수 있습니다. (link linkend=\"F3\"><keycap>F3</keycap></link> 참조)"
+"할 수 있습니다. <link linkend=\"F3\"><keycap>F3</keycap></link> 참조)"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620

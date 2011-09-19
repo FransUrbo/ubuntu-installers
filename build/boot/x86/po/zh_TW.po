@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-20 07:53+0000\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"PO-Revision-Date: 2011-09-19 01:51+0000\n"
+"Last-Translator: Roy Chan <roy.chan@linux.org.hk>\n"
 "Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -215,13 +215,6 @@ msgstr "您至少需要 32 MB 記憶體來使用 Ubuntu 安裝程式。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -229,9 +222,9 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"您的硬碟中必須至少要有 2GB 空間用以建立分割區，來安裝標準的 Ubuntu 桌面系統，"
-"或是至少 400MB 空間以進行伺服器版本的最小安裝。依照您需求的不同，可能需要更多"
-"的硬碟空間，用來選擇安裝額外的套件。"
+"您應該至少要有 5 gigabytes 的硬碟空間，來切割新分割區安裝標準 Ubuntu 桌面，或"
+"至少 5 megabytes 安裝最小伺服器版本。依照您的功能需求，您將會需要更多空間來安"
+"裝額外套件。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -415,7 +408,7 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"假如你不確定該使用哪些選項，建議你使用預設的啟動方法，不需要加上特殊的參數，"
+"假如您不確定該使用哪些選項，建議您使用預設的啟動方法，不需要加上特殊的參數，"
 "只要在啟動提示中按下 Enter 即可。"
 
 #. type: Content of: <reference><refentry><refsection><para>

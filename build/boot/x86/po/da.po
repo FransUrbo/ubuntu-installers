@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:50+0000\n"
-"Last-Translator: TLE <k.nielsen81@gmail.com>\n"
+"PO-Revision-Date: 2011-09-09 11:50+0000\n"
+"Last-Translator: Joe Hansen <Unknown>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -218,13 +218,6 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -232,11 +225,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Du skal have plads på din harddisk til at lave en ny diskpartition på mindst "
-"2 GB for at installere den almindelige Ubuntu eller mindst 400 MB for en "
-"minimal serverinstallation. Du skal bruge mere diskplads for at installere "
-"yderligere programer, alt afhængig af hvad du ønsker at køre på dit nye "
-"Ubuntu-system."
+"Du skal have plads på din harddisk til at oprette en ny diskpartition på "
+"mindst 5 gigabyte for at installere et standard Ubuntuskrivebordssystem "
+"eller mindst 500 megabyte for en minimal serverinstallation. Du skal bruge "
+"mere diskplads for at installere yderligere pakker, afhængig af hvad du "
+"ønsker at bruge dit nye Ubuntusystem til."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -615,7 +608,7 @@ msgid ""
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Du kan bruge følgende opstartstilvalg ved <literal>boot:</literal>-prompten, "
-"i kombination med opstartsmetoden (læs <link linkend=\\\"F3\\\"><keycap>F3</"
+"i kombination med opstartsmetoden (læs <link linkend=\"F3\"><keycap>F3</"
 "keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -625,7 +618,7 @@ msgid ""
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Du kan bruge følgende opstartstilvalg ved at tykke F6, i kombination med "
-"opstartsmetoden (se <link linkend=\\\"F3\\\"><keycap>F3</keycap></link>)."
+"opstartsmetoden (se <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446

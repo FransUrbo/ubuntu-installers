@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:51+0000\n"
-"Last-Translator: Mikola Tsekhan <mail@tsekhan.com>\n"
+"PO-Revision-Date: 2011-05-27 13:59+0000\n"
+"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:04+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -1109,7 +1109,7 @@ msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"Ubuntu распаўсюджваецца <emphasis>БЕЗ ЯКІХ-НЕБУДЗЬ ГАРАНТЫЙ</ emphasis>, у "
+"Ubuntu распаўсюджваецца <emphasis>БЕЗ ЯКІХ-НЕБУДЗЬ ГАРАНТЫЙ</emphasis>, у "
 "рамках вызначаных адпаведным заканадаўствам."
 
 #. type: Content of: <reference><refentry><refsection><para>

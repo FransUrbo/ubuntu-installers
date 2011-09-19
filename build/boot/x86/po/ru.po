@@ -8,20 +8,20 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:51+0000\n"
-"Last-Translator: Sergey Sedov <sedov@webmail.perm.ru>\n"
+"PO-Revision-Date: 2011-09-17 14:02+0000\n"
+"Last-Translator: Eugene Marshal <Unknown>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "Экраны помощи установщика"
+msgstr "Экраны справки программы установки"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
@@ -39,7 +39,7 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Это установщик операционной системы ${DISTRIBUTION_NAME} "
+"Это программа установки операционной системы ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. Создан ${BUILD_DATE}."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -164,7 +164,7 @@ msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
-msgstr "Как получить помощь."
+msgstr "Как получить справку."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
@@ -217,13 +217,6 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -231,12 +224,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"На жёстком диске должно быть достаточно пространства для создания нового "
-"раздела - размером не менее 2 гигабайт для установки стандартной настольной "
-"системы Ubuntu, либо не менее 400 мегабайт для минимальной серверной "
-"установки. В зависимости от того, как вы собираетесь использовать вашу новую "
-"систему Ubuntu, вам может потребоваться больше дискового пространства для "
-"установки дополнительных пакетов."
+"У вас должно быть свободное место на жёстком диске для создания нового "
+"раздела: 5 ГБ для стандартной настольной системы Ubuntu или 500 МБ для "
+"минимальной серверной установки. Вам понадобится больше свободного места на "
+"диске для установки дополнительных пакетов, что зависит от необходимого "
+"функционала вашей новой системы Ubuntu."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -278,7 +270,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Спасибо, что вы выбрали Ubuntu!"
+msgstr "Благодарим вас за выбор Ubuntu!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417

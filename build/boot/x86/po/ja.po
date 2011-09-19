@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:51+0000\n"
-"Last-Translator: Fumihito YOSHIDA <hito@kugutsu.org>\n"
+"PO-Revision-Date: 2011-08-20 18:15+0000\n"
+"Last-Translator: Shushi Kurose <md81bird@hitaki.net>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:03+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -215,13 +215,6 @@ msgstr "Ubuntuインストーラを使うには、少なくとも32メガバイ�
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -229,11 +222,10 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Ubuntuの標準的なデスクトップシステムをインストールするには少なくとも2ギガバイ"
-"ト、最小限のサーバインストールには少なくとも400メガバイトの、新しいディスク"
-"パーティションを作成するための領域がハードディスクに必要です。新しくインス"
-"トールしたUbuntuシステムで行いたいことによっては、追加パッケージのインストー"
-"ルにさらなるディスク領域が必要になるでしょう。"
+"ハードディスクに新しいパーティションを作成してUbuntu デスクトップをインストー"
+"ルするには、少なくとも5GBの空き容量が必要です。最小のサーバーの場合は、少なく"
+"とも500MBの空き容量が必要です。Ubuntuで何をしたいかによりますが、追加パッケー"
+"ジをインストールする際に、さらにディスク容量が必要になります。"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

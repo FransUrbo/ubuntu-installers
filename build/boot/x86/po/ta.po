@@ -17,8 +17,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:04+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -215,13 +215,6 @@ msgstr "இந்த உபூன்டி நிறுவிக்கு கு
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -229,10 +222,6 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"வழக்கமான உபூன்டு இயங்கு தளம் நிறுவ 2 கிகா பைட் இடமும் குறைந்த பட்ச சேவையக நிறுவலுக்கு "
-"குறைந்தது 400 மெகா பைட் இடமும் கொண்ட புதிய பகிர்வு உருவாக்க உங்கள் வன் வட்டில் இடைவெளி "
-"தேவை. அதில் நீங்கள் புதிய இயங்கு தளத்தில் என்ன செய்ய விரும்புகிறீர்கள் என்பதைப் பொறுத்து "
-"அதிக நிறுவல் தொகுப்புகளுக்கு கூடுதல் இடம் தேவை."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

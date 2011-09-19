@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-04-14 06:30+0000\n"
-"Last-Translator: Zenat Rahnuma <Unknown>\n"
+"PO-Revision-Date: 2011-07-30 15:45+0000\n"
+"Last-Translator: Mahay Alam Khan <mahayalamkhan@gmail.com>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-20 23:49+0000\n"
-"X-Generator: Launchpad (build 12883)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 "X-Language: bn_BD\n"
 
 #. type: Content of: <reference><title>
@@ -40,8 +40,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} এর ইনস্টল পদ্ধতি। এটি তৈরী করা "
-"হয়েছিল ${BUILD_DATE} তারিখে।"
+"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} এর ইনস্টলেশন। এটি ${BUILD_DATE} "
+"তারিখে তৈরী করা হয়েছিল।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -49,8 +49,8 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} এর লাইভ সিস্টেম। এটি তৈরী করা "
-"হয়েছিল ${BUILD_DATE} তারিখে।"
+"${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} লাইভ সিস্টেম। এটি ${BUILD_DATE} "
+"তারিখে তৈরী করা হয়েছে।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -90,7 +90,7 @@ msgstr "${DISTRIBUTION_NAME} ইনস্টল করার জন্য প্
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "${DISTRIBUTION_NAME} চালানোর করার জন্য প্রয়োজনীয় উপকরণ।"
+msgstr "${DISTRIBUTION_NAME} ব্যবহারের প্রাক-যোগ্যতা।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
@@ -217,13 +217,6 @@ msgstr "উবুন্টু ইনস্টল করতে নূন্যত
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -231,10 +224,6 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"সাধারন উবুন্টু ডেস্কটপ ইন্সটলেশন এর জন্য আপনার হার্ড ডিস্ক এ অন্তত ২ গিগাবাইট, অথবা "
-"মিনিমাল সার্ভার ইন্সটলেশন এর জন্য ৪০০ মেগাবাইট ফ্রি স্পেস প্রয়োজন। পরবর্তিতে আপনার "
-"উবুন্টু সিস্টেম আপনি কিরুপে ব্যাবহার করবেন সে অনুযাই বারতি প্যাকেজ ইন্সটলেশন এর জন্য "
-"বারতি ফ্রি স্পেস দরকার হবে।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

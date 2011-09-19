@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-03-19 07:57+0000\n"
-"Last-Translator: cumulus007 <cumulus0007@gmail.com>\n"
+"PO-Revision-Date: 2011-08-01 11:36+0000\n"
+"Last-Translator: Redmar <redmar@ubuntu-nl.org>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-07 22:04+0000\n"
-"X-Generator: Launchpad (build 12757)\n"
+"X-Launchpad-Export-Date: 2011-09-19 14:48+0000\n"
+"X-Generator: Launchpad (build 13980)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -217,13 +217,6 @@ msgstr ""
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
-#, fuzzy
-#| msgid ""
-#| "You should have space on your hard disk to create a new disk partition of "
-#| "at least 2 gigabytes to install a standard Ubuntu desktop system or at "
-#| "least 400 megabytes for a minimal server installation. You'll need more "
-#| "disk space to install additional packages, depending on what you wish to "
-#| "do with your new Ubuntu system."
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
 "least 5 gigabytes to install a standard Ubuntu desktop system or at least "
@@ -231,11 +224,12 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"U hebt voldoende vrije ruimte op uw harde schijf nodig om een nieuwe "
-"partitie van minimaal 2 gigabytes te kunnen aanmaken voor een standaard "
-"Ubuntu desktop-systeem, of minstens 400 megabytes voor een minimale server-"
-"installatie. U zult meer schijfruimte nodig hebben om aanvullende pakketten "
-"te installeren, afhankelijk van wat u met uw nieuwe Ubuntu-systeem wil doen."
+"U moet minstens genoeg ruimte hebben om een partitie van 5 gigabytes aan te "
+"maken om een standaard Ubuntu desktopsysteem te installeren, of op zijn "
+"minst 500 megabytes voor een minimale serverinstallatie.\r\n"
+"U zult meer vrije ruimte op uw harde schijf nodig hebben om bijkomende "
+"pakketten te installeren, afhankelijk van wat u met uw nieuwe Ubuntu-systeem "
+"wilt doen."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
