@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu65) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu65) oneiric; urgency=low
 
   * No-change rebuild to pick up new components.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 20 Sep 2011 01:43:07 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 20 Sep 2011 01:44:40 +0100
 
 debian-installer (20101020ubuntu64) oneiric; urgency=low
 
