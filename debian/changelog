@@ -1,3 +1,9 @@
+grub-installer (1.68ubuntu2) UNRELEASED; urgency=low
+
+  * Really allow grub/grub2 choice for ext4 (lost in merge).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 23 Sep 2011 21:44:09 +0100
+
 grub-installer (1.68ubuntu1) oneiric; urgency=low
 
   * Resynchronise with Debian (preseeding change in 1.68 fixes LP: #857548).
