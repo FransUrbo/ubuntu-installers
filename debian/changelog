@@ -1,4 +1,4 @@
-grub-installer (1.68ubuntu1) UNRELEASED; urgency=low
+grub-installer (1.68ubuntu1) oneiric; urgency=low
 
   * Resynchronise with Debian (preseeding change in 1.68 fixes LP: #857548).
     Remaining changes:
@@ -51,7 +51,7 @@ grub-installer (1.68ubuntu1) UNRELEASED; urgency=low
     for the entire life of grub-installer, and consistently unmounted on
     exit (LP: #851704).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 23 Sep 2011 21:18:28 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 23 Sep 2011 21:29:13 +0100
 
 grub-installer (1.68) unstable; urgency=low
 
