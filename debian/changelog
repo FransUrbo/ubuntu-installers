@@ -1,3 +1,11 @@
+grub-installer (1.64ubuntu4) UNRELEASED; urgency=low
+
+  * Simplify /proc and /sys mounting; make sure they're consistently mounted
+    for the entire life of grub-installer, and consistently unmounted on
+    exit (LP: #851704).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 23 Sep 2011 20:58:48 +0100
+
 grub-installer (1.64ubuntu3) oneiric; urgency=low
 
   * When /boot is on a loopback device (i.e. Wubi), install GRUB there.

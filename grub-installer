@@ -35,6 +35,28 @@ info() {
 ARCH="$(archdetect)"
 info "architecture: $ARCH"
 
+umount_dirs=
+
+cleanup () {
+	for dir in $umount_dirs; do
+		umount "$ROOT/${dir#/}" || true
+	done
+}
+
+umount_on_exit () {
+	if [ "$umount_dirs" ]; then
+		umount_dirs="$umount_dirs $1"
+	else
+		umount_dirs="$1"
+		trap cleanup EXIT HUP INT QUIT TERM
+	fi
+}
+
+if [ ! -e "$ROOT/proc/cmdline" ]; then
+	mount -t proc proc $ROOT/proc && umount_on_exit /proc
+	mount -t sysfs sysfs $ROOT/sys && umount_on_exit /sys
+fi
+
 get_serial_console() {
 	# Get the last 'console=' entry (if none, the whole string is returned)
 	local defconsole="$(sed -e 's/.*\(console=[^ ]*\).*/\1/' /proc/cmdline)"
@@ -338,7 +360,6 @@ if [ "$found" = "0" ] && type multipath >/dev/null 2>&1; then
 	if [ "$found" = "1" ]; then
 		# Create the device nodes for grub:
 		apt-install dmsetup
-		$chroot $ROOT mount /proc
 		$chroot $ROOT dmsetup mknodes
 	else
 		frdisk=
@@ -573,10 +594,6 @@ if [ $exit_code -ne 0 ] ; then
 fi
 
 grub_debian_version="$($chroot $ROOT dpkg-query -W -f '${Version}' $inst_package)"
-
-if [ "$frtype" = multipath ]; then
-	$chroot $ROOT umount /proc
-fi
 
 db_progress STEP 1
 db_progress INFO grub-installer/progress/step_os-probe
@@ -862,17 +879,6 @@ if [ -z "$frdisk" ] || [ "$grub_version" = grub2 ]; then
 			grub_install_params="$grub_install_params --force"
 		fi
 
-		umountproc=false
-		umountsys=false
-		if [ ! -e $ROOT/proc/cmdline ]; then
-			$chroot $ROOT mount /proc
-			umountproc=:
-		fi
-		if [ ! -d $ROOT/sys/devices ]; then
-			$chroot $ROOT mount -t sysfs sysfs /sys
-			umountsys=:
-		fi
-
 		CODE=0
 		if [ "$grub_package" = grub-efi ]; then
 			info "Running $chroot $ROOT grub-install $grub_install_params"
@@ -893,20 +899,7 @@ if [ -z "$frdisk" ] || [ "$grub_version" = grub2 ]; then
 			db_input critical grub-installer/grub-install-failed || [ $? -eq 30 ]
 			db_go || true
 			db_progress STOP
-			if $umountsys; then
-				$chroot $ROOT umount /sys
-			fi
-			if $umountproc; then
-				$chroot $ROOT umount /proc
-			fi
 			exit 1
-		fi
-
-		if $umountsys; then
-			$chroot $ROOT umount /sys
-		fi
-		if $umountproc; then
-			$chroot $ROOT umount /proc
 		fi
 	done
 
