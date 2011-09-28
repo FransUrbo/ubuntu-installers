@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu68) UNRELEASED; urgency=low
+
+  * Bump amd64 netboot image size by another 256KiB.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 28 Sep 2011 14:16:52 +0100
+
 debian-installer (20101020ubuntu67) oneiric; urgency=low
 
   * Re-enable armel/linaro-vexpress and move it to 3.0.0-1007 kernels.
