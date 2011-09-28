@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu67) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu67) oneiric; urgency=low
 
   * Re-enable armel/linaro-vexpress and move it to 3.0.0-1007 kernels.
   * Move armel/linaro-omap to 3.0.0-1007 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 28 Sep 2011 10:13:58 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 28 Sep 2011 10:17:09 +0100
 
 debian-installer (20101020ubuntu66) oneiric; urgency=low
 
