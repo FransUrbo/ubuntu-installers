@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu70) UNRELEASED; urgency=low
+
+  * Update help text translations from Launchpad.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 04 Oct 2011 00:53:24 +0100
+
 debian-installer (20101020ubuntu69) oneiric; urgency=low
 
   * Move armel/omap4 to 3.0.0-1205 kernels.
