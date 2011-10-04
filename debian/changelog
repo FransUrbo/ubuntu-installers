@@ -1,8 +1,12 @@
-debian-installer (20101020ubuntu70) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu70) oneiric; urgency=low
 
+  [ Colin Watson ]
   * Update help text translations from Launchpad.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 04 Oct 2011 00:53:24 +0100
+  [ Michael Casadevall ]
+  * Increase OMAP3/4 netboot image size and compress it
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Tue, 04 Oct 2011 00:59:10 -0700
 
 debian-installer (20101020ubuntu69) oneiric; urgency=low
 
