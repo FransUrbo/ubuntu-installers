@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2010-04-25 05:24+0000\n"
-"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
+"PO-Revision-Date: 2011-10-04 16:34+0000\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi <pa@li.org>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-09-30 12:12+0000\n"
-"X-Generator: Launchpad (build 14071)\n"
+"X-Launchpad-Export-Date: 2011-10-06 00:45+0000\n"
+"X-Generator: Launchpad (build 14085)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -26,7 +26,7 @@ msgstr "ਇੰਸਟਾਲਰ ਬੂਟ ਮੱਦਦ ਸਕਰਨੀ"
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
 msgid "<keycap>F1</keycap>"
-msgstr ""
+msgstr "<keycap>F1</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
@@ -39,6 +39,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
+"ਇਹ ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ਲਈ ਇੰਸਟਾਲੇਸ਼ਨ ਸਿਸਟਮ ਹੈ। ਇਸ ਨੂੰ "
+"${BUILD_DATE} ਨੂੰ ਬਣਾਇਆ ਗਿਆ ਸੀ।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -46,6 +48,8 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
+"ਇਹ ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} ਲਈ ਲਾਇਵ ਸਿਸਟਮ ਹੈ। ਇਹ "
+"${BUILD_DATE} ਨੂੰ ਬਣਾਇਆ ਗਿਆ ਸੀ।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
@@ -65,32 +69,32 @@ msgstr "ਵਿਸ਼ਾ"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
 msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
-msgstr ""
+msgstr "ਇਹ ਸਫ਼ਾ, ਮੱਦਦ ਇੰਡੈਕਸ ਹੈ।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
 msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr ""
+msgstr "${DISTRIBUTION_NAME} ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਲੋੜ ਹੈ,"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr ""
+msgstr "${DISTRIBUTION_NAME} ਚਲਾਉਣ ਲਈ ਲੋੜ ਹੈ।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
 msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
@@ -100,7 +104,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
 msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
@@ -110,7 +114,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
 msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
@@ -120,7 +124,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
 msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
@@ -130,7 +134,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
 msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
@@ -140,7 +144,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
 msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
@@ -155,22 +159,22 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
 msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
-msgstr ""
+msgstr "ਮੱਦਦ ਕਿਵੇਂ ਲਈਏ।"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
 msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
-msgstr ""
+msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr ""
+msgstr "ਕਾਪੀਰਾਈਟ ਅਤੇ ਵਾਰੰਟੀ।"
 
 #.  deliberately unindented 
 #. type: Content of: <reference><refentry><refsection><literallayout>
@@ -194,18 +198,18 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
 msgid "<keycap>F2</keycap>"
-msgstr ""
+msgstr "<keycap>F2</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr ""
+msgstr "ਉਬਤੂੰ ਇੰਸਟਾਲ ਲਈ ਲੋੜ ਹੈ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr ""
+msgstr "ਇਸ ਉਬਤੂੰ ਇੰਸਟਾਲਰ ਨੂੰ ਵਰਤਣ ਲਈ ਤੁਹਾਨੂੰ ਘੱਟੋ-ਘੱਟ 32 ਮੈਗਾਬਾਈਟ ਰੈਮ ਦੀ ਲੋੜ ਹੈ।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -229,7 +233,7 @@ msgstr ""
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr ""
+msgstr "ਤੁਹਾਨੂੰ ਇਹ ਉਬਤੂੰ ਲਾਈਵ ਸਿਸਟਮ ਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ 384 ਮੈਗਬਾਈਟ ਰੈਮ ਹੋਣੀ ਲਾਜ਼ਮੀ ਹੈ।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -237,6 +241,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
+"ਲਾਈਵ ਸਿਸਟਮ ਨੂੰ ਤੁਹਾਡੀ ਹਾਰਡ ਡਿਸਕ ਉੱਤੇ ਕੋਈ ਥਾਂ ਨਹੀਂ ਚਾਹੀਦੀ ਹੈ। ਪਰ, ਡਿਸਕ ਉੱਤੇ ਮੌਜੂਦ ਲੀਨਕਸ "
+"ਸਵੈਪ ਪਾਰਟੀਸ਼ਨ ਮੱਦਦਗਾਰ ਹੋ ਸਕਦਾ ਹੈ, ਜੇ ਮੌਜੂਦ ਹੋਵੇ।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -244,11 +250,13 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
+"ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਸਵਾਲ-ਜਵਾਬ ਵੇਖੋ, ਇਹ ਦਸਤਾਵੇਜ਼ ਉਬਤੂੰ ਵੈੱਬਸਾਇਟ, <ulink url=\"http://www."
+"ubuntu.com/\" /> ਉੱਤੇ ਉਪਲੱਬਧ ਹੈ।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr ""
+msgstr "ਉਬਤੂੰ ਚੁਣਨ ਲਈ ਧੰਨਵਾਦ ਹੈ ਜੀ!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
@@ -268,27 +276,27 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
 msgid "<keycap>F3</keycap>"
-msgstr ""
+msgstr "<keycap>F3</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr ""
+msgstr "ਬੂਟ ਢੰਗ"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr ""
+msgstr "ਉਪਲੱਬਧ ਬੂਟ ਢੰਗ:"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
-msgstr ""
+msgstr "ਇੰਸਟਾਲ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr ""
+msgstr "ਉਬਤੂੰ ਇੰਸਟਾਲ ਕਰੋ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
@@ -298,7 +306,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
-msgstr ""
+msgstr "ਮਾਹਰ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
@@ -308,12 +316,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
-msgstr ""
+msgstr "cli"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
-msgstr ""
+msgstr "cli-expert"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
@@ -323,12 +331,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "live"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr ""
+msgstr "ਆਪਣੇ ਕੰਪਿਊਟਰ ਉੱਤੇ ਬਿਨਾਂ ਕੋਈ ਬਦਲਾਅ ਕੀਤੇ ਉਬਤੂੰ ਵਰਤ ਕੇ ਵੇਖੋ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
@@ -336,31 +344,33 @@ msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
 msgstr ""
+"ਲਾਈਵ ਸਿਸਟਮ ਸ਼ੁਰੂ ਕਰੋ। ਜੇ ਤੁਸੀਂ ਚਾਹੋ ਤਾਂ ਤੁਸੀਂ ਇਸ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਡੈਸਕਟਾਪ ਉੱਤੇ ਮੌਜੂਦ \"ਇੰਸਟਾਲ\" "
+"ਆਈਕਾਨ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੰਸਟਾਲ ਵੀ ਕਰ ਸਕਦੇ ਹੋ।"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
-msgstr ""
+msgstr "live-install"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
-msgstr ""
+msgstr "ਇੰਸਟਾਲੇਸ਼ਨ ਸ਼ੁਰੂ ਕਰੋ।"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
-msgstr ""
+msgstr "memtest"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr ""
+msgstr "ਮੈਮੋਰੀ ਟੈਸਟ ਕਰੋ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr ""
+msgstr "ਮੈਮੋਰੀ ਟੈਸਟ ਕਰੋ।"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
@@ -373,13 +383,13 @@ msgstr ""
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr ""
+msgstr "boot: install acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
@@ -413,7 +423,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
 msgid "<keycap>F4</keycap>"
-msgstr ""
+msgstr "<keycap>F4</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
@@ -428,7 +438,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
-msgstr ""
+msgstr "rescue"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
@@ -444,7 +454,7 @@ msgstr ""
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "boot: rescue acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
@@ -460,7 +470,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
 msgid "<keycap>F5</keycap>"
-msgstr ""
+msgstr "<keycap>F5</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
@@ -532,7 +542,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
 msgid "<keycap>F6</keycap>"
-msgstr ""
+msgstr "<keycap>F6</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
@@ -562,7 +572,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr ""
+msgstr "ਹਾਰਡਵੇਅਰ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
@@ -584,12 +594,12 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr ""
+msgstr "ਕੁਝ IBM ਥਿੰਕਪੈਡ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
-msgstr ""
+msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
@@ -612,7 +622,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
-msgstr ""
+msgstr "<userinput>vga=771</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
@@ -622,7 +632,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
@@ -632,7 +642,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>all_generic_ide=1</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
@@ -648,17 +658,17 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr ""
+msgstr "(partly) disable ACPI"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
@@ -668,7 +678,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
@@ -678,18 +688,18 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
-msgstr ""
+msgstr "ਜਿਵੇਂ:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: install vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
@@ -700,7 +710,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:536
 msgid "<keycap>F7</keycap>"
-msgstr ""
+msgstr "<keycap>F7</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
@@ -744,7 +754,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:574
@@ -756,6 +766,7 @@ msgstr ""
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
+"<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
