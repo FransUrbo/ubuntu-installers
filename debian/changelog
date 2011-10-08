@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu72) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new components.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 08 Oct 2011 10:42:10 +0100
+
 debian-installer (20101020ubuntu71) oneiric; urgency=low
 
   * Update help text translations from Launchpad.
