@@ -1,6 +1,6 @@
 debian-installer (20101020ubuntu73) UNRELEASED; urgency=low
 
-  * Set default suite to oneiric.
+  * Set default suite to precise.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 19 Oct 2011 17:52:55 +0100
 
