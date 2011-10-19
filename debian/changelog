@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu73) UNRELEASED; urgency=low
+
+  * Set default suite to oneiric.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 19 Oct 2011 17:52:55 +0100
+
 debian-installer (20101020ubuntu72) oneiric; urgency=low
 
   * No-change rebuild to pick up new components.
