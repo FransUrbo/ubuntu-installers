@@ -16,8 +16,9 @@ DISTRIBUTION=
 # used by kernel installation code
 KERNEL=
 KERNEL_LIST=/tmp/available_kernels.txt
-case `udpkg --print-os` in
-	linux)		KERNEL_MAJOR="$(uname -r | cut -d . -f 1,2)" ;;
+KERNEL_NAME=`udpkg --print-os`
+case $KERNEL_NAME in
+	linux)		KERNEL_MAJOR="$(uname -r | cut -d - -f 1 | cut -d . -f 1,2)" ;;
 	kfreebsd)	KERNEL_MAJOR="$(uname -r | cut -d . -f 1)" ;;
 	hurd)		KERNEL_MAJOR="$(uname -v | cut -d ' ' -f 2 | cut -d . -f 1)" ;;
 esac
@@ -934,7 +935,7 @@ configure_apt () {
 			fi
 			;;
 			hurd)
-			if ! mount -t firmlink $DIRECTORY $tdir ; then
+			if ! mount -t firmlink $DIRECTORY $tdir > /dev/null 2>&1 ; then
 				warning "failed to bind mount $tdir"
 			fi
 			;;
