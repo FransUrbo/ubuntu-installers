@@ -1,4 +1,4 @@
-base-installer (1.121ubuntu1) UNRELEASED; urgency=low
+base-installer (1.121ubuntu1) precise; urgency=low
 
   * Resynchronise with Debian.  Remaining changes:
     - Use and depend on the Ubuntu keyring.
@@ -23,7 +23,7 @@ base-installer (1.121ubuntu1) UNRELEASED; urgency=low
     - Add base-installer/kernel/backports-modules template, which may be
       preseeded to install selected linux-backports-modules-* packages.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 25 Oct 2011 01:15:56 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 25 Oct 2011 01:19:23 +0100
 
 base-installer (1.121) unstable; urgency=low
 
