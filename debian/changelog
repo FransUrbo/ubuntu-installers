@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu74) UNRELEASED; urgency=low
+
+  * Move to 3.1.0-2 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 27 Oct 2011 11:15:05 +0100
+
 debian-installer (20101020ubuntu73) precise; urgency=low
 
   * Set default suite to precise.
