@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu76) UNRELEASED; urgency=low
+
+  * Move to 3.2.0-1 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 19 Nov 2011 12:17:54 +0000
+
 debian-installer (20101020ubuntu75) precise; urgency=low
 
   * Bump amd64 netboot image size by 512KiB.
