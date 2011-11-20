@@ -2,6 +2,7 @@ debian-installer (20101020ubuntu77) UNRELEASED; urgency=low
 
   * Bump powerpc netboot image size by a megabyte to allow for a slight
     kernel size increase.
+  * Switch Xen images to the -virtual kernel flavour (LP: #857662).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 20 Nov 2011 10:37:50 +0000
 
