@@ -1,3 +1,63 @@
+base-installer (1.122ubuntu1) UNRELEASED; urgency=low
+
+  * Resynchronise with Debian.  Remaining changes:
+    - Use and depend on the Ubuntu keyring.
+    - Enable the restricted component by default, unless
+      apt-setup/restricted is preseeded to false.
+    - Set up the default sources.list to look in -updates and -security (the
+      latter from apt-setup/security_host and apt-setup/security_path) as
+      well as the unadorned suite; also -proposed if apt-setup/proposed is
+      true.
+    - Use Ubuntu kernel image names.
+    - Allow preseeding base-installer/kernel/override-image to force a given
+      kernel to be used.
+    - Install busybox-initramfs rather than busybox.
+    - Revert Joey's patch to call base-installer.d hooks after running
+      debootstrap, which broke console-setup's expectation of being able to
+      insert its configuration file into /target before console-setup is
+      installed by debootstrap.
+    - Add armel/imx51, armel/dove, armel/omap, and armel/omap4
+      subarchitectures.
+    - Install kernel headers to match the kernel. This may be overridden by
+      setting base-installer/kernel/headers to false.
+    - Add base-installer/kernel/backports-modules template, which may be
+      preseeded to install selected linux-backports-modules-* packages.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 21 Nov 2011 13:44:11 +0000
+
+base-installer (1.122) unstable; urgency=low
+
+  [ Joey Hess ]
+  * Remove base-installer/kernel/linux/initramfs-generators
+    and vestigial support for yaird.
+  
+  [ Matt Kraai ]
+  * Use an initrd on mipsel/loongson-2f systems. Closes: #640418
+
+  [ Milan Kupcevic ]
+  * Add POWER7 to the powerpc64 family. (Closes: #637519)
+
+  [ Samuel Thibault ]
+  * Fix kernel name on hurd-any.
+
+  [ Colin Watson ]
+  * pkgdetails: Use the last of a sequence of stanzas for the same package
+    name, rather than the first (closes: #649482).
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Kannada (kn.po) by Prabodh C P
+  * Korean (ko.po) by Changwoo Ryu
+  * Polish (pl.po) by Marcin Owsiany
+  * Romanian (ro.po) by Ioan Eugen Stan
+  * Sinhala (si.po) by Danishka Navin
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 21 Nov 2011 13:32:00 +0000
+
 base-installer (1.121ubuntu1) precise; urgency=low
 
   * Resynchronise with Debian.  Remaining changes:
