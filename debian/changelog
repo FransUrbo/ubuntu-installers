@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu79) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu79) precise; urgency=low
 
   * build/pkg-lists/gtk-common: ttf-farsiweb-udeb was renamed to fonts-*.
 
- -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 22 Nov 2011 18:17:25 +0100
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 23 Nov 2011 09:53:39 +0000
 
 debian-installer (20101020ubuntu78) precise; urgency=low
 
