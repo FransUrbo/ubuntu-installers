@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu80) UNRELEASED; urgency=low
+
+  * Move to 3.2.0-2 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 25 Nov 2011 18:23:42 +0000
+
 debian-installer (20101020ubuntu79) precise; urgency=low
 
   * build/pkg-lists/gtk-common: ttf-farsiweb-udeb was renamed to fonts-*.
