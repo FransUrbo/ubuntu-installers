@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu81) UNRELEASED; urgency=low
+
+  * Bump i386 netboot image size by 512KiB.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 26 Nov 2011 00:22:34 +0000
+
 debian-installer (20101020ubuntu80) precise; urgency=low
 
   * Move to 3.2.0-2 kernels.
