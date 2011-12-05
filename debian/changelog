@@ -2,6 +2,7 @@ debian-installer (20101020ubuntu83) UNRELEASED; urgency=low
 
   * Don't fail when one of the entries in sources.list.udeb has an empty
     Packages file.
+  * Update build-dependencies for armhf.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 05 Dec 2011 12:39:09 +0000
 
