@@ -1,6 +1,7 @@
 debian-installer (20101020ubuntu82) UNRELEASED; urgency=low
 
   * Move to 3.2.0-3 kernels.
+  * Add armhf support, with only the omap flavour for now.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 05 Dec 2011 10:17:53 +0000
 
