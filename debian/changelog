@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu85) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu85) precise; urgency=low
 
   * build/pkg-lists/gtk-common: ttf-khmeros-udeb and ttf-sil-abyssinica-udeb
     were renamed to fonts-*.
 
- -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 07 Dec 2011 13:11:54 +0100
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 07 Dec 2011 13:13:17 +0100
 
 debian-installer (20101020ubuntu84) precise; urgency=low
 
