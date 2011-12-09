@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu87) precise; urgency=low
+
+  * Rebuild with the new mklibs to fix armhf linker path. 
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 08 Dec 2011 14:31:40 -0700
+
 debian-installer (20101020ubuntu86) precise; urgency=low
 
   * Move armel/omap4 to 3.2.0-1401 kernels.
