@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu89) UNRELEASED; urgency=low
+
+  * Move to 3.2.0-4 kernels.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Sun, 11 Dec 2011 12:22:55 +0100
+
 debian-installer (20101020ubuntu88) precise; urgency=low
 
   * Move armel/omap4 to 3.2.0-1402 kernels.
