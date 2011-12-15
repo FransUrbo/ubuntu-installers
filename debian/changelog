@@ -1,3 +1,10 @@
+base-installer (1.122ubuntu2) precise; urgency=low
+
+  * Move kernel/tests/armhf/* to armel/, and symlink armhf to armel.
+  * Symlink kernel/armhf.sh to kernel/armel.sh, to match above change.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 15 Dec 2011 10:08:57 -0700
+
 base-installer (1.122ubuntu1) precise; urgency=low
 
   * Resynchronise with Debian.  Remaining changes:
