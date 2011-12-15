@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu90) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu90) precise; urgency=low
 
   * Rebuild against nic-firmware 1.63, to pull in support for rtl8186.
 
- -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 14 Dec 2011 15:36:28 -0800
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 14 Dec 2011 16:21:51 -0800
 
 debian-installer (20101020ubuntu89) precise; urgency=low
 
