@@ -1,3 +1,11 @@
+debian-installer (20101020ubuntu91) UNRELEASED; urgency=low
+
+  * Switch i386 to the -generic-pae kernel flavour, and add a new
+    netboot/non-pae build for i386 that uses the -generic flavour
+    (LP: #897786).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 15 Dec 2011 14:41:15 +0000
+
 debian-installer (20101020ubuntu90) precise; urgency=low
 
   * Rebuild against nic-firmware 1.63, to pull in support for rtl8186.
