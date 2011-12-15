@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu92) UNRELEASED; urgency=low
+
+  * Rebuild against nic-firmware 1.64 to pull in more rtl firmware objects.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 15 Dec 2011 12:35:40 -0800
+
 debian-installer (20101020ubuntu91) precise; urgency=low
 
   * Switch i386 to the -generic-pae kernel flavour, and add a new
