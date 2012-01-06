@@ -1,6 +1,7 @@
 debian-installer (20101020ubuntu97) UNRELEASED; urgency=low
 
   * ttf-tmuni-udeb -> fonts-tibetan-machine-udeb.
+  * Move to 3.2.0-8 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 03 Jan 2012 13:34:33 +0000
 
