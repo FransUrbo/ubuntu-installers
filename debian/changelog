@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu103) precise; urgency=low
+
+  * Update omap3 to use the MLO from u-boot and drop x-loader dep.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 31 Jan 2012 17:59:57 -0700
+
 debian-installer (20101020ubuntu102) precise; urgency=low
 
   * Move armel/omap4 and armhf/omap4 to 3.2.0-1405 kernels.
