@@ -1,8 +1,14 @@
-debian-installer (20101020ubuntu103) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu104) UNRELEASED; urgency=low
 
   * Move to 3.2.0-14 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 05 Feb 2012 02:25:57 +0000
+
+debian-installer (20101020ubuntu103) precise; urgency=low
+
+  * Update omap3 to use the MLO from u-boot and drop x-loader dep.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 31 Jan 2012 17:59:57 -0700
 
 debian-installer (20101020ubuntu102) precise; urgency=low
 
