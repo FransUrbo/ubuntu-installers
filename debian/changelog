@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu104) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu104) precise; urgency=low
 
   * Move to 3.2.0-14 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Sun, 05 Feb 2012 02:25:57 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 05 Feb 2012 02:48:57 +0000
 
 debian-installer (20101020ubuntu103) precise; urgency=low
 
