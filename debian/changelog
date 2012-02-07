@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu105) precise; urgency=low
+
+  * Rebuild against new netcfg 1.68ubuntu11 (IPv6 fixes).
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Tue, 07 Feb 2012 13:25:30 -0500
+
 debian-installer (20101020ubuntu104) precise; urgency=low
 
   * Move to 3.2.0-14 kernels.
