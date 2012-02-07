@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu106) precise; urgency=low
+
+  * gtk-common: Replace ttf-thai-tlwg-udeb by fonts-thai-tlwg-udeb
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Tue, 07 Feb 2012 13:43:54 -0500
+
 debian-installer (20101020ubuntu105) precise; urgency=low
 
   * Rebuild against new netcfg 1.68ubuntu11 (IPv6 fixes).
