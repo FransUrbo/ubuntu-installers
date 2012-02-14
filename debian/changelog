@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu109) UNRELEASED; urgency=low
+
+  * Move to 3.2.0-16 kernels.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 14 Feb 2012 19:22:49 +0100
+
 debian-installer (20101020ubuntu108) precise; urgency=low
 
   * Bump amd64 netboot image size by 512KiB to accommodate eglibc 2.15.
