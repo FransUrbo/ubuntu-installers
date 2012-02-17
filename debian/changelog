@@ -1,3 +1,9 @@
+base-installer (1.122ubuntu4) UNRELEASED; urgency=low
+
+  * Add armadaxp to base-installer
+
+ -- Michael Casadevall <mcasadevall@daybreak.gruenet>  Fri, 17 Feb 2012 11:49:03 -0800
+
 base-installer (1.122ubuntu3) precise; urgency=low
 
   * "Fix" mx5 test results to pass (we don't actually use this
