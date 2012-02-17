@@ -1,10 +1,10 @@
 subarch armadaxp
 cpuinfo armadaxp.cpuinfo
 majors 2.6
-flavour dove
+flavour armadaxp
 kernel-2.6 \
-  linux-dove \
-  linux-image-dove
+  linux-armadaxp \
+  linux-image-armadaxp
 usable \
   linux-image-armadaxp \
   linux-image-11-armadaxp
