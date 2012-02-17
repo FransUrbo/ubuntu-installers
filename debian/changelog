@@ -1,8 +1,8 @@
-base-installer (1.122ubuntu4) UNRELEASED; urgency=low
+base-installer (1.122ubuntu4) precise; urgency=low
 
-  * Add armadaxp to base-installer
+  * Add armadaxp to base-installer (LP: #934451)
 
- -- Michael Casadevall <mcasadevall@daybreak.gruenet>  Fri, 17 Feb 2012 11:49:03 -0800
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Fri, 17 Feb 2012 11:49:03 -0800
 
 base-installer (1.122ubuntu3) precise; urgency=low
 
