@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu111) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu111) precise; urgency=low
 
   * Move to 3.2.0-17 kernels.
 
- -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 21 Feb 2012 09:40:34 +0100
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 21 Feb 2012 09:40:57 +0100
 
 debian-installer (20101020ubuntu110) precise; urgency=low
 
