@@ -1,4 +1,4 @@
-debian-installer (20101020ubuntu113) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu113) precise; urgency=low
 
   * Correct pathing error in armadaxp dest folder
 
