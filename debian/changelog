@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu113) UNRELEASED; urgency=low
+
+  * Correct pathing error in armadaxp dest folder
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Thu, 23 Feb 2012 01:30:12 -0800
+
 debian-installer (20101020ubuntu112) precise; urgency=low
 
   * Added armadaxp images (LP: #934451)
