@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu112) precise; urgency=low
+
+  * Added armadaxp images
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Wed, 22 Feb 2012 23:38:35 -0800
+
 debian-installer (20101020ubuntu111) precise; urgency=low
 
   * Move to 3.2.0-17 kernels.
