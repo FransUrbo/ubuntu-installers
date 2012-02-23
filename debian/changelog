@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu114) precise; urgency=low
+
+  * Rebuild against new netcfg 1.68ubuntu12 (resolvconf fixes).
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Thu, 23 Feb 2012 18:14:14 -0500
+
 debian-installer (20101020ubuntu113) precise; urgency=low
 
   * Correct pathing error in armadaxp dest folder
