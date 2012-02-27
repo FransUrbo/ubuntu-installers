@@ -1,4 +1,4 @@
-debian-installer (20101020ubuntu115) UNRELEASED; urgency=high
+debian-installer (20101020ubuntu115) precise; urgency=high
 
   * Correct mkimage arguments to generate a working uImage for ArmadaXP
 
