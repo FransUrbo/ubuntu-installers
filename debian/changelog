@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu115) UNRELEASED; urgency=high
+
+  * Correct mkimage arguments to generate a working uImage for ArmadaXP
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Mon, 27 Feb 2012 03:41:37 -0800
+
 debian-installer (20101020ubuntu114) precise; urgency=low
 
   * Rebuild against new netcfg 1.68ubuntu12 (resolvconf fixes).
