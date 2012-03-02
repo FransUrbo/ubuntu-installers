@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu116) UNRELEASED; urgency=low
+
+  * Move armel/omap4 and armhf/omap4 to 3.2.0-1407 kernels.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 02 Mar 2012 18:16:06 +0100
+
 debian-installer (20101020ubuntu115) precise; urgency=high
 
   * Correct mkimage arguments to generate a working uImage for ArmadaXP
