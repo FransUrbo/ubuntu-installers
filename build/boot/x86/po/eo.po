@@ -219,16 +219,15 @@ msgstr ""
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
-"least 2 gigabytes to install a standard Ubuntu desktop system or at least "
-"400 megabytes for a minimal server installation. You'll need more disk space "
+"least 5 gigabytes to install a standard Ubuntu desktop system or at least "
+"500 megabytes for a minimal server installation. You'll need more disk space "
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Vi devas havi lokon sur via fiksita disko por krei novan subdiskon de "
-"almenaŭ 2 gigabajtoj por instali kutiman labortablan Ubuntu-sistemon aŭ "
-"almenaŭ 400 megabajtojn por minimuma servil-instalo. Vi bezonos pli da "
-"diskloko por instali kromajn pakaĵojn, depende de kion vi deziras fari per "
-"via nova Ubuntu-sistemo."
+"Vi necesas havi spacon en via disko por krei novan subdiskon de almenaŭ 5 "
+"Gigabajtoj por instali  la defaŭtan Ubuntu komputilan labortablon aŭ malplie "
+"500 Megabajtoj por minimuma servila instalado. Vi necesos pli da spaco por "
+"instali aldonaj pakaĵoj, laŭ kion vi volas fari kun via nova sistemo Ubuntu."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

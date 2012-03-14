@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2008-06-15 21:26+0100\n"
+"POT-Creation-Date: 2010-02-05 15:45-0800\n"
 "PO-Revision-Date: 2011-07-18 15:14+0000\n"
 "Last-Translator: Xandru Martino <Unknown>\n"
 "Language-Team: Asturian <ast@li.org>\n"
@@ -18,125 +18,221 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-09-30 12:12+0000\n"
 "X-Generator: Launchpad (build 14071)\n"
 
+#. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
 msgstr "Pantalles d'ayuda del arranque del instalador"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:10
+msgid "<keycap>F1</keycap>"
+msgstr "<keycap>F1</keycap>"
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
 msgstr "¡Bienllegáu/ada a ${DISTRIBUTION_NAME}!"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
 msgid ""
-"This is an installation ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
+"This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"Esti ye un ${MEDIA_TYPE} d'instalación pa ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}, fechu el ${BUILD_DATE}."
+"Esti ye un sistema d'instalación pa ${DISTRIBUTION_NAME} "
+"${DISTRIBUTION_VERSION}. Compilóse'l ${BUILD_DATE}."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
 msgid ""
-"This is a live ${MEDIA_TYPE} for ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
+"This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
+"was built on ${BUILD_DATE}."
 msgstr ""
-"Esti ye un ${MEDIA_TYPE} «en vivo» (live) de ${DISTRIBUTION_NAME} "
-"${DISTRIBUTION_VERSION}. Fabricóse el ${BUILD_DATE}."
+"Esti ye un sistema «live» pa ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. "
+"Compilóse'l ${BUILD_DATE}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
 msgstr "ÍNDIZ DE L'AYUDA"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
 msgid "KEY"
 msgstr "CLAVE"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:30
 msgid "TOPIC"
 msgstr "TEMA"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:33
+msgid "<link linkend=\"F1\"><keycap>F1</keycap></link>"
+msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
 msgstr "Esta páxina, l'índiz del ficheru d'ayuda."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:38 help.xml:43
+msgid "<link linkend=\"F2\"><keycap>F2</keycap></link>"
+msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
 msgstr "Prerrequisitos pa la instalación de ${DISTRIBUTION_NAME}."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
 msgstr "Prerrequisitos pa la execución de ${DISTRIBUTION_NAME}."
 
-#: help.xml:49
-msgid "Boot methods for special ways of using this ${MEDIA_TYPE}."
-msgstr "Métodos d'arranque pa los emplegos específicos d'esti ${MEDIA_TYPE}."
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:48
+msgid "<link linkend=\"F3\"><keycap>F3</keycap></link>"
+msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:49
+msgid "Boot methods for special ways of using this system."
+msgstr "Métodos d'arranque pa formes especiales d'usar esti sistema."
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:53
+msgid "<link linkend=\"F4\"><keycap>F4</keycap></link>"
+msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
 msgstr "Métodos d'arranque adicional; recuperar un sistema cayíu."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:58
+msgid "<link linkend=\"F5\"><keycap>F5</keycap></link>"
+msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
 msgstr "Parámetros específicos d'arranque, vista de páxaru"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:63 help.xml:384
+msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
+msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
 msgstr "Parámetros específicos d'arranque pa máquines específiques."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:68 help.xml:389
+msgid "<link linkend=\"F7\"><keycap>F7</keycap></link>"
+msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
 msgstr ""
 "Parámetros específicos d'arranque pa los controladores de discos esbillaos."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:73 help.xml:78 help.xml:394 help.xml:399
+msgid "<link linkend=\"F8\"><keycap>F8</keycap></link>"
+msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
 msgstr "Parámetros específicos d'arranque pal sistema d'instalación."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
 msgstr "Parámetros d'arranque especiales pal sistema d'arranque."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:83
+msgid "<link linkend=\"F9\"><keycap>F9</keycap></link>"
+msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
 msgstr "Cómo tener ayuda."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:88
+msgid "<link linkend=\"F10\"><keycap>F10</keycap></link>"
+msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
 msgid "Copyrights and warranties."
 msgstr "Copyrights y garantíes"
 
+#.  deliberately unindented 
+#. type: Content of: <reference><refentry><refsection><literallayout>
+#: help.xml:95
+#, no-wrap
+msgid ""
+"For F1-F9 type control and F then the digit 1-9\n"
+"For F10 type control and F then the digit 0\n"
+msgstr ""
+"Pa F1-F9 calca Ctrl y F siguío del díxitu 1-9\n"
+"Pa F10 calca Ctrl y F siguío del díxitu 0\n"
+
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
 "Emplega les tecles entre F2 y F10 pa los detalles, o ENTRADA pa ${BOOTPROMPT}"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
 msgstr "Calca ente F2 y F10 pa los detalles, o Escape pa colar de l'ayuda."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:111
+msgid "<keycap>F2</keycap>"
+msgstr "<keycap>F2</keycap>"
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
 msgstr "PRERREQUISITOS PA INSTALAR UBUNTU"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
 msgstr ""
 "Has tener polo menos 32 megabytes de RAM pa usar esti instalador d'Ubuntu."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
-"least 2 gigabytes to install a standard Ubuntu desktop system or at least "
-"400 megabytes for a minimal server installation. You'll need more disk space "
+"least 5 gigabytes to install a standard Ubuntu desktop system or at least "
+"500 megabytes for a minimal server installation. You'll need more disk space "
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Tien que haber espaciu nel discu duru pa crear una partición nueva nel discu "
-"de polo menos 2 gigabytes pa instalar un sistema estándar d'escritoriu "
-"Ubuntu o polo menos 400 megabytes pa una instalación mínima de sirvidor. "
-"Necesitarás más espaciu de discu pa instalar paquetes adicionales, "
-"dependiendo de lo que quieras facer col to nuevu sistema Ubuntu."
+"Tienes de tener espaciu nel discu duru pa criar una partición nueva del "
+"discu de polo menos 5 Xigabytes pa instalar un sistema Ubuntu estandar "
+"d'escritoriu o polo menos 500 megabytes pa una instalación de sirvidor "
+"mínima. Vas necesitar más espaciu en discu pa instalar paquetes adicionales, "
+"dependiendo de que que quieras facer col to nuevu sistema Ubuntu."
 
-#: help.xml:131 help.xml:742
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:131 help.xml:732
 msgid ""
 "See the Installation Manual or the FAQ for more information; both documents "
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
@@ -145,6 +241,7 @@ msgstr ""
 "Mira nel Manual d'Instalación o na FAQ pa más información; dambos documentos "
 "alcuéntrense nel sitiu web d'Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
@@ -152,6 +249,7 @@ msgstr ""
 "Has tener polo menos 384 megabytes de RAM pa usar esti sistema en vivo "
 "d'Ubuntu."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
 msgid ""
 "The live system does not require any space on your hard disk. However, "
@@ -161,7 +259,8 @@ msgstr ""
 "particiones d'intercambeu de Linux del discu van usase si tuvieren "
 "disponibles."
 
-#: help.xml:147 help.xml:748
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:147 help.xml:738
 msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
@@ -169,12 +268,14 @@ msgstr ""
 "Mira na FAQ pa más información; esti documentu alcuéntrase nel sitiu web "
 "d'Ubuntu, <ulink url=\"http://www.ubuntu.com/\" />"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
 msgstr "¡Gracies por escoyer Ubuntu!"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
-#: help.xml:524 help.xml:597 help.xml:697 help.xml:753 help.xml:809
+#: help.xml:524 help.xml:597 help.xml:687 help.xml:743 help.xml:799
 msgid ""
 "Press <phrase class=\"not-serial\">F1</phrase><phrase class=\"serial"
 "\">control and F then 1</phrase> for the help index, or ENTER to "
@@ -184,61 +285,78 @@ msgstr ""
 "\">control y F llueu 1</phrase> pa l'índiz de l'ayuda, o ENTER pa "
 "${BOOTPROMPT}"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
-#: help.xml:529 help.xml:602 help.xml:702 help.xml:758 help.xml:814
+#: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
 msgstr "Calca F1 pa l'índiz de l'ayuda, o Escape pa colar de l'ayuda."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:168
+msgid "<keycap>F3</keycap>"
+msgstr "<keycap>F3</keycap>"
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
 msgstr "DAMBOS MÉTODOS"
 
+#. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
 msgstr "Dambos métodos tan disponibles:"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
 msgstr "instalar"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
 msgstr "Instalar Ubuntu"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
-msgid "Start the installation -- this is the default ${MEDIA_TYPE} install."
-msgstr ""
-"Entamar la instalación -- esta ye la instalación en ${MEDIA_TYPE} por "
-"omisión."
+msgid "Start the installation -- this is the default option."
+msgstr "Aniciar la instalación -- esta ye la opción predeterminada."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
 msgstr "espertu"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
 msgstr "Entamar la instalación en mou espertu, pa un control másimu."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
 msgstr "llic"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
 msgstr "llic-espertu"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
 msgstr "Instalación del sistema mínima de llinia d'ordes"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
 msgstr "en vivo"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
 msgstr "Prebar Ubuntu ensin facer cambéos nel to ordenador"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
@@ -247,26 +365,32 @@ msgstr ""
 "Entamar el sistema en vivo. Si quiés, pues instalalo lluéu usando l'iconu "
 "\"Instalar\" de l'escritoriu."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
 msgstr "instalación en vivo"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
 msgstr "Entamar la instalación."
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
 msgstr "memtest"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
 msgstr "Preba de memoria"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
 msgstr "Facer una preba de memoria"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
 msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
@@ -275,16 +399,19 @@ msgstr ""
 "Pa usar ún d'esos métodos d'arranque, escríbelu na llinia d'ordes, "
 "opcionalmente siguío polos parámetros d'arranque. Por exemplu:"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
 msgstr "boot: install acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
 msgstr "boot: live acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
 msgid ""
 "If unsure, you should use the default boot method, with no special "
@@ -293,6 +420,7 @@ msgstr ""
 "Si nun tas seguru, tendríes que usar el métodu d'arranque por omisión, ensin "
 "parámetros especiales, namái calcando enter na llinia d'ordes."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
 msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
@@ -301,6 +429,7 @@ msgstr ""
 "(\"Ubuntu\" pue camudase por otros nomes de sistemes operativos "
 "rellacionaos. Esti testu d'ayuda ye xenéricu.)"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
 msgid ""
 "To use one of these boot methods, select it from the menu with the cursor "
@@ -313,6 +442,7 @@ msgstr ""
 "Calca F6 pa camudar los parámetros d'arranque. Calca F6 otra vuelta pa "
 "esbilla d'un menú de parámetros d'entamu d'emplegu veceru."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
@@ -320,49 +450,70 @@ msgstr ""
 "Esceuto en mou espertu, tapecense los mensaxes non-críticos d'arranque del "
 "núcleu."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:280 help.xml:326
+msgid "<keycap>F4</keycap>"
+msgstr "<keycap>F4</keycap>"
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
 msgstr "RESCATANDO UN SISTEMA FRAÑÁU"
 
+#. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr "Usa ún d'esos métodos d'arranque pa rescatar una instalación esistente"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
 msgstr "rescate"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
 msgstr "Rescatar un sistema frañáu"
 
+#. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
 msgstr "Arrancar en mou rescate."
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
 msgstr "boot: rescue acpi=off"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
 msgid ""
-"There is no dedicated rescue mode on this CD. However, since the entire "
-"system runs from the CD, it is possible to use the command-line and/or "
-"graphical tools provided to rescue a broken system, and to use a web browser "
-"to search for help. Extensive advice is available online for most kinds of "
-"problems that might cause your normal system to fail to boot correctly."
+"There is no dedicated rescue mode on this disc. However, since the disc "
+"provides a complete user environment, it is possible to use the command-line "
+"and/or graphical tools provided to rescue a broken system, and to use a web "
+"browser to search for help. Extensive advice is available online for most "
+"kinds of problems that might cause your normal system to fail to boot "
+"correctly."
 msgstr ""
-"Esti CD nun contién una manera d'arranque específica. Poro, como tol sistema "
-"s'executa dende'l CD, puedes emplegar la lliña de comandos o los preseos "
-"gráficos pa recuperar un sistema estrozáu y emplegar un restolador web pa "
-"tener ayuda. Existe ayuda abondo na rede pa la mayoría de los problemes que "
-"podrían facer qu'un sistema normal nun arranque con traza."
+"Nun esiste un mou de rescate dedicáu nesti discu. Sicasí, como'l discu "
+"apurre un entornu d'usuariu completu, ye dable usar la llinia de comandos y "
+"les utilidaes gráfiques apurríes pa recuperar un sistema estropiáu, según "
+"usar un restolador web pa guetar ayuda. N'Internet esiste un gran númberu de "
+"conseyos pa la mayoría de los problemes que pueden provocar que'l so sistema "
+"normal nun s'anicie correcho."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:355
+msgid "<keycap>F5</keycap>"
+msgstr "<keycap>F5</keycap>"
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
 msgstr "PARÁMETROS D'ENTAMU ESPECIALES - VISTA XENERAL"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
 msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
@@ -371,6 +522,7 @@ msgstr ""
 "Quiciabes haya qu'especificar en dalgún sistema un parámetru na consola "
 "<literal>boot:</literal> p'arrancar el sistema."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
@@ -379,6 +531,7 @@ msgstr ""
 "Puede qu'haya qu'especificar en dalgún sistema un parámetru calcando F6 "
 "p'arrancar el sistema."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
 msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
@@ -388,27 +541,33 @@ msgstr ""
 "necesites seique conseñar de mou esplícitu l'allugamientu o el tipu pa que "
 "lu reconoza."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
 "Pa más información tocante a los parámetros d'entamu que pues usar, calca:"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
 msgstr "parámetros d'entamu pa máquines especiales"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
 msgstr "parámetros d'entamu pa delles controladores de discu"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
 msgstr "parámetros d'entamu que entiende'l sistema d'instalación"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
 msgstr "parámetros d'entamu  que entiende'l sistema d'arranque"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
 msgid ""
 "Many kernel modules are loaded dynamically by the installer, and parameters "
@@ -421,6 +580,7 @@ msgstr ""
 "encamentar los parámetros al cargar los módulos, entra en mou espertu (ver "
 "<link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
@@ -430,10 +590,17 @@ msgstr ""
 "d'arranque, y los parámetros pa estos módulos nun pueden pasase en llinia de "
 "comandu."
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:429
+msgid "<keycap>F6</keycap>"
+msgstr "<keycap>F6</keycap>"
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
 msgstr "PARÁMETROS ESPECÍFICOS D'ARRANQUE - DELLOS MATERIALES"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
 msgid ""
 "You can use the following boot parameters at the <literal>boot:</literal> "
@@ -444,6 +611,7 @@ msgstr ""
 "amestáu col métodu d'arranque (ver <link linkend=\"F3\"><keycap>F3</keycap></"
 "link>)"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
 msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
@@ -453,24 +621,29 @@ msgstr ""
 "amestáu col métodu d'arranque (ver <link linkend=\"F3\"><keycap>F3</keycap></"
 "link>)."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
 msgstr ""
 "Si emplegues númberos hexadecimales, tienes qu'emplegar el prefixu 0x "
 "(exemplu : 0x300)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
 msgstr "HARDWARE"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
 msgstr "PARÁMETROS A ESPECIFICAR"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
 msgstr "IBM PS/1 o ValuePoint (discu IDE)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
 msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
@@ -479,18 +652,22 @@ msgstr ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
 msgstr "Dellos ThinkPads d'IBM"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
 msgid "<userinput>floppy.floppy=thinkpad</userinput>"
 msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
 msgid "Protect I/O port regions"
 msgstr "Protexer les rexones del puertu I/O"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:466
 msgid ""
 "<userinput>reserve=<replaceable>iobase</replaceable>,<replaceable>extent</"
@@ -501,90 +678,116 @@ msgstr ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
 msgstr "Portátiles con problemes de pantalla"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
 msgid "<userinput>vga=771</userinput>"
 msgstr "<userinput>vga=771</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
 msgstr "Emplegar el primer puertu de seria a 9600 baudios"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
 msgstr "Forciar l'emplegu del driver IDE xenéricu"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>all_generic_ide=1</userinput>"
 msgstr "<userinput>all_generic_ide=1</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
 "Posibles soluciones temporales pa bloqueos u otros fallos del hardware:"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
 msgstr "desactivar rutes d'interrupción defeutuoses nel APIC"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
 msgstr "<userinput>noapic nolapic</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
 msgstr "desactiva (en parte) ACPI"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 msgstr "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
 msgstr "desactiva l'USB"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
 msgstr "<userinput>nousb</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
 msgstr "investigación de les interrupciones"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
 msgstr "<userinput>irqpoll</userinput>"
 
-#: help.xml:516 help.xml:589 help.xml:689
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
 msgstr "Por exemplu:"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
 msgstr "boot: install vga=771 noapic nolapic"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
 msgstr "boot: live vga=771 noapic nolapic"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:536
+msgid "<keycap>F7</keycap>"
+msgstr "<keycap>F7</keycap>"
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
 msgstr "PARÁMETROS ESPECÍFICOS D'ARRANQUE - DELLOS LLECTORES DE DISCU"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
 msgstr "Adaptec 151x, 152x"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:560
 msgid ""
 "<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
@@ -599,10 +802,12 @@ msgstr ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
 msgid "Adaptec 1542"
 msgstr "Adaptec 1542"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:565
 msgid ""
 "<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
@@ -615,32 +820,39 @@ msgstr ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
 msgstr "Adaptec 274x, 284x"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
 msgid "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 msgstr "<userinput>aic7xxx.aic7xxx=no_reset</userinput> (enabled if non-zero)"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:574
 msgid "BusLogic SCSI Hosts"
 msgstr "BusLogic SCSI Hosts"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:575
 msgid ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 msgstr ""
 "<userinput>BusLogic.BusLogic=<replaceable>iobase</replaceable></userinput>"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
 msgid "Certain DELL machines"
 msgstr "Delles máquines DELL"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:585
 msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
@@ -649,150 +861,174 @@ msgstr ""
 "Esta llista ta incompleta, consulta'l ficheru del nucleu 'kernel-parameters."
 "txt' pa más información"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
 msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
 msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:609
+msgid "<keycap>F8</keycap>"
+msgstr "<keycap>F8</keycap>"
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
 msgstr "PARÁMETROS ESPECÍFICOS D'ARRANQUE - SISTEMA D'INSTALACIÓN"
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
 msgstr "Estos parámetros remanen cómo trabaya l'instalador."
 
+#. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
 msgstr "Estos parámetros remanen cómo trabaya el sistema de bootstrap."
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
 msgid "RESULT"
 msgstr "RESULTÁU"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:633
 msgid "PARAMETER"
 msgstr "PARÁMETRU"
 
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
-msgid "Verbose debugging"
-msgstr "Depuración detallao"
-
-#: help.xml:637
-msgid "<userinput>DEBCONF_DEBUG=5</userinput>"
-msgstr "<userinput>DEBCONF_DEBUG=5</userinput>"
-
-#: help.xml:641
-msgid "Debug boot sequence"
-msgstr "Depuración de la secuencia d'arranque"
-
-#: help.xml:642
-msgid "<userinput>BOOT_DEBUG=2|3</userinput>"
-msgstr "<userinput>BOOT_DEBUG=2|3</userinput>"
-
-#: help.xml:646
 msgid "Disable framebuffer"
 msgstr "Desactivar el buffer d'imaxe"
 
-#: help.xml:647
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:637
 msgid "<userinput>vga=normal fb=false</userinput>"
 msgstr "<userinput>vga=normal fb=false</userinput>"
 
-#: help.xml:651
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:641
 msgid "Don't start PCMCIA"
 msgstr "Non arrancar el PCMCIA"
 
-#: help.xml:652
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:642
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
 msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
-#: help.xml:656
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:646
 msgid "Force static network config"
 msgstr "Forzar la configuración de la rede estática"
 
-#: help.xml:657
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:647
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
 msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
-#: help.xml:661
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:651
 msgid "Set keyboard map"
 msgstr "Afitar el mapa de tecláu"
 
-#: help.xml:662
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:652
 msgid "<userinput>bootkbd=es</userinput>"
 msgstr "<userinput>bootkbd=es</userinput>"
 
-#: help.xml:666
-msgid "Use Braille tty"
-msgstr "Emplegar el mou braille"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:656
+msgid "Select the Kubuntu desktop"
+msgstr "Seleicionar l'escritoriu Kubuntu"
 
-#: help.xml:667
-msgid ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
-msgstr ""
-"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
-"replaceable>,<replaceable>texttable</replaceable></userinput>"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:657
+msgid "<userinput>tasks=kubuntu-desktop</userinput>"
+msgstr "<userinput>tasks=kubuntu-desktop</userinput>"
 
-#: help.xml:671
-msgid "Use high contrast accessibility theme"
-msgstr "Usar tema d'accesibilidá d'altu contraste"
-
-#: help.xml:672
-msgid "<userinput>theme=dark</userinput>"
-msgstr "<userinput>theme=dark</userinput>"
-
-#: help.xml:676
-msgid "Use special tasks"
-msgstr "Usar xeres especiales"
-
-#: help.xml:677
-msgid "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-msgstr "<userinput>tasks=\"kubuntu-desktop, standard\"</userinput>"
-
-#: help.xml:682
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
 "Desactivar el ACPI pa los mapeos PCI (d'utilidá pa dalgunos sirvidores HP y "
 "máquines basaes en Via)"
 
-#: help.xml:685
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:665
 msgid "<userinput>pci=noacpi</userinput>"
 msgstr "<userinput>pci=noacpi</userinput>"
 
-#: help.xml:692
-#, no-wrap
-msgid "boot: install pci=noacpi"
-msgstr "boot: instalar pci=noacpi"
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:669
+msgid "Use high contrast theme"
+msgstr "Usar tema de altu contraste"
 
-#: help.xml:693
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:670
+msgid "<userinput>theme=dark</userinput>"
+msgstr "<userinput>theme=dark</userinput>"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:674
+msgid "Use Braille tty"
+msgstr "Emplegar el mou braille"
+
+#. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
+#: help.xml:675
+msgid ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+msgstr ""
+"<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
+"replaceable>,<replaceable>texttable</replaceable></userinput>"
+
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
+#: help.xml:682
+#, no-wrap
+msgid "boot: install vga=normal fb=false"
+msgstr "boot: install vga=normal fb=false"
+
+#. type: Content of: <reference><refentry><refsection><informalexample><screen>
+#: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
 msgstr "boot: live pci=noacpi"
 
-#: help.xml:710
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:699
+msgid "<keycap>F9</keycap>"
+msgstr "<keycap>F9</keycap>"
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: help.xml:700
 msgid "GETTING HELP"
 msgstr "OBTENER AYUDA"
 
-#: help.xml:717
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
 msgstr "Si nun yes quien a instalar Ubuntu. ¡Asela ho, nun te desesperes!"
 
-#: help.xml:720
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
 msgstr "Si nun yes quien a arrancar Ubuntu. ¡Asela ho, nun te desesperes!"
 
-#: help.xml:723
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
 msgstr "¡L'equipu Ubuntu ta equí pa echate un gabitu!"
 
-#: help.xml:726
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:716
 msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
@@ -801,7 +1037,8 @@ msgstr ""
 "porque normalmente nun suelen asocede-y a <emphasis>una única</emphasis> "
 "persona."
 
-#: help.xml:731
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:721
 msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
@@ -810,7 +1047,8 @@ msgstr ""
 "porque normalmente nun suelen asocede-y a <emphasis>una única</emphasis> "
 "persona."
 
-#: help.xml:735
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:725
 msgid ""
 "We've either already heard about your particular problem and can dispense a "
 "quick fix, or we would like to hear about it and work through it with you, "
@@ -822,11 +1060,18 @@ msgstr ""
 "na so resolución, de mou que'l próximu usuariu que venga col mesmu problema "
 "se beneficie de la so experiencia."
 
-#: help.xml:766
+#. type: Content of: <reference><refentry><refnamediv><refdescriptor>
+#: help.xml:755
+msgid "<keycap>F10</keycap>"
+msgstr "<keycap>F10</keycap>"
+
+#. type: Content of: <reference><refentry><refnamediv><refname>
+#: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
 msgstr "COPYRIGHTS Y GARANTIES"
 
-#: help.xml:773
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:763
 msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
@@ -834,11 +1079,13 @@ msgstr ""
 "Ubuntu ye Copyright (c) 2004-2010 Canonical Ltd., ya incorpora el trabayu de "
 "munchos otros autores y contribuyentes orixinales."
 
-#: help.xml:778
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:768
 msgid "The Ubuntu system is freely redistributable."
 msgstr "El sistema Ubuntu distribúise llibremente y de baldre."
 
-#: help.xml:781
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:771
 msgid ""
 "After installation, the exact distribution terms for each package are "
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -848,7 +1095,8 @@ msgstr ""
 "descríbense nel correspondiente ficheru usr/share/doc/"
 "<replaceable>nomedelpaquete</replaceable>/copyright."
 
-#: help.xml:786
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:776
 msgid ""
 "After startup, the exact distribution terms for each package are described "
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
@@ -858,7 +1106,8 @@ msgstr ""
 "descríbense nel correspondiente ficheru usr/share/doc/"
 "<replaceable>nomedelpaquete</replaceable>/copyright."
 
-#: help.xml:792
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:782
 msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
@@ -866,7 +1115,8 @@ msgstr ""
 "Ubuntu úfrese <emphasis>ABSOLUTAMENTE ENSIN DENGUNA GARANTÍA</emphasis>, "
 "hasta au ta permitío poles lleis aplicables."
 
-#: help.xml:797
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:787
 msgid ""
 "This installation system is based on the Debian installer. See <ulink url="
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
@@ -876,7 +1126,8 @@ msgstr ""
 "url=\"http://www.debian.org/\" /> pa más detalles ya información sobro'l "
 "proyeutu Debian."
 
-#: help.xml:803
+#. type: Content of: <reference><refentry><refsection><para>
+#: help.xml:793
 msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."

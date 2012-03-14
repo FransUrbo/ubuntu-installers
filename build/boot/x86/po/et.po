@@ -218,15 +218,16 @@ msgstr ""
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
-"least 2 gigabytes to install a standard Ubuntu desktop system or at least "
-"400 megabytes for a minimal server installation. You'll need more disk space "
+"least 5 gigabytes to install a standard Ubuntu desktop system or at least "
+"500 megabytes for a minimal server installation. You'll need more disk space "
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Kõvakettal peab olema ruumi, et luua uus partitsioon suurusega vähemalt 2 GB "
-"tavalise töölauasüsteemi jaoks või vähemalt 400 MB minimaalse "
-"serverisüsteemi jaoks. Sõltuvalt süsteemi kasutamise plaanidest võib "
-"lisapakettide paigaldamiseks rohkem ruumi vaja minna."
+"Standardse Ubuntu töölauasüsteemi paigaldamiseks peaks sul olema uue "
+"partitsiooni loomiseks kõvakettal vähemalt 5 GB vaba ruumi, minimaalse "
+"serveripaigalduse jaoks vähemalt 500 MB. Sõltuvalt sellest, mida sa oma uue "
+"Ubuntu opsüsteemiga teha tahad, võib sul olla vaja veel kettaruumi "
+"täiendavate pakettide tarvis."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

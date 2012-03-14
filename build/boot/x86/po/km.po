@@ -184,6 +184,8 @@ msgid ""
 "For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"ចំពោះ F1-F9 ចុច​បញ្ជា (Ctrl) និង F បន្ទាប់​មក​ចុច​លេខ​ 1-9\n"
+"ចំពោះ F10 ចុច​បញ្ជា (Ctrl) និង F បន្ទាប់​មក​លេខ​ 0\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -215,14 +217,15 @@ msgstr "អ្នក​ត្រូវ​មាន​អង្គ​ចងចា
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
-"least 2 gigabytes to install a standard Ubuntu desktop system or at least "
-"400 megabytes for a minimal server installation. You'll need more disk space "
+"least 5 gigabytes to install a standard Ubuntu desktop system or at least "
+"500 megabytes for a minimal server installation. You'll need more disk space "
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"អ្នក​គួរ​តែ​មាន​ទំហំ​លើ​​ថាស​រឹង​របស់​អ្នក​ ​ដើម្បី​បង្កើត​ភាគ​ថាស​ថ្មី​ យ៉ាង​ហោច​ណាស់​ ២ ជីកាបៃ​​ ដើម្បី​ដំឡើង​ប្រព័ន្ធ​"
-"ផ្ទៃតុ​របស់​អ៊ូប៊ុនទូ​ស្តង់ដារ​ ឬ​យ៉ាង​តិច​ ៤០០ មេកាបៃ​​ សម្រាប់​ការ​ដំឡើង​ម៉ាស៊ីន​បម្រើ​តូច​បំផុត​ ។​ អ្នក​នឹង​ត្រូវ​ការ​ទំហំ​"
-"ថាស​បន្ថែម​ ដើម្បី​ដំឡើង​​កញ្ចប់​បន្ថែម​​ អាស្រ័យ​លើ​ អ្វី​ដែល​អ្នក​ចង់​​ធ្វើ​ជាមួយ​នឹង​ប្រព័ន្ធ​អ៊ូប៊ុនទូ​ថ្មី​របស់​អ្នក​ ។"
+"អ្នក​គួរ​មាន​ទំហំ​ទំនេរ​នៅ​ក្នុង​ថាសរឹង​របស់អ្នក ដើម្បី​បង្កើត​ភាគ​ថាស​យ៉ាង​ហោចណាស់​មាន​ទំហំ ៥ ជីកាបៃ ដើម្បី​ដំឡើង​"
+"ប្រព័ន្ធ​ផ្ទៃ​តុ​របស់​អូប៊ុនទូ ឬ​យ៉ាង​ហោចណាស់​មាន​ទំហំ​ទំនេរ ៥០០ មេកាបៃ​សម្របា់​ការ​ដំឡើង​ម៉ាស៊ីន​បម្រើ​​អប្បបរមា ។ "
+"អ្នក​នឹង​ត្រូវ​ការ​ទំហំ​ថាស​បន្ថែម​ទៀត ដើម្បី​ដំឡើង​កញ្ចប់​បន្ថែម ដោយ​អាស្រ័យ​លើ​អ្នក​ចង់​បាន​នៅ​ក្នុង​ប្រព័ន្ធ​អូប៊ុនទូ​"
+"របស់​អ្នក ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -680,7 +683,7 @@ msgstr "បង្ខំ​ប្រើ​កម្មវិធី​បញ្ជ
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>all_generic_ide=1</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
@@ -882,7 +885,7 @@ msgstr "បិទ framebuffer"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:637
 msgid "<userinput>vga=normal fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>vga=normal fb=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
@@ -964,7 +967,7 @@ msgstr ""
 #: help.xml:682
 #, no-wrap
 msgid "boot: install vga=normal fb=false"
-msgstr ""
+msgstr "boot: install vga=normal fb=false"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683

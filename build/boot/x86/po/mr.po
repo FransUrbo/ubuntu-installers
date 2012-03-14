@@ -216,15 +216,11 @@ msgstr ""
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
-"least 2 gigabytes to install a standard Ubuntu desktop system or at least "
-"400 megabytes for a minimal server installation. You'll need more disk space "
+"least 5 gigabytes to install a standard Ubuntu desktop system or at least "
+"500 megabytes for a minimal server installation. You'll need more disk space "
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"तुमच्या हार्ड डिस्क मध्ये मानांकीत उबुंतू डेस्कटॉप प्रणाली स्थापण्याठी कमीतकमी २ गिगाबाईट्स "
-"किंवा न्यूनतम सर्वर स्थापण्याठी कमीतकमी ४०० मेगाबाईट्सची जागा नविन पार्टीशन तयार "
-"करण्यासाठी असायला हवी. तुम्ही तुमच्या नविन उबुंतू प्रणाली सोबत जे कराल त्यासाठी जर "
-"अधिकचे पॅकेजेस स्थापावे लागले तर तुम्हाला जास्त जागा लागेल."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

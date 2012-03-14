@@ -154,7 +154,7 @@ msgstr "Specialūs paleidimo parametrai sistemos įdiegimui."
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr ""
+msgstr "Specialūs įkrovos parametrai pakopinio įkėlimo sistemai."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
@@ -219,15 +219,16 @@ msgstr ""
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
-"least 2 gigabytes to install a standard Ubuntu desktop system or at least "
-"400 megabytes for a minimal server installation. You'll need more disk space "
+"least 5 gigabytes to install a standard Ubuntu desktop system or at least "
+"500 megabytes for a minimal server installation. You'll need more disk space "
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"Jūs turėtumėte turėti mažiausiai 2 gigabaitus laisvos disko vietos norėdami "
-"įdiegti \"Ubuntu\" darbinę sistemą, arba mažiausiai 400 megabaitų minimalaus "
-"serverio įdiegimui. Jums reikės daugiau vietos papildomų programų įdiegimui, "
-"priklausomai nuo to ką Jūs norite daryti su savo nauja \"Ubuntu\" sistema"
+"Savo kietajame diske turėtumėt turėt tiek vietos jog būtų galima sukurti "
+"bent 5 gigabaitų skirsnį, kuriame bus galima įrašyti standartinę Ubuntu "
+"desktop sistemą arba bent 500 megabaitų minimaliam serverio įdiegimui. Tau "
+"prireiks papildomos vietos įdieti papildomus paketus, priklausomai nuo to ką "
+"norėsi daryt su savo nauja Ubuntu sistema."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -344,12 +345,12 @@ msgstr "cli-expert"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr ""
+msgstr "Minimalios komandinės eilutės sistemos įdiegimas."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr ""
+msgstr "live - Sistema paleidžiama iš CD"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
@@ -409,7 +410,7 @@ msgstr "įkrauti: įdiegti acpi=išjungti"
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr ""
+msgstr "boot: live acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
@@ -497,6 +498,11 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
+"Šiame diske nėra specialiai tam skirto atstatymo režimo. Nepaisant to, "
+"diskas suteikia pilną naudotojo aplinką, tu gali naudoti komandinės eilutės "
+"ir/ar įrankius su grafine vartotojo sąsaja skirtus atstatyti sugedusią "
+"sistemą. Taipogi gali naudoti naršyklę pagalbos paieškai. Internete visada "
+"gali rasti dėmesio vertą patarimą, praktiškai bet kokiai problemai spręsti."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -523,6 +529,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"Kai kuriose sistemose jums gali tekti nurodyti parametrą paspaudus F6, kad "
+"įkrautumėte sistemą."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -558,7 +566,7 @@ msgstr "diegimo sistemai suprantami įkrovos parametrai"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr ""
+msgstr "pakopinio įkrovimo sistemai suprantami įkrovos parametrai"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
@@ -600,6 +608,9 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Galite naudoti šiuos parametrus prie <literal>boot:</literal>  komandinės "
+"eilutės, derindami su įkrovos būdu (žiūrėkite <link linkend="
+"\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
@@ -607,6 +618,8 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
+"Paspaudę F6 jūs galėsite naudoti šiuos pametrus  derindami su įkrovos būdu "
+"(žiūrėkite <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
@@ -623,7 +636,7 @@ msgstr "APARATINĖ ĮRANGA"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr ""
+msgstr "PARINKTIS KURIĄ NURODYTI"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
@@ -636,6 +649,8 @@ msgid ""
 "<userinput>hd=<replaceable>cylinders</replaceable>,<replaceable>heads</"
 "replaceable>,<replaceable>sectors</replaceable></userinput>"
 msgstr ""
+"<userinput>hd=<replaceable>cilindrai</replaceable>,<replaceable>galvutės</"
+"replaceable>,<replaceable>sektoriai</replaceable></userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
@@ -659,6 +674,9 @@ msgid ""
 "replaceable></userinput><optional><userinput>,<replaceable>...</"
 "replaceable></userinput></optional>"
 msgstr ""
+"<userinput>rezervas=<replaceable>iobazė</replaceable>,"
+"<replaceable>išplėstas</replaceable></userinput><optional><userinput>,"
+"<replaceable>...</replaceable></userinput></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
@@ -673,38 +691,39 @@ msgstr "<userinput>vga=771</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr ""
+msgstr "Naudoti pirmą serijinį prievadą 9600 bodų greičiu"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
-msgstr ""
+msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr ""
+msgstr "Priverstinai naudoti pagrindinę IDE tvarkyklę"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
 msgid "<userinput>all_generic_ide=1</userinput>"
-msgstr ""
+msgstr "<userinput>all_generic_ide=1</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
 msgstr ""
+"Galimi (laikini) sprendimai esant strigčiai arba aparatinės įrangos gedimams:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr ""
+msgstr "išjungti klaidingą „APIC interrupt routing“"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
 msgid "<userinput>noapic nolapic</userinput>"
-msgstr ""
+msgstr "<userinput>noapic nolapic</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
@@ -714,7 +733,7 @@ msgstr "(dalinai) išjungti ACPI"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr ""
+msgstr "<userinput>acpi=noirq</userinput> arba <userinput>acpi=off</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
@@ -724,17 +743,17 @@ msgstr "išjungti USB"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
 msgid "<userinput>nousb</userinput>"
-msgstr ""
+msgstr "<userinput>nousb</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr ""
+msgstr "kaupti pertrauktis („pool for interrupts“)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
 msgid "<userinput>irqpoll</userinput>"
-msgstr ""
+msgstr "<userinput>irqpoll</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
@@ -745,28 +764,28 @@ msgstr "Pavyzdžiui:"
 #: help.xml:519
 #, no-wrap
 msgid "boot: install vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: install vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:520
 #, no-wrap
 msgid "boot: live vga=771 noapic nolapic"
-msgstr ""
+msgstr "boot: live vga=771 noapic nolapic"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:536
 msgid "<keycap>F7</keycap>"
-msgstr ""
+msgstr "<keycap>F7</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr ""
+msgstr "SPECIALŪS ĮKROVOS PARAMETRAI - ĮVAIRŪS DISKAI"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
 msgid "Adaptec 151x, 152x"
-msgstr ""
+msgstr "Adaptec 151x, 152x"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:560
@@ -777,11 +796,16 @@ msgid ""
 "userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
 "userinput></optional></optional></optional>"
 msgstr ""
+"<userinput>aha152x.aha152x=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>irq</replaceable></"
+"userinput><optional><userinput>,<replaceable>scsi-id</replaceable></"
+"userinput><optional><userinput>,<replaceable>reconnect</replaceable></"
+"userinput></optional></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:564
 msgid "Adaptec 1542"
-msgstr ""
+msgstr "Adaptec 1542"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:565
@@ -791,6 +815,10 @@ msgid ""
 "<replaceable>busoff</replaceable></userinput><optional><userinput>,"
 "<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 msgstr ""
+"<userinput>aha1542.aha1542=<replaceable>iobase</replaceable></"
+"userinput><optional><userinput>,<replaceable>buson</replaceable>,"
+"<replaceable>busoff</replaceable></userinput><optional><userinput>,"
+"<replaceable>dmaspeed</replaceable></userinput></optional></optional>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
@@ -822,7 +850,7 @@ msgstr "Kai kurie Dell įrenginiai"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
 msgid "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
-msgstr ""
+msgstr "<userinput>aic7xxx.aic7xxx=no_probe</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:585
@@ -837,13 +865,13 @@ msgstr ""
 #: help.xml:592
 #, no-wrap
 msgid "boot: install aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: install aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:593
 #, no-wrap
 msgid "boot: live aic7xxx.aic7xxx=no_probe"
-msgstr ""
+msgstr "boot: live aic7xxx.aic7xxx=no_probe"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:609
@@ -853,7 +881,7 @@ msgstr "<keycap>F8</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr ""
+msgstr "SPECIALŪS ĮKROVOS PARAMETRAI - DIEGIMO SISTEMA"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
@@ -878,12 +906,12 @@ msgstr "PARAMETRAS"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
 msgid "Disable framebuffer"
-msgstr ""
+msgstr "Išjungti \"framebuffer\""
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:637
 msgid "<userinput>vga=normal fb=false</userinput>"
-msgstr ""
+msgstr "<userinput>vga=normal fb=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
@@ -893,17 +921,17 @@ msgstr "Nepaleisti PCMCIA"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:642
 msgid "<userinput>hw-detect/start_pcmcia=false</userinput>"
-msgstr ""
+msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:646
 msgid "Force static network config"
-msgstr ""
+msgstr "Naudoti statinę tinklo konfigūraciją"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:647
 msgid "<userinput>netcfg/disable_dhcp=true</userinput>"
-msgstr ""
+msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:651
@@ -913,7 +941,7 @@ msgstr "Nustatyti klaviatūros išdėstymą"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:652
 msgid "<userinput>bootkbd=es</userinput>"
-msgstr ""
+msgstr "<userinput>bootkbd=es</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
@@ -923,18 +951,20 @@ msgstr "Pasirinkti Kubuntu darbastalį"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
 msgid "<userinput>tasks=kubuntu-desktop</userinput>"
-msgstr ""
+msgstr "<userinput>tasks=kubuntu-desktop</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
+"Išjungti ACPI PCI žemėlapiams (paranku kai kuriems HP serveriams ir "
+"kompiuteriams sukurtiems Via mikroschemų pagrindu)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:665
 msgid "<userinput>pci=noacpi</userinput>"
-msgstr ""
+msgstr "<userinput>pci=noacpi</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
@@ -944,12 +974,12 @@ msgstr "Naudoti dielės raiškos temą"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
 msgid "<userinput>theme=dark</userinput>"
-msgstr ""
+msgstr "<userinput>theme=dark</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:674
 msgid "Use Braille tty"
-msgstr ""
+msgstr "Naudoti Brailio terminalą"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:675
@@ -957,23 +987,26 @@ msgid ""
 "<userinput>brltty=<replaceable>driver</replaceable>,<replaceable>device</"
 "replaceable>,<replaceable>texttable</replaceable></userinput>"
 msgstr ""
+"<userinput>brltty=<replaceable>tvarkyklė</replaceable>,"
+"<replaceable>įrenginys</replaceable>,<replaceable>texttable</replaceable></"
+"userinput>"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:682
 #, no-wrap
 msgid "boot: install vga=normal fb=false"
-msgstr ""
+msgstr "boot: install vga=normal fb=false"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:683
 #, no-wrap
 msgid "boot: live pci=noacpi"
-msgstr ""
+msgstr "boot: live pci=noacpi"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:699
 msgid "<keycap>F9</keycap>"
-msgstr ""
+msgstr "<keycap>F9</keycap>"
 
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:700
@@ -1001,6 +1034,8 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Mums būtų ypač įdomu išgirsti apie diegimo problemas, nes paprastai jos "
+"nutinka <emphasis>ne vienam</emphasis> žmogui."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:721
@@ -1008,6 +1043,8 @@ msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
+"Mums būtų ypač įdomu išgirsti apie paleidimo problemas, nes jos dažniausiai "
+"atsitinka <emphasis>ne vienam</emphasis> žmogui."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:725
@@ -1017,6 +1054,10 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
+"Mes galbūt jau žinome apie jūsų problemą ir galime pasiūlyti greitą jos "
+"sprendimo būdą, arba norėtumėm sužinoti apie ją daugiau ir bandyti išspręsti "
+"ją kartu, tam, kad kiti vartotojai susidūrę su ja galėtu pasinaudoti jūsų "
+"patirtimi jos sprendime!"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
@@ -1034,6 +1075,8 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
+"Ubuntu autoriaus teisės (C) 2004-2010 Canonical Ltd., taip pat įtraukia "
+"daugelio kitų pirminių autorių ir talkininkų darbus."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:768
@@ -1047,6 +1090,9 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"Po įdiegimo, tikslios platinimo sąlygos kiekvienam paketui yra surašytos "
+"atitinkamame aprašymo faile /usr/share/doc/<replaceable>paketovardas</"
+"replaceable>/copyright."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:776
@@ -1055,6 +1101,9 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
+"Po paleidimo, tikslios platinimo sąlygos kiekvienam paketui yra surašytos "
+"atitinkamame aprašymo faile /usr/share/doc/<replaceable>paketovardas</"
+"replaceable>/copyright."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:782
@@ -1062,6 +1111,8 @@ msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
+"Ubuntu tiekiamas <emphasis>BE JOKIOS GARANTIJOS</emphasis>, kiek tai leidžia "
+"galiojantys įstatymai."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:787
@@ -1070,6 +1121,9 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
+"Ši diegimo sistema sukurta Debian diegimo sistemos pagrindu. Žiūrėkite "
+"<ulink url=\"http://www.debian.org/\" /> jei norite daugiau informacijos "
+"apie Debian projektą."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:793

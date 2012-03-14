@@ -221,14 +221,16 @@ msgstr "ഈ ഉബുണ്ടു ഇന്‍സ്റ്റാളറിന് 
 #: help.xml:123
 msgid ""
 "You should have space on your hard disk to create a new disk partition of at "
-"least 2 gigabytes to install a standard Ubuntu desktop system or at least "
-"400 megabytes for a minimal server installation. You'll need more disk space "
+"least 5 gigabytes to install a standard Ubuntu desktop system or at least "
+"500 megabytes for a minimal server installation. You'll need more disk space "
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"ഉബുണ്ടു ഡസ്കടോപ് ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നതിന്ന് ചുരുങ്ങിയത് 2 gigabyte മെമ്മറിയും ഉബുണ്ടു സര്‍വര്‍ "
-"ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നതിന്ന് ചുരുങ്ങിയത് 400 megabyte മെമ്മറിയും ആവശ്യമാണ്. പുറമെ നിങ്ങളുടെ "
-"ആവശ്യങ്ങള്‍ക്കനുസരിച്ച് കൂടുതല്‍ പേക്കേജ് ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നതിന്ന് കൂടുതല്‍ മെമ്മറി വേണ്ടിവരും."
+"ഒരു ശരാശരി രീതിയിലുള്ള (സ്ട്റ്റാന്‍ഡേര്‍ഡ് )ഉബുണ്ടുവിന്റെ ഡെസ്ക്ടോപ്പോടുകൂടിയ സിസ്റ്റം ഇന്‍സ്റ്റാള്‍ "
+"ചെയ്യുന്നതിന് നിങ്ങളുടെ ഹാര്‍ഡ്  ഡിസ്കില്‍ പുതിയ ഭാഗം ഉണ്ടാക്കണം, അതിന് ഹാര്‍ഡ് ഡിസ്കില്‍ കുറഞ്ഞത് "
+"5GB സ്ഥലമെങ്കിലും ഉണ്ടായിരിക്കണം, സെര്‍വറിനാണെങ്കില്‍ കുറഞ്ഞത് 500 MB മതിയാകും. എന്നാല്‍ "
+"നിങ്ങാള്‍ ആഗ്രഹിക്കുന്ന രീതിയില്‍ ഉബുണ്ടുവിനെ ഉപയോഗപ്പെടുത്തുവാന്‍ പാക്കേജുകള്‍ കൂടുതലായി ഇന്‍സ്റ്റാള്‍ "
+"ചെയ്യേണ്ടി വന്നേക്കാം, അതിന് ഹാര്‍ഡ്  ഡിസ്കില്‍ കൂടുതല്‍ സ്ഥലം ആവശ്യമായി വരും"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -432,12 +434,18 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"ഇതിലേതെങ്കിലും ബൂട് (boot)രീതികള്‍ ഉപയോഗിക്കാന്‍ കീബോഡിലെ ആരോ (cursor keys) കീകള്‍ "
+"ഉപയോഗിക്കുക. മറ്റ് ഇന്‍സ്റ്റലേഷന്‍ അധവാ ആരംഭ രീതികള്‍ക്കായി F4 എന്ന കീ അമര്‍ത്തുക. ബൂട്ടിങ്ങിന്റെ "
+"(booting)പരിമിതികള്‍ പുനര്‍നിശ്ചയിക്കുവാന്‍ F6 എന്ന കീ അമര്‍ത്തുക. സാധാരണയായി ഉപയോഗിച്ചുവരുന്ന "
+"ബൂട്ടിങ്ങ് പരിമിതികള്‍ മെനുവില്‍നിന്ന് തിരഞ്ഞെടുക്കുവാന്‍ വീണ്ടും F6 അമര്‍ത്തുക."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
 msgstr ""
+"വിദഗ്ധരുടെ രീതിയല്ല നിങ്ങള്‍ ഉപയോഗിക്കുന്നതെങ്കില്‍ കേര്‍ണല്‍ ബൂട് (boot) ആകുന്ന മുറക്ക് "
+"വരുന്നഅതിഗുരുതരമില്ലാത്ത അറിയിപ്പുകള്‍ മറയപ്പെട്ടിരിക്കും"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
@@ -453,6 +461,8 @@ msgstr "കേട് സംഭവിച്ച സിസ്റ്റത്തെ 
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
 msgstr ""
+"നിലവിലുള്ള ഉപയോഗശൂന്യമായ ഇന്‍സ്റ്റലേഷനെ  പ്രവര്‍ത്തനക്ഷമമാക്കുവാന്‍ ഇതിലേതെങ്കിലും ബൂട് (boot)"
+"രീതികള്‍ ഉപയോഗിക്കുക"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
@@ -494,7 +504,7 @@ msgstr "<keycap>F5</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr ""
+msgstr "സവിശേഷമായ ബൂട്ടിങ്ങ് പരിമിതികളുടെ അവലോകനം"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
@@ -529,7 +539,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr ""
+msgstr "സവിശേഷമായ കമ്പ്യൂട്ടറുകള്‍ക്ക് വേണ്ടിയുള്ള ബൂട്ടിങ്ങ് പരിമിതികള്‍"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390

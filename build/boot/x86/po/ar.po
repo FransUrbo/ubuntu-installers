@@ -115,7 +115,7 @@ msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr ""
+msgstr "معايير إقلاع خاصة، نظرة عامة."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
@@ -125,7 +125,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr ""
+msgstr "معايير إقلاع خاصة لأجهزة خاصة."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389

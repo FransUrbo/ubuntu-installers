@@ -229,6 +229,10 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"Do instalacji standardowej wersji systemu Ubuntu wymagane jest co najmniej "
+"5GB wolnego miejsca, a dla minimalnej wersji serwerowej co najmniej 500MB. W "
+"zależności od przeznaczenia twojego systemu, system może potrzebować więcej "
+"miejsca, aby zainstalować dodatkowe pakiety."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732

@@ -184,6 +184,8 @@ msgid ""
 "For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"F1-F9: sakatu kontrol + F eta gero 1-9 digitoa\n"
+"F10: sakatu kontrol + F eta gero 0 digitoa\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -223,6 +225,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"Ubuntu mahaigainerako sistema estandarra instalatu ahal izateko disko "
+"gogorrean gutxienez 5 gigabyteko partizio berri bat sortzeko lekua izan "
+"behar duzu, edo gutxienez 500 megabyte zerbitzariaren instalazio minimorako. "
+"Leku gehiago beharko duzu pakete gehigarriak instalatzeko, Ubuntu sistema "
+"berriari eman nahi diozun erabileraren arabera."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
