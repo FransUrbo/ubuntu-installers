@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu118) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu118) precise; urgency=low
 
   * Move armel/omap4 and armhf/omap4 to 3.2.0-1408 kernels.
   * Update help text translations from Launchpad.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 14 Mar 2012 09:15:30 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 14 Mar 2012 09:19:58 +0000
 
 debian-installer (20101020ubuntu117) precise; urgency=low
 
