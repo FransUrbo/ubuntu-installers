@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu119) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu119) precise; urgency=low
 
   * Add a new cdrom/isolinux/non-pae build for i386 that uses the -generic
     kernel flavour (LP: #955009).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 15 Mar 2012 18:40:45 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 15 Mar 2012 18:41:47 +0000
 
 debian-installer (20101020ubuntu118) precise; urgency=low
 
