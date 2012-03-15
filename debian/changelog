@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu119) UNRELEASED; urgency=low
+
+  * Add a new cdrom/isolinux/non-pae build for i386 that uses the -generic
+    kernel flavour (LP: #955009).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 15 Mar 2012 18:40:45 +0000
+
 debian-installer (20101020ubuntu118) precise; urgency=low
 
   * Move armel/omap4 and armhf/omap4 to 3.2.0-1408 kernels.
