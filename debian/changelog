@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu120) UNRELEASED; urgency=low
+
+  * Move armadaxp to 3.2.0-1600 kernel.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 16 Mar 2012 11:23:52 +0100
+
 debian-installer (20101020ubuntu119) precise; urgency=low
 
   * Add a new cdrom/isolinux/non-pae build for i386 that uses the -generic
