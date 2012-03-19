@@ -1,3 +1,11 @@
+debian-installer (20101020ubuntu121) precise; urgency=low
+
+  * Move armhf/armadaxp to 3.2.0-1600, not 3.0.0-1600.
+  * Move generic distro kernels to 3.2.0-19.
+  * Move armel/omap4 and armhf/omap4 to 3.2.0-1409.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Sun, 18 Mar 2012 11:34:42 -0600
+
 debian-installer (20101020ubuntu120) precise; urgency=low
 
   * Move armadaxp to 3.2.0-1600 kernel.
