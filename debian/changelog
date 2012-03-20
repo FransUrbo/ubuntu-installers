@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu122) precise; urgency=low
+
+  * Switch PPC32 builds to the powerpc-smp kernel.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 20 Mar 2012 09:55:41 -0600
+
 debian-installer (20101020ubuntu121) precise; urgency=low
 
   * Move armhf/armadaxp to 3.2.0-1600, not 3.0.0-1600.
