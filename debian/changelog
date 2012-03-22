@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu123) precise; urgency=low
+
+  * Move armel/omap4 and armhf/omap4 to 3.2.0-1410.
+  * Move generic distro kernels to 3.2.0-20.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 22 Mar 2012 03:42:02 -0600
+
 debian-installer (20101020ubuntu122) precise; urgency=low
 
   * Switch PPC32 builds to the powerpc-smp kernel.
