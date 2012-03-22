@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu124) UNRELEASED; urgency=low
+
+  * Bump amd64, i386, and powerpc netboot image sizes by a megabyte to
+    accommodate nic-firmware growth.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 22 Mar 2012 11:08:23 +0000
+
 debian-installer (20101020ubuntu123) precise; urgency=low
 
   * Move armel/omap4 and armhf/omap4 to 3.2.0-1410.
