@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu125) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu125) precise; urgency=low
 
   * No-change rebuild to pick up new libcrypto1.0.0-udeb.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Sun, 25 Mar 2012 14:58:40 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 25 Mar 2012 15:04:23 +0100
 
 debian-installer (20101020ubuntu124) precise; urgency=low
 
