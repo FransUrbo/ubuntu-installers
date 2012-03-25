@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu125) UNRELEASED; urgency=low
+
+  * No-change rebuild to pick up new libcrypto1.0.0-udeb.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 25 Mar 2012 14:58:40 +0100
+
 debian-installer (20101020ubuntu124) precise; urgency=low
 
   * Bump amd64, i386, and powerpc netboot image sizes by a megabyte to
