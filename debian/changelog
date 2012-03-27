@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu126) precise; urgency=low
+
+  * Move armel/omap4 and armhf/omap4 to 3.2.0-1411.
+
+ -- Adam Conrad <adconrad@cthulhu>  Tue, 27 Mar 2012 15:04:37 -0600
+
 debian-installer (20101020ubuntu125) precise; urgency=low
 
   * No-change rebuild to pick up new libcrypto1.0.0-udeb.
