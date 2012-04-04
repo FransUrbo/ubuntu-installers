@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu128) UNRELEASED; urgency=low
+
+  * Move to 3.2.0-22 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 04 Apr 2012 13:04:35 +0100
+
 debian-installer (20101020ubuntu127) precise; urgency=low
 
   * Move to 3.2.0-21 kernels.
