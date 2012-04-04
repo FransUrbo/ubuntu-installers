@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu129) UNRELEASED; urgency=low
+
+  * nic-firmware grew by nearly 4MB (!).  Bump amd64, i386, and powerpc
+    netboot image sizes to match.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 04 Apr 2012 17:09:22 +0100
+
 debian-installer (20101020ubuntu128) precise; urgency=low
 
   * Move to 3.2.0-22 kernels.
