@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu132) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu132) precise; urgency=low
 
   * Add a new hd-media/non-pae build for i386 (LP: #977568).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 11 Apr 2012 17:20:36 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 12 Apr 2012 00:36:26 +0100
 
 debian-installer (20101020ubuntu131) precise; urgency=low
 
