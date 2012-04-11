@@ -1,6 +1,7 @@
 debian-installer (20101020ubuntu131) UNRELEASED; urgency=low
 
   * Update help text translations from Launchpad.
+  * Move to 3.2.0-23 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 11 Apr 2012 09:50:57 +0100
 
