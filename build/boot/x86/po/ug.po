@@ -1,16 +1,16 @@
-# Chinese (China) translation for debian-installer
-# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# Uighur translation for debian-installer
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
 # This file is distributed under the same license as the debian-installer package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# Sahran <sahran@live.com>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-08-20 15:52+0000\n"
-"Last-Translator: Wylmer Wang <Unknown>\n"
-"Language-Team: Chinese (China) <zh_CN@li.org>\n"
+"PO-Revision-Date: 2012-04-05 05:47+0000\n"
+"Last-Translator: Sahran <Unknown>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 #. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "安装程序帮助画面"
+msgstr "ئورناتقۇچنىڭ قوزغىتىش ياردەم كۆزنىكى"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
@@ -31,7 +31,7 @@ msgstr "<keycap>F1</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "欢迎使用 ${DISTRIBUTION_NAME}!"
+msgstr "${DISTRIBUTION_NAME} گە مەرھابا!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
@@ -39,8 +39,8 @@ msgid ""
 "This is an installation system for ${DISTRIBUTION_NAME} "
 "${DISTRIBUTION_VERSION}. It was built on ${BUILD_DATE}."
 msgstr ""
-"这是一个 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的安装版本。构建时间为 "
-"${BUILD_DATE}。"
+"بۇ ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} نىڭ ئورنىتىش سىستېمىسىدۇر. "
+"بۇ سىستېما ${BUILD_DATE} ياسالغان."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:23
@@ -48,23 +48,23 @@ msgid ""
 "This is a live system for ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION}. It "
 "was built on ${BUILD_DATE}."
 msgstr ""
-"这是一个 ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} 的即用版本。构建时间为 "
-"${BUILD_DATE}."
+"بۇ ${DISTRIBUTION_NAME} ${DISTRIBUTION_VERSION} نىڭ live سىستېمىسىدۇر. بۇ "
+"سىستېما ${BUILD_DATE} ياسالغان."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><title>
 #: help.xml:28
 msgid "HELP INDEX"
-msgstr "帮助目录"
+msgstr "ياردەم ئىندېكىسى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:29
 msgid "KEY"
-msgstr "KEY"
+msgstr "ئاچقۇچ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:30
 msgid "TOPIC"
-msgstr "主题"
+msgstr "تېما"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:33
@@ -74,7 +74,7 @@ msgstr "<link linkend=\"F1\"><keycap>F1</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:34
 msgid "This page, the help index."
-msgstr "本页，帮助目录."
+msgstr "مۇشۇ بەت، ياردەم ئىندېكسى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:38 help.xml:43
@@ -84,12 +84,12 @@ msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "安装 ${DISTRIBUTION_NAME} 的必需条件。"
+msgstr "${DISTRIBUTION_NAME} نى ئورنىتىشنىڭ ئالدىنقى شەرتى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "运行 ${DISTRIBUTION_NAME} 的必需条件。"
+msgstr "${DISTRIBUTION_NAME} نى ئىجرا قىلىشنىڭ ئالدىنقى شەرتى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
@@ -99,7 +99,7 @@ msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr "为特殊使用而启动系统的方法。"
+msgstr "مەزكۇر سىستېمىدىكى ئالاھىدە قوزغىتىش ئۇسۇللىرى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -109,7 +109,7 @@ msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "其它启动方式；恢复一个破损的系统。"
+msgstr "باشقىچە قوزغىتىش ئۇسۇلى؛ بۇزۇلغان سىستېمىنى ئەسلىگە كەلتۈرۈش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
@@ -119,7 +119,7 @@ msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr "特定启动参数，概览。"
+msgstr "ئالاھىدە قوزغىتىش پارامېتىرلىرى، قىسقىچە تونۇشتۇرۇش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
@@ -129,7 +129,7 @@ msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "特定机器的特定启动参数。"
+msgstr "ئالاھىدە ماشىنا ئۈچۈن ئالاھىدە قوزغىتىش پارامېتىرلىرى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
@@ -139,7 +139,7 @@ msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr "给选定的磁盘控制器的特定启动参数。"
+msgstr "تاللانغان دىسكا كونتروللىغۇچ ئۈچۈن ئالاھىدە قوزغىتىش پارامېتىرلىرى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
@@ -149,12 +149,12 @@ msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr "安装系统的特定启动参数。"
+msgstr "قاچىلانغان سىستېما ئۈچۈن ئالاھىدە قوزغىتىش پارامېتىرلىرى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "系统自举的特定启动参数。"
+msgstr "bootstrap سىستېمىسى ئۈچۈن ئالاھىدە قوزغىتىش پارامېتىرلىرى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
@@ -164,7 +164,7 @@ msgstr "<link linkend=\"F9\"><keycap>F9</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:84
 msgid "How to get help."
-msgstr "如何获得帮助。"
+msgstr "ياردەمگە ئېرىشىش ئۇسۇلى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:88
@@ -174,7 +174,7 @@ msgstr "<link linkend=\"F10\"><keycap>F10</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:89
 msgid "Copyrights and warranties."
-msgstr "版权和担保。"
+msgstr "ھوقۇق ۋە كاپالەتلەر"
 
 #.  deliberately unindented 
 #. type: Content of: <reference><refentry><refsection><literallayout>
@@ -184,18 +184,20 @@ msgid ""
 "For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
-"要键入 F1-F9，请按住 Ctrl 键，然后按 F，再按 1-9 数字键\n"
-"要键入 F10，请按住 Ctrl 键，然后按 F，再按 0 数字键\n"
+"F1-F9 نى Control + F  نىڭ ئارقىسىدىن 1-9 نى كىرگۈزىدۇ.\n"
+"F10 نى Control + F نىڭ ئارقىسىدىن 0 نى كىرگۈزىدۇ.\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
-msgstr "详情按 F2-F10，或按回车执行 ${BOOTPROMPT}。"
+msgstr ""
+"تەپسىلاتلار ئۈچۈن  F2 دىن  F10 نى بېسىڭ ياكى ${BOOTPROMPT} ھالەتتە ENTER "
+"كۇنۇپكىسىنى بېسىڭ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
 msgid "Press F2 through F10 for details, or Escape to exit help."
-msgstr "按 F2-F10 获得帮助，按 Esc 退出。"
+msgstr "تەپسىلاتلار ئۈچۈن F2 دىن F10 نى  بېسىڭ ياكى ESC بېسىپ چېكىنىڭ"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:111
@@ -205,13 +207,15 @@ msgstr "<keycap>F2</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:112
 msgid "PREREQUISITES FOR INSTALLING UBUNTU"
-msgstr "安装 UBUNTU 的必需条件"
+msgstr "UBUNTU نى ئورنىتىشنىڭ ئالدىنقى شەرتى"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr "您至少需要 32M 内存来运行 Ubuntu 安装程序。"
+msgstr ""
+"مەزكۇر Ubuntu قاچىلىغۇچنى ئىشلىتىش ئۈچۈن ئاز بولغاندا 32 مېگابايت RAM بولۇشى "
+"كېرەك."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -222,9 +226,11 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
-"要安装标准的Ubuntu桌面系统，你的硬盘上需要有足够空间来创建一个至少5GB的新分"
-"区；安装最小服务器系统需要至少 500MB。根据您对 Ubuntu 系统的使用需求，可能将"
-"需要更多磁盘空间来安装额外的软件包。"
+"قاتتىق دىسكىغا رايون ياساپ، ئۇنىغا Ubuntu ئۈستەلئۈستى سىستېمىسىنى ئورنىتىش "
+"ئۈچۈن ئاز دېگەندە 5 گېگابايت بوشلۇق بولۇشى، مۇلازىمېتىرنى ئەڭ كىچىك قىلىپ "
+"ئورنىتىش ئۈچۈنمۇ 500 مېگابايت بوشلۇق بولۇشى كېرەك. يەنە سىز نېمىلەرنى "
+"قىلماقچى، قانداق بوغچىلارنى ئورناتماقچى بولغىنىڭىزغا قاراپ كېرەك بولىدىغان "
+"بوشلۇقمۇ چوڭىيىپ ماڭىدۇ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -233,14 +239,17 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"参阅安装手册或者FAQ(常见的问题)来获知更多信息；这两份文档都可以在 Ubuntu 网站"
-"上找到，<ulink url=\"http://www.ubuntu.com/\" />"
+"تەپسىلىي ئۇچۇرلارنى بىلمەكچى بولسىڭىز، ئورنىتىش قوللانمىسى ياكى FAQ(سوئال-"
+"جاۋاب) لارغا قاراڭ. بۇ ئىككىلىسى Ubuntu  نىڭ تور بېتى <ulink url=\"http://"
+"www.ubuntu.com/\" /> دا بار."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr "您至少需要 384M 的内存才能使用 Ubuntu Live 系统。"
+msgstr ""
+"بۇ Ubuntu جانلىق سىستېمىسىنى ئىشلىتىش ئۈچۈن سىزدە چوقۇم 384 مېگابايت ئىچكى "
+"ساقلىغۇچ بولۇشى كېرەك."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -248,7 +257,8 @@ msgid ""
 "The live system does not require any space on your hard disk. However, "
 "existing Linux swap partitions on the disk will be used if available."
 msgstr ""
-"Live系统不会占用您硬盘上的空间。但会使用您硬盘上既有的 Linux swap 分区。"
+"جانلىق سىستېما قاتتىق دىسكىڭىزنى ئىگىلىمەيدۇ. ئەگەر دىسكىدا swap رايونى "
+"بولسا ئىشلىتىدۇ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:147 help.xml:738
@@ -256,13 +266,13 @@ msgid ""
 "See the FAQ for more information; this document is available at the Ubuntu "
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
-"参阅 FAQ 获知更多信息；此文档可在 Ubuntu 的网站上找到，<ulink url=\"http://"
-"www.ubuntu.com/\" />"
+"تەپسىلىي ئۇچۇرلارنى بىلمەكچى بولسىڭىز،FAQ(سوئال-جاۋاب) لارغا قاراڭ. بۇ پۈتۈك "
+"Ubuntu  نىڭ تور بېتى <ulink url=\"http://www.ubuntu.com/\" /> دا بار."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "感谢您选择Ubuntu！"
+msgstr "Ubuntu  نى تاللاپ　 ئىشلەتكەنلىكىڭىز ئۈچۈن سىزگە كۆپ تەشەككۈر."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
@@ -272,14 +282,16 @@ msgid ""
 "\">control and F then 1</phrase> for the help index, or ENTER to "
 "${BOOTPROMPT}"
 msgstr ""
-"按<phrase class=\"not-serial\">F1</phrase><phrase class=\"serial\">control 和"
-"F然后按1</phrase>调出帮助目录，或者按回车来${BOOTPROMPT}"
+"ياردەم ئىندېكسنى كۆرۈش ئۈچۈن <phrase class=\"not-serial\">F1</phrase><phrase "
+"class=\"serial\"> Ctrl نى بېسىپ تۇرۇپ 1 </phrase> نى بېسىڭ. ياكى "
+"${BOOTPROMPT} ھالەتتە ENTER نى بېسىڭ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "按 F1 调出帮助目录，或者按 Esc 退出帮助。"
+msgstr ""
+"ياردەم ئىندېكسنى كۆرۈش ئۈچۈن F1  نى بېسىڭ. چېكىنىش ئۈچۈن Escape نى بېسىڭ."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
@@ -289,72 +301,73 @@ msgstr "<keycap>F3</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr "启动方式"
+msgstr "قوزغىتىش ئۇسۇللىرى"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr "可用的启动方式："
+msgstr "قوزغىتىش ئۇسۇللىرى:"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
-msgstr "安装"
+msgstr "ئورنىتىش"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
 msgid "Install Ubuntu"
-msgstr "安装 Ubuntu"
+msgstr "Ubuntu نى ئورنىتىش"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr "开始安装 -- 这是默认选项。"
+msgstr "ئورنىتىشنى باشلاش -- بۇ كۆڭۈلدىكى تاللانما"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
 msgid "expert"
-msgstr "专家模式"
+msgstr "مۇتەخەسسىس"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "以专家模式开始安装，可以手动控制最多安装选项。"
+msgstr ""
+"نۇرغۇن تەڭشەشلەرنى ئېلىپ بارغىلى بولىدىغان مۇتەخەسسىس ھالىتىدە ئورنىتىشنى "
+"باشلايدۇ."
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192
 msgid "cli"
 msgstr "cli"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
 msgstr "cli-expert"
 
-# type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
 msgid "Minimal command-line system install."
-msgstr "最小化命令行系统安装。"
+msgstr "ئىخچام بولغان command-line سىستېمىسىنى ئورنىتىش."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr "live"
+msgstr "جانلىق"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
 msgid "Try Ubuntu without any change to your computer"
-msgstr "尝试 Ubuntu 而不对您的电脑做任何改变"
+msgstr "كومپيۇتېرغا تەگمەستىن Ubuntu نى سىناپ كۆرۈش"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:203
 msgid ""
 "Start the live system. If you wish, you can install it later using the "
 "\"Install\" icon on the desktop."
-msgstr "启动 live 系统。如果您愿意，可以使用桌面上的 \"安装\" 按钮来安装它。"
+msgstr ""
+"جانلىق سىستېمىنى قوزغىتىدۇ. قاتتىق دىسكىغا ئورنىتىشنى خالىسىڭىز ئۈستەل "
+"يۈزىدىكى \"ئورنىتىش\" سىنبەلگىسىنى چەكسىڭىز بولىدۇ."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
@@ -364,22 +377,22 @@ msgstr "live-install"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
 msgid "Start the installation."
-msgstr "开始安装。"
+msgstr "ئورنىتىشنى باشلاش"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
-msgstr "内存测试"
+msgstr "memtest"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
 msgid "Test memory"
-msgstr "检查内存"
+msgstr "ئەسلەك سىناش"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:231
 msgid "Perform a memory test."
-msgstr "进行内存测试"
+msgstr "ئەسلەك سىناشنى ئىجرا قىلىدۇ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:237 help.xml:298
@@ -387,8 +400,8 @@ msgid ""
 "To use one of these boot methods, type it at the prompt, optionally followed "
 "by any boot parameters. For example:"
 msgstr ""
-"要使用其中一种启动方式，在提示栏输入即可，还可以根据自己的需要选择任意的启动"
-"参数。例如："
+"بۇ قوزغىتىش ئۇسۇللىرىنى ئىشلىتىش ئۈچۈن، كۆرسەتمە چىققاندا تۆۋەندىكىدەك "
+"كىرگۈزۈڭ. باشقا پارامېتىرلارنى قوشۇپ كىرگۈزۈشكىمۇ بولىدۇ:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:242
@@ -408,8 +421,8 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"如果不确定，您应该使用默认的启动方式，不带特定的参数，当出现提示的时候，按回"
-"车键就可以了。"
+"بىلمىسىڭىز كۆڭۈلدىكى قوزغىتىش ئۇسۇلىنى ئىشلىتىڭ. كۆرسەتمە چىققاندا بىۋاسىتە "
+"قايتۇرۇش كۇنۇپكىسىنى باسسىڭىزلا بولىدۇ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
@@ -417,7 +430,8 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
-"(\"Ubuntu\" 可以被其它相关的操作系统名称所代替。这个帮助文本是通用的。)"
+"(\"Ubuntu\" باشقا مۇناسىۋەتلىك مەشغۇلات سىستېمىسىنىڭ نامىغا ئالمىشىشى "
+"مۇمكىن. بۇ ئادەتتىكى ياردەمدۇر)"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:257 help.xml:307
@@ -427,15 +441,19 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
-"要使用这些启动方法之一，在菜单上使用箭头按键来选择它。按下 F4 来选择可选的启"
-"动和安装模式。按下 F6 来编辑启动参数。再次按下 F6 来从普通使用的启动参数菜单"
-"上选择。"
+"بىرەر قوزغىتىش ئۇسۇلىنى تاللىماقچى بولسىڭىز، نۇر بەلگىسىنى يۆتكەش كۇنۇپكىسى "
+"ئارقىلىق menu نىڭ ئىچىدىن تاللاڭ. F4 بېسىپ باشقا قوزغاش ۋە ئورنىتىش ئۇسۇلىنى "
+"تاللىغىلى بولىدۇ. F6 نى بېسىپ  قوزغىتىش پارامېتىرلىرىنى تەھرىرلىگىلى بولىدۇ. "
+"يەنە بىر قېتىم F6 نى بېسىپ كوپ ئىشلىتىدىغان قوزغىتىش پارامېتىرلىرىنى "
+"تاللىغىلى بولىدۇ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
-msgstr "专家模式除外，隐藏非关键的内核启动信息。"
+msgstr ""
+"مۇتەخەسسىس ھالىتىدىن باشقا ۋاقىتتا، kernel نىڭ مۇھىم بولمىغان boot ئۇچۇرلىرى "
+"كۆرسىتىلمەيدۇ."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
@@ -445,27 +463,28 @@ msgstr "<keycap>F4</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr "修复损坏的系统"
+msgstr "بۇزۇلغان سىستېمىنى ئەسلىگە كەلتۈرۈش"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
 msgid "Use one of these boot methods to rescue an existing install"
-msgstr "用其中一个启动方式来救援一个已经存在的安装"
+msgstr ""
+"ئورنىتىلغان سىستېمىنى قۇتقۇزۇش ئۈچۈن قوزغىتىش ئۇسۇللىرىنىڭ بىرىنى تاللاڭ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:289
 msgid "rescue"
-msgstr "救援"
+msgstr "rescue"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:290
 msgid "Rescue a broken system"
-msgstr "恢复一个破损的系统"
+msgstr "بۇزۇلغان سىستېمىنى ئەسلىگە كەلتۈرۈش"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr "启动救援模式"
+msgstr "بۇزۇلغان سىستېمىنى ئەسلىگە كەلتۈرۈش ھالىتىدە قوزغىتىش"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
@@ -483,9 +502,12 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"本光盘中不包含单独的拯救模式。但是，由于光盘中提供了完整的用户环境，您可以使"
-"用命令行和/或图形界面的工具来修复系统，并使用 Web 浏览器寻求帮助。在网上能找"
-"到许多系统无法正常启动的解决方法。"
+"بۇ دىسكىنىڭ مەخسۇس ئەسلىگە كەلتۈرۈش ھالىتى يوق ئىكەن. بۇ دىسكىدا ئىشلەتكۈچى "
+"خىزمەت قىلىدىغان مۇكەممەل مۇھىت بار بولغاچقا، بۇيرۇق قۇرى ياكى كۆزنەكلىك "
+"ئەسلىگە كەلتۈرۈش قوراللىرى ئارقىلىق، بۇزۇلغان سىستېمىنى ئەسلىگە كەلتۈرۈشكە "
+"بولىدۇ. توردىن بۇ ھەقتىكى ئۇچۇرلارنى ئىزدەپ تېپىشقا بولىدۇ. سىستېما "
+"قوزغىلالماسلىق مەسىلىسى ھەققىدە ئىنتېرنېتتىن كەڭ دائىرىلىك مەسلىھەتكە "
+"ئېرىشكىلى بولىدۇ."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:355
@@ -495,7 +517,7 @@ msgstr "<keycap>F5</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "特定启动参数 - 总览"
+msgstr "ئالاھىدە BOOT  پارامېتىرلىرى - قىسقىچە تونۇشتۇرۇش"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
@@ -503,15 +525,16 @@ msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
-"在一些系统上，您也许需要在 <literal>boot:</literal> 提示行下指定一个参数来启"
-"动系统。"
+"بەزى سىستېمىلاردا  <literal>boot:</literal> prompt نى ئىشلىتىپ قوزغىتىش "
+"پارامېتىرلىرىنى بېكىتىش توغرا كېلىدۇ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
 msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
-msgstr "在一些系统上，您也许需要通过按下 F6 来指定一个参数以便启动系统。"
+msgstr ""
+"بەزى سىستېمىلاردا F6 نى بېسىپ قوزغىتىش پارامېتىرلىرىنى بېكىتىش توغرا كېلىدۇ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -519,33 +542,34 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"例如，Linux 也许不能自动检测到您的硬件，您也许需要指定它的具体位置或者类型以"
-"便它能够被识别。"
+"مەسىلەن، Linux قاتتىق دېتاللارنى ئاپتوماتىك تونۇيالمىغان ۋاقىتتا، ئۇنىڭ "
+"ئورنى ۋە تىپىنى كۆرسىتىپ بېرىش زۆرۈردۇر."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
-msgstr "想了解您可以使用的启动参数的更多信息，请按："
+msgstr "قانداق قوزغىتىش  پارامېتىرلىرى بارلىقىنى بىلمەكچى بولسىڭىز، بېسىڭ:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr "特定机器的启动参数"
+msgstr "ئالاھىدە ماشىنىلار ئۈچۈن ئىشلىتىلىدىغان قوزغىتىش  پارامېتىرلىرى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr "不同磁盘控制器的启动参数"
+msgstr ""
+"ھەر خىل دىسكا كونتروللىغۇچلىرى ئۈچۈن ئىشلىتىلىدىغان قوزغىتىش پارامېتىرلىرى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr "安装系统已解析启动参数"
+msgstr "سىستېمىدا ئىشلەتكىلى بولىدىغان قوزغىتىش پارامېتىرلىرى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr "引导程序已解析启动参数"
+msgstr "bootstrap  ئىشلەتكىلى بولىدىغان قوزغىتىش پارامېتىرلىرى"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
@@ -555,16 +579,19 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"安装器在动态地读取很多内核模块，并且这些模块的参数不能在命令行给出。想在模块"
-"读取的时候有参数提示，请以专家级模式启动(参阅<link linkend="
-"\"F3\"><keycap>F3</keycap></link>)。"
+"نۇرغۇنلىغان kernel بۆلەكلىرىنى ئورنىتىش پروگراممىسى ئاپتوماتىك يۈكلەيدۇ، "
+"بۇلارنىڭ پارامېتىرلىرىنى بۇيرۇق قۇرىغا يېزىپ بەرگىلى بولمايدۇ. بۆلەكلەرنى "
+"يۈكلىگەندە پارامېتىرلارنى يېزىپ بېرىش ئۈچۈن، مۇتەخەسسىس ھالىتى(expert mode) "
+"دە قوزغىتىڭ(<link linkend=\"F3\"><keycap>F3</keycap></link> گە قاراڭ)"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
 msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
-msgstr "引导程序在动态地装载多块内核模块，这些模块的参数不能在命令行给出。"
+msgstr ""
+"bootstrap سىستېمىلىرىدا نۇرغۇنلىغان kernel بۆلەكلىرى ئاپتوماتىك قاچىلىنىدۇ، "
+"ھەم بۇلارنىڭ پارامېتىرلىرىنى بۇيرۇق قۇرىدا كۆرسىتىپ بېرىش مۇمكىن بولمايدۇ."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:429
@@ -574,7 +601,7 @@ msgstr "<keycap>F6</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr "特定的启动参数 - 各式各样的硬件"
+msgstr "ئالاھىدە قوزغىتىش  پارامېتىرلىرى - ھەرخىل قاتتىق دېتاللار"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
@@ -583,8 +610,9 @@ msgid ""
 "prompt, in combination with the boot method (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"你可以在 <literal>boot:</literal> 提示行下使用下列启动选项，和启动方式一起 "
-"(参考 <link linkend=\"F3\"><keycap>F3</keycap></link>)。"
+"<literal>boot:</literal> كۆرسەتمىسىدە، تۆۋەندىكىدەك قوزغىتىش پارامېتىرلىرىنى "
+"قوزغىتىش ئۇسۇللىرى بىلەن بىرىكتۈرۈپ ئىشلىتىشكە بولىدۇ.(<link linkend="
+"\"F3\"><keycap>F3</keycap></link>گە قارالسۇن)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:442 help.xml:549 help.xml:620
@@ -592,28 +620,29 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"你可以通过按下 F6 使用下列启动参数， 和启动方式一起(参考 <link linkend="
-"\"F3\"><keycap>F3</keycap></link>)。"
+"F6 نى بېسىپ چىققان چاغدىكى قوزغىتىش پارامېتىرلىرىنى قوزغىتىش ئۇسۇلى بىلەن "
+"بىرىكتۈرۈپ ئىشلىتىشكە بولىدۇ.(<link linkend=\"F3\"><keycap>F3</keycap></"
+"link>گە قارالسۇن)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
 msgid "If you use hex numbers you have to use the 0x prefix (e.g., 0x300)."
-msgstr "如果您要使用 16 进制的数字，您必须使用 0x 前缀(例如， 0x300)。"
+msgstr "ئەگەر 16 لىك سىستېما ئىشلەتمەكچى بولسىڭىز ئالدىغا 0x نى يېزىڭ"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:451 help.xml:555
 msgid "HARDWARE"
-msgstr "硬件"
+msgstr "قاتتىق دېتال"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr "参数说明"
+msgstr "بېكىتىدىغان پارامېتىر"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
 msgid "IBM PS/1 or ValuePoint (IDE disk)"
-msgstr "IBM PS/1 或者 ValuePoint (IDE 硬盘)"
+msgstr "IBM PS/1 or ValuePoint (IDE disk)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:456
@@ -627,7 +656,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:460
 msgid "Some IBM ThinkPads"
-msgstr "ThinkPad 系列"
+msgstr "بىر قىسىم IBM ThinkPads كومپيۇتېرلىرى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:461
@@ -637,7 +666,7 @@ msgstr "<userinput>floppy.floppy=thinkpad</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:465
 msgid "Protect I/O port regions"
-msgstr "保护 I/O端口区"
+msgstr "I/O port دائىرىسىنى قوغداش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:466
@@ -653,7 +682,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:470
 msgid "Laptops with screen display problems"
-msgstr "屏幕显示有问题的笔记本电脑"
+msgstr "كۆرسىتىشتە مەسىلە بار Laptop لار"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:471
@@ -663,18 +692,17 @@ msgstr "<userinput>vga=771</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:475
 msgid "Use first serial port at 9600 baud"
-msgstr "使用第一个串行口，速率 9600"
+msgstr "بىرىنچى ئارقىمۇ ئارقا ئېغىزنى 9600 baud تېزلىكىدە ئىشلىتىش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:476
 msgid "<userinput>console=ttyS0,9600n8</userinput>"
 msgstr "<userinput>console=ttyS0,9600n8</userinput>"
 
-# type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:480
 msgid "Force use of generic IDE driver"
-msgstr "强制使用通用 IDE 驱动"
+msgstr "generic IDE قوزغاتقۇچنى مەجبۇرىي ئىشلىتىش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:481
@@ -685,12 +713,13 @@ msgstr "<userinput>all_generic_ide=1</userinput>"
 #: help.xml:486
 msgid ""
 "Possible (temporary) workarounds for lockups or other hardware failures:"
-msgstr "针对锁定或其它硬件失效的(临时)处理办法："
+msgstr ""
+"lockups ۋە باشقا قاتتىق دېتال كاشىلىسىغا قوللىنىلىدىغان ۋاقىتلىق تەدبىرلەر:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:493
 msgid "disable buggy APIC interrupt routing"
-msgstr "禁用不稳定的 APIC 中断查询"
+msgstr "كەمتۈك بار APIC ئۈزگۈچى(interrupt) فۇنكسىيىنى ئىناۋەتسىز قىل"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:494
@@ -700,17 +729,17 @@ msgstr "<userinput>noapic nolapic</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:498
 msgid "(partly) disable ACPI"
-msgstr "(部分)禁止 ACPI"
+msgstr "ACPI نى (قىسمى) چەكلەش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:500
 msgid "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
-msgstr "<userinput>acpi=noirq</userinput> 或者 <userinput>acpi=off</userinput>"
+msgstr "<userinput>acpi=noirq</userinput> or <userinput>acpi=off</userinput>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:506
 msgid "disable USB"
-msgstr "禁用 USB"
+msgstr "USB نى چەكلەش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:507
@@ -720,7 +749,7 @@ msgstr "<userinput>nousb</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:511
 msgid "poll for interrupts"
-msgstr "轮询中断"
+msgstr "ئۈزۈلۈشلەر(interrupts) نۆۋىتى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:512
@@ -730,7 +759,7 @@ msgstr "<userinput>irqpoll</userinput>"
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:516 help.xml:589 help.xml:679
 msgid "For example:"
-msgstr "例如："
+msgstr "مەسىلەن:"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:519
@@ -752,7 +781,7 @@ msgstr "<keycap>F7</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "特定的启动参数 - 各式各样的盘片驱动器"
+msgstr "ئالاھىدە قوزغىتىش  پارامېتىرلىرى - ھەرخىل دىسكا كونتروللىغۇچلار"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559
@@ -795,7 +824,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:569
 msgid "Adaptec 274x, 284x"
-msgstr "Adaptec 274x，284x"
+msgstr "Adaptec 274x, 284x"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:570
@@ -817,7 +846,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:579
 msgid "Certain DELL machines"
-msgstr "某些戴尔机器"
+msgstr "بىر قىسىم DELL كومپيۇتېرلىرى"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:580
@@ -830,8 +859,7 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"本列表所含内容并不完整，请参阅内核的 kernel-parameters.txt 文件以了解更多内"
-"容。"
+"تىزىملىك چالا ئىكەن، kernel نىڭ kernel-parameters.txt دىن تەپسىلاتىنى كۆرۈڭ."
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:592
@@ -853,32 +881,32 @@ msgstr "<keycap>F8</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:610
 msgid "SPECIAL BOOT PARAMETERS - INSTALLATION SYSTEM"
-msgstr "特定启动参数 - 安装系统"
+msgstr "ئالاھىدە boot  پارامېتىرلىرى - ئورنىتىش سىستېمىسى"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:624
 msgid "These parameters control how the installer works."
-msgstr "这些参数控制着安装工作如何进行。"
+msgstr "بۇ پارامېتىرلار ئورنىتىش پروگراممىسىنىڭ خىزمىتىنى كونترول قىلىدۇ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:627
 msgid "These parameters control how the bootstrap system works."
-msgstr "这些参数控制着自举系统的工作。"
+msgstr "بۇ پارامېتىرلار bootstrap سىستېمىسىنىڭ خىزمىتىنى كونترول قىلىدۇ."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:632
 msgid "RESULT"
-msgstr "结果"
+msgstr "نەتىجە"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:633
 msgid "PARAMETER"
-msgstr "参数"
+msgstr "پارامېتىر"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:636
 msgid "Disable framebuffer"
-msgstr "禁用 framebuffer"
+msgstr "framebuffer چەكلەش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:637
@@ -888,7 +916,7 @@ msgstr "<userinput>vga=normal fb=false</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:641
 msgid "Don't start PCMCIA"
-msgstr "不要开启 PCMCIA"
+msgstr "PCMCIA نى قوزغاتما"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:642
@@ -898,7 +926,7 @@ msgstr "<userinput>hw-detect/start_pcmcia=false</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:646
 msgid "Force static network config"
-msgstr "强制静态网络设置"
+msgstr "مۇقىم IP ئادرېس ئىشلىتىش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:647
@@ -908,7 +936,7 @@ msgstr "<userinput>netcfg/disable_dhcp=true</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:651
 msgid "Set keyboard map"
-msgstr "设定键盘映射"
+msgstr "ھەرپتاختا map نى بېكىتىش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:652
@@ -918,7 +946,7 @@ msgstr "<userinput>bootkbd=es</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:656
 msgid "Select the Kubuntu desktop"
-msgstr "选择 Kubuntu 桌面"
+msgstr "Kubuntu ئۈستەلئۈستىنى تاللاش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:657
@@ -929,7 +957,9 @@ msgstr "<userinput>tasks=kubuntu-desktop</userinput>"
 #: help.xml:662
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
-msgstr "禁用 PCI 映射的 ACPI 功能(适用于一些 HP 服务器和由其搭建的机器)"
+msgstr ""
+"PCI map ئۈچۈن ACPI نى ئىشلەتمىسۇن. (بىر قىسىم HP مۇلازىمېتىرلىرى ۋە VIA "
+"ئىشلىتىلگەن كومپيۇتېرلاردا بەكمۇ ئەسقاتىدۇ)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:665
@@ -939,7 +969,7 @@ msgstr "<userinput>pci=noacpi</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:669
 msgid "Use high contrast theme"
-msgstr "使用高对比度主题"
+msgstr "يۇقىرى يورۇقلۇقتىكى ئۇسلۇبلارنى ئىشلىتىش"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:670
@@ -949,7 +979,7 @@ msgstr "<userinput>theme=dark</userinput>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:674
 msgid "Use Braille tty"
-msgstr "使用布莱叶盲文终端"
+msgstr "Braille tty ئىشلەت"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:675
@@ -980,22 +1010,22 @@ msgstr "<keycap>F9</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:700
 msgid "GETTING HELP"
-msgstr "获得帮助"
+msgstr "ياردەمگە ئېرىشىش"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr "如果您不能安装 Ubuntu，请不要灰心！"
+msgstr "Ubuntu نى ئورنىتالمىسىڭىز ھەرگىز ئۈمىدسىزلەنمەڭ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr "如果您不能启动 Ubuntu，请不要灰心！"
+msgstr "Ubuntu نى قوزغىتالمىسىڭىز ھەرگىز ئۈمىدسىزلەنمەڭ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
-msgstr "Ubuntu 团队总会及时的给您帮助！"
+msgstr "Ubuntu ئەترىتى سىز ئۈچۈن ياردەمگە تەييار"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:716
@@ -1003,8 +1033,8 @@ msgid ""
 "We are especially interested in hearing about installation problems, because "
 "in general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"我们特别乐于听到关于安装的问题，因为大部分时候这不仅仅发生在<emphasis>一个</"
-"emphasis>人身上。"
+"ئورنىتىش جەريانىدىكى مەسىلەرنى بىزمۇ بىلىپ قالساق، چۈنكى بۇنداق مەسىلىلەر "
+"<emphasis>بىرلا ئادەمدە </emphasis> يۈز بەرمەيدۇ دېگىلى بولمايدۇ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:721
@@ -1012,8 +1042,8 @@ msgid ""
 "We are especially interested in hearing about startup problems, because in "
 "general they don't happen to only <emphasis>one</emphasis> person."
 msgstr ""
-"我们特别乐于听到关于启动的问题，因为大部分时候这不仅仅发生在<emphasis>一个</"
-"emphasis>人身上。"
+"قوزغىلىش جەريانىدىكى مەسىلەرنى بىزمۇ بىلىپ قالساق، چۈنكى بۇنداق مەسىلىلەر "
+"<emphasis>بىرلا ئادەمدە </emphasis> يۈز بەرمەيدۇ دېگىلى بولمايدۇ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:725
@@ -1023,9 +1053,10 @@ msgid ""
 "and the next user who comes up with the same problem will profit from your "
 "experience!"
 msgstr ""
-"我们可能已经听过跟您一样的问题，从而能提供一个迅速的解决方案，或者我们期待了"
-"解您的问题并和您一起研究解决，这样下一个和您遇到同样问题的用户将从您的经验中"
-"获益良多。"
+"سىز ئوتتۇرىغا قويغان مەسىلىگە بۇرۇن دۇچ كېلىپ باققان بولساق، ئۇنى تېزلا ھەل "
+"قىلىمىز. ئەگەر ئۇنداق بولمىسا سىز بىلەن بىرگە بۇ مەسىلىنى بۇنىڭدىن كېيىن ھەل "
+"قىلىمىز. شۇنداق قىلغاندا، بۇنىڭدىن  كېيىن باشقا ئىشلەتكۈچى ئوخشاش مەسىلىگە "
+"دۇچ كەلسە، ئۇنى تېزلا ھەل قىلىشقا بولىدۇ."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:755
@@ -1035,7 +1066,7 @@ msgstr "<keycap>F10</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:756
 msgid "COPYRIGHTS AND WARRANTIES"
-msgstr "版权和担保"
+msgstr "ھوقۇق ۋە كاپالەتلەر"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:763
@@ -1043,12 +1074,13 @@ msgid ""
 "Ubuntu is Copyright (C) 2004-2010 Canonical Ltd., and incorporates the work "
 "of many other original authors and contributors."
 msgstr ""
-"Ubuntu 的版权 (C) 2004-2010 属于 Canonical 有限公司及众多软件作者和贡献者。"
+"Ubuntu نىڭ نەشر ھوقۇق (C) 2004-2010  ى  Canonical چەكلىك مەسئۇلىيەت شىركىتى "
+"ۋە كۆپلىگەن يۇمشاق دېتال يازغۇچىلىرى ۋە تۆھپىكارلارغا تەۋە."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:768
 msgid "The Ubuntu system is freely redistributable."
-msgstr "Ubuntu 系统可自由地重新发行。"
+msgstr "Ubuntu نى ھەقسىز تارقىتىشقا بولىدۇ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:771
@@ -1057,8 +1089,9 @@ msgid ""
 "described in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"安装完毕之后，每个包的具体的发行条款都在对应的文件“/usr/share/doc/"
-"<replaceable>包的名称</replaceable>/copyright“里有详细的描述。"
+"ئورنىتىش تاماملانغاندىن كېيىن، ھەر قايسى بوغچىلارنىڭ قانداق ئىجازەتنامە "
+"ئاستىدا تارقىتىلغانلىقىنى /usr/share/doc/<replaceable>packagename</"
+"replaceable>/copyright دىن كۆرۈشكە بولىدۇ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:776
@@ -1067,8 +1100,9 @@ msgid ""
 "in the corresponding file /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 msgstr ""
-"启动结束后，每个包的具体的发行条款都在对应的文件“/usr/share/doc/<replaceable>"
-"包的名称</replaceable>/copyright“里有详细的描述。"
+"قوزغىتىلغاندىن كېيىن، ھەر قايسى بوغچىلارنىڭ قانداق ئىجازەتنامە ئاستىدا "
+"تارقىتىلغانلىقىنى /usr/share/doc/<replaceable>packagename</replaceable>/"
+"copyright دىن كۆرۈشكە بولىدۇ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:782
@@ -1076,7 +1110,8 @@ msgid ""
 "Ubuntu comes with <emphasis>ABSOLUTELY NO WARRANTY</emphasis>, to the extent "
 "permitted by applicable law."
 msgstr ""
-"除了遵守相关的法律条款，Ubuntu<emphasis>没有任何形式的任何担保</emphasis>。"
+"Ubuntu بەلگىلەنگەن قانۇن دائىرىسى ئىچىدە <emphasis>مۇتلەق كاپالىتى يوق</"
+"emphasis> ھالەتتە تارقىتىلغان."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:787
@@ -1085,8 +1120,9 @@ msgid ""
 "\"http://www.debian.org/\" /> for more details and information on the Debian "
 "project."
 msgstr ""
-"本安装系统是在 Debian 安装程序的基础上构建的。参阅<ulink url=\"http://www."
-"debian.org/\" />来获知更多关于 Debian 项目的细节和信息。"
+"ئورناتقۇچ Debian ئورناتقۇچى ئاساسىدا ئىشلەنگەن، تەپسىلىي ئۇچۇرلارنى ۋە "
+"Debian مۇناسىۋەتلىك ئۇچۇرلارنى <ulink url=\"http://www.debian.org/\" /> دىن  "
+"كۆرۈڭ."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:793
@@ -1094,5 +1130,5 @@ msgid ""
 "This system is based on Debian. See <ulink url=\"http://www.debian.org/\" /> "
 "for more details and information on the Debian project."
 msgstr ""
-"本系统是在 Debian 的基础上构建的。参阅<ulink url=\"http://www.debian.org/\" /"
-">来获知更多关于 Debian 项目的细节和信息。"
+"مەزكۇر سىستېما  Debian ئاساسىدا ئىشلەنگەن. Debian ھەققىدە بىلمەكچى بولسىڭىز "
+"<ulink url=\"http://www.debian.org/\" /> گە مەرھەمەت قىلىڭ."

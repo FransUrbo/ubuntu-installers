@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu131) UNRELEASED; urgency=low
+
+  * Update help text translations from Launchpad.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 11 Apr 2012 09:50:57 +0100
+
 debian-installer (20101020ubuntu130) precise; urgency=low
 
   * Move armhf/armadaxp to 3.2.0-1602 kernels.

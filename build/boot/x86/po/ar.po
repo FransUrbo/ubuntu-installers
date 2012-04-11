@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2009-07-06 18:37+0000\n"
-"Last-Translator: Zied ALAYA <zied.alaya@ubuntu.com>\n"
+"PO-Revision-Date: 2011-10-11 00:31+0000\n"
+"Last-Translator: Ahmed Shams <Unknown>\n"
 "Language-Team: Arabic <ar@li.org>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-09-30 12:12+0000\n"
-"X-Generator: Launchpad (build 14071)\n"
+"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -31,7 +31,7 @@ msgstr "<keycap>F1</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "مرحبًا بك فى ${DISTRIBUTION_NAME}!"
+msgstr "مرحبًا بك في ${DISTRIBUTION_NAME}!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
@@ -80,12 +80,12 @@ msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "الشروط المسبقة لتثبيت ${DISTRIBUTION_NAME} ."
+msgstr "متطلبات تثبيت ${DISTRIBUTION_NAME}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "الشروط المسبقة لتشغيل ${DISTRIBUTION_NAME} ."
+msgstr "الشروط المسبقة لتشغيل ${DISTRIBUTION_NAME}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
