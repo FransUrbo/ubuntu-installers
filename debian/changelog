@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu135) UNRELEASED; urgency=low
+
+  * Update help text translations from Launchpad.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Apr 2012 11:00:12 +0100
+
 debian-installer (20101020ubuntu134) precise; urgency=low
 
   * Call mklibs with a hardcoded --ldlib in armhf.cfg, so we get a

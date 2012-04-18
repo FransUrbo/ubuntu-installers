@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2012-04-05 05:47+0000\n"
-"Last-Translator: Sahran <Unknown>\n"
+"PO-Revision-Date: 2012-04-12 03:14+0000\n"
+"Last-Translator: Burkut <Unknown>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-04-18 09:04+0000\n"
+"X-Generator: Launchpad (build 15108)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -31,7 +31,7 @@ msgstr "<keycap>F1</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "${DISTRIBUTION_NAME} گە مەرھابا!"
+msgstr "${DISTRIBUTION_NAME} غا مەرھابا!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18

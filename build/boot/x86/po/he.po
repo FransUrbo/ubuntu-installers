@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-09-15 08:01+0000\n"
-"Last-Translator: Yaron <sh.yaron@gmail.com>\n"
+"PO-Revision-Date: 2012-04-13 17:52+0000\n"
+"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-04-18 09:04+0000\n"
+"X-Generator: Launchpad (build 15108)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -596,7 +596,7 @@ msgid ""
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "ניתן להשתמש בפרמטרים הבאים לאתחול בשורת הכתיבה של ה־<literal>boot:</"
-"literal>, בצירוף שיטת האתחול (יש לעיין ב־<link linkend=\"F3\"><keycap>F3</"
+"literal>, בצירוף שיטת האתחול (ניתן לעיין עם <link linkend=\"F3\"><keycap>F3</"
 "keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
