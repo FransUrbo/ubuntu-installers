@@ -576,6 +576,9 @@ endif
 	if test -f $(TREE)/usr/share/keymaps/decision-tree ; then \
 		cat $(TREE)/usr/share/keymaps/decision-tree >> $(TEMP)/all.utf; \
 	fi
+	if [ -f $(TREE)/usr/share/console-setup-mini/kbdnames.gz ]; then \
+		zcat $(TREE)/usr/share/console-setup-mini/kbdnames.gz >> $(TEMP)/all.utf; \
+	fi
 	find $(TREE)/usr/share/console-setup-mini -name \*.tree -print0 | \
 		xargs -0r cat >> $(TEMP)/all.utf
 
