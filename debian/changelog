@@ -1,10 +1,10 @@
-debian-installer (20101020ubuntu135) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu135) precise; urgency=low
 
   * Update help text translations from Launchpad.
   * Add all characters in /usr/share/console-setup-mini/kbdnames.gz to the
     reduced font (LP: #985614).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Apr 2012 11:00:12 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 19 Apr 2012 18:35:20 +0100
 
 debian-installer (20101020ubuntu134) precise; urgency=low
 
