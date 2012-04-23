@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu136) precise; urgency=low
+
+  * No-change rebuild to pick up new cdrom-checker.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 23 Apr 2012 11:49:02 -0700
+
 debian-installer (20101020ubuntu135) precise; urgency=low
 
   * Update help text translations from Launchpad.
