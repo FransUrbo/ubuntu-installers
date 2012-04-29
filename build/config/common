@@ -40,7 +40,7 @@ DPKG_UNPACK_OPTIONS = --force-overwrite
 DISTRIBUTION_NAME := $(shell lsb_release -si)
 
 # The codename of the distribution release that should be installed by default.
-DEBIAN_RELEASE = precise
+DEBIAN_RELEASE = quantal
 
 # The version of the distribution targeted by the installation images.
 DEBIAN_VERSION := $(shell lsb_release -sr)
@@ -48,7 +48,7 @@ DEBIAN_VERSION := $(shell lsb_release -sr)
 # Define here from what release (codename!) components (udebs) should be taken
 # to build debian-installer. By default this is set to 'unstable' for building
 # daily images. For official builds this is overruled in debian/rules.
-USE_UDEBS_FROM ?= precise
+USE_UDEBS_FROM ?= quantal
 USE_UDEBS_FROM_EXTRA ?=
 
 # Archive components from which to fetch debian-installer modules.

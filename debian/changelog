@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu137) UNRELEASED; urgency=low
+
+  * Set default suite to quantal.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 29 Apr 2012 23:23:09 +0100
+
 debian-installer (20101020ubuntu136) precise; urgency=low
 
   * No-change rebuild to pick up new cdrom-checker.
