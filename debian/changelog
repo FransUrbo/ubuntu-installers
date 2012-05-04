@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu138) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu138) quantal; urgency=low
 
   * Move to 3.4.0-1 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 02 May 2012 13:00:54 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 04 May 2012 09:35:29 +0100
 
 debian-installer (20101020ubuntu137) quantal; urgency=low
 
