@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu140) UNRELEASED; urgency=low
+
+  * Move to 3.4.0-2 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 16 May 2012 10:42:44 +0100
+
 debian-installer (20101020ubuntu139) quantal; urgency=low
 
   * Remove the non-pae builds on i386, since the kernel no longer builds the
