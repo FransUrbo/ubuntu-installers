@@ -1,4 +1,6 @@
-#! /usr/bin/python
+#! /usr/bin/python3
+
+from __future__ import print_function
 
 import sys
 import textwrap
@@ -6,19 +8,25 @@ import re
 import xml.dom.minidom
 
 if len(sys.argv) < 3:
-    print >>sys.stderr, "Usage: %s help.xml install|live" % sys.argv[0]
+    print("Usage: %s help.xml install|live" % sys.argv[0], file=sys.stderr)
     sys.exit(1)
 
-# Avoid having to do .encode('UTF-8') everywhere. This is a pain; I wish
-# Python supported something like "sys.stdout.encoding = 'UTF-8'".
-def fix_stdout():
-    import codecs
-    sys.stdout = codecs.EncodedFile(sys.stdout, 'UTF-8')
-    def null_decode(input, errors='strict'):
-        return input, len(input)
-    sys.stdout.decode = null_decode
+if sys.version >= '3':
+    # Force encoding to UTF-8 even in non-UTF-8 locales.
+    import io
+    sys.stdout = io.TextIOWrapper(
+        sys.stdout.detach(), encoding="UTF-8", line_buffering=True)
+else:
+    # Avoid having to do .encode('UTF-8') everywhere. This is a pain; I wish
+    # Python supported something like "sys.stdout.encoding = 'UTF-8'".
+    def fix_stdout():
+        import codecs
+        sys.stdout = codecs.EncodedFile(sys.stdout, 'UTF-8')
+        def null_decode(input, errors='strict'):
+            return input, len(input)
+        sys.stdout.decode = null_decode
 
-fix_stdout()
+    fix_stdout()
 
 document = xml.dom.minidom.parse(sys.argv[1])
 mode = sys.argv[2]

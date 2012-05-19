@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu141) UNRELEASED; urgency=low
+
+  * Port help-to-gfxboot.py to Python 3.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 19 May 2012 02:05:36 +0100
+
 debian-installer (20101020ubuntu140) quantal; urgency=low
 
   * Move to 3.4.0-2 kernels.
