@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu144) UNRELEASED; urgency=low
+
+  * ttf-freefont-udeb was renamed to fonts-freefont-udeb.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 27 May 2012 23:22:45 +0100
+
 debian-installer (20101020ubuntu143) quantal; urgency=low
 
   * Use generic flavour for i386/*-xen images, since virtual has been folded
