@@ -1,6 +1,8 @@
 debian-installer (20101020ubuntu144) UNRELEASED; urgency=low
 
   * ttf-freefont-udeb was renamed to fonts-freefont-udeb.
+  * Stop building armel/omap4 flavour, since it no longer has a current
+    kernel.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 27 May 2012 23:22:45 +0100
 
