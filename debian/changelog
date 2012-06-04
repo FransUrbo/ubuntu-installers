@@ -1,4 +1,4 @@
-debian-installer (20101020ubuntu145) UNRELEASED; urgency=critical
+debian-installer (20101020ubuntu145) quantal; urgency=critical
 
   * Move all flavors mainline kernel flavors to 3.4.0-4
 
