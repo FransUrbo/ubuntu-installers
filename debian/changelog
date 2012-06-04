@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu145) UNRELEASED; urgency=critical
+
+  * Move all flavors mainline kernel flavors to 3.4.0-4
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Mon, 04 Jun 2012 16:07:57 -0700
+
 debian-installer (20101020ubuntu144) quantal; urgency=low
 
   * ttf-freefont-udeb was renamed to fonts-freefont-udeb.
