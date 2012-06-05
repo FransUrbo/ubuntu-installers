@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu146) quantal; urgency=low
+
+  * Move to 3.4.0-5 kernels.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 05 Jun 2012 16:17:22 -0600
+
 debian-installer (20101020ubuntu145) quantal; urgency=critical
 
   * Move all flavors mainline kernel flavors to 3.4.0-4
