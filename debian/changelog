@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu147) quantal; urgency=low
+
+  * Add Calxeda Highbank netboot images (LP: #1004018).
+
+ -- Robie Basak <robie.basak@ubuntu.com>  Thu, 07 Jun 2012 11:54:16 +0100
+
 debian-installer (20101020ubuntu146) quantal; urgency=low
 
   * Move to 3.4.0-5 kernels.
