@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu148) quantal; urgency=low
+
+  * Fix armadaxp netboot uImage/uInitrd install paths (LP: #1010708)
+  * Bring armadaxp and highbank netboot.cfg in line with other arches
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Fri, 08 Jun 2012 16:41:44 -0600
+
 debian-installer (20101020ubuntu147) quantal; urgency=low
 
   * Add Calxeda Highbank netboot images (LP: #1004018).
