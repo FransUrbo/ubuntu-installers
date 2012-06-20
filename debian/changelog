@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu150) UNRELEASED; urgency=low
+
+  * Make highbank.cfg more closely match omap.cfg, and remove
+    the redundant KERNELVERSION that's inherited from arm*.cfg
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Wed, 20 Jun 2012 15:52:08 -0600
+
 debian-installer (20101020ubuntu149) quantal; urgency=low
 
   * Move to 3.5.0-1 kernels.
