@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu149) UNRELEASED; urgency=low
+
+  * Move to 3.5.0-1 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 20 Jun 2012 22:32:32 +0100
+
 debian-installer (20101020ubuntu148) quantal; urgency=low
 
   * Fix armadaxp netboot uImage/uInitrd install paths (LP: #1010708)
