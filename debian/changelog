@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu156) quantal; urgency=low
+
+  * No-change rebuild to pick up new isc-dhcp.
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Tue, 10 Jul 2012 21:13:30 -0400
+
 debian-installer (20101020ubuntu155) quantal; urgency=low
 
   * Move master kernels to 3.5.0-4.
