@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu158) UNRELEASED; urgency=low
+
+  * Move to 3.5.0-5 kernels.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 19 Jul 2012 12:15:45 +0100
+
 debian-installer (20101020ubuntu157) quantal; urgency=low
 
   * Move armhf/armadaxp to 3.2.0-1605 kernels.
