@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu159) UNRELEASED; urgency=low
+
+  * No-change rebuild against netcfg 1.68ubuntu15.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 22 Jul 2012 19:06:17 +0100
+
 debian-installer (20101020ubuntu158) quantal; urgency=low
 
   * Move to 3.5.0-5 kernels.
