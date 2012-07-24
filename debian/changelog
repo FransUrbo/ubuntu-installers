@@ -1,6 +1,7 @@
 debian-installer (20101020ubuntu160) quantal; urgency=low
 
   * Move master kernels to 3.5.0-6.
+  * Bring highbank support in line with recent precise SRU.
 
  -- Adam Conrad <adconrad@ubuntu.com>  Mon, 23 Jul 2012 22:03:36 -0600
 
