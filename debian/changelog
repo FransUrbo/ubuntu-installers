@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu162) quantal; urgency=low
+
+  * Fix: highbank initrd was being named .img instead of .gz
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 24 Jul 2012 11:30:41 -0600
+
 debian-installer (20101020ubuntu161) quantal; urgency=low
 
   * Give the netboot images an additional 2MB of breathing room.
