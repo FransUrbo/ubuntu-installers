@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu163) quantal; urgency=low
+
+  * Symlink build/pkg-lists/*/armel/omap4.cfg to omap.cfg, fixing
+    non-onboard NICs on netboot, and HID on cdrom (LP: #1028664)
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 24 Jul 2012 19:44:04 -0600
+
 debian-installer (20101020ubuntu162) quantal; urgency=low
 
   * Fix: highbank initrd was being named .img instead of .gz
