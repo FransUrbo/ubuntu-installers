@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu164) quantal; urgency=low
+
+  * Move master kernels to 3.5.0-7.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 31 Jul 2012 23:59:25 -0600
+
 debian-installer (20101020ubuntu163) quantal; urgency=low
 
   * Symlink build/pkg-lists/*/armel/omap4.cfg to omap.cfg, fixing
