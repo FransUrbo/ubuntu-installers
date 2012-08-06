@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu165) quantal; urgency=low
+
+  * Move master kernels to 3.5.0-8.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Mon, 06 Aug 2012 00:16:37 -0600
+
 debian-installer (20101020ubuntu164) quantal; urgency=low
 
   * Move master kernels to 3.5.0-7.
