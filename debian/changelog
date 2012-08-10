@@ -1,9 +1,14 @@
-debian-installer (20101020ubuntu166) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu166) quantal; urgency=low
 
+  [ Colin Watson ]
   * build/util/efi-image: Add an explicit copyright/licence notice,
     requested by Steve McIntyre.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 06 Aug 2012 12:23:11 +0100
+  [ Adam Conrad ]
+  * Move master kernels to 3.5.0-9.
+  * Move armadaxp kernels to 3.2.0-1606.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 09 Aug 2012 19:26:58 -0600
 
 debian-installer (20101020ubuntu165) quantal; urgency=low
 
