@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu169) quantal; urgency=low
+
+  * Move master kernels to 3.5.0-12.
+  * Move omap4 kernels to 3.5.0-209.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Sun, 26 Aug 2012 21:10:58 -0600
+
 debian-installer (20101020ubuntu168) quantal; urgency=low
 
   * Move master kernels to 3.5.0-11.
