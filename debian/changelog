@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu171) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu171) quantal; urgency=low
 
   * No-change rebuild against biosdevname 0.4.1-0ubuntu2.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Sat, 01 Sep 2012 01:32:13 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 01 Sep 2012 01:34:48 +0100
 
 debian-installer (20101020ubuntu170) quantal; urgency=low
 
