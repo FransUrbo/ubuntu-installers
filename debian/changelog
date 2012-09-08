@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu172) quantal; urgency=low
+
+  * Move master kernels to 3.5.0-14.
+  * Move armadaxp kernels to 3.2.0-1607.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Fri, 07 Sep 2012 19:17:27 -0600
+
 debian-installer (20101020ubuntu171) quantal; urgency=low
 
   * No-change rebuild against biosdevname 0.4.1-0ubuntu2.
