@@ -25,7 +25,7 @@ override_dh_install:
 	dh_install
 	if [ -e "kernel/$(ARCH).sh" ]; then \
 		install -D -m644 "kernel/$(ARCH).sh" \
-		                 debian/bootstrap-base/usr/lib/base-installer/kernel.sh; \
+		                 debian/base-installer/usr/lib/base-installer/kernel.sh; \
 	fi
 
 override_dh_installdebconf:
