@@ -2,6 +2,8 @@ base-installer (1.122ubuntu11) UNRELEASED; urgency=low
 
   * Move debconf templates relating to kernel installation from
     bootstrap-base to base-installer.
+  * Allow live-installer to override the title template used by kernel
+    installation code.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 11 Sep 2012 10:20:54 +0100
 
