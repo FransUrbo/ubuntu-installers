@@ -30,4 +30,4 @@ override_dh_install:
 
 override_dh_installdebconf:
 	dh_installdebconf
-	(echo ; cat debian/templates.gen) >> debian/bootstrap-base/DEBIAN/templates
+	(echo ; cat debian/templates.gen) >> debian/base-installer/DEBIAN/templates
