@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu174) UNRELEASED; urgency=low
+
+  * Fix GRUB EFI prefix to work properly with GRUB 2.00.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 14 Sep 2012 10:50:21 +0100
+
 debian-installer (20101020ubuntu173) quantal; urgency=low
 
   * Move armadaxp kernels to 3.2.0-1608.
