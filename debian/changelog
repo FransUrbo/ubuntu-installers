@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu173) quantal; urgency=low
+
+  * Move armadaxp kernels to 3.2.0-1608.
+  * Rebuild against fixed x86 kernels.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 13 Sep 2012 20:18:29 -0600
+
 debian-installer (20101020ubuntu172) quantal; urgency=low
 
   * Move master kernels to 3.5.0-14.
