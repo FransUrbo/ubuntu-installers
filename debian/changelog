@@ -1,8 +1,12 @@
-debian-installer (20101020ubuntu175) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu175) quantal; urgency=low
 
+  [ Colin Watson ]
   * Move to 3.5.0-15 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 18 Sep 2012 16:57:25 +0100
+  [ Adam Conrad ]
+  * Move omap4 kernels to 3.5.0-210.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 18 Sep 2012 10:29:12 -0600
 
 debian-installer (20101020ubuntu174) quantal; urgency=low
 
