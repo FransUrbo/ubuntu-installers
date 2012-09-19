@@ -226,6 +226,7 @@ msgstr ""
 #. Description
 #. :sl2:
 #: ../grub-installer.templates:7001
+#, fuzzy
 msgid ""
 "The device should be specified as a device in /dev. Below are some "
 "examples:\n"
@@ -236,6 +237,15 @@ msgid ""
 "   drive;\n"
 " - \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
+"მოწყობილობის მითითება შეიძლება როგორც GRUB-ის ჩანაწერით \"(hdn,m)\", ასევე /"
+"dev-ში მითითებით. აი რამდენიმე მაგალითი:\n"
+" - \"(hd0)\" ან \"/dev/hda\" GRUB დადგება MBR-ში↵\n"
+"   პირველ მყარ დისკზე (IDE);↵\n"
+" - \"(hd0,2)\" ან \"/dev/hda2\" გამოიყენება მეორე დანაყოფი↵\n"
+"   პირველი IDE დისკისა;↵\n"
+" - \"(hd2,5)\" ან \"/dev/sdc5\" გამოიყენება პირველი დამატებითი დანაყოფი↵\n"
+"   მესამე დისკისა (SCSI);↵\n"
+" - \"(fd0)\" ან \"/dev/fd0\" GRUB დადგება ფლოპიზე."
 
 #. Type: password
 #. Description

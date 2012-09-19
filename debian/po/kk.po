@@ -8,15 +8,22 @@
 # This file is distributed under the same license as debian-installer.
 #
 # Talgat Daniyarov
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2008, 2009
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2008-2011
 # Dauren Sarsenov <daur88@inbox.ru>, 2008, 2009
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   Sairan Kikkarin <sairan@sci.kz>, 2006
+#   KDE Kazakh l10n team, 2006
+#   Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2008, 2009, 2010
+#   Dauren Sarsenov <daur88@inbox.ru>, 2009
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: grub-installer@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-30 22:49+0000\n"
-"PO-Revision-Date: 2011-02-02 10:21+0600\n"
+"PO-Revision-Date: 2011-09-21 14:41+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -224,14 +231,14 @@ msgid ""
 "   drive;\n"
 " - \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
-"Құрылғы /dev ішінде құрылғы ретінде анықталынуы тиіс. Бірнеше мысалдар:\n"
-" - \"/dev/sda\", GRUB бірінші қатқыл дискінің негізгі жүктеу жазуына\n"
-"   (MBR - master boot record) орнатылады;\n"
-" - \"/dev/sda2\", бірінші қатқыл дискінің екінші негізгі бөлімі\n"
-"   қолданылады;\n"
-" - \"/dev/sdc5\", бірінші қатқыл дискінің бірінші кеңейтілген бөлімі\n"
-"    қолданылады;\n"
-" - \"/dev/fd0\", GRUB майысқақ дискіге (флоппи) орнатылады."
+"Құрылғыны /dev бумасындағы атымен көрсетілуі тиіс. Мысалы: \n"
+" - \"/dev/sda\" GRUB сіздің бірінші қатты дискіңіздің\n"
+"    бас жүктелу жазбасына орнатылады;\n"
+" - \"/dev/sda2\" сіздің бірінші қатты дискінің\n"
+"    екінші бөлімі қолданылады;\n"
+" - \"/dev/sdc5\" үшінші қатты дискініздің бірінші\n"
+"   кеңейтілген бөліміне орнатылады;\n"
+" - \"/dev/fd0\" нәтижесінде GRUB дискетке орнатылады."
 
 #. Type: password
 #. Description

@@ -15,12 +15,19 @@
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt#
 #
+#
+# Translations from iso-codes:
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Praveen A <pravi.a@gmail.com>, 2006, 2008.
+#   Ani Peter <peter.ani@gmail.com>, 2009
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: grub-installer@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-30 22:49+0000\n"
-"PO-Revision-Date: 2010-11-21 07:56+0530\n"
+"PO-Revision-Date: 2012-03-16 19:33+0530\n"
 "Last-Translator: Praveen Arimbrathodiyil <pravi.a@gmail.com>\n"
 "Language-Team: Debian Malayalam <debian-l10n-malayalam@lists.debian.org>\n"
 "Language: \n"
@@ -233,6 +240,14 @@ msgid ""
 "   drive;\n"
 " - \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
+"ഈ ഉപകരണം /dev ലെ ഒരു ഉപകരണമായി നല്കേണ്ടതാണു്. ചില ഉദാഹരണങ്ങള്‍ താഴെ കൊടുത്തിരിക്കുന്നു:\n"
+" - \"/dev/sda\" ഗ്രബ് നിങ്ങളുടെ ആദ്യത്തെ ഹാര്‍ഡ് ഡ്രൈവിന്റെ\n"
+"മാസ്റ്റര്‍ ബൂട്ട് റെകാര്‍ഡില്‍ ഇന്‍സ്റ്റാള്‍ ചെയ്യും;\n"
+" - \"/dev/sda2\" നിങ്ങളുടെ ആദ്യത്തെ ഡ്രൈവിന്റെ\n"
+"രണ്ടാമത്തെ ഭാഗം ഉപയോഗിയ്ക്കും;\n"
+" - \"/dev/sdc5\" നിങ്ങളുടെ മൂന്നാമത്തെ ഡ്രൈവിന്റെ\n"
+"ആദ്യത്തെ എക്സ്റ്റന്റഡ് ഭാഗം ഉപയോഗിക്കും;\n"
+" - \"/dev/fd0\" ഗ്രബ്ബിനെ ഫ്ലോപ്പിയില്‍ ഇന്‍സ്റ്റാള്‍ ചെയ്യും."
 
 #. Type: password
 #. Description

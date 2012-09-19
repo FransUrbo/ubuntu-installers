@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_bs\n"
 "Report-Msgid-Bugs-To: grub-installer@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-30 22:49+0000\n"
-"PO-Revision-Date: 2011-09-15 12:18+0100\n"
+"PO-Revision-Date: 2011-11-09 02:23+0100\n"
 "Last-Translator: Armin Besirovic <armin@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "Language: bs\n"
@@ -363,9 +363,8 @@ msgstr "Izvršavanje 'update-grub' nije uspjelo."
 #. Description
 #. :sl4:
 #: ../grub-installer.templates:15001
-#, fuzzy
 msgid "Install GRUB?"
-msgstr "Instaliram GRUB boot loader"
+msgstr "Instaliraj GRUB?"
 
 #. Type: boolean
 #. Description
@@ -375,6 +374,8 @@ msgid ""
 "GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
 "used on i386/amd64 PCs. It is now also available for ${ARCH}."
 msgstr ""
+"GRUB 2 je sljedeća generacija GNU GRUBa, boot loadera uobičajeno korištenog "
+"na i386/amd64 računarima. Sada je dosupan za ${ARCH}."
 
 #. Type: boolean
 #. Description
@@ -386,6 +387,10 @@ msgid ""
 "breakage, and have an idea on how to recover your system if it becomes "
 "unbootable. You're advised not to try this in production environments."
 msgstr ""
+"Ima zanimljive nove sposobnosti ali je još uvijek eksperimentalan softver za "
+"ovu arhitekturu. Ako se odlučite na instalaciju, trebate biti pripremljeni "
+"za moguće greške i imati ideju kako popraviti sistem ako se ne može "
+"startati. Ne preporučuje se korištenje u produkcionim okruženjima."
 
 #. Type: text
 #. Description

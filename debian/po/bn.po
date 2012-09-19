@@ -17,14 +17,22 @@
 # Md. Rezwan Shahid <rezwan@ankur.org.bd>, 2009.
 # Sadia Afroz <sadia@ankur.org.bd>, 2010.
 # Israt Jahan <israt@ankur.org.bd>, 2010.
+# Zenat Rahnuma <zenat@ankur.org.bd>, 2011.
+#
+# Translations from iso-codes:
+#   Debian Foundation, 2005.
+#   Progga <progga@BengaLinux.Org>, 2005.
+#   Jamil Ahmed <jamil@bengalinux.org>, 2006.
+#   Md. Rezwan Shahid <rezwan@ankur.org.bd>, 2009.
+#   Israt Jahan <israt@ankur.org.bd>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: grub-installer@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-30 22:49+0000\n"
-"PO-Revision-Date: 2011-02-06 17:52+0600\n"
-"Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
+"PO-Revision-Date: 2012-03-11 11:32+0600\n"
+"Last-Translator: Ayesha Akhtar <ayesha@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
@@ -235,13 +243,13 @@ msgid ""
 "   drive;\n"
 " - \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
-"/dev-এ ডিভাইসটি ডিভাইস হিসেবে নির্ধারিত থাকতে হবে। নিচে কিছু উদাহরণ দেয়া হলো:\n"
-" - \"/dev/sda\" আপনার প্রথম হার্ড ড্রাইভের মাস্টার বুট রেকর্ডে GRUB\n"
-"   ইনস্টল করবে;\n"
-" - \"/dev/sda2\" আপনার প্রথম হার্ড ড্রাইভের দ্বিতীয় পার্টিশনটি ব্যবহার করবে;\n"
-" - \"/dev/sdc5\" তৃতীয় হার্ড ড্রাইভের প্রথম বর্ধিত পার্টিশন ব্যবহার\n"
-"   করবে;\n"
-" - \"/dev/fd0\" ফ্লপিতে GRUB ইনস্টল করবে।"
+"ডিভাইস /dev এ ডিভাইস হিসেবে উল্লেখিত। নিম্মে কিছু উদাহরণ দেয়া হল:\n"
+" - \"/dev/sda\" আপনার প্রথমের মাস্টার বুট রেকর্ড GRUB ইনস্টল করা হবে\n"
+"   হার্ড ড্রাইভ;\n"
+" - \"/dev/sda2\" আপনার প্রথম হার্ড ড্রাইভের দ্বিতীয় বিভাজন ব্যবহার হবে;\n"
+" - \"/dev/sdc5\" আপনার তৃতীয় হার্ডে প্রথম বর্ধিত বিভাজন ব্যবহার করা হবে\n"
+"   ড্রাইভ;\n"
+" - \"/dev/fd0\" ফ্লপি হতে GRUB এ ইন্সটল করা হবে।"
 
 #. Type: password
 #. Description

@@ -12,12 +12,17 @@
 # in doc/i18n/i18n.txt
 #
 #
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   Priti Patil <prithisd@gmail.com>, 2007.
+#   Sampada Nakhare, 2007.
+#   Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: grub-installer@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-30 22:49+0000\n"
-"PO-Revision-Date: 2011-03-05 22:52+0530\n"
+"PO-Revision-Date: 2011-11-07 15:45+0530\n"
 "Last-Translator: sampada <sampadanakhare@gmail.com>\n"
 "Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai, India "
 "<janabhaaratii@cdacmumbai.in>\n"
@@ -227,6 +232,13 @@ msgid ""
 "   drive;\n"
 " - \"/dev/fd0\" will install GRUB to a floppy."
 msgstr ""
+"हे उपकरण /dev मधील एक उपकरण म्हणून निर्धारित केले पाहिजे. पुढील उदाहरणे पहाः\n"
+" - \"/dev/sda\" ने ग्रब तुमच्या पहिल्या हार्ड ड्राईव्हच्या\n"
+"   मुख्य आरंभ अभिलेखामधे (एमबीआर) अधिष्ठापित होईल;\n"
+" - \"/dev/sda2\" ने तुमच्या पहिल्या हार्ड ड्राईव्हचे दुसरे विभाजन वापरले जाईल;\n"
+" - \"/dev/sdc5\" ने तुमच्या तिसर्‍या हार्ड ड्राईव्हचे पहिले विस्तारित विभाजन वापरले "
+"जाईल;\n"
+"- \"/dev/fd0\" ने ग्रब फ्लॉपीवर अधिष्ठापित होईल."
 
 #. Type: password
 #. Description
