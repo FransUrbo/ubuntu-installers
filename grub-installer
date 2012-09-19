@@ -810,12 +810,6 @@ while : ; do
 	fi
 done
 
-if [ "$grub_version" = grub ] && [ ! -f "$device_map" ] && \
-   db_get grub-installer/bootdev_directory && [ "$RET" ]; then
-	bootdev=
-	echo quit | $chroot $ROOT /usr/sbin/grub --batch --device-map="${device_map#$ROOT}" >/dev/null 2>&1
-fi
-
 db_progress STEP 1
 db_subst grub-installer/progress/step_install_loader BOOTDEV "$bootdev"
 db_progress INFO grub-installer/progress/step_install_loader
@@ -1148,15 +1142,6 @@ if [ "$grub_version" = "grub" ] ; then
 	fi 
 fi
 
-bootdev_directory=""
-hide_menu=""
-if db_get grub-installer/bootdev_directory && [ "$RET" ]; then
-	bootdev_directory="$RET"
-	# Be careful to deal with either UUID-style or non-UUID-style groot.
-	# grub4dos doesn't recognise UUIDs yet.
-	sed -i "s:^\(# groot=\)[^(].*:\1():; s:^\(# groot=([^)]*)\).*:\1$bootdev_directory:" $ROOT/boot/grub/$menu_file
-	hide_menu=1
-fi
 if [ "$grub_version" = grub ]; then
 	# Add user parameters to menu.lst; some options are only added to
 	# the default entry for a kernel instead of all entries. We can't do
@@ -1172,7 +1157,7 @@ if [ "$grub_version" = grub ]; then
 		sed -i "s!^\(# kopt=.*\)!\1 $kopt_params!" $ROOT/boot/grub/$menu_file
 	fi
 	# In either case, update the Debian kernel entries
-	if [ "$user_params" ] || [ "$bootdev_directory" ]; then
+	if [ "$user_params" ]; then
 		update_grub
 	fi
 fi
@@ -1186,7 +1171,7 @@ then
 	fi
 fi
 
-if [ -z "$hide_menu" ] && [ -s /tmp/os-probed ]; then
+if [ -s /tmp/os-probed ]; then
 	# Other operating systems are installed, so show the menu by default
 	# and raise the timeout.
 	if [ "$grub_version" = grub ]; then
