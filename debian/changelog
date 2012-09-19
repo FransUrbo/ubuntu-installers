@@ -1,4 +1,4 @@
-grub-installer (1.78ubuntu1) UNRELEASED; urgency=low
+grub-installer (1.78ubuntu1) quantal; urgency=low
 
   * Resynchronise with Debian.  Remaining changes:
     - Show the grub menu and raise the menu timeout if other operating
@@ -49,7 +49,7 @@ grub-installer (1.78ubuntu1) UNRELEASED; urgency=low
   * Drop grub-installer/bootdev_directory preseeding.  Wubi no longer uses
     this, and we no longer care about grub4dos.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 19 Sep 2012 09:45:53 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 19 Sep 2012 10:17:29 +0100
 
 grub-installer (1.78) unstable; urgency=low
 
