@@ -1,8 +1,8 @@
-grub-installer (1.78ubuntu3) UNRELEASED; urgency=low
+grub-installer (1.78ubuntu3) quantal; urgency=low
 
   * Fix incorrect test for whether to bind-mount /sys (LP: #1054323).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 24 Sep 2012 21:09:33 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 24 Sep 2012 21:37:10 +0100
 
 grub-installer (1.78ubuntu2) quantal; urgency=low
 
