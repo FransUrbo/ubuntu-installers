@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu177) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu177) quantal; urgency=low
 
   * Move to 3.5.0-16 kernels.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 28 Sep 2012 15:27:39 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 28 Sep 2012 16:08:52 +0100
 
 debian-installer (20101020ubuntu176) quantal; urgency=low
 
