@@ -1,3 +1,11 @@
+grub-installer (1.78ubuntu4) UNRELEASED; urgency=low
+
+  * If the SecureBoot EFI variable is set, then install
+    grub-efi-amd64-signed rather than grub-efi, along with shim-signed if
+    available.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 08 Oct 2012 20:50:06 +0100
+
 grub-installer (1.78ubuntu3) quantal; urgency=low
 
   * Fix incorrect test for whether to bind-mount /sys (LP: #1054323).
