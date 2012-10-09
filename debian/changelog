@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu181) UNRELEASED; urgency=low
+
+  * build/util/efi-image: try to grab a signed grub efi image from the
+    archive first, before generating one locally.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 09 Oct 2012 07:37:33 +0000
+
 debian-installer (20101020ubuntu180) quantal; urgency=low
 
   * Move master kernels to 3.5.0-17.

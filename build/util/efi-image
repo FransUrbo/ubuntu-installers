@@ -1,7 +1,7 @@
 #! /bin/sh
 set -e
 
-# Copyright (C) 2010, 2011 Canonical Ltd.
+# Copyright (C) 2010, 2011, 2012 Canonical Ltd.
 # Author: Colin Watson <cjwatson@ubuntu.com>
 #
 # This program is free software; you can redistribute it and/or modify it
@@ -18,7 +18,8 @@ set -e
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-# Make an EFI boot image.
+# Make an EFI boot image, or retrieve a signed image from the mirror if
+# it exists.
 
 if [ -z "$1" ] || [ -z "$2" ]; then
 	echo "usage: $0 OUTPUT-DIRECTORY GRUB-PLATFORM EFI-NAME"
@@ -44,25 +45,99 @@ mkdir -p "$outdir"
 memdisk_img="$(mktemp efi-image.XXXXXX)"
 workdir="$(mktemp -d efi-image.XXXXXX)"
 
-# Skeleton configuration file which finds the real boot disk.
-mkdir -p "$workdir/boot/grub"
-cat >"$workdir/boot/grub/grub.cfg" <<EOF
-search --file --set=root /.disk/info
-set prefix=(\$root)/boot/grub
-source \$prefix/$platform/grub.cfg
-EOF
+found=0
+# For the moment, only look for Secure Boot signed images for x64.
+if [ "$efi_name" = x64 ]; then
+	# Setup environment
+	if [ ! $APTDIR ]; then
+		APTDIR="apt"
+	fi
+	APTDIR=$APTDIR.deb
+
+	if [ ! $KEYRING ]; then
+		KEYRING=/etc/apt/trusted.gpg
+	fi
+
+	# Set sources.list file
+	if [ -f sources.list.deb.local ]; then
+		LIST=`pwd`/sources.list.deb.local
+	else
+		LIST=/etc/apt/sources.list
+	fi
+
+	# All these options make apt read the right sources list, and use APTDIR for
+	# everything so it need not run as root.
+	APT_OPTS="-o Dir::Etc::sourcelist=$LIST \
+		-o Dir::Etc::sourceparts=/dev/null \
+		-o Dir::Etc::Preferences=`pwd`/preferences.deb.local \
+		-o Dir::State=`pwd`/$APTDIR/state \
+		-o Debug::NoLocking=true \
+		-o Debug::pkgDepCache::AutoInstall=true \
+		-o Dir::Cache=`pwd`/$APTDIR/cache \
+		-o Acquire::Retries=3 \
+		-o APT::Install-Recommends=false
+		-o Apt::Architecture=`dpkg-architecture -qDEB_HOST_ARCH` \
+		-o Dir::Etc::trusted=$KEYRING
+		-o Dir::State::Status=`pwd`/$APTDIR/state/status"
+
+	# Prepare APTDIR
+	mkdir -p $APTDIR/state/lists/partial
+	mkdir -p $APTDIR/state/mirrors/partial
+	mkdir -p $APTDIR/cache/archives/partial
+	echo -n > $APTDIR/state/status
+
+	apt-get $APT_OPTS update
+
+	# Make sure we look at the mirror that matches our candidate version,
+	# in case of apt preferences overriding the default.
+	mirror=$(apt-cache $APT_OPTS policy grub-efi-amd64 \
+		 | awk 'BEGIN { ver="nomatch"; found=0 };
+			/Candidate:/ { ver=$2 }
+			$1 == ver { found=1 }
+			found == 1 && $1 ~ /^[0-9]+$/ {
+				print $2 "dists/" $3 "/uefi/grub2-" $4; exit
+			}')
+	file=$mirror/current/gcd$efi_name.efi.signed
+
+	case $file in
+		file:/*|copy:/*)
+			file=/${file#*:/}
+			if [ -e "$file" ]; then
+				cp "$file" "$workdir/boot$efi_name.efi"
+				found=1
+			fi
+			;;
+		*)
+			if wget -q "$file" -O "$workdir/boot$efi_name.efi" 2>/dev/null
+			then
+				found=1
+			fi
+			;;
+	esac
+fi
 
 mkdir -p "$outdir/boot/grub/$platform"
 (for i in $(cat /usr/lib/grub/$platform/partmap.lst); do
 	echo "insmod $i"
  done; \
- echo "source /boot/grub/grub.cfg") >"$outdir/boot/grub/$platform/grub.cfg"
+ echo "configfile /boot/grub/grub.cfg") >"$outdir/boot/grub/$platform/grub.cfg"
 
-# Build the core image.
-(cd "$workdir"; tar -cf - boot) >"$memdisk_img"
-grub-mkimage -O "$platform" -m "$memdisk_img" \
-	-o "$workdir/boot$efi_name.efi" -p '(memdisk)/boot/grub' \
-	search iso9660 configfile normal memdisk tar part_msdos fat
+# No signed EFI image found in the archive; generate one here.
+if [ "$found" = 0 ]; then
+	# Skeleton configuration file which finds the real boot disk.
+	mkdir -p "$workdir/boot/grub"
+	cat >"$workdir/boot/grub/grub.cfg" <<EOF
+search --file --set=root /.disk/info
+set prefix=(\$root)/boot/grub
+source \$prefix/$platform/grub.cfg
+EOF
+
+	# Build the core image.
+	(cd "$workdir"; tar -cf - boot) >"$memdisk_img"
+	grub-mkimage -O "$platform" -m "$memdisk_img" \
+		-o "$workdir/boot$efi_name.efi" -p '(memdisk)/boot/grub' \
+		search iso9660 configfile normal memdisk tar part_msdos fat
+fi
 
 # Stuff it into a FAT filesystem, making it as small as possible.  24KiB
 # headroom seems to be enough; (x+31)/32*32 rounds up to multiple of 32.
