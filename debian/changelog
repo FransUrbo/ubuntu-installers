@@ -1,3 +1,11 @@
+grub-installer (1.78ubuntu5) UNRELEASED; urgency=low
+
+  * Ensure appropriate package removals if grub-efi-amd64-signed is
+    selected.
+  * Remove grub-efi-amd64-signed if grub-efi is selected.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 09 Oct 2012 14:21:27 +0100
+
 grub-installer (1.78ubuntu4) quantal; urgency=low
 
   * If the SecureBoot EFI variable is set, then install
