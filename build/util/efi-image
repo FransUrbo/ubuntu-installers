@@ -48,9 +48,6 @@ workdir="$(mktemp -d efi-image.XXXXXX)"
 found=0
 # For the moment, only look for Secure Boot signed images for x64.
 if [ "$efi_name" = x64 ]; then
-	# Assumes get-packages has been run first, so we have a populated
-	# local apt environment.
-
 	# Setup environment
 	if [ ! $APTDIR ]; then
 		APTDIR="apt"
