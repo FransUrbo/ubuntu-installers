@@ -120,7 +120,7 @@ mkdir -p "$outdir/boot/grub/$platform"
 (for i in $(cat /usr/lib/grub/$platform/partmap.lst); do
 	echo "insmod $i"
  done; \
- echo "source /boot/grub/grub.cfg") >"$outdir/boot/grub/$platform/grub.cfg"
+ echo "configfile /boot/grub/grub.cfg") >"$outdir/boot/grub/$platform/grub.cfg"
 
 # No signed EFI image found in the archive; generate one here.
 if [ "$found" = 0 ]; then
