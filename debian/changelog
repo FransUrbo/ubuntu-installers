@@ -1,9 +1,13 @@
 debian-installer (20101020ubuntu181) UNRELEASED; urgency=low
 
+  [ Steve Langasek ]
   * build/util/efi-image: try to grab a signed grub efi image from the
     archive first, before generating one locally.
   * build-depend on shim-signed and have build/util/efi-image use this
     as bootx64.efi, with the signed grub image as grubx64.efi.
+
+  [ Colin Watson ]
+  * Move armhf/omap4 to 3.5.0-213 kernels.
 
  -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 09 Oct 2012 07:37:33 +0000
 
