@@ -103,17 +103,20 @@ if [ "$efi_name" = x64 ]; then
 		file:/*|copy:/*)
 			file=/${file#*:/}
 			if [ -e "$file" ]; then
-				cp "$file" "$workdir/boot$efi_name.efi"
+				cp "$file" "$workdir/grub$efi_name.efi"
 				found=1
 			fi
 			;;
 		*)
-			if wget -q "$file" -O "$workdir/boot$efi_name.efi" 2>/dev/null
+			if wget -q "$file" -O "$workdir/grub$efi_name.efi" 2>/dev/null
 			then
 				found=1
 			fi
 			;;
 	esac
+	if [ "$found" = 1 ]; then
+		cp /usr/lib/shim/shim.efi.signed "$workdir/boot$efi_name.efi"
+	fi
 fi
 
 mkdir -p "$outdir/boot/grub/$platform"
@@ -141,13 +144,21 @@ fi
 
 # Stuff it into a FAT filesystem, making it as small as possible.  24KiB
 # headroom seems to be enough; (x+31)/32*32 rounds up to multiple of 32.
+size=$(( $(stat -c %s "$workdir/boot$efi_name.efi") / 1024 ))
+if [ -e "$workdir/grub$efi_name.efi" ]; then
+	size=$(( $size + $(stat -c %s "$workdir/grub$efi_name.efi") / 1024 ))
+fi
+
 mkfs.msdos -C "$outdir/efi.img" \
-	$(( ($(stat -c %s "$workdir/boot$efi_name.efi") / 1024 + 55) \
-	    / 32 * 32 ))
+	$(( ($size + 55) / 32 * 32 ))
 mmd -i "$outdir/efi.img" ::efi
 mmd -i "$outdir/efi.img" ::efi/boot
 mcopy -i "$outdir/efi.img" "$workdir/boot$efi_name.efi" \
 	"::efi/boot/boot$efi_name.efi"
+if [ -e "$workdir/grub$efi_name.efi" ]; then
+	mcopy -i "$outdir/efi.img" "$workdir/grub$efi_name.efi" \
+		"::efi/boot/grub$efi_name.efi"
+fi
 
 # Copy over GRUB modules, except for those already built in.
 cp -a "/usr/lib/grub/$platform"/*.lst "$outdir/boot/grub/$platform/"
