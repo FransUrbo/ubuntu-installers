@@ -422,15 +422,11 @@ ifdef KERNELNAME_ALT_SUFFIX
 	$(foreach name,$(KERNELNAME), \
 		if [ -e $(TREE)/boot/$(name)$(KERNELNAME_ALT_SUFFIX) ]; then \
 			mv -f $(TREE)/boot/$(name)$(KERNELNAME_ALT_SUFFIX) \
-			      $(TEMP)/$(name); \
-			rm -f $(TREE)/boot/$(name); \
-		else \
-			mv -f $(TREE)/boot/$(name) $(TEMP)/$(name); \
+			      $(TREE)/boot/$(name); \
 		fi;)
-else
+endif
 	$(foreach name,$(KERNELNAME), \
 		mv -f $(TREE)/boot/$(name) $(TEMP)/$(name);)
-endif
 	test -e $(TREE)/boot/zfs || rmdir $(TREE)/boot/
 endif
 

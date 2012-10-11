@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu183) UNRELEASED; urgency=low
+
+  * Simplify signed kernel handling at Adam Conrad's suggestion.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 11 Oct 2012 14:00:38 +0100
+
 debian-installer (20101020ubuntu182) quantal; urgency=low
 
   * Use a signed kernel on amd64.
