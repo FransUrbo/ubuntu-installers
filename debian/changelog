@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu182) UNRELEASED; urgency=low
+
+  * Use a signed kernel on amd64.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 11 Oct 2012 13:25:36 +0100
+
 debian-installer (20101020ubuntu181) quantal; urgency=low
 
   [ Steve Langasek ]
