@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu184) quantal; urgency=low
+
+  * No-change rebuild to pick up the latest SecureBoot components.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 11 Oct 2012 20:22:55 -0600
+
 debian-installer (20101020ubuntu183) quantal; urgency=low
 
   * Simplify signed kernel handling at Adam Conrad's suggestion.
