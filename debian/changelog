@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu187) UNRELEASED; urgency=low
+
+  * build/util/efi-image: spit out the grub version information to the build
+    log, for auditability.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 15 Oct 2012 13:03:21 -0700
+
 debian-installer (20101020ubuntu186) quantal; urgency=low
 
   * No-change rebuild to pick up the latest signed grub2 image.

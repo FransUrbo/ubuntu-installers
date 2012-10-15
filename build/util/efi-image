@@ -104,12 +104,14 @@ if [ "$efi_name" = x64 ]; then
 			file=/${file#*:/}
 			if [ -e "$file" ]; then
 				cp "$file" "$workdir/grub$efi_name.efi"
+				echo "Using signed grub version" $(cat $(dirname $file)/version)
 				found=1
 			fi
 			;;
 		*)
 			if wget -q "$file" -O "$workdir/grub$efi_name.efi" 2>/dev/null
 			then
+				echo "Using signed grub version" $(wget -O - -q $(dirname $file)/version)
 				found=1
 			fi
 			;;
