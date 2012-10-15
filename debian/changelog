@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu186) quantal; urgency=low
+
+  * No-change rebuild to pick up the latest signed grub2 image.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Mon, 15 Oct 2012 16:22:30 +0100
+
 debian-installer (20101020ubuntu185) quantal; urgency=low
 
   * No-change rebuild to pick up the latest signed grub2 image.
