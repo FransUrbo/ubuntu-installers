@@ -1,6 +1,7 @@
 base-installer (1.122ubuntu13) UNRELEASED; urgency=low
 
-  * Consider signed images in kernel_update_list (LP: #1067250).
+  * Consider signed images in kernel_update_list and install_kernel_linux
+    (LP: #1067250).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 16 Oct 2012 10:33:43 +0100
 

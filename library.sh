@@ -493,7 +493,7 @@ install_kernel_linux () {
 		return
 	fi
 
-	target_kernel_major="$(echo "$KERNEL" | sed 's/^kernel-image-//; s/^linux-image-//; s/-.*//' | cut -d . -f 1,2)"
+	target_kernel_major="$(echo "$KERNEL" | sed 's/^kernel-image-//; s/^linux-\(\|signed-\)image-//; s/-.*//' | cut -d . -f 1,2)"
 	case $target_kernel_major in
 		2.?)	;;
 		[3-9].*)
