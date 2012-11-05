@@ -1,4 +1,4 @@
-debian-installer (20101020ubuntu187) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu187) raring; urgency=low
 
   [ Steve Langasek ]
   * build/util/efi-image: spit out the grub version information to the build
@@ -7,7 +7,7 @@ debian-installer (20101020ubuntu187) UNRELEASED; urgency=low
   [ Stéphane Graber ]
   * Set default suite to raring.
 
- -- Stéphane Graber <stgraber@ubuntu.com>  Mon, 05 Nov 2012 09:19:53 -0500
+ -- Stéphane Graber <stgraber@ubuntu.com>  Mon, 05 Nov 2012 09:20:49 -0500
 
 debian-installer (20101020ubuntu186) quantal; urgency=low
 
