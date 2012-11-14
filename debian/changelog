@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu189) UNRELEASED; urgency=low
+
+  * Drop highbank, since we no longer have kernel images for it.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 14 Nov 2012 17:02:19 +0000
+
 debian-installer (20101020ubuntu188) raring; urgency=low
 
   * Use udebs from raring-security, raring-proposed, and raring-updates.
