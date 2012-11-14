@@ -4,6 +4,7 @@ debian-installer (20101020ubuntu188) UNRELEASED; urgency=low
     (We do this for all post-release updates anyway, and now that we're
     staging all development series uploads in -proposed it makes sense to
     build from there.)
+  * Move to 3.7.0-0 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 14 Nov 2012 11:20:35 +0000
 
