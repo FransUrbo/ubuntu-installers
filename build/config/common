@@ -49,7 +49,7 @@ DEBIAN_VERSION := $(shell lsb_release -sr)
 # to build debian-installer. By default this is set to 'unstable' for building
 # daily images. For official builds this is overruled in debian/rules.
 USE_UDEBS_FROM ?= raring
-USE_UDEBS_FROM_EXTRA ?=
+USE_UDEBS_FROM_EXTRA ?= raring-security raring-updates raring-proposed
 
 # Archive components from which to fetch debian-installer modules.
 UDEB_COMPONENTS ?= main/debian-installer

@@ -1,3 +1,12 @@
+debian-installer (20101020ubuntu188) UNRELEASED; urgency=low
+
+  * Use udebs from raring-security, raring-proposed, and raring-updates.
+    (We do this for all post-release updates anyway, and now that we're
+    staging all development series uploads in -proposed it makes sense to
+    build from there.)
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 14 Nov 2012 11:20:35 +0000
+
 debian-installer (20101020ubuntu187) raring; urgency=low
 
   [ Steve Langasek ]
