@@ -1,6 +1,7 @@
 debian-installer (20101020ubuntu190) UNRELEASED; urgency=low
 
   * Make nic-pcmcia-modules optional on powerpc too.
+  * Move to 3.7.0-1 kernels.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 15 Nov 2012 02:05:08 +0000
 
