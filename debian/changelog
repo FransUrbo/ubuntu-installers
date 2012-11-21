@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu192) raring; urgency=low
+
+  * Move master kernels to 3.7.0-3.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 20 Nov 2012 23:19:31 -0700
+
 debian-installer (20101020ubuntu191) raring; urgency=low
 
   * Move to 3.7.0-2 kernels.
