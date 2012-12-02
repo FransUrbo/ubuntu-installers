@@ -1,5 +1,7 @@
-debian-installer (20101020ubuntu195) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu195) raring; urgency=low
 
+  * Make omap/omap4 netboot VFAT partitions the same size
+    as the ones used for CD-like media (LP: #1040393)
   * Move powerpc kernels to 3.7.0-2.
   * Move armadaxp kernels to 3.5.0-1604.
   * Move omap4 kernels to 3.5.0-215.
