@@ -1,3 +1,11 @@
+debian-installer (20101020ubuntu195) UNRELEASED; urgency=low
+
+  * Move powerpc kernels to 3.7.0-2.
+  * Move armadaxp kernels to 3.5.0-1604.
+  * Move omap4 kernels to 3.5.0-215.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Sat, 01 Dec 2012 19:22:27 -0700
+
 debian-installer (20101020ubuntu194) raring; urgency=low
 
   * Move master kernels to 3.7.0-4.
