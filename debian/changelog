@@ -1,3 +1,11 @@
+debian-installer (20101020ubuntu196) raring; urgency=low
+
+  * Move master kernels to 3.7.0-5.
+  * Move powerpc kernels to 3.7.0-3.
+  * Move armadaxp kernels to 3.5.0-1605.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 06 Dec 2012 08:07:36 -0700
+
 debian-installer (20101020ubuntu195) raring; urgency=low
 
   * Make omap/omap4 netboot VFAT partitions the same size
