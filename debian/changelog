@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu198) raring; urgency=low
+
+  * Move master kernels to 3.7.0-7.
+  * Move powerpc kernels to 3.7.0-5.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Sun, 16 Dec 2012 08:36:51 -0700
+
 debian-installer (20101020ubuntu197) raring; urgency=low
 
   * Move master kernels to 3.7.0-6.
