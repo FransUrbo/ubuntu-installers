@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu201) raring; urgency=low
+
+  * Move master kernels to 3.8.0-0.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 10 Jan 2013 23:49:53 -0700
+
 debian-installer (20101020ubuntu200) raring; urgency=low
 
   * Add basic configuration for powerpc/e500 and powerpc/e500mc.
