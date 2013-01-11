@@ -26,5 +26,5 @@ biosdevname-udeb ?
 #include "udev"
 
 # busybox modutils is gone 
-module-init-tools-udeb [linux]
+libkmod2-udeb [linux]
 kldutils-udeb [kfreebsd]
