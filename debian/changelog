@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu203) raring; urgency=low
+
+  * Move powerpc kernels to 3.8.0-0.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Sun, 13 Jan 2013 01:27:46 -0700
+
 debian-installer (20101020ubuntu202) raring; urgency=low
 
   * Cherrypick fixes from Debian to switch from module-init-tools to kmod:
