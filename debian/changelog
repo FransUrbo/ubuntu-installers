@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu205) raring; urgency=low
+
+  * Move powerpc kernels to 3.8.0-1.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Wed, 23 Jan 2013 14:41:27 -0700
+
 debian-installer (20101020ubuntu204) raring; urgency=low
 
   * Make genisoimage options for powerpc match debian-cd (LP: #1099716)
