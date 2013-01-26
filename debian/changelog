@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu206) raring; urgency=low
+
+  * Move master kernels to 3.8.0-2.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Sat, 26 Jan 2013 06:11:15 -0700
+
 debian-installer (20101020ubuntu205) raring; urgency=low
 
   * Move powerpc kernels to 3.8.0-1.
