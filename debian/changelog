@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu211) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu211) raring; urgency=low
 
   * Add syslinux 5.x support (thanks, Daniel Baumann; see Debian #699742;
     LP: #1112878).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 07 Feb 2013 15:04:40 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 07 Feb 2013 16:15:57 +0000
 
 debian-installer (20101020ubuntu210) raring; urgency=low
 
