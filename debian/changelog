@@ -1,3 +1,11 @@
+debian-installer (20101020ubuntu216) UNRELEASED; urgency=low
+
+  * Stop building GTK installer images for now.  pango1.0's current hard
+    requirement for harfbuzz (a C++ library) makes it impossible to build
+    these.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 27 Feb 2013 12:58:15 +0000
+
 debian-installer (20101020ubuntu215) raring; urgency=low
 
   * Move master kernels to 3.8.0-8.
