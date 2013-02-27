@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu217) raring; urgency=low
+
+  * No-change rebuild to pick up the kernel-signed-image udeb on amd64.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Wed, 27 Feb 2013 09:57:50 -0700
+
 debian-installer (20101020ubuntu216) raring; urgency=low
 
   * Stop building GTK installer images for now.  pango1.0's current hard
