@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu218) raring; urgency=low
+
+  * Move master kernels to 3.8.0-9.
+  * Move powerpc kernels to 3.8.0-5.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Fri, 01 Mar 2013 16:29:50 -0700
+
 debian-installer (20101020ubuntu217) raring; urgency=low
 
   * No-change rebuild to pick up the kernel-signed-image udeb on amd64.
