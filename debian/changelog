@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu225) raring; urgency=low
+
+  * Move master kernels to 3.8.0-14.
+  * Install generic flavour on omap.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Sat, 23 Mar 2013 15:30:02 -0600
+
 debian-installer (20101020ubuntu224) raring; urgency=low
 
   * Move powerpc kernels to 3.8.0-6.
