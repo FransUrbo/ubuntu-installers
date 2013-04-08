@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu228) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu228) raring; urgency=low
 
   * Move master kernels to 3.8.0-17 (LP: #1166103).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Mon, 08 Apr 2013 10:58:53 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 08 Apr 2013 10:59:57 +0100
 
 debian-installer (20101020ubuntu227) raring; urgency=low
 
