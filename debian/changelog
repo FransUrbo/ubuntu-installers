@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu229) UNRELEASED; urgency=low
+
+  * Rename "highbank" flavor to "generic" and re-enable it.
+
+ -- dann frazier <dann.frazier@canonical.com>  Tue, 09 Apr 2013 00:10:50 -0600
+
 debian-installer (20101020ubuntu228) raring; urgency=low
 
   * Move master kernels to 3.8.0-17 (LP: #1166103).
