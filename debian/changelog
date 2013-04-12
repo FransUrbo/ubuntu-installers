@@ -1,10 +1,10 @@
-debian-installer (20101020ubuntu229) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu229) raring; urgency=low
 
   * Move powerpc kernels to 3.8.0-8.
   * Move omap4 kernels to 3.5.0-222.
   * Move master kernels to 3.8.0-18.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 11 Apr 2013 10:59:32 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 12 Apr 2013 13:51:29 +0100
 
 debian-installer (20101020ubuntu228) raring; urgency=low
 
