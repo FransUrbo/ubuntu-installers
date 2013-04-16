@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2012-03-30 21:57+0000\n"
+"PO-Revision-Date: 2013-01-31 03:47+0000\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <km@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2013-04-16 16:00+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -31,7 +31,7 @@ msgstr "<keycap>F1</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "${DISTRIBUTION_NAME} សូមស្វាគមន៍!"
+msgstr "សូម​ស្វាគមន៍​មក​កាន់ ${DISTRIBUTION_NAME}!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
@@ -241,7 +241,7 @@ msgstr ""
 #: help.xml:137
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
-msgstr "អ្នក​ត្រូវ​មាន RAM ​យ៉ាង​តិច ៣៨៤ មេកាបៃ ដើម្បី​ប្រើប្រាស់​ប្រព័ន្ធ​បន្ត​​​ផ្ទាល់​របស់​អ៊ូប៊ុនទូ​នេះ​ ។"
+msgstr "អ្នក​ត្រូវ​មានអង្គចងចាំ​​យ៉ាង​តិច ៣៨៤ មេកាបៃ ដើម្បី​ប្រើប្រាស់​ប្រព័ន្ធ​បន្ត​​​ផ្ទាល់​របស់​អ៊ូប៊ុនទូ​នេះ​ ។"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142

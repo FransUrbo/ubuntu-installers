@@ -8,20 +8,20 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-09-16 11:05+0000\n"
-"Last-Translator: පසිඳු කාවින්ද <Unknown>\n"
+"PO-Revision-Date: 2012-05-15 10:54+0000\n"
+"Last-Translator: පසිඳු කාවින්ද <pkavinda@gmail.com>\n"
 "Language-Team: Sinhalese <si@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2013-04-16 16:00+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
 msgid "Installer Boot Help Screens"
-msgstr "පිහිටුවනයෙහි බූට් සහය තිර"
+msgstr "පිහිටුවනයෙහි ඇරඹුම් සහය තිර"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:10
@@ -99,7 +99,7 @@ msgstr "<link linkend=\"F3\"><keycap>F3</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:49
 msgid "Boot methods for special ways of using this system."
-msgstr "පද්ධති භාවිතය පිළිබද විශේෂ ක්‍රම සඳහා වූ බූට් විධි"
+msgstr "පද්ධති භාවිතය පිළිබද විශේෂ ක්‍රම සඳහා වූ ඇරඹුම් විධි"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:53
@@ -109,7 +109,7 @@ msgstr "<link linkend=\"F4\"><keycap>F4</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:54
 msgid "Additional boot methods; rescuing a broken system."
-msgstr "අමතර බූට් ක්‍රම; බිඳුනු පද්ධතියක් මුදවා ගැනීම."
+msgstr "අමතර ඇරඹුම් ක්‍රම; බිඳුනු පද්ධතියක් මුදවා ගැනීම."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:58
@@ -119,7 +119,7 @@ msgstr "<link linkend=\"F5\"><keycap>F5</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:59
 msgid "Special boot parameters, overview."
-msgstr "විශේෂ බූට් පරාමිති, දළ විශ්ලේෂණය."
+msgstr "විශේෂ ඇරඹුම් පරාමිති, දළ විශ්ලේෂණය."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
@@ -129,7 +129,7 @@ msgstr "<link linkend=\"F6\"><keycap>F6</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
 msgid "Special boot parameters for special machines."
-msgstr "විශේෂ යන්ත්‍ර සඳහා වූ විශේෂ boot පරාමිතීන්."
+msgstr "විශේෂ යන්ත්‍ර සඳහා වූ විශේෂ ඇරඹුම් පරාමිතීන්."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:68 help.xml:389
@@ -139,7 +139,7 @@ msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
-msgstr "තෝරාගත් තැටි පාලකයන් සඳහා වූ විශේෂ boot පරාමිතීන්."
+msgstr "තෝරාගත් තැටි පාලකයන් සඳහා වූ විශේෂ ඇරඹුම් පරාමිතීන්."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
@@ -149,12 +149,12 @@ msgstr "<link linkend=\"F8\"><keycap>F8</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:74
 msgid "Special boot parameters for the install system."
-msgstr "ස්ථාපනය කර ඇති පද්ධතිය සඳහා වූ විශේෂ boot පරාමිතීන්."
+msgstr "ස්ථාපනය කර ඇති පද්ධතිය සඳහා වූ විශේෂ ඇරඹුම් පරාමිතීන්."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:79
 msgid "Special boot parameters for the bootstrap system."
-msgstr "Bootstrap පද්ධතිය සඳහා වූ විශේෂ boot පරාමිතීන්"
+msgstr "බූට්ස්ට්‍රැප් පද්ධතිය සඳහා වූ විශේෂ ඇරඹුම් පරාමිතීන්."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:83
@@ -211,7 +211,7 @@ msgstr "උබුන්ටු ස්ථාපනය සඳහා පූර්ව
 #: help.xml:119
 msgid ""
 "You must have at least 32 megabytes of RAM to use this Ubuntu installer."
-msgstr "මෙම උබුන්ටු ස්ථාපකය භාවිතයට නම් ඔබට අවම වශයෙන් මෙගාබයිට් 32ක RAM මතකයක් තිබිය යුතුය."
+msgstr "මෙම උබුන්ටු ස්ථාපකය භාවිතයට නම් ඔබට අවම වශයෙන් මෙගාබයිට් 32ක රැම් මතකයක් තිබිය යුතුය."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:123
@@ -230,7 +230,7 @@ msgid ""
 "are available at the Ubuntu web site, <ulink url=\"http://www.ubuntu.com/\" /"
 ">"
 msgstr ""
-"වැඩි විස්තර සඳහා ස්ථාපන අත්පොත හෝ FAQ බලන්න; එම ලේඛන දෙකම උබුන්ටු වෙබ් අඩවියෙන් ලබාගත "
+"වැඩි විස්තර සඳහා ස්ථාපන අත්පොත හෝ නිවිප්‍ර බලන්න; එම ලේඛන දෙකම උබුන්ටු වෙබ් අඩවියෙන් ලබාගත "
 "හැක, <ulink url=\"http://www.ubuntu.com/\" />"
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -238,7 +238,7 @@ msgstr ""
 msgid ""
 "You must have at least 384 megabytes of RAM to use this Ubuntu live system."
 msgstr ""
-"මෙම උබුන්ටු සජීවී පද්ධතිය භාවිතයට නම් ඔබට අවම වශයෙන් මෙගාබයිට් 384ක RAM මතකයක් තිබිය යුතුය."
+"මෙම උබුන්ටු සජීවී පද්ධතිය භාවිතයට නම් ඔබට අවම වශයෙන් මෙගාබයිට් 384ක රැම් මතකයක් තිබිය යුතුය."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:142
@@ -288,7 +288,7 @@ msgstr "<keycap>F3</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:169
 msgid "BOOT METHODS"
-msgstr "Boot ක්‍රම"
+msgstr "ඇරඹුම් ක්‍රම"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
@@ -298,7 +298,7 @@ msgstr "ලබා ගත හැකි ඇරඹුම් ක්‍රම:"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
 msgid "install"
-msgstr "ස්ථාපනය කරන්න"
+msgstr "ස්ථාපනය"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:178 help.xml:210
@@ -328,7 +328,7 @@ msgstr "cli"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:193
 msgid "cli-expert"
-msgstr "cli-ප්‍රවීණයා"
+msgstr "cli-විශේෂඥ"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:195
@@ -357,7 +357,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
 msgid "live-install"
-msgstr "සජීවී ස්ථාපනය"
+msgstr "සජීවී-ස්ථාපනය"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:212
@@ -392,13 +392,13 @@ msgstr ""
 #: help.xml:242
 #, no-wrap
 msgid "boot: install acpi=off"
-msgstr "ඇරඹුම: ස්ථාපනය acpi=අක්‍රිය"
+msgstr "ඇරඹුම: ස්ථාපනය acpi=අක්‍රීය"
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:243
 #, no-wrap
 msgid "boot: live acpi=off"
-msgstr "ඇරඹුම: සජීවී acpi=අක්‍රිය"
+msgstr "ඇරඹුම: සජීවී acpi=අක්‍රීය"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:247
@@ -406,7 +406,7 @@ msgid ""
 "If unsure, you should use the default boot method, with no special "
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
-"විශ්වාසයක් නොමැතිනම්, ඔබ විසින් ඇරඹුම් ප්‍රේරකයේදී ඇතුල් කෙරුමක් සිදුකරමින් විශේෂ පරාමිතීන් රහිතව "
+"විශ්වාසයක් නොමැතිනම්, ඔබ විසින් ඇරඹුම් ප්‍රේරකයේදී ඇතුල් කෙරුමක් සිදුකරමින් විශේෂ පරාමිතීන් රහිතව "
 "සාමාන්‍ය ඇරඹුම් ක්‍රමය භාවිතා කල යුතු වේ."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -426,9 +426,9 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
-"මෙම boot ක්‍රම වලින් එකක් භාවිතා කිරීමට නම්, cursor යතුරු භාවිතයෙන් එය මෙනුවෙන් තෝරන්න. විකල්ප "
-"start-up හා ස්ථාපන ආකාර තෝරාගැනීම සඳහා F4 ඔබන්න. Boot පරාමිතීන් වෙනස් කිරීමට F6 ඔබන්න. "
-"නිතර-භාවිත boot පරාමිතීන් මෙනුවකින් තේරීම‌ට F6 නැවත ඔබන්න."
+"මෙම ඇරඹුම් ක්‍රම වලින් එකක් භාවිතා කිරීමට නම්, cursor යතුරු භාවිතයෙන් එය මෙනුවෙන් තෝරන්න. විකල්ප "
+"start-up හා ස්ථාපන ආකාර තෝරාගැනීම සඳහා F4 ඔබන්න. ඇරඹුම් පරාමිතීන් වෙනස් කිරීමට F6 ඔබන්න. "
+"නිතර-භාවිත ඇරඹුම් පරාමිතීන් මෙනුවකින් තේරීම‌ට F6 නැවත ඔබන්න."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
@@ -470,7 +470,7 @@ msgstr "මුදවාගැනීම් ක්‍රමයට අරඹන්�
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr "ඇරඹුම: මුදවාගැනීම acpi=අක්‍රිය"
+msgstr "ඇරඹුම: මුදවාගැනීම acpi=අක්‍රීය"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
@@ -491,7 +491,7 @@ msgstr "<keycap>F5</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:356
 msgid "SPECIAL BOOT PARAMETERS - OVERVIEW"
-msgstr "විශේෂ ඇරඹුම් පරාමිතීන් - \tදළ විශ්ලේෂණය"
+msgstr "විශේෂ ඇරඹුම් පරාමිතීන් - දළ විශ්ලේෂණය"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:363
@@ -527,22 +527,22 @@ msgstr "ඔබට භාවිතා කල හැකි ඇරඹුම් ප�
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
 msgid "boot parameters for special machines"
-msgstr "විශේෂ යන්ත්‍ර සඳහා වූ boot පරාමිතීන්"
+msgstr "විශේෂ යන්ත්‍ර සඳහා වූ  ඇරඹුම් පරාමිතීන්"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr "විවිධ තැටි පාලකයන් සඳහා වූ boot පරාමිතීන්"
+msgstr "විවිධ තැටි පාලකයන් සඳහා වූ ඇරඹුම් පරාමිතීන්"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
 msgid "boot parameters understood by the install system"
-msgstr "ස්ථාපිත පද්ධතියෙන් තේරුම්ගත් boot පරාමිතීන්"
+msgstr "ස්ථාපිත පද්ධතියෙන් තේරුම්ගත් ඇරඹුම් පරාමිතීන්"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr "Bootstrap පද්ධතියෙන් තේරුම්ගත් boot පරාමිතීන්"
+msgstr "බුට්ස්ට්‍රැප් පද්ධතියෙන් තේරුම්ගත් ඇරඹුම් පරාමිතීන්"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405
@@ -568,7 +568,7 @@ msgstr "<keycap>F6</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:430
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS HARDWARE"
-msgstr "විශේෂ boot පරාමිතීන් - විවිධ දෘඩාංග"
+msgstr "විශේෂ ඇරඹුම් පරාමිතීන් - විවිධ දෘඩාංග"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:437 help.xml:544 help.xml:615
@@ -584,7 +584,7 @@ msgid ""
 "You can use the following boot parameters by pressing F6, in combination "
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"Boot ක්‍රමය සමග F6 එබීමෙන් ඔබට පසු දැක්වෙන boot පරාමිතීන් භාවිතා කල හැක (<link linkend="
+"ඇරඹුම් ක්‍රමය සමග F6 එබීමෙන් ඔබට පසු දැක්වෙන ඇරඹුම් පරාමිතීන් භාවිතා කල හැක (<link linkend="
 "\"F3\"><keycap>F3</keycap></link> බලන්න)."
 
 #. type: Content of: <reference><refentry><refsection><para>

@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2013-04-16 16:01+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -184,6 +184,8 @@ msgid ""
 "For F1-F9 type control and F then the digit 1-9\n"
 "For F10 type control and F then the digit 0\n"
 msgstr ""
+"ಎಫ್ 1 - 9 ಗೆ ಮೊದಲು ಕಂಟ್ರೋಲ್ ಕೀ ಒತ್ತಿ ನಂತರ ಎಫ್ ಕೀ ನಂತರ 1 - 9 ಅಂಕಿಯನ್ನು ಒತ್ತಿರಿ \n"
+"ಎಫ್ 10 ಗೆ ಮೊದಲು ಕಂಟ್ರೋಲ್ ಕೀ ಒತ್ತಿ ನಂತರ ಎಫ್ ಕೀ ನಂತರ  ಸೋನ್ನೆಯನ್ನು (0) ಒತ್ತಿರಿ\n"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:100
@@ -220,6 +222,9 @@ msgid ""
 "to install additional packages, depending on what you wish to do with your "
 "new Ubuntu system."
 msgstr ""
+"ನಿಮ್ಮ ಗಣಕದಲ್ಲಿ ಉಬುಂಟುವನ್ನು ಅನುಸ್ಥಾಪಿಸಲು 5 ಜಿಬಿ ಭಾಗ ಹೊಂದಿರಬೇಕಾಗುತ್ತದೆ ಅಥವಾ 500 "
+"ಎಂಬಿ ಸರ್ವರ್ ಅನುಸ್ಥಾಪಿಸಲು ಹೊಂದಿರಬೇಕಾಗುತ್ತದೆ. ನೀವು ಯಾವ ಉದ್ದೇಶಕ್ಕಾಗಿ ಉಬುಂಟುವನ್ನು "
+"ಉಪಯೋಗಿಸುತ್ತೀರ ಎನ್ನುವುದರ ಮೇಲೆ ಇನ್ನು ಹೆಚ್ಚು ಹಾರ್ಡ್ಡಿಸ್ಕ್ ಜಾಗ ಬೇಕಾಗಬಹುದು"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:131 help.xml:732
@@ -424,12 +429,15 @@ msgid ""
 "F6 to edit boot parameters. Press F6 again to select from a menu of commonly-"
 "used boot parameters."
 msgstr ""
+"ಈ ಬೂಟ್ ವಿಧಾನಗಳನ್ನು ಉಪಯೋಗಿಸಲು ಕರ್ಸರಿಂದ ಮೆನುನಲ್ಲಿ ಆಯ್ಕೆ ಮಾಡಿ.ಬದಲಿ ಸ್ಟಾರ್ಟ್ ಅಪ್ ಮತ್ತು "
+"ಅನುಸ್ಥಾಪನೆ ಮೋಡ್  ಗೆ F4 ಅನ್ನು ಒತ್ತಿರಿ. ಬೂಟ್  ನಿಯತಾಂಕಗಳನ್ನು ತಿದ್ದಲು F6 ಒತ್ತಿರಿ."
+"ಸಾಮಾನ್ಯವಾಗಿ ಉಪಯೋಗಿಸುವ ಬೂಟ್ ನಿಯತಾಂಕಗಳಿಗಾಗಿ ಮತ್ತೊಮ್ಮೆ F6 ಒತ್ತಿರಿ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:264
 msgid ""
 "Except in expert mode, non-critical kernel boot messages are suppressed."
-msgstr ""
+msgstr "ನಾನ್ ಕ್ರಿಟಿಕಲ್ ಬೂಟ್ ಸಂದೇಶಗಳು ಚತುರ ಮೋಡ್ ಅಲ್ಲಿ ಮಾತ್ರ ಪ್ರದರ್ಶಿತವಾಗುತ್ತವೆ"
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:280 help.xml:326
@@ -465,7 +473,7 @@ msgstr "ರಕ್ಷಣಾ ವಿಧಾನಕ್ಕೆ ಬೂಟ್ ಮಾಡಿ
 #: help.xml:303
 #, no-wrap
 msgid "boot: rescue acpi=off"
-msgstr ""
+msgstr "boot:resue acpi=off"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:334
@@ -494,6 +502,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter at the <literal>boot:</"
 "literal> prompt in order to boot the system."
 msgstr ""
+"ಬೂಟ್ಕೆ ಮಾಡಬೇಕಂದಲ್ಲಿ ಕೆಲವೊಂದು ಗಣಕಗಳಲ್ಲಿ ನಿಯತಾಂಕಗಳನ್ನು  ಇಲ್ಲಿ  <literal>boot:</"
+"literal> ಸೂಚಿಸಬೆೇಕಾಗುತ್ತದೆ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:367
@@ -501,6 +511,8 @@ msgid ""
 "On a few systems, you may need to specify a parameter by pressing F6 in "
 "order to boot the system."
 msgstr ""
+"ಬೂಟ್ ಮಾಡಬೇಕಂದಲ್ಲಿ ಕೆಲವೊಂದು ಗಣಕಗಳಲ್ಲಿ ನೀವು ನಿಯತಾಂಕಗಳನ್ನು F6 ಒತ್ತುವ ಮೂಲಕ ಆಯ್ಕೆ "
+"ಮಾಡಬೇಕಾಗುತ್ತದೆ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:371
@@ -508,6 +520,8 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
+"ಲಿನಕ್ಸ್ ಕೆಲವೊಮ್ಮೆ ನಿಮ್ಮ ಯಂತ್ರಾಂಶಗಳನ್ನು ಸ್ವಯಂಪತ್ತೆಹಚ್ಚುವುದರಲ್ಲಿ ವಿಪಲವಾಗಬಹುದು.ಆಗ ನೀವು ಆ "
+"ಯಂತ್ರಾಂಶದ  ಜಾಗವನ್ನು ಸ್ಪಷ್ಟಿಕರಿಸಬೇಕಾಗುತ್ತದೆ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
@@ -533,7 +547,7 @@ msgstr "ಸ್ಥಾಪಿತ system ಅರ್ಥ ಮಾಡಿಕೋಳ್ಳಬ
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:400
 msgid "boot parameters understood by the bootstrap system"
-msgstr ""
+msgstr "ಬೂಟ್ ನಿಯತಾಂಕಗಳನ್ನು ಬೂಟ್ ಸ್ಟ್ರಾಪ್ ವ್ಯವಸ್ಥೆಯು ಅರ್ಥಮಾಡಿಕೊಂಡಿದೆ"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:405

@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-07-15 14:35+0000\n"
-"Last-Translator: Pierre Slamich <pierre.slamich@gmail.com>\n"
+"PO-Revision-Date: 2012-08-24 09:58+0000\n"
+"Last-Translator: Havok Novak <havok.novak@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2013-04-16 16:01+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -85,12 +85,12 @@ msgstr "<link linkend=\"F2\"><keycap>F2</keycap></link>"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:39
 msgid "Prerequisites for installing ${DISTRIBUTION_NAME}."
-msgstr "Pré-requis pour l'installation de ${DISTRIBUTION_NAME}."
+msgstr "Prérequis pour l'installation de ${DISTRIBUTION_NAME}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:44
 msgid "Prerequisites for running ${DISTRIBUTION_NAME}."
-msgstr "Pré-requis pour l'éxécution de ${DISTRIBUTION_NAME}."
+msgstr "Prérequis pour l'exécution de ${DISTRIBUTION_NAME}."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:48
@@ -279,7 +279,7 @@ msgstr ""
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
 msgid "Thank you for choosing Ubuntu!"
-msgstr "Merci d'avoir choisi Ubuntu!"
+msgstr "Merci d'avoir choisi Ubuntu !"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:156 help.xml:268 help.xml:314 help.xml:343 help.xml:417
@@ -297,7 +297,7 @@ msgstr ""
 #: help.xml:161 help.xml:273 help.xml:319 help.xml:348 help.xml:422
 #: help.xml:529 help.xml:602 help.xml:692 help.xml:748 help.xml:804
 msgid "Press F1 for the help index, or Escape to exit help."
-msgstr "Appuyer sur F1 pour l'index de l'aide, ou Echap pour quitter l'aide."
+msgstr "Appuyer sur F1 pour l'index de l'aide, ou Échap pour quitter l'aide."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
 #: help.xml:168
@@ -312,7 +312,7 @@ msgstr "MÉTHODES DE DÉMARRAGE"
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:173
 msgid "Available boot methods:"
-msgstr "Méthodes de démarrage disponibles :"
+msgstr "Méthodes de démarrage disponibles :"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:177
@@ -327,7 +327,7 @@ msgstr "Installation d'Ubuntu"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:180
 msgid "Start the installation -- this is the default option."
-msgstr "Démarrer l'installation -- c'est l'option par défaut."
+msgstr "Démarrer l'installation – c'est l'option par défaut."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:185
@@ -389,7 +389,7 @@ msgstr "Commencer l'installation"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:228
 msgid "memtest"
-msgstr "testmémoire"
+msgstr "test mémoire"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:229
@@ -798,7 +798,7 @@ msgstr "<keycap>F7</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:537
 msgid "SPECIAL BOOT PARAMETERS - VARIOUS DISK DRIVES"
-msgstr "PARAMÈTRES SPÉCIFIQUES DE DÉMARRAGE - DIVERS LECTEURS DE DISQUE"
+msgstr "PARAMÈTRES SPÉCIFIQUES DE DÉMARRAGE – DIVERS LECTEURS DE DISQUE"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:559

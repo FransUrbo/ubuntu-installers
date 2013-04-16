@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-08-06 11:06+0000\n"
-"Last-Translator: kulkke <Unknown>\n"
+"PO-Revision-Date: 2013-03-27 12:21+0000\n"
+"Last-Translator: Volkan Gezer <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2013-04-16 16:01+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -31,7 +31,7 @@ msgstr "<keycap>F1</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:11
 msgid "Welcome to ${DISTRIBUTION_NAME}!"
-msgstr "${DISTRIBUTION_NAME} sürümüne hoşgeldiniz!"
+msgstr "${DISTRIBUTION_NAME}'ya Hoş Geldiniz!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:18
@@ -192,7 +192,7 @@ msgstr ""
 msgid "Press F2 through F10 for details, or ENTER to ${BOOTPROMPT}"
 msgstr ""
 "Ayrıntılar için F2'den F10'a kadar bir tuşa veya ${BOOTPROMPT} için ENTER "
-"tuşuna basın."
+"tuşuna basın"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:104
@@ -241,8 +241,8 @@ msgid ""
 ">"
 msgstr ""
 "Daha fazla bilgi için Kurulum El Kitabı veya Sıkça Sorulan Sorular'a "
-"bakınız; her iki belge de Ubuntu web sitesinde mevcuttur. <ulink url="
-"\"http://www.ubuntu.com/\" />"
+"bakınız; her iki belge de Ubuntu web sitesinde (<ulink url=\"http://www."
+"ubuntu.com/\" />) mevcuttur."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:137
@@ -268,7 +268,7 @@ msgid ""
 "web site, <ulink url=\"http://www.ubuntu.com/\" />"
 msgstr ""
 "Daha fazla bilgi için Sıkça Sorulan Sorular'a bakınız; bu belge Ubuntu web "
-"sitesinde mevcuttur, <ulink url=\"http://www.ubuntu.com/\" />"
+"sitesinde (<ulink url=\"http://www.ubuntu.com/\" />) mevcuttur."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:152
@@ -583,7 +583,7 @@ msgid ""
 msgstr ""
 "Çoğu çekirdek modülü, kurulum sırasında dinamik olarak yüklenir ve bu "
 "modüllerin parametreleri komut satırında verilemez. Modüller yüklendiğinde "
-"parametreleri elle girebilmek için uzman kipinde önyükleyin ( <link linkend="
+"parametreleri elle girebilmek için uzman kipinde önyükleyin (<link linkend="
 "\"F3\"><keycap>F3</keycap></link> bağlantısına bakın)."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -613,7 +613,7 @@ msgid ""
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Önyükleme yöntemi bileşimiyle birlikte <literal>önyükleme:</literal> "
-"isteminde aşağıdaki önyükleme parametrelerini kullanabilirsiniz ( bakınız "
+"isteminde aşağıdaki önyükleme parametrelerini kullanabilirsiniz (bakınız "
 "<link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -623,7 +623,7 @@ msgid ""
 "with the boot method (see <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
 "Önyükleme yöntemi bileşimiyle birlikte aşağıdaki önyükleme parametrelerini "
-"kullanabilirsiniz ( bakınız <link linkend=\"F3\"><keycap>F3</keycap></link>)."
+"kullanabilirsiniz (bakınız <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:446
@@ -640,7 +640,7 @@ msgstr "DONANIM"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><segtitle>
 #: help.xml:452 help.xml:556
 msgid "PARAMETER TO SPECIFY"
-msgstr "BELİRTME PARAMETRESİ"
+msgstr "BELİRTİLECEK PARAMETRE"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:455
@@ -962,8 +962,8 @@ msgstr "<userinput>tasks=kubuntu-masaüstü</userinput>"
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
-"PCI haritaları için ACPI'yı seçilemez kıl ( Bazı HP sunucuları ve Via "
-"tabanlı makineler için kullanışlı )"
+"PCI haritaları için ACPI'yı seçilemez kıl (Bazı HP sunucuları ve Via tabanlı "
+"makineler için kullanışlı)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:665
@@ -1019,12 +1019,12 @@ msgstr "YARDIM ALMAK"
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:707
 msgid "If you can't install Ubuntu, don't despair!"
-msgstr "Eğer Ubuntu'yu kuramazsanız, umutsuzluğa kapılmayın."
+msgstr "Eğer Ubuntu'yu kuramazsanız, umutsuzluğa kapılmayın!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:710
 msgid "If you can't start Ubuntu, don't despair!"
-msgstr "Eğer Ubuntu'yu başlatamazsanız, umutsuzluğa kapılmayın."
+msgstr "Eğer Ubuntu'yu başlatamazsanız, umutsuzluğa kapılmayın!"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:713

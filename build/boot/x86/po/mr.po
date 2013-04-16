@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-12-06 09:04+0000\n"
-"Last-Translator: kunj juhhu <Unknown>\n"
+"PO-Revision-Date: 2013-01-18 20:14+0000\n"
+"Last-Translator: अमित अ. पाटील <Unknown>\n"
 "Language-Team: Marathi <mr@li.org>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2013-04-16 16:01+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -124,7 +124,7 @@ msgstr "विशेष बुट परिमाण, दृष्टीक्�
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:63 help.xml:384
 msgid "<link linkend=\"F6\"><keycap>F6</keycap></link>"
-msgstr "link linkend=\"F5\"><keycap>एफ़ ६</keycap></link>"
+msgstr "<link linkend=\"F6\"><keycap>एफ़ ६</keycap></link>"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:64
@@ -318,7 +318,7 @@ msgstr "तज्ञ"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:187
 msgid "Start the installation in expert mode, for maximum control."
-msgstr "संपुर्ण नियंत्रणासाठी तज्ञ पध्दतीने स्थापण्यास सुरूवात करा."
+msgstr "अधिकतम नियंत्रणासाठी तज्ञ पध्दतिने स्थापण्यास सुरूवात करा"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:192

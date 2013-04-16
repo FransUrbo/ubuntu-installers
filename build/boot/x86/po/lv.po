@@ -4,20 +4,21 @@
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008, 2010.
 # Peteris Krisjanis <pecisk@gmail.com>, 2010.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2011-09-28 08:19+0000\n"
+"PO-Revision-Date: 2012-05-27 01:02+0000\n"
 "Last-Translator: Rūdolfs Mazurs <Unknown>\n"
-"Language-Team: American English <lata-l10n@googlegroups.com>\n"
-"Language: \n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2013-04-16 16:01+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -354,7 +355,7 @@ msgstr "Minimāla sistēmas instalācija komandrindā."
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:200
 msgid "live"
-msgstr "live"
+msgstr "dzīvais"
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:201
@@ -859,7 +860,7 @@ msgid ""
 "This list is incomplete, see the kernel's kernel-parameters.txt file for "
 "more."
 msgstr ""
-"Šis saraksts nav pilnīgs. Lasiet kernel-parameters.txt failu, lai uzzinātu "
+"Šis saraksts nav pilnīgs. Lasiet kernel-parameters.txt datni, lai uzzinātu "
 "vairāk."
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
@@ -1091,7 +1092,7 @@ msgid ""
 "replaceable>/copyright."
 msgstr ""
 "Pēc instalēšanas katras pakotnes tiešie izplatīšanas noteikumi ir aprakstīti "
-"attiecīgajā pakotnes failā /usr/share/doc/<replaceable>packagename</"
+"attiecīgajā pakotnes datnē /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -1102,7 +1103,7 @@ msgid ""
 "replaceable>/copyright."
 msgstr ""
 "Pēc palaišanas katras pakotnes tiešie izplatīšanas noteikumi ir aprakstīti "
-"attiecīgajā pakotnes failā /usr/share/doc/<replaceable>packagename</"
+"attiecīgajā pakotnes datnē /usr/share/doc/<replaceable>packagename</"
 "replaceable>/copyright."
 
 #. type: Content of: <reference><refentry><refsection><para>

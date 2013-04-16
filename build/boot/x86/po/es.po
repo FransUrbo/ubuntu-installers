@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2010-02-05 15:45-0800\n"
-"PO-Revision-Date: 2012-03-27 14:56+0000\n"
-"Last-Translator: Fitoschido <fitoschido@gmail.com>\n"
+"PO-Revision-Date: 2013-01-04 19:38+0000\n"
+"Last-Translator: Paco Molinero <paco@byasl.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-11 03:17+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2013-04-16 16:01+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 
 #. type: Content of: <reference><title>
 #: help.xml:6
@@ -140,7 +140,7 @@ msgstr "<link linkend=\"F7\"><keycap>F7</keycap></link>"
 #: help.xml:69
 msgid "Special boot parameters for selected disk controllers."
 msgstr ""
-"Parámetros especiales de arranque para controladoras de disco específicas."
+"Parámetros especiales de arranque para controladores de disco específicos."
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:73 help.xml:78 help.xml:394 help.xml:399
@@ -364,7 +364,7 @@ msgid ""
 "\"Install\" icon on the desktop."
 msgstr ""
 "Iniciar el sistema Live. Si lo desea, puede instalarlo más tarde usando el "
-"icono 'Instalar' del escritorio."
+"icono «Instalar» del escritorio."
 
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><term>
 #: help.xml:209
@@ -420,7 +420,7 @@ msgid ""
 "parameters, by simply pressing enter at the boot prompt."
 msgstr ""
 "Si no está seguro, debería usar el método de arranque predeterminado, sin "
-"parámetros especiales, simplemente pulsando Intro en boot:"
+"parámetros especiales, simplemente pulsando Intro en el arranque:"
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:252
@@ -428,7 +428,7 @@ msgid ""
 "(\"Ubuntu\" may be replaced with other related operating system names. This "
 "help text is generic.)"
 msgstr ""
-"(\"Ubuntu\" puede ser sustituido por otros nombres de sistemas operativos "
+"(«Ubuntu» puede ser sustituido por otros nombres de sistemas operativos "
 "relacionados. Este texto de ayuda es genérico.)"
 
 #. type: Content of: <reference><refentry><refsection><para>
@@ -461,7 +461,7 @@ msgstr "<keycap>F4</keycap>"
 #. type: Content of: <reference><refentry><refnamediv><refname>
 #: help.xml:281 help.xml:327
 msgid "RESCUING A BROKEN SYSTEM"
-msgstr "RESCATAR UN SISTEMA DAÑADO"
+msgstr "RECUPERAR UN SISTEMA DAÑADO"
 
 #. type: Content of: <reference><refentry><refsection><title>
 #: help.xml:285
@@ -482,7 +482,7 @@ msgstr "Recuperar un sistema dañado"
 #. type: Content of: <reference><refentry><refsection><variablelist><varlistentry><listitem><para>
 #: help.xml:292
 msgid "Boot into rescue mode."
-msgstr "Arrancar en modo de rescate."
+msgstr "Arrancar en modo de recuperación."
 
 #. type: Content of: <reference><refentry><refsection><informalexample><screen>
 #: help.xml:303
@@ -500,11 +500,11 @@ msgid ""
 "kinds of problems that might cause your normal system to fail to boot "
 "correctly."
 msgstr ""
-"No existe un modo de rescate dedicado en este disco. Sin embargo, como el "
-"disco proporciona un entorno de usuario completo, es posible usar la línea "
-"de comandos y las utilidades gráficas proporcionadas para recuperar un "
+"No existe un modo de recuperación dedicado en este disco. Sin embargo, como "
+"el disco proporciona un entorno de usuario completo, es posible usar la "
+"línea de órdenes y las utilidades gráficas proporcionadas para recuperar un "
 "sistema dañado, así como usar un navegador web para buscar ayuda. En "
-"Internet existe un gran número de consejos para la mayoría de los problemas "
+"Internet existen un gran número de consejos para la mayoría de los problemas "
 "que pueden provocar que su sistema normal no se inicie correctamente."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
@@ -541,15 +541,16 @@ msgid ""
 "For example, Linux may not be able to autodetect your hardware, and you may "
 "need to explicitly specify its location or type for it to be recognized."
 msgstr ""
-"Por ejemplo, puede que Linux no sea capaz de autodetectar su hardware, y "
-"tenga que especificar explícitamente su ubicación o su tipo para que lo "
-"pueda reconocer."
+"Por ejemplo, puede que Linux no sea capaz de detectar automáticamente su "
+"hardware y tenga que especificar explícitamente su ubicación o su tipo para "
+"que lo pueda reconocer."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:377
 msgid "For more information about what boot parameters you can use, press:"
 msgstr ""
-"Para más información sobre los parámetros de arranque que puede usar, pulse:"
+"Para obtener más información sobre los parámetros de arranque que puede "
+"usar, pulse:"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:385
@@ -559,7 +560,7 @@ msgstr "parámetros de arranque para máquinas especiales"
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:390
 msgid "boot parameters for various disk controllers"
-msgstr "parámetros de arranque para varias controladoras de disco"
+msgstr "parámetros de arranque para varios controladores de disco"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:395
@@ -579,11 +580,10 @@ msgid ""
 "parameters when modules are loaded, boot in expert mode (see <link linkend="
 "\"F3\"><keycap>F3</keycap></link>)."
 msgstr ""
-"El instalador carga dinámicamente muchos módulos del núcleo, y los "
-"parámetros para esos módulos no se pueden especificar en la línea de "
-"órdenes. Para que se le soliciten los parámetros cuando se carguen los "
-"módulos, arranque en modo experto (vea <link linkend=\"F3\"><keycap>F3</"
-"keycap></link>)."
+"El instalador carga dinámicamente muchos módulos del núcleo y los parámetros "
+"para esos módulos no se pueden especificar en la línea de órdenes. Para que "
+"se le soliciten los parámetros cuando se carguen los módulos, arranque en "
+"modo experto (vea <link linkend=\"F3\"><keycap>F3</keycap></link>)."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:412
@@ -591,7 +591,7 @@ msgid ""
 "Many kernel modules are loaded dynamically by the bootstrap system, and "
 "parameters for those modules cannot be given on the command line."
 msgstr ""
-"El sistema de bootstrap carga dinámicamente muchos módulos del núcleo, y los "
+"El sistema de bootstrap carga dinámicamente muchos módulos del núcleo y los "
 "parámetros para esos módulos no se pueden especificar en la línea de órdenes."
 
 #. type: Content of: <reference><refentry><refnamediv><refdescriptor>
@@ -963,8 +963,8 @@ msgstr "<userinput>tasks=kubuntu-desktop</userinput>"
 msgid ""
 "Disable ACPI for PCI maps (handy for some HP servers and Via-based machines)"
 msgstr ""
-"Desactivar el ACPI para los mapeos PCI (de utilidad para algunos servidores "
-"HP y máquinas basadas en Via)"
+"Desactivar el ACPI para las asiganaciones PCI (de utilidad para algunos "
+"servidores HP y máquinas basadas en Via)"
 
 #. type: Content of: <reference><refentry><refsection><segmentedlist><seglistitem><seg>
 #: help.xml:665
@@ -1031,7 +1031,7 @@ msgstr "Si no puede arrancar Ubuntu, ¡no desespere!"
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:713
 msgid "The Ubuntu team is ready to help you!"
-msgstr "El equipo de Ubuntu está listo para ayudarle."
+msgstr "El equipo de Ubuntu está preparado para ayudarle."
 
 #. type: Content of: <reference><refentry><refsection><para>
 #: help.xml:716
