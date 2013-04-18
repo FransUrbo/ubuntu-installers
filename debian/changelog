@@ -1,4 +1,4 @@
-base-installer (1.122ubuntu15) UNRELEASED; urgency=low
+base-installer (1.122ubuntu15) raring; urgency=low
 
   * Replace "highbank" flavor with "generic" (LP: #1166597)
 
