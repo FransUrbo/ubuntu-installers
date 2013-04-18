@@ -7,6 +7,9 @@ debian-installer (20101020ubuntu231) UNRELEASED; urgency=low
   [ Adam Conrad ]
   * Move omap4 kernels to 3.5.0-223.
 
+  [ dann frazier ]
+  * Rename "highbank" flavor to "generic" and re-enable it.
+
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 18 Apr 2013 01:10:54 +0100
 
 debian-installer (20101020ubuntu230) raring; urgency=low
