@@ -1,7 +1,11 @@
 debian-installer (20101020ubuntu231) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Move master kernels to 3.8.0-19.
   * Move powerpc kernels to 3.8.0-9.
+
+  [ Adam Conrad ]
+  * Move omap4 kernels to 3.5.0-223.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Thu, 18 Apr 2013 01:10:54 +0100
 
