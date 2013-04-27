@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu233) saucy; urgency=low
+
+  * Change default suite to saucy, welcome to the new cycle.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Sat, 27 Apr 2013 03:33:56 -0600
+
 debian-installer (20101020ubuntu232) saucy; urgency=low
 
   * Move master kernels to 3.9.0-0.
