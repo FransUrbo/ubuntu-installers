@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu237) UNRELEASED; urgency=low
+
+  * Move omap4 kernels to 3.5.0-225.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 23 May 2013 22:52:09 -0600
+
 debian-installer (20101020ubuntu236) saucy; urgency=low
 
   * Move master kernels to 3.9.0-2.
