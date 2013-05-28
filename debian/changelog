@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu238) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu238) saucy; urgency=low
 
   * No-change rebuild against new udev.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 28 May 2013 19:53:46 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 28 May 2013 19:54:20 +0100
 
 debian-installer (20101020ubuntu237) saucy; urgency=low
 
