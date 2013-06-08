@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu241) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu241) saucy; urgency=low
 
   * No-change rebuild against systemd 204-0ubuntu3.
 
- -- Steve Langasek <steve.langasek@ubuntu.com>  Fri, 07 Jun 2013 17:05:32 -0700
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Fri, 07 Jun 2013 18:24:51 -0700
 
 debian-installer (20101020ubuntu240) saucy; urgency=low
 
