@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu242) UNRELEASED; urgency=low
+
+  * ttf-dejavu-udeb was renamed to fonts-dejavu-udeb.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 09 Jun 2013 23:58:10 +0100
+
 debian-installer (20101020ubuntu241) saucy; urgency=low
 
   * No-change rebuild against systemd 204-0ubuntu3.
