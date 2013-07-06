@@ -1,5 +1,6 @@
-debian-installer (20101020ubuntu248) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu248) saucy; urgency=low
 
+  * Rebuild against linux 3.10.0-2.10.
   * Move omap4 kernels to 3.5.0-227.
   * Move powerpc kernels to 3.8.0-12.
 
