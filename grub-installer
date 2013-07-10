@@ -181,8 +181,8 @@ update_grub () {
 	else
 		in_target="log-output -t grub-installer $chroot $ROOT"
 	fi
-	if ! $in_target $update_grub; then
-		error "Running '$update_grub' failed." 1>&2
+	if ! $in_target $update_grub_cmd; then
+		error "Running '$update_grub_cmd' failed." 1>&2
 		db_input critical grub-installer/update-grub-failed || [ $? -eq 30 ]
 		db_go || true
 		db_progress STOP
@@ -472,14 +472,14 @@ case $grub_package in
     grub)
 	grub_version="grub"
 	menu_file="menu.lst"
-	update_grub="update-grub -y"
+	update_grub_cmd="update-grub -y"
 	partition_offset=1
 	frgrubroot=$(($frgrubroot - 1))
 	;;
     *)
 	grub_version="grub2"
 	menu_file="grub.cfg"
-	update_grub="update-grub"
+	update_grub_cmd="update-grub"
 	partition_offset=0
 	;;
 esac
