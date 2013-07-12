@@ -1,8 +1,9 @@
-debian-installer (20101020ubuntu249) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu249) saucy; urgency=low
 
   * Introduce a debian-installer-udebs udeb that is a metapackage that
     depends on all the udebs used in the debian-installer build, so we
     can more easily track kernel ABI, NBS, and proposed-migration.
+  * Move powerpc kernels to 3.10.0-0; rebuild x86 against 3.10.0-2.11.
 
  -- Adam Conrad <adconrad@ubuntu.com>  Fri, 12 Jul 2013 03:44:49 -0600
 
