@@ -186,3 +186,12 @@ Architecture: any
 Description: Debian installer
  This package currently only contains some documentation for the Debian
  installer. We welcome suggestions about what else to put in it.
+
+Package: debian-installer-udebs
+XC-Package-Type: udeb
+Section: debian-installer
+Architecture: any
+Depends: ${udeb:Depends}
+Description: Metapackage depending on debian-installer's built-in udebs
+ This package depends on the set of udebs that the current debian-installer
+ build was built against, for easier version and migration tracking.

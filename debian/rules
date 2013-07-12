@@ -62,6 +62,13 @@ binary-arch: install
 		-X internals.xml -X partman-doc.sgml
 	dh_compress
 	dh_fixperms
+
+	# Only depend on the packages, not versions, at least for now:
+	echo -n "udeb:Depends=" >> debian/debian-installer-udebs.substvars
+	while read p v a; do \
+		echo -n "$$p, " >> debian/debian-installer-udebs.substvars; \
+	done < build/dest/udeb.list
+	echo "" >> debian/debian-installer-udebs.substvars
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
