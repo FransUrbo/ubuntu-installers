@@ -1,3 +1,10 @@
+grub-installer (1.78ubuntu8) UNRELEASED; urgency=low
+
+  * Always use grub-efi-amd64-signed on 64bit UEFI systems instead of
+    relying on SecureBoot detection. (LP: #1184297)
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Thu, 18 Jul 2013 14:23:36 -0400
+
 grub-installer (1.78ubuntu7) saucy; urgency=low
 
   * update_grub() used a variable called $update_grub, change name
