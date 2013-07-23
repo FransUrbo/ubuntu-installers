@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu253) saucy; urgency=low
+
+  * Temporarily disable powerpc and powerpc64 flavours due to
+    those kernels being spectacularly broken in the archive.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 23 Jul 2013 15:44:58 +0100
+
 debian-installer (20101020ubuntu252) saucy; urgency=low
 
   * Move master kernels to 3.10.0-5.
