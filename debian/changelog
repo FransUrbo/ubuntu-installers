@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu254) saucy; urgency=low
+
+  * Move master kernels to 3.10.0-6.
+  * Move omap4 kernels to 3.5.0-229.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Mon, 29 Jul 2013 18:05:48 +0100
+
 debian-installer (20101020ubuntu253) saucy; urgency=low
 
   * Temporarily disable powerpc and powerpc64 flavours due to
