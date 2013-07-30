@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu255) saucy; urgency=low
+
+  * Re-enable powerpc and powerpc64 flavours and rebuild against
+    the latest linux-ppc upload to get the new zImage kernels.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 30 Jul 2013 13:52:21 +0100
+
 debian-installer (20101020ubuntu254) saucy; urgency=low
 
   * Move master kernels to 3.10.0-6.
