@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu256) UNRELEASED; urgency=low
+
+  * Move master kernels to 3.11.0-1.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 12 Aug 2013 16:05:30 +0200
+
 debian-installer (20101020ubuntu255) saucy; urgency=low
 
   * Re-enable powerpc and powerpc64 flavours and rebuild against
