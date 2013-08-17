@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu258) saucy; urgency=low
+
+  * Move powerpc kernels to 3.11.0-0.
+  * Move omap4 kernels to 3.5.0-231.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Sat, 17 Aug 2013 12:42:27 -0600
+
 debian-installer (20101020ubuntu257) saucy; urgency=low
 
   * Move master kernels to 3.11.0-2.
