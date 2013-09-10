@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu264) UNRELEASED; urgency=low
+
+  * Add generic-lpae target on armhf.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 10 Sep 2013 09:08:51 -0400
+
 debian-installer (20101020ubuntu263) saucy; urgency=low
 
   * Move master kernels to 3.11.0-6.
