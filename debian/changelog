@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu265) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu265) saucy; urgency=low
 
   * Move powerpc kernels to 3.11.0-2.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Sep 2013 17:37:03 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Sep 2013 17:39:44 +0100
 
 debian-installer (20101020ubuntu264) saucy; urgency=low
 
