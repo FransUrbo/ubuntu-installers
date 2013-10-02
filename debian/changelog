@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu269) UNRELEASED; urgency=low
+
+  * Move powerpc kernels to 3.11.0-3.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 02 Oct 2013 22:51:40 +0100
+
 debian-installer (20101020ubuntu268) saucy; urgency=low
 
   * Move master kernels to 3.11.0-11.
