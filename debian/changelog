@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu268) saucy; urgency=low
+
+  * Move master kernels to 3.11.0-11.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 01 Oct 2013 21:57:18 -0600
+
 debian-installer (20101020ubuntu267) saucy; urgency=low
 
   * Move master kernels to 3.11.0-9.
