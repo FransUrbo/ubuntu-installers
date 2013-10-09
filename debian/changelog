@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu270) saucy; urgency=low
+
+  * Move master kernels to 3.11.0-12.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 08 Oct 2013 20:11:14 -0600
+
 debian-installer (20101020ubuntu269) saucy; urgency=low
 
   * Move powerpc kernels to 3.11.0-3.
