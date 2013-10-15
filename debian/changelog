@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu271) saucy; urgency=low
+
+  * Rebuild against new master kernels.
+  * Move omap4 kernels to 3.5.0-233.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 15 Oct 2013 14:59:57 +0100
+
 debian-installer (20101020ubuntu270) saucy; urgency=low
 
   * Move master kernels to 3.11.0-12.
