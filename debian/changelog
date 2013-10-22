@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu272) UNRELEASED; urgency=low
+
+  * Change default suite to trusty.
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Tue, 22 Oct 2013 11:21:38 -0400
+
 debian-installer (20101020ubuntu271) saucy; urgency=low
 
   * Rebuild against new master kernels.
