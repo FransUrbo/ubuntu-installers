@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu274) UNRELEASED; urgency=low
+
+  * Bump amd64 netboot image size by 2MiB.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 25 Oct 2013 14:22:25 +0100
+
 debian-installer (20101020ubuntu273) trusty; urgency=low
 
   * No-change rebuild to pick up new components.
