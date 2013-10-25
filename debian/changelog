@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu273) UNRELEASED; urgency=low
+debian-installer (20101020ubuntu273) trusty; urgency=low
 
   * No-change rebuild to pick up new components.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 25 Oct 2013 11:50:40 +0100
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 25 Oct 2013 11:52:20 +0100
 
 debian-installer (20101020ubuntu272) trusty; urgency=low
 
