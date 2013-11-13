@@ -932,13 +932,59 @@ EOT
 		else
 			SECDIRECTORY=/ubuntu
 		fi
+		
+		if [ "$MIRROR" = ports.ubuntu.com ]; then
+			# Awful Ubuntu-specific hack. *-security suites for ports
+			# architectures aren't available on security.ubuntu.com, only on
+			# ports.ubuntu.com.
+			SECMIRROR="$MIRROR"
+			SECDIRECTORY="$DIRECTORY"
+		fi
+		
 		echo "deb $PROTOCOL://$SECMIRROR$SECDIRECTORY $DISTRIBUTION-security $COMPONENTS" >> $APT_SOURCES
 		if db_get apt-setup/proposed && [ "$RET" = true ]; then
 			echo "deb $APTSOURCE $DISTRIBUTION-proposed $COMPONENTS" >> $APT_SOURCES
+		fi
+	    	if db_get apt-setup/overlay && [ "$RET" = true ]; then
+			db_get apt-setup/overlay_host
+			overlay_host="$RET"
+			db_get apt-setup/overlay_directory
+			overlay_directory="$RET"
+			db_get apt-setup/overlay_components
+			overlay_components="$RET"
+
+			echo "deb $PROTOCOL://$overlay_host$overlay_directory $DISTRIBUTION $overlay_components" >> $APT_SOURCES
 		fi
 	fi
 }
 
 cleanup () {
 	rm -f "$KERNEL_LIST" "$KERNEL_LIST.unfiltered"
+}
+
+configure_apt_overlay () {
+    	if db_get apt-setup/overlay && [ "$RET" = true ]; then
+		db_get apt-setup/overlay_early_apt_pkg_install
+		early_pkg_list=$RET 
+
+		# We need to run apt-get update to get the PPA's package list
+		# Don't check error codes here; we will have a GPG error
+		log-output -t base-installer chroot /target apt-get update
+
+		# Install our packages
+		#
+		# We force GPG checks and assume the packages we install
+		# will give us our keyring. At this pount, we've already
+		# run debootstrap, and haven't checked its GPG key
+		# so its sane to force this through.
+		#
+		# apt_update will check all the keys it has for all releases
+		log-output -t base-installer chroot /target \
+			apt-get -o APT::Get::AllowUnauthenticated=true install $early_pkg_list || apt_overlay_install_failed=$?
+
+		if [ "$apt_overlay_install_failed" ]; then
+			warning "apt overlay install failed: $apt_overlay_install_failed"
+		fi
+
+	fi
 }
