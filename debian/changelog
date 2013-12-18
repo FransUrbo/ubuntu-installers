@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu281) UNRELEASED; urgency=medium
+debian-installer (20101020ubuntu281) trusty; urgency=medium
 
   * No-change rebuild against eglibc 2.18.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Dec 2013 22:06:53 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 18 Dec 2013 22:09:40 +0000
 
 debian-installer (20101020ubuntu280) trusty; urgency=low
 
