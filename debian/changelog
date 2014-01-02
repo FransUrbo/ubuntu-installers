@@ -1,3 +1,9 @@
+base-installer (1.122ubuntu18) UNRELEASED; urgency=low
+
+  * Merge in overlay archive support (LP: #1250930)
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Wed, 13 Nov 2013 10:26:10 -0600
+
 base-installer (1.122ubuntu17) saucy; urgency=low
 
   * Add generic-lpae the the allowed list of subarches in armhf/armel.
