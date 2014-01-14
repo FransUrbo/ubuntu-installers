@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu285) trusty; urgency=medium
+
+  * Bump i386/netboot image size by 2MB.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 14 Jan 2014 13:09:57 -0700
+
 debian-installer (20101020ubuntu284) trusty; urgency=medium
 
   * Move master kernels to 3.13.0-3.
