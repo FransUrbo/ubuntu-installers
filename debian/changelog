@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu287) UNRELEASED; urgency=medium
+debian-installer (20101020ubuntu287) trusty; urgency=medium
 
   * Move master kernels to 3.13.0-5.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 21 Jan 2014 10:39:00 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 21 Jan 2014 10:39:42 +0000
 
 debian-installer (20101020ubuntu286) trusty; urgency=medium
 
