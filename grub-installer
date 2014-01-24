@@ -447,6 +447,9 @@ case $ARCH in
 	grub_package="grub-ieee1275"
 	experimental_arch
 	;;
+    ppc64el/*)
+	grub_package="grub-ieee1275"
+	;;
     mipsel/loongson-2f)
 	grub_package="grub-yeeloong"
 	;;
