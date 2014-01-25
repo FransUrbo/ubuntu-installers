@@ -1,4 +1,4 @@
-debian-installer (20101020ubuntu289) UNRELEASED; urgency=medium
+debian-installer (20101020ubuntu288) UNRELEASED; urgency=medium
 
   [ Stéphane Graber ]
   * Rework armhf builds:
