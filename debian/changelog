@@ -17,8 +17,8 @@ debian-installer (20101020ubuntu288) UNRELEASED; urgency=medium
 
   [ Stephen Warren ]
   * arm generic: package U-Boot boot scripts for Tegra devices.
-  * arm generic: Save *.dtb from the kernel-image udeb, since those
-    files are needed to boot any DT-enabled kernel.
+  * arm generic: Save tegra*.dtb from the kernel-image udeb, since those
+    files are needed to boot tegra DT-enabled kernels.
   * arm generic: Create a bootable disk image for Tegra.
 
  -- Adam Conrad <adconrad@ubuntu.com>  Fri, 24 Jan 2014 21:06:40 -0700
