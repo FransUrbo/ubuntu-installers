@@ -1,0 +1,13 @@
+setenv rootpart 1
+
+load ${devtype} ${devnum}:${rootpart} ${kernel_addr_r} ${prefix}vmlinuz
+
+load ${devtype} ${devnum}:${rootpart} ${ramdisk_addr_r} ${prefix}initrd.gz
+ramdisk_size=0x${filesize}
+setenv initrd_high 0xffffffff
+
+load ${devtype} ${devnum}:${rootpart} ${fdt_addr_r} ${prefix}${soc}-${board}.dtb
+
+setenv bootargs quiet debian-installer/framebuffer=false console=ttyS0,115200n8
+
+bootz ${kernel_addr_r} ${ramdisk_addr_r}:${ramdisk_size} ${fdt_addr_r}

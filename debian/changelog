@@ -1,5 +1,6 @@
-debian-installer (20101020ubuntu288) UNRELEASED; urgency=medium
+debian-installer (20101020ubuntu289) UNRELEASED; urgency=medium
 
+  [ Stéphane Graber ]
   * Rework armhf builds:
     - Use the original u-boot instead of Linaro's.
     - Switch omap4 to the generic kernel
@@ -9,7 +10,18 @@ debian-installer (20101020ubuntu288) UNRELEASED; urgency=medium
   * Disable PNG compression since it gives very little gain and takes
     almost 30 minutes on armhf.
 
- -- Stéphane Graber <stgraber@ubuntu.com>  Tue, 21 Jan 2014 13:32:32 -0500
+  [ Adam Conrad ]
+  * Move build/pkg-lists/netboot/armel/omap.cfg to generic.cfg and
+    symlink omap.cfg, omap4.cfg, and generic-lpae.cfg to it.
+  * Perform a by-hand merge of the spirit of the following changes:
+
+  [ Stephen Warren ]
+  * arm generic: package U-Boot boot scripts for Tegra devices.
+  * arm generic: Save *.dtb from the kernel-image udeb, since those
+    files are needed to boot any DT-enabled kernel.
+  * arm generic: Create a bootable disk image for Tegra.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Fri, 24 Jan 2014 21:06:40 -0700
 
 debian-installer (20101020ubuntu287) trusty; urgency=medium
 

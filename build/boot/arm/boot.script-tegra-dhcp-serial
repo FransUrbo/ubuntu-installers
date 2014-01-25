@@ -1,0 +1,11 @@
+dhcp ${kernel_addr_r} vmlinuz
+
+dhcp ${ramdisk_addr_r} initrd.gz
+ramdisk_size=0x${filesize}
+setenv initrd_high 0xffffffff
+
+dhcp ${fdt_addr_r} ${soc}-${board}${boardver}.dtb
+
+setenv bootargs quiet debian-installer/framebuffer=false console=ttyS0,115200n8
+
+bootz ${kernel_addr_r} ${ramdisk_addr_r}:${ramdisk_size} ${fdt_addr_r}
