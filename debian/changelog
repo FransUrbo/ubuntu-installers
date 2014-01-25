@@ -1,3 +1,16 @@
+debian-installer (20101020ubuntu288) UNRELEASED; urgency=medium
+
+  * Rework armhf builds:
+    - Use the original u-boot instead of Linaro's.
+    - Switch omap4 to the generic kernel
+    - Add wandboard-quad support
+    - Generate board specific images for beagleboard-xm, pandaboard and
+      wandboard-quad.
+  * Disable PNG compression since it gives very little gain and takes
+    almost 30 minutes on armhf.
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Tue, 21 Jan 2014 13:32:32 -0500
+
 debian-installer (20101020ubuntu287) trusty; urgency=medium
 
   * Move master kernels to 3.13.0-5.

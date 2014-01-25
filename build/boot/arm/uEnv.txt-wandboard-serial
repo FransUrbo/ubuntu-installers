@@ -1,0 +1,6 @@
+bootargs=setenv bootargs console=ttymxc0,115200
+loadkernel=load mmc ${mmcdev}:${mmcpart} 0x12000000 uImage
+loadinitrd=load mmc ${mmcdev}:${mmcpart} 0x12A00000 uInitrd
+
+bootcmd=run bootargs; run loadkernel; run loadinitrd; bootm 0x12000000 0x12A00000
+uenvcmd=boot

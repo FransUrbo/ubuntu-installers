@@ -20,6 +20,8 @@ DESTDIR=$(ARCHIVEDIR)/$(VERSION)
 IMAGEDIR=$(DESTDIR)/images
 TARNAME=debian-installer-images_$(VERSION)_$(ARCH).tar.gz
 
+export NO_PNG_PKG_MANGLE=1
+
 clean:
 	dh_testdir
 	dh_testroot

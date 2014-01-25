@@ -12,6 +12,8 @@ set -e
 
 FAT_IMAGE="$1"
 IMAGE="$2"
+OFFSET="${3:-512}"
+
 
 log() {
     echo "$*" >&2
@@ -35,7 +37,7 @@ IMAGE_SIZE="$(file_length "$FAT_IMAGE")"
 
 # round size to next block; note we add 512 for MBR + partition table; also
 # note we assume blocks of 512 B
-IMG_SIZE_BLOCKS="$(((512 + $IMAGE_SIZE + 512 - 1) / 512))"
+IMG_SIZE_BLOCKS="$(((512 + $IMAGE_SIZE + $OFFSET - 1) / 512))"
 
 # create the blank disk image (and this is a sparse file)
 dd if=/dev/zero of="$IMAGE" bs=512 count=0 seek="$IMG_SIZE_BLOCKS" 2>/dev/null
@@ -52,7 +54,7 @@ get_part_data() {
 
 # create partition for the VFAT
 log "creating VFAT partition..."
-parted -s "$IMAGE" 'mkpart primary fat32 0 -1s'
+parted -s "$IMAGE" "mkpart primary fat32 ${OFFSET}B -1s"
 
 VFAT_START_B="`(set -- $(get_part_data 1); echo "$1")`"
 log "writing vfat contents..."
