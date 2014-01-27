@@ -98,7 +98,7 @@ Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctr
 #		For ARM OMAP images.
 #	- slugimage (>= 0.10+r58-6) [armeb armel]
 #		For building nslu2 firmware images.
-#	- u-boot-tools [armel armhf]
+#	- u-boot-tools [arm64 armel armhf]
 #		For creating u-boot images
 #
 # Boot loaders:
@@ -155,7 +155,7 @@ Build-Depends: debhelper (>= 7.0.0), apt, apt-utils, gnupg, ubuntu-keyring, dctr
 #	- python3 (>= 3.1) [i386 amd64]
 #		For building gfxboot help texts.
 #
-#	- module-init-tools [i386 armeb armel armhf amd64 alpha hppa ia64 m68k mips mipsel powerpc s390 sh4 sparc sparc64]
+#	- module-init-tools [i386 arm64 armeb armel armhf amd64 alpha hppa ia64 m68k mips mipsel powerpc s390 sh4 sparc sparc64]
 #		depmod for 2.6 kernels on the arches that support 2.6.
 #
 #	- bf-utf-source [!s390 !s390x]

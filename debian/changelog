@@ -21,6 +21,9 @@ debian-installer (20101020ubuntu288) UNRELEASED; urgency=medium
     files are needed to boot tegra DT-enabled kernels.
   * arm generic: Create a bootable disk image for Tegra.
 
+  [ dann frazier ]
+  * Add netboot build for arm64/generic (LP: #1263756)
+
  -- Adam Conrad <adconrad@ubuntu.com>  Fri, 24 Jan 2014 21:06:40 -0700
 
 debian-installer (20101020ubuntu287) trusty; urgency=medium
