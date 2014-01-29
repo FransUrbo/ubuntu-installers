@@ -12,6 +12,7 @@ debian-installer (20101020ubuntu288) UNRELEASED; urgency=medium
 
   [ Adam Conrad ]
   * Add preliminary support for netboot images on ppc64el.
+  * Add cdrom and mini.iso target support for ppc64el as well.
   * Move build/pkg-lists/netboot/armel/omap.cfg to generic.cfg and
     symlink omap.cfg, omap4.cfg, and generic-lpae.cfg to it.
   * Perform a by-hand merge of the spirit of the following changes:
