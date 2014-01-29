@@ -25,6 +25,10 @@ debian-installer (20101020ubuntu288) UNRELEASED; urgency=medium
   [ dann frazier ]
   * Add netboot build for arm64/generic (LP: #1263756)
 
+  [ Colin Watson ]
+  * Add a cd_info tarball for ppc64el, containing a GRUB image and
+    associated configuration.
+
  -- Adam Conrad <adconrad@ubuntu.com>  Fri, 24 Jan 2014 21:06:40 -0700
 
 debian-installer (20101020ubuntu287) trusty; urgency=medium
