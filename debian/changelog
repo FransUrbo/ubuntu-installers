@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu290) UNRELEASED; urgency=medium
+
+  * Hardcode ppc64el/cdrom GRUB prefix to (ieee1275/cdrom)/boot/grub for
+    now.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 30 Jan 2014 23:29:01 +0000
+
 debian-installer (20101020ubuntu289) trusty; urgency=medium
 
   * Build-depend on xorriso on ppc64el so that grub-mkrescue works.
