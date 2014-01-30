@@ -1,10 +1,10 @@
-debian-installer (20101020ubuntu290) UNRELEASED; urgency=medium
+debian-installer (20101020ubuntu290) trusty; urgency=medium
 
   * Hardcode ppc64el/cdrom GRUB prefix to (ieee1275/cdrom)/boot/grub for
     now.
   * Add the normal module to the ppc64el/cdrom GRUB image.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 30 Jan 2014 23:29:01 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 30 Jan 2014 23:30:35 +0000
 
 debian-installer (20101020ubuntu289) trusty; urgency=medium
 
