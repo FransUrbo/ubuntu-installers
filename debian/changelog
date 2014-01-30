@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu289) UNRELEASED; urgency=medium
+
+  * Build-depend on xorriso on ppc64el so that grub-mkrescue works.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 30 Jan 2014 13:41:26 +0000
+
 debian-installer (20101020ubuntu288) trusty; urgency=medium
 
   [ Stéphane Graber ]
