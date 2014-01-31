@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu291) UNRELEASED; urgency=medium
+debian-installer (20101020ubuntu291) trusty; urgency=medium
 
   * Add the linux module to the ppc64el/cdrom GRUB image, so that we can
     actually boot the kernel.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 31 Jan 2014 09:06:25 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 31 Jan 2014 09:07:38 +0000
 
 debian-installer (20101020ubuntu290) trusty; urgency=medium
 
