@@ -21,7 +21,6 @@ main(int argc, char *argv[])
 		for (part = ped_disk_next_partition(disk, NULL); part;
 		     part = ped_disk_next_partition(disk, part)) {
 			if (ped_partition_is_active(part) &&
-			    ped_partition_get_flag(part, PED_PARTITION_BOOT) &&
 			    ped_partition_get_flag(part, PED_PARTITION_PREP)) {
 				char *path;
 
