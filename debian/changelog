@@ -1,11 +1,11 @@
-grub-installer (1.78ubuntu12) UNRELEASED; urgency=medium
+grub-installer (1.78ubuntu12) trusty; urgency=medium
 
   * Add a hack to pick the right boot device on ppc64el.  This should really
     be done in grub-install instead, and will need to be done there in order
     to support major GRUB upgrades properly, but this will tide us over for
     now.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 31 Jan 2014 12:49:05 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 31 Jan 2014 12:50:09 +0000
 
 grub-installer (1.78ubuntu11) trusty; urgency=medium
 
