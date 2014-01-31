@@ -1,8 +1,8 @@
-grub-installer (1.78ubuntu13) UNRELEASED; urgency=medium
+grub-installer (1.78ubuntu13) trusty; urgency=medium
 
   * Fix ppc64el detection in boot device hack.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 31 Jan 2014 14:32:53 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 31 Jan 2014 14:33:11 +0000
 
 grub-installer (1.78ubuntu12) trusty; urgency=medium
 
