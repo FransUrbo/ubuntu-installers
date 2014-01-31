@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu291) UNRELEASED; urgency=medium
+
+  * Add the linux module to the ppc64el/cdrom GRUB image, so that we can
+    actually boot the kernel.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 31 Jan 2014 09:06:25 +0000
+
 debian-installer (20101020ubuntu290) trusty; urgency=medium
 
   * Hardcode ppc64el/cdrom GRUB prefix to (ieee1275/cdrom)/boot/grub for
