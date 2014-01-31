@@ -1,9 +1,9 @@
-grub-installer (1.78ubuntu14) UNRELEASED; urgency=medium
+grub-installer (1.78ubuntu14) trusty; urgency=medium
 
   * Only look for the prep flag, not boot as well; these appear to be
     mutually exclusive on GPT.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 31 Jan 2014 15:15:52 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 31 Jan 2014 15:16:35 +0000
 
 grub-installer (1.78ubuntu13) trusty; urgency=medium
 
