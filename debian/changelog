@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu292) trusty; urgency=medium
+
+  * Move master kernels to 3.13.0-6.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Fri, 31 Jan 2014 17:52:32 +0000
+
 debian-installer (20101020ubuntu291) trusty; urgency=medium
 
   * Add the linux module to the ppc64el/cdrom GRUB image, so that we can
