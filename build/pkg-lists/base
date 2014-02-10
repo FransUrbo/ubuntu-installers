@@ -22,6 +22,7 @@ env-preseed
 pciutils-udeb
 oem-config-check
 biosdevname-udeb ?
+wget-udeb
 
 #include "udev"
 
