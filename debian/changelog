@@ -1,3 +1,10 @@
+debian-installer (20101020ubuntu296) UNRELEASED; urgency=medium
+
+  * Copy any SSL certificates to /etc/ssl/certs and symlink
+    /usr/lib/ssl/certs to that, to support GnuTLS.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 12 Feb 2014 15:01:22 +0000
+
 debian-installer (20101020ubuntu295) trusty; urgency=medium
 
   * Add SSL_CERTS variable, which can be used to build images with embedded
