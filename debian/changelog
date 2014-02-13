@@ -1,3 +1,11 @@
+base-installer (1.122ubuntu22) UNRELEASED; urgency=medium
+
+  * Reverse lots of our delta against Debian relating to architectures no
+    longer supported in Ubuntu (armel, hppa, ia64, sparc), to make merging
+    from Debian less painful.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 13 Feb 2014 16:47:14 +0000
+
 base-installer (1.122ubuntu21) trusty; urgency=medium
 
   * Cherry-pick from trunk:
