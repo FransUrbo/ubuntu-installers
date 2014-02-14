@@ -1,4 +1,4 @@
-base-installer (1.143ubuntu1) UNRELEASED; urgency=medium
+base-installer (1.143ubuntu1) trusty; urgency=medium
 
   [ Colin Watson ]
   * Reverse lots of our delta against Debian relating to architectures no
@@ -36,7 +36,7 @@ base-installer (1.143ubuntu1) UNRELEASED; urgency=medium
   [ dann frazier ]
   * Add arm64 kernel detection (LP: #1263756).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Fri, 14 Feb 2014 14:15:30 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 14 Feb 2014 14:55:53 +0000
 
 base-installer (1.143) unstable; urgency=medium
 
