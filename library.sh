@@ -28,6 +28,7 @@ KERNEL_FLAVOUR=$(uname -r | cut -d - -f 3-)
 MACHINE="$(uname -m)"
 NUMCPUS=$(cat /var/numcpus 2>/dev/null) || true
 CPUINFO=/proc/cpuinfo
+OFCPUS=/proc/device-tree/cpus/
 
 # files and directories
 APT_SOURCES=/target/etc/apt/sources.list
@@ -172,6 +173,13 @@ EOT
 		cat > $APT_CONFDIR/00AllowUnauthenticated << EOT
 APT::Get::AllowUnauthenticated "true";
 Aptitude::CmdLine::Ignore-Trust-Violations "true";
+EOT
+	fi
+
+	if [ "$PROTOCOL" = https ] && db_get debian-installer/allow_unauthenticated_ssl && [ "$RET" = true ]; then
+		# This file will be left in place on the installed system.
+		cat > $APT_CONFDIR/00AllowUnauthenticatedSSL << EOT
+Acquire::https::Verify-Peer "false";
 EOT
 	fi
 
