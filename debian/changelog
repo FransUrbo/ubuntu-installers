@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu296) UNRELEASED; urgency=medium
+debian-installer (20101020ubuntu296) trusty; urgency=medium
 
   * Copy any SSL certificates to /etc/ssl/certs and symlink
     /usr/lib/ssl/certs to that, to support GnuTLS.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Wed, 12 Feb 2014 15:01:22 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 14 Feb 2014 14:45:30 +0000
 
 debian-installer (20101020ubuntu295) trusty; urgency=medium
 
