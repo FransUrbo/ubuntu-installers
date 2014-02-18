@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu297) trusty; urgency=medium
+
+  * Use mklibs-copy on ppc64el to avoid mangling librt.so.1 beyond repair.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 18 Feb 2014 02:57:37 -0700
+
 debian-installer (20101020ubuntu296) trusty; urgency=medium
 
   * Copy any SSL certificates to /etc/ssl/certs and symlink
