@@ -1,8 +1,12 @@
-debian-installer (20101020ubuntu299) UNRELEASED; urgency=medium
+debian-installer (20101020ubuntu299) trusty; urgency=medium
 
+  [ Dimitri John Ledkov ]
   * Update boot logo from vintage to modern.
 
- -- Dimitri John Ledkov <xnox@ubuntu.com>  Wed, 19 Feb 2014 10:02:43 +0000
+  [ Adam Conrad ]
+  * Move master kernels to 3.13.0-11.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Thu, 20 Feb 2014 01:53:21 -0700
 
 debian-installer (20101020ubuntu298) trusty; urgency=medium
 
