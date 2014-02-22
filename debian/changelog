@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu301) trusty; urgency=medium
+
+  * Move master kernels to 3.13.0-12.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Sat, 22 Feb 2014 14:49:39 -0700
+
 debian-installer (20101020ubuntu300) trusty; urgency=medium
 
   * Update boot logo to match desktop isos and plymouth.
