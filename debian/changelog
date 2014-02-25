@@ -1,4 +1,4 @@
-grub-installer (1.78ubuntu15) UNRELEASED; urgency=medium
+grub-installer (1.78ubuntu15) trusty; urgency=medium
 
   * Cherrypick 1.92 changes:
     * Adapt patch from Guilhem Moulin to always honor
@@ -7,7 +7,7 @@ grub-installer (1.78ubuntu15) UNRELEASED; urgency=medium
     a different device, or fail unattended installation). Closes:
     #666974. LP: #1012629.
 
- -- Dimitri John Ledkov <xnox@ubuntu.com>  Tue, 25 Feb 2014 16:42:25 +0000
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Tue, 25 Feb 2014 16:43:41 +0000
 
 grub-installer (1.78ubuntu14) trusty; urgency=medium
 
