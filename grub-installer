@@ -766,7 +766,7 @@ while : ; do
 			exit 10
 		fi
 		db_get $q
-		if [ "$RET" = true ]; then
+		if [ "$RET" = true ] && ! db_get grub-installer/bootdev; then
 			if [ -n "$bootremovable" ]; then
 				bootdev="$bootremovable"
 				if [ "$grub_version" = grub ] && \
