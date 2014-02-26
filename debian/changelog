@@ -1,3 +1,9 @@
+base-installer (1.143ubuntu2) trusty; urgency=medium
+
+  * Cherry-pick POWER7+ and POWER8 support from Debian for powerpc64.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 25 Feb 2014 17:53:44 -0700
+
 base-installer (1.143ubuntu1) trusty; urgency=medium
 
   [ Colin Watson ]
