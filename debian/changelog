@@ -1,4 +1,4 @@
-base-installer (1.144ubuntu1) UNRELEASED; urgency=medium
+base-installer (1.144ubuntu1) trusty; urgency=medium
 
   [ Colin Watson ]
   * Resynchronise with Debian.  Remaining changes:
@@ -32,7 +32,7 @@ base-installer (1.144ubuntu1) UNRELEASED; urgency=medium
   [ dann frazier ]
   * Add arm64 kernel selection tests (LP: #1284712).
 
- -- Colin Watson <cjwatson@ubuntu.com>  Thu, 27 Feb 2014 13:59:03 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 27 Feb 2014 14:01:50 +0000
 
 base-installer (1.144) unstable; urgency=medium
 
