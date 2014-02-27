@@ -1,3 +1,10 @@
+grub-installer (1.78ubuntu16) UNRELEASED; urgency=low
+
+  * Force grub-installer/bootdev to take precedence over only_debian and
+    with_other_os. (LP: #1012629)
+
+ -- Dave Chiluk <chiluk@canonical.com>  Fri, 07 Feb 2014 10:57:41 -0600
+
 grub-installer (1.78ubuntu15) trusty; urgency=medium
 
   * Cherrypick 1.92 changes:
