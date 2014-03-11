@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu306) trusty; urgency=medium
+
+  * Move master kernels to 3.13.0-17.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 11 Mar 2014 11:02:02 -0600
+
 debian-installer (20101020ubuntu305) trusty; urgency=medium
 
   * Move master kernels to 3.13.0-16.
