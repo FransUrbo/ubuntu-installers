@@ -1,9 +1,9 @@
-grub-installer (1.78ubuntu17) UNRELEASED; urgency=medium
+grub-installer (1.78ubuntu17) trusty; urgency=medium
 
   * On ppc64el/grub-ieee1275, wipe the PReP partition before running
     grub-install.
 
- -- Colin Watson <cjwatson@ubuntu.com>  Tue, 18 Mar 2014 15:43:01 +0000
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 18 Mar 2014 15:44:21 +0000
 
 grub-installer (1.78ubuntu16) trusty; urgency=low
 
