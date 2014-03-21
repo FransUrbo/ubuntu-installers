@@ -1,3 +1,10 @@
+grub-installer (1.78ubuntu18) UNRELEASED; urgency=medium
+
+  * When wiping the PReP partition on ppc64el/grub-ieee1275, limit the write
+    to the size of the partition, otherwise dd fails.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 21 Mar 2014 12:42:15 +0000
+
 grub-installer (1.78ubuntu17) trusty; urgency=medium
 
   * On ppc64el/grub-ieee1275, wipe the PReP partition before running

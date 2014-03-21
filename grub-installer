@@ -877,7 +877,7 @@ if [ -z "$frdisk" ] || [ "$grub_version" = grub2 ]; then
 		case $ARCH:$grub_package in
 		    ppc64el/*:grub-ieee1275)
 			info "Wiping PReP partition $bootdev"
-			log-output -t grub-installer dd if=/dev/zero of="$bootdev"
+			log-output -t grub-installer dd if=/dev/zero of="$bootdev" bs=512 count="$(blockdev --getsz "$bootdev")"
 			;;
 		esac
 
