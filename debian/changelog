@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu310) UNRELEASED; urgency=medium
+
+  * Add target for X-Gene-specific boot files (u-boot-wrapped) (LP: #1298393)
+
+ -- dann frazier <dann.frazier@canonical.com>  Thu, 27 Mar 2014 07:39:54 -0600
+
 debian-installer (20101020ubuntu311) trusty; urgency=medium
 
   * Move master kernels to 3.13.0-21.
