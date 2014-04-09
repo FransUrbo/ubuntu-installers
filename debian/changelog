@@ -1,8 +1,8 @@
-debian-installer (20101020ubuntu314) UNRELEASED; urgency=medium
+debian-installer (20101020ubuntu314) trusty; urgency=medium
 
   * Generate a grub netboot image and grub netboot directory for ppc64el.
 
- -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 09 Apr 2014 00:32:19 -0700
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 09 Apr 2014 08:57:33 -0700
 
 debian-installer (20101020ubuntu313) trusty; urgency=medium
 
