@@ -14,24 +14,10 @@ image=/vmlinux
 	read-only
 
 image=/vmlinux
-	label=expert
-	initrd=/initrd.gz
-	initrd-size=${RAMDISK_SIZE}
-	append="priority=low --"
-	read-only
-
-image=/vmlinux
 	label=cli
 	initrd=/initrd.gz
 	initrd-size=${RAMDISK_SIZE}
 	append="tasks=standard pkgsel/language-pack-patterns= pkgsel/install-language-support=false --"
-	read-only
-
-image=/vmlinux
-	label=cli-expert
-	initrd=/initrd.gz
-	initrd-size=${RAMDISK_SIZE}
-	append="tasks=standard pkgsel/language-pack-patterns= pkgsel/install-language-support=false priority=low --"
 	read-only
 
 image=/vmlinux

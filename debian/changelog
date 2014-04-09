@@ -1,3 +1,13 @@
+debian-installer (20101020ubuntu316) UNRELEASED; urgency=medium
+
+  * Remove expert entries from build/boot/powerpc/yaboot.conf* and
+    build/boot/ppc64el/grub-cdrom.cfg; they're overly-tempting but generally
+    not actually what people want unless debugging the installer, and people
+    can always edit the boot menu entry to add "priority=low" if they know
+    what they're doing.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 09 Apr 2014 17:47:58 +0100
+
 debian-installer (20101020ubuntu315) trusty; urgency=medium
 
   * Don't mislabel ppc64el netboot directory as "PXE", as this would cause
