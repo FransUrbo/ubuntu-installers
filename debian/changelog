@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu314) UNRELEASED; urgency=medium
+
+  * Generate a grub netboot image and grub netboot directory for ppc64el.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 09 Apr 2014 00:32:19 -0700
+
 debian-installer (20101020ubuntu313) trusty; urgency=medium
 
   * Move master kernels to 3.13.0-23.
