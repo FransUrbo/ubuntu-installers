@@ -1,9 +1,9 @@
-debian-installer (20101020ubuntu315) UNRELEASED; urgency=medium
+debian-installer (20101020ubuntu315) trusty; urgency=medium
 
   * Don't mislabel ppc64el netboot directory as "PXE", as this would cause
     no end of grief.
 
- -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 09 Apr 2014 09:37:43 -0700
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 09 Apr 2014 09:38:07 -0700
 
 debian-installer (20101020ubuntu314) trusty; urgency=medium
 
