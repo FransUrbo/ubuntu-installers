@@ -1,3 +1,9 @@
+debian-installer (20101020ubuntu318) trusty; urgency=medium
+
+  * No-change rebuild to build against the latest archive components.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Tue, 15 Apr 2014 21:34:19 +0100
+
 debian-installer (20101020ubuntu317) trusty; urgency=medium
 
   * No-change rebuild to build against the latest archive components.
