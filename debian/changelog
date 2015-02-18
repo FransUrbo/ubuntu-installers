@@ -1,3 +1,10 @@
+grub-installer (1.78ubuntu24.1) vivid; urgency=medium
+
+  * grub_probe(): return a single line in BTRFS multi-disk RAID configurations
+    (LP: #1354730).
+
+ -- TJ <ubuntu@iam.tj>  Tue, 17 Feb 2015 10:00:00 +0000
+
 grub-installer (1.78ubuntu24) vivid; urgency=medium
 
   * Install grub-arm64-efi on arm64/efi platforms. (From Debian)
