@@ -1,3 +1,9 @@
+base-installer (1.144ubuntu1.ZOL1) trusty; urgency=medium
+
+  * ZoL support added.
+
+ -- Turbo Fredriksson <turbo@bayour.com>  Mon, 06 Apr 2015 09:29:45 +0200
+
 base-installer (1.144ubuntu1) trusty; urgency=medium
 
   [ Colin Watson ]
