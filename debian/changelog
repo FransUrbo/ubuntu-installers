@@ -1,3 +1,15 @@
+debian-installer (20101020ubuntu318.ZOL1) trusty; urgency=medium
+
+   * ZoL support added.
+     Add spl and zfs modules, zfsutils-udeb and partman-zfs for AMD64 configs.
+     + Do NOT include partman-zfs on some architecturs (hurd-i386, i386, mips*, powerpc)
+     + Make spl/zfs kernel modules and partman-zfs dependency optional. They
+       are not availible in the ftp archive yet, but when they do, this will
+       'just work'...
+   * HACK: Exclude *.gz from mklibs and use --ignore-depends=libslang2
+
+ -- Turbo Fredriksson <turbo@bayour.com>  Mon, 06 Apr 2015 13:00:55 +0200
+
 debian-installer (20101020ubuntu318) trusty; urgency=medium
 
   * No-change rebuild to build against the latest archive components.
