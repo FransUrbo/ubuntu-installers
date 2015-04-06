@@ -1,3 +1,9 @@
+grub-installer (1.78ubuntu27.ZOL1) vivid; urgency=medium
+
+  * ZoL support added.
+
+ -- Turbo Fredriksson <turbo@bayour.com>  Mon, 06 Apr 2015 09:16:59 +0200
+
 grub-installer (1.78ubuntu27) vivid; urgency=medium
 
   [ Mauricio Faria de Oliveira ]

@@ -191,7 +191,7 @@ update_grub () {
 }
 
 findfs () {
-	if ! grub_probe -t device $1; then
+	if ! grub_probe -t device $1 | head -n1; then
 		mount | grep "on $ROOT${1%/} " | tail -n1 | cut -d' ' -f1
 	fi
 }
@@ -377,7 +377,7 @@ if [ "$found" = "0" ] && type multipath >/dev/null 2>&1; then
 	fi
 fi
 if [ "$found" = "0" ] && type lvdisplay >/dev/null 2>&1 && \
-     (lvdisplay "$disc_offered" | grep -q 'LV Name' 2>/dev/null || \
+     (lvdisplay "$disc_offered" 2>&1 | grep -q 'LV Name' 2>/dev/null || \
       [ -e "$(dirname "$disc_offered")/control" ]); then
 	# Don't set frdev/frdisk here, otherwise you'll end up in different
 	# code paths below ...
@@ -1031,6 +1031,11 @@ make_active_partition () {
 			bootdev_split="$(split_device "$bootdev")"
 			bootdisk="${bootdev_split%% *}"
 			bootpart="${bootdev_split#* }"
+			if [ "$bootfstype" = "zfs" ] || [ "$rootfstype" = "zfs" ] ; then
+			    # Grub needs a device.map to be able to find a filesystem
+			    # on a partition which is part of a ZFS pool
+			    make_device_map "$bootdev"
+                       fi
 			;;
 		\([hf]d[0-9]*\))
 			make_device_map "$bootdev"
@@ -1098,10 +1103,11 @@ fi
 db_progress STEP 1
 db_progress INFO grub-installer/progress/step_config_loader
 
-if [ "$bootfstype" = "zfs" ]; then
+if [ "$bootfstype" = "zfs" ] || [ "$rootfstype" = "zfs" ]; then
 	# Required by update-grub on ZFS
 	mkdir -p $ROOT/boot/zfs
-	cp /boot/zfs/zpool.cache $ROOT/boot/zfs/
+	cp -r /boot/zfs $ROOT/boot/
+	[ -f "/etc/hostid" -a ! -f "$ROOT/etc/hostid" ] && cp /etc/hostid $ROOT/etc/hostid
 fi
 
 # Delete for idempotency
