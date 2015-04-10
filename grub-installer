@@ -113,6 +113,11 @@ grub_probe () {
 		apt-install grub-common
 		is_grub_common_installed=true
 	fi
+	for fs in dev sys proc; do
+	    if ! mount | grep -q " /$fs "; then
+		mount /$fs /target/$fs
+	    fi
+	done
 	$chroot $ROOT grub-probe $@
 }
 
